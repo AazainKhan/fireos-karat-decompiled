@@ -1,0 +1,205 @@
+class	kind	declaration
+com.amazon.autopairservice.AutoPairArcusManager	field	private ArcusFwkManager mArcusFwkManager;
+com.amazon.autopairservice.AutoPairArcusManager	field	private AutoPairService.ArcusCallback mCallback;
+com.amazon.autopairservice.AutoPairArcusManager	field	private BroadcastReceiver mConnectivityReceiver;
+com.amazon.autopairservice.AutoPairArcusManager	field	private BroadcastReceiver mSyncFailureReceiver;
+com.amazon.autopairservice.AutoPairArcusManager	field	private BroadcastReceiver mSyncModReceiver;
+com.amazon.autopairservice.AutoPairArcusManager	field	private BroadcastReceiver mSyncThrottleReceiver;
+com.amazon.autopairservice.AutoPairArcusManager	field	private BroadcastReceiver mSyncUnmodReceiver;
+com.amazon.autopairservice.AutoPairArcusManager	field	private Context mContext;
+com.amazon.autopairservice.AutoPairArcusManager	field	private String mArcusAppId;
+com.amazon.autopairservice.AutoPairArcusManager	method	private void initialize()
+com.amazon.autopairservice.AutoPairArcusManager	method	private void registerArcusBroadcastReceivers()
+com.amazon.autopairservice.AutoPairArcusManager	method	public AutoPairArcusManager(Context context, AutoPairService.ArcusCallback arcusCallback)
+com.amazon.autopairservice.AutoPairArcusManager	method	public boolean getKillSwitchState(String str)
+com.amazon.autopairservice.AutoPairArcusManager	method	public int getDialogTimeout(String str)
+com.amazon.autopairservice.AutoPairArcusManager	method	public void cleanup()
+com.amazon.autopairservice.AutoPairService	field	final List<Integer> AUTO_PAIR_LIST;
+com.amazon.autopairservice.AutoPairService	field	private AlertDialog mLostRemoteAlertDialog;
+com.amazon.autopairservice.AutoPairService	field	private AmazonHdmiServiceManager mAmazonHdmiServiceManager;
+com.amazon.autopairservice.AutoPairService	field	private AtomicBoolean mAutoPairLostRemoteStarted;
+com.amazon.autopairservice.AutoPairService	field	private AtomicBoolean mIsDestroyed;
+com.amazon.autopairservice.AutoPairService	field	private AtomicBoolean mPairingStarted;
+com.amazon.autopairservice.AutoPairService	field	private AutoPairArcusManager mArcusManager;
+com.amazon.autopairservice.AutoPairService	field	private ConnectivityManager mConnectivityManager;
+com.amazon.autopairservice.AutoPairService	field	private Handler mHandler;
+com.amazon.autopairservice.AutoPairService	field	private List<RemoteDevice> mPairedDevices;
+com.amazon.autopairservice.AutoPairService	field	private SharedPreferences mPref;
+com.amazon.autopairservice.AutoPairService	field	private String mPairingMACAddress;
+com.amazon.autopairservice.AutoPairService	field	private UXControllerManager mUXControllerManager;
+com.amazon.autopairservice.AutoPairService	field	private boolean mDiscoveryStarted;
+com.amazon.autopairservice.AutoPairService	field	private boolean mIsBootComplete;
+com.amazon.autopairservice.AutoPairService	field	private boolean mIsFTVe;
+com.amazon.autopairservice.AutoPairService	field	private boolean mIsPowerCycled;
+com.amazon.autopairservice.AutoPairService	field	private boolean mIsScreenOn;
+com.amazon.autopairservice.AutoPairService	field	private boolean mIsSmp;
+com.amazon.autopairservice.AutoPairService	field	private boolean mOOBEStarted;
+com.amazon.autopairservice.AutoPairService	field	private boolean mRemoteServiceConnected;
+com.amazon.autopairservice.AutoPairService	field	private static final String TAG;
+com.amazon.autopairservice.AutoPairService	field	private static final boolean mIsDebugLog;
+com.amazon.autopairservice.AutoPairService	field	private static final boolean mIsUserBuild;
+com.amazon.autopairservice.AutoPairService	method	private boolean isDeviceConnected(List<RemoteDevice> list)
+com.amazon.autopairservice.AutoPairService	method	private boolean isPowerCycled()
+com.amazon.autopairservice.AutoPairService	method	private boolean isValidDeviceWakeUpReason()
+com.amazon.autopairservice.AutoPairService	method	private synchronized boolean hasDiscoveryStarted()
+com.amazon.autopairservice.AutoPairService	method	private synchronized boolean shouldShowAutoPairLostRemoteDialog()
+com.amazon.autopairservice.AutoPairService	method	private synchronized void handleIntent(Intent intent)
+com.amazon.autopairservice.AutoPairService	method	private synchronized void setConnectedAppRemote(boolean z)
+com.amazon.autopairservice.AutoPairService	method	private synchronized void setCurrentScreenOnState(boolean z)
+com.amazon.autopairservice.AutoPairService	method	private synchronized void setDiscoveryStarted(boolean z)
+com.amazon.autopairservice.AutoPairService	method	private synchronized void setShowAutoPairLostRemoteDialog(boolean z)
+com.amazon.autopairservice.AutoPairService	method	private void showLostRemoteCancelledNotification()
+com.amazon.autopairservice.AutoPairService	method	private void showLostRemoteDialog()
+com.amazon.autopairservice.AutoPairService	method	private void startDiscovery()
+com.amazon.autopairservice.AutoPairService	method	public IBinder onBind(Intent intent)
+com.amazon.autopairservice.AutoPairService	method	public List<RemoteDevice> getPairedDevices()
+com.amazon.autopairservice.AutoPairService	method	public boolean isConnectedRemoteAvailable()
+com.amazon.autopairservice.AutoPairService	method	public boolean isDialogActive()
+com.amazon.autopairservice.AutoPairService	method	public boolean isExistingRemote(String str)
+com.amazon.autopairservice.AutoPairService	method	public boolean isRemoteMitigationSupportedOnScreenOnForSmp()
+com.amazon.autopairservice.AutoPairService	method	public int onStartCommand(Intent intent, int i, int i2)
+com.amazon.autopairservice.AutoPairService	method	public static boolean allowDebugging()
+com.amazon.autopairservice.AutoPairService	method	public synchronized boolean getConnectedAppRemote()
+com.amazon.autopairservice.AutoPairService	method	public synchronized boolean getCurrentScreenOnState()
+com.amazon.autopairservice.AutoPairService	method	public synchronized boolean isKillSwitchEnabled()
+com.amazon.autopairservice.AutoPairService	method	public synchronized int getTimerValue()
+com.amazon.autopairservice.AutoPairService	method	public synchronized void closeDialog()
+com.amazon.autopairservice.AutoPairService	method	public synchronized void setKillSwitchEnabled(boolean z)
+com.amazon.autopairservice.AutoPairService	method	public synchronized void updateTimer(int i)
+com.amazon.autopairservice.AutoPairService	method	public void checkAndStartDiscovery()
+com.amazon.autopairservice.AutoPairService	method	public void finishDialogWithNotification()
+com.amazon.autopairservice.AutoPairService	method	public void handleConnectedNotification(RemoteDevice remoteDevice)
+com.amazon.autopairservice.AutoPairService	method	public void handleDialogTimeout()
+com.amazon.autopairservice.AutoPairService	method	public void handleStartDiscoveryNotification()
+com.amazon.autopairservice.AutoPairService	method	public void handleStopDiscoveryNotification()
+com.amazon.autopairservice.AutoPairService	method	public void onCreate()
+com.amazon.autopairservice.AutoPairService	method	public void onDestroy()
+com.amazon.autopairservice.BootReceiver	method	public void onReceive(Context context, Intent intent)
+com.amazon.autopairservice.ConnectivityReceiver	field	private static final boolean DEBUG;
+com.amazon.autopairservice.ConnectivityReceiver	method	public void onReceive(final Context context, Intent intent)
+com.amazon.autopairservice.R$bool	field	public static final int enable_autopair;
+com.amazon.autopairservice.R$color	field	public static final int lost_remote;
+com.amazon.autopairservice.R$drawable	field	public static final int bg_ftv;
+com.amazon.autopairservice.R$drawable	field	public static final int ic_remote_136dp_default;
+com.amazon.autopairservice.R$id	field	public static final int lost_remote_layout_ui;
+com.amazon.autopairservice.R$id	field	public static final int welcome_troubleshoot_line1;
+com.amazon.autopairservice.R$id	field	public static final int welcome_troubleshoot_line2;
+com.amazon.autopairservice.R$id	field	public static final int welcome_troubleshoot_line3;
+com.amazon.autopairservice.R$id	field	public static final int welcome_troubleshoot_line4;
+com.amazon.autopairservice.R$id	field	public static final int welcome_troubleshoot_line5;
+com.amazon.autopairservice.R$id	field	public static final int welcome_troubleshoot_line6;
+com.amazon.autopairservice.R$id	field	public static final int welcome_troubleshoot_title;
+com.amazon.autopairservice.R$layout	field	public static final int lost_remote_layout;
+com.amazon.autopairservice.R$layout	field	public static final int lost_remote_strings;
+com.amazon.autopairservice.R$string	field	public static final int autopair_service_arcus_app_id;
+com.amazon.autopairservice.R$string	field	public static final int ok;
+com.amazon.autopairservice.R$string	field	public static final int welcome_troubleshoot_line1;
+com.amazon.autopairservice.R$string	field	public static final int welcome_troubleshoot_line2;
+com.amazon.autopairservice.R$string	field	public static final int welcome_troubleshoot_line3;
+com.amazon.autopairservice.R$string	field	public static final int welcome_troubleshoot_line4;
+com.amazon.autopairservice.R$string	field	public static final int welcome_troubleshoot_line5;
+com.amazon.autopairservice.R$string	field	public static final int welcome_troubleshoot_line6;
+com.amazon.autopairservice.R$string	field	public static final int welcome_troubleshoot_title;
+com.amazon.autopairservice.R$style	field	public static final int AutoPairBody;
+com.amazon.autopairservice.R$style	field	public static final int AutoPairTitle;
+com.amazon.autopairservice.Utils	method	public static boolean isOobeBoot(Context context)
+com.amazon.autopairservice.Utils	method	public static void recordMetricEvent(String str)
+com.amazon.connectivitymanager.ConnectivityManager	field	private AtomicBoolean mServiceConnected;
+com.amazon.connectivitymanager.ConnectivityManager	field	private Context mContext;
+com.amazon.connectivitymanager.ConnectivityManager	field	private IControllerManager mService;
+com.amazon.connectivitymanager.ConnectivityManager	field	private RemoteServiceStatusCallback mCallback;
+com.amazon.connectivitymanager.ConnectivityManager	field	private static final boolean DEBUG;
+com.amazon.connectivitymanager.ConnectivityManager	field	public static final Pattern MAC_ADDRESS_PATTERN;
+com.amazon.connectivitymanager.ConnectivityManager	method	public ConnectivityManager(Context context, RemoteServiceStatusCallback remoteServiceStatusCallback)
+com.amazon.connectivitymanager.ConnectivityManager	method	public List<RemoteDevice> getConnectedDeviceList(int i, int[] iArr)
+com.amazon.connectivitymanager.ConnectivityManager	method	public List<RemoteDevice> getPairedDeviceList(int i, int[] iArr)
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean connectDevice(RemoteDevice remoteDevice, String str)
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean isDeviceInPairingState()
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean pairDevice(RemoteDevice remoteDevice)
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean registerConnectivityEventCallback(IConnectivityEventCallback iConnectivityEventCallback)
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean startDiscovery(int i, int[] iArr)
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean stopDiscovery()
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean unregisterConnectivityEventCallback(IConnectivityEventCallback iConnectivityEventCallback)
+com.amazon.connectivitymanager.ConnectivityManager	method	public static String maskMACAddress(String str)
+com.amazon.connectivitymanager.ConnectivityManager	method	public static String replaceMACAddress(String str)
+com.amazon.connectivitymanager.ConnectivityManager	method	public static boolean matchCategory(int[] iArr, List<Integer> list)
+com.amazon.connectivitymanager.ConnectivityManager	method	public static boolean matchCategory(int[] iArr, int i)
+com.amazon.connectivitymanager.ConnectivityManager	method	public void cleanup()
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub	method	public IBinder asBinder()
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub	method	public Stub()
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub	method	public static IControllerManager asInterface(IBinder iBinder)
+com.amazon.connectivitymanager.IControllerManager$Stub	method	public static IControllerManager getDefaultImpl()
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	field	public static IControllerManager sDefaultImpl;
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public List<RemoteDevice> getConnectedDeviceList(int i, int[] iArr) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public List<RemoteDevice> getPairedDeviceList(int i, int[] iArr) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean connectDevice(RemoteDevice remoteDevice, String str) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean isDeviceInPairingState() throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean pairDevice(RemoteDevice remoteDevice) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean registerEventCallback(IConnectivityEventCallback iConnectivityEventCallback) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean startDiscovery(int i, int[] iArr) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean stopDiscovery() throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean unregisterEventCallback(IConnectivityEventCallback iConnectivityEventCallback) throws RemoteException
+com.amazon.connectivitymanager.RemoteDevice	field	private String mAddress;
+com.amazon.connectivitymanager.RemoteDevice	field	private String[] mPeerDevicesAddress;
+com.amazon.connectivitymanager.RemoteDevice	field	private boolean mHeadphonesSupported;
+com.amazon.connectivitymanager.RemoteDevice	field	private boolean mIsSubDevice;
+com.amazon.connectivitymanager.RemoteDevice	field	private boolean mVoiceEnabled;
+com.amazon.connectivitymanager.RemoteDevice	field	private int mCsisGroupId;
+com.amazon.connectivitymanager.RemoteDevice	field	private int mGameControllerType;
+com.amazon.connectivitymanager.RemoteDevice	field	private int mInvalidBattery;
+com.amazon.connectivitymanager.RemoteDevice	field	private int mType;
+com.amazon.connectivitymanager.RemoteDevice	field	private long mGroupId;
+com.amazon.connectivitymanager.RemoteDevice	field	protected String mDSN;
+com.amazon.connectivitymanager.RemoteDevice	field	protected String mInputDescriptor;
+com.amazon.connectivitymanager.RemoteDevice	field	protected String mName;
+com.amazon.connectivitymanager.RemoteDevice	field	protected String mVersion;
+com.amazon.connectivitymanager.RemoteDevice	field	protected boolean mHeadPhoneConnected;
+com.amazon.connectivitymanager.RemoteDevice	field	protected boolean mUpdatable;
+com.amazon.connectivitymanager.RemoteDevice	field	protected int mBatteryLevel;
+com.amazon.connectivitymanager.RemoteDevice	field	protected int mConnectionState;
+com.amazon.connectivitymanager.RemoteDevice	field	protected int mPairedState;
+com.amazon.connectivitymanager.RemoteDevice	field	protected int[] mCategory;
+com.amazon.connectivitymanager.RemoteDevice	method	public RemoteDevice(Parcel parcel)
+com.amazon.connectivitymanager.RemoteDevice	method	public String getAddress()
+com.amazon.connectivitymanager.RemoteDevice	method	public String getName()
+com.amazon.connectivitymanager.RemoteDevice	method	public String toString()
+com.amazon.connectivitymanager.RemoteDevice	method	public int describeContents()
+com.amazon.connectivitymanager.RemoteDevice	method	public int getBatteryLevel()
+com.amazon.connectivitymanager.RemoteDevice	method	public int getClassifiedBatteryLevel()
+com.amazon.connectivitymanager.RemoteDevice	method	public int getConnectionState()
+com.amazon.connectivitymanager.RemoteDevice	method	public int getInvalidBatteryLvl()
+com.amazon.connectivitymanager.RemoteDevice	method	public int[] getCategory()
+com.amazon.connectivitymanager.RemoteDevice	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.uxcontroller.UXControllerManager	field	private Context mContext;
+com.amazon.uxcontroller.UXControllerManager	method	public UXControllerManager(Context context, UXStatusCallback uXStatusCallback)
+com.amazon.uxcontroller.UXControllerManager	method	public void handleEvent(BaseEvent baseEvent)
+com.amazon.uxcontroller.eventmodels.BatteryFullEvent	field	private int mEventType;
+com.amazon.uxcontroller.eventmodels.BatteryFullEvent	method	public int getEventType()
+com.amazon.uxcontroller.eventmodels.ConnectivityEvent	field	private String mName;
+com.amazon.uxcontroller.eventmodels.ConnectivityEvent	field	private boolean mControllerNotiication;
+com.amazon.uxcontroller.eventmodels.ConnectivityEvent	field	private int mEventType;
+com.amazon.uxcontroller.eventmodels.ConnectivityEvent	field	private int[] mDeviceCategory;
+com.amazon.uxcontroller.eventmodels.ConnectivityEvent	method	public ConnectivityEvent(int i, String str, int[] iArr)
+com.amazon.uxcontroller.eventmodels.ConnectivityEvent	method	public String getName()
+com.amazon.uxcontroller.eventmodels.ConnectivityEvent	method	public boolean isControllerNotification()
+com.amazon.uxcontroller.eventmodels.ConnectivityEvent	method	public int getEventType()
+com.amazon.uxcontroller.eventmodels.ConnectivityEvent	method	public int[] getDeviceCategory()
+com.amazon.uxcontroller.eventmodels.HeadphonePluggedEvent	field	private int mEventType;
+com.amazon.uxcontroller.eventmodels.HeadphonePluggedEvent	field	private int mHeadPhonesCount;
+com.amazon.uxcontroller.eventmodels.HeadphonePluggedEvent	method	public int getEventType()
+com.amazon.uxcontroller.eventmodels.HeadphonePluggedEvent	method	public int getHeadPhonesCount()
+com.amazon.uxcontroller.eventmodels.LostRemoteEvent	field	private int mEventType;
+com.amazon.uxcontroller.eventmodels.LostRemoteEvent	method	public LostRemoteEvent(int i)
+com.amazon.uxcontroller.eventmodels.LostRemoteEvent	method	public int getEventType()
+com.amazon.uxcontroller.eventmodels.LowBatteryEvent	field	private int mEventType;
+com.amazon.uxcontroller.eventmodels.LowBatteryEvent	method	public int getEventType()
+com.amazon.uxcontroller.eventmodels.PrivacyModeEvent	field	private final int mEventType;
+com.amazon.uxcontroller.eventmodels.PrivacyModeEvent	method	public int getEventType()
+com.amazon.uxcontroller.eventmodels.RechargeableBatteryChargingEvent	field	private final int mEventType;
+com.amazon.uxcontroller.eventmodels.RechargeableBatteryChargingEvent	method	public int getEventType()
+com.amazon.uxcontroller.eventmodels.RemoteDiscoveryEvent	field	private int mEventType;
+com.amazon.uxcontroller.eventmodels.RemoteDiscoveryEvent	method	public RemoteDiscoveryEvent(int i)
+com.amazon.uxcontroller.eventmodels.RemoteDiscoveryEvent	method	public int getEventType()

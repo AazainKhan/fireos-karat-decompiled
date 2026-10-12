@@ -1,0 +1,37 @@
+# package	batch	reason
+com.amazon.tmm.tutorial	1a	Tutorial app, no reverse deps, no declared perms in use
+com.amazon.storm.lightning.tutorial	1b	Tutorial; only depends on launcher/turnstile perms; no reverse deps
+com.amazon.firetv.troubleshooting	2	Stub; disabled since 2026-10-08 (DEBLOAT-LOG) with no fallout
+com.amazon.ftvads.deeplinking	2	Ads deep-linking; disabled since 2026-10-07 with no fallout; no reverse deps
+com.amazon.device.metrics	2	Metrics; disabled since 2026-10-07; no reverse deps
+com.amazon.wirelessmetrics.service	2	Wireless metrics; disabled since 2026-10-07; no reverse deps
+com.amazon.device.telemetry.emitter	2	Telemetry; disabled since 2026-10-07; no reverse deps
+com.amazon.whad	2	Disabled since 2026-10-07; no reverse deps
+com.amazon.device.software.ota.override	2	OTA idle override; disabled since 2026-10-07; no reverse deps
+com.amazon.tv.forcedotaupdater.v2	2	Forced OTA updater; disabled; reverse deps only oobe/settings uses-permission (grants become no-ops)
+com.amazon.shoptv.client	3	Shopping; no reverse deps
+com.amazon.shoptv.firetv.client	3	Shopping; no reverse deps
+com.amazon.sneakpeek	3	Content promo; no reverse deps
+com.amazon.hybridadidservice	3	Advertising ID service; no reverse deps
+com.amazon.tv.acr	3	ACR (automatic content recognition) stub; no reverse deps
+com.amazon.tv.earlyaccess	3	Early-access stub; no reverse deps
+com.amazon.tv.releasenotes	3	Release notes for OTAs; no reverse deps
+com.amazon.minitv.android.app	3	miniTV stub; no reverse deps
+com.amazon.gamehub	3	Game hub promo; no reverse deps
+com.amazon.tv.csapp	3	Customer-support app; no reverse deps
+com.amazon.neo.minerva.logcat	3	Log uploader; no reverse deps
+com.amazon.perfc	3	Perf collection; no reverse deps
+com.amazon.perfcollection	3	Perf collection; no reverse deps
+com.fireos.usagestats.proxy	3	Usage-stats listener; no reverse deps
+com.amazon.device.crashmanager	4	Crash uploader; disabled since 2026-10-07; reverse deps csapp,wifilocker only
+com.amazon.media.recommendations	4	FireTvNotificationService recommendations; disabled since 2026-10-07; declares perms used by 8 pkgs
+com.amazon.neo.minerva	4	Minerva metrics service; disabled since 2026-10-07; declares perms used by 106 pkgs (uses-permission only)
+com.amazon.device.software.ota	4	OTA service; disabled since 2026-10-07; sharedUserId with override; declares perms used by 19 pkgs
+com.amazon.tv.launcher	5	Amazon launcher; disabled today; declares 41 perms; guarded components outside launcher are launcher-card flows only
+com.amazon.firehomestarter	5	Home starter; disabled today; no reverse deps, no declared perms
+com.amazon.tahoe	6	Amazon Kids (decision 9); lint clean alone 2026-10-10; profilepicker and parentalcontrols stay and must pass the checklist
+com.android.protips	7	AOSP leftover (decision 6); no reverse deps
+com.android.printservice.recommendation	7	AOSP leftover (decision 6); print-plugin recommendations, no printing on a TV stick; no reverse deps
+com.android.bookmarkprovider	7	AOSP leftover (decision 6); browser bookmark provider; no reverse deps
+com.android.htmlviewer	7	AOSP leftover (decision 6); local .html viewer; no reverse deps
+com.amazon.cloud9	8	Silk browser stub (decision 9); only after the replacement browser resolves VIEW https URLs

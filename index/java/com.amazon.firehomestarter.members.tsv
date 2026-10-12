@@ -1,0 +1,97 @@
+class	kind	declaration
+com.amazon.firehomestarter.ApplicationComponent	field	private HomeActivityResolver mHomeActivityResolver;
+com.amazon.firehomestarter.ApplicationComponent	field	private HomeStrategyExecutor mHomeStrategyExecutor;
+com.amazon.firehomestarter.ApplicationComponent	field	private HomeStrategyResolver mHomeStrategyResolver;
+com.amazon.firehomestarter.ApplicationComponent	field	private final Context mContext;
+com.amazon.firehomestarter.ApplicationComponent	method	private PackageManager getPackageManager()
+com.amazon.firehomestarter.ApplicationComponent	method	public ApplicationComponent(Context context)
+com.amazon.firehomestarter.ApplicationComponent	method	public ChildHomeStartStrategy newChildHomeStartStrategy()
+com.amazon.firehomestarter.ApplicationComponent	method	public HomeStartStrategies newAdultUserStrategyCollection()
+com.amazon.firehomestarter.ApplicationComponent	method	public HomeStartStrategies newChildUserStrategyCollection()
+com.amazon.firehomestarter.ApplicationComponent	method	public HomeStrategyExecutor getHomeStrategyExecutor()
+com.amazon.firehomestarter.ApplicationComponent	method	public MainHomeStartStrategy newMainHomeStartStrategy()
+com.amazon.firehomestarter.ApplicationComponent	method	public OobeHomeStartStrategy newOobeHomeStartStrategy()
+com.amazon.firehomestarter.ApplicationComponent	method	public ScheduledExecutorService newScheduledExecutorService()
+com.amazon.firehomestarter.ApplicationComponent	method	public synchronized HomeActivityResolver getHomeActivityResolver()
+com.amazon.firehomestarter.ApplicationComponent	method	public synchronized HomeStrategyResolver getHomeStrategyResolver()
+com.amazon.firehomestarter.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.firehomestarter.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.firehomestarter.BuildConfig	field	public static final String FLAVOR;
+com.amazon.firehomestarter.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.firehomestarter.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.firehomestarter.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.firehomestarter.ChildHomeStartStrategy	field	private final Context mContext;
+com.amazon.firehomestarter.ChildHomeStartStrategy	field	private final PackageManager mPackageManager;
+com.amazon.firehomestarter.ChildHomeStartStrategy	field	private static final Intent CHILD_HOME_INTENT;
+com.amazon.firehomestarter.ChildHomeStartStrategy	field	private static final String CHILD_HOME_CATEGORY;
+com.amazon.firehomestarter.ChildHomeStartStrategy	field	private static final String TAG;
+com.amazon.firehomestarter.ChildHomeStartStrategy	method	private static int resolveFlagsBasedOnApi()
+com.amazon.firehomestarter.ChildHomeStartStrategy	method	private static void startActivityComponent(Context context, ComponentName homeActivity)
+com.amazon.firehomestarter.ChildHomeStartStrategy	method	public ChildHomeStartStrategy(Context context)
+com.amazon.firehomestarter.ChildHomeStartStrategy	method	public void start() throws Exception
+com.amazon.firehomestarter.ComponentProvider	field	private static Component mApplicationComponent;
+com.amazon.firehomestarter.ComponentProvider	method	private ComponentProvider()
+com.amazon.firehomestarter.ComponentProvider	method	public static Component get()
+com.amazon.firehomestarter.ComponentProvider	method	public static void init(Application application)
+com.amazon.firehomestarter.ComponentProvider	method	public static void override(Component component)
+com.amazon.firehomestarter.EnableComponentStartStrategy	field	private final HomeActivityResolver mHomeActivityResolver;
+com.amazon.firehomestarter.EnableComponentStartStrategy	field	private final Intent mIntent;
+com.amazon.firehomestarter.EnableComponentStartStrategy	field	private final PackageManager mPackageManager;
+com.amazon.firehomestarter.EnableComponentStartStrategy	field	private static final String TAG;
+com.amazon.firehomestarter.EnableComponentStartStrategy	method	private void enableActivityComponent(ComponentName homeActivity)
+com.amazon.firehomestarter.EnableComponentStartStrategy	method	protected abstract boolean shouldEnable(ComponentName componentName);
+com.amazon.firehomestarter.EnableComponentStartStrategy	method	protected void onNoComponentsFound()
+com.amazon.firehomestarter.EnableComponentStartStrategy	method	public EnableComponentStartStrategy(PackageManager packageManager, HomeActivityResolver homeActivityResolver, Intent intent)
+com.amazon.firehomestarter.EnableComponentStartStrategy	method	public void start() throws Exception
+com.amazon.firehomestarter.FireHomeStarterApplication	method	public void onCreate()
+com.amazon.firehomestarter.HomeActivityResolver	field	private final PackageManager mPackageManager;
+com.amazon.firehomestarter.HomeActivityResolver	field	private static final String TAG;
+com.amazon.firehomestarter.HomeActivityResolver	method	private List<ComponentName> findActivityByIntent(Intent intent)
+com.amazon.firehomestarter.HomeActivityResolver	method	private List<ComponentName> findPermittedActivities(List<ResolveInfo> resolveInfoList)
+com.amazon.firehomestarter.HomeActivityResolver	method	public List<ComponentName> resolvePermittedActivities(Intent intent)
+com.amazon.firehomestarter.HomeStartStrategies	field	private final List<HomeStartStrategy> mHomeStartStrategies;
+com.amazon.firehomestarter.HomeStartStrategies	method	private static void execute(HomeStartStrategy strategy) throws StrategyException
+com.amazon.firehomestarter.HomeStartStrategies	method	public void startAll() throws StrategyException
+com.amazon.firehomestarter.HomeStarterActivity	field	private final HomeStrategyExecutor mHomeStrategyExecutor;
+com.amazon.firehomestarter.HomeStarterActivity	field	private final HomeStrategyResolver mHomeStrategyResolver;
+com.amazon.firehomestarter.HomeStarterActivity	field	private static final String TAG;
+com.amazon.firehomestarter.HomeStarterActivity	method	public static void cleanupProcess()
+com.amazon.firehomestarter.HomeStarterActivity	method	public void onStart()
+com.amazon.firehomestarter.HomeStarterActivity	method	public void onStop()
+com.amazon.firehomestarter.HomeStrategyExecutor	field	private Activity mActivity;
+com.amazon.firehomestarter.HomeStrategyExecutor	field	private ProgressDialog mProgressDialog;
+com.amazon.firehomestarter.HomeStrategyExecutor	field	private ScheduledExecutorService mScheduledExecutorService;
+com.amazon.firehomestarter.HomeStrategyExecutor	field	private static final String TAG;
+com.amazon.firehomestarter.HomeStrategyExecutor	field	private static final long PERIOD_SECONDS;
+com.amazon.firehomestarter.HomeStrategyExecutor	method	private void showSpinnerAndScheduleRetries(Activity activity, RunStrategiesTask runStrategiesTask)
+com.amazon.firehomestarter.HomeStrategyExecutor	method	public void beginLoading(Activity activity, HomeStartStrategies strategies, Runnable callback)
+com.amazon.firehomestarter.HomeStrategyExecutor	method	public void cancel()
+com.amazon.firehomestarter.HomeStrategyExecutor$RunStrategiesTask	field	private final HomeStartStrategies mStrategies;
+com.amazon.firehomestarter.HomeStrategyExecutor$RunStrategiesTask	field	private final Runnable mCallback;
+com.amazon.firehomestarter.HomeStrategyExecutor$RunStrategiesTask	method	public RunStrategiesTask(HomeStartStrategies strategies, Runnable callback)
+com.amazon.firehomestarter.HomeStrategyExecutor$RunStrategiesTask	method	public void attempt() throws StrategyException
+com.amazon.firehomestarter.HomeStrategyExecutor$RunStrategiesTask	method	public void run()
+com.amazon.firehomestarter.HomeStrategyResolver	field	private final Context mContext;
+com.amazon.firehomestarter.HomeStrategyResolver	field	private static final String TAG;
+com.amazon.firehomestarter.HomeStrategyResolver	method	private static HomeStartStrategies resolveAdultUserStrategy()
+com.amazon.firehomestarter.HomeStrategyResolver	method	private static HomeStartStrategies resolveChildUserStrategy()
+com.amazon.firehomestarter.HomeStrategyResolver	method	private static boolean isUserAChild(Context context)
+com.amazon.firehomestarter.HomeStrategyResolver	method	public HomeStartStrategies resolve()
+com.amazon.firehomestarter.HomeStrategyResolver	method	public HomeStrategyResolver(Context context)
+com.amazon.firehomestarter.MainHomeStartStrategy	field	private static final Intent MAIN_HOME_INTENT;
+com.amazon.firehomestarter.MainHomeStartStrategy	field	private static final String MAIN_HOME_CATEGORY;
+com.amazon.firehomestarter.MainHomeStartStrategy	method	protected boolean shouldEnable(ComponentName component)
+com.amazon.firehomestarter.MainHomeStartStrategy	method	public MainHomeStartStrategy(PackageManager packageManager, HomeActivityResolver homeActivityResolver)
+com.amazon.firehomestarter.OobeHomeStartStrategy	field	private final PackageManager mPackageManager;
+com.amazon.firehomestarter.OobeHomeStartStrategy	field	private static final Intent OOBE_HOME_INTENT;
+com.amazon.firehomestarter.OobeHomeStartStrategy	field	private static final String OOBE_HOME_CATEGORY;
+com.amazon.firehomestarter.OobeHomeStartStrategy	field	private static final String TAG;
+com.amazon.firehomestarter.OobeHomeStartStrategy	method	private boolean isOobeInDefaultState(ComponentName oobeActivity)
+com.amazon.firehomestarter.OobeHomeStartStrategy	method	protected boolean shouldEnable(ComponentName oobeHomeActivity)
+com.amazon.firehomestarter.OobeHomeStartStrategy	method	protected void onNoComponentsFound()
+com.amazon.firehomestarter.OobeHomeStartStrategy	method	public OobeHomeStartStrategy(PackageManager packageManager, HomeActivityResolver homeActivityResolver)
+com.amazon.firehomestarter.R$drawable	field	public static final int ic_launcher;
+com.amazon.firehomestarter.StrategyException	method	public StrategyException()
+com.amazon.firehomestarter.StrategyException	method	public StrategyException(HomeStartStrategy strategy, Throwable throwable)
+com.amazon.firehomestarter.Tag	method	private Tag()
+com.amazon.firehomestarter.Tag	method	public static String get(Class clazz)

@@ -1,0 +1,85 @@
+class	kind	declaration
+com.amazon.tv.mattercohost.ContentAppAgentService	field	private BinderDeathRecipient mDeathRecipient;
+com.amazon.tv.mattercohost.ContentAppAgentService	field	private Handler mHandler;
+com.amazon.tv.mattercohost.ContentAppAgentService	field	private HandlerThread mHandlerThread;
+com.amazon.tv.mattercohost.ContentAppAgentService	field	private IBinder mCachedBinder;
+com.amazon.tv.mattercohost.ContentAppAgentService	field	private static final String APP_AGENT_SERVICE_NAME;
+com.amazon.tv.mattercohost.ContentAppAgentService	field	private static final String TAG;
+com.amazon.tv.mattercohost.ContentAppAgentService	field	private static final boolean DEBUG;
+com.amazon.tv.mattercohost.ContentAppAgentService	field	private static final int ATTRIBUTE_COMMAND_RESPONSE_TRANSACTION_CODE;
+com.amazon.tv.mattercohost.ContentAppAgentService	field	private static final int REPORT_ATTRIBUTE_CHANGE_TRANSACTION_CODE;
+com.amazon.tv.mattercohost.ContentAppAgentService	method	private static PendingIntent getPendingIntentForResponse(Context context, String str, int i)
+com.amazon.tv.mattercohost.ContentAppAgentService	method	public IBinder onBind(Intent intent)
+com.amazon.tv.mattercohost.ContentAppAgentService	method	public int onStartCommand(final Intent intent, int i, int i2)
+com.amazon.tv.mattercohost.ContentAppAgentService	method	public synchronized boolean obtainCachedBinder()
+com.amazon.tv.mattercohost.ContentAppAgentService	method	public void handleReadOrCommandRequest(Intent intent)
+com.amazon.tv.mattercohost.ContentAppAgentService	method	public void handleReadOrCommandResponse(Intent intent)
+com.amazon.tv.mattercohost.ContentAppAgentService	method	public void onCreate()
+com.amazon.tv.mattercohost.ContentAppAgentService	method	public void onDestroy()
+com.amazon.tv.mattercohost.ContentAppAgentService	method	public void onTrimMemory(int i)
+com.amazon.tv.mattercohost.ContentAppAgentService$BinderDeathRecipient	method	private BinderDeathRecipient()
+com.amazon.tv.mattercohost.ContentAppAgentService$BinderDeathRecipient	method	public void binderDied()
+com.amazon.tv.mattercohost.ContentAppAgentService$ServiceCallbackImpl	field	private CountDownLatch mLatch;
+com.amazon.tv.mattercohost.ContentAppAgentService$ServiceCallbackImpl	field	private IBinder mBinder;
+com.amazon.tv.mattercohost.ContentAppAgentService$ServiceCallbackImpl	field	static final long TIMEOUT;
+com.amazon.tv.mattercohost.ContentAppAgentService$ServiceCallbackImpl	method	public IBinder getBinder()
+com.amazon.tv.mattercohost.ContentAppAgentService$ServiceCallbackImpl	method	public boolean waitForServiceConnection()
+com.amazon.tv.mattercohost.ContentAppAgentService$ServiceCallbackImpl	method	public void onServiceConnected(String str, IBinder iBinder)
+com.amazon.tv.mattercohost.ContentAppAgentService$ServiceCallbackImpl	method	public void onServiceFailed(String str, String str2)
+com.amazon.tv.mattercohost.Manifest$permission	field	public static final String BIND_SERVICE_PERMISSION;
+com.amazon.tv.mattercohost.Manifest$permission	field	public static final String SEND_DATA;
+com.amazon.tv.mattercohost.MatterIntentConstants	field	public static final String ACTION_MATTER_AGENT;
+com.amazon.tv.mattercohost.MatterIntentConstants	field	public static final String ACTION_MATTER_COMMAND;
+com.amazon.tv.mattercohost.MatterIntentConstants	field	public static final String ACTION_MATTER_RESPONSE;
+com.amazon.tv.mattercohost.MatterIntentConstants	field	public static final String ATTRIBUTE_ACTION_READ;
+com.amazon.tv.mattercohost.MatterIntentConstants	field	public static final String EXTRA_ATTRIBUTE_ACTION;
+com.amazon.tv.mattercohost.MatterIntentConstants	field	public static final String EXTRA_ATTRIBUTE_ID;
+com.amazon.tv.mattercohost.MatterIntentConstants	field	public static final String EXTRA_CLUSTER_ID;
+com.amazon.tv.mattercohost.MatterIntentConstants	field	public static final String EXTRA_COMMAND_ID;
+com.amazon.tv.mattercohost.MatterIntentConstants	field	public static final String EXTRA_COMMAND_PAYLOAD;
+com.amazon.tv.mattercohost.MatterIntentConstants	field	public static final String EXTRA_DIRECTIVE_RESPONSE_PENDING_INTENT;
+com.amazon.tv.mattercohost.MatterIntentConstants	field	public static final String EXTRA_MESSAGE_ID;
+com.amazon.tv.mattercohost.MatterIntentConstants	field	public static final String EXTRA_PACKAGE_NAME;
+com.amazon.tv.mattercohost.MatterIntentConstants	field	public static final String EXTRA_RESPONSE_ID;
+com.amazon.tv.mattercohost.MatterIntentConstants	field	public static final String EXTRA_RESPONSE_PAYLOAD;
+com.amazon.tv.mattercohost.MatterIntentConstants	field	public static final String EXTRA_RESPONSE_RECEIVING_PACKAGE;
+com.matter.tv.app.api.IMatterAppAgent$Default	method	public IBinder asBinder()
+com.matter.tv.app.api.IMatterAppAgent$Default	method	public boolean reportAttributeChange(int i, int i2) throws RemoteException
+com.matter.tv.app.api.IMatterAppAgent$Default	method	public boolean setSupportedClusters(SetSupportedClustersRequest setSupportedClustersRequest) throws RemoteException
+com.matter.tv.app.api.IMatterAppAgent$Stub	field	private static final String DESCRIPTOR;
+com.matter.tv.app.api.IMatterAppAgent$Stub	field	static final int TRANSACTION_reportAttributeChange;
+com.matter.tv.app.api.IMatterAppAgent$Stub	field	static final int TRANSACTION_setSupportedClusters;
+com.matter.tv.app.api.IMatterAppAgent$Stub	method	public IBinder asBinder()
+com.matter.tv.app.api.IMatterAppAgent$Stub	method	public Stub()
+com.matter.tv.app.api.IMatterAppAgent$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.matter.tv.app.api.IMatterAppAgent$Stub	method	public static IMatterAppAgent asInterface(IBinder iBinder)
+com.matter.tv.app.api.IMatterAppAgent$Stub	method	public static IMatterAppAgent getDefaultImpl()
+com.matter.tv.app.api.IMatterAppAgent$Stub	method	public static boolean setDefaultImpl(IMatterAppAgent iMatterAppAgent)
+com.matter.tv.app.api.IMatterAppAgent$Stub$Proxy	field	private IBinder mRemote;
+com.matter.tv.app.api.IMatterAppAgent$Stub$Proxy	field	public static IMatterAppAgent sDefaultImpl;
+com.matter.tv.app.api.IMatterAppAgent$Stub$Proxy	method	public IBinder asBinder()
+com.matter.tv.app.api.IMatterAppAgent$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.matter.tv.app.api.IMatterAppAgent$Stub$Proxy	method	public boolean reportAttributeChange(int i, int i2) throws RemoteException
+com.matter.tv.app.api.IMatterAppAgent$Stub$Proxy	method	public boolean setSupportedClusters(SetSupportedClustersRequest setSupportedClustersRequest) throws RemoteException
+com.matter.tv.app.api.SetSupportedClustersRequest	field	private List<SupportedCluster> supportedClusters;
+com.matter.tv.app.api.SetSupportedClustersRequest	method	protected SetSupportedClustersRequest(Parcel parcel)
+com.matter.tv.app.api.SetSupportedClustersRequest	method	public List<SupportedCluster> getSupportedClusters()
+com.matter.tv.app.api.SetSupportedClustersRequest	method	public SetSupportedClustersRequest(List<SupportedCluster> list)
+com.matter.tv.app.api.SetSupportedClustersRequest	method	public int describeContents()
+com.matter.tv.app.api.SetSupportedClustersRequest	method	public void writeToParcel(Parcel parcel, int i)
+com.matter.tv.app.api.SupportedCluster	field	private int clusterIdentifier;
+com.matter.tv.app.api.SupportedCluster	field	private int features;
+com.matter.tv.app.api.SupportedCluster	field	private int[] optionalAttributesIdentifiers;
+com.matter.tv.app.api.SupportedCluster	field	private int[] optionalCommandIdentifiers;
+com.matter.tv.app.api.SupportedCluster	method	protected SupportedCluster(Parcel parcel)
+com.matter.tv.app.api.SupportedCluster	method	public SupportedCluster(int i, int i2, int[] iArr, int[] iArr2)
+com.matter.tv.app.api.SupportedCluster	method	public int describeContents()
+com.matter.tv.app.api.SupportedCluster	method	public int getClusterIdentifier()
+com.matter.tv.app.api.SupportedCluster	method	public int getFeatures()
+com.matter.tv.app.api.SupportedCluster	method	public int[] getOptionalAttributesIdentifiers()
+com.matter.tv.app.api.SupportedCluster	method	public int[] getOptionalCommandIdentifiers()
+com.matter.tv.app.api.SupportedCluster	method	public void setClusterIdentifier(int i)
+com.matter.tv.app.api.SupportedCluster	method	public void setFeatures(int i)
+com.matter.tv.app.api.SupportedCluster	method	public void setOptionalAttributesIdentifiers(int[] iArr)
+com.matter.tv.app.api.SupportedCluster	method	public void setOptionalCommandIdentifiers(int[] iArr)
+com.matter.tv.app.api.SupportedCluster	method	public void writeToParcel(Parcel parcel, int i)

@@ -1,0 +1,750 @@
+class	kind	declaration
+com.amazon.device.bluetoothkeymaplib.R$array	field	public static final int kml_supported_amazon_ble_remote_pids;
+com.amazon.device.bluetoothkeymaplib.R$bool	field	public static final int kml_power_ble_sync_enabled;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_key_name_scan_id_map_0x0413;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_key_name_scan_id_map_0x0414;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_key_name_scan_id_map_0x0415;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_key_name_scan_id_map_0x0418;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_key_name_scan_id_map_0x041E;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_key_name_scan_id_map_0x0421;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_key_name_scan_id_map_0x0423;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_key_name_scan_id_map_0x0424;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_key_name_scan_id_map_0x0425;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_key_name_scan_id_map_0x0426;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_key_name_scan_id_map_0x0427;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_key_name_scan_id_map_0x0428;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_key_name_scan_id_map_0x042A;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_key_name_scan_id_map_0x042C;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_key_name_scan_id_map_0x042F;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_key_name_scan_id_map_0x0431;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_key_name_scan_id_map_0x0432;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_key_name_scan_id_map_0x0433;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_key_name_scan_id_map_0x0435;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_key_name_scan_id_map_0x0436;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_key_name_scan_id_map_0x0437;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_key_name_scan_id_map_0x043C;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_key_name_scan_id_map_0x043E;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_key_name_scan_id_map_0x043F;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_key_name_scan_id_map_0x0440;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_key_name_scan_id_map_0x0442;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_key_name_scan_id_map_0x0444;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_key_name_scan_id_map_0x0445;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_key_name_scan_id_map_0x0446;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_power_ble_full_sync_filename;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_power_ble_state_switch_filename;
+com.amazon.device.bluetoothkeymaplib.R$string	field	public static final int kml_power_ble_sync_config_path;
+com.amazon.device.bluetoothkeymaplib.service.EventReceiver	field	private static BluetoothHidHost mBluetoothHidHost;
+com.amazon.device.bluetoothkeymaplib.service.EventReceiver	field	private static final String ACTION_REMOTE_ACTION_COMPLETED;
+com.amazon.device.bluetoothkeymaplib.service.EventReceiver	field	private static final String TAG;
+com.amazon.device.bluetoothkeymaplib.service.EventReceiver	method	private static SharedPreferences getPrivatePref(Context context)
+com.amazon.device.bluetoothkeymaplib.service.EventReceiver	method	public static boolean haveMacAddress(Context context, String str)
+com.amazon.device.bluetoothkeymaplib.service.EventReceiver	method	public static boolean isDFUCompleted(Context context, String str)
+com.amazon.device.bluetoothkeymaplib.service.EventReceiver	method	public static void clearAllMacAddresses(Context context)
+com.amazon.device.bluetoothkeymaplib.service.EventReceiver	method	public static void deleteMacAddress(Context context, String str)
+com.amazon.device.bluetoothkeymaplib.service.EventReceiver	method	public static void saveMacAddress(Context context, String str)
+com.amazon.device.bluetoothkeymaplib.service.EventReceiver	method	public void onReceive(final Context context, Intent intent)
+com.amazon.device.bluetoothkeymaplib.service.EventReceiver	method	public void performPowerBleSync(Context context, String str)
+com.amazon.device.bluetoothkeymaplib.service.EventReceiver	method	public void requestMetricSync(Context context, String str)
+com.amazon.device.bluetoothkeymaplib.service.EventReceiver	method	public void requestStateSwitch(Context context, String str)
+com.amazon.device.bluetoothkeymaplib.service.KeyMapService	field	private static EventReceiver mEventReceiver;
+com.amazon.device.bluetoothkeymaplib.service.KeyMapService	field	private static final String TAG;
+com.amazon.device.bluetoothkeymaplib.service.KeyMapService	field	public static final String PARAM_DEV_ADDRESS;
+com.amazon.device.bluetoothkeymaplib.service.KeyMapService	field	public static final String PARAM_KEYMAP_JSON;
+com.amazon.device.bluetoothkeymaplib.service.KeyMapService	field	public static final String PARAM_KEYMAP_OPERATION;
+com.amazon.device.bluetoothkeymaplib.service.KeyMapService	method	private void sendError(String str, String str2)
+com.amazon.device.bluetoothkeymaplib.service.KeyMapService	method	protected void onHandleIntent(Intent intent)
+com.amazon.device.bluetoothkeymaplib.service.KeyMapService	method	public KeyMapService()
+com.amazon.device.bluetoothkeymaplib.service.KeyMapSyncManager	field	private final Context mContext;
+com.amazon.device.bluetoothkeymaplib.service.KeyMapSyncManager	field	private final String mConfigPath;
+com.amazon.device.bluetoothkeymaplib.service.KeyMapSyncManager	field	private final String mFullSyncFilename;
+com.amazon.device.bluetoothkeymaplib.service.KeyMapSyncManager	field	private final String mStateSwitchFilename;
+com.amazon.device.bluetoothkeymaplib.service.KeyMapSyncManager	field	private final boolean mEnabled;
+com.amazon.device.bluetoothkeymaplib.service.KeyMapSyncManager	field	private static final String KEYMAP_SYNC_ACTION;
+com.amazon.device.bluetoothkeymaplib.service.KeyMapSyncManager	field	private static final String KEYMAP_SYNC_PACKAGE;
+com.amazon.device.bluetoothkeymaplib.service.KeyMapSyncManager	field	private static final String TAG;
+com.amazon.device.bluetoothkeymaplib.service.KeyMapSyncManager	field	private static final boolean DBG;
+com.amazon.device.bluetoothkeymaplib.service.KeyMapSyncManager	method	private String loadConfigFile(String str)
+com.amazon.device.bluetoothkeymaplib.service.KeyMapSyncManager	method	private void startKeyMapService(String str, String str2, String str3)
+com.amazon.device.bluetoothkeymaplib.service.KeyMapSyncManager	method	public KeyMapSyncManager(Context context)
+com.amazon.device.bluetoothkeymaplib.service.KeyMapSyncManager	method	public boolean isEnabled()
+com.amazon.device.bluetoothkeymaplib.service.KeyMapSyncManager	method	public void performFullSync(String str)
+com.amazon.device.bluetoothkeymaplib.service.KeyMapSyncTask	field	private HashMap<String, Integer> scanIdMap;
+com.amazon.device.bluetoothkeymaplib.service.KeyMapSyncTask	field	private KeyMapBroadcaster mNotifier;
+com.amazon.device.bluetoothkeymaplib.service.KeyMapSyncTask	field	private final Context mContext;
+com.amazon.device.bluetoothkeymaplib.service.KeyMapSyncTask	field	private final String mAddress;
+com.amazon.device.bluetoothkeymaplib.service.KeyMapSyncTask	field	private static BluetoothHidHost mBluetoothHidHost;
+com.amazon.device.bluetoothkeymaplib.service.KeyMapSyncTask	field	private static final String TAG;
+com.amazon.device.bluetoothkeymaplib.service.KeyMapSyncTask	field	private static final boolean DBG;
+com.amazon.device.bluetoothkeymaplib.service.KeyMapSyncTask	field	public static final String ACTION_BLAST;
+com.amazon.device.bluetoothkeymaplib.service.KeyMapSyncTask	field	public static final String ACTION_FULL_SYNC;
+com.amazon.device.bluetoothkeymaplib.service.KeyMapSyncTask	field	public static final String ACTION_STATE_SWITCH;
+com.amazon.device.bluetoothkeymaplib.service.KeyMapSyncTask	method	private KeyMapDeviceError doSync(KeyMapDeviceProxy keyMapDeviceProxy, String str, KeyMapTable[] keyMapTableArr) throws InterruptedException
+com.amazon.device.bluetoothkeymaplib.service.KeyMapSyncTask	method	private boolean isBluetoothConnected(String str)
+com.amazon.device.bluetoothkeymaplib.service.KeyMapSyncTask	method	private void handleResult(KeyMapDeviceError keyMapDeviceError)
+com.amazon.device.bluetoothkeymaplib.service.KeyMapSyncTask	method	public KeyMapSyncTask(Context context, String str)
+com.amazon.device.bluetoothkeymaplib.service.KeyMapSyncTask	method	public void execute(final String str, final JSONObject jSONObject)
+com.amazon.device.bluetoothkeymaplib.service.KeyMapSyncTask	method	public void sendError(String str)
+com.amazon.device.bluetoothkeymaplib.service.KeyMetricService	field	private static Context mContext;
+com.amazon.device.bluetoothkeymaplib.service.KeyMetricService	field	private static WirelessMetrics mWirelessMetrics;
+com.amazon.device.bluetoothkeymaplib.service.KeyMetricService	field	private static final String TAG;
+com.amazon.device.bluetoothkeymaplib.service.KeyMetricService	field	static final String ACTION_READ_METRICS;
+com.amazon.device.bluetoothkeymaplib.service.KeyMetricService	field	static final String PARAM_ACTION;
+com.amazon.device.bluetoothkeymaplib.service.KeyMetricService	field	static final String PARAM_ADDRESS;
+com.amazon.device.bluetoothkeymaplib.service.KeyMetricService	field	static final String REQUEST_METRIC_SYNC;
+com.amazon.device.bluetoothkeymaplib.service.KeyMetricService	method	protected void onHandleIntent(Intent intent)
+com.amazon.device.bluetoothkeymaplib.service.KeyMetricService	method	public KeyMetricService()
+com.amazon.device.bluetoothkeymaplib.service.ProductConfig	field	private static HashMap<Integer, HashMap<String, Integer>> scanidMaps;
+com.amazon.device.bluetoothkeymaplib.service.ProductConfig	field	private static final String TAG;
+com.amazon.device.bluetoothkeymaplib.service.ProductConfig	field	private static final boolean DBG;
+com.amazon.device.bluetoothkeymaplib.service.ProductConfig	field	private static final int AMAZON_LE_VID;
+com.amazon.device.bluetoothkeymaplib.service.ProductConfig	field	private static int[] supportedRemotePIDs;
+com.amazon.device.bluetoothkeymaplib.service.ProductConfig	method	public static HashMap<String, Integer> getScanIdMap(Context context, BluetoothDevice bluetoothDevice)
+com.amazon.device.bluetoothkeymaplib.service.ProductConfig	method	public static boolean isKMDevice(Context context, BluetoothDevice bluetoothDevice)
+com.amazon.device.kmlcontrollerlib.ble.BleConsts	field	public static final UUID CCCD_UUID;
+com.amazon.device.kmlcontrollerlib.ble.BleConsts	field	public static final UUID KEYMAP_BLAST_CHAR_UUID;
+com.amazon.device.kmlcontrollerlib.ble.BleConsts	field	public static final UUID KEYMAP_MAPPING_CHAR_UUID;
+com.amazon.device.kmlcontrollerlib.ble.BleConsts	field	public static final UUID KEYMETRIC_METRIC_UUID;
+com.amazon.device.kmlcontrollerlib.ble.BleConsts	field	public static final UUID KEYMETRIC_SERVICE_UUID;
+com.amazon.device.kmlcontrollerlib.ble.BleConsts	field	public static final int GATT_GENERIC_ERROR;
+com.amazon.device.kmlcontrollerlib.ble.BleController	field	private BluetoothAdapter mBluetoothAdapter;
+com.amazon.device.kmlcontrollerlib.ble.BleController	field	private BluetoothGatt mBluetoothGatt;
+com.amazon.device.kmlcontrollerlib.ble.BleController	field	private BluetoothManager mBluetoothManager;
+com.amazon.device.kmlcontrollerlib.ble.BleController	field	private final BleControllerCallback mClientCb;
+com.amazon.device.kmlcontrollerlib.ble.BleController	field	private final BluetoothDevice mBluetoothDevice;
+com.amazon.device.kmlcontrollerlib.ble.BleController	field	private final Context mContext;
+com.amazon.device.kmlcontrollerlib.ble.BleController	field	private int mConnectionState;
+com.amazon.device.kmlcontrollerlib.ble.BleController	field	private static final String TAG;
+com.amazon.device.kmlcontrollerlib.ble.BleController	field	private static final boolean DBG;
+com.amazon.device.kmlcontrollerlib.ble.BleController	field	private static final int STATE_CONNECTED;
+com.amazon.device.kmlcontrollerlib.ble.BleController	field	private static final int STATE_CONNECTING;
+com.amazon.device.kmlcontrollerlib.ble.BleController	field	private static final int STATE_DISCONNECTED;
+com.amazon.device.kmlcontrollerlib.ble.BleController	field	private static final int STATE_SERVICE_READY;
+com.amazon.device.kmlcontrollerlib.ble.BleController	method	private synchronized boolean connect(BluetoothDevice bluetoothDevice)
+com.amazon.device.kmlcontrollerlib.ble.BleController	method	private synchronized boolean initialize()
+com.amazon.device.kmlcontrollerlib.ble.BleController	method	private synchronized void disconnect()
+com.amazon.device.kmlcontrollerlib.ble.BleController	method	public BleController(Context context, BluetoothDevice bluetoothDevice, BleControllerCallback bleControllerCallback)
+com.amazon.device.kmlcontrollerlib.ble.BleController	method	public synchronized boolean requestNotifyCharacteristic(BluetoothGattCharacteristic bluetoothGattCharacteristic, boolean z)
+com.amazon.device.kmlcontrollerlib.ble.BleController	method	public synchronized boolean requestReadCharacteristic(BluetoothGattCharacteristic bluetoothGattCharacteristic)
+com.amazon.device.kmlcontrollerlib.ble.BleController	method	public synchronized boolean requestWriteCharacteristic(BluetoothGattCharacteristic bluetoothGattCharacteristic, byte[] bArr)
+com.amazon.device.kmlcontrollerlib.ble.BleController	method	public synchronized void handleBleCharacteristicChanged(BluetoothGattCharacteristic bluetoothGattCharacteristic)
+com.amazon.device.kmlcontrollerlib.ble.BleController	method	public synchronized void handleBleCharacteristicRead(BluetoothGattCharacteristic bluetoothGattCharacteristic, int i)
+com.amazon.device.kmlcontrollerlib.ble.BleController	method	public synchronized void handleBleCharacteristicWrite(BluetoothGattCharacteristic bluetoothGattCharacteristic, int i)
+com.amazon.device.kmlcontrollerlib.ble.BleController	method	public synchronized void handleBleConnectionStateChange(int i, int i2)
+com.amazon.device.kmlcontrollerlib.ble.BleController	method	public synchronized void handleBleDescriptorWrite(BluetoothGattDescriptor bluetoothGattDescriptor, int i)
+com.amazon.device.kmlcontrollerlib.ble.BleController	method	public synchronized void handleBleServicesDiscovered(int i)
+com.amazon.device.kmlcontrollerlib.ble.BleController	method	public void close()
+com.amazon.device.kmlcontrollerlib.ble.BleUtils	field	private static final String TAG;
+com.amazon.device.kmlcontrollerlib.ble.BleUtils	method	public static boolean isBluetoothConnected(String str)
+com.amazon.device.kmlcontrollerlib.ble.OperationResult	field	public Status status;
+com.amazon.device.kmlcontrollerlib.ble.OperationResult	field	public byte[] value;
+com.amazon.device.kmlcontrollerlib.ble.OperationResult	method	public OperationResult(Status status)
+com.amazon.device.kmlcontrollerlib.ble.OperationResult	method	public String toString()
+com.amazon.device.kmlcontrollerlib.ble.OperationResult	method	public boolean isOK()
+com.amazon.device.kmlcontrollerlib.ble.OperationResult$Status	field	private String mReason;
+com.amazon.device.kmlcontrollerlib.ble.OperationResult$Status	method	public String getReason()
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	field	private CountDownLatch mOperationLatch;
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	field	private OperationResult mOperationResult;
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	field	private boolean mConnectionEstablished;
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	field	private final BleController mDevice;
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	field	private final CountDownLatch mInitLatch;
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	field	private final HashMap<UUID, SynchronousController.OperationResultListener> mResultDB;
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	field	private final Hashtable<UUID, BluetoothGattCharacteristic> mGattDB;
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	field	private final Object mOperationLock;
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	field	private final UUID mServiceUUID;
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	field	private static final String TAG;
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	field	private static final boolean DBG;
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	field	private static final int MAX_RETRY;
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	field	private static final int OPERATION_TIMEOUT_MS;
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	method	private BluetoothGattCharacteristic fetchCharacteristic(UUID uuid)
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	method	private OperationResult doSyncRead(UUID uuid)
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	method	private OperationResult doSyncWrite(UUID uuid, byte[] bArr)
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	method	private OperationResult initResult(UUID uuid)
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	method	private boolean hasActiveOperation()
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	method	private void clearOperation()
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	method	private void completeOperation(OperationResult.Status status, byte[] bArr)
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	method	private void dispatchToSubscribers(BluetoothGattCharacteristic bluetoothGattCharacteristic)
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	method	private void handleCharacteristicCB(BluetoothGattCharacteristic bluetoothGattCharacteristic, int i)
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	method	private void pollOperation(long j)
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	method	private void setOperation(OperationResult operationResult)
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	method	public OperationResult syncEnableSubscription(UUID uuid, boolean z)
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	method	public SynchronousBleController(Context context, String str, UUID uuid)
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	method	public synchronized OperationResult poll(long j)
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	method	public synchronized OperationResult syncRead(UUID uuid)
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	method	public synchronized OperationResult syncWrite(UUID uuid, byte[] bArr)
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	method	public synchronized void close()
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	method	public synchronized void open()
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	method	public synchronized void syncSubscribe(UUID uuid, SynchronousController.OperationResultListener operationResultListener)
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	method	public void onCharacteristicNotify(BluetoothGattCharacteristic bluetoothGattCharacteristic)
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	method	public void onCharacteristicNotifyEnabled(BluetoothGattDescriptor bluetoothGattDescriptor)
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	method	public void onCharacteristicRead(BluetoothGattCharacteristic bluetoothGattCharacteristic, int i)
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	method	public void onCharacteristicWritten(BluetoothGattCharacteristic bluetoothGattCharacteristic, int i)
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	method	public void onDisconnect()
+com.amazon.device.kmlcontrollerlib.ble.SynchronousBleController	method	public void onServicesDiscovered(BluetoothGatt bluetoothGatt)
+com.amazon.device.kmlsynclib.keymap.sync.BleConfig	field	public static final UUID KEYMAP_BLAST_CHAR_UUID;
+com.amazon.device.kmlsynclib.keymap.sync.BleConfig	field	public static final UUID KEYMAP_CONTROL_CHAR_UUID;
+com.amazon.device.kmlsynclib.keymap.sync.BleConfig	field	public static final UUID KEYMAP_MAPPING_CHAR_UUID;
+com.amazon.device.kmlsynclib.keymap.sync.BleConfig	field	public static final UUID KEYMAP_SERVICE_UUID;
+com.amazon.device.kmlsynclib.keymap.sync.BleConfig	field	public static final int KEYMAP_CONTROL_COMMIT_BLAST_TABLE;
+com.amazon.device.kmlsynclib.keymap.sync.BleConfig	field	public static final int KEYMAP_CONTROL_CONTEXT_SWITCH;
+com.amazon.device.kmlsynclib.keymap.sync.BleConfig	field	public static final int KEYMAP_CONTROL_DELETE_TABLE;
+com.amazon.device.kmlsynclib.keymap.sync.BleConfig	field	public static final int KEYMAP_CONTROL_ENABLE_SDS;
+com.amazon.device.kmlsynclib.keymap.sync.BleConfig	field	public static final int KEYMAP_CONTROL_RESET_STAGING_TABLE;
+com.amazon.device.kmlsynclib.keymap.sync.BleConfig	field	public static final int KEYMAP_UPDATE_STATUS_SUCCESS;
+com.amazon.device.kmlsynclib.keymap.sync.BleConfig	field	public static final int KEYMAP_VERIFICATION_NONE;
+com.amazon.device.kmlsynclib.keymap.sync.BleConfig	field	public static final int KEYMAP_VERIFICATION_SHA2;
+com.amazon.device.kmlsynclib.keymap.sync.BleKeyMapDeviceProxyV2	field	private static final String TAG;
+com.amazon.device.kmlsynclib.keymap.sync.BleKeyMapDeviceProxyV2	field	private static final int CHUNK_SIZE;
+com.amazon.device.kmlsynclib.keymap.sync.BleKeyMapDeviceProxyV2	field	private static final int MAX_RETRY_COUNT;
+com.amazon.device.kmlsynclib.keymap.sync.BleKeyMapDeviceProxyV2	method	private KeyMapDeviceError toKMError(OperationResult operationResult)
+com.amazon.device.kmlsynclib.keymap.sync.BleKeyMapDeviceProxyV2	method	private KeyMapTableId[] parseTableIds(byte[] bArr)
+com.amazon.device.kmlsynclib.keymap.sync.BleKeyMapDeviceProxyV2	method	private OperationResult commitBlast()
+com.amazon.device.kmlsynclib.keymap.sync.BleKeyMapDeviceProxyV2	method	private OperationResult requestStartNewTable(KeyMapTableId keyMapTableId, int i)
+com.amazon.device.kmlsynclib.keymap.sync.BleKeyMapDeviceProxyV2	method	private OperationResult requestTables()
+com.amazon.device.kmlsynclib.keymap.sync.BleKeyMapDeviceProxyV2	method	private OperationResult writeBinary(byte[] bArr, UUID uuid)
+com.amazon.device.kmlsynclib.keymap.sync.BleKeyMapDeviceProxyV2	method	public BleKeyMapDeviceProxyV2(Context context, String str)
+com.amazon.device.kmlsynclib.keymap.sync.BleKeyMapDeviceProxyV2	method	public KeyMapDeviceError blastCommand(KeyMapTable keyMapTable)
+com.amazon.device.kmlsynclib.keymap.sync.BleKeyMapDeviceProxyV2	method	public KeyMapDeviceError eraseAllTables()
+com.amazon.device.kmlsynclib.keymap.sync.BleKeyMapDeviceProxyV2	method	public KeyMapDeviceError switchTable(KeyMapTableId keyMapTableId)
+com.amazon.device.kmlsynclib.keymap.sync.BleKeyMapDeviceProxyV2	method	public KeyMapDeviceError writeTable(KeyMapTable keyMapTable)
+com.amazon.device.kmlsynclib.keymap.sync.BleKeyMapDeviceProxyV2	method	public boolean tableWriteCompleted(byte[] bArr)
+com.amazon.device.kmlsynclib.keymap.sync.BleKeyMapDeviceProxyV2	method	public void close()
+com.amazon.device.kmlsynclib.keymap.sync.BleKeyMapDeviceProxyV2	method	public void enableSDSOnRemote()
+com.amazon.device.kmlsynclib.keymap.sync.BleKeyMapDeviceProxyV2	method	public void open()
+com.amazon.device.kmlsynclib.keymap.sync.KeyMapBroadcaster	field	private boolean enableNotify;
+com.amazon.device.kmlsynclib.keymap.sync.KeyMapBroadcaster	field	private boolean enableRequest;
+com.amazon.device.kmlsynclib.keymap.sync.KeyMapBroadcaster	field	private final Context mContext;
+com.amazon.device.kmlsynclib.keymap.sync.KeyMapBroadcaster	field	private static final String BROADCAST_ACTION_REQUEST;
+com.amazon.device.kmlsynclib.keymap.sync.KeyMapBroadcaster	field	private static final String BROADCAST_ACTION_STATUS;
+com.amazon.device.kmlsynclib.keymap.sync.KeyMapBroadcaster	field	private static final String TAG;
+com.amazon.device.kmlsynclib.keymap.sync.KeyMapBroadcaster	field	public static final String NOTIFY_UPDATE_FAILED;
+com.amazon.device.kmlsynclib.keymap.sync.KeyMapBroadcaster	field	public static final String NOTIFY_UPDATE_STARTED;
+com.amazon.device.kmlsynclib.keymap.sync.KeyMapBroadcaster	field	public static final String NOTIFY_UPDATE_SUCCESS;
+com.amazon.device.kmlsynclib.keymap.sync.KeyMapBroadcaster	field	public static final String REQUEST_FULL_SYNC;
+com.amazon.device.kmlsynclib.keymap.sync.KeyMapBroadcaster	field	public static final String REQUEST_STATE_SWITCH;
+com.amazon.device.kmlsynclib.keymap.sync.KeyMapBroadcaster	method	public KeyMapBroadcaster(Context context)
+com.amazon.device.kmlsynclib.keymap.sync.KeyMapBroadcaster	method	public void notifyStatus(String str, String str2)
+com.amazon.device.kmlsynclib.keymap.sync.KeyMapBroadcaster	method	public void notifyStatus(String str, String str2, String str3, int i)
+com.amazon.device.kmlsynclib.keymap.sync.KeyMapBroadcaster	method	public void requestAction(String str, String str2)
+com.amazon.device.kmlsynclib.keymap.sync.KeyMapDeviceError	field	private String mReason;
+com.amazon.device.kmlsynclib.keymap.sync.KeyMapDeviceError	field	private int mError;
+com.amazon.device.kmlsynclib.keymap.sync.KeyMapDeviceError	method	public String getReason()
+com.amazon.device.kmlsynclib.keymap.sync.KeyMapDeviceError	method	public int getInt()
+com.amazon.device.kmlsynclib.keymap.table.KeyMapAction	method	abstract String describe();
+com.amazon.device.kmlsynclib.keymap.table.KeyMapAction	method	abstract byte[] compile() throws IOException;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapAction	method	protected byte[] compileAction(KeyMapActionType keyMapActionType, int i, byte[] bArr)
+com.amazon.device.kmlsynclib.keymap.table.KeyMapAction	method	public int getActionDelay()
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionBle	field	private final String mCommand;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionBle	field	private static final byte LONG_PRESS;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionBle	field	private static final byte SHORT_PRESS;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionBle	method	public String describe()
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionBle	method	public byte[] compile() throws IOException
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionIr	field	private String mRepeatType;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionIr	field	private final KeyMapActionType mAction;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionIr	field	private int mDutyCycle;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionIr	field	private int mFreq;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionIr	field	private int mPostDelay;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionIr	field	private int mRepeat;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionIr	field	private int mToggleMask;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionIr	field	private int[][] mRawCodes;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionIr	field	private static final String TAG;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionIr	field	private static final int REPEAT_FLAG_SEQUENCE;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionIr	field	private static final int REPEAT_FLAG_TOGGLE;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionIr	method	private byte[] compileRawCode() throws IOException
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionIr	method	private void parseJsonRawCode(JSONObject jSONObject) throws JSONException
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionIr	method	public String describe()
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionIr	method	public byte[] compile() throws IOException
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionIr	method	public int getActionDelay()
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionLed	field	private int mAnimationType;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionLed	field	private int mB;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionLed	field	private int mG;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionLed	field	private int mR;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionLed	field	private static final int LED_ANIMATION_TYPE_BLINK0;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionLed	field	private static final int LED_ANIMATION_TYPE_BLINK1;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionLed	field	private static final int LED_ANIMATION_TYPE_OFF;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionLed	field	private static final int LED_ANIMATION_TYPE_ON;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionLed	field	private static final int LED_ANIMATION_TYPE_PULSE;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionLed	method	private int transcodeAnimation(String str)
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionLed	method	private short clamp(int i)
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionLed	method	public String describe()
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionLed	method	public byte[] compile() throws IOException
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionType	field	public final String name;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionType	field	public final byte value;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapActionType	method	public String toString()
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTable	field	private HashMap<String, Integer> mScanIdMap;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTable	field	private LinkedHashMap<String, ArrayList<KeyMapAction>> mRows;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTable	field	private String mName;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTable	field	private String mTableIdStr;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTable	field	private boolean mDataChanged;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTable	field	private boolean mEnableSDS;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTable	field	private byte[] mCompiledTable;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTable	field	private int mMaxActionDelay;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTable	field	private static final String TAG;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTable	method	private byte getScanId(String str)
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTable	method	private void compileTable()
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTable	method	public boolean isSDSEnabled()
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTable	method	public byte[] compileAsBlast()
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTable	method	public int getActionDelay()
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTable	method	public synchronized KeyMapTable enableSDSOnRemote(boolean z)
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTable	method	public synchronized KeyMapTable setId(String str)
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTable	method	public synchronized KeyMapTable setName(String str)
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTable	method	public synchronized KeyMapTable setScanIdMap(HashMap<String, Integer> map)
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTable	method	public synchronized KeyMapTableId getId()
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTable	method	public synchronized String describe()
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTable	method	public synchronized byte[] compile()
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTable	method	public synchronized byte[] compileWithChecksum()
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTable	method	public synchronized void appendActions(String str, Collection<KeyMapAction> collection)
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTableFactory	field	private static final String TAG;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTableFactory	field	private static final boolean DBG;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTableFactory	method	private static Collection<KeyMapAction> parseActions(JSONArray jSONArray) throws JSONException
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTableFactory	method	private static KeyMapAction parseAction(JSONObject jSONObject) throws JSONException
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTableFactory	method	private static KeyMapTable buildTable(HashMap<String, Integer> map, String str, JSONObject jSONObject) throws JSONException
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTableFactory	method	private static KeyMapTable[] buildBlastTables(HashMap<String, Integer> map, String str, JSONArray jSONArray, boolean z) throws JSONException
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTableFactory	method	private static KeyMapTable[] buildKeyMapTables(HashMap<String, Integer> map, JSONObject jSONObject) throws JSONException
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTableFactory	method	public static KeyMapTableId buildId(JSONObject jSONObject) throws JSONException
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTableFactory	method	public static KeyMapTable[] fromJson(HashMap<String, Integer> map, JSONObject jSONObject) throws JSONException
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTableId	field	private static final UUID NULL_ID_0;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTableId	field	private static final UUID NULL_ID_F;
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTableId	method	public KeyMapTableId digest(byte[] bArr)
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTableId	method	public KeyMapTableId setToggleBitState(int i)
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTableId	method	public KeyMapTableId setUUID(String str)
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTableId	method	public KeyMapTableId setUUID(UUID uuid)
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTableId	method	public String toString()
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTableId	method	public UUID getUUID()
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTableId	method	public boolean equals(Object obj)
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTableId	method	public boolean isDefaultTable()
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTableId	method	public byte[] getHash()
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTableId	method	public byte[] getIndexBytes()
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTableId	method	public byte[] getToggleBItState()
+com.amazon.device.kmlsynclib.keymap.table.KeyMapTableId	method	public int hashCode()
+com.amazon.device.kmlsynclib.metric.report.KeyMetricReport	field	private HashMap<String, Integer> mScanIdMap;
+com.amazon.device.kmlsynclib.metric.report.KeyMetricReport	field	private Hashtable<String, Integer> mKeyStats;
+com.amazon.device.kmlsynclib.metric.report.KeyMetricReport	field	private Hashtable<String, Integer> mMetaStats;
+com.amazon.device.kmlsynclib.metric.report.KeyMetricReport	field	private boolean mValid;
+com.amazon.device.kmlsynclib.metric.report.KeyMetricReport	field	private static final String AGGREGATE_BLE_PRESSES;
+com.amazon.device.kmlsynclib.metric.report.KeyMetricReport	field	private static final String AGGREGATE_IR_PRESSES;
+com.amazon.device.kmlsynclib.metric.report.KeyMetricReport	field	private static final String KEY_METRIC_OPERATION;
+com.amazon.device.kmlsynclib.metric.report.KeyMetricReport	field	private static final String TAG;
+com.amazon.device.kmlsynclib.metric.report.KeyMetricReport	field	private static final int KEY_METRCS_KEY_ENTRY_SIZE;
+com.amazon.device.kmlsynclib.metric.report.KeyMetricReport	field	private static final int KEY_METRCS_REPORT_SIZE_MIN;
+com.amazon.device.kmlsynclib.metric.report.KeyMetricReport	method	private boolean populateSelf(ByteArrayInputStream byteArrayInputStream)
+com.amazon.device.kmlsynclib.metric.report.KeyMetricReport	method	private void populateKeyEntries(ByteArrayInputStream byteArrayInputStream) throws IOException
+com.amazon.device.kmlsynclib.metric.report.KeyMetricReport	method	private void populateMetaTable(ByteArrayInputStream byteArrayInputStream) throws IOException
+com.amazon.device.kmlsynclib.metric.report.KeyMetricReport	method	public KeyMetricReport(HashMap<String, Integer> map, byte[] bArr)
+com.amazon.device.kmlsynclib.metric.report.KeyMetricReport	method	public String toString()
+com.amazon.device.kmlsynclib.metric.report.KeyMetricReport	method	public boolean isValid()
+com.amazon.device.kmlsynclib.metric.report.KeyMetricReport	method	public boolean upload(MetricProxy metricProxy)
+com.amazon.device.kmlsynclib.metric.report.OtaMetricReport	method	public String toString()
+com.amazon.device.kmlsynclib.metric.report.OtaMetricReport	method	public boolean isValid()
+com.amazon.device.kmlsynclib.metric.report.OtaMetricReport	method	public boolean upload(MetricProxy metricProxy)
+com.amazon.device.kmlsynclib.metric.sync.KeyMetricSyncTask	field	private final Context mContext;
+com.amazon.device.kmlsynclib.metric.sync.KeyMetricSyncTask	field	private final HashMap<String, Integer> scanIdMap;
+com.amazon.device.kmlsynclib.metric.sync.KeyMetricSyncTask	field	private final String mAddress;
+com.amazon.device.kmlsynclib.metric.sync.KeyMetricSyncTask	field	private final String mReportTask;
+com.amazon.device.kmlsynclib.metric.sync.KeyMetricSyncTask	field	private static final String TAG;
+com.amazon.device.kmlsynclib.metric.sync.KeyMetricSyncTask	field	public static final String TASK_KEY_METRICS;
+com.amazon.device.kmlsynclib.metric.sync.KeyMetricSyncTask	field	public static final String TASK_LINK_METRICS;
+com.amazon.device.kmlsynclib.metric.sync.KeyMetricSyncTask	field	public static final String TASK_OTA_METRICS;
+com.amazon.device.kmlsynclib.metric.sync.KeyMetricSyncTask	method	private Reportable fetchKeyMetricTask(SynchronousBleController synchronousBleController) throws RemoteException
+com.amazon.device.kmlsynclib.metric.sync.KeyMetricSyncTask	method	public KeyMetricSyncTask(Context context, String str, String str2, HashMap<String, Integer> map)
+com.amazon.device.kmlsynclib.metric.sync.KeyMetricSyncTask	method	public Reportable call()
+com.amazon.device.kmlsynclib.utils.ByteTool	method	public static String toHexString(byte[] bArr, int i)
+com.amazon.device.kmlsynclib.utils.ByteTool	method	public static byte[] concatBytes(byte[]... bArr)
+com.amazon.device.kmlsynclib.utils.ByteTool	method	public static byte[] i16Tob(int i)
+com.amazon.device.kmlsynclib.utils.ByteTool	method	public static byte[] i32Tob(int i)
+com.amazon.device.kmlsynclib.utils.ByteTool	method	public static byte[] i8Tob(int i)
+com.amazon.device.kmlsynclib.utils.ByteTool	method	public static short bToi16(byte[] bArr)
+com.amazon.device.kmlsynclib.utils.KeyId	field	private static final String TAG;
+com.amazon.device.kmlsynclib.utils.KeyId	method	public static String idToName(HashMap<String, Integer> map, byte b)
+com.amazon.device.kmlsynclib.utils.KeyId	method	public static byte nameToId(HashMap<String, Integer> map, String str)
+com.amazon.device.kmlsynclib.utils.MetricProxy	field	private final BluetoothDevice mDevice;
+com.amazon.device.kmlsynclib.utils.MetricProxy	field	private final Context mContext;
+com.amazon.device.kmlsynclib.utils.MetricProxy	field	private final WirelessMetrics mWirelessMetrics;
+com.amazon.device.kmlsynclib.utils.MetricProxy	field	private static final String TAG;
+com.amazon.device.kmlsynclib.utils.MetricProxy	method	public MetricProxy(Context context, BluetoothDevice bluetoothDevice, WirelessMetrics wirelessMetrics)
+com.amazon.device.kmlsynclib.utils.MetricProxy	method	public void recordButtonPress(String str, String str2, int i)
+com.amazon.server.wirelessmetrics.IWirelessMetricsService$Default	method	public IBinder asBinder()
+com.amazon.server.wirelessmetrics.IWirelessMetricsService$Default	method	public void recordEvent(Intent intent) throws RemoteException
+com.amazon.server.wirelessmetrics.IWirelessMetricsService$Stub	field	private static final String DESCRIPTOR;
+com.amazon.server.wirelessmetrics.IWirelessMetricsService$Stub	field	static final int TRANSACTION_recordEvent;
+com.amazon.server.wirelessmetrics.IWirelessMetricsService$Stub	method	public IBinder asBinder()
+com.amazon.server.wirelessmetrics.IWirelessMetricsService$Stub	method	public Stub()
+com.amazon.server.wirelessmetrics.IWirelessMetricsService$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.server.wirelessmetrics.IWirelessMetricsService$Stub	method	public static IWirelessMetricsService asInterface(IBinder iBinder)
+com.amazon.server.wirelessmetrics.IWirelessMetricsService$Stub	method	public static IWirelessMetricsService getDefaultImpl()
+com.amazon.server.wirelessmetrics.IWirelessMetricsService$Stub	method	public static boolean setDefaultImpl(IWirelessMetricsService iWirelessMetricsService)
+com.amazon.server.wirelessmetrics.IWirelessMetricsService$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.server.wirelessmetrics.IWirelessMetricsService$Stub$Proxy	field	public static IWirelessMetricsService sDefaultImpl;
+com.amazon.server.wirelessmetrics.IWirelessMetricsService$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.server.wirelessmetrics.IWirelessMetricsService$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.server.wirelessmetrics.IWirelessMetricsService$Stub$Proxy	method	public void recordEvent(Intent intent) throws RemoteException
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private Double mKdmSum;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private KdmEvent mKdmMetricEvent;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private MetricEvent mMinervaMetricEvent;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private String mKdmAnnotation1;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private String mKdmAnnotation2;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private String mKdmAnnotation;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private String mKdmKey;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private String mKdmMetadata1;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private String mKdmMetadata2;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private String mKdmMetadata3;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private String mKdmMetadata4;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private String mKdmMetadata5;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private String mKdmMetadata;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private String mKdmOperation;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private String mKdmUnit;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static AmazonMinervaLoggerClient mMinervaClient;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static final Object lock;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static final String ANNOTATION1;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static final String ANNOTATION2;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static final String ANNOTATION;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static final String ANNOTATION_KDM_METRIC_SCHEMA_ID;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static final String DEV_KEYS;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static final String KDM_DEFAULT_VALUE;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static final String KDM_METRIC_SCHEMA_ID;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static final String KDM_PROGRAM;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static final String KDM_TYPE_COUNT;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static final String KEY;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static final String METADATA1;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static final String METADATA2;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static final String METADATA3;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static final String METADATA4;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static final String METADATA5;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static final String METADATA;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static final String METRIC_GROUP_ID;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static final String MINERVA_DEFAULT_VALUE;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static final String MINERVA_METRIC_SCHEMA_ID;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static final String OPERATION;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static final String SUM;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static final String TAG;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static final String TEST_KEYS;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static final boolean WIFI_ENABLE_MINERVA;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static final boolean WIFI_ENABLE_MINERVA_VITALS_API;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static final boolean mIsTestUtilityAllowed;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static final double KDM_DEFAULT_SUM;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static final int MINERVA_METRIC_INVALID;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	field	private static final int SAMPLING_RATE_100;
+com.amazon.wirelessmetrics.AmazonWifiMetrics	method	private static boolean initMinervaClient()
+com.amazon.wirelessmetrics.AmazonWifiMetrics	method	private void recordKdmMetric()
+com.amazon.wirelessmetrics.AmazonWifiMetrics	method	private void recordKdmMinervaMetric()
+com.amazon.wirelessmetrics.AmazonWifiMetrics	method	private void setKdmAnnotations()
+com.amazon.wirelessmetrics.AmazonWifiMetrics	method	private void setKdmDimensions()
+com.amazon.wirelessmetrics.AmazonWifiMetrics	method	public AmazonWifiMetrics addAnnotation(String str)
+com.amazon.wirelessmetrics.AmazonWifiMetrics	method	public AmazonWifiMetrics addAnnotation1(String str)
+com.amazon.wirelessmetrics.AmazonWifiMetrics	method	public AmazonWifiMetrics addAnnotation2(String str)
+com.amazon.wirelessmetrics.AmazonWifiMetrics	method	public AmazonWifiMetrics addKey(String str)
+com.amazon.wirelessmetrics.AmazonWifiMetrics	method	public AmazonWifiMetrics addMetadata(String str)
+com.amazon.wirelessmetrics.AmazonWifiMetrics	method	public AmazonWifiMetrics addMetadata1(String str)
+com.amazon.wirelessmetrics.AmazonWifiMetrics	method	public AmazonWifiMetrics addMetadata2(String str)
+com.amazon.wirelessmetrics.AmazonWifiMetrics	method	public AmazonWifiMetrics addMetadata3(String str)
+com.amazon.wirelessmetrics.AmazonWifiMetrics	method	public AmazonWifiMetrics addMetadata4(String str)
+com.amazon.wirelessmetrics.AmazonWifiMetrics	method	public AmazonWifiMetrics addMetadata5(String str)
+com.amazon.wirelessmetrics.AmazonWifiMetrics	method	public AmazonWifiMetrics addOperation(String str)
+com.amazon.wirelessmetrics.AmazonWifiMetrics	method	public AmazonWifiMetrics addSum(Double d, String str)
+com.amazon.wirelessmetrics.AmazonWifiMetrics	method	public AmazonWifiMetrics()
+com.amazon.wirelessmetrics.AmazonWifiMetrics	method	public static void stopMinervaClient()
+com.amazon.wirelessmetrics.AmazonWifiMetrics	method	public void recordMetric()
+com.amazon.wirelessmetrics.WirelessMetrics	field	private Context mContext;
+com.amazon.wirelessmetrics.WirelessMetrics	field	private String mProgram;
+com.amazon.wirelessmetrics.WirelessMetrics	field	private static final String TAG;
+com.amazon.wirelessmetrics.WirelessMetrics	field	private static final boolean LOG_DEBUG;
+com.amazon.wirelessmetrics.WirelessMetrics	field	private static final boolean LOG_INFO;
+com.amazon.wirelessmetrics.WirelessMetrics	field	private static final boolean LOG_SHOW_VLOG;
+com.amazon.wirelessmetrics.WirelessMetrics	method	public Context getContext()
+com.amazon.wirelessmetrics.WirelessMetrics	method	public String getProgram()
+com.amazon.wirelessmetrics.WirelessMetrics	method	public WirelessMetrics(Context context)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public WirelessMetrics(Context context, String str)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public WirelessMetricsTimer a2dpSnkConnectedTime(final BluetoothDevice bluetoothDevice)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public WirelessMetricsTimer a2dpSnkPlayingTime(final BluetoothDevice bluetoothDevice)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public WirelessMetricsTimer a2dpSrcConnectedTime(final BluetoothDevice bluetoothDevice)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public WirelessMetricsTimer a2dpSrcPlayingTime(final BluetoothDevice bluetoothDevice)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public WirelessMetricsTimer auracastTimer()
+com.amazon.wirelessmetrics.WirelessMetrics	method	public WirelessMetricsTimer bleUpdateTillConnectTimer(final BluetoothDevice bluetoothDevice)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public WirelessMetricsTimer bleVoiceSearchTimer(final BluetoothDevice bluetoothDevice)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public WirelessMetricsTimer connectTime(final BluetoothDevice bluetoothDevice, final String str)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public WirelessMetricsTimer deviceConnectedTime(final BluetoothDevice bluetoothDevice, final String str, final int i)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public WirelessMetricsTimer discoveryTimer()
+com.amazon.wirelessmetrics.WirelessMetrics	method	public WirelessMetricsTimer pairTimer(final BluetoothDevice bluetoothDevice)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public WirelessMetricsTimer pbappceContactsDownloadTime(final BluetoothDevice bluetoothDevice)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void auracastAssistantEvent(BluetoothDevice bluetoothDevice, String str, int i)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void auracastEvent(String str, int i, boolean z, int i2, int i3)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void bleButtonPress(BluetoothDevice bluetoothDevice, String str, int i)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void bleDisconnectCause(BluetoothDevice bluetoothDevice, String str)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void bleInstantBlastContext(BluetoothDevice bluetoothDevice, String str)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void bleVoiceSearchCount(BluetoothDevice bluetoothDevice, int i)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void bleVoiceSearchIdleCount(BluetoothDevice bluetoothDevice, int i)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void btDfuCount(BluetoothDevice bluetoothDevice)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void btDiscWifiActive(BluetoothDevice bluetoothDevice, int i, int i2)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void btEnabled()
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void callAccepted(BluetoothDevice bluetoothDevice, String str)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void callTerminated(BluetoothDevice bluetoothDevice, String str)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void connectAttempt(BluetoothDevice bluetoothDevice, String str)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void connectFailure(BluetoothDevice bluetoothDevice, String str, long j)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void connectRemote24Hr(BluetoothDevice bluetoothDevice, int i, int i2)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void connectSuccess(BluetoothDevice bluetoothDevice, String str, int i)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void connectTopology(String str, boolean z, int i, List<String> list)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void deviceConnected(BluetoothDevice bluetoothDevice, int i)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void disconnect(BluetoothDevice bluetoothDevice, String str)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void hciErrorCode(BluetoothDevice bluetoothDevice, int i, int i2, int i3)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void heartbeat()
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void mapmceConnectAttempt(BluetoothDevice bluetoothDevice)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void mapmceConnectFailure(BluetoothDevice bluetoothDevice, int i)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void mapmceConnectSuccess(BluetoothDevice bluetoothDevice)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void mapmceDisconnectionRate(BluetoothDevice bluetoothDevice, int i)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void mapmceSendMessageStatus(BluetoothDevice bluetoothDevice, boolean z, int i)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void numberPaired(int i)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void numberPairedLE(int i)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void pairAttempt(BluetoothDevice bluetoothDevice, int i)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void pairFailure(BluetoothDevice bluetoothDevice, String str, int i)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void pairFailure(BluetoothDevice bluetoothDevice, int i, int i2)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void pairSuccess(BluetoothDevice bluetoothDevice, int i, boolean z)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void pairSuccessByType(BluetoothDevice bluetoothDevice, String str, String str2)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void pairedCodCount(int i, int i2)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void pairedList(List<String> list)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void partnerButtonPressed(BluetoothDevice bluetoothDevice, String str, int i)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void pbappceConnectAttempt(BluetoothDevice bluetoothDevice)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void pbappceConnectFailure(BluetoothDevice bluetoothDevice, int i)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void pbappceConnectSuccess(BluetoothDevice bluetoothDevice)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void pbappceDisconnectionRate(BluetoothDevice bluetoothDevice, int i)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void pbappceDownloadContactStatus(BluetoothDevice bluetoothDevice, boolean z, int i)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void profilePerUser(String str)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void profileUsed(BluetoothDevice bluetoothDevice, String str)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void remoteAverageRSSI(BluetoothDevice bluetoothDevice, int i)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void remoteBattery(BluetoothDevice bluetoothDevice, int i)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void remoteConnTimeScreenOn(long j, BluetoothDevice bluetoothDevice)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void remoteConnectCount(int i)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void remoteConnectCountOOBE(int i)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void remoteDPADCount(BluetoothDevice bluetoothDevice, int i)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void remoteDiscScreenOn(Map<BluetoothDevice, List<Integer>> map, int i)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void remoteDisconnectCount(BluetoothDevice bluetoothDevice, int i, int i2)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void remoteFWCrashCount(BluetoothDevice bluetoothDevice, int i)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void remoteFWVersion(BluetoothDevice bluetoothDevice, String str)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void remoteModel(BluetoothDevice bluetoothDevice, int i, int i2)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void remoteSTRWakeupFailCount(BluetoothDevice bluetoothDevice, int i)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void remoteSoftRebootCount(BluetoothDevice bluetoothDevice, int i)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void rssiAtConnect(BluetoothDevice bluetoothDevice, int i)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void scoConnectAttempt(BluetoothDevice bluetoothDevice)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void scoConnectFailure(BluetoothDevice bluetoothDevice)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void scoConnectSuccess(BluetoothDevice bluetoothDevice)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void unpairAttempt(BluetoothDevice bluetoothDevice)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void unpairFailure(BluetoothDevice bluetoothDevice)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void unpairSuccess(BluetoothDevice bluetoothDevice)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void usedProfileList(List<String> list)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void voiceSearchFailure(BluetoothDevice bluetoothDevice, int i)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void wifiA2dpSnk(BluetoothDevice bluetoothDevice, int i, int i2, int i3)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void wifiA2dpSnkZbJoinSuccess(BluetoothDevice bluetoothDevice, int i, int i2)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void wifiA2dpSrc(BluetoothDevice bluetoothDevice, int i, int i2, int i3)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void wifiA2dpSrcZbJoinSuccess(BluetoothDevice bluetoothDevice, int i, int i2)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void wifiDiscA2dpSnk(BluetoothDevice bluetoothDevice, String str, int i, int i2)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void wifiDiscA2dpSrc(BluetoothDevice bluetoothDevice, String str, int i, int i2)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void wifiDiscRmtActive(BluetoothDevice bluetoothDevice, String str, int i)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void wifiDiscVoiceActive(String str, int i, int i2)
+com.amazon.wirelessmetrics.WirelessMetrics	method	public void wifiZigbeeSession(BluetoothDevice bluetoothDevice, int i, boolean z, boolean z2)
+com.amazon.wirelessmetrics.WirelessMetrics	method	static void dLog(String str)
+com.amazon.wirelessmetrics.WirelessMetrics	method	static void eLog(String str)
+com.amazon.wirelessmetrics.WirelessMetrics	method	static void iLog(String str)
+com.amazon.wirelessmetrics.WirelessMetrics	method	static void vLog(String str)
+com.amazon.wirelessmetrics.WirelessMetrics$MiracastCoexMetricLogger	method	public MiracastCoexMetricLogger()
+com.amazon.wirelessmetrics.WirelessMetrics$MiracastCoexMetricLogger	method	public abstract long getBtProfileStartTime();
+com.amazon.wirelessmetrics.WirelessMetrics$MiracastCoexMetricLogger	method	public abstract void appendMetricDimensions(Object obj, boolean z);
+com.amazon.wirelessmetrics.WirelessMetrics$MiracastCoexMetricLogger	method	public void addDimension(Object obj, String str, String str2)
+com.amazon.wirelessmetrics.WirelessMetrics$MiracastCoexMetricLogger	method	public void logMiracastCoexDurationMetric(long j, long j2)
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BLUETOOTH_PROGRAM;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_A2DPSNK_CONNECT_TIME;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_A2DPSNK_PLAY_TIME;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_A2DPSRC_CONNECT_TIME;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_A2DPSRC_PLAY_TIME;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_AURACAST_ACTIVE_TIME;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_AURACAST_ASSISTANT_EVENT;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_AURACAST_EVENT;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_BLE_DISCONNECT_REASON;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_BLE_INSTANT_BLAST_CONTEXT;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_BLE_UPDATE_TO_CONNECT_TIME;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_BLE_VOICESEARCH_IDLE;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_BLE_VOICESEARCH_TIME;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_BLE_VOICE_SEARCH;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_BUTTON_PRESS;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_CODCOUNT;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_CONNECT_ATTEMPT;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_CONNECT_FAILURE;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_CONNECT_REMOTE_24HR;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_CONNECT_REMOTE_COUNT;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_CONNECT_REMOTE_COUNT_OOBE;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_CONNECT_RSSI;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_CONNECT_SUCCESS;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_CONNECT_TIME;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_CONNECT_TOPOLOGY;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_DEVICE_CONNECTED;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_DEVICE_CONNECTED_TIME;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_DFU_COUNT;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_DISCONNECT;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_DISCONNECT_AZREMOTE;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_DISCOVERY_TIME;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_ENABLED;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_HCI_ERROR_CODE;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_HEARTBEAT;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_HFP_CALL_ACCEPTED;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_HFP_CALL_TERMINATED;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_HFP_SCO_CONNECT_ATTEMPT;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_HFP_SCO_CONNECT_FAILURE;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_HFP_SCO_CONNECT_SUCCESS;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_MAP_MCE_CONNECT_ATTEMPT;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_MAP_MCE_CONNECT_FAILURE;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_MAP_MCE_CONNECT_SUCCESS;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_MAP_MCE_DISCONNECT_RATE;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_MAP_MCE_SEND_MESSAGE_STATUS;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_NUMBER_PAIRED;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_PAIREDLIST;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_PAIRED_LE;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_PAIR_ATTEMPT;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_PAIR_FAILURE;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_PAIR_SUCCESS;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_PAIR_SUCCESS_BY_TYPE;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_PAIR_TIME;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_PARTNER_BUTTON;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_PBAP_PCE_CONNECT_ATTEMPT;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_PBAP_PCE_CONNECT_FAILURE;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_PBAP_PCE_CONNECT_SUCCESS;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_PBAP_PCE_CONTACT_DOWNLOAD_STATUS;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_PBAP_PCE_CONTACT_DOWNLOAD_TIME;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_PBAP_PCE_DISCONNECT_RATE;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_PROFILE;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_PROFILE_USED;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_REMOTE_AVERAGE_RSSI;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_REMOTE_BATTERY_LIFE;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_REMOTE_DPAD_COUNT;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_REMOTE_FW_CRASH_COUNT;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_REMOTE_FW_VERSION;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_REMOTE_MODEL;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_REMOTE_SOFT_REBOOT_COUNT;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_REMOTE_STR_WAKE_FAIL;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_UNPAIR_ATTEMPT;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_UNPAIR_FAILURE;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_UNPAIR_SUCCESS;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_USED_PROFILE_LIST;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_VOICE_SEARCH_FAILURE;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String BT_WIFI_ZIGBEE;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String CATEGORY_AMAZON_BLE_KEYBOARD;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String CATEGORY_AMAZON_BLE_REMOTE;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String CATEGORY_AMAZON_BT_REMOTE;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String COEX_BT_DISC_WIFI_ACTIVE;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String COEX_PROGRAM;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String COEX_RMT_CONNECT_TIME_SCREEN_ON;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String COEX_RMT_DISC_SCREEN_ON;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String COEX_WIFI_A2DPSNK_ACTIVE;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String COEX_WIFI_A2DPSNK_ZB_JOIN_SUCCESS;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String COEX_WIFI_A2DPSRC_ACTIVE;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String COEX_WIFI_A2DPSRC_ZB_JOIN_SUCCESS;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String COEX_WIFI_DISC_A2DPSNK_ACTIVE;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String COEX_WIFI_DISC_A2DPSRC_ACTIVE;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String COEX_WIFI_DISC_RMT_ACTIVE;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String COEX_WIFI_DISC_VOICE_ACTIVE;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_A2DPSNK_CONNECT_TIME_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_A2DPSNK_PLAY_TIME_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_A2DPSRC_CONNECT_TIME_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_A2DPSRC_PLAY_TIME_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_AURACAST_ACTIVE_TIME_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_AURACAST_ASSISTANT_EVENT_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_AURACAST_EVENT_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_BUTTON_PRESS_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_CODCOUT_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_CONNECT_RSSI_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_CONNECT_TOPOLOGY_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_DEVICE_CONNECTED_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_DEVICE_CONNECTED_TIME_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_DFU_COUNT_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_ENABLED_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_HFP_CALL_ACCEPTED_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_HFP_CALL_TERMINATED_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_HFP_SCO_CONNECT_ATTEMPT_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_HFP_SCO_CONNECT_FAILURE_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_HFP_SCO_CONNECT_SUCCESS_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_MAP_MCE_CONNECT_ATTEMPT_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_MAP_MCE_CONNECT_FAILURE_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_MAP_MCE_CONNECT_SUCCESS_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_MAP_MCE_DISCONNECT_RATE_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_MAP_MCE_SEND_MESSAGE_STATUS_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_NUMBER_PAIRED_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_PAIREDLIST_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_PAIRED_LE_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_PBAP_PCE_CONNECT_ATTEMPT_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_PBAP_PCE_CONNECT_FAILURE_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_PBAP_PCE_CONNECT_SUCCESS_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_PBAP_PCE_CONTACT_DOWNLOAD_STATUS_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_PBAP_PCE_CONTACT_DOWNLOAD_TIME_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_PBAP_PCE_DISCONNECT_RATE_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_PROFILE_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_UNPAIR_ATTEMPT_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_UNPAIR_FAILURE_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_UNPAIR_SUCCESS_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_BT_USED_PROFILE_LIST_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_COEX_BT_DISC_WIFI_ACTIVE_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_COEX_RMT_CONNECT_TIME_SCREEN_ON_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_COEX_RMT_CONN_SCREEN_ON_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_COEX_RMT_DISC_SCREEN_ON_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_COEX_WIFI_A2DPSNK_ACTIVE_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_COEX_WIFI_A2DPSNK_ZB_JOIN_SUCCESS_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_COEX_WIFI_A2DPSRC_ACTIVE_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_COEX_WIFI_A2DPSRC_ZB_JOIN_SUCCESS_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_COEX_WIFI_DISC_A2DPSNK_ACTIVE_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_COEX_WIFI_DISC_A2DPSRC_ACTIVE_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_COEX_WIFI_DISC_RMT_ACTIVE_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_COEX_WIFI_DISC_VOICE_ACTIVE_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_CONNECT_ATTEMPT_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_CONNECT_FAILURE_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_CONNECT_SUCCESS_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_CONNECT_TIME_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_DISCONNECT_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_DISCOVERY_TIME_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_HCI_ERROR_CODE_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_HEARTBEAT_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_PAIR_ATTEMPT_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_PAIR_FAILURE_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_PAIR_SUCCESS_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_PAIR_TIME_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String KDM_PROFILE_USED_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String MINERVA_BT_BASE_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String MINERVA_BT_CONN_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String MINERVA_BT_GROUP_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String MINERVA_BT_PAIR_SCHEMA_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String MINERVA_BT_REGION;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final String MINERVA_COEX_GROUP_ID;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final int SKIP_DEVICE_CLASS_BIT;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final int SKIP_DEVICE_ID_BIT;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final int SKIP_DEVICE_NAME_BIT;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final int VID_AMAZON;
+com.amazon.wirelessmetrics.WirelessMetricsConstants	field	public static final int VID_BLE_AMAZON;
+com.amazon.wirelessmetrics.WirelessMetricsEvent	field	private KdmEvent mEvent;
+com.amazon.wirelessmetrics.WirelessMetricsEvent	field	private MetricEvent minervaEvent;
+com.amazon.wirelessmetrics.WirelessMetricsEvent	method	public WirelessMetricsEvent setAnnotation(String str, String str2)
+com.amazon.wirelessmetrics.WirelessMetricsEvent	method	public WirelessMetricsEvent setDeviceMetadata(BluetoothDevice bluetoothDevice)
+com.amazon.wirelessmetrics.WirelessMetricsEvent	method	public WirelessMetricsEvent setDeviceMetadata(BluetoothDevice bluetoothDevice, int i)
+com.amazon.wirelessmetrics.WirelessMetricsEvent	method	public WirelessMetricsEvent setDimension(String str, String str2)
+com.amazon.wirelessmetrics.WirelessMetricsEvent	method	public WirelessMetricsEvent setDimension(String str, boolean z)
+com.amazon.wirelessmetrics.WirelessMetricsEvent	method	public WirelessMetricsEvent setDimension(String str, double d)
+com.amazon.wirelessmetrics.WirelessMetricsEvent	method	public WirelessMetricsEvent setDimension(String str, long j)
+com.amazon.wirelessmetrics.WirelessMetricsEvent	method	public WirelessMetricsEvent(String str, String str2, double d, String str3)
+com.amazon.wirelessmetrics.WirelessMetricsEvent	method	public void record()
+com.amazon.wirelessmetrics.WirelessMetricsTimer	field	private long mDuration;
+com.amazon.wirelessmetrics.WirelessMetricsTimer	field	private long mStartTime;
+com.amazon.wirelessmetrics.WirelessMetricsTimer	field	private long mStopTime;
+com.amazon.wirelessmetrics.WirelessMetricsTimer	method	public long getCurrentTime()
+com.amazon.wirelessmetrics.WirelessMetricsTimer	method	public long getDuration()
+com.amazon.wirelessmetrics.WirelessMetricsTimer	method	public void done()
+com.amazon.wirelessmetrics.WirelessMetricsTimer	method	public void resumeTimer()
+com.amazon.wirelessmetrics.WirelessMetricsTimer	method	public void stopTimer()
+com.amazon.wirelessmetrics.WirelessMetricsUtils	field	private static final String TAG;
+com.amazon.wirelessmetrics.WirelessMetricsUtils	method	public static String getDeviceCategory(BluetoothDevice bluetoothDevice)
+com.amazon.wirelessmetrics.WirelessMetricsUtils	method	public static String getDeviceCodeName(BluetoothDevice bluetoothDevice)
+com.amazon.wirelessmetrics.WirelessMetricsUtils	method	public static String getDevicePidVid(BluetoothDevice bluetoothDevice)
+com.amazon.wirelessmetrics.WirelessMetricsUtils	method	public static String getHciErrorFromCode(int i)
+com.amazon.wirelessmetrics.WirelessMetricsUtils	method	public static String getString(Context context, String str)
+com.amazon.wirelessmetrics.WirelessMetricsUtils	method	public static String getWifiBand(int i)
+com.amazon.wirelessmetrics.WirelessMetricsUtils	method	public static boolean getBoolean(Context context, String str)
+com.amazon.wirelessmetrics.WirelessMetricsUtils	method	public static boolean isAmazonRemoteControl(BluetoothDevice bluetoothDevice)
+com.amazon.wirelessmetrics.WirelessMetricsUtils	method	public static int getInteger(Context context, String str)
+com.amazon.wirelessmetrics.WirelessMetricsUtils	method	public static void clearAllKeys(Context context)
+com.amazon.wirelessmetrics.WirelessMetricsUtils	method	public static void deleteKey(Context context, String str)
+com.amazon.wirelessmetrics.WirelessMetricsUtils	method	public static void increment(Context context, String str, int i)
+com.amazon.wirelessmetrics.WirelessMetricsUtils	method	public static void saveBoolean(Context context, String str, boolean z)
+com.amazon.wirelessmetrics.WirelessMetricsUtils	method	public static void saveInt(Context context, String str, int i)
+com.amazon.wirelessmetrics.WirelessMetricsUtils	method	public static void saveString(Context context, String str, String str2)

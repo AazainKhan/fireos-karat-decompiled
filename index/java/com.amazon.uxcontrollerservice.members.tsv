@@ -1,0 +1,136 @@
+class	kind	declaration
+com.amazon.connectivitymanager.ConnectivityManager	field	private static final boolean DEBUG;
+com.amazon.connectivitymanager.ConnectivityManager	field	public static final Pattern MAC_ADDRESS_PATTERN;
+com.amazon.connectivitymanager.ConnectivityManager	method	public static String maskMACAddress(String str)
+com.amazon.connectivitymanager.ConnectivityManager	method	public static String replaceMACAddress(String str)
+com.amazon.connectivitymanager.ConnectivityManager	method	public static boolean matchCategory(int[] iArr, List<Integer> list)
+com.amazon.connectivitymanager.RemoteDevice	field	private String mAddress;
+com.amazon.connectivitymanager.RemoteDevice	field	private String[] mPeerDevicesAddress;
+com.amazon.connectivitymanager.RemoteDevice	field	private boolean mHeadphonesSupported;
+com.amazon.connectivitymanager.RemoteDevice	field	private boolean mIsSubDevice;
+com.amazon.connectivitymanager.RemoteDevice	field	private boolean mVoiceEnabled;
+com.amazon.connectivitymanager.RemoteDevice	field	private int mCsisGroupId;
+com.amazon.connectivitymanager.RemoteDevice	field	private int mGameControllerType;
+com.amazon.connectivitymanager.RemoteDevice	field	private int mInvalidBattery;
+com.amazon.connectivitymanager.RemoteDevice	field	private int mType;
+com.amazon.connectivitymanager.RemoteDevice	field	private long mGroupId;
+com.amazon.connectivitymanager.RemoteDevice	field	protected String mDSN;
+com.amazon.connectivitymanager.RemoteDevice	field	protected String mInputDescriptor;
+com.amazon.connectivitymanager.RemoteDevice	field	protected String mName;
+com.amazon.connectivitymanager.RemoteDevice	field	protected String mVersion;
+com.amazon.connectivitymanager.RemoteDevice	field	protected boolean mHeadPhoneConnected;
+com.amazon.connectivitymanager.RemoteDevice	field	protected boolean mUpdatable;
+com.amazon.connectivitymanager.RemoteDevice	field	protected int mBatteryLevel;
+com.amazon.connectivitymanager.RemoteDevice	field	protected int mConnectionState;
+com.amazon.connectivitymanager.RemoteDevice	field	protected int mPairedState;
+com.amazon.connectivitymanager.RemoteDevice	field	protected int[] mCategory;
+com.amazon.connectivitymanager.RemoteDevice	method	public RemoteDevice(Parcel parcel)
+com.amazon.connectivitymanager.RemoteDevice	method	public String toString()
+com.amazon.connectivitymanager.RemoteDevice	method	public int describeContents()
+com.amazon.connectivitymanager.RemoteDevice	method	public int getBatteryLevel()
+com.amazon.connectivitymanager.RemoteDevice	method	public int getClassifiedBatteryLevel()
+com.amazon.connectivitymanager.RemoteDevice	method	public int getInvalidBatteryLvl()
+com.amazon.connectivitymanager.RemoteDevice	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.uxcontroller.HostDeviceInfo	field	private final DeviceType mDeviceType;
+com.amazon.uxcontroller.HostDeviceInfo	field	private static final HostDeviceInfo sInstance;
+com.amazon.uxcontroller.HostDeviceInfo	method	private HostDeviceInfo()
+com.amazon.uxcontroller.HostDeviceInfo	method	public boolean isStick()
+com.amazon.uxcontroller.HostDeviceInfo	method	public boolean supportsEthernet()
+com.amazon.uxcontroller.HostDeviceInfo	method	public static HostDeviceInfo getInstance()
+com.amazon.uxcontroller.HostDeviceInfo$DeviceType	field	private static final Map<String, DeviceType> DEVICE_TYPE_MAP;
+com.amazon.uxcontroller.HostDeviceInfo$DeviceType	method	public static DeviceType getDeviceTypeForDevice(String str)
+com.amazon.uxcontrollerservice.BootReceiver	field	private static final String TAG;
+com.amazon.uxcontrollerservice.BootReceiver	method	public void onReceive(Context context, Intent intent)
+com.amazon.uxcontrollerservice.HeadphoneJackWarningDialog	field	private AlertDialog mAlertDialog;
+com.amazon.uxcontrollerservice.HeadphoneJackWarningDialog	method	public void onCancel(DialogInterface dialogInterface)
+com.amazon.uxcontrollerservice.HeadphoneJackWarningDialog	method	public void onClick(DialogInterface dialogInterface, int i)
+com.amazon.uxcontrollerservice.HeadphoneJackWarningDialog	method	public void onCreate(Bundle bundle)
+com.amazon.uxcontrollerservice.HeadphoneJackWarningDialog	method	public void onShow(DialogInterface dialogInterface)
+com.amazon.uxcontrollerservice.HeadsetWarningDialog	field	private AlertDialog mAlertDialog;
+com.amazon.uxcontrollerservice.HeadsetWarningDialog	method	private boolean supportsEthernet()
+com.amazon.uxcontrollerservice.HeadsetWarningDialog	method	public void onCancel(DialogInterface dialogInterface)
+com.amazon.uxcontrollerservice.HeadsetWarningDialog	method	public void onClick(DialogInterface dialogInterface, int i)
+com.amazon.uxcontrollerservice.HeadsetWarningDialog	method	public void onCreate(Bundle bundle)
+com.amazon.uxcontrollerservice.HeadsetWarningDialog	method	public void onShow(DialogInterface dialogInterface)
+com.amazon.uxcontrollerservice.Manifest$permission	field	public static final String UX_CONTROLLER;
+com.amazon.uxcontrollerservice.R$string	field	public static final int app_name;
+com.amazon.uxcontrollerservice.R$string	field	public static final int button_do_not_show;
+com.amazon.uxcontrollerservice.R$string	field	public static final int device_connected;
+com.amazon.uxcontrollerservice.R$string	field	public static final int device_connected_title;
+com.amazon.uxcontrollerservice.R$string	field	public static final int device_connection_failed;
+com.amazon.uxcontrollerservice.R$string	field	public static final int device_connection_failed_title;
+com.amazon.uxcontrollerservice.R$string	field	public static final int device_disconnected;
+com.amazon.uxcontrollerservice.R$string	field	public static final int device_disconnected_title;
+com.amazon.uxcontrollerservice.R$string	field	public static final int headset_connected;
+com.amazon.uxcontrollerservice.R$string	field	public static final int headset_connected_title;
+com.amazon.uxcontrollerservice.R$string	field	public static final int headset_disconnected;
+com.amazon.uxcontrollerservice.R$string	field	public static final int headset_disconnected_title;
+com.amazon.uxcontrollerservice.R$string	field	public static final int host_name_fire_tv;
+com.amazon.uxcontrollerservice.R$string	field	public static final int host_name_fire_tv_stick;
+com.amazon.uxcontrollerservice.R$string	field	public static final int low_battery_level_toast_subtext;
+com.amazon.uxcontrollerservice.R$string	field	public static final int low_battery_level_toast_title;
+com.amazon.uxcontrollerservice.R$string	field	public static final int new_remote_failure_message;
+com.amazon.uxcontrollerservice.R$string	field	public static final int new_remote_failure_title;
+com.amazon.uxcontrollerservice.R$string	field	public static final int new_remote_found_message;
+com.amazon.uxcontrollerservice.R$string	field	public static final int new_remote_found_title;
+com.amazon.uxcontrollerservice.R$string	field	public static final int new_remote_message;
+com.amazon.uxcontrollerservice.R$string	field	public static final int new_remote_title;
+com.amazon.uxcontrollerservice.R$string	field	public static final int remote_hurley;
+com.amazon.uxcontrollerservice.R$string	field	public static final int remote_thunder;
+com.amazon.uxcontrollerservice.R$string	field	public static final int wifi_headphone_warning_label;
+com.amazon.uxcontrollerservice.R$string	field	public static final int wifi_headphone_warning_message;
+com.amazon.uxcontrollerservice.R$string	field	public static final int wifi_headphones_connected_label;
+com.amazon.uxcontrollerservice.R$string	field	public static final int wifi_headphones_connected_message;
+com.amazon.uxcontrollerservice.R$string	field	public static final int wifi_headphones_disconnected_label;
+com.amazon.uxcontrollerservice.R$string	field	public static final int wifi_multiple_headphones_connected_label;
+com.amazon.uxcontrollerservice.R$string	field	public static final int wifi_multiple_headphones_connected_message;
+com.amazon.uxcontrollerservice.R$string	field	public static final int wifi_performance_warning_label;
+com.amazon.uxcontrollerservice.R$string	field	public static final int wifi_performance_warning_message;
+com.amazon.uxcontrollerservice.R$string	field	public static final int wifi_performance_warning_message_no_ethernet;
+com.amazon.uxcontrollerservice.R$style	field	public static final int AppBaseTheme;
+com.amazon.uxcontrollerservice.R$style	field	public static final int AppTheme;
+com.amazon.uxcontrollerservice.UXControllerService	field	private BaseUXController mUXController;
+com.amazon.uxcontrollerservice.UXControllerService	field	private Handler mHandler;
+com.amazon.uxcontrollerservice.UXControllerService	field	private HandlerThread mHandlerThread;
+com.amazon.uxcontrollerservice.UXControllerService	field	private List<Intent> mRequestQueue;
+com.amazon.uxcontrollerservice.UXControllerService	field	private static final String HANDLER_THREAD_NAME;
+com.amazon.uxcontrollerservice.UXControllerService	field	private static final String LED_SERVICE_PACKAGE;
+com.amazon.uxcontrollerservice.UXControllerService	field	private static final String TAG;
+com.amazon.uxcontrollerservice.UXControllerService	method	private boolean isIntentPresent(Intent intent)
+com.amazon.uxcontrollerservice.UXControllerService	method	private void checkAndRemoveIntent(Intent intent)
+com.amazon.uxcontrollerservice.UXControllerService	method	private void handleIntent(final Intent intent)
+com.amazon.uxcontrollerservice.UXControllerService	method	public IBinder onBind(Intent intent)
+com.amazon.uxcontrollerservice.UXControllerService	method	public int onStartCommand(Intent intent, int i, int i2)
+com.amazon.uxcontrollerservice.UXControllerService	method	public void handleIncomingEvent(Intent intent)
+com.amazon.uxcontrollerservice.UXControllerService	method	public void handleUXEventCompletion(Intent intent)
+com.amazon.uxcontrollerservice.UXControllerService	method	public void onCreate()
+com.amazon.uxcontrollerservice.UXControllerService	method	public void onDestroy()
+com.amazon.uxcontrollerservice.Utility	field	private static final String PREFS_NAME;
+com.amazon.uxcontrollerservice.Utility	field	private static final String PREF_SHOW_WIFI_PERF_WARNING;
+com.amazon.uxcontrollerservice.Utility	field	private static final String TAG;
+com.amazon.uxcontrollerservice.Utility	field	private static int WIFI_PERFORMANCE_WARNING_FREQUENCY_RANGE_HIGH;
+com.amazon.uxcontrollerservice.Utility	field	private static int WIFI_PERFORMANCE_WARNING_FREQUENCY_RANGE_LOW;
+com.amazon.uxcontrollerservice.Utility	method	private static final ConnectivityManager getConnectivityManager(Context context)
+com.amazon.uxcontrollerservice.Utility	method	private static final NetworkInfo getActiveNetworkInfo(Context context)
+com.amazon.uxcontrollerservice.Utility	method	private static final WifiManager getWifiManager(Context context)
+com.amazon.uxcontrollerservice.Utility	method	public static String withHostName(Context context, String str)
+com.amazon.uxcontrollerservice.Utility	method	public static void setWifiWarningDialogPref(Context context)
+com.amazon.uxcontrollerservice.Utility	method	public static void showWifiWarningDialog(Context context)
+com.amazon.uxcontrollerservice.controllers.FTVUXController	field	private Context mContext;
+com.amazon.uxcontrollerservice.controllers.FTVUXController	field	private static final String BT_CONNECT_ANIMATION;
+com.amazon.uxcontrollerservice.controllers.FTVUXController	field	private static final String BT_DISCONNECT_ANIMATION;
+com.amazon.uxcontrollerservice.controllers.FTVUXController	field	private static final String EARCON_REQUEST_ACTION;
+com.amazon.uxcontrollerservice.controllers.FTVUXController	field	private static final String EARCON_SERVICE_PERMISSION;
+com.amazon.uxcontrollerservice.controllers.FTVUXController	field	private static final String LED_SERVICE_NAME;
+com.amazon.uxcontrollerservice.controllers.FTVUXController	field	private static final String TAG;
+com.amazon.uxcontrollerservice.controllers.FTVUXController	field	private static final String UX_NOTIF_PACKAGE;
+com.amazon.uxcontrollerservice.controllers.FTVUXController	field	private static final String UX_NOTIF_SERVICE_CLASS;
+com.amazon.uxcontrollerservice.controllers.FTVUXController	method	private static IBinder getIBinderUsingReflection()
+com.amazon.uxcontrollerservice.controllers.FTVUXController	method	private static boolean checkLedControllerAvailable()
+com.amazon.uxcontrollerservice.controllers.FTVUXController	method	private void callEarconService(int i)
+com.amazon.uxcontrollerservice.controllers.FTVUXController	method	private void callLedController(int i)
+com.amazon.uxcontrollerservice.controllers.FTVUXController	method	private void callNotification(Intent intent)
+com.amazon.uxcontrollerservice.controllers.FTVUXController	method	private void handleHeadphoneNotSupported()
+com.amazon.uxcontrollerservice.controllers.FTVUXController	method	public FTVUXController(Context context)
+com.amazon.uxcontrollerservice.controllers.FTVUXController	method	public void handleEvent(Intent intent, UXControllerService.UXControllerCallback uXControllerCallback)
+com.amazon.uxcontrollerservice.controllers.UXControllerFactory	method	public static BaseUXController getController(Context context)

@@ -1,0 +1,161 @@
+# package	class	reason (R=reverse deps from manifest graph; D=disabled in DEBLOAT-LOG)
+android	KEEP	Framework
+android.amazon.perm	KEEP	Declares Amazon platform permissions used by 128 pkgs
+amazon.fireos	KEEP	fireos-res framework resources
+com.amazon.vizzini	KEEP	Alexa voice; declares perms used by 97 pkgs; Glass AlexaIcon targets it
+com.amazon.aria	KEEP	Alexa runtime; removing it broke Alexa on 2026-10-07 (CLAUDE.md); declares Alexa extension perms
+com.amazon.alexa.datastore.app	KEEP	Alexa datastore stub; R6 incl. aria
+com.amazon.alexadirectivebrokerservice	KEEP	Alexa directive broker (vizzini client)
+com.amazon.alexa.externalmediaplayer.fireos	KEEP	Alexa media control of 3P apps
+com.amazon.alexamediaplayer.runtime.ftv	KEEP	Alexa media player runtime stub
+com.amazon.csm.htmlruntime	KEEP	Alexa visual cards runtime (aria/vizzini)
+com.amazon.firetv.androidskillconnectioncapability	KEEP	Alexa-to-app skills ("Alexa, open X"); R3
+com.amazon.tv.alexaalerts	KEEP	Alexa alerts; aria depends on its perms
+com.amazon.tv.alexanotifications	KEEP	Alexa notifications
+com.amazon.aiondec	INVESTIGATE	Stub depending on vizzini+aria; purpose unknown
+com.amazon.imp	KEEP	Declares perms used by 96 pkgs (core platform plumbing)
+com.amazon.identity.auth.device.authorization	KEEP	Amazon account / MAP auth; R3 incl. vizzini, device.messaging
+com.amazon.device.messaging	KEEP	ADM messaging; R33; apps' push
+com.amazon.device.messaging.sdk.internal.library	KEEP	Required shared library (com.fireos.sdk.messaging); R8
+com.amazon.device.messaging.sdk.library	KEEP	Shared library com.fireos.sdk.adm used by 3P apps (ADM push)
+com.amazon.tcomm	KEEP	Cloud comms; R9 incl. device.messaging
+com.amazon.tcomm.client	KEEP	tcomm client (com.amazon.communication)
+com.amazon.tcomm.jackson	KEEP	Shared library com.amazon.tcomm.jackson_lib
+com.amazon.dp.logger	KEEP	Shared library for whisperplay stack; R3
+com.amazon.client.metrics.api	KEEP	Required shared library com.fireos.sdk.metrics (venezia, livetv, routing...); lint fails without it
+com.amazon.minerva.client.api	KEEP	Required shared library com.fireos.sdk.minerva (vizzini, venezia, settings...); lint fails without it
+com.amazon.venezia	KEEP	Appstore runtime: installs, IAP, licensing/DRM for Amazon-store apps; R53
+com.amazon.firebat	INVESTIGATE	Prime Video stub (Glass references it); keep if user watches Prime Video
+com.amazon.tv.support	KEEP	aiv.support: Prime Video playback/purchase support; R4
+com.amazon.tv.ottssocompanionapp	KEEP	SSO companion for streaming-app sign-in
+com.amazon.ceviche	KEEP	Device registration/config client; R29
+com.amazon.tv.settings.v2	KEEP	Fire Settings; R52; Glass opens Settings intents
+com.amazon.tv.settings.core	KEEP	Settings core (system uid)
+com.amazon.tv.quicksettings.ui	KEEP	Fire quick menu (user wants it left in place)
+com.amazon.tv.quicksettings.ui.overlay	KEEP	RRO for quick settings
+com.amazon.tv.oobe	KEEP	Setup wizard (needed after factory reset); R15
+com.amazon.tv.consents	KEEP	Privacy consents used by oobe/settings
+com.amazon.tv.legal.notices	KEEP	Legal notices; R4
+com.amazon.tv.legalresources	KEEP	Legal resources
+com.amazon.tv.ooberesource	KEEP	OOBE resources (system uid)
+com.amazon.tv.ime	KEEP	Fire keyboard; R3
+com.amazon.tv.inputpreference.service	KEEP	Input/HDMI preference; R5
+com.amazon.tv.devicecontrol	KEEP	Equipment control (CEC/IR volume); R10
+com.amazon.tv.devicecontrolsettings	KEEP	Equipment control settings
+com.amazon.tv.arc	KEEP	HDMI ARC; part of volume path
+com.mediatek.tvinput	KEEP	MtkArcInputService (ARC)
+com.amazon.tv.resolutioncycler	KEEP	Display mode recovery
+com.amazon.tv.keypolicymanager	KEEP	Key policy UI; interacts with remote-keys remap
+com.amazon.tv.intentsupport	KEEP	Unsupported-intent handler for apps
+com.amazon.tv.routing	KEEP	Deep-link routing; R9
+com.amazon.tv.notificationcenter	KEEP	Notifications
+com.amazon.tv.parentalcontrols	KEEP	Parental controls / PIN; R13
+com.amazon.ftv.profilepicker	KEEP	Profiles; R7
+com.amazon.prism.android.service	KEEP	Profile sync for profilepicker
+com.amazon.ftv.screensaver	KEEP	Screensaver path (Fire only runs Amazon screensavers)
+com.amazon.bueller.photos	INVESTIGATE	Amazon Photos stub; screensaver photo source; R1 parentalcontrols
+com.amazon.kso.blackbird	INVESTIGATE	KSO (special offers/ads) but screensaver and launcher use its perms; R4
+com.amazon.tv.ftvambient	INVESTIGATE	Ambient experience stub; screensaver alternative
+com.amazon.autopairservice	KEEP	Remote auto-pair (keepalive script depends on it)
+com.amazon.uxcontrollerservice	KEEP	Pairing UX controller; R2 incl. autopairservice
+com.amazon.uxnotification	KEEP	Pairing UX notifications; R2
+com.amazon.device.bluetoothpa	KEEP	Bluetooth pairing agent
+com.amazon.device.blepa	KEEP	BLE pairing agent (remotes)
+com.amazon.device.bluetoothkeymaplib	KEEP	Remote key maps
+com.amazon.fireinputdevices	KEEP	Input devices
+com.amazon.accessoryconfigservice	KEEP	Accessory config; R4 incl. vizzini, ime
+com.amazon.connectivitycontroller	KEEP	Wi-Fi/network UX
+com.amazon.connection_manager_neo_service	KEEP	Connection manager
+com.amazon.cpl	KEEP	Captive portal launcher
+com.amazon.connectivitydiag	KEEP	Network diagnostics (system uid)
+com.amazon.wifilocker	INVESTIGATE	Wi-Fi credential locker (cloud sync); R1 settings
+com.amazon.tv.ffsprovisioneeclient	INVESTIGATE	Frustration-free setup client; only needed at setup
+com.amazon.cast.sink	KEEP	Screen mirroring (Miracast)
+com.amazon.awvflingreceiver	KEEP	Fling/default media receiver
+com.amazon.dialservice	KEEP	DIAL (YouTube/Netflix cast from phone)
+com.amazon.whisperlink.core.android	KEEP	WhisperPlay core (DIAL/fling); has HOME category, check home resolution
+com.amazon.whisperplay.contracts	KEEP	WhisperlinkSdk shared library; R4
+com.amazon.whisperplay.service.install	KEEP	WhisperPlay install
+com.amazon.neodelegate	KEEP	Neo platform delegate (system uid, /system/priv-app)
+com.amazon.neopactservice	INVESTIGATE	Pact service; purpose unclear
+com.amazon.tv.livetv	KEEP	Live TV; R10
+com.amazon.tifobserver	KEEP	TIF observer (system uid); R2
+com.amazon.livedeviceservice	KEEP	Live device service; R3
+com.amazon.providers.tv	KEEP	TV provider extensions
+com.amazon.franktvinput	INVESTIGATE	TV input for Amazon channels
+com.amazon.tv.developer.dataservice	KEEP	Content SDK data service for 3P apps
+com.amazon.device.lowstoragemanager	KEEP	Low-storage handling
+com.amazon.storage.manager	KEEP	Storage manager
+com.amazon.kindleautomatictimezone	KEEP	Automatic time zone (system uid)
+com.amazon.platform.fdra	KEEP	FDRA (system uid); R2 incl. ivona
+com.amazon.tiramisubootsupport	KEEP	Boot support (has init service)
+com.amazon.ace.sensorsd.service	KEEP	Sensors service
+com.amazon.ftvcalibrationservice	INVESTIGATE	aht_ftv_service calibration
+com.amazon.systemnotices	KEEP	System notices
+com.amazon.webview.chromium	KEEP	WebView (apps, sign-in pages)
+com.amazon.dummy.alarmclock	KEEP	Intent sink so apps don't crash
+com.amazon.dummy.calendar	KEEP	Intent sink
+com.amazon.dummy.contacts	KEEP	Intent sink
+com.amazon.dummy.gallery	KEEP	Intent sink
+com.amazon.dummy.music	KEEP	Intent sink
+com.amazon.dummy.settings	KEEP	Intent sink
+com.amazon.dummy.soundpicker	KEEP	Intent sink
+com.amazon.android.devicemodelinfo.resources	KEEP	Resource pkg
+com.amazon.tv.sysappsinternal.resources	KEEP	Resource pkg
+com.ivona.tts.oem	KEEP	TTS (VoiceView, Alexa)
+com.ivona.orchestrator	KEEP	TTS orchestrator
+com.svox.pico	KEEP	Fallback TTS
+com.amazon.logan	INVESTIGATE	R6 incl. vizzini, quicksettings, settings; name suggests logging
+com.amazon.device.logmanager	INVESTIGATE	Log manager (system uid); R6
+com.amazon.diode	INVESTIGATE	Unknown; uses logan
+com.amazon.d3	INVESTIGATE	Unknown; uses OTA + devicecontrol perms
+com.amazon.dpcclient	INVESTIGATE	Device policy client
+com.amazon.spiderpork	INVESTIGATE	Unknown; uses logmanager
+com.amazon.dcp	INVESTIGATE	FireOsMiddlewareDebugApp; R1 device.sync
+com.amazon.device.sync	INVESTIGATE	Device sync
+com.amazon.device.sync.sdk.internal	INVESTIGATE	Device sync SDK
+com.amazon.device.details	INVESTIGATE	Device details
+com.amazon.device_remote_config_sync_service	INVESTIGATE	Remote config sync (DRCS)
+com.fireos.arcus.proxy	INVESTIGATE	Arcus remote config listener
+com.amazon.fireos.cirruscloud	INVESTIGATE	Cirrus cloud service (system uid)
+com.amazon.android.marketplace	INVESTIGATE	Marketplace receiver (system uid)
+com.amazon.application.compatibility.enforcer	INVESTIGATE	App compatibility enforcer (may block apps)
+com.amazon.application.compatibility.enforcer.sdk.library	INVESTIGATE	Its SDK library
+com.amazon.dcp.contracts.framework.library	KEEP	Shared library (DeviceClientPlatformContractsFramework)
+com.amazon.dcp.contracts.library	INVESTIGATE	DeviceSoftwareOTAContracts library; remove only with lint green
+com.amazon.alta.h2clientservice	INVESTIGATE	H2 client; R5 incl. profilepicker chain (prism)
+com.amazon.tahoe	REMOVE	Amazon Kids; decision 9; batch 6 (profilepicker and parentalcontrols stay and must pass the checklist)
+com.amazon.ftv.xpicker	INVESTIGATE	HOME category; picker for profiles/kids
+com.amazon.tv.turnstile	INVESTIGATE	R4 incl. vizzini; turnstile/onboarding
+com.amazon.tigris	INVESTIGATE	Unknown; uses launcher perms
+com.amazon.ssm	INVESTIGATE	System status monitor
+com.amazon.ssmsys	INVESTIGATE	R2 ssm, launcher
+com.amazon.aca	INVESTIGATE	R3 launcher, venezia, ambient
+com.amazon.adep	INVESTIGATE	Unknown
+com.amazon.ale	INVESTIGATE	Unknown
+com.amazon.audiohome	INVESTIGATE	Multi-room audio stub
+com.amazon.whasettings	INVESTIGATE	Whole-home audio settings
+com.amazon.avls.experience	INVESTIGATE	Audio/video latency experience
+com.amazon.avsyncslider	KEEP	AV sync slider (audio settings)
+com.amazon.ftvspatial	INVESTIGATE	Spatial audio?
+com.amazon.smarthomemapviewapp	KEEP	Smart-home dashboard; Glass Control Center opens it
+com.amazon.rtcsessioncontroller	INVESTIGATE	Video calling; R1 smarthome
+com.amazon.tv.matter	INVESTIGATE	Matter smart home
+com.amazon.tv.mattercohost	INVESTIGATE	Matter co-host (system uid)
+com.amazon.privacypassservice	INVESTIGATE	Privacy Pass tokens (may be used by streaming auth)
+com.amazon.securitysyncclient	INVESTIGATE	Security sync
+com.amazon.sharingservice.android.client.proxy	INVESTIGATE	Sharing service
+com.amazon.appaccesskeyprovider	INVESTIGATE	App access keys for settings
+com.amazon.ods.kindleconnect	INVESTIGATE	On-device support/connect
+com.amazon.tv.website_launcher	INVESTIGATE	Website launcher
+com.amazon.cloud9	REMOVE	Silk browser stub; decision 9; batch 8, only after the replacement browser resolves VIEW https
+com.amazon.hedwig	INVESTIGATE	Stub; Glass hides it
+com.amazon.bueller.music	INVESTIGATE	Amazon Music stub
+com.amazon.tv.easyupgrade	INVESTIGATE	Upgrade promo; but R4 incl. oobe, settings, parentalcontrols
+com.amazon.providers.contentsupport	KEEP	Content support provider (system uid); R2 logan, ivona
+com.amazon.whisperjoin.middleware.v2.np	INVESTIGATE	FFS provisioning/pairing stack; remote pairing fragile (P37); moved from REMOVE batch 2 by manager review 2026-10-10
+com.amazon.spotify.mediabrowserservice	INVESTIGATE	User uses Spotify; may back Alexa Spotify playback; moved from REMOVE batch 3 by manager review 2026-10-10
+com.android.protips	REMOVE	AOSP leftover (decision 6); batch 7; no reverse deps, no components TV uses
+com.android.printservice.recommendation	REMOVE	AOSP leftover (decision 6); batch 7; print-plugin recommendations, no printing on a TV stick
+com.android.bookmarkprovider	REMOVE	AOSP leftover (decision 6); batch 7; browser bookmark provider, no reverse deps
+com.android.htmlviewer	REMOVE	AOSP leftover (decision 6); batch 7; local .html viewer, no reverse deps

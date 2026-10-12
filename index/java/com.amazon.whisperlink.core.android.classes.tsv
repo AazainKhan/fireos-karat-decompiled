@@ -1,0 +1,319 @@
+kind	class	extends	implements
+class	com.amazon.dp.discovery.DeviceInfo		Comparable<DeviceInfo>
+class	com.amazon.dp.discovery.Endpoint		Comparable<Endpoint>
+class	com.amazon.dp.discovery.ExtendedInfo		Comparable<ExtendedInfo>
+class	com.amazon.dp.discovery.GetDevicesInput		Comparable<GetDevicesInput>
+class	com.amazon.dp.discovery.GetDevicesOutput		Comparable<GetDevicesOutput>
+class	com.amazon.dp.discovery.RegisterInput		Comparable<RegisterInput>
+class	com.amazon.dp.discovery.RegisterOutput		Comparable<RegisterOutput>
+class	com.amazon.dp.discovery.Service		Comparable<Service>
+class	com.amazon.dp.discovery.UpdateStatusInput		Comparable<UpdateStatusInput>
+class	com.amazon.dp.discovery.client.AndroidDiscoveryClientImpl		DiscoveryClient
+class	com.amazon.dp.discovery.client.DiscoveryClientFactory		
+class	com.amazon.dp.discovery.client.NonRetryableException	Exception	
+class	com.amazon.dp.discovery.client.RetryableException	Exception	
+class	com.amazon.dp.discovery.ir.DiscoveryEndpointResolver		
+class	com.amazon.whisperlink.core.activity.ActivityNotification		
+class	com.amazon.whisperlink.core.activity.ActivityProviderService	DefaultSystemService	ActivityProvider.Iface
+class	com.amazon.whisperlink.core.activity.ActivityRegistrarService	DefaultSystemService	NetworkStateListener,TimeChangeEventListener,ActivityRegistrar.Iface
+class	com.amazon.whisperlink.core.activity.ActivityRegistrarService$RegistrarCallbackService	DefaultCallback	RegistrarCb.Iface
+class	com.amazon.whisperlink.core.activity.ActivityRegistrarService$RenewSubscriptionResult		
+class	com.amazon.whisperlink.core.activity.ActivityRegistrarService$SubscriptionCallbackHolder		
+class	com.amazon.whisperlink.core.activity.ActivityStore	Observable	ActivityPrivacyManager
+class	com.amazon.whisperlink.core.activity.ActivityStore$ActivityHolder		
+class	com.amazon.whisperlink.core.activity.ActivityStore$SingletonHolder		
+class	com.amazon.whisperlink.core.activity.ActivitySubscriptionManager		DeviceStateListener,TimeChangeEventListener
+class	com.amazon.whisperlink.core.activity.ActivitySubscriptionManager$ActivityStoreObserver		Observer
+class	com.amazon.whisperlink.core.activity.ActivitySubscriptionManager$SubscriberHolder		
+class	com.amazon.whisperlink.core.activity.ActivitySubscriptionManager$WPENObserver		Observer
+class	com.amazon.whisperlink.core.activity.ActivityUtil		
+class	com.amazon.whisperlink.core.android.AbstractCoreInitializer	PlatformInitializerImpl	PlatformCoreInitializer<AmazonAndroidPlatform>
+class	com.amazon.whisperlink.core.android.AbstractWhisperLinkCoreService	Service	
+class	com.amazon.whisperlink.core.android.AbstractWhisperLinkCoreService$StopSelfBroadcastReceiver	BroadcastReceiver	
+class	com.amazon.whisperlink.core.android.AccountInfoProviderImpl		AccountInfoProvider
+class	com.amazon.whisperlink.core.android.AmazonAndroidCorePlatform	AmazonAndroidPlatform	AuthenticationFeatures,PersistentDiscoveryFeature
+class	com.amazon.whisperlink.core.android.AmazonDescriptionFactoryImpl		DescriptionFactory
+class	com.amazon.whisperlink.core.android.AuthDataStorageProviderImpl	SQLiteOpenHelper	AuthDataStorageProvider
+class	com.amazon.whisperlink.core.android.BuildConfig		
+class	com.amazon.whisperlink.core.android.InstallBroadcastReceiver	BroadcastReceiver	
+class	com.amazon.whisperlink.core.android.Manifest		
+class	com.amazon.whisperlink.core.android.Manifest$permission		
+class	com.amazon.whisperlink.core.android.MessengerServer		AndroidMessengerProvider
+class	com.amazon.whisperlink.core.android.MessengerServer$MessengerHandler	Handler	
+class	com.amazon.whisperlink.core.android.PlatformCoreInitializerImpl	AbstractCoreInitializer	PlatformCoreInitializer<AmazonAndroidPlatform>
+class	com.amazon.whisperlink.core.android.R		
+class	com.amazon.whisperlink.core.android.R$attr		
+class	com.amazon.whisperlink.core.android.R$drawable		
+class	com.amazon.whisperlink.core.android.R$raw		
+class	com.amazon.whisperlink.core.android.R$string		
+class	com.amazon.whisperlink.core.android.R$style		
+class	com.amazon.whisperlink.core.android.R$xml		
+class	com.amazon.whisperlink.core.android.RegistrationEventHandler	BroadcastReceiver	
+class	com.amazon.whisperlink.core.android.ServiceDescription	AbstractServiceDescription	
+class	com.amazon.whisperlink.core.android.StartupIntentReceiver	BroadcastReceiver	
+class	com.amazon.whisperlink.core.android.WPMAPInformationProvider	MAPInformationProvider	
+class	com.amazon.whisperlink.core.android.WhisperLinkCoreService	AbstractWhisperLinkCoreService	
+class	com.amazon.whisperlink.core.android.WhisperLinkDeviceInfoProvider	ContentProvider	
+class	com.amazon.whisperlink.core.android.WhisperLinkDeviceInfoProvider$DeviceCursor	AbstractCursor	
+class	com.amazon.whisperlink.core.android.WhisperLinkDeviceInfoProvider$MyRemoteConfigurationListener		RemoteConfiguration.Listener
+class	com.amazon.whisperlink.core.android.WhisperLinkSettingsProvider	ContentProvider	
+class	com.amazon.whisperlink.core.android.WhisperLinkSettingsProvider$SettingsCursor	AbstractCursor	
+class	com.amazon.whisperlink.core.android.WhisperlinkConfig		
+class	com.amazon.whisperlink.core.android.WhisperlinkConfigUtil		
+class	com.amazon.whisperlink.core.android.WhisperlinkConfigUtil$Services		
+class	com.amazon.whisperlink.core.android.common.BuildConfig		
+class	com.amazon.whisperlink.core.android.common.Manifest		
+class	com.amazon.whisperlink.core.android.common.Manifest$permission		
+class	com.amazon.whisperlink.core.android.common.R		
+class	com.amazon.whisperlink.core.android.common.R$drawable		
+class	com.amazon.whisperlink.core.android.common.R$raw		
+class	com.amazon.whisperlink.core.android.common.R$string		
+class	com.amazon.whisperlink.core.android.common.R$style		
+class	com.amazon.whisperlink.core.android.common.R$xml		
+class	com.amazon.whisperlink.core.android.explorers.AndroidBluetoothExplorer		Explorer,BluetoothConnectionManager.BTListener
+class	com.amazon.whisperlink.core.android.explorers.AndroidBluetoothExplorer$DeviceRetries		
+class	com.amazon.whisperlink.core.android.explorers.AndroidBluetoothExplorer$DiscoveryQueue		Runnable
+class	com.amazon.whisperlink.core.android.explorers.AndroidMdnsRecord		
+class	com.amazon.whisperlink.core.android.explorers.AndroidMdnsStore		
+class	com.amazon.whisperlink.core.android.explorers.CloudExplorer		MessageHandler,Explorer,CertificateChangeListener
+class	com.amazon.whisperlink.core.android.explorers.CloudExplorer$Cache		
+class	com.amazon.whisperlink.core.android.explorers.CloudExplorer$DeviceTrackerArg		CloudStoreDeviceTracker.DeviceInfoArg
+class	com.amazon.whisperlink.core.android.explorers.CloudExplorer$GatewayMonitor		GatewayConnectivity.GatewayConnectivityMonitor
+class	com.amazon.whisperlink.core.android.explorers.CloudExplorer$RegisterGatewayMonitorTask		GatewayTask
+class	com.amazon.whisperlink.core.android.explorers.CloudExplorer$StatusAnnouncement		
+class	com.amazon.whisperlink.core.android.explorers.CloudExplorer$TCommIntentReceiver	BroadcastReceiver	
+class	com.amazon.whisperlink.core.android.explorers.CloudLocalExplorer	AbstractExplorer	
+class	com.amazon.whisperlink.core.android.explorers.CloudLocalExplorer$HOLDER		
+class	com.amazon.whisperlink.core.android.explorers.DPDiscovery		
+class	com.amazon.whisperlink.core.android.explorers.DPDiscovery$GetDevicesTask		Task
+class	com.amazon.whisperlink.core.android.explorers.DPDiscovery$RegisterDeviceServicesTask		Task
+class	com.amazon.whisperlink.core.android.explorers.DPDiscovery$Situation		
+class	com.amazon.whisperlink.core.android.explorers.DPDiscovery$SituationChangedException	Exception	
+class	com.amazon.whisperlink.core.android.explorers.DPDiscovery$UpdateAvailabilityTask		Task
+class	com.amazon.whisperlink.core.android.explorers.JmdnsExplorer		Explorer
+class	com.amazon.whisperlink.core.android.explorers.JmdnsServiceListener		ServiceListener
+class	com.amazon.whisperlink.core.android.explorers.JmdnsServiceManager		
+class	com.amazon.whisperlink.core.android.explorers.ThreadSafeJmdnsManager		
+class	com.amazon.whisperlink.core.android.explorers.ThreadSafeJmdnsManager$JmdnsManager		
+class	com.amazon.whisperlink.core.android.explorers.util.AndroidMdnsUtil		
+class	com.amazon.whisperlink.core.android.explorers.util.CloudExplorerFactory		ExplorerFactory
+class	com.amazon.whisperlink.core.android.explorers.util.DPDiscoveryServiceUtil		
+class	com.amazon.whisperlink.core.android.feature.AmazonAccessLevelImpl		AmazonAccessLevel
+class	com.amazon.whisperlink.core.android.feature.GuestAccountInfoProviderImpl		GuestAccountInfoProvider
+class	com.amazon.whisperlink.core.android.feature.GuestAccountInfoProviderImpl$SettingsObserver	ContentObserver	
+class	com.amazon.whisperlink.core.android.listener.CoreStateToggler	BroadcastReceiver	
+class	com.amazon.whisperlink.core.eventnotifier.PropertiesHolder		
+class	com.amazon.whisperlink.core.eventnotifier.PropertiesList		
+class	com.amazon.whisperlink.core.eventnotifier.PropertyBrokerService	DefaultSystemService	PubSubTracker.PubSubChangeListener,PropertyBroker.Iface
+class	com.amazon.whisperlink.core.eventnotifier.PropertyChangeBaseCallback	DefaultCallback	PropertyChangeCallback.Iface
+class	com.amazon.whisperlink.core.eventnotifier.PropertySubscriber		
+class	com.amazon.whisperlink.core.eventnotifier.PropertySubscriptionService	DefaultSystemService	PropertySubscriptionManager.Iface
+class	com.amazon.whisperlink.core.eventnotifier.PropertySubscriptions		
+class	com.amazon.whisperlink.core.eventnotifier.PubSubTracker	Observable	TimeChangeEventListener
+class	com.amazon.whisperlink.core.eventnotifier.PubSubTracker$DescriptionComparator		Comparator<Description>
+class	com.amazon.whisperlink.core.eventnotifier.PubSubTracker$SingletonHolder		
+class	com.amazon.whisperlink.core.eventnotifier.SubsExpirationTracker		
+class	com.amazon.whisperlink.core.eventnotifier.SubsExpirationTracker$ExpirationData		
+class	com.amazon.whisperlink.core.ext.CoreExtensionServiceFactory		SystemServiceFactory
+class	com.amazon.whisperlink.core.platform.DefaultSystemService	DefaultService	
+class	com.amazon.whisperlink.core.platform.DefaultSystemServiceServer		
+class	com.amazon.whisperlink.core.platform.PlatformCoreManager	PlatformManager	
+class	com.amazon.whisperlink.core.platform.WPDirectRegistrarReferenceServer	WPServer	
+class	com.amazon.whisperlink.feature.security.authentication.AuthDaemonExternalService	DefaultSystemService	AuthDaemonExternal.Iface
+class	com.amazon.whisperlink.feature.security.authentication.AuthDaemonInternalService	DefaultSystemService	AuthDaemonInternal.Iface
+class	com.amazon.whisperlink.feature.security.authentication.AuthenticationData		
+class	com.amazon.whisperlink.feature.security.authentication.NonceException	AuthorizationException	
+class	com.amazon.whisperlink.feature.security.authentication.NonceManager		
+class	com.amazon.whisperlink.feature.security.authentication.NonceManager$Nonce		Comparable<Nonce>
+class	com.amazon.whisperlink.feature.security.authentication.dpdisc.DPDiscoveryPlugin		CloudStoreDeviceTracker
+class	com.amazon.whisperlink.feature.security.authentication.dpdisc.DeviceValidationCache		
+class	com.amazon.whisperlink.feature.security.authentication.dpdisc.DeviceValidationCache$Arg		
+class	com.amazon.whisperlink.feature.security.authentication.dpdisc.DeviceValidationCache$CacheEntry		
+class	com.amazon.whisperlink.feature.security.core.AuthenticationControlFeature		AuthenticationControl
+class	com.amazon.whisperlink.feature.security.core.BuildConfig		
+class	com.amazon.whisperlink.feature.security.core.CertificateSourceCoreImplementation	AbstractCertificateSource	
+class	com.amazon.whisperlink.feature.security.core.CoreAuthFeatureFactory		PluginFeatureFactory
+class	com.amazon.whisperlink.feature.security.core.SecurityServiceFactory		SystemServiceFactory
+class	com.amazon.whisperlink.internal.AbstractExplorer		Explorer
+class	com.amazon.whisperlink.internal.CachedServiceUpdates		
+class	com.amazon.whisperlink.internal.CallbackConnectionCache		
+class	com.amazon.whisperlink.internal.CallbackConnectionCache$CachedCallbackRunnable		Runnable
+class	com.amazon.whisperlink.internal.CallbackConnectionCache$Data		
+class	com.amazon.whisperlink.internal.CallbackConnectionCache$ServiceDiscoveryCbRetryRunnable		Runnable
+class	com.amazon.whisperlink.internal.DeviceManagerService	DefaultSystemService	DeviceManager.Iface
+class	com.amazon.whisperlink.internal.DeviceServicesRecord		
+class	com.amazon.whisperlink.internal.DeviceServicesRecord$DeviceChangedResult		
+class	com.amazon.whisperlink.internal.DiscoveryFilterRegistry		
+class	com.amazon.whisperlink.internal.DiscoveryManager		DescriptionProvider
+class	com.amazon.whisperlink.internal.DiscoveryManager$ExchangeDeviceServicesRunnable		Runnable
+class	com.amazon.whisperlink.internal.DiscoveryManager2		
+class	com.amazon.whisperlink.internal.DiscoveryManager2$MergeResult		
+class	com.amazon.whisperlink.internal.DiscoveryManager2$Store		
+class	com.amazon.whisperlink.internal.DiscoveryManager2$Store$Record		
+class	com.amazon.whisperlink.internal.DiscoveryManager2$Util		
+class	com.amazon.whisperlink.internal.DiscoveryStore		
+class	com.amazon.whisperlink.internal.DiscoveryStore$ServiceComparator		Comparator<Description>
+class	com.amazon.whisperlink.internal.EndpointDiscoveryService	DefaultSystemService	EndpointDiscovery.Iface
+class	com.amazon.whisperlink.internal.EndpointDiscoveryService$MatchFilterResult		
+class	com.amazon.whisperlink.internal.EndpointDiscoveryService$RefreshCallback		
+class	com.amazon.whisperlink.internal.EndpointDiscoveryService$SearchCompleteTask	TimerTask	
+class	com.amazon.whisperlink.internal.IncomingConnectionExplorer	AbstractExplorer	
+class	com.amazon.whisperlink.internal.RegistrarService	DefaultSystemService	Registrar.Iface
+class	com.amazon.whisperlink.internal.RegistrarService$ConnectionRoute		
+class	com.amazon.whisperlink.internal.RegistrarStore		
+class	com.amazon.whisperlink.internal.ServiceRecord		
+class	com.amazon.whisperlink.internal.ServiceUpdate		
+class	com.amazon.whisperlink.internal.StateProviderService	DefaultSystemService	StateProvider.Iface
+class	com.amazon.whisperlink.internal.TThreadPoolServiceRouter		
+class	com.amazon.whisperlink.internal.TThreadPoolServiceRouter$TransportBridge		Runnable
+class	com.amazon.whisperlink.internal.TThreadPoolServiceRouter$TransportConnection		Runnable
+class	com.amazon.whisperlink.internal.util.DiscoveryUtil		
+class	com.amazon.whisperlink.internal.verifier.ConnectivityVerifier		
+class	com.amazon.whisperlink.internal.verifier.DeviceFoundTaskDispatcher	Thread	
+class	com.amazon.whisperlink.internal.verifier.DeviceFoundTaskDispatcher$WorkerTask	TaskExecutor.Task	
+class	com.amazon.whisperlink.internal.verifier.DeviceFoundVerifier		DeviceStateVerifier
+class	com.amazon.whisperlink.internal.verifier.DeviceFoundVerifierRecord		
+class	com.amazon.whisperlink.internal.verifier.DeviceLostTaskDispatcher	Thread	
+class	com.amazon.whisperlink.internal.verifier.DeviceLostTaskDispatcher$WorkerTask	TaskExecutor.Task	
+class	com.amazon.whisperlink.internal.verifier.DeviceLostVerifier		DeviceStateVerifier
+class	com.amazon.whisperlink.internal.verifier.DeviceLostVerifierTask		Delayed
+class	com.amazon.whisperlink.internal.verifier.UuidChannelPair		
+class	com.amazon.whisperlink.jmdns.JmDNS		Closeable
+class	com.amazon.whisperlink.jmdns.JmmDNS$Factory		
+class	com.amazon.whisperlink.jmdns.NetworkTopologyDiscovery$Factory		
+class	com.amazon.whisperlink.jmdns.NetworkTopologyEvent	EventObject	
+class	com.amazon.whisperlink.jmdns.ServiceEvent	EventObject	Cloneable
+class	com.amazon.whisperlink.jmdns.ServiceInfo		Cloneable
+class	com.amazon.whisperlink.jmdns.impl.DNSCache	ConcurrentHashMap<String, List<DNSEntry>>	
+class	com.amazon.whisperlink.jmdns.impl.DNSEntry		
+class	com.amazon.whisperlink.jmdns.impl.DNSIncoming	DNSMessage	
+class	com.amazon.whisperlink.jmdns.impl.DNSIncoming$MessageInputStream	ByteArrayInputStream	
+class	com.amazon.whisperlink.jmdns.impl.DNSMessage		
+class	com.amazon.whisperlink.jmdns.impl.DNSOutgoing	DNSMessage	
+class	com.amazon.whisperlink.jmdns.impl.DNSOutgoing$MessageOutputStream	ByteArrayOutputStream	
+class	com.amazon.whisperlink.jmdns.impl.DNSQuestion	DNSEntry	
+class	com.amazon.whisperlink.jmdns.impl.DNSQuestion$AllRecords	DNSQuestion	
+class	com.amazon.whisperlink.jmdns.impl.DNSQuestion$DNS4Address	DNSQuestion	
+class	com.amazon.whisperlink.jmdns.impl.DNSQuestion$DNS6Address	DNSQuestion	
+class	com.amazon.whisperlink.jmdns.impl.DNSQuestion$HostInformation	DNSQuestion	
+class	com.amazon.whisperlink.jmdns.impl.DNSQuestion$Pointer	DNSQuestion	
+class	com.amazon.whisperlink.jmdns.impl.DNSQuestion$Service	DNSQuestion	
+class	com.amazon.whisperlink.jmdns.impl.DNSQuestion$Text	DNSQuestion	
+class	com.amazon.whisperlink.jmdns.impl.DNSRecord	DNSEntry	
+class	com.amazon.whisperlink.jmdns.impl.DNSRecord$Address	DNSRecord	
+class	com.amazon.whisperlink.jmdns.impl.DNSRecord$HostInformation	DNSRecord	
+class	com.amazon.whisperlink.jmdns.impl.DNSRecord$IPv4Address	Address	
+class	com.amazon.whisperlink.jmdns.impl.DNSRecord$IPv6Address	Address	
+class	com.amazon.whisperlink.jmdns.impl.DNSRecord$Pointer	DNSRecord	
+class	com.amazon.whisperlink.jmdns.impl.DNSRecord$Service	DNSRecord	
+class	com.amazon.whisperlink.jmdns.impl.DNSRecord$Text	DNSRecord	
+class	com.amazon.whisperlink.jmdns.impl.DNSStatefulObject$DNSStatefulObjectSemaphore		
+class	com.amazon.whisperlink.jmdns.impl.DNSStatefulObject$DefaultImplementation	ReentrantLock	DNSStatefulObject
+class	com.amazon.whisperlink.jmdns.impl.DNSTaskStarter$DNSTaskStarterImpl		DNSTaskStarter
+class	com.amazon.whisperlink.jmdns.impl.DNSTaskStarter$DNSTaskStarterImpl$StarterTimer	Timer	
+class	com.amazon.whisperlink.jmdns.impl.DNSTaskStarter$Factory		
+class	com.amazon.whisperlink.jmdns.impl.HostInfo		DNSStatefulObject
+class	com.amazon.whisperlink.jmdns.impl.HostInfo$HostInfoState	DNSStatefulObject.DefaultImplementation	
+class	com.amazon.whisperlink.jmdns.impl.JmDNSImpl	JmDNS	DNSStatefulObject,DNSTaskStarter
+class	com.amazon.whisperlink.jmdns.impl.JmDNSImpl$ServiceCollector		ServiceListener
+class	com.amazon.whisperlink.jmdns.impl.JmDNSImpl$ServiceTypeEntry	AbstractMap<String, String>	Cloneable
+class	com.amazon.whisperlink.jmdns.impl.JmDNSImpl$ServiceTypeEntry$SubTypeEntry		Serializable,Cloneable,Map.Entry<String,String>
+class	com.amazon.whisperlink.jmdns.impl.JmDNSImpl$Shutdown		Runnable
+class	com.amazon.whisperlink.jmdns.impl.JmmDNSImpl		JmmDNS,NetworkTopologyListener,ServiceInfoImpl.Delegate
+class	com.amazon.whisperlink.jmdns.impl.JmmDNSImpl$NetworkChecker	TimerTask	
+class	com.amazon.whisperlink.jmdns.impl.ListenerStatus		
+class	com.amazon.whisperlink.jmdns.impl.ListenerStatus$ServiceListenerStatus	ListenerStatus<ServiceListener>	
+class	com.amazon.whisperlink.jmdns.impl.ListenerStatus$ServiceTypeListenerStatus	ListenerStatus<ServiceTypeListener>	
+class	com.amazon.whisperlink.jmdns.impl.NameRegister$Factory		
+class	com.amazon.whisperlink.jmdns.impl.NameRegister$UniqueNameAcrossInterface		NameRegister
+class	com.amazon.whisperlink.jmdns.impl.NameRegister$UniqueNamePerInterface		NameRegister
+class	com.amazon.whisperlink.jmdns.impl.NetworkTopologyDiscoveryImpl		NetworkTopologyDiscovery
+class	com.amazon.whisperlink.jmdns.impl.NetworkTopologyEventImpl	NetworkTopologyEvent	Cloneable
+class	com.amazon.whisperlink.jmdns.impl.ServiceEventImpl	ServiceEvent	
+class	com.amazon.whisperlink.jmdns.impl.ServiceInfoImpl	ServiceInfo	DNSListener,DNSStatefulObject
+class	com.amazon.whisperlink.jmdns.impl.ServiceInfoImpl$ServiceInfoState	DNSStatefulObject.DefaultImplementation	
+class	com.amazon.whisperlink.jmdns.impl.SocketListener	Thread	
+class	com.amazon.whisperlink.jmdns.impl.constants.DNSConstants		
+class	com.amazon.whisperlink.jmdns.impl.tasks.DNSTask	TimerTask	
+class	com.amazon.whisperlink.jmdns.impl.tasks.RecordReaper	DNSTask	
+class	com.amazon.whisperlink.jmdns.impl.tasks.Responder	DNSTask	
+class	com.amazon.whisperlink.jmdns.impl.tasks.resolver.DNSResolverTask	DNSTask	
+class	com.amazon.whisperlink.jmdns.impl.tasks.resolver.ServiceInfoResolver	DNSResolverTask	
+class	com.amazon.whisperlink.jmdns.impl.tasks.resolver.ServiceResolver	DNSResolverTask	
+class	com.amazon.whisperlink.jmdns.impl.tasks.resolver.TypeResolver	DNSResolverTask	
+class	com.amazon.whisperlink.jmdns.impl.tasks.state.Announcer	DNSStateTask	
+class	com.amazon.whisperlink.jmdns.impl.tasks.state.Canceler	DNSStateTask	
+class	com.amazon.whisperlink.jmdns.impl.tasks.state.DNSStateTask	DNSTask	
+class	com.amazon.whisperlink.jmdns.impl.tasks.state.Prober	DNSStateTask	
+class	com.amazon.whisperlink.jmdns.impl.tasks.state.Renewer	DNSStateTask	
+class	com.amazon.whisperlink.platform.AbstractServiceDescription		LazyStartableServiceDescription
+class	com.amazon.whisperlink.platform.ServiceDescriptionParameters		
+class	com.amazon.whisperlink.plugin.config.CloudExplorerConfig		PlugInConfiguration
+class	com.amazon.whisperlink.plugin.config.CoreExtendedWpConfig		PlugInConfiguration
+class	com.amazon.whisperlink.plugin.config.CoreSecurityConfig		PlugInConfiguration
+class	com.amazon.whisperplay.dac.BuildConfig		
+class	com.amazon.whisperplay.explorers.BuildConfig		
+class	com.amazon.whisperplay.explorers.R		
+class	com.amazon.whisperplay.explorers.R$string		
+class	com.amazon.whisperplay.explorers.R$style		
+class	com.amazon.whisperplay.explorers.tcomm.BuildConfig		
+class	com.amazon.whisperplay.explorers.tcomm.R		
+class	com.amazon.whisperplay.explorers.tcomm.R$string		
+class	com.amazon.whisperplay.explorers.tcomm.R$style		
+enum	com.amazon.whisperlink.core.activity.ActivityNotification$NotificationType		
+enum	com.amazon.whisperlink.core.activity.ActivitySubscriptionManager$MethodToInvoke		
+enum	com.amazon.whisperlink.core.android.AbstractCoreInitializer$SubPlatformCoreFeature		
+enum	com.amazon.whisperlink.core.android.explorers.AndroidMdnsRecord$ResolveState		
+enum	com.amazon.whisperlink.core.android.explorers.CloudExplorer$State		
+enum	com.amazon.whisperlink.core.android.explorers.DPDiscovery$Situation$ActionStatus		
+enum	com.amazon.whisperlink.core.android.explorers.DPDiscovery$Step		
+enum	com.amazon.whisperlink.internal.CallbackConnectionCache$InvokeCachedCBResult		
+enum	com.amazon.whisperlink.internal.EndpointDiscoveryService$CallbackMethod		
+enum	com.amazon.whisperlink.internal.ServiceStatus		
+enum	com.amazon.whisperlink.jmdns.ServiceInfo$Fields		
+enum	com.amazon.whisperlink.jmdns.impl.JmDNSImpl$Operation		
+enum	com.amazon.whisperlink.jmdns.impl.NameRegister$NameType		
+enum	com.amazon.whisperlink.jmdns.impl.constants.DNSLabel		
+enum	com.amazon.whisperlink.jmdns.impl.constants.DNSOperationCode		
+enum	com.amazon.whisperlink.jmdns.impl.constants.DNSOptionCode		
+enum	com.amazon.whisperlink.jmdns.impl.constants.DNSRecordClass		
+enum	com.amazon.whisperlink.jmdns.impl.constants.DNSRecordType		
+enum	com.amazon.whisperlink.jmdns.impl.constants.DNSResultCode		
+enum	com.amazon.whisperlink.jmdns.impl.constants.DNSState		
+enum	com.amazon.whisperlink.jmdns.impl.constants.DNSState$StateClass		
+interface	com.amazon.dp.discovery.client.DiscoveryClient		
+interface	com.amazon.whisperlink.core.android.AccountInfoProviderImpl$AccountProvider		
+interface	com.amazon.whisperlink.core.android.explorers.CloudExplorer$GatewayTask		
+interface	com.amazon.whisperlink.core.android.explorers.DPDiscovery$Callback		
+interface	com.amazon.whisperlink.core.android.explorers.DPDiscovery$Task		
+interface	com.amazon.whisperlink.core.eventnotifier.PropertyChangeBaseCallback$PropertyChangeCallbackIface		
+interface	com.amazon.whisperlink.core.eventnotifier.PubSubTracker$PubSubChangeListener		
+interface	com.amazon.whisperlink.core.eventnotifier.PubSubTracker$Validator		
+interface	com.amazon.whisperlink.core.platform.AuthenticationFeatures	PlatformFeature	
+interface	com.amazon.whisperlink.core.platform.PersistentDiscoveryFeature	PlatformFeature	
+interface	com.amazon.whisperlink.core.platform.PlatformCoreInitializer	PlatformInitializer<T>	
+interface	com.amazon.whisperlink.core.platform.SystemServiceFactory		
+interface	com.amazon.whisperlink.internal.DescriptionProvider		
+interface	com.amazon.whisperlink.internal.Explorer		
+interface	com.amazon.whisperlink.internal.ExplorerFactory		
+interface	com.amazon.whisperlink.internal.LazyStartable		
+interface	com.amazon.whisperlink.internal.LazyStartableServiceDescription	LazyStartable	
+interface	com.amazon.whisperlink.internal.PlatformServiceFeatures		
+interface	com.amazon.whisperlink.internal.feature.ActivityPrivacyManager		
+interface	com.amazon.whisperlink.internal.feature.GuestAccountInfoProvider	PlatformFeature	
+interface	com.amazon.whisperlink.internal.verifier.DeviceStateVerifier		
+interface	com.amazon.whisperlink.jmdns.JmDNS$Delegate		
+interface	com.amazon.whisperlink.jmdns.JmmDNS	Closeable	
+interface	com.amazon.whisperlink.jmdns.JmmDNS$Factory$ClassDelegate		
+interface	com.amazon.whisperlink.jmdns.NetworkTopologyDiscovery		
+interface	com.amazon.whisperlink.jmdns.NetworkTopologyDiscovery$Factory$ClassDelegate		
+interface	com.amazon.whisperlink.jmdns.NetworkTopologyListener	EventListener	
+interface	com.amazon.whisperlink.jmdns.ServiceListener	EventListener	
+interface	com.amazon.whisperlink.jmdns.ServiceTypeListener	EventListener	
+interface	com.amazon.whisperlink.jmdns.impl.DNSListener		
+interface	com.amazon.whisperlink.jmdns.impl.DNSStatefulObject		
+interface	com.amazon.whisperlink.jmdns.impl.DNSTaskStarter		
+interface	com.amazon.whisperlink.jmdns.impl.DNSTaskStarter$Factory$ClassDelegate		
+interface	com.amazon.whisperlink.jmdns.impl.NameRegister		
+interface	com.amazon.whisperlink.jmdns.impl.ServiceInfoImpl$Delegate		
+interface	com.amazon.whisperlink.platform.DescriptionFactory		
