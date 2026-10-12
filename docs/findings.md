@@ -41,3 +41,15 @@ Answers from the decompiled framework and apps, plus a read-only logcat on a sti
 - **AutoPairService does not scan or bond itself.** After `BOOT_COMPLETED` it waits 60 s, checks screen on, no media playing and no connected remote (device types 10, 7, 3), then calls `ConnectivityManager.startDiscovery(flag, [10])`. `USER_SCREEN_OFF` cancels the pending start. The lost-remote dialog times out after 300 s.
 - **Remote discovery is classic `BluetoothAdapter.startDiscovery()`.** `com.amazon.connectivitycontroller` `BTControllerManager.startDiscovery(remote=true)` sets `AmazonBluetoothAdapter.skipDevNameReqDuringDiscovery(true)` and calls settingslib `startScanning(true)`. The only app-level LE scan (`BTControllerManager.startScan`) runs for hearing aids only (ASHA manufacturer ID and hearing-aid service-data filters). Whether discovery also includes an LE phase is decided in the native Bluetooth stack, which is not decompiled.
 - **`com.amazon.device.blepa` is not discovery.** It is the BLE remote firmware-update (`BleDFU`) and remote-management service (get info, wipe, IR switch, logging).
+
+## Performance and system hooks a third-party launcher can use
+
+From the decompiled framework (`jar-fosservices`, `jar-services`) and Fire's own apps. Levels: APK, APK + adb grant, privileged app (root), platform-signed.
+
+- **App prewarm, any app.** `AmazonActivityManagerService.preWarmApplicationForUser` calls `checkCallingPermission("com.amazon.permission.APP_PREWARM")` and ignores the result, then starts the target app's process. Reach it through `getSystemService("activity")`, which returns `AmazonActivityManagerImpl` (hidden-API rules may apply).
+- **Real-time threads, any app.** `setMediaThreads(pid, tids)` has no permission check. It sets `SCHED_FIFO` (priority `sys.use_fifo_media`, default 2) on the given threads while their process is in the top-app group.
+- **Launch CPU boost, APK + adb.** Every launch with `FLAG_ACTIVITY_NEW_TASK` gets a CPU boost of `Settings.Global perfboost_appstart_duration` ms (default 500, cap `persist.perfboost.time`). The value is read once and cached until reboot (`PerfBoostActivityStarterCallback`).
+- **Quick settings, APK.** Fire's quick-settings panel is an ordinary `TYPE_APPLICATION_OVERLAY` window (`com.amazon.tv.quicksettings.ui`), so a launcher can match it with `SYSTEM_ALERT_WINDOW` or an accessibility overlay.
+- **Remote launch animations, privileged.** `CONTROL_REMOTE_APP_TRANSITION_ANIMATIONS` is signature|privileged; `RemoteAnimationAdapter` is a hidden API.
+- **Home-pressed broadcast, image only.** `amazon.intent.action.HOME_PRESSED` goes only to the hard-coded `HOME_PRESSED_PACKAGES` list in `FireTVKeyPolicyManager`.
+- **Blur, untested.** SurfaceFlinger background blur is present in the framework but switched off: `ro.surface_flinger.supports_background_blur` is unset.
