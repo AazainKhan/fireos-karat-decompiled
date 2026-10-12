@@ -1,8 +1,10 @@
-# fireos-karat-re
+# fireos-karat-decompiled
 
 A machine-readable map of **Fire OS 8** (Android 11) on the **Fire TV Stick 4K, 2nd gen** (`AFTKRT`, codename `karat`, build `RS8182.3811N`, OTA `0032548774788`): every package, component, intent action, content provider, permission and dependency, plus declaration-level indexes of the 15 Amazon packages that matter most for building a replacement launcher.
 
 > **Legal:** independent interoperability research, not affiliated with or endorsed by Amazon. No Amazon code, binaries, assets or keys are included. Not legal advice. See [Legal](#legal).
+
+> **About the name:** "decompiled" describes how these indexes were made. The firmware was decompiled locally, and only derived facts (names, signatures, numbers) are published here, never the decompiled code itself.
 
 Built for coding agents (Claude Code, Codex, Cursor…) and people building Fire TV launchers or debloated ROMs, such as [Glass](https://github.com/AazainKhan/glass-tv-launcher) and [Glass OS](https://github.com/AazainKhan/glass-os). Ask "what listens to BOOT_COMPLETED?" or "what breaks if I remove X?" without pulling a 750 MB OTA.
 
@@ -68,7 +70,7 @@ Extracted partitions and jadx output go to `.work/` (git-ignored). Note: the ind
 
 ## Related
 
-- [tvos-26-re](https://github.com/AazainKhan/tvos-26-re): the same kind of map for tvOS 26.6, including every CoreAnimation spring and keyframe.
+- [tvos-26-decompiled](https://github.com/AazainKhan/tvos-26-decompiled): the same kind of map for tvOS 26.6, including every CoreAnimation spring and keyframe.
 - [glass-os](https://github.com/AazainKhan/glass-os): the debloated Fire OS build this research feeds.
 
 ## Legal
