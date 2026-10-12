@@ -32,3 +32,12 @@ Integration notes for replacing or interoperating with Fire OS components from a
 2. Which settings activities are exported and safe to deep-link (Wi-Fi, display, Bluetooth, HDMI-CEC)?
 3. Does `com.amazon.whisperlink.core.android` ever win HOME resolution once the Amazon launcher is gone?
 4. What does `com.amazon.tv.mattercohost` expose to other apps?
+
+## Bluetooth: remotes and LE scanning
+
+Answers from the decompiled framework and apps, plus a read-only logcat on a stick (2026-10-11).
+
+- **inloc "stop all scans" every 27.2 s does not stop other apps' LE scans.** The native daemon `/system_ext/bin/inlocservice` (Amazon indoor-location / Alexa proximity, started on `sys.boot_completed` by `init.inlocservice.rc`) exits with status 255 every 27.2 s and init restarts it. Each exit fires `binderDied` in `InlocManagerService`, which calls `BtLeManager.handleStopAllScans()` (`jar-fosservices`). That method stops only the scan callbacks in inloc's own `mScannerMap`; Android stops a scan per callback, so third-party scans are unaffected. The daemon logs an invalid `next_sync_time_ms` (a negative value wrapped to unsigned) and a timer failure on every start, a likely cause of the exits.
+- **AutoPairService does not scan or bond itself.** After `BOOT_COMPLETED` it waits 60 s, checks screen on, no media playing and no connected remote (device types 10, 7, 3), then calls `ConnectivityManager.startDiscovery(flag, [10])`. `USER_SCREEN_OFF` cancels the pending start. The lost-remote dialog times out after 300 s.
+- **Remote discovery is classic `BluetoothAdapter.startDiscovery()`.** `com.amazon.connectivitycontroller` `BTControllerManager.startDiscovery(remote=true)` sets `AmazonBluetoothAdapter.skipDevNameReqDuringDiscovery(true)` and calls settingslib `startScanning(true)`. The only app-level LE scan (`BTControllerManager.startScan`) runs for hearing aids only (ASHA manufacturer ID and hearing-aid service-data filters). Whether discovery also includes an LE phase is decided in the native Bluetooth stack, which is not decompiled.
+- **`com.amazon.device.blepa` is not discovery.** It is the BLE remote firmware-update (`BleDFU`) and remote-management service (get info, wipe, IR switch, logging).
