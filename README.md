@@ -31,6 +31,50 @@ Built for coding agents (Claude Code, Codex, Cursor…) and people building Fire
 
 Decompiled packages: `com.amazon.tv.launcher`, `com.amazon.firehomestarter`, `com.amazon.autopairservice`, `com.amazon.uxcontrollerservice`, `com.amazon.dialservice`, `com.amazon.tv.settings.v2`, `com.amazon.tv.settings.core`, `com.amazon.cast.sink`, `com.amazon.whisperlink.core.android`, `com.amazon.tv.notificationcenter`, `com.amazon.tv.matter`, `com.amazon.tv.mattercohost`, `com.amazon.fireinputdevices`, `com.amazon.device.bluetoothkeymaplib`, `com.amazon.tv.ffsprovisioneeclient`. Bundled third-party libraries (androidx, Kotlin, Google, Glide…) are filtered out.
 
+## Coverage
+
+What has been decompiled and indexed so far, measured against the Fire OS 8 OTA (280 packages).
+
+| Area | Done | Coverage |
+|---|---|---|
+| Manifests indexed (components, actions, providers, permissions) | 280 of 280 packages | **100%** |
+| Dependency graph | 280 of 280 packages, 1,247 edges | **100%** |
+| Target integration packages decompiled (launcher, home starter, settings, remote pairing, casting, Matter, input) | 15 of 15 | **100%** |
+| All packages decompiled | 15 of 280 | 5.4% |
+| Native code (`.so`, HALs, daemons) decompiled | not started | 0% |
+
+### Structure
+
+| Index | Rows |
+|---|---|
+| Components | 2,593 (377 exported) |
+| Intent actions and categories | 2,057 |
+| Content providers | 191 |
+| Declared permissions | 1,781 |
+
+### Decompiled packages
+
+| Package | APK size | Java files | Classes indexed | Members | Integration strings |
+|---|---|---|---|---|---|
+| `com.amazon.tv.launcher` | 26.4 MB | 11,310 | 11,954 | 96,405 | 1,397 |
+| `com.amazon.tv.settings.v2` | 9.9 MB | 3,941 | 3,370 | 35,649 | 1,556 |
+| `com.amazon.tv.notificationcenter` | 2.3 MB | 1,233 | 1,111 | 22,712 | 99 |
+| `com.amazon.cast.sink` | 2.2 MB | 543 | 131 | 2,097 | 61 |
+| `com.amazon.whisperlink.core.android` | 304 KB | 187 | 318 | 3,358 | 50 |
+| `com.amazon.device.bluetoothkeymaplib` | 152 KB | 104 | 50 | 749 | 18 |
+| `com.amazon.tv.matter` | 3.2 MB | 71 | 94 | 1,399 | 28 |
+| `com.amazon.tv.settings.core` | 64 KB | 24 | 62 | 885 | 55 |
+| `com.amazon.autopairservice` | 76 KB | 22 | 33 | 204 | 32 |
+| `com.amazon.firehomestarter` | 16 KB | 18 | 21 | 96 | 4 |
+| `com.amazon.uxcontrollerservice` | 132 KB | 13 | 18 | 135 | 8 |
+| `com.amazon.tv.mattercohost` | 32 KB | 8 | 13 | 84 | 7 |
+| `com.amazon.tv.ffsprovisioneeclient` | 12 KB | 5 | 5 | 6 | 0 |
+| `com.amazon.fireinputdevices` | 96 KB | 3 | 7 | 79 | 1 |
+| `com.amazon.dialservice` | 264 KB | 2 | 4 | 12 | 1 |
+| **Total** | **45.1 MB** | **17,484** | **17,191** | **163,870** | **3,317** |
+
+Java files are the raw jadx output (kept locally, not published). Classes and members count Amazon code only; bundled libraries such as androidx, Kotlin and Google are excluded.
+
 ## Use cases
 
 For agents working on a Fire TV launcher, ROM or companion app:
