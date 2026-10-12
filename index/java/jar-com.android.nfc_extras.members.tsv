@@ -1,0 +1,55 @@
+class	kind	declaration
+com.android.nfc_extras.EeAlreadyOpenException	method	public EeAlreadyOpenException()
+com.android.nfc_extras.EeAlreadyOpenException	method	public EeAlreadyOpenException(String str)
+com.android.nfc_extras.EeExternalFieldException	method	public EeExternalFieldException()
+com.android.nfc_extras.EeExternalFieldException	method	public EeExternalFieldException(String str)
+com.android.nfc_extras.EeIOException	method	public EeIOException()
+com.android.nfc_extras.EeIOException	method	public EeIOException(String str)
+com.android.nfc_extras.EeInitializationException	method	public EeInitializationException()
+com.android.nfc_extras.EeInitializationException	method	public EeInitializationException(String str)
+com.android.nfc_extras.EeListenModeException	method	public EeListenModeException()
+com.android.nfc_extras.EeListenModeException	method	public EeListenModeException(String str)
+com.android.nfc_extras.EeNfcDisabledException	method	public EeNfcDisabledException()
+com.android.nfc_extras.EeNfcDisabledException	method	public EeNfcDisabledException(String str)
+com.android.nfc_extras.NfcAdapterExtras	field	final String mPackageName;
+com.android.nfc_extras.NfcAdapterExtras	field	private final CardEmulationRoute mRouteOnWhenScreenOn;
+com.android.nfc_extras.NfcAdapterExtras	field	private final NfcAdapter mAdapter;
+com.android.nfc_extras.NfcAdapterExtras	field	private final NfcExecutionEnvironment mEmbeddedEe;
+com.android.nfc_extras.NfcAdapterExtras	field	private static INfcAdapterExtras sService;
+com.android.nfc_extras.NfcAdapterExtras	field	private static final CardEmulationRoute ROUTE_OFF;
+com.android.nfc_extras.NfcAdapterExtras	field	private static final HashMap<NfcAdapter, NfcAdapterExtras> sNfcExtras;
+com.android.nfc_extras.NfcAdapterExtras	field	private static final String TAG;
+com.android.nfc_extras.NfcAdapterExtras	field	public static final String ACTION_RF_FIELD_OFF_DETECTED;
+com.android.nfc_extras.NfcAdapterExtras	field	public static final String ACTION_RF_FIELD_ON_DETECTED;
+com.android.nfc_extras.NfcAdapterExtras	method	private NfcAdapterExtras(NfcAdapter nfcAdapter)
+com.android.nfc_extras.NfcAdapterExtras	method	private static void initService(NfcAdapter nfcAdapter)
+com.android.nfc_extras.NfcAdapterExtras	method	public CardEmulationRoute getCardEmulationRoute()
+com.android.nfc_extras.NfcAdapterExtras	method	public NfcExecutionEnvironment getEmbeddedExecutionEnvironment()
+com.android.nfc_extras.NfcAdapterExtras	method	public String getDriverName()
+com.android.nfc_extras.NfcAdapterExtras	method	public static NfcAdapterExtras get(NfcAdapter nfcAdapter)
+com.android.nfc_extras.NfcAdapterExtras	method	public void authenticate(byte[] bArr)
+com.android.nfc_extras.NfcAdapterExtras	method	public void setCardEmulationRoute(CardEmulationRoute cardEmulationRoute)
+com.android.nfc_extras.NfcAdapterExtras$CardEmulationRoute	field	public final NfcExecutionEnvironment nfcEe;
+com.android.nfc_extras.NfcAdapterExtras$CardEmulationRoute	field	public final int route;
+com.android.nfc_extras.NfcAdapterExtras$CardEmulationRoute	field	public static final int ROUTE_OFF;
+com.android.nfc_extras.NfcAdapterExtras$CardEmulationRoute	field	public static final int ROUTE_ON_WHEN_SCREEN_ON;
+com.android.nfc_extras.NfcAdapterExtras$CardEmulationRoute	method	public CardEmulationRoute(int i, NfcExecutionEnvironment nfcExecutionEnvironment)
+com.android.nfc_extras.NfcExecutionEnvironment	field	private final Binder mToken;
+com.android.nfc_extras.NfcExecutionEnvironment	field	private final NfcAdapterExtras mExtras;
+com.android.nfc_extras.NfcExecutionEnvironment	field	private static final int EE_ERROR_ALREADY_OPEN;
+com.android.nfc_extras.NfcExecutionEnvironment	field	private static final int EE_ERROR_EXT_FIELD;
+com.android.nfc_extras.NfcExecutionEnvironment	field	private static final int EE_ERROR_INIT;
+com.android.nfc_extras.NfcExecutionEnvironment	field	private static final int EE_ERROR_IO;
+com.android.nfc_extras.NfcExecutionEnvironment	field	private static final int EE_ERROR_LISTEN_MODE;
+com.android.nfc_extras.NfcExecutionEnvironment	field	private static final int EE_ERROR_NFC_DISABLED;
+com.android.nfc_extras.NfcExecutionEnvironment	field	public static final String ACTION_AID_SELECTED;
+com.android.nfc_extras.NfcExecutionEnvironment	field	public static final String ACTION_APDU_RECEIVED;
+com.android.nfc_extras.NfcExecutionEnvironment	field	public static final String ACTION_EMV_CARD_REMOVAL;
+com.android.nfc_extras.NfcExecutionEnvironment	field	public static final String ACTION_MIFARE_ACCESS_DETECTED;
+com.android.nfc_extras.NfcExecutionEnvironment	field	public static final String EXTRA_AID;
+com.android.nfc_extras.NfcExecutionEnvironment	field	public static final String EXTRA_APDU_BYTES;
+com.android.nfc_extras.NfcExecutionEnvironment	field	public static final String EXTRA_MIFARE_BLOCK;
+com.android.nfc_extras.NfcExecutionEnvironment	method	private static void throwBundle(Bundle bundle) throws EeIOException
+com.android.nfc_extras.NfcExecutionEnvironment	method	public byte[] transceive(byte[] bArr) throws IOException
+com.android.nfc_extras.NfcExecutionEnvironment	method	public void close() throws IOException
+com.android.nfc_extras.NfcExecutionEnvironment	method	public void open() throws EeIOException

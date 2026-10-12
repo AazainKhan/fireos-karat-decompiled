@@ -1,0 +1,47 @@
+class	kind	declaration
+com.amazon.whisperplay.service.install.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.whisperplay.service.install.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.whisperplay.service.install.BuildConfig	field	public static final String FLAVOR;
+com.amazon.whisperplay.service.install.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.whisperplay.service.install.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.whisperplay.service.install.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.whisperplay.service.install.InstallConstants	field	public static final String INSTALL_SERVICE_ID;
+com.amazon.whisperplay.service.install.InstallConstants	field	public static final String PACKAGE_NOT_INSTALLED;
+com.amazon.whisperplay.service.install.InstallException	field	public String message;
+com.amazon.whisperplay.service.install.InstallException	field	public String trace;
+com.amazon.whisperplay.service.install.InstallException	method	public InstallException deepCopy()
+com.amazon.whisperplay.service.install.InstallException	method	public InstallException()
+com.amazon.whisperplay.service.install.InstallException	method	public InstallException(InstallException other)
+com.amazon.whisperplay.service.install.InstallException	method	public InstallException(String message)
+com.amazon.whisperplay.service.install.InstallException	method	public String getMessage()
+com.amazon.whisperplay.service.install.InstallException	method	public String getTrace()
+com.amazon.whisperplay.service.install.InstallException	method	public String toString()
+com.amazon.whisperplay.service.install.InstallException	method	public boolean equals(InstallException that)
+com.amazon.whisperplay.service.install.InstallException	method	public boolean equals(Object that)
+com.amazon.whisperplay.service.install.InstallException	method	public boolean isSetMessage()
+com.amazon.whisperplay.service.install.InstallException	method	public boolean isSetTrace()
+com.amazon.whisperplay.service.install.InstallException	method	public int compareTo(Object otherObject)
+com.amazon.whisperplay.service.install.InstallException	method	public int hashCode()
+com.amazon.whisperplay.service.install.InstallException	method	public void clear()
+com.amazon.whisperplay.service.install.InstallException	method	public void setMessage(String message)
+com.amazon.whisperplay.service.install.InstallException	method	public void setMessageIsSet(boolean value)
+com.amazon.whisperplay.service.install.InstallException	method	public void setTrace(String trace)
+com.amazon.whisperplay.service.install.InstallException	method	public void setTraceIsSet(boolean value)
+com.amazon.whisperplay.service.install.InstallException	method	public void unsetMessage()
+com.amazon.whisperplay.service.install.InstallException	method	public void unsetTrace()
+com.amazon.whisperplay.service.install.InstallException	method	public void validate() throws TException
+com.amazon.whisperplay.service.install.InstallServiceHandler	field	private static final String TAG;
+com.amazon.whisperplay.service.install.InstallServiceHandler	method	public IBinder onBind(Intent arg0)
+com.amazon.whisperplay.service.install.InstallServiceHandler	method	public void onCreate()
+com.amazon.whisperplay.service.install.InstallServiceHandler	method	public void onDestroy()
+com.amazon.whisperplay.service.install.InstallServiceImpl	field	private Context mContext;
+com.amazon.whisperplay.service.install.InstallServiceImpl	field	private static final String BASE_INTENT_URI;
+com.amazon.whisperplay.service.install.InstallServiceImpl	field	private static final String REFFERER;
+com.amazon.whisperplay.service.install.InstallServiceImpl	field	private static final String REFMARKER;
+com.amazon.whisperplay.service.install.InstallServiceImpl	field	private static final String TAG;
+com.amazon.whisperplay.service.install.InstallServiceImpl	field	private static final String URI_FOR_ASIN;
+com.amazon.whisperplay.service.install.InstallServiceImpl	method	protected InstallServiceImpl(Context ctx)
+com.amazon.whisperplay.service.install.InstallServiceImpl	method	public String getInstalledPackageVersion(String packageId) throws InstallException, TException
+com.amazon.whisperplay.service.install.InstallServiceImpl	method	public void installByProductId(String productId) throws InstallException, TException
+com.amazon.whisperplay.service.install.R$string	field	public static final int app_name;
+com.amazon.whisperplay.service.install.R$xml	field	public static final int whisperplay;

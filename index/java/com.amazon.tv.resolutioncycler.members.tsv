@@ -1,0 +1,92 @@
+class	kind	declaration
+com.amazon.tv.resolutioncycler.R$color	field	public static final int amazonBlack;
+com.amazon.tv.resolutioncycler.R$color	field	public static final int amazonGray;
+com.amazon.tv.resolutioncycler.R$color	field	public static final int amazonHintText;
+com.amazon.tv.resolutioncycler.R$color	field	public static final int amazonWhite;
+com.amazon.tv.resolutioncycler.R$color	field	public static final int button_bg_default_color;
+com.amazon.tv.resolutioncycler.R$color	field	public static final int button_bg_end_color;
+com.amazon.tv.resolutioncycler.R$color	field	public static final int button_bg_start_color;
+com.amazon.tv.resolutioncycler.R$color	field	public static final int button_text_default_color;
+com.amazon.tv.resolutioncycler.R$color	field	public static final int button_text_focused_color;
+com.amazon.tv.resolutioncycler.R$color	field	public static final int custom_theme_color;
+com.amazon.tv.resolutioncycler.R$color	field	public static final int modal_alert_sub_text;
+com.amazon.tv.resolutioncycler.R$color	field	public static final int modal_alert_text;
+com.amazon.tv.resolutioncycler.R$dimen	field	public static final int activity_horizontal_margin;
+com.amazon.tv.resolutioncycler.R$dimen	field	public static final int activity_vertical_margin;
+com.amazon.tv.resolutioncycler.R$drawable	field	public static final int bg_spotlight_top;
+com.amazon.tv.resolutioncycler.R$drawable	field	public static final int browse_bg;
+com.amazon.tv.resolutioncycler.R$drawable	field	public static final int dialog_button_bg_color;
+com.amazon.tv.resolutioncycler.R$drawable	field	public static final int dialog_button_font;
+com.amazon.tv.resolutioncycler.R$drawable	field	public static final int dialog_button_text_color;
+com.amazon.tv.resolutioncycler.R$drawable	field	public static final int ic_launcher;
+com.amazon.tv.resolutioncycler.R$id	field	public static final int btnAccept;
+com.amazon.tv.resolutioncycler.R$id	field	public static final int txtMsg;
+com.amazon.tv.resolutioncycler.R$id	field	public static final int txtTimer;
+com.amazon.tv.resolutioncycler.R$id	field	public static final int txtTitle;
+com.amazon.tv.resolutioncycler.R$layout	field	public static final int activity_resolution_cycler;
+com.amazon.tv.resolutioncycler.R$string	field	public static final int app_name;
+com.amazon.tv.resolutioncycler.R$string	field	public static final int hello_world;
+com.amazon.tv.resolutioncycler.R$string	field	public static final int resolution_accept;
+com.amazon.tv.resolutioncycler.R$string	field	public static final int resolution_auto;
+com.amazon.tv.resolutioncycler.R$string	field	public static final int resolution_format;
+com.amazon.tv.resolutioncycler.R$string	field	public static final int resolution_msg;
+com.amazon.tv.resolutioncycler.R$string	field	public static final int resolution_timer_format;
+com.amazon.tv.resolutioncycler.R$string	field	public static final int resolution_title_format;
+com.amazon.tv.resolutioncycler.R$style	field	public static final int AppBaseTheme;
+com.amazon.tv.resolutioncycler.R$style	field	public static final int AppTheme;
+com.amazon.tv.resolutioncycler.R$style	field	public static final int CustomTheme;
+com.amazon.tv.resolutioncycler.R$style	field	public static final int Theme_Transparent;
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	field	private AmazonHdmiServiceManager mAVSettingsMgr;
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	field	private AmazonHdmiServiceManager.OnHDMIResolutionEventListener mHDMIListener;
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	field	private ArrayList<Integer> mResolutionIds;
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	field	private Button mAcceptButton;
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	field	private Handler mUiHandler;
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	field	private Handler mWorkHandler;
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	field	private HandlerThread mWorkHandlerThread;
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	field	private PowerManager.WakeLock mWakeLock;
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	field	private String mResAutoString;
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	field	private String mResFormatString;
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	field	private String mTimerFormatString;
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	field	private String mTitleFormatString;
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	field	private TextView mTimerTextView;
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	field	private TextView mTitleTextView;
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	field	private boolean mApplyInProgress;
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	field	private boolean mCommittedSuccessfully;
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	field	private boolean mCycling;
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	field	private boolean mIsListenerRegistered;
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	field	private final Map<Integer, ResolutionInfoStruct> mResolutionMap;
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	field	private final Object mLock;
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	field	private int mCurrentResIndex;
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	field	private int mStartingResIndex;
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	field	private int mTimerSecondsLeft;
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	field	private static final String TAG;
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	method	private String getResolutionString(int i)
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	method	private void applyNextResolutionLocked()
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	method	private void commitResolution()
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	method	private void commitResolutionLocked()
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	method	private void finishAsyncLocked()
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	method	private void revertResolutionLocked()
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	method	private void sendTick()
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	method	private void startTimerLocked()
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	method	private void updateResolutionUILocked()
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	method	private void updateTimerUILocked()
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	method	protected void onCreate(Bundle bundle)
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	method	protected void onPause()
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	method	protected void onResume()
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	method	protected void onStop()
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	method	public boolean onKeyDown(int i, KeyEvent keyEvent)
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	method	public void acceptButtonPressed(View view)
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	method	public void handleApplyFinishedLocked(boolean z)
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	method	public void handleListenerRegisteredLocked()
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	method	public void handleTimerTickLocked()
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity	method	public void onBackPressed()
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity$HDMIEventListener	method	private HDMIEventListener()
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity$HDMIEventListener	method	public void onListenerRegistered()
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity$HDMIEventListener	method	public void onResolutionApplicationError(String str)
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity$HDMIEventListener	method	public void onResolutionApplicationSuccess()
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity$UiHandler	method	private UiHandler()
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity$UiHandler	method	public void handleMessage(Message message)
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity$WorkHandler	method	public WorkHandler(Looper looper)
+com.amazon.tv.resolutioncycler.ResolutionCyclerActivity$WorkHandler	method	public void handleMessage(Message message)
+com.amazon.tv.resolutioncycler.ResolutionCyclerReceiver	field	private static final String TAG;
+com.amazon.tv.resolutioncycler.ResolutionCyclerReceiver	method	public void onReceive(Context context, Intent intent)

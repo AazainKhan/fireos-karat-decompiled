@@ -1,0 +1,43 @@
+class	kind	declaration
+com.amazon.tifobserver.BootCompleteReceiver	field	private static final String TAG;
+com.amazon.tifobserver.BootCompleteReceiver	method	public void onReceive(Context context, Intent intent)
+com.amazon.tifobserver.LiveTvObserver	field	private final Context mContext;
+com.amazon.tifobserver.LiveTvObserver	field	private final Handler mHandler;
+com.amazon.tifobserver.LiveTvObserver	field	private final Runnable mOnPreviewProgramsChange;
+com.amazon.tifobserver.LiveTvObserver	field	private final Runnable mOnRecordedProgramsChange;
+com.amazon.tifobserver.LiveTvObserver	field	private final Runnable mOnScheduledRecordingsChange;
+com.amazon.tifobserver.LiveTvObserver	field	private final Runnable mOnStationListChange;
+com.amazon.tifobserver.LiveTvObserver	field	private final Runnable mOnWatchNextProgramsChange;
+com.amazon.tifobserver.LiveTvObserver	field	private static final String TAG;
+com.amazon.tifobserver.LiveTvObserver	method	public void broadcastChannelListChange()
+com.amazon.tifobserver.LiveTvObserver	method	public void broadcastPreviewProgramsChange()
+com.amazon.tifobserver.LiveTvObserver	method	public void broadcastRecordedProgramsChange()
+com.amazon.tifobserver.LiveTvObserver	method	public void broadcastScheduledRecordingsChange()
+com.amazon.tifobserver.LiveTvObserver	method	public void broadcastWatchNextProgramsChange()
+com.amazon.tifobserver.LiveTvObserver	method	public void onChange(boolean z, Uri uri)
+com.amazon.tifobserver.LiveTvObserver	method	public void register()
+com.amazon.tifobserver.TIFObserverService	field	private Handler mHandler;
+com.amazon.tifobserver.TIFObserverService	field	private LiveTvObserver mLiveTvObserver;
+com.amazon.tifobserver.TIFObserverService	field	private TvInputObserver mTvInputObserver;
+com.amazon.tifobserver.TIFObserverService	field	private boolean isRunning;
+com.amazon.tifobserver.TIFObserverService	field	private final Object startLock;
+com.amazon.tifobserver.TIFObserverService	field	private static final String TAG;
+com.amazon.tifobserver.TIFObserverService	method	private boolean isRunning()
+com.amazon.tifobserver.TIFObserverService	method	private void createObservers()
+com.amazon.tifobserver.TIFObserverService	method	private void startObservers()
+com.amazon.tifobserver.TIFObserverService	method	public IBinder onBind(Intent intent)
+com.amazon.tifobserver.TIFObserverService	method	public int onStartCommand(Intent intent, int i, int i2)
+com.amazon.tifobserver.TIFObserverService	method	public void onDestroy()
+com.amazon.tifobserver.TvInputObserver	field	private final Context mContext;
+com.amazon.tifobserver.TvInputObserver	field	private final Handler mHandler;
+com.amazon.tifobserver.TvInputObserver	field	private static final String TAG;
+com.amazon.tifobserver.TvInputObserver	method	public void onInputAdded(String str)
+com.amazon.tifobserver.TvInputObserver	method	public void onInputRemoved(String str)
+com.amazon.tifobserver.TvInputObserver	method	public void onInputStateChanged(String str, int i)
+com.amazon.tifobserver.TvInputObserver	method	public void onInputUpdated(String str)
+com.amazon.tifobserver.TvInputObserver	method	public void onTvInputInfoUpdated(TvInputInfo tvInputInfo)
+com.amazon.tifobserver.TvInputObserver	method	public void register()
+com.amazon.tifobserver.TvInputObserver$OnTvInputChangeRunnable	field	private final String mAction;
+com.amazon.tifobserver.TvInputObserver$OnTvInputChangeRunnable	field	private final String mInputId;
+com.amazon.tifobserver.TvInputObserver$OnTvInputChangeRunnable	field	private final WeakReference<Context> mContextWeakRef;
+com.amazon.tifobserver.TvInputObserver$OnTvInputChangeRunnable	method	public void run()

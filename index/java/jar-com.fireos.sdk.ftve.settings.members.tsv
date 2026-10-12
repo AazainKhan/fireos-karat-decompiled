@@ -1,0 +1,1300 @@
+class	kind	declaration
+com.fireos.sdk.ftve.settings.BuildConfig	field	public static final String BUILD_TYPE;
+com.fireos.sdk.ftve.settings.BuildConfig	field	public static final String LIBRARY_PACKAGE_NAME;
+com.fireos.sdk.ftve.settings.BuildConfig	field	public static final boolean DEBUG;
+com.fireos.sdk.ftve.settings.Constants	field	public static final String ACTION_PUBLISH_CAPABILITIES;
+com.fireos.sdk.ftve.settings.Constants	field	public static final String ACTION_REGISTER_PROVIDER;
+com.fireos.sdk.ftve.settings.Constants	field	public static final String CLASS_FTVE_SETTINGS_SERVICE;
+com.fireos.sdk.ftve.settings.Constants	field	public static final String ECO_SETTINGS_APPROVAL_ID;
+com.fireos.sdk.ftve.settings.Constants	field	public static final String EXTRA_KEY_CAPABILITIES;
+com.fireos.sdk.ftve.settings.Constants	field	public static final String EXTRA_KEY_PROVIDER_ID;
+com.fireos.sdk.ftve.settings.Constants	field	public static final String PACKAGE_ALEXA_CLIENT;
+com.fireos.sdk.ftve.settings.Constants	field	public static final String PACKAGE_FTVE_SETTINGS_SERVICE;
+com.fireos.sdk.ftve.settings.Constants	field	public static final String PERMISSION_USE_SDK;
+com.fireos.sdk.ftve.settings.GetApprovalResult	field	private String mApprovalId;
+com.fireos.sdk.ftve.settings.GetApprovalResult	field	private boolean mResult;
+com.fireos.sdk.ftve.settings.GetApprovalResult	method	private GetApprovalResult(Parcel source)
+com.fireos.sdk.ftve.settings.GetApprovalResult	method	private GetApprovalResult(String approvalId, boolean result)
+com.fireos.sdk.ftve.settings.GetApprovalResult	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.GetApprovalResult	method	public String getApprovalId()
+com.fireos.sdk.ftve.settings.GetApprovalResult	method	public String toString()
+com.fireos.sdk.ftve.settings.GetApprovalResult	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.GetApprovalResult	method	public boolean getResult()
+com.fireos.sdk.ftve.settings.GetApprovalResult	method	public int describeContents()
+com.fireos.sdk.ftve.settings.GetApprovalResult	method	public int hashCode()
+com.fireos.sdk.ftve.settings.GetApprovalResult	method	public static GetApprovalResultBuilder builder()
+com.fireos.sdk.ftve.settings.GetApprovalResult	method	public void writeToParcel(Parcel parcel, int i)
+com.fireos.sdk.ftve.settings.GetApprovalResult$GetApprovalResultBuilder	field	private String mApprovalId;
+com.fireos.sdk.ftve.settings.GetApprovalResult$GetApprovalResultBuilder	field	private boolean mResult;
+com.fireos.sdk.ftve.settings.GetApprovalResult$GetApprovalResultBuilder	method	private GetApprovalResultBuilder()
+com.fireos.sdk.ftve.settings.GetApprovalResult$GetApprovalResultBuilder	method	public GetApprovalResult build()
+com.fireos.sdk.ftve.settings.GetApprovalResult$GetApprovalResultBuilder	method	public GetApprovalResultBuilder withApprovalId(String approvalId)
+com.fireos.sdk.ftve.settings.GetApprovalResult$GetApprovalResultBuilder	method	public GetApprovalResultBuilder withResult(boolean result)
+com.fireos.sdk.ftve.settings.GetSettingDataInput	field	private final List<String> mSettingIds;
+com.fireos.sdk.ftve.settings.GetSettingDataInput	method	private GetSettingDataInput(List<String> settingIds)
+com.fireos.sdk.ftve.settings.GetSettingDataInput	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.GetSettingDataInput	method	public String toString()
+com.fireos.sdk.ftve.settings.GetSettingDataInput	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.GetSettingDataInput	method	public final List<String> getSettingIds()
+com.fireos.sdk.ftve.settings.GetSettingDataInput	method	public int describeContents()
+com.fireos.sdk.ftve.settings.GetSettingDataInput	method	public int hashCode()
+com.fireos.sdk.ftve.settings.GetSettingDataInput	method	public static Builder builder()
+com.fireos.sdk.ftve.settings.GetSettingDataInput	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.GetSettingDataInput$Builder	field	private final List<String> mSettingIds;
+com.fireos.sdk.ftve.settings.GetSettingDataInput$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.GetSettingDataInput$Builder	method	public Builder addSettingId(String settingId)
+com.fireos.sdk.ftve.settings.GetSettingDataInput$Builder	method	public Builder addSettingIds(Collection<String> settingIds)
+com.fireos.sdk.ftve.settings.GetSettingDataInput$Builder	method	public GetSettingDataInput build()
+com.fireos.sdk.ftve.settings.GetSettingDataOutput	field	private final Map<String, SettingData> mSettingData;
+com.fireos.sdk.ftve.settings.GetSettingDataOutput	method	private GetSettingDataOutput(Map<String, SettingData> settingData)
+com.fireos.sdk.ftve.settings.GetSettingDataOutput	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.GetSettingDataOutput	method	public String toString()
+com.fireos.sdk.ftve.settings.GetSettingDataOutput	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.GetSettingDataOutput	method	public final Map<String, SettingData> getSettingData()
+com.fireos.sdk.ftve.settings.GetSettingDataOutput	method	public int describeContents()
+com.fireos.sdk.ftve.settings.GetSettingDataOutput	method	public int hashCode()
+com.fireos.sdk.ftve.settings.GetSettingDataOutput	method	public static Builder builder()
+com.fireos.sdk.ftve.settings.GetSettingDataOutput	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.GetSettingDataOutput$Builder	field	private final Map<String, SettingData> mSettingData;
+com.fireos.sdk.ftve.settings.GetSettingDataOutput$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.GetSettingDataOutput$Builder	method	public Builder addSettingData(Collection<SettingData> settingsData)
+com.fireos.sdk.ftve.settings.GetSettingDataOutput$Builder	method	public Builder addSettingData(SettingData settingData)
+com.fireos.sdk.ftve.settings.GetSettingDataOutput$Builder	method	public GetSettingDataOutput build()
+com.fireos.sdk.ftve.settings.GetSettingsApprovalInput	field	private final List<String> mApprovalIds;
+com.fireos.sdk.ftve.settings.GetSettingsApprovalInput	method	private GetSettingsApprovalInput(List<String> approvalIds)
+com.fireos.sdk.ftve.settings.GetSettingsApprovalInput	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.GetSettingsApprovalInput	method	public String toString()
+com.fireos.sdk.ftve.settings.GetSettingsApprovalInput	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.GetSettingsApprovalInput	method	public final List<String> getApprovalIds()
+com.fireos.sdk.ftve.settings.GetSettingsApprovalInput	method	public int describeContents()
+com.fireos.sdk.ftve.settings.GetSettingsApprovalInput	method	public int hashCode()
+com.fireos.sdk.ftve.settings.GetSettingsApprovalInput	method	public static Builder builder()
+com.fireos.sdk.ftve.settings.GetSettingsApprovalInput	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.GetSettingsApprovalInput$Builder	field	private final List<String> mApprovalIds;
+com.fireos.sdk.ftve.settings.GetSettingsApprovalInput$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.GetSettingsApprovalInput$Builder	method	public Builder addApprovalId(String approvalId)
+com.fireos.sdk.ftve.settings.GetSettingsApprovalInput$Builder	method	public Builder addApprovalIds(Collection<String> approvalIds)
+com.fireos.sdk.ftve.settings.GetSettingsApprovalInput$Builder	method	public GetSettingsApprovalInput build()
+com.fireos.sdk.ftve.settings.GetSettingsApprovalOutput	field	private final Map<String, GetApprovalResult> mSettingApprovals;
+com.fireos.sdk.ftve.settings.GetSettingsApprovalOutput	method	private GetSettingsApprovalOutput(Map<String, GetApprovalResult> settingApprovals)
+com.fireos.sdk.ftve.settings.GetSettingsApprovalOutput	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.GetSettingsApprovalOutput	method	public String toString()
+com.fireos.sdk.ftve.settings.GetSettingsApprovalOutput	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.GetSettingsApprovalOutput	method	public final Map<String, GetApprovalResult> getSettingApprovals()
+com.fireos.sdk.ftve.settings.GetSettingsApprovalOutput	method	public int describeContents()
+com.fireos.sdk.ftve.settings.GetSettingsApprovalOutput	method	public int hashCode()
+com.fireos.sdk.ftve.settings.GetSettingsApprovalOutput	method	public static Builder builder()
+com.fireos.sdk.ftve.settings.GetSettingsApprovalOutput	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.GetSettingsApprovalOutput$Builder	field	private final Map<String, GetApprovalResult> mSettingApprovals;
+com.fireos.sdk.ftve.settings.GetSettingsApprovalOutput$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.GetSettingsApprovalOutput$Builder	method	public Builder addApprovalResult(GetApprovalResult approvalResult)
+com.fireos.sdk.ftve.settings.GetSettingsApprovalOutput$Builder	method	public Builder addApprovalResults(Collection<GetApprovalResult> approvalResults)
+com.fireos.sdk.ftve.settings.GetSettingsApprovalOutput$Builder	method	public GetSettingsApprovalOutput build()
+com.fireos.sdk.ftve.settings.SetApprovalResult	field	private final String mApprovalId;
+com.fireos.sdk.ftve.settings.SetApprovalResult	field	private final int mResult;
+com.fireos.sdk.ftve.settings.SetApprovalResult	field	public static final int APPROVAL_UPDATED;
+com.fireos.sdk.ftve.settings.SetApprovalResult	field	public static final int NO_UPDATE;
+com.fireos.sdk.ftve.settings.SetApprovalResult	method	private SetApprovalResult(Parcel source)
+com.fireos.sdk.ftve.settings.SetApprovalResult	method	private SetApprovalResult(String approvalId, int result)
+com.fireos.sdk.ftve.settings.SetApprovalResult	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.SetApprovalResult	method	public String getApprovalId()
+com.fireos.sdk.ftve.settings.SetApprovalResult	method	public String toString()
+com.fireos.sdk.ftve.settings.SetApprovalResult	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.SetApprovalResult	method	public int describeContents()
+com.fireos.sdk.ftve.settings.SetApprovalResult	method	public int getResult()
+com.fireos.sdk.ftve.settings.SetApprovalResult	method	public int hashCode()
+com.fireos.sdk.ftve.settings.SetApprovalResult	method	public static SetApprovalResultBuilder builder()
+com.fireos.sdk.ftve.settings.SetApprovalResult	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.SetApprovalResult$SetApprovalResultBuilder	field	private Integer mResult;
+com.fireos.sdk.ftve.settings.SetApprovalResult$SetApprovalResultBuilder	field	private String mApprovalId;
+com.fireos.sdk.ftve.settings.SetApprovalResult$SetApprovalResultBuilder	method	private SetApprovalResultBuilder()
+com.fireos.sdk.ftve.settings.SetApprovalResult$SetApprovalResultBuilder	method	public SetApprovalResult build()
+com.fireos.sdk.ftve.settings.SetApprovalResult$SetApprovalResultBuilder	method	public SetApprovalResultBuilder withApprovalId(String approvalId)
+com.fireos.sdk.ftve.settings.SetApprovalResult$SetApprovalResultBuilder	method	public SetApprovalResultBuilder withResult(int result)
+com.fireos.sdk.ftve.settings.SetResult	field	private final DialogMetadata mDialogMetadata;
+com.fireos.sdk.ftve.settings.SetResult	field	private final SettingData mSettingData;
+com.fireos.sdk.ftve.settings.SetResult	field	private final String mSettingId;
+com.fireos.sdk.ftve.settings.SetResult	field	private final int mResult;
+com.fireos.sdk.ftve.settings.SetResult	field	public static final int BACK_OR_CLOSE;
+com.fireos.sdk.ftve.settings.SetResult	field	public static final int CLOSE_UI;
+com.fireos.sdk.ftve.settings.SetResult	field	public static final int DISPLAY_DIALOG;
+com.fireos.sdk.ftve.settings.SetResult	field	public static final int GRAY_OUT;
+com.fireos.sdk.ftve.settings.SetResult	field	public static final int HIDE;
+com.fireos.sdk.ftve.settings.SetResult	field	public static final int NO_UPDATE;
+com.fireos.sdk.ftve.settings.SetResult	field	public static final int REFRESH_LAYOUT;
+com.fireos.sdk.ftve.settings.SetResult	field	public static final int REFRESH_SETTING_DATA;
+com.fireos.sdk.ftve.settings.SetResult	field	public static final int UPDATE_VALUE;
+com.fireos.sdk.ftve.settings.SetResult	method	private SetResult(Parcel source)
+com.fireos.sdk.ftve.settings.SetResult	method	private SetResult(String settingId, int result, DialogMetadata dialogMetadata, SettingData settingData)
+com.fireos.sdk.ftve.settings.SetResult	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.SetResult	method	public DialogMetadata getDialogMetadata()
+com.fireos.sdk.ftve.settings.SetResult	method	public SettingData getSettingData()
+com.fireos.sdk.ftve.settings.SetResult	method	public String getSettingId()
+com.fireos.sdk.ftve.settings.SetResult	method	public String toString()
+com.fireos.sdk.ftve.settings.SetResult	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.SetResult	method	public int describeContents()
+com.fireos.sdk.ftve.settings.SetResult	method	public int getResult()
+com.fireos.sdk.ftve.settings.SetResult	method	public int hashCode()
+com.fireos.sdk.ftve.settings.SetResult	method	public static Builder builder()
+com.fireos.sdk.ftve.settings.SetResult	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.SetResult$Builder	field	private DialogMetadata mDialogMetadata;
+com.fireos.sdk.ftve.settings.SetResult$Builder	field	private Integer mResult;
+com.fireos.sdk.ftve.settings.SetResult$Builder	field	private SettingData mSettingData;
+com.fireos.sdk.ftve.settings.SetResult$Builder	field	private String mSettingId;
+com.fireos.sdk.ftve.settings.SetResult$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.SetResult$Builder	method	public Builder withDialogMetadata(DialogMetadata dialogMetadata)
+com.fireos.sdk.ftve.settings.SetResult$Builder	method	public Builder withResult(int result)
+com.fireos.sdk.ftve.settings.SetResult$Builder	method	public Builder withSettingData(SettingData settingData)
+com.fireos.sdk.ftve.settings.SetResult$Builder	method	public Builder withSettingId(String settingId)
+com.fireos.sdk.ftve.settings.SetResult$Builder	method	public SetResult build()
+com.fireos.sdk.ftve.settings.SetResult$DialogMetadata	method	public int describeContents()
+com.fireos.sdk.ftve.settings.SetResult$EcoDialogMetadata	method	private EcoDialogMetadata()
+com.fireos.sdk.ftve.settings.SetResult$EcoDialogMetadata	method	private EcoDialogMetadata(Parcel source)
+com.fireos.sdk.ftve.settings.SetResult$EcoDialogMetadata	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.SetResult$EcoDialogMetadata	method	public String toString()
+com.fireos.sdk.ftve.settings.SetResult$EcoDialogMetadata	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.SetResult$EcoDialogMetadata	method	public int hashCode()
+com.fireos.sdk.ftve.settings.SetResult$EcoDialogMetadata	method	public static Builder builder()
+com.fireos.sdk.ftve.settings.SetResult$EcoDialogMetadata	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.SetResult$EcoDialogMetadata$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.SetResult$EcoDialogMetadata$Builder	method	public EcoDialogMetadata build()
+com.fireos.sdk.ftve.settings.SetResult$GenericDialogMetadata	field	private final String mDialogContent;
+com.fireos.sdk.ftve.settings.SetResult$GenericDialogMetadata	field	private final String mDialogTitle;
+com.fireos.sdk.ftve.settings.SetResult$GenericDialogMetadata	field	private final String mNegativeButtonContent;
+com.fireos.sdk.ftve.settings.SetResult$GenericDialogMetadata	field	private final String mPositiveButtonContent;
+com.fireos.sdk.ftve.settings.SetResult$GenericDialogMetadata	method	private GenericDialogMetadata(Parcel source)
+com.fireos.sdk.ftve.settings.SetResult$GenericDialogMetadata	method	private GenericDialogMetadata(String dialogTitle, String dialogContent, String positiveButtonContent, String negativeButtonContent)
+com.fireos.sdk.ftve.settings.SetResult$GenericDialogMetadata	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.SetResult$GenericDialogMetadata	method	public String getDialogContent()
+com.fireos.sdk.ftve.settings.SetResult$GenericDialogMetadata	method	public String getDialogTitle()
+com.fireos.sdk.ftve.settings.SetResult$GenericDialogMetadata	method	public String getNegativeButtonContent()
+com.fireos.sdk.ftve.settings.SetResult$GenericDialogMetadata	method	public String getPositiveButtonContent()
+com.fireos.sdk.ftve.settings.SetResult$GenericDialogMetadata	method	public String toString()
+com.fireos.sdk.ftve.settings.SetResult$GenericDialogMetadata	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.SetResult$GenericDialogMetadata	method	public int hashCode()
+com.fireos.sdk.ftve.settings.SetResult$GenericDialogMetadata	method	public static Builder builder()
+com.fireos.sdk.ftve.settings.SetResult$GenericDialogMetadata	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.SetResult$GenericDialogMetadata$Builder	field	private String mDialogContent;
+com.fireos.sdk.ftve.settings.SetResult$GenericDialogMetadata$Builder	field	private String mDialogTitle;
+com.fireos.sdk.ftve.settings.SetResult$GenericDialogMetadata$Builder	field	private String mNegativeButtonContent;
+com.fireos.sdk.ftve.settings.SetResult$GenericDialogMetadata$Builder	field	private String mPositiveButtonContent;
+com.fireos.sdk.ftve.settings.SetResult$GenericDialogMetadata$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.SetResult$GenericDialogMetadata$Builder	method	public Builder withDialogContent(String dialogContent)
+com.fireos.sdk.ftve.settings.SetResult$GenericDialogMetadata$Builder	method	public Builder withDialogTitle(String dialogTitle)
+com.fireos.sdk.ftve.settings.SetResult$GenericDialogMetadata$Builder	method	public Builder withNegativeButtonContent(String negativeButtonContent)
+com.fireos.sdk.ftve.settings.SetResult$GenericDialogMetadata$Builder	method	public Builder withPositiveButtonContent(String positiveButtonContent)
+com.fireos.sdk.ftve.settings.SetResult$GenericDialogMetadata$Builder	method	public GenericDialogMetadata build()
+com.fireos.sdk.ftve.settings.SetSettingDataInput	field	private final Map<String, Action> mActions;
+com.fireos.sdk.ftve.settings.SetSettingDataInput	method	private SetSettingDataInput(Map<String, Action> actions)
+com.fireos.sdk.ftve.settings.SetSettingDataInput	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.SetSettingDataInput	method	public Map<String, Action> getActions()
+com.fireos.sdk.ftve.settings.SetSettingDataInput	method	public String toString()
+com.fireos.sdk.ftve.settings.SetSettingDataInput	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.SetSettingDataInput	method	public int describeContents()
+com.fireos.sdk.ftve.settings.SetSettingDataInput	method	public int hashCode()
+com.fireos.sdk.ftve.settings.SetSettingDataInput	method	public static Builder builder()
+com.fireos.sdk.ftve.settings.SetSettingDataInput	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.SetSettingDataInput$Builder	field	private final Map<String, Action> mActions;
+com.fireos.sdk.ftve.settings.SetSettingDataInput$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.SetSettingDataInput$Builder	method	public Builder addAction(Action action)
+com.fireos.sdk.ftve.settings.SetSettingDataInput$Builder	method	public Builder addActions(Collection<Action> actions)
+com.fireos.sdk.ftve.settings.SetSettingDataInput$Builder	method	public SetSettingDataInput build()
+com.fireos.sdk.ftve.settings.SetSettingDataOutput	field	private final Map<String, SetResult> mSetResults;
+com.fireos.sdk.ftve.settings.SetSettingDataOutput	method	private SetSettingDataOutput(Map<String, SetResult> setResults)
+com.fireos.sdk.ftve.settings.SetSettingDataOutput	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.SetSettingDataOutput	method	public Map<String, SetResult> getSetResults()
+com.fireos.sdk.ftve.settings.SetSettingDataOutput	method	public String toString()
+com.fireos.sdk.ftve.settings.SetSettingDataOutput	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.SetSettingDataOutput	method	public int describeContents()
+com.fireos.sdk.ftve.settings.SetSettingDataOutput	method	public int hashCode()
+com.fireos.sdk.ftve.settings.SetSettingDataOutput	method	public static Builder builder()
+com.fireos.sdk.ftve.settings.SetSettingDataOutput	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.SetSettingDataOutput$Builder	field	private final Map<String, SetResult> mSetResults;
+com.fireos.sdk.ftve.settings.SetSettingDataOutput$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.SetSettingDataOutput$Builder	method	public Builder addSetResult(SetResult setResult)
+com.fireos.sdk.ftve.settings.SetSettingDataOutput$Builder	method	public Builder addSetResults(Collection<SetResult> setResults)
+com.fireos.sdk.ftve.settings.SetSettingDataOutput$Builder	method	public SetSettingDataOutput build()
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput	field	private final Map<String, ApprovalAction> mApprovalActions;
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput	method	private SetSettingsApprovalInput(Map<String, ApprovalAction> approvalActions)
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput	method	public Map<String, ApprovalAction> getApprovalActions()
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput	method	public String toString()
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput	method	public int describeContents()
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput	method	public int hashCode()
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput	method	public static Builder builder()
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput$ApprovalAction	field	private String mApprovalId;
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput$ApprovalAction	field	private boolean mValue;
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput$ApprovalAction	method	private ApprovalAction(Parcel source)
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput$ApprovalAction	method	private ApprovalAction(String approvalId, boolean newValue)
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput$ApprovalAction	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput$ApprovalAction	method	public String getApprovalId()
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput$ApprovalAction	method	public String toString()
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput$ApprovalAction	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput$ApprovalAction	method	public boolean getActionValue()
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput$ApprovalAction	method	public int describeContents()
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput$ApprovalAction	method	public int hashCode()
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput$ApprovalAction	method	public static ApprovalActionBuilder builder()
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput$ApprovalAction	method	public void writeToParcel(Parcel parcel, int i)
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput$ApprovalActionBuilder	field	private String mApprovalId;
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput$ApprovalActionBuilder	field	private boolean mNewValue;
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput$ApprovalActionBuilder	method	private ApprovalActionBuilder()
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput$ApprovalActionBuilder	method	public ApprovalAction build()
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput$ApprovalActionBuilder	method	public ApprovalActionBuilder withApprovalId(String approvalId)
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput$ApprovalActionBuilder	method	public ApprovalActionBuilder withNewValue(Boolean newValue)
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput$Builder	field	private Map<String, ApprovalAction> mApprovalActions;
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput$Builder	method	public Builder addApprovalAction(ApprovalAction approvalAction)
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput$Builder	method	public Builder addApprovalActions(Collection<ApprovalAction> approvalActions)
+com.fireos.sdk.ftve.settings.SetSettingsApprovalInput$Builder	method	public SetSettingsApprovalInput build()
+com.fireos.sdk.ftve.settings.SetSettingsApprovalOutput	field	private final Map<String, SetApprovalResult> mApprovalResults;
+com.fireos.sdk.ftve.settings.SetSettingsApprovalOutput	method	private SetSettingsApprovalOutput(Map<String, SetApprovalResult> approvalResults)
+com.fireos.sdk.ftve.settings.SetSettingsApprovalOutput	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.SetSettingsApprovalOutput	method	public Map<String, SetApprovalResult> getApprovalResults()
+com.fireos.sdk.ftve.settings.SetSettingsApprovalOutput	method	public String toString()
+com.fireos.sdk.ftve.settings.SetSettingsApprovalOutput	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.SetSettingsApprovalOutput	method	public int describeContents()
+com.fireos.sdk.ftve.settings.SetSettingsApprovalOutput	method	public int hashCode()
+com.fireos.sdk.ftve.settings.SetSettingsApprovalOutput	method	public static Builder builder()
+com.fireos.sdk.ftve.settings.SetSettingsApprovalOutput	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.SetSettingsApprovalOutput$Builder	field	private Map<String, SetApprovalResult> mApprovalResults;
+com.fireos.sdk.ftve.settings.SetSettingsApprovalOutput$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.SetSettingsApprovalOutput$Builder	method	public Builder addApprovalResult(SetApprovalResult approvalResult)
+com.fireos.sdk.ftve.settings.SetSettingsApprovalOutput$Builder	method	public Builder addApprovalResults(Collection<SetApprovalResult> approvalResults)
+com.fireos.sdk.ftve.settings.SetSettingsApprovalOutput$Builder	method	public SetSettingsApprovalOutput build()
+com.fireos.sdk.ftve.settings.client.FSFAsyncClient	field	private final ExecutorService mExecutors;
+com.fireos.sdk.ftve.settings.client.FSFAsyncClient	field	private final FSFClient mClient;
+com.fireos.sdk.ftve.settings.client.FSFAsyncClient	field	private static final String TAG;
+com.fireos.sdk.ftve.settings.client.FSFAsyncClient	field	private static final int DEFAULT_THREAD_COUNT;
+com.fireos.sdk.ftve.settings.client.FSFAsyncClient	method	public FSFAsyncClient(Context context)
+com.fireos.sdk.ftve.settings.client.FSFAsyncClient	method	public FSFAsyncClient(Context context, int threadCount)
+com.fireos.sdk.ftve.settings.client.FSFAsyncClient	method	public void connect(FSFClient.ConnectionListener connectionListener)
+com.fireos.sdk.ftve.settings.client.FSFAsyncClient	method	public void deRegisterListener(final FSFClient.ChangeListener changeListener, final DeregisterResultListener listener)
+com.fireos.sdk.ftve.settings.client.FSFAsyncClient	method	public void disconnect()
+com.fireos.sdk.ftve.settings.client.FSFAsyncClient	method	public void getSettingData(final GetSettingDataInput input, final GetSettingDataListener listener)
+com.fireos.sdk.ftve.settings.client.FSFAsyncClient	method	public void getSettingsTree(final String settingId, final GetSettingsTreeListener listener)
+com.fireos.sdk.ftve.settings.client.FSFAsyncClient	method	public void notifySettingDataChange(final SettingDataChangeEvent event, final NotifySettingDataChangeListener listener)
+com.fireos.sdk.ftve.settings.client.FSFAsyncClient	method	public void publishDeviceCapabilities(final DeviceCapabilityData deviceCapabilityDataInput, final PublishDeviceCapabilitiesListener listener)
+com.fireos.sdk.ftve.settings.client.FSFAsyncClient	method	public void registerListener(final FSFClient.ChangeListener changeListener, final RegisterResultListener listener)
+com.fireos.sdk.ftve.settings.client.FSFAsyncClient	method	public void requestSettingsTreeRegistration(final RequestSettingsTreeRegistrationInput input, final RequestSettingsTreeRegistrationListener listener)
+com.fireos.sdk.ftve.settings.client.FSFAsyncClient	method	public void setSettingData(final SetSettingDataInput input, final SetSettingDataListener listener)
+com.fireos.sdk.ftve.settings.client.FSFClient	field	private final Context mContext;
+com.fireos.sdk.ftve.settings.client.FSFClient	field	private final Set<ConnectionListener> mConnectionListeners;
+com.fireos.sdk.ftve.settings.client.FSFClient	field	private static final String TAG;
+com.fireos.sdk.ftve.settings.client.FSFClient	field	private volatile IFSFSettingsService mService;
+com.fireos.sdk.ftve.settings.client.FSFClient	method	private void checkService() throws ServiceUnavailableException
+com.fireos.sdk.ftve.settings.client.FSFClient	method	private void unbind()
+com.fireos.sdk.ftve.settings.client.FSFClient	method	public FSFClient(Context context)
+com.fireos.sdk.ftve.settings.client.FSFClient	method	public GetSettingDataOutput getSettingData(GetSettingDataInput input) throws ServiceUnavailableException, RemoteException
+com.fireos.sdk.ftve.settings.client.FSFClient	method	public GetSettingsApprovalOutput getSettingsApproval(GetSettingsApprovalInput getSettingsApprovalInput) throws ServiceUnavailableException, RemoteException
+com.fireos.sdk.ftve.settings.client.FSFClient	method	public SetSettingDataOutput setSettingData(SetSettingDataInput input) throws ServiceUnavailableException, RemoteException
+com.fireos.sdk.ftve.settings.client.FSFClient	method	public SetSettingsApprovalOutput setSettingsApproval(SetSettingsApprovalInput setSettingsApprovalInput) throws ServiceUnavailableException, RemoteException
+com.fireos.sdk.ftve.settings.client.FSFClient	method	public SettingsTreeNode getSettingsTree(String settingId) throws ServiceUnavailableException, RemoteException
+com.fireos.sdk.ftve.settings.client.FSFClient	method	public boolean deRegisterListener(ChangeListener changeListener) throws ServiceUnavailableException, RemoteException
+com.fireos.sdk.ftve.settings.client.FSFClient	method	public boolean isConnected()
+com.fireos.sdk.ftve.settings.client.FSFClient	method	public boolean registerListener(ChangeListener changeListener) throws ServiceUnavailableException, RemoteException
+com.fireos.sdk.ftve.settings.client.FSFClient	method	public synchronized void notifyDisconnect()
+com.fireos.sdk.ftve.settings.client.FSFClient	method	public synchronized void setService(IFSFSettingsService service)
+com.fireos.sdk.ftve.settings.client.FSFClient	method	public void connect(ConnectionListener connectionListener)
+com.fireos.sdk.ftve.settings.client.FSFClient	method	public void disconnect()
+com.fireos.sdk.ftve.settings.client.FSFClient	method	public void notifySettingDataChange(SettingDataChangeEvent event) throws ServiceUnavailableException, RemoteException
+com.fireos.sdk.ftve.settings.client.FSFClient	method	public void publishDeviceCapabilities(DeviceCapabilityData deviceCapabilityData)
+com.fireos.sdk.ftve.settings.client.FSFClient	method	public void requestSettingsTreeRegistration(RequestSettingsTreeRegistrationInput input) throws ServiceUnavailableException, RemoteException
+com.fireos.sdk.ftve.settings.client.FSFClient$ChangeListener	method	public IChangeListener getInternalListener()
+com.fireos.sdk.ftve.settings.client.FSFClient$ChangeListener	method	public abstract void onSettingDataChange(SettingDataChangeEvent settingDataChangeEvent);
+com.fireos.sdk.ftve.settings.client.FSFClient$ChangeListener	method	public abstract void onSettingsTreeChange(SettingsTreeChangeEvent settingsTreeChangeEvent);
+com.fireos.sdk.ftve.settings.client.FSFClient$ServiceUnavailableException	method	private ServiceUnavailableException(String message)
+com.fireos.sdk.ftve.settings.client.FSFClientHelper	field	private final FSFClient mFSFClient;
+com.fireos.sdk.ftve.settings.client.FSFClientHelper	field	private static final String TAG;
+com.fireos.sdk.ftve.settings.client.FSFClientHelper	method	public FSFClientHelper(FSFClient fsfClient)
+com.fireos.sdk.ftve.settings.client.FSFClientHelper	method	public void connect()
+com.fireos.sdk.ftve.settings.client.FSFClientHelper	method	public void disconnect()
+com.fireos.sdk.ftve.settings.client.FSFClientHelper	method	public void notifySettingsDataChanged(Collection<SettingData> changedSettingsData)
+com.fireos.sdk.ftve.settings.client.FSFClientHelper	method	public void notifySettingsDataChangedWithRetry(final Collection<SettingData> changedSettingsData)
+com.fireos.sdk.ftve.settings.model.Action	field	protected String mSettingId;
+com.fireos.sdk.ftve.settings.model.Action	field	protected T mValue;
+com.fireos.sdk.ftve.settings.model.Action	field	protected boolean mApproved;
+com.fireos.sdk.ftve.settings.model.Action	method	protected Action()
+com.fireos.sdk.ftve.settings.model.Action	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.Action	method	public String getSettingId()
+com.fireos.sdk.ftve.settings.model.Action	method	public String toString()
+com.fireos.sdk.ftve.settings.model.Action	method	public T getActionValue()
+com.fireos.sdk.ftve.settings.model.Action	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.Action	method	public boolean isApproved()
+com.fireos.sdk.ftve.settings.model.Action	method	public int describeContents()
+com.fireos.sdk.ftve.settings.model.Action	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.Action	method	public void writeToParcel(Parcel parcel, int i)
+com.fireos.sdk.ftve.settings.model.BooleanSettingData	field	private final String mOffName;
+com.fireos.sdk.ftve.settings.model.BooleanSettingData	field	private final String mOnName;
+com.fireos.sdk.ftve.settings.model.BooleanSettingData	field	private final boolean mValue;
+com.fireos.sdk.ftve.settings.model.BooleanSettingData	field	private static final String OFF_DEFAULT;
+com.fireos.sdk.ftve.settings.model.BooleanSettingData	field	private static final String ON_DEFAULT;
+com.fireos.sdk.ftve.settings.model.BooleanSettingData	method	private BooleanSettingData(Parcel source)
+com.fireos.sdk.ftve.settings.model.BooleanSettingData	method	private BooleanSettingData(String settingId, String title, String description, int visibility, String iconId, RemoteViews detailsView, boolean value, String onName, String offName)
+com.fireos.sdk.ftve.settings.model.BooleanSettingData	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.BooleanSettingData	method	public String getOffName()
+com.fireos.sdk.ftve.settings.model.BooleanSettingData	method	public String getOnName()
+com.fireos.sdk.ftve.settings.model.BooleanSettingData	method	public String toString()
+com.fireos.sdk.ftve.settings.model.BooleanSettingData	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.BooleanSettingData	method	public boolean getValue()
+com.fireos.sdk.ftve.settings.model.BooleanSettingData	method	public boolean isActionable()
+com.fireos.sdk.ftve.settings.model.BooleanSettingData	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.BooleanSettingData	method	public static SettingData.Builder<Builder> builder()
+com.fireos.sdk.ftve.settings.model.BooleanSettingData	method	public void writeToParcel(Parcel parcel, int i)
+com.fireos.sdk.ftve.settings.model.BooleanSettingData$Action	method	private Action(Parcel source)
+com.fireos.sdk.ftve.settings.model.BooleanSettingData$Action	method	private Action(String settingId, boolean newValue, boolean approved)
+com.fireos.sdk.ftve.settings.model.BooleanSettingData$Action	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.BooleanSettingData$Action	method	public String toString()
+com.fireos.sdk.ftve.settings.model.BooleanSettingData$Action	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.BooleanSettingData$Action	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.BooleanSettingData$Action	method	public static ActionBuilder builder()
+com.fireos.sdk.ftve.settings.model.BooleanSettingData$Action	method	public void writeToParcel(Parcel parcel, int i)
+com.fireos.sdk.ftve.settings.model.BooleanSettingData$ActionBuilder	field	private BooleanSettingData mSettingData;
+com.fireos.sdk.ftve.settings.model.BooleanSettingData$ActionBuilder	field	private boolean mApproved;
+com.fireos.sdk.ftve.settings.model.BooleanSettingData$ActionBuilder	field	private boolean mNewValue;
+com.fireos.sdk.ftve.settings.model.BooleanSettingData$ActionBuilder	method	private ActionBuilder()
+com.fireos.sdk.ftve.settings.model.BooleanSettingData$ActionBuilder	method	public Action build()
+com.fireos.sdk.ftve.settings.model.BooleanSettingData$ActionBuilder	method	public ActionBuilder withApproval(boolean approved)
+com.fireos.sdk.ftve.settings.model.BooleanSettingData$ActionBuilder	method	public ActionBuilder withNewValue(boolean newValue)
+com.fireos.sdk.ftve.settings.model.BooleanSettingData$ActionBuilder	method	public ActionBuilder withSettingData(BooleanSettingData settingData)
+com.fireos.sdk.ftve.settings.model.BooleanSettingData$ActionBuilder	method	public static Action build(BooleanSettingData settingData, boolean newValue)
+com.fireos.sdk.ftve.settings.model.BooleanSettingData$Builder	field	private String mOffString;
+com.fireos.sdk.ftve.settings.model.BooleanSettingData$Builder	field	private String mOnString;
+com.fireos.sdk.ftve.settings.model.BooleanSettingData$Builder	field	private boolean mValue;
+com.fireos.sdk.ftve.settings.model.BooleanSettingData$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.model.BooleanSettingData$Builder	method	public BooleanSettingData build()
+com.fireos.sdk.ftve.settings.model.BooleanSettingData$Builder	method	public Builder withIcon(String iconId)
+com.fireos.sdk.ftve.settings.model.BooleanSettingData$Builder	method	public Builder withOffString(String offString)
+com.fireos.sdk.ftve.settings.model.BooleanSettingData$Builder	method	public Builder withOnString(String onString)
+com.fireos.sdk.ftve.settings.model.BooleanSettingData$Builder	method	public Builder withValue(boolean value)
+com.fireos.sdk.ftve.settings.model.BooleanSettingData$Builder	method	public Builder withVisibility(int visibility)
+com.fireos.sdk.ftve.settings.model.ButtonSettingData	field	private final String mSubtitle;
+com.fireos.sdk.ftve.settings.model.ButtonSettingData	field	private final boolean mIsKeypadLongPressSupported;
+com.fireos.sdk.ftve.settings.model.ButtonSettingData	method	private ButtonSettingData(Parcel source)
+com.fireos.sdk.ftve.settings.model.ButtonSettingData	method	private ButtonSettingData(String settingId, String title, String description, int visibility, String iconId, RemoteViews detailsView, String subtitle, boolean isKeypadLongPressSupported)
+com.fireos.sdk.ftve.settings.model.ButtonSettingData	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.ButtonSettingData	method	public String getSubtitle()
+com.fireos.sdk.ftve.settings.model.ButtonSettingData	method	public String toString()
+com.fireos.sdk.ftve.settings.model.ButtonSettingData	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.ButtonSettingData	method	public boolean isActionable()
+com.fireos.sdk.ftve.settings.model.ButtonSettingData	method	public boolean isKeypadLongPressSupported()
+com.fireos.sdk.ftve.settings.model.ButtonSettingData	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.ButtonSettingData	method	public static SettingData.Builder<Builder> builder()
+com.fireos.sdk.ftve.settings.model.ButtonSettingData	method	public void writeToParcel(Parcel parcel, int i)
+com.fireos.sdk.ftve.settings.model.ButtonSettingData$Action	method	private Action(Parcel source)
+com.fireos.sdk.ftve.settings.model.ButtonSettingData$Action	method	private Action(String settingId, boolean approved)
+com.fireos.sdk.ftve.settings.model.ButtonSettingData$Action	method	public static ActionBuilder builder()
+com.fireos.sdk.ftve.settings.model.ButtonSettingData$Action	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.model.ButtonSettingData$ActionBuilder	field	private ButtonSettingData mSettingData;
+com.fireos.sdk.ftve.settings.model.ButtonSettingData$ActionBuilder	field	private boolean mApproved;
+com.fireos.sdk.ftve.settings.model.ButtonSettingData$ActionBuilder	method	private ActionBuilder()
+com.fireos.sdk.ftve.settings.model.ButtonSettingData$ActionBuilder	method	public Action build()
+com.fireos.sdk.ftve.settings.model.ButtonSettingData$ActionBuilder	method	public ActionBuilder withApproval(boolean approved)
+com.fireos.sdk.ftve.settings.model.ButtonSettingData$ActionBuilder	method	public ActionBuilder withSettingData(ButtonSettingData settingData)
+com.fireos.sdk.ftve.settings.model.ButtonSettingData$ActionBuilder	method	public static Action build(ButtonSettingData buttonSettingData)
+com.fireos.sdk.ftve.settings.model.ButtonSettingData$Builder	field	private String mSubtitle;
+com.fireos.sdk.ftve.settings.model.ButtonSettingData$Builder	field	private boolean mIsKeypadLongPressSupported;
+com.fireos.sdk.ftve.settings.model.ButtonSettingData$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.model.ButtonSettingData$Builder	method	public Builder setKeypadLongPressSupported(boolean isSupported)
+com.fireos.sdk.ftve.settings.model.ButtonSettingData$Builder	method	public Builder withIcon(String iconId)
+com.fireos.sdk.ftve.settings.model.ButtonSettingData$Builder	method	public Builder withSubtitle(String subtitle)
+com.fireos.sdk.ftve.settings.model.ButtonSettingData$Builder	method	public Builder withVisibility(int visibility)
+com.fireos.sdk.ftve.settings.model.ButtonSettingData$Builder	method	public ButtonSettingData build()
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData	field	private final EnumValue mValue;
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData	field	private final List<EnumValue> mSupportedValues;
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData	field	private final String mHintTextNext;
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData	field	private final String mHintTextPrevious;
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData	method	private CompactEnumSettingData(Parcel source)
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData	method	private CompactEnumSettingData(String settingId, String title, String description, int visibility, String iconId, RemoteViews detailsView, EnumValue value, List<EnumValue> supportedValues, String hintTextNext, String hintTextPrevious)
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData	method	public EnumValue getValue()
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData	method	public List<EnumValue> getSupportedValues()
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData	method	public String getHintTextNext()
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData	method	public String getHintTextPrevious()
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData	method	public String toString()
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData	method	public boolean isActionable()
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData	method	public static SettingData.Builder<Builder> builder()
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$Action	method	private Action(Parcel source)
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$Action	method	private Action(String settingId, EnumValue enumValue, boolean approved)
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$Action	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$Action	method	public String toString()
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$Action	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$Action	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$Action	method	public static ActionBuilder builder()
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$Action	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$ActionBuilder	field	private CompactEnumSettingData mSettingData;
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$ActionBuilder	field	private EnumValue mNewValue;
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$ActionBuilder	field	private boolean mApproved;
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$ActionBuilder	method	private ActionBuilder()
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$ActionBuilder	method	public Action build()
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$ActionBuilder	method	public ActionBuilder withApproval(boolean approved)
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$ActionBuilder	method	public ActionBuilder withNewValue(EnumValue newValue)
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$ActionBuilder	method	public ActionBuilder withSettingData(CompactEnumSettingData settingData)
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$ActionBuilder	method	public static Action build(CompactEnumSettingData settingData, EnumValue newValue)
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$Builder	field	private EnumValue mValue;
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$Builder	field	private String mHintTextNext;
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$Builder	field	private String mHintTextPrevious;
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$Builder	field	private final LinkedHashSet<EnumValue> mSupportedValues;
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$Builder	field	static final String NEXT;
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$Builder	field	static final String PREVIOUS;
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$Builder	method	protected void validateFields()
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$Builder	method	public Builder withHintTextNext(String hintTextNext)
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$Builder	method	public Builder withHintTextPrevious(String hintTextPrevious)
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$Builder	method	public Builder withIcon(String iconId)
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$Builder	method	public Builder withSupportedValue(EnumValue supportedValue)
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$Builder	method	public Builder withSupportedValues(List<EnumValue> supportedValues)
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$Builder	method	public Builder withValue(EnumValue value)
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$Builder	method	public Builder withVisibility(int visibility)
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$Builder	method	public CompactEnumSettingData build()
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$EnumValue	field	private final String mId;
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$EnumValue	field	private final String mTitle;
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$EnumValue	method	private EnumValue(Parcel source)
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$EnumValue	method	private EnumValue(String id, String title)
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$EnumValue	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$EnumValue	method	public String getId()
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$EnumValue	method	public String getTitle()
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$EnumValue	method	public String toString()
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$EnumValue	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$EnumValue	method	public int describeContents()
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$EnumValue	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$EnumValue	method	public static Builder builder()
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$EnumValue	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$EnumValue$Builder	field	private String mId;
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$EnumValue$Builder	field	private String mTitle;
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$EnumValue$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$EnumValue$Builder	method	public Builder withId(String id)
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$EnumValue$Builder	method	public Builder withTitle(String title)
+com.fireos.sdk.ftve.settings.model.CompactEnumSettingData$EnumValue$Builder	method	public EnumValue build()
+com.fireos.sdk.ftve.settings.model.DeviceCapability	field	private final String mAlexaName;
+com.fireos.sdk.ftve.settings.model.DeviceCapability	field	private final String mIdentifierName;
+com.fireos.sdk.ftve.settings.model.DeviceCapability	field	private final String mSettingId;
+com.fireos.sdk.ftve.settings.model.DeviceCapability	method	protected DeviceCapability(Parcel source)
+com.fireos.sdk.ftve.settings.model.DeviceCapability	method	protected DeviceCapability(String identifierName, String alexaName, String settingId)
+com.fireos.sdk.ftve.settings.model.DeviceCapability	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.DeviceCapability	method	public String getAlexaName()
+com.fireos.sdk.ftve.settings.model.DeviceCapability	method	public String getIdentifierName()
+com.fireos.sdk.ftve.settings.model.DeviceCapability	method	public String getSettingId()
+com.fireos.sdk.ftve.settings.model.DeviceCapability	method	public String toString()
+com.fireos.sdk.ftve.settings.model.DeviceCapability	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.DeviceCapability	method	public int describeContents()
+com.fireos.sdk.ftve.settings.model.DeviceCapability	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.DeviceCapability	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.model.DeviceCapability$Builder	field	protected String mAlexaName;
+com.fireos.sdk.ftve.settings.model.DeviceCapability$Builder	field	protected String mIdentifierName;
+com.fireos.sdk.ftve.settings.model.DeviceCapability$Builder	field	protected String mSettingId;
+com.fireos.sdk.ftve.settings.model.DeviceCapability$Builder	method	protected Builder()
+com.fireos.sdk.ftve.settings.model.DeviceCapability$Builder	method	protected void validateFields()
+com.fireos.sdk.ftve.settings.model.DeviceCapability$Builder	method	public Builder<T> withAlexaName(String alexaName)
+com.fireos.sdk.ftve.settings.model.DeviceCapability$Builder	method	public Builder<T> withIdentifierName(String identifierName)
+com.fireos.sdk.ftve.settings.model.DeviceCapability$Builder	method	public abstract T withSettingId(String str);
+com.fireos.sdk.ftve.settings.model.DeviceCapabilityData	field	private final List<DeviceCapability> mCapabilities;
+com.fireos.sdk.ftve.settings.model.DeviceCapabilityData	method	private DeviceCapabilityData(List<DeviceCapability> capabilities)
+com.fireos.sdk.ftve.settings.model.DeviceCapabilityData	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.DeviceCapabilityData	method	public List<DeviceCapability> getCapabilities()
+com.fireos.sdk.ftve.settings.model.DeviceCapabilityData	method	public String toString()
+com.fireos.sdk.ftve.settings.model.DeviceCapabilityData	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.DeviceCapabilityData	method	public int describeContents()
+com.fireos.sdk.ftve.settings.model.DeviceCapabilityData	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.DeviceCapabilityData	method	public static Builder builder()
+com.fireos.sdk.ftve.settings.model.DeviceCapabilityData	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.model.DeviceCapabilityData$Builder	field	private final List<DeviceCapability> mCapabilities;
+com.fireos.sdk.ftve.settings.model.DeviceCapabilityData$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.model.DeviceCapabilityData$Builder	method	public Builder addCapabilities(List<DeviceCapability> capabilities)
+com.fireos.sdk.ftve.settings.model.DeviceCapabilityData$Builder	method	public Builder addCapability(DeviceCapability capability)
+com.fireos.sdk.ftve.settings.model.DeviceCapabilityData$Builder	method	public DeviceCapabilityData build()
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability	field	private final List<CapabilityValue> mCapabilityValues;
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability	method	private EnumDeviceCapability(Parcel source)
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability	method	private EnumDeviceCapability(String identifierName, String alexaName, String settingId, List<CapabilityValue> capabilityValues)
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability	method	public List<CapabilityValue> getCapabilityValues()
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability	method	public String toString()
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability	method	public static DeviceCapability.Builder<Builder> builder()
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability$Builder	field	private final List<CapabilityValue> mCapabilityValues;
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability$Builder	method	public Builder addCapabilityValue(CapabilityValue capabilityValue)
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability$Builder	method	public Builder addCapabilityValues(List<CapabilityValue> capabilityValues)
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability$Builder	method	public Builder withSettingId(String settingId)
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability$Builder	method	public EnumDeviceCapability build()
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability$CapabilityValue	field	private final String mAlexaValueName;
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability$CapabilityValue	field	private final String mSettingOptionId;
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability$CapabilityValue	method	private CapabilityValue(Parcel source)
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability$CapabilityValue	method	private CapabilityValue(String alexaValueName, String settingOptionId)
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability$CapabilityValue	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability$CapabilityValue	method	public String getAlexaValueName()
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability$CapabilityValue	method	public String getSettingOptionId()
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability$CapabilityValue	method	public String toString()
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability$CapabilityValue	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability$CapabilityValue	method	public int describeContents()
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability$CapabilityValue	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability$CapabilityValue	method	public static Builder builder()
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability$CapabilityValue	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability$CapabilityValue$Builder	field	private String mAlexaValueName;
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability$CapabilityValue$Builder	field	private String mSettingOptionId;
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability$CapabilityValue$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability$CapabilityValue$Builder	method	public Builder withAlexaValueName(String alexaValueName)
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability$CapabilityValue$Builder	method	public Builder withSettingOptionId(String settingOptionId)
+com.fireos.sdk.ftve.settings.model.EnumDeviceCapability$CapabilityValue$Builder	method	public CapabilityValue build()
+com.fireos.sdk.ftve.settings.model.EnumSettingData	field	private final EnumValue mValue;
+com.fireos.sdk.ftve.settings.model.EnumSettingData	field	private final List<EnumValue> mSupportedValues;
+com.fireos.sdk.ftve.settings.model.EnumSettingData	field	private final List<InfoElementRow> mSubHeader;
+com.fireos.sdk.ftve.settings.model.EnumSettingData	field	private final long mTimeout;
+com.fireos.sdk.ftve.settings.model.EnumSettingData	method	private EnumSettingData(Parcel source)
+com.fireos.sdk.ftve.settings.model.EnumSettingData	method	private EnumSettingData(String settingId, String title, String description, int visibility, String iconId, RemoteViews detailsView, long timeout, EnumValue value, List<EnumValue> supportedValues, List<InfoElementRow> subHeader)
+com.fireos.sdk.ftve.settings.model.EnumSettingData	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.EnumSettingData	method	public EnumValue getValue()
+com.fireos.sdk.ftve.settings.model.EnumSettingData	method	public List<EnumValue> getSupportedValues()
+com.fireos.sdk.ftve.settings.model.EnumSettingData	method	public List<InfoElementRow> getSubHeaderRows()
+com.fireos.sdk.ftve.settings.model.EnumSettingData	method	public String toString()
+com.fireos.sdk.ftve.settings.model.EnumSettingData	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.EnumSettingData	method	public boolean isActionable()
+com.fireos.sdk.ftve.settings.model.EnumSettingData	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.EnumSettingData	method	public long getTimeout()
+com.fireos.sdk.ftve.settings.model.EnumSettingData	method	public static SettingData.Builder<Builder> builder()
+com.fireos.sdk.ftve.settings.model.EnumSettingData	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.model.EnumSettingData$Action	method	private Action(Parcel source)
+com.fireos.sdk.ftve.settings.model.EnumSettingData$Action	method	private Action(String settingId, EnumValue enumValue, boolean approved)
+com.fireos.sdk.ftve.settings.model.EnumSettingData$Action	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.EnumSettingData$Action	method	public String toString()
+com.fireos.sdk.ftve.settings.model.EnumSettingData$Action	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.EnumSettingData$Action	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.EnumSettingData$Action	method	public static ActionBuilder builder()
+com.fireos.sdk.ftve.settings.model.EnumSettingData$Action	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.model.EnumSettingData$ActionBuilder	field	private EnumSettingData mSettingData;
+com.fireos.sdk.ftve.settings.model.EnumSettingData$ActionBuilder	field	private EnumValue mNewValue;
+com.fireos.sdk.ftve.settings.model.EnumSettingData$ActionBuilder	field	private boolean mApproved;
+com.fireos.sdk.ftve.settings.model.EnumSettingData$ActionBuilder	method	private ActionBuilder()
+com.fireos.sdk.ftve.settings.model.EnumSettingData$ActionBuilder	method	public Action build()
+com.fireos.sdk.ftve.settings.model.EnumSettingData$ActionBuilder	method	public ActionBuilder withApproval(boolean approved)
+com.fireos.sdk.ftve.settings.model.EnumSettingData$ActionBuilder	method	public ActionBuilder withNewValue(EnumValue newValue)
+com.fireos.sdk.ftve.settings.model.EnumSettingData$ActionBuilder	method	public ActionBuilder withSettingData(EnumSettingData settingData)
+com.fireos.sdk.ftve.settings.model.EnumSettingData$ActionBuilder	method	public static Action build(EnumSettingData settingData, EnumValue newValue)
+com.fireos.sdk.ftve.settings.model.EnumSettingData$Builder	field	private EnumValue mValue;
+com.fireos.sdk.ftve.settings.model.EnumSettingData$Builder	field	private final LinkedHashSet<EnumValue> mSupportedValues;
+com.fireos.sdk.ftve.settings.model.EnumSettingData$Builder	field	private final List<InfoElementRow> mSubHeader;
+com.fireos.sdk.ftve.settings.model.EnumSettingData$Builder	field	private long mTimeout;
+com.fireos.sdk.ftve.settings.model.EnumSettingData$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.model.EnumSettingData$Builder	method	protected void validateFields()
+com.fireos.sdk.ftve.settings.model.EnumSettingData$Builder	method	public Builder addSubHeaderRow(InfoElementRow row)
+com.fireos.sdk.ftve.settings.model.EnumSettingData$Builder	method	public Builder addSubHeaderRows(List<InfoElementRow> rows)
+com.fireos.sdk.ftve.settings.model.EnumSettingData$Builder	method	public Builder withIcon(String iconId)
+com.fireos.sdk.ftve.settings.model.EnumSettingData$Builder	method	public Builder withSupportedValue(EnumValue supportedValue)
+com.fireos.sdk.ftve.settings.model.EnumSettingData$Builder	method	public Builder withSupportedValues(List<EnumValue> supportedValues)
+com.fireos.sdk.ftve.settings.model.EnumSettingData$Builder	method	public Builder withTimeout(long timeout)
+com.fireos.sdk.ftve.settings.model.EnumSettingData$Builder	method	public Builder withValue(EnumValue value)
+com.fireos.sdk.ftve.settings.model.EnumSettingData$Builder	method	public Builder withVisibility(int visibility)
+com.fireos.sdk.ftve.settings.model.EnumSettingData$Builder	method	public EnumSettingData build()
+com.fireos.sdk.ftve.settings.model.EnumSettingData$EnumValue	field	private final String mDescription;
+com.fireos.sdk.ftve.settings.model.EnumSettingData$EnumValue	field	private final String mId;
+com.fireos.sdk.ftve.settings.model.EnumSettingData$EnumValue	field	private final String mTitle;
+com.fireos.sdk.ftve.settings.model.EnumSettingData$EnumValue	method	private EnumValue(Parcel source)
+com.fireos.sdk.ftve.settings.model.EnumSettingData$EnumValue	method	private EnumValue(String id, String title, String description)
+com.fireos.sdk.ftve.settings.model.EnumSettingData$EnumValue	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.EnumSettingData$EnumValue	method	public String getDescription()
+com.fireos.sdk.ftve.settings.model.EnumSettingData$EnumValue	method	public String getId()
+com.fireos.sdk.ftve.settings.model.EnumSettingData$EnumValue	method	public String getTitle()
+com.fireos.sdk.ftve.settings.model.EnumSettingData$EnumValue	method	public String toString()
+com.fireos.sdk.ftve.settings.model.EnumSettingData$EnumValue	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.EnumSettingData$EnumValue	method	public int describeContents()
+com.fireos.sdk.ftve.settings.model.EnumSettingData$EnumValue	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.EnumSettingData$EnumValue	method	public static Builder builder()
+com.fireos.sdk.ftve.settings.model.EnumSettingData$EnumValue	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.model.EnumSettingData$EnumValue$Builder	field	private String mDescription;
+com.fireos.sdk.ftve.settings.model.EnumSettingData$EnumValue$Builder	field	private String mId;
+com.fireos.sdk.ftve.settings.model.EnumSettingData$EnumValue$Builder	field	private String mTitle;
+com.fireos.sdk.ftve.settings.model.EnumSettingData$EnumValue$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.model.EnumSettingData$EnumValue$Builder	method	public Builder withDescription(String description)
+com.fireos.sdk.ftve.settings.model.EnumSettingData$EnumValue$Builder	method	public Builder withId(String id)
+com.fireos.sdk.ftve.settings.model.EnumSettingData$EnumValue$Builder	method	public Builder withTitle(String title)
+com.fireos.sdk.ftve.settings.model.EnumSettingData$EnumValue$Builder	method	public EnumValue build()
+com.fireos.sdk.ftve.settings.model.InfoBarSettingData	field	private final List<InfoElementRow> mInfoBarData;
+com.fireos.sdk.ftve.settings.model.InfoBarSettingData	field	private final String mHeader;
+com.fireos.sdk.ftve.settings.model.InfoBarSettingData	method	private InfoBarSettingData(Parcel source)
+com.fireos.sdk.ftve.settings.model.InfoBarSettingData	method	private InfoBarSettingData(String settingId, String title, String description, int visibility, String iconId, RemoteViews detailsView, List<InfoElementRow> infoBarData, String header)
+com.fireos.sdk.ftve.settings.model.InfoBarSettingData	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.InfoBarSettingData	method	public List<InfoElementRow> getInfoBarData()
+com.fireos.sdk.ftve.settings.model.InfoBarSettingData	method	public String getHeader()
+com.fireos.sdk.ftve.settings.model.InfoBarSettingData	method	public String toString()
+com.fireos.sdk.ftve.settings.model.InfoBarSettingData	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.InfoBarSettingData	method	public boolean isActionable()
+com.fireos.sdk.ftve.settings.model.InfoBarSettingData	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.InfoBarSettingData	method	public static SettingData.Builder<Builder> builder()
+com.fireos.sdk.ftve.settings.model.InfoBarSettingData	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.model.InfoBarSettingData$Builder	field	private String mHeader;
+com.fireos.sdk.ftve.settings.model.InfoBarSettingData$Builder	field	private final List<InfoElementRow> mSubHeader;
+com.fireos.sdk.ftve.settings.model.InfoBarSettingData$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.model.InfoBarSettingData$Builder	method	public Builder addInfoBarData(InfoElementRow row)
+com.fireos.sdk.ftve.settings.model.InfoBarSettingData$Builder	method	public Builder addInfoBarData(List<InfoElementRow> rows)
+com.fireos.sdk.ftve.settings.model.InfoBarSettingData$Builder	method	public Builder withHeader(String header)
+com.fireos.sdk.ftve.settings.model.InfoBarSettingData$Builder	method	public Builder withIcon(String iconId)
+com.fireos.sdk.ftve.settings.model.InfoBarSettingData$Builder	method	public Builder withVisibility(int visibility)
+com.fireos.sdk.ftve.settings.model.InfoBarSettingData$Builder	method	public InfoBarSettingData build()
+com.fireos.sdk.ftve.settings.model.InfoElement	method	protected InfoElement()
+com.fireos.sdk.ftve.settings.model.InfoElement	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.InfoElement	method	public String toString()
+com.fireos.sdk.ftve.settings.model.InfoElement	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.InfoElement	method	public int describeContents()
+com.fireos.sdk.ftve.settings.model.InfoElement	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.InfoElementRow	field	private final List<InfoElement> mRow;
+com.fireos.sdk.ftve.settings.model.InfoElementRow	method	private InfoElementRow(List<InfoElement> row)
+com.fireos.sdk.ftve.settings.model.InfoElementRow	method	private InfoElementRow(Parcel source)
+com.fireos.sdk.ftve.settings.model.InfoElementRow	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.InfoElementRow	method	public List<InfoElement> getRow()
+com.fireos.sdk.ftve.settings.model.InfoElementRow	method	public String toString()
+com.fireos.sdk.ftve.settings.model.InfoElementRow	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.InfoElementRow	method	public int describeContents()
+com.fireos.sdk.ftve.settings.model.InfoElementRow	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.InfoElementRow	method	public static Builder builder()
+com.fireos.sdk.ftve.settings.model.InfoElementRow	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.model.InfoElementRow$Builder	field	private final List<InfoElement> mRow;
+com.fireos.sdk.ftve.settings.model.InfoElementRow$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.model.InfoElementRow$Builder	method	public Builder addElement(InfoElement element)
+com.fireos.sdk.ftve.settings.model.InfoElementRow$Builder	method	public Builder addElements(List<InfoElement> elements)
+com.fireos.sdk.ftve.settings.model.InfoElementRow$Builder	method	public InfoElementRow build()
+com.fireos.sdk.ftve.settings.model.ListSettingData	field	private final List<SettingData> mListData;
+com.fireos.sdk.ftve.settings.model.ListSettingData	method	private ListSettingData(Parcel source)
+com.fireos.sdk.ftve.settings.model.ListSettingData	method	private ListSettingData(String settingId, String title, String description, int visibility, String iconId, RemoteViews detailsView, List<SettingData> listData)
+com.fireos.sdk.ftve.settings.model.ListSettingData	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.ListSettingData	method	public List<SettingData> getListData()
+com.fireos.sdk.ftve.settings.model.ListSettingData	method	public String toString()
+com.fireos.sdk.ftve.settings.model.ListSettingData	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.ListSettingData	method	public boolean isActionable()
+com.fireos.sdk.ftve.settings.model.ListSettingData	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.ListSettingData	method	public static SettingData.Builder<Builder> builder()
+com.fireos.sdk.ftve.settings.model.ListSettingData	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.model.ListSettingData$ActionBuilder	method	public static Action build(ListSettingData listSettingData, Collection<com.fireos.sdk.ftve.settings.model.Action<?>> actions)
+com.fireos.sdk.ftve.settings.model.ListSettingData$ActionBuilder	method	public static Action build(ListSettingData listSettingData, com.fireos.sdk.ftve.settings.model.Action<?> action)
+com.fireos.sdk.ftve.settings.model.ListSettingData$Builder	field	private List<SettingData> mListData;
+com.fireos.sdk.ftve.settings.model.ListSettingData$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.model.ListSettingData$Builder	method	public Builder addSettingData(List<SettingData> listData)
+com.fireos.sdk.ftve.settings.model.ListSettingData$Builder	method	public Builder addSettingData(SettingData settingData)
+com.fireos.sdk.ftve.settings.model.ListSettingData$Builder	method	public Builder withVisibility(int visibility)
+com.fireos.sdk.ftve.settings.model.ListSettingData$Builder	method	public ListSettingData build()
+com.fireos.sdk.ftve.settings.model.LogoElement	field	private final Bitmap mLogo;
+com.fireos.sdk.ftve.settings.model.LogoElement	field	private final String mLogoDescription;
+com.fireos.sdk.ftve.settings.model.LogoElement	method	private LogoElement(Bitmap logo, String logoDescription)
+com.fireos.sdk.ftve.settings.model.LogoElement	method	private LogoElement(Parcel source)
+com.fireos.sdk.ftve.settings.model.LogoElement	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.LogoElement	method	public Bitmap getLogo()
+com.fireos.sdk.ftve.settings.model.LogoElement	method	public String getLogoDescription()
+com.fireos.sdk.ftve.settings.model.LogoElement	method	public String toString()
+com.fireos.sdk.ftve.settings.model.LogoElement	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.LogoElement	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.LogoElement	method	public static Builder builder()
+com.fireos.sdk.ftve.settings.model.LogoElement	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.model.LogoElement$Builder	field	private Bitmap mLogo;
+com.fireos.sdk.ftve.settings.model.LogoElement$Builder	field	private String mLogoDescription;
+com.fireos.sdk.ftve.settings.model.LogoElement$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.model.LogoElement$Builder	method	public Builder withLogo(Bitmap logo)
+com.fireos.sdk.ftve.settings.model.LogoElement$Builder	method	public Builder withLogoDescription(String logoDescription)
+com.fireos.sdk.ftve.settings.model.LogoElement$Builder	method	public LogoElement build()
+com.fireos.sdk.ftve.settings.model.MultiActionButtonSettingData	field	public static final int ACTION_DOWN;
+com.fireos.sdk.ftve.settings.model.MultiActionButtonSettingData	field	public static final int ACTION_EXIT;
+com.fireos.sdk.ftve.settings.model.MultiActionButtonSettingData	field	public static final int ACTION_UP;
+com.fireos.sdk.ftve.settings.model.MultiActionButtonSettingData	method	private MultiActionButtonSettingData(Parcel source)
+com.fireos.sdk.ftve.settings.model.MultiActionButtonSettingData	method	private MultiActionButtonSettingData(String settingId, String title, String description, int visibility, String iconId, RemoteViews detailsView)
+com.fireos.sdk.ftve.settings.model.MultiActionButtonSettingData	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.MultiActionButtonSettingData	method	public String toString()
+com.fireos.sdk.ftve.settings.model.MultiActionButtonSettingData	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.MultiActionButtonSettingData	method	public boolean isActionable()
+com.fireos.sdk.ftve.settings.model.MultiActionButtonSettingData	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.MultiActionButtonSettingData	method	public static SettingData.Builder<Builder> builder()
+com.fireos.sdk.ftve.settings.model.MultiActionButtonSettingData$Action	method	private Action(Parcel source)
+com.fireos.sdk.ftve.settings.model.MultiActionButtonSettingData$Action	method	private Action(String settingId, int newValue, boolean approved)
+com.fireos.sdk.ftve.settings.model.MultiActionButtonSettingData$Action	method	public static ActionBuilder builder()
+com.fireos.sdk.ftve.settings.model.MultiActionButtonSettingData$Action	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.model.MultiActionButtonSettingData$ActionBuilder	field	private MultiActionButtonSettingData mSettingData;
+com.fireos.sdk.ftve.settings.model.MultiActionButtonSettingData$ActionBuilder	field	private boolean mApproved;
+com.fireos.sdk.ftve.settings.model.MultiActionButtonSettingData$ActionBuilder	field	private int mNewValue;
+com.fireos.sdk.ftve.settings.model.MultiActionButtonSettingData$ActionBuilder	method	private ActionBuilder()
+com.fireos.sdk.ftve.settings.model.MultiActionButtonSettingData$ActionBuilder	method	public Action build()
+com.fireos.sdk.ftve.settings.model.MultiActionButtonSettingData$ActionBuilder	method	public ActionBuilder withApproval(boolean approved)
+com.fireos.sdk.ftve.settings.model.MultiActionButtonSettingData$ActionBuilder	method	public ActionBuilder withNewValue(int newValue)
+com.fireos.sdk.ftve.settings.model.MultiActionButtonSettingData$ActionBuilder	method	public ActionBuilder withSettingData(MultiActionButtonSettingData settingData)
+com.fireos.sdk.ftve.settings.model.MultiActionButtonSettingData$ActionBuilder	method	public static Action build(MultiActionButtonSettingData multiActionButtonSettingData, int newValue)
+com.fireos.sdk.ftve.settings.model.MultiActionButtonSettingData$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.model.MultiActionButtonSettingData$Builder	method	public Builder withIcon(String iconId)
+com.fireos.sdk.ftve.settings.model.MultiActionButtonSettingData$Builder	method	public Builder withVisibility(int visibility)
+com.fireos.sdk.ftve.settings.model.MultiActionButtonSettingData$Builder	method	public MultiActionButtonSettingData build()
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability	field	private final Range mRange;
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability	method	private NumberDeviceCapability(Parcel source)
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability	method	private NumberDeviceCapability(String identifierName, String alexaName, String settingId, Range range)
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability	method	public Range getRange()
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability	method	public String toString()
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability	method	public static DeviceCapability.Builder<Builder> builder()
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability$Builder	field	private Range mRange;
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability$Builder	method	public Builder withRange(Range range)
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability$Builder	method	public Builder withSettingId(String settingId)
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability$Builder	method	public NumberDeviceCapability build()
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability$Range	field	private final double mMax;
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability$Range	field	private final double mMin;
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability$Range	method	private Range(Parcel source)
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability$Range	method	private Range(double min, double max)
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability$Range	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability$Range	method	public String toString()
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability$Range	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability$Range	method	public double getMax()
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability$Range	method	public double getMin()
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability$Range	method	public int describeContents()
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability$Range	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability$Range	method	public static Builder builder()
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability$Range	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability$Range$Builder	field	private double mMax;
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability$Range$Builder	field	private double mMin;
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability$Range$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability$Range$Builder	method	private void validateFields()
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability$Range$Builder	method	public Builder withMax(double max)
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability$Range$Builder	method	public Builder withMin(double min)
+com.fireos.sdk.ftve.settings.model.NumberDeviceCapability$Range$Builder	method	public Range build()
+com.fireos.sdk.ftve.settings.model.NumberSettingData	field	private final Range mRange;
+com.fireos.sdk.ftve.settings.model.NumberSettingData	field	private final String mUnit;
+com.fireos.sdk.ftve.settings.model.NumberSettingData	field	private final double mValue;
+com.fireos.sdk.ftve.settings.model.NumberSettingData	method	private NumberSettingData(Parcel source)
+com.fireos.sdk.ftve.settings.model.NumberSettingData	method	private NumberSettingData(String settingId, String title, String description, int visibility, String iconId, RemoteViews detailsView, double value, Range range, String unit)
+com.fireos.sdk.ftve.settings.model.NumberSettingData	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.NumberSettingData	method	public Range getRange()
+com.fireos.sdk.ftve.settings.model.NumberSettingData	method	public String getUnit()
+com.fireos.sdk.ftve.settings.model.NumberSettingData	method	public String toString()
+com.fireos.sdk.ftve.settings.model.NumberSettingData	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.NumberSettingData	method	public boolean isActionable()
+com.fireos.sdk.ftve.settings.model.NumberSettingData	method	public double getValue()
+com.fireos.sdk.ftve.settings.model.NumberSettingData	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.NumberSettingData	method	public static SettingData.Builder<Builder> builder()
+com.fireos.sdk.ftve.settings.model.NumberSettingData	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Action	method	private Action(Parcel source)
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Action	method	private Action(String settingId, double newValue, boolean approved)
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Action	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Action	method	public String toString()
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Action	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Action	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Action	method	public static ActionBuilder builder()
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Action	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.model.NumberSettingData$ActionBuilder	field	private NumberSettingData mSettingData;
+com.fireos.sdk.ftve.settings.model.NumberSettingData$ActionBuilder	field	private boolean mApproved;
+com.fireos.sdk.ftve.settings.model.NumberSettingData$ActionBuilder	field	private double mNewValue;
+com.fireos.sdk.ftve.settings.model.NumberSettingData$ActionBuilder	method	private ActionBuilder()
+com.fireos.sdk.ftve.settings.model.NumberSettingData$ActionBuilder	method	public Action build()
+com.fireos.sdk.ftve.settings.model.NumberSettingData$ActionBuilder	method	public ActionBuilder withApproval(boolean approved)
+com.fireos.sdk.ftve.settings.model.NumberSettingData$ActionBuilder	method	public ActionBuilder withNewValue(double newValue)
+com.fireos.sdk.ftve.settings.model.NumberSettingData$ActionBuilder	method	public ActionBuilder withSettingData(NumberSettingData settingData)
+com.fireos.sdk.ftve.settings.model.NumberSettingData$ActionBuilder	method	public static Action build(NumberSettingData settingData, double newValue)
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Builder	field	private Range mRange;
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Builder	field	private String mUnit;
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Builder	field	private double mValue;
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Builder	method	public Builder withIcon(String iconId)
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Builder	method	public Builder withRange(Range range)
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Builder	method	public Builder withUnit(String unit)
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Builder	method	public Builder withValue(double value)
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Builder	method	public Builder withVisibility(int visibility)
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Builder	method	public NumberSettingData build()
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Range	field	private final double mMax;
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Range	field	private final double mMin;
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Range	field	private final double mStep;
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Range	method	private Range(Parcel source)
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Range	method	private Range(double min, double max, double step)
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Range	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Range	method	public String toString()
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Range	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Range	method	public double getMax()
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Range	method	public double getMin()
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Range	method	public double getStep()
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Range	method	public int describeContents()
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Range	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Range	method	public static Builder builder()
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Range	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Range$Builder	field	private double mMax;
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Range$Builder	field	private double mMin;
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Range$Builder	field	private double mStep;
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Range$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Range$Builder	method	private void validateFields()
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Range$Builder	method	public Builder withMax(double max)
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Range$Builder	method	public Builder withMin(double min)
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Range$Builder	method	public Builder withStep(double step)
+com.fireos.sdk.ftve.settings.model.NumberSettingData$Range$Builder	method	public Range build()
+com.fireos.sdk.ftve.settings.model.ParentSettingData	field	private final List<InfoElementRow> mSubHeader;
+com.fireos.sdk.ftve.settings.model.ParentSettingData	field	private final String mSubtitle;
+com.fireos.sdk.ftve.settings.model.ParentSettingData	field	private final boolean mActionable;
+com.fireos.sdk.ftve.settings.model.ParentSettingData	field	private final long mTimeout;
+com.fireos.sdk.ftve.settings.model.ParentSettingData	field	public static final int ENTER;
+com.fireos.sdk.ftve.settings.model.ParentSettingData	field	public static final int EXIT;
+com.fireos.sdk.ftve.settings.model.ParentSettingData	method	private ParentSettingData(Parcel source)
+com.fireos.sdk.ftve.settings.model.ParentSettingData	method	private ParentSettingData(String settingId, String title, String description, int visibility, String iconId, RemoteViews detailsView, boolean actionable, long timeout, String subtitle, List<InfoElementRow> subHeader)
+com.fireos.sdk.ftve.settings.model.ParentSettingData	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.ParentSettingData	method	public List<InfoElementRow> getSubHeaderRows()
+com.fireos.sdk.ftve.settings.model.ParentSettingData	method	public String getSubtitle()
+com.fireos.sdk.ftve.settings.model.ParentSettingData	method	public String toString()
+com.fireos.sdk.ftve.settings.model.ParentSettingData	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.ParentSettingData	method	public boolean isActionable()
+com.fireos.sdk.ftve.settings.model.ParentSettingData	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.ParentSettingData	method	public long getTimeout()
+com.fireos.sdk.ftve.settings.model.ParentSettingData	method	public static SettingData.Builder<Builder> builder()
+com.fireos.sdk.ftve.settings.model.ParentSettingData	method	public void writeToParcel(Parcel parcel, int i)
+com.fireos.sdk.ftve.settings.model.ParentSettingData$Action	method	private Action(Parcel source)
+com.fireos.sdk.ftve.settings.model.ParentSettingData$Action	method	private Action(String settingId, Integer num, boolean approved)
+com.fireos.sdk.ftve.settings.model.ParentSettingData$Action	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.ParentSettingData$Action	method	public String toString()
+com.fireos.sdk.ftve.settings.model.ParentSettingData$Action	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.ParentSettingData$Action	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.ParentSettingData$Action	method	public static ActionBuilder builder()
+com.fireos.sdk.ftve.settings.model.ParentSettingData$Action	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.model.ParentSettingData$ActionBuilder	field	private ParentSettingData mSettingData;
+com.fireos.sdk.ftve.settings.model.ParentSettingData$ActionBuilder	field	private boolean mApproved;
+com.fireos.sdk.ftve.settings.model.ParentSettingData$ActionBuilder	field	private int mNewValue;
+com.fireos.sdk.ftve.settings.model.ParentSettingData$ActionBuilder	method	private ActionBuilder()
+com.fireos.sdk.ftve.settings.model.ParentSettingData$ActionBuilder	method	public Action build()
+com.fireos.sdk.ftve.settings.model.ParentSettingData$ActionBuilder	method	public ActionBuilder withApproval(boolean approved)
+com.fireos.sdk.ftve.settings.model.ParentSettingData$ActionBuilder	method	public ActionBuilder withNewValue(Integer newValue)
+com.fireos.sdk.ftve.settings.model.ParentSettingData$ActionBuilder	method	public ActionBuilder withSettingData(ParentSettingData settingData)
+com.fireos.sdk.ftve.settings.model.ParentSettingData$ActionBuilder	method	public static Action build(ParentSettingData settingData, int newValue)
+com.fireos.sdk.ftve.settings.model.ParentSettingData$Builder	field	private String mSubtitle;
+com.fireos.sdk.ftve.settings.model.ParentSettingData$Builder	field	private boolean mActionable;
+com.fireos.sdk.ftve.settings.model.ParentSettingData$Builder	field	private final List<InfoElementRow> mSubHeader;
+com.fireos.sdk.ftve.settings.model.ParentSettingData$Builder	field	private long mTimeout;
+com.fireos.sdk.ftve.settings.model.ParentSettingData$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.model.ParentSettingData$Builder	method	public Builder addSubHeaderRow(InfoElementRow row)
+com.fireos.sdk.ftve.settings.model.ParentSettingData$Builder	method	public Builder addSubHeaderRows(List<InfoElementRow> rows)
+com.fireos.sdk.ftve.settings.model.ParentSettingData$Builder	method	public Builder withActionable(boolean actionable)
+com.fireos.sdk.ftve.settings.model.ParentSettingData$Builder	method	public Builder withIcon(String iconId)
+com.fireos.sdk.ftve.settings.model.ParentSettingData$Builder	method	public Builder withSubtitle(String subtitle)
+com.fireos.sdk.ftve.settings.model.ParentSettingData$Builder	method	public Builder withTimeout(long timeout)
+com.fireos.sdk.ftve.settings.model.ParentSettingData$Builder	method	public Builder withVisibility(int visibility)
+com.fireos.sdk.ftve.settings.model.ParentSettingData$Builder	method	public ParentSettingData build()
+com.fireos.sdk.ftve.settings.model.SettingData	field	private final RemoteViews mDetailsView;
+com.fireos.sdk.ftve.settings.model.SettingData	field	private final String mDescription;
+com.fireos.sdk.ftve.settings.model.SettingData	field	private final String mIconId;
+com.fireos.sdk.ftve.settings.model.SettingData	field	private final String mSettingId;
+com.fireos.sdk.ftve.settings.model.SettingData	field	private final String mTitle;
+com.fireos.sdk.ftve.settings.model.SettingData	field	private final int mVisibility;
+com.fireos.sdk.ftve.settings.model.SettingData	field	public static final int GRAYED_OUT;
+com.fireos.sdk.ftve.settings.model.SettingData	field	public static final int HIDDEN;
+com.fireos.sdk.ftve.settings.model.SettingData	field	public static final int VISIBLE;
+com.fireos.sdk.ftve.settings.model.SettingData	field	public static final long DEFAULT_TIMEOUT;
+com.fireos.sdk.ftve.settings.model.SettingData	field	public static final long DISABLE_TIMEOUT;
+com.fireos.sdk.ftve.settings.model.SettingData	method	protected SettingData(Parcel source)
+com.fireos.sdk.ftve.settings.model.SettingData	method	protected SettingData(String settingId, String title, String description, int visibility, String iconId)
+com.fireos.sdk.ftve.settings.model.SettingData	method	protected SettingData(String settingId, String title, String description, int visibility, String iconId, RemoteViews detailsView)
+com.fireos.sdk.ftve.settings.model.SettingData	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.SettingData	method	public RemoteViews getDetailsView()
+com.fireos.sdk.ftve.settings.model.SettingData	method	public String getDescription()
+com.fireos.sdk.ftve.settings.model.SettingData	method	public String getIcon()
+com.fireos.sdk.ftve.settings.model.SettingData	method	public String getSettingId()
+com.fireos.sdk.ftve.settings.model.SettingData	method	public String getTitle()
+com.fireos.sdk.ftve.settings.model.SettingData	method	public String toString()
+com.fireos.sdk.ftve.settings.model.SettingData	method	public abstract boolean isActionable();
+com.fireos.sdk.ftve.settings.model.SettingData	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.SettingData	method	public int describeContents()
+com.fireos.sdk.ftve.settings.model.SettingData	method	public int getVisibility()
+com.fireos.sdk.ftve.settings.model.SettingData	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.SettingData	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.model.SettingData$Builder	field	protected RemoteViews mDetailsView;
+com.fireos.sdk.ftve.settings.model.SettingData$Builder	field	protected String mDescription;
+com.fireos.sdk.ftve.settings.model.SettingData$Builder	field	protected String mIconId;
+com.fireos.sdk.ftve.settings.model.SettingData$Builder	field	protected String mSettingId;
+com.fireos.sdk.ftve.settings.model.SettingData$Builder	field	protected String mTitle;
+com.fireos.sdk.ftve.settings.model.SettingData$Builder	field	protected int mVisibility;
+com.fireos.sdk.ftve.settings.model.SettingData$Builder	method	protected Builder()
+com.fireos.sdk.ftve.settings.model.SettingData$Builder	method	protected void validateFields()
+com.fireos.sdk.ftve.settings.model.SettingData$Builder	method	public Builder<T> withDescription(String description)
+com.fireos.sdk.ftve.settings.model.SettingData$Builder	method	public Builder<T> withDetailsView(RemoteViews detailsView)
+com.fireos.sdk.ftve.settings.model.SettingData$Builder	method	public Builder<T> withSettingId(String settingId)
+com.fireos.sdk.ftve.settings.model.SettingData$Builder	method	public Builder<T> withTitle(String title)
+com.fireos.sdk.ftve.settings.model.SettingData$Builder	method	public abstract T withVisibility(int i);
+com.fireos.sdk.ftve.settings.model.SettingDataUri	field	private final String mSettingId;
+com.fireos.sdk.ftve.settings.model.SettingDataUri	field	private static final String AUTHORITY;
+com.fireos.sdk.ftve.settings.model.SettingDataUri	field	private static final String SETTING_DATA_PATH;
+com.fireos.sdk.ftve.settings.model.SettingDataUri	field	private static final Uri BASE_URI;
+com.fireos.sdk.ftve.settings.model.SettingDataUri	field	private static final int SETTING_ID_INDEX;
+com.fireos.sdk.ftve.settings.model.SettingDataUri	method	private SettingDataUri(String settingId)
+com.fireos.sdk.ftve.settings.model.SettingDataUri	method	public String getSettingId()
+com.fireos.sdk.ftve.settings.model.SettingDataUri	method	public Uri getBaseUri()
+com.fireos.sdk.ftve.settings.model.SettingDataUri	method	public Uri getUri()
+com.fireos.sdk.ftve.settings.model.SettingDataUri	method	public static Builder builder()
+com.fireos.sdk.ftve.settings.model.SettingDataUri$Builder	field	private String mSettingId;
+com.fireos.sdk.ftve.settings.model.SettingDataUri$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.model.SettingDataUri$Builder	method	public Builder withSettingId(String settingId)
+com.fireos.sdk.ftve.settings.model.SettingDataUri$Builder	method	public SettingDataUri build()
+com.fireos.sdk.ftve.settings.model.SettingDataUri$Builder	method	public static SettingDataUri build(Uri uri)
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode	field	private String mParentId;
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode	field	private String mProviderId;
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode	field	private final List<SettingsTreeNode> mChildren;
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode	field	private final String mSettingId;
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode	field	private final int mPriority;
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode	method	private SettingsTreeNode(String settingId, int priority, List<SettingsTreeNode> children)
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode	method	public List<SettingsTreeNode> getChildren()
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode	method	public SettingsTreeNode addChild(SettingsTreeNode child)
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode	method	public SettingsTreeNode addChildren(List<SettingsTreeNode> children)
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode	method	public SettingsTreeNode setParentId(String parentId)
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode	method	public SettingsTreeNode setProviderId(String providerId)
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode	method	public String getParentId()
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode	method	public String getProviderId()
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode	method	public String getSettingId()
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode	method	public String toString()
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode	method	public int describeContents()
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode	method	public int getPriority()
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode	method	public static Builder builder()
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode$Builder	field	private String mSettingId;
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode$Builder	field	private final List<SettingsTreeNode> mChildren;
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode$Builder	field	private int mPriority;
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode$Builder	method	public Builder addChild(SettingsTreeNode child)
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode$Builder	method	public Builder addChildren(List<SettingsTreeNode> children)
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode$Builder	method	public Builder withPriority(int priority)
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode$Builder	method	public Builder withSettingId(String settingId)
+com.fireos.sdk.ftve.settings.model.SettingsTreeNode$Builder	method	public SettingsTreeNode build()
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData	field	private final LocalTime mSleepTimestamp;
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData	field	private final String mCountDownText;
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData	field	private final String mOffText;
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData	field	private final long mTimeout;
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData	method	private SleepTimerSettingData(Parcel source)
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData	method	private SleepTimerSettingData(String settingId, String title, String description, int visibility, String iconId, RemoteViews detailsView, long timeout, LocalTime sleepTime, String countDownText, String offText)
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData	method	public LocalTime getSleepTimestamp()
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData	method	public String getCountDownText()
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData	method	public String getOffText()
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData	method	public String toString()
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData	method	public boolean isActionable()
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData	method	public long getTimeout()
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData	method	public static SettingData.Builder<Builder> builder()
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData$Action	method	private Action(Parcel source)
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData$Action	method	private Action(String settingId, boolean approved)
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData$Action	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData$Action	method	public String toString()
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData$Action	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData$Action	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData$Action	method	public static ActionBuilder builder()
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData$Action	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData$ActionBuilder	field	private SleepTimerSettingData mSettingData;
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData$ActionBuilder	field	private boolean mApproved;
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData$ActionBuilder	method	private ActionBuilder()
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData$ActionBuilder	method	public Action build()
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData$ActionBuilder	method	public ActionBuilder withApproval(boolean approved)
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData$ActionBuilder	method	public ActionBuilder withSettingData(SleepTimerSettingData settingData)
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData$ActionBuilder	method	public static Action build(SleepTimerSettingData settingData)
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData$Builder	field	private LocalTime mSleepTimestamp;
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData$Builder	field	private String mCountDownText;
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData$Builder	field	private String mOffText;
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData$Builder	field	private long mTimeout;
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData$Builder	method	public Builder withCountDownText(String countDownText)
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData$Builder	method	public Builder withIcon(String iconId)
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData$Builder	method	public Builder withOffText(String offText)
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData$Builder	method	public Builder withTimeout(long timeout)
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData$Builder	method	public Builder withValue(LocalTime sleepTimestamp)
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData$Builder	method	public Builder withVisibility(int visibility)
+com.fireos.sdk.ftve.settings.model.SleepTimerSettingData$Builder	method	public SleepTimerSettingData build()
+com.fireos.sdk.ftve.settings.model.TextElement	field	private final String mText;
+com.fireos.sdk.ftve.settings.model.TextElement	field	private final boolean mBold;
+com.fireos.sdk.ftve.settings.model.TextElement	method	private TextElement(Parcel source)
+com.fireos.sdk.ftve.settings.model.TextElement	method	private TextElement(String text, boolean bold)
+com.fireos.sdk.ftve.settings.model.TextElement	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.model.TextElement	method	public String getText()
+com.fireos.sdk.ftve.settings.model.TextElement	method	public String toString()
+com.fireos.sdk.ftve.settings.model.TextElement	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.model.TextElement	method	public boolean isBold()
+com.fireos.sdk.ftve.settings.model.TextElement	method	public int hashCode()
+com.fireos.sdk.ftve.settings.model.TextElement	method	public static Builder builder()
+com.fireos.sdk.ftve.settings.model.TextElement	method	public void writeToParcel(Parcel parcel, int i)
+com.fireos.sdk.ftve.settings.model.TextElement$Builder	field	private String mText;
+com.fireos.sdk.ftve.settings.model.TextElement$Builder	field	private boolean mBold;
+com.fireos.sdk.ftve.settings.model.TextElement$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.model.TextElement$Builder	method	public Builder withBold(boolean bold)
+com.fireos.sdk.ftve.settings.model.TextElement$Builder	method	public Builder withText(String text)
+com.fireos.sdk.ftve.settings.model.TextElement$Builder	method	public TextElement build()
+com.fireos.sdk.ftve.settings.provider.ISettingsProvider$Default	method	public GetSettingDataOutput getSettingData(GetSettingDataInput input) throws RemoteException
+com.fireos.sdk.ftve.settings.provider.ISettingsProvider$Default	method	public IBinder asBinder()
+com.fireos.sdk.ftve.settings.provider.ISettingsProvider$Default	method	public RequestSettingsTreeOutput requestSettingsTree(RequestSettingsTreeInput input) throws RemoteException
+com.fireos.sdk.ftve.settings.provider.ISettingsProvider$Default	method	public SetSettingDataOutput setSettingData(SetSettingDataInput input) throws RemoteException
+com.fireos.sdk.ftve.settings.provider.ISettingsProvider$Stub	field	private static final String DESCRIPTOR;
+com.fireos.sdk.ftve.settings.provider.ISettingsProvider$Stub	field	static final int TRANSACTION_getSettingData;
+com.fireos.sdk.ftve.settings.provider.ISettingsProvider$Stub	field	static final int TRANSACTION_requestSettingsTree;
+com.fireos.sdk.ftve.settings.provider.ISettingsProvider$Stub	field	static final int TRANSACTION_setSettingData;
+com.fireos.sdk.ftve.settings.provider.ISettingsProvider$Stub	method	public IBinder asBinder()
+com.fireos.sdk.ftve.settings.provider.ISettingsProvider$Stub	method	public Stub()
+com.fireos.sdk.ftve.settings.provider.ISettingsProvider$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.fireos.sdk.ftve.settings.provider.ISettingsProvider$Stub	method	public static ISettingsProvider asInterface(IBinder obj)
+com.fireos.sdk.ftve.settings.provider.ISettingsProvider$Stub	method	public static ISettingsProvider getDefaultImpl()
+com.fireos.sdk.ftve.settings.provider.ISettingsProvider$Stub	method	public static boolean setDefaultImpl(ISettingsProvider impl)
+com.fireos.sdk.ftve.settings.provider.ISettingsProvider$Stub$Proxy	field	private IBinder mRemote;
+com.fireos.sdk.ftve.settings.provider.ISettingsProvider$Stub$Proxy	field	public static ISettingsProvider sDefaultImpl;
+com.fireos.sdk.ftve.settings.provider.ISettingsProvider$Stub$Proxy	method	public GetSettingDataOutput getSettingData(GetSettingDataInput input) throws RemoteException
+com.fireos.sdk.ftve.settings.provider.ISettingsProvider$Stub$Proxy	method	public IBinder asBinder()
+com.fireos.sdk.ftve.settings.provider.ISettingsProvider$Stub$Proxy	method	public RequestSettingsTreeOutput requestSettingsTree(RequestSettingsTreeInput input) throws RemoteException
+com.fireos.sdk.ftve.settings.provider.ISettingsProvider$Stub$Proxy	method	public SetSettingDataOutput setSettingData(SetSettingDataInput input) throws RemoteException
+com.fireos.sdk.ftve.settings.provider.ISettingsProvider$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.fireos.sdk.ftve.settings.provider.RequestSettingsTreeInput	field	private final String mTreeName;
+com.fireos.sdk.ftve.settings.provider.RequestSettingsTreeInput	method	private RequestSettingsTreeInput(String treeName)
+com.fireos.sdk.ftve.settings.provider.RequestSettingsTreeInput	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.provider.RequestSettingsTreeInput	method	public String getTreeName()
+com.fireos.sdk.ftve.settings.provider.RequestSettingsTreeInput	method	public String toString()
+com.fireos.sdk.ftve.settings.provider.RequestSettingsTreeInput	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.provider.RequestSettingsTreeInput	method	public int describeContents()
+com.fireos.sdk.ftve.settings.provider.RequestSettingsTreeInput	method	public int hashCode()
+com.fireos.sdk.ftve.settings.provider.RequestSettingsTreeInput	method	public static Builder builder()
+com.fireos.sdk.ftve.settings.provider.RequestSettingsTreeInput	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.provider.RequestSettingsTreeInput$Builder	field	private String mTreeName;
+com.fireos.sdk.ftve.settings.provider.RequestSettingsTreeInput$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.provider.RequestSettingsTreeInput$Builder	method	public Builder withTreeName(String treeName)
+com.fireos.sdk.ftve.settings.provider.RequestSettingsTreeInput$Builder	method	public RequestSettingsTreeInput build()
+com.fireos.sdk.ftve.settings.provider.RequestSettingsTreeOutput	field	private final Map<String, ArrayList<SettingsTreeNode>> mSettingsTree;
+com.fireos.sdk.ftve.settings.provider.RequestSettingsTreeOutput	method	private RequestSettingsTreeOutput(Map<String, ArrayList<SettingsTreeNode>> settingsTree)
+com.fireos.sdk.ftve.settings.provider.RequestSettingsTreeOutput	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.provider.RequestSettingsTreeOutput	method	public Map<String, ArrayList<SettingsTreeNode>> getSettingsTree()
+com.fireos.sdk.ftve.settings.provider.RequestSettingsTreeOutput	method	public String toString()
+com.fireos.sdk.ftve.settings.provider.RequestSettingsTreeOutput	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.provider.RequestSettingsTreeOutput	method	public int describeContents()
+com.fireos.sdk.ftve.settings.provider.RequestSettingsTreeOutput	method	public int hashCode()
+com.fireos.sdk.ftve.settings.provider.RequestSettingsTreeOutput	method	public static Builder builder()
+com.fireos.sdk.ftve.settings.provider.RequestSettingsTreeOutput	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.provider.RequestSettingsTreeOutput$Builder	field	private final Map<String, ArrayList<SettingsTreeNode>> mSettingsTree;
+com.fireos.sdk.ftve.settings.provider.RequestSettingsTreeOutput$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.provider.RequestSettingsTreeOutput$Builder	method	public Builder addSettingsTree(Map<String, ArrayList<SettingsTreeNode>> settingsTree)
+com.fireos.sdk.ftve.settings.provider.RequestSettingsTreeOutput$Builder	method	public Builder addSettingsTree(String parentSettingId, ArrayList<SettingsTreeNode> settingsTree)
+com.fireos.sdk.ftve.settings.provider.RequestSettingsTreeOutput$Builder	method	public Builder addSettingsTree(String parentSettingId, SettingsTreeNode settingsTree)
+com.fireos.sdk.ftve.settings.provider.RequestSettingsTreeOutput$Builder	method	public RequestSettingsTreeOutput build()
+com.fireos.sdk.ftve.settings.provider.SettingsProvider	field	private SettingsProviderBinder mSettingsProviderBinder;
+com.fireos.sdk.ftve.settings.provider.SettingsProvider	field	private static final String TAG;
+com.fireos.sdk.ftve.settings.provider.SettingsProvider	method	public IBinder onBind(Intent intent)
+com.fireos.sdk.ftve.settings.provider.SettingsProvider	method	public abstract GetSettingDataOutput getSettingData(GetSettingDataInput getSettingDataInput);
+com.fireos.sdk.ftve.settings.provider.SettingsProvider	method	public abstract RequestSettingsTreeOutput requestSettingsTree(RequestSettingsTreeInput requestSettingsTreeInput);
+com.fireos.sdk.ftve.settings.provider.SettingsProvider	method	public abstract SetSettingDataOutput setSettingData(SetSettingDataInput setSettingDataInput);
+com.fireos.sdk.ftve.settings.provider.SettingsProvider	method	public void onCreate()
+com.fireos.sdk.ftve.settings.provider.SettingsProvider$SettingsProviderBinder	field	private final WeakReference<SettingsProvider> mService;
+com.fireos.sdk.ftve.settings.provider.SettingsProvider$SettingsProviderBinder	method	private SettingsProviderBinder(SettingsProvider service)
+com.fireos.sdk.ftve.settings.provider.SettingsProvider$SettingsProviderBinder	method	private void checkService() throws RemoteException
+com.fireos.sdk.ftve.settings.provider.SettingsProvider$SettingsProviderBinder	method	public GetSettingDataOutput getSettingData(GetSettingDataInput input) throws RemoteException
+com.fireos.sdk.ftve.settings.provider.SettingsProvider$SettingsProviderBinder	method	public RequestSettingsTreeOutput requestSettingsTree(RequestSettingsTreeInput input) throws RemoteException
+com.fireos.sdk.ftve.settings.provider.SettingsProvider$SettingsProviderBinder	method	public SetSettingDataOutput setSettingData(SetSettingDataInput input) throws RemoteException
+com.fireos.sdk.ftve.settings.receiver.ProviderReplacedReceiver	field	private final String mTag;
+com.fireos.sdk.ftve.settings.receiver.ProviderReplacedReceiver	method	public abstract String getProviderId();
+com.fireos.sdk.ftve.settings.receiver.ProviderReplacedReceiver	method	public void onReceive(Context context, Intent intent)
+com.fireos.sdk.ftve.settings.receiver.PublishCapabilityRequestReceiver	field	private final String mTag;
+com.fireos.sdk.ftve.settings.receiver.PublishCapabilityRequestReceiver	method	public abstract DeviceCapabilityData getDeviceCapabilityData();
+com.fireos.sdk.ftve.settings.receiver.PublishCapabilityRequestReceiver	method	public void onReceive(Context context, Intent intent)
+com.fireos.sdk.ftve.settings.service.FSFSettingsService	field	private FSFSettingsBinder mBinder;
+com.fireos.sdk.ftve.settings.service.FSFSettingsService	field	private RemoteCallbackList<IChangeListener> mListeners;
+com.fireos.sdk.ftve.settings.service.FSFSettingsService	field	private static final String TAG;
+com.fireos.sdk.ftve.settings.service.FSFSettingsService	method	protected void notifyListenersOnSettingDataChange(SettingDataChangeEvent event)
+com.fireos.sdk.ftve.settings.service.FSFSettingsService	method	protected void notifyListenersOnSettingsTreeChange(SettingsTreeChangeEvent event)
+com.fireos.sdk.ftve.settings.service.FSFSettingsService	method	public GetSettingsApprovalOutput getSettingsApproval(GetSettingsApprovalInput getSettingsApprovalInput)
+com.fireos.sdk.ftve.settings.service.FSFSettingsService	method	public IBinder onBind(Intent intent)
+com.fireos.sdk.ftve.settings.service.FSFSettingsService	method	public SetSettingsApprovalOutput setSettingsApproval(SetSettingsApprovalInput setSettingsApprovalInput)
+com.fireos.sdk.ftve.settings.service.FSFSettingsService	method	public abstract GetSettingDataOutput getSettingData(GetSettingDataInput getSettingDataInput);
+com.fireos.sdk.ftve.settings.service.FSFSettingsService	method	public abstract SetSettingDataOutput setSettingData(SetSettingDataInput setSettingDataInput);
+com.fireos.sdk.ftve.settings.service.FSFSettingsService	method	public abstract SettingsTreeNode getSettingsTree(String str);
+com.fireos.sdk.ftve.settings.service.FSFSettingsService	method	public abstract void notifySettingDataChange(SettingDataChangeEvent settingDataChangeEvent);
+com.fireos.sdk.ftve.settings.service.FSFSettingsService	method	public abstract void requestSettingsTreeRegistration(RequestSettingsTreeRegistrationInput requestSettingsTreeRegistrationInput);
+com.fireos.sdk.ftve.settings.service.FSFSettingsService	method	public void onCreate()
+com.fireos.sdk.ftve.settings.service.FSFSettingsService	method	public void onDestroy()
+com.fireos.sdk.ftve.settings.service.FSFSettingsService$FSFSettingsBinder	field	private final WeakReference<FSFSettingsService> mService;
+com.fireos.sdk.ftve.settings.service.FSFSettingsService$FSFSettingsBinder	method	private FSFSettingsBinder(FSFSettingsService service)
+com.fireos.sdk.ftve.settings.service.FSFSettingsService$FSFSettingsBinder	method	private void checkService() throws RemoteException
+com.fireos.sdk.ftve.settings.service.FSFSettingsService$FSFSettingsBinder	method	public GetSettingDataOutput getSettingData(GetSettingDataInput input) throws RemoteException
+com.fireos.sdk.ftve.settings.service.FSFSettingsService$FSFSettingsBinder	method	public GetSettingsApprovalOutput getSettingsApproval(GetSettingsApprovalInput getSettingsApprovalInput) throws RemoteException
+com.fireos.sdk.ftve.settings.service.FSFSettingsService$FSFSettingsBinder	method	public SetSettingDataOutput setSettingData(SetSettingDataInput input) throws RemoteException
+com.fireos.sdk.ftve.settings.service.FSFSettingsService$FSFSettingsBinder	method	public SetSettingsApprovalOutput setSettingsApproval(SetSettingsApprovalInput setSettingsApprovalInput) throws RemoteException
+com.fireos.sdk.ftve.settings.service.FSFSettingsService$FSFSettingsBinder	method	public SettingsTreeNode getSettingsTree(String settingId) throws RemoteException
+com.fireos.sdk.ftve.settings.service.FSFSettingsService$FSFSettingsBinder	method	public boolean deregisterListener(IChangeListener listener) throws RemoteException
+com.fireos.sdk.ftve.settings.service.FSFSettingsService$FSFSettingsBinder	method	public boolean registerListener(IChangeListener listener) throws RemoteException
+com.fireos.sdk.ftve.settings.service.FSFSettingsService$FSFSettingsBinder	method	public void notifySettingDataChange(SettingDataChangeEvent event) throws RemoteException
+com.fireos.sdk.ftve.settings.service.FSFSettingsService$FSFSettingsBinder	method	public void requestSettingsTreeRegistration(RequestSettingsTreeRegistrationInput input) throws RemoteException
+com.fireos.sdk.ftve.settings.service.IChangeListener$Default	method	public IBinder asBinder()
+com.fireos.sdk.ftve.settings.service.IChangeListener$Default	method	public void onSettingDataChange(SettingDataChangeEvent event) throws RemoteException
+com.fireos.sdk.ftve.settings.service.IChangeListener$Default	method	public void onSettingsTreeChange(SettingsTreeChangeEvent event) throws RemoteException
+com.fireos.sdk.ftve.settings.service.IChangeListener$Stub	field	private static final String DESCRIPTOR;
+com.fireos.sdk.ftve.settings.service.IChangeListener$Stub	field	static final int TRANSACTION_onSettingDataChange;
+com.fireos.sdk.ftve.settings.service.IChangeListener$Stub	field	static final int TRANSACTION_onSettingsTreeChange;
+com.fireos.sdk.ftve.settings.service.IChangeListener$Stub	method	public IBinder asBinder()
+com.fireos.sdk.ftve.settings.service.IChangeListener$Stub	method	public Stub()
+com.fireos.sdk.ftve.settings.service.IChangeListener$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.fireos.sdk.ftve.settings.service.IChangeListener$Stub	method	public static IChangeListener asInterface(IBinder obj)
+com.fireos.sdk.ftve.settings.service.IChangeListener$Stub	method	public static IChangeListener getDefaultImpl()
+com.fireos.sdk.ftve.settings.service.IChangeListener$Stub	method	public static boolean setDefaultImpl(IChangeListener impl)
+com.fireos.sdk.ftve.settings.service.IChangeListener$Stub$Proxy	field	private IBinder mRemote;
+com.fireos.sdk.ftve.settings.service.IChangeListener$Stub$Proxy	field	public static IChangeListener sDefaultImpl;
+com.fireos.sdk.ftve.settings.service.IChangeListener$Stub$Proxy	method	public IBinder asBinder()
+com.fireos.sdk.ftve.settings.service.IChangeListener$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.fireos.sdk.ftve.settings.service.IChangeListener$Stub$Proxy	method	public void onSettingDataChange(SettingDataChangeEvent event) throws RemoteException
+com.fireos.sdk.ftve.settings.service.IChangeListener$Stub$Proxy	method	public void onSettingsTreeChange(SettingsTreeChangeEvent event) throws RemoteException
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Default	method	public GetSettingDataOutput getSettingData(GetSettingDataInput input) throws RemoteException
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Default	method	public GetSettingsApprovalOutput getSettingsApproval(GetSettingsApprovalInput input) throws RemoteException
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Default	method	public IBinder asBinder()
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Default	method	public SetSettingDataOutput setSettingData(SetSettingDataInput input) throws RemoteException
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Default	method	public SetSettingsApprovalOutput setSettingsApproval(SetSettingsApprovalInput input) throws RemoteException
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Default	method	public SettingsTreeNode getSettingsTree(String settingId) throws RemoteException
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Default	method	public boolean deregisterListener(IChangeListener listener) throws RemoteException
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Default	method	public boolean registerListener(IChangeListener listener) throws RemoteException
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Default	method	public void notifySettingDataChange(SettingDataChangeEvent event) throws RemoteException
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Default	method	public void requestSettingsTreeRegistration(RequestSettingsTreeRegistrationInput input) throws RemoteException
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Stub	field	private static final String DESCRIPTOR;
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Stub	field	static final int TRANSACTION_deregisterListener;
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Stub	field	static final int TRANSACTION_getSettingData;
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Stub	field	static final int TRANSACTION_getSettingsApproval;
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Stub	field	static final int TRANSACTION_getSettingsTree;
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Stub	field	static final int TRANSACTION_notifySettingDataChange;
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Stub	field	static final int TRANSACTION_registerListener;
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Stub	field	static final int TRANSACTION_requestSettingsTreeRegistration;
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Stub	field	static final int TRANSACTION_setSettingData;
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Stub	field	static final int TRANSACTION_setSettingsApproval;
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Stub	method	public IBinder asBinder()
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Stub	method	public Stub()
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Stub	method	public static IFSFSettingsService asInterface(IBinder obj)
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Stub	method	public static IFSFSettingsService getDefaultImpl()
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Stub	method	public static boolean setDefaultImpl(IFSFSettingsService impl)
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Stub$Proxy	field	private IBinder mRemote;
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Stub$Proxy	field	public static IFSFSettingsService sDefaultImpl;
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Stub$Proxy	method	public GetSettingDataOutput getSettingData(GetSettingDataInput input) throws RemoteException
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Stub$Proxy	method	public GetSettingsApprovalOutput getSettingsApproval(GetSettingsApprovalInput input) throws RemoteException
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Stub$Proxy	method	public IBinder asBinder()
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Stub$Proxy	method	public SetSettingDataOutput setSettingData(SetSettingDataInput input) throws RemoteException
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Stub$Proxy	method	public SetSettingsApprovalOutput setSettingsApproval(SetSettingsApprovalInput input) throws RemoteException
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Stub$Proxy	method	public SettingsTreeNode getSettingsTree(String settingId) throws RemoteException
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Stub$Proxy	method	public boolean deregisterListener(IChangeListener listener) throws RemoteException
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Stub$Proxy	method	public boolean registerListener(IChangeListener listener) throws RemoteException
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Stub$Proxy	method	public void notifySettingDataChange(SettingDataChangeEvent event) throws RemoteException
+com.fireos.sdk.ftve.settings.service.IFSFSettingsService$Stub$Proxy	method	public void requestSettingsTreeRegistration(RequestSettingsTreeRegistrationInput input) throws RemoteException
+com.fireos.sdk.ftve.settings.service.RequestSettingsTreeRegistrationInput	field	private final String mPackageName;
+com.fireos.sdk.ftve.settings.service.RequestSettingsTreeRegistrationInput	field	private final String mProviderId;
+com.fireos.sdk.ftve.settings.service.RequestSettingsTreeRegistrationInput	method	private RequestSettingsTreeRegistrationInput(String providerId, String packageName)
+com.fireos.sdk.ftve.settings.service.RequestSettingsTreeRegistrationInput	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.service.RequestSettingsTreeRegistrationInput	method	public String getPackageName()
+com.fireos.sdk.ftve.settings.service.RequestSettingsTreeRegistrationInput	method	public String getProviderId()
+com.fireos.sdk.ftve.settings.service.RequestSettingsTreeRegistrationInput	method	public String toString()
+com.fireos.sdk.ftve.settings.service.RequestSettingsTreeRegistrationInput	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.service.RequestSettingsTreeRegistrationInput	method	public int describeContents()
+com.fireos.sdk.ftve.settings.service.RequestSettingsTreeRegistrationInput	method	public int hashCode()
+com.fireos.sdk.ftve.settings.service.RequestSettingsTreeRegistrationInput	method	public static Builder builder()
+com.fireos.sdk.ftve.settings.service.RequestSettingsTreeRegistrationInput	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.service.RequestSettingsTreeRegistrationInput$Builder	field	private String mProviderId;
+com.fireos.sdk.ftve.settings.service.RequestSettingsTreeRegistrationInput$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.service.RequestSettingsTreeRegistrationInput$Builder	method	public Builder withProviderId(String providerId)
+com.fireos.sdk.ftve.settings.service.RequestSettingsTreeRegistrationInput$Builder	method	public RequestSettingsTreeRegistrationInput build(Context context)
+com.fireos.sdk.ftve.settings.service.SettingDataChangeEvent	field	private final Map<String, SettingData> mSettingData;
+com.fireos.sdk.ftve.settings.service.SettingDataChangeEvent	method	private SettingDataChangeEvent(Map<String, SettingData> settingsTrees)
+com.fireos.sdk.ftve.settings.service.SettingDataChangeEvent	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.service.SettingDataChangeEvent	method	public Map<String, SettingData> getSettingData()
+com.fireos.sdk.ftve.settings.service.SettingDataChangeEvent	method	public String toString()
+com.fireos.sdk.ftve.settings.service.SettingDataChangeEvent	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.service.SettingDataChangeEvent	method	public int describeContents()
+com.fireos.sdk.ftve.settings.service.SettingDataChangeEvent	method	public int hashCode()
+com.fireos.sdk.ftve.settings.service.SettingDataChangeEvent	method	public static Builder builder()
+com.fireos.sdk.ftve.settings.service.SettingDataChangeEvent	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.service.SettingDataChangeEvent$Builder	field	private final Map<String, SettingData> mSettingsData;
+com.fireos.sdk.ftve.settings.service.SettingDataChangeEvent$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.service.SettingDataChangeEvent$Builder	method	public Builder addChangedSettingData(Collection<SettingData> changedSettingsData)
+com.fireos.sdk.ftve.settings.service.SettingDataChangeEvent$Builder	method	public Builder addChangedSettingData(SettingData changedSettingData)
+com.fireos.sdk.ftve.settings.service.SettingDataChangeEvent$Builder	method	public SettingDataChangeEvent build()
+com.fireos.sdk.ftve.settings.service.SettingsProviderClient	field	private final Context mContext;
+com.fireos.sdk.ftve.settings.service.SettingsProviderClient	field	private final Intent mSettingsProviderIntent;
+com.fireos.sdk.ftve.settings.service.SettingsProviderClient	field	private final Set<ConnectionListener> mConnectionListeners;
+com.fireos.sdk.ftve.settings.service.SettingsProviderClient	field	private static final String TAG;
+com.fireos.sdk.ftve.settings.service.SettingsProviderClient	field	private volatile ISettingsProvider mService;
+com.fireos.sdk.ftve.settings.service.SettingsProviderClient	method	private void checkService() throws ServiceUnavailableException
+com.fireos.sdk.ftve.settings.service.SettingsProviderClient	method	public GetSettingDataOutput getSettingData(GetSettingDataInput input) throws RemoteException, ServiceUnavailableException
+com.fireos.sdk.ftve.settings.service.SettingsProviderClient	method	public RequestSettingsTreeOutput requestSettingsTree(RequestSettingsTreeInput input) throws RemoteException, ServiceUnavailableException
+com.fireos.sdk.ftve.settings.service.SettingsProviderClient	method	public SetSettingDataOutput setSettingData(SetSettingDataInput input) throws RemoteException, ServiceUnavailableException
+com.fireos.sdk.ftve.settings.service.SettingsProviderClient	method	public SettingsProviderClient(Context context, Intent intent)
+com.fireos.sdk.ftve.settings.service.SettingsProviderClient	method	public boolean isConnected()
+com.fireos.sdk.ftve.settings.service.SettingsProviderClient	method	public synchronized void notifyDisconnect()
+com.fireos.sdk.ftve.settings.service.SettingsProviderClient	method	public synchronized void setService(ISettingsProvider service)
+com.fireos.sdk.ftve.settings.service.SettingsProviderClient	method	public void connect(ConnectionListener connectionListener)
+com.fireos.sdk.ftve.settings.service.SettingsProviderClient	method	public void disconnect()
+com.fireos.sdk.ftve.settings.service.SettingsProviderClient$ServiceUnavailableException	method	private ServiceUnavailableException(String message)
+com.fireos.sdk.ftve.settings.service.SettingsTreeChangeEvent	field	private final Map<String, SettingsTreeNode> mSettingsTrees;
+com.fireos.sdk.ftve.settings.service.SettingsTreeChangeEvent	method	private SettingsTreeChangeEvent(Map<String, SettingsTreeNode> settingsTrees)
+com.fireos.sdk.ftve.settings.service.SettingsTreeChangeEvent	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.settings.service.SettingsTreeChangeEvent	method	public Map<String, SettingsTreeNode> getSettingsTree()
+com.fireos.sdk.ftve.settings.service.SettingsTreeChangeEvent	method	public String toString()
+com.fireos.sdk.ftve.settings.service.SettingsTreeChangeEvent	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.settings.service.SettingsTreeChangeEvent	method	public int describeContents()
+com.fireos.sdk.ftve.settings.service.SettingsTreeChangeEvent	method	public int hashCode()
+com.fireos.sdk.ftve.settings.service.SettingsTreeChangeEvent	method	public static Builder builder()
+com.fireos.sdk.ftve.settings.service.SettingsTreeChangeEvent	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.settings.service.SettingsTreeChangeEvent$Builder	field	private final Map<String, SettingsTreeNode> mSettingsTrees;
+com.fireos.sdk.ftve.settings.service.SettingsTreeChangeEvent$Builder	method	private Builder()
+com.fireos.sdk.ftve.settings.service.SettingsTreeChangeEvent$Builder	method	public Builder addChangedSettingsTreeNode(SettingsTreeNode changedSettingsTreeNode)
+com.fireos.sdk.ftve.settings.service.SettingsTreeChangeEvent$Builder	method	public Builder addChangedSettingsTreeNodes(Collection<SettingsTreeNode> changedSettingsTreeNodes)
+com.fireos.sdk.ftve.settings.service.SettingsTreeChangeEvent$Builder	method	public SettingsTreeChangeEvent build()
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String AQ_CINEMA;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String AQ_CLEAR_VOICE;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String AQ_CUSTOM;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String AQ_DRAMA;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String AQ_DYNAMIC;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String AQ_ENHANCED_BASS;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String AQ_FLAT;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String AQ_MOVIE;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String AQ_MUSIC;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String AQ_NEWS;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String AQ_SMART;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String AQ_SPORT;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String AQ_STANDARD;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String AQ_USER;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String AQ_VOICE_ASSIST;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String BALANCE_ALEXA_NAME;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String BASS_ALEXA_NAME;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String CINEMA;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String CUSTOM;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String DOLBY_VISION_BRIGHT;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String DOLBY_VISION_DARK;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String DOLBY_VISION_FILMMAKER;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String DOLBY_VISION_GAME;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String DOLBY_VISION_IQ;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String DOLBY_VISION_SPORT;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String DOLBY_VISION_STANDARD;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String DOLBY_VISION_STORE;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String DOLBY_VISION_VIVID;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String DRAMA;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String DYNAMIC;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String ENERGY_SAVING;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String FILMMAKER;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String GAME;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String MIDRANGE_ALEXA_NAME;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String MOVIE;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String MOVIE_DARK;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String NATURAL;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String NORMAL;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String PC;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String PICTURE_MODE_ALEXA_NAME;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String PICTURE_MODE_IDENTIFIER_NAME;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String PREMIUM;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String SOUND_IDENTIFIER_NAME;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String SOUND_MODE_ALEXA_NAME;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String SPORTS;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String STORE;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String TREBLE_ALEXA_NAME;
+com.fireos.sdk.ftve.settings.util.DeviceCapabilityConstants	field	public static final String VIVID;
+com.fireos.sdk.ftve.settings.util.LogUtil	method	public static String createLogTag(Class<?> clazz)
+com.fireos.sdk.ftve.settings.util.ParcelUtil	field	private static final String TAG;
+com.fireos.sdk.ftve.settings.util.ParcelUtil	method	public static <T extends Parcelable> Map<String, ArrayList<T>> readMapOfArrayListFromParcel(Parcel source, ClassLoader classLoader)
+com.fireos.sdk.ftve.settings.util.ParcelUtil	method	public static <T extends Parcelable> Map<String, T> readMapFromParcel(Parcel source, ClassLoader classLoader)
+com.fireos.sdk.ftve.settings.util.ParcelUtil	method	public static <T extends Parcelable> void writeMapOfArrayListToParcel(Parcel parcel, Map<String, ArrayList<T>> map)
+com.fireos.sdk.ftve.settings.util.ParcelUtil	method	public static <T extends Parcelable> void writeMapToParcel(Parcel dest, Map<String, T> map)
+com.fireos.sdk.ftve.settings.util.SettingsTreeReader	field	private final Context mContext;
+com.fireos.sdk.ftve.settings.util.SettingsTreeReader	field	private static final String CHILDREN;
+com.fireos.sdk.ftve.settings.util.SettingsTreeReader	field	private static final String PRIORITY;
+com.fireos.sdk.ftve.settings.util.SettingsTreeReader	field	private static final String SETTING_ID;
+com.fireos.sdk.ftve.settings.util.SettingsTreeReader	field	private static final String TAG;
+com.fireos.sdk.ftve.settings.util.SettingsTreeReader	method	private SettingsTreeNode buildSettingsTreeNodes(JSONObject jsonObject) throws JSONException
+com.fireos.sdk.ftve.settings.util.SettingsTreeReader	method	private String readJson(int resourceId)
+com.fireos.sdk.ftve.settings.util.SettingsTreeReader	method	public Map<String, ArrayList<SettingsTreeNode>> readTree(int resourceId)
+com.fireos.sdk.ftve.settings.util.SettingsTreeReader	method	public SettingsTreeReader(Context context)

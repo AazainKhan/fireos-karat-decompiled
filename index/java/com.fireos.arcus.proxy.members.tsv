@@ -1,0 +1,42 @@
+class	kind	declaration
+com.fireos.arcus.proxy.ArcusFailureMetricsLogger	field	private static final AmazonMinerva MINERVA_CLIENT;
+com.fireos.arcus.proxy.ArcusFailureMetricsLogger	method	public static void recordMetrics(String str, String str2, String str3, String str4, double d)
+com.fireos.arcus.proxy.ArcusProxy	field	private ArcusFwkManager mArcusFwkManager;
+com.fireos.arcus.proxy.ArcusProxy	field	private ArcusProxyBinder mBinderService;
+com.fireos.arcus.proxy.ArcusProxy	field	private Context mDirectBootContext;
+com.fireos.arcus.proxy.ArcusProxy	field	private final Context mContext;
+com.fireos.arcus.proxy.ArcusProxy	field	private static Object sSyncCountLock;
+com.fireos.arcus.proxy.ArcusProxy	field	private static Set<String> sRegisterSet;
+com.fireos.arcus.proxy.ArcusProxy	field	private static SharedPreferences sArcusPreference;
+com.fireos.arcus.proxy.ArcusProxy	field	private static SharedPreferences.Editor sArcusPreferenceEditor;
+com.fireos.arcus.proxy.ArcusProxy	field	private static boolean sFirstTimeStart;
+com.fireos.arcus.proxy.ArcusProxy	field	private static final String TAG;
+com.fireos.arcus.proxy.ArcusProxy	field	private static final boolean DEBUG_MODE;
+com.fireos.arcus.proxy.ArcusProxy	field	private static int sSyncCount;
+com.fireos.arcus.proxy.ArcusProxy	method	private void loadAttributes(String str)
+com.fireos.arcus.proxy.ArcusProxy	method	public IBinder onBind(Intent intent)
+com.fireos.arcus.proxy.ArcusProxy	method	public void backupAttributes(String str, String str2, String str3, int i)
+com.fireos.arcus.proxy.ArcusProxy	method	public void onCreate()
+com.fireos.arcus.proxy.ArcusProxy	method	public void recordFailureMetrics(String str, String str2, Exception exc)
+com.fireos.arcus.proxy.ArcusProxy$ArcusProxyBinder	method	private ConfigurationSyncCallback getConfigurationSyncCallback(final String str, final boolean z, final int i, final String str2)
+com.fireos.arcus.proxy.ArcusProxy$ArcusProxyBinder	method	public ArcusProxyBinder()
+com.fireos.arcus.proxy.ArcusProxy$ArcusProxyBinder	method	public String openConfiguration(String str)
+com.fireos.arcus.proxy.ArcusProxy$ArcusProxyBinder	method	public void addAttribute(String str, String str2, String str3)
+com.fireos.arcus.proxy.ArcusProxy$ArcusProxyBinder	method	public void addAttribute(String str, String str2, boolean z)
+com.fireos.arcus.proxy.ArcusProxy$ArcusProxyBinder	method	public void addAttribute(String str, String str2, double d)
+com.fireos.arcus.proxy.ArcusProxy$ArcusProxyBinder	method	public void addAttribute(String str, String str2, int i)
+com.fireos.arcus.proxy.ArcusProxy$ArcusProxyBinder	method	public void addAttribute(String str, String str2, long j)
+com.fireos.arcus.proxy.ArcusProxy$ArcusProxyBinder	method	public void addAttributeBoolean(String str, String str2, boolean z)
+com.fireos.arcus.proxy.ArcusProxy$ArcusProxyBinder	method	public void addAttributeDouble(String str, String str2, double d)
+com.fireos.arcus.proxy.ArcusProxy$ArcusProxyBinder	method	public void addAttributeInt(String str, String str2, int i)
+com.fireos.arcus.proxy.ArcusProxy$ArcusProxyBinder	method	public void addAttributeLong(String str, String str2, long j)
+com.fireos.arcus.proxy.ArcusProxy$ArcusProxyBinder	method	public void addAttributeString(String str, String str2, String str3)
+com.fireos.arcus.proxy.ArcusProxy$ArcusProxyBinder	method	public void clientsSyncFinished()
+com.fireos.arcus.proxy.ArcusProxy$ArcusProxyBinder	method	public void notifyMemoryFactorChanged(int i)
+com.fireos.arcus.proxy.ArcusProxy$ArcusProxyBinder	method	public void overwriteConfiguration(String str, String str2)
+com.fireos.arcus.proxy.ArcusProxy$ArcusProxyBinder	method	public void register(String str)
+com.fireos.arcus.proxy.ArcusProxy$ArcusProxyBinder	method	public void sendBroadcastToReceiver(String str, int i, String str2)
+com.fireos.arcus.proxy.ArcusProxy$ArcusProxyBinder	method	public void sync(List<String> list, boolean z)
+com.fireos.arcus.proxy.ArcusProxy$ArcusProxyBinder	method	public void syncId(String str, boolean z)
+com.fireos.arcus.proxy.ArcusProxy$ArcusProxyBinder	method	public void updateBackupConfigurations(String str, String str2)
+com.fireos.arcus.proxy.R$string	field	public static final int app_label;

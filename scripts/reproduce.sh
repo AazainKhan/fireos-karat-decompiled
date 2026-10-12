@@ -14,14 +14,6 @@ SDAT2IMG="${SDAT2IMG:?set SDAT2IMG to the path of sdat2img.py}"
 DEBUGFS="${DEBUGFS:-$(command -v debugfs || echo /opt/homebrew/opt/e2fsprogs/sbin/debugfs)}"
 export AAPT2="${AAPT2:-$HOME/Library/Android/sdk/build-tools/36.0.0/aapt2}"
 
-# Packages decompiled for index/java (the integration surfaces Glass cares about).
-KEY_PACKAGES=(
-  com.amazon.tv.launcher com.amazon.firehomestarter com.amazon.autopairservice com.amazon.uxcontrollerservice
-  com.amazon.dialservice com.amazon.tv.settings.v2 com.amazon.tv.settings.core com.amazon.cast.sink
-  com.amazon.whisperlink.core.android com.amazon.tv.notificationcenter com.amazon.tv.matter
-  com.amazon.tv.mattercohost com.amazon.fireinputdevices com.amazon.device.bluetoothkeymaplib
-  com.amazon.tv.ffsprovisioneeclient
-)
 
 mkdir -p "$WORK/ota" "$WORK/extracted"
 echo "[1/7] unpack OTA"
@@ -48,10 +40,16 @@ echo "[5/7] dependency graph"
 python3 "$REPO/scripts/graph.py" "$REPO/data/manifests.json" "$REPO/data/libs_features.txt" "$REPO/data/graph.json"
 python3 "$REPO/scripts/index_components.py" "$REPO/data/manifests.json" "$REPO/index"
 
-echo "[6/7] decompile key packages (jadx, local only)"
-for pkg in "${KEY_PACKAGES[@]}"; do
-  apk=$(python3 -c "import json,sys;print(json.load(open(sys.argv[1]))[sys.argv[2]][0]['file'])" "$REPO/data/manifests.json" "$pkg")
-  [ -d "$WORK/decompiled/$pkg" ] || jadx -q -j 4 --no-res --show-bad-code -d "$WORK/decompiled/$pkg" "$WORK/extracted/$apk" || true
+echo "[6/7] decompile every APK with code and every framework JAR (jadx, local only)"
+decompile() {  # $1 = output name, $2 = file
+  [ -d "$WORK/decompiled/$1/sources" ] || jadx -q -j 2 --no-res --show-bad-code -d "$WORK/decompiled/$1" "$2" >/dev/null 2>&1 || true
+}
+python3 -c "import json,sys;[print(k+'\t'+v[0]['file']) for k,v in sorted(json.load(open(sys.argv[1])).items())]" "$REPO/data/manifests.json" \
+  | while IFS=$'\t' read -r pkg apk; do
+      unzip -Z1 "$WORK/extracted/$apk" 2>/dev/null | grep -q -E '^classes[0-9]*\.dex$' && decompile "$pkg" "$WORK/extracted/$apk" || true
+    done
+find "$WORK/extracted" -name '*.jar' | sort | while read -r jar; do
+  unzip -Z1 "$jar" 2>/dev/null | grep -q -E '^classes[0-9]*\.dex$' && decompile "jar-$(basename "$jar" .jar)" "$jar" || true
 done
 
 echo "[7/7] declaration indexes"

@@ -1,0 +1,81 @@
+class	kind	declaration
+com.android.commands.content.Content	field	private static final String USAGE;
+com.android.commands.content.Content	method	public static void main(String[] strArr)
+com.android.commands.content.Content$CallCommand	field	final Bundle mExtras;
+com.android.commands.content.Content$CallCommand	field	final String mArg;
+com.android.commands.content.Content$CallCommand	field	final String mMethod;
+com.android.commands.content.Content$CallCommand	method	public CallCommand(Uri uri, int i, String str, String str2, Bundle bundle)
+com.android.commands.content.Content$CallCommand	method	public void onExecute(IContentProvider iContentProvider) throws Exception
+com.android.commands.content.Content$Command	field	final Uri mUri;
+com.android.commands.content.Content$Command	field	final int mUserId;
+com.android.commands.content.Content$Command	method	protected abstract void onExecute(IContentProvider iContentProvider) throws Exception;
+com.android.commands.content.Content$Command	method	public Command(Uri uri, int i)
+com.android.commands.content.Content$Command	method	public final void execute()
+com.android.commands.content.Content$Command	method	public static String resolveCallingPackage()
+com.android.commands.content.Content$DeleteCommand	field	final Bundle mExtras;
+com.android.commands.content.Content$DeleteCommand	method	public DeleteCommand(Uri uri, int i, Bundle bundle)
+com.android.commands.content.Content$DeleteCommand	method	public void onExecute(IContentProvider iContentProvider) throws Exception
+com.android.commands.content.Content$GetTypeCommand	method	public GetTypeCommand(Uri uri, int i)
+com.android.commands.content.Content$GetTypeCommand	method	public void onExecute(IContentProvider iContentProvider) throws Exception
+com.android.commands.content.Content$InsertCommand	field	final Bundle mExtras;
+com.android.commands.content.Content$InsertCommand	field	final ContentValues mContentValues;
+com.android.commands.content.Content$InsertCommand	method	public InsertCommand(Uri uri, int i, ContentValues contentValues, Bundle bundle)
+com.android.commands.content.Content$InsertCommand	method	public void onExecute(IContentProvider iContentProvider) throws Exception
+com.android.commands.content.Content$Parser	field	private final Tokenizer mTokenizer;
+com.android.commands.content.Content$Parser	field	private static final String ARGUMENT_ARG;
+com.android.commands.content.Content$Parser	field	private static final String ARGUMENT_BIND;
+com.android.commands.content.Content$Parser	field	private static final String ARGUMENT_CALL;
+com.android.commands.content.Content$Parser	field	private static final String ARGUMENT_DELETE;
+com.android.commands.content.Content$Parser	field	private static final String ARGUMENT_EXTRA;
+com.android.commands.content.Content$Parser	field	private static final String ARGUMENT_GET_TYPE;
+com.android.commands.content.Content$Parser	field	private static final String ARGUMENT_INSERT;
+com.android.commands.content.Content$Parser	field	private static final String ARGUMENT_METHOD;
+com.android.commands.content.Content$Parser	field	private static final String ARGUMENT_PREFIX;
+com.android.commands.content.Content$Parser	field	private static final String ARGUMENT_PROJECTION;
+com.android.commands.content.Content$Parser	field	private static final String ARGUMENT_QUERY;
+com.android.commands.content.Content$Parser	field	private static final String ARGUMENT_READ;
+com.android.commands.content.Content$Parser	field	private static final String ARGUMENT_SORT;
+com.android.commands.content.Content$Parser	field	private static final String ARGUMENT_UPDATE;
+com.android.commands.content.Content$Parser	field	private static final String ARGUMENT_URI;
+com.android.commands.content.Content$Parser	field	private static final String ARGUMENT_USER;
+com.android.commands.content.Content$Parser	field	private static final String ARGUMENT_WHERE;
+com.android.commands.content.Content$Parser	field	private static final String ARGUMENT_WRITE;
+com.android.commands.content.Content$Parser	field	private static final String COLON;
+com.android.commands.content.Content$Parser	field	private static final String TYPE_BOOLEAN;
+com.android.commands.content.Content$Parser	field	private static final String TYPE_DOUBLE;
+com.android.commands.content.Content$Parser	field	private static final String TYPE_FLOAT;
+com.android.commands.content.Content$Parser	field	private static final String TYPE_INTEGER;
+com.android.commands.content.Content$Parser	field	private static final String TYPE_LONG;
+com.android.commands.content.Content$Parser	field	private static final String TYPE_NULL;
+com.android.commands.content.Content$Parser	field	private static final String TYPE_STRING;
+com.android.commands.content.Content$Parser	method	private DeleteCommand parseDeleteCommand()
+com.android.commands.content.Content$Parser	method	private GetTypeCommand parseGetTypeCommand()
+com.android.commands.content.Content$Parser	method	private InsertCommand parseInsertCommand()
+com.android.commands.content.Content$Parser	method	private List<String> splitWithEscaping(String str, char c)
+com.android.commands.content.Content$Parser	method	private Pair<String, Object> parseBindValue()
+com.android.commands.content.Content$Parser	method	private ReadCommand parseReadCommand()
+com.android.commands.content.Content$Parser	method	private String argumentValueRequired(String str)
+com.android.commands.content.Content$Parser	method	private UpdateCommand parseUpdateCommand()
+com.android.commands.content.Content$Parser	method	private WriteCommand parseWriteCommand()
+com.android.commands.content.Content$Parser	method	private void parseBindValue(Bundle bundle)
+com.android.commands.content.Content$Parser	method	private void parseBindValue(ContentValues contentValues)
+com.android.commands.content.Content$Parser	method	public CallCommand parseCallCommand()
+com.android.commands.content.Content$Parser	method	public Command parseCommand()
+com.android.commands.content.Content$Parser	method	public Parser(String[] strArr)
+com.android.commands.content.Content$Parser	method	public QueryCommand parseQueryCommand()
+com.android.commands.content.Content$QueryCommand	field	final Bundle mExtras;
+com.android.commands.content.Content$QueryCommand	field	final String[] mProjection;
+com.android.commands.content.Content$QueryCommand	method	public QueryCommand(Uri uri, int i, String[] strArr, Bundle bundle)
+com.android.commands.content.Content$QueryCommand	method	public void onExecute(IContentProvider iContentProvider) throws Exception
+com.android.commands.content.Content$ReadCommand	method	public ReadCommand(Uri uri, int i)
+com.android.commands.content.Content$ReadCommand	method	public void onExecute(IContentProvider iContentProvider) throws Exception
+com.android.commands.content.Content$Tokenizer	field	private final String[] mArgs;
+com.android.commands.content.Content$Tokenizer	field	private int mNextArg;
+com.android.commands.content.Content$Tokenizer	method	public String nextArg()
+com.android.commands.content.Content$Tokenizer	method	public Tokenizer(String[] strArr)
+com.android.commands.content.Content$UpdateCommand	field	final Bundle mExtras;
+com.android.commands.content.Content$UpdateCommand	field	final ContentValues mValues;
+com.android.commands.content.Content$UpdateCommand	method	public UpdateCommand(Uri uri, int i, ContentValues contentValues, Bundle bundle)
+com.android.commands.content.Content$UpdateCommand	method	public void onExecute(IContentProvider iContentProvider) throws Exception
+com.android.commands.content.Content$WriteCommand	method	public WriteCommand(Uri uri, int i)
+com.android.commands.content.Content$WriteCommand	method	public void onExecute(IContentProvider iContentProvider) throws Exception

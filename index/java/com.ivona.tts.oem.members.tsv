@@ -1,0 +1,337 @@
+class	kind	declaration
+com.ivona.tts.EngineSettings	method	protected void onCreate(Bundle bundle)
+com.ivona.tts.EngineSettings$EnginePreferenceFragment	method	private IvonaPackage getPreferredVoice(Locale locale, List<IvonaPackage> list)
+com.ivona.tts.EngineSettings$EnginePreferenceFragment	method	private Preference createPreference(Locale locale, List<IvonaPackage> list)
+com.ivona.tts.EngineSettings$EnginePreferenceFragment	method	public boolean onPreferenceChange(Preference preference, Object obj)
+com.ivona.tts.EngineSettings$EnginePreferenceFragment	method	public void onCreate(Bundle bundle)
+com.ivona.tts.VoiceApp	method	public void onCreate()
+com.ivona.tts.commonlib.VUtils	field	private static Map<String, String> iso3ToIso2Country;
+com.ivona.tts.commonlib.VUtils	field	private static Map<String, String> iso3ToIso2Language;
+com.ivona.tts.commonlib.VUtils	field	private static Map<String, String> propertyCache;
+com.ivona.tts.commonlib.VUtils	method	public static Locale convertLocaleToISO2(Locale locale)
+com.ivona.tts.commonlib.VUtils	method	public static String getISO2CountryFromISO3(String str)
+com.ivona.tts.commonlib.VUtils	method	public static String getISO2LanguageFromISO3(String str)
+com.ivona.tts.commonlib.VUtils	method	public static String getLocaleISO3Country(Locale locale)
+com.ivona.tts.commonlib.VUtils	method	public static String getLocaleISO3Language(Locale locale)
+com.ivona.tts.commonlib.VUtils	method	public static String getPreferredVoicePropertyName(Locale locale)
+com.ivona.tts.commonlib.VUtils	method	public static String loadProperty(Context context, String str)
+com.ivona.tts.commonlib.VUtils	method	public static boolean removeProperty(Context context, String str)
+com.ivona.tts.commonlib.VUtils	method	public static void clearPropertyCache()
+com.ivona.tts.commonlib.VUtils	method	public static void storeProperty(Context context, String str, String str2)
+com.ivona.tts.commonlib.logger.Log	method	public static void e(String str, String str2)
+com.ivona.tts.commonlib.logger.Log	method	public static void e(String str, String str2, Object... objArr)
+com.ivona.tts.commonlib.logger.Log	method	public static void i(String str, String str2, Object... objArr)
+com.ivona.tts.commonlib.logger.Log	method	public static void printStackTrace(Exception exc)
+com.ivona.tts.oem.R$drawable	field	public static final int icon;
+com.ivona.tts.oem.R$string	field	public static final int app_name;
+com.ivona.tts.oem.R$string	field	public static final int preferred_voice;
+com.ivona.tts.oem.R$string	field	public static final int preferred_voice_dialog_title;
+com.ivona.tts.oem.R$string	field	public static final int sample_cym_gbr;
+com.ivona.tts.oem.R$string	field	public static final int sample_dan_dnk;
+com.ivona.tts.oem.R$string	field	public static final int sample_deu_deu;
+com.ivona.tts.oem.R$string	field	public static final int sample_eng_aus;
+com.ivona.tts.oem.R$string	field	public static final int sample_eng_gbr;
+com.ivona.tts.oem.R$string	field	public static final int sample_eng_gbr_wls;
+com.ivona.tts.oem.R$string	field	public static final int sample_eng_ind;
+com.ivona.tts.oem.R$string	field	public static final int sample_eng_usa;
+com.ivona.tts.oem.R$string	field	public static final int sample_fra_can;
+com.ivona.tts.oem.R$string	field	public static final int sample_fra_fra;
+com.ivona.tts.oem.R$string	field	public static final int sample_isl_isl;
+com.ivona.tts.oem.R$string	field	public static final int sample_ita_ita;
+com.ivona.tts.oem.R$string	field	public static final int sample_nld_nld;
+com.ivona.tts.oem.R$string	field	public static final int sample_pol_pol;
+com.ivona.tts.oem.R$string	field	public static final int sample_por_bra;
+com.ivona.tts.oem.R$string	field	public static final int sample_por_prt;
+com.ivona.tts.oem.R$string	field	public static final int sample_ron_rou;
+com.ivona.tts.oem.R$string	field	public static final int sample_rus_rus;
+com.ivona.tts.oem.R$string	field	public static final int sample_spa_esp;
+com.ivona.tts.oem.R$string	field	public static final int sample_spa_usa;
+com.ivona.tts.oem.R$string	field	public static final int sample_swe_swe;
+com.ivona.tts.oem.R$string	field	public static final int sample_tur_tur;
+com.ivona.tts.oem.R$xml	field	public static final int tts_engine;
+com.ivona.ttslib.AppIvonaAndroidLib	field	private final IvonaPackagesInfo ipi;
+com.ivona.ttslib.AppIvonaAndroidLib	field	private static Context appContext;
+com.ivona.ttslib.AppIvonaAndroidLib	field	private static String appPackageName;
+com.ivona.ttslib.AppIvonaAndroidLib	method	public IvonaPackagesInfo getIvonaPackagesInfo()
+com.ivona.ttslib.AppIvonaAndroidLib	method	public static Context getAppContext()
+com.ivona.ttslib.AppIvonaAndroidLib	method	public static String getAppPackageName()
+com.ivona.ttslib.AppIvonaAndroidLib	method	public void onCreate()
+com.ivona.ttslib.CheckVoiceData	method	public void onCreate(Bundle bundle)
+com.ivona.ttslib.CommonMethods	method	public static void sendBroadcast(Context context, Intent intent)
+com.ivona.ttslib.CommonMethods	method	public static void sendBroadcast(Context context, String str, Bundle bundle, ComponentName componentName)
+com.ivona.ttslib.CommonMethods	method	public static void sendBroadcast(Context context, String str, Bundle bundle, List<ComponentName> list)
+com.ivona.ttslib.DefaultVoices	field	private static final List<ComponentName> defaultVoicesBroadcastConsumers;
+com.ivona.ttslib.DefaultVoices	field	private static final List<ComponentName> defaultVoicesWereUpdatedBroadcastConsumers;
+com.ivona.ttslib.DefaultVoices	method	public static Bundle buildDefaultVoicesAnswerBundle(HashMap<Locale, Locale> map)
+com.ivona.ttslib.DefaultVoices	method	public static Bundle sendDefaultVoicesBroadcast(Context context, boolean z, HashMap<Locale, Locale> map)
+com.ivona.ttslib.DefaultVoices	method	public static Bundle sendDefaultVoicesBroadcast(Context context, boolean z, HashMap<Locale, Locale> map, Serializable serializable)
+com.ivona.ttslib.DefaultVoices	method	public static HashMap<Locale, Locale> processRequest(Context context, DefaultVoicesAction defaultVoicesAction, Bundle bundle, String str) throws InvalidParameterException
+com.ivona.ttslib.DefaultVoices	method	static HashMap<Locale, Locale> defaultVoices(Context context, DefaultVoicesParam defaultVoicesParam) throws Throwable
+com.ivona.ttslib.DefaultVoices$DefaultVoicesAction	method	static DefaultVoicesAction fromBundleKey(Bundle bundle) throws InvalidParameterException
+com.ivona.ttslib.DefaultVoices$DefaultVoicesAction	method	static DefaultVoicesAction fromIntentAction(Intent intent) throws InvalidParameterException
+com.ivona.ttslib.DefaultVoices$DefaultVoicesActivity	method	protected void onCreate(Bundle bundle)
+com.ivona.ttslib.DefaultVoices$DefaultVoicesParam	field	private Map<Locale, Locale> defaultVoicesForLocales;
+com.ivona.ttslib.DefaultVoices$DefaultVoicesParam	field	private Set<Locale> localesKeys;
+com.ivona.ttslib.DefaultVoices$DefaultVoicesReceiver	method	public void onReceive(Context context, Intent intent)
+com.ivona.ttslib.DownloadVoiceData	method	protected void onCreate(Bundle bundle)
+com.ivona.ttslib.GetSampleText	method	public void onCreate(Bundle bundle)
+com.ivona.ttslib.HeadsetPlugReceiver	method	public void onReceive(Context context, Intent intent)
+com.ivona.ttslib.RefreshVoiceListReceiver	field	private static final ComponentName EXTENSION_REMOVAL_JOB_RECEIVER;
+com.ivona.ttslib.RefreshVoiceListReceiver	method	private boolean removeDefaultVoiceIfNeeded(Context context, Locale locale, Locale locale2)
+com.ivona.ttslib.RefreshVoiceListReceiver	method	private void removeDefaultVoiceIfNeeded(Context context, String str, String str2, Locale locale)
+com.ivona.ttslib.RefreshVoiceListReceiver	method	private void removeExtension(Context context, String str, String str2, Bundle bundle)
+com.ivona.ttslib.RefreshVoiceListReceiver	method	public void onReceive(Context context, Intent intent) throws Throwable
+com.ivona.ttslib.SettingsBackupAgent	method	public static void requestBackup(Context context)
+com.ivona.ttslib.SettingsBackupAgent	method	public void onBackup(ParcelFileDescriptor parcelFileDescriptor, BackupDataOutput backupDataOutput, ParcelFileDescriptor parcelFileDescriptor2) throws IOException
+com.ivona.ttslib.SettingsBackupAgent	method	public void onCreate()
+com.ivona.ttslib.SettingsBackupAgent	method	public void onRestore(BackupDataInput backupDataInput, int i, ParcelFileDescriptor parcelFileDescriptor) throws IOException
+com.ivona.ttslib.SpeechMarkSerializable	field	private String[] types;
+com.ivona.ttslib.SpeechMarkSerializable	method	public SpeechMarkSerializable(SpeechMark speechMark)
+com.ivona.ttslib.config.ConfigXMLDataSet	field	private static String[] packagesCfg;
+com.ivona.ttslib.config.ConfigXMLDataSet	method	private static native String[] getPackagesCfg();
+com.ivona.ttslib.config.ConfigXMLDataSet	method	private static native String[] getSettingsCfg();
+com.ivona.ttslib.config.ConfigXMLDataSet	method	public final String[] getPackages()
+com.ivona.ttslib.config.ConfigXMLDataSet	method	public static native String[] getNotifyUnusedDirs();
+com.ivona.ttslib.config.ConfigXMLDataSet	method	public static native String[] getSystemDirs();
+com.ivona.ttslib.config.ConfigXMLDataSet	method	public static void rebuild()
+com.ivona.ttslib.ics.IVONATextToSpeechService	field	private boolean speaking;
+com.ivona.ttslib.ics.IVONATextToSpeechService	field	private final HeadsetPlugReceiver recvHeadset;
+com.ivona.ttslib.ics.IVONATextToSpeechService	field	private long lastSeenRebuildTimestamp;
+com.ivona.ttslib.ics.IVONATextToSpeechService	field	private static CountDownLatch engineCreatedSignal;
+com.ivona.ttslib.ics.IVONATextToSpeechService	field	private static IvonaMetricEvent metricEventTtsEngine;
+com.ivona.ttslib.ics.IVONATextToSpeechService	field	private static NativeIVONAEngineICS ivonaEngineInstance;
+com.ivona.ttslib.ics.IVONATextToSpeechService	field	private static ReentrantLock lastRebuildTimestampLock;
+com.ivona.ttslib.ics.IVONATextToSpeechService	field	private static final Handler handlerInit;
+com.ivona.ttslib.ics.IVONATextToSpeechService	field	private static final NativeIVONAEngineICS ivonaEngine;
+com.ivona.ttslib.ics.IVONATextToSpeechService	field	private static final String TAG;
+com.ivona.ttslib.ics.IVONATextToSpeechService	field	private static final int MSG_INIT;
+com.ivona.ttslib.ics.IVONATextToSpeechService	field	private static long lastRebuildTimestamp;
+com.ivona.ttslib.ics.IVONATextToSpeechService	field	private static volatile String[] currentLanguage;
+com.ivona.ttslib.ics.IVONATextToSpeechService	field	private static volatile String[] initLanguage;
+com.ivona.ttslib.ics.IVONATextToSpeechService	method	private IvonaPackagesInfo.VoiceEvaluation getBestVoice(String str, String str2, String str3)
+com.ivona.ttslib.ics.IVONATextToSpeechService	method	private boolean checkIfVoiceReloadNeededAndResetTimestamp()
+com.ivona.ttslib.ics.IVONATextToSpeechService	method	private synchronized boolean isSpeaking(boolean z, boolean z2)
+com.ivona.ttslib.ics.IVONATextToSpeechService	method	protected Set<String> onGetFeaturesForLanguage(String str, String str2, String str3)
+com.ivona.ttslib.ics.IVONATextToSpeechService	method	protected String[] onGetLanguage()
+com.ivona.ttslib.ics.IVONATextToSpeechService	method	protected int onIsLanguageAvailable(String str, String str2, String str3) throws Throwable
+com.ivona.ttslib.ics.IVONATextToSpeechService	method	protected int onLoadLanguage(String str, String str2, String str3)
+com.ivona.ttslib.ics.IVONATextToSpeechService	method	protected synchronized void onAmazonSynthesizeText(SynthesisRequest synthesisRequest, AmazonSynthesisCallback amazonSynthesisCallback)
+com.ivona.ttslib.ics.IVONATextToSpeechService	method	protected void onStop()
+com.ivona.ttslib.ics.IVONATextToSpeechService	method	public List<Voice> onGetVoices() throws Throwable
+com.ivona.ttslib.ics.IVONATextToSpeechService	method	public String onGetDefaultVoiceNameFor(String str, String str2, String str3)
+com.ivona.ttslib.ics.IVONATextToSpeechService	method	public int onIsValidVoiceName(String str)
+com.ivona.ttslib.ics.IVONATextToSpeechService	method	public int onLoadVoice(String str)
+com.ivona.ttslib.ics.IVONATextToSpeechService	method	public static boolean setLastRebuildTimestamp(long j)
+com.ivona.ttslib.ics.IVONATextToSpeechService	method	public static synchronized int loadLanguage(String str, String str2, String str3, boolean z)
+com.ivona.ttslib.ics.IVONATextToSpeechService	method	public static void setContrast(boolean z)
+com.ivona.ttslib.ics.IVONATextToSpeechService	method	public void onCreate() throws Throwable
+com.ivona.ttslib.ics.IVONATextToSpeechService	method	public void onDestroy()
+com.ivona.ttslib.ics.IVONATextToSpeechService$InitHandler	method	public void handleMessage(Message message)
+com.ivona.ttslib.ics.NativeIVONAEngine	field	private static final String TAG;
+com.ivona.ttslib.ics.NativeIVONAEngine	method	protected native int setContrast(int i);
+com.ivona.ttslib.ics.NativeIVONAEngine	method	public native String[] evaluateVoiceByLanguage(String str, String str2, String str3);
+com.ivona.ttslib.ics.NativeIVONAEngine	method	public native String[] getVersion();
+com.ivona.ttslib.ics.NativeIVONAEngine	method	public native String[] onGetLanguage();
+com.ivona.ttslib.ics.NativeIVONAEngine	method	public native int getSampleRate();
+com.ivona.ttslib.ics.NativeIVONAEngine	method	public native int onLoadLanguage(String str, String str2, String str3);
+com.ivona.ttslib.ics.NativeIVONAEngine	method	public native void create();
+com.ivona.ttslib.ics.NativeIVONAEngine	method	public native void destroy();
+com.ivona.ttslib.ics.NativeIVONAEngine	method	public native void stop();
+com.ivona.ttslib.ics.NativeIVONAEngine	method	public static native void loadMissingVoiceExtension();
+com.ivona.ttslib.ics.NativeIVONAEngine	method	public static native void setEnvRuntime(String str, String str2);
+com.ivona.ttslib.ics.NativeIVONAEngineICS	field	private AmazonSynthesisCallback callback;
+com.ivona.ttslib.ics.NativeIVONAEngineICS	field	private IvonaMetricEvent metricEventSpeak;
+com.ivona.ttslib.ics.NativeIVONAEngineICS	field	private List<String> broadcastPackages;
+com.ivona.ttslib.ics.NativeIVONAEngineICS	field	private String deviceName;
+com.ivona.ttslib.ics.NativeIVONAEngineICS	field	private String requestTextLength;
+com.ivona.ttslib.ics.NativeIVONAEngineICS	field	private boolean firstBytesTimerStopped;
+com.ivona.ttslib.ics.NativeIVONAEngineICS	field	private byte[] audioBuffer;
+com.ivona.ttslib.ics.NativeIVONAEngineICS	field	private final List<SpeechMark> marks;
+com.ivona.ttslib.ics.NativeIVONAEngineICS	field	private int audioBufferSize;
+com.ivona.ttslib.ics.NativeIVONAEngineICS	field	private int sampleRateInHz;
+com.ivona.ttslib.ics.NativeIVONAEngineICS	field	private long speakTimeMs;
+com.ivona.ttslib.ics.NativeIVONAEngineICS	field	private static CPUBenchmark cpuBenchmark;
+com.ivona.ttslib.ics.NativeIVONAEngineICS	field	private static final List<String> WAKE_WORD_DEVICES;
+com.ivona.ttslib.ics.NativeIVONAEngineICS	field	private static final String GENERATE_MARKS_PARAM_KEY;
+com.ivona.ttslib.ics.NativeIVONAEngineICS	field	private static final String TAG;
+com.ivona.ttslib.ics.NativeIVONAEngineICS	field	private static final int IVONA_MARKS_FLAG_WORD;
+com.ivona.ttslib.ics.NativeIVONAEngineICS	field	private static int TTS_SYNTH_DONE;
+com.ivona.ttslib.ics.NativeIVONAEngineICS	field	public static final String SPEECH_MARK;
+com.ivona.ttslib.ics.NativeIVONAEngineICS	field	public static final String SPEECH_MARKS_RECEIVER_PERMISSION;
+com.ivona.ttslib.ics.NativeIVONAEngineICS	field	public static final String SPEECH_MARK_STRING;
+com.ivona.ttslib.ics.NativeIVONAEngineICS	field	public static final int TTS_ENGINE_FAILURE;
+com.ivona.ttslib.ics.NativeIVONAEngineICS	method	private native int setProperty(String str, String str2);
+com.ivona.ttslib.ics.NativeIVONAEngineICS	method	private native int synthesizeText(String str, byte[] bArr);
+com.ivona.ttslib.ics.NativeIVONAEngineICS	method	private native int synthesizeText(String str, byte[] bArr, List list, int i);
+com.ivona.ttslib.ics.NativeIVONAEngineICS	method	public NativeIVONAEngineICS()
+com.ivona.ttslib.ics.NativeIVONAEngineICS	method	public int audioAvailableClbk(int i, int i2)
+com.ivona.ttslib.ics.NativeIVONAEngineICS	method	public void speak(SynthesisRequest synthesisRequest, AmazonSynthesisCallback amazonSynthesisCallback, IvonaMetricEvent ivonaMetricEvent)
+com.ivona.ttslib.metrics.AmazonMetrics	field	private static MetricsFactory metricsFactory;
+com.ivona.ttslib.metrics.AmazonMetrics	field	private static boolean metricsApiAvailable;
+com.ivona.ttslib.metrics.AmazonMetrics	field	private static final List<String> packageNamesPrefixWhitelist;
+com.ivona.ttslib.metrics.AmazonMetrics	field	public static final int PID_SELF;
+com.ivona.ttslib.metrics.AmazonMetrics	method	public static IvonaMetricEvent createIvonaMetricEvent(String str)
+com.ivona.ttslib.metrics.AmazonMetrics	method	public static IvonaMetricEvent createNullIvonaMetricEvent(String str)
+com.ivona.ttslib.metrics.AmazonMetrics	method	public static boolean shouldRecordPackageName(String str)
+com.ivona.ttslib.metrics.AmazonMetrics	method	public static void logErrorMetric(ErrorCountMetricType errorCountMetricType)
+com.ivona.ttslib.metrics.AmazonMetrics	method	public static void record(IvonaMetricEvent ivonaMetricEvent)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	field	private Map<ItemId, Double> ivonaCounters;
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	field	private Map<TimerId, IvonaAggregatingTimer> ivonaTimers;
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	field	private static final String TAG;
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	field	private static final int GET_PACKAGE_NAME_TIMEOUT_MILLIS;
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	field	protected Integer callerPid;
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	field	protected MetricEvent metricEvent;
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	field	protected String callerPackageName;
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	field	static final String EXTRA_KEY_CALLER_PACKAGE_NAME;
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	private static boolean isPidSelf(int i)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	private void addIvonaAggregatingTimer(TimerId timerId, double d, int i)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	private void removeIvonaAggregatingTimer(TimerId timerId)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	private void startIvonaAggregatingTimer(TimerId timerId)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	private void stopIvonaAggregatingTimer(TimerId timerId)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public List<DataPoint> getAsDataPoints()
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public MetricEventType getMetricEventType()
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public String getNonAnonymousCustomerId()
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public String getNonAnonymousSessionId()
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public String getProgram()
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public String getSource()
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public boolean getAnonymous()
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public boolean hasDataPoints()
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public void addCounter(String str, double d)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public void addCounter(String str, double d, boolean z)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public void addDataPoint(DataPoint dataPoint) throws MetricsException
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public void addDataPoints(List<DataPoint> list) throws MetricsException
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public void addString(String str, String str2)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public void addTimer(String str, double d)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public void addTimer(String str, double d, int i)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public void addTimer(String str, double d, int i, boolean z)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public void appendString(String str, String str2)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public void clear()
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public void incrementCounter(String str, double d)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public void removeCounter(String str)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public void removeString(String str)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public void removeTimer(String str)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public void removeTimer(String str, boolean z)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public void restoreFromMap(Map<String, String> map) throws IllegalArgumentException
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public void saveToMap(Map<String, String> map)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public void setAnonymous(boolean z)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public void setCallerPid(int i) throws Throwable
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public void setClickstreamUserAgent(String str)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public void setNonAnonymousCustomerId(String str)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public void setNonAnonymousSessionId(String str)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public void startTimer(String str)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public void startTimer(String str, String str2)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public void startTimer(String str, boolean z)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public void stopTimer(String str)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public void stopTimer(String str, String str2)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent	method	public void stopTimer(String str, boolean z)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent$ItemId	field	final String name;
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent$ItemId	field	final String suffix;
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent$ItemId	field	final boolean addPackageName;
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent$ItemId	method	protected void toStringAddNameSuffix(StringBuilder sb)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent$ItemId	method	public String toString()
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent$ItemId	method	public boolean equals(Object obj)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent$ItemId	method	public int hashCode()
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent$TimerId	field	final IvonaAggregatingTimer.TimeMeasuringMethod method;
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent$TimerId	method	protected void toStringAddNameSuffix(StringBuilder sb)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent$TimerId	method	public boolean equals(Object obj)
+com.ivona.ttslib.metrics.BasicIvonaMetricEvent$TimerId	method	public int hashCode()
+com.ivona.ttslib.metrics.IvonaAggregatingTimer	field	private double mTotalElapsedTime;
+com.ivona.ttslib.metrics.IvonaAggregatingTimer	field	private final TimeMeasuringMethod timeMeasuringMethod;
+com.ivona.ttslib.metrics.IvonaAggregatingTimer	field	private int mRunningCount;
+com.ivona.ttslib.metrics.IvonaAggregatingTimer	field	private int mTotalSamplesCount;
+com.ivona.ttslib.metrics.IvonaAggregatingTimer	field	private long mLastUpdatedTime;
+com.ivona.ttslib.metrics.IvonaAggregatingTimer	method	public IvonaAggregatingTimer(TimeMeasuringMethod timeMeasuringMethod)
+com.ivona.ttslib.metrics.IvonaAggregatingTimer	method	public double getElapsedTime()
+com.ivona.ttslib.metrics.IvonaAggregatingTimer	method	public int getSamples()
+com.ivona.ttslib.metrics.IvonaAggregatingTimer	method	public static long getSystemCurrentTimeMillis()
+com.ivona.ttslib.metrics.IvonaAggregatingTimer	method	public void addTime(double d, int i)
+com.ivona.ttslib.metrics.IvonaAggregatingTimer	method	public void startTimer()
+com.ivona.ttslib.metrics.IvonaAggregatingTimer	method	public void stopTimer()
+com.ivona.ttslib.metrics.IvonaAggregatingTimer$TimeMeasuringMethod	field	private String suffix;
+com.ivona.ttslib.metrics.IvonaAggregatingTimer$TimeMeasuringMethod	method	public abstract long now();
+com.ivona.ttslib.metrics.IvonaSdkMetrics	method	public static void record(String str, String str2, String str3, int i, IvonaSdkMetricEntry[] ivonaSdkMetricEntryArr, boolean z)
+com.ivona.ttslib.metrics.IvonaSdkMetrics$IvonaSdkMetricEntry	field	private final String name;
+com.ivona.ttslib.metrics.IvonaSdkMetrics$IvonaSdkMetricEntry	field	private final double value;
+com.ivona.ttslib.metrics.IvonaSdkMetrics$IvonaSdkMetricEntry	method	public IvonaSdkMetricEntry(String str, double d)
+com.ivona.ttslib.metrics.NullIvonaMetricEvent	method	public void addCounter(String str, double d)
+com.ivona.ttslib.metrics.NullIvonaMetricEvent	method	public void addCounter(String str, double d, boolean z)
+com.ivona.ttslib.metrics.NullIvonaMetricEvent	method	public void addString(String str, String str2)
+com.ivona.ttslib.metrics.NullIvonaMetricEvent	method	public void addTimer(String str, double d, int i)
+com.ivona.ttslib.metrics.NullIvonaMetricEvent	method	public void addTimer(String str, double d, int i, boolean z)
+com.ivona.ttslib.metrics.NullIvonaMetricEvent	method	public void removeTimer(String str)
+com.ivona.ttslib.metrics.NullIvonaMetricEvent	method	public void removeTimer(String str, boolean z)
+com.ivona.ttslib.metrics.NullIvonaMetricEvent	method	public void setCallerPid(int i)
+com.ivona.ttslib.metrics.NullIvonaMetricEvent	method	public void startTimer(String str)
+com.ivona.ttslib.metrics.NullIvonaMetricEvent	method	public void startTimer(String str, String str2)
+com.ivona.ttslib.metrics.NullIvonaMetricEvent	method	public void startTimer(String str, boolean z)
+com.ivona.ttslib.metrics.NullIvonaMetricEvent	method	public void stopTimer(String str)
+com.ivona.ttslib.metrics.NullIvonaMetricEvent	method	public void stopTimer(String str, String str2)
+com.ivona.ttslib.metrics.NullIvonaMetricEvent	method	public void stopTimer(String str, boolean z)
+com.ivona.ttslib.packages.IvonaPackage	field	private final Boolean isSystem;
+com.ivona.ttslib.packages.IvonaPackage	field	private final Locale fullLocale;
+com.ivona.ttslib.packages.IvonaPackage	field	private final State stateOfFiles;
+com.ivona.ttslib.packages.IvonaPackage	field	private final String name;
+com.ivona.ttslib.packages.IvonaPackage	field	private final String packageName;
+com.ivona.ttslib.packages.IvonaPackage	field	private final String voxName;
+com.ivona.ttslib.packages.IvonaPackage	field	private final int voxFootprint;
+com.ivona.ttslib.packages.IvonaPackage	field	private static final Pattern voxPattern;
+com.ivona.ttslib.packages.IvonaPackage	field	private static final Set<String> systemDirs;
+com.ivona.ttslib.packages.IvonaPackage	method	private int getVoxFootprint()
+com.ivona.ttslib.packages.IvonaPackage	method	public Boolean isSystem()
+com.ivona.ttslib.packages.IvonaPackage	method	public IvonaPackage(String str, String str2, int i, String str3, int i2, State state, String str4, File file) throws InvalidParameterException
+com.ivona.ttslib.packages.IvonaPackage	method	public Locale getFullLocale()
+com.ivona.ttslib.packages.IvonaPackage	method	public Locale getLocale()
+com.ivona.ttslib.packages.IvonaPackage	method	public State getStateOfFiles()
+com.ivona.ttslib.packages.IvonaPackage	method	public String getName()
+com.ivona.ttslib.packages.IvonaPackage	method	public String getPackageName()
+com.ivona.ttslib.packages.IvonaPackage	method	public String getVariant()
+com.ivona.ttslib.packages.IvonaPackage	method	public boolean isVoiceDefault(Context context, int i)
+com.ivona.ttslib.packages.IvonaPackage	method	public boolean isVoiceLite()
+com.ivona.ttslib.packages.IvonaPackage	method	public static Locale getLocaleFromPackage(String str)
+com.ivona.ttslib.packages.IvonaPackage	method	public static Locale getLocaleFromPackage(String str, int i)
+com.ivona.ttslib.packages.IvonaPackage	method	public static String getISO3String(String str)
+com.ivona.ttslib.packages.IvonaPackage	method	public static String getPackageFromLocale(Locale locale)
+com.ivona.ttslib.packages.IvonaPackage$State	field	private int code;
+com.ivona.ttslib.packages.IvonaPackage$State	method	public boolean canBeUsed()
+com.ivona.ttslib.packages.IvonaPackage$State	method	public static State getState(int i)
+com.ivona.ttslib.packages.IvonaPackagesInfo	field	private ConfigXMLDataSet cfgXML;
+com.ivona.ttslib.packages.IvonaPackagesInfo	field	private HashMap<Locale, ArrayList<String>> unusedExtensions;
+com.ivona.ttslib.packages.IvonaPackagesInfo	field	private HashMap<Locale, ArrayList<String>> unusedVoices;
+com.ivona.ttslib.packages.IvonaPackagesInfo	field	private HashMap<Locale, Bundle> usedExtensions;
+com.ivona.ttslib.packages.IvonaPackagesInfo	field	private HashMap<Locale, Bundle> usedVoices;
+com.ivona.ttslib.packages.IvonaPackagesInfo	field	private HashSet<String> notifyUnusedDirs;
+com.ivona.ttslib.packages.IvonaPackagesInfo	field	private Map<String, IvonaPackage> pkgs;
+com.ivona.ttslib.packages.IvonaPackagesInfo	field	private final Context ctx;
+com.ivona.ttslib.packages.IvonaPackagesInfo	field	private final ReentrantLock lockRebuild;
+com.ivona.ttslib.packages.IvonaPackagesInfo	field	public static final String IVONA_PATH;
+com.ivona.ttslib.packages.IvonaPackagesInfo	method	private String tryToSetDefaultVoiceMatchingDeviceLocale(Map<Locale, ArrayList<IvonaPackage>> map, Locale locale, Locale locale2, Set<Locale> set, String str)
+com.ivona.ttslib.packages.IvonaPackagesInfo	method	private boolean rebuildInternal(com.ivona.ttslib.metrics.IvonaMetricEvent r46) throws java.lang.Throwable
+com.ivona.ttslib.packages.IvonaPackagesInfo	method	private static native String[] getOEMpackages();
+com.ivona.ttslib.packages.IvonaPackagesInfo	method	private void addUnusedPackage(Map<Locale, ArrayList<String>> map, Locale locale, File file)
+com.ivona.ttslib.packages.IvonaPackagesInfo	method	private void sendRefreshVoiceListCompletedBroadcast()
+com.ivona.ttslib.packages.IvonaPackagesInfo	method	private void setAndVerifyVoicesAsDefault(Context context) throws Throwable
+com.ivona.ttslib.packages.IvonaPackagesInfo	method	private void setDefaultVoiceForLocale(Locale locale, Locale locale2, Set<Locale> set, Map<Locale, Locale> map) throws Throwable
+com.ivona.ttslib.packages.IvonaPackagesInfo	method	public IvonaPackagesInfo(Context context)
+com.ivona.ttslib.packages.IvonaPackagesInfo	method	public Map<Locale, ArrayList<IvonaPackage>> getLanguages() throws Throwable
+com.ivona.ttslib.packages.IvonaPackagesInfo	method	public Map<String, IvonaPackage> getInstalledPkgs() throws Throwable
+com.ivona.ttslib.packages.IvonaPackagesInfo	method	public Set<String> getExtensionsInstalled()
+com.ivona.ttslib.packages.IvonaPackagesInfo	method	public VoiceEvaluation getBestVoice(String str, String str2, String str3) throws Throwable
+com.ivona.ttslib.packages.IvonaPackagesInfo	method	public boolean Rebuild() throws Throwable
+com.ivona.ttslib.packages.IvonaPackagesInfo	method	public int getVoiceByLocale(String str, String str2, String str3) throws Throwable
+com.ivona.ttslib.packages.IvonaPackagesInfo	method	public void notifyRebuildDone(final long j)
+com.ivona.ttslib.packages.IvonaPackagesInfo$CSVfields	field	private final int pos;
+com.ivona.ttslib.packages.IvonaPackagesInfo$CSVfields	method	public int getPos()
+com.ivona.ttslib.packages.IvonaPackagesInfo$CSVfields	method	public int getPosWithOffset(int i)
+com.ivona.ttslib.packages.IvonaPackagesInfo$CSVfields	method	public static int getSize()
+com.ivona.ttslib.packages.IvonaPackagesInfo$PackageEntry	field	public final File pkgAbsoluteDir;
+com.ivona.ttslib.packages.IvonaPackagesInfo$PackageEntry	field	public final String pkgApi;
+com.ivona.ttslib.packages.IvonaPackagesInfo$PackageEntry	field	public final String pkgWithVersion;
+com.ivona.ttslib.packages.IvonaPackagesInfo$PackageEntry	field	public final long version;
+com.ivona.ttslib.packages.IvonaPackagesInfo$PackageEntry	method	public PackageEntry(IvonaPackagesInfo ivonaPackagesInfo, long j, String str, String str2, File file)
+com.ivona.ttslib.packages.IvonaPackagesInfo$VoiceEvaluation	field	private final String[] locISO3Name;
+com.ivona.ttslib.packages.IvonaPackagesInfo$VoiceEvaluation	field	private final int supportLevel;
+com.ivona.ttslib.packages.IvonaPackagesInfo$VoiceEvaluation	method	public String getLog()
+com.ivona.ttslib.packages.IvonaPackagesInfo$VoiceEvaluation	method	public VoiceEvaluation(Locale locale, int i)
+com.ivona.ttslib.packages.IvonaPackagesInfo$VoiceEvaluation	method	public VoiceEvaluation(String[] strArr, int i)
+com.ivona.ttslib.packages.IvonaPackagesInfo$VoiceEvaluation	method	public final String[] getLocISO3Name()
+com.ivona.ttslib.packages.IvonaPackagesInfo$VoiceEvaluation	method	public final int getSupportLevel()

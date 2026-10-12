@@ -1,0 +1,810 @@
+kind	class	extends	implements
+@interface	com.amazon.d3.di.ApplicationScope		
+@interface	com.amazon.d3.di.application.WorkerKey		
+@interface	com.amazon.d3.di.service.ServiceScope		
+@interface	com.amazon.tv.devicecontrol.commons.updater.IgnoreUpdate		
+class	com.amazon.d3.BoundChannel		Channel,PubSubChannel<T>
+class	com.amazon.d3.BuildConfig		
+class	com.amazon.d3.Companion		
+class	com.amazon.d3.DemoDeviceApplication	DaggerApplication	
+class	com.amazon.d3.DemoDeviceApplication$Companion		
+class	com.amazon.d3.DemoDeviceApplication_MembersInjector		MembersInjector
+class	com.amazon.d3.ID3Service$Default		ID3Service
+class	com.amazon.d3.ID3Service$Stub	Binder	ID3Service
+class	com.amazon.d3.ID3Service$Stub$Proxy		ID3Service
+class	com.amazon.d3.ID3Service$_Parcel		
+class	com.amazon.d3.PubSubImpl		PubSub
+class	com.amazon.d3.PubSubImpl_Factory		Provider
+class	com.amazon.d3.R		
+class	com.amazon.d3.R$anim		
+class	com.amazon.d3.R$array		
+class	com.amazon.d3.R$attr		
+class	com.amazon.d3.R$bool		
+class	com.amazon.d3.R$color		
+class	com.amazon.d3.R$dimen		
+class	com.amazon.d3.R$drawable		
+class	com.amazon.d3.R$id		
+class	com.amazon.d3.R$integer		
+class	com.amazon.d3.R$interpolator		
+class	com.amazon.d3.R$layout		
+class	com.amazon.d3.R$string		
+class	com.amazon.d3.R$style		
+class	com.amazon.d3.R$styleable		
+class	com.amazon.d3.R$xml		
+class	com.amazon.d3.activities.DemoConfigurationActivity	AppCompatActivity	
+class	com.amazon.d3.activities.DemoConfigurationActivity$Companion		
+class	com.amazon.d3.activities.DemoConfigurationActivity_MembersInjector		MembersInjector
+class	com.amazon.d3.activities.DemoContentActivity	AppCompatActivity	
+class	com.amazon.d3.activities.DemoContentActivity$Companion		
+class	com.amazon.d3.activities.DemoContentActivity_MembersInjector		MembersInjector
+class	com.amazon.d3.activities.DemoMgmtActivity	AppCompatActivity	
+class	com.amazon.d3.activities.DemoMgmtActivity$Companion		
+class	com.amazon.d3.activities.DemoMgmtActivity_MembersInjector		MembersInjector
+class	com.amazon.d3.activities.ProvisioningActivity	AppCompatActivity	
+class	com.amazon.d3.activities.ProvisioningActivity$Companion		
+class	com.amazon.d3.activities.ProvisioningActivityManager		ManagerInterface
+class	com.amazon.d3.activities.ProvisioningActivityManager$Companion		
+class	com.amazon.d3.activities.ProvisioningActivity_MembersInjector		MembersInjector
+class	com.amazon.d3.activities.SyncInfoActivity	AppCompatActivity	
+class	com.amazon.d3.activities.SyncInfoActivity$Companion		
+class	com.amazon.d3.activities.SyncInfoActivity_MembersInjector		MembersInjector
+class	com.amazon.d3.activities.SystemInfoActivity	AppCompatActivity	
+class	com.amazon.d3.activities.SystemInfoActivity$Companion		
+class	com.amazon.d3.activities.SystemInfoActivity_MembersInjector		MembersInjector
+class	com.amazon.d3.activities.WakeAndUnlockActivity	Activity	
+class	com.amazon.d3.activities.WakeAndUnlockActivity$Companion		
+class	com.amazon.d3.activities.WakeAndUnlockActivity_MembersInjector		MembersInjector
+class	com.amazon.d3.binder.D3Service	Service	
+class	com.amazon.d3.binder.D3Service$Companion		
+class	com.amazon.d3.binder.D3Service_MembersInjector		MembersInjector
+class	com.amazon.d3.content.ContentManager		ManagerInterface
+class	com.amazon.d3.content.ContentManager$C00101	ContinuationImpl	
+class	com.amazon.d3.content.ContentManager$C00111	ContinuationImpl	
+class	com.amazon.d3.content.ContentManager$C00121	SuspendLambda	Function2
+class	com.amazon.d3.content.ContentManager$C00131	ContinuationImpl	
+class	com.amazon.d3.content.ContentManager$Companion		
+class	com.amazon.d3.content.ContentManager_Factory		Provider
+class	com.amazon.d3.content.DavsArtifactKt		
+class	com.amazon.d3.content.DemoContentProvider	ContentProvider	
+class	com.amazon.d3.content.DemoContentProvider$Companion		
+class	com.amazon.d3.content.DemoContentProvider_MembersInjector		MembersInjector
+class	com.amazon.d3.content.Filters		
+class	com.amazon.d3.cx.CXConstants		
+class	com.amazon.d3.cx.CXConstants$ContentValue		
+class	com.amazon.d3.cx.CXConstants$CxApks		
+class	com.amazon.d3.cx.CXConstants$CxConfigurationSettingsKey		
+class	com.amazon.d3.cx.CXConstants$DeviceTypeConstants		
+class	com.amazon.d3.cx.CXConstants$ExtraKeys		
+class	com.amazon.d3.cx.CXConstants$FTVConstants		
+class	com.amazon.d3.cx.CXConstants$LifeCycleStatus		
+class	com.amazon.d3.cx.CXConstants$RequestValue		
+class	com.amazon.d3.cx.CXConstants$StatusValue		
+class	com.amazon.d3.cx.CXConstants$SystemFeatures		
+class	com.amazon.d3.cx.CXManager		ManagerInterface
+class	com.amazon.d3.cx.CXManager$Companion		
+class	com.amazon.d3.cx.CXManager_Factory		Provider
+class	com.amazon.d3.cx.ExperienceModeManager		ManagerInterface
+class	com.amazon.d3.cx.ExperienceModeManager$AnonymousClass3	SuspendLambda	Function2
+class	com.amazon.d3.cx.ExperienceModeManager_Factory		Provider
+class	com.amazon.d3.data.FederatedDemoConstants		
+class	com.amazon.d3.database.AppDatabase	RoomDatabase	
+class	com.amazon.d3.database.AppDatabase$Companion		
+class	com.amazon.d3.database.AppDatabase_Impl	AppDatabase	
+class	com.amazon.d3.database.Converters		
+class	com.amazon.d3.database.Migrations		
+class	com.amazon.d3.database.dao.CXArtifactDao		
+class	com.amazon.d3.database.dao.CXArtifactDao$Companion		
+class	com.amazon.d3.database.dao.CXArtifactDao_Impl	CXArtifactDao	
+class	com.amazon.d3.database.dao.CXManagerDal		
+class	com.amazon.d3.database.dao.CXManagerDal$Companion		
+class	com.amazon.d3.database.dao.CXManagerDal_Impl	CXManagerDal	
+class	com.amazon.d3.database.dao.ContentItemDao		
+class	com.amazon.d3.database.dao.ContentItemDao$Companion		
+class	com.amazon.d3.database.dao.ContentItemDao_Impl	ContentItemDao	
+class	com.amazon.d3.database.dao.ContentProviderDao		
+class	com.amazon.d3.database.dao.ContentProviderDao_Impl	ContentProviderDao	
+class	com.amazon.d3.database.dao.DavsDao		
+class	com.amazon.d3.database.dao.DavsDao$Companion		
+class	com.amazon.d3.database.dao.DavsDao_Impl	DavsDao	
+class	com.amazon.d3.database.dao.KeyValueDao_Impl		KeyValueDao
+class	com.amazon.d3.database.dao.ReleaseSetDao		
+class	com.amazon.d3.database.dao.ReleaseSetDao$Companion		
+class	com.amazon.d3.database.dao.ReleaseSetDao_Impl	ReleaseSetDao	
+class	com.amazon.d3.database.entity.Companion		
+class	com.amazon.d3.database.migrations.AdaptiveCxMigration_Update_CxArtifact	DatabaseVersion.MigrationHelper	
+class	com.amazon.d3.database.migrations.AdaptiveCxMigration_Update_ReleaseSet	DatabaseVersion.MigrationHelper	
+class	com.amazon.d3.database.migrations.ContentExpirationDeprecation_Update_ReleaseSet	DatabaseVersion.MigrationHelper	
+class	com.amazon.d3.database.migrations.ContentItemJoin_Create_DeleteTrigger	DatabaseVersion.MigrationHelper	
+class	com.amazon.d3.database.migrations.ContentItem_Remove_ExpirationTimestamp	DatabaseVersion.MigrationHelper	
+class	com.amazon.d3.database.migrations.ContentProvider_Create	DatabaseVersion.MigrationHelper	
+class	com.amazon.d3.database.migrations.DatabaseVersion		Function1
+class	com.amazon.d3.database.migrations.DatabaseVersion$Companion		
+class	com.amazon.d3.database.migrations.DatabaseVersion$MigrationHelper		
+class	com.amazon.d3.database.migrations.DatabaseVersion$MigrationWrapper	Migration	
+class	com.amazon.d3.database.migrations.DavsRefactorMigration_Create_DavsArtifacts	DatabaseVersion.MigrationHelper	
+class	com.amazon.d3.database.migrations.DavsRefactorMigration_Create_DavsArtifacts$Companion		
+class	com.amazon.d3.database.migrations.DavsRefactorMigration_Update_CXArtifact	DatabaseVersion.MigrationHelper	
+class	com.amazon.d3.database.migrations.DavsRefactorMigration_Update_ContentItem	DatabaseVersion.MigrationHelper	
+class	com.amazon.d3.database.migrations.DavsRefactorMigration_Update_ContentProvider	DatabaseVersion.MigrationHelper	
+class	com.amazon.d3.database.migrations.ReleaseSet_Add_ExpirationTimestamp	DatabaseVersion.MigrationHelper	
+class	com.amazon.d3.davs.DavsManager		ManagerInterface
+class	com.amazon.d3.davs.DavsManager$C00241	SuspendLambda	Function2
+class	com.amazon.d3.davs.DavsManager$C00251	ContinuationImpl	
+class	com.amazon.d3.davs.DavsManager$Companion		
+class	com.amazon.d3.davs.DavsManager_Factory		Provider
+class	com.amazon.d3.di.DaggerApplicationComponent		
+class	com.amazon.d3.di.DaggerApplicationComponent$ApplicationComponentImpl		ApplicationComponent
+class	com.amazon.d3.di.DaggerApplicationComponent$BootCompleteReceiverSubcomponentFactory		CompleteReceiverModule_ContributeBootCompleteReceiver.BootCompleteReceiverSubcomponent.Factory
+class	com.amazon.d3.di.DaggerApplicationComponent$BootCompleteReceiverSubcomponentImpl		CompleteReceiverModule_ContributeBootCompleteReceiver.BootCompleteReceiverSubcomponent
+class	com.amazon.d3.di.DaggerApplicationComponent$Builder		ApplicationComponent.Builder
+class	com.amazon.d3.di.DaggerApplicationComponent$D3ServiceComponentBuilder		D3ServiceComponent.Builder
+class	com.amazon.d3.di.DaggerApplicationComponent$D3ServiceComponentImpl		D3ServiceComponent
+class	com.amazon.d3.di.DaggerApplicationComponent$DemoConfigurationActivitySubcomponentFactory		ActivitiesModule_ContributeDemoConfigurationActivity.DemoConfigurationActivitySubcomponent.Factory
+class	com.amazon.d3.di.DaggerApplicationComponent$DemoConfigurationActivitySubcomponentImpl		ActivitiesModule_ContributeDemoConfigurationActivity.DemoConfigurationActivitySubcomponent
+class	com.amazon.d3.di.DaggerApplicationComponent$DemoContentActivitySubcomponentFactory		ActivitiesModule_ContributeDemoContentActivity.DemoContentActivitySubcomponent.Factory
+class	com.amazon.d3.di.DaggerApplicationComponent$DemoContentActivitySubcomponentImpl		ActivitiesModule_ContributeDemoContentActivity.DemoContentActivitySubcomponent
+class	com.amazon.d3.di.DaggerApplicationComponent$DemoContentProviderSubcomponentFactory		ContentProviderModule_ContributeDemoContentProvider.DemoContentProviderSubcomponent.Factory
+class	com.amazon.d3.di.DaggerApplicationComponent$DemoContentProviderSubcomponentImpl		ContentProviderModule_ContributeDemoContentProvider.DemoContentProviderSubcomponent
+class	com.amazon.d3.di.DaggerApplicationComponent$DemoDeviceServiceComponentBuilder		DemoDeviceServiceComponent.Builder
+class	com.amazon.d3.di.DaggerApplicationComponent$DemoDeviceServiceComponentImpl		DemoDeviceServiceComponent
+class	com.amazon.d3.di.DaggerApplicationComponent$DemoMgmtActivitySubcomponentFactory		ActivitiesModule_ContributeDemoMgmtActivity.DemoMgmtActivitySubcomponent.Factory
+class	com.amazon.d3.di.DaggerApplicationComponent$DemoMgmtActivitySubcomponentImpl		ActivitiesModule_ContributeDemoMgmtActivity.DemoMgmtActivitySubcomponent
+class	com.amazon.d3.di.DaggerApplicationComponent$KeepAliveReceiverSubcomponentFactory		CompleteReceiverModule_ContributeKeepAliveReceiver.KeepAliveReceiverSubcomponent.Factory
+class	com.amazon.d3.di.DaggerApplicationComponent$KeepAliveReceiverSubcomponentImpl		CompleteReceiverModule_ContributeKeepAliveReceiver.KeepAliveReceiverSubcomponent
+class	com.amazon.d3.di.DaggerApplicationComponent$OOBECompleteReceiverSubcomponentFactory		CompleteReceiverModule_ContributeOOBECompleteReceiver.OOBECompleteReceiverSubcomponent.Factory
+class	com.amazon.d3.di.DaggerApplicationComponent$OOBECompleteReceiverSubcomponentImpl		CompleteReceiverModule_ContributeOOBECompleteReceiver.OOBECompleteReceiverSubcomponent
+class	com.amazon.d3.di.DaggerApplicationComponent$ProvisioningActivitySubcomponentFactory		ActivitiesModule_ContributeProvisioningActivity.ProvisioningActivitySubcomponent.Factory
+class	com.amazon.d3.di.DaggerApplicationComponent$ProvisioningActivitySubcomponentImpl		ActivitiesModule_ContributeProvisioningActivity.ProvisioningActivitySubcomponent
+class	com.amazon.d3.di.DaggerApplicationComponent$SyncInfoActivitySubcomponentFactory		ActivitiesModule_ContributeSyncInfoActivity.SyncInfoActivitySubcomponent.Factory
+class	com.amazon.d3.di.DaggerApplicationComponent$SyncInfoActivitySubcomponentImpl		ActivitiesModule_ContributeSyncInfoActivity.SyncInfoActivitySubcomponent
+class	com.amazon.d3.di.DaggerApplicationComponent$SystemInfoActivitySubcomponentFactory		ActivitiesModule_ContributeDeviceInfoActivity.SystemInfoActivitySubcomponent.Factory
+class	com.amazon.d3.di.DaggerApplicationComponent$SystemInfoActivitySubcomponentImpl		ActivitiesModule_ContributeDeviceInfoActivity.SystemInfoActivitySubcomponent
+class	com.amazon.d3.di.DaggerApplicationComponent$WakeAndUnlockActivitySubcomponentFactory		ActivitiesModule_ContributeWakeAndUnlockActivity.WakeAndUnlockActivitySubcomponent.Factory
+class	com.amazon.d3.di.DaggerApplicationComponent$WakeAndUnlockActivitySubcomponentImpl		ActivitiesModule_ContributeWakeAndUnlockActivity.WakeAndUnlockActivitySubcomponent
+class	com.amazon.d3.di.application.ActivitiesModule		
+class	com.amazon.d3.di.application.ActivitiesModule_ContributeDemoConfigurationActivity		
+class	com.amazon.d3.di.application.ActivitiesModule_ContributeDemoContentActivity		
+class	com.amazon.d3.di.application.ActivitiesModule_ContributeDemoMgmtActivity		
+class	com.amazon.d3.di.application.ActivitiesModule_ContributeDeviceInfoActivity		
+class	com.amazon.d3.di.application.ActivitiesModule_ContributeProvisioningActivity		
+class	com.amazon.d3.di.application.ActivitiesModule_ContributeSyncInfoActivity		
+class	com.amazon.d3.di.application.ActivitiesModule_ContributeWakeAndUnlockActivity		
+class	com.amazon.d3.di.application.CompleteReceiverModule_ContributeBootCompleteReceiver		
+class	com.amazon.d3.di.application.CompleteReceiverModule_ContributeKeepAliveReceiver		
+class	com.amazon.d3.di.application.CompleteReceiverModule_ContributeOOBECompleteReceiver		
+class	com.amazon.d3.di.application.ContentProviderModule_ContributeDemoContentProvider		
+class	com.amazon.d3.di.application.DemoDatabaseModule		
+class	com.amazon.d3.di.application.DemoDatabaseModule_ProvidesCXArtiafctDaoFactory		Provider
+class	com.amazon.d3.di.application.DemoDatabaseModule_ProvidesCXManagerDalFactory		Provider
+class	com.amazon.d3.di.application.DemoDatabaseModule_ProvidesContentItemDaoFactory		Provider
+class	com.amazon.d3.di.application.DemoDatabaseModule_ProvidesContentProviderDaoFactory		Provider
+class	com.amazon.d3.di.application.DemoDatabaseModule_ProvidesDavsDaoFactory		Provider
+class	com.amazon.d3.di.application.DemoDatabaseModule_ProvidesDemoDatabaseFactory		Provider
+class	com.amazon.d3.di.application.DemoDatabaseModule_ProvidesKeyValueDaoFactory		Provider
+class	com.amazon.d3.di.application.DemoDatabaseModule_ProvidesReleaseSetDaoFactory		Provider
+class	com.amazon.d3.di.application.DemoWorkerFactory	WorkerFactory	
+class	com.amazon.d3.di.application.DemoWorkerFactory_Factory		Provider
+class	com.amazon.d3.di.application.SettingsModule		
+class	com.amazon.d3.di.application.SettingsModule_ProvidesAndroidSettingsFactory		Provider
+class	com.amazon.d3.di.application.SettingsModule_ProvidesBrightnessSettingsFactory		Provider
+class	com.amazon.d3.di.application.SettingsModule_ProvidesDeviceControlServiceWrapperFactory		Provider
+class	com.amazon.d3.di.application.SettingsModule_ProvidesVolumeSettingsFactory		Provider
+class	com.amazon.d3.di.application.UtilsModule		
+class	com.amazon.d3.di.application.UtilsModule_ProvidesActivityManagerFactory		Provider
+class	com.amazon.d3.di.application.UtilsModule_ProvidesAmbientDisplayManagerFactory		Provider
+class	com.amazon.d3.di.application.UtilsModule_ProvidesAppLifecycleObserverUtilFactory		Provider
+class	com.amazon.d3.di.application.UtilsModule_ProvidesAppUtilFactory		Provider
+class	com.amazon.d3.di.application.UtilsModule_ProvidesAudioManagerFactory		Provider
+class	com.amazon.d3.di.application.UtilsModule_ProvidesBatteryUtilFactory		Provider
+class	com.amazon.d3.di.application.UtilsModule_ProvidesCameraNotificationsFactory		Provider
+class	com.amazon.d3.di.application.UtilsModule_ProvidesClockFactory		Provider
+class	com.amazon.d3.di.application.UtilsModule_ProvidesCoroutineScopeFactory		Provider
+class	com.amazon.d3.di.application.UtilsModule_ProvidesD3LifeCycleFactory		Provider
+class	com.amazon.d3.di.application.UtilsModule_ProvidesDemoModeUtilFactory		Provider
+class	com.amazon.d3.di.application.UtilsModule_ProvidesDownloadTrakerFactory		Provider
+class	com.amazon.d3.di.application.UtilsModule_ProvidesFileUtilFactory		Provider
+class	com.amazon.d3.di.application.UtilsModule_ProvidesHttpFactory		Provider
+class	com.amazon.d3.di.application.UtilsModule_ProvidesInactivityTrackerUtilFactory		Provider
+class	com.amazon.d3.di.application.UtilsModule_ProvidesKeyguardProviderFactory		Provider
+class	com.amazon.d3.di.application.UtilsModule_ProvidesMapAuthFactory		Provider
+class	com.amazon.d3.di.application.UtilsModule_ProvidesOTAControllerFactory		Provider
+class	com.amazon.d3.di.application.UtilsModule_ProvidesPubSubFactory		Provider
+class	com.amazon.d3.di.application.UtilsModule_ProvidesRegionHelperFactory		Provider
+class	com.amazon.d3.di.application.UtilsModule_ProvidesSchedulerFactory		Provider
+class	com.amazon.d3.di.application.UtilsModule_ProvidesSettingsObserverFactory		Provider
+class	com.amazon.d3.di.application.UtilsModule_ProvidesSyncInfoViewModelFactory		Provider
+class	com.amazon.d3.di.application.UtilsModule_ProvidesSystemTouchMonitorFactory		Provider
+class	com.amazon.d3.di.application.UtilsModule_ProvidesTaskUtilFactory		Provider
+class	com.amazon.d3.di.application.UtilsModule_ProvidesTimeUtilFactory		Provider
+class	com.amazon.d3.di.application.UtilsModule_ProvidesTimeoutUtilFactory		Provider
+class	com.amazon.d3.di.application.UtilsModule_ProvidesUUIDGeneratorFactory		Provider
+class	com.amazon.d3.di.application.UtilsModule_ProvidesUrlUtilFactory		Provider
+class	com.amazon.d3.di.application.UtilsModule_ProvidesWorkManagerActorFactory		Provider
+class	com.amazon.d3.di.service.DemoDeviceServiceModule		
+class	com.amazon.d3.di.service.DemoDeviceServiceModule_ProvidesConnectivityManagerFactory		Provider
+class	com.amazon.d3.di.service.DemoDeviceServiceModule_ProvidesNotificationFactory		Provider
+class	com.amazon.d3.di.service.DemoDeviceServiceModule_ProvidesNotificationManagerFactory		Provider
+class	com.amazon.d3.di.service.DemoDeviceServiceModule_ProvidesPowerManagerDelegateFactory		Provider
+class	com.amazon.d3.di.service.DemoDeviceServiceModule_ProvidesSettingsDelegateFactory		Provider
+class	com.amazon.d3.di.service.DemoDeviceServiceModule_ProvidesStatusPublisherFactory		Provider
+class	com.amazon.d3.di.service.DemoDeviceServiceModule_ProvidesSwipeMenuFactory		Provider
+class	com.amazon.d3.heartbeat.CXWatchdogManager		ManagerInterface
+class	com.amazon.d3.heartbeat.CXWatchdogManager$C00261	SuspendLambda	Function2
+class	com.amazon.d3.heartbeat.CXWatchdogManager$Companion		
+class	com.amazon.d3.heartbeat.CXWatchdogManager_Factory		Provider
+class	com.amazon.d3.heartbeat.DatabaseHelper		
+class	com.amazon.d3.heartbeat.HeartbeatManager		ManagerInterface
+class	com.amazon.d3.heartbeat.HeartbeatManager$C00271	ContinuationImpl	
+class	com.amazon.d3.heartbeat.HeartbeatManager$C00282	SuspendLambda	Function2
+class	com.amazon.d3.heartbeat.HeartbeatManager$Companion		
+class	com.amazon.d3.heartbeat.HeartbeatManager$Reporter		
+class	com.amazon.d3.heartbeat.HeartbeatManager_Factory		Provider
+class	com.amazon.d3.manifest.CXArtifactKt		
+class	com.amazon.d3.manifest.Companion		
+class	com.amazon.d3.manifest.Content		
+class	com.amazon.d3.manifest.Device		
+class	com.amazon.d3.manifest.ManifestManager		ManagerInterface
+class	com.amazon.d3.manifest.ManifestManager$C00291	ContinuationImpl	
+class	com.amazon.d3.manifest.ManifestManager$C00301	SuspendLambda	Function2
+class	com.amazon.d3.manifest.ManifestManager$C00311	ContinuationImpl	
+class	com.amazon.d3.manifest.ManifestManager$Companion		
+class	com.amazon.d3.manifest.ManifestManager$ManifestSyncWorker	Worker	
+class	com.amazon.d3.manifest.ManifestManager$ManifestSyncWorker$Factory		ChildWorkerFactory
+class	com.amazon.d3.manifest.ManifestManager_Factory		Provider
+class	com.amazon.d3.manifest.ManifestManager_ManifestSyncWorker_Factory_Factory		Provider
+class	com.amazon.d3.manifest.Settings		
+class	com.amazon.d3.model.SyncInfoViewModel	ViewModel	
+class	com.amazon.d3.model.SyncInfoViewModel$Companion		
+class	com.amazon.d3.model.SyncInfoViewModel$SyncStatus		
+class	com.amazon.d3.model.SyncInfoViewModel_Factory		Provider
+class	com.amazon.d3.network.InternetConnectionManager	ConnectivityManager.NetworkCallback	ManagerInterface
+class	com.amazon.d3.network.InternetConnectionManager$Companion		
+class	com.amazon.d3.network.InternetConnectionManager_Factory		Provider
+class	com.amazon.d3.ota.C0032OtaCheckWorker_Factory		Provider
+class	com.amazon.d3.ota.OtaCheckWorker	Worker	
+class	com.amazon.d3.ota.OtaCheckWorker$Companion		
+class	com.amazon.d3.ota.OtaCheckWorker$Factory		ChildWorkerFactory
+class	com.amazon.d3.ota.OtaCheckWorker$OtaUpdateStatusListener		OTAController.UpdateStatusListener
+class	com.amazon.d3.ota.OtaCheckWorker_Factory_Factory		Provider
+class	com.amazon.d3.ota.OtaManager		ManagerInterface
+class	com.amazon.d3.ota.OtaManager$Companion		
+class	com.amazon.d3.ota.OtaManager_Factory		Provider
+class	com.amazon.d3.powerManager.PowerManagerDelegate		
+class	com.amazon.d3.reboot.RebootManager		ManagerInterface
+class	com.amazon.d3.reboot.RebootManager$AnonymousClass1	ContinuationImpl	
+class	com.amazon.d3.reboot.RebootManager$AnonymousClass2	SuspendLambda	Function2
+class	com.amazon.d3.reboot.RebootManager$Companion		
+class	com.amazon.d3.reboot.RebootManager_Factory		Provider
+class	com.amazon.d3.receivers.AlexaInteractionReceiver	InteractionReceiver	
+class	com.amazon.d3.receivers.AlexaInteractionReceiver_Factory		Provider
+class	com.amazon.d3.receivers.BaseDynamicReceiver	BroadcastReceiver	
+class	com.amazon.d3.receivers.BootCompleteReceiver	BroadcastReceiver	
+class	com.amazon.d3.receivers.BootCompleteReceiver$AnonymousClass1	SuspendLambda	Function2
+class	com.amazon.d3.receivers.BootCompleteReceiver$Companion		
+class	com.amazon.d3.receivers.BootCompleteReceiver_MembersInjector		MembersInjector
+class	com.amazon.d3.receivers.CXBackgroundedReceiver	BaseDynamicReceiver	
+class	com.amazon.d3.receivers.CXBackgroundedReceiver_Factory		Provider
+class	com.amazon.d3.receivers.CommandReceiver	BaseDynamicReceiver	
+class	com.amazon.d3.receivers.CommandReceiver_Factory		Provider
+class	com.amazon.d3.receivers.ContentCheckReceiver	BaseDynamicReceiver	
+class	com.amazon.d3.receivers.ContentCheckReceiver_Factory		Provider
+class	com.amazon.d3.receivers.DemoMgmtReceiver	BaseDynamicReceiver	
+class	com.amazon.d3.receivers.DemoMgmtReceiver_Factory		Provider
+class	com.amazon.d3.receivers.DreamingIntentReceiver	BaseDynamicReceiver	
+class	com.amazon.d3.receivers.DreamingIntentReceiver_Factory		Provider
+class	com.amazon.d3.receivers.EspressoShotReceiver	BroadcastReceiver	
+class	com.amazon.d3.receivers.EspressoShotReceiver$AnonymousClass1	SuspendLambda	Function2
+class	com.amazon.d3.receivers.EspressoShotReceiver$Companion		
+class	com.amazon.d3.receivers.EspressoShotReceiver_MembersInjector		MembersInjector
+class	com.amazon.d3.receivers.HardwareButtonReceiver	InteractionReceiver	
+class	com.amazon.d3.receivers.HardwareButtonReceiver_Factory		Provider
+class	com.amazon.d3.receivers.InteractionReceiver	BaseDynamicReceiver	
+class	com.amazon.d3.receivers.KeepAliveReceiver	BroadcastReceiver	
+class	com.amazon.d3.receivers.KeepAliveReceiver$AnonymousClass1	SuspendLambda	Function2
+class	com.amazon.d3.receivers.KeepAliveReceiver_MembersInjector		MembersInjector
+class	com.amazon.d3.receivers.OOBECompleteReceiver	BroadcastReceiver	
+class	com.amazon.d3.receivers.OOBECompleteReceiver$AnonymousClass1	SuspendLambda	Function2
+class	com.amazon.d3.receivers.OOBECompleteReceiver_MembersInjector		MembersInjector
+class	com.amazon.d3.receivers.RemoteButtonReceiver	InteractionReceiver	
+class	com.amazon.d3.receivers.RemoteButtonReceiver_Factory		Provider
+class	com.amazon.d3.receivers.SessionExtensionReceiver	BaseDynamicReceiver	
+class	com.amazon.d3.receivers.SessionExtensionReceiver_Factory		Provider
+class	com.amazon.d3.receivers.TouchReceiver	InteractionReceiver	
+class	com.amazon.d3.receivers.TouchReceiver_Factory		Provider
+class	com.amazon.d3.receivers.WakeWordReceiver	InteractionReceiver	
+class	com.amazon.d3.receivers.WakeWordReceiver_Factory		Provider
+class	com.amazon.d3.reset.C0038ResetManager_ResetWorker_Factory		Provider
+class	com.amazon.d3.reset.DeepResetManager		ManagerInterface
+class	com.amazon.d3.reset.DeepResetManager$AnonymousClass2	SuspendLambda	Function2
+class	com.amazon.d3.reset.DeepResetManager$C00331	ContinuationImpl	
+class	com.amazon.d3.reset.DeepResetManager$C00341	ContinuationImpl	
+class	com.amazon.d3.reset.DeepResetManager$C00351	ContinuationImpl	
+class	com.amazon.d3.reset.DeepResetManager$Companion		
+class	com.amazon.d3.reset.DeepResetManager_Factory		Provider
+class	com.amazon.d3.reset.ResetManager		ManagerInterface
+class	com.amazon.d3.reset.ResetManager$C00361	SuspendLambda	Function2
+class	com.amazon.d3.reset.ResetManager$C00371	ContinuationImpl	
+class	com.amazon.d3.reset.ResetManager$Companion		
+class	com.amazon.d3.reset.ResetManager$ResetWorker	Worker	
+class	com.amazon.d3.reset.ResetManager$ResetWorker$Factory		ChildWorkerFactory
+class	com.amazon.d3.reset.ResetManager_Factory		Provider
+class	com.amazon.d3.reset.ResetManager_ResetWorker_Factory_Factory		Provider
+class	com.amazon.d3.services.DemoDeviceService	Service	
+class	com.amazon.d3.services.DemoDeviceService$AnonymousClass1	ContinuationImpl	
+class	com.amazon.d3.services.DemoDeviceService$C00391	SuspendLambda	Function2
+class	com.amazon.d3.services.DemoDeviceService$C00401	SuspendLambda	Function2
+class	com.amazon.d3.services.DemoDeviceService$C00411	ContinuationImpl	
+class	com.amazon.d3.services.DemoDeviceService$Companion		
+class	com.amazon.d3.services.DemoDeviceService_MembersInjector		MembersInjector
+class	com.amazon.d3.settings.D3Setting		
+class	com.amazon.d3.settings.D3Setting$System		
+class	com.amazon.d3.settings.SettingsDelegateImpl		SettingsDelegate
+class	com.amazon.d3.settings.SettingsDelegateImpl_Factory		Provider
+class	com.amazon.d3.settings.SettingsDelegateImpl_Factory$InstanceHolder		
+class	com.amazon.d3.status.StatusEvent$DefaultImpls		
+class	com.amazon.d3.status.StatusManager		ManagerInterface
+class	com.amazon.d3.status.StatusManager$C00421	ContinuationImpl	
+class	com.amazon.d3.status.StatusManager$Companion		
+class	com.amazon.d3.status.StatusManager_Factory		Provider
+class	com.amazon.d3.status.StatusMessageKt		
+class	com.amazon.d3.status.StatusPublisher		
+class	com.amazon.d3.status.StatusPublisher$C00432	ContinuationImpl	
+class	com.amazon.d3.status.StatusPublisher$Companion		
+class	com.amazon.d3.status.StatusPublisher_Factory		Provider
+class	com.amazon.d3.usb.UsbOTGManager		ManagerInterface
+class	com.amazon.d3.usb.UsbOTGManager$Companion		
+class	com.amazon.d3.usb.UsbOTGManager_Factory		Provider
+class	com.amazon.d3.util.ActivitySwitchManagerUtil		
+class	com.amazon.d3.util.ActivitySwitchManagerUtil$Companion		
+class	com.amazon.d3.util.AmbientDisplayManagerUtil		
+class	com.amazon.d3.util.AppLifecycleObserverUtil		LifecycleObserver
+class	com.amazon.d3.util.AppLifecycleObserverUtil$Companion		
+class	com.amazon.d3.util.AppLifecycleObserverUtil_Factory		Provider
+class	com.amazon.d3.util.AppUtil		
+class	com.amazon.d3.util.AppUtil$PackageInstallReceiver	BroadcastReceiver	
+class	com.amazon.d3.util.AppUtil$PackageInstallReceiver$Companion		
+class	com.amazon.d3.util.AppUtil_Factory		Provider
+class	com.amazon.d3.util.AsyncUtils		
+class	com.amazon.d3.util.AsyncUtils$AnonymousClass2	SuspendLambda	Function2
+class	com.amazon.d3.util.AsyncUtils$C00452	SuspendLambda	Function2
+class	com.amazon.d3.util.AsyncUtils$CoroutineScheduler		Scheduler
+class	com.amazon.d3.util.AsyncUtils$Scheduler$DefaultImpls		
+class	com.amazon.d3.util.CameraNotifications		
+class	com.amazon.d3.util.CollectionUtilsKt		
+class	com.amazon.d3.util.D3LifeCycle		
+class	com.amazon.d3.util.D3LifeCycle$Companion		
+class	com.amazon.d3.util.D3LifeCycle_Factory		Provider
+class	com.amazon.d3.util.DatabaseUtil		
+class	com.amazon.d3.util.DemoModeUtil		
+class	com.amazon.d3.util.DemoModeUtil_Factory		Provider
+class	com.amazon.d3.util.DeviceControlServiceWrapper		
+class	com.amazon.d3.util.DeviceControlServiceWrapper$Companion		
+class	com.amazon.d3.util.DeviceControlServiceWrapper_Factory		Provider
+class	com.amazon.d3.util.EnqueueRequest		WorkManagerMsg
+class	com.amazon.d3.util.FOSVersionUtil		
+class	com.amazon.d3.util.FOSVersionUtil$Companion		
+class	com.amazon.d3.util.FileUtil		
+class	com.amazon.d3.util.InactivityTrackerUtil		
+class	com.amazon.d3.util.InactivityTrackerUtil$Companion		
+class	com.amazon.d3.util.InactivityTrackerUtil_Factory		Provider
+class	com.amazon.d3.util.JobAudit		WorkManagerMsg
+class	com.amazon.d3.util.JsonUtilsKt		
+class	com.amazon.d3.util.KeyguardUtil		
+class	com.amazon.d3.util.KeyguardUtil$AMZNKeyguardUtil	BaseKeyguardUtil	
+class	com.amazon.d3.util.KeyguardUtil$AOSPKeyguardUtil	BaseKeyguardUtil	
+class	com.amazon.d3.util.KeyguardUtil$BaseKeyguardUtil		
+class	com.amazon.d3.util.KeyguardUtil$KeyguardProvider		
+class	com.amazon.d3.util.ListUtil		
+class	com.amazon.d3.util.Logging		
+class	com.amazon.d3.util.MapAuth		
+class	com.amazon.d3.util.MapAuth$Companion		
+class	com.amazon.d3.util.MapAuth_Factory		Provider
+class	com.amazon.d3.util.NetworkUtil		
+class	com.amazon.d3.util.NetworkUtil$Companion		
+class	com.amazon.d3.util.NetworkUtil_Factory		Provider
+class	com.amazon.d3.util.StringUtilsKt		
+class	com.amazon.d3.util.SwipeMenu		
+class	com.amazon.d3.util.SystemClock		Clock
+class	com.amazon.d3.util.SystemProperty		
+class	com.amazon.d3.util.SystemProperty$Companion		
+class	com.amazon.d3.util.SystemTouchMonitor		
+class	com.amazon.d3.util.TaskUtil		
+class	com.amazon.d3.util.TaskUtil_Factory		Provider
+class	com.amazon.d3.util.TimeUtil		
+class	com.amazon.d3.util.TimeoutUtil		
+class	com.amazon.d3.util.TimeoutUtil$Companion		
+class	com.amazon.d3.util.TimeoutUtil_Factory		Provider
+class	com.amazon.d3.util.UUIDGenerator		
+class	com.amazon.d3.util.WorkManagerActor		
+class	com.amazon.d3.util.WorkManagerActor$AnonymousClass1	ContinuationImpl	
+class	com.amazon.d3.util.WorkManagerActor$C00471	SuspendLambda	Function2
+class	com.amazon.d3.util.WorkManagerActor$Companion		
+class	com.amazon.d3.util.battery.BatteryUtilFos7		BatteryUtil
+class	com.amazon.d3.util.battery.BatteryUtilFos7_Factory		Provider
+class	com.amazon.d3.util.battery.BatteryUtilFos7_Factory$InstanceHolder		
+class	com.amazon.d3.util.battery.BatteryUtilFos8		BatteryUtil
+class	com.amazon.d3.util.battery.BatteryUtilFos8$VoltageLevel$Companion		
+class	com.amazon.d3.util.battery.BatteryUtilFos8_Factory		Provider
+class	com.amazon.d3.util.battery.BatteryUtilSL		BatteryUtil
+class	com.amazon.d3.util.battery.BatteryUtilSL_Factory		Provider
+class	com.amazon.d3.util.battery.BatteryUtilSL_Factory$InstanceHolder		
+class	com.amazon.d3.util.http.DownloadTrackingActor		
+class	com.amazon.d3.util.http.DownloadTrackingActor$AnonymousClass1	SuspendLambda	Function2
+class	com.amazon.d3.util.http.DownloadTrackingActor$C00481	SuspendLambda	Function1
+class	com.amazon.d3.util.http.Http		
+class	com.amazon.d3.util.http.Http$AnonymousClass1	SuspendLambda	Function1
+class	com.amazon.d3.util.http.Http$Companion		
+class	com.amazon.d3.util.http.HttpCallback		Callback
+class	com.amazon.d3.util.http.HttpCallbackKt		
+class	com.amazon.d3.util.http.HttpCallbackKt$AnonymousClass3	ContinuationImpl	
+class	com.amazon.d3.util.http.HttpException	IOException	
+class	com.amazon.d3.util.http.HttpUtilKt		
+class	com.amazon.d3.util.http.Http_Factory		Provider
+class	com.amazon.d3.util.http.PrintDownloads		DownloadMessage
+class	com.amazon.d3.util.http.RegionHelper		
+class	com.amazon.d3.util.http.RegionHelper$Companion		
+class	com.amazon.d3.util.http.UrlHelper		
+class	com.amazon.d3.util.http.UrlHelper$Companion		
+class	com.amazon.d3.util.settings.AndroidSettings		
+class	com.amazon.d3.util.settings.BrightnessSettings		
+class	com.amazon.d3.util.settings.BrightnessSettings_Factory		Provider
+class	com.amazon.d3.util.settings.SettingsObserver		
+class	com.amazon.d3.util.settings.SettingsObserver$Companion		
+class	com.amazon.d3.util.settings.SettingsObserver$GlobalSettingsObserver	ContentObserver	
+class	com.amazon.d3.util.settings.SettingsObserver_Factory		Provider
+class	com.amazon.d3.util.settings.VolumeSettings		
+class	com.amazon.d3.util.settings.VolumeSettings$Companion		
+class	com.amazon.d3.util.settings.VolumeSettings_Factory		Provider
+class	com.amazon.tv.devicecontrol.api.DeviceControlDummyService		IDeviceControlApi
+class	com.amazon.tv.devicecontrol.api.DeviceControlServiceApi	DeviceControlServiceApiWrapper	
+class	com.amazon.tv.devicecontrol.api.DeviceControlServiceApi$DeviceControlServiceConnection		ServiceConnection
+class	com.amazon.tv.devicecontrol.api.DeviceControlServiceApiWrapper		DeviceControlServiceApiContract
+class	com.amazon.tv.devicecontrol.api.DeviceControlServiceCurrentApi		DeviceControlServiceApiContract
+class	com.amazon.tv.devicecontrol.api.Error		
+class	com.amazon.tv.devicecontrol.api.ListenerDescriptor		
+class	com.amazon.tv.devicecontrol.api.capability.CapabilityApiFactory		
+class	com.amazon.tv.devicecontrol.api.capability.CapabilityApiImpl		CapabilityApi
+class	com.amazon.tv.devicecontrol.api.capability.Constant		
+class	com.amazon.tv.devicecontrol.api.capability.Constant$Directive		
+class	com.amazon.tv.devicecontrol.api.capability.Constant$OperationName		
+class	com.amazon.tv.devicecontrol.api.capability.EndpointsFilter		
+class	com.amazon.tv.devicecontrol.api.capability.EndpointsFilter$EndpointsFilterBuilder		
+class	com.amazon.tv.devicecontrol.api.capability.control.ControllableCapabilityBaseClass		ControllableCapability
+class	com.amazon.tv.devicecontrol.api.capability.control.endpoint.ControllableCapabilityFactory		
+class	com.amazon.tv.devicecontrol.api.capability.control.endpoint.ControllableEndpointImpl		ControllableEndpoint
+class	com.amazon.tv.devicecontrol.api.capability.control.endpoint.EndpointLocationTracker	ControllableCapabilityBaseClass	LocationTracker
+class	com.amazon.tv.devicecontrol.api.capability.control.endpoint.EndpointsResultImpl		EndpointsResult
+class	com.amazon.tv.devicecontrol.api.capability.control.endpoint.Validator		
+class	com.amazon.tv.devicecontrol.api.capability.control.request.OperationRequest		
+class	com.amazon.tv.devicecontrol.api.capability.control.request.OperationRequest$OperationRequestBuilder		
+class	com.amazon.tv.devicecontrol.api.capability.control.request.StartLocationSignalRequest		
+class	com.amazon.tv.devicecontrol.api.capability.control.request.StartLocationSignalRequest$StartLocationSignalRequestBuilder		
+class	com.amazon.tv.devicecontrol.api.capability.helper.IntentHelper		
+class	com.amazon.tv.devicecontrol.api.capability.message.IntentMessageTransport		MessageTransport
+class	com.amazon.tv.devicecontrol.api.capability.util.DirectiveUtils		
+class	com.amazon.tv.devicecontrol.api.message.MessageRequest		
+class	com.amazon.tv.devicecontrol.api.message.MessageRequest$MessageRequestBuilder		
+class	com.amazon.tv.devicecontrol.api.utils.Constant		
+class	com.amazon.tv.devicecontrol.api.utils.ListUtils		
+class	com.amazon.tv.devicecontrol.api.utils.Serializer		
+class	com.amazon.tv.devicecontrol.api.utils.Serializer$SerializerBuilder		
+class	com.amazon.tv.devicecontrol.api.utils.StringUtils		
+class	com.amazon.tv.devicecontrol.api.v1.AidlVersion		
+class	com.amazon.tv.devicecontrol.api.v1.AutoParcelable		Parcelable
+class	com.amazon.tv.devicecontrol.api.v1.ICallback$Stub	Binder	ICallback
+class	com.amazon.tv.devicecontrol.api.v1.ICallback$Stub$Proxy		ICallback
+class	com.amazon.tv.devicecontrol.api.v1.IDeviceCapabilityListener$Stub	Binder	IDeviceCapabilityListener
+class	com.amazon.tv.devicecontrol.api.v1.IDeviceCapabilityListener$Stub$Proxy		IDeviceCapabilityListener
+class	com.amazon.tv.devicecontrol.api.v1.IDeviceControlApi$Stub	Binder	IDeviceControlApi
+class	com.amazon.tv.devicecontrol.api.v1.IDeviceControlApi$Stub$Proxy		IDeviceControlApi
+class	com.amazon.tv.devicecontrol.api.v1.IEarconDualModeCallback$Stub	Binder	IEarconDualModeCallback
+class	com.amazon.tv.devicecontrol.api.v1.IEarconDualModeCallback$Stub$Proxy		IEarconDualModeCallback
+class	com.amazon.tv.devicecontrol.api.v1.IIrLearningCallback$Stub	Binder	IIrLearningCallback
+class	com.amazon.tv.devicecontrol.api.v1.IIrLearningCallback$Stub$Proxy		IIrLearningCallback
+class	com.amazon.tv.devicecontrol.api.v1.INetworkCallback$Stub	Binder	INetworkCallback
+class	com.amazon.tv.devicecontrol.api.v1.INetworkCallback$Stub$Proxy		INetworkCallback
+class	com.amazon.tv.devicecontrol.api.v1.ISignalSettledCallback$Stub	Binder	ISignalSettledCallback
+class	com.amazon.tv.devicecontrol.api.v1.ISignalSettledCallback$Stub$Proxy		ISignalSettledCallback
+class	com.amazon.tv.devicecontrol.api.versions.Version10To9Compatibility	VersionCompatibleServiceApi	
+class	com.amazon.tv.devicecontrol.api.versions.Version11to10Compatibility	VersionCompatibleServiceApi	
+class	com.amazon.tv.devicecontrol.api.versions.Version12to11Compatibility	VersionCompatibleServiceApi	
+class	com.amazon.tv.devicecontrol.api.versions.Version13to12Compatibility	VersionCompatibleServiceApi	
+class	com.amazon.tv.devicecontrol.api.versions.Version16to13Compatibility	VersionCompatibleServiceApi	
+class	com.amazon.tv.devicecontrol.api.versions.Version19To16Compatibility	VersionCompatibleServiceApi	
+class	com.amazon.tv.devicecontrol.api.versions.Version20To19Compatibility	VersionCompatibleServiceApi	
+class	com.amazon.tv.devicecontrol.api.versions.Version21To20Compatibility	VersionCompatibleServiceApi	
+class	com.amazon.tv.devicecontrol.api.versions.Version22To21Compatibility	VersionCompatibleServiceApi	
+class	com.amazon.tv.devicecontrol.api.versions.Version24To23Compatibility	VersionCompatibleServiceApi	
+class	com.amazon.tv.devicecontrol.api.versions.Version25To24Compatibility	VersionCompatibleServiceApi	
+class	com.amazon.tv.devicecontrol.api.versions.Version26To25Compatibility	VersionCompatibleServiceApi	
+class	com.amazon.tv.devicecontrol.api.versions.Version27To26Compatibility	VersionCompatibleServiceApi	
+class	com.amazon.tv.devicecontrol.api.versions.Version28To27Compatibility	VersionCompatibleServiceApi	
+class	com.amazon.tv.devicecontrol.api.versions.Version2To1Compatibility	VersionCompatibleServiceApi	
+class	com.amazon.tv.devicecontrol.api.versions.Version3To2Compatibility	VersionCompatibleServiceApi	
+class	com.amazon.tv.devicecontrol.api.versions.Version49To28Compatibility	VersionCompatibleServiceApi	
+class	com.amazon.tv.devicecontrol.api.versions.Version4To3Compatibility	VersionCompatibleServiceApi	
+class	com.amazon.tv.devicecontrol.api.versions.Version50To49Compatibility	VersionCompatibleServiceApi	
+class	com.amazon.tv.devicecontrol.api.versions.Version5To4Compatibility	VersionCompatibleServiceApi	
+class	com.amazon.tv.devicecontrol.api.versions.Version6To5Compatibility	VersionCompatibleServiceApi	
+class	com.amazon.tv.devicecontrol.api.versions.Version7To6Compatibility	VersionCompatibleServiceApi	
+class	com.amazon.tv.devicecontrol.api.versions.Version8To7Compatibility	VersionCompatibleServiceApi	
+class	com.amazon.tv.devicecontrol.api.versions.Version9To8Compatibility	VersionCompatibleServiceApi	
+class	com.amazon.tv.devicecontrol.api.versions.VersionCompatibleServiceApi	DeviceControlServiceApiWrapper	
+class	com.amazon.tv.devicecontrol.commons.ConfigurationContract		
+class	com.amazon.tv.devicecontrol.commons.ConfigurationContract$Activity		
+class	com.amazon.tv.devicecontrol.commons.ConfigurationContract$ActivityConfiguration		Configuration
+class	com.amazon.tv.devicecontrol.commons.ConfigurationContract$ActivityDsc		Serializable
+class	com.amazon.tv.devicecontrol.commons.ConfigurationContract$ActivityDsc$Builder		
+class	com.amazon.tv.devicecontrol.commons.ConfigurationContract$ControlConfiguration		Serializable
+class	com.amazon.tv.devicecontrol.commons.ConfigurationContract$Device		
+class	com.amazon.tv.devicecontrol.commons.ConfigurationContract$DeviceConfiguration		Configuration
+class	com.amazon.tv.devicecontrol.commons.ConfigurationContract$DeviceConfiguration$AustinIrDsc	ProtocolDsc	
+class	com.amazon.tv.devicecontrol.commons.ConfigurationContract$DeviceConfiguration$FindMyApiDsc	ProtocolDsc	
+class	com.amazon.tv.devicecontrol.commons.ConfigurationContract$DeviceConfiguration$FtveApiDsc	ProtocolDsc	
+class	com.amazon.tv.devicecontrol.commons.ConfigurationContract$DeviceConfiguration$HdmiCecDsc	ProtocolDsc	
+class	com.amazon.tv.devicecontrol.commons.ConfigurationContract$DeviceConfiguration$InputScrollConfiguration		Serializable
+class	com.amazon.tv.devicecontrol.commons.ConfigurationContract$DeviceConfiguration$IrDsc	ProtocolDsc	
+class	com.amazon.tv.devicecontrol.commons.ConfigurationContract$DeviceConfiguration$ProtocolDsc		Serializable
+class	com.amazon.tv.devicecontrol.commons.ConfigurationContract$DeviceConfiguration$Timings		Serializable
+class	com.amazon.tv.devicecontrol.commons.ConfigurationContract$OobeDetails		Serializable
+class	com.amazon.tv.devicecontrol.commons.ConfigurationContract$OobeDeviceConfiguration		Serializable
+class	com.amazon.tv.devicecontrol.commons.ConfigurationContract$TestingFlags		Serializable
+class	com.amazon.tv.devicecontrol.commons.Constants		
+class	com.amazon.tv.devicecontrol.commons.Constants$Recipe		
+class	com.amazon.tv.devicecontrol.commons.Constants$StbSetup		
+class	com.amazon.tv.devicecontrol.commons.Constants$Zts		
+class	com.amazon.tv.devicecontrol.commons.Definitions		
+class	com.amazon.tv.devicecontrol.commons.Definitions$ActivityOption		
+class	com.amazon.tv.devicecontrol.commons.Definitions$DescriptiveFunction		Serializable
+class	com.amazon.tv.devicecontrol.commons.Definitions$RemoteButton		
+class	com.amazon.tv.devicecontrol.commons.DeviceControlApi		
+class	com.amazon.tv.devicecontrol.commons.DeviceControlApi$ConfigurationParseError	RuntimeException	
+class	com.amazon.tv.devicecontrol.commons.DeviceControlApi$DeviceCapabilitiesApi$DeviceCapability		Serializable
+class	com.amazon.tv.devicecontrol.commons.DeviceControlApi$DeviceControlBundleKeys		
+class	com.amazon.tv.devicecontrol.commons.DeviceControlApi$ResourceCurrentlyUnavailableException	RuntimeException	
+class	com.amazon.tv.devicecontrol.commons.DeviceControlApi$UnboundServiceException	Exception	
+class	com.amazon.tv.devicecontrol.commons.DiscoveryContract		
+class	com.amazon.tv.devicecontrol.commons.DiscoveryContract$DeviceMetadataKeys		
+class	com.amazon.tv.devicecontrol.commons.DiscoveryContract$DiscoveryResult		Serializable
+class	com.amazon.tv.devicecontrol.commons.DiscoveryContract$PhysicalAddress		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos		
+class	com.amazon.tv.devicecontrol.commons.Dtos$AlexaSkillEnablement		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$ApplianceGroup		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$AustinIrCommandContext		CommandContext<IrCode>
+class	com.amazon.tv.devicecontrol.commons.Dtos$CableMso		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$CablePreferences		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$CableProvider		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$Cec		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$CecData		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$CecDataFootprint		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$Channel		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$ChannelChangeRequest		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$DetectedCecDevices		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$DeviceBrandDto		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$DeviceConfigurationRequest		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$DeviceInfo		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$DeviceInfo$DeviceInfoBuilder		
+class	com.amazon.tv.devicecontrol.commons.Dtos$DeviceState	JSONObject	Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$DeviceStateDto		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$Emitter		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$ExternalId		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$FtveApiCommandContext		CommandContext<FtveApiDirectCommand>
+class	com.amazon.tv.devicecontrol.commons.Dtos$FtveApiDirectCommand		DirectCommand
+class	com.amazon.tv.devicecontrol.commons.Dtos$GetDeviceConnectedToRequest		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$HdmiCecDirectCommand		DirectCommand
+class	com.amazon.tv.devicecontrol.commons.Dtos$HdmiCommandContext		CommandContext<HdmiCecDirectCommand>
+class	com.amazon.tv.devicecontrol.commons.Dtos$InputDeviceFunction		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$IrCode		DirectCommand
+class	com.amazon.tv.devicecontrol.commons.Dtos$IrCodeSet		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$IrCodeSetConfidence		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$IrCommandContext		CommandContext<IrCode>
+class	com.amazon.tv.devicecontrol.commons.Dtos$IrDeviceProfile		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$IrDeviceProfileList		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$IrDiscoveryCommand		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$IrSettings		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$LearnedIrFunction	IrCode	Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$Location		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$PowerOffFireTvRequest		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$Preferences		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$RawIrCode		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$RawIrCodes		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$RemoteButtonFunction		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$TextToSpeechBundle		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$ZeppelinMetadata		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$ZeppelinUserData		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$ZtsAck		Serializable
+class	com.amazon.tv.devicecontrol.commons.Dtos$ZtsAckResponse		Serializable
+class	com.amazon.tv.devicecontrol.commons.ErrorMessages		
+class	com.amazon.tv.devicecontrol.commons.Version		
+class	com.amazon.tv.devicecontrol.commons.account.AmazonMarketplace		
+class	com.amazon.tv.devicecontrol.commons.android.AndroidFactoryImpl		AndroidFactory
+class	com.amazon.tv.devicecontrol.commons.android.AndroidFactoryImpl$LoopingThread		
+class	com.amazon.tv.devicecontrol.commons.android.BundleBuilderImpl		BundleBuilder
+class	com.amazon.tv.devicecontrol.commons.android.DeviceConfigurationImpl		DeviceConfiguration
+class	com.amazon.tv.devicecontrol.commons.android.IntentBuilderImpl		IntentBuilder
+class	com.amazon.tv.devicecontrol.commons.capability.Capability		Serializable,Parcelable
+class	com.amazon.tv.devicecontrol.commons.capability.Capability$CapabilityBuilder		
+class	com.amazon.tv.devicecontrol.commons.capability.CapabilityConstants		
+class	com.amazon.tv.devicecontrol.commons.capability.CapabilityConstants$ErrorConstants		
+class	com.amazon.tv.devicecontrol.commons.capability.Context		Parcelable
+class	com.amazon.tv.devicecontrol.commons.capability.Context$Property		
+class	com.amazon.tv.devicecontrol.commons.capability.DefaultPayload		Payload
+class	com.amazon.tv.devicecontrol.commons.capability.DirectiveMessage		Serializable,Parcelable
+class	com.amazon.tv.devicecontrol.commons.capability.DirectiveMessage$DirectiveMessageBuilder		
+class	com.amazon.tv.devicecontrol.commons.capability.DiscoveryEndpointPayload		Payload
+class	com.amazon.tv.devicecontrol.commons.capability.Endpoint		Serializable,Parcelable
+class	com.amazon.tv.devicecontrol.commons.capability.Endpoint$EndpointBuilder		
+class	com.amazon.tv.devicecontrol.commons.capability.EndpointId		Serializable,Parcelable
+class	com.amazon.tv.devicecontrol.commons.capability.EndpointId$EndpointIdBuilder		
+class	com.amazon.tv.devicecontrol.commons.capability.ErrorPayload		Payload,Serializable
+class	com.amazon.tv.devicecontrol.commons.capability.Event		Serializable,Parcelable
+class	com.amazon.tv.devicecontrol.commons.capability.Event$EventBuilder		
+class	com.amazon.tv.devicecontrol.commons.capability.EventMessage		
+class	com.amazon.tv.devicecontrol.commons.capability.EventMessage$EventMessageBuilder		
+class	com.amazon.tv.devicecontrol.commons.capability.Header		Serializable,Parcelable
+class	com.amazon.tv.devicecontrol.commons.capability.Header$HeaderBuilder		
+class	com.amazon.tv.devicecontrol.commons.capability.PayloadMap	HashMap<String, T>	Payload,Parcelable
+class	com.amazon.tv.devicecontrol.commons.dualmode.Constants		
+class	com.amazon.tv.devicecontrol.commons.dualmode.Constants$Signals		
+class	com.amazon.tv.devicecontrol.commons.dualmode.Constants$Signals$Values		
+class	com.amazon.tv.devicecontrol.commons.feedback.Constants		
+class	com.amazon.tv.devicecontrol.commons.feedback.Constants$FeedbackKeys		
+class	com.amazon.tv.devicecontrol.commons.feedback.Constants$FeedbackPayload		
+class	com.amazon.tv.devicecontrol.commons.recipe.RecipeModel		Serializable
+class	com.amazon.tv.devicecontrol.commons.recipe.RecipeModelEntry		Serializable
+class	com.amazon.tv.devicecontrol.commons.state.Constants		
+class	com.amazon.tv.devicecontrol.commons.state.Constants$StateKeys		
+class	com.amazon.tv.devicecontrol.commons.state.Constants$StateSources		
+class	com.amazon.tv.devicecontrol.commons.state.Constants$StateValues		
+enum	com.amazon.d3.Commands		
+enum	com.amazon.d3.content.DemoContentProvider$SpeechUIKeys		
+enum	com.amazon.d3.content.DemoContentProvider$SpeechUIValues		
+enum	com.amazon.d3.content.JoinStatus		
+enum	com.amazon.d3.content.State		
+enum	com.amazon.d3.content.Status		
+enum	com.amazon.d3.content.Type		
+enum	com.amazon.d3.cx.ExperienceModeManager$AccessToNativeFunctionality		
+enum	com.amazon.d3.database.entity.KeyValueType		
+enum	com.amazon.d3.heartbeat.HealthValue		
+enum	com.amazon.d3.heartbeat.HeartbeatManager$HeartbeatResponseTypes		
+enum	com.amazon.d3.manifest.Content$ExperienceMode		
+enum	com.amazon.d3.manifest.Settings$ConnectionMethod		
+enum	com.amazon.d3.manifest.State		
+enum	com.amazon.d3.network.InternetConnectionManager$ConnectionStatus		
+enum	com.amazon.d3.receivers.InteractionReceiver$InteractionType		
+enum	com.amazon.d3.status.EventType		
+enum	com.amazon.d3.status.StatusMessageState		
+enum	com.amazon.d3.util.ConnectivityType		
+enum	com.amazon.d3.util.MapAuth$State		
+enum	com.amazon.d3.util.battery.BatteryUtilFos8$VoltageLevel		
+enum	com.amazon.d3.util.http.RegionHelper$DeviceRegion		
+enum	com.amazon.d3.util.http.UrlHelper$DcsEndpoint		
+enum	com.amazon.d3.util.http.UrlHelper$Endpoint		
+enum	com.amazon.d3.util.settings.AndroidSettings$Type		
+enum	com.amazon.tv.devicecontrol.api.ErrorCode		
+enum	com.amazon.tv.devicecontrol.commons.ConfigurationContract$SourceSetter		
+enum	com.amazon.tv.devicecontrol.commons.Definitions$ActivityType		Type
+enum	com.amazon.tv.devicecontrol.commons.Definitions$DeviceFunction		
+enum	com.amazon.tv.devicecontrol.commons.Definitions$DeviceType		Type
+enum	com.amazon.tv.devicecontrol.commons.Definitions$DiscoveryProtocol		
+enum	com.amazon.tv.devicecontrol.commons.Definitions$InputScrollCycleThroughDirectionType		
+enum	com.amazon.tv.devicecontrol.commons.Definitions$InputScrollRotationType		
+enum	com.amazon.tv.devicecontrol.commons.Definitions$ProtocolType		
+enum	com.amazon.tv.devicecontrol.commons.Definitions$ZtsAckStatus		
+enum	com.amazon.tv.devicecontrol.commons.Dtos$AlexaSkill		
+enum	com.amazon.tv.devicecontrol.commons.Dtos$CableProviderType		
+enum	com.amazon.tv.devicecontrol.commons.Dtos$EmitterMode		
+enum	com.amazon.tv.devicecontrol.commons.Dtos$GroupSource		
+enum	com.amazon.tv.devicecontrol.commons.Dtos$ScreenState		
+enum	com.amazon.tv.devicecontrol.commons.Dtos$SingleDeviceStateKeys		
+enum	com.amazon.tv.devicecontrol.commons.account.AmazonMarketplace$Region		
+enum	com.amazon.tv.devicecontrol.commons.capability.CapabilityActionState		
+enum	com.amazon.tv.devicecontrol.commons.recipe.RecipeModelEntryType		
+enum	com.amazon.tv.devicecontrol.commons.recipe.RecipeModelProtocolType		
+interface	com.amazon.d3.Channel		
+interface	com.amazon.d3.ID3Service	IInterface	
+interface	com.amazon.d3.PubSub		
+interface	com.amazon.d3.PubSubChannel		
+interface	com.amazon.d3.content.ContentManager$ContentMessage		
+interface	com.amazon.d3.cx.CXManager$CXMessage		
+interface	com.amazon.d3.database.dao.KeyValueDao		
+interface	com.amazon.d3.di.ApplicationComponent	AndroidInjector	
+interface	com.amazon.d3.di.ApplicationComponent$Builder		
+interface	com.amazon.d3.di.ApplicationModule		
+interface	com.amazon.d3.di.application.ActivitiesModule_ContributeDemoConfigurationActivity$DemoConfigurationActivitySubcomponent	AndroidInjector	
+interface	com.amazon.d3.di.application.ActivitiesModule_ContributeDemoConfigurationActivity$DemoConfigurationActivitySubcomponent$Factory	AndroidInjector.Factory	
+interface	com.amazon.d3.di.application.ActivitiesModule_ContributeDemoContentActivity$DemoContentActivitySubcomponent	AndroidInjector	
+interface	com.amazon.d3.di.application.ActivitiesModule_ContributeDemoContentActivity$DemoContentActivitySubcomponent$Factory	AndroidInjector.Factory	
+interface	com.amazon.d3.di.application.ActivitiesModule_ContributeDemoMgmtActivity$DemoMgmtActivitySubcomponent	AndroidInjector	
+interface	com.amazon.d3.di.application.ActivitiesModule_ContributeDemoMgmtActivity$DemoMgmtActivitySubcomponent$Factory	AndroidInjector.Factory	
+interface	com.amazon.d3.di.application.ActivitiesModule_ContributeDeviceInfoActivity$SystemInfoActivitySubcomponent	AndroidInjector	
+interface	com.amazon.d3.di.application.ActivitiesModule_ContributeDeviceInfoActivity$SystemInfoActivitySubcomponent$Factory	AndroidInjector.Factory	
+interface	com.amazon.d3.di.application.ActivitiesModule_ContributeProvisioningActivity$ProvisioningActivitySubcomponent	AndroidInjector	
+interface	com.amazon.d3.di.application.ActivitiesModule_ContributeProvisioningActivity$ProvisioningActivitySubcomponent$Factory	AndroidInjector.Factory	
+interface	com.amazon.d3.di.application.ActivitiesModule_ContributeSyncInfoActivity$SyncInfoActivitySubcomponent	AndroidInjector	
+interface	com.amazon.d3.di.application.ActivitiesModule_ContributeSyncInfoActivity$SyncInfoActivitySubcomponent$Factory	AndroidInjector.Factory	
+interface	com.amazon.d3.di.application.ActivitiesModule_ContributeWakeAndUnlockActivity$WakeAndUnlockActivitySubcomponent	AndroidInjector	
+interface	com.amazon.d3.di.application.ActivitiesModule_ContributeWakeAndUnlockActivity$WakeAndUnlockActivitySubcomponent$Factory	AndroidInjector.Factory	
+interface	com.amazon.d3.di.application.ChildWorkerFactory		
+interface	com.amazon.d3.di.application.CompleteReceiverModule		
+interface	com.amazon.d3.di.application.CompleteReceiverModule_ContributeBootCompleteReceiver$BootCompleteReceiverSubcomponent	AndroidInjector	
+interface	com.amazon.d3.di.application.CompleteReceiverModule_ContributeBootCompleteReceiver$BootCompleteReceiverSubcomponent$Factory	AndroidInjector.Factory	
+interface	com.amazon.d3.di.application.CompleteReceiverModule_ContributeKeepAliveReceiver$KeepAliveReceiverSubcomponent	AndroidInjector	
+interface	com.amazon.d3.di.application.CompleteReceiverModule_ContributeKeepAliveReceiver$KeepAliveReceiverSubcomponent$Factory	AndroidInjector.Factory	
+interface	com.amazon.d3.di.application.CompleteReceiverModule_ContributeOOBECompleteReceiver$OOBECompleteReceiverSubcomponent	AndroidInjector	
+interface	com.amazon.d3.di.application.CompleteReceiverModule_ContributeOOBECompleteReceiver$OOBECompleteReceiverSubcomponent$Factory	AndroidInjector.Factory	
+interface	com.amazon.d3.di.application.ContentProviderModule		
+interface	com.amazon.d3.di.application.ContentProviderModule_ContributeDemoContentProvider$DemoContentProviderSubcomponent	AndroidInjector	
+interface	com.amazon.d3.di.application.ContentProviderModule_ContributeDemoContentProvider$DemoContentProviderSubcomponent$Factory	AndroidInjector.Factory	
+interface	com.amazon.d3.di.application.DemoWorkerModule		
+interface	com.amazon.d3.di.service.D3ServiceComponent	AndroidInjector	
+interface	com.amazon.d3.di.service.D3ServiceComponent$Builder		
+interface	com.amazon.d3.di.service.DemoDeviceServiceComponent	AndroidInjector	
+interface	com.amazon.d3.di.service.DemoDeviceServiceComponent$Builder		
+interface	com.amazon.d3.di.service.DemoManagerModule		
+interface	com.amazon.d3.di.service.ServiceReceiverModule		
+interface	com.amazon.d3.heartbeat.HeartbeatManager$HeartbeatReport		
+interface	com.amazon.d3.manifest.Settings$SettingsMessage		
+interface	com.amazon.d3.services.ManagerInterface		
+interface	com.amazon.d3.settings.SettingsDelegate		
+interface	com.amazon.d3.status.StatusEvent		
+interface	com.amazon.d3.util.AsyncUtils$Scheduler		
+interface	com.amazon.d3.util.Clock		
+interface	com.amazon.d3.util.WorkManagerMsg		
+interface	com.amazon.d3.util.battery.BatteryUtil		
+interface	com.amazon.d3.util.http.DownloadMessage		
+interface	com.amazon.d3.util.http.Tag		
+interface	com.amazon.tv.devicecontrol.api.DeviceControlServiceApiContract	DeviceControlApi.SetupApi, DeviceControlApi.ExecutorsApi, DeviceControlApi.ActivityApi, DeviceControlApi.DcsCloudApi, DeviceControlApi.DiscoveryApi, DeviceControlApi.StateApi, DeviceControlApi.DeviceApi, DeviceControlApi.LearnApi, DeviceControlApi.MetadataApi, DeviceControlApi.SignalMonitorApi, DeviceControlApi.DeviceCapabilitiesApi, DeviceControlApi.FeatureFlagApi	
+interface	com.amazon.tv.devicecontrol.api.DeviceControlServiceCallback		
+interface	com.amazon.tv.devicecontrol.api.capability.CapabilityApi		
+interface	com.amazon.tv.devicecontrol.api.capability.CapabilityApiConnectedCallback		
+interface	com.amazon.tv.devicecontrol.api.capability.DirectiveCallback		
+interface	com.amazon.tv.devicecontrol.api.capability.EndpointsResult		
+interface	com.amazon.tv.devicecontrol.api.capability.EventCallback		
+interface	com.amazon.tv.devicecontrol.api.capability.control.ControllableCapability		
+interface	com.amazon.tv.devicecontrol.api.capability.control.ControllableEndpoint		
+interface	com.amazon.tv.devicecontrol.api.capability.control.LocationTracker	ControllableCapability	
+interface	com.amazon.tv.devicecontrol.api.message.MessageCallback		
+interface	com.amazon.tv.devicecontrol.api.message.MessageTransport		
+interface	com.amazon.tv.devicecontrol.api.v1.ICallback	IInterface	
+interface	com.amazon.tv.devicecontrol.api.v1.IDeviceCapabilityListener	IInterface	
+interface	com.amazon.tv.devicecontrol.api.v1.IDeviceControlApi	IInterface	
+interface	com.amazon.tv.devicecontrol.api.v1.IEarconDualModeCallback	IInterface	
+interface	com.amazon.tv.devicecontrol.api.v1.IIrLearningCallback	IInterface	
+interface	com.amazon.tv.devicecontrol.api.v1.INetworkCallback	IInterface	
+interface	com.amazon.tv.devicecontrol.api.v1.ISignalSettledCallback	IInterface	
+interface	com.amazon.tv.devicecontrol.commons.ConfigurationContract$ActivityConfiguration$SourceSet		
+interface	com.amazon.tv.devicecontrol.commons.ConfigurationContract$Changable		
+interface	com.amazon.tv.devicecontrol.commons.ConfigurationContract$Configuration	Changable, Serializable	
+interface	com.amazon.tv.devicecontrol.commons.Definitions$Type		
+interface	com.amazon.tv.devicecontrol.commons.DeviceControlApi$ActivityApi		
+interface	com.amazon.tv.devicecontrol.commons.DeviceControlApi$Callback		
+interface	com.amazon.tv.devicecontrol.commons.DeviceControlApi$ChangeListener		
+interface	com.amazon.tv.devicecontrol.commons.DeviceControlApi$DcsCloudApi		
+interface	com.amazon.tv.devicecontrol.commons.DeviceControlApi$DeviceApi		
+interface	com.amazon.tv.devicecontrol.commons.DeviceControlApi$DeviceCapabilitiesApi		
+interface	com.amazon.tv.devicecontrol.commons.DeviceControlApi$DeviceCapabilitiesApi$DeviceCapabilityListener		
+interface	com.amazon.tv.devicecontrol.commons.DeviceControlApi$DeviceControlEnabledListener		
+interface	com.amazon.tv.devicecontrol.commons.DeviceControlApi$DeviceStateListener		
+interface	com.amazon.tv.devicecontrol.commons.DeviceControlApi$DiscoveryApi		
+interface	com.amazon.tv.devicecontrol.commons.DeviceControlApi$ExecutorsApi		
+interface	com.amazon.tv.devicecontrol.commons.DeviceControlApi$FeatureFlagApi		
+interface	com.amazon.tv.devicecontrol.commons.DeviceControlApi$LearnApi		
+interface	com.amazon.tv.devicecontrol.commons.DeviceControlApi$LearningCallback		
+interface	com.amazon.tv.devicecontrol.commons.DeviceControlApi$MetadataApi		
+interface	com.amazon.tv.devicecontrol.commons.DeviceControlApi$ModeListener		
+interface	com.amazon.tv.devicecontrol.commons.DeviceControlApi$NetworkCallback	OperationCallback<T>	
+interface	com.amazon.tv.devicecontrol.commons.DeviceControlApi$OperationCallback		
+interface	com.amazon.tv.devicecontrol.commons.DeviceControlApi$ScreenStateListener		
+interface	com.amazon.tv.devicecontrol.commons.DeviceControlApi$SetupApi		
+interface	com.amazon.tv.devicecontrol.commons.DeviceControlApi$SignalMonitorApi		
+interface	com.amazon.tv.devicecontrol.commons.DeviceControlApi$SignalMonitorApi$SignalSettledCallback		
+interface	com.amazon.tv.devicecontrol.commons.DeviceControlApi$StateApi		
+interface	com.amazon.tv.devicecontrol.commons.DiscoveryContract$DiscoveryCallback		
+interface	com.amazon.tv.devicecontrol.commons.Dtos$CommandContext	Serializable	
+interface	com.amazon.tv.devicecontrol.commons.Dtos$DirectCommand	Serializable	
+interface	com.amazon.tv.devicecontrol.commons.android.AndroidFactory		
+interface	com.amazon.tv.devicecontrol.commons.android.BundleBuilder		
+interface	com.amazon.tv.devicecontrol.commons.android.DeviceConfiguration		
+interface	com.amazon.tv.devicecontrol.commons.android.IntentBuilder		
+interface	com.amazon.tv.devicecontrol.commons.capability.Payload	Serializable, Parcelable	

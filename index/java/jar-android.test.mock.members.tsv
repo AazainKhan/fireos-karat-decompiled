@@ -1,0 +1,1715 @@
+class	kind	declaration
+android.app.IApplicationThread$Default	method	public IBinder asBinder()
+android.app.IApplicationThread$Default	method	public void attachAgent(String str) throws RemoteException
+android.app.IApplicationThread$Default	method	public void attachStartupAgents(String str) throws RemoteException
+android.app.IApplicationThread$Default	method	public void bindApplication(String str, ApplicationInfo applicationInfo, ProviderInfoList providerInfoList, ComponentName componentName, ProfilerInfo profilerInfo, Bundle bundle, IInstrumentationWatcher iInstrumentationWatcher, IUiAutomationConnection iUiAutomationConnection, int i, boolean z, boolean z2, boolean z3, boolean z4, Configuration configuration, CompatibilityInfo compatibilityInfo, Map map, Bundle bundle2, String str2, AutofillOptions autofillOptions, ContentCaptureOptions contentCaptureOptions, long[] jArr) throws RemoteException
+android.app.IApplicationThread$Default	method	public void clearDnsCache() throws RemoteException
+android.app.IApplicationThread$Default	method	public void dispatchPackageBroadcast(int i, String[] strArr) throws RemoteException
+android.app.IApplicationThread$Default	method	public void dumpActivity(ParcelFileDescriptor parcelFileDescriptor, IBinder iBinder, String str, String[] strArr) throws RemoteException
+android.app.IApplicationThread$Default	method	public void dumpCacheInfo(ParcelFileDescriptor parcelFileDescriptor, String[] strArr) throws RemoteException
+android.app.IApplicationThread$Default	method	public void dumpDbInfo(ParcelFileDescriptor parcelFileDescriptor, String[] strArr) throws RemoteException
+android.app.IApplicationThread$Default	method	public void dumpGfxInfo(ParcelFileDescriptor parcelFileDescriptor, String[] strArr) throws RemoteException
+android.app.IApplicationThread$Default	method	public void dumpHeap(boolean z, boolean z2, boolean z3, String str, ParcelFileDescriptor parcelFileDescriptor, RemoteCallback remoteCallback) throws RemoteException
+android.app.IApplicationThread$Default	method	public void dumpMemInfo(ParcelFileDescriptor parcelFileDescriptor, Debug.MemoryInfo memoryInfo, boolean z, boolean z2, boolean z3, boolean z4, boolean z5, String[] strArr) throws RemoteException
+android.app.IApplicationThread$Default	method	public void dumpMemInfoProto(ParcelFileDescriptor parcelFileDescriptor, Debug.MemoryInfo memoryInfo, boolean z, boolean z2, boolean z3, boolean z4, String[] strArr) throws RemoteException
+android.app.IApplicationThread$Default	method	public void dumpProvider(ParcelFileDescriptor parcelFileDescriptor, IBinder iBinder, String[] strArr) throws RemoteException
+android.app.IApplicationThread$Default	method	public void dumpService(ParcelFileDescriptor parcelFileDescriptor, IBinder iBinder, String[] strArr) throws RemoteException
+android.app.IApplicationThread$Default	method	public void handleTrustStorageUpdate() throws RemoteException
+android.app.IApplicationThread$Default	method	public void notifyCleartextNetwork(byte[] bArr) throws RemoteException
+android.app.IApplicationThread$Default	method	public void performDirectAction(IBinder iBinder, String str, Bundle bundle, RemoteCallback remoteCallback, RemoteCallback remoteCallback2) throws RemoteException
+android.app.IApplicationThread$Default	method	public void processInBackground() throws RemoteException
+android.app.IApplicationThread$Default	method	public void profilerControl(boolean z, ProfilerInfo profilerInfo, int i) throws RemoteException
+android.app.IApplicationThread$Default	method	public void requestAssistContextExtras(IBinder iBinder, IBinder iBinder2, int i, int i2, int i3) throws RemoteException
+android.app.IApplicationThread$Default	method	public void requestDirectActions(IBinder iBinder, IVoiceInteractor iVoiceInteractor, RemoteCallback remoteCallback, RemoteCallback remoteCallback2) throws RemoteException
+android.app.IApplicationThread$Default	method	public void runIsolatedEntryPoint(String str, String[] strArr) throws RemoteException
+android.app.IApplicationThread$Default	method	public void scheduleApplicationInfoChanged(ApplicationInfo applicationInfo) throws RemoteException
+android.app.IApplicationThread$Default	method	public void scheduleBindService(IBinder iBinder, Intent intent, boolean z, int i) throws RemoteException
+android.app.IApplicationThread$Default	method	public void scheduleCrash(String str) throws RemoteException
+android.app.IApplicationThread$Default	method	public void scheduleCreateBackupAgent(ApplicationInfo applicationInfo, CompatibilityInfo compatibilityInfo, int i, int i2) throws RemoteException
+android.app.IApplicationThread$Default	method	public void scheduleCreateService(IBinder iBinder, ServiceInfo serviceInfo, CompatibilityInfo compatibilityInfo, int i) throws RemoteException
+android.app.IApplicationThread$Default	method	public void scheduleDestroyBackupAgent(ApplicationInfo applicationInfo, CompatibilityInfo compatibilityInfo, int i) throws RemoteException
+android.app.IApplicationThread$Default	method	public void scheduleEnterAnimationComplete(IBinder iBinder) throws RemoteException
+android.app.IApplicationThread$Default	method	public void scheduleExit() throws RemoteException
+android.app.IApplicationThread$Default	method	public void scheduleInstallProvider(ProviderInfo providerInfo) throws RemoteException
+android.app.IApplicationThread$Default	method	public void scheduleLocalVoiceInteractionStarted(IBinder iBinder, IVoiceInteractor iVoiceInteractor) throws RemoteException
+android.app.IApplicationThread$Default	method	public void scheduleLowMemory() throws RemoteException
+android.app.IApplicationThread$Default	method	public void scheduleOnNewActivityOptions(IBinder iBinder, Bundle bundle) throws RemoteException
+android.app.IApplicationThread$Default	method	public void scheduleReceiver(Intent intent, ActivityInfo activityInfo, CompatibilityInfo compatibilityInfo, int i, String str, Bundle bundle, boolean z, int i2, int i3) throws RemoteException
+android.app.IApplicationThread$Default	method	public void scheduleRegisteredReceiver(IIntentReceiver iIntentReceiver, Intent intent, int i, String str, Bundle bundle, boolean z, boolean z2, int i2, int i3) throws RemoteException
+android.app.IApplicationThread$Default	method	public void scheduleServiceArgs(IBinder iBinder, ParceledListSlice parceledListSlice) throws RemoteException
+android.app.IApplicationThread$Default	method	public void scheduleStopService(IBinder iBinder) throws RemoteException
+android.app.IApplicationThread$Default	method	public void scheduleSuicide() throws RemoteException
+android.app.IApplicationThread$Default	method	public void scheduleTransaction(ClientTransaction clientTransaction) throws RemoteException
+android.app.IApplicationThread$Default	method	public void scheduleTranslucentConversionComplete(IBinder iBinder, boolean z) throws RemoteException
+android.app.IApplicationThread$Default	method	public void scheduleTrimMemory(int i) throws RemoteException
+android.app.IApplicationThread$Default	method	public void scheduleUnbindService(IBinder iBinder, Intent intent) throws RemoteException
+android.app.IApplicationThread$Default	method	public void setCoreSettings(Bundle bundle) throws RemoteException
+android.app.IApplicationThread$Default	method	public void setNetworkBlockSeq(long j) throws RemoteException
+android.app.IApplicationThread$Default	method	public void setProcessState(int i) throws RemoteException
+android.app.IApplicationThread$Default	method	public void setSchedulingGroup(int i) throws RemoteException
+android.app.IApplicationThread$Default	method	public void startBinderTracking() throws RemoteException
+android.app.IApplicationThread$Default	method	public void stopBinderTrackingAndDump(ParcelFileDescriptor parcelFileDescriptor) throws RemoteException
+android.app.IApplicationThread$Default	method	public void unstableProviderDied(IBinder iBinder) throws RemoteException
+android.app.IApplicationThread$Default	method	public void updateHttpProxy() throws RemoteException
+android.app.IApplicationThread$Default	method	public void updatePackageCompatibilityInfo(String str, CompatibilityInfo compatibilityInfo) throws RemoteException
+android.app.IApplicationThread$Default	method	public void updateTimePrefs(int i) throws RemoteException
+android.app.IApplicationThread$Default	method	public void updateTimeZone() throws RemoteException
+android.app.IApplicationThread$Stub	field	private static final String DESCRIPTOR;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_attachAgent;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_attachStartupAgents;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_bindApplication;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_clearDnsCache;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_dispatchPackageBroadcast;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_dumpActivity;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_dumpCacheInfo;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_dumpDbInfo;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_dumpGfxInfo;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_dumpHeap;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_dumpMemInfo;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_dumpMemInfoProto;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_dumpProvider;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_dumpService;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_handleTrustStorageUpdate;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_notifyCleartextNetwork;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_performDirectAction;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_processInBackground;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_profilerControl;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_requestAssistContextExtras;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_requestDirectActions;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_runIsolatedEntryPoint;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_scheduleApplicationInfoChanged;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_scheduleBindService;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_scheduleCrash;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_scheduleCreateBackupAgent;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_scheduleCreateService;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_scheduleDestroyBackupAgent;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_scheduleEnterAnimationComplete;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_scheduleExit;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_scheduleInstallProvider;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_scheduleLocalVoiceInteractionStarted;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_scheduleLowMemory;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_scheduleOnNewActivityOptions;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_scheduleReceiver;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_scheduleRegisteredReceiver;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_scheduleServiceArgs;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_scheduleStopService;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_scheduleSuicide;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_scheduleTransaction;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_scheduleTranslucentConversionComplete;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_scheduleTrimMemory;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_scheduleUnbindService;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_setCoreSettings;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_setNetworkBlockSeq;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_setProcessState;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_setSchedulingGroup;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_startBinderTracking;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_stopBinderTrackingAndDump;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_unstableProviderDied;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_updateHttpProxy;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_updatePackageCompatibilityInfo;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_updateTimePrefs;
+android.app.IApplicationThread$Stub	field	static final int TRANSACTION_updateTimeZone;
+android.app.IApplicationThread$Stub	method	public IBinder asBinder()
+android.app.IApplicationThread$Stub	method	public Stub()
+android.app.IApplicationThread$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+android.app.IApplicationThread$Stub	method	public static IApplicationThread asInterface(IBinder iBinder)
+android.app.IApplicationThread$Stub	method	public static IApplicationThread getDefaultImpl()
+android.app.IApplicationThread$Stub	method	public static boolean setDefaultImpl(IApplicationThread iApplicationThread)
+android.app.IApplicationThread$Stub$Proxy	field	private IBinder mRemote;
+android.app.IApplicationThread$Stub$Proxy	field	public static IApplicationThread sDefaultImpl;
+android.app.IApplicationThread$Stub$Proxy	method	public IBinder asBinder()
+android.app.IApplicationThread$Stub$Proxy	method	public String getInterfaceDescriptor()
+android.app.IApplicationThread$Stub$Proxy	method	public void attachAgent(String str) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void attachStartupAgents(String str) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void bindApplication(String str, ApplicationInfo applicationInfo, ProviderInfoList providerInfoList, ComponentName componentName, ProfilerInfo profilerInfo, Bundle bundle, IInstrumentationWatcher iInstrumentationWatcher, IUiAutomationConnection iUiAutomationConnection, int i, boolean z, boolean z2, boolean z3, boolean z4, Configuration configuration, CompatibilityInfo compatibilityInfo, Map map, Bundle bundle2, String str2, AutofillOptions autofillOptions, ContentCaptureOptions contentCaptureOptions, long[] jArr) throws Throwable
+android.app.IApplicationThread$Stub$Proxy	method	public void clearDnsCache() throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void dispatchPackageBroadcast(int i, String[] strArr) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void dumpActivity(ParcelFileDescriptor parcelFileDescriptor, IBinder iBinder, String str, String[] strArr) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void dumpCacheInfo(ParcelFileDescriptor parcelFileDescriptor, String[] strArr) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void dumpDbInfo(ParcelFileDescriptor parcelFileDescriptor, String[] strArr) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void dumpGfxInfo(ParcelFileDescriptor parcelFileDescriptor, String[] strArr) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void dumpHeap(boolean z, boolean z2, boolean z3, String str, ParcelFileDescriptor parcelFileDescriptor, RemoteCallback remoteCallback) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void dumpMemInfo(ParcelFileDescriptor parcelFileDescriptor, Debug.MemoryInfo memoryInfo, boolean z, boolean z2, boolean z3, boolean z4, boolean z5, String[] strArr) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void dumpMemInfoProto(ParcelFileDescriptor parcelFileDescriptor, Debug.MemoryInfo memoryInfo, boolean z, boolean z2, boolean z3, boolean z4, String[] strArr) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void dumpProvider(ParcelFileDescriptor parcelFileDescriptor, IBinder iBinder, String[] strArr) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void dumpService(ParcelFileDescriptor parcelFileDescriptor, IBinder iBinder, String[] strArr) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void handleTrustStorageUpdate() throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void notifyCleartextNetwork(byte[] bArr) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void performDirectAction(IBinder iBinder, String str, Bundle bundle, RemoteCallback remoteCallback, RemoteCallback remoteCallback2) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void processInBackground() throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void profilerControl(boolean z, ProfilerInfo profilerInfo, int i) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void requestAssistContextExtras(IBinder iBinder, IBinder iBinder2, int i, int i2, int i3) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void requestDirectActions(IBinder iBinder, IVoiceInteractor iVoiceInteractor, RemoteCallback remoteCallback, RemoteCallback remoteCallback2) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void runIsolatedEntryPoint(String str, String[] strArr) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void scheduleApplicationInfoChanged(ApplicationInfo applicationInfo) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void scheduleBindService(IBinder iBinder, Intent intent, boolean z, int i) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void scheduleCrash(String str) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void scheduleCreateBackupAgent(ApplicationInfo applicationInfo, CompatibilityInfo compatibilityInfo, int i, int i2) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void scheduleCreateService(IBinder iBinder, ServiceInfo serviceInfo, CompatibilityInfo compatibilityInfo, int i) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void scheduleDestroyBackupAgent(ApplicationInfo applicationInfo, CompatibilityInfo compatibilityInfo, int i) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void scheduleEnterAnimationComplete(IBinder iBinder) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void scheduleExit() throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void scheduleInstallProvider(ProviderInfo providerInfo) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void scheduleLocalVoiceInteractionStarted(IBinder iBinder, IVoiceInteractor iVoiceInteractor) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void scheduleLowMemory() throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void scheduleOnNewActivityOptions(IBinder iBinder, Bundle bundle) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void scheduleReceiver(Intent intent, ActivityInfo activityInfo, CompatibilityInfo compatibilityInfo, int i, String str, Bundle bundle, boolean z, int i2, int i3) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void scheduleRegisteredReceiver(IIntentReceiver iIntentReceiver, Intent intent, int i, String str, Bundle bundle, boolean z, boolean z2, int i2, int i3) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void scheduleServiceArgs(IBinder iBinder, ParceledListSlice parceledListSlice) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void scheduleStopService(IBinder iBinder) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void scheduleSuicide() throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void scheduleTransaction(ClientTransaction clientTransaction) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void scheduleTranslucentConversionComplete(IBinder iBinder, boolean z) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void scheduleTrimMemory(int i) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void scheduleUnbindService(IBinder iBinder, Intent intent) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void setCoreSettings(Bundle bundle) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void setNetworkBlockSeq(long j) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void setProcessState(int i) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void setSchedulingGroup(int i) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void startBinderTracking() throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void stopBinderTrackingAndDump(ParcelFileDescriptor parcelFileDescriptor) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void unstableProviderDied(IBinder iBinder) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void updateHttpProxy() throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void updatePackageCompatibilityInfo(String str, CompatibilityInfo compatibilityInfo) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void updateTimePrefs(int i) throws RemoteException
+android.app.IApplicationThread$Stub$Proxy	method	public void updateTimeZone() throws RemoteException
+android.app.IServiceConnection$Default	method	public IBinder asBinder()
+android.app.IServiceConnection$Default	method	public void connected(ComponentName componentName, IBinder iBinder, boolean z) throws RemoteException
+android.app.IServiceConnection$Stub	field	private static final String DESCRIPTOR;
+android.app.IServiceConnection$Stub	field	static final int TRANSACTION_connected;
+android.app.IServiceConnection$Stub	method	public IBinder asBinder()
+android.app.IServiceConnection$Stub	method	public Stub()
+android.app.IServiceConnection$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+android.app.IServiceConnection$Stub	method	public static IServiceConnection asInterface(IBinder iBinder)
+android.app.IServiceConnection$Stub	method	public static IServiceConnection getDefaultImpl()
+android.app.IServiceConnection$Stub	method	public static boolean setDefaultImpl(IServiceConnection iServiceConnection)
+android.app.IServiceConnection$Stub$Proxy	field	private IBinder mRemote;
+android.app.IServiceConnection$Stub$Proxy	field	public static IServiceConnection sDefaultImpl;
+android.app.IServiceConnection$Stub$Proxy	method	public IBinder asBinder()
+android.app.IServiceConnection$Stub$Proxy	method	public String getInterfaceDescriptor()
+android.app.IServiceConnection$Stub$Proxy	method	public void connected(ComponentName componentName, IBinder iBinder, boolean z) throws RemoteException
+android.content.IContentProvider	field	public static final String descriptor;
+android.content.IContentProvider	field	public static final int APPLY_BATCH_TRANSACTION;
+android.content.IContentProvider	field	public static final int BULK_INSERT_TRANSACTION;
+android.content.IContentProvider	field	public static final int CALL_TRANSACTION;
+android.content.IContentProvider	field	public static final int CANONICALIZE_ASYNC_TRANSACTION;
+android.content.IContentProvider	field	public static final int CANONICALIZE_TRANSACTION;
+android.content.IContentProvider	field	public static final int CHECK_URI_PERMISSION_TRANSACTION;
+android.content.IContentProvider	field	public static final int CREATE_CANCELATION_SIGNAL_TRANSACTION;
+android.content.IContentProvider	field	public static final int DELETE_TRANSACTION;
+android.content.IContentProvider	field	public static final int GET_STREAM_TYPES_TRANSACTION;
+android.content.IContentProvider	field	public static final int GET_TYPE_ASYNC_TRANSACTION;
+android.content.IContentProvider	field	public static final int GET_TYPE_TRANSACTION;
+android.content.IContentProvider	field	public static final int INSERT_TRANSACTION;
+android.content.IContentProvider	field	public static final int OPEN_ASSET_FILE_TRANSACTION;
+android.content.IContentProvider	field	public static final int OPEN_FILE_TRANSACTION;
+android.content.IContentProvider	field	public static final int OPEN_TYPED_ASSET_FILE_TRANSACTION;
+android.content.IContentProvider	field	public static final int QUERY_TRANSACTION;
+android.content.IContentProvider	field	public static final int REFRESH_TRANSACTION;
+android.content.IContentProvider	field	public static final int UNCANONICALIZE_TRANSACTION;
+android.content.IContentProvider	field	public static final int UPDATE_TRANSACTION;
+android.content.IContentProvider	method	default Bundle call(String str, String str2, String str3, Bundle bundle) throws RemoteException
+android.content.IContentProvider	method	default Uri insert(String str, Uri uri, ContentValues contentValues) throws RemoteException
+android.content.IContentProvider	method	default int bulkInsert(String str, Uri uri, ContentValues[] contentValuesArr) throws RemoteException
+android.content.IContentProvider	method	default int delete(String str, Uri uri, String str2, String[] strArr) throws RemoteException
+android.content.IContentProvider	method	default int update(String str, Uri uri, ContentValues contentValues, String str2, String[] strArr) throws RemoteException
+android.content.pm.IPackageDataObserver$Default	method	public IBinder asBinder()
+android.content.pm.IPackageDataObserver$Default	method	public void onRemoveCompleted(String str, boolean z) throws RemoteException
+android.content.pm.IPackageDataObserver$Stub	field	private static final String DESCRIPTOR;
+android.content.pm.IPackageDataObserver$Stub	field	static final int TRANSACTION_onRemoveCompleted;
+android.content.pm.IPackageDataObserver$Stub	method	public IBinder asBinder()
+android.content.pm.IPackageDataObserver$Stub	method	public Stub()
+android.content.pm.IPackageDataObserver$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+android.content.pm.IPackageDataObserver$Stub	method	public static IPackageDataObserver asInterface(IBinder iBinder)
+android.content.pm.IPackageDataObserver$Stub	method	public static IPackageDataObserver getDefaultImpl()
+android.content.pm.IPackageDataObserver$Stub	method	public static boolean setDefaultImpl(IPackageDataObserver iPackageDataObserver)
+android.content.pm.IPackageDataObserver$Stub$Proxy	field	private IBinder mRemote;
+android.content.pm.IPackageDataObserver$Stub$Proxy	field	public static IPackageDataObserver sDefaultImpl;
+android.content.pm.IPackageDataObserver$Stub$Proxy	method	public IBinder asBinder()
+android.content.pm.IPackageDataObserver$Stub$Proxy	method	public String getInterfaceDescriptor()
+android.content.pm.IPackageDataObserver$Stub$Proxy	method	public void onRemoveCompleted(String str, boolean z) throws RemoteException
+android.content.pm.InstantAppInfo	field	private final ApplicationInfo mApplicationInfo;
+android.content.pm.InstantAppInfo	field	private final CharSequence mLabelText;
+android.content.pm.InstantAppInfo	field	private final String mPackageName;
+android.content.pm.InstantAppInfo	field	private final String[] mGrantedPermissions;
+android.content.pm.InstantAppInfo	field	private final String[] mRequestedPermissions;
+android.content.pm.InstantAppInfo	method	private InstantAppInfo(Parcel parcel)
+android.content.pm.InstantAppInfo	method	public ApplicationInfo getApplicationInfo()
+android.content.pm.InstantAppInfo	method	public CharSequence loadLabel(PackageManager packageManager)
+android.content.pm.InstantAppInfo	method	public Drawable loadIcon(PackageManager packageManager)
+android.content.pm.InstantAppInfo	method	public InstantAppInfo(ApplicationInfo applicationInfo, String[] strArr, String[] strArr2)
+android.content.pm.InstantAppInfo	method	public InstantAppInfo(String str, CharSequence charSequence, String[] strArr, String[] strArr2)
+android.content.pm.InstantAppInfo	method	public String getPackageName()
+android.content.pm.InstantAppInfo	method	public String[] getGrantedPermissions()
+android.content.pm.InstantAppInfo	method	public String[] getRequestedPermissions()
+android.content.pm.InstantAppInfo	method	public int describeContents()
+android.content.pm.InstantAppInfo	method	public void writeToParcel(Parcel parcel, int i)
+android.content.pm.KeySet	field	private IBinder token;
+android.content.pm.KeySet	method	public IBinder getToken()
+android.content.pm.KeySet	method	public KeySet(IBinder iBinder)
+android.content.pm.KeySet	method	public boolean equals(Object obj)
+android.content.pm.KeySet	method	public int describeContents()
+android.content.pm.KeySet	method	public int hashCode()
+android.content.pm.KeySet	method	public static KeySet readFromParcel(Parcel parcel)
+android.content.pm.KeySet	method	public void writeToParcel(Parcel parcel, int i)
+android.content.pm.PackageManager	field	private static final PropertyInvalidatedCache.AutoCorker sCacheAutoCorker;
+android.content.pm.PackageManager	field	private static final PropertyInvalidatedCache<ApplicationInfoQuery, ApplicationInfo> sApplicationInfoCache;
+android.content.pm.PackageManager	field	private static final PropertyInvalidatedCache<PackageInfoQuery, PackageInfo> sPackageInfoCache;
+android.content.pm.PackageManager	field	private static final String TAG;
+android.content.pm.PackageManager	field	public static final String ACTION_REQUEST_PERMISSIONS;
+android.content.pm.PackageManager	field	public static final String APP_DETAILS_ACTIVITY_CLASS_NAME;
+android.content.pm.PackageManager	field	public static final String EXTRA_FAILURE_EXISTING_PACKAGE;
+android.content.pm.PackageManager	field	public static final String EXTRA_FAILURE_EXISTING_PERMISSION;
+android.content.pm.PackageManager	field	public static final String EXTRA_INTENT_FILTER_VERIFICATION_HOSTS;
+android.content.pm.PackageManager	field	public static final String EXTRA_INTENT_FILTER_VERIFICATION_ID;
+android.content.pm.PackageManager	field	public static final String EXTRA_INTENT_FILTER_VERIFICATION_PACKAGE_NAME;
+android.content.pm.PackageManager	field	public static final String EXTRA_INTENT_FILTER_VERIFICATION_URI_SCHEME;
+android.content.pm.PackageManager	field	public static final String EXTRA_MOVE_ID;
+android.content.pm.PackageManager	field	public static final String EXTRA_REQUEST_PERMISSIONS_NAMES;
+android.content.pm.PackageManager	field	public static final String EXTRA_REQUEST_PERMISSIONS_RESULTS;
+android.content.pm.PackageManager	field	public static final String EXTRA_VERIFICATION_ID;
+android.content.pm.PackageManager	field	public static final String EXTRA_VERIFICATION_INSTALLER_PACKAGE;
+android.content.pm.PackageManager	field	public static final String EXTRA_VERIFICATION_INSTALLER_UID;
+android.content.pm.PackageManager	field	public static final String EXTRA_VERIFICATION_INSTALL_FLAGS;
+android.content.pm.PackageManager	field	public static final String EXTRA_VERIFICATION_LONG_VERSION_CODE;
+android.content.pm.PackageManager	field	public static final String EXTRA_VERIFICATION_PACKAGE_NAME;
+android.content.pm.PackageManager	field	public static final String EXTRA_VERIFICATION_RESULT;
+android.content.pm.PackageManager	field	public static final String EXTRA_VERIFICATION_ROOT_HASH;
+android.content.pm.PackageManager	field	public static final String EXTRA_VERIFICATION_URI;
+android.content.pm.PackageManager	field	public static final String EXTRA_VERIFICATION_VERSION_CODE;
+android.content.pm.PackageManager	field	public static final String FEATURE_ACTIVITIES_ON_SECONDARY_DISPLAYS;
+android.content.pm.PackageManager	field	public static final String FEATURE_ADOPTABLE_STORAGE;
+android.content.pm.PackageManager	field	public static final String FEATURE_APP_ENUMERATION;
+android.content.pm.PackageManager	field	public static final String FEATURE_APP_WIDGETS;
+android.content.pm.PackageManager	field	public static final String FEATURE_ASSIST_GESTURE;
+android.content.pm.PackageManager	field	public static final String FEATURE_AUDIO_LOW_LATENCY;
+android.content.pm.PackageManager	field	public static final String FEATURE_AUDIO_OUTPUT;
+android.content.pm.PackageManager	field	public static final String FEATURE_AUDIO_PRO;
+android.content.pm.PackageManager	field	public static final String FEATURE_AUTOFILL;
+android.content.pm.PackageManager	field	public static final String FEATURE_AUTOMOTIVE;
+android.content.pm.PackageManager	field	public static final String FEATURE_BACKUP;
+android.content.pm.PackageManager	field	public static final String FEATURE_BLUETOOTH;
+android.content.pm.PackageManager	field	public static final String FEATURE_BLUETOOTH_LE;
+android.content.pm.PackageManager	field	public static final String FEATURE_BROADCAST_RADIO;
+android.content.pm.PackageManager	field	public static final String FEATURE_CAMERA;
+android.content.pm.PackageManager	field	public static final String FEATURE_CAMERA_ANY;
+android.content.pm.PackageManager	field	public static final String FEATURE_CAMERA_AR;
+android.content.pm.PackageManager	field	public static final String FEATURE_CAMERA_AUTOFOCUS;
+android.content.pm.PackageManager	field	public static final String FEATURE_CAMERA_CAPABILITY_MANUAL_POST_PROCESSING;
+android.content.pm.PackageManager	field	public static final String FEATURE_CAMERA_CAPABILITY_MANUAL_SENSOR;
+android.content.pm.PackageManager	field	public static final String FEATURE_CAMERA_CAPABILITY_RAW;
+android.content.pm.PackageManager	field	public static final String FEATURE_CAMERA_CONCURRENT;
+android.content.pm.PackageManager	field	public static final String FEATURE_CAMERA_EXTERNAL;
+android.content.pm.PackageManager	field	public static final String FEATURE_CAMERA_FLASH;
+android.content.pm.PackageManager	field	public static final String FEATURE_CAMERA_FRONT;
+android.content.pm.PackageManager	field	public static final String FEATURE_CAMERA_LEVEL_FULL;
+android.content.pm.PackageManager	field	public static final String FEATURE_CANT_SAVE_STATE;
+android.content.pm.PackageManager	field	public static final String FEATURE_COMPANION_DEVICE_SETUP;
+android.content.pm.PackageManager	field	public static final String FEATURE_CONNECTION_SERVICE;
+android.content.pm.PackageManager	field	public static final String FEATURE_CONSUMER_IR;
+android.content.pm.PackageManager	field	public static final String FEATURE_CONTEXT_HUB;
+android.content.pm.PackageManager	field	public static final String FEATURE_CONTROLS;
+android.content.pm.PackageManager	field	public static final String FEATURE_CTS;
+android.content.pm.PackageManager	field	public static final String FEATURE_DEVICE_ADMIN;
+android.content.pm.PackageManager	field	public static final String FEATURE_DEVICE_ID_ATTESTATION;
+android.content.pm.PackageManager	field	public static final String FEATURE_DEVICE_UNIQUE_ATTESTATION;
+android.content.pm.PackageManager	field	public static final String FEATURE_EMBEDDED;
+android.content.pm.PackageManager	field	public static final String FEATURE_ETHERNET;
+android.content.pm.PackageManager	field	public static final String FEATURE_FACE;
+android.content.pm.PackageManager	field	public static final String FEATURE_FAKETOUCH;
+android.content.pm.PackageManager	field	public static final String FEATURE_FAKETOUCH_MULTITOUCH_DISTINCT;
+android.content.pm.PackageManager	field	public static final String FEATURE_FAKETOUCH_MULTITOUCH_JAZZHAND;
+android.content.pm.PackageManager	field	public static final String FEATURE_FILE_BASED_ENCRYPTION;
+android.content.pm.PackageManager	field	public static final String FEATURE_FINGERPRINT;
+android.content.pm.PackageManager	field	public static final String FEATURE_FREEFORM_WINDOW_MANAGEMENT;
+android.content.pm.PackageManager	field	public static final String FEATURE_GAMEPAD;
+android.content.pm.PackageManager	field	public static final String FEATURE_HDMI_CEC;
+android.content.pm.PackageManager	field	public static final String FEATURE_HIFI_SENSORS;
+android.content.pm.PackageManager	field	public static final String FEATURE_HOME_SCREEN;
+android.content.pm.PackageManager	field	public static final String FEATURE_INCREMENTAL_DELIVERY;
+android.content.pm.PackageManager	field	public static final String FEATURE_INPUT_METHODS;
+android.content.pm.PackageManager	field	public static final String FEATURE_IPSEC_TUNNELS;
+android.content.pm.PackageManager	field	public static final String FEATURE_IRIS;
+android.content.pm.PackageManager	field	public static final String FEATURE_LEANBACK;
+android.content.pm.PackageManager	field	public static final String FEATURE_LEANBACK_ONLY;
+android.content.pm.PackageManager	field	public static final String FEATURE_LIVE_TV;
+android.content.pm.PackageManager	field	public static final String FEATURE_LIVE_WALLPAPER;
+android.content.pm.PackageManager	field	public static final String FEATURE_LOCATION;
+android.content.pm.PackageManager	field	public static final String FEATURE_LOCATION_GPS;
+android.content.pm.PackageManager	field	public static final String FEATURE_LOCATION_NETWORK;
+android.content.pm.PackageManager	field	public static final String FEATURE_LOWPAN;
+android.content.pm.PackageManager	field	public static final String FEATURE_MANAGED_PROFILES;
+android.content.pm.PackageManager	field	public static final String FEATURE_MANAGED_USERS;
+android.content.pm.PackageManager	field	public static final String FEATURE_MICROPHONE;
+android.content.pm.PackageManager	field	public static final String FEATURE_MIDI;
+android.content.pm.PackageManager	field	public static final String FEATURE_NFC;
+android.content.pm.PackageManager	field	public static final String FEATURE_NFC_ANY;
+android.content.pm.PackageManager	field	public static final String FEATURE_NFC_BEAM;
+android.content.pm.PackageManager	field	public static final String FEATURE_NFC_HCE;
+android.content.pm.PackageManager	field	public static final String FEATURE_NFC_HOST_CARD_EMULATION;
+android.content.pm.PackageManager	field	public static final String FEATURE_NFC_HOST_CARD_EMULATION_NFCF;
+android.content.pm.PackageManager	field	public static final String FEATURE_NFC_OFF_HOST_CARD_EMULATION_ESE;
+android.content.pm.PackageManager	field	public static final String FEATURE_NFC_OFF_HOST_CARD_EMULATION_UICC;
+android.content.pm.PackageManager	field	public static final String FEATURE_OPENGLES_EXTENSION_PACK;
+android.content.pm.PackageManager	field	public static final String FEATURE_PARTIAL_DEVICE_ADMIN;
+android.content.pm.PackageManager	field	public static final String FEATURE_PARTIAL_MANAGED_USERS;
+android.content.pm.PackageManager	field	public static final String FEATURE_PC;
+android.content.pm.PackageManager	field	public static final String FEATURE_PICTURE_IN_PICTURE;
+android.content.pm.PackageManager	field	public static final String FEATURE_PRINTING;
+android.content.pm.PackageManager	field	public static final String FEATURE_RAM_LOW;
+android.content.pm.PackageManager	field	public static final String FEATURE_RAM_NORMAL;
+android.content.pm.PackageManager	field	public static final String FEATURE_REBOOT_ESCROW;
+android.content.pm.PackageManager	field	public static final String FEATURE_SCREEN_LANDSCAPE;
+android.content.pm.PackageManager	field	public static final String FEATURE_SCREEN_PORTRAIT;
+android.content.pm.PackageManager	field	public static final String FEATURE_SECURELY_REMOVES_USERS;
+android.content.pm.PackageManager	field	public static final String FEATURE_SECURE_LOCK_SCREEN;
+android.content.pm.PackageManager	field	public static final String FEATURE_SENSOR_ACCELEROMETER;
+android.content.pm.PackageManager	field	public static final String FEATURE_SENSOR_AMBIENT_TEMPERATURE;
+android.content.pm.PackageManager	field	public static final String FEATURE_SENSOR_BAROMETER;
+android.content.pm.PackageManager	field	public static final String FEATURE_SENSOR_COMPASS;
+android.content.pm.PackageManager	field	public static final String FEATURE_SENSOR_GYROSCOPE;
+android.content.pm.PackageManager	field	public static final String FEATURE_SENSOR_HEART_RATE;
+android.content.pm.PackageManager	field	public static final String FEATURE_SENSOR_HEART_RATE_ECG;
+android.content.pm.PackageManager	field	public static final String FEATURE_SENSOR_HINGE_ANGLE;
+android.content.pm.PackageManager	field	public static final String FEATURE_SENSOR_LIGHT;
+android.content.pm.PackageManager	field	public static final String FEATURE_SENSOR_PROXIMITY;
+android.content.pm.PackageManager	field	public static final String FEATURE_SENSOR_RELATIVE_HUMIDITY;
+android.content.pm.PackageManager	field	public static final String FEATURE_SENSOR_STEP_COUNTER;
+android.content.pm.PackageManager	field	public static final String FEATURE_SENSOR_STEP_DETECTOR;
+android.content.pm.PackageManager	field	public static final String FEATURE_SE_OMAPI_ESE;
+android.content.pm.PackageManager	field	public static final String FEATURE_SE_OMAPI_SD;
+android.content.pm.PackageManager	field	public static final String FEATURE_SE_OMAPI_UICC;
+android.content.pm.PackageManager	field	public static final String FEATURE_SIP;
+android.content.pm.PackageManager	field	public static final String FEATURE_SIP_VOIP;
+android.content.pm.PackageManager	field	public static final String FEATURE_SLICES_DISABLED;
+android.content.pm.PackageManager	field	public static final String FEATURE_STRONGBOX_KEYSTORE;
+android.content.pm.PackageManager	field	public static final String FEATURE_TELEPHONY;
+android.content.pm.PackageManager	field	public static final String FEATURE_TELEPHONY_CARRIERLOCK;
+android.content.pm.PackageManager	field	public static final String FEATURE_TELEPHONY_CDMA;
+android.content.pm.PackageManager	field	public static final String FEATURE_TELEPHONY_EUICC;
+android.content.pm.PackageManager	field	public static final String FEATURE_TELEPHONY_GSM;
+android.content.pm.PackageManager	field	public static final String FEATURE_TELEPHONY_IMS;
+android.content.pm.PackageManager	field	public static final String FEATURE_TELEPHONY_MBMS;
+android.content.pm.PackageManager	field	public static final String FEATURE_TELEVISION;
+android.content.pm.PackageManager	field	public static final String FEATURE_TOUCHSCREEN;
+android.content.pm.PackageManager	field	public static final String FEATURE_TOUCHSCREEN_MULTITOUCH;
+android.content.pm.PackageManager	field	public static final String FEATURE_TOUCHSCREEN_MULTITOUCH_DISTINCT;
+android.content.pm.PackageManager	field	public static final String FEATURE_TOUCHSCREEN_MULTITOUCH_JAZZHAND;
+android.content.pm.PackageManager	field	public static final String FEATURE_TUNER;
+android.content.pm.PackageManager	field	public static final String FEATURE_USB_ACCESSORY;
+android.content.pm.PackageManager	field	public static final String FEATURE_USB_HOST;
+android.content.pm.PackageManager	field	public static final String FEATURE_VERIFIED_BOOT;
+android.content.pm.PackageManager	field	public static final String FEATURE_VOICE_RECOGNIZERS;
+android.content.pm.PackageManager	field	public static final String FEATURE_VR_HEADTRACKING;
+android.content.pm.PackageManager	field	public static final String FEATURE_VR_MODE;
+android.content.pm.PackageManager	field	public static final String FEATURE_VR_MODE_HIGH_PERFORMANCE;
+android.content.pm.PackageManager	field	public static final String FEATURE_VULKAN_DEQP_LEVEL;
+android.content.pm.PackageManager	field	public static final String FEATURE_VULKAN_HARDWARE_COMPUTE;
+android.content.pm.PackageManager	field	public static final String FEATURE_VULKAN_HARDWARE_LEVEL;
+android.content.pm.PackageManager	field	public static final String FEATURE_VULKAN_HARDWARE_VERSION;
+android.content.pm.PackageManager	field	public static final String FEATURE_WATCH;
+android.content.pm.PackageManager	field	public static final String FEATURE_WEBVIEW;
+android.content.pm.PackageManager	field	public static final String FEATURE_WIFI;
+android.content.pm.PackageManager	field	public static final String FEATURE_WIFI_AWARE;
+android.content.pm.PackageManager	field	public static final String FEATURE_WIFI_DIRECT;
+android.content.pm.PackageManager	field	public static final String FEATURE_WIFI_PASSPOINT;
+android.content.pm.PackageManager	field	public static final String FEATURE_WIFI_RTT;
+android.content.pm.PackageManager	field	public static final String SYSTEM_SHARED_LIBRARY_SERVICES;
+android.content.pm.PackageManager	field	public static final String SYSTEM_SHARED_LIBRARY_SHARED;
+android.content.pm.PackageManager	field	public static final boolean APPLY_DEFAULT_TO_DEVICE_PROTECTED_STORAGE;
+android.content.pm.PackageManager	field	public static final boolean APP_ENUMERATION_ENABLED_BY_DEFAULT;
+android.content.pm.PackageManager	field	public static final int CERT_INPUT_RAW_X509;
+android.content.pm.PackageManager	field	public static final int CERT_INPUT_SHA256;
+android.content.pm.PackageManager	field	public static final int COMPONENT_ENABLED_STATE_DEFAULT;
+android.content.pm.PackageManager	field	public static final int COMPONENT_ENABLED_STATE_DISABLED;
+android.content.pm.PackageManager	field	public static final int COMPONENT_ENABLED_STATE_DISABLED_UNTIL_USED;
+android.content.pm.PackageManager	field	public static final int COMPONENT_ENABLED_STATE_DISABLED_USER;
+android.content.pm.PackageManager	field	public static final int COMPONENT_ENABLED_STATE_ENABLED;
+android.content.pm.PackageManager	field	public static final int DELETE_ALL_USERS;
+android.content.pm.PackageManager	field	public static final int DELETE_CHATTY;
+android.content.pm.PackageManager	field	public static final int DELETE_DONT_KILL_APP;
+android.content.pm.PackageManager	field	public static final int DELETE_FAILED_ABORTED;
+android.content.pm.PackageManager	field	public static final int DELETE_FAILED_DEVICE_POLICY_MANAGER;
+android.content.pm.PackageManager	field	public static final int DELETE_FAILED_INTERNAL_ERROR;
+android.content.pm.PackageManager	field	public static final int DELETE_FAILED_OWNER_BLOCKED;
+android.content.pm.PackageManager	field	public static final int DELETE_FAILED_USED_SHARED_LIBRARY;
+android.content.pm.PackageManager	field	public static final int DELETE_FAILED_USER_RESTRICTED;
+android.content.pm.PackageManager	field	public static final int DELETE_KEEP_DATA;
+android.content.pm.PackageManager	field	public static final int DELETE_SUCCEEDED;
+android.content.pm.PackageManager	field	public static final int DELETE_SYSTEM_APP;
+android.content.pm.PackageManager	field	public static final int DONT_KILL_APP;
+android.content.pm.PackageManager	field	public static final int FLAGS_PERMISSION_RESERVED_PERMISSION_CONTROLLER;
+android.content.pm.PackageManager	field	public static final int FLAGS_PERMISSION_RESTRICTION_ANY_EXEMPT;
+android.content.pm.PackageManager	field	public static final int FLAG_PERMISSION_APPLY_RESTRICTION;
+android.content.pm.PackageManager	field	public static final int FLAG_PERMISSION_AUTO_REVOKED;
+android.content.pm.PackageManager	field	public static final int FLAG_PERMISSION_GRANTED_BY_DEFAULT;
+android.content.pm.PackageManager	field	public static final int FLAG_PERMISSION_GRANTED_BY_ROLE;
+android.content.pm.PackageManager	field	public static final int FLAG_PERMISSION_ONE_TIME;
+android.content.pm.PackageManager	field	public static final int FLAG_PERMISSION_POLICY_FIXED;
+android.content.pm.PackageManager	field	public static final int FLAG_PERMISSION_RESTRICTION_INSTALLER_EXEMPT;
+android.content.pm.PackageManager	field	public static final int FLAG_PERMISSION_RESTRICTION_SYSTEM_EXEMPT;
+android.content.pm.PackageManager	field	public static final int FLAG_PERMISSION_RESTRICTION_UPGRADE_EXEMPT;
+android.content.pm.PackageManager	field	public static final int FLAG_PERMISSION_REVIEW_REQUIRED;
+android.content.pm.PackageManager	field	public static final int FLAG_PERMISSION_REVOKED_COMPAT;
+android.content.pm.PackageManager	field	public static final int FLAG_PERMISSION_REVOKE_ON_UPGRADE;
+android.content.pm.PackageManager	field	public static final int FLAG_PERMISSION_REVOKE_WHEN_REQUESTED;
+android.content.pm.PackageManager	field	public static final int FLAG_PERMISSION_SYSTEM_FIXED;
+android.content.pm.PackageManager	field	public static final int FLAG_PERMISSION_USER_FIXED;
+android.content.pm.PackageManager	field	public static final int FLAG_PERMISSION_USER_SENSITIVE_WHEN_DENIED;
+android.content.pm.PackageManager	field	public static final int FLAG_PERMISSION_USER_SENSITIVE_WHEN_GRANTED;
+android.content.pm.PackageManager	field	public static final int FLAG_PERMISSION_USER_SET;
+android.content.pm.PackageManager	field	public static final int FLAG_PERMISSION_WHITELIST_INSTALLER;
+android.content.pm.PackageManager	field	public static final int FLAG_PERMISSION_WHITELIST_SYSTEM;
+android.content.pm.PackageManager	field	public static final int FLAG_PERMISSION_WHITELIST_UPGRADE;
+android.content.pm.PackageManager	field	public static final int GET_ACTIVITIES;
+android.content.pm.PackageManager	field	public static final int GET_CONFIGURATIONS;
+android.content.pm.PackageManager	field	public static final int GET_DISABLED_COMPONENTS;
+android.content.pm.PackageManager	field	public static final int GET_DISABLED_UNTIL_USED_COMPONENTS;
+android.content.pm.PackageManager	field	public static final int GET_GIDS;
+android.content.pm.PackageManager	field	public static final int GET_INSTRUMENTATION;
+android.content.pm.PackageManager	field	public static final int GET_INTENT_FILTERS;
+android.content.pm.PackageManager	field	public static final int GET_META_DATA;
+android.content.pm.PackageManager	field	public static final int GET_PERMISSIONS;
+android.content.pm.PackageManager	field	public static final int GET_PROVIDERS;
+android.content.pm.PackageManager	field	public static final int GET_RECEIVERS;
+android.content.pm.PackageManager	field	public static final int GET_RESOLVED_FILTER;
+android.content.pm.PackageManager	field	public static final int GET_SERVICES;
+android.content.pm.PackageManager	field	public static final int GET_SHARED_LIBRARY_FILES;
+android.content.pm.PackageManager	field	public static final int GET_SIGNATURES;
+android.content.pm.PackageManager	field	public static final int GET_SIGNING_CERTIFICATES;
+android.content.pm.PackageManager	field	public static final int GET_UNINSTALLED_PACKAGES;
+android.content.pm.PackageManager	field	public static final int GET_URI_PERMISSION_PATTERNS;
+android.content.pm.PackageManager	field	public static final int INSTALL_ALLOCATE_AGGRESSIVE;
+android.content.pm.PackageManager	field	public static final int INSTALL_ALLOW_DOWNGRADE;
+android.content.pm.PackageManager	field	public static final int INSTALL_ALLOW_TEST;
+android.content.pm.PackageManager	field	public static final int INSTALL_ALL_USERS;
+android.content.pm.PackageManager	field	public static final int INSTALL_ALL_WHITELIST_RESTRICTED_PERMISSIONS;
+android.content.pm.PackageManager	field	public static final int INSTALL_APEX;
+android.content.pm.PackageManager	field	public static final int INSTALL_DISABLE_VERIFICATION;
+android.content.pm.PackageManager	field	public static final int INSTALL_DONT_KILL_APP;
+android.content.pm.PackageManager	field	public static final int INSTALL_DRY_RUN;
+android.content.pm.PackageManager	field	public static final int INSTALL_ENABLE_ROLLBACK;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_ABORTED;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_ALREADY_EXISTS;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_BAD_DEX_METADATA;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_BAD_SIGNATURE;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_CONFLICTING_PROVIDER;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_CONTAINER_ERROR;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_CPU_ABI_INCOMPATIBLE;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_DEXOPT;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_DUPLICATE_PACKAGE;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_DUPLICATE_PERMISSION;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_INSTANT_APP_INVALID;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_INSUFFICIENT_STORAGE;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_INTERNAL_ERROR;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_INVALID_APK;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_INVALID_INSTALL_LOCATION;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_INVALID_URI;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_MEDIA_UNAVAILABLE;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_MISSING_FEATURE;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_MISSING_SHARED_LIBRARY;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_MISSING_SPLIT;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_MULTIPACKAGE_INCONSISTENCY;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_NEWER_SDK;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_NO_MATCHING_ABIS;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_NO_SHARED_USER;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_OLDER_SDK;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_OTHER_STAGED_SESSION_IN_PROGRESS;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_PACKAGE_CHANGED;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_PERMISSION_MODEL_DOWNGRADE;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_PROCESS_NOT_DEFINED;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_REPLACE_COULDNT_DELETE;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_SANDBOX_VERSION_DOWNGRADE;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_SHARED_USER_INCOMPATIBLE;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_TEST_ONLY;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_UID_CHANGED;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_UPDATE_INCOMPATIBLE;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_USER_RESTRICTED;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_VERIFICATION_FAILURE;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_VERIFICATION_TIMEOUT;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_VERSION_DOWNGRADE;
+android.content.pm.PackageManager	field	public static final int INSTALL_FAILED_WRONG_INSTALLED_VERSION;
+android.content.pm.PackageManager	field	public static final int INSTALL_FORCE_PERMISSION_PROMPT;
+android.content.pm.PackageManager	field	public static final int INSTALL_FORCE_VOLUME_UUID;
+android.content.pm.PackageManager	field	public static final int INSTALL_FROM_ADB;
+android.content.pm.PackageManager	field	public static final int INSTALL_FULL_APP;
+android.content.pm.PackageManager	field	public static final int INSTALL_GRANT_RUNTIME_PERMISSIONS;
+android.content.pm.PackageManager	field	public static final int INSTALL_INSTANT_APP;
+android.content.pm.PackageManager	field	public static final int INSTALL_INTERNAL;
+android.content.pm.PackageManager	field	public static final int INSTALL_PARSE_FAILED_BAD_MANIFEST;
+android.content.pm.PackageManager	field	public static final int INSTALL_PARSE_FAILED_BAD_PACKAGE_NAME;
+android.content.pm.PackageManager	field	public static final int INSTALL_PARSE_FAILED_BAD_SHARED_USER_ID;
+android.content.pm.PackageManager	field	public static final int INSTALL_PARSE_FAILED_CERTIFICATE_ENCODING;
+android.content.pm.PackageManager	field	public static final int INSTALL_PARSE_FAILED_INCONSISTENT_CERTIFICATES;
+android.content.pm.PackageManager	field	public static final int INSTALL_PARSE_FAILED_MANIFEST_EMPTY;
+android.content.pm.PackageManager	field	public static final int INSTALL_PARSE_FAILED_MANIFEST_MALFORMED;
+android.content.pm.PackageManager	field	public static final int INSTALL_PARSE_FAILED_NOT_APK;
+android.content.pm.PackageManager	field	public static final int INSTALL_PARSE_FAILED_NO_CERTIFICATES;
+android.content.pm.PackageManager	field	public static final int INSTALL_PARSE_FAILED_ONLY_COREAPP_ALLOWED;
+android.content.pm.PackageManager	field	public static final int INSTALL_PARSE_FAILED_RESOURCES_ARSC_COMPRESSED;
+android.content.pm.PackageManager	field	public static final int INSTALL_PARSE_FAILED_SKIPPED;
+android.content.pm.PackageManager	field	public static final int INSTALL_PARSE_FAILED_UNEXPECTED_EXCEPTION;
+android.content.pm.PackageManager	field	public static final int INSTALL_REASON_DEVICE_RESTORE;
+android.content.pm.PackageManager	field	public static final int INSTALL_REASON_DEVICE_SETUP;
+android.content.pm.PackageManager	field	public static final int INSTALL_REASON_POLICY;
+android.content.pm.PackageManager	field	public static final int INSTALL_REASON_ROLLBACK;
+android.content.pm.PackageManager	field	public static final int INSTALL_REASON_UNKNOWN;
+android.content.pm.PackageManager	field	public static final int INSTALL_REASON_USER;
+android.content.pm.PackageManager	field	public static final int INSTALL_REPLACE_EXISTING;
+android.content.pm.PackageManager	field	public static final int INSTALL_REQUEST_DOWNGRADE;
+android.content.pm.PackageManager	field	public static final int INSTALL_SCENARIO_BULK;
+android.content.pm.PackageManager	field	public static final int INSTALL_SCENARIO_BULK_SECONDARY;
+android.content.pm.PackageManager	field	public static final int INSTALL_SCENARIO_DEFAULT;
+android.content.pm.PackageManager	field	public static final int INSTALL_SCENARIO_FAST;
+android.content.pm.PackageManager	field	public static final int INSTALL_STAGED;
+android.content.pm.PackageManager	field	public static final int INSTALL_SUCCEEDED;
+android.content.pm.PackageManager	field	public static final int INSTALL_UNKNOWN;
+android.content.pm.PackageManager	field	public static final int INSTALL_VIRTUAL_PRELOAD;
+android.content.pm.PackageManager	field	public static final int INTENT_FILTER_DOMAIN_VERIFICATION_STATUS_ALWAYS;
+android.content.pm.PackageManager	field	public static final int INTENT_FILTER_DOMAIN_VERIFICATION_STATUS_ALWAYS_ASK;
+android.content.pm.PackageManager	field	public static final int INTENT_FILTER_DOMAIN_VERIFICATION_STATUS_ASK;
+android.content.pm.PackageManager	field	public static final int INTENT_FILTER_DOMAIN_VERIFICATION_STATUS_NEVER;
+android.content.pm.PackageManager	field	public static final int INTENT_FILTER_DOMAIN_VERIFICATION_STATUS_UNDEFINED;
+android.content.pm.PackageManager	field	public static final int INTENT_FILTER_VERIFICATION_FAILURE;
+android.content.pm.PackageManager	field	public static final int INTENT_FILTER_VERIFICATION_SUCCESS;
+android.content.pm.PackageManager	field	public static final int MASK_PERMISSION_FLAGS;
+android.content.pm.PackageManager	field	public static final int MASK_PERMISSION_FLAGS_ALL;
+android.content.pm.PackageManager	field	public static final int MATCH_ALL;
+android.content.pm.PackageManager	field	public static final int MATCH_ANY_USER;
+android.content.pm.PackageManager	field	public static final int MATCH_APEX;
+android.content.pm.PackageManager	field	public static final int MATCH_DEBUG_TRIAGED_MISSING;
+android.content.pm.PackageManager	field	public static final int MATCH_DEFAULT_ONLY;
+android.content.pm.PackageManager	field	public static final int MATCH_DIRECT_BOOT_AUTO;
+android.content.pm.PackageManager	field	public static final int MATCH_DIRECT_BOOT_AWARE;
+android.content.pm.PackageManager	field	public static final int MATCH_DIRECT_BOOT_UNAWARE;
+android.content.pm.PackageManager	field	public static final int MATCH_DISABLED_COMPONENTS;
+android.content.pm.PackageManager	field	public static final int MATCH_DISABLED_UNTIL_USED_COMPONENTS;
+android.content.pm.PackageManager	field	public static final int MATCH_EXPLICITLY_VISIBLE_ONLY;
+android.content.pm.PackageManager	field	public static final int MATCH_FACTORY_ONLY;
+android.content.pm.PackageManager	field	public static final int MATCH_HIDDEN_UNTIL_INSTALLED_COMPONENTS;
+android.content.pm.PackageManager	field	public static final int MATCH_INSTANT;
+android.content.pm.PackageManager	field	public static final int MATCH_KNOWN_PACKAGES;
+android.content.pm.PackageManager	field	public static final int MATCH_STATIC_SHARED_LIBRARIES;
+android.content.pm.PackageManager	field	public static final int MATCH_SYSTEM_ONLY;
+android.content.pm.PackageManager	field	public static final int MATCH_UNINSTALLED_PACKAGES;
+android.content.pm.PackageManager	field	public static final int MATCH_VISIBLE_TO_INSTANT_APP_ONLY;
+android.content.pm.PackageManager	field	public static final int MODULE_APEX_NAME;
+android.content.pm.PackageManager	field	public static final int MOVE_EXTERNAL_MEDIA;
+android.content.pm.PackageManager	field	public static final int MOVE_FAILED_3RD_PARTY_NOT_ALLOWED_ON_INTERNAL;
+android.content.pm.PackageManager	field	public static final int MOVE_FAILED_DEVICE_ADMIN;
+android.content.pm.PackageManager	field	public static final int MOVE_FAILED_DOESNT_EXIST;
+android.content.pm.PackageManager	field	public static final int MOVE_FAILED_INSUFFICIENT_STORAGE;
+android.content.pm.PackageManager	field	public static final int MOVE_FAILED_INTERNAL_ERROR;
+android.content.pm.PackageManager	field	public static final int MOVE_FAILED_INVALID_LOCATION;
+android.content.pm.PackageManager	field	public static final int MOVE_FAILED_LOCKED_USER;
+android.content.pm.PackageManager	field	public static final int MOVE_FAILED_OPERATION_PENDING;
+android.content.pm.PackageManager	field	public static final int MOVE_FAILED_SYSTEM_PACKAGE;
+android.content.pm.PackageManager	field	public static final int MOVE_INTERNAL;
+android.content.pm.PackageManager	field	public static final int MOVE_SUCCEEDED;
+android.content.pm.PackageManager	field	public static final int NOTIFY_PACKAGE_USE_ACTIVITY;
+android.content.pm.PackageManager	field	public static final int NOTIFY_PACKAGE_USE_BACKUP;
+android.content.pm.PackageManager	field	public static final int NOTIFY_PACKAGE_USE_BROADCAST_RECEIVER;
+android.content.pm.PackageManager	field	public static final int NOTIFY_PACKAGE_USE_CONTENT_PROVIDER;
+android.content.pm.PackageManager	field	public static final int NOTIFY_PACKAGE_USE_CROSS_PACKAGE;
+android.content.pm.PackageManager	field	public static final int NOTIFY_PACKAGE_USE_FOREGROUND_SERVICE;
+android.content.pm.PackageManager	field	public static final int NOTIFY_PACKAGE_USE_INSTRUMENTATION;
+android.content.pm.PackageManager	field	public static final int NOTIFY_PACKAGE_USE_REASONS_COUNT;
+android.content.pm.PackageManager	field	public static final int NOTIFY_PACKAGE_USE_SERVICE;
+android.content.pm.PackageManager	field	public static final int NO_NATIVE_LIBRARIES;
+android.content.pm.PackageManager	field	public static final int ONLY_IF_NO_MATCH_FOUND;
+android.content.pm.PackageManager	field	public static final int PERMISSION_DENIED;
+android.content.pm.PackageManager	field	public static final int PERMISSION_GRANTED;
+android.content.pm.PackageManager	field	public static final int RESTRICTION_HIDE_FROM_SUGGESTIONS;
+android.content.pm.PackageManager	field	public static final int RESTRICTION_HIDE_NOTIFICATIONS;
+android.content.pm.PackageManager	field	public static final int RESTRICTION_NONE;
+android.content.pm.PackageManager	field	public static final int SIGNATURE_FIRST_NOT_SIGNED;
+android.content.pm.PackageManager	field	public static final int SIGNATURE_MATCH;
+android.content.pm.PackageManager	field	public static final int SIGNATURE_NEITHER_SIGNED;
+android.content.pm.PackageManager	field	public static final int SIGNATURE_NO_MATCH;
+android.content.pm.PackageManager	field	public static final int SIGNATURE_SECOND_NOT_SIGNED;
+android.content.pm.PackageManager	field	public static final int SIGNATURE_UNKNOWN_PACKAGE;
+android.content.pm.PackageManager	field	public static final int SKIP_CURRENT_PROFILE;
+android.content.pm.PackageManager	field	public static final int SYNCHRONOUS;
+android.content.pm.PackageManager	field	public static final int SYSTEM_APP_STATE_HIDDEN_UNTIL_INSTALLED_HIDDEN;
+android.content.pm.PackageManager	field	public static final int SYSTEM_APP_STATE_HIDDEN_UNTIL_INSTALLED_VISIBLE;
+android.content.pm.PackageManager	field	public static final int SYSTEM_APP_STATE_INSTALLED;
+android.content.pm.PackageManager	field	public static final int SYSTEM_APP_STATE_UNINSTALLED;
+android.content.pm.PackageManager	field	public static final int UNINSTALL_REASON_UNKNOWN;
+android.content.pm.PackageManager	field	public static final int UNINSTALL_REASON_USER_TYPE;
+android.content.pm.PackageManager	field	public static final int VERIFICATION_ALLOW;
+android.content.pm.PackageManager	field	public static final int VERIFICATION_ALLOW_WITHOUT_SUFFICIENT;
+android.content.pm.PackageManager	field	public static final int VERIFICATION_REJECT;
+android.content.pm.PackageManager	field	public static final int VERSION_CODE_HIGHEST;
+android.content.pm.PackageManager	field	public static final long FILTER_APPLICATION_QUERY;
+android.content.pm.PackageManager	field	public static final long MAXIMUM_VERIFICATION_TIMEOUT;
+android.content.pm.PackageManager	method	public ApplicationInfo getApplicationInfoAsUser(String str, int i, UserHandle userHandle) throws NameNotFoundException
+android.content.pm.PackageManager	method	public ArtManager getArtManager()
+android.content.pm.PackageManager	method	public Bundle getSuspendedPackageAppExtras()
+android.content.pm.PackageManager	method	public CharSequence getBackgroundPermissionOptionLabel()
+android.content.pm.PackageManager	method	public CharSequence getHarmfulAppWarning(String str)
+android.content.pm.PackageManager	method	public InstallSourceInfo getInstallSourceInfo(String str) throws NameNotFoundException
+android.content.pm.PackageManager	method	public Intent buildRequestPermissionsIntent(String[] strArr)
+android.content.pm.PackageManager	method	public List<ModuleInfo> getInstalledModules(int i)
+android.content.pm.PackageManager	method	public List<ProviderInfo> queryContentProviders(String str, int i, int i2, String str2)
+android.content.pm.PackageManager	method	public List<ResolveInfo> queryBroadcastReceivers(Intent intent, int i, int i2)
+android.content.pm.PackageManager	method	public List<ResolveInfo> queryBroadcastReceiversAsUser(Intent intent, int i, UserHandle userHandle)
+android.content.pm.PackageManager	method	public List<ResolveInfo> queryIntentActivitiesAsUser(Intent intent, int i, UserHandle userHandle)
+android.content.pm.PackageManager	method	public List<ResolveInfo> queryIntentContentProvidersAsUser(Intent intent, int i, UserHandle userHandle)
+android.content.pm.PackageManager	method	public List<ResolveInfo> queryIntentServicesAsUser(Intent intent, int i, UserHandle userHandle)
+android.content.pm.PackageManager	method	public List<SharedLibraryInfo> getDeclaredSharedLibraries(String str, int i)
+android.content.pm.PackageManager	method	public ModuleInfo getModuleInfo(String str, int i) throws NameNotFoundException
+android.content.pm.PackageManager	method	public PackageInfo getPackageArchiveInfo(String str, int i)
+android.content.pm.PackageManager	method	public Set<String> getMimeGroup(String str)
+android.content.pm.PackageManager	method	public Set<String> getWhitelistedRestrictedPermissions(String str, int i)
+android.content.pm.PackageManager	method	public String getAppPredictionServicePackageName()
+android.content.pm.PackageManager	method	public String getAttentionServicePackageName()
+android.content.pm.PackageManager	method	public String getContentCaptureServicePackageName()
+android.content.pm.PackageManager	method	public String getDefaultTextClassifierPackageName()
+android.content.pm.PackageManager	method	public String getIncidentReportApproverPackageName()
+android.content.pm.PackageManager	method	public String getSetupWizardPackageName()
+android.content.pm.PackageManager	method	public String getSystemCaptionsServicePackageName()
+android.content.pm.PackageManager	method	public String getSystemTextClassifierPackageName()
+android.content.pm.PackageManager	method	public String getWellbeingPackageName()
+android.content.pm.PackageManager	method	public String[] getUnsuspendablePackages(String[] strArr)
+android.content.pm.PackageManager	method	public String[] setDistractingPackageRestrictions(String[] strArr, int i)
+android.content.pm.PackageManager	method	public String[] setPackagesSuspended(String[] strArr, boolean z, PersistableBundle persistableBundle, PersistableBundle persistableBundle2, String str)
+android.content.pm.PackageManager	method	public String[] setPackagesSuspended(String[] strArr, boolean z, PersistableBundle persistableBundle, PersistableBundle persistableBundle2, SuspendDialogInfo suspendDialogInfo)
+android.content.pm.PackageManager	method	public abstract ActivityInfo getActivityInfo(ComponentName componentName, int i) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract ActivityInfo getReceiverInfo(ComponentName componentName, int i) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract ApplicationInfo getApplicationInfo(String str, int i) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract ApplicationInfo getApplicationInfoAsUser(String str, int i, int i2) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract ChangedPackages getChangedPackages(int i);
+android.content.pm.PackageManager	method	public abstract CharSequence getApplicationLabel(ApplicationInfo applicationInfo);
+android.content.pm.PackageManager	method	public abstract CharSequence getText(String str, int i, ApplicationInfo applicationInfo);
+android.content.pm.PackageManager	method	public abstract CharSequence getUserBadgedLabel(CharSequence charSequence, UserHandle userHandle);
+android.content.pm.PackageManager	method	public abstract ComponentName getHomeActivities(List<ResolveInfo> list);
+android.content.pm.PackageManager	method	public abstract ComponentName getInstantAppInstallerComponent();
+android.content.pm.PackageManager	method	public abstract ComponentName getInstantAppResolverSettingsComponent();
+android.content.pm.PackageManager	method	public abstract Drawable getActivityBanner(ComponentName componentName) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract Drawable getActivityBanner(Intent intent) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract Drawable getActivityIcon(ComponentName componentName) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract Drawable getActivityIcon(Intent intent) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract Drawable getActivityLogo(ComponentName componentName) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract Drawable getActivityLogo(Intent intent) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract Drawable getApplicationBanner(ApplicationInfo applicationInfo);
+android.content.pm.PackageManager	method	public abstract Drawable getApplicationBanner(String str) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract Drawable getApplicationIcon(ApplicationInfo applicationInfo);
+android.content.pm.PackageManager	method	public abstract Drawable getApplicationIcon(String str) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract Drawable getApplicationLogo(ApplicationInfo applicationInfo);
+android.content.pm.PackageManager	method	public abstract Drawable getApplicationLogo(String str) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract Drawable getDefaultActivityIcon();
+android.content.pm.PackageManager	method	public abstract Drawable getDrawable(String str, int i, ApplicationInfo applicationInfo);
+android.content.pm.PackageManager	method	public abstract Drawable getInstantAppIcon(String str);
+android.content.pm.PackageManager	method	public abstract Drawable getUserBadgeForDensity(UserHandle userHandle, int i);
+android.content.pm.PackageManager	method	public abstract Drawable getUserBadgeForDensityNoBackground(UserHandle userHandle, int i);
+android.content.pm.PackageManager	method	public abstract Drawable getUserBadgedDrawableForDensity(Drawable drawable, UserHandle userHandle, Rect rect, int i);
+android.content.pm.PackageManager	method	public abstract Drawable getUserBadgedIcon(Drawable drawable, UserHandle userHandle);
+android.content.pm.PackageManager	method	public abstract Drawable loadItemIcon(PackageItemInfo packageItemInfo, ApplicationInfo applicationInfo);
+android.content.pm.PackageManager	method	public abstract Drawable loadUnbadgedItemIcon(PackageItemInfo packageItemInfo, ApplicationInfo applicationInfo);
+android.content.pm.PackageManager	method	public abstract FeatureInfo[] getSystemAvailableFeatures();
+android.content.pm.PackageManager	method	public abstract InstrumentationInfo getInstrumentationInfo(ComponentName componentName, int i) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract Intent getCarLaunchIntentForPackage(String str);
+android.content.pm.PackageManager	method	public abstract Intent getLaunchIntentForPackage(String str);
+android.content.pm.PackageManager	method	public abstract Intent getLeanbackLaunchIntentForPackage(String str);
+android.content.pm.PackageManager	method	public abstract KeySet getKeySetByAlias(String str, String str2);
+android.content.pm.PackageManager	method	public abstract KeySet getSigningKeySet(String str);
+android.content.pm.PackageManager	method	public abstract List<ApplicationInfo> getInstalledApplications(int i);
+android.content.pm.PackageManager	method	public abstract List<ApplicationInfo> getInstalledApplicationsAsUser(int i, int i2);
+android.content.pm.PackageManager	method	public abstract List<InstantAppInfo> getInstantApps();
+android.content.pm.PackageManager	method	public abstract List<InstrumentationInfo> queryInstrumentation(String str, int i);
+android.content.pm.PackageManager	method	public abstract List<IntentFilter> getAllIntentFilters(String str);
+android.content.pm.PackageManager	method	public abstract List<IntentFilterVerificationInfo> getIntentFilterVerifications(String str);
+android.content.pm.PackageManager	method	public abstract List<PackageInfo> getInstalledPackages(int i);
+android.content.pm.PackageManager	method	public abstract List<PackageInfo> getInstalledPackagesAsUser(int i, int i2);
+android.content.pm.PackageManager	method	public abstract List<PackageInfo> getPackagesHoldingPermissions(String[] strArr, int i);
+android.content.pm.PackageManager	method	public abstract List<PackageInfo> getPreferredPackages(int i);
+android.content.pm.PackageManager	method	public abstract List<PermissionGroupInfo> getAllPermissionGroups(int i);
+android.content.pm.PackageManager	method	public abstract List<PermissionInfo> queryPermissionsByGroup(String str, int i) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract List<ProviderInfo> queryContentProviders(String str, int i, int i2);
+android.content.pm.PackageManager	method	public abstract List<ResolveInfo> queryBroadcastReceivers(Intent intent, int i);
+android.content.pm.PackageManager	method	public abstract List<ResolveInfo> queryBroadcastReceiversAsUser(Intent intent, int i, int i2);
+android.content.pm.PackageManager	method	public abstract List<ResolveInfo> queryIntentActivities(Intent intent, int i);
+android.content.pm.PackageManager	method	public abstract List<ResolveInfo> queryIntentActivitiesAsUser(Intent intent, int i, int i2);
+android.content.pm.PackageManager	method	public abstract List<ResolveInfo> queryIntentActivityOptions(ComponentName componentName, Intent[] intentArr, Intent intent, int i);
+android.content.pm.PackageManager	method	public abstract List<ResolveInfo> queryIntentContentProviders(Intent intent, int i);
+android.content.pm.PackageManager	method	public abstract List<ResolveInfo> queryIntentContentProvidersAsUser(Intent intent, int i, int i2);
+android.content.pm.PackageManager	method	public abstract List<ResolveInfo> queryIntentServices(Intent intent, int i);
+android.content.pm.PackageManager	method	public abstract List<ResolveInfo> queryIntentServicesAsUser(Intent intent, int i, int i2);
+android.content.pm.PackageManager	method	public abstract List<SharedLibraryInfo> getSharedLibraries(int i);
+android.content.pm.PackageManager	method	public abstract List<SharedLibraryInfo> getSharedLibrariesAsUser(int i, int i2);
+android.content.pm.PackageManager	method	public abstract List<VolumeInfo> getPackageCandidateVolumes(ApplicationInfo applicationInfo);
+android.content.pm.PackageManager	method	public abstract List<VolumeInfo> getPrimaryStorageCandidateVolumes();
+android.content.pm.PackageManager	method	public abstract PackageInfo getPackageInfo(String str, int i) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract PackageInfo getPackageInfo(VersionedPackage versionedPackage, int i) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract PackageInfo getPackageInfoAsUser(String str, int i, int i2) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract PackageInstaller getPackageInstaller();
+android.content.pm.PackageManager	method	public abstract PermissionGroupInfo getPermissionGroupInfo(String str, int i) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract PermissionInfo getPermissionInfo(String str, int i) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract ProviderInfo getProviderInfo(ComponentName componentName, int i) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract ProviderInfo resolveContentProvider(String str, int i);
+android.content.pm.PackageManager	method	public abstract ProviderInfo resolveContentProviderAsUser(String str, int i, int i2);
+android.content.pm.PackageManager	method	public abstract ResolveInfo resolveActivity(Intent intent, int i);
+android.content.pm.PackageManager	method	public abstract ResolveInfo resolveActivityAsUser(Intent intent, int i, int i2);
+android.content.pm.PackageManager	method	public abstract ResolveInfo resolveService(Intent intent, int i);
+android.content.pm.PackageManager	method	public abstract ResolveInfo resolveServiceAsUser(Intent intent, int i, int i2);
+android.content.pm.PackageManager	method	public abstract Resources getResourcesForActivity(ComponentName componentName) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract Resources getResourcesForApplication(ApplicationInfo applicationInfo) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract Resources getResourcesForApplication(String str) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract Resources getResourcesForApplicationAsUser(String str, int i) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract ServiceInfo getServiceInfo(ComponentName componentName, int i) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract String getDefaultBrowserPackageNameAsUser(int i);
+android.content.pm.PackageManager	method	public abstract String getInstallerPackageName(String str);
+android.content.pm.PackageManager	method	public abstract String getInstantAppAndroidId(String str, UserHandle userHandle);
+android.content.pm.PackageManager	method	public abstract String getNameForUid(int i);
+android.content.pm.PackageManager	method	public abstract String getPermissionControllerPackageName();
+android.content.pm.PackageManager	method	public abstract String getServicesSystemSharedLibraryPackageName();
+android.content.pm.PackageManager	method	public abstract String getSharedSystemSharedLibraryPackageName();
+android.content.pm.PackageManager	method	public abstract String[] canonicalToCurrentPackageNames(String[] strArr);
+android.content.pm.PackageManager	method	public abstract String[] currentToCanonicalPackageNames(String[] strArr);
+android.content.pm.PackageManager	method	public abstract String[] getNamesForUids(int[] iArr);
+android.content.pm.PackageManager	method	public abstract String[] getPackagesForUid(int i);
+android.content.pm.PackageManager	method	public abstract String[] getSystemSharedLibraryNames();
+android.content.pm.PackageManager	method	public abstract VerifierDeviceIdentity getVerifierDeviceIdentity();
+android.content.pm.PackageManager	method	public abstract VolumeInfo getPackageCurrentVolume(ApplicationInfo applicationInfo);
+android.content.pm.PackageManager	method	public abstract VolumeInfo getPrimaryStorageCurrentVolume();
+android.content.pm.PackageManager	method	public abstract XmlResourceParser getXml(String str, int i, ApplicationInfo applicationInfo);
+android.content.pm.PackageManager	method	public abstract boolean addPermission(PermissionInfo permissionInfo);
+android.content.pm.PackageManager	method	public abstract boolean addPermissionAsync(PermissionInfo permissionInfo);
+android.content.pm.PackageManager	method	public abstract boolean arePermissionsIndividuallyControlled();
+android.content.pm.PackageManager	method	public abstract boolean canRequestPackageInstalls();
+android.content.pm.PackageManager	method	public abstract boolean getApplicationHiddenSettingAsUser(String str, UserHandle userHandle);
+android.content.pm.PackageManager	method	public abstract boolean hasSystemFeature(String str);
+android.content.pm.PackageManager	method	public abstract boolean hasSystemFeature(String str, int i);
+android.content.pm.PackageManager	method	public abstract boolean isInstantApp();
+android.content.pm.PackageManager	method	public abstract boolean isInstantApp(String str);
+android.content.pm.PackageManager	method	public abstract boolean isPackageAvailable(String str);
+android.content.pm.PackageManager	method	public abstract boolean isPackageSuspendedForUser(String str, int i);
+android.content.pm.PackageManager	method	public abstract boolean isPermissionRevokedByPolicy(String str, String str2);
+android.content.pm.PackageManager	method	public abstract boolean isSafeMode();
+android.content.pm.PackageManager	method	public abstract boolean isSignedBy(String str, KeySet keySet);
+android.content.pm.PackageManager	method	public abstract boolean isSignedByExactly(String str, KeySet keySet);
+android.content.pm.PackageManager	method	public abstract boolean isUpgrade();
+android.content.pm.PackageManager	method	public abstract boolean isWirelessConsentModeEnabled();
+android.content.pm.PackageManager	method	public abstract boolean setApplicationHiddenSettingAsUser(String str, boolean z, UserHandle userHandle);
+android.content.pm.PackageManager	method	public abstract boolean setDefaultBrowserPackageNameAsUser(String str, int i);
+android.content.pm.PackageManager	method	public abstract boolean setInstantAppCookie(byte[] bArr);
+android.content.pm.PackageManager	method	public abstract boolean shouldShowRequestPermissionRationale(String str);
+android.content.pm.PackageManager	method	public abstract boolean updateIntentVerificationStatusAsUser(String str, int i, int i2);
+android.content.pm.PackageManager	method	public abstract byte[] getInstantAppCookie();
+android.content.pm.PackageManager	method	public abstract int checkPermission(String str, String str2);
+android.content.pm.PackageManager	method	public abstract int checkSignatures(String str, String str2);
+android.content.pm.PackageManager	method	public abstract int checkSignatures(int i, int i2);
+android.content.pm.PackageManager	method	public abstract int getApplicationEnabledSetting(String str);
+android.content.pm.PackageManager	method	public abstract int getComponentEnabledSetting(ComponentName componentName);
+android.content.pm.PackageManager	method	public abstract int getInstallReason(String str, UserHandle userHandle);
+android.content.pm.PackageManager	method	public abstract int getInstantAppCookieMaxBytes();
+android.content.pm.PackageManager	method	public abstract int getInstantAppCookieMaxSize();
+android.content.pm.PackageManager	method	public abstract int getIntentVerificationStatusAsUser(String str, int i);
+android.content.pm.PackageManager	method	public abstract int getMoveStatus(int i);
+android.content.pm.PackageManager	method	public abstract int getPackageUid(String str, int i) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract int getPackageUidAsUser(String str, int i) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract int getPackageUidAsUser(String str, int i, int i2) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract int getPermissionFlags(String str, String str2, UserHandle userHandle);
+android.content.pm.PackageManager	method	public abstract int getPreferredActivities(List<IntentFilter> list, List<ComponentName> list2, String str);
+android.content.pm.PackageManager	method	public abstract int getUidForSharedUser(String str) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract int installExistingPackage(String str) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract int installExistingPackage(String str, int i) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract int installExistingPackageAsUser(String str, int i) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract int movePackage(String str, VolumeInfo volumeInfo);
+android.content.pm.PackageManager	method	public abstract int movePrimaryStorage(VolumeInfo volumeInfo);
+android.content.pm.PackageManager	method	public abstract int[] getPackageGids(String str) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract int[] getPackageGids(String str, int i) throws NameNotFoundException;
+android.content.pm.PackageManager	method	public abstract void addCrossProfileIntentFilter(IntentFilter intentFilter, int i, int i2, int i3);
+android.content.pm.PackageManager	method	public abstract void addOnPermissionsChangeListener(OnPermissionsChangedListener onPermissionsChangedListener);
+android.content.pm.PackageManager	method	public abstract void addPackageToPreferred(String str);
+android.content.pm.PackageManager	method	public abstract void addPreferredActivity(IntentFilter intentFilter, int i, ComponentName[] componentNameArr, ComponentName componentName);
+android.content.pm.PackageManager	method	public abstract void clearApplicationUserData(String str, IPackageDataObserver iPackageDataObserver);
+android.content.pm.PackageManager	method	public abstract void clearCrossProfileIntentFilters(int i);
+android.content.pm.PackageManager	method	public abstract void clearInstantAppCookie();
+android.content.pm.PackageManager	method	public abstract void clearPackagePreferredActivities(String str);
+android.content.pm.PackageManager	method	public abstract void deleteApplicationCacheFiles(String str, IPackageDataObserver iPackageDataObserver);
+android.content.pm.PackageManager	method	public abstract void deleteApplicationCacheFilesAsUser(String str, int i, IPackageDataObserver iPackageDataObserver);
+android.content.pm.PackageManager	method	public abstract void deletePackage(String str, IPackageDeleteObserver iPackageDeleteObserver, int i);
+android.content.pm.PackageManager	method	public abstract void deletePackageAsUser(String str, IPackageDeleteObserver iPackageDeleteObserver, int i, int i2);
+android.content.pm.PackageManager	method	public abstract void extendVerificationTimeout(int i, int i2, long j);
+android.content.pm.PackageManager	method	public abstract void flushPackageRestrictionsAsUser(int i);
+android.content.pm.PackageManager	method	public abstract void freeStorage(String str, long j, IntentSender intentSender);
+android.content.pm.PackageManager	method	public abstract void freeStorageAndNotify(String str, long j, IPackageDataObserver iPackageDataObserver);
+android.content.pm.PackageManager	method	public abstract void getPackageSizeInfoAsUser(String str, int i, IPackageStatsObserver iPackageStatsObserver);
+android.content.pm.PackageManager	method	public abstract void grantRuntimePermission(String str, String str2, UserHandle userHandle);
+android.content.pm.PackageManager	method	public abstract void registerDexModule(String str, DexModuleRegisterCallback dexModuleRegisterCallback);
+android.content.pm.PackageManager	method	public abstract void registerMoveCallback(MoveCallback moveCallback, Handler handler);
+android.content.pm.PackageManager	method	public abstract void removeOnPermissionsChangeListener(OnPermissionsChangedListener onPermissionsChangedListener);
+android.content.pm.PackageManager	method	public abstract void removePackageFromPreferred(String str);
+android.content.pm.PackageManager	method	public abstract void removePermission(String str);
+android.content.pm.PackageManager	method	public abstract void replacePreferredActivity(IntentFilter intentFilter, int i, ComponentName[] componentNameArr, ComponentName componentName);
+android.content.pm.PackageManager	method	public abstract void revokeRuntimePermission(String str, String str2, UserHandle userHandle);
+android.content.pm.PackageManager	method	public abstract void setApplicationCategoryHint(String str, int i);
+android.content.pm.PackageManager	method	public abstract void setApplicationEnabledSetting(String str, int i, int i2);
+android.content.pm.PackageManager	method	public abstract void setComponentEnabledSetting(ComponentName componentName, int i, int i2);
+android.content.pm.PackageManager	method	public abstract void setInstallerPackageName(String str, String str2);
+android.content.pm.PackageManager	method	public abstract void setUpdateAvailable(String str, boolean z);
+android.content.pm.PackageManager	method	public abstract void unregisterMoveCallback(MoveCallback moveCallback);
+android.content.pm.PackageManager	method	public abstract void updateInstantAppCookie(byte[] bArr);
+android.content.pm.PackageManager	method	public abstract void updatePermissionFlags(String str, String str2, int i, int i2, UserHandle userHandle);
+android.content.pm.PackageManager	method	public abstract void verifyIntentFilter(int i, int i2, List<String> list);
+android.content.pm.PackageManager	method	public abstract void verifyPendingInstall(int i, int i2);
+android.content.pm.PackageManager	method	public boolean addWhitelistedRestrictedPermission(String str, String str2, int i)
+android.content.pm.PackageManager	method	public boolean getSyntheticAppDetailsActivityEnabled(String str)
+android.content.pm.PackageManager	method	public boolean hasSigningCertificate(String str, byte[] bArr, int i)
+android.content.pm.PackageManager	method	public boolean hasSigningCertificate(int i, byte[] bArr, int i2)
+android.content.pm.PackageManager	method	public boolean isAutoRevokeWhitelisted()
+android.content.pm.PackageManager	method	public boolean isAutoRevokeWhitelisted(String str)
+android.content.pm.PackageManager	method	public boolean isDefaultApplicationIcon(Drawable drawable)
+android.content.pm.PackageManager	method	public boolean isDeviceUpgrading()
+android.content.pm.PackageManager	method	public boolean isPackageStateProtected(String str, int i)
+android.content.pm.PackageManager	method	public boolean isPackageSuspended()
+android.content.pm.PackageManager	method	public boolean isPackageSuspended(String str) throws NameNotFoundException
+android.content.pm.PackageManager	method	public boolean removeWhitelistedRestrictedPermission(String str, String str2, int i)
+android.content.pm.PackageManager	method	public boolean setAutoRevokeWhitelisted(String str, boolean z)
+android.content.pm.PackageManager	method	public int getUserId()
+android.content.pm.PackageManager	method	public static ApplicationInfo getApplicationInfoAsUserCached(String str, int i, int i2)
+android.content.pm.PackageManager	method	public static ApplicationInfo getApplicationInfoAsUserUncached(String str, int i, int i2)
+android.content.pm.PackageManager	method	public static PackageInfo getPackageInfoAsUserCached(String str, int i, int i2)
+android.content.pm.PackageManager	method	public static PackageInfo getPackageInfoAsUserUncached(String str, int i, int i2)
+android.content.pm.PackageManager	method	public static String deleteStatusToString(int i)
+android.content.pm.PackageManager	method	public static String deleteStatusToString(int i, String str)
+android.content.pm.PackageManager	method	public static String installStatusToString(int i)
+android.content.pm.PackageManager	method	public static String installStatusToString(int i, String str)
+android.content.pm.PackageManager	method	public static String permissionFlagToString(int i)
+android.content.pm.PackageManager	method	public static boolean isMoveStatusFinished(int i)
+android.content.pm.PackageManager	method	public static int deleteStatusToPublicStatus(int i)
+android.content.pm.PackageManager	method	public static int installStatusToPublicStatus(int i)
+android.content.pm.PackageManager	method	public static void corkPackageInfoCache()
+android.content.pm.PackageManager	method	public static void disableApplicationInfoCache()
+android.content.pm.PackageManager	method	public static void disablePackageInfoCache()
+android.content.pm.PackageManager	method	public static void invalidatePackageInfoCache()
+android.content.pm.PackageManager	method	public static void uncorkPackageInfoCache()
+android.content.pm.PackageManager	method	public void addPreferredActivityAsUser(IntentFilter intentFilter, int i, ComponentName[] componentNameArr, ComponentName componentName, int i2)
+android.content.pm.PackageManager	method	public void freeStorage(long j, IntentSender intentSender)
+android.content.pm.PackageManager	method	public void freeStorageAndNotify(long j, IPackageDataObserver iPackageDataObserver)
+android.content.pm.PackageManager	method	public void getPackageSizeInfo(String str, IPackageStatsObserver iPackageStatsObserver)
+android.content.pm.PackageManager	method	public void replacePreferredActivity(IntentFilter intentFilter, int i, List<ComponentName> list, ComponentName componentName)
+android.content.pm.PackageManager	method	public void replacePreferredActivityAsUser(IntentFilter intentFilter, int i, ComponentName[] componentNameArr, ComponentName componentName, int i2)
+android.content.pm.PackageManager	method	public void revokeRuntimePermission(String str, String str2, UserHandle userHandle, String str3)
+android.content.pm.PackageManager	method	public void sendDeviceCustomizationReadyBroadcast()
+android.content.pm.PackageManager	method	public void setHarmfulAppWarning(String str, CharSequence charSequence)
+android.content.pm.PackageManager	method	public void setMimeGroup(String str, Set<String> set)
+android.content.pm.PackageManager	method	public void setSyntheticAppDetailsActivityEnabled(String str, boolean z)
+android.content.pm.PackageManager	method	public void setSystemAppState(String str, int i)
+android.content.pm.PackageManager$ApplicationInfoQuery	field	final String packageName;
+android.content.pm.PackageManager$ApplicationInfoQuery	field	final int flags;
+android.content.pm.PackageManager$ApplicationInfoQuery	field	final int userId;
+android.content.pm.PackageManager$ApplicationInfoQuery	method	public String toString()
+android.content.pm.PackageManager$ApplicationInfoQuery	method	public boolean equals(Object obj)
+android.content.pm.PackageManager$ApplicationInfoQuery	method	public int hashCode()
+android.content.pm.PackageManager$DexModuleRegisterCallback	method	public abstract void onDexModuleRegistered(String str, boolean z, String str2);
+android.content.pm.PackageManager$LegacyPackageDeleteObserver	field	private final IPackageDeleteObserver mLegacy;
+android.content.pm.PackageManager$LegacyPackageDeleteObserver	method	public LegacyPackageDeleteObserver(IPackageDeleteObserver iPackageDeleteObserver)
+android.content.pm.PackageManager$LegacyPackageDeleteObserver	method	public void onPackageDeleted(String str, int i, String str2)
+android.content.pm.PackageManager$MoveCallback	method	public abstract void onStatusChanged(int i, int i2, long j);
+android.content.pm.PackageManager$MoveCallback	method	public void onCreated(int i, Bundle bundle)
+android.content.pm.PackageManager$NameNotFoundException	method	public NameNotFoundException()
+android.content.pm.PackageManager$NameNotFoundException	method	public NameNotFoundException(String str)
+android.content.pm.PackageManager$PackageInfoQuery	field	final String packageName;
+android.content.pm.PackageManager$PackageInfoQuery	field	final int flags;
+android.content.pm.PackageManager$PackageInfoQuery	field	final int userId;
+android.content.pm.PackageManager$PackageInfoQuery	method	public String toString()
+android.content.pm.PackageManager$PackageInfoQuery	method	public boolean equals(Object obj)
+android.content.pm.PackageManager$PackageInfoQuery	method	public int hashCode()
+android.content.pm.PackageManager$RollbackDataPolicy	field	public static final int RESTORE;
+android.content.pm.PackageManager$RollbackDataPolicy	field	public static final int RETAIN;
+android.content.pm.PackageManager$RollbackDataPolicy	field	public static final int WIPE;
+android.content.pm.VerifierDeviceIdentity	field	private final String mIdentityString;
+android.content.pm.VerifierDeviceIdentity	field	private final long mIdentity;
+android.content.pm.VerifierDeviceIdentity	field	private static final char SEPARATOR;
+android.content.pm.VerifierDeviceIdentity	field	private static final char[] ENCODE;
+android.content.pm.VerifierDeviceIdentity	field	private static final int GROUP_SIZE;
+android.content.pm.VerifierDeviceIdentity	field	private static final int LONG_SIZE;
+android.content.pm.VerifierDeviceIdentity	method	private VerifierDeviceIdentity(Parcel parcel)
+android.content.pm.VerifierDeviceIdentity	method	private static final String encodeBase32(long j)
+android.content.pm.VerifierDeviceIdentity	method	private static final long decodeBase32(byte[] bArr) throws IllegalArgumentException
+android.content.pm.VerifierDeviceIdentity	method	public String toString()
+android.content.pm.VerifierDeviceIdentity	method	public VerifierDeviceIdentity(long j)
+android.content.pm.VerifierDeviceIdentity	method	public boolean equals(Object obj)
+android.content.pm.VerifierDeviceIdentity	method	public int describeContents()
+android.content.pm.VerifierDeviceIdentity	method	public int hashCode()
+android.content.pm.VerifierDeviceIdentity	method	public static VerifierDeviceIdentity generate()
+android.content.pm.VerifierDeviceIdentity	method	public static VerifierDeviceIdentity parse(String str) throws IllegalArgumentException
+android.content.pm.VerifierDeviceIdentity	method	public void writeToParcel(Parcel parcel, int i)
+android.content.pm.VerifierDeviceIdentity	method	static VerifierDeviceIdentity generate(Random random)
+android.content.res.Resources	field	final ClassLoader mClassLoader;
+android.content.res.Resources	field	final Pools.SynchronizedPool<TypedArray> mTypedArrayPool;
+android.content.res.Resources	field	private DisplayAdjustments mOverrideDisplayAdjustments;
+android.content.res.Resources	field	private DrawableInflater mDrawableInflater;
+android.content.res.Resources	field	private ResourcesImpl mResourcesImpl;
+android.content.res.Resources	field	private TypedValue mTmpValue;
+android.content.res.Resources	field	private UpdateCallbacks mCallbacks;
+android.content.res.Resources	field	private final ArrayList<WeakReference<Theme>> mThemeRefs;
+android.content.res.Resources	field	private final Object mTmpValueLock;
+android.content.res.Resources	field	private final Object mUpdateLock;
+android.content.res.Resources	field	private int mBaseApkAssetsSize;
+android.content.res.Resources	field	private int mThemeRefsNextFlushSize;
+android.content.res.Resources	field	private static final Object sSync;
+android.content.res.Resources	field	private static final int MIN_THEME_REFS_FLUSH_SIZE;
+android.content.res.Resources	field	public static final int ID_NULL;
+android.content.res.Resources	field	static Resources mSystem;
+android.content.res.Resources	field	static final String TAG;
+android.content.res.Resources	method	private Resources()
+android.content.res.Resources	method	private TypedValue obtainTempTypedValue()
+android.content.res.Resources	method	private void checkCallbacksRegistered()
+android.content.res.Resources	method	private void releaseTempTypedValue(TypedValue typedValue)
+android.content.res.Resources	method	public AssetFileDescriptor openRawResourceFd(int i) throws NotFoundException
+android.content.res.Resources	method	public CharSequence getQuantityText(int i, int i2) throws NotFoundException
+android.content.res.Resources	method	public CharSequence getText(int i) throws NotFoundException
+android.content.res.Resources	method	public CharSequence getText(int i, CharSequence charSequence)
+android.content.res.Resources	method	public CharSequence[] getTextArray(int i) throws NotFoundException
+android.content.res.Resources	method	public ClassLoader getClassLoader()
+android.content.res.Resources	method	public ColorStateList getColorStateList(int i) throws NotFoundException
+android.content.res.Resources	method	public ColorStateList getColorStateList(int i, Theme theme) throws NotFoundException
+android.content.res.Resources	method	public CompatibilityInfo getCompatibilityInfo()
+android.content.res.Resources	method	public ComplexColor loadComplexColor(TypedValue typedValue, int i, Theme theme)
+android.content.res.Resources	method	public Configuration getConfiguration()
+android.content.res.Resources	method	public ConfigurationBoundResourceCache<Animator> getAnimatorCache()
+android.content.res.Resources	method	public ConfigurationBoundResourceCache<StateListAnimator> getStateListAnimatorCache()
+android.content.res.Resources	method	public Configuration[] getSizeConfigurations()
+android.content.res.Resources	method	public DisplayAdjustments getDisplayAdjustments()
+android.content.res.Resources	method	public DisplayMetrics getDisplayMetrics()
+android.content.res.Resources	method	public Drawable getDrawable(int i) throws NotFoundException
+android.content.res.Resources	method	public Drawable getDrawable(int i, Theme theme) throws NotFoundException
+android.content.res.Resources	method	public Drawable getDrawableForDensity(int i, int i2) throws NotFoundException
+android.content.res.Resources	method	public Drawable getDrawableForDensity(int i, int i2, Theme theme)
+android.content.res.Resources	method	public InputStream openRawResource(int i) throws NotFoundException
+android.content.res.Resources	method	public InputStream openRawResource(int i, TypedValue typedValue) throws NotFoundException
+android.content.res.Resources	method	public List<ResourcesLoader> getLoaders()
+android.content.res.Resources	method	public LongSparseArray<Drawable.ConstantState> getPreloadedDrawables()
+android.content.res.Resources	method	public Movie getMovie(int i) throws NotFoundException
+android.content.res.Resources	method	public Resources(AssetManager assetManager, DisplayMetrics displayMetrics, Configuration configuration)
+android.content.res.Resources	method	public Resources(ClassLoader classLoader)
+android.content.res.Resources	method	public ResourcesImpl getImpl()
+android.content.res.Resources	method	public String getLastResourceResolution() throws NotFoundException
+android.content.res.Resources	method	public String getQuantityString(int i, int i2) throws NotFoundException
+android.content.res.Resources	method	public String getQuantityString(int i, int i2, Object... objArr) throws NotFoundException
+android.content.res.Resources	method	public String getResourceEntryName(int i) throws NotFoundException
+android.content.res.Resources	method	public String getResourceName(int i) throws NotFoundException
+android.content.res.Resources	method	public String getResourcePackageName(int i) throws NotFoundException
+android.content.res.Resources	method	public String getResourceTypeName(int i) throws NotFoundException
+android.content.res.Resources	method	public String getString(int i) throws NotFoundException
+android.content.res.Resources	method	public String getString(int i, Object... objArr) throws NotFoundException
+android.content.res.Resources	method	public String[] getStringArray(int i) throws NotFoundException
+android.content.res.Resources	method	public TypedArray obtainAttributes(AttributeSet attributeSet, int[] iArr)
+android.content.res.Resources	method	public TypedArray obtainTypedArray(int i) throws NotFoundException
+android.content.res.Resources	method	public Typeface getFont(int i) throws NotFoundException
+android.content.res.Resources	method	public XmlResourceParser getAnimation(int i) throws NotFoundException
+android.content.res.Resources	method	public XmlResourceParser getLayout(int i) throws NotFoundException
+android.content.res.Resources	method	public XmlResourceParser getXml(int i) throws NotFoundException
+android.content.res.Resources	method	public boolean getBoolean(int i) throws NotFoundException
+android.content.res.Resources	method	public boolean hasOverrideDisplayAdjustments()
+android.content.res.Resources	method	public final AssetManager getAssets()
+android.content.res.Resources	method	public final DrawableInflater getDrawableInflater()
+android.content.res.Resources	method	public final Theme newTheme()
+android.content.res.Resources	method	public final void finishPreloading()
+android.content.res.Resources	method	public final void flushLayoutCache()
+android.content.res.Resources	method	public final void startPreloading()
+android.content.res.Resources	method	public float getDimension(int i) throws NotFoundException
+android.content.res.Resources	method	public float getFloat(int i)
+android.content.res.Resources	method	public float getFraction(int i, int i2, int i3)
+android.content.res.Resources	method	public int calcConfigChanges(Configuration configuration)
+android.content.res.Resources	method	public int getColor(int i) throws NotFoundException
+android.content.res.Resources	method	public int getColor(int i, Theme theme) throws NotFoundException
+android.content.res.Resources	method	public int getDimensionPixelOffset(int i) throws NotFoundException
+android.content.res.Resources	method	public int getDimensionPixelSize(int i) throws NotFoundException
+android.content.res.Resources	method	public int getIdentifier(String str, String str2, String str3)
+android.content.res.Resources	method	public int getInteger(int i) throws NotFoundException
+android.content.res.Resources	method	public int[] getIntArray(int i) throws NotFoundException
+android.content.res.Resources	method	public static Resources getSystem()
+android.content.res.Resources	method	public static TypedArray obtainAttributes(Resources resources, Theme theme, AttributeSet attributeSet, int[] iArr)
+android.content.res.Resources	method	public static boolean resourceHasPackage(int i)
+android.content.res.Resources	method	public static int getAttributeSetSourceResId(AttributeSet attributeSet)
+android.content.res.Resources	method	public static int selectDefaultTheme(int i, int i2)
+android.content.res.Resources	method	public static int selectSystemTheme(int i, int i2, int i3, int i4, int i5, int i6)
+android.content.res.Resources	method	public static void updateSystemConfiguration(Configuration configuration, DisplayMetrics displayMetrics, CompatibilityInfo compatibilityInfo)
+android.content.res.Resources	method	public void addLoaders(ResourcesLoader... resourcesLoaderArr)
+android.content.res.Resources	method	public void clearLoaders()
+android.content.res.Resources	method	public void getValue(String str, TypedValue typedValue, boolean z) throws NotFoundException
+android.content.res.Resources	method	public void getValue(int i, TypedValue typedValue, boolean z) throws NotFoundException
+android.content.res.Resources	method	public void getValueForDensity(int i, int i2, TypedValue typedValue, boolean z) throws NotFoundException
+android.content.res.Resources	method	public void overrideDisplayAdjustments(Consumer<DisplayAdjustments> consumer)
+android.content.res.Resources	method	public void parseBundleExtra(String str, AttributeSet attributeSet, Bundle bundle) throws XmlPullParserException
+android.content.res.Resources	method	public void parseBundleExtras(XmlResourceParser xmlResourceParser, Bundle bundle) throws XmlPullParserException, IOException
+android.content.res.Resources	method	public void preloadFonts(int i)
+android.content.res.Resources	method	public void removeLoaders(ResourcesLoader... resourcesLoaderArr)
+android.content.res.Resources	method	public void setCallbacks(UpdateCallbacks updateCallbacks)
+android.content.res.Resources	method	public void setCompatibilityInfo(CompatibilityInfo compatibilityInfo)
+android.content.res.Resources	method	public void setImpl(ResourcesImpl resourcesImpl)
+android.content.res.Resources	method	public void updateConfiguration(Configuration configuration, DisplayMetrics displayMetrics)
+android.content.res.Resources	method	public void updateConfiguration(Configuration configuration, DisplayMetrics displayMetrics, CompatibilityInfo compatibilityInfo)
+android.content.res.Resources$AssetManagerUpdateHandler	method	public AssetManagerUpdateHandler()
+android.content.res.Resources$AssetManagerUpdateHandler	method	public void onLoaderUpdated(ResourcesLoader resourcesLoader)
+android.content.res.Resources$AssetManagerUpdateHandler	method	public void onLoadersChanged(Resources resources, List<ResourcesLoader> list)
+android.content.res.Resources$NotFoundException	method	public NotFoundException()
+android.content.res.Resources$NotFoundException	method	public NotFoundException(String str)
+android.content.res.Resources$NotFoundException	method	public NotFoundException(String str, Exception exc)
+android.content.res.Resources$Theme	field	private ResourcesImpl.ThemeImpl mThemeImpl;
+android.content.res.Resources$Theme	method	private String getResourceNameFromHexString(String str)
+android.content.res.Resources$Theme	method	private Theme()
+android.content.res.Resources$Theme	method	public Drawable getDrawable(int i) throws NotFoundException
+android.content.res.Resources$Theme	method	public Resources getResources()
+android.content.res.Resources$Theme	method	public String[] getTheme()
+android.content.res.Resources$Theme	method	public ThemeKey getKey()
+android.content.res.Resources$Theme	method	public TypedArray obtainStyledAttributes(AttributeSet attributeSet, int[] iArr, int i, int i2)
+android.content.res.Resources$Theme	method	public TypedArray obtainStyledAttributes(int i, int[] iArr) throws NotFoundException
+android.content.res.Resources$Theme	method	public TypedArray obtainStyledAttributes(int[] iArr)
+android.content.res.Resources$Theme	method	public TypedArray resolveAttributes(int[] iArr, int[] iArr2)
+android.content.res.Resources$Theme	method	public boolean resolveAttribute(int i, TypedValue typedValue, boolean z)
+android.content.res.Resources$Theme	method	public int getChangingConfigurations()
+android.content.res.Resources$Theme	method	public int getExplicitStyle(AttributeSet attributeSet)
+android.content.res.Resources$Theme	method	public int[] getAllAttributes()
+android.content.res.Resources$Theme	method	public int[] getAttributeResolutionStack(int i, int i2, int i3)
+android.content.res.Resources$Theme	method	public void applyStyle(int i, boolean z)
+android.content.res.Resources$Theme	method	public void dump(int i, String str, String str2)
+android.content.res.Resources$Theme	method	public void encode(ViewHierarchyEncoder viewHierarchyEncoder)
+android.content.res.Resources$Theme	method	public void rebase()
+android.content.res.Resources$Theme	method	public void setTo(Theme theme)
+android.content.res.Resources$ThemeKey	field	private int mHashCode;
+android.content.res.Resources$ThemeKey	method	public ThemeKey m0clone()
+android.content.res.Resources$ThemeKey	method	public boolean equals(Object obj)
+android.content.res.Resources$ThemeKey	method	public int hashCode()
+android.content.res.Resources$ThemeKey	method	public void append(int i, boolean z)
+android.content.res.Resources$ThemeKey	method	public void setTo(ThemeKey themeKey)
+android.os.storage.VolumeInfo	field	private static ArrayMap<String, String> sEnvironmentToBroadcast;
+android.os.storage.VolumeInfo	field	private static SparseArray<String> sStateToEnvironment;
+android.os.storage.VolumeInfo	field	private static SparseIntArray sStateToDescrip;
+android.os.storage.VolumeInfo	field	private static final String DOCUMENT_AUTHORITY;
+android.os.storage.VolumeInfo	field	private static final String DOCUMENT_ROOT_PRIMARY_EMULATED;
+android.os.storage.VolumeInfo	field	public String fsLabel;
+android.os.storage.VolumeInfo	field	public String fsType;
+android.os.storage.VolumeInfo	field	public String fsUuid;
+android.os.storage.VolumeInfo	field	public String internalPath;
+android.os.storage.VolumeInfo	field	public String path;
+android.os.storage.VolumeInfo	field	public final DiskInfo disk;
+android.os.storage.VolumeInfo	field	public final String id;
+android.os.storage.VolumeInfo	field	public final String partGuid;
+android.os.storage.VolumeInfo	field	public final int type;
+android.os.storage.VolumeInfo	field	public int mountFlags;
+android.os.storage.VolumeInfo	field	public int mountUserId;
+android.os.storage.VolumeInfo	field	public int state;
+android.os.storage.VolumeInfo	field	public static final Parcelable.Creator<VolumeInfo> CREATOR;
+android.os.storage.VolumeInfo	field	public static final String ACTION_VOLUME_STATE_CHANGED;
+android.os.storage.VolumeInfo	field	public static final String EXTRA_VOLUME_ID;
+android.os.storage.VolumeInfo	field	public static final String EXTRA_VOLUME_STATE;
+android.os.storage.VolumeInfo	field	public static final String ID_EMULATED_INTERNAL;
+android.os.storage.VolumeInfo	field	public static final String ID_PRIVATE_INTERNAL;
+android.os.storage.VolumeInfo	field	public static final int MOUNT_FLAG_PRIMARY;
+android.os.storage.VolumeInfo	field	public static final int MOUNT_FLAG_VISIBLE;
+android.os.storage.VolumeInfo	field	public static final int STATE_BAD_REMOVAL;
+android.os.storage.VolumeInfo	field	public static final int STATE_CHECKING;
+android.os.storage.VolumeInfo	field	public static final int STATE_EJECTING;
+android.os.storage.VolumeInfo	field	public static final int STATE_FORMATTING;
+android.os.storage.VolumeInfo	field	public static final int STATE_MOUNTED;
+android.os.storage.VolumeInfo	field	public static final int STATE_MOUNTED_READ_ONLY;
+android.os.storage.VolumeInfo	field	public static final int STATE_REMOVED;
+android.os.storage.VolumeInfo	field	public static final int STATE_UNMOUNTABLE;
+android.os.storage.VolumeInfo	field	public static final int STATE_UNMOUNTED;
+android.os.storage.VolumeInfo	field	public static final int TYPE_ASEC;
+android.os.storage.VolumeInfo	field	public static final int TYPE_EMULATED;
+android.os.storage.VolumeInfo	field	public static final int TYPE_OBB;
+android.os.storage.VolumeInfo	field	public static final int TYPE_PRIVATE;
+android.os.storage.VolumeInfo	field	public static final int TYPE_PUBLIC;
+android.os.storage.VolumeInfo	field	public static final int TYPE_STUB;
+android.os.storage.VolumeInfo	method	public DiskInfo getDisk()
+android.os.storage.VolumeInfo	method	public File getInternalPath()
+android.os.storage.VolumeInfo	method	public File getInternalPathForUser(int i)
+android.os.storage.VolumeInfo	method	public File getPath()
+android.os.storage.VolumeInfo	method	public File getPathForUser(int i)
+android.os.storage.VolumeInfo	method	public Intent buildBrowseIntent()
+android.os.storage.VolumeInfo	method	public Intent buildBrowseIntentForUser(int i)
+android.os.storage.VolumeInfo	method	public StorageVolume buildStorageVolume(Context context, int i, boolean z)
+android.os.storage.VolumeInfo	method	public String getDescription()
+android.os.storage.VolumeInfo	method	public String getDiskId()
+android.os.storage.VolumeInfo	method	public String getFsUuid()
+android.os.storage.VolumeInfo	method	public String getId()
+android.os.storage.VolumeInfo	method	public String getNormalizedFsUuid()
+android.os.storage.VolumeInfo	method	public String toString()
+android.os.storage.VolumeInfo	method	public VolumeInfo m1clone()
+android.os.storage.VolumeInfo	method	public VolumeInfo(Parcel parcel)
+android.os.storage.VolumeInfo	method	public VolumeInfo(String str, int i, DiskInfo diskInfo, String str2)
+android.os.storage.VolumeInfo	method	public VolumeInfo(VolumeInfo volumeInfo)
+android.os.storage.VolumeInfo	method	public boolean equals(Object obj)
+android.os.storage.VolumeInfo	method	public boolean isMountedReadable()
+android.os.storage.VolumeInfo	method	public boolean isMountedWritable()
+android.os.storage.VolumeInfo	method	public boolean isPrimary()
+android.os.storage.VolumeInfo	method	public boolean isPrimaryEmulatedForUser(int i)
+android.os.storage.VolumeInfo	method	public boolean isPrimaryPhysical()
+android.os.storage.VolumeInfo	method	public boolean isVisible()
+android.os.storage.VolumeInfo	method	public boolean isVisibleForRead(int i)
+android.os.storage.VolumeInfo	method	public boolean isVisibleForUser(int i)
+android.os.storage.VolumeInfo	method	public boolean isVisibleForWrite(int i)
+android.os.storage.VolumeInfo	method	public int describeContents()
+android.os.storage.VolumeInfo	method	public int getMountUserId()
+android.os.storage.VolumeInfo	method	public int getState()
+android.os.storage.VolumeInfo	method	public int getStateDescription()
+android.os.storage.VolumeInfo	method	public int getType()
+android.os.storage.VolumeInfo	method	public int hashCode()
+android.os.storage.VolumeInfo	method	public static Comparator<VolumeInfo> getDescriptionComparator()
+android.os.storage.VolumeInfo	method	public static String getBroadcastForEnvironment(String str)
+android.os.storage.VolumeInfo	method	public static String getBroadcastForState(int i)
+android.os.storage.VolumeInfo	method	public static String getEnvironmentForState(int i)
+android.os.storage.VolumeInfo	method	public static int buildStableMtpStorageId(String str)
+android.os.storage.VolumeInfo	method	public void dump(IndentingPrintWriter indentingPrintWriter)
+android.os.storage.VolumeInfo	method	public void writeToParcel(Parcel parcel, int i)
+android.test.mock.MockAccountManager	method	private MockAccountManager()
+android.test.mock.MockAccountManager	method	public static AccountManager newMockAccountManager(Context context)
+android.test.mock.MockAccountManager$MockAccountManagerFuture	method	public T getResult() throws OperationCanceledException, IOException, AuthenticatorException
+android.test.mock.MockAccountManager$MockAccountManagerFuture	method	public T getResult(long j, TimeUnit timeUnit) throws OperationCanceledException, IOException, AuthenticatorException
+android.test.mock.MockAccountManager$MockAccountManagerFuture	method	public boolean cancel(boolean z)
+android.test.mock.MockAccountManager$MockAccountManagerFuture	method	public boolean isCancelled()
+android.test.mock.MockAccountManager$MockAccountManagerFuture	method	public boolean isDone()
+android.test.mock.MockAccountManager$MockAccountManagerImpl	method	public AccountManagerFuture<Account[]> getAccountsByTypeAndFeatures(String str, String[] strArr, AccountManagerCallback<Account[]> accountManagerCallback, Handler handler)
+android.test.mock.MockAccountManager$MockAccountManagerImpl	method	public Account[] getAccounts()
+android.test.mock.MockAccountManager$MockAccountManagerImpl	method	public String blockingGetAuthToken(Account account, String str, boolean z) throws OperationCanceledException, IOException, AuthenticatorException
+android.test.mock.MockAccountManager$MockAccountManagerImpl	method	public void addOnAccountsUpdatedListener(OnAccountsUpdateListener onAccountsUpdateListener, Handler handler, boolean z)
+android.test.mock.MockApplication	method	public void onConfigurationChanged(Configuration configuration)
+android.test.mock.MockApplication	method	public void onCreate()
+android.test.mock.MockApplication	method	public void onTerminate()
+android.test.mock.MockContentProvider	field	private final InversionIContentProvider mIContentProvider;
+android.test.mock.MockContentProvider	method	protected MockContentProvider()
+android.test.mock.MockContentProvider	method	public AssetFileDescriptor openTypedAssetFile(Uri uri, String str, Bundle bundle)
+android.test.mock.MockContentProvider	method	public Bundle call(String str, String str2, Bundle bundle)
+android.test.mock.MockContentProvider	method	public ContentProviderResult[] applyBatch(ArrayList<ContentProviderOperation> arrayList)
+android.test.mock.MockContentProvider	method	public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2)
+android.test.mock.MockContentProvider	method	public IBinder getIContentProviderBinder()
+android.test.mock.MockContentProvider	method	public MockContentProvider(Context context)
+android.test.mock.MockContentProvider	method	public MockContentProvider(Context context, String str, String str2, PathPermission[] pathPermissionArr)
+android.test.mock.MockContentProvider	method	public String getType(Uri uri)
+android.test.mock.MockContentProvider	method	public String[] getStreamTypes(Uri uri, String str)
+android.test.mock.MockContentProvider	method	public Uri insert(Uri uri, ContentValues contentValues)
+android.test.mock.MockContentProvider	method	public boolean onCreate()
+android.test.mock.MockContentProvider	method	public boolean refresh(Uri uri, Bundle bundle)
+android.test.mock.MockContentProvider	method	public final IContentProvider getIContentProvider()
+android.test.mock.MockContentProvider	method	public int bulkInsert(Uri uri, ContentValues[] contentValuesArr)
+android.test.mock.MockContentProvider	method	public int checkUriPermission(Uri uri, int i, int i2)
+android.test.mock.MockContentProvider	method	public int delete(Uri uri, String str, String[] strArr)
+android.test.mock.MockContentProvider	method	public int update(Uri uri, ContentValues contentValues, String str, String[] strArr)
+android.test.mock.MockContentProvider	method	public static void attachInfoForTesting(ContentProvider contentProvider, Context context, ProviderInfo providerInfo)
+android.test.mock.MockContentProvider	method	public void attachInfo(Context context, ProviderInfo providerInfo)
+android.test.mock.MockContentProvider	method	public void canonicalizeAsync(final Uri uri, final RemoteCallback remoteCallback)
+android.test.mock.MockContentProvider	method	public void getTypeAsync(final Uri uri, final RemoteCallback remoteCallback)
+android.test.mock.MockContentProvider$InversionIContentProvider	method	private InversionIContentProvider()
+android.test.mock.MockContentProvider$InversionIContentProvider	method	public AssetFileDescriptor openAssetFile(String str, String str2, Uri uri, String str3, ICancellationSignal iCancellationSignal) throws RemoteException, FileNotFoundException
+android.test.mock.MockContentProvider$InversionIContentProvider	method	public AssetFileDescriptor openTypedAssetFile(String str, String str2, Uri uri, String str3, Bundle bundle, ICancellationSignal iCancellationSignal) throws RemoteException, FileNotFoundException
+android.test.mock.MockContentProvider$InversionIContentProvider	method	public Bundle call(String str, String str2, String str3, String str4, String str5, Bundle bundle) throws RemoteException
+android.test.mock.MockContentProvider$InversionIContentProvider	method	public ContentProviderResult[] applyBatch(String str, String str2, String str3, ArrayList<ContentProviderOperation> arrayList) throws RemoteException, OperationApplicationException
+android.test.mock.MockContentProvider$InversionIContentProvider	method	public Cursor query(String str, String str2, Uri uri, String[] strArr, Bundle bundle, ICancellationSignal iCancellationSignal) throws RemoteException
+android.test.mock.MockContentProvider$InversionIContentProvider	method	public IBinder asBinder()
+android.test.mock.MockContentProvider$InversionIContentProvider	method	public ICancellationSignal createCancellationSignal() throws RemoteException
+android.test.mock.MockContentProvider$InversionIContentProvider	method	public ParcelFileDescriptor openFile(String str, String str2, Uri uri, String str3, ICancellationSignal iCancellationSignal, IBinder iBinder) throws RemoteException, FileNotFoundException
+android.test.mock.MockContentProvider$InversionIContentProvider	method	public String getType(Uri uri) throws RemoteException
+android.test.mock.MockContentProvider$InversionIContentProvider	method	public String[] getStreamTypes(Uri uri, String str) throws RemoteException
+android.test.mock.MockContentProvider$InversionIContentProvider	method	public Uri canonicalize(String str, String str2, Uri uri) throws RemoteException
+android.test.mock.MockContentProvider$InversionIContentProvider	method	public Uri insert(String str, String str2, Uri uri, ContentValues contentValues, Bundle bundle) throws RemoteException
+android.test.mock.MockContentProvider$InversionIContentProvider	method	public Uri uncanonicalize(String str, String str2, Uri uri) throws RemoteException
+android.test.mock.MockContentProvider$InversionIContentProvider	method	public boolean refresh(String str, String str2, Uri uri, Bundle bundle, ICancellationSignal iCancellationSignal) throws RemoteException
+android.test.mock.MockContentProvider$InversionIContentProvider	method	public int bulkInsert(String str, String str2, Uri uri, ContentValues[] contentValuesArr) throws RemoteException
+android.test.mock.MockContentProvider$InversionIContentProvider	method	public int checkUriPermission(String str, String str2, Uri uri, int i, int i2)
+android.test.mock.MockContentProvider$InversionIContentProvider	method	public int delete(String str, String str2, Uri uri, Bundle bundle) throws RemoteException
+android.test.mock.MockContentProvider$InversionIContentProvider	method	public int update(String str, String str2, Uri uri, ContentValues contentValues, Bundle bundle) throws RemoteException
+android.test.mock.MockContentProvider$InversionIContentProvider	method	public void canonicalizeAsync(String str, String str2, Uri uri, RemoteCallback remoteCallback)
+android.test.mock.MockContentProvider$InversionIContentProvider	method	public void getTypeAsync(Uri uri, RemoteCallback remoteCallback) throws RemoteException
+android.test.mock.MockContentResolver	method	protected IContentProvider acquireExistingProvider(Context context, String str)
+android.test.mock.MockContentResolver	method	protected IContentProvider acquireProvider(Context context, String str)
+android.test.mock.MockContentResolver	method	protected IContentProvider acquireUnstableProvider(Context context, String str)
+android.test.mock.MockContentResolver	method	public MockContentResolver()
+android.test.mock.MockContentResolver	method	public MockContentResolver(Context context)
+android.test.mock.MockContentResolver	method	public boolean releaseProvider(IContentProvider iContentProvider)
+android.test.mock.MockContentResolver	method	public boolean releaseUnstableProvider(IContentProvider iContentProvider)
+android.test.mock.MockContentResolver	method	public void addProvider(String str, ContentProvider contentProvider)
+android.test.mock.MockContentResolver	method	public void notifyChange(Collection<Uri> collection, ContentObserver contentObserver, int i)
+android.test.mock.MockContentResolver	method	public void notifyChange(Uri uri, ContentObserver contentObserver)
+android.test.mock.MockContentResolver	method	public void notifyChange(Uri uri, ContentObserver contentObserver, boolean z)
+android.test.mock.MockContentResolver	method	public void notifyChange(Uri uri, ContentObserver contentObserver, int i)
+android.test.mock.MockContentResolver	method	public void unstableProviderDied(IContentProvider iContentProvider)
+android.test.mock.MockContext	method	public ApplicationInfo getApplicationInfo()
+android.test.mock.MockContext	method	public AssetManager getAssets()
+android.test.mock.MockContext	method	public ClassLoader getClassLoader()
+android.test.mock.MockContext	method	public ComponentName startForegroundService(Intent intent)
+android.test.mock.MockContext	method	public ComponentName startForegroundServiceAsUser(Intent intent, UserHandle userHandle)
+android.test.mock.MockContext	method	public ComponentName startService(Intent intent)
+android.test.mock.MockContext	method	public ComponentName startServiceAsUser(Intent intent, UserHandle userHandle)
+android.test.mock.MockContext	method	public ContentResolver getContentResolver()
+android.test.mock.MockContext	method	public Context createApplicationContext(ApplicationInfo applicationInfo, int i) throws PackageManager.NameNotFoundException
+android.test.mock.MockContext	method	public Context createConfigurationContext(Configuration configuration)
+android.test.mock.MockContext	method	public Context createContextAsUser(UserHandle userHandle, int i)
+android.test.mock.MockContext	method	public Context createContextForSplit(String str) throws PackageManager.NameNotFoundException
+android.test.mock.MockContext	method	public Context createCredentialProtectedStorageContext()
+android.test.mock.MockContext	method	public Context createDeviceProtectedStorageContext()
+android.test.mock.MockContext	method	public Context createDisplayContext(Display display)
+android.test.mock.MockContext	method	public Context createPackageContext(String str, int i) throws PackageManager.NameNotFoundException
+android.test.mock.MockContext	method	public Context createPackageContextAsUser(String str, int i, UserHandle userHandle) throws PackageManager.NameNotFoundException
+android.test.mock.MockContext	method	public Context createWindowContext(int i, Bundle bundle)
+android.test.mock.MockContext	method	public Context getApplicationContext()
+android.test.mock.MockContext	method	public Display getDisplay()
+android.test.mock.MockContext	method	public Display getDisplayNoVerify()
+android.test.mock.MockContext	method	public DisplayAdjustments getDisplayAdjustments(int i)
+android.test.mock.MockContext	method	public Drawable getWallpaper()
+android.test.mock.MockContext	method	public Drawable peekWallpaper()
+android.test.mock.MockContext	method	public Executor getMainExecutor()
+android.test.mock.MockContext	method	public File getCacheDir()
+android.test.mock.MockContext	method	public File getCodeCacheDir()
+android.test.mock.MockContext	method	public File getCrateDir(String str)
+android.test.mock.MockContext	method	public File getDataDir()
+android.test.mock.MockContext	method	public File getDatabasePath(String str)
+android.test.mock.MockContext	method	public File getDir(String str, int i)
+android.test.mock.MockContext	method	public File getExternalCacheDir()
+android.test.mock.MockContext	method	public File getExternalFilesDir(String str)
+android.test.mock.MockContext	method	public File getFileStreamPath(String str)
+android.test.mock.MockContext	method	public File getFilesDir()
+android.test.mock.MockContext	method	public File getNoBackupFilesDir()
+android.test.mock.MockContext	method	public File getObbDir()
+android.test.mock.MockContext	method	public File getPreloadsFileCache()
+android.test.mock.MockContext	method	public File getSharedPreferencesPath(String str)
+android.test.mock.MockContext	method	public FileInputStream openFileInput(String str) throws FileNotFoundException
+android.test.mock.MockContext	method	public FileOutputStream openFileOutput(String str, int i) throws FileNotFoundException
+android.test.mock.MockContext	method	public File[] getExternalCacheDirs()
+android.test.mock.MockContext	method	public File[] getExternalFilesDirs(String str)
+android.test.mock.MockContext	method	public File[] getExternalMediaDirs()
+android.test.mock.MockContext	method	public File[] getObbDirs()
+android.test.mock.MockContext	method	public Handler getMainThreadHandler()
+android.test.mock.MockContext	method	public IApplicationThread getIApplicationThread()
+android.test.mock.MockContext	method	public IBinder getActivityToken()
+android.test.mock.MockContext	method	public IServiceConnection getServiceDispatcher(ServiceConnection serviceConnection, Handler handler, int i)
+android.test.mock.MockContext	method	public Intent registerReceiver(BroadcastReceiver broadcastReceiver, IntentFilter intentFilter)
+android.test.mock.MockContext	method	public Intent registerReceiver(BroadcastReceiver broadcastReceiver, IntentFilter intentFilter, String str, Handler handler)
+android.test.mock.MockContext	method	public Intent registerReceiver(BroadcastReceiver broadcastReceiver, IntentFilter intentFilter, String str, Handler handler, int i)
+android.test.mock.MockContext	method	public Intent registerReceiver(BroadcastReceiver broadcastReceiver, IntentFilter intentFilter, int i)
+android.test.mock.MockContext	method	public Intent registerReceiverAsUser(BroadcastReceiver broadcastReceiver, UserHandle userHandle, IntentFilter intentFilter, String str, Handler handler)
+android.test.mock.MockContext	method	public Intent registerReceiverForAllUsers(BroadcastReceiver broadcastReceiver, IntentFilter intentFilter, String str, Handler handler)
+android.test.mock.MockContext	method	public Looper getMainLooper()
+android.test.mock.MockContext	method	public Object getSystemService(String str)
+android.test.mock.MockContext	method	public PackageManager getPackageManager()
+android.test.mock.MockContext	method	public Resources getResources()
+android.test.mock.MockContext	method	public Resources.Theme getTheme()
+android.test.mock.MockContext	method	public SQLiteDatabase openOrCreateDatabase(String str, int i, SQLiteDatabase.CursorFactory cursorFactory)
+android.test.mock.MockContext	method	public SQLiteDatabase openOrCreateDatabase(String str, int i, SQLiteDatabase.CursorFactory cursorFactory, DatabaseErrorHandler databaseErrorHandler)
+android.test.mock.MockContext	method	public SharedPreferences getSharedPreferences(File file, int i)
+android.test.mock.MockContext	method	public SharedPreferences getSharedPreferences(String str, int i)
+android.test.mock.MockContext	method	public String getBasePackageName()
+android.test.mock.MockContext	method	public String getOpPackageName()
+android.test.mock.MockContext	method	public String getPackageCodePath()
+android.test.mock.MockContext	method	public String getPackageName()
+android.test.mock.MockContext	method	public String getPackageResourcePath()
+android.test.mock.MockContext	method	public String getSystemServiceName(Class<?> cls)
+android.test.mock.MockContext	method	public String[] databaseList()
+android.test.mock.MockContext	method	public String[] fileList()
+android.test.mock.MockContext	method	public boolean bindIsolatedService(Intent intent, int i, String str, Executor executor, ServiceConnection serviceConnection)
+android.test.mock.MockContext	method	public boolean bindService(Intent intent, ServiceConnection serviceConnection, int i)
+android.test.mock.MockContext	method	public boolean bindService(Intent intent, int i, Executor executor, ServiceConnection serviceConnection)
+android.test.mock.MockContext	method	public boolean bindServiceAsUser(Intent intent, ServiceConnection serviceConnection, int i, UserHandle userHandle)
+android.test.mock.MockContext	method	public boolean canLoadUnsafeResources()
+android.test.mock.MockContext	method	public boolean deleteDatabase(String str)
+android.test.mock.MockContext	method	public boolean deleteFile(String str)
+android.test.mock.MockContext	method	public boolean deleteSharedPreferences(String str)
+android.test.mock.MockContext	method	public boolean isCredentialProtectedStorage()
+android.test.mock.MockContext	method	public boolean isDeviceProtectedStorage()
+android.test.mock.MockContext	method	public boolean isRestricted()
+android.test.mock.MockContext	method	public boolean isUiContext()
+android.test.mock.MockContext	method	public boolean moveDatabaseFrom(Context context, String str)
+android.test.mock.MockContext	method	public boolean moveSharedPreferencesFrom(Context context, String str)
+android.test.mock.MockContext	method	public boolean startInstrumentation(ComponentName componentName, String str, Bundle bundle)
+android.test.mock.MockContext	method	public boolean stopService(Intent intent)
+android.test.mock.MockContext	method	public boolean stopServiceAsUser(Intent intent, UserHandle userHandle)
+android.test.mock.MockContext	method	public int checkCallingOrSelfPermission(String str)
+android.test.mock.MockContext	method	public int checkCallingOrSelfUriPermission(Uri uri, int i)
+android.test.mock.MockContext	method	public int checkCallingPermission(String str)
+android.test.mock.MockContext	method	public int checkCallingUriPermission(Uri uri, int i)
+android.test.mock.MockContext	method	public int checkPermission(String str, int i, int i2)
+android.test.mock.MockContext	method	public int checkPermission(String str, int i, int i2, IBinder iBinder)
+android.test.mock.MockContext	method	public int checkSelfPermission(String str)
+android.test.mock.MockContext	method	public int checkUriPermission(Uri uri, String str, String str2, int i, int i2, int i3)
+android.test.mock.MockContext	method	public int checkUriPermission(Uri uri, int i, int i2, int i3)
+android.test.mock.MockContext	method	public int checkUriPermission(Uri uri, int i, int i2, int i3, IBinder iBinder)
+android.test.mock.MockContext	method	public int getDisplayId()
+android.test.mock.MockContext	method	public int getUserId()
+android.test.mock.MockContext	method	public int getWallpaperDesiredMinimumHeight()
+android.test.mock.MockContext	method	public int getWallpaperDesiredMinimumWidth()
+android.test.mock.MockContext	method	public void clearWallpaper()
+android.test.mock.MockContext	method	public void enforceCallingOrSelfPermission(String str, String str2)
+android.test.mock.MockContext	method	public void enforceCallingOrSelfUriPermission(Uri uri, int i, String str)
+android.test.mock.MockContext	method	public void enforceCallingPermission(String str, String str2)
+android.test.mock.MockContext	method	public void enforceCallingUriPermission(Uri uri, int i, String str)
+android.test.mock.MockContext	method	public void enforcePermission(String str, int i, int i2, String str2)
+android.test.mock.MockContext	method	public void enforceUriPermission(Uri uri, String str, String str2, int i, int i2, int i3, String str3)
+android.test.mock.MockContext	method	public void enforceUriPermission(Uri uri, int i, int i2, int i3, String str)
+android.test.mock.MockContext	method	public void grantUriPermission(String str, Uri uri, int i)
+android.test.mock.MockContext	method	public void reloadSharedPreferences()
+android.test.mock.MockContext	method	public void removeStickyBroadcast(Intent intent)
+android.test.mock.MockContext	method	public void removeStickyBroadcastAsUser(Intent intent, UserHandle userHandle)
+android.test.mock.MockContext	method	public void revokeUriPermission(String str, Uri uri, int i)
+android.test.mock.MockContext	method	public void revokeUriPermission(Uri uri, int i)
+android.test.mock.MockContext	method	public void sendBroadcast(Intent intent)
+android.test.mock.MockContext	method	public void sendBroadcast(Intent intent, String str)
+android.test.mock.MockContext	method	public void sendBroadcast(Intent intent, String str, Bundle bundle)
+android.test.mock.MockContext	method	public void sendBroadcast(Intent intent, String str, int i)
+android.test.mock.MockContext	method	public void sendBroadcastAsUser(Intent intent, UserHandle userHandle)
+android.test.mock.MockContext	method	public void sendBroadcastAsUser(Intent intent, UserHandle userHandle, String str)
+android.test.mock.MockContext	method	public void sendBroadcastAsUser(Intent intent, UserHandle userHandle, String str, Bundle bundle)
+android.test.mock.MockContext	method	public void sendBroadcastAsUser(Intent intent, UserHandle userHandle, String str, int i)
+android.test.mock.MockContext	method	public void sendBroadcastAsUserMultiplePermissions(Intent intent, UserHandle userHandle, String[] strArr)
+android.test.mock.MockContext	method	public void sendBroadcastMultiplePermissions(Intent intent, String[] strArr)
+android.test.mock.MockContext	method	public void sendOrderedBroadcast(Intent intent, String str)
+android.test.mock.MockContext	method	public void sendOrderedBroadcast(Intent intent, String str, BroadcastReceiver broadcastReceiver, Handler handler, int i, String str2, Bundle bundle)
+android.test.mock.MockContext	method	public void sendOrderedBroadcast(Intent intent, String str, Bundle bundle, BroadcastReceiver broadcastReceiver, Handler handler, int i, String str2, Bundle bundle2)
+android.test.mock.MockContext	method	public void sendOrderedBroadcast(Intent intent, String str, String str2, BroadcastReceiver broadcastReceiver, Handler handler, int i, String str3, Bundle bundle)
+android.test.mock.MockContext	method	public void sendOrderedBroadcast(Intent intent, String str, int i, BroadcastReceiver broadcastReceiver, Handler handler, int i2, String str2, Bundle bundle)
+android.test.mock.MockContext	method	public void sendOrderedBroadcast(Intent intent, int i, String str, String str2, BroadcastReceiver broadcastReceiver, Handler handler, String str3, Bundle bundle, Bundle bundle2)
+android.test.mock.MockContext	method	public void sendOrderedBroadcastAsUser(Intent intent, UserHandle userHandle, String str, BroadcastReceiver broadcastReceiver, Handler handler, int i, String str2, Bundle bundle)
+android.test.mock.MockContext	method	public void sendOrderedBroadcastAsUser(Intent intent, UserHandle userHandle, String str, int i, BroadcastReceiver broadcastReceiver, Handler handler, int i2, String str2, Bundle bundle)
+android.test.mock.MockContext	method	public void sendOrderedBroadcastAsUser(Intent intent, UserHandle userHandle, String str, int i, Bundle bundle, BroadcastReceiver broadcastReceiver, Handler handler, int i2, String str2, Bundle bundle2)
+android.test.mock.MockContext	method	public void sendStickyBroadcast(Intent intent)
+android.test.mock.MockContext	method	public void sendStickyBroadcastAsUser(Intent intent, UserHandle userHandle)
+android.test.mock.MockContext	method	public void sendStickyBroadcastAsUser(Intent intent, UserHandle userHandle, Bundle bundle)
+android.test.mock.MockContext	method	public void sendStickyOrderedBroadcast(Intent intent, BroadcastReceiver broadcastReceiver, Handler handler, int i, String str, Bundle bundle)
+android.test.mock.MockContext	method	public void sendStickyOrderedBroadcastAsUser(Intent intent, UserHandle userHandle, BroadcastReceiver broadcastReceiver, Handler handler, int i, String str, Bundle bundle)
+android.test.mock.MockContext	method	public void setTheme(int i)
+android.test.mock.MockContext	method	public void setWallpaper(Bitmap bitmap) throws IOException
+android.test.mock.MockContext	method	public void setWallpaper(InputStream inputStream) throws IOException
+android.test.mock.MockContext	method	public void startActivities(Intent[] intentArr)
+android.test.mock.MockContext	method	public void startActivities(Intent[] intentArr, Bundle bundle)
+android.test.mock.MockContext	method	public void startActivity(Intent intent)
+android.test.mock.MockContext	method	public void startActivity(Intent intent, Bundle bundle)
+android.test.mock.MockContext	method	public void startIntentSender(IntentSender intentSender, Intent intent, int i, int i2, int i3) throws IntentSender.SendIntentException
+android.test.mock.MockContext	method	public void startIntentSender(IntentSender intentSender, Intent intent, int i, int i2, int i3, Bundle bundle) throws IntentSender.SendIntentException
+android.test.mock.MockContext	method	public void unbindService(ServiceConnection serviceConnection)
+android.test.mock.MockContext	method	public void unregisterReceiver(BroadcastReceiver broadcastReceiver)
+android.test.mock.MockContext	method	public void updateDisplay(int i)
+android.test.mock.MockContext	method	public void updateServiceGroup(ServiceConnection serviceConnection, int i, int i2)
+android.test.mock.MockCursor	method	public Bundle getExtras()
+android.test.mock.MockCursor	method	public Bundle respond(Bundle bundle)
+android.test.mock.MockCursor	method	public List<Uri> getNotificationUris()
+android.test.mock.MockCursor	method	public String getColumnName(int i)
+android.test.mock.MockCursor	method	public String getString(int i)
+android.test.mock.MockCursor	method	public String[] getColumnNames()
+android.test.mock.MockCursor	method	public Uri getNotificationUri()
+android.test.mock.MockCursor	method	public boolean getWantsAllOnMoveCalls()
+android.test.mock.MockCursor	method	public boolean isAfterLast()
+android.test.mock.MockCursor	method	public boolean isBeforeFirst()
+android.test.mock.MockCursor	method	public boolean isClosed()
+android.test.mock.MockCursor	method	public boolean isFirst()
+android.test.mock.MockCursor	method	public boolean isLast()
+android.test.mock.MockCursor	method	public boolean isNull(int i)
+android.test.mock.MockCursor	method	public boolean move(int i)
+android.test.mock.MockCursor	method	public boolean moveToFirst()
+android.test.mock.MockCursor	method	public boolean moveToLast()
+android.test.mock.MockCursor	method	public boolean moveToNext()
+android.test.mock.MockCursor	method	public boolean moveToPosition(int i)
+android.test.mock.MockCursor	method	public boolean moveToPrevious()
+android.test.mock.MockCursor	method	public boolean requery()
+android.test.mock.MockCursor	method	public byte[] getBlob(int i)
+android.test.mock.MockCursor	method	public double getDouble(int i)
+android.test.mock.MockCursor	method	public float getFloat(int i)
+android.test.mock.MockCursor	method	public int getColumnCount()
+android.test.mock.MockCursor	method	public int getColumnIndex(String str)
+android.test.mock.MockCursor	method	public int getColumnIndexOrThrow(String str)
+android.test.mock.MockCursor	method	public int getCount()
+android.test.mock.MockCursor	method	public int getInt(int i)
+android.test.mock.MockCursor	method	public int getPosition()
+android.test.mock.MockCursor	method	public int getType(int i)
+android.test.mock.MockCursor	method	public long getLong(int i)
+android.test.mock.MockCursor	method	public short getShort(int i)
+android.test.mock.MockCursor	method	public void close()
+android.test.mock.MockCursor	method	public void copyStringToBuffer(int i, CharArrayBuffer charArrayBuffer)
+android.test.mock.MockCursor	method	public void deactivate()
+android.test.mock.MockCursor	method	public void registerContentObserver(ContentObserver contentObserver)
+android.test.mock.MockCursor	method	public void registerDataSetObserver(DataSetObserver dataSetObserver)
+android.test.mock.MockCursor	method	public void setExtras(Bundle bundle)
+android.test.mock.MockCursor	method	public void setNotificationUri(ContentResolver contentResolver, Uri uri)
+android.test.mock.MockCursor	method	public void setNotificationUris(ContentResolver contentResolver, List<Uri> list)
+android.test.mock.MockCursor	method	public void unregisterContentObserver(ContentObserver contentObserver)
+android.test.mock.MockCursor	method	public void unregisterDataSetObserver(DataSetObserver dataSetObserver)
+android.test.mock.MockDialogInterface	method	public void cancel()
+android.test.mock.MockDialogInterface	method	public void dismiss()
+android.test.mock.MockIContentProvider	method	public AssetFileDescriptor openAssetFile(String str, String str2, Uri uri, String str3, ICancellationSignal iCancellationSignal)
+android.test.mock.MockIContentProvider	method	public AssetFileDescriptor openTypedAssetFile(String str, String str2, Uri uri, String str3, Bundle bundle, ICancellationSignal iCancellationSignal) throws RemoteException, FileNotFoundException
+android.test.mock.MockIContentProvider	method	public Bundle call(String str, String str2, String str3, String str4, String str5, Bundle bundle) throws RemoteException
+android.test.mock.MockIContentProvider	method	public ContentProviderResult[] applyBatch(String str, String str2, String str3, ArrayList<ContentProviderOperation> arrayList)
+android.test.mock.MockIContentProvider	method	public Cursor query(String str, String str2, Uri uri, String[] strArr, Bundle bundle, ICancellationSignal iCancellationSignal)
+android.test.mock.MockIContentProvider	method	public EntityIterator queryEntities(Uri uri, String str, String[] strArr, String str2)
+android.test.mock.MockIContentProvider	method	public IBinder asBinder()
+android.test.mock.MockIContentProvider	method	public ICancellationSignal createCancellationSignal() throws RemoteException
+android.test.mock.MockIContentProvider	method	public ParcelFileDescriptor openFile(String str, String str2, Uri uri, String str3, ICancellationSignal iCancellationSignal, IBinder iBinder)
+android.test.mock.MockIContentProvider	method	public String getType(Uri uri)
+android.test.mock.MockIContentProvider	method	public String[] getStreamTypes(Uri uri, String str) throws RemoteException
+android.test.mock.MockIContentProvider	method	public Uri canonicalize(String str, String str2, Uri uri)
+android.test.mock.MockIContentProvider	method	public Uri insert(String str, String str2, Uri uri, ContentValues contentValues, Bundle bundle) throws RemoteException
+android.test.mock.MockIContentProvider	method	public Uri uncanonicalize(String str, String str2, Uri uri) throws RemoteException
+android.test.mock.MockIContentProvider	method	public boolean refresh(String str, String str2, Uri uri, Bundle bundle, ICancellationSignal iCancellationSignal) throws RemoteException
+android.test.mock.MockIContentProvider	method	public int bulkInsert(String str, String str2, Uri uri, ContentValues[] contentValuesArr)
+android.test.mock.MockIContentProvider	method	public int checkUriPermission(String str, String str2, Uri uri, int i, int i2)
+android.test.mock.MockIContentProvider	method	public int delete(String str, String str2, Uri uri, Bundle bundle) throws RemoteException
+android.test.mock.MockIContentProvider	method	public int update(String str, String str2, Uri uri, ContentValues contentValues, Bundle bundle) throws RemoteException
+android.test.mock.MockIContentProvider	method	public void canonicalizeAsync(final String str, final String str2, final Uri uri, final RemoteCallback remoteCallback)
+android.test.mock.MockIContentProvider	method	public void getTypeAsync(final Uri uri, final RemoteCallback remoteCallback)
+android.test.mock.MockPackageManager	method	public ActivityInfo getActivityInfo(ComponentName componentName, int i) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public ActivityInfo getReceiverInfo(ComponentName componentName, int i) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public ApplicationInfo getApplicationInfo(String str, int i) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public ApplicationInfo getApplicationInfoAsUser(String str, int i, int i2) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public ArtManager getArtManager()
+android.test.mock.MockPackageManager	method	public ChangedPackages getChangedPackages(int i)
+android.test.mock.MockPackageManager	method	public CharSequence getApplicationLabel(ApplicationInfo applicationInfo)
+android.test.mock.MockPackageManager	method	public CharSequence getHarmfulAppWarning(String str)
+android.test.mock.MockPackageManager	method	public CharSequence getText(String str, int i, ApplicationInfo applicationInfo)
+android.test.mock.MockPackageManager	method	public CharSequence getUserBadgedLabel(CharSequence charSequence, UserHandle userHandle)
+android.test.mock.MockPackageManager	method	public ComponentName getHomeActivities(List<ResolveInfo> list)
+android.test.mock.MockPackageManager	method	public ComponentName getInstantAppInstallerComponent()
+android.test.mock.MockPackageManager	method	public ComponentName getInstantAppResolverSettingsComponent()
+android.test.mock.MockPackageManager	method	public Drawable getActivityBanner(ComponentName componentName) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public Drawable getActivityBanner(Intent intent) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public Drawable getActivityIcon(ComponentName componentName) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public Drawable getActivityIcon(Intent intent) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public Drawable getActivityLogo(ComponentName componentName) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public Drawable getActivityLogo(Intent intent) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public Drawable getApplicationBanner(ApplicationInfo applicationInfo)
+android.test.mock.MockPackageManager	method	public Drawable getApplicationBanner(String str) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public Drawable getApplicationIcon(ApplicationInfo applicationInfo)
+android.test.mock.MockPackageManager	method	public Drawable getApplicationIcon(String str) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public Drawable getApplicationLogo(ApplicationInfo applicationInfo)
+android.test.mock.MockPackageManager	method	public Drawable getApplicationLogo(String str) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public Drawable getDefaultActivityIcon()
+android.test.mock.MockPackageManager	method	public Drawable getDrawable(String str, int i, ApplicationInfo applicationInfo)
+android.test.mock.MockPackageManager	method	public Drawable getInstantAppIcon(String str)
+android.test.mock.MockPackageManager	method	public Drawable getUserBadgeForDensity(UserHandle userHandle, int i)
+android.test.mock.MockPackageManager	method	public Drawable getUserBadgeForDensityNoBackground(UserHandle userHandle, int i)
+android.test.mock.MockPackageManager	method	public Drawable getUserBadgedDrawableForDensity(Drawable drawable, UserHandle userHandle, Rect rect, int i)
+android.test.mock.MockPackageManager	method	public Drawable getUserBadgedIcon(Drawable drawable, UserHandle userHandle)
+android.test.mock.MockPackageManager	method	public Drawable loadItemIcon(PackageItemInfo packageItemInfo, ApplicationInfo applicationInfo)
+android.test.mock.MockPackageManager	method	public Drawable loadUnbadgedItemIcon(PackageItemInfo packageItemInfo, ApplicationInfo applicationInfo)
+android.test.mock.MockPackageManager	method	public FeatureInfo[] getSystemAvailableFeatures()
+android.test.mock.MockPackageManager	method	public InstrumentationInfo getInstrumentationInfo(ComponentName componentName, int i) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public Intent getCarLaunchIntentForPackage(String str)
+android.test.mock.MockPackageManager	method	public Intent getLaunchIntentForPackage(String str)
+android.test.mock.MockPackageManager	method	public Intent getLeanbackLaunchIntentForPackage(String str)
+android.test.mock.MockPackageManager	method	public KeySet getKeySetByAlias(String str, String str2)
+android.test.mock.MockPackageManager	method	public KeySet getSigningKeySet(String str)
+android.test.mock.MockPackageManager	method	public List<ApplicationInfo> getInstalledApplications(int i)
+android.test.mock.MockPackageManager	method	public List<ApplicationInfo> getInstalledApplicationsAsUser(int i, int i2)
+android.test.mock.MockPackageManager	method	public List<InstantAppInfo> getInstantApps()
+android.test.mock.MockPackageManager	method	public List<InstrumentationInfo> queryInstrumentation(String str, int i)
+android.test.mock.MockPackageManager	method	public List<IntentFilter> getAllIntentFilters(String str)
+android.test.mock.MockPackageManager	method	public List<IntentFilterVerificationInfo> getIntentFilterVerifications(String str)
+android.test.mock.MockPackageManager	method	public List<PackageInfo> getInstalledPackages(int i)
+android.test.mock.MockPackageManager	method	public List<PackageInfo> getInstalledPackagesAsUser(int i, int i2)
+android.test.mock.MockPackageManager	method	public List<PackageInfo> getPackagesHoldingPermissions(String[] strArr, int i)
+android.test.mock.MockPackageManager	method	public List<PackageInfo> getPreferredPackages(int i)
+android.test.mock.MockPackageManager	method	public List<PermissionGroupInfo> getAllPermissionGroups(int i)
+android.test.mock.MockPackageManager	method	public List<PermissionInfo> queryPermissionsByGroup(String str, int i) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public List<ProviderInfo> queryContentProviders(String str, int i, int i2)
+android.test.mock.MockPackageManager	method	public List<ResolveInfo> queryBroadcastReceivers(Intent intent, int i)
+android.test.mock.MockPackageManager	method	public List<ResolveInfo> queryBroadcastReceiversAsUser(Intent intent, int i, int i2)
+android.test.mock.MockPackageManager	method	public List<ResolveInfo> queryIntentActivities(Intent intent, int i)
+android.test.mock.MockPackageManager	method	public List<ResolveInfo> queryIntentActivitiesAsUser(Intent intent, int i, int i2)
+android.test.mock.MockPackageManager	method	public List<ResolveInfo> queryIntentActivityOptions(ComponentName componentName, Intent[] intentArr, Intent intent, int i)
+android.test.mock.MockPackageManager	method	public List<ResolveInfo> queryIntentContentProviders(Intent intent, int i)
+android.test.mock.MockPackageManager	method	public List<ResolveInfo> queryIntentContentProvidersAsUser(Intent intent, int i, int i2)
+android.test.mock.MockPackageManager	method	public List<ResolveInfo> queryIntentServices(Intent intent, int i)
+android.test.mock.MockPackageManager	method	public List<ResolveInfo> queryIntentServicesAsUser(Intent intent, int i, int i2)
+android.test.mock.MockPackageManager	method	public List<SharedLibraryInfo> getSharedLibraries(int i)
+android.test.mock.MockPackageManager	method	public List<SharedLibraryInfo> getSharedLibrariesAsUser(int i, int i2)
+android.test.mock.MockPackageManager	method	public List<VolumeInfo> getPackageCandidateVolumes(ApplicationInfo applicationInfo)
+android.test.mock.MockPackageManager	method	public List<VolumeInfo> getPrimaryStorageCandidateVolumes()
+android.test.mock.MockPackageManager	method	public PackageInfo getPackageArchiveInfo(String str, int i)
+android.test.mock.MockPackageManager	method	public PackageInfo getPackageInfo(String str, int i) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public PackageInfo getPackageInfo(VersionedPackage versionedPackage, int i) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public PackageInfo getPackageInfoAsUser(String str, int i, int i2) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public PackageInstaller getPackageInstaller()
+android.test.mock.MockPackageManager	method	public PermissionGroupInfo getPermissionGroupInfo(String str, int i) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public PermissionInfo getPermissionInfo(String str, int i) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public ProviderInfo getProviderInfo(ComponentName componentName, int i) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public ProviderInfo resolveContentProvider(String str, int i)
+android.test.mock.MockPackageManager	method	public ProviderInfo resolveContentProviderAsUser(String str, int i, int i2)
+android.test.mock.MockPackageManager	method	public ResolveInfo resolveActivity(Intent intent, int i)
+android.test.mock.MockPackageManager	method	public ResolveInfo resolveActivityAsUser(Intent intent, int i, int i2)
+android.test.mock.MockPackageManager	method	public ResolveInfo resolveService(Intent intent, int i)
+android.test.mock.MockPackageManager	method	public ResolveInfo resolveServiceAsUser(Intent intent, int i, int i2)
+android.test.mock.MockPackageManager	method	public Resources getResourcesForActivity(ComponentName componentName) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public Resources getResourcesForApplication(ApplicationInfo applicationInfo)
+android.test.mock.MockPackageManager	method	public Resources getResourcesForApplication(String str) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public Resources getResourcesForApplicationAsUser(String str, int i)
+android.test.mock.MockPackageManager	method	public ServiceInfo getServiceInfo(ComponentName componentName, int i) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public Set<String> getWhitelistedRestrictedPermissions(String str, int i)
+android.test.mock.MockPackageManager	method	public String getDefaultBrowserPackageName(int i)
+android.test.mock.MockPackageManager	method	public String getDefaultBrowserPackageNameAsUser(int i)
+android.test.mock.MockPackageManager	method	public String getInstallerPackageName(String str)
+android.test.mock.MockPackageManager	method	public String getInstantAppAndroidId(String str, UserHandle userHandle)
+android.test.mock.MockPackageManager	method	public String getNameForUid(int i)
+android.test.mock.MockPackageManager	method	public String getPermissionControllerPackageName()
+android.test.mock.MockPackageManager	method	public String getServicesSystemSharedLibraryPackageName()
+android.test.mock.MockPackageManager	method	public String getSharedSystemSharedLibraryPackageName()
+android.test.mock.MockPackageManager	method	public String[] canonicalToCurrentPackageNames(String[] strArr)
+android.test.mock.MockPackageManager	method	public String[] currentToCanonicalPackageNames(String[] strArr)
+android.test.mock.MockPackageManager	method	public String[] getNamesForUids(int[] iArr)
+android.test.mock.MockPackageManager	method	public String[] getPackagesForUid(int i)
+android.test.mock.MockPackageManager	method	public String[] getSystemSharedLibraryNames()
+android.test.mock.MockPackageManager	method	public String[] setPackagesSuspended(String[] strArr, boolean z, PersistableBundle persistableBundle, PersistableBundle persistableBundle2, String str)
+android.test.mock.MockPackageManager	method	public VerifierDeviceIdentity getVerifierDeviceIdentity()
+android.test.mock.MockPackageManager	method	public VolumeInfo getPackageCurrentVolume(ApplicationInfo applicationInfo)
+android.test.mock.MockPackageManager	method	public VolumeInfo getPrimaryStorageCurrentVolume()
+android.test.mock.MockPackageManager	method	public XmlResourceParser getXml(String str, int i, ApplicationInfo applicationInfo)
+android.test.mock.MockPackageManager	method	public boolean addPermission(PermissionInfo permissionInfo)
+android.test.mock.MockPackageManager	method	public boolean addPermissionAsync(PermissionInfo permissionInfo)
+android.test.mock.MockPackageManager	method	public boolean addWhitelistedRestrictedPermission(String str, String str2, int i)
+android.test.mock.MockPackageManager	method	public boolean arePermissionsIndividuallyControlled()
+android.test.mock.MockPackageManager	method	public boolean canRequestPackageInstalls()
+android.test.mock.MockPackageManager	method	public boolean getApplicationHiddenSettingAsUser(String str, UserHandle userHandle)
+android.test.mock.MockPackageManager	method	public boolean hasSigningCertificate(String str, byte[] bArr, int i)
+android.test.mock.MockPackageManager	method	public boolean hasSigningCertificate(int i, byte[] bArr, int i2)
+android.test.mock.MockPackageManager	method	public boolean hasSystemFeature(String str)
+android.test.mock.MockPackageManager	method	public boolean hasSystemFeature(String str, int i)
+android.test.mock.MockPackageManager	method	public boolean isDeviceUpgrading()
+android.test.mock.MockPackageManager	method	public boolean isInstantApp()
+android.test.mock.MockPackageManager	method	public boolean isInstantApp(String str)
+android.test.mock.MockPackageManager	method	public boolean isPackageAvailable(String str)
+android.test.mock.MockPackageManager	method	public boolean isPackageSuspendedForUser(String str, int i)
+android.test.mock.MockPackageManager	method	public boolean isPermissionRevokedByPolicy(String str, String str2)
+android.test.mock.MockPackageManager	method	public boolean isSafeMode()
+android.test.mock.MockPackageManager	method	public boolean isSignedBy(String str, KeySet keySet)
+android.test.mock.MockPackageManager	method	public boolean isSignedByExactly(String str, KeySet keySet)
+android.test.mock.MockPackageManager	method	public boolean isUpgrade()
+android.test.mock.MockPackageManager	method	public boolean isWirelessConsentModeEnabled()
+android.test.mock.MockPackageManager	method	public boolean removeWhitelistedRestrictedPermission(String str, String str2, int i)
+android.test.mock.MockPackageManager	method	public boolean setApplicationHiddenSettingAsUser(String str, boolean z, UserHandle userHandle)
+android.test.mock.MockPackageManager	method	public boolean setDefaultBrowserPackageName(String str, int i)
+android.test.mock.MockPackageManager	method	public boolean setDefaultBrowserPackageNameAsUser(String str, int i)
+android.test.mock.MockPackageManager	method	public boolean setInstantAppCookie(byte[] bArr)
+android.test.mock.MockPackageManager	method	public boolean shouldShowRequestPermissionRationale(String str)
+android.test.mock.MockPackageManager	method	public boolean updateIntentVerificationStatusAsUser(String str, int i, int i2)
+android.test.mock.MockPackageManager	method	public byte[] getInstantAppCookie()
+android.test.mock.MockPackageManager	method	public int checkPermission(String str, String str2)
+android.test.mock.MockPackageManager	method	public int checkSignatures(String str, String str2)
+android.test.mock.MockPackageManager	method	public int checkSignatures(int i, int i2)
+android.test.mock.MockPackageManager	method	public int getApplicationEnabledSetting(String str)
+android.test.mock.MockPackageManager	method	public int getComponentEnabledSetting(ComponentName componentName)
+android.test.mock.MockPackageManager	method	public int getInstallReason(String str, UserHandle userHandle)
+android.test.mock.MockPackageManager	method	public int getInstantAppCookieMaxBytes()
+android.test.mock.MockPackageManager	method	public int getInstantAppCookieMaxSize()
+android.test.mock.MockPackageManager	method	public int getIntentVerificationStatusAsUser(String str, int i)
+android.test.mock.MockPackageManager	method	public int getMoveStatus(int i)
+android.test.mock.MockPackageManager	method	public int getPackageUid(String str, int i) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public int getPackageUidAsUser(String str, int i) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public int getPackageUidAsUser(String str, int i, int i2) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public int getPermissionFlags(String str, String str2, UserHandle userHandle)
+android.test.mock.MockPackageManager	method	public int getPreferredActivities(List<IntentFilter> list, List<ComponentName> list2, String str)
+android.test.mock.MockPackageManager	method	public int getUidForSharedUser(String str)
+android.test.mock.MockPackageManager	method	public int installExistingPackage(String str) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public int installExistingPackage(String str, int i) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public int installExistingPackageAsUser(String str, int i) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public int movePackage(String str, VolumeInfo volumeInfo)
+android.test.mock.MockPackageManager	method	public int movePrimaryStorage(VolumeInfo volumeInfo)
+android.test.mock.MockPackageManager	method	public int[] getPackageGids(String str) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public int[] getPackageGids(String str, int i) throws PackageManager.NameNotFoundException
+android.test.mock.MockPackageManager	method	public void addCrossProfileIntentFilter(IntentFilter intentFilter, int i, int i2, int i3)
+android.test.mock.MockPackageManager	method	public void addOnPermissionsChangeListener(PackageManager.OnPermissionsChangedListener onPermissionsChangedListener)
+android.test.mock.MockPackageManager	method	public void addPackageToPreferred(String str)
+android.test.mock.MockPackageManager	method	public void addPreferredActivity(IntentFilter intentFilter, int i, ComponentName[] componentNameArr, ComponentName componentName)
+android.test.mock.MockPackageManager	method	public void clearApplicationUserData(String str, IPackageDataObserver iPackageDataObserver)
+android.test.mock.MockPackageManager	method	public void clearCrossProfileIntentFilters(int i)
+android.test.mock.MockPackageManager	method	public void clearInstantAppCookie()
+android.test.mock.MockPackageManager	method	public void clearPackagePreferredActivities(String str)
+android.test.mock.MockPackageManager	method	public void deleteApplicationCacheFiles(String str, IPackageDataObserver iPackageDataObserver)
+android.test.mock.MockPackageManager	method	public void deleteApplicationCacheFilesAsUser(String str, int i, IPackageDataObserver iPackageDataObserver)
+android.test.mock.MockPackageManager	method	public void deletePackage(String str, IPackageDeleteObserver iPackageDeleteObserver, int i)
+android.test.mock.MockPackageManager	method	public void deletePackageAsUser(String str, IPackageDeleteObserver iPackageDeleteObserver, int i, int i2)
+android.test.mock.MockPackageManager	method	public void extendVerificationTimeout(int i, int i2, long j)
+android.test.mock.MockPackageManager	method	public void flushPackageRestrictionsAsUser(int i)
+android.test.mock.MockPackageManager	method	public void freeStorage(String str, long j, IntentSender intentSender)
+android.test.mock.MockPackageManager	method	public void freeStorageAndNotify(String str, long j, IPackageDataObserver iPackageDataObserver)
+android.test.mock.MockPackageManager	method	public void getPackageSizeInfoAsUser(String str, int i, IPackageStatsObserver iPackageStatsObserver)
+android.test.mock.MockPackageManager	method	public void grantRuntimePermission(String str, String str2, UserHandle userHandle)
+android.test.mock.MockPackageManager	method	public void registerDexModule(String str, PackageManager.DexModuleRegisterCallback dexModuleRegisterCallback)
+android.test.mock.MockPackageManager	method	public void registerMoveCallback(PackageManager.MoveCallback moveCallback, Handler handler)
+android.test.mock.MockPackageManager	method	public void removeOnPermissionsChangeListener(PackageManager.OnPermissionsChangedListener onPermissionsChangedListener)
+android.test.mock.MockPackageManager	method	public void removePackageFromPreferred(String str)
+android.test.mock.MockPackageManager	method	public void removePermission(String str)
+android.test.mock.MockPackageManager	method	public void replacePreferredActivity(IntentFilter intentFilter, int i, ComponentName[] componentNameArr, ComponentName componentName)
+android.test.mock.MockPackageManager	method	public void revokeRuntimePermission(String str, String str2, UserHandle userHandle)
+android.test.mock.MockPackageManager	method	public void setApplicationCategoryHint(String str, int i)
+android.test.mock.MockPackageManager	method	public void setApplicationEnabledSetting(String str, int i, int i2)
+android.test.mock.MockPackageManager	method	public void setComponentEnabledSetting(ComponentName componentName, int i, int i2)
+android.test.mock.MockPackageManager	method	public void setHarmfulAppWarning(String str, CharSequence charSequence)
+android.test.mock.MockPackageManager	method	public void setInstallerPackageName(String str, String str2)
+android.test.mock.MockPackageManager	method	public void setUpdateAvailable(String str, boolean z)
+android.test.mock.MockPackageManager	method	public void unregisterMoveCallback(PackageManager.MoveCallback moveCallback)
+android.test.mock.MockPackageManager	method	public void updateInstantAppCookie(byte[] bArr)
+android.test.mock.MockPackageManager	method	public void updatePermissionFlags(String str, String str2, int i, int i2, UserHandle userHandle)
+android.test.mock.MockPackageManager	method	public void verifyIntentFilter(int i, int i2, List<String> list)
+android.test.mock.MockPackageManager	method	public void verifyPendingInstall(int i, int i2)
+android.test.mock.MockResources	method	public AssetFileDescriptor openRawResourceFd(int i) throws Resources.NotFoundException
+android.test.mock.MockResources	method	public CharSequence getQuantityText(int i, int i2) throws Resources.NotFoundException
+android.test.mock.MockResources	method	public CharSequence getText(int i) throws Resources.NotFoundException
+android.test.mock.MockResources	method	public CharSequence getText(int i, CharSequence charSequence)
+android.test.mock.MockResources	method	public CharSequence[] getTextArray(int i) throws Resources.NotFoundException
+android.test.mock.MockResources	method	public ColorStateList getColorStateList(int i) throws Resources.NotFoundException
+android.test.mock.MockResources	method	public Configuration getConfiguration()
+android.test.mock.MockResources	method	public DisplayMetrics getDisplayMetrics()
+android.test.mock.MockResources	method	public Drawable getDrawable(int i) throws Resources.NotFoundException
+android.test.mock.MockResources	method	public InputStream openRawResource(int i) throws Resources.NotFoundException
+android.test.mock.MockResources	method	public MockResources()
+android.test.mock.MockResources	method	public Movie getMovie(int i) throws Resources.NotFoundException
+android.test.mock.MockResources	method	public String getQuantityString(int i, int i2) throws Resources.NotFoundException
+android.test.mock.MockResources	method	public String getQuantityString(int i, int i2, Object... objArr) throws Resources.NotFoundException
+android.test.mock.MockResources	method	public String getResourceEntryName(int i) throws Resources.NotFoundException
+android.test.mock.MockResources	method	public String getResourceName(int i) throws Resources.NotFoundException
+android.test.mock.MockResources	method	public String getResourcePackageName(int i) throws Resources.NotFoundException
+android.test.mock.MockResources	method	public String getResourceTypeName(int i) throws Resources.NotFoundException
+android.test.mock.MockResources	method	public String getString(int i) throws Resources.NotFoundException
+android.test.mock.MockResources	method	public String getString(int i, Object... objArr) throws Resources.NotFoundException
+android.test.mock.MockResources	method	public String[] getStringArray(int i) throws Resources.NotFoundException
+android.test.mock.MockResources	method	public TypedArray obtainAttributes(AttributeSet attributeSet, int[] iArr)
+android.test.mock.MockResources	method	public TypedArray obtainTypedArray(int i) throws Resources.NotFoundException
+android.test.mock.MockResources	method	public XmlResourceParser getAnimation(int i) throws Resources.NotFoundException
+android.test.mock.MockResources	method	public XmlResourceParser getLayout(int i) throws Resources.NotFoundException
+android.test.mock.MockResources	method	public XmlResourceParser getXml(int i) throws Resources.NotFoundException
+android.test.mock.MockResources	method	public float getDimension(int i) throws Resources.NotFoundException
+android.test.mock.MockResources	method	public int getColor(int i) throws Resources.NotFoundException
+android.test.mock.MockResources	method	public int getDimensionPixelOffset(int i) throws Resources.NotFoundException
+android.test.mock.MockResources	method	public int getDimensionPixelSize(int i) throws Resources.NotFoundException
+android.test.mock.MockResources	method	public int getIdentifier(String str, String str2, String str3)
+android.test.mock.MockResources	method	public int getInteger(int i) throws Resources.NotFoundException
+android.test.mock.MockResources	method	public int[] getIntArray(int i) throws Resources.NotFoundException
+android.test.mock.MockResources	method	public void getValue(String str, TypedValue typedValue, boolean z) throws Resources.NotFoundException
+android.test.mock.MockResources	method	public void getValue(int i, TypedValue typedValue, boolean z) throws Resources.NotFoundException
+android.test.mock.MockResources	method	public void updateConfiguration(Configuration configuration, DisplayMetrics displayMetrics)
+android.test.mock.MockService	method	private MockService()
+android.test.mock.MockService	method	public static <T extends Service> void attachForTesting(Service service, Context context, String str, Application application)
+android.view.DisplayAdjustments	field	private FixedRotationAdjustments mFixedRotationAdjustments;
+android.view.DisplayAdjustments	field	private final Configuration mConfiguration;
+android.view.DisplayAdjustments	field	private volatile CompatibilityInfo mCompatInfo;
+android.view.DisplayAdjustments	field	public static final DisplayAdjustments DEFAULT_DISPLAY_ADJUSTMENTS;
+android.view.DisplayAdjustments	method	private boolean noFlip(int i)
+android.view.DisplayAdjustments	method	public CompatibilityInfo getCompatibilityInfo()
+android.view.DisplayAdjustments	method	public Configuration getConfiguration()
+android.view.DisplayAdjustments	method	public DisplayAdjustments()
+android.view.DisplayAdjustments	method	public DisplayAdjustments(Configuration configuration)
+android.view.DisplayAdjustments	method	public DisplayAdjustments(DisplayAdjustments displayAdjustments)
+android.view.DisplayAdjustments	method	public DisplayCutout getDisplayCutout(DisplayCutout displayCutout)
+android.view.DisplayAdjustments	method	public FixedRotationAdjustments getFixedRotationAdjustments()
+android.view.DisplayAdjustments	method	public boolean equals(Object obj)
+android.view.DisplayAdjustments	method	public int getRotation(int i)
+android.view.DisplayAdjustments	method	public int hashCode()
+android.view.DisplayAdjustments	method	public void adjustMetrics(DisplayMetrics displayMetrics, int i)
+android.view.DisplayAdjustments	method	public void adjustSize(Point point, int i)
+android.view.DisplayAdjustments	method	public void setCompatibilityInfo(CompatibilityInfo compatibilityInfo)
+android.view.DisplayAdjustments	method	public void setConfiguration(Configuration configuration)
+android.view.DisplayAdjustments	method	public void setFixedRotationAdjustments(FixedRotationAdjustments fixedRotationAdjustments)
+android.view.DisplayAdjustments$FixedRotationAdjustments	field	final DisplayCutout mRotatedDisplayCutout;
+android.view.DisplayAdjustments$FixedRotationAdjustments	field	final int mRotation;
+android.view.DisplayAdjustments$FixedRotationAdjustments	method	private FixedRotationAdjustments(Parcel parcel)
+android.view.DisplayAdjustments$FixedRotationAdjustments	method	public FixedRotationAdjustments(int i, DisplayCutout displayCutout)
+android.view.DisplayAdjustments$FixedRotationAdjustments	method	public String toString()
+android.view.DisplayAdjustments$FixedRotationAdjustments	method	public boolean equals(Object obj)
+android.view.DisplayAdjustments$FixedRotationAdjustments	method	public int describeContents()
+android.view.DisplayAdjustments$FixedRotationAdjustments	method	public int hashCode()
+android.view.DisplayAdjustments$FixedRotationAdjustments	method	public void writeToParcel(Parcel parcel, int i)
+android.view.LayerMetadataKey	field	public static final int METADATA_MOUSE_CURSOR;
+android.view.LayerMetadataKey	field	public static final int METADATA_OWNER_UID;
+android.view.LayerMetadataKey	field	public static final int METADATA_TASK_ID;
+android.view.LayerMetadataKey	field	public static final int METADATA_WINDOW_TYPE;

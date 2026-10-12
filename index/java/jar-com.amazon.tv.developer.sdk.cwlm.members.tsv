@@ -1,0 +1,460 @@
+class	kind	declaration
+com.amazon.tv.developer.com.amazon.neo.service.api.BinderInternal	method	public IBinder getGlobalContextObject()
+com.amazon.tv.developer.com.amazon.neo.service.api.BinderUtils	field	private BinderInternal binderInternal;
+com.amazon.tv.developer.com.amazon.neo.service.api.BinderUtils	field	protected static final int FOS8_BINDER_SYSTEM_HEADER;
+com.amazon.tv.developer.com.amazon.neo.service.api.BinderUtils	method	private static int bPackChars(char c1, char c2, char c3, char c4)
+com.amazon.tv.developer.com.amazon.neo.service.api.BinderUtils	method	protected IBinder getServiceBinder(String serviceName)
+com.amazon.tv.developer.com.amazon.neo.service.api.BinderUtils	method	protected void getServiceByHandle(final String serviceName, final ServiceCallback serviceCallback, IBinder nscBinder)
+com.amazon.tv.developer.com.amazon.neo.service.api.BinderUtils	method	public BinderUtils()
+com.amazon.tv.developer.com.amazon.neo.service.api.BinderUtils	method	public BinderUtils(BinderInternal binderInternal)
+com.amazon.tv.developer.com.amazon.neo.service.api.BinderUtils	method	public IBinder getPublicServiceCoordinator()
+com.amazon.tv.developer.com.amazon.neo.service.api.BinderUtils	method	public void getPublicService(String serviceName, ServiceCallback serviceCallback)
+com.amazon.tv.developer.com.amazon.neo.service.api.BinderUtils$Builder	field	private BinderInternal binderInternal;
+com.amazon.tv.developer.com.amazon.neo.service.api.BinderUtils$Builder	method	public BinderUtils build()
+com.amazon.tv.developer.com.amazon.neo.service.api.BinderUtils$Builder	method	public Builder withBinderInternal(BinderInternal binderInternal)
+com.amazon.tv.developer.com.amazon.neo.service.api.ServiceCallback	field	protected ArrayList<IBinder> mPendingRequests;
+com.amazon.tv.developer.com.amazon.neo.service.api.ServiceCallback	field	protected IBinder mToken;
+com.amazon.tv.developer.com.amazon.neo.service.api.ServiceCallback	method	public abstract void onServiceConnected(String str, IBinder iBinder);
+com.amazon.tv.developer.com.amazon.neo.service.api.ServiceCallback	method	public abstract void onServiceFailed(String str, String str2);
+com.amazon.tv.developer.com.amazon.p11.spy.logging.AndroidLogger	method	private String getMessage(String tag, String message)
+com.amazon.tv.developer.com.amazon.p11.spy.logging.AndroidLogger	method	public void d(String rootTag, String componentTag, String message)
+com.amazon.tv.developer.com.amazon.p11.spy.logging.AndroidLogger	method	public void d(String rootTag, String componentTag, String message, Object... args)
+com.amazon.tv.developer.com.amazon.p11.spy.logging.AndroidLogger	method	public void e(String rootTag, String componentTag, String message)
+com.amazon.tv.developer.com.amazon.p11.spy.logging.AndroidLogger	method	public void e(String rootTag, String componentTag, String message, Object... args)
+com.amazon.tv.developer.com.amazon.p11.spy.logging.AndroidLogger	method	public void i(String rootTag, String componentTag, String message)
+com.amazon.tv.developer.com.amazon.p11.spy.logging.AndroidLoggerFactory	method	public Logger create()
+com.amazon.tv.developer.com.amazon.p11.spy.logging.Logg	field	private static LoggerFactory loggerFactory;
+com.amazon.tv.developer.com.amazon.p11.spy.logging.Logg	field	private static String rootTag;
+com.amazon.tv.developer.com.amazon.p11.spy.logging.Logg	method	private static Logger getLogger()
+com.amazon.tv.developer.com.amazon.p11.spy.logging.Logg	method	public static void d(String tag, String message)
+com.amazon.tv.developer.com.amazon.p11.spy.logging.Logg	method	public static void d(String tag, String message, Object... args)
+com.amazon.tv.developer.com.amazon.p11.spy.logging.Logg	method	public static void e(String tag, String message)
+com.amazon.tv.developer.com.amazon.p11.spy.logging.Logg	method	public static void e(String tag, String message, Object... args)
+com.amazon.tv.developer.com.amazon.p11.spy.logging.Logg	method	public static void i(String tag, String message)
+com.amazon.tv.developer.com.amazon.p11.spy.logging.Logg	method	public static void setRootTag(String tag)
+com.amazon.tv.developer.com.amazon.p11.spy.logging.Logg$Initializer	field	private static final Logger INSTANCE;
+com.amazon.tv.developer.com.amazon.p11.spy.nuts.and.bolts.BoundedQueue	field	private final ArrayBlockingQueue<T> delegate;
+com.amazon.tv.developer.com.amazon.p11.spy.nuts.and.bolts.BoundedQueue	field	private final String name;
+com.amazon.tv.developer.com.amazon.p11.spy.nuts.and.bolts.BoundedQueue	field	private final int capacity;
+com.amazon.tv.developer.com.amazon.p11.spy.nuts.and.bolts.BoundedQueue	method	public BoundedQueue(String name, int capacity)
+com.amazon.tv.developer.com.amazon.p11.spy.nuts.and.bolts.BoundedQueue	method	public BoundedQueue(int capacity)
+com.amazon.tv.developer.com.amazon.p11.spy.nuts.and.bolts.BoundedQueue	method	public String toString()
+com.amazon.tv.developer.com.amazon.p11.spy.nuts.and.bolts.BoundedQueue	method	public T poll()
+com.amazon.tv.developer.com.amazon.p11.spy.nuts.and.bolts.BoundedQueue	method	public boolean add(T element)
+com.amazon.tv.developer.com.amazon.p11.spy.nuts.and.bolts.BoundedQueue	method	public int size()
+com.amazon.tv.developer.com.amazon.p11.spy.nuts.and.bolts.Exceptions	method	public static List<Throwable> getCauses(Exception e)
+com.amazon.tv.developer.com.amazon.p11.spy.nuts.and.bolts.Pre	method	public static void isNotNull(Object thing, String message)
+com.amazon.tv.developer.com.amazon.p11.spy.nuts.and.bolts.Pre	method	public static void isTrue(boolean condition, String message)
+com.amazon.tv.developer.com.amazon.p11.spy.retries.ExponentialBackoffStrategy	field	private final Sleeper sleeper;
+com.amazon.tv.developer.com.amazon.p11.spy.retries.ExponentialBackoffStrategy	field	private final long initialDelayMilliseconds;
+com.amazon.tv.developer.com.amazon.p11.spy.retries.ExponentialBackoffStrategy	field	private final long maxDelayMilliseconds;
+com.amazon.tv.developer.com.amazon.p11.spy.retries.ExponentialBackoffStrategy	field	private final long maxRetries;
+com.amazon.tv.developer.com.amazon.p11.spy.retries.ExponentialBackoffStrategy	field	protected long attempts;
+com.amazon.tv.developer.com.amazon.p11.spy.retries.ExponentialBackoffStrategy	method	public ExponentialBackoffStrategy(long initialDelayMilliseconds, long maxDelayMilliseconds, long maxRetries)
+com.amazon.tv.developer.com.amazon.p11.spy.retries.ExponentialBackoffStrategy	method	public boolean expired()
+com.amazon.tv.developer.com.amazon.p11.spy.retries.ExponentialBackoffStrategy	method	public void backoff() throws InterruptedException
+com.amazon.tv.developer.com.amazon.p11.spy.retries.ExponentialBackoffStrategyFactory	field	private final long initialDelayMilliseconds;
+com.amazon.tv.developer.com.amazon.p11.spy.retries.ExponentialBackoffStrategyFactory	field	private final long maxDelayMilliseconds;
+com.amazon.tv.developer.com.amazon.p11.spy.retries.ExponentialBackoffStrategyFactory	field	private final long maxRetries;
+com.amazon.tv.developer.com.amazon.p11.spy.retries.ExponentialBackoffStrategyFactory	method	public BackoffStrategy create()
+com.amazon.tv.developer.com.amazon.p11.spy.retries.ExponentialBackoffStrategyFactory	method	public ExponentialBackoffStrategyFactory(long initialDelayMilliseconds, long maxDelayMilliseconds, long maxRetries)
+com.amazon.tv.developer.com.amazon.p11.spy.retries.MaxRetriesReachedException	method	public MaxRetriesReachedException()
+com.amazon.tv.developer.com.amazon.p11.spy.retries.MaxRetriesReachedException	method	public MaxRetriesReachedException(Throwable cause)
+com.amazon.tv.developer.com.amazon.p11.spy.retries.NonRetryableException	method	public NonRetryableException(Throwable cause)
+com.amazon.tv.developer.com.amazon.p11.spy.retries.Retry	field	private final BackoffStrategyFactory backoffStrategyFactory;
+com.amazon.tv.developer.com.amazon.p11.spy.retries.Retry	field	private final RetryExceptionStrategyFactory retryExceptionStrategyFactory;
+com.amazon.tv.developer.com.amazon.p11.spy.retries.Retry	field	private final RetryResultStrategyFactory retryResultStrategyFactory;
+com.amazon.tv.developer.com.amazon.p11.spy.retries.Retry	method	public <T> T retry(String scope, Callable<T> function, OnRetryDone onRetryDone)
+com.amazon.tv.developer.com.amazon.p11.spy.retries.Retry	method	public <T> T retry(String str, Callable<T> callable)
+com.amazon.tv.developer.com.amazon.p11.spy.retries.Retry	method	public Retry(RetryResultStrategyFactory retryResultStrategyFactory, RetryExceptionStrategyFactory retryExceptionStrategyFactory, BackoffStrategyFactory backoffStrategyFactory)
+com.amazon.tv.developer.com.amazon.p11.spy.retries.RetryExceptionStrategy	field	private Exception lastException;
+com.amazon.tv.developer.com.amazon.p11.spy.retries.RetryExceptionStrategy	field	private final Set<Class<? extends Throwable>> typesToRetry;
+com.amazon.tv.developer.com.amazon.p11.spy.retries.RetryExceptionStrategy	method	private boolean shouldRetryException(Exception exception)
+com.amazon.tv.developer.com.amazon.p11.spy.retries.RetryExceptionStrategy	method	public Exception getLastException()
+com.amazon.tv.developer.com.amazon.p11.spy.retries.RetryExceptionStrategy	method	public RetryExceptionStrategy(Set<Class<? extends Throwable>> typesToRetry)
+com.amazon.tv.developer.com.amazon.p11.spy.retries.RetryExceptionStrategy	method	public boolean shouldRetry(Exception exception)
+com.amazon.tv.developer.com.amazon.p11.spy.retries.RetryExceptionStrategy	method	public void setLastException(Exception exception)
+com.amazon.tv.developer.com.amazon.p11.spy.retries.RetryExceptionStrategyFactory	field	private final Set<Class<? extends Throwable>> typesToRetry;
+com.amazon.tv.developer.com.amazon.p11.spy.retries.RetryExceptionStrategyFactory	method	public RetryExceptionStrategy create()
+com.amazon.tv.developer.com.amazon.p11.spy.retries.RetryExceptionStrategyFactory	method	public RetryExceptionStrategyFactory(Set<Class<? extends Throwable>> typesToRetry)
+com.amazon.tv.developer.com.amazon.p11.spy.retries.Sleeper	method	public void sleep(long delay) throws InterruptedException
+com.amazon.tv.developer.sdk.common.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.tv.developer.sdk.common.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.tv.developer.sdk.common.BuildConfig	field	public static final String FLAVOR;
+com.amazon.tv.developer.sdk.common.BuildConfig	field	public static final String LIBRARY_PACKAGE_NAME;
+com.amazon.tv.developer.sdk.common.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.tv.developer.sdk.common.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.tv.developer.sdk.common.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.tv.developer.sdk.common.internal.UpdateType	field	private final String descriptor;
+com.amazon.tv.developer.sdk.common.internal.UpdateType	field	private final int value;
+com.amazon.tv.developer.sdk.common.internal.UpdateType	method	public String toString()
+com.amazon.tv.developer.sdk.common.internal.UpdateType	method	public int getValue()
+com.amazon.tv.developer.sdk.common.internal.UpdateType	method	public static UpdateType fromOverwriteListStatus(int status)
+com.amazon.tv.developer.sdk.common.internal.model.AmazonSetListStatus	field	public static final int COMPLETE;
+com.amazon.tv.developer.sdk.common.internal.model.AmazonSetListStatus	field	public static final int ITEMS_PENDING;
+com.amazon.tv.developer.sdk.common.internal.model.AmazonSetListStatus	method	private AmazonSetListStatus()
+com.amazon.tv.developer.sdk.common.internal.model.AmazonSetListStatus	method	public static String toString(int value)
+com.amazon.tv.developer.sdk.common.internal.utils.AndroidUtils	method	private AndroidUtils()
+com.amazon.tv.developer.sdk.common.internal.utils.AndroidUtils	method	public static boolean isOnMainThread()
+com.amazon.tv.developer.sdk.common.internal.utils.ConversionUtils	field	private static final int UNSET_INT_REPRESENTATION;
+com.amazon.tv.developer.sdk.common.internal.utils.ConversionUtils	field	private static final int UNSET_LONG_REPRESENTATION;
+com.amazon.tv.developer.sdk.common.internal.utils.ConversionUtils	method	private ConversionUtils()
+com.amazon.tv.developer.sdk.common.internal.utils.ConversionUtils	method	public static int unboxSafely(Integer value)
+com.amazon.tv.developer.sdk.common.internal.utils.ConversionUtils	method	public static long unboxSafely(Long value)
+com.amazon.tv.developer.sdk.common.internal.utils.LogUtils	field	private static final int MAX_LIST_LENGTH_FOR_LOGGING;
+com.amazon.tv.developer.sdk.common.internal.utils.LogUtils	field	public static final String SDK_TAG;
+com.amazon.tv.developer.sdk.common.internal.utils.LogUtils	method	private LogUtils()
+com.amazon.tv.developer.sdk.common.internal.utils.LogUtils	method	private static String dataToString(Object data)
+com.amazon.tv.developer.sdk.common.internal.utils.LogUtils	method	private static String extrasMapToString(Map<String, String> extras)
+com.amazon.tv.developer.sdk.common.internal.utils.LogUtils	method	public static String formatSdkInvocationMessage(String consumerPackage, String sdkMethodName)
+com.amazon.tv.developer.sdk.common.internal.utils.LogUtils	method	public static String formatSdkInvocationMessage(String consumerPackage, String sdkMethodName, Object data)
+com.amazon.tv.developer.sdk.common.internal.utils.LogUtils	method	public static String formatSdkInvocationMessage(String consumerPackage, String sdkMethodName, Object data, Map<String, String> extras)
+com.amazon.tv.developer.sdk.common.internal.utils.LogUtils	method	public static void configureLogging()
+com.amazon.tv.developer.sdk.cwlm.AmazonContinueWatchingReceiver	field	private final Context mContext;
+com.amazon.tv.developer.sdk.cwlm.AmazonContinueWatchingReceiver	field	private final MiddlewareMessenger mMiddlewareMessenger;
+com.amazon.tv.developer.sdk.cwlm.AmazonContinueWatchingReceiver	field	private static AmazonContinueWatchingReceiver instance;
+com.amazon.tv.developer.sdk.cwlm.AmazonContinueWatchingReceiver	field	private static final String TAG;
+com.amazon.tv.developer.sdk.cwlm.AmazonContinueWatchingReceiver	method	private AmazonContinueWatchingReceiver(Context context)
+com.amazon.tv.developer.sdk.cwlm.AmazonContinueWatchingReceiver	method	public List<Locale> getSupportedLanguages()
+com.amazon.tv.developer.sdk.cwlm.AmazonContinueWatchingReceiver	method	public int getExperimentState()
+com.amazon.tv.developer.sdk.cwlm.AmazonContinueWatchingReceiver	method	public static synchronized AmazonContinueWatchingReceiver getInstance(Context context)
+com.amazon.tv.developer.sdk.cwlm.AmazonContinueWatchingReceiver	method	public void setContinueWatchingItemMetadata(List<AmazonContinueWatchingItemMetadata> amazonContinueWatchingItemMetadataList)
+com.amazon.tv.developer.sdk.cwlm.AmazonContinueWatchingReceiver	method	public void setContinueWatchingItems(List<AmazonContinueWatchingItem> amazonContinueWatchingItems)
+com.amazon.tv.developer.sdk.cwlm.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.tv.developer.sdk.cwlm.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.tv.developer.sdk.cwlm.BuildConfig	field	public static final String FLAVOR;
+com.amazon.tv.developer.sdk.cwlm.BuildConfig	field	public static final String LIBRARY_PACKAGE_NAME;
+com.amazon.tv.developer.sdk.cwlm.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.tv.developer.sdk.cwlm.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.tv.developer.sdk.cwlm.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter	field	private final BoundedQueue<MetricReport> metricsQueue;
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter	field	private final ExecutorService executorService;
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter	field	private final MiddlewareMessenger middlewareMessenger;
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter	field	private static final String METRIC_CALL_SERVICE_FAILURE;
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter	field	private static final String METRIC_CALL_SERVICE_FATAL_FAILURE;
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter	field	private static final String METRIC_DEAD_SERVICE_ERROR;
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter	field	private static final String METRIC_EXECUTOR_DELAY;
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter	field	private static final String METRIC_OBJECT_VALIDATION_ERROR;
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter	field	private static final String METRIC_PARAM_VALIDATION_ERROR;
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter	field	private static final String METRIC_RETRIEVE_SERVICE_FAILURE;
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter	field	private static final String METRIC_RETRIEVE_SERVICE_FATAL_FAILURE;
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter	field	private static final String TAG;
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter	field	private static final int MAX_METRICS_TO_HOLD;
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter	method	private void addMetricAndAttemptQueueDrain(MetricReport report)
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter	method	protected MetricReporter(MiddlewareMessenger messenger)
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter	method	public static MetricReporter getInstance()
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter	method	public void reportCallServiceFailure()
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter	method	public void reportCallServiceFatalFailure()
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter	method	public void reportDeadServiceError()
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter	method	public void reportExecutorDelay(long diff)
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter	method	public void reportMetricConnected(MetricReport r)
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter	method	public void reportObjectValidationError(String objectName)
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter	method	public void reportParamValidationError(String functionName)
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter	method	public void reportRetrieveServiceFailure()
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter	method	public void reportRetrieveServiceFatalFailure()
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter$InstanceHolder	field	static final MetricReporter INSTANCE;
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter$InstanceHolder	method	private InstanceHolder()
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter$MetricReport	method	private MetricReport(Long value, String metricFormattable, Object... args)
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter$MetricReport	method	public boolean isNumeric()
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter$MetricReport	method	public static MetricReport createNumericMetric(Long value, String metricFormattable, Object... args)
+com.amazon.tv.developer.sdk.cwlm.content.internal.MetricReporter$MetricReport	method	public static MetricReport createStringMetric(String metricFormattable, Object... args)
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.AlbertoServiceProvider	field	private final AlbertoServiceCallback callback;
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.AlbertoServiceProvider	field	private final AtomicBoolean connected;
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.AlbertoServiceProvider	field	private final BinderUtils binderUtils;
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.AlbertoServiceProvider	field	private final Lock lock;
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.AlbertoServiceProvider	field	private static AlbertoServiceProvider instance;
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.AlbertoServiceProvider	field	private static final Object INSTANCE_LOCK;
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.AlbertoServiceProvider	field	private static final String ALBERTO_SERVICE_NAME;
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.AlbertoServiceProvider	field	private static final String TAG;
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.AlbertoServiceProvider	field	private static final int MAX_WAIT_BETWEEN_BINDER_TRIES;
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.AlbertoServiceProvider	field	private static final int MAX_WAIT_FOR_BINDER;
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.AlbertoServiceProvider	field	private static final int RETRIES;
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.AlbertoServiceProvider	field	private volatile CountDownLatch latch;
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.AlbertoServiceProvider	field	private volatile IAlbertoServiceInterface albertoService;
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.AlbertoServiceProvider	method	private AlbertoServiceProvider()
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.AlbertoServiceProvider	method	public IAlbertoServiceInterface getServiceInternalLocked() throws AlbertoConnectionFailedException, InterruptedException
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.AlbertoServiceProvider	method	static AlbertoServiceProvider getInstance()
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.AlbertoServiceProvider$AlbertoServiceCallback	method	public void onServiceConnected(String serviceName, IBinder binder)
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.AlbertoServiceProvider$AlbertoServiceCallback	method	public void onServiceFailed(String serviceName, String errorMessage)
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareMessenger	field	private final AlbertoServiceProvider albertoServiceProvider;
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareMessenger	field	private final ExecutorService executor;
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareMessenger	field	private final MetricReporter metricReporter;
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareMessenger	field	private static MiddlewareMessenger instance;
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareMessenger	field	private static final Object INSTANCE_LOCK;
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareMessenger	field	private static final String TAG;
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareMessenger	field	private static final int MESSAGE_BATCH_SIZE;
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareMessenger	method	private <T extends Parcelable> List<T[]> generatePagination(T[] payload)
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareMessenger	method	private <T extends Parcelable> void sendOrPage(final T[] items, final MiddlewarePageSender<T> sender)
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareMessenger	method	private <T> T callAlbertoWithResult(String albertoActionName, AlbertoServiceCall<T> albertoCall, T defaultValue)
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareMessenger	method	private MiddlewareMessenger()
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareMessenger	method	private void submitWithRerunnable(ThrowingRunnable runnable)
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareMessenger	method	public List<String> getSupportedLanguages()
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareMessenger	method	public boolean isMiddlewareConnectionOpen()
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareMessenger	method	public int getExperimentState()
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareMessenger	method	public static MiddlewareMessenger getInstance()
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareMessenger	method	public void reportNumericMetric(final long timestamp, final long number, final String metric)
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareMessenger	method	public void reportStringMetric(final long timestamp, final String metric)
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareMessenger	method	public void setContinueWatchingItemMetadata(ContinueWatchingItemMetadata[] items, final long messageTimestamp)
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareMessenger	method	public void setContinueWatchingItems(ContinueWatchingItem[] items, final long messageTimestamp)
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareMessengerRunnable	field	private final Runnable reportDeath;
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareMessengerRunnable	field	private final ThrowingRunnable function;
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareMessengerRunnable	field	private static final String TAG;
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareMessengerRunnable	field	private static final int TOO_LARGE_TRANSACTION_SLEEP;
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareMessengerRunnable	method	public MiddlewareMessengerRunnable(ThrowingRunnable function, Runnable reportDeath)
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareMessengerRunnable	method	public void run()
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareMessengerRunnable	method	public void run(int retriesLeft)
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareObjectConverter	method	private MiddlewareObjectConverter()
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareObjectConverter	method	public static ContinueWatchingItemMetadata[] toContinueWatchingItemsMetadata(List<AmazonContinueWatchingItemMetadata> entries)
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareObjectConverter	method	public static ContinueWatchingItem[] toContinueWatchingItems(List<AmazonContinueWatchingItem> entries)
+com.amazon.tv.developer.sdk.cwlm.content.internal.messaging.MiddlewareObjectConverter	method	public static ImageMetadata toImageMetadata(final AmazonImageMetadata image)
+com.amazon.tv.developer.sdk.cwlm.content.internal.utils.ObjectFieldValidator	field	private List<String> invalidNegativeValues;
+com.amazon.tv.developer.sdk.cwlm.content.internal.utils.ObjectFieldValidator	field	private List<String> nullFields;
+com.amazon.tv.developer.sdk.cwlm.content.internal.utils.ObjectFieldValidator	method	private boolean isNullOrEmpty(Object data)
+com.amazon.tv.developer.sdk.cwlm.content.internal.utils.ObjectFieldValidator	method	public static void throwIfNullParam(Object paramToCheck, String paramName, String funcName)
+com.amazon.tv.developer.sdk.cwlm.content.internal.utils.ObjectFieldValidator	method	public void isNonNegative(Integer toBeValidated, String fieldName)
+com.amazon.tv.developer.sdk.cwlm.content.internal.utils.ObjectFieldValidator	method	public void isNonNegative(Long toBeValidated, String fieldName)
+com.amazon.tv.developer.sdk.cwlm.content.internal.utils.ObjectFieldValidator	method	public void isNotNullOrEmpty(Object toBeValidated, String fieldName)
+com.amazon.tv.developer.sdk.cwlm.content.internal.utils.ObjectFieldValidator	method	public void validate(String className)
+com.amazon.tv.developer.sdk.cwlm.messaging.ContinueWatchingItem	field	public String opaqueId;
+com.amazon.tv.developer.sdk.cwlm.messaging.ContinueWatchingItem	field	public String[] genres;
+com.amazon.tv.developer.sdk.cwlm.messaging.ContinueWatchingItem	field	public boolean isNextEpisodeInSeries;
+com.amazon.tv.developer.sdk.cwlm.messaging.ContinueWatchingItem	field	public int contentType;
+com.amazon.tv.developer.sdk.cwlm.messaging.ContinueWatchingItem	field	public long durationMs;
+com.amazon.tv.developer.sdk.cwlm.messaging.ContinueWatchingItem	field	public long lastWatchedTimestampMs;
+com.amazon.tv.developer.sdk.cwlm.messaging.ContinueWatchingItem	field	public long progressMs;
+com.amazon.tv.developer.sdk.cwlm.messaging.ContinueWatchingItem	method	public final void readFromParcel(Parcel _aidl_parcel)
+com.amazon.tv.developer.sdk.cwlm.messaging.ContinueWatchingItem	method	public final void writeToParcel(Parcel parcel, int i)
+com.amazon.tv.developer.sdk.cwlm.messaging.ContinueWatchingItem	method	public int describeContents()
+com.amazon.tv.developer.sdk.cwlm.messaging.ContinueWatchingItemMetadata	field	public ImageMetadata heroImage;
+com.amazon.tv.developer.sdk.cwlm.messaging.ContinueWatchingItemMetadata	field	public ImageMetadata tileImage;
+com.amazon.tv.developer.sdk.cwlm.messaging.ContinueWatchingItemMetadata	field	public String deeplinkUri;
+com.amazon.tv.developer.sdk.cwlm.messaging.ContinueWatchingItemMetadata	field	public String description;
+com.amazon.tv.developer.sdk.cwlm.messaging.ContinueWatchingItemMetadata	field	public String locale;
+com.amazon.tv.developer.sdk.cwlm.messaging.ContinueWatchingItemMetadata	field	public String maturityRating;
+com.amazon.tv.developer.sdk.cwlm.messaging.ContinueWatchingItemMetadata	field	public String maturityRatingSystem;
+com.amazon.tv.developer.sdk.cwlm.messaging.ContinueWatchingItemMetadata	field	public String opaqueId;
+com.amazon.tv.developer.sdk.cwlm.messaging.ContinueWatchingItemMetadata	field	public String removeIntentUri;
+com.amazon.tv.developer.sdk.cwlm.messaging.ContinueWatchingItemMetadata	field	public String title;
+com.amazon.tv.developer.sdk.cwlm.messaging.ContinueWatchingItemMetadata	field	public int episodeNumber;
+com.amazon.tv.developer.sdk.cwlm.messaging.ContinueWatchingItemMetadata	field	public int releaseYear;
+com.amazon.tv.developer.sdk.cwlm.messaging.ContinueWatchingItemMetadata	field	public int seasonNumber;
+com.amazon.tv.developer.sdk.cwlm.messaging.ContinueWatchingItemMetadata	field	public int[] statusFlags;
+com.amazon.tv.developer.sdk.cwlm.messaging.ContinueWatchingItemMetadata	field	public long durationMs;
+com.amazon.tv.developer.sdk.cwlm.messaging.ContinueWatchingItemMetadata	field	public long progressMs;
+com.amazon.tv.developer.sdk.cwlm.messaging.ContinueWatchingItemMetadata	method	public final void readFromParcel(Parcel _aidl_parcel)
+com.amazon.tv.developer.sdk.cwlm.messaging.ContinueWatchingItemMetadata	method	public final void writeToParcel(Parcel _aidl_parcel, int _aidl_flag)
+com.amazon.tv.developer.sdk.cwlm.messaging.ContinueWatchingItemMetadata	method	public int describeContents()
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Default	method	public IBinder asBinder()
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Default	method	public List<String> getSupportedLanguages() throws RemoteException
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Default	method	public int getExperimentTreatment() throws RemoteException
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Default	method	public void placeholder_function1() throws RemoteException
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Default	method	public void placeholder_function2() throws RemoteException
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Default	method	public void placeholder_function3() throws RemoteException
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Default	method	public void placeholder_function4() throws RemoteException
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Default	method	public void placeholder_function5() throws RemoteException
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Default	method	public void reportSdkNumericMetric(long metricTimestamp, String reportSdkMetric, long number) throws RemoteException
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Default	method	public void reportSdkStringMetric(long metricTimestamp, String reportSdkMetric) throws RemoteException
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Default	method	public void setAmazonContinueWatchingItemMetadata(long sentTimestamp, ContinueWatchingItemMetadata[] items, int pageNo, int totalNumberOfPages) throws RemoteException
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Default	method	public void setAmazonContinueWatchingItems(long sentTimestamp, ContinueWatchingItem[] items, int pageNo, int totalNumberOfPages) throws RemoteException
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub	field	private static final String DESCRIPTOR;
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub	field	static final int TRANSACTION_getExperimentTreatment;
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub	field	static final int TRANSACTION_getSupportedLanguages;
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub	field	static final int TRANSACTION_placeholder_function1;
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub	field	static final int TRANSACTION_placeholder_function2;
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub	field	static final int TRANSACTION_placeholder_function3;
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub	field	static final int TRANSACTION_placeholder_function4;
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub	field	static final int TRANSACTION_placeholder_function5;
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub	field	static final int TRANSACTION_reportSdkNumericMetric;
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub	field	static final int TRANSACTION_reportSdkStringMetric;
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub	field	static final int TRANSACTION_setAmazonContinueWatchingItemMetadata;
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub	field	static final int TRANSACTION_setAmazonContinueWatchingItems;
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub	method	public IBinder asBinder()
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub	method	public Stub()
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub	method	public static IAlbertoServiceInterface asInterface(IBinder obj)
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub	method	public static IAlbertoServiceInterface getDefaultImpl()
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub	method	public static boolean setDefaultImpl(IAlbertoServiceInterface impl)
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub$Proxy	field	public static IAlbertoServiceInterface sDefaultImpl;
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub$Proxy	method	public List<String> getSupportedLanguages() throws RemoteException
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub$Proxy	method	public int getExperimentTreatment() throws RemoteException
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub$Proxy	method	public void placeholder_function1() throws RemoteException
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub$Proxy	method	public void placeholder_function2() throws RemoteException
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub$Proxy	method	public void placeholder_function3() throws RemoteException
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub$Proxy	method	public void placeholder_function4() throws RemoteException
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub$Proxy	method	public void placeholder_function5() throws RemoteException
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub$Proxy	method	public void reportSdkNumericMetric(long metricTimestamp, String reportSdkMetric, long number) throws RemoteException
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub$Proxy	method	public void reportSdkStringMetric(long metricTimestamp, String reportSdkMetric) throws RemoteException
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub$Proxy	method	public void setAmazonContinueWatchingItemMetadata(long sentTimestamp, ContinueWatchingItemMetadata[] items, int pageNo, int totalNumberOfPages) throws RemoteException
+com.amazon.tv.developer.sdk.cwlm.messaging.IAlbertoServiceInterface$Stub$Proxy	method	public void setAmazonContinueWatchingItems(long sentTimestamp, ContinueWatchingItem[] items, int pageNo, int totalNumberOfPages) throws RemoteException
+com.amazon.tv.developer.sdk.cwlm.messaging.ImageMetadata	field	public String imageUri;
+com.amazon.tv.developer.sdk.cwlm.messaging.ImageMetadata	field	public int heightPx;
+com.amazon.tv.developer.sdk.cwlm.messaging.ImageMetadata	field	public int widthPx;
+com.amazon.tv.developer.sdk.cwlm.messaging.ImageMetadata	method	public final void readFromParcel(Parcel _aidl_parcel)
+com.amazon.tv.developer.sdk.cwlm.messaging.ImageMetadata	method	public final void writeToParcel(Parcel _aidl_parcel, int _aidl_flag)
+com.amazon.tv.developer.sdk.cwlm.messaging.ImageMetadata	method	public int describeContents()
+com.amazon.tv.developer.sdk.cwlm.messaging.TileMetadata	method	public final void readFromParcel(Parcel _aidl_parcel)
+com.amazon.tv.developer.sdk.cwlm.messaging.TileMetadata	method	public final void writeToParcel(Parcel _aidl_parcel, int _aidl_flag)
+com.amazon.tv.developer.sdk.cwlm.messaging.TileMetadata	method	public int describeContents()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContentStatusFlag	field	public static final int CLOSED_CAPTIONS_SUPPORTED;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContentStatusFlag	field	public static final int HDR_SUPPORTED;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContentStatusFlag	field	public static final int LIVE;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContentStatusFlag	field	public static final int NEW;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContentStatusFlag	method	private AmazonContentStatusFlag()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContentType	field	public static final int EPISODE;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContentType	field	public static final int EVENT;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContentType	field	public static final int MOVIE;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContentType	field	public static final int OTHER;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContentType	method	private AmazonContentType()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem	field	private final String opaqueId;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem	field	private final String[] genres;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem	field	private final boolean isNextEpisodeInSeries;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem	field	private final int contentType;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem	field	private final long durationMs;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem	field	private final long lastWatchedTimestampMs;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem	field	private final long progressMs;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem	method	private AmazonContinueWatchingItem(Builder builder)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem	method	protected boolean canEqual(Object other)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem	method	public String getOpaqueId()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem	method	public String toString()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem	method	public String[] getGenres()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem	method	public boolean equals(Object o)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem	method	public boolean isNextEpisodeInSeries()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem	method	public int getContentType()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem	method	public int hashCode()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem	method	public long getDurationMs()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem	method	public long getLastWatchedTimestampMs()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem	method	public long getProgressMs()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem	method	public static Builder builder()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem$Builder	field	private Integer contentType;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem$Builder	field	private Long durationMs;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem$Builder	field	private Long lastWatchedTimestampMs;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem$Builder	field	private Long progressMs;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem$Builder	field	private String opaqueId;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem$Builder	field	private String[] genres;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem$Builder	field	private boolean isNextEpisodeInSeries;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem$Builder	method	public AmazonContinueWatchingItem build() throws IllegalArgumentException
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem$Builder	method	public Builder contentType(int contentType)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem$Builder	method	public Builder durationMs(long durationMs)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem$Builder	method	public Builder genres(String[] genres)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem$Builder	method	public Builder isNextEpisodeInSeries(boolean isNextEpisodeInSeries)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem$Builder	method	public Builder lastWatchedTimestampMs(long lastWatchedTimestampMs)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem$Builder	method	public Builder opaqueId(String opaqueId)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItem$Builder	method	public Builder progressMs(long progressMs)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	field	private final AmazonImageMetadata heroImage;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	field	private final AmazonImageMetadata tileImage;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	field	private final Boolean isOriginal;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	field	private final List<String> actors;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	field	private final List<String> directors;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	field	private final Locale locale;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	field	private final String description;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	field	private final String episodeTitle;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	field	private final String maturityRating;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	field	private final String maturityRatingSystem;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	field	private final String opaqueId;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	field	private final String shortDescription;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	field	private final String title;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	field	private final URI deeplinkUri;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	field	private final URI removeIntentUri;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	field	private final int episodeNumber;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	field	private final int releaseYear;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	field	private final int seasonNumber;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	field	private final int[] statusFlags;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	field	private final long durationMs;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	field	private final long progressMs;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	method	private AmazonContinueWatchingItemMetadata(Builder builder)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	method	protected boolean canEqual(Object other)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	method	public AmazonImageMetadata getHeroImage()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	method	public AmazonImageMetadata getTileImage()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	method	public Boolean getIsOriginal()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	method	public List<String> getActors()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	method	public List<String> getDirectors()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	method	public Locale getLocale()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	method	public String getDescription()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	method	public String getEpisodeTitle()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	method	public String getMaturityRating()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	method	public String getMaturityRatingSystem()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	method	public String getOpaqueId()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	method	public String getShortDescription()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	method	public String getTitle()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	method	public String toString()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	method	public URI getDeeplinkUri()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	method	public URI getRemoveIntentUri()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	method	public boolean equals(Object o)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	method	public int getEpisodeNumber()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	method	public int getReleaseYear()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	method	public int getSeasonNumber()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	method	public int hashCode()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	method	public int[] getStatusFlags()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	method	public long getDurationMs()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	method	public long getProgressMs()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata	method	public static Builder builder()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	field	private AmazonImageMetadata heroImage;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	field	private AmazonImageMetadata tileImage;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	field	private Boolean isOriginal;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	field	private Integer episodeNumber;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	field	private Integer releaseYear;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	field	private Integer seasonNumber;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	field	private List<String> actors;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	field	private List<String> directors;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	field	private Locale locale;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	field	private Long durationMs;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	field	private Long progressMs;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	field	private String description;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	field	private String episodeTitle;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	field	private String maturityRating;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	field	private String maturityRatingSystem;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	field	private String opaqueId;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	field	private String shortDescription;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	field	private String title;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	field	private URI deeplinkUri;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	field	private URI removeIntentUri;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	field	private int[] statusFlags;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	method	public AmazonContinueWatchingItemMetadata build() throws IllegalArgumentException
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	method	public Builder actors(List<String> actors)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	method	public Builder deeplinkUri(URI deeplinkUri)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	method	public Builder description(String description)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	method	public Builder directors(List<String> directors)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	method	public Builder durationMs(long durationMs)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	method	public Builder episodeNumber(int episodeNumber)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	method	public Builder episodeTitle(String episodeTitle)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	method	public Builder heroImage(AmazonImageMetadata heroImage)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	method	public Builder isOriginal(boolean isOriginal)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	method	public Builder locale(Locale locale)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	method	public Builder maturityRating(String maturityRating)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	method	public Builder maturityRatingSystem(String maturityRatingSystem)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	method	public Builder opaqueId(String opaqueId)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	method	public Builder progressMs(long progressMs)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	method	public Builder releaseYear(int releaseYear)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	method	public Builder removeIntentUri(URI removeIntentUri)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	method	public Builder seasonNumber(int seasonNumber)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	method	public Builder shortDescription(String shortDescription)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	method	public Builder statusFlags(int[] statusFlags)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	method	public Builder tileImage(AmazonImageMetadata tileImage)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonContinueWatchingItemMetadata$Builder	method	public Builder title(String title)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonExperimentState	field	public static final int EXPERIMENT_CONTROL;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonExperimentState	field	public static final int EXPERIMENT_INELIGIBLE;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonExperimentState	field	public static final int EXPERIMENT_LAUNCHED;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonExperimentState	field	public static final int EXPERIMENT_TREATMENT;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonExperimentState	method	private AmazonExperimentState()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonImageMetadata	field	private final URI imageUri;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonImageMetadata	field	private final int heightPx;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonImageMetadata	field	private final int widthPx;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonImageMetadata	method	private AmazonImageMetadata(Builder builder)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonImageMetadata	method	protected boolean canEqual(Object other)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonImageMetadata	method	public String toString()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonImageMetadata	method	public URI getImageUri()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonImageMetadata	method	public boolean equals(Object o)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonImageMetadata	method	public int getHeightPx()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonImageMetadata	method	public int getWidthPx()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonImageMetadata	method	public int hashCode()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonImageMetadata	method	public static Builder builder()
+com.amazon.tv.developer.sdk.cwlm.model.AmazonImageMetadata$Builder	field	private URI imageUri;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonImageMetadata$Builder	field	private int heightPx;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonImageMetadata$Builder	field	private int widthPx;
+com.amazon.tv.developer.sdk.cwlm.model.AmazonImageMetadata$Builder	method	public AmazonImageMetadata build() throws IllegalArgumentException
+com.amazon.tv.developer.sdk.cwlm.model.AmazonImageMetadata$Builder	method	public Builder heightPx(int heightPx)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonImageMetadata$Builder	method	public Builder imageUri(URI imageUri)
+com.amazon.tv.developer.sdk.cwlm.model.AmazonImageMetadata$Builder	method	public Builder widthPx(int widthPx)

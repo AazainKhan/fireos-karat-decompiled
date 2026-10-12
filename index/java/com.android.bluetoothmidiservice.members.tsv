@@ -1,0 +1,55 @@
+class	kind	declaration
+com.android.bluetoothmidiservice.BluetoothMidiDevice	field	private BluetoothGatt mBluetoothGatt;
+com.android.bluetoothmidiservice.BluetoothMidiDevice	field	private BluetoothGattCharacteristic mCharacteristic;
+com.android.bluetoothmidiservice.BluetoothMidiDevice	field	private MidiDeviceServer mDeviceServer;
+com.android.bluetoothmidiservice.BluetoothMidiDevice	field	private MidiReceiver mOutputReceiver;
+com.android.bluetoothmidiservice.BluetoothMidiDevice	field	private final BluetoothDevice mBluetoothDevice;
+com.android.bluetoothmidiservice.BluetoothMidiDevice	field	private final BluetoothGattCallback mGattCallback;
+com.android.bluetoothmidiservice.BluetoothMidiDevice	field	private final BluetoothMidiService mService;
+com.android.bluetoothmidiservice.BluetoothMidiDevice	field	private final BluetoothPacketDecoder mPacketDecoder;
+com.android.bluetoothmidiservice.BluetoothMidiDevice	field	private final BluetoothPacketEncoder mPacketEncoder;
+com.android.bluetoothmidiservice.BluetoothMidiDevice	field	private final MidiEventScheduler mEventScheduler;
+com.android.bluetoothmidiservice.BluetoothMidiDevice	field	private final MidiManager mMidiManager;
+com.android.bluetoothmidiservice.BluetoothMidiDevice	field	private final PacketReceiver mPacketReceiver;
+com.android.bluetoothmidiservice.BluetoothMidiDevice	field	private static final UUID CLIENT_CHARACTERISTIC_CONFIG;
+com.android.bluetoothmidiservice.BluetoothMidiDevice	field	private static final UUID MIDI_CHARACTERISTIC;
+com.android.bluetoothmidiservice.BluetoothMidiDevice	field	private static final UUID MIDI_SERVICE;
+com.android.bluetoothmidiservice.BluetoothMidiDevice	method	public BluetoothMidiDevice(Context context, BluetoothDevice bluetoothDevice, BluetoothMidiService bluetoothMidiService)
+com.android.bluetoothmidiservice.BluetoothMidiDevice	method	public IBinder getBinder()
+com.android.bluetoothmidiservice.BluetoothMidiDevice	method	public void close()
+com.android.bluetoothmidiservice.BluetoothMidiDevice$PacketReceiver	field	private final byte[][] mWriteBuffers;
+com.android.bluetoothmidiservice.BluetoothMidiDevice$PacketReceiver	method	public PacketReceiver()
+com.android.bluetoothmidiservice.BluetoothMidiDevice$PacketReceiver	method	public void writePacket(byte[] bArr, int i)
+com.android.bluetoothmidiservice.BluetoothMidiService	field	private final HashMap<BluetoothDevice, BluetoothMidiDevice> mDeviceServerMap;
+com.android.bluetoothmidiservice.BluetoothMidiService	method	public IBinder onBind(Intent intent)
+com.android.bluetoothmidiservice.BluetoothPacketDecoder	field	private MidiBtleTimeTracker mTimeTracker;
+com.android.bluetoothmidiservice.BluetoothPacketDecoder	field	private final byte[] mBuffer;
+com.android.bluetoothmidiservice.BluetoothPacketDecoder	field	private int mBytesInBuffer;
+com.android.bluetoothmidiservice.BluetoothPacketDecoder	field	private int mLowTimestamp;
+com.android.bluetoothmidiservice.BluetoothPacketDecoder	field	private long mNanoTimestamp;
+com.android.bluetoothmidiservice.BluetoothPacketDecoder	method	private void flushOutput(MidiReceiver midiReceiver)
+com.android.bluetoothmidiservice.BluetoothPacketDecoder	method	public BluetoothPacketDecoder(int i)
+com.android.bluetoothmidiservice.BluetoothPacketDecoder	method	public void decodePacket(byte[] bArr, MidiReceiver midiReceiver)
+com.android.bluetoothmidiservice.BluetoothPacketEncoder	field	private boolean mWritePending;
+com.android.bluetoothmidiservice.BluetoothPacketEncoder	field	private byte mRunningStatus;
+com.android.bluetoothmidiservice.BluetoothPacketEncoder	field	private final MidiFramer mMidiFramer;
+com.android.bluetoothmidiservice.BluetoothPacketEncoder	field	private final Object mLock;
+com.android.bluetoothmidiservice.BluetoothPacketEncoder	field	private final PacketEncoder.PacketReceiver mPacketReceiver;
+com.android.bluetoothmidiservice.BluetoothPacketEncoder	field	private final byte[] mAccumulationBuffer;
+com.android.bluetoothmidiservice.BluetoothPacketEncoder	field	private int mAccumulatedBytes;
+com.android.bluetoothmidiservice.BluetoothPacketEncoder	field	private int mPacketTimestamp;
+com.android.bluetoothmidiservice.BluetoothPacketEncoder	method	public BluetoothPacketEncoder(PacketEncoder.PacketReceiver packetReceiver, int i)
+com.android.bluetoothmidiservice.BluetoothPacketEncoder	method	public boolean appendHeader(int i)
+com.android.bluetoothmidiservice.BluetoothPacketEncoder	method	public void flushLocked(boolean z)
+com.android.bluetoothmidiservice.BluetoothPacketEncoder	method	public void onSend(byte[] bArr, int i, int i2, long j) throws IOException
+com.android.bluetoothmidiservice.BluetoothPacketEncoder	method	public void writeComplete()
+com.android.bluetoothmidiservice.MidiBtleTimeTracker	field	private int mPreviousTimestamp;
+com.android.bluetoothmidiservice.MidiBtleTimeTracker	field	private int mWindowMillis;
+com.android.bluetoothmidiservice.MidiBtleTimeTracker	field	private long mBaseHostTimeNanos;
+com.android.bluetoothmidiservice.MidiBtleTimeTracker	field	private long mPeripheralTimeMillis;
+com.android.bluetoothmidiservice.MidiBtleTimeTracker	field	private long mPreviousNow;
+com.android.bluetoothmidiservice.MidiBtleTimeTracker	field	private long mPreviousResult;
+com.android.bluetoothmidiservice.MidiBtleTimeTracker	field	private long mWindowNanos;
+com.android.bluetoothmidiservice.MidiBtleTimeTracker	method	public MidiBtleTimeTracker(long j)
+com.android.bluetoothmidiservice.MidiBtleTimeTracker	method	public long convertTimestampToNanotime(int i, long j)
+com.android.bluetoothmidiservice.R$string	field	public static final int app_name;

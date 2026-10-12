@@ -1,0 +1,528 @@
+class	kind	declaration
+com.amazon.minerva.client.aggregation.AggregationConstants	field	public static final String COUNTS;
+com.amazon.minerva.client.aggregation.AggregationConstants	field	public static final String VALUES;
+com.amazon.minerva.client.aggregation.SimpleAvgAggregatedDoubleKeyValPair	field	private double mCount;
+com.amazon.minerva.client.aggregation.SimpleAvgAggregatedDoubleKeyValPair	field	private double mSum;
+com.amazon.minerva.client.aggregation.SimpleAvgAggregatedDoubleKeyValPair	method	public AggregatedDouble getAggregatedValue()
+com.amazon.minerva.client.aggregation.SimpleAvgAggregatedDoubleKeyValPair	method	public void addValue(double d)
+com.amazon.minerva.client.aggregation.SimpleAvgAggregatedLongKeyValPair	field	private long mCount;
+com.amazon.minerva.client.aggregation.SimpleAvgAggregatedLongKeyValPair	field	private long mSum;
+com.amazon.minerva.client.aggregation.SimpleAvgAggregatedLongKeyValPair	method	public AggregatedLong getAggregatedValue()
+com.amazon.minerva.client.aggregation.SimpleAvgAggregatedLongKeyValPair	method	public void addValue(long j)
+com.amazon.minerva.client.aggregation.SimpleSumAggregatedDoubleKeyValPair	field	private double mSum;
+com.amazon.minerva.client.aggregation.SimpleSumAggregatedDoubleKeyValPair	method	public AggregatedDouble getAggregatedValue()
+com.amazon.minerva.client.aggregation.SimpleSumAggregatedDoubleKeyValPair	method	public void addValue(double d)
+com.amazon.minerva.client.aggregation.SimpleSumAggregatedLongKeyValPair	field	private long mSum;
+com.amazon.minerva.client.aggregation.SimpleSumAggregatedLongKeyValPair	method	public AggregatedLong getAggregatedValue()
+com.amazon.minerva.client.aggregation.SimpleSumAggregatedLongKeyValPair	method	public void addValue(long j)
+com.amazon.minerva.client.api.AggregatedMetricEvent	field	private Map<String, AggregatedDoubleKeyValPair> mAggregatedDoubles;
+com.amazon.minerva.client.api.AggregatedMetricEvent	field	private Map<String, AggregatedLongKeyValPair> mAggregatedLongs;
+com.amazon.minerva.client.api.AggregatedMetricEvent	field	private static final String TAG;
+com.amazon.minerva.client.api.AggregatedMetricEvent	method	public AggregatedMetricEvent(String str, String str2)
+com.amazon.minerva.client.api.AggregatedMetricEvent	method	public AggregatedMetricEvent(String str, String str2, int i)
+com.amazon.minerva.client.api.AggregatedMetricEvent	method	public int getKeyValuePairCount()
+com.amazon.minerva.client.api.AggregatedMetricEvent	method	public void addAggregatedDouble(String str, double d, AggregationType aggregationType)
+com.amazon.minerva.client.api.AggregatedMetricEvent	method	public void addAggregatedLong(String str, long j, AggregationType aggregationType)
+com.amazon.minerva.client.api.AggregatedMetricEvent	method	public void clear()
+com.amazon.minerva.client.api.AggregatedMetricEvent	method	public void convertAggregatedToKeyValuePairs()
+com.amazon.minerva.client.api.AggregationType	method	public static AggregatedDoubleKeyValPair getAggDoubleKeyPair(AggregationType aggregationType)
+com.amazon.minerva.client.api.AggregationType	method	public static AggregatedLongKeyValPair getAggLongKeyPair(AggregationType aggregationType)
+com.amazon.minerva.client.api.AmazonMinervaClientBuilder	field	private String region;
+com.amazon.minerva.client.api.AmazonMinervaClientBuilder	field	private final Context context;
+com.amazon.minerva.client.api.AmazonMinervaClientBuilder	field	private static final String BETA_REGION;
+com.amazon.minerva.client.api.AmazonMinervaClientBuilder	field	private static final String PROD_REGION;
+com.amazon.minerva.client.api.AmazonMinervaClientBuilder	method	public AmazonMinerva build()
+com.amazon.minerva.client.api.AmazonMinervaClientBuilder	method	public AmazonMinervaClientBuilder withRegion(String str)
+com.amazon.minerva.client.api.AmazonMinervaClientBuilder	method	public AmazonMinervaV2 buildV2()
+com.amazon.minerva.client.api.AmazonMinervaClientBuilder	method	public static AmazonMinervaClientBuilder standard(Context context)
+com.amazon.minerva.client.api.AmazonMinervaClientConfiguration	method	public static void setChildProfileVerifier(Context context, ChildProfileVerifier childProfileVerifier)
+com.amazon.minerva.client.api.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.minerva.client.api.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.minerva.client.api.BuildConfig	field	public static final String FLAVOR;
+com.amazon.minerva.client.api.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.minerva.client.api.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.minerva.client.api.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.minerva.client.api.MetricEvent	field	private Map<String, TypedValue<?>> keyValuePairs;
+com.amazon.minerva.client.api.MetricEvent	field	private String metricGroupId;
+com.amazon.minerva.client.api.MetricEvent	field	private String schemaId;
+com.amazon.minerva.client.api.MetricEvent	field	private Timestamp clientTimestamp;
+com.amazon.minerva.client.api.MetricEvent	field	private UUID metricEventId;
+com.amazon.minerva.client.api.MetricEvent	field	private boolean mIsLowPrioritySet;
+com.amazon.minerva.client.api.MetricEvent	field	private int samplingRate;
+com.amazon.minerva.client.api.MetricEvent	field	private static final Pattern KEY_VALIDATION_PATTERN;
+com.amazon.minerva.client.api.MetricEvent	field	private static final Pattern PATTERN_METRIC_GROUP_ID;
+com.amazon.minerva.client.api.MetricEvent	field	private static final Pattern PATTERN_SCHEMA_ID;
+com.amazon.minerva.client.api.MetricEvent	field	private static final String TAG;
+com.amazon.minerva.client.api.MetricEvent	field	private static final int MAX_KEY_SIZE;
+com.amazon.minerva.client.api.MetricEvent	field	private static final int MAX_METRIC_EVENT_SIZE;
+com.amazon.minerva.client.api.MetricEvent	field	private static final int MAX_VALUE_SIZE;
+com.amazon.minerva.client.api.MetricEvent	field	private static final int STORAGE_PRIORITY_POSITION;
+com.amazon.minerva.client.api.MetricEvent	method	protected boolean IsCustomKeyValid(String str)
+com.amazon.minerva.client.api.MetricEvent	method	public List<DataPoint> getKeyValuePairsAsDataPoints()
+com.amazon.minerva.client.api.MetricEvent	method	public Map<String, TypedValue<?>> getKeyValuePairs()
+com.amazon.minerva.client.api.MetricEvent	method	public MetricEvent(String str, String str2)
+com.amazon.minerva.client.api.MetricEvent	method	public MetricEvent(String str, String str2, int i)
+com.amazon.minerva.client.api.MetricEvent	method	public String getLogContext()
+com.amazon.minerva.client.api.MetricEvent	method	public String getMetricGroupId()
+com.amazon.minerva.client.api.MetricEvent	method	public String getSchemaId()
+com.amazon.minerva.client.api.MetricEvent	method	public String toString()
+com.amazon.minerva.client.api.MetricEvent	method	public Timestamp getClientTimestamp()
+com.amazon.minerva.client.api.MetricEvent	method	public UUID getMetricEventId()
+com.amazon.minerva.client.api.MetricEvent	method	public boolean isLowPrioritySet()
+com.amazon.minerva.client.api.MetricEvent	method	public int getKeyValuePairCount()
+com.amazon.minerva.client.api.MetricEvent	method	public int getNumInvalidKeyValuePairs()
+com.amazon.minerva.client.api.MetricEvent	method	public int getNumKeySizeExceeded()
+com.amazon.minerva.client.api.MetricEvent	method	public int getNumNullStringValues()
+com.amazon.minerva.client.api.MetricEvent	method	public int getNumValueSizeExceeded()
+com.amazon.minerva.client.api.MetricEvent	method	public int getSamplingRate()
+com.amazon.minerva.client.api.MetricEvent	method	public int getStoragePriority()
+com.amazon.minerva.client.api.MetricEvent	method	public void addBoolean(String str, boolean z)
+com.amazon.minerva.client.api.MetricEvent	method	public void addDouble(String str, double d)
+com.amazon.minerva.client.api.MetricEvent	method	public void addLong(String str, long j)
+com.amazon.minerva.client.api.MetricEvent	method	public void addPredefined(Predefined predefined)
+com.amazon.minerva.client.api.MetricEvent	method	public void addString(String str, String str2)
+com.amazon.minerva.client.api.MetricEvent	method	public void addTimestamp(String str, Date date)
+com.amazon.minerva.client.api.MetricEvent	method	public void addTimestamp(String str, Date date, TimeZone timeZone)
+com.amazon.minerva.client.api.MetricEvent	method	public void clear()
+com.amazon.minerva.client.api.MetricEvent	method	public void setClientTimestamp(Timestamp timestamp)
+com.amazon.minerva.client.api.MetricEvent	method	public void setLowPriority()
+com.amazon.minerva.client.api.Predefined	field	private final String key;
+com.amazon.minerva.client.api.Predefined	method	public String getKey()
+com.amazon.minerva.client.api.callback.NoOpMetricRecordCallback	method	public void onError(MetricRecordStatus metricRecordStatus, MetricEvent metricEvent)
+com.amazon.minerva.client.api.impl.AmazonMinervaImpl	field	private static final MinervaLogger log;
+com.amazon.minerva.client.api.impl.AmazonMinervaImpl	field	private static final String NATIVE_MINERVA_FEATURE;
+com.amazon.minerva.client.api.impl.AmazonMinervaImpl	field	protected AmazonMinervaClient mAmazonMinervaClient;
+com.amazon.minerva.client.api.impl.AmazonMinervaImpl	field	protected NativeMinervaClient mNativeMinervaClient;
+com.amazon.minerva.client.api.impl.AmazonMinervaImpl	field	protected static volatile AtomicBoolean hasNativeFeature;
+com.amazon.minerva.client.api.impl.AmazonMinervaImpl	method	public AmazonMinervaImpl(Context context, String str)
+com.amazon.minerva.client.api.impl.AmazonMinervaImpl	method	public void record(MetricEvent metricEvent)
+com.amazon.minerva.client.api.impl.AmazonMinervaImpl	method	public void shutdown()
+com.amazon.minerva.client.api.impl.AmazonMinervaV2Impl	method	public AmazonMinervaV2Impl(Context context, String str)
+com.amazon.minerva.client.api.impl.AmazonMinervaV2Impl	method	public void record(MetricEvent metricEvent, MetricRecordCallback metricRecordCallback)
+com.amazon.minerva.client.core.AggregatedDouble	field	private List<Double> mCounts;
+com.amazon.minerva.client.core.AggregatedDouble	field	private List<Double> mValues;
+com.amazon.minerva.client.core.AggregatedDouble	method	public AggregatedDouble(List<Double> list, List<Double> list2)
+com.amazon.minerva.client.core.AggregatedDouble	method	public List<Double> getCounts()
+com.amazon.minerva.client.core.AggregatedDouble	method	public List<Double> getValues()
+com.amazon.minerva.client.core.AggregatedDouble	method	public String toString()
+com.amazon.minerva.client.core.AggregatedDouble	method	public boolean isEmpty()
+com.amazon.minerva.client.core.AggregatedDouble	method	public int getSizeInBytes()
+com.amazon.minerva.client.core.AggregatedDouble	method	public static AggregatedDouble parseAggregatedDouble(String str)
+com.amazon.minerva.client.core.AggregatedLong	field	private List<Long> mCounts;
+com.amazon.minerva.client.core.AggregatedLong	field	private List<Long> mValues;
+com.amazon.minerva.client.core.AggregatedLong	method	public AggregatedLong(List<Long> list, List<Long> list2)
+com.amazon.minerva.client.core.AggregatedLong	method	public List<Long> getCounts()
+com.amazon.minerva.client.core.AggregatedLong	method	public List<Long> getValues()
+com.amazon.minerva.client.core.AggregatedLong	method	public String toString()
+com.amazon.minerva.client.core.AggregatedLong	method	public boolean isEmpty()
+com.amazon.minerva.client.core.AggregatedLong	method	public int getSizeInBytes()
+com.amazon.minerva.client.core.AggregatedLong	method	public static AggregatedLong parseAggregatedLong(String str)
+com.amazon.minerva.client.core.AmazonMinervaClient	field	private final Context context;
+com.amazon.minerva.client.core.AmazonMinervaClient	field	private final MinervaServiceWrapper minervaService;
+com.amazon.minerva.client.core.AmazonMinervaClient	field	private final String region;
+com.amazon.minerva.client.core.AmazonMinervaClient	field	private static final MinervaLogger log;
+com.amazon.minerva.client.core.AmazonMinervaClient	field	private static final NoOpMetricRecordCallback noOpCallback;
+com.amazon.minerva.client.core.AmazonMinervaClient	field	public static final int MAX_KEY_VALUE_PAIR_COUNT;
+com.amazon.minerva.client.core.AmazonMinervaClient	field	public static final int MAX_METRIC_EVENT_SIZE_IN_BYTES;
+com.amazon.minerva.client.core.AmazonMinervaClient	method	private boolean isMetricEventValid(MetricEvent metricEvent)
+com.amazon.minerva.client.core.AmazonMinervaClient	method	private void recordInternal(MetricEvent metricEvent, MetricRecordCallback metricRecordCallback)
+com.amazon.minerva.client.core.AmazonMinervaClient	method	private void reportKPI(String str, String str2)
+com.amazon.minerva.client.core.AmazonMinervaClient	method	public AmazonMinervaClient(Context context, String str)
+com.amazon.minerva.client.core.AmazonMinervaClient	method	public void record(MetricEvent metricEvent)
+com.amazon.minerva.client.core.AmazonMinervaClient	method	public void record(MetricEvent metricEvent, MetricRecordCallback metricRecordCallback)
+com.amazon.minerva.client.core.AmazonMinervaClient	method	public void shutdown()
+com.amazon.minerva.client.core.DataPoint	field	private final String name;
+com.amazon.minerva.client.core.DataPoint	field	private final String value;
+com.amazon.minerva.client.core.DataPoint	field	private final ValueType type;
+com.amazon.minerva.client.core.DataPoint	method	public DataPoint(String str, ValueType valueType, String str2)
+com.amazon.minerva.client.core.DataPoint	method	public String getName()
+com.amazon.minerva.client.core.DataPoint	method	public String getValue()
+com.amazon.minerva.client.core.DataPoint	method	public ValueType getType()
+com.amazon.minerva.client.core.DataPointEnvelope	field	private DataPoint dataPoint;
+com.amazon.minerva.client.core.DataPointEnvelope	method	protected DataPointEnvelope(Parcel parcel)
+com.amazon.minerva.client.core.DataPointEnvelope	method	public DataPoint getDataPoint()
+com.amazon.minerva.client.core.DataPointEnvelope	method	public DataPoint toDataPoint()
+com.amazon.minerva.client.core.DataPointEnvelope	method	public int describeContents()
+com.amazon.minerva.client.core.DataPointEnvelope	method	public static List<DataPoint> convertFromEnvelopes(List<DataPointEnvelope> list)
+com.amazon.minerva.client.core.DataPointEnvelope	method	public static List<DataPointEnvelope> convertToEnvelopes(List<DataPoint> list)
+com.amazon.minerva.client.core.DataPointEnvelope	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.minerva.client.core.IMinervaService$Default	method	public IBinder asBinder()
+com.amazon.minerva.client.core.IMinervaService$Default	method	public int[] getRemoteClientConfiguration() throws RemoteException
+com.amazon.minerva.client.core.IMinervaService$Default	method	public void record(String str, String str2, String str3, String str4, long j, int i, List<DataPointEnvelope> list) throws RemoteException
+com.amazon.minerva.client.core.IMinervaService$Default	method	public void recordWithSampleRate(String str, String str2, String str3, String str4, long j, int i, List<DataPointEnvelope> list, double d) throws RemoteException
+com.amazon.minerva.client.core.IMinervaService$Stub	field	private static final String DESCRIPTOR;
+com.amazon.minerva.client.core.IMinervaService$Stub	field	static final int TRANSACTION_getRemoteClientConfiguration;
+com.amazon.minerva.client.core.IMinervaService$Stub	field	static final int TRANSACTION_record;
+com.amazon.minerva.client.core.IMinervaService$Stub	field	static final int TRANSACTION_recordWithSampleRate;
+com.amazon.minerva.client.core.IMinervaService$Stub	method	public IBinder asBinder()
+com.amazon.minerva.client.core.IMinervaService$Stub	method	public Stub()
+com.amazon.minerva.client.core.IMinervaService$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.minerva.client.core.IMinervaService$Stub	method	public static IMinervaService asInterface(IBinder iBinder)
+com.amazon.minerva.client.core.IMinervaService$Stub	method	public static IMinervaService getDefaultImpl()
+com.amazon.minerva.client.core.IMinervaService$Stub	method	public static boolean setDefaultImpl(IMinervaService iMinervaService)
+com.amazon.minerva.client.core.IMinervaService$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.minerva.client.core.IMinervaService$Stub$Proxy	field	public static IMinervaService sDefaultImpl;
+com.amazon.minerva.client.core.IMinervaService$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.minerva.client.core.IMinervaService$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.minerva.client.core.IMinervaService$Stub$Proxy	method	public int[] getRemoteClientConfiguration() throws RemoteException
+com.amazon.minerva.client.core.IMinervaService$Stub$Proxy	method	public void record(String str, String str2, String str3, String str4, long j, int i, List<DataPointEnvelope> list) throws Throwable
+com.amazon.minerva.client.core.IMinervaService$Stub$Proxy	method	public void recordWithSampleRate(String str, String str2, String str3, String str4, long j, int i, List<DataPointEnvelope> list, double d) throws Throwable
+com.amazon.minerva.client.core.MetaDatapointConstants	field	private final String mValue;
+com.amazon.minerva.client.core.MetaDatapointConstants	method	public String getValue()
+com.amazon.minerva.client.core.MetricEventBuffer	field	private final List<DataPointEnvelope> datapoints;
+com.amazon.minerva.client.core.MetricEventBuffer	field	private final String metricEventId;
+com.amazon.minerva.client.core.MetricEventBuffer	field	private final String metricGroupId;
+com.amazon.minerva.client.core.MetricEventBuffer	field	private final String region;
+com.amazon.minerva.client.core.MetricEventBuffer	field	private final String schemaId;
+com.amazon.minerva.client.core.MetricEventBuffer	field	private final double sampleRate;
+com.amazon.minerva.client.core.MetricEventBuffer	field	private final int localOffsetMinutes;
+com.amazon.minerva.client.core.MetricEventBuffer	field	private final long utcTimestamp;
+com.amazon.minerva.client.core.MetricEventBuffer	method	public List<DataPointEnvelope> getDatapoints()
+com.amazon.minerva.client.core.MetricEventBuffer	method	public MetricEventBuffer(String str, String str2, String str3, String str4, long j, int i, List<DataPointEnvelope> list)
+com.amazon.minerva.client.core.MetricEventBuffer	method	public MetricEventBuffer(String str, String str2, String str3, String str4, long j, int i, List<DataPointEnvelope> list, double d)
+com.amazon.minerva.client.core.MetricEventBuffer	method	public String getMetricEventId()
+com.amazon.minerva.client.core.MetricEventBuffer	method	public String getMetricGroupId()
+com.amazon.minerva.client.core.MetricEventBuffer	method	public String getRegion()
+com.amazon.minerva.client.core.MetricEventBuffer	method	public String getSchemaId()
+com.amazon.minerva.client.core.MetricEventBuffer	method	public double getSampleRate()
+com.amazon.minerva.client.core.MetricEventBuffer	method	public int getLocalOffsetMinutes()
+com.amazon.minerva.client.core.MetricEventBuffer	method	public long getUtcTimestamp()
+com.amazon.minerva.client.core.MinervaServiceConnection	field	private AtomicReference<IMinervaService> mMetricsServiceReference;
+com.amazon.minerva.client.core.MinervaServiceConnection	field	private boolean mDidBindFailDueToPermission;
+com.amazon.minerva.client.core.MinervaServiceConnection	field	private boolean mServiceBindingInitiated;
+com.amazon.minerva.client.core.MinervaServiceConnection	field	private final Context mContext;
+com.amazon.minerva.client.core.MinervaServiceConnection	field	private int mTargetSdk;
+com.amazon.minerva.client.core.MinervaServiceConnection	field	private static final String MINERVASERVICE_BIND_CLASS_NAME;
+com.amazon.minerva.client.core.MinervaServiceConnection	field	private static final String MINERVASERVICE_BIND_INTENT_ACTION;
+com.amazon.minerva.client.core.MinervaServiceConnection	field	private static final String MINERVASERVICE_BIND_PACKAGE_NAME;
+com.amazon.minerva.client.core.MinervaServiceConnection	field	private static final String TAG;
+com.amazon.minerva.client.core.MinervaServiceConnection	field	private static final int SYSTEM_USER_ID;
+com.amazon.minerva.client.core.MinervaServiceConnection	method	public MinervaServiceConnection(Context context)
+com.amazon.minerva.client.core.MinervaServiceConnection	method	public synchronized IMinervaService getService()
+com.amazon.minerva.client.core.MinervaServiceConnection	method	public void onServiceConnected(ComponentName componentName, IBinder iBinder)
+com.amazon.minerva.client.core.MinervaServiceConnection	method	public void onServiceDisconnected(ComponentName componentName)
+com.amazon.minerva.client.core.MinervaServiceConnection	method	public void setMinervaServiceWrapper(MinervaServiceWrapper minervaServiceWrapper)
+com.amazon.minerva.client.core.MinervaServiceWrapper	field	final ConcurrentLinkedQueue<MetricEventBuffer> metricEventBufferQueue;
+com.amazon.minerva.client.core.MinervaServiceWrapper	field	private final MinervaServiceConnection minervaServiceConnection;
+com.amazon.minerva.client.core.MinervaServiceWrapper	field	private final Object childProfileVerifierLock;
+com.amazon.minerva.client.core.MinervaServiceWrapper	field	private final PeriodicKPIReporter periodicKPIReporter;
+com.amazon.minerva.client.core.MinervaServiceWrapper	field	private static final String TAG;
+com.amazon.minerva.client.core.MinervaServiceWrapper	field	private static volatile MinervaServiceWrapper minervaServiceWrapper;
+com.amazon.minerva.client.core.MinervaServiceWrapper	field	private volatile ChildProfileVerifier childProfileVerifier;
+com.amazon.minerva.client.core.MinervaServiceWrapper	field	static final int BUFFER_SIZE;
+com.amazon.minerva.client.core.MinervaServiceWrapper	method	private MinervaServiceConnection getMinervaServiceConnection()
+com.amazon.minerva.client.core.MinervaServiceWrapper	method	private MinervaServiceWrapper(Context context)
+com.amazon.minerva.client.core.MinervaServiceWrapper	method	private void bufferMetricEvent(String str, String str2, String str3, String str4, long j, int i, List<DataPointEnvelope> list)
+com.amazon.minerva.client.core.MinervaServiceWrapper	method	private void bufferMetricEvent(String str, String str2, String str3, String str4, long j, int i, List<DataPointEnvelope> list, double d)
+com.amazon.minerva.client.core.MinervaServiceWrapper	method	protected IMinervaService getBoundService()
+com.amazon.minerva.client.core.MinervaServiceWrapper	method	public IBinder asBinder()
+com.amazon.minerva.client.core.MinervaServiceWrapper	method	public PeriodicKPIReporter getPeriodicKPIReporter()
+com.amazon.minerva.client.core.MinervaServiceWrapper	method	public int[] getRemoteClientConfiguration() throws RemoteException
+com.amazon.minerva.client.core.MinervaServiceWrapper	method	public static MinervaServiceWrapper getInstance(Context context)
+com.amazon.minerva.client.core.MinervaServiceWrapper	method	public void flushBuffer()
+com.amazon.minerva.client.core.MinervaServiceWrapper	method	public void record(String str, String str2, String str3, String str4, long j, int i, List<DataPointEnvelope> list)
+com.amazon.minerva.client.core.MinervaServiceWrapper	method	public void recordWithSampleRate(String str, String str2, String str3, String str4, long j, int i, List<DataPointEnvelope> list, double d)
+com.amazon.minerva.client.core.MinervaServiceWrapper	method	public void setChildProfileVerifier(ChildProfileVerifier childProfileVerifier)
+com.amazon.minerva.client.core.Timestamp	field	private TimeZone timeZone;
+com.amazon.minerva.client.core.Timestamp	field	private long epochMillis;
+com.amazon.minerva.client.core.Timestamp	method	private Timestamp(long j, TimeZone timeZone)
+com.amazon.minerva.client.core.Timestamp	method	public String toString()
+com.amazon.minerva.client.core.Timestamp	method	public TimeZone getTimeZone()
+com.amazon.minerva.client.core.Timestamp	method	public boolean equals(Object obj)
+com.amazon.minerva.client.core.Timestamp	method	public int getTimeZoneOffset()
+com.amazon.minerva.client.core.Timestamp	method	public int hashCode()
+com.amazon.minerva.client.core.Timestamp	method	public long getEpochMillis()
+com.amazon.minerva.client.core.Timestamp	method	public static Timestamp now()
+com.amazon.minerva.client.core.Timestamp	method	public static Timestamp of(long j, TimeZone timeZone)
+com.amazon.minerva.client.core.TypedValue	field	private T value;
+com.amazon.minerva.client.core.TypedValue	field	private ValueType type;
+com.amazon.minerva.client.core.TypedValue	method	public String getValueAsString()
+com.amazon.minerva.client.core.TypedValue	method	public String toString()
+com.amazon.minerva.client.core.TypedValue	method	public T getValue()
+com.amazon.minerva.client.core.TypedValue	method	public ValueType getType()
+com.amazon.minerva.client.core.TypedValue	method	public boolean equals(Object obj)
+com.amazon.minerva.client.core.TypedValue	method	public boolean isEmpty()
+com.amazon.minerva.client.core.TypedValue	method	public int getSizeInBytes()
+com.amazon.minerva.client.core.TypedValue	method	public int hashCode()
+com.amazon.minerva.client.core.ValueType	field	private final Class<?> clazz;
+com.amazon.minerva.client.core.ValueType	method	public <T> TypedValue<T> of(T t)
+com.amazon.minerva.client.core.ValueType	method	public abstract <T> String toString(T t);
+com.amazon.minerva.client.core.ValueType	method	public abstract <T> boolean isEmpty(T t);
+com.amazon.minerva.client.core.ValueType	method	public abstract <T> int getSizeInBytes(T t);
+com.amazon.minerva.client.core.ValueType	method	public abstract String getTruncatedName();
+com.amazon.minerva.client.core.ValueType	method	public static ValueType fromInt(int i)
+com.amazon.minerva.client.core.ValueType	method	public static ValueType fromTrunc(String str)
+com.amazon.minerva.client.kpi.AbstractKPIReporter	field	protected ConcurrentMap<String, HashMap<String, Long>> kpiMap;
+com.amazon.minerva.client.kpi.AbstractKPIReporter	field	protected HashSet<String> kpiKeys;
+com.amazon.minerva.client.kpi.AbstractKPIReporter	method	protected abstract void initializeKPIKeys();
+com.amazon.minerva.client.kpi.AbstractKPIReporter	method	public AbstractKPIReporter()
+com.amazon.minerva.client.kpi.AbstractKPIReporter	method	public HashSet<String> getKpiKeys()
+com.amazon.minerva.client.kpi.AbstractKPIReporter	method	public Map<String, HashMap<String, Long>> getKpiMap()
+com.amazon.minerva.client.kpi.AbstractKPIReporter	method	public abstract void shutdown();
+com.amazon.minerva.client.kpi.AbstractKPIReporter	method	public synchronized void report(String str, String str2, long j)
+com.amazon.minerva.client.kpi.KPIConstant	field	public static final String CUSTOMER_LUID;
+com.amazon.minerva.client.kpi.KPIConstant	field	public static final String CUSTOMER_METRIC_GROUP_ID;
+com.amazon.minerva.client.kpi.KPIConstant	field	public static final String KPI_METRIC_GROUP_ID;
+com.amazon.minerva.client.kpi.KPIConstant	field	public static final String KPI_METRIC_SCHEMA_ID;
+com.amazon.minerva.client.kpi.KPIMetric	field	private final String metricName;
+com.amazon.minerva.client.kpi.KPIMetric	method	public String getMetricName()
+com.amazon.minerva.client.kpi.PeriodicKPIReporter	field	private MinervaServiceWrapper minervaServiceWrapper;
+com.amazon.minerva.client.kpi.PeriodicKPIReporter	field	private static ScheduledExecutorService scheduler;
+com.amazon.minerva.client.kpi.PeriodicKPIReporter	field	private static final String TAG;
+com.amazon.minerva.client.kpi.PeriodicKPIReporter	field	private static final int DEFAULT_REPORT_TIME_IN_MINUTE;
+com.amazon.minerva.client.kpi.PeriodicKPIReporter	method	private synchronized Map<String, MetricEvent> transferToMetricEvent()
+com.amazon.minerva.client.kpi.PeriodicKPIReporter	method	private void schedulePeriodicReport()
+com.amazon.minerva.client.kpi.PeriodicKPIReporter	method	protected void initializeKPIKeys()
+com.amazon.minerva.client.kpi.PeriodicKPIReporter	method	public PeriodicKPIReporter()
+com.amazon.minerva.client.kpi.PeriodicKPIReporter	method	public void recordKPIMetricEvents()
+com.amazon.minerva.client.kpi.PeriodicKPIReporter	method	public void setMinervaServiceWrapper(MinervaServiceWrapper minervaServiceWrapper)
+com.amazon.minerva.client.kpi.PeriodicKPIReporter	method	public void shutdown()
+com.amazon.minerva.client.neo.NativeMetricEvent	field	private Map<String, List<MetricValue>> metrics;
+com.amazon.minerva.client.neo.NativeMetricEvent	field	private Map<String, String> dimensions;
+com.amazon.minerva.client.neo.NativeMetricEvent	field	private String groupId;
+com.amazon.minerva.client.neo.NativeMetricEvent	field	private String schemaId;
+com.amazon.minerva.client.neo.NativeMetricEvent	field	private String source;
+com.amazon.minerva.client.neo.NativeMetricEvent	field	private double sampleRate;
+com.amazon.minerva.client.neo.NativeMetricEvent	field	private static final MinervaLogger log;
+com.amazon.minerva.client.neo.NativeMetricEvent	field	private static final String ISO8601_FORMAT;
+com.amazon.minerva.client.neo.NativeMetricEvent	method	private List<MetricValue> readMetricValueList(Parcel parcel)
+com.amazon.minerva.client.neo.NativeMetricEvent	method	private NativeMetricEvent(Parcel parcel)
+com.amazon.minerva.client.neo.NativeMetricEvent	method	private void writeMetricValueList(Parcel parcel, List<MetricValue> list)
+com.amazon.minerva.client.neo.NativeMetricEvent	method	public Map<String, List<MetricValue>> getMetrics()
+com.amazon.minerva.client.neo.NativeMetricEvent	method	public Map<String, String> getDimensions()
+com.amazon.minerva.client.neo.NativeMetricEvent	method	public NativeMetricEvent(String str, MetricEvent metricEvent)
+com.amazon.minerva.client.neo.NativeMetricEvent	method	public String getGroupId()
+com.amazon.minerva.client.neo.NativeMetricEvent	method	public String getSchemaId()
+com.amazon.minerva.client.neo.NativeMetricEvent	method	public String getSource()
+com.amazon.minerva.client.neo.NativeMetricEvent	method	public double getSampleRate()
+com.amazon.minerva.client.neo.NativeMetricEvent	method	public int describeContents()
+com.amazon.minerva.client.neo.NativeMetricEvent	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.minerva.client.neo.NativeMetricEvent$MetricValue	field	public double count;
+com.amazon.minerva.client.neo.NativeMetricEvent$MetricValue	field	public double value;
+com.amazon.minerva.client.neo.NativeMinervaClient	field	private final Context context;
+com.amazon.minerva.client.neo.NativeMinervaClient	field	private final NativeMinervaService nativeMinervaService;
+com.amazon.minerva.client.neo.NativeMinervaClient	field	private static final MinervaLogger log;
+com.amazon.minerva.client.neo.NativeMinervaClient	field	private static final NoOpMetricRecordCallback noOpCallback;
+com.amazon.minerva.client.neo.NativeMinervaClient	field	public static final int DEFAULT_MAX_KEY_VALUE_PAIR_COUNT;
+com.amazon.minerva.client.neo.NativeMinervaClient	field	public static final int DEFAULT_MAX_METRIC_EVENT_SIZE_IN_BYTE;
+com.amazon.minerva.client.neo.NativeMinervaClient	method	private boolean isMetricEventValid(MetricEvent metricEvent)
+com.amazon.minerva.client.neo.NativeMinervaClient	method	private void recordInternal(MetricEvent metricEvent, MetricRecordCallback metricRecordCallback)
+com.amazon.minerva.client.neo.NativeMinervaClient	method	private void reportKPI(String str, String str2)
+com.amazon.minerva.client.neo.NativeMinervaClient	method	public NativeMinervaClient(Context context)
+com.amazon.minerva.client.neo.NativeMinervaClient	method	public void record(MetricEvent metricEvent)
+com.amazon.minerva.client.neo.NativeMinervaClient	method	public void record(MetricEvent metricEvent, MetricRecordCallback metricRecordCallback)
+com.amazon.minerva.client.neo.NativeMinervaClient	method	public void shutdown()
+com.amazon.minerva.client.neo.NativeMinervaKPIReporter	field	private final NativeMinervaService nativeMinervaService;
+com.amazon.minerva.client.neo.NativeMinervaKPIReporter	field	private static final String TAG;
+com.amazon.minerva.client.neo.NativeMinervaKPIReporter	field	private static final int KPI_REPORT_TIME_SECONDS;
+com.amazon.minerva.client.neo.NativeMinervaKPIReporter	method	private synchronized Map<String, MetricEvent> convertToMetricEvent()
+com.amazon.minerva.client.neo.NativeMinervaKPIReporter	method	private void schedulePeriodicReport()
+com.amazon.minerva.client.neo.NativeMinervaKPIReporter	method	protected void initializeKPIKeys()
+com.amazon.minerva.client.neo.NativeMinervaKPIReporter	method	public NativeMinervaKPIReporter(NativeMinervaService nativeMinervaService)
+com.amazon.minerva.client.neo.NativeMinervaKPIReporter	method	public void recordKPIMetricEvents()
+com.amazon.minerva.client.neo.NativeMinervaKPIReporter	method	public void shutdown()
+com.amazon.minerva.client.neo.NativeMinervaService	field	private NativeMinervaKPIReporter nativeMinervaKPIReporter;
+com.amazon.minerva.client.neo.NativeMinervaService	field	private final String callingPackage;
+com.amazon.minerva.client.neo.NativeMinervaService	field	private static final MinervaLogger log;
+com.amazon.minerva.client.neo.NativeMinervaService	field	private static final String NATIVE_INTERFACE_TOKEN;
+com.amazon.minerva.client.neo.NativeMinervaService	field	private static final String NATIVE_MINERVA_SERVICE;
+com.amazon.minerva.client.neo.NativeMinervaService	field	private static final int MAX_BUFFERED_EVENTS;
+com.amazon.minerva.client.neo.NativeMinervaService	field	private static final int THREAD_POOL_QUEUE_CAPACITY;
+com.amazon.minerva.client.neo.NativeMinervaService	field	private static final long THREAD_KEEP_ALIVE_SECS;
+com.amazon.minerva.client.neo.NativeMinervaService	field	private static volatile NativeMinervaService nativeMinervaService;
+com.amazon.minerva.client.neo.NativeMinervaService	field	protected final AtomicBoolean connected;
+com.amazon.minerva.client.neo.NativeMinervaService	field	protected final AtomicBoolean connecting;
+com.amazon.minerva.client.neo.NativeMinervaService	field	protected final ConcurrentLinkedQueue<NativeMetricEvent> metricEventQueue;
+com.amazon.minerva.client.neo.NativeMinervaService	field	protected volatile IBinder nativeBinder;
+com.amazon.minerva.client.neo.NativeMinervaService	method	private NativeMinervaService(Context context)
+com.amazon.minerva.client.neo.NativeMinervaService	method	private RecordResult recordTransaction(NativeMetricEvent nativeMetricEvent)
+com.amazon.minerva.client.neo.NativeMinervaService	method	private void bufferEvent(NativeMetricEvent nativeMetricEvent)
+com.amazon.minerva.client.neo.NativeMinervaService	method	private void setNativeMinervaKPIReporter(NativeMinervaKPIReporter nativeMinervaKPIReporter)
+com.amazon.minerva.client.neo.NativeMinervaService	method	public NativeMinervaKPIReporter getNativeMinervaKPIReporter()
+com.amazon.minerva.client.neo.NativeMinervaService	method	public static NativeMinervaService getInstance(Context context)
+com.amazon.minerva.client.neo.NativeMinervaService	method	public void connectToService()
+com.amazon.minerva.client.neo.NativeMinervaService	method	public void flushBuffer()
+com.amazon.minerva.client.neo.NativeMinervaService	method	public void handleBinderDeath()
+com.amazon.minerva.client.neo.NativeMinervaService	method	public void record(MetricEvent metricEvent)
+com.amazon.minerva.client.neo.NativeMinervaService$ConnectTask	method	public ConnectTask()
+com.amazon.minerva.client.neo.NativeMinervaService$ConnectTask	method	public void run()
+com.amazon.minerva.client.neo.NativeMinervaService$FlushBufferTask	method	public FlushBufferTask()
+com.amazon.minerva.client.neo.NativeMinervaService$FlushBufferTask	method	public void run()
+com.amazon.minerva.client.utils.CustomMath	method	public static long addExact(long j, long j2)
+com.amazon.minerva.client.utils.MinervaLogger	field	private String mTagToUse;
+com.amazon.minerva.client.utils.MinervaLogger	field	private static final String TAG;
+com.amazon.minerva.client.utils.MinervaLogger	field	private static final int MAX_TAG_LENGTH_ON_FOS6_AND_BELOW;
+com.amazon.minerva.client.utils.MinervaLogger	method	private String makeTagSafe(String str)
+com.amazon.minerva.client.utils.MinervaLogger	method	public MinervaLogger(String str)
+com.amazon.minerva.client.utils.MinervaLogger	method	public void debug(String str)
+com.amazon.minerva.client.utils.MinervaLogger	method	public void error(String str)
+com.amazon.minerva.client.utils.MinervaLogger	method	public void info(String str)
+com.amazon.minerva.client.utils.MinervaLogger	method	public void verbose(String str)
+com.amazon.minerva.client.utils.MinervaLogger	method	public void warning(String str)
+com.amazon.minerva.client.utils.MinervaLogger	method	public void wtf(String str)
+com.amazon.minerva.client.utils.RemoteConfigurationConstant	field	private final int index;
+com.amazon.minerva.client.utils.RemoteConfigurationConstant	method	public int getIndex()
+com.amazon.minerva.client.utils.SchemaIdHelper	method	public static boolean isAllowedRecordOnChildProfile(String str)
+com.amazon.neo.minerva.service.api.BinderInternal	field	private static final String TAG;
+com.amazon.neo.minerva.service.api.BinderInternal	method	public IBinder getGlobalContextObject()
+com.amazon.neo.minerva.service.api.BinderUtils	field	private BinderInternal binderInternal;
+com.amazon.neo.minerva.service.api.BinderUtils	field	private static final String NEO_SERVICE_COORDINATOR_PUBLIC;
+com.amazon.neo.minerva.service.api.BinderUtils	field	private static final String TAG;
+com.amazon.neo.minerva.service.api.BinderUtils	field	protected static final int FOS8_BINDER_SYSTEM_HEADER;
+com.amazon.neo.minerva.service.api.BinderUtils	field	protected static final int FOS8_NO_EXCEPTION;
+com.amazon.neo.minerva.service.api.BinderUtils	field	protected static final int FOS8_SDK_VERSION;
+com.amazon.neo.minerva.service.api.BinderUtils	field	protected static final int FOS8_WORK_SOURCE_UNSET_UID;
+com.amazon.neo.minerva.service.api.BinderUtils	field	public static final String ANDROID_OS_ISERVICE_MANAGER;
+com.amazon.neo.minerva.service.api.BinderUtils	field	public static final String NEO_SERVICE_COORDINATOR;
+com.amazon.neo.minerva.service.api.BinderUtils	field	public static final int ANDROID_SERVICE_MANAGER_GET_SERVICE;
+com.amazon.neo.minerva.service.api.BinderUtils	field	public static final int NEO_SERVICE_COORDINATOR_ADD_SERVICE;
+com.amazon.neo.minerva.service.api.BinderUtils	field	public static final int NEO_SERVICE_COORDINATOR_GET_SERVICE;
+com.amazon.neo.minerva.service.api.BinderUtils	field	public static final int NEO_SERVICE_COORDINATOR_GET_SERVICE_AS_USER;
+com.amazon.neo.minerva.service.api.BinderUtils	field	public static final int NEO_SERVICE_COORDINATOR_RELEASE_SERVICE;
+com.amazon.neo.minerva.service.api.BinderUtils	method	private static int bPackChars(char c, char c2, char c3, char c4)
+com.amazon.neo.minerva.service.api.BinderUtils	method	protected IBinder getServiceBinder(String str)
+com.amazon.neo.minerva.service.api.BinderUtils	method	protected void getServiceByHandle(final String str, final ServiceCallback serviceCallback, IBinder iBinder)
+com.amazon.neo.minerva.service.api.BinderUtils	method	public BinderUtils()
+com.amazon.neo.minerva.service.api.BinderUtils	method	public BinderUtils(BinderInternal binderInternal)
+com.amazon.neo.minerva.service.api.BinderUtils	method	public IBinder getPublicServiceCoordinator()
+com.amazon.neo.minerva.service.api.BinderUtils	method	public IBinder getServiceCoordinator()
+com.amazon.neo.minerva.service.api.BinderUtils	method	public boolean registerService(String str, IBinder iBinder, IBinder iBinder2)
+com.amazon.neo.minerva.service.api.BinderUtils	method	public boolean releasePrivilegedService(IBinder iBinder)
+com.amazon.neo.minerva.service.api.BinderUtils	method	public static void linkAndDeliver(final IBinder iBinder, final String str, final ServiceCallback serviceCallback)
+com.amazon.neo.minerva.service.api.BinderUtils	method	public void getPrivilegedService(String str, ServiceCallback serviceCallback)
+com.amazon.neo.minerva.service.api.BinderUtils	method	public void getPrivilegedServiceAsUser(final String str, final ServiceCallback serviceCallback, int i)
+com.amazon.neo.minerva.service.api.BinderUtils	method	public void getPublicService(String str, ServiceCallback serviceCallback)
+com.amazon.neo.minerva.service.api.BinderUtils	method	public void getService(String str, ServiceCallback serviceCallback)
+com.amazon.neo.minerva.service.api.BinderUtils$Builder	field	private BinderInternal binderInternal;
+com.amazon.neo.minerva.service.api.BinderUtils$Builder	method	public BinderUtils build()
+com.amazon.neo.minerva.service.api.BinderUtils$Builder	method	public Builder withBinderInternal(BinderInternal binderInternal)
+com.amazon.neo.minerva.service.api.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.neo.minerva.service.api.BuildConfig	field	public static final String LIBRARY_PACKAGE_NAME;
+com.amazon.neo.minerva.service.api.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.neo.minerva.service.api.Bundle	field	private ArrayMap<String, Object> mMap;
+com.amazon.neo.minerva.service.api.Bundle	field	private ClassLoader mClassLoader;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final String TAG;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final int VAL_BOOLEAN;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final int VAL_BOOLEANARRAY;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final int VAL_BUNDLE;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final int VAL_BYTE;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final int VAL_BYTEARRAY;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final int VAL_CHARSEQUENCE;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final int VAL_CHARSEQUENCEARRAY;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final int VAL_DOUBLE;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final int VAL_DOUBLEARRAY;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final int VAL_FLOAT;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final int VAL_IBINDER;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final int VAL_INTARRAY;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final int VAL_INTEGER;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final int VAL_LIST;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final int VAL_LONG;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final int VAL_LONGARRAY;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final int VAL_MAP;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final int VAL_NULL;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final int VAL_OBJECTARRAY;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final int VAL_PARCELABLE;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final int VAL_PARCELABLEARRAY;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final int VAL_PERSISTABLEBUNDLE;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final int VAL_SERIALIZABLE;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final int VAL_SHORT;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final int VAL_SIZE;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final int VAL_SIZEF;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final int VAL_SPARSEARRAY;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final int VAL_SPARSEBOOLEANARRAY;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final int VAL_STRING;
+com.amazon.neo.minerva.service.api.Bundle	field	private static final int VAL_STRINGARRAY;
+com.amazon.neo.minerva.service.api.Bundle	method	private Object readValue(Parcel parcel)
+com.amazon.neo.minerva.service.api.Bundle	method	private void readFromParcel(Parcel parcel)
+com.amazon.neo.minerva.service.api.Bundle	method	private void writeArrayMap(Parcel parcel)
+com.amazon.neo.minerva.service.api.Bundle	method	private void writeBooleanArray(Parcel parcel, boolean[] zArr)
+com.amazon.neo.minerva.service.api.Bundle	method	private void writeByteArray(Parcel parcel, byte[] bArr)
+com.amazon.neo.minerva.service.api.Bundle	method	private void writeDoubleArray(Parcel parcel, double[] dArr)
+com.amazon.neo.minerva.service.api.Bundle	method	private void writeIntArray(Parcel parcel, int[] iArr)
+com.amazon.neo.minerva.service.api.Bundle	method	private void writeLongArray(Parcel parcel, long[] jArr)
+com.amazon.neo.minerva.service.api.Bundle	method	private void writeSize(Parcel parcel, Size size)
+com.amazon.neo.minerva.service.api.Bundle	method	private void writeSizeF(Parcel parcel, SizeF sizeF)
+com.amazon.neo.minerva.service.api.Bundle	method	private void writeStringArray(Parcel parcel, String[] strArr)
+com.amazon.neo.minerva.service.api.Bundle	method	private void writeValue(Parcel parcel, Object obj)
+com.amazon.neo.minerva.service.api.Bundle	method	protected ArrayMap<String, Object> getMap()
+com.amazon.neo.minerva.service.api.Bundle	method	protected Bundle(Parcel parcel)
+com.amazon.neo.minerva.service.api.Bundle	method	public Bundle(android.os.Bundle bundle)
+com.amazon.neo.minerva.service.api.Bundle	method	public android.os.Bundle toBundle()
+com.amazon.neo.minerva.service.api.Bundle	method	public final void writeToParcel(Parcel parcel, int i)
+com.amazon.neo.minerva.service.api.Bundle	method	public int describeContents()
+com.amazon.neo.minerva.service.api.EventUtils	field	private final Context mContext;
+com.amazon.neo.minerva.service.api.EventUtils	field	private static final String TAG;
+com.amazon.neo.minerva.service.api.EventUtils	field	private static final boolean DEBUG;
+com.amazon.neo.minerva.service.api.EventUtils	method	protected boolean isObserverAvailable(String str, String str2)
+com.amazon.neo.minerva.service.api.EventUtils	method	protected boolean parseNeoJson(String str, String str2)
+com.amazon.neo.minerva.service.api.EventUtils	method	public EventUtils(Context context)
+com.amazon.neo.minerva.service.api.EventUtils	method	public List<String> getNeoEventObservers(@Nonnull String str)
+com.amazon.neo.minerva.service.api.EventUtils	method	public boolean sendNeoEvent(String str, String str2, Parcelable parcelable)
+com.amazon.neo.minerva.service.api.NeoBundle	field	private ArrayMap<String, Object> mMap;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private ClassLoader mClassLoader;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final String TAG;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final int VAL_BOOLEAN;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final int VAL_BOOLEANARRAY;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final int VAL_BUNDLE;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final int VAL_BYTE;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final int VAL_BYTEARRAY;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final int VAL_CHARSEQUENCE;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final int VAL_CHARSEQUENCEARRAY;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final int VAL_DOUBLE;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final int VAL_DOUBLEARRAY;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final int VAL_FLOAT;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final int VAL_IBINDER;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final int VAL_INTARRAY;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final int VAL_INTEGER;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final int VAL_LIST;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final int VAL_LONG;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final int VAL_LONGARRAY;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final int VAL_MAP;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final int VAL_NULL;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final int VAL_OBJECTARRAY;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final int VAL_PARCELABLE;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final int VAL_PARCELABLEARRAY;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final int VAL_PERSISTABLEBUNDLE;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final int VAL_SERIALIZABLE;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final int VAL_SHORT;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final int VAL_SIZE;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final int VAL_SIZEF;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final int VAL_SPARSEARRAY;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final int VAL_SPARSEBOOLEANARRAY;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final int VAL_STRING;
+com.amazon.neo.minerva.service.api.NeoBundle	field	private static final int VAL_STRINGARRAY;
+com.amazon.neo.minerva.service.api.NeoBundle	method	private Object readValue(Parcel parcel)
+com.amazon.neo.minerva.service.api.NeoBundle	method	private void readFromParcel(Parcel parcel)
+com.amazon.neo.minerva.service.api.NeoBundle	method	private void writeArrayMap(Parcel parcel)
+com.amazon.neo.minerva.service.api.NeoBundle	method	private void writeBooleanArray(Parcel parcel, boolean[] zArr)
+com.amazon.neo.minerva.service.api.NeoBundle	method	private void writeByteArray(Parcel parcel, byte[] bArr)
+com.amazon.neo.minerva.service.api.NeoBundle	method	private void writeDoubleArray(Parcel parcel, double[] dArr)
+com.amazon.neo.minerva.service.api.NeoBundle	method	private void writeIntArray(Parcel parcel, int[] iArr)
+com.amazon.neo.minerva.service.api.NeoBundle	method	private void writeLongArray(Parcel parcel, long[] jArr)
+com.amazon.neo.minerva.service.api.NeoBundle	method	private void writeSize(Parcel parcel, Size size)
+com.amazon.neo.minerva.service.api.NeoBundle	method	private void writeSizeF(Parcel parcel, SizeF sizeF)
+com.amazon.neo.minerva.service.api.NeoBundle	method	private void writeStringArray(Parcel parcel, String[] strArr)
+com.amazon.neo.minerva.service.api.NeoBundle	method	private void writeValue(Parcel parcel, Object obj)
+com.amazon.neo.minerva.service.api.NeoBundle	method	protected NeoBundle(Parcel parcel)
+com.amazon.neo.minerva.service.api.NeoBundle	method	public NeoBundle(Bundle bundle)
+com.amazon.neo.minerva.service.api.NeoBundle	method	public NeoBundle(android.os.Bundle bundle)
+com.amazon.neo.minerva.service.api.NeoBundle	method	public android.os.Bundle toBundle()
+com.amazon.neo.minerva.service.api.NeoBundle	method	public final void writeToParcel(Parcel parcel, int i)
+com.amazon.neo.minerva.service.api.NeoBundle	method	public int describeContents()
+com.amazon.neo.minerva.service.api.PackageManagerUtils	field	private static final String META_DATA_NEO_ENABLED_KEY;
+com.amazon.neo.minerva.service.api.PackageManagerUtils	field	private static final String TAG;
+com.amazon.neo.minerva.service.api.PackageManagerUtils	field	private static final boolean DEBUG;
+com.amazon.neo.minerva.service.api.PackageManagerUtils	method	private PackageManagerUtils()
+com.amazon.neo.minerva.service.api.PackageManagerUtils	method	private static boolean isNeoEnabledInManifest(PackageInfo packageInfo)
+com.amazon.neo.minerva.service.api.PackageManagerUtils	method	private static boolean isNeoPresent(Context context)
+com.amazon.neo.minerva.service.api.PackageManagerUtils	method	public static List<String> listInstalledNeoPackageNames(Context context)
+com.amazon.neo.minerva.service.api.PackageManagerUtils	method	public static String readNeoManifest(Context context, String str)
+com.amazon.neo.minerva.service.api.PackageManagerUtils	method	public static boolean isNeoEnabled(Context context, String str)
+com.amazon.neo.minerva.service.api.ServiceCallback	field	protected ArrayList<IBinder> mPendingRequests;
+com.amazon.neo.minerva.service.api.ServiceCallback	field	protected IBinder mToken;
+com.amazon.neo.minerva.service.api.ServiceCallback	field	protected final ConcurrentHashMap<IBinder, IBinder.DeathRecipient> mDeathRecipients;
+com.amazon.neo.minerva.service.api.ServiceCallback	method	public abstract void onServiceConnected(String str, IBinder iBinder);
+com.amazon.neo.minerva.service.api.ServiceCallback	method	public abstract void onServiceFailed(String str, String str2);
+com.amazon.neo.minerva.service.api.ServiceCallback	method	public void onServiceDisconnected(String str)
+com.amazon.neo.minerva.service.api.UnsupportedTypeException	method	public UnsupportedTypeException(String str)
+com.amazon.neo.minerva.service.api.UnsupportedTypeException	method	public UnsupportedTypeException(String str, Throwable th)

@@ -1,0 +1,124 @@
+class	kind	declaration
+android.webkit.WebViewFactoryProxy	method	public static WebViewFactoryProvider getProvider()
+com.amazon.webview.extensions.AmazonJavascriptInterface	method	public abstract String getVersionInfo();
+com.amazon.webview.extensions.AmazonJavascriptInterface	method	public abstract boolean setAttribute(String str, String str2, String str3);
+com.amazon.webview.extensions.AmazonJavascriptInterface	method	public abstract int getAmazonVideoId();
+com.amazon.webview.extensions.AmazonJavascriptInterface	method	public abstract void clearAttribute(String str, String str2);
+com.amazon.webview.extensions.AmazonJavascriptInterface	method	public abstract void clearVideoId(String str);
+com.amazon.webview.extensions.CacheManagerExt	field	public static final int APPCACHE_STATUS_CACHED;
+com.amazon.webview.extensions.CacheManagerExt	field	public static final int APPCACHE_STATUS_NO_UPDATE;
+com.amazon.webview.extensions.CacheManagerExt	field	public static final int APPCACHE_STATUS_UNKNOWN;
+com.amazon.webview.extensions.CacheManagerExt	field	public static final int APPCACHE_STATUS_UPDATED;
+com.amazon.webview.extensions.CacheManagerExt	method	public abstract void updateAppCache(String str, String str2, UpdateAppCacheCallback updateAppCacheCallback);
+com.amazon.webview.extensions.CacheManagerExt	method	public static CacheManagerExt getInstance()
+com.amazon.webview.extensions.CallbackAdapter	field	private WebChromeClientExt mWebChromeClientExt;
+com.amazon.webview.extensions.CallbackAdapter	field	private WebViewClientExt mWebViewClientExt;
+com.amazon.webview.extensions.CallbackAdapter	field	private WebViewExt.OnScrollingListener mOnScrollingListener;
+com.amazon.webview.extensions.CallbackAdapter	method	private void createCustomProperties(UrlRequest request, Map<String, String> customProperties)
+com.amazon.webview.extensions.CallbackAdapter	method	public Map<String, String> onBeforeUrlRequest(String url, String method, Map<String, String> headers, boolean isMainFrame, boolean isPreRender)
+com.amazon.webview.extensions.CallbackAdapter	method	public void onCompletedUrlRequest(String url, String method, boolean isMainFrame, boolean isPreRender)
+com.amazon.webview.extensions.CallbackAdapter	method	public void onInsecureContent(WebView view, String url, boolean allowed)
+com.amazon.webview.extensions.CallbackAdapter	method	public void onMediaDevicePermissionsShowPrompt(String origin, int videoType, int audioType, MediaDevicePermissions.Callback returnCallback)
+com.amazon.webview.extensions.CallbackAdapter	method	public void onScrolling(int deltaX, int deltaY, int scrollX, int scrollY)
+com.amazon.webview.extensions.CallbackAdapter	method	public void onWebViewDestroyed(WebView view)
+com.amazon.webview.extensions.CallbackAdapter	method	public void onWebViewResponsive()
+com.amazon.webview.extensions.CallbackAdapter	method	public void onWebViewUnresponsive()
+com.amazon.webview.extensions.CallbackAdapter	method	public void showFileChooser(ValueCallback<String[]> uploadFileCallback, int mode, String acceptTypes, String title, String defaultFilename, boolean capture)
+com.amazon.webview.extensions.CallbackAdapter	method	public void toggleFullscreenModeForTab(boolean enterFullscreen)
+com.amazon.webview.extensions.DevToolsManager	method	public abstract void disableDeveloperTools();
+com.amazon.webview.extensions.DevToolsManager	method	public abstract void enableDeveloperToolsTcp(int i);
+com.amazon.webview.extensions.DevToolsManager	method	public abstract void enableDeveloperToolsUnix(String str);
+com.amazon.webview.extensions.DevToolsManager	method	public static DevToolsManager getInstance()
+com.amazon.webview.extensions.MediaDevice	field	public static final int MEDIA_TYPE_AUDIO;
+com.amazon.webview.extensions.MediaDevice	field	public static final int MEDIA_TYPE_SCREEN;
+com.amazon.webview.extensions.MediaDevice	field	public static final int MEDIA_TYPE_VIDEO;
+com.amazon.webview.extensions.MediaDevice	method	public abstract String getDeviceId();
+com.amazon.webview.extensions.MediaDevice	method	public abstract String getDeviceName();
+com.amazon.webview.extensions.MediaDevice	method	public abstract int getDeviceType();
+com.amazon.webview.extensions.MediaDeviceManager	method	public abstract MediaDevice getCurrentAudioDevice();
+com.amazon.webview.extensions.MediaDeviceManager	method	public abstract void enumerateMediaDevices();
+com.amazon.webview.extensions.MediaDeviceManager	method	public abstract void pauseScreenCapture();
+com.amazon.webview.extensions.MediaDeviceManager	method	public abstract void resumeScreenCapture(MediaProjection mediaProjection);
+com.amazon.webview.extensions.MediaDeviceManager	method	public abstract void setDefaultMediaDevice(int i, String str, ValueCallback<Boolean> valueCallback);
+com.amazon.webview.extensions.MediaDeviceManager	method	public abstract void setMediaProjection(MediaProjection mediaProjection);
+com.amazon.webview.extensions.MediaDeviceManager	method	public abstract void setOnMediaDeviceUpdateListener(OnMediaDeviceUpdateListener onMediaDeviceUpdateListener);
+com.amazon.webview.extensions.MediaDeviceManager	method	public static MediaDeviceManager getInstance()
+com.amazon.webview.extensions.MetricsProvider	field	public static final int METRICS_ENGINE_STARTUP;
+com.amazon.webview.extensions.MetricsProvider	field	public static final int METRICS_MEMORY_USAGE;
+com.amazon.webview.extensions.MetricsProvider	field	public static final int METRICS_PAGE_LOAD;
+com.amazon.webview.extensions.MetricsProvider	field	public static final int METRICS_RESOURCE_LOAD;
+com.amazon.webview.extensions.MetricsProvider	method	public abstract boolean setMetricsListener(int i, MetricsListener metricsListener);
+com.amazon.webview.extensions.MetricsProvider	method	public static MetricsProvider getInstance()
+com.amazon.webview.extensions.NetworkStack	method	public abstract void preconnect(Map<String, Integer> map);
+com.amazon.webview.extensions.NetworkStack	method	public static NetworkStack getInstance()
+com.amazon.webview.extensions.UrlRequest	method	public abstract Map<String, String> getExtraHeaders();
+com.amazon.webview.extensions.UrlRequest	method	public abstract Map<String, String> getHeaders();
+com.amazon.webview.extensions.UrlRequest	method	public abstract String getHttpMethod();
+com.amazon.webview.extensions.UrlRequest	method	public abstract String getUrl();
+com.amazon.webview.extensions.UrlRequest	method	public abstract String getUserAgent();
+com.amazon.webview.extensions.UrlRequest	method	public abstract boolean isMainFrame();
+com.amazon.webview.extensions.UrlRequest	method	public abstract boolean isPrerender();
+com.amazon.webview.extensions.UrlRequest	method	public abstract byte[] getBody();
+com.amazon.webview.extensions.UrlRequest	method	public abstract void addExtraHeaders(Map<String, String> map);
+com.amazon.webview.extensions.UrlRequest	method	public abstract void setUserAgent(String str);
+com.amazon.webview.extensions.WebChromeClientExt	field	public static final int FILE_CHOOSER_MODE_OPEN_FOLDER;
+com.amazon.webview.extensions.WebChromeClientExt	field	public static final int FILE_CHOOSER_MODE_OPEN_MULTIPLE;
+com.amazon.webview.extensions.WebChromeClientExt	method	public void onMediaDevicePermissionsHidePrompt()
+com.amazon.webview.extensions.WebChromeClientExt	method	public void onMediaDevicePermissionsShowPrompt(String origin, int videoType, int audioType, MediaDevicePermissions.Callback callback)
+com.amazon.webview.extensions.WebChromeClientExt	method	public void onToggleFullscreenMode(boolean enterFullscreen)
+com.amazon.webview.extensions.WebChromeClientExt	method	public void onWebViewResponsive()
+com.amazon.webview.extensions.WebChromeClientExt	method	public void onWebViewUnresponsive()
+com.amazon.webview.extensions.WebChromeClientExt	method	public void showFileChooser(ValueCallback<String[]> uploadFileCallback, int mode, String acceptTypes, String title, String defaultFilename, boolean capture)
+com.amazon.webview.extensions.WebSettingsExt	method	private WebSettingsExt()
+com.amazon.webview.extensions.WebSettingsExt	method	public static boolean getAllowRunningInsecureContent(WebView view)
+com.amazon.webview.extensions.WebSettingsExt	method	public static boolean getDoubleTapToZoomEnabled(WebView view)
+com.amazon.webview.extensions.WebSettingsExt	method	public static void setAllowRunningInsecureContent(WebView view, boolean allow)
+com.amazon.webview.extensions.WebSettingsExt	method	public static void setDoubleTapToZoomEnabled(WebView view, boolean enabled)
+com.amazon.webview.extensions.WebStorageExt	method	private WebStorageExt()
+com.amazon.webview.extensions.WebStorageExt	method	public static void deleteData(int flags)
+com.amazon.webview.extensions.WebViewClientExt	method	public void onBeforeUrlRequest(UrlRequest request)
+com.amazon.webview.extensions.WebViewClientExt	method	public void onCompletedUrlRequest(UrlRequest request)
+com.amazon.webview.extensions.WebViewClientExt	method	public void onDocumentLoadFinished(WebView view)
+com.amazon.webview.extensions.WebViewClientExt	method	public void onInsecureContent(WebView view, String url, boolean allowed)
+com.amazon.webview.extensions.WebViewExt	field	private static Map<WebView, CallbackAdapter> sCallbackAdapters;
+com.amazon.webview.extensions.WebViewExt	field	private static final List<String> DEFAULT_AWV_OPTIONS;
+com.amazon.webview.extensions.WebViewExt	field	private static final String AWV_OPTIONS_EXTENSION;
+com.amazon.webview.extensions.WebViewExt	field	private static final String AWV_OVERWRITE_MODE;
+com.amazon.webview.extensions.WebViewExt	field	private static final String TAG;
+com.amazon.webview.extensions.WebViewExt	method	private WebViewExt()
+com.amazon.webview.extensions.WebViewExt	method	private static CallbackAdapter getCallbackAdapter(WebView view)
+com.amazon.webview.extensions.WebViewExt	method	private static String[] makeCommandLine(List<String> options)
+com.amazon.webview.extensions.WebViewExt	method	public static String getMimeType(WebView view)
+com.amazon.webview.extensions.WebViewExt	method	public static boolean hasEngineOption(String option)
+com.amazon.webview.extensions.WebViewExt	method	public static boolean setEngineOptions(List<String> options)
+com.amazon.webview.extensions.WebViewExt	method	public static void clearVisitedHistory()
+com.amazon.webview.extensions.WebViewExt	method	public static void enableAmazonJavascriptInterface(WebView view)
+com.amazon.webview.extensions.WebViewExt	method	public static void exitFullscreen(WebView view)
+com.amazon.webview.extensions.WebViewExt	method	public static void exportPdf(WebView view, ParcelFileDescriptor pdfFileDescriptor, ValueCallback<Boolean> callback)
+com.amazon.webview.extensions.WebViewExt	method	public static void setOnScrollingListener(WebView view, OnScrollingListener listener)
+com.amazon.webview.extensions.WebViewExt	method	public static void setWebChromeClientExt(WebView view, WebChromeClientExt client)
+com.amazon.webview.extensions.WebViewExt	method	public static void setWebViewClientExt(WebView view, WebViewClientExt client)
+com.amazon.webview.extensions.WebViewExtProviderClient	field	public static final int FILE_CHOOSER_MODE_OPEN_FOLDER;
+com.amazon.webview.extensions.WebViewExtProviderClient	field	public static final int FILE_CHOOSER_MODE_OPEN_MULTIPLE;
+com.amazon.webview.extensions.WebViewUrlRequest	field	private Map<String, String> extraHeaders;
+com.amazon.webview.extensions.WebViewUrlRequest	field	private String userAgent;
+com.amazon.webview.extensions.WebViewUrlRequest	field	private final Map<String, String> headers;
+com.amazon.webview.extensions.WebViewUrlRequest	field	private final String method;
+com.amazon.webview.extensions.WebViewUrlRequest	field	private final String url;
+com.amazon.webview.extensions.WebViewUrlRequest	field	private final boolean isMainFrame;
+com.amazon.webview.extensions.WebViewUrlRequest	field	private final boolean isPrerender;
+com.amazon.webview.extensions.WebViewUrlRequest	method	public Map<String, String> getExtraHeaders()
+com.amazon.webview.extensions.WebViewUrlRequest	method	public Map<String, String> getHeaders()
+com.amazon.webview.extensions.WebViewUrlRequest	method	public String getHttpMethod()
+com.amazon.webview.extensions.WebViewUrlRequest	method	public String getUrl()
+com.amazon.webview.extensions.WebViewUrlRequest	method	public String getUserAgent()
+com.amazon.webview.extensions.WebViewUrlRequest	method	public WebViewUrlRequest(String url, String method, Map<String, String> headers, boolean isMainFrame, boolean isPrerender)
+com.amazon.webview.extensions.WebViewUrlRequest	method	public WebViewUrlRequest(String url, String method, Map<String, String> headers, byte[] body)
+com.amazon.webview.extensions.WebViewUrlRequest	method	public boolean isMainFrame()
+com.amazon.webview.extensions.WebViewUrlRequest	method	public boolean isPrerender()
+com.amazon.webview.extensions.WebViewUrlRequest	method	public byte[] getBody()
+com.amazon.webview.extensions.WebViewUrlRequest	method	public void addExtraHeaders(Map<String, String> extraHeaders)
+com.amazon.webview.extensions.WebViewUrlRequest	method	public void setUserAgent(String userAgent)
+com.amazon.webview.utils.WebViewSystemProperties	field	private static final String TAG;
+com.amazon.webview.utils.WebViewSystemProperties	method	public static Context getApplicationContext()
+com.amazon.webview.utils.WebViewSystemProperties	method	public static String getProperty(String extension, String defaultValue)

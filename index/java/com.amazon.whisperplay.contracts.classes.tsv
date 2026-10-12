@@ -1,0 +1,1115 @@
+kind	class	extends	implements
+@interface	com.amazon.whisperlink.annotation.Concurrency$GuardedBy		
+@interface	com.amazon.whisperlink.annotation.Concurrency$NotThreadSafe		
+@interface	com.amazon.whisperlink.annotation.Concurrency$ThreadSafe		
+@interface	com.amazon.whisperlink.annotation.NotNull		
+@interface	com.amazon.whisperlink.annotation.Nullable		
+@interface	com.amazon.whisperlink.annotation.VisibleForTesting		
+@interface	com.amazon.whisperplay.thrift.TFieldMetadata		
+@interface	com.amazon.whisperplay.thrift.TFunctionMetadata		
+class	com.amazon.dp.discovery.AuthenticateDeviceInput		Comparable<AuthenticateDeviceInput>
+class	com.amazon.dp.discovery.AuthenticateDeviceOutput		Comparable<AuthenticateDeviceOutput>
+class	com.amazon.dp.discovery.ChallengeBlob		Comparable<ChallengeBlob>
+class	com.amazon.dp.discovery.ClientException	RuntimeException	
+class	com.amazon.dp.discovery.DeviceInfo		Comparable<DeviceInfo>
+class	com.amazon.dp.discovery.DeviceRadioInfo		Comparable<DeviceRadioInfo>
+class	com.amazon.dp.discovery.EncryptedBlob		Comparable<EncryptedBlob>
+class	com.amazon.dp.discovery.Endpoint		Comparable<Endpoint>
+class	com.amazon.dp.discovery.ExtendedInfo		Comparable<ExtendedInfo>
+class	com.amazon.dp.discovery.GetDevicesInput		Comparable<GetDevicesInput>
+class	com.amazon.dp.discovery.GetDevicesOutput		Comparable<GetDevicesOutput>
+class	com.amazon.dp.discovery.PingOutput		Comparable<PingOutput>
+class	com.amazon.dp.discovery.RadioId		Comparable<RadioId>
+class	com.amazon.dp.discovery.RegisterInput		Comparable<RegisterInput>
+class	com.amazon.dp.discovery.RegisterOutput		Comparable<RegisterOutput>
+class	com.amazon.dp.discovery.Service		Comparable<Service>
+class	com.amazon.dp.discovery.ServiceException	RuntimeException	
+class	com.amazon.dp.discovery.UnregisterInput		Comparable<UnregisterInput>
+class	com.amazon.dp.discovery.UnregisterOutput		Comparable<UnregisterOutput>
+class	com.amazon.dp.discovery.UpdateStatusInput		Comparable<UpdateStatusInput>
+class	com.amazon.dp.discovery.client.AndroidDiscoveryClientImpl		DiscoveryClient
+class	com.amazon.dp.discovery.client.DiscoveryClientFactory		
+class	com.amazon.dp.discovery.client.NonRetryableException	Exception	
+class	com.amazon.dp.discovery.client.RetryableException	Exception	
+class	com.amazon.dp.discovery.ir.DiscoveryEndpointResolver		
+class	com.amazon.dp.discovery.types.AccessLevel		
+class	com.amazon.dp.discovery.types.Availability		
+class	com.amazon.dp.discovery.types.SecurityLevel		
+class	com.amazon.dp.discovery.types.ServiceFlags		
+class	com.amazon.frank.devicecontrol.rpc.ActiveNotificationsResult		
+class	com.amazon.frank.devicecontrol.rpc.ChannelList		
+class	com.amazon.frank.devicecontrol.rpc.ChannelListResult		
+class	com.amazon.frank.devicecontrol.rpc.ChannelMetadata		
+class	com.amazon.frank.devicecontrol.rpc.ConflictDescription		
+class	com.amazon.frank.devicecontrol.rpc.ConflictGroup		
+class	com.amazon.frank.devicecontrol.rpc.DVRItem		
+class	com.amazon.frank.devicecontrol.rpc.DeltaUpdateMessage_RI		
+class	com.amazon.frank.devicecontrol.rpc.DeltaUpdateMessage_RP		
+class	com.amazon.frank.devicecontrol.rpc.DeviceInfo		
+class	com.amazon.frank.devicecontrol.rpc.DeviceInfoResult		
+class	com.amazon.frank.devicecontrol.rpc.DeviceInformationResult		
+class	com.amazon.frank.devicecontrol.rpc.DeviceStatus		
+class	com.amazon.frank.devicecontrol.rpc.DiskFormatResult		
+class	com.amazon.frank.devicecontrol.rpc.EPGMetadata		
+class	com.amazon.frank.devicecontrol.rpc.FrankDeviceControlConstants		
+class	com.amazon.frank.devicecontrol.rpc.GetDVRItemsResult		
+class	com.amazon.frank.devicecontrol.rpc.GetNetworkInformationResult		
+class	com.amazon.frank.devicecontrol.rpc.GetOngoingStreamingSessionsResult		
+class	com.amazon.frank.devicecontrol.rpc.GetRecordingsRequest		
+class	com.amazon.frank.devicecontrol.rpc.GetSettingResult		
+class	com.amazon.frank.devicecontrol.rpc.GetSettingsResult		
+class	com.amazon.frank.devicecontrol.rpc.IPAddress		
+class	com.amazon.frank.devicecontrol.rpc.InstallSystemUpdatesStatus		
+class	com.amazon.frank.devicecontrol.rpc.NetworkInformation		
+class	com.amazon.frank.devicecontrol.rpc.NotificationInfo		
+class	com.amazon.frank.devicecontrol.rpc.OngoingRecordingsResult		
+class	com.amazon.frank.devicecontrol.rpc.OngoingStreamingItem		
+class	com.amazon.frank.devicecontrol.rpc.OptionalString		
+class	com.amazon.frank.devicecontrol.rpc.RecordNowResult		
+class	com.amazon.frank.devicecontrol.rpc.RecordedProgram		
+class	com.amazon.frank.devicecontrol.rpc.RecordedProgramList		
+class	com.amazon.frank.devicecontrol.rpc.RecordedProgramListResult		
+class	com.amazon.frank.devicecontrol.rpc.RecordedProgramResult		
+class	com.amazon.frank.devicecontrol.rpc.RecordingInstruction		
+class	com.amazon.frank.devicecontrol.rpc.RecordingInstructionList		
+class	com.amazon.frank.devicecontrol.rpc.RecordingInstructionListResult		
+class	com.amazon.frank.devicecontrol.rpc.RecordingInstructionResult		
+class	com.amazon.frank.devicecontrol.rpc.RecordingMetadata		
+class	com.amazon.frank.devicecontrol.rpc.ScheduleRecordingConflictGroup		
+class	com.amazon.frank.devicecontrol.rpc.ScheduleRecordingResult		
+class	com.amazon.frank.devicecontrol.rpc.ScheduleRecordingResult2		
+class	com.amazon.frank.devicecontrol.rpc.SignalingResult		
+class	com.amazon.frank.devicecontrol.rpc.SmartConnectInfo		
+class	com.amazon.frank.devicecontrol.rpc.StorageInfo		
+class	com.amazon.frank.devicecontrol.rpc.StorageInfoResult		
+class	com.amazon.frank.devicecontrol.rpc.StorageMountInfo		
+class	com.amazon.frank.devicecontrol.rpc.StreamingCertificatesResult		
+class	com.amazon.frank.devicecontrol.rpc.SystemUpdatesInfo		
+class	com.amazon.frank.devicecontrol.rpc.TranscodedCopyResult		
+class	com.amazon.frank.devicecontrol.rpc.TryToResolveConflictResult		
+class	com.amazon.frank.devicecontrol.rpc.UpdatedRecord_RI		
+class	com.amazon.frank.devicecontrol.rpc.UpdatedRecord_RP		
+class	com.amazon.storm.lightning.services.v2.LApplication		Serializable,Cloneable,TBase<LApplication,_Fields>
+class	com.amazon.storm.lightning.services.v2.LApplication$LApplicationStandardScheme	StandardScheme<LApplication>	
+class	com.amazon.storm.lightning.services.v2.LApplication$LApplicationStandardSchemeFactory		SchemeFactory
+class	com.amazon.storm.lightning.services.v2.LApplication$LApplicationTupleScheme	TupleScheme<LApplication>	
+class	com.amazon.storm.lightning.services.v2.LApplication$LApplicationTupleSchemeFactory		SchemeFactory
+class	com.amazon.storm.lightning.services.v2.LAppsChange		Serializable,Cloneable,TBase<LAppsChange,_Fields>
+class	com.amazon.storm.lightning.services.v2.LAppsChange$LAppsChangeStandardScheme	StandardScheme<LAppsChange>	
+class	com.amazon.storm.lightning.services.v2.LAppsChange$LAppsChangeStandardSchemeFactory		SchemeFactory
+class	com.amazon.storm.lightning.services.v2.LAppsChange$LAppsChangeTupleScheme	TupleScheme<LAppsChange>	
+class	com.amazon.storm.lightning.services.v2.LAppsChange$LAppsChangeTupleSchemeFactory		SchemeFactory
+class	com.amazon.storm.lightning.services.v2.LAppsList		Serializable,Cloneable,TBase<LAppsList,_Fields>
+class	com.amazon.storm.lightning.services.v2.LAppsList$LAppsListStandardScheme	StandardScheme<LAppsList>	
+class	com.amazon.storm.lightning.services.v2.LAppsList$LAppsListStandardSchemeFactory		SchemeFactory
+class	com.amazon.storm.lightning.services.v2.LAppsList$LAppsListTupleScheme	TupleScheme<LAppsList>	
+class	com.amazon.storm.lightning.services.v2.LAppsList$LAppsListTupleSchemeFactory		SchemeFactory
+class	com.amazon.storm.lightning.services.v2.LBaseObject		
+class	com.amazon.storm.lightning.services.v2.LControlEvent		Serializable,Cloneable,TBase<LControlEvent,_Fields>
+class	com.amazon.storm.lightning.services.v2.LControlEvent$LControlEventStandardScheme	StandardScheme<LControlEvent>	
+class	com.amazon.storm.lightning.services.v2.LControlEvent$LControlEventStandardSchemeFactory		SchemeFactory
+class	com.amazon.storm.lightning.services.v2.LControlEvent$LControlEventTupleScheme	TupleScheme<LControlEvent>	
+class	com.amazon.storm.lightning.services.v2.LControlEvent$LControlEventTupleSchemeFactory		SchemeFactory
+class	com.amazon.storm.lightning.services.v2.LCursorStateEvent		Serializable,Cloneable,TBase<LCursorStateEvent,_Fields>
+class	com.amazon.storm.lightning.services.v2.LCursorStateEvent$LCursorStateEventStandardScheme	StandardScheme<LCursorStateEvent>	
+class	com.amazon.storm.lightning.services.v2.LCursorStateEvent$LCursorStateEventStandardSchemeFactory		SchemeFactory
+class	com.amazon.storm.lightning.services.v2.LCursorStateEvent$LCursorStateEventTupleScheme	TupleScheme<LCursorStateEvent>	
+class	com.amazon.storm.lightning.services.v2.LCursorStateEvent$LCursorStateEventTupleSchemeFactory		SchemeFactory
+class	com.amazon.storm.lightning.services.v2.LEncryptedCursorStateEvent		Serializable,Cloneable,TBase<LEncryptedCursorStateEvent,_Fields>
+class	com.amazon.storm.lightning.services.v2.LEncryptedCursorStateEvent$LEncryptedCursorStateEventStandardScheme	StandardScheme<LEncryptedCursorStateEvent>	
+class	com.amazon.storm.lightning.services.v2.LEncryptedCursorStateEvent$LEncryptedCursorStateEventStandardSchemeFactory		SchemeFactory
+class	com.amazon.storm.lightning.services.v2.LEncryptedCursorStateEvent$LEncryptedCursorStateEventTupleScheme	TupleScheme<LEncryptedCursorStateEvent>	
+class	com.amazon.storm.lightning.services.v2.LEncryptedCursorStateEvent$LEncryptedCursorStateEventTupleSchemeFactory		SchemeFactory
+class	com.amazon.storm.lightning.services.v2.LEncryptedInputConnection		
+class	com.amazon.storm.lightning.services.v2.LEvent	LBaseObject	
+class	com.amazon.storm.lightning.services.v2.LFavoritesChange		Serializable,Cloneable,TBase<LFavoritesChange,_Fields>
+class	com.amazon.storm.lightning.services.v2.LFavoritesChange$LFavoritesChangeStandardScheme	StandardScheme<LFavoritesChange>	
+class	com.amazon.storm.lightning.services.v2.LFavoritesChange$LFavoritesChangeStandardSchemeFactory		SchemeFactory
+class	com.amazon.storm.lightning.services.v2.LFavoritesChange$LFavoritesChangeTupleScheme	TupleScheme<LFavoritesChange>	
+class	com.amazon.storm.lightning.services.v2.LFavoritesChange$LFavoritesChangeTupleSchemeFactory		SchemeFactory
+class	com.amazon.storm.lightning.services.v2.LFeatureSupportInfo		
+class	com.amazon.storm.lightning.services.v2.LImageRequest		Serializable,Cloneable,TBase<LImageRequest,_Fields>
+class	com.amazon.storm.lightning.services.v2.LImageRequest$LImageRequestStandardScheme	StandardScheme<LImageRequest>	
+class	com.amazon.storm.lightning.services.v2.LImageRequest$LImageRequestStandardSchemeFactory		SchemeFactory
+class	com.amazon.storm.lightning.services.v2.LImageRequest$LImageRequestTupleScheme	TupleScheme<LImageRequest>	
+class	com.amazon.storm.lightning.services.v2.LImageRequest$LImageRequestTupleSchemeFactory		SchemeFactory
+class	com.amazon.storm.lightning.services.v2.LImageResponse		Serializable,Cloneable,TBase<LImageResponse,_Fields>
+class	com.amazon.storm.lightning.services.v2.LImageResponse$LImageResponseStandardScheme	StandardScheme<LImageResponse>	
+class	com.amazon.storm.lightning.services.v2.LImageResponse$LImageResponseStandardSchemeFactory		SchemeFactory
+class	com.amazon.storm.lightning.services.v2.LImageResponse$LImageResponseTupleScheme	TupleScheme<LImageResponse>	
+class	com.amazon.storm.lightning.services.v2.LImageResponse$LImageResponseTupleSchemeFactory		SchemeFactory
+class	com.amazon.storm.lightning.services.v2.LInputConnection		
+class	com.amazon.storm.lightning.services.v2.LInputEvent		Serializable,Cloneable,TBase<LInputEvent,_Fields>
+class	com.amazon.storm.lightning.services.v2.LInputEvent$LInputEventStandardScheme	StandardScheme<LInputEvent>	
+class	com.amazon.storm.lightning.services.v2.LInputEvent$LInputEventStandardSchemeFactory		SchemeFactory
+class	com.amazon.storm.lightning.services.v2.LInputEvent$LInputEventTupleScheme	TupleScheme<LInputEvent>	
+class	com.amazon.storm.lightning.services.v2.LInputEvent$LInputEventTupleSchemeFactory		SchemeFactory
+class	com.amazon.storm.lightning.services.v2.LKeyEvent		Serializable,Cloneable,TBase<LKeyEvent,_Fields>
+class	com.amazon.storm.lightning.services.v2.LKeyEvent$LKeyEventStandardScheme	StandardScheme<LKeyEvent>	
+class	com.amazon.storm.lightning.services.v2.LKeyEvent$LKeyEventStandardSchemeFactory		SchemeFactory
+class	com.amazon.storm.lightning.services.v2.LKeyEvent$LKeyEventTupleScheme	TupleScheme<LKeyEvent>	
+class	com.amazon.storm.lightning.services.v2.LKeyEvent$LKeyEventTupleSchemeFactory		SchemeFactory
+class	com.amazon.storm.lightning.services.v2.LKeyboardText		Serializable,Cloneable,TBase<LKeyboardText,_Fields>
+class	com.amazon.storm.lightning.services.v2.LKeyboardText$LKeyboardTextStandardScheme	StandardScheme<LKeyboardText>	
+class	com.amazon.storm.lightning.services.v2.LKeyboardText$LKeyboardTextStandardSchemeFactory		SchemeFactory
+class	com.amazon.storm.lightning.services.v2.LKeyboardText$LKeyboardTextTupleScheme	TupleScheme<LKeyboardText>	
+class	com.amazon.storm.lightning.services.v2.LKeyboardText$LKeyboardTextTupleSchemeFactory		SchemeFactory
+class	com.amazon.storm.lightning.services.v2.LProtocolVersionInfo		
+class	com.amazon.storm.lightning.services.v2.LShortcut		Serializable,Cloneable,TBase<LShortcut,_Fields>
+class	com.amazon.storm.lightning.services.v2.LShortcut$LShortcutStandardScheme	StandardScheme<LShortcut>	
+class	com.amazon.storm.lightning.services.v2.LShortcut$LShortcutStandardSchemeFactory		SchemeFactory
+class	com.amazon.storm.lightning.services.v2.LShortcut$LShortcutTupleScheme	TupleScheme<LShortcut>	
+class	com.amazon.storm.lightning.services.v2.LShortcut$LShortcutTupleSchemeFactory		SchemeFactory
+class	com.amazon.storm.lightning.services.v2.LShortcutList		Serializable,Cloneable,TBase<LShortcutList,_Fields>
+class	com.amazon.storm.lightning.services.v2.LShortcutList$LShortcutListStandardScheme	StandardScheme<LShortcutList>	
+class	com.amazon.storm.lightning.services.v2.LShortcutList$LShortcutListStandardSchemeFactory		SchemeFactory
+class	com.amazon.storm.lightning.services.v2.LShortcutList$LShortcutListTupleScheme	TupleScheme<LShortcutList>	
+class	com.amazon.storm.lightning.services.v2.LShortcutList$LShortcutListTupleSchemeFactory		SchemeFactory
+class	com.amazon.storm.lightning.services.v2.LStateEvent		
+class	com.amazon.storm.lightning.services.v2.LightningConstants		
+class	com.amazon.storm.lightning.services.v2.LightningException	Exception	
+class	com.amazon.whisperlink.android.common.BuildConfig		
+class	com.amazon.whisperlink.android.features.dataexporter.BuildConfig		
+class	com.amazon.whisperlink.android.features.securekeyexchangeprovider.BuildConfig		
+class	com.amazon.whisperlink.android.transport.messenger.MessengerConstants		
+class	com.amazon.whisperlink.android.transport.messenger.Pipe		
+class	com.amazon.whisperlink.android.transport.messenger.TMessengerServerTransport	TServerTransport	IBinder.DeathRecipient
+class	com.amazon.whisperlink.android.transport.messenger.TMessengerServerTransport$ServingMessageHandler	Handler	
+class	com.amazon.whisperlink.android.transport.messenger.TMessengerTransport	TTransport	IBinder.DeathRecipient
+class	com.amazon.whisperlink.android.transport.messenger.TMessengerTransport$CopyRangeByteArrayOutputStream	ByteArrayOutputStream	
+class	com.amazon.whisperlink.android.transport.messenger.TMessengerTransport$InputMessageHandler	Handler	
+class	com.amazon.whisperlink.android.transport.messenger.TMessengerTransportFactory		TInternalCommunicationChannelFactory
+class	com.amazon.whisperlink.android.transport.tcomm.CloudTransportFeatureImpl		CloudTransportFeature
+class	com.amazon.whisperlink.android.transport.tcomm.DefaultTCommMessageHandlerRegistrar		TCommMessageHandlerRegistrar
+class	com.amazon.whisperlink.android.transport.tcomm.TCommInputProtocol		Comparable<TCommInputProtocol>
+class	com.amazon.whisperlink.android.transport.tcomm.TCommJSONHeaderIds		
+class	com.amazon.whisperlink.android.transport.tcomm.TCommMessageBroker		
+class	com.amazon.whisperlink.android.transport.tcomm.TCommMessageBroker$MessageHolder		
+class	com.amazon.whisperlink.android.transport.tcomm.TCommMessageBroker$MessageReceiverHolder		
+class	com.amazon.whisperlink.android.transport.tcomm.TCommMessageBroker$MessageSource		
+class	com.amazon.whisperlink.android.transport.tcomm.TCommMessageBroker$MessageTaskRunner	TaskExecutorController.TaskRunner	
+class	com.amazon.whisperlink.android.transport.tcomm.TCommMessageBroker$MessageWorker	TaskExecutor.Task	
+class	com.amazon.whisperlink.android.transport.tcomm.TCommMessageBroker$TCommMessageHandler		MessageHandler
+class	com.amazon.whisperlink.android.transport.tcomm.TCommOutputProtocol		
+class	com.amazon.whisperlink.android.transport.tcomm.TCommOutputProtocol$MessageWrapper		
+class	com.amazon.whisperlink.android.transport.tcomm.TCommRoute		
+class	com.amazon.whisperlink.android.transport.tcomm.TTCommPassiveTransport	TIOStreamTransport	TCommMessageBroker.MessageReceiver,AuthenticationFeature
+class	com.amazon.whisperlink.android.transport.tcomm.TTCommPassiveTransport$TCommConnectionProvider		ConnectionProvider
+class	com.amazon.whisperlink.android.transport.tcomm.TTCommServerTransport	TServerTransport	
+class	com.amazon.whisperlink.android.transport.tcomm.TTCommServerTransport$CtrlMessageHandler		TCommMessageBroker.ControlMessageHandler
+class	com.amazon.whisperlink.android.transport.tcomm.TTCommTransport	TTCommPassiveTransport	
+class	com.amazon.whisperlink.android.transport.tcomm.TTCommTransportFactory		TExternalCommunicationChannelFactory
+class	com.amazon.whisperlink.android.transport.tcomm.TTCommTransportFactory$CtrlMsgHandler		TCommMessageBroker.ControlMessageHandler
+class	com.amazon.whisperlink.android.transport.tcomm.factory.AmazonTcommSettings		TCommSettings
+class	com.amazon.whisperlink.android.transport.tcomm.factory.CloudTransportFactoryFactory		ComChannelFactoryFactory
+class	com.amazon.whisperlink.android.transport.tcomm.factory.CloudTransportFeatureFactory		PluginFeatureFactory
+class	com.amazon.whisperlink.android.transport.tcomm.security.SecureEncryption		
+class	com.amazon.whisperlink.android.transport.tcomm.security.SecurePayload		
+class	com.amazon.whisperlink.android.transport.tcomm.security.TCommSecureCommsErrors		
+class	com.amazon.whisperlink.android.transport.tcomm.security.TCommSecureCommsProviderClient		TCommSecureCommsProvider
+class	com.amazon.whisperlink.android.transport.tcomm.security.TCommSecureCommsProviderServer		TCommSecureCommsProvider
+class	com.amazon.whisperlink.android.transport.tcomm.security.TCommSecurePayloadSchemas		
+class	com.amazon.whisperlink.android.transport.tcomm.security.encryption.AESGCMEncryptionEngine		EncryptionEngine
+class	com.amazon.whisperlink.android.transport.tcomm.security.encryption.SymmetricKey		
+class	com.amazon.whisperlink.android.transport.tcomm.security.encryption.utils.AsymmetricEncryptionUtil		
+class	com.amazon.whisperlink.android.transport.tcomm.security.exceptions.SecureTCommException	RuntimeException	
+class	com.amazon.whisperlink.android.util.DeviceInfoParser		
+class	com.amazon.whisperlink.android.util.DeviceUtil		
+class	com.amazon.whisperlink.android.util.InstallNotification		
+class	com.amazon.whisperlink.android.util.InstallNotification$NotifyTask	AsyncTask<Map<String, String>, Void, Void>	
+class	com.amazon.whisperlink.android.util.InstallNotification$RevokeTask	AsyncTask<Void, Void, Void>	
+class	com.amazon.whisperlink.android.util.MultipleProfilesUtil		
+class	com.amazon.whisperlink.android.util.RouteUtil		
+class	com.amazon.whisperlink.android.util.WhisperLinkSettingsManager		
+class	com.amazon.whisperlink.annotation.Concurrency		
+class	com.amazon.whisperlink.core.android.listener.TimeChangeListener	BroadcastReceiver	
+class	com.amazon.whisperlink.core.android.log.AmazonLogHandler		Log.LogHandler
+class	com.amazon.whisperlink.core.android.log.AmazonLogHandler$MetricEventHolderImpl		Log.LogHandler.MetricEventHolder
+class	com.amazon.whisperlink.core.android.log.PerfLogStateReceiver	BroadcastReceiver	
+class	com.amazon.whisperlink.devicepicker.android.DefaultDeviceDataSource		DeviceDataSource
+class	com.amazon.whisperlink.devicepicker.android.DefaultDeviceDataSourceCache		
+class	com.amazon.whisperlink.devicepicker.android.DefaultDeviceDataSourceCache$DataSourceEntry		
+class	com.amazon.whisperlink.devicepicker.android.DeviceListArrayAdapter	ArrayAdapter<DeviceModel>	
+class	com.amazon.whisperlink.devicepicker.android.DeviceListArrayAdapter$ClickListener		View.OnClickListener
+class	com.amazon.whisperlink.devicepicker.android.DeviceListArrayAdapter$ViewHolder		
+class	com.amazon.whisperlink.devicepicker.android.DeviceListArrayAdapterHelper		DeviceDataSourceObserver
+class	com.amazon.whisperlink.devicepicker.android.DeviceListButton	View	
+class	com.amazon.whisperlink.devicepicker.android.DeviceModel	Device	
+class	com.amazon.whisperlink.devicepicker.android.DevicePicker		DeviceListContainer
+class	com.amazon.whisperlink.devicepicker.android.DevicePicker$DismissListener		PopupWindow.OnDismissListener
+class	com.amazon.whisperlink.devicepicker.android.DevicePicker$ItemClickListener		AdapterView.OnItemClickListener
+class	com.amazon.whisperlink.devicepicker.android.DialogUtil		
+class	com.amazon.whisperlink.devicepicker.android.DialogUtil$PopupDialogUtil	DialogUtil	
+class	com.amazon.whisperlink.devicepicker.android.DialogUtil$WindowDialogUtil	DialogUtil	
+class	com.amazon.whisperlink.devicepicker.android.RegistrarCB	DefaultCallback	RegistrarCb.Iface
+class	com.amazon.whisperlink.devicepicker.android.ResourceConstants		
+class	com.amazon.whisperlink.devicepicker.android.Util		
+class	com.amazon.whisperlink.exception.RetryableException	Exception	
+class	com.amazon.whisperlink.exception.WPTException	TTransportException	
+class	com.amazon.whisperlink.feature.SecureKeyExchangeProviderImpl		SecureKeyExchangeProvider
+class	com.amazon.whisperlink.feature.security.BuildConfig		
+class	com.amazon.whisperlink.feature.security.SecureComChannelFactoryFactory		ComChannelFactoryFactory
+class	com.amazon.whisperlink.feature.security.SecureFeatureFactory		PluginFeatureFactory
+class	com.amazon.whisperlink.feature.security.android.AbstractCertificateSource		CertificateSourceFeature
+class	com.amazon.whisperlink.feature.security.android.CertificateSourceClientImplementation	AbstractCertificateSource	
+class	com.amazon.whisperlink.feature.security.android.PasswordProviderFactory		
+class	com.amazon.whisperlink.feature.security.android.PasswordProviderFactory$SecureX509TrustManager		X509TrustManager
+class	com.amazon.whisperlink.feature.security.android.WPSSLTransportParameters		
+class	com.amazon.whisperlink.feature.security.transport.SecureTransportFeatureImpl		SecureTransportFeature
+class	com.amazon.whisperlink.feature.security.transport.TExternalSecureSocketFactory	TExternalSocketFactory	
+class	com.amazon.whisperlink.feature.security.transport.TSecureWhisperLinkServerTransport	TWhisperLinkServerTransport	
+class	com.amazon.whisperlink.feature.security.transport.TSecureWhisperLinkTransport	TWhisperLinkTransport	
+class	com.amazon.whisperlink.filetransfer.FileTransfer		
+class	com.amazon.whisperlink.filetransfer.FileTransfer$Client		Iface,TServiceClient
+class	com.amazon.whisperlink.filetransfer.FileTransfer$Client$Factory		TServiceClientFactory<Client>
+class	com.amazon.whisperlink.filetransfer.FileTransfer$Processor		TProcessor
+class	com.amazon.whisperlink.filetransfer.FileTransfer$close_args		Serializable
+class	com.amazon.whisperlink.filetransfer.FileTransfer$close_result		Serializable
+class	com.amazon.whisperlink.filetransfer.FileTransfer$mkdir_args		Serializable
+class	com.amazon.whisperlink.filetransfer.FileTransfer$mkdir_result		Serializable
+class	com.amazon.whisperlink.filetransfer.FileTransfer$open_args		Serializable
+class	com.amazon.whisperlink.filetransfer.FileTransfer$open_result		Serializable
+class	com.amazon.whisperlink.filetransfer.FileTransfer$recv_chunk_args		Serializable
+class	com.amazon.whisperlink.filetransfer.FileTransfer$recv_chunk_result		Serializable
+class	com.amazon.whisperlink.filetransfer.FileTransfer$rm_args		Serializable
+class	com.amazon.whisperlink.filetransfer.FileTransfer$rm_result		Serializable
+class	com.amazon.whisperlink.filetransfer.FileTransfer$rmdir_args		Serializable
+class	com.amazon.whisperlink.filetransfer.FileTransfer$rmdir_result		Serializable
+class	com.amazon.whisperlink.filetransfer.FileTransfer$send_chunk_args		Serializable
+class	com.amazon.whisperlink.filetransfer.FileTransfer$send_chunk_result		Serializable
+class	com.amazon.whisperlink.filetransfer.FileTransferConstants		
+class	com.amazon.whisperlink.filetransfer.OpenMode		Serializable,TEnum
+class	com.amazon.whisperlink.impl.ConnectionManager		AccountChangeListener,TimeChangeEventListener
+class	com.amazon.whisperlink.impl.ConnectionManager$AutoCloseConnectionsTask	TimerTask	
+class	com.amazon.whisperlink.impl.ConnectionManager$SingletonHolder		
+class	com.amazon.whisperlink.impl.DefaultTrueSingleBooleanFilterKey		FilterKey<Boolean>
+class	com.amazon.whisperlink.impl.DeviceInfoImpl		DeviceInfo
+class	com.amazon.whisperlink.impl.EndpointConnection		
+class	com.amazon.whisperlink.impl.ExtendedInfoImpl		ServiceEndpoint.ExtendedInfo
+class	com.amazon.whisperlink.impl.ExtendedInfoImpl$Account		
+class	com.amazon.whisperlink.impl.OneOrMoreFilterKey		FilterKey<I>
+class	com.amazon.whisperlink.impl.ServiceEndpointImpl		ServiceEndpoint
+class	com.amazon.whisperlink.impl.ServiceEndpointImpl$Builder		
+class	com.amazon.whisperlink.impl.ServiceEndpointImplSerializer		EndpointSerializer
+class	com.amazon.whisperlink.impl.ServiceEndpointImplSerializer$AccessLevelCodec		JsonCodec
+class	com.amazon.whisperlink.impl.ServiceEndpointImplSerializer$AppDataCodec		JsonCodec
+class	com.amazon.whisperlink.impl.ServiceEndpointImplSerializer$FlagsCodec		JsonCodec
+class	com.amazon.whisperlink.impl.ServiceEndpointImplSerializer$SecurityCodec		JsonCodec
+class	com.amazon.whisperlink.impl.ServiceEndpointImplSerializer$ServiceIdCodec		JsonCodec
+class	com.amazon.whisperlink.impl.ServiceEndpointImplSerializer$UUIDCodec		JsonCodec
+class	com.amazon.whisperlink.impl.ServiceEndpointImplSerializer$VersionCodec		JsonCodec
+class	com.amazon.whisperlink.impl.SingleValueNoDefaultFilterKey		FilterKey<T>
+class	com.amazon.whisperlink.media.BaseMediaService	DefaultService	MediaService.Iface
+class	com.amazon.whisperlink.mediaservice.MediaService		
+class	com.amazon.whisperlink.mediaservice.MediaService$Client		Iface,TServiceClient
+class	com.amazon.whisperlink.mediaservice.MediaService$Client$Factory		TServiceClientFactory<Client>
+class	com.amazon.whisperlink.mediaservice.MediaService$Processor		TProcessor
+class	com.amazon.whisperlink.mediaservice.MediaService$nextMedia_args		Serializable
+class	com.amazon.whisperlink.mediaservice.MediaService$nextMedia_result		Serializable
+class	com.amazon.whisperlink.mediaservice.MediaService$pause_args		Serializable
+class	com.amazon.whisperlink.mediaservice.MediaService$pause_result		Serializable
+class	com.amazon.whisperlink.mediaservice.MediaService$play_args		Serializable
+class	com.amazon.whisperlink.mediaservice.MediaService$play_result		Serializable
+class	com.amazon.whisperlink.mediaservice.MediaService$previousMedia_args		Serializable
+class	com.amazon.whisperlink.mediaservice.MediaService$previousMedia_result		Serializable
+class	com.amazon.whisperlink.mediaservice.MediaService$processMessage_args		Serializable
+class	com.amazon.whisperlink.mediaservice.MediaService$processMessage_result		Serializable
+class	com.amazon.whisperlink.mediaservice.MediaService$seekTo_args		Serializable
+class	com.amazon.whisperlink.mediaservice.MediaService$seekTo_result		Serializable
+class	com.amazon.whisperlink.mediaservice.MediaService$stop_args		Serializable
+class	com.amazon.whisperlink.mediaservice.MediaService$stop_result		Serializable
+class	com.amazon.whisperlink.mediaservice.MediaServiceConstants		
+class	com.amazon.whisperlink.platform.AboutImpl		About
+class	com.amazon.whisperlink.platform.AndroidPlatformContext		PlatformContext
+class	com.amazon.whisperlink.platform.ClientInfoImpl		ClientInfo
+class	com.amazon.whisperlink.platform.DiscoveryManagerImpl		DiscoveryManager
+class	com.amazon.whisperlink.platform.DiscoveryManagerImpl$RefreshListener		
+class	com.amazon.whisperlink.platform.FeatureNotFoundException	RuntimeException	
+class	com.amazon.whisperlink.platform.HostingManagerImpl		HostingManager
+class	com.amazon.whisperlink.platform.HostingManagerImpl$CallbackAdapter	WPProcessorAdapter	WPCallback
+class	com.amazon.whisperlink.platform.HostingManagerImpl$ServiceAdapter	WPProcessorAdapter	WPService
+class	com.amazon.whisperlink.platform.HostingManagerImpl$WPProcessorAdapter		WPProcessor
+class	com.amazon.whisperlink.platform.PlatformFeatureFilter		
+class	com.amazon.whisperlink.platform.PlatformFeatureFilter$and	PlatformFeatureFilter	
+class	com.amazon.whisperlink.platform.PlatformFeatureFilter$contains	PlatformFeatureFilter	
+class	com.amazon.whisperlink.platform.PlatformFeatureFilter$is	PlatformFeatureFilter	
+class	com.amazon.whisperlink.platform.PlatformFeatureFilter$isNot	PlatformFeatureFilter	
+class	com.amazon.whisperlink.platform.PlatformFeatureFilter$not	PlatformFeatureFilter	
+class	com.amazon.whisperlink.platform.PlatformFeatureFilter$or	PlatformFeatureFilter	
+class	com.amazon.whisperlink.platform.PlatformInitializerImpl	PlatformInitializerAndroidBase	PlatformInitializer<AmazonAndroidPlatform>
+class	com.amazon.whisperlink.platform.PlatformInitializerImpl$PlatformFactory		
+class	com.amazon.whisperlink.platform.PlatformManager		
+class	com.amazon.whisperlink.platform.PlugInStore		
+class	com.amazon.whisperlink.platform.ServiceDiscoveryCB	DefaultCallback	ServiceDiscoveryCb.Iface
+class	com.amazon.whisperlink.platform.ServiceEndpointDiff		
+class	com.amazon.whisperlink.platform.WhisperPlayImpl		LifecycleManager
+class	com.amazon.whisperlink.platform.WhisperPlayImpl$AddListenerRunnable		Runnable
+class	com.amazon.whisperlink.platform.WhisperPlayImpl$DelayShutDownRunnable		Runnable
+class	com.amazon.whisperlink.platform.WhisperPlayImpl$PlatformNotReadyRunnable		Runnable
+class	com.amazon.whisperlink.platform.WhisperPlayImpl$PlatformReadyRunnable		Runnable
+class	com.amazon.whisperlink.platform.WhisperPlayImpl$RemoveListenerRunnable		Runnable
+class	com.amazon.whisperlink.platform.WhisperPlayImpl$ShutDownWhisperPlayRunnable		Runnable
+class	com.amazon.whisperlink.platform.WhisperPlayImpl$SingletonHolder		
+class	com.amazon.whisperlink.platform.WhisperPlayImpl$StartWhisperPlayRunnable		Runnable
+class	com.amazon.whisperlink.platform.authentication.DeviceAuthenticationRecord		Serializable,TBase
+class	com.amazon.whisperlink.platform.event.EventManager		
+class	com.amazon.whisperlink.platform.feature.AccountSpecifier$AccountFields		
+class	com.amazon.whisperlink.platform.feature.DataExporterFactoryImpl		DataExporterFactory
+class	com.amazon.whisperlink.plugin.config.CloudTransportConfig		PlugInConfiguration
+class	com.amazon.whisperlink.plugin.config.SecurityConfig		PlugInConfiguration
+class	com.amazon.whisperlink.port.DeviceIds		
+class	com.amazon.whisperlink.port.android.AmazonAndroidPlatform		AndroidMessengerProvider,WPPlatform<AndroidPlatformContext>,AndroidApplicationContext
+class	com.amazon.whisperlink.port.android.AmazonAndroidPlatform$AmazonAndroidDevice	Device	
+class	com.amazon.whisperlink.port.android.AmazonAndroidPlatform$CoreServiceConnection		ServiceConnection
+class	com.amazon.whisperlink.port.android.AmazonAndroidPlatform$DeviceInfoContentObserver	ContentObserver	
+class	com.amazon.whisperlink.port.android.AndroidHashServicesProvider	SQLiteOpenHelper	HashServicesProvider
+class	com.amazon.whisperlink.port.android.HashServicesEntry		
+class	com.amazon.whisperlink.port.android.WhisperLinkDeviceInfo		
+class	com.amazon.whisperlink.port.android.WhisperLinkDeviceInfo$Device		BaseColumns
+class	com.amazon.whisperlink.port.android.listener.IPv4AddressWaiter		Callable<Object>
+class	com.amazon.whisperlink.port.android.listener.NetworkStateChangeListener	BroadcastReceiver	
+class	com.amazon.whisperlink.port.android.transport.BluetoothConnectionManager		
+class	com.amazon.whisperlink.port.android.transport.BluetoothConnectionManager$BluetoothEventReceiver	BroadcastReceiver	
+class	com.amazon.whisperlink.port.android.transport.CloudInetUri		
+class	com.amazon.whisperlink.port.android.transport.TBluetoothSocketFactory		TExternalCommunicationChannelFactory
+class	com.amazon.whisperlink.port.android.transport.TBluetoothSocketFactory$SimpleBtServerSocket	TServerTransport	
+class	com.amazon.whisperlink.port.android.transport.TBtReceiverSocket	TBtSocket	
+class	com.amazon.whisperlink.port.android.transport.TBtSocket	TIOStreamTransport	
+class	com.amazon.whisperlink.port.android.transport.TExternalSocketFactory		TExternalCommunicationChannelFactory
+class	com.amazon.whisperlink.port.android.transport.TExternalSocketFactory$RefreshInetRouteCallable		Callable<Route>
+class	com.amazon.whisperlink.port.platform.PlatformInitializerAndroidBase		
+class	com.amazon.whisperlink.port.platform.PlatformInitializerAndroidBase$PluginResolver		
+class	com.amazon.whisperlink.port.platform.PluginSettingsParser		
+class	com.amazon.whisperlink.port.platform.RemoteSettingsMonitorImpl		RemoteSettingsMonitor
+class	com.amazon.whisperlink.port.platform.RemoteSettingsMonitorImpl$ValueRequest		
+class	com.amazon.whisperlink.rcm.ConfigurationSyncOperation		
+class	com.amazon.whisperlink.rcm.RemoteConfiguration		
+class	com.amazon.whisperlink.rcm.RemoteConfiguration$RemoteConfigurationHolder		
+class	com.amazon.whisperlink.security.service.AuthDaemonExternal		
+class	com.amazon.whisperlink.security.service.AuthDaemonExternal$Client		Iface,TServiceClient
+class	com.amazon.whisperlink.security.service.AuthDaemonExternal$Client$Factory		TServiceClientFactory<Client>
+class	com.amazon.whisperlink.security.service.AuthDaemonExternal$Processor		TProcessor
+class	com.amazon.whisperlink.security.service.AuthDaemonExternal$authDevice_args		Serializable
+class	com.amazon.whisperlink.security.service.AuthDaemonExternal$authDevice_result		Serializable
+class	com.amazon.whisperlink.security.service.AuthDaemonInternal		
+class	com.amazon.whisperlink.security.service.AuthDaemonInternal$Client		Iface,TServiceClient
+class	com.amazon.whisperlink.security.service.AuthDaemonInternal$Client$Factory		TServiceClientFactory<Client>
+class	com.amazon.whisperlink.security.service.AuthDaemonInternal$Processor		TProcessor
+class	com.amazon.whisperlink.security.service.AuthDaemonInternal$checkToken_args		Serializable
+class	com.amazon.whisperlink.security.service.AuthDaemonInternal$checkToken_result		Serializable
+class	com.amazon.whisperlink.security.service.AuthDaemonInternal$forceAuthDataUpdate_args		Serializable
+class	com.amazon.whisperlink.security.service.AuthDaemonInternal$forceAuthDataUpdate_result		Serializable
+class	com.amazon.whisperlink.security.service.AuthDaemonInternal$getCertData_args		Serializable
+class	com.amazon.whisperlink.security.service.AuthDaemonInternal$getCertData_result		Serializable
+class	com.amazon.whisperlink.security.service.AuthDaemonInternal$getCurrentAuths_args		Serializable
+class	com.amazon.whisperlink.security.service.AuthDaemonInternal$getCurrentAuths_result		Serializable
+class	com.amazon.whisperlink.security.service.AuthDaemonInternal$getDeviceSerialNumberFor_args		Serializable
+class	com.amazon.whisperlink.security.service.AuthDaemonInternal$getDeviceSerialNumberFor_result		Serializable
+class	com.amazon.whisperlink.security.service.AuthDaemonInternal$getDeviceSerialNumberWithoutForceUpdateFor_args		Serializable
+class	com.amazon.whisperlink.security.service.AuthDaemonInternal$getDeviceSerialNumberWithoutForceUpdateFor_result		Serializable
+class	com.amazon.whisperlink.security.service.AuthDaemonInternal$getDeviceTypeFor_args		Serializable
+class	com.amazon.whisperlink.security.service.AuthDaemonInternal$getDeviceTypeFor_result		Serializable
+class	com.amazon.whisperlink.security.service.AuthDaemonInternal$getDeviceTypeWithoutForceUpdateFor_args		Serializable
+class	com.amazon.whisperlink.security.service.AuthDaemonInternal$getDeviceTypeWithoutForceUpdateFor_result		Serializable
+class	com.amazon.whisperlink.security.service.AuthDaemonInternal$getKeyDataFor_args		Serializable
+class	com.amazon.whisperlink.security.service.AuthDaemonInternal$getKeyDataFor_result		Serializable
+class	com.amazon.whisperlink.security.service.AuthDaemonInternal$getPrivateKeyData_args		Serializable
+class	com.amazon.whisperlink.security.service.AuthDaemonInternal$getPrivateKeyData_result		Serializable
+class	com.amazon.whisperlink.security.service.AuthDaemonInternal$getTokenForInternalRoute_args		Serializable
+class	com.amazon.whisperlink.security.service.AuthDaemonInternal$getTokenForInternalRoute_result		Serializable
+class	com.amazon.whisperlink.security.service.AuthDaemonInternal$getToken_args		Serializable
+class	com.amazon.whisperlink.security.service.AuthDaemonInternal$getToken_result		Serializable
+class	com.amazon.whisperlink.security.service.AuthDaemonInternal$revokeToken_args		Serializable
+class	com.amazon.whisperlink.security.service.AuthDaemonInternal$revokeToken_result		Serializable
+class	com.amazon.whisperlink.security.service.AuthParameters		Serializable,TBase
+class	com.amazon.whisperlink.security.service.AuthResult		Serializable,TBase
+class	com.amazon.whisperlink.security.service.AuthResultCode		Serializable,TEnum
+class	com.amazon.whisperlink.security.service.AuthService		
+class	com.amazon.whisperlink.security.service.AuthService$Client		Iface,TServiceClient
+class	com.amazon.whisperlink.security.service.AuthService$Client$Factory		TServiceClientFactory<Client>
+class	com.amazon.whisperlink.security.service.AuthService$Processor		TProcessor
+class	com.amazon.whisperlink.security.service.AuthService$authorize_args		Serializable
+class	com.amazon.whisperlink.security.service.AuthService$authorize_result		Serializable
+class	com.amazon.whisperlink.security.service.AuthToken		Serializable,TBase
+class	com.amazon.whisperlink.security.service.ReturnAuthParameters		Serializable,TBase
+class	com.amazon.whisperlink.security.service.SecurityConstants		
+class	com.amazon.whisperlink.service.AccessLevel		Serializable,TEnum
+class	com.amazon.whisperlink.service.ConnectionInfo		Serializable,TBase
+class	com.amazon.whisperlink.service.Description		Serializable,TBase
+class	com.amazon.whisperlink.service.DescriptionFilter		Serializable,TBase
+class	com.amazon.whisperlink.service.DescriptionList		Serializable,TBase
+class	com.amazon.whisperlink.service.Device		Serializable,TBase
+class	com.amazon.whisperlink.service.DeviceCallback		Serializable,TBase
+class	com.amazon.whisperlink.service.DeviceManager		
+class	com.amazon.whisperlink.service.DeviceManager$Client		Iface,TServiceClient
+class	com.amazon.whisperlink.service.DeviceManager$Client$Factory		TServiceClientFactory<Client>
+class	com.amazon.whisperlink.service.DeviceManager$Processor		TProcessor
+class	com.amazon.whisperlink.service.DeviceManager$deregisterUserListener_args		Serializable
+class	com.amazon.whisperlink.service.DeviceManager$deregisterUserListener_result		Serializable
+class	com.amazon.whisperlink.service.DeviceManager$exchangeDeviceServices_args		Serializable
+class	com.amazon.whisperlink.service.DeviceManager$exchangeDeviceServices_result		Serializable
+class	com.amazon.whisperlink.service.DeviceManager$getCurrentUserInfo_args		Serializable
+class	com.amazon.whisperlink.service.DeviceManager$getCurrentUserInfo_result		Serializable
+class	com.amazon.whisperlink.service.DeviceManager$getDataExporterFor_args		Serializable
+class	com.amazon.whisperlink.service.DeviceManager$getDataExporterFor_result		Serializable
+class	com.amazon.whisperlink.service.DeviceManager$getDeviceServicesBySid_args		Serializable
+class	com.amazon.whisperlink.service.DeviceManager$getDeviceServicesBySid_result		Serializable
+class	com.amazon.whisperlink.service.DeviceManager$getDeviceServices_args		Serializable
+class	com.amazon.whisperlink.service.DeviceManager$getDeviceServices_result		Serializable
+class	com.amazon.whisperlink.service.DeviceManager$getFullDeviceInfo_args		Serializable
+class	com.amazon.whisperlink.service.DeviceManager$getFullDeviceInfo_result		Serializable
+class	com.amazon.whisperlink.service.DeviceManager$getLocalService_args		Serializable
+class	com.amazon.whisperlink.service.DeviceManager$getLocalService_result		Serializable
+class	com.amazon.whisperlink.service.DeviceManager$registerUserListener_args		Serializable
+class	com.amazon.whisperlink.service.DeviceManager$registerUserListener_result		Serializable
+class	com.amazon.whisperlink.service.DeviceManager$remoteServicesFound_args		Serializable
+class	com.amazon.whisperlink.service.DeviceManager$remoteServicesFound_result		Serializable
+class	com.amazon.whisperlink.service.DeviceManager$remoteServicesLost_args		Serializable
+class	com.amazon.whisperlink.service.DeviceManager$remoteServicesLost_result		Serializable
+class	com.amazon.whisperlink.service.DeviceServices		Serializable,TBase
+class	com.amazon.whisperlink.service.DeviceType		Serializable,TEnum
+class	com.amazon.whisperlink.service.Dictionary		Serializable,TBase
+class	com.amazon.whisperlink.service.EndpointDiscovery		
+class	com.amazon.whisperlink.service.EndpointDiscovery$Client		Iface,TServiceClient
+class	com.amazon.whisperlink.service.EndpointDiscovery$Client$Factory		TServiceClientFactory<Client>
+class	com.amazon.whisperlink.service.EndpointDiscovery$Processor		TProcessor
+class	com.amazon.whisperlink.service.EndpointDiscovery$addServiceFilter_args		Serializable
+class	com.amazon.whisperlink.service.EndpointDiscovery$addServiceFilter_result		Serializable
+class	com.amazon.whisperlink.service.EndpointDiscovery$refresh_args		Serializable
+class	com.amazon.whisperlink.service.EndpointDiscovery$refresh_result		Serializable
+class	com.amazon.whisperlink.service.EndpointDiscovery$removeServiceFilter_args		Serializable
+class	com.amazon.whisperlink.service.EndpointDiscovery$removeServiceFilter_result		Serializable
+class	com.amazon.whisperlink.service.ExtendedInfo		Serializable,TBase
+class	com.amazon.whisperlink.service.Flags		Serializable,TEnum
+class	com.amazon.whisperlink.service.Registrar		
+class	com.amazon.whisperlink.service.Registrar$Client		Iface,TServiceClient
+class	com.amazon.whisperlink.service.Registrar$Client$Factory		TServiceClientFactory<Client>
+class	com.amazon.whisperlink.service.Registrar$Processor		TProcessor
+class	com.amazon.whisperlink.service.Registrar$addRegistrarListener_args		Serializable
+class	com.amazon.whisperlink.service.Registrar$addRegistrarListener_result		Serializable
+class	com.amazon.whisperlink.service.Registrar$cancelSearch_args		Serializable
+class	com.amazon.whisperlink.service.Registrar$cancelSearch_result		Serializable
+class	com.amazon.whisperlink.service.Registrar$clearDiscoveredCache_args		Serializable
+class	com.amazon.whisperlink.service.Registrar$clearDiscoveredCache_result		Serializable
+class	com.amazon.whisperlink.service.Registrar$deregisterCallback_args		Serializable
+class	com.amazon.whisperlink.service.Registrar$deregisterCallback_result		Serializable
+class	com.amazon.whisperlink.service.Registrar$deregisterDataExporter_args		Serializable
+class	com.amazon.whisperlink.service.Registrar$deregisterDataExporter_result		Serializable
+class	com.amazon.whisperlink.service.Registrar$deregisterService_args		Serializable
+class	com.amazon.whisperlink.service.Registrar$deregisterService_result		Serializable
+class	com.amazon.whisperlink.service.Registrar$getAllServices_args		Serializable
+class	com.amazon.whisperlink.service.Registrar$getAllServices_result		Serializable
+class	com.amazon.whisperlink.service.Registrar$getAppId_args		Serializable
+class	com.amazon.whisperlink.service.Registrar$getAppId_result		Serializable
+class	com.amazon.whisperlink.service.Registrar$getAvailableExplorers_args		Serializable
+class	com.amazon.whisperlink.service.Registrar$getAvailableExplorers_result		Serializable
+class	com.amazon.whisperlink.service.Registrar$getConnectionInfo2_args		Serializable
+class	com.amazon.whisperlink.service.Registrar$getConnectionInfo2_result		Serializable
+class	com.amazon.whisperlink.service.Registrar$getConnectionInfo_args		Serializable
+class	com.amazon.whisperlink.service.Registrar$getConnectionInfo_result		Serializable
+class	com.amazon.whisperlink.service.Registrar$getDevice_args		Serializable
+class	com.amazon.whisperlink.service.Registrar$getDevice_result		Serializable
+class	com.amazon.whisperlink.service.Registrar$getDevicesAndAllExplorerRoutes_args		Serializable
+class	com.amazon.whisperlink.service.Registrar$getDevicesAndAllExplorerRoutes_result		Serializable
+class	com.amazon.whisperlink.service.Registrar$getFilteredServices_args		Serializable
+class	com.amazon.whisperlink.service.Registrar$getFilteredServices_result		Serializable
+class	com.amazon.whisperlink.service.Registrar$getKnownDevices_args		Serializable
+class	com.amazon.whisperlink.service.Registrar$getKnownDevices_result		Serializable
+class	com.amazon.whisperlink.service.Registrar$getLocalRegisteredServices_args		Serializable
+class	com.amazon.whisperlink.service.Registrar$getLocalRegisteredServices_result		Serializable
+class	com.amazon.whisperlink.service.Registrar$getServicesByDevice_args		Serializable
+class	com.amazon.whisperlink.service.Registrar$getServicesByDevice_result		Serializable
+class	com.amazon.whisperlink.service.Registrar$registerCallback_args		Serializable
+class	com.amazon.whisperlink.service.Registrar$registerCallback_result		Serializable
+class	com.amazon.whisperlink.service.Registrar$registerDataExporter_args		Serializable
+class	com.amazon.whisperlink.service.Registrar$registerDataExporter_result		Serializable
+class	com.amazon.whisperlink.service.Registrar$registerService_args		Serializable
+class	com.amazon.whisperlink.service.Registrar$registerService_result		Serializable
+class	com.amazon.whisperlink.service.Registrar$removeRegistrarListener_args		Serializable
+class	com.amazon.whisperlink.service.Registrar$removeRegistrarListener_result		Serializable
+class	com.amazon.whisperlink.service.Registrar$searchAll_args		Serializable
+class	com.amazon.whisperlink.service.Registrar$searchAll_result		Serializable
+class	com.amazon.whisperlink.service.Registrar$search_args		Serializable
+class	com.amazon.whisperlink.service.Registrar$search_result		Serializable
+class	com.amazon.whisperlink.service.Registrar$setDiscoverable_args		Serializable
+class	com.amazon.whisperlink.service.Registrar$setDiscoverable_result		Serializable
+class	com.amazon.whisperlink.service.Registrar$verifyConnectivity_args		Serializable
+class	com.amazon.whisperlink.service.Registrar$verifyConnectivity_result		Serializable
+class	com.amazon.whisperlink.service.Registrar$whisperlinkConsumerInit_args		Serializable
+class	com.amazon.whisperlink.service.Registrar$whisperlinkConsumerInit_result		Serializable
+class	com.amazon.whisperlink.service.RegistrarCb		
+class	com.amazon.whisperlink.service.RegistrarCb$Client		Iface,TServiceClient
+class	com.amazon.whisperlink.service.RegistrarCb$Client$Factory		TServiceClientFactory<Client>
+class	com.amazon.whisperlink.service.RegistrarCb$Processor		TProcessor
+class	com.amazon.whisperlink.service.RegistrarCb$discoveryComplete_args		Serializable
+class	com.amazon.whisperlink.service.RegistrarCb$discoveryComplete_result		Serializable
+class	com.amazon.whisperlink.service.RegistrarCb$searchComplete_args		Serializable
+class	com.amazon.whisperlink.service.RegistrarCb$serviceAdded_args		Serializable
+class	com.amazon.whisperlink.service.RegistrarCb$serviceRemoved_args		Serializable
+class	com.amazon.whisperlink.service.Route		Serializable,TBase
+class	com.amazon.whisperlink.service.Security		Serializable,TEnum
+class	com.amazon.whisperlink.service.ServiceDiscoveryCb		
+class	com.amazon.whisperlink.service.ServiceDiscoveryCb$Client		Iface,TServiceClient
+class	com.amazon.whisperlink.service.ServiceDiscoveryCb$Client$Factory		TServiceClientFactory<Client>
+class	com.amazon.whisperlink.service.ServiceDiscoveryCb$Processor		TProcessor
+class	com.amazon.whisperlink.service.ServiceDiscoveryCb$refreshComplete_args		Serializable
+class	com.amazon.whisperlink.service.ServiceDiscoveryCb$refreshComplete_result		Serializable
+class	com.amazon.whisperlink.service.ServiceDiscoveryCb$servicesUpdate_args		Serializable
+class	com.amazon.whisperlink.service.ServiceDiscoveryCb$servicesUpdate_result		Serializable
+class	com.amazon.whisperlink.service.ServiceEndpointData		Serializable,TBase
+class	com.amazon.whisperlink.service.UserInfo		Serializable,TBase
+class	com.amazon.whisperlink.service.WhisperLinkCoreConstants		
+class	com.amazon.whisperlink.service.activity.AccessLevelChangeCode		Serializable,TEnum
+class	com.amazon.whisperlink.service.activity.ActivityAccessLevel		Serializable,TEnum
+class	com.amazon.whisperlink.service.activity.ActivityManagerConstants		
+class	com.amazon.whisperlink.service.activity.ActivityProvider		
+class	com.amazon.whisperlink.service.activity.ActivityProvider$Client		Iface,TServiceClient
+class	com.amazon.whisperlink.service.activity.ActivityProvider$Client$Factory		TServiceClientFactory<Client>
+class	com.amazon.whisperlink.service.activity.ActivityProvider$Processor		TProcessor
+class	com.amazon.whisperlink.service.activity.ActivityProvider$cancelSubscription_args		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityProvider$cancelSubscription_result		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityProvider$changeActivityAccessLevel_args		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityProvider$changeActivityAccessLevel_result		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityProvider$getCurrentActivities_args		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityProvider$renewSubscription_args		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityProvider$renewSubscription_result		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityProvider$subscribeToChanges_args		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityProvider$subscribeToChanges_result		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityProviderCallback		
+class	com.amazon.whisperlink.service.activity.ActivityProviderCallback$Client		Iface,TServiceClient
+class	com.amazon.whisperlink.service.activity.ActivityProviderCallback$Client$Factory		TServiceClientFactory<Client>
+class	com.amazon.whisperlink.service.activity.ActivityProviderCallback$Processor		TProcessor
+class	com.amazon.whisperlink.service.activity.ActivityProviderCallback$activitiesFound_args		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityProviderCallback$activityAccessLevelChanged_args		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityProviderCallback$activityAdded_args		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityProviderCallback$activityDevicesModified_args		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityProviderCallback$activityRemoved_args		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityProviderCallback$extendedPropertiesChanged_args		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityProviderCallback$extendedPropertyChanged_args		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityProviderCallback$propertiesChanged_args		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityProviderCallback$propertyChanged_args		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityProviderSubscription		Serializable,TBase
+class	com.amazon.whisperlink.service.activity.ActivityRegistrar		
+class	com.amazon.whisperlink.service.activity.ActivityRegistrar$Client		Iface,TServiceClient
+class	com.amazon.whisperlink.service.activity.ActivityRegistrar$Client$Factory		TServiceClientFactory<Client>
+class	com.amazon.whisperlink.service.activity.ActivityRegistrar$Processor		TProcessor
+class	com.amazon.whisperlink.service.activity.ActivityRegistrar$activityDevicesModified_args		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityRegistrar$activityDevicesModified_result		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityRegistrar$cancelSubscriptions_args		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityRegistrar$cancelSubscriptions_result		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityRegistrar$changeActivityAccessLevel_args		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityRegistrar$changeActivityAccessLevel_result		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityRegistrar$deregisterActivity_args		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityRegistrar$deregisterActivity_result		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityRegistrar$registerActivity_args		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityRegistrar$registerActivity_result		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityRegistrar$renewSubscriptions_args		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityRegistrar$renewSubscriptions_result		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityRegistrar$searchActivities_args		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityRegistrar$searchActivities_result		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityRegistrar$subscribeToChanges_args		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityRegistrar$subscribeToChanges_result		Serializable
+class	com.amazon.whisperlink.service.activity.ActivityRegistrarSubscription		Serializable,TBase
+class	com.amazon.whisperlink.service.activity.ActivityType		Serializable,TEnum
+class	com.amazon.whisperlink.service.activity.BasicActivityKey		Serializable,TBase
+class	com.amazon.whisperlink.service.activity.SubscriptionCode		Serializable,TEnum
+class	com.amazon.whisperlink.service.activity.WPActivity		Serializable,TBase
+class	com.amazon.whisperlink.service.data.DataExporter		
+class	com.amazon.whisperlink.service.data.DataExporter$Client		Iface,TServiceClient
+class	com.amazon.whisperlink.service.data.DataExporter$Client$Factory		TServiceClientFactory<Client>
+class	com.amazon.whisperlink.service.data.DataExporter$Processor		TProcessor
+class	com.amazon.whisperlink.service.data.DataExporter$cancelTransfer_args		Serializable
+class	com.amazon.whisperlink.service.data.DataExporter$cancelTransfer_result		Serializable
+class	com.amazon.whisperlink.service.data.DataExporter$initiateTransfer_args		Serializable
+class	com.amazon.whisperlink.service.data.DataExporter$initiateTransfer_result		Serializable
+class	com.amazon.whisperlink.service.data.DataRequester		
+class	com.amazon.whisperlink.service.data.DataRequester$Client		Iface,TServiceClient
+class	com.amazon.whisperlink.service.data.DataRequester$Client$Factory		TServiceClientFactory<Client>
+class	com.amazon.whisperlink.service.data.DataRequester$Processor		TProcessor
+class	com.amazon.whisperlink.service.data.DataRequester$receiveData_args		Serializable
+class	com.amazon.whisperlink.service.data.DataRequester$receiveData_result		Serializable
+class	com.amazon.whisperlink.service.data.Session		Serializable,TBase
+class	com.amazon.whisperlink.service.discovery.DiscoveryConstants		
+class	com.amazon.whisperlink.service.event.EventNotificationConstants		
+class	com.amazon.whisperlink.service.event.ExtendedPropertyChangeCallback		
+class	com.amazon.whisperlink.service.event.ExtendedPropertyChangeCallback$Client	PropertyChangeCallback.Client	Iface,TServiceClient
+class	com.amazon.whisperlink.service.event.ExtendedPropertyChangeCallback$Client$Factory		TServiceClientFactory<Client>
+class	com.amazon.whisperlink.service.event.ExtendedPropertyChangeCallback$Processor	PropertyChangeCallback.Processor	TProcessor
+class	com.amazon.whisperlink.service.event.ExtendedPropertyChangeCallback$extendedPropertiesUpdated_args		Serializable
+class	com.amazon.whisperlink.service.event.ExtendedPropertyChangeCallback$extendedPropertyUpdated_args		Serializable
+class	com.amazon.whisperlink.service.event.NotificationPolicy		Serializable,TBase
+class	com.amazon.whisperlink.service.event.NotificationPolicyType		Serializable,TEnum
+class	com.amazon.whisperlink.service.event.Property		Serializable,TBase
+class	com.amazon.whisperlink.service.event.PropertyBroker		
+class	com.amazon.whisperlink.service.event.PropertyBroker$Client		Iface,TServiceClient
+class	com.amazon.whisperlink.service.event.PropertyBroker$Client$Factory		TServiceClientFactory<Client>
+class	com.amazon.whisperlink.service.event.PropertyBroker$Processor		TProcessor
+class	com.amazon.whisperlink.service.event.PropertyBroker$deregisterAllProperties_args		Serializable
+class	com.amazon.whisperlink.service.event.PropertyBroker$deregisterAllProperties_result		Serializable
+class	com.amazon.whisperlink.service.event.PropertyBroker$publisherPropertiesChanged_args		Serializable
+class	com.amazon.whisperlink.service.event.PropertyBroker$publisherPropertiesChanged_result		Serializable
+class	com.amazon.whisperlink.service.event.PropertyBroker$registerExtendedProperties_args		Serializable
+class	com.amazon.whisperlink.service.event.PropertyBroker$registerExtendedProperties_result		Serializable
+class	com.amazon.whisperlink.service.event.PropertyBroker$registerProperties_args		Serializable
+class	com.amazon.whisperlink.service.event.PropertyBroker$registerProperties_result		Serializable
+class	com.amazon.whisperlink.service.event.PropertyChangeCallback		
+class	com.amazon.whisperlink.service.event.PropertyChangeCallback$Client		Iface,TServiceClient
+class	com.amazon.whisperlink.service.event.PropertyChangeCallback$Client$Factory		TServiceClientFactory<Client>
+class	com.amazon.whisperlink.service.event.PropertyChangeCallback$Processor		TProcessor
+class	com.amazon.whisperlink.service.event.PropertyChangeCallback$onPropertiesChanged_args		Serializable
+class	com.amazon.whisperlink.service.event.PropertyChangeCallback$onPropertyChanged_args		Serializable
+class	com.amazon.whisperlink.service.event.PropertyChangeCallback$publisherDeregistered_args		Serializable
+class	com.amazon.whisperlink.service.event.PropertySubscriptionInfo		Serializable,TBase
+class	com.amazon.whisperlink.service.event.PropertySubscriptionManager		
+class	com.amazon.whisperlink.service.event.PropertySubscriptionManager$Client		Iface,TServiceClient
+class	com.amazon.whisperlink.service.event.PropertySubscriptionManager$Client$Factory		TServiceClientFactory<Client>
+class	com.amazon.whisperlink.service.event.PropertySubscriptionManager$Processor		TProcessor
+class	com.amazon.whisperlink.service.event.PropertySubscriptionManager$cancelSubscription_args		Serializable
+class	com.amazon.whisperlink.service.event.PropertySubscriptionManager$cancelSubscription_result		Serializable
+class	com.amazon.whisperlink.service.event.PropertySubscriptionManager$renewSubscription_args		Serializable
+class	com.amazon.whisperlink.service.event.PropertySubscriptionManager$renewSubscription_result		Serializable
+class	com.amazon.whisperlink.service.event.PropertySubscriptionManager$subscribeListener_args		Serializable
+class	com.amazon.whisperlink.service.event.PropertySubscriptionManager$subscribeListener_result		Serializable
+class	com.amazon.whisperlink.service.event.ResultCode		Serializable,TEnum
+class	com.amazon.whisperlink.service.event.SubscriptionReply		Serializable,TBase
+class	com.amazon.whisperlink.service.event.SubscriptionResult		Serializable,TEnum
+class	com.amazon.whisperlink.service.event.SubscriptionResultReason		Serializable,TEnum
+class	com.amazon.whisperlink.service.jpake.JPAKERound1Data		
+class	com.amazon.whisperlink.service.jpake.JPAKERound2Data		
+class	com.amazon.whisperlink.service.jpake.JPAKERound3Data		
+class	com.amazon.whisperlink.service.jpake.JPakeBase		
+class	com.amazon.whisperlink.service.jpake.JPakeClientImpl	JPakeBase	SecureKeyExchangeClient
+class	com.amazon.whisperlink.service.jpake.JPakeConstants		
+class	com.amazon.whisperlink.service.jpake.JPakeException	Exception	
+class	com.amazon.whisperlink.service.jpake.JPakeService		JPake
+class	com.amazon.whisperlink.service.jpake.SecureKeyExchangeServerImpl		SecureKeyExchangeServer
+class	com.amazon.whisperlink.service.securekeyexchange.AesGcmCipher		
+class	com.amazon.whisperlink.service.securekeyexchange.AesGcmCipher$CryptoException	Exception	
+class	com.amazon.whisperlink.service.securekeyexchange.SecureKeyExchangeException	Exception	
+class	com.amazon.whisperlink.service.securekeyexchange.SecureKeyExchangeFactory		
+class	com.amazon.whisperlink.service.state.DeviceServiceAccessibilityInfo		Serializable,TBase
+class	com.amazon.whisperlink.service.state.PropertySubscribers		Serializable,TBase
+class	com.amazon.whisperlink.service.state.PublisherProperties		Serializable,TBase
+class	com.amazon.whisperlink.service.state.StateProvider		
+class	com.amazon.whisperlink.service.state.StateProvider$Client		Iface,TServiceClient
+class	com.amazon.whisperlink.service.state.StateProvider$Client$Factory		TServiceClientFactory<Client>
+class	com.amazon.whisperlink.service.state.StateProvider$Processor		TProcessor
+class	com.amazon.whisperlink.service.state.StateProvider$getDeviceServicesInfo_args		Serializable
+class	com.amazon.whisperlink.service.state.StateProvider$getDeviceServicesInfo_result		Serializable
+class	com.amazon.whisperlink.service.state.StateProvider$getWPENInfo_args		Serializable
+class	com.amazon.whisperlink.service.state.StateProvider$getWPENInfo_result		Serializable
+class	com.amazon.whisperlink.service.state.StateProviderConstants		
+class	com.amazon.whisperlink.service.state.WPENInfo		Serializable,TBase
+class	com.amazon.whisperlink.services.DefaultBridgeService	DefaultService	
+class	com.amazon.whisperlink.services.DefaultCallback	DefaultProcessor	WPCallback
+class	com.amazon.whisperlink.services.DefaultProcessor		WPProcessor
+class	com.amazon.whisperlink.services.DefaultService	DefaultProcessor	WPService
+class	com.amazon.whisperlink.services.DefaultService$ThreadExecutorAdaptor		Executor
+class	com.amazon.whisperlink.services.DeviceCallbackRegistry		
+class	com.amazon.whisperlink.services.ServiceInfo		
+class	com.amazon.whisperlink.services.WPServer	TServer	AccountChangeListener,Executor
+class	com.amazon.whisperlink.services.WPServer$Args	TServer.AbstractServerArgs<Args>	
+class	com.amazon.whisperlink.services.WPServer$ConnectionInfo		
+class	com.amazon.whisperlink.services.WPServer$DirectConnectionResponseException	Exception	
+class	com.amazon.whisperlink.services.WPServer$ExternalServerTransportContainer		
+class	com.amazon.whisperlink.services.WPServer$ExternalServerTransports		
+class	com.amazon.whisperlink.services.WPServer$ServerTransportRunnable	TaskExecutor.Task	
+class	com.amazon.whisperlink.services.WPServer$ServerTransportRunnable$WorkerProcess	TaskExecutor.Task	
+class	com.amazon.whisperlink.services.activity.ActivityRegistrarUtil		
+class	com.amazon.whisperlink.services.activity.ActivityRegistrarUtil$SingletonHolder		
+class	com.amazon.whisperlink.services.activity.ActivitySubscription		
+class	com.amazon.whisperlink.services.activity.ActivitySubscriptionRenewer	SubscriptionRenewer	
+class	com.amazon.whisperlink.services.android.DefaultAndroidWhisperPlayActivity	Activity	
+class	com.amazon.whisperlink.services.android.DefaultAndroidWhisperPlayService	Service	Executor
+class	com.amazon.whisperlink.services.android.WhisperLinkPlatform		
+class	com.amazon.whisperlink.services.android.WhisperLinkPlatform$CallbackRunnable		Runnable
+class	com.amazon.whisperlink.services.android.WhisperLinkPlatform$SingletonHolder		
+class	com.amazon.whisperlink.services.datatransfer.DataExporterService	DefaultCallback	DataExporter.Iface
+class	com.amazon.whisperlink.services.datatransfer.DataExporterService$DataExporterWorker	TaskExecutor.Task	
+class	com.amazon.whisperlink.services.datatransfer.DataExporterService$SessionDetails		
+class	com.amazon.whisperlink.services.datatransfer.DataRequesterService	DefaultCallback	DataRequester.Iface
+class	com.amazon.whisperlink.services.datatransfer.DefaultFileReader		DataReader
+class	com.amazon.whisperlink.services.datatransfer.DefaultFileReaderFactory		DataReaderFactory
+class	com.amazon.whisperlink.services.datatransfer.DefaultFileWriter		DataWriter
+class	com.amazon.whisperlink.services.datatransfer.DefaultFileWriterFactory		DataWriterFactory
+class	com.amazon.whisperlink.services.event.PropertyPublisherUtil		
+class	com.amazon.whisperlink.services.event.PropertySubscriberUtil		
+class	com.amazon.whisperlink.services.event.Subscription		
+class	com.amazon.whisperlink.services.event.SubscriptionRenewer		
+class	com.amazon.whisperlink.services.event.SubscriptionsManager		
+class	com.amazon.whisperlink.services.event.WPENPublisherUtil		
+class	com.amazon.whisperlink.services.event.WPENSubscriptionRenewer	SubscriptionRenewer	
+class	com.amazon.whisperlink.settings.AmazonInetSettings		ConnectionSettings
+class	com.amazon.whisperlink.thrift.ClientFactory		
+class	com.amazon.whisperlink.thrift.ClientFactory$ClientInvocationHandler	ObjectInvocationHandler	
+class	com.amazon.whisperlink.thrift.ClientFactory$FactoryInvocationHandler		InvocationHandler
+class	com.amazon.whisperlink.thrift.ConnectionV2		
+class	com.amazon.whisperlink.thrift.ConnectionV2$ConnectionParams		
+class	com.amazon.whisperlink.thrift.Deserializer		
+class	com.amazon.whisperlink.thrift.MarshalHelper		
+class	com.amazon.whisperlink.thrift.ObjectInvocationHandler		InvocationHandler
+class	com.amazon.whisperlink.thrift.Serializer		
+class	com.amazon.whisperlink.thrift.TProcessorImpl		TProcessor
+class	com.amazon.whisperlink.transport.AuthenticationFeature$AuthResult		
+class	com.amazon.whisperlink.transport.AuthorizationException	TException	
+class	com.amazon.whisperlink.transport.EncryptionException	TException	
+class	com.amazon.whisperlink.transport.TBridgeServerTransport	TLayeredServerTransport	
+class	com.amazon.whisperlink.transport.TBridgeTransport	TLayeredTransport	
+class	com.amazon.whisperlink.transport.TLayeredServerTransport	TServerTransport	
+class	com.amazon.whisperlink.transport.TLayeredTransport	TTransport	
+class	com.amazon.whisperlink.transport.TMemoryBuffer	TTransport	
+class	com.amazon.whisperlink.transport.TSameProcessChannelFactory		
+class	com.amazon.whisperlink.transport.TThreadPoolServer2	TServer	
+class	com.amazon.whisperlink.transport.TThreadPoolServer2$Args	TServer.AbstractServerArgs<Args>	
+class	com.amazon.whisperlink.transport.TThreadPoolServer2$WorkerProcess		Runnable
+class	com.amazon.whisperlink.transport.TTransportManager		
+class	com.amazon.whisperlink.transport.TTransportManager$SingletonHolder		
+class	com.amazon.whisperlink.transport.TTransportManager$TTransportExtended		
+class	com.amazon.whisperlink.transport.TWPProtocolException	TProtocolException	
+class	com.amazon.whisperlink.transport.TWhisperLinkHTTPHeaderBaseProtocol	TProtocol	
+class	com.amazon.whisperlink.transport.TWhisperLinkHTTPRequestHeaderProtocol	TWhisperLinkHTTPHeaderBaseProtocol	
+class	com.amazon.whisperlink.transport.TWhisperLinkHTTPRequestHeaderProtocol$Factory		TProtocolFactory
+class	com.amazon.whisperlink.transport.TWhisperLinkHTTPResponseHeaderProtocol	TWhisperLinkHTTPHeaderBaseProtocol	
+class	com.amazon.whisperlink.transport.TWhisperLinkHTTPResponseHeaderProtocol$Factory		TProtocolFactory
+class	com.amazon.whisperlink.transport.TWhisperLinkServerTransport	TLayeredServerTransport	
+class	com.amazon.whisperlink.transport.TWhisperLinkTransport	TLayeredTransport	
+class	com.amazon.whisperlink.transport.TWpObjectCacheChannelFactory		TInternalCommunicationChannelFactory
+class	com.amazon.whisperlink.transport.TWpObjectCacheServerTransport	TServerTransport	
+class	com.amazon.whisperlink.transport.TWpObjectCacheTransport	TTransport	
+class	com.amazon.whisperlink.transport.TransportFeatures		Comparable<TransportFeatures>
+class	com.amazon.whisperlink.transport.TransportFeatures$TransportFeaturesFilter		
+class	com.amazon.whisperlink.transport.TransportFeatures$TransportFeaturesFilter$Builder		
+class	com.amazon.whisperlink.transport.TransportOptions		
+class	com.amazon.whisperlink.transport.TransportOptions$Builder		
+class	com.amazon.whisperlink.transport.memory.TWpMemoryChannelFactory		TInternalCommunicationChannelFactory
+class	com.amazon.whisperlink.transport.memory.TWpMemoryServerTransport	TServerTransport	
+class	com.amazon.whisperlink.transport.memory.TWpMemoryServerTransportManager		
+class	com.amazon.whisperlink.transport.memory.TWpMemoryTransport	TIOStreamTransport	
+class	com.amazon.whisperlink.transport.udp.TUDPTransportFactory		TExternalCommunicationChannelFactory
+class	com.amazon.whisperlink.transport.udp.TUdpBase	TTransport	
+class	com.amazon.whisperlink.transport.udp.TUdpReader	TUdpBase	
+class	com.amazon.whisperlink.transport.udp.TUdpReader$ContinuousReceiveTask	TaskExecutor.Task	
+class	com.amazon.whisperlink.transport.udp.TUdpWriter	TUdpBase	
+class	com.amazon.whisperlink.util.AuthenticationUtil		
+class	com.amazon.whisperlink.util.Connection		
+class	com.amazon.whisperlink.util.Connection$ConnectionParams		
+class	com.amazon.whisperlink.util.ConnectionInfo		
+class	com.amazon.whisperlink.util.ConnectionOptions		
+class	com.amazon.whisperlink.util.ConnectionOptions$Builder		
+class	com.amazon.whisperlink.util.ConnectionOptions$CommunicationChannelsOptions		
+class	com.amazon.whisperlink.util.ConnectionUtil		
+class	com.amazon.whisperlink.util.DataTransferUtil		
+class	com.amazon.whisperlink.util.DebugLogHandler		Log.LogHandler
+class	com.amazon.whisperlink.util.DebugUtil		
+class	com.amazon.whisperlink.util.EncryptionUtil		
+class	com.amazon.whisperlink.util.Log		
+class	com.amazon.whisperlink.util.LogUtil		
+class	com.amazon.whisperlink.util.NanoHTTPD		
+class	com.amazon.whisperlink.util.NanoHTTPD$Cookie		
+class	com.amazon.whisperlink.util.NanoHTTPD$CookieHandler		Iterable<String>
+class	com.amazon.whisperlink.util.NanoHTTPD$DefaultAsyncRunner		AsyncRunner
+class	com.amazon.whisperlink.util.NanoHTTPD$DefaultTempFile		TempFile
+class	com.amazon.whisperlink.util.NanoHTTPD$DefaultTempFileManager		TempFileManager
+class	com.amazon.whisperlink.util.NanoHTTPD$DefaultTempFileManagerFactory		TempFileManagerFactory
+class	com.amazon.whisperlink.util.NanoHTTPD$HTTPSession		IHTTPSession
+class	com.amazon.whisperlink.util.NanoHTTPD$Response		
+class	com.amazon.whisperlink.util.NanoHTTPD$ResponseException	Exception	
+class	com.amazon.whisperlink.util.NetworkStateSnapshot		
+class	com.amazon.whisperlink.util.NotSupportedException	Exception	
+class	com.amazon.whisperlink.util.ProductionLine		
+class	com.amazon.whisperlink.util.ProductionLine$Worker		Runnable
+class	com.amazon.whisperlink.util.RouteUtil		
+class	com.amazon.whisperlink.util.SerializeUtil		
+class	com.amazon.whisperlink.util.SimpleFilter		
+class	com.amazon.whisperlink.util.SimpleFilter$ServiceIdDeviceFilter	DescriptionFilter	
+class	com.amazon.whisperlink.util.SimpleFilter$ServiceIdFilter	DescriptionFilter	
+class	com.amazon.whisperlink.util.StoreableHashMap	HashMap	
+class	com.amazon.whisperlink.util.StringUtil		
+class	com.amazon.whisperlink.util.TaskExecutor		Executor
+class	com.amazon.whisperlink.util.TaskExecutor$Task		Runnable
+class	com.amazon.whisperlink.util.TaskExecutor$TaskListener		TaskExecutionListener
+class	com.amazon.whisperlink.util.TaskExecutorController		
+class	com.amazon.whisperlink.util.TaskExecutorController$TaskRunner		Runnable
+class	com.amazon.whisperlink.util.ThreadUtils		
+class	com.amazon.whisperlink.util.ThreadUtils$TaggingThreadFactory		ThreadFactory
+class	com.amazon.whisperlink.util.ThriftEnumBitFieldUtil		
+class	com.amazon.whisperlink.util.TransportUtil		
+class	com.amazon.whisperlink.util.WPDeviceUtil		
+class	com.amazon.whisperlink.util.WPENValidationUtil		
+class	com.amazon.whisperlink.util.WhisperLinkUtil		
+class	com.amazon.whisperplay.BuildConfig		
+class	com.amazon.whisperplay.LifecycleListener		
+class	com.amazon.whisperplay.ServiceEndpointConstants		
+class	com.amazon.whisperplay.WPFatalException	Exception	
+class	com.amazon.whisperplay.WPNotReadyException	Exception	
+class	com.amazon.whisperplay.WhisperPlay		
+class	com.amazon.whisperplay.amazonInternal.Account		
+class	com.amazon.whisperplay.amazonInternal.Logger		
+class	com.amazon.whisperplay.amazonInternal.WhisperPlayInternal		
+class	com.amazon.whisperplay.amazonInternal.discovery.InternalFilterKeys		
+class	com.amazon.whisperplay.amazonInternal.discovery.constants.CommunicationChannels		
+class	com.amazon.whisperplay.constants.ClientOptions		
+class	com.amazon.whisperplay.constants.ServerOptions		
+class	com.amazon.whisperplay.contracts.BuildConfig		
+class	com.amazon.whisperplay.contracts.R		
+class	com.amazon.whisperplay.contracts.R$attr		
+class	com.amazon.whisperplay.contracts.R$string		
+class	com.amazon.whisperplay.discovery.Filter		
+class	com.amazon.whisperplay.discovery.Filter$Builder		
+class	com.amazon.whisperplay.discovery.Filter$Key		
+class	com.amazon.whisperplay.discovery.constants.CommunicationChannels		
+class	com.amazon.whisperplay.hosting.ServiceDescription		
+class	com.amazon.whisperplay.hosting.ServiceDescription$Builder		
+class	com.amazon.whisperplay.impl.FilterMatcher		
+class	com.amazon.whisperplay.impl.FilterMatcher$FilterResult		
+class	com.amazon.whisperplay.serviceendpointpicker.android.BuildConfig		
+class	com.amazon.whisperplay.serviceendpointpicker.android.ServiceEndpointPicker		
+class	com.amazon.whisperplay.serviceendpointpicker.android.ServiceEndpointPicker$DismissListener		PopupWindow.OnDismissListener
+class	com.amazon.whisperplay.serviceendpointpicker.android.ServiceEndpointPicker$ItemClickListener		AdapterView.OnItemClickListener
+class	com.amazon.whisperplay.serviceendpointpicker.android.impl.DefaultServiceEndpointDataSource		ServiceEndpointDataSource
+class	com.amazon.whisperplay.serviceendpointpicker.android.impl.DefaultServiceEndpointDataSourceCache		
+class	com.amazon.whisperplay.serviceendpointpicker.android.impl.DefaultServiceEndpointDataSourceCache$DataSourceEntry		
+class	com.amazon.whisperplay.serviceendpointpicker.android.impl.ServiceEndpointArrayAdapter	ArrayAdapter<ServiceEndpoint>	
+class	com.amazon.whisperplay.serviceendpointpicker.android.impl.ServiceEndpointArrayAdapter$ClickListener		View.OnClickListener
+class	com.amazon.whisperplay.serviceendpointpicker.android.impl.ServiceEndpointArrayAdapter$ViewHolder		
+class	com.amazon.whisperplay.serviceendpointpicker.android.impl.ServiceEndpointArrayAdapterHelper		ServiceEndpointDataSourceObserver
+class	com.amazon.whisperplay.serviceendpointpicker.android.impl.ServiceFilter		
+class	com.amazon.whisperplay.thrift.HashCodeBuilder		
+class	com.amazon.whisperplay.thrift.TApplicationException	TException	
+class	com.amazon.whisperplay.thrift.TBaseHelper		
+class	com.amazon.whisperplay.thrift.TException	Exception	
+class	com.amazon.whisperplay.thrift.TProtocolException	TException	
+class	com.amazon.whisperplay.transports.messenger.BuildConfig		
+class	com.amazon.whisperplay.transports.tcomm.BuildConfig		
+class	com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager		
+class	com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder		
+class	com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.ConfigurationNotFoundException	RemoteConfigurationException	
+class	com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.MalformedAppConfigIdException	RemoteConfigurationException	
+class	com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.NetworkException	RemoteConfigurationException	
+class	com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.RemoteConfigurationException	RuntimeException	
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler		
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn		
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl		Attributes
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb		
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$ConfigurationTable		BaseColumns
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	SQLiteOpenHelper	
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl		Configuration
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.DowngradeException	UnsupportedOperationException	
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.Checks		
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl		RemoteConfiguration
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher		RemoteConfigurationFetcher
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher$AllowAllHostnameVerifier		HostnameVerifier
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher$TrustAllManager		X509TrustManager
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.RequestThrottledException	NetworkException	
+class	org.bouncycastle.minjpake.crypto.CryptoException	Exception	
+class	org.bouncycastle.minjpake.crypto.DataLengthException	RuntimeCryptoException	
+class	org.bouncycastle.minjpake.crypto.RuntimeCryptoException	RuntimeException	
+class	org.bouncycastle.minjpake.crypto.agreement.jpake.JPAKEParticipant		
+class	org.bouncycastle.minjpake.crypto.agreement.jpake.JPAKEPrimeOrderGroup		
+class	org.bouncycastle.minjpake.crypto.agreement.jpake.JPAKEPrimeOrderGroups		
+class	org.bouncycastle.minjpake.crypto.agreement.jpake.JPAKERound1Payload		
+class	org.bouncycastle.minjpake.crypto.agreement.jpake.JPAKERound2Payload		
+class	org.bouncycastle.minjpake.crypto.agreement.jpake.JPAKERound3Payload		
+class	org.bouncycastle.minjpake.crypto.agreement.jpake.JPAKEUtil		
+class	org.bouncycastle.minjpake.crypto.digests.GeneralDigest		ExtendedDigest,Memoable
+class	org.bouncycastle.minjpake.crypto.digests.SHA1Digest	GeneralDigest	
+class	org.bouncycastle.minjpake.crypto.digests.SHA256Digest	GeneralDigest	
+class	org.bouncycastle.minjpake.crypto.macs.HMac		Mac
+class	org.bouncycastle.minjpake.crypto.params.KeyParameter		CipherParameters
+class	org.bouncycastle.minjpake.crypto.util.Pack		
+class	org.bouncycastle.minjpake.util.Arrays		
+class	org.bouncycastle.minjpake.util.BigIntegers		
+class	org.bouncycastle.minjpake.util.Integers		
+class	org.bouncycastle.minjpake.util.Strings		
+enum	com.amazon.frank.devicecontrol.rpc.ActionStatus		
+enum	com.amazon.frank.devicecontrol.rpc.DeviceResetType		
+enum	com.amazon.frank.devicecontrol.rpc.InstallSystemUpdatesResult		
+enum	com.amazon.frank.devicecontrol.rpc.NotificationLevel		
+enum	com.amazon.frank.devicecontrol.rpc.PostActionEnum		
+enum	com.amazon.storm.lightning.services.v2.KeyAction		TEnum
+enum	com.amazon.storm.lightning.services.v2.LApplication$_Fields		TFieldIdEnum
+enum	com.amazon.storm.lightning.services.v2.LAppsChange$_Fields		TFieldIdEnum
+enum	com.amazon.storm.lightning.services.v2.LAppsList$_Fields		TFieldIdEnum
+enum	com.amazon.storm.lightning.services.v2.LClientStateChangeType		
+enum	com.amazon.storm.lightning.services.v2.LControlEvent$_Fields		TFieldIdEnum
+enum	com.amazon.storm.lightning.services.v2.LCursorStateEvent$_Fields		TFieldIdEnum
+enum	com.amazon.storm.lightning.services.v2.LEncryptedCursorStateEvent$_Fields		TFieldIdEnum
+enum	com.amazon.storm.lightning.services.v2.LFavoritesChange$_Fields		TFieldIdEnum
+enum	com.amazon.storm.lightning.services.v2.LImageRequest$_Fields		TFieldIdEnum
+enum	com.amazon.storm.lightning.services.v2.LImageResponse$_Fields		TFieldIdEnum
+enum	com.amazon.storm.lightning.services.v2.LInputEvent$_Fields		TFieldIdEnum
+enum	com.amazon.storm.lightning.services.v2.LInputSource		
+enum	com.amazon.storm.lightning.services.v2.LInputSourceEnum		
+enum	com.amazon.storm.lightning.services.v2.LInputType		TEnum
+enum	com.amazon.storm.lightning.services.v2.LKeyEvent$_Fields		TFieldIdEnum
+enum	com.amazon.storm.lightning.services.v2.LKeyboardText$_Fields		TFieldIdEnum
+enum	com.amazon.storm.lightning.services.v2.LShortcut$_Fields		TFieldIdEnum
+enum	com.amazon.storm.lightning.services.v2.LShortcutList$_Fields		TFieldIdEnum
+enum	com.amazon.storm.lightning.services.v2.LStateEventType		
+enum	com.amazon.storm.lightning.services.v2.TouchAction		
+enum	com.amazon.whisperlink.android.transport.messenger.MessengerConstants$MessageType		
+enum	com.amazon.whisperlink.android.transport.tcomm.TCommMessageType		
+enum	com.amazon.whisperlink.android.transport.tcomm.TTCommPassiveTransport$State		
+enum	com.amazon.whisperlink.platform.DiscoveryManagerImpl$ListenerState		
+enum	com.amazon.whisperlink.platform.PlatformInitializerImpl$SubPlatformFeature		
+enum	com.amazon.whisperlink.platform.RemoteSettingsMonitor$Namespace		
+enum	com.amazon.whisperlink.platform.WhisperPlayImpl$CallbackFunction		
+enum	com.amazon.whisperlink.platform.WhisperPlayImpl$State		
+enum	com.amazon.whisperlink.port.android.feature.CloudStoreDeviceTracker$DeviceStatus		
+enum	com.amazon.whisperlink.service.securekeyexchange.SecureKeyExchangeListener$SecureKeyExchangeError		
+enum	com.amazon.whisperlink.services.WPProcessor$TransportPermission		
+enum	com.amazon.whisperlink.services.android.WhisperLinkPlatform$AndroidPlatformState		
+enum	com.amazon.whisperlink.thrift.ConnectionV2$ConnectionEvent		
+enum	com.amazon.whisperlink.transport.AuthenticationFeature$AuthResultCode		
+enum	com.amazon.whisperlink.transport.TTransportManager$ApiLevel		
+enum	com.amazon.whisperlink.transport.TransportFeatures$Feature		
+enum	com.amazon.whisperlink.util.Log$LogHandler$Metrics		
+enum	com.amazon.whisperlink.util.Log$LogHandler$PerfIndicator		
+enum	com.amazon.whisperlink.util.NanoHTTPD$Method		
+enum	com.amazon.whisperlink.util.NanoHTTPD$Response$Status		
+enum	com.amazon.whisperplay.amazonInternal.discovery.InternalFilterKeys$Proximity		
+enum	com.amazon.whisperplay.hosting.ServiceDescription$Security		
+interface	com.amazon.dp.discovery.client.DiscoveryClient		
+interface	com.amazon.frank.devicecontrol.rpc.FrankDeviceControlCallback		
+interface	com.amazon.frank.devicecontrol.rpc.FrankDeviceControlService		
+interface	com.amazon.storm.lightning.services.v2.HeartbeatService		
+interface	com.amazon.storm.lightning.services.v2.Lightning	HeartbeatService	
+interface	com.amazon.storm.lightning.services.v2.LightningStateEventServer	HeartbeatService	
+interface	com.amazon.whisperlink.android.transport.messenger.AndroidMessengerProvider		
+interface	com.amazon.whisperlink.android.transport.messenger.MessengerEventListener		
+interface	com.amazon.whisperlink.android.transport.tcomm.CloudTransportFeature	PlatformFeature	
+interface	com.amazon.whisperlink.android.transport.tcomm.TCommMessageBroker$ControlMessageHandler		
+interface	com.amazon.whisperlink.android.transport.tcomm.TCommMessageBroker$MessageReceiver		
+interface	com.amazon.whisperlink.android.transport.tcomm.TCommMessageHandlerRegistrar		
+interface	com.amazon.whisperlink.android.transport.tcomm.TCommSettings	ConnectionSettings	
+interface	com.amazon.whisperlink.android.transport.tcomm.TTCommPassiveTransport$ConnectionProvider		
+interface	com.amazon.whisperlink.android.transport.tcomm.security.TCommSecureCommsProvider		
+interface	com.amazon.whisperlink.android.transport.tcomm.security.encryption.EncryptionEngine		
+interface	com.amazon.whisperlink.devicepicker.android.DeviceDataSource		
+interface	com.amazon.whisperlink.devicepicker.android.DeviceDataSourceObserver		
+interface	com.amazon.whisperlink.devicepicker.android.DeviceListContainer		
+interface	com.amazon.whisperlink.devicepicker.android.DeviceListFilter		
+interface	com.amazon.whisperlink.devicepicker.android.DeviceListListener		
+interface	com.amazon.whisperlink.feature.security.android.PasswordProvider		
+interface	com.amazon.whisperlink.filetransfer.FileTransfer$Iface		
+interface	com.amazon.whisperlink.impl.ServiceEndpointImplSerializer$JsonCodec		
+interface	com.amazon.whisperlink.media.BaseMediaServiceListener		
+interface	com.amazon.whisperlink.mediaservice.MediaService$Iface		
+interface	com.amazon.whisperlink.platform.AccountInfoProvider		
+interface	com.amazon.whisperlink.platform.AndroidPlatformContext$LifecycleListener		
+interface	com.amazon.whisperlink.platform.AuthDataStorageProvider		
+interface	com.amazon.whisperlink.platform.HashServicesProvider		
+interface	com.amazon.whisperlink.platform.PlatformContext		
+interface	com.amazon.whisperlink.platform.PlatformFeature		
+interface	com.amazon.whisperlink.platform.PlatformInitializer		
+interface	com.amazon.whisperlink.platform.PluginFeatureFactory		
+interface	com.amazon.whisperlink.platform.RemoteSettingsMonitor		
+interface	com.amazon.whisperlink.platform.RemoteSettingsMonitor$Listener		
+interface	com.amazon.whisperlink.platform.WPPlatform		
+interface	com.amazon.whisperlink.platform.feature.AccountSpecifier	PlatformFeature	
+interface	com.amazon.whisperlink.platform.feature.AmazonAccessLevel	PlatformFeature	
+interface	com.amazon.whisperlink.platform.feature.DataExporterFactory	PlatformFeature	
+interface	com.amazon.whisperlink.platform.feature.TCommInitializer	PlatformFeature	
+interface	com.amazon.whisperlink.platform.listener.AccountChangeListener	EventListener	
+interface	com.amazon.whisperlink.platform.listener.CertificateChangeListener	EventListener	
+interface	com.amazon.whisperlink.platform.listener.DeviceStateListener	EventListener	
+interface	com.amazon.whisperlink.platform.listener.EventListener		
+interface	com.amazon.whisperlink.platform.listener.NameChangeListener	EventListener	
+interface	com.amazon.whisperlink.platform.listener.NetworkStateListener	EventListener	
+interface	com.amazon.whisperlink.platform.listener.PlatformStateListener	EventListener	
+interface	com.amazon.whisperlink.platform.listener.TimeChangeEventListener	EventListener	
+interface	com.amazon.whisperlink.platform.plugin.PlugInConfiguration		
+interface	com.amazon.whisperlink.port.AuthenticationProviders		
+interface	com.amazon.whisperlink.port.android.feature.AndroidApplicationContext	PlatformFeature	
+interface	com.amazon.whisperlink.port.android.feature.AuthenticationControl	PlatformFeature	
+interface	com.amazon.whisperlink.port.android.feature.CloudStoreDeviceTracker		
+interface	com.amazon.whisperlink.port.android.feature.CloudStoreDeviceTracker$DeviceInfoArg		
+interface	com.amazon.whisperlink.port.android.transport.BluetoothConnectionManager$BTListener		
+interface	com.amazon.whisperlink.rcm.RemoteConfiguration$Listener		
+interface	com.amazon.whisperlink.security.service.AuthDaemonExternal$Iface		
+interface	com.amazon.whisperlink.security.service.AuthDaemonInternal$Iface		
+interface	com.amazon.whisperlink.security.service.AuthService$Iface		
+interface	com.amazon.whisperlink.service.DeviceManager$Iface		
+interface	com.amazon.whisperlink.service.EndpointDiscovery$Iface		
+interface	com.amazon.whisperlink.service.Registrar$Iface		
+interface	com.amazon.whisperlink.service.RegistrarCb$Iface		
+interface	com.amazon.whisperlink.service.ServiceDiscoveryCb$Iface		
+interface	com.amazon.whisperlink.service.activity.ActivityProvider$Iface		
+interface	com.amazon.whisperlink.service.activity.ActivityProviderCallback$Iface		
+interface	com.amazon.whisperlink.service.activity.ActivityRegistrar$Iface		
+interface	com.amazon.whisperlink.service.data.DataExporter$Iface		
+interface	com.amazon.whisperlink.service.data.DataRequester$Iface		
+interface	com.amazon.whisperlink.service.event.ExtendedPropertyChangeCallback$Iface	PropertyChangeCallback.Iface	
+interface	com.amazon.whisperlink.service.event.PropertyBroker$Iface		
+interface	com.amazon.whisperlink.service.event.PropertyChangeCallback$Iface		
+interface	com.amazon.whisperlink.service.event.PropertySubscriptionManager$Iface		
+interface	com.amazon.whisperlink.service.jpake.JPake		
+interface	com.amazon.whisperlink.service.securekeyexchange.SecureKeyExchangeClient		
+interface	com.amazon.whisperlink.service.securekeyexchange.SecureKeyExchangeListener		
+interface	com.amazon.whisperlink.service.securekeyexchange.SecureKeyExchangeProvider	PlatformFeature	
+interface	com.amazon.whisperlink.service.securekeyexchange.SecureKeyExchangeServer		
+interface	com.amazon.whisperlink.service.state.StateProvider$Iface		
+interface	com.amazon.whisperlink.services.DataProvider		
+interface	com.amazon.whisperlink.services.DefaultService$ThreadExecutor		
+interface	com.amazon.whisperlink.services.WPCallback	WPProcessor	
+interface	com.amazon.whisperlink.services.WPProcessor	DataProvider	
+interface	com.amazon.whisperlink.services.WPService	WPProcessor	
+interface	com.amazon.whisperlink.services.android.WhisperLinkPlatformListener		
+interface	com.amazon.whisperlink.services.datatransfer.DataExporterService$InternalTransferCompletionHandler		
+interface	com.amazon.whisperlink.services.datatransfer.DataReader		
+interface	com.amazon.whisperlink.services.datatransfer.DataReaderFactory		
+interface	com.amazon.whisperlink.services.datatransfer.DataRequesterService$DRSTransferCompleteHandler		
+interface	com.amazon.whisperlink.services.datatransfer.DataWriter		
+interface	com.amazon.whisperlink.services.datatransfer.DataWriterFactory		
+interface	com.amazon.whisperlink.services.datatransfer.TransferCompleteHandler		
+interface	com.amazon.whisperlink.settings.ConnectionSettings		
+interface	com.amazon.whisperlink.thrift.ClientFactory$Client		
+interface	com.amazon.whisperlink.thrift.ClientFactory$Connectable	Closeable	
+interface	com.amazon.whisperlink.thrift.ConnectionV2$ConnectCompleteHandler		
+interface	com.amazon.whisperlink.thrift.impl.EndpointSerializer		
+interface	com.amazon.whisperlink.transport.AuthenticationFeature		
+interface	com.amazon.whisperlink.transport.ComChannelFactoryFactory		
+interface	com.amazon.whisperlink.transport.HandshakeCompleteHandler		
+interface	com.amazon.whisperlink.transport.SecureTransportFeature	PlatformFeature	
+interface	com.amazon.whisperlink.transport.TCommunicationChannelFactory	Comparable<TCommunicationChannelFactory>	
+interface	com.amazon.whisperlink.transport.TExternalCommunicationChannelFactory	TCommunicationChannelFactory	
+interface	com.amazon.whisperlink.transport.TInternalCommunicationChannelFactory	TCommunicationChannelFactory	
+interface	com.amazon.whisperlink.transport.WhisperLinkConnHandler		
+interface	com.amazon.whisperlink.util.CallbackExecutorHandler		
+interface	com.amazon.whisperlink.util.Connection$ConnectCompleteHandler		
+interface	com.amazon.whisperlink.util.Connection$ConnectCompleteHandlerWithReturn		
+interface	com.amazon.whisperlink.util.Log$LogHandler		
+interface	com.amazon.whisperlink.util.Log$LogHandler$MetricEventHolder		
+interface	com.amazon.whisperlink.util.NanoHTTPD$AsyncRunner		
+interface	com.amazon.whisperlink.util.NanoHTTPD$IHTTPSession		
+interface	com.amazon.whisperlink.util.NanoHTTPD$TempFile		
+interface	com.amazon.whisperlink.util.NanoHTTPD$TempFileManager		
+interface	com.amazon.whisperlink.util.NanoHTTPD$TempFileManagerFactory		
+interface	com.amazon.whisperlink.util.TaskExecutor$TaskExecutionListener		
+interface	com.amazon.whisperplay.About		
+interface	com.amazon.whisperplay.LifecycleManager		
+interface	com.amazon.whisperplay.ServiceEndpoint		
+interface	com.amazon.whisperplay.ServiceEndpoint$ExtendedInfo		
+interface	com.amazon.whisperplay.discovery.DeviceInfo		
+interface	com.amazon.whisperplay.discovery.DiscoveryManager		
+interface	com.amazon.whisperplay.discovery.DiscoveryManager$DiscoveryListener		
+interface	com.amazon.whisperplay.discovery.FilterKey		
+interface	com.amazon.whisperplay.feature.security.CertificateSourceFeature	PlatformFeature	
+interface	com.amazon.whisperplay.hosting.ClientInfo		
+interface	com.amazon.whisperplay.hosting.HostingManager		
+interface	com.amazon.whisperplay.hosting.ServiceListener		
+interface	com.amazon.whisperplay.serviceendpointpicker.android.ServiceEndpointDataSource		
+interface	com.amazon.whisperplay.serviceendpointpicker.android.ServiceEndpointDataSourceObserver		
+interface	com.amazon.whisperplay.serviceendpointpicker.android.ServiceEndpointFilter		
+interface	com.amazon.whisperplay.serviceendpointpicker.android.ServiceEndpointListener		
+interface	com.amazon.whisperplay.serviceendpointpicker.android.impl.ServiceEndpointContainer		
+interface	com.amazonaws.mobileconnectors.remoteconfiguration.Attributes		
+interface	com.amazonaws.mobileconnectors.remoteconfiguration.Configuration		
+interface	com.amazonaws.mobileconnectors.remoteconfiguration.ConfigurationSyncCallback		
+interface	com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfiguration		
+interface	com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.RemoteConfigurationFetcher		
+interface	org.bouncycastle.minjpake.crypto.CipherParameters		
+interface	org.bouncycastle.minjpake.crypto.Digest		
+interface	org.bouncycastle.minjpake.crypto.ExtendedDigest	Digest	
+interface	org.bouncycastle.minjpake.crypto.Mac		
+interface	org.bouncycastle.minjpake.util.Memoable		

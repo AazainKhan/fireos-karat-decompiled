@@ -1,0 +1,155 @@
+class	kind	declaration
+com.android.providers.tv.BootCompletedReceiver	field	private final Executor mExecutor;
+com.android.providers.tv.BootCompletedReceiver	field	private static final String[] PROJECTION;
+com.android.providers.tv.BootCompletedReceiver	method	private String getTableName(Uri uri)
+com.android.providers.tv.BootCompletedReceiver	method	private void deleteRowsOfUninstalledPackagesInternal(Context context, SQLiteDatabase sQLiteDatabase, Uri uri)
+com.android.providers.tv.BootCompletedReceiver	method	public BootCompletedReceiver()
+com.android.providers.tv.BootCompletedReceiver	method	public BootCompletedReceiver(Executor executor)
+com.android.providers.tv.BootCompletedReceiver	method	public void deleteRowsOfUninstalledPackages(Context context, SQLiteDatabase sQLiteDatabase)
+com.android.providers.tv.BootCompletedReceiver	method	public void onReceive(final Context context, Intent intent)
+com.android.providers.tv.EpgDataCleanupService	method	protected void onHandleIntent(Intent intent)
+com.android.providers.tv.EpgDataCleanupService	method	public EpgDataCleanupService()
+com.android.providers.tv.PackageChangedReceiver	method	public void onReceive(Context context, Intent intent)
+com.android.providers.tv.PackageRemovedReceiver	field	private final Executor mExecutor;
+com.android.providers.tv.PackageRemovedReceiver	method	public PackageRemovedReceiver()
+com.android.providers.tv.PackageRemovedReceiver	method	public PackageRemovedReceiver(Executor executor)
+com.android.providers.tv.PackageRemovedReceiver	method	public void onReceive(final Context context, final Intent intent)
+com.android.providers.tv.R$array	field	public static final int genre_mapping_atsc;
+com.android.providers.tv.R$array	field	public static final int genre_mapping_dvb;
+com.android.providers.tv.R$array	field	public static final int genre_mapping_isdb;
+com.android.providers.tv.R$array	field	public static final int genre_mapping_isdb_br;
+com.android.providers.tv.R$integer	field	public static final int max_program_age_in_days;
+com.android.providers.tv.R$integer	field	public static final int max_watched_program_age_in_days;
+com.android.providers.tv.R$integer	field	public static final int max_watched_program_entry_count;
+com.android.providers.tv.R$string	field	public static final int app_label;
+com.android.providers.tv.R$string	field	public static final int permdesc_accessAllEpgData;
+com.android.providers.tv.R$string	field	public static final int permdesc_accessWatchedPrograms;
+com.android.providers.tv.R$string	field	public static final int permdesc_readEpgData;
+com.android.providers.tv.R$string	field	public static final int permdesc_readTvListings;
+com.android.providers.tv.R$string	field	public static final int permdesc_writeEpgData;
+com.android.providers.tv.R$string	field	public static final int permlab_accessAllEpgData;
+com.android.providers.tv.R$string	field	public static final int permlab_accessWatchedPrograms;
+com.android.providers.tv.R$string	field	public static final int permlab_readEpgData;
+com.android.providers.tv.R$string	field	public static final int permlab_readTvListings;
+com.android.providers.tv.R$string	field	public static final int permlab_writeEpgData;
+com.android.providers.tv.TransientRowHelper	field	private Context mContext;
+com.android.providers.tv.TransientRowHelper	field	private TvProvider.DatabaseHelper mDatabaseHelper;
+com.android.providers.tv.TransientRowHelper	field	private static TransientRowHelper sInstance;
+com.android.providers.tv.TransientRowHelper	field	protected boolean mTransientRowsDeleted;
+com.android.providers.tv.TransientRowHelper	method	protected int getBootCount()
+com.android.providers.tv.TransientRowHelper	method	protected int getLastDeletionBootCount()
+com.android.providers.tv.TransientRowHelper	method	protected void setLastDeletionBootCount()
+com.android.providers.tv.TransientRowHelper	method	public static TransientRowHelper getInstance(Context context)
+com.android.providers.tv.TransientRowHelper	method	public synchronized void ensureOldTransientRowsDeleted()
+com.android.providers.tv.TvMetricsHelper	method	public static String bucketizeMetrics(long j)
+com.android.providers.tv.TvMetricsHelper	method	public static void createKDMEvent(double d, String str, String str2, boolean z)
+com.android.providers.tv.TvMetricsHelper	method	public static void logTvDBSizeMetric(final Context context)
+com.android.providers.tv.TvMetricsHelper	method	public static void recordProgramsTableTruncation(long j)
+com.android.providers.tv.TvProvider	field	private AsyncTask<Void, Void, Void> mDeleteUnconsolidatedWatchedProgramsTask;
+com.android.providers.tv.TvProvider	field	private DatabaseHelper mOpenHelper;
+com.android.providers.tv.TvProvider	field	private final Handler mLogHandler;
+com.android.providers.tv.TvProvider	field	private final ThreadLocal<Set<Uri>> mTLBatchNotifications;
+com.android.providers.tv.TvProvider	field	private static Map<String, Boolean> sBlockedPackages;
+com.android.providers.tv.TvProvider	field	private static Map<String, String> sGenreMap;
+com.android.providers.tv.TvProvider	field	private static SharedPreferences sBlockedPackagesSharedPreference;
+com.android.providers.tv.TvProvider	field	private static boolean sInitialized;
+com.android.providers.tv.TvProvider	field	private static final Map<String, String> sChannelProjectionMap;
+com.android.providers.tv.TvProvider	field	private static final Map<String, String> sPreviewProgramProjectionMap;
+com.android.providers.tv.TvProvider	field	private static final Map<String, String> sProgramProjectionMap;
+com.android.providers.tv.TvProvider	field	private static final Map<String, String> sRecordedProgramProjectionMap;
+com.android.providers.tv.TvProvider	field	private static final Map<String, String> sWatchNextProgramProjectionMap;
+com.android.providers.tv.TvProvider	field	private static final Map<String, String> sWatchedProgramProjectionMap;
+com.android.providers.tv.TvProvider	field	private static final UriMatcher sUriMatcher;
+com.android.providers.tv.TvProvider	field	protected TransientRowHelper mTransientRowHelper;
+com.android.providers.tv.TvProvider	field	static final String FIREOS_DATABASE_VERSION_KEY;
+com.android.providers.tv.TvProvider	method	private Map<String, String> createProjectionMapForQuery(String[] strArr, Map<String, String> map)
+com.android.providers.tv.TvProvider	method	private ParcelFileDescriptor openLogoFile(Uri uri, String str) throws FileNotFoundException
+com.android.providers.tv.TvProvider	method	private Set<Uri> getBatchNotificationsSet()
+com.android.providers.tv.TvProvider	method	private SqlParams createSqlParams(String str, Uri uri, final String str2, String[] strArr)
+com.android.providers.tv.TvProvider	method	private Uri insertChannel(Uri uri, ContentValues contentValues)
+com.android.providers.tv.TvProvider	method	private Uri insertPreviewProgram(Uri uri, ContentValues contentValues)
+com.android.providers.tv.TvProvider	method	private Uri insertProgram(Uri uri, ContentValues contentValues)
+com.android.providers.tv.TvProvider	method	private Uri insertRecordedProgram(Uri uri, ContentValues contentValues)
+com.android.providers.tv.TvProvider	method	private Uri insertWatchNextProgram(Uri uri, ContentValues contentValues)
+com.android.providers.tv.TvProvider	method	private Uri insertWatchedProgram(Uri uri, ContentValues contentValues)
+com.android.providers.tv.TvProvider	method	private boolean callerHasAccessAllEpgDataPermission()
+com.android.providers.tv.TvProvider	method	private boolean callerHasAccessWatchedProgramsPermission()
+com.android.providers.tv.TvProvider	method	private boolean callerHasModifyParentalControlsPermission()
+com.android.providers.tv.TvProvider	method	private boolean callerHasReadTvListingsPermission()
+com.android.providers.tv.TvProvider	method	private boolean disallowModifyChannelId(ContentValues contentValues, SqlParams sqlParams)
+com.android.providers.tv.TvProvider	method	private boolean disallowModifyChannelType(ContentValues contentValues, SqlParams sqlParams)
+com.android.providers.tv.TvProvider	method	private boolean needEventLog(String str)
+com.android.providers.tv.TvProvider	method	private static String capitalize(String str)
+com.android.providers.tv.TvProvider	method	private static String generateDefaultClause(String str, String str2) throws IllegalArgumentException
+com.android.providers.tv.TvProvider	method	private static void initProjectionMaps()
+com.android.providers.tv.TvProvider	method	private static void updateProjectionMap(SQLiteDatabase sQLiteDatabase, String str, Map<String, String> map)
+com.android.providers.tv.TvProvider	method	private static void validateSortOrder(String str, Set<String> set)
+com.android.providers.tv.TvProvider	method	private synchronized void ensureInitialized()
+com.android.providers.tv.TvProvider	method	private void blockIllegalAccessFromBlockedPackage()
+com.android.providers.tv.TvProvider	method	private void blockIllegalAccessToChannelsSystemColumns(ContentValues contentValues)
+com.android.providers.tv.TvProvider	method	private void blockIllegalAccessToIdAndPackageName(Uri uri, ContentValues contentValues)
+com.android.providers.tv.TvProvider	method	private void blockIllegalAccessToPreviewProgramsSystemColumns(ContentValues contentValues)
+com.android.providers.tv.TvProvider	method	private void buildGenreMap()
+com.android.providers.tv.TvProvider	method	private void buildGenreMap(int i)
+com.android.providers.tv.TvProvider	method	private void checkAndConvertDeprecatedColumns(ContentValues contentValues)
+com.android.providers.tv.TvProvider	method	private void checkAndConvertGenre(ContentValues contentValues)
+com.android.providers.tv.TvProvider	method	private void filterContentValues(ContentValues contentValues, Map<String, String> map)
+com.android.providers.tv.TvProvider	method	private void setBatchNotificationsSet(Set<Uri> set)
+com.android.providers.tv.TvProvider	method	public Bundle call(String str, String str2, Bundle bundle)
+com.android.providers.tv.TvProvider	method	public ContentProviderResult[] applyBatch(ArrayList<ContentProviderOperation> arrayList) throws OperationApplicationException
+com.android.providers.tv.TvProvider	method	public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2)
+com.android.providers.tv.TvProvider	method	public ParcelFileDescriptor openFile(Uri uri, String str) throws FileNotFoundException
+com.android.providers.tv.TvProvider	method	public String getType(Uri uri)
+com.android.providers.tv.TvProvider	method	public Uri insert(Uri uri, ContentValues contentValues)
+com.android.providers.tv.TvProvider	method	public boolean onCreate()
+com.android.providers.tv.TvProvider	method	public int bulkInsert(Uri uri, ContentValues[] contentValuesArr)
+com.android.providers.tv.TvProvider	method	public int delete(Uri uri, String str, String[] strArr)
+com.android.providers.tv.TvProvider	method	public int update(Uri uri, ContentValues contentValues, String str, String[] strArr)
+com.android.providers.tv.TvProvider	method	public static List<String> getColumnNames(SQLiteDatabase sQLiteDatabase, String str)
+com.android.providers.tv.TvProvider	method	public static synchronized void initOnOpenIfNeeded(Context context, SQLiteDatabase sQLiteDatabase)
+com.android.providers.tv.TvProvider	method	public void deleteUnconsolidatedWatchedProgramsRows()
+com.android.providers.tv.TvProvider	method	public void notifyChange(Uri uri)
+com.android.providers.tv.TvProvider	method	public void shutdown()
+com.android.providers.tv.TvProvider	method	synchronized void setOpenHelper(DatabaseHelper databaseHelper, boolean z)
+com.android.providers.tv.TvProvider$DatabaseHelper	field	private static Context mContext;
+com.android.providers.tv.TvProvider$DatabaseHelper	field	private static DatabaseHelper sSingleton;
+com.android.providers.tv.TvProvider$DatabaseHelper	method	private DatabaseHelper(Context context)
+com.android.providers.tv.TvProvider$DatabaseHelper	method	private static void migrateIntegerColumnToTextColumn(SQLiteDatabase sQLiteDatabase, String str, String str2, String str3)
+com.android.providers.tv.TvProvider$DatabaseHelper	method	private static void slipstreamedUpdate(ContentResolver contentResolver, SQLiteDatabase sQLiteDatabase)
+com.android.providers.tv.TvProvider$DatabaseHelper	method	private void truncateDbIfNeeded(SQLiteDatabase sQLiteDatabase)
+com.android.providers.tv.TvProvider$DatabaseHelper	method	public static synchronized DatabaseHelper getInstance(Context context)
+com.android.providers.tv.TvProvider$DatabaseHelper	method	public void onConfigure(SQLiteDatabase sQLiteDatabase)
+com.android.providers.tv.TvProvider$DatabaseHelper	method	public void onCreate(SQLiteDatabase sQLiteDatabase)
+com.android.providers.tv.TvProvider$DatabaseHelper	method	public void onOpen(SQLiteDatabase sQLiteDatabase)
+com.android.providers.tv.TvProvider$DatabaseHelper	method	public void onUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i2)
+com.android.providers.tv.TvProvider$PipeMonitor	field	private final ParcelFileDescriptor mPfd;
+com.android.providers.tv.TvProvider$PipeMonitor	field	private final SqlParams mParams;
+com.android.providers.tv.TvProvider$PipeMonitor	field	private final long mChannelId;
+com.android.providers.tv.TvProvider$PipeMonitor	method	private PipeMonitor(ParcelFileDescriptor parcelFileDescriptor, long j, SqlParams sqlParams)
+com.android.providers.tv.TvProvider$PipeMonitor	method	public Void doInBackground(Void... voidArr) throws Throwable
+com.android.providers.tv.TvProvider$WatchLogHandler	method	private ContentValues getProgramValues(long j, long j2)
+com.android.providers.tv.TvProvider$WatchLogHandler	method	private WatchLogHandler()
+com.android.providers.tv.TvProvider$WatchLogHandler	method	private int consolidateRow(long j, long j2, long j3, long j4, boolean z)
+com.android.providers.tv.TvProvider$WatchLogHandler	method	private long duplicateRow(long j)
+com.android.providers.tv.TvProvider$WatchLogHandler	method	private void deleteUnsearchable()
+com.android.providers.tv.TvProvider$WatchLogHandler	method	private void onConsolidate(String str, long j)
+com.android.providers.tv.TvProvider$WatchLogHandler	method	private void onTryConsolidateAll()
+com.android.providers.tv.TvProvider$WatchLogHandler	method	private void scheduleConsolidationIfNeeded()
+com.android.providers.tv.TvProvider$WatchLogHandler	method	public void handleMessage(Message message)
+com.android.providers.tv.TvProviderUpgradeReceiver	method	public void onReceive(Context context, Intent intent)
+com.android.providers.tv.util.SqlParams	field	private String mSelection;
+com.android.providers.tv.util.SqlParams	field	private String mTables;
+com.android.providers.tv.util.SqlParams	field	private String[] mSelectionArgs;
+com.android.providers.tv.util.SqlParams	method	public SqlParams(String str, String str2, String... strArr)
+com.android.providers.tv.util.SqlParams	method	public String getSelection()
+com.android.providers.tv.util.SqlParams	method	public String getTables()
+com.android.providers.tv.util.SqlParams	method	public String[] getSelectionArgs()
+com.android.providers.tv.util.SqlParams	method	public void appendWhere(String str, String... strArr)
+com.android.providers.tv.util.SqlParams	method	public void setTables(String str)
+com.android.providers.tv.util.SqlParams	method	public void setWhere(String str, String... strArr)
+com.android.providers.tv.util.SqliteTokenFinder	method	private static boolean isAlNum(char c)
+com.android.providers.tv.util.SqliteTokenFinder	method	private static boolean isAlpha(char c)
+com.android.providers.tv.util.SqliteTokenFinder	method	private static boolean isAnyOf(char c, String str)
+com.android.providers.tv.util.SqliteTokenFinder	method	private static boolean isNum(char c)
+com.android.providers.tv.util.SqliteTokenFinder	method	private static char peek(String str, int i)
+com.android.providers.tv.util.SqliteTokenFinder	method	public static void findTokens(String str, Consumer<Pair<Integer, String>> consumer)

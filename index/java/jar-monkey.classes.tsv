@@ -1,0 +1,70 @@
+kind	class	extends	implements
+class	com.android.commands.monkey.Logger		
+class	com.android.commands.monkey.Monkey		
+class	com.android.commands.monkey.Monkey$ActivityController	IActivityController.Stub	
+class	com.android.commands.monkey.MonkeyActivityEvent	MonkeyEvent	
+class	com.android.commands.monkey.MonkeyCommandEvent	MonkeyEvent	
+class	com.android.commands.monkey.MonkeyEvent		
+class	com.android.commands.monkey.MonkeyEventQueue	LinkedList<MonkeyEvent>	
+class	com.android.commands.monkey.MonkeyFlipEvent	MonkeyEvent	
+class	com.android.commands.monkey.MonkeyGetAppFrameRateEvent	MonkeyEvent	
+class	com.android.commands.monkey.MonkeyGetFrameRateEvent	MonkeyEvent	
+class	com.android.commands.monkey.MonkeyInstrumentationEvent	MonkeyEvent	
+class	com.android.commands.monkey.MonkeyKeyEvent	MonkeyEvent	
+class	com.android.commands.monkey.MonkeyMotionEvent	MonkeyEvent	
+class	com.android.commands.monkey.MonkeyNetworkMonitor	IIntentReceiver.Stub	
+class	com.android.commands.monkey.MonkeyNoopEvent	MonkeyEvent	
+class	com.android.commands.monkey.MonkeyPermissionEvent	MonkeyEvent	
+class	com.android.commands.monkey.MonkeyPermissionUtil		
+class	com.android.commands.monkey.MonkeyPowerEvent	MonkeyEvent	
+class	com.android.commands.monkey.MonkeyRotationEvent	MonkeyEvent	
+class	com.android.commands.monkey.MonkeySourceNetwork		MonkeyEventSource
+class	com.android.commands.monkey.MonkeySourceNetwork$CommandQueueImpl		CommandQueue
+class	com.android.commands.monkey.MonkeySourceNetwork$DeferReturnCommand		MonkeyCommand
+class	com.android.commands.monkey.MonkeySourceNetwork$DeferredReturn		
+class	com.android.commands.monkey.MonkeySourceNetwork$FlipCommand		MonkeyCommand
+class	com.android.commands.monkey.MonkeySourceNetwork$KeyCommand		MonkeyCommand
+class	com.android.commands.monkey.MonkeySourceNetwork$MonkeyCommandReturn		
+class	com.android.commands.monkey.MonkeySourceNetwork$PressCommand		MonkeyCommand
+class	com.android.commands.monkey.MonkeySourceNetwork$SleepCommand		MonkeyCommand
+class	com.android.commands.monkey.MonkeySourceNetwork$TapCommand		MonkeyCommand
+class	com.android.commands.monkey.MonkeySourceNetwork$TouchCommand		MonkeyCommand
+class	com.android.commands.monkey.MonkeySourceNetwork$TrackballCommand		MonkeyCommand
+class	com.android.commands.monkey.MonkeySourceNetwork$TypeCommand		MonkeyCommand
+class	com.android.commands.monkey.MonkeySourceNetwork$WakeCommand		MonkeyCommand
+class	com.android.commands.monkey.MonkeySourceNetworkVars		
+class	com.android.commands.monkey.MonkeySourceNetworkVars$GetVarCommand		MonkeySourceNetwork.MonkeyCommand
+class	com.android.commands.monkey.MonkeySourceNetworkVars$ListVarCommand		MonkeySourceNetwork.MonkeyCommand
+class	com.android.commands.monkey.MonkeySourceNetworkVars$StaticVarGetter		VarGetter
+class	com.android.commands.monkey.MonkeySourceNetworkViews		
+class	com.android.commands.monkey.MonkeySourceNetworkViews$GetAccessibilityIds		ViewIntrospectionCommand
+class	com.android.commands.monkey.MonkeySourceNetworkViews$GetChecked		ViewIntrospectionCommand
+class	com.android.commands.monkey.MonkeySourceNetworkViews$GetChildren		ViewIntrospectionCommand
+class	com.android.commands.monkey.MonkeySourceNetworkViews$GetClass		ViewIntrospectionCommand
+class	com.android.commands.monkey.MonkeySourceNetworkViews$GetEnabled		ViewIntrospectionCommand
+class	com.android.commands.monkey.MonkeySourceNetworkViews$GetFocused		ViewIntrospectionCommand
+class	com.android.commands.monkey.MonkeySourceNetworkViews$GetLocation		ViewIntrospectionCommand
+class	com.android.commands.monkey.MonkeySourceNetworkViews$GetParent		ViewIntrospectionCommand
+class	com.android.commands.monkey.MonkeySourceNetworkViews$GetRootViewCommand		MonkeySourceNetwork.MonkeyCommand
+class	com.android.commands.monkey.MonkeySourceNetworkViews$GetSelected		ViewIntrospectionCommand
+class	com.android.commands.monkey.MonkeySourceNetworkViews$GetText		ViewIntrospectionCommand
+class	com.android.commands.monkey.MonkeySourceNetworkViews$GetViewsWithTextCommand		MonkeySourceNetwork.MonkeyCommand
+class	com.android.commands.monkey.MonkeySourceNetworkViews$ListViewsCommand		MonkeySourceNetwork.MonkeyCommand
+class	com.android.commands.monkey.MonkeySourceNetworkViews$QueryViewCommand		MonkeySourceNetwork.MonkeyCommand
+class	com.android.commands.monkey.MonkeySourceNetworkViews$SetFocused		ViewIntrospectionCommand
+class	com.android.commands.monkey.MonkeySourceNetworkViews$SetSelected		ViewIntrospectionCommand
+class	com.android.commands.monkey.MonkeySourceRandom		MonkeyEventSource
+class	com.android.commands.monkey.MonkeySourceRandomScript		MonkeyEventSource
+class	com.android.commands.monkey.MonkeySourceScript		MonkeyEventSource
+class	com.android.commands.monkey.MonkeyThrottleEvent	MonkeyEvent	
+class	com.android.commands.monkey.MonkeyTouchEvent	MonkeyMotionEvent	
+class	com.android.commands.monkey.MonkeyTrackballEvent	MonkeyMotionEvent	
+class	com.android.commands.monkey.MonkeyUtils		
+class	com.android.commands.monkey.MonkeyUtils$PackageFilter		
+class	com.android.commands.monkey.MonkeyViewException	Exception	
+class	com.android.commands.monkey.MonkeyWaitEvent	MonkeyEvent	
+interface	com.android.commands.monkey.MonkeyEventSource		
+interface	com.android.commands.monkey.MonkeySourceNetwork$CommandQueue		
+interface	com.android.commands.monkey.MonkeySourceNetwork$MonkeyCommand		
+interface	com.android.commands.monkey.MonkeySourceNetworkVars$VarGetter		
+interface	com.android.commands.monkey.MonkeySourceNetworkViews$ViewIntrospectionCommand		

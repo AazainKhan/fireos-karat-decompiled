@@ -1,0 +1,30 @@
+class	kind	declaration
+com.android.future.usb.UsbAccessory	field	private final String mDescription;
+com.android.future.usb.UsbAccessory	field	private final String mManufacturer;
+com.android.future.usb.UsbAccessory	field	private final String mModel;
+com.android.future.usb.UsbAccessory	field	private final String mSerial;
+com.android.future.usb.UsbAccessory	field	private final String mUri;
+com.android.future.usb.UsbAccessory	field	private final String mVersion;
+com.android.future.usb.UsbAccessory	method	private static boolean compare(String str, String str2)
+com.android.future.usb.UsbAccessory	method	public String getDescription()
+com.android.future.usb.UsbAccessory	method	public String getManufacturer()
+com.android.future.usb.UsbAccessory	method	public String getModel()
+com.android.future.usb.UsbAccessory	method	public String getSerial()
+com.android.future.usb.UsbAccessory	method	public String getUri()
+com.android.future.usb.UsbAccessory	method	public String getVersion()
+com.android.future.usb.UsbAccessory	method	public String toString()
+com.android.future.usb.UsbAccessory	method	public boolean equals(Object obj)
+com.android.future.usb.UsbAccessory	method	public int hashCode()
+com.android.future.usb.UsbManager	field	private final Context mContext;
+com.android.future.usb.UsbManager	field	private final IUsbManager mService;
+com.android.future.usb.UsbManager	field	private static final String TAG;
+com.android.future.usb.UsbManager	field	public static final String ACTION_USB_ACCESSORY_ATTACHED;
+com.android.future.usb.UsbManager	field	public static final String ACTION_USB_ACCESSORY_DETACHED;
+com.android.future.usb.UsbManager	field	public static final String EXTRA_PERMISSION_GRANTED;
+com.android.future.usb.UsbManager	method	private UsbManager(Context context, IUsbManager iUsbManager)
+com.android.future.usb.UsbManager	method	public ParcelFileDescriptor openAccessory(UsbAccessory usbAccessory)
+com.android.future.usb.UsbManager	method	public UsbAccessory[] getAccessoryList()
+com.android.future.usb.UsbManager	method	public boolean hasPermission(UsbAccessory usbAccessory)
+com.android.future.usb.UsbManager	method	public static UsbAccessory getAccessory(Intent intent)
+com.android.future.usb.UsbManager	method	public static UsbManager getInstance(Context context)
+com.android.future.usb.UsbManager	method	public void requestPermission(UsbAccessory usbAccessory, PendingIntent pendingIntent)

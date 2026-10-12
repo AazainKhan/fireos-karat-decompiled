@@ -1,0 +1,1364 @@
+class	kind	declaration
+com.amazon.neo.service.api.BinderInternal	method	public IBinder getGlobalContextObject()
+com.amazon.neo.service.api.BinderUtils	field	public BinderInternal binderInternal;
+com.amazon.neo.service.api.BinderUtils	field	public static final int FOS8_BINDER_SYSTEM_HEADER;
+com.amazon.neo.service.api.BinderUtils	method	public BinderUtils(BinderInternal binderInternal)
+com.amazon.neo.service.api.BinderUtils	method	public IBinder getPublicServiceCoordinator()
+com.amazon.neo.service.api.BinderUtils	method	public IBinder getServiceBinder(String str)
+com.amazon.neo.service.api.BinderUtils	method	public Parcel getParamsParcel()
+com.amazon.neo.service.api.BinderUtils	method	public Parcel getReplyParcel()
+com.amazon.neo.service.api.BinderUtils	method	public static int bPackChars(char c, char c2, char c3, char c4)
+com.amazon.neo.service.api.BinderUtils	method	public void getPublicService(String str, ServiceCallback serviceCallback)
+com.amazon.neo.service.api.BinderUtils	method	public void getServiceByHandle(final String str, final ServiceCallback serviceCallback, IBinder iBinder)
+com.amazon.neo.service.api.BinderUtils$Builder	field	public BinderInternal binderInternal;
+com.amazon.neo.service.api.BinderUtils$Builder	method	public BinderUtils build()
+com.amazon.neo.service.api.BinderUtils$Builder	method	public Builder withBinderInternal(BinderInternal binderInternal)
+com.amazon.neo.service.api.ServiceCallback	field	public ArrayList<IBinder> mPendingRequests;
+com.amazon.neo.service.api.ServiceCallback	field	public IBinder mToken;
+com.amazon.neo.service.api.ServiceCallback	method	public ServiceCallback()
+com.amazon.neo.service.api.ServiceCallback	method	public abstract void onServiceConnected(String str, IBinder iBinder);
+com.amazon.neo.service.api.ServiceCallback	method	public abstract void onServiceFailed(String str, String str2);
+com.amazon.p11.spy.logging.AndroidLogger	method	private String getMessage(String str, String str2)
+com.amazon.p11.spy.logging.AndroidLogger	method	public boolean isDebugLoggable(String str)
+com.amazon.p11.spy.logging.AndroidLogger	method	public void d(String str, String str2, String str3)
+com.amazon.p11.spy.logging.AndroidLogger	method	public void d(String str, String str2, String str3, Object... objArr)
+com.amazon.p11.spy.logging.AndroidLogger	method	public void d(String str, String str2, String str3, Throwable th)
+com.amazon.p11.spy.logging.AndroidLogger	method	public void e(String str, String str2, String str3)
+com.amazon.p11.spy.logging.AndroidLogger	method	public void e(String str, String str2, String str3, Object... objArr)
+com.amazon.p11.spy.logging.AndroidLogger	method	public void e(String str, String str2, String str3, Throwable th)
+com.amazon.p11.spy.logging.AndroidLogger	method	public void i(String str, String str2, String str3)
+com.amazon.p11.spy.logging.AndroidLogger	method	public void i(String str, String str2, String str3, Object... objArr)
+com.amazon.p11.spy.logging.AndroidLogger	method	public void i(String str, String str2, String str3, Throwable th)
+com.amazon.p11.spy.logging.AndroidLogger	method	public void v(String str, String str2, String str3)
+com.amazon.p11.spy.logging.AndroidLogger	method	public void v(String str, String str2, String str3, Object... objArr)
+com.amazon.p11.spy.logging.AndroidLogger	method	public void v(String str, String str2, String str3, Throwable th)
+com.amazon.p11.spy.logging.AndroidLogger	method	public void w(String str, String str2, String str3)
+com.amazon.p11.spy.logging.AndroidLogger	method	public void w(String str, String str2, String str3, Object... objArr)
+com.amazon.p11.spy.logging.AndroidLogger	method	public void w(String str, String str2, String str3, Throwable th)
+com.amazon.p11.spy.logging.AndroidLogger	method	public void wtf(String str, String str2, String str3)
+com.amazon.p11.spy.logging.AndroidLogger	method	public void wtf(String str, String str2, String str3, Object... objArr)
+com.amazon.p11.spy.logging.AndroidLogger	method	public void wtf(String str, String str2, String str3, Throwable th)
+com.amazon.p11.spy.logging.AndroidLoggerFactory	method	public Logger create()
+com.amazon.p11.spy.logging.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.p11.spy.logging.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.p11.spy.logging.BuildConfig	field	public static final String FLAVOR;
+com.amazon.p11.spy.logging.BuildConfig	field	public static final String LIBRARY_PACKAGE_NAME;
+com.amazon.p11.spy.logging.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.p11.spy.logging.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.p11.spy.logging.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.p11.spy.logging.Logg	field	private static LoggerFactory loggerFactory;
+com.amazon.p11.spy.logging.Logg	field	private static String rootTag;
+com.amazon.p11.spy.logging.Logg	method	private Logg()
+com.amazon.p11.spy.logging.Logg	method	private static Logger getLogger()
+com.amazon.p11.spy.logging.Logg	method	public static boolean isDebugLoggable()
+com.amazon.p11.spy.logging.Logg	method	public static void d(String str, String str2)
+com.amazon.p11.spy.logging.Logg	method	public static void d(String str, String str2, Object... objArr)
+com.amazon.p11.spy.logging.Logg	method	public static void d(String str, String str2, Throwable th)
+com.amazon.p11.spy.logging.Logg	method	public static void e(String str, String str2)
+com.amazon.p11.spy.logging.Logg	method	public static void e(String str, String str2, Object... objArr)
+com.amazon.p11.spy.logging.Logg	method	public static void e(String str, String str2, Throwable th)
+com.amazon.p11.spy.logging.Logg	method	public static void i(String str, String str2)
+com.amazon.p11.spy.logging.Logg	method	public static void i(String str, String str2, Object... objArr)
+com.amazon.p11.spy.logging.Logg	method	public static void i(String str, String str2, Throwable th)
+com.amazon.p11.spy.logging.Logg	method	public static void setLoggerFactory(LoggerFactory loggerFactory2)
+com.amazon.p11.spy.logging.Logg	method	public static void setRootTag(String str)
+com.amazon.p11.spy.logging.Logg	method	public static void useAndroidLogger()
+com.amazon.p11.spy.logging.Logg	method	public static void useNoOpLogger()
+com.amazon.p11.spy.logging.Logg	method	public static void useSystemOutLogger()
+com.amazon.p11.spy.logging.Logg	method	public static void v(String str, String str2)
+com.amazon.p11.spy.logging.Logg	method	public static void v(String str, String str2, Object... objArr)
+com.amazon.p11.spy.logging.Logg	method	public static void v(String str, String str2, Throwable th)
+com.amazon.p11.spy.logging.Logg	method	public static void w(String str, String str2)
+com.amazon.p11.spy.logging.Logg	method	public static void w(String str, String str2, Object... objArr)
+com.amazon.p11.spy.logging.Logg	method	public static void w(String str, String str2, Throwable th)
+com.amazon.p11.spy.logging.Logg	method	public static void wtf(String str, String str2)
+com.amazon.p11.spy.logging.Logg	method	public static void wtf(String str, String str2, Object... objArr)
+com.amazon.p11.spy.logging.Logg	method	public static void wtf(String str, String str2, Throwable th)
+com.amazon.p11.spy.logging.Logg$Initializer	field	private static final Logger INSTANCE;
+com.amazon.p11.spy.logging.Logg$Initializer	method	private Initializer()
+com.amazon.p11.spy.logging.NoOpLogger	method	public boolean isDebugLoggable(String str)
+com.amazon.p11.spy.logging.NoOpLogger	method	public void d(String str, String str2, String str3)
+com.amazon.p11.spy.logging.NoOpLogger	method	public void d(String str, String str2, String str3, Object... objArr)
+com.amazon.p11.spy.logging.NoOpLogger	method	public void d(String str, String str2, String str3, Throwable th)
+com.amazon.p11.spy.logging.NoOpLogger	method	public void e(String str, String str2, String str3)
+com.amazon.p11.spy.logging.NoOpLogger	method	public void e(String str, String str2, String str3, Object... objArr)
+com.amazon.p11.spy.logging.NoOpLogger	method	public void e(String str, String str2, String str3, Throwable th)
+com.amazon.p11.spy.logging.NoOpLogger	method	public void i(String str, String str2, String str3)
+com.amazon.p11.spy.logging.NoOpLogger	method	public void i(String str, String str2, String str3, Object... objArr)
+com.amazon.p11.spy.logging.NoOpLogger	method	public void i(String str, String str2, String str3, Throwable th)
+com.amazon.p11.spy.logging.NoOpLogger	method	public void v(String str, String str2, String str3)
+com.amazon.p11.spy.logging.NoOpLogger	method	public void v(String str, String str2, String str3, Object... objArr)
+com.amazon.p11.spy.logging.NoOpLogger	method	public void v(String str, String str2, String str3, Throwable th)
+com.amazon.p11.spy.logging.NoOpLogger	method	public void w(String str, String str2, String str3)
+com.amazon.p11.spy.logging.NoOpLogger	method	public void w(String str, String str2, String str3, Object... objArr)
+com.amazon.p11.spy.logging.NoOpLogger	method	public void w(String str, String str2, String str3, Throwable th)
+com.amazon.p11.spy.logging.NoOpLogger	method	public void wtf(String str, String str2, String str3)
+com.amazon.p11.spy.logging.NoOpLogger	method	public void wtf(String str, String str2, String str3, Object... objArr)
+com.amazon.p11.spy.logging.NoOpLogger	method	public void wtf(String str, String str2, String str3, Throwable th)
+com.amazon.p11.spy.logging.NoOpLoggerFactory	method	public Logger create()
+com.amazon.p11.spy.logging.R	method	private R()
+com.amazon.p11.spy.logging.R$attr	field	public static final int alpha;
+com.amazon.p11.spy.logging.R$attr	field	public static final int font;
+com.amazon.p11.spy.logging.R$attr	field	public static final int fontProviderAuthority;
+com.amazon.p11.spy.logging.R$attr	field	public static final int fontProviderCerts;
+com.amazon.p11.spy.logging.R$attr	field	public static final int fontProviderFetchStrategy;
+com.amazon.p11.spy.logging.R$attr	field	public static final int fontProviderFetchTimeout;
+com.amazon.p11.spy.logging.R$attr	field	public static final int fontProviderPackage;
+com.amazon.p11.spy.logging.R$attr	field	public static final int fontProviderQuery;
+com.amazon.p11.spy.logging.R$attr	field	public static final int fontProviderSystemFontFamily;
+com.amazon.p11.spy.logging.R$attr	field	public static final int fontStyle;
+com.amazon.p11.spy.logging.R$attr	field	public static final int fontVariationSettings;
+com.amazon.p11.spy.logging.R$attr	field	public static final int fontWeight;
+com.amazon.p11.spy.logging.R$attr	field	public static final int nestedScrollViewStyle;
+com.amazon.p11.spy.logging.R$attr	field	public static final int queryPatterns;
+com.amazon.p11.spy.logging.R$attr	field	public static final int shortcutMatchRequired;
+com.amazon.p11.spy.logging.R$attr	field	public static final int ttcIndex;
+com.amazon.p11.spy.logging.R$bool	field	public static final int enable_system_alarm_service_default;
+com.amazon.p11.spy.logging.R$bool	field	public static final int enable_system_foreground_service_default;
+com.amazon.p11.spy.logging.R$bool	field	public static final int enable_system_job_service_default;
+com.amazon.p11.spy.logging.R$bool	field	public static final int workmanager_test_configuration;
+com.amazon.p11.spy.logging.R$color	field	public static final int androidx_core_ripple_material_light;
+com.amazon.p11.spy.logging.R$color	field	public static final int androidx_core_secondary_text_default_material_light;
+com.amazon.p11.spy.logging.R$color	field	public static final int button_default_color;
+com.amazon.p11.spy.logging.R$color	field	public static final int button_select_color;
+com.amazon.p11.spy.logging.R$color	field	public static final int button_text_color;
+com.amazon.p11.spy.logging.R$color	field	public static final int header_text_color;
+com.amazon.p11.spy.logging.R$color	field	public static final int notification_action_color_filter;
+com.amazon.p11.spy.logging.R$color	field	public static final int notification_icon_bg_color;
+com.amazon.p11.spy.logging.R$color	field	public static final int primary_text_color;
+com.amazon.p11.spy.logging.R$color	field	public static final int row_focused_color;
+com.amazon.p11.spy.logging.R$color	field	public static final int row_unfocused_color;
+com.amazon.p11.spy.logging.R$color	field	public static final int skip_text_color;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int app_icon_height;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int app_icon_width;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int app_name_margin_end;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int app_name_margin_start;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int app_name_text_size;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int app_name_width;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int app_size_margin_start;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int app_size_margin_top;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int app_size_text_size;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int app_size_width;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int appsize_margintop;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int button_height;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int button_layout_margin;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int button_margin_end;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int button_width;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int checkbox_margin_start;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int checkbox_margin_vertical;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int checkbox_size;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int compat_button_inset_horizontal_material;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int compat_button_inset_vertical_material;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int compat_button_padding_horizontal_material;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int compat_button_padding_vertical_material;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int compat_control_corner_material;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int compat_notification_large_icon_max_height;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int compat_notification_large_icon_max_width;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int default_text_size;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int desc_line_spacing;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int desc_margin_bottom;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int divider_height;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int list_layout_height;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int list_padding_start;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int main_padding_vertical;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int notification_action_icon_size;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int notification_action_text_size;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int notification_big_circle_margin;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int notification_content_margin_start;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int notification_large_icon_height;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int notification_large_icon_width;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int notification_main_column_padding_top;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int notification_media_narrow_margin;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int notification_right_icon_size;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int notification_right_side_padding_top;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int notification_small_icon_background_padding;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int notification_small_icon_size_as_large;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int notification_subtext_size;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int notification_top_pad;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int notification_top_pad_large_text;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int row_height;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int skip_icon_margin;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int skip_text_margin;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int skip_text_size;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int title_text_size;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int unused_day_margin_start;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int unused_day_margin_top;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int unused_day_width;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int width_popup_desc;
+com.amazon.p11.spy.logging.R$dimen	field	public static final int width_popup_header;
+com.amazon.p11.spy.logging.R$drawable	field	public static final int button_selector;
+com.amazon.p11.spy.logging.R$drawable	field	public static final int checkbox_selected;
+com.amazon.p11.spy.logging.R$drawable	field	public static final int checkbox_unselect;
+com.amazon.p11.spy.logging.R$drawable	field	public static final int low_storage_background;
+com.amazon.p11.spy.logging.R$drawable	field	public static final int modelessnotification_inactive_bg_706px;
+com.amazon.p11.spy.logging.R$drawable	field	public static final int notification_action_background;
+com.amazon.p11.spy.logging.R$drawable	field	public static final int notification_bg;
+com.amazon.p11.spy.logging.R$drawable	field	public static final int notification_bg_low;
+com.amazon.p11.spy.logging.R$drawable	field	public static final int notification_bg_low_normal;
+com.amazon.p11.spy.logging.R$drawable	field	public static final int notification_bg_low_pressed;
+com.amazon.p11.spy.logging.R$drawable	field	public static final int notification_bg_normal;
+com.amazon.p11.spy.logging.R$drawable	field	public static final int notification_bg_normal_pressed;
+com.amazon.p11.spy.logging.R$drawable	field	public static final int notification_icon_background;
+com.amazon.p11.spy.logging.R$drawable	field	public static final int notification_template_icon_bg;
+com.amazon.p11.spy.logging.R$drawable	field	public static final int notification_template_icon_low_bg;
+com.amazon.p11.spy.logging.R$drawable	field	public static final int notification_tile_bg;
+com.amazon.p11.spy.logging.R$drawable	field	public static final int notify_panel_notification_icon_bg;
+com.amazon.p11.spy.logging.R$drawable	field	public static final int row_background;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_action_clickable_span;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_0;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_10;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_11;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_12;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_13;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_14;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_15;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_16;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_17;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_18;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_19;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_1;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_20;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_21;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_22;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_23;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_24;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_25;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_26;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_27;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_28;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_29;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_2;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_30;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_31;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_3;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_4;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_5;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_6;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_7;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_8;
+com.amazon.p11.spy.logging.R$id	field	public static final int accessibility_custom_action_9;
+com.amazon.p11.spy.logging.R$id	field	public static final int action_container;
+com.amazon.p11.spy.logging.R$id	field	public static final int action_divider;
+com.amazon.p11.spy.logging.R$id	field	public static final int action_image;
+com.amazon.p11.spy.logging.R$id	field	public static final int action_text;
+com.amazon.p11.spy.logging.R$id	field	public static final int actions;
+com.amazon.p11.spy.logging.R$id	field	public static final int app_checkbox;
+com.amazon.p11.spy.logging.R$id	field	public static final int app_icon;
+com.amazon.p11.spy.logging.R$id	field	public static final int app_list;
+com.amazon.p11.spy.logging.R$id	field	public static final int app_name;
+com.amazon.p11.spy.logging.R$id	field	public static final int app_size;
+com.amazon.p11.spy.logging.R$id	field	public static final int app_unused_days;
+com.amazon.p11.spy.logging.R$id	field	public static final int async;
+com.amazon.p11.spy.logging.R$id	field	public static final int blocking;
+com.amazon.p11.spy.logging.R$id	field	public static final int buttons;
+com.amazon.p11.spy.logging.R$id	field	public static final int chronometer;
+com.amazon.p11.spy.logging.R$id	field	public static final int dialog_button;
+com.amazon.p11.spy.logging.R$id	field	public static final int forever;
+com.amazon.p11.spy.logging.R$id	field	public static final int icon;
+com.amazon.p11.spy.logging.R$id	field	public static final int icon_group;
+com.amazon.p11.spy.logging.R$id	field	public static final int info;
+com.amazon.p11.spy.logging.R$id	field	public static final int italic;
+com.amazon.p11.spy.logging.R$id	field	public static final int line1;
+com.amazon.p11.spy.logging.R$id	field	public static final int line3;
+com.amazon.p11.spy.logging.R$id	field	public static final int manage_all_apps_btn;
+com.amazon.p11.spy.logging.R$id	field	public static final int normal;
+com.amazon.p11.spy.logging.R$id	field	public static final int notification_background;
+com.amazon.p11.spy.logging.R$id	field	public static final int notification_main_column;
+com.amazon.p11.spy.logging.R$id	field	public static final int notification_main_column_container;
+com.amazon.p11.spy.logging.R$id	field	public static final int popup_description;
+com.amazon.p11.spy.logging.R$id	field	public static final int popup_header;
+com.amazon.p11.spy.logging.R$id	field	public static final int popup_layout;
+com.amazon.p11.spy.logging.R$id	field	public static final int remove_app_btn;
+com.amazon.p11.spy.logging.R$id	field	public static final int right_icon;
+com.amazon.p11.spy.logging.R$id	field	public static final int right_side;
+com.amazon.p11.spy.logging.R$id	field	public static final int skip_popup_btn;
+com.amazon.p11.spy.logging.R$id	field	public static final int storage_ok_toast_subtext;
+com.amazon.p11.spy.logging.R$id	field	public static final int storage_ok_toast_title;
+com.amazon.p11.spy.logging.R$id	field	public static final int tag_accessibility_actions;
+com.amazon.p11.spy.logging.R$id	field	public static final int tag_accessibility_clickable_spans;
+com.amazon.p11.spy.logging.R$id	field	public static final int tag_accessibility_heading;
+com.amazon.p11.spy.logging.R$id	field	public static final int tag_accessibility_pane_title;
+com.amazon.p11.spy.logging.R$id	field	public static final int tag_on_apply_window_listener;
+com.amazon.p11.spy.logging.R$id	field	public static final int tag_on_receive_content_listener;
+com.amazon.p11.spy.logging.R$id	field	public static final int tag_on_receive_content_mime_types;
+com.amazon.p11.spy.logging.R$id	field	public static final int tag_screen_reader_focusable;
+com.amazon.p11.spy.logging.R$id	field	public static final int tag_state_description;
+com.amazon.p11.spy.logging.R$id	field	public static final int tag_transition_group;
+com.amazon.p11.spy.logging.R$id	field	public static final int tag_unhandled_key_event_manager;
+com.amazon.p11.spy.logging.R$id	field	public static final int tag_unhandled_key_listeners;
+com.amazon.p11.spy.logging.R$id	field	public static final int tag_window_insets_animation_callback;
+com.amazon.p11.spy.logging.R$id	field	public static final int text2;
+com.amazon.p11.spy.logging.R$id	field	public static final int text;
+com.amazon.p11.spy.logging.R$id	field	public static final int time;
+com.amazon.p11.spy.logging.R$id	field	public static final int title;
+com.amazon.p11.spy.logging.R$integer	field	public static final int status_bar_notification_info_maxnum;
+com.amazon.p11.spy.logging.R$layout	field	public static final int apps_list_item;
+com.amazon.p11.spy.logging.R$layout	field	public static final int custom_dialog;
+com.amazon.p11.spy.logging.R$layout	field	public static final int low_storage_layout;
+com.amazon.p11.spy.logging.R$layout	field	public static final int notification_action;
+com.amazon.p11.spy.logging.R$layout	field	public static final int notification_action_tombstone;
+com.amazon.p11.spy.logging.R$layout	field	public static final int notification_template_custom_big;
+com.amazon.p11.spy.logging.R$layout	field	public static final int notification_template_icon_group;
+com.amazon.p11.spy.logging.R$layout	field	public static final int notification_template_part_chronometer;
+com.amazon.p11.spy.logging.R$layout	field	public static final int notification_template_part_time;
+com.amazon.p11.spy.logging.R$layout	field	public static final int storage_ok_toast;
+com.amazon.p11.spy.logging.R$string	field	public static final int androidx_startup;
+com.amazon.p11.spy.logging.R$string	field	public static final int app_name;
+com.amazon.p11.spy.logging.R$string	field	public static final int app_never_used;
+com.amazon.p11.spy.logging.R$string	field	public static final int appicon_image_desc;
+com.amazon.p11.spy.logging.R$string	field	public static final int button_manage_all_apps;
+com.amazon.p11.spy.logging.R$string	field	public static final int button_remove_selected_apps;
+com.amazon.p11.spy.logging.R$string	field	public static final int checkbox_image_desc;
+com.amazon.p11.spy.logging.R$string	field	public static final int dummyString;
+com.amazon.p11.spy.logging.R$string	field	public static final int flavor_name;
+com.amazon.p11.spy.logging.R$string	field	public static final int font_amazon_ember_light;
+com.amazon.p11.spy.logging.R$string	field	public static final int font_amazon_ember_regular;
+com.amazon.p11.spy.logging.R$string	field	public static final int mb_suffix;
+com.amazon.p11.spy.logging.R$string	field	public static final int message_storage_ok;
+com.amazon.p11.spy.logging.R$string	field	public static final int not_used_days;
+com.amazon.p11.spy.logging.R$string	field	public static final int popup_desc_critical_storage;
+com.amazon.p11.spy.logging.R$string	field	public static final int popup_desc_first;
+com.amazon.p11.spy.logging.R$string	field	public static final int skip_popup;
+com.amazon.p11.spy.logging.R$string	field	public static final int status_bar_notification_info_overflow;
+com.amazon.p11.spy.logging.R$string	field	public static final int title_storage_critical;
+com.amazon.p11.spy.logging.R$string	field	public static final int title_storage_low;
+com.amazon.p11.spy.logging.R$string	field	public static final int title_storage_ok;
+com.amazon.p11.spy.logging.R$style	field	public static final int AppBaseTheme;
+com.amazon.p11.spy.logging.R$style	field	public static final int AppTheme;
+com.amazon.p11.spy.logging.R$style	field	public static final int TextAppearance_Compat_Notification;
+com.amazon.p11.spy.logging.R$style	field	public static final int TextAppearance_Compat_Notification_Info;
+com.amazon.p11.spy.logging.R$style	field	public static final int TextAppearance_Compat_Notification_Line2;
+com.amazon.p11.spy.logging.R$style	field	public static final int TextAppearance_Compat_Notification_Time;
+com.amazon.p11.spy.logging.R$style	field	public static final int TextAppearance_Compat_Notification_Title;
+com.amazon.p11.spy.logging.R$style	field	public static final int Widget_Compat_NotificationActionContainer;
+com.amazon.p11.spy.logging.R$style	field	public static final int Widget_Compat_NotificationActionText;
+com.amazon.p11.spy.logging.SystemOutLogger	method	private void dumpMessage(String str, String str2, String str3, String str4)
+com.amazon.p11.spy.logging.SystemOutLogger	method	private void dumpMessage(String str, String str2, String str3, String str4, Throwable th)
+com.amazon.p11.spy.logging.SystemOutLogger	method	public boolean isDebugLoggable(String str)
+com.amazon.p11.spy.logging.SystemOutLogger	method	public void d(String str, String str2, String str3)
+com.amazon.p11.spy.logging.SystemOutLogger	method	public void d(String str, String str2, String str3, Object... objArr)
+com.amazon.p11.spy.logging.SystemOutLogger	method	public void d(String str, String str2, String str3, Throwable th)
+com.amazon.p11.spy.logging.SystemOutLogger	method	public void e(String str, String str2, String str3)
+com.amazon.p11.spy.logging.SystemOutLogger	method	public void e(String str, String str2, String str3, Object... objArr)
+com.amazon.p11.spy.logging.SystemOutLogger	method	public void e(String str, String str2, String str3, Throwable th)
+com.amazon.p11.spy.logging.SystemOutLogger	method	public void i(String str, String str2, String str3)
+com.amazon.p11.spy.logging.SystemOutLogger	method	public void i(String str, String str2, String str3, Object... objArr)
+com.amazon.p11.spy.logging.SystemOutLogger	method	public void i(String str, String str2, String str3, Throwable th)
+com.amazon.p11.spy.logging.SystemOutLogger	method	public void v(String str, String str2, String str3)
+com.amazon.p11.spy.logging.SystemOutLogger	method	public void v(String str, String str2, String str3, Object... objArr)
+com.amazon.p11.spy.logging.SystemOutLogger	method	public void v(String str, String str2, String str3, Throwable th)
+com.amazon.p11.spy.logging.SystemOutLogger	method	public void w(String str, String str2, String str3)
+com.amazon.p11.spy.logging.SystemOutLogger	method	public void w(String str, String str2, String str3, Object... objArr)
+com.amazon.p11.spy.logging.SystemOutLogger	method	public void w(String str, String str2, String str3, Throwable th)
+com.amazon.p11.spy.logging.SystemOutLogger	method	public void wtf(String str, String str2, String str3)
+com.amazon.p11.spy.logging.SystemOutLogger	method	public void wtf(String str, String str2, String str3, Object... objArr)
+com.amazon.p11.spy.logging.SystemOutLogger	method	public void wtf(String str, String str2, String str3, Throwable th)
+com.amazon.p11.spy.logging.SystemOutLoggerFactory	method	public Logger create()
+com.amazon.storage.manager.PerfmonitorServiceProxy	field	public final IBinder binder;
+com.amazon.storage.manager.PerfmonitorServiceProxy	field	public static final String TAG;
+com.amazon.storage.manager.PerfmonitorServiceProxy	method	public List<String> getTopProcessByWriteBytes(int i)
+com.amazon.storage.manager.PerfmonitorServiceProxy	method	public PerfmonitorServiceProxy()
+com.amazon.storage.manager.PerfmonitorServiceProxy	method	public static IBinder getServiceBinder(String str)
+com.amazon.storage.manager.RemoteConfigFetcher	field	public Callback mCallback;
+com.amazon.storage.manager.RemoteConfigFetcher	field	public final Context mContext;
+com.amazon.storage.manager.RemoteConfigFetcher	field	public static final String TAG;
+com.amazon.storage.manager.RemoteConfigFetcher	method	public Config getConfiguration()
+com.amazon.storage.manager.RemoteConfigFetcher	method	public RemoteConfigFetcher(Context context)
+com.amazon.storage.manager.RemoteConfigFetcher	method	public final Config processConfig(Configuration configuration)
+com.amazon.storage.manager.RemoteConfigFetcher	method	public final RemoteConfigurationManager createOrGetRemoteConfigurationManager()
+com.amazon.storage.manager.RemoteConfigFetcher	method	public final String getArcusConfigARN()
+com.amazon.storage.manager.RemoteConfigFetcher	method	public final void handleConfigSyncFailure(boolean z)
+com.amazon.storage.manager.RemoteConfigFetcher	method	public final void handleConfigSyncSuccess(Configuration configuration)
+com.amazon.storage.manager.RemoteConfigFetcher	method	public static JSONObject convertStringToJsonObject(String str)
+com.amazon.storage.manager.RemoteConfigFetcher	method	public void fetchLatestConfiguration(Callback callback)
+com.amazon.storage.manager.RemoteConfigFetcher	method	public void onConfigurationModified(Configuration configuration)
+com.amazon.storage.manager.RemoteConfigFetcher	method	public void onConfigurationUnmodified(Configuration configuration)
+com.amazon.storage.manager.RemoteConfigFetcher	method	public void onFailure(Exception exc)
+com.amazon.storage.manager.RemoteConfigFetcher	method	public void onThrottle(long j)
+com.amazon.storage.manager.datastore.ComradeEntitlementCache	method	public static Boolean get(Context context, String str)
+com.amazon.storage.manager.datastore.ComradeEntitlementCache	method	public static SharedPreferences getPrefs(Context context)
+com.amazon.storage.manager.datastore.ComradeEntitlementCache	method	public static boolean isValid(SharedPreferences sharedPreferences)
+com.amazon.storage.manager.datastore.ComradeEntitlementCache	method	public static void put(Context context, String str, boolean z)
+com.amazon.storage.manager.datastore.ComradeEntitlementCache	method	public static void remove(Context context, String str)
+com.amazon.storage.manager.datastore.OffloadStoreHelper	field	public static final String TAG;
+com.amazon.storage.manager.datastore.OffloadStoreHelper	method	public static Set<AutoOffloadedAppInfo> getAutoOffloadedApps(Context context)
+com.amazon.storage.manager.datastore.OffloadStoreHelper	method	public static Set<AutoOffloadedAppInfo> getReinstalledAutoOffloadedApps(Context context)
+com.amazon.storage.manager.datastore.OffloadStoreHelper	method	public static Set<AutoOffloadedAppInfo> reconcileAndGetAutoOffloadedApps(Context context)
+com.amazon.storage.manager.datastore.OffloadStoreHelper	method	public static SharedPreferences getOffloadStoreSharedPref(Context context)
+com.amazon.storage.manager.datastore.OffloadStoreHelper	method	public static boolean isAutoOffloadTriggered(Context context)
+com.amazon.storage.manager.datastore.OffloadStoreHelper	method	public static void persistAutoOffloadedApps(Context context, Set<AutoOffloadedAppInfo> set)
+com.amazon.storage.manager.datastore.OffloadStoreHelper	method	public static void setAutoOffloadTriggered(Context context)
+com.amazon.storage.manager.datastore.OffloadStoreHelper	method	public static void storeAutoOffloadedApps(Context context, Set<AutoOffloadedAppInfo> set)
+com.amazon.storage.manager.datastore.model.AutoOffloadedAppInfo	field	public final String packageName;
+com.amazon.storage.manager.datastore.model.AutoOffloadedAppInfo	field	public final long inactiveDaysAtOffload;
+com.amazon.storage.manager.datastore.model.AutoOffloadedAppInfo	field	public final long offloadedAtMillis;
+com.amazon.storage.manager.datastore.model.AutoOffloadedAppInfo	field	public final long storageGainInMB;
+com.amazon.storage.manager.datastore.model.AutoOffloadedAppInfo	method	public AutoOffloadedAppInfo(@NonNull String str, long j, long j2, long j3)
+com.amazon.storage.manager.datastore.model.AutoOffloadedAppInfo	method	public String getPackageName()
+com.amazon.storage.manager.datastore.model.AutoOffloadedAppInfo	method	public boolean equals(Object obj)
+com.amazon.storage.manager.datastore.model.AutoOffloadedAppInfo	method	public int hashCode()
+com.amazon.storage.manager.datastore.model.AutoOffloadedAppInfo	method	public long getInactiveDaysAtOffload()
+com.amazon.storage.manager.datastore.model.AutoOffloadedAppInfo	method	public long getOffloadedAtMillis()
+com.amazon.storage.manager.datastore.model.AutoOffloadedAppInfo	method	public long getStorageGainInMB()
+com.amazon.storage.manager.datastore.model.AutoOffloadedAppInfo	method	public static AutoOffloadedAppInfoBuilder builder()
+com.amazon.storage.manager.datastore.model.AutoOffloadedAppInfo$AutoOffloadedAppInfoBuilder	field	public String packageName;
+com.amazon.storage.manager.datastore.model.AutoOffloadedAppInfo$AutoOffloadedAppInfoBuilder	field	public long offloadedAtMillis;
+com.amazon.storage.manager.datastore.model.AutoOffloadedAppInfo$AutoOffloadedAppInfoBuilder	field	public long storageGainInMB;
+com.amazon.storage.manager.datastore.model.AutoOffloadedAppInfo$AutoOffloadedAppInfoBuilder	method	public AutoOffloadedAppInfo build()
+com.amazon.storage.manager.datastore.model.AutoOffloadedAppInfo$AutoOffloadedAppInfoBuilder	method	public AutoOffloadedAppInfoBuilder inactiveDaysAtOffload(long j)
+com.amazon.storage.manager.datastore.model.AutoOffloadedAppInfo$AutoOffloadedAppInfoBuilder	method	public AutoOffloadedAppInfoBuilder offloadedAtMillis(long j)
+com.amazon.storage.manager.datastore.model.AutoOffloadedAppInfo$AutoOffloadedAppInfoBuilder	method	public AutoOffloadedAppInfoBuilder packageName(@NonNull String str)
+com.amazon.storage.manager.datastore.model.AutoOffloadedAppInfo$AutoOffloadedAppInfoBuilder	method	public AutoOffloadedAppInfoBuilder storageGainInMB(long j)
+com.amazon.storage.manager.datastore.model.AutoOffloadedAppInfo$AutoOffloadedAppInfoBuilder	method	public AutoOffloadedAppInfoBuilder()
+com.amazon.storage.manager.datastore.model.AutoOffloadedAppInfo$AutoOffloadedAppInfoBuilder	method	public String toString()
+com.amazon.storage.manager.helpers.MASLockerDatabaseQueryHelper	field	public static final String TAG;
+com.amazon.storage.manager.helpers.MASLockerDatabaseQueryHelper	field	public static final Uri CONTENT_URI_MAS;
+com.amazon.storage.manager.helpers.MASLockerDatabaseQueryHelper	method	public static Set<String> getEntitledApps(Context context)
+com.amazon.storage.manager.helpers.SettingsContentProviderQueryHelper	field	public static final String TAG;
+com.amazon.storage.manager.helpers.SettingsContentProviderQueryHelper	field	public static final Uri SETTING_STATES_URI;
+com.amazon.storage.manager.helpers.SettingsContentProviderQueryHelper	method	public static String querySettingState(Context context, String str)
+com.amazon.storage.manager.helpers.SettingsContentProviderQueryHelper	method	public static boolean isChildProfileRegisteredInDevice(Context context)
+com.amazon.storage.manager.metrics.InactivitySnapshot	field	public final Map<String, Long> mBucketCounts;
+com.amazon.storage.manager.metrics.InactivitySnapshot	field	public static final List<Bucket> BUCKETS;
+com.amazon.storage.manager.metrics.InactivitySnapshot	method	public InactivitySnapshot()
+com.amazon.storage.manager.metrics.InactivitySnapshot	method	public static String getBucket(long j)
+com.amazon.storage.manager.metrics.InactivitySnapshot	method	public void emit(Context context)
+com.amazon.storage.manager.metrics.InactivitySnapshot	method	public void increment(long j)
+com.amazon.storage.manager.metrics.InactivitySnapshot$Bucket	field	public final String metricName;
+com.amazon.storage.manager.metrics.InactivitySnapshot$Bucket	field	public final long maxDays;
+com.amazon.storage.manager.metrics.InactivitySnapshot$Bucket	field	public final long minDays;
+com.amazon.storage.manager.metrics.InactivitySnapshot$Bucket	method	public Bucket(long j, long j2, String str)
+com.amazon.storage.manager.metrics.InactivitySnapshot$Bucket	method	public String getMetricName()
+com.amazon.storage.manager.metrics.InactivitySnapshot$Bucket	method	public long getMaxDays()
+com.amazon.storage.manager.metrics.InactivitySnapshot$Bucket	method	public long getMinDays()
+com.amazon.storage.manager.metrics.LowStorageMetricsLogger	field	public final Context mContext;
+com.amazon.storage.manager.metrics.LowStorageMetricsLogger	field	public final List<ApplicationInfo> mInstalledApps;
+com.amazon.storage.manager.metrics.LowStorageMetricsLogger	field	public final PackageManager mPackageManager;
+com.amazon.storage.manager.metrics.LowStorageMetricsLogger	field	public final RemoteConfigFetcher mRemoteConfigFetcher;
+com.amazon.storage.manager.metrics.LowStorageMetricsLogger	field	public static final List<String> PARTITIONS;
+com.amazon.storage.manager.metrics.LowStorageMetricsLogger	field	public static final String TAG;
+com.amazon.storage.manager.metrics.LowStorageMetricsLogger	method	public LowStorageMetricsLogger(Context context)
+com.amazon.storage.manager.metrics.LowStorageMetricsLogger	method	public boolean shouldLogStorageLowStorageWtf()
+com.amazon.storage.manager.metrics.LowStorageMetricsLogger	method	public final String formatTopEntries(String str, List<Map.Entry<String, AppSizeInfo>> list)
+com.amazon.storage.manager.metrics.LowStorageMetricsLogger	method	public final String getPartitionMetrics(String str)
+com.amazon.storage.manager.metrics.LowStorageMetricsLogger	method	public final String getPartitionMetricsReport()
+com.amazon.storage.manager.metrics.LowStorageMetricsLogger	method	public final String getTopAppsReport(String str, Map<String, AppSizeInfo> map, AppCategory appCategory)
+com.amazon.storage.manager.metrics.LowStorageMetricsLogger	method	public final String getTopProcessByWriteBytes(int i)
+com.amazon.storage.manager.metrics.LowStorageMetricsLogger	method	public final boolean shouldLogStorageWtf()
+com.amazon.storage.manager.metrics.LowStorageMetricsLogger	method	public final long getLastLoggedWtfTimestamp()
+com.amazon.storage.manager.metrics.LowStorageMetricsLogger	method	public final void saveCurrentTimestamp()
+com.amazon.storage.manager.metrics.LowStorageMetricsLogger	method	public void logStorageWtf(Map<String, AppSizeInfo> map)
+com.amazon.storage.manager.metrics.LowStorageMetricsLogger$AppCategory	method	public static AppCategory categorizeApp(ApplicationInfo applicationInfo)
+com.amazon.storage.manager.metrics.MetricSchemaInfo	field	public final String groupId;
+com.amazon.storage.manager.metrics.MetricSchemaInfo	field	public final String schemaId;
+com.amazon.storage.manager.metrics.MetricSchemaInfo	method	public String getGroupId()
+com.amazon.storage.manager.metrics.MetricSchemaInfo	method	public String getSchemaId()
+com.amazon.storage.manager.metrics.generic.ErrorMetricEvent	field	public IMetricSchemaInfo metricSchemaInfo;
+com.amazon.storage.manager.metrics.generic.ErrorMetricEvent	field	public Long counterValue;
+com.amazon.storage.manager.metrics.generic.ErrorMetricEvent	field	public String errorReason;
+com.amazon.storage.manager.metrics.generic.ErrorMetricEvent	field	public String operationName;
+com.amazon.storage.manager.metrics.generic.ErrorMetricEvent	method	public ErrorMetricEvent(ErrorMetricEventBuilder<?, ?> errorMetricEventBuilder)
+com.amazon.storage.manager.metrics.generic.ErrorMetricEvent	method	public static ErrorMetricEventBuilder<?, ?> builder()
+com.amazon.storage.manager.metrics.generic.ErrorMetricEvent	method	public static void record(@NonNull Context context, @NonNull IMetricSchemaInfo iMetricSchemaInfo, @NonNull String str, @NonNull String str2)
+com.amazon.storage.manager.metrics.generic.ErrorMetricEvent$ErrorMetricEventBuilder	field	public IMetricSchemaInfo metricSchemaInfo;
+com.amazon.storage.manager.metrics.generic.ErrorMetricEvent$ErrorMetricEventBuilder	field	public String errorReason;
+com.amazon.storage.manager.metrics.generic.ErrorMetricEvent$ErrorMetricEventBuilder	field	public String operationName;
+com.amazon.storage.manager.metrics.generic.ErrorMetricEvent$ErrorMetricEventBuilder	method	public B errorReason(@NonNull String str)
+com.amazon.storage.manager.metrics.generic.ErrorMetricEvent$ErrorMetricEventBuilder	method	public B metricSchemaInfo(@NonNull IMetricSchemaInfo iMetricSchemaInfo)
+com.amazon.storage.manager.metrics.generic.ErrorMetricEvent$ErrorMetricEventBuilder	method	public B operationName(@NonNull String str)
+com.amazon.storage.manager.metrics.generic.ErrorMetricEvent$ErrorMetricEventBuilder	method	public String toString()
+com.amazon.storage.manager.metrics.generic.ErrorMetricEvent$ErrorMetricEventBuilder	method	public abstract B self();
+com.amazon.storage.manager.metrics.generic.ErrorMetricEvent$ErrorMetricEventBuilder	method	public abstract C build();
+com.amazon.storage.manager.metrics.generic.ErrorMetricEvent$ErrorMetricEventBuilderImpl	method	public ErrorMetricEvent build()
+com.amazon.storage.manager.metrics.generic.ErrorMetricEvent$ErrorMetricEventBuilderImpl	method	public ErrorMetricEventBuilderImpl self()
+com.amazon.storage.manager.metrics.generic.ErrorMetricEvent$ErrorMetricEventBuilderImpl	method	public ErrorMetricEventBuilderImpl()
+com.amazon.storage.manager.metrics.generic.LatencyMetricEvent	field	public IMetricSchemaInfo metricSchemaInfo;
+com.amazon.storage.manager.metrics.generic.LatencyMetricEvent	field	public Long latencyValue;
+com.amazon.storage.manager.metrics.generic.LatencyMetricEvent	field	public String operationName;
+com.amazon.storage.manager.metrics.generic.LatencyMetricEvent	method	public LatencyMetricEvent(LatencyMetricEventBuilder<?, ?> latencyMetricEventBuilder)
+com.amazon.storage.manager.metrics.generic.LatencyMetricEvent	method	public static LatencyMetricEventBuilder<?, ?> builder()
+com.amazon.storage.manager.metrics.generic.LatencyMetricEvent	method	public static void record(@NonNull Context context, @NonNull IMetricSchemaInfo iMetricSchemaInfo, @NonNull String str, @NonNull Long l)
+com.amazon.storage.manager.metrics.generic.LatencyMetricEvent$LatencyMetricEventBuilder	field	public IMetricSchemaInfo metricSchemaInfo;
+com.amazon.storage.manager.metrics.generic.LatencyMetricEvent$LatencyMetricEventBuilder	field	public Long latencyValue;
+com.amazon.storage.manager.metrics.generic.LatencyMetricEvent$LatencyMetricEventBuilder	field	public String operationName;
+com.amazon.storage.manager.metrics.generic.LatencyMetricEvent$LatencyMetricEventBuilder	method	public B latencyValue(@NonNull Long l)
+com.amazon.storage.manager.metrics.generic.LatencyMetricEvent$LatencyMetricEventBuilder	method	public B metricSchemaInfo(@NonNull IMetricSchemaInfo iMetricSchemaInfo)
+com.amazon.storage.manager.metrics.generic.LatencyMetricEvent$LatencyMetricEventBuilder	method	public B operationName(@NonNull String str)
+com.amazon.storage.manager.metrics.generic.LatencyMetricEvent$LatencyMetricEventBuilder	method	public String toString()
+com.amazon.storage.manager.metrics.generic.LatencyMetricEvent$LatencyMetricEventBuilder	method	public abstract B self();
+com.amazon.storage.manager.metrics.generic.LatencyMetricEvent$LatencyMetricEventBuilder	method	public abstract C build();
+com.amazon.storage.manager.metrics.generic.LatencyMetricEvent$LatencyMetricEventBuilderImpl	method	public LatencyMetricEvent build()
+com.amazon.storage.manager.metrics.generic.LatencyMetricEvent$LatencyMetricEventBuilderImpl	method	public LatencyMetricEventBuilderImpl self()
+com.amazon.storage.manager.metrics.generic.LatencyMetricEvent$LatencyMetricEventBuilderImpl	method	public LatencyMetricEventBuilderImpl()
+com.amazon.storage.manager.metrics.generic.OperationMetricEvent	field	public IMetricSchemaInfo metricSchemaInfo;
+com.amazon.storage.manager.metrics.generic.OperationMetricEvent	field	public Long counterValue;
+com.amazon.storage.manager.metrics.generic.OperationMetricEvent	field	public String operationName;
+com.amazon.storage.manager.metrics.generic.OperationMetricEvent	field	public String operationResult;
+com.amazon.storage.manager.metrics.generic.OperationMetricEvent	method	public OperationMetricEvent(OperationMetricEventBuilder<?, ?> operationMetricEventBuilder)
+com.amazon.storage.manager.metrics.generic.OperationMetricEvent	method	public static OperationMetricEventBuilder<?, ?> builder()
+com.amazon.storage.manager.metrics.generic.OperationMetricEvent	method	public static void record(@NonNull Context context, @NonNull IMetricSchemaInfo iMetricSchemaInfo, @NonNull String str)
+com.amazon.storage.manager.metrics.generic.OperationMetricEvent	method	public static void record(@NonNull Context context, @NonNull IMetricSchemaInfo iMetricSchemaInfo, @NonNull String str, @NonNull String str2)
+com.amazon.storage.manager.metrics.generic.OperationMetricEvent	method	public static void record(@NonNull Context context, @NonNull IMetricSchemaInfo iMetricSchemaInfo, @NonNull String str, long j)
+com.amazon.storage.manager.metrics.generic.OperationMetricEvent$OperationMetricEventBuilder	field	public IMetricSchemaInfo metricSchemaInfo;
+com.amazon.storage.manager.metrics.generic.OperationMetricEvent$OperationMetricEventBuilder	field	public String operationName;
+com.amazon.storage.manager.metrics.generic.OperationMetricEvent$OperationMetricEventBuilder	field	public String operationResult;
+com.amazon.storage.manager.metrics.generic.OperationMetricEvent$OperationMetricEventBuilder	method	public B counterValue(@NonNull Long l)
+com.amazon.storage.manager.metrics.generic.OperationMetricEvent$OperationMetricEventBuilder	method	public B metricSchemaInfo(@NonNull IMetricSchemaInfo iMetricSchemaInfo)
+com.amazon.storage.manager.metrics.generic.OperationMetricEvent$OperationMetricEventBuilder	method	public B operationName(@NonNull String str)
+com.amazon.storage.manager.metrics.generic.OperationMetricEvent$OperationMetricEventBuilder	method	public B operationResult(@NonNull String str)
+com.amazon.storage.manager.metrics.generic.OperationMetricEvent$OperationMetricEventBuilder	method	public String toString()
+com.amazon.storage.manager.metrics.generic.OperationMetricEvent$OperationMetricEventBuilder	method	public abstract B self();
+com.amazon.storage.manager.metrics.generic.OperationMetricEvent$OperationMetricEventBuilder	method	public abstract C build();
+com.amazon.storage.manager.metrics.generic.OperationMetricEvent$OperationMetricEventBuilderImpl	method	public OperationMetricEvent build()
+com.amazon.storage.manager.metrics.generic.OperationMetricEvent$OperationMetricEventBuilderImpl	method	public OperationMetricEventBuilderImpl self()
+com.amazon.storage.manager.metrics.generic.OperationMetricEvent$OperationMetricEventBuilderImpl	method	public OperationMetricEventBuilderImpl()
+com.amazon.storage.manager.metrics.generic.PackageLevelOperationMetricEvent	field	public String packageName;
+com.amazon.storage.manager.metrics.generic.PackageLevelOperationMetricEvent	method	public PackageLevelOperationMetricEvent(PackageLevelOperationMetricEventBuilder<?, ?> packageLevelOperationMetricEventBuilder)
+com.amazon.storage.manager.metrics.generic.PackageLevelOperationMetricEvent	method	public static PackageLevelOperationMetricEventBuilder<?, ?> builder()
+com.amazon.storage.manager.metrics.generic.PackageLevelOperationMetricEvent	method	public static void record(@NonNull Context context, @NonNull IMetricSchemaInfo iMetricSchemaInfo, @NonNull String str, @NonNull String str2, @NonNull String str3)
+com.amazon.storage.manager.metrics.generic.PackageLevelOperationMetricEvent$PackageLevelOperationMetricEventBuilder	field	public String packageName;
+com.amazon.storage.manager.metrics.generic.PackageLevelOperationMetricEvent$PackageLevelOperationMetricEventBuilder	method	public B packageName(@NonNull String str)
+com.amazon.storage.manager.metrics.generic.PackageLevelOperationMetricEvent$PackageLevelOperationMetricEventBuilder	method	public String toString()
+com.amazon.storage.manager.metrics.generic.PackageLevelOperationMetricEvent$PackageLevelOperationMetricEventBuilder	method	public abstract B self();
+com.amazon.storage.manager.metrics.generic.PackageLevelOperationMetricEvent$PackageLevelOperationMetricEventBuilder	method	public abstract C build();
+com.amazon.storage.manager.metrics.generic.PackageLevelOperationMetricEvent$PackageLevelOperationMetricEventBuilderImpl	method	public PackageLevelOperationMetricEvent build()
+com.amazon.storage.manager.metrics.generic.PackageLevelOperationMetricEvent$PackageLevelOperationMetricEventBuilderImpl	method	public PackageLevelOperationMetricEventBuilderImpl self()
+com.amazon.storage.manager.metrics.generic.PackageLevelOperationMetricEvent$PackageLevelOperationMetricEventBuilderImpl	method	public PackageLevelOperationMetricEventBuilderImpl()
+com.amazon.storage.manager.metrics.offload.AppOffloadSnapshotMetricEvent	field	public IMetricSchemaInfo metricSchemaInfo;
+com.amazon.storage.manager.metrics.offload.AppOffloadSnapshotMetricEvent	field	public Integer numberOfAppsOffloaded;
+com.amazon.storage.manager.metrics.offload.AppOffloadSnapshotMetricEvent	field	public String deviceStorageState;
+com.amazon.storage.manager.metrics.offload.AppOffloadSnapshotMetricEvent	field	public String offloadType;
+com.amazon.storage.manager.metrics.offload.AppOffloadSnapshotMetricEvent	field	public String operationName;
+com.amazon.storage.manager.metrics.offload.AppOffloadSnapshotMetricEvent	method	public AppOffloadSnapshotMetricEvent(AppOffloadSnapshotMetricEventBuilder<?, ?> appOffloadSnapshotMetricEventBuilder)
+com.amazon.storage.manager.metrics.offload.AppOffloadSnapshotMetricEvent	method	public static AppOffloadSnapshotMetricEventBuilder<?, ?> builder()
+com.amazon.storage.manager.metrics.offload.AppOffloadSnapshotMetricEvent	method	public static void record(@NonNull Context context, @NonNull IMetricSchemaInfo iMetricSchemaInfo, @NonNull String str, int i, @NonNull String str2, @NonNull String str3)
+com.amazon.storage.manager.metrics.offload.AppOffloadSnapshotMetricEvent$AppOffloadSnapshotMetricEventBuilder	field	public IMetricSchemaInfo metricSchemaInfo;
+com.amazon.storage.manager.metrics.offload.AppOffloadSnapshotMetricEvent$AppOffloadSnapshotMetricEventBuilder	field	public Integer numberOfAppsOffloaded;
+com.amazon.storage.manager.metrics.offload.AppOffloadSnapshotMetricEvent$AppOffloadSnapshotMetricEventBuilder	field	public String deviceStorageState;
+com.amazon.storage.manager.metrics.offload.AppOffloadSnapshotMetricEvent$AppOffloadSnapshotMetricEventBuilder	field	public String offloadType;
+com.amazon.storage.manager.metrics.offload.AppOffloadSnapshotMetricEvent$AppOffloadSnapshotMetricEventBuilder	field	public String operationName;
+com.amazon.storage.manager.metrics.offload.AppOffloadSnapshotMetricEvent$AppOffloadSnapshotMetricEventBuilder	method	public B deviceStorageState(@NonNull String str)
+com.amazon.storage.manager.metrics.offload.AppOffloadSnapshotMetricEvent$AppOffloadSnapshotMetricEventBuilder	method	public B metricSchemaInfo(@NonNull IMetricSchemaInfo iMetricSchemaInfo)
+com.amazon.storage.manager.metrics.offload.AppOffloadSnapshotMetricEvent$AppOffloadSnapshotMetricEventBuilder	method	public B numberOfAppsOffloaded(@NonNull Integer num)
+com.amazon.storage.manager.metrics.offload.AppOffloadSnapshotMetricEvent$AppOffloadSnapshotMetricEventBuilder	method	public B offloadType(@NonNull String str)
+com.amazon.storage.manager.metrics.offload.AppOffloadSnapshotMetricEvent$AppOffloadSnapshotMetricEventBuilder	method	public B operationName(@NonNull String str)
+com.amazon.storage.manager.metrics.offload.AppOffloadSnapshotMetricEvent$AppOffloadSnapshotMetricEventBuilder	method	public String toString()
+com.amazon.storage.manager.metrics.offload.AppOffloadSnapshotMetricEvent$AppOffloadSnapshotMetricEventBuilder	method	public abstract B self();
+com.amazon.storage.manager.metrics.offload.AppOffloadSnapshotMetricEvent$AppOffloadSnapshotMetricEventBuilder	method	public abstract C build();
+com.amazon.storage.manager.metrics.offload.AppOffloadSnapshotMetricEvent$AppOffloadSnapshotMetricEventBuilderImpl	method	public AppOffloadSnapshotMetricEvent build()
+com.amazon.storage.manager.metrics.offload.AppOffloadSnapshotMetricEvent$AppOffloadSnapshotMetricEventBuilderImpl	method	public AppOffloadSnapshotMetricEventBuilderImpl self()
+com.amazon.storage.manager.metrics.offload.AppOffloadSnapshotMetricEvent$AppOffloadSnapshotMetricEventBuilderImpl	method	public AppOffloadSnapshotMetricEventBuilderImpl()
+com.amazon.storage.manager.metrics.offload.AutoAppOffloadMetricEvent	field	public Double storageGainInMB;
+com.amazon.storage.manager.metrics.offload.AutoAppOffloadMetricEvent	field	public IMetricSchemaInfo metricSchemaInfo;
+com.amazon.storage.manager.metrics.offload.AutoAppOffloadMetricEvent	field	public Integer numberOfAppsOffloaded;
+com.amazon.storage.manager.metrics.offload.AutoAppOffloadMetricEvent	field	public String operationName;
+com.amazon.storage.manager.metrics.offload.AutoAppOffloadMetricEvent	method	public AutoAppOffloadMetricEvent(AutoAppOffloadMetricEventBuilder<?, ?> autoAppOffloadMetricEventBuilder)
+com.amazon.storage.manager.metrics.offload.AutoAppOffloadMetricEvent	method	public static AutoAppOffloadMetricEventBuilder<?, ?> builder()
+com.amazon.storage.manager.metrics.offload.AutoAppOffloadMetricEvent	method	public static void record(@NonNull Context context, @NonNull IMetricSchemaInfo iMetricSchemaInfo, @NonNull String str, int i, double d)
+com.amazon.storage.manager.metrics.offload.AutoAppOffloadMetricEvent$AutoAppOffloadMetricEventBuilder	field	public Double storageGainInMB;
+com.amazon.storage.manager.metrics.offload.AutoAppOffloadMetricEvent$AutoAppOffloadMetricEventBuilder	field	public IMetricSchemaInfo metricSchemaInfo;
+com.amazon.storage.manager.metrics.offload.AutoAppOffloadMetricEvent$AutoAppOffloadMetricEventBuilder	field	public Integer numberOfAppsOffloaded;
+com.amazon.storage.manager.metrics.offload.AutoAppOffloadMetricEvent$AutoAppOffloadMetricEventBuilder	field	public String operationName;
+com.amazon.storage.manager.metrics.offload.AutoAppOffloadMetricEvent$AutoAppOffloadMetricEventBuilder	method	public B metricSchemaInfo(@NonNull IMetricSchemaInfo iMetricSchemaInfo)
+com.amazon.storage.manager.metrics.offload.AutoAppOffloadMetricEvent$AutoAppOffloadMetricEventBuilder	method	public B numberOfAppsOffloaded(@NonNull Integer num)
+com.amazon.storage.manager.metrics.offload.AutoAppOffloadMetricEvent$AutoAppOffloadMetricEventBuilder	method	public B operationName(@NonNull String str)
+com.amazon.storage.manager.metrics.offload.AutoAppOffloadMetricEvent$AutoAppOffloadMetricEventBuilder	method	public B storageGainInMB(@NonNull Double d)
+com.amazon.storage.manager.metrics.offload.AutoAppOffloadMetricEvent$AutoAppOffloadMetricEventBuilder	method	public String toString()
+com.amazon.storage.manager.metrics.offload.AutoAppOffloadMetricEvent$AutoAppOffloadMetricEventBuilder	method	public abstract B self();
+com.amazon.storage.manager.metrics.offload.AutoAppOffloadMetricEvent$AutoAppOffloadMetricEventBuilder	method	public abstract C build();
+com.amazon.storage.manager.metrics.offload.AutoAppOffloadMetricEvent$AutoAppOffloadMetricEventBuilderImpl	method	public AutoAppOffloadMetricEvent build()
+com.amazon.storage.manager.metrics.offload.AutoAppOffloadMetricEvent$AutoAppOffloadMetricEventBuilderImpl	method	public AutoAppOffloadMetricEventBuilderImpl self()
+com.amazon.storage.manager.metrics.offload.AutoAppOffloadMetricEvent$AutoAppOffloadMetricEventBuilderImpl	method	public AutoAppOffloadMetricEventBuilderImpl()
+com.amazon.storage.manager.metrics.offload.NonEntitledAutoAppOffloadMetricEvent	field	public Double totalSizeInMB;
+com.amazon.storage.manager.metrics.offload.NonEntitledAutoAppOffloadMetricEvent	field	public IMetricSchemaInfo metricSchemaInfo;
+com.amazon.storage.manager.metrics.offload.NonEntitledAutoAppOffloadMetricEvent	field	public Integer numberOfNonEntitledApps;
+com.amazon.storage.manager.metrics.offload.NonEntitledAutoAppOffloadMetricEvent	field	public String operationName;
+com.amazon.storage.manager.metrics.offload.NonEntitledAutoAppOffloadMetricEvent	method	public NonEntitledAutoAppOffloadMetricEvent(NonEntitledAutoAppOffloadMetricEventBuilder<?, ?> nonEntitledAutoAppOffloadMetricEventBuilder)
+com.amazon.storage.manager.metrics.offload.NonEntitledAutoAppOffloadMetricEvent	method	public static NonEntitledAutoAppOffloadMetricEventBuilder<?, ?> builder()
+com.amazon.storage.manager.metrics.offload.NonEntitledAutoAppOffloadMetricEvent	method	public static void record(@NonNull Context context, @NonNull IMetricSchemaInfo iMetricSchemaInfo, @NonNull String str, int i, double d)
+com.amazon.storage.manager.metrics.offload.NonEntitledAutoAppOffloadMetricEvent$NonEntitledAutoAppOffloadMetricEventBuilder	field	public Double totalSizeInMB;
+com.amazon.storage.manager.metrics.offload.NonEntitledAutoAppOffloadMetricEvent$NonEntitledAutoAppOffloadMetricEventBuilder	field	public IMetricSchemaInfo metricSchemaInfo;
+com.amazon.storage.manager.metrics.offload.NonEntitledAutoAppOffloadMetricEvent$NonEntitledAutoAppOffloadMetricEventBuilder	field	public Integer numberOfNonEntitledApps;
+com.amazon.storage.manager.metrics.offload.NonEntitledAutoAppOffloadMetricEvent$NonEntitledAutoAppOffloadMetricEventBuilder	field	public String operationName;
+com.amazon.storage.manager.metrics.offload.NonEntitledAutoAppOffloadMetricEvent$NonEntitledAutoAppOffloadMetricEventBuilder	method	public B metricSchemaInfo(@NonNull IMetricSchemaInfo iMetricSchemaInfo)
+com.amazon.storage.manager.metrics.offload.NonEntitledAutoAppOffloadMetricEvent$NonEntitledAutoAppOffloadMetricEventBuilder	method	public B numberOfNonEntitledApps(@NonNull Integer num)
+com.amazon.storage.manager.metrics.offload.NonEntitledAutoAppOffloadMetricEvent$NonEntitledAutoAppOffloadMetricEventBuilder	method	public B operationName(@NonNull String str)
+com.amazon.storage.manager.metrics.offload.NonEntitledAutoAppOffloadMetricEvent$NonEntitledAutoAppOffloadMetricEventBuilder	method	public B totalSizeInMB(@NonNull Double d)
+com.amazon.storage.manager.metrics.offload.NonEntitledAutoAppOffloadMetricEvent$NonEntitledAutoAppOffloadMetricEventBuilder	method	public String toString()
+com.amazon.storage.manager.metrics.offload.NonEntitledAutoAppOffloadMetricEvent$NonEntitledAutoAppOffloadMetricEventBuilder	method	public abstract B self();
+com.amazon.storage.manager.metrics.offload.NonEntitledAutoAppOffloadMetricEvent$NonEntitledAutoAppOffloadMetricEventBuilder	method	public abstract C build();
+com.amazon.storage.manager.metrics.offload.NonEntitledAutoAppOffloadMetricEvent$NonEntitledAutoAppOffloadMetricEventBuilderImpl	method	public NonEntitledAutoAppOffloadMetricEvent build()
+com.amazon.storage.manager.metrics.offload.NonEntitledAutoAppOffloadMetricEvent$NonEntitledAutoAppOffloadMetricEventBuilderImpl	method	public NonEntitledAutoAppOffloadMetricEventBuilderImpl self()
+com.amazon.storage.manager.metrics.offload.NonEntitledAutoAppOffloadMetricEvent$NonEntitledAutoAppOffloadMetricEventBuilderImpl	method	public NonEntitledAutoAppOffloadMetricEventBuilderImpl()
+com.amazon.storage.manager.metrics.offload.PackageLevelAppOffloadSnapshotMetricEvent	field	public IMetricSchemaInfo metricSchemaInfo;
+com.amazon.storage.manager.metrics.offload.PackageLevelAppOffloadSnapshotMetricEvent	field	public Long counterValue;
+com.amazon.storage.manager.metrics.offload.PackageLevelAppOffloadSnapshotMetricEvent	field	public String deviceStorageState;
+com.amazon.storage.manager.metrics.offload.PackageLevelAppOffloadSnapshotMetricEvent	field	public String offloadType;
+com.amazon.storage.manager.metrics.offload.PackageLevelAppOffloadSnapshotMetricEvent	field	public String operationName;
+com.amazon.storage.manager.metrics.offload.PackageLevelAppOffloadSnapshotMetricEvent	field	public String packageName;
+com.amazon.storage.manager.metrics.offload.PackageLevelAppOffloadSnapshotMetricEvent	method	public PackageLevelAppOffloadSnapshotMetricEvent(PackageLevelAppOffloadSnapshotMetricEventBuilder<?, ?> packageLevelAppOffloadSnapshotMetricEventBuilder)
+com.amazon.storage.manager.metrics.offload.PackageLevelAppOffloadSnapshotMetricEvent	method	public static PackageLevelAppOffloadSnapshotMetricEventBuilder<?, ?> builder()
+com.amazon.storage.manager.metrics.offload.PackageLevelAppOffloadSnapshotMetricEvent	method	public static void record(@NonNull Context context, @NonNull IMetricSchemaInfo iMetricSchemaInfo, @NonNull String str, @NonNull String str2, @NonNull String str3, @NonNull String str4)
+com.amazon.storage.manager.metrics.offload.PackageLevelAppOffloadSnapshotMetricEvent	method	public static void record(@NonNull Context context, @NonNull IMetricSchemaInfo iMetricSchemaInfo, @NonNull String str, @NonNull String str2, @NonNull String str3, @NonNull String str4, long j)
+com.amazon.storage.manager.metrics.offload.PackageLevelAppOffloadSnapshotMetricEvent$PackageLevelAppOffloadSnapshotMetricEventBuilder	field	public IMetricSchemaInfo metricSchemaInfo;
+com.amazon.storage.manager.metrics.offload.PackageLevelAppOffloadSnapshotMetricEvent$PackageLevelAppOffloadSnapshotMetricEventBuilder	field	public String deviceStorageState;
+com.amazon.storage.manager.metrics.offload.PackageLevelAppOffloadSnapshotMetricEvent$PackageLevelAppOffloadSnapshotMetricEventBuilder	field	public String offloadType;
+com.amazon.storage.manager.metrics.offload.PackageLevelAppOffloadSnapshotMetricEvent$PackageLevelAppOffloadSnapshotMetricEventBuilder	field	public String operationName;
+com.amazon.storage.manager.metrics.offload.PackageLevelAppOffloadSnapshotMetricEvent$PackageLevelAppOffloadSnapshotMetricEventBuilder	field	public String packageName;
+com.amazon.storage.manager.metrics.offload.PackageLevelAppOffloadSnapshotMetricEvent$PackageLevelAppOffloadSnapshotMetricEventBuilder	method	public B counterValue(@NonNull Long l)
+com.amazon.storage.manager.metrics.offload.PackageLevelAppOffloadSnapshotMetricEvent$PackageLevelAppOffloadSnapshotMetricEventBuilder	method	public B deviceStorageState(@NonNull String str)
+com.amazon.storage.manager.metrics.offload.PackageLevelAppOffloadSnapshotMetricEvent$PackageLevelAppOffloadSnapshotMetricEventBuilder	method	public B metricSchemaInfo(@NonNull IMetricSchemaInfo iMetricSchemaInfo)
+com.amazon.storage.manager.metrics.offload.PackageLevelAppOffloadSnapshotMetricEvent$PackageLevelAppOffloadSnapshotMetricEventBuilder	method	public B offloadType(@NonNull String str)
+com.amazon.storage.manager.metrics.offload.PackageLevelAppOffloadSnapshotMetricEvent$PackageLevelAppOffloadSnapshotMetricEventBuilder	method	public B operationName(@NonNull String str)
+com.amazon.storage.manager.metrics.offload.PackageLevelAppOffloadSnapshotMetricEvent$PackageLevelAppOffloadSnapshotMetricEventBuilder	method	public B packageName(@NonNull String str)
+com.amazon.storage.manager.metrics.offload.PackageLevelAppOffloadSnapshotMetricEvent$PackageLevelAppOffloadSnapshotMetricEventBuilder	method	public String toString()
+com.amazon.storage.manager.metrics.offload.PackageLevelAppOffloadSnapshotMetricEvent$PackageLevelAppOffloadSnapshotMetricEventBuilder	method	public abstract B self();
+com.amazon.storage.manager.metrics.offload.PackageLevelAppOffloadSnapshotMetricEvent$PackageLevelAppOffloadSnapshotMetricEventBuilder	method	public abstract C build();
+com.amazon.storage.manager.metrics.offload.PackageLevelAppOffloadSnapshotMetricEvent$PackageLevelAppOffloadSnapshotMetricEventBuilderImpl	method	public PackageLevelAppOffloadSnapshotMetricEvent build()
+com.amazon.storage.manager.metrics.offload.PackageLevelAppOffloadSnapshotMetricEvent$PackageLevelAppOffloadSnapshotMetricEventBuilderImpl	method	public PackageLevelAppOffloadSnapshotMetricEventBuilderImpl self()
+com.amazon.storage.manager.metrics.offload.PackageLevelAppOffloadSnapshotMetricEvent$PackageLevelAppOffloadSnapshotMetricEventBuilderImpl	method	public PackageLevelAppOffloadSnapshotMetricEventBuilderImpl()
+com.amazon.storage.manager.model.Config	field	public final Common common;
+com.amazon.storage.manager.model.Config	field	public final DynamicOffloadConfig dynamicOffloadConfig;
+com.amazon.storage.manager.model.Config	field	public final LowStorageConfig lowStorageConfig;
+com.amazon.storage.manager.model.Config	field	public final ManualOffloadConfig manualOffloadConfig;
+com.amazon.storage.manager.model.Config	method	public Common getCommon()
+com.amazon.storage.manager.model.Config	method	public Config(@NonNull Common common, @NonNull DynamicOffloadConfig dynamicOffloadConfig, @NonNull ManualOffloadConfig manualOffloadConfig, @NonNull LowStorageConfig lowStorageConfig)
+com.amazon.storage.manager.model.Config	method	public DynamicOffloadConfig getDynamicOffloadConfig()
+com.amazon.storage.manager.model.Config	method	public LowStorageConfig getLowStorageConfig()
+com.amazon.storage.manager.model.Config	method	public ManualOffloadConfig getManualOffloadConfig()
+com.amazon.storage.manager.model.Config	method	public String toString()
+com.amazon.storage.manager.model.Config	method	public static ConfigBuilder builder()
+com.amazon.storage.manager.model.Config$Common	field	public final long syncIntervalInSeconds;
+com.amazon.storage.manager.model.Config$Common	field	public final long syncJitterIntervalInSeconds;
+com.amazon.storage.manager.model.Config$Common	method	public Common(long j, long j2)
+com.amazon.storage.manager.model.Config$Common	method	public String toString()
+com.amazon.storage.manager.model.Config$Common	method	public long getSyncIntervalInSeconds()
+com.amazon.storage.manager.model.Config$Common	method	public long getSyncJitterIntervalInSeconds()
+com.amazon.storage.manager.model.Config$Common	method	public static CommonBuilder builder()
+com.amazon.storage.manager.model.Config$Common$CommonBuilder	method	public Common build()
+com.amazon.storage.manager.model.Config$Common$CommonBuilder	method	public CommonBuilder()
+com.amazon.storage.manager.model.Config$Common$CommonBuilder	method	public String toString()
+com.amazon.storage.manager.model.Config$ConfigBuilder	method	public Config build()
+com.amazon.storage.manager.model.Config$ConfigBuilder	method	public ConfigBuilder()
+com.amazon.storage.manager.model.Config$ConfigBuilder	method	public String toString()
+com.amazon.storage.manager.model.Config$DynamicOffloadConfig	field	public List<String> nonEntitledComradeAppOverrideList;
+com.amazon.storage.manager.model.Config$DynamicOffloadConfig	field	public List<String> unsupportedAppsList;
+com.amazon.storage.manager.model.Config$DynamicOffloadConfig	field	public Map<String, Integer> customUnusedDaysThreshold;
+com.amazon.storage.manager.model.Config$DynamicOffloadConfig	field	public Map<String, Integer> inactivityWindowByTreatment;
+com.amazon.storage.manager.model.Config$DynamicOffloadConfig	field	public boolean isFeatureSupported;
+com.amazon.storage.manager.model.Config$DynamicOffloadConfig	field	public int storageThresholdInMB;
+com.amazon.storage.manager.model.Config$DynamicOffloadConfig	field	public int unusedDaysThreshold;
+com.amazon.storage.manager.model.Config$DynamicOffloadConfig	field	public static final String TAG;
+com.amazon.storage.manager.model.Config$DynamicOffloadConfig	method	public DynamicOffloadConfig(boolean z, List<String> list, int i, int i2, Map<String, Integer> map, List<String> list2, Map<String, Integer> map2)
+com.amazon.storage.manager.model.Config$DynamicOffloadConfig	method	public List<String> getNonEntitledComradeAppOverrideList()
+com.amazon.storage.manager.model.Config$DynamicOffloadConfig	method	public List<String> getUnsupportedAppsList()
+com.amazon.storage.manager.model.Config$DynamicOffloadConfig	method	public Map<String, Integer> getCustomUnusedDaysThreshold()
+com.amazon.storage.manager.model.Config$DynamicOffloadConfig	method	public Map<String, Integer> getInactivityWindowByTreatment()
+com.amazon.storage.manager.model.Config$DynamicOffloadConfig	method	public String toString()
+com.amazon.storage.manager.model.Config$DynamicOffloadConfig	method	public boolean isFeatureSupported()
+com.amazon.storage.manager.model.Config$DynamicOffloadConfig	method	public int getStorageThresholdInMB()
+com.amazon.storage.manager.model.Config$DynamicOffloadConfig	method	public int getUnusedDaysThreshold()
+com.amazon.storage.manager.model.Config$DynamicOffloadConfig	method	public static DynamicOffloadConfigBuilder builder()
+com.amazon.storage.manager.model.Config$DynamicOffloadConfig	method	public static Map<String, Integer> createDefaultCustomThreshold()
+com.amazon.storage.manager.model.Config$DynamicOffloadConfig$DynamicOffloadConfigBuilder	field	public int storageThresholdInMB;
+com.amazon.storage.manager.model.Config$DynamicOffloadConfig$DynamicOffloadConfigBuilder	method	public DynamicOffloadConfig build()
+com.amazon.storage.manager.model.Config$DynamicOffloadConfig$DynamicOffloadConfigBuilder	method	public DynamicOffloadConfigBuilder()
+com.amazon.storage.manager.model.Config$DynamicOffloadConfig$DynamicOffloadConfigBuilder	method	public String toString()
+com.amazon.storage.manager.model.Config$LowStorageConfig	field	public Boolean shouldLogLowStorageWtf;
+com.amazon.storage.manager.model.Config$LowStorageConfig	method	public Boolean getShouldLogLowStorageWtf()
+com.amazon.storage.manager.model.Config$LowStorageConfig	method	public LowStorageConfig(Boolean bool)
+com.amazon.storage.manager.model.Config$LowStorageConfig	method	public String toString()
+com.amazon.storage.manager.model.Config$LowStorageConfig	method	public static LowStorageConfigBuilder builder()
+com.amazon.storage.manager.model.Config$LowStorageConfig$LowStorageConfigBuilder	method	public LowStorageConfig build()
+com.amazon.storage.manager.model.Config$LowStorageConfig$LowStorageConfigBuilder	method	public LowStorageConfigBuilder()
+com.amazon.storage.manager.model.Config$LowStorageConfig$LowStorageConfigBuilder	method	public String toString()
+com.amazon.storage.manager.model.Config$ManualOffloadConfig	field	public List<String> unsupportedAppsList;
+com.amazon.storage.manager.model.Config$ManualOffloadConfig	field	public boolean isFeatureSupported;
+com.amazon.storage.manager.model.Config$ManualOffloadConfig	method	public List<String> getUnsupportedAppsList()
+com.amazon.storage.manager.model.Config$ManualOffloadConfig	method	public ManualOffloadConfig(boolean z, List<String> list)
+com.amazon.storage.manager.model.Config$ManualOffloadConfig	method	public String toString()
+com.amazon.storage.manager.model.Config$ManualOffloadConfig	method	public boolean isFeatureSupported()
+com.amazon.storage.manager.model.Config$ManualOffloadConfig	method	public static ManualOffloadConfigBuilder builder()
+com.amazon.storage.manager.model.Config$ManualOffloadConfig$ManualOffloadConfigBuilder	method	public ManualOffloadConfig build()
+com.amazon.storage.manager.model.Config$ManualOffloadConfig$ManualOffloadConfigBuilder	method	public ManualOffloadConfigBuilder()
+com.amazon.storage.manager.model.Config$ManualOffloadConfig$ManualOffloadConfigBuilder	method	public String toString()
+com.amazon.storage.manager.providers.OffloadInfoContentProvider	field	public UriMatcher mUriMatcher;
+com.amazon.storage.manager.providers.OffloadInfoContentProvider	field	public static final String TAG;
+com.amazon.storage.manager.providers.OffloadInfoContentProvider	method	public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2)
+com.amazon.storage.manager.providers.OffloadInfoContentProvider	method	public List<String> getManualAppOffloadUnsupportedApps()
+com.amazon.storage.manager.providers.OffloadInfoContentProvider	method	public MatrixCursor getCursorForManualAppOffloadInfo()
+com.amazon.storage.manager.providers.OffloadInfoContentProvider	method	public RemoteConfigFetcher getConfigFetcher()
+com.amazon.storage.manager.providers.OffloadInfoContentProvider	method	public String getType(Uri uri)
+com.amazon.storage.manager.providers.OffloadInfoContentProvider	method	public Uri insert(Uri uri, ContentValues contentValues)
+com.amazon.storage.manager.providers.OffloadInfoContentProvider	method	public UriMatcher getUriMatcher()
+com.amazon.storage.manager.providers.OffloadInfoContentProvider	method	public boolean isManualOffloadFeatureSupported()
+com.amazon.storage.manager.providers.OffloadInfoContentProvider	method	public boolean onCreate()
+com.amazon.storage.manager.providers.OffloadInfoContentProvider	method	public int delete(Uri uri, String str, String[] strArr)
+com.amazon.storage.manager.providers.OffloadInfoContentProvider	method	public int update(Uri uri, ContentValues contentValues, String str, String[] strArr)
+com.amazon.storage.manager.receivers.ApplicationUpdateReceiver	field	public static final String TAG;
+com.amazon.storage.manager.receivers.ApplicationUpdateReceiver	method	public final void sendOtaInstalledBroadcast(Context context)
+com.amazon.storage.manager.receivers.ApplicationUpdateReceiver	method	public void onReceive(Context context, Intent intent)
+com.amazon.storage.manager.receivers.DynoTriggerBroadcastReceiver	field	public static final String TAG;
+com.amazon.storage.manager.receivers.DynoTriggerBroadcastReceiver	method	public void onReceive(Context context, Intent intent)
+com.amazon.storage.manager.receivers.DynoTriggerBroadcastReceiver	method	public void triggerDynoService(Context context)
+com.amazon.storage.manager.receivers.LowStorageReceiver	field	public static final String TAG;
+com.amazon.storage.manager.receivers.LowStorageReceiver	method	public final boolean isJobAlreadyScheduled(JobScheduler jobScheduler)
+com.amazon.storage.manager.receivers.LowStorageReceiver	method	public final void scheduleWtfJob(Context context, JobScheduler jobScheduler)
+com.amazon.storage.manager.receivers.LowStorageReceiver	method	public void onReceive(Context context, Intent intent)
+com.amazon.storage.manager.receivers.PackageCacheClearReceiver	field	public static final String TAG;
+com.amazon.storage.manager.receivers.PackageCacheClearReceiver	method	public void onReceive(Context context, Intent intent) throws Throwable
+com.amazon.storage.manager.receivers.PeriodicJobTriggerReceiver	field	public static final String TAG;
+com.amazon.storage.manager.receivers.PeriodicJobTriggerReceiver	method	public void onReceive(Context context, Intent intent)
+com.amazon.storage.manager.receivers.StorageMonitorControlReceiver	field	public static final String TAG;
+com.amazon.storage.manager.receivers.StorageMonitorControlReceiver	method	public void onReceive(Context context, Intent intent)
+com.amazon.storage.manager.receivers.TestJobScheduleReceiver	field	public static final String TAG;
+com.amazon.storage.manager.receivers.TestJobScheduleReceiver	method	public void onReceive(Context context, Intent intent)
+com.amazon.storage.manager.receivers.TestJobScheduleReceiver	method	public void scheduleJob(Context context, int i)
+com.amazon.storage.manager.ruleengine.AppUsageChecker	field	public Map<Integer, Map<String, UsageStats>> mUsageStatsCache;
+com.amazon.storage.manager.ruleengine.AppUsageChecker	field	public String mExperimentTreatment;
+com.amazon.storage.manager.ruleengine.AppUsageChecker	field	public String mPackageName;
+com.amazon.storage.manager.ruleengine.AppUsageChecker	field	public final Clock mClock;
+com.amazon.storage.manager.ruleengine.AppUsageChecker	field	public final Context mContext;
+com.amazon.storage.manager.ruleengine.AppUsageChecker	field	public final PackageMetrics mPackageMetrics;
+com.amazon.storage.manager.ruleengine.AppUsageChecker	field	public final RemoteConfigFetcher mRemoteConfigFetcher;
+com.amazon.storage.manager.ruleengine.AppUsageChecker	field	public final WeblabManager mWeblabManager;
+com.amazon.storage.manager.ruleengine.AppUsageChecker	field	public long mLastQueryTime;
+com.amazon.storage.manager.ruleengine.AppUsageChecker	field	public static final String TAG;
+com.amazon.storage.manager.ruleengine.AppUsageChecker	field	public static final long CACHE_VALIDITY_DURATION;
+com.amazon.storage.manager.ruleengine.AppUsageChecker	method	public AppUsageChecker(Context context)
+com.amazon.storage.manager.ruleengine.AppUsageChecker	method	public AppUsageChecker(Context context, RemoteConfigFetcher remoteConfigFetcher, Clock clock, WeblabManager weblabManager)
+com.amazon.storage.manager.ruleengine.AppUsageChecker	method	public boolean isSupported(String str)
+com.amazon.storage.manager.ruleengine.AppUsageChecker	method	public boolean isWeblabEnabled()
+com.amazon.storage.manager.ruleengine.AppUsageChecker	method	public final Map<String, UsageStats> getUsageStatsMap(int i)
+com.amazon.storage.manager.ruleengine.AppUsageChecker	method	public final boolean isInTreatmentGroup(String str)
+com.amazon.storage.manager.ruleengine.AppUsageChecker	method	public final void checkAndRecordUsageStats(String str, int i, String str2, String str3)
+com.amazon.storage.manager.ruleengine.AppUsageChecker	method	public final void refreshUsageStats(long j)
+com.amazon.storage.manager.ruleengine.AppUsageChecker	method	public int getUnusedDaysThreshold()
+com.amazon.storage.manager.ruleengine.AppUsageChecker	method	public long getInactiveDays(String str)
+com.amazon.storage.manager.ruleengine.AppUsageChecker	method	public void emitMetrics()
+com.amazon.storage.manager.ruleengine.AppUsageChecker	method	public void recordMetric(String str, String str2)
+com.amazon.storage.manager.ruleengine.AppUsageChecker$PackageMetric	field	public final String packageName;
+com.amazon.storage.manager.ruleengine.AppUsageChecker$PackageMetric	field	public final String reason;
+com.amazon.storage.manager.ruleengine.AppUsageChecker$PackageMetric	method	public PackageMetric(String str, String str2)
+com.amazon.storage.manager.ruleengine.AppUsageChecker$PackageMetric	method	public String getPackageName()
+com.amazon.storage.manager.ruleengine.AppUsageChecker$PackageMetric	method	public String getReason()
+com.amazon.storage.manager.ruleengine.AppUsageChecker$PackageMetric	method	public String toString()
+com.amazon.storage.manager.ruleengine.AppUsageChecker$PackageMetric	method	public boolean canEqual(Object obj)
+com.amazon.storage.manager.ruleengine.AppUsageChecker$PackageMetric	method	public boolean equals(Object obj)
+com.amazon.storage.manager.ruleengine.AppUsageChecker$PackageMetric	method	public int hashCode()
+com.amazon.storage.manager.ruleengine.AppUsageChecker$PackageMetrics	field	public final List<PackageMetric> metrics;
+com.amazon.storage.manager.ruleengine.AppUsageChecker$PackageMetrics	field	public final Map<String, Map<Integer, Boolean>> usageStatsAvailability;
+com.amazon.storage.manager.ruleengine.AppUsageChecker$PackageMetrics	method	public List<PackageMetric> getMetrics()
+com.amazon.storage.manager.ruleengine.AppUsageChecker$PackageMetrics	method	public boolean hasAnyRecentStats(String str)
+com.amazon.storage.manager.ruleengine.AppUsageChecker$PackageMetrics	method	public int[] getAvailableUsageStatsDays(String str)
+com.amazon.storage.manager.ruleengine.AppUsageChecker$PackageMetrics	method	public void clear()
+com.amazon.storage.manager.ruleengine.AppUsageChecker$PackageMetrics	method	public void record(String str, String str2)
+com.amazon.storage.manager.ruleengine.AppUsageChecker$PackageMetrics	method	public void recordUsageStatsAvailability(String str, int i, boolean z)
+com.amazon.storage.manager.ruleengine.ComradeIntegrationChecker	field	public final Context mContext;
+com.amazon.storage.manager.ruleengine.ComradeIntegrationChecker	field	public final RemoteConfigFetcher mRemoteConfigFetcher;
+com.amazon.storage.manager.ruleengine.ComradeIntegrationChecker	field	public static final String TAG;
+com.amazon.storage.manager.ruleengine.ComradeIntegrationChecker	method	public ComradeIntegrationChecker(Context context)
+com.amazon.storage.manager.ruleengine.ComradeIntegrationChecker	method	public boolean isSupported(String str)
+com.amazon.storage.manager.ruleengine.ComradeIntegrationChecker	method	public final boolean isComradeOffloadSupported(String str)
+com.amazon.storage.manager.ruleengine.ComradeIntegrationChecker	method	public final boolean isEligibleForOverrideOffload(String str)
+com.amazon.storage.manager.ruleengine.ComradeIntegrationChecker	method	public final boolean isInOverrideList(String str)
+com.amazon.storage.manager.ruleengine.ComradeIntegrationChecker	method	public final boolean isNetflixOffloadWeblabEnabled()
+com.amazon.storage.manager.ruleengine.ComradeIntegrationChecker	method	public final boolean isNonEntitledFromCache(String str)
+com.amazon.storage.manager.ruleengine.ComradeIntegrationChecker	method	public void emitMetrics()
+com.amazon.storage.manager.ruleengine.DynoAppSupportCheckListFactory	field	public static final String TAG;
+com.amazon.storage.manager.ruleengine.DynoAppSupportCheckListFactory	method	public List<IDynoAppSupportChecker> getDynoAppSupportCheckerList(Context context)
+com.amazon.storage.manager.ruleengine.DynoRuleEngineManager	field	public List<IDynoAppSupportChecker> mCheckerList;
+com.amazon.storage.manager.ruleengine.DynoRuleEngineManager	field	public final DynoAppSupportCheckListFactory mDynoAppSupportCheckListFactory;
+com.amazon.storage.manager.ruleengine.DynoRuleEngineManager	field	public static final String TAG;
+com.amazon.storage.manager.ruleengine.DynoRuleEngineManager	method	public DynoRuleEngineManager(DynoAppSupportCheckListFactory dynoAppSupportCheckListFactory)
+com.amazon.storage.manager.ruleengine.DynoRuleEngineManager	method	public List<String> getAppsToOffload(Context context)
+com.amazon.storage.manager.ruleengine.DynoRuleEngineManager	method	public List<String> getInstalledApps(Context context)
+com.amazon.storage.manager.ruleengine.DynoRuleEngineManager	method	public long getInactiveDaysForPackage(String str)
+com.amazon.storage.manager.ruleengine.ExternalStorageChecker	field	public final Context mContext;
+com.amazon.storage.manager.ruleengine.ExternalStorageChecker	field	public static final String TAG;
+com.amazon.storage.manager.ruleengine.ExternalStorageChecker	method	public ExternalStorageChecker(Context context)
+com.amazon.storage.manager.ruleengine.ExternalStorageChecker	method	public boolean isSupported(String str)
+com.amazon.storage.manager.ruleengine.ExternalStorageChecker	method	public void emitMetrics()
+com.amazon.storage.manager.ruleengine.InstallerChecker	field	public final Context mContext;
+com.amazon.storage.manager.ruleengine.InstallerChecker	field	public static final String TAG;
+com.amazon.storage.manager.ruleengine.InstallerChecker	method	public InstallerChecker(Context context)
+com.amazon.storage.manager.ruleengine.InstallerChecker	method	public boolean isSupported(String str)
+com.amazon.storage.manager.ruleengine.InstallerChecker	method	public void emitMetrics()
+com.amazon.storage.manager.ruleengine.LiveTvIntegrationChecker	field	public Set<String> mLiveIntegratedApps;
+com.amazon.storage.manager.ruleengine.LiveTvIntegrationChecker	field	public final Context mContext;
+com.amazon.storage.manager.ruleengine.LiveTvIntegrationChecker	field	public static final String TAG;
+com.amazon.storage.manager.ruleengine.LiveTvIntegrationChecker	method	public LiveTvIntegrationChecker(Context context)
+com.amazon.storage.manager.ruleengine.LiveTvIntegrationChecker	method	public Set<String> getLiveIntegratedApps()
+com.amazon.storage.manager.ruleengine.LiveTvIntegrationChecker	method	public boolean isSupported(String str)
+com.amazon.storage.manager.ruleengine.LiveTvIntegrationChecker	method	public void emitMetrics()
+com.amazon.storage.manager.ruleengine.LucaIntegrationChecker	field	public List<String> mAllowListedApps;
+com.amazon.storage.manager.ruleengine.LucaIntegrationChecker	field	public final ContentPersonalizationSettings mContentPersonalizationSettings;
+com.amazon.storage.manager.ruleengine.LucaIntegrationChecker	field	public final Context mContext;
+com.amazon.storage.manager.ruleengine.LucaIntegrationChecker	field	public static final String TAG;
+com.amazon.storage.manager.ruleengine.LucaIntegrationChecker	method	public LucaIntegrationChecker(Context context)
+com.amazon.storage.manager.ruleengine.LucaIntegrationChecker	method	public LucaIntegrationChecker(Context context, ContentPersonalizationSettings contentPersonalizationSettings)
+com.amazon.storage.manager.ruleengine.LucaIntegrationChecker	method	public boolean isSupported(String str)
+com.amazon.storage.manager.ruleengine.LucaIntegrationChecker	method	public void emitMetrics()
+com.amazon.storage.manager.ruleengine.MASAppEntitlementChecker	field	public List<String> mNonEntitledApps;
+com.amazon.storage.manager.ruleengine.MASAppEntitlementChecker	field	public Set<String> mEntitledApps;
+com.amazon.storage.manager.ruleengine.MASAppEntitlementChecker	field	public final Context mContext;
+com.amazon.storage.manager.ruleengine.MASAppEntitlementChecker	field	public static final String TAG;
+com.amazon.storage.manager.ruleengine.MASAppEntitlementChecker	method	public MASAppEntitlementChecker(Context context)
+com.amazon.storage.manager.ruleengine.MASAppEntitlementChecker	method	public boolean isSupported(String str)
+com.amazon.storage.manager.ruleengine.MASAppEntitlementChecker	method	public final void measureAppSize(List<String> list, ApplicationSizeComputer.MeasureAppsSizeCallback measureAppsSizeCallback)
+com.amazon.storage.manager.ruleengine.MASAppEntitlementChecker	method	public void emitMetrics()
+com.amazon.storage.manager.ruleengine.RemoteConfigDenylistChecker	field	public List<String> mDenyListedApps;
+com.amazon.storage.manager.ruleengine.RemoteConfigDenylistChecker	field	public final Context mContext;
+com.amazon.storage.manager.ruleengine.RemoteConfigDenylistChecker	field	public final RemoteConfigFetcher mRemoteConfigFetcher;
+com.amazon.storage.manager.ruleengine.RemoteConfigDenylistChecker	field	public static final String TAG;
+com.amazon.storage.manager.ruleengine.RemoteConfigDenylistChecker	method	public List<String> getDenyListedApps()
+com.amazon.storage.manager.ruleengine.RemoteConfigDenylistChecker	method	public RemoteConfigDenylistChecker(Context context)
+com.amazon.storage.manager.ruleengine.RemoteConfigDenylistChecker	method	public RemoteConfigDenylistChecker(Context context, RemoteConfigFetcher remoteConfigFetcher)
+com.amazon.storage.manager.ruleengine.RemoteConfigDenylistChecker	method	public boolean isSupported(String str)
+com.amazon.storage.manager.ruleengine.RemoteConfigDenylistChecker	method	public void emitMetrics()
+com.amazon.storage.manager.ruleengine.ThirdPartyAppChecker	field	public final Context mContext;
+com.amazon.storage.manager.ruleengine.ThirdPartyAppChecker	field	public static final String TAG;
+com.amazon.storage.manager.ruleengine.ThirdPartyAppChecker	method	public ThirdPartyAppChecker(Context context)
+com.amazon.storage.manager.ruleengine.ThirdPartyAppChecker	method	public boolean isSupported(String str)
+com.amazon.storage.manager.ruleengine.ThirdPartyAppChecker	method	public void emitMetrics()
+com.amazon.storage.manager.services.DynoService	field	public AtomicInteger mNumberOfAppsToOffload;
+com.amazon.storage.manager.services.DynoService	field	public Context mContext;
+com.amazon.storage.manager.services.DynoService	field	public DynoRuleEngineManager mDynoRuleEngineManager;
+com.amazon.storage.manager.services.DynoService	field	public Map<String, AppSizeInfo> mPackageToAppSizeInfoMap;
+com.amazon.storage.manager.services.DynoService	field	public SettingsCoreConnectionManager mSettingsCoreConnectionManager;
+com.amazon.storage.manager.services.DynoService	field	public final Map<String, Boolean> mPackageToOffloadStateMap;
+com.amazon.storage.manager.services.DynoService	field	public long mDeviceUsableSpaceBeforeAutoOffloadInMB;
+com.amazon.storage.manager.services.DynoService	field	public long mStartTimeInMillis;
+com.amazon.storage.manager.services.DynoService	field	public static final String TAG;
+com.amazon.storage.manager.services.DynoService	method	public final AppDataObserver getClearCacheCallback(final SettingsCoreConnectionManager settingsCoreConnectionManager, final UninstallPackageCallback uninstallPackageCallback)
+com.amazon.storage.manager.services.DynoService	method	public final String getMetricNameForOffloadOperationResult(int i)
+com.amazon.storage.manager.services.DynoService	method	public final UninstallPackageCallback getUninstallPackageCallback()
+com.amazon.storage.manager.services.DynoService	method	public final void emitAutoOffloadImpactOnLowStorageMetric(long j)
+com.amazon.storage.manager.services.DynoService	method	public final void handleOffloadComplete(String str, int i)
+com.amazon.storage.manager.services.DynoService	method	public final void measureAppSize(List<String> list, ApplicationSizeComputer.MeasureAppsSizeCallback measureAppsSizeCallback)
+com.amazon.storage.manager.services.DynoService	method	public final void offloadApps(SettingsCoreConnectionManager settingsCoreConnectionManager, List<String> list, AppDataObserver appDataObserver)
+com.amazon.storage.manager.services.DynoService	method	public final void offloadOperationComplete()
+com.amazon.storage.manager.services.DynoService	method	public static void enqueueWork(Context context, Intent intent)
+com.amazon.storage.manager.services.DynoService	method	public void onHandleWork(Intent intent)
+com.amazon.storage.manager.services.LowStorageWtfService	field	public Thread mBgThread;
+com.amazon.storage.manager.services.LowStorageWtfService	field	public static final String TAG;
+com.amazon.storage.manager.services.LowStorageWtfService	method	public boolean onStartJob(JobParameters jobParameters)
+com.amazon.storage.manager.services.LowStorageWtfService	method	public boolean onStopJob(JobParameters jobParameters)
+com.amazon.storage.manager.services.LowStorageWtfService	method	public void onDestroy()
+com.amazon.storage.manager.services.LowStorageWtfService$BackgroundStorageTask	field	public ApplicationSizeComputer mAppSizeComputer;
+com.amazon.storage.manager.services.LowStorageWtfService$BackgroundStorageTask	field	public LowStorageMetricsLogger mMetricsLogger;
+com.amazon.storage.manager.services.LowStorageWtfService$BackgroundStorageTask	field	public final JobParameters mJobParameters;
+com.amazon.storage.manager.services.LowStorageWtfService$BackgroundStorageTask	field	public final LowStorageWtfService mJobService;
+com.amazon.storage.manager.services.LowStorageWtfService$BackgroundStorageTask	method	public BackgroundStorageTask(LowStorageWtfService lowStorageWtfService, JobParameters jobParameters)
+com.amazon.storage.manager.services.LowStorageWtfService$BackgroundStorageTask	method	public final List<String> getMeasureablePackages()
+com.amazon.storage.manager.services.LowStorageWtfService$BackgroundStorageTask	method	public final void measureApplicationSizes(List<String> list)
+com.amazon.storage.manager.services.LowStorageWtfService$BackgroundStorageTask	method	public void run()
+com.amazon.storage.manager.services.RemoteConfigSyncScheduler	field	public static final String TAG;
+com.amazon.storage.manager.services.RemoteConfigSyncScheduler	method	public JobInfo getJobInfo(Context context, long j)
+com.amazon.storage.manager.services.RemoteConfigSyncScheduler	method	public boolean scheduleJob(Context context, boolean z)
+com.amazon.storage.manager.services.RemoteConfigSyncScheduler	method	public boolean scheduleJob(Context context, boolean z, long j)
+com.amazon.storage.manager.services.RemoteConfigSyncScheduler	method	public final boolean isJobActive(JobScheduler jobScheduler)
+com.amazon.storage.manager.services.RemoteConfigSyncService	field	public Context mContext;
+com.amazon.storage.manager.services.RemoteConfigSyncService	field	public long mStartTimeMillis;
+com.amazon.storage.manager.services.RemoteConfigSyncService	field	public static final String TAG;
+com.amazon.storage.manager.services.RemoteConfigSyncService	field	public static final long RESCHEDULE_FAILURE;
+com.amazon.storage.manager.services.RemoteConfigSyncService	method	public ExecutorService getExecutorService()
+com.amazon.storage.manager.services.RemoteConfigSyncService	method	public Handler getMainThreadHandler()
+com.amazon.storage.manager.services.RemoteConfigSyncService	method	public RemoteConfigFetcher getRemoteConfigFetcher()
+com.amazon.storage.manager.services.RemoteConfigSyncService	method	public boolean onStartJob(JobParameters jobParameters)
+com.amazon.storage.manager.services.RemoteConfigSyncService	method	public boolean onStopJob(JobParameters jobParameters)
+com.amazon.storage.manager.services.RemoteConfigSyncService	method	public final void processConfig(Config config)
+com.amazon.storage.manager.services.RemoteConfigSyncService	method	public final void rescheduleJob(final long j)
+com.amazon.storage.manager.services.RemoteConfigSyncService	method	public final void startJobOnNewThread()
+com.amazon.storage.manager.utils.SecureSettingsHelper	field	public Context mContext;
+com.amazon.storage.manager.utils.SecureSettingsHelper	method	public SecureSettingsHelper(Context context)
+com.amazon.storage.manager.utils.SecureSettingsHelper	method	public int getInt(String str, int i)
+com.amazon.storage.manager.utils.SystemClock	method	public long currentTimeMillis()
+com.amazon.storage.manager.utils.Utils	field	public static final SecureRandom RANDOM;
+com.amazon.storage.manager.utils.Utils	field	public static final String TAG;
+com.amazon.storage.manager.utils.Utils	method	public Utils()
+com.amazon.storage.manager.utils.Utils	method	public static List<String> getOffloadedApps(PackageManager packageManager)
+com.amazon.storage.manager.utils.Utils	method	public static String buildUriString(String str, String str2)
+com.amazon.storage.manager.utils.Utils	method	public static String getSafeTag(String str)
+com.amazon.storage.manager.utils.Utils	method	public static boolean doesDeviceSupportsOffloadFeature(Context context)
+com.amazon.storage.manager.utils.Utils	method	public static boolean doesFileExists(File file)
+com.amazon.storage.manager.utils.Utils	method	public static boolean getMetaDataFlag(PackageManager packageManager, String str, String str2)
+com.amazon.storage.manager.utils.Utils	method	public static boolean isAppInstalledOnExternalStorage(ApplicationInfo applicationInfo)
+com.amazon.storage.manager.utils.Utils	method	public static boolean isAutoOffloadSettingTurnedOff(SecureSettingsHelper secureSettingsHelper)
+com.amazon.storage.manager.utils.Utils	method	public static boolean isBuildVersion34OrLater()
+com.amazon.storage.manager.utils.Utils	method	public static boolean isDeviceInLowStorageMode(Context context)
+com.amazon.storage.manager.utils.Utils	method	public static boolean isFos7()
+com.amazon.storage.manager.utils.Utils	method	public static boolean isFos8()
+com.amazon.storage.manager.utils.Utils	method	public static boolean isFos8OrGreater()
+com.amazon.storage.manager.utils.Utils	method	public static boolean isPackageInstalled(PackageManager packageManager, String str)
+com.amazon.storage.manager.utils.Utils	method	public static boolean isPackageOffloaded(PackageManager packageManager, String str)
+com.amazon.storage.manager.utils.Utils	method	public static boolean shouldTriggerDyno(Context context)
+com.amazon.storage.manager.utils.Utils	method	public static int getPackageVersionCode(Context context, String str) throws PackageManager.NameNotFoundException
+com.amazon.storage.manager.utils.Utils	method	public static long getDeviceLowStorageThresholdInBytes(Context context)
+com.amazon.storage.manager.utils.Utils	method	public static long getDeviceUsableSpaceInBytes()
+com.amazon.storage.manager.utils.Utils	method	public static long getDynoThresholdInBytes(Context context)
+com.amazon.storage.manager.utils.Utils	method	public static long getJobMinimumLatency(long j, long j2)
+com.amazon.storage.manager.weblab.WeblabClientAttributesSingleton	field	public static final Object LOCK;
+com.amazon.storage.manager.weblab.WeblabClientAttributesSingleton	field	public static volatile MobileWeblabClientAttributes instance;
+com.amazon.storage.manager.weblab.WeblabClientAttributesSingleton	method	public static MobileWeblabClientAttributes getInstance(String str, String str2, String str3, List<String> list, String str4)
+com.amazon.storage.manager.weblab.WeblabConstants	field	public static final List<String> WEBLABS;
+com.amazon.storage.manager.weblab.WeblabConstants	method	public static boolean isPilotDomain()
+com.amazon.storage.manager.weblab.WeblabManager	field	public boolean isWeblabStale;
+com.amazon.storage.manager.weblab.WeblabManager	field	public final Context context;
+com.amazon.storage.manager.weblab.WeblabManager	field	public final IMobileWeblabClient weblabClient;
+com.amazon.storage.manager.weblab.WeblabManager	field	public static volatile WeblabManager sInstance;
+com.amazon.storage.manager.weblab.WeblabManager	method	public String getInactivityExperimentTreatment()
+com.amazon.storage.manager.weblab.WeblabManager	method	public String getTreatmentAndRecordTrigger(String str)
+com.amazon.storage.manager.weblab.WeblabManager	method	public WeblabManager(Context context)
+com.amazon.storage.manager.weblab.WeblabManager	method	public final IMobileWeblabClient createWeblabClient()
+com.amazon.storage.manager.weblab.WeblabManager	method	public final MobileWeblabClientAttributes createClientAttributes()
+com.amazon.storage.manager.weblab.WeblabManager	method	public final MobileWeblabRuntimeConfiguration createRuntimeConfig()
+com.amazon.storage.manager.weblab.WeblabManager	method	public final String getAppVersion()
+com.amazon.storage.manager.weblab.WeblabManager	method	public final String getDefaultTreatment()
+com.amazon.storage.manager.weblab.WeblabManager	method	public final String retrieveAccountId()
+com.amazon.storage.manager.weblab.WeblabManager	method	public static String createMd5Hash(String str)
+com.amazon.storage.manager.weblab.WeblabManager	method	public static String generateSessionId(String str)
+com.amazon.storage.manager.weblab.WeblabManager	method	public static WeblabManager getInstance(Context context)
+com.amazon.storage.manager.weblab.WeblabManager	method	public static boolean isInactivityExperimentTreatment(String str)
+com.amazon.storage.manager.weblab.WeblabManager	method	public void refreshCustomerInfo()
+com.amazon.storage.manager.weblab.WeblabManager$WeblabTreatment	field	public final String value;
+com.amazon.storage.manager.weblab.WeblabManager$WeblabTreatment	method	public String getValue()
+com.amazon.storage.manager.workers.AppCacheClearWorker	field	public final Context mContext;
+com.amazon.storage.manager.workers.AppCacheClearWorker	field	public static final String TAG;
+com.amazon.storage.manager.workers.AppCacheClearWorker	method	public AppCacheClearWorker(Context context, WorkerParameters workerParameters)
+com.amazon.storage.manager.workers.AppCacheClearWorker	method	public ListenableFuture<ListenableWorker.Result> startWork()
+com.amazon.storage.manager.workers.AppCacheClearWorker	method	public String doWork(final CallbackToFutureAdapter.Completer<ListenableWorker.Result> completer)
+com.amazon.storage.manager.workers.AppCacheClearWorker	method	public static void execute(Context context, String str, String str2) throws Throwable
+com.amazon.storage.manager.workers.AppCacheClearWorker	method	public void clearAppCache(SettingsCoreConnectionManager settingsCoreConnectionManager, String str, ClearCacheObserver clearCacheObserver)
+com.amazon.storage.manager.workers.AppCacheClearWorker	method	public void onStopped()
+com.amazon.storage.manager.workers.AppCacheClearWorker$ClearCacheObserver	field	public final CallbackToFutureAdapter.Completer<ListenableWorker.Result> mCompleter;
+com.amazon.storage.manager.workers.AppCacheClearWorker$ClearCacheObserver	field	public final Context mContext;
+com.amazon.storage.manager.workers.AppCacheClearWorker$ClearCacheObserver	field	public final String mPackageAsin;
+com.amazon.storage.manager.workers.AppCacheClearWorker$ClearCacheObserver	field	public final String mPackageName;
+com.amazon.storage.manager.workers.AppCacheClearWorker$ClearCacheObserver	method	public ClearCacheObserver(Context context, CallbackToFutureAdapter.Completer<ListenableWorker.Result> completer, String str, String str2)
+com.amazon.storage.manager.workers.AppCacheClearWorker$ClearCacheObserver	method	public final void sendPackageCacheClearResultBroadcast(boolean z)
+com.amazon.storage.manager.workers.AppCacheClearWorker$ClearCacheObserver	method	public void onDataRemoved(String str, boolean z)
+com.amazon.storage.manager.workers.AppCacheClearWorker$ClearCacheObserver	method	public void onException(Throwable th)
+com.amazon.storage.manager.workers.ComradeEntitlementWorker	field	public final Context mContext;
+com.amazon.storage.manager.workers.ComradeEntitlementWorker	field	public static final String TAG;
+com.amazon.storage.manager.workers.ComradeEntitlementWorker	field	public static final Uri COMRADE_STATUS_URI;
+com.amazon.storage.manager.workers.ComradeEntitlementWorker	method	public ComradeEntitlementWorker(Context context, WorkerParameters workerParameters)
+com.amazon.storage.manager.workers.ComradeEntitlementWorker	method	public ListenableWorker.Result doWork()
+com.amazon.storage.manager.workers.ComradeEntitlementWorker	method	public static void schedule(Context context)
+com.amazon.storage.manager.workers.ComradeEntitlementWorker	method	public static void schedule(Context context, boolean z)
+com.amazon.storage.manager.workers.ComradeEntitlementWorker	method	public void queryAndCacheComradeEntitlements(List<String> list)
+com.amazon.storage.manager.workers.DynoMetricsWorker	field	public final Context mContext;
+com.amazon.storage.manager.workers.DynoMetricsWorker	field	public static final String TAG;
+com.amazon.storage.manager.workers.DynoMetricsWorker	method	public DynoMetricsWorker(Context context, WorkerParameters workerParameters)
+com.amazon.storage.manager.workers.DynoMetricsWorker	method	public ListenableFuture<ListenableWorker.Result> startWork()
+com.amazon.storage.manager.workers.DynoMetricsWorker	method	public String doWork(final CallbackToFutureAdapter.Completer<ListenableWorker.Result> completer)
+com.amazon.storage.manager.workers.DynoMetricsWorker	method	public final void emitAppOffloadSnapshotMetric(int i, int i2, String str, boolean z)
+com.amazon.storage.manager.workers.DynoMetricsWorker	method	public final void emitAutoOffloadImpactOnLowStorageMetric(long j, long j2, long j3, String str)
+com.amazon.storage.manager.workers.DynoMetricsWorker	method	public final void emitAutoOffloadSettingStateMetric(String str)
+com.amazon.storage.manager.workers.DynoMetricsWorker	method	public final void emitDynoMetric()
+com.amazon.storage.manager.workers.DynoMetricsWorker	method	public final void emitInactivitySnapshot()
+com.amazon.storage.manager.workers.DynoMetricsWorker	method	public final void emitPackageLevelAppOffloadSnapshotMetric(Set<String> set, Set<String> set2, String str)
+com.amazon.storage.manager.workers.DynoMetricsWorker	method	public final void emitReinstalledAppMetric(String str, String str2)
+com.amazon.storage.manager.workers.DynoMetricsWorker	method	public static void schedule(Context context, boolean z)
+com.amazon.storage.manager.workers.DynoMetricsWorker	method	public void onStopped()
+com.amazon.storage.manager.workers.StorageMonitorWorker	field	public final Context mContext;
+com.amazon.storage.manager.workers.StorageMonitorWorker	field	public static final String TAG;
+com.amazon.storage.manager.workers.StorageMonitorWorker	method	public ListenableWorker.Result doWork()
+com.amazon.storage.manager.workers.StorageMonitorWorker	method	public StorageMonitorWorker(Context context, WorkerParameters workerParameters)
+com.amazon.storage.manager.workers.StorageMonitorWorker	method	public static void cancelStorageMonitor(Context context)
+com.amazon.storage.manager.workers.StorageMonitorWorker	method	public static void scheduleStorageMonitor(Context context)
+com.amazon.storage.utilitylib.SettingsCoreConnectionManager	field	public ISettingsCoreService mService;
+com.amazon.storage.utilitylib.SettingsCoreConnectionManager	field	public ServiceBinder mBinder;
+com.amazon.storage.utilitylib.SettingsCoreConnectionManager	field	public final Context mContext;
+com.amazon.storage.utilitylib.SettingsCoreConnectionManager	field	public final ServiceBinder.Factory mServiceBinderFactory;
+com.amazon.storage.utilitylib.SettingsCoreConnectionManager	field	public final SettingsCoreServiceWrapper mSettingsCoreServiceWrapper;
+com.amazon.storage.utilitylib.SettingsCoreConnectionManager	field	public static final String TAG;
+com.amazon.storage.utilitylib.SettingsCoreConnectionManager	method	public SettingsCoreConnectionManager(Context context)
+com.amazon.storage.utilitylib.SettingsCoreConnectionManager	method	public SettingsCoreServiceWrapper getServiceWrapper()
+com.amazon.storage.utilitylib.SettingsCoreConnectionManager	method	public final Intent createCoreServiceIntent()
+com.amazon.storage.utilitylib.SettingsCoreConnectionManager	method	public final synchronized ISettingsCoreService getServiceBinder() throws SettingsCoreUnavailableException
+com.amazon.storage.utilitylib.SettingsCoreConnectionManager	method	public void closeQuietly()
+com.amazon.storage.utilitylib.SettingsCoreConnectionManager$SettingsCoreServiceWrapper	method	public SettingsCoreServiceWrapper()
+com.amazon.storage.utilitylib.SettingsCoreConnectionManager$SettingsCoreServiceWrapper	method	public void clearAppCache(String str, AppDataObserver appDataObserver) throws SettingsCoreUnavailableException
+com.amazon.storage.utilitylib.SettingsCoreConnectionManager$SettingsCoreServiceWrapper	method	public void uninstallApplicationPackage(String str, UninstallPackageCallback uninstallPackageCallback, boolean z) throws SettingsCoreUnavailableException
+com.amazon.storage.utilitylib.SettingsCoreUnavailableException	method	public SettingsCoreUnavailableException(String str)
+com.amazon.storage.utilitylib.SettingsCoreUnavailableException	method	public SettingsCoreUnavailableException(Throwable th)
+com.amazon.storage.utilitylib.computer.AppSizeInfo	field	public long mCacheSize;
+com.amazon.storage.utilitylib.computer.AppSizeInfo	field	public long mCodeSize;
+com.amazon.storage.utilitylib.computer.AppSizeInfo	field	public long mDataSize;
+com.amazon.storage.utilitylib.computer.AppSizeInfo	field	public long mExternalTotalSize;
+com.amazon.storage.utilitylib.computer.AppSizeInfo	field	public long mTotalSize;
+com.amazon.storage.utilitylib.computer.AppSizeInfo	method	public AppSizeInfo(long j, long j2, long j3, long j4, long j5)
+com.amazon.storage.utilitylib.computer.AppSizeInfo	method	public long getCacheSize()
+com.amazon.storage.utilitylib.computer.AppSizeInfo	method	public long getCodeSize()
+com.amazon.storage.utilitylib.computer.AppSizeInfo	method	public long getTotalSize()
+com.amazon.storage.utilitylib.computer.AppSizeInfo$Builder	field	public long mCacheSize;
+com.amazon.storage.utilitylib.computer.AppSizeInfo$Builder	field	public long mCodeSize;
+com.amazon.storage.utilitylib.computer.AppSizeInfo$Builder	field	public long mDataSize;
+com.amazon.storage.utilitylib.computer.AppSizeInfo$Builder	field	public long mExternalTotalSize;
+com.amazon.storage.utilitylib.computer.AppSizeInfo$Builder	field	public long mTotalSize;
+com.amazon.storage.utilitylib.computer.AppSizeInfo$Builder	method	public AppSizeInfo build()
+com.amazon.storage.utilitylib.computer.AppSizeInfo$Builder	method	public Builder cacheSize(long j)
+com.amazon.storage.utilitylib.computer.AppSizeInfo$Builder	method	public Builder codeSize(long j)
+com.amazon.storage.utilitylib.computer.AppSizeInfo$Builder	method	public Builder dataSize(long j)
+com.amazon.storage.utilitylib.computer.AppSizeInfo$Builder	method	public Builder externalTotalSize(long j)
+com.amazon.storage.utilitylib.computer.AppSizeInfo$Builder	method	public Builder totalSize(long j)
+com.amazon.storage.utilitylib.computer.ApplicationSizeComputerFactory	field	public static ApplicationSizeComputer instance;
+com.amazon.storage.utilitylib.computer.ApplicationSizeComputerFactory	method	public static ApplicationSizeComputer getInstance(Context context)
+com.amazon.storage.utilitylib.computer.ApplicationSizeComputerFactory	method	public static boolean checkSecondaryAsPrimaryExternal(Context context)
+com.amazon.storage.utilitylib.computer.DefaultApplicationSizeComputer	field	public static final String TAG;
+com.amazon.storage.utilitylib.computer.DefaultApplicationSizeComputer	method	public void measureApplications(List<String> list, ApplicationSizeComputer.MeasureAppsSizeCallback measureAppsSizeCallback)
+com.amazon.storage.utilitylib.computer.PackageStatsApplicationSizeComputer	field	public final AppSettings mAppSettings;
+com.amazon.storage.utilitylib.computer.PackageStatsApplicationSizeComputer	field	public final boolean mIsExternalStorageEmulated;
+com.amazon.storage.utilitylib.computer.PackageStatsApplicationSizeComputer	field	public final boolean mIsSecondaryAsPrimaryExternal;
+com.amazon.storage.utilitylib.computer.PackageStatsApplicationSizeComputer	field	public static final String TAG;
+com.amazon.storage.utilitylib.computer.PackageStatsApplicationSizeComputer	method	public PackageStatsApplicationSizeComputer(AppSettings appSettings, boolean z, boolean z2)
+com.amazon.storage.utilitylib.computer.PackageStatsApplicationSizeComputer	method	public final long getCacheSize(PackageStats packageStats)
+com.amazon.storage.utilitylib.computer.PackageStatsApplicationSizeComputer	method	public final long getCodeSize(PackageStats packageStats)
+com.amazon.storage.utilitylib.computer.PackageStatsApplicationSizeComputer	method	public final long getDataSize(PackageStats packageStats)
+com.amazon.storage.utilitylib.computer.PackageStatsApplicationSizeComputer	method	public final long getExternalCodeSize(PackageStats packageStats)
+com.amazon.storage.utilitylib.computer.PackageStatsApplicationSizeComputer	method	public final long getExternalDataSize(PackageStats packageStats)
+com.amazon.storage.utilitylib.computer.PackageStatsApplicationSizeComputer	method	public final long getExternalTotalSize(PackageStats packageStats)
+com.amazon.storage.utilitylib.computer.PackageStatsApplicationSizeComputer	method	public final long getTotalSize(PackageStats packageStats)
+com.amazon.storage.utilitylib.computer.PackageStatsApplicationSizeComputer	method	public final void updateApplicationStatsInfo(String str, PackageStats packageStats, Map<String, AppSizeInfo> map)
+com.amazon.storage.utilitylib.computer.PackageStatsApplicationSizeComputer	method	public void measureApplications(List<String> list, final ApplicationSizeComputer.MeasureAppsSizeCallback measureAppsSizeCallback)
+com.amazon.storage.utilitylib.computer.StorageStatsApplicationSizeComputer	field	public final StorageStatsManager mStorageStatsManager;
+com.amazon.storage.utilitylib.computer.StorageStatsApplicationSizeComputer	field	public static final String TAG;
+com.amazon.storage.utilitylib.computer.StorageStatsApplicationSizeComputer	method	public StorageStatsApplicationSizeComputer(StorageStatsManager storageStatsManager)
+com.amazon.storage.utilitylib.computer.StorageStatsApplicationSizeComputer	method	public final void updateApplicationStatsInfo(String str, StorageStats storageStats, Map<String, AppSizeInfo> map)
+com.amazon.storage.utilitylib.computer.StorageStatsApplicationSizeComputer	method	public void measureApplications(List<String> list, ApplicationSizeComputer.MeasureAppsSizeCallback measureAppsSizeCallback)
+com.amazon.storage.utilitylib.metrics.AbstractMetricEvent	field	public final Context mContext;
+com.amazon.storage.utilitylib.metrics.AbstractMetricEvent	field	public static final String TAG;
+com.amazon.storage.utilitylib.metrics.AbstractMetricEvent	method	public AbstractMetricEvent(AbstractMetricEventBuilder<?, ?> abstractMetricEventBuilder)
+com.amazon.storage.utilitylib.metrics.AbstractMetricEvent	method	public List<Field> getAllFields(@NonNull Class<?> cls)
+com.amazon.storage.utilitylib.metrics.AbstractMetricEvent	method	public List<Predefined> getPredefinedDimensions()
+com.amazon.storage.utilitylib.metrics.AbstractMetricEvent	method	public MetricEvent build()
+com.amazon.storage.utilitylib.metrics.AbstractMetricEvent	method	public final IMetricSchemaInfo getMetricSchemaInfo()
+com.amazon.storage.utilitylib.metrics.AbstractMetricEvent	method	public final Map<String, Object> getCustomDimensions()
+com.amazon.storage.utilitylib.metrics.AbstractMetricEvent	method	public final void checkValidMetricEventClass() throws RuntimeException
+com.amazon.storage.utilitylib.metrics.AbstractMetricEvent$AbstractMetricEventBuilder	field	public Context context;
+com.amazon.storage.utilitylib.metrics.AbstractMetricEvent$AbstractMetricEventBuilder	method	public B context(@NonNull Context context)
+com.amazon.storage.utilitylib.metrics.AbstractMetricEvent$AbstractMetricEventBuilder	method	public String toString()
+com.amazon.storage.utilitylib.metrics.AbstractMetricEvent$AbstractMetricEventBuilder	method	public abstract B self();
+com.amazon.storage.utilitylib.metrics.MinervaMetricRecorder	field	public static final String TAG;
+com.amazon.storage.utilitylib.metrics.MinervaMetricRecorder	field	public static volatile AmazonMinerva sMinervaClient;
+com.amazon.storage.utilitylib.metrics.MinervaMetricRecorder	field	public static volatile ThreadPoolExecutor sThreadPoolExecutor;
+com.amazon.storage.utilitylib.metrics.MinervaMetricRecorder	field	public static volatile boolean sInitialized;
+com.amazon.storage.utilitylib.metrics.MinervaMetricRecorder	method	public static synchronized void initialize(Context context)
+com.amazon.storage.utilitylib.metrics.MinervaMetricRecorder	method	public static void record(Context context, final AbstractMetricEvent abstractMetricEvent)
+com.amazon.storage.utilitylib.utils.ServiceBinder	field	public ComponentName mBoundComponent;
+com.amazon.storage.utilitylib.utils.ServiceBinder	field	public IBinder mRetval;
+com.amazon.storage.utilitylib.utils.ServiceBinder	field	public ServiceConnection mConnection;
+com.amazon.storage.utilitylib.utils.ServiceBinder	field	public final Condition mStateChanged;
+com.amazon.storage.utilitylib.utils.ServiceBinder	field	public final Context mContext;
+com.amazon.storage.utilitylib.utils.ServiceBinder	field	public final Intent mIntent;
+com.amazon.storage.utilitylib.utils.ServiceBinder	field	public final ReentrantLock mLock;
+com.amazon.storage.utilitylib.utils.ServiceBinder	field	public final int mFlags;
+com.amazon.storage.utilitylib.utils.ServiceBinder	field	public static final String TAG;
+com.amazon.storage.utilitylib.utils.ServiceBinder	field	public volatile State mState;
+com.amazon.storage.utilitylib.utils.ServiceBinder	method	public IBinder bind(long j, TimeUnit timeUnit) throws InterruptedException, TimeoutException
+com.amazon.storage.utilitylib.utils.ServiceBinder	method	public ServiceBinder(Context context, Intent intent, int i)
+com.amazon.storage.utilitylib.utils.ServiceBinder	method	public final IBinder unsafeBind(Timeout timeout) throws InterruptedException, TimeoutException
+com.amazon.storage.utilitylib.utils.ServiceBinder	method	public final boolean startBind() throws BindFailedException
+com.amazon.storage.utilitylib.utils.ServiceBinder	method	public final void enforceState(State state, String str)
+com.amazon.storage.utilitylib.utils.ServiceBinder	method	public final void safeUnbind()
+com.amazon.storage.utilitylib.utils.ServiceBinder	method	public final void waitForBind(Timeout timeout) throws InterruptedException, TimeoutException
+com.amazon.storage.utilitylib.utils.ServiceBinder	method	public void unbind()
+com.amazon.storage.utilitylib.utils.ServiceBinder$BindFailedException	method	public BindFailedException()
+com.amazon.storage.utilitylib.utils.ServiceBinder$Factory	method	public ServiceBinder create(Context context, Intent intent, int i)
+com.amazon.storage.utilitylib.utils.ServiceBinder$Timeout	field	public final TimeUnit mTimeoutUnit;
+com.amazon.storage.utilitylib.utils.ServiceBinder$Timeout	field	public final long mStartTimeNanos;
+com.amazon.storage.utilitylib.utils.ServiceBinder$Timeout	field	public final long mTimeoutTime;
+com.amazon.storage.utilitylib.utils.ServiceBinder$Timeout	method	public TimeUnit getTimeoutUnit()
+com.amazon.storage.utilitylib.utils.ServiceBinder$Timeout	method	public Timeout(long j, TimeUnit timeUnit)
+com.amazon.storage.utilitylib.utils.ServiceBinder$Timeout	method	public long getElapsedTime()
+com.amazon.storage.utilitylib.utils.ServiceBinder$Timeout	method	public long getRemainingTime()
+com.amazon.storage.utilitylib.utils.Utils	field	public static final SecureRandom RNG;
+com.amazon.storage.utilitylib.utils.Utils	field	public static final String TAG;
+com.amazon.storage.utilitylib.utils.Utils	method	public Utils()
+com.amazon.storage.utilitylib.utils.Utils	method	public static String getSafeTag(String str)
+com.amazon.storage.utilitylib.utils.Utils	method	public static boolean hasExternalStorageSupport(Context context)
+com.amazon.storage.utilitylib.utils.Utils	method	public static boolean hasLegacyExternalStorageSupport(String str)
+com.amazon.storage.utilitylib.utils.Utils	method	public static int getAppVersionCode(Context context)
+com.amazon.tv.sdk.alberto.personalization.settings.AlbertoServiceProvider	field	public IAlbertoSettingsService mAlbertoSettingsService;
+com.amazon.tv.sdk.alberto.personalization.settings.AlbertoServiceProvider	field	public final AlbertoServiceCallback callback;
+com.amazon.tv.sdk.alberto.personalization.settings.AlbertoServiceProvider	field	public final BinderUtils binderUtils;
+com.amazon.tv.sdk.alberto.personalization.settings.AlbertoServiceProvider	field	public static AlbertoServiceProvider instance;
+com.amazon.tv.sdk.alberto.personalization.settings.AlbertoServiceProvider	field	public volatile CountDownLatch latch;
+com.amazon.tv.sdk.alberto.personalization.settings.AlbertoServiceProvider	method	public static AlbertoServiceProvider getInstance()
+com.amazon.tv.sdk.alberto.personalization.settings.AlbertoServiceProvider	method	public synchronized IAlbertoSettingsService getService() throws RemoteException
+com.amazon.tv.sdk.alberto.personalization.settings.AlbertoServiceProvider$AlbertoServiceCallback	method	public AlbertoServiceCallback()
+com.amazon.tv.sdk.alberto.personalization.settings.AlbertoServiceProvider$AlbertoServiceCallback	method	public void onServiceConnected(String str, IBinder iBinder)
+com.amazon.tv.sdk.alberto.personalization.settings.AlbertoServiceProvider$AlbertoServiceCallback	method	public void onServiceFailed(String str, String str2)
+com.amazon.tv.sdk.alberto.personalization.settings.ContentPersonalizationSettings	field	public final AlbertoServiceProvider mAlbertoServiceProvider;
+com.amazon.tv.sdk.alberto.personalization.settings.ContentPersonalizationSettings	method	public ContentPersonalizationSettings(AlbertoServiceProvider albertoServiceProvider)
+com.amazon.tv.sdk.alberto.personalization.settings.ContentPersonalizationSettings	method	public List<String> getAllowlistedProviders()
+com.amazon.tv.sdk.alberto.personalization.settings.ContentPersonalizationSettings	method	public final <T> T callAlbertoWithResult(String str, AlbertoSettingsFunction<T> albertoSettingsFunction, T t)
+com.amazon.tv.sdk.alberto.personalization.settings.ContentPersonalizationSettings	method	public static ContentPersonalizationSettings getInstance()
+com.amazon.tv.sdk.alberto.personalization.settings.ContentPersonalizationSettings$LoadContentPersonalizationSettings	field	public static final ContentPersonalizationSettings INSTANCE;
+com.amazon.tv.sdk.alberto.personalization.settings.IAlbertoSettingsService$Stub	method	public static IAlbertoSettingsService asInterface(IBinder iBinder)
+com.amazon.tv.sdk.alberto.personalization.settings.IAlbertoSettingsService$Stub	method	public static IAlbertoSettingsService getDefaultImpl()
+com.amazon.tv.sdk.alberto.personalization.settings.IAlbertoSettingsService$Stub$Proxy	field	public IBinder mRemote;
+com.amazon.tv.sdk.alberto.personalization.settings.IAlbertoSettingsService$Stub$Proxy	field	public static IAlbertoSettingsService sDefaultImpl;
+com.amazon.tv.sdk.alberto.personalization.settings.IAlbertoSettingsService$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.tv.sdk.alberto.personalization.settings.IAlbertoSettingsService$Stub$Proxy	method	public List<String> getAllowlistedProviders() throws RemoteException
+com.amazon.tv.sdk.alberto.personalization.settings.IAlbertoSettingsService$Stub$Proxy	method	public Proxy(IBinder iBinder)
+com.amazon.tv.sdk.alberto.personalization.settings.utils.LogUtils	method	public static void configureLogging()
+com.amazon.tv.settings.core.AppDataObserver$Stub	method	public IBinder asBinder()
+com.amazon.tv.settings.core.AppDataObserver$Stub	method	public Stub()
+com.amazon.tv.settings.core.AppDataObserver$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.tv.settings.core.ISettingsCoreService$Stub	method	public static ISettingsCoreService asInterface(IBinder iBinder)
+com.amazon.tv.settings.core.ISettingsCoreService$Stub	method	public static ISettingsCoreService getDefaultImpl()
+com.amazon.tv.settings.core.ISettingsCoreService$Stub$Proxy	field	public IBinder mRemote;
+com.amazon.tv.settings.core.ISettingsCoreService$Stub$Proxy	field	public static ISettingsCoreService sDefaultImpl;
+com.amazon.tv.settings.core.ISettingsCoreService$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.tv.settings.core.ISettingsCoreService$Stub$Proxy	method	public Proxy(IBinder iBinder)
+com.amazon.tv.settings.core.ISettingsCoreService$Stub$Proxy	method	public void clearApplicationCache(String str, AppDataObserver appDataObserver) throws RemoteException
+com.amazon.tv.settings.core.ISettingsCoreService$Stub$Proxy	method	public void uninstallApplicationPackage(String str, UninstallPackageCallback uninstallPackageCallback, boolean z) throws RemoteException
+com.amazon.tv.settings.core.UninstallPackageCallback$Stub	method	public IBinder asBinder()
+com.amazon.tv.settings.core.UninstallPackageCallback$Stub	method	public Stub()
+com.amazon.tv.settings.core.UninstallPackageCallback$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.weblab.mobile.MobileWeblabClientFactory	field	public static DRCSWeblabClientConfig sInitializedConfig;
+com.amazon.weblab.mobile.MobileWeblabClientFactory	field	public static HashMap<String, WeakReference<IMobileWeblabClient>> sClients;
+com.amazon.weblab.mobile.MobileWeblabClientFactory	field	public static volatile IWeblabDRCSClient sDrcsClient;
+com.amazon.weblab.mobile.MobileWeblabClientFactory	method	public static synchronized IMobileWeblabClient createMobileWeblabClient(MobileWeblabClientAttributes mobileWeblabClientAttributes, MobileWeblabRuntimeConfiguration mobileWeblabRuntimeConfiguration, String str, String str2, String str3, Context context) throws IllegalArgumentException
+com.amazon.weblab.mobile.MobileWeblabClientFactory	method	public static synchronized void initDRCSIfNeeded(MobileWeblabClientAttributes mobileWeblabClientAttributes)
+com.amazon.weblab.mobile.MobileWeblabTreatmentAndTriggerResult	field	public Future<MobileWeblabTriggerResult> mFuture;
+com.amazon.weblab.mobile.MobileWeblabTreatmentAndTriggerResult	field	public String mTreatment;
+com.amazon.weblab.mobile.MobileWeblabTreatmentAndTriggerResult	method	public MobileWeblabTreatmentAndTriggerResult(String str, Future<MobileWeblabTriggerResult> future) throws IllegalArgumentException
+com.amazon.weblab.mobile.MobileWeblabTreatmentAndTriggerResult	method	public String getTreatment()
+com.amazon.weblab.mobile.TooManyRegisteredWeblabsException	method	public TooManyRegisteredWeblabsException(String str)
+com.amazon.weblab.mobile.WeblabClientDRCS	field	public final AtomicLong mCacheEpoch;
+com.amazon.weblab.mobile.WeblabClientDRCS	field	public final ConcurrentHashMap<String, TreatmentWithoutRecordTriggerResult> mTriggerTokenCache;
+com.amazon.weblab.mobile.WeblabClientDRCS	field	public final CustomerInfo mCustomerInfo;
+com.amazon.weblab.mobile.WeblabClientDRCS	field	public final IMobileWeblabClientAttributes mClientAttributes;
+com.amazon.weblab.mobile.WeblabClientDRCS	field	public final IMobileWeblabRuntimeConfiguration mConfiguration;
+com.amazon.weblab.mobile.WeblabClientDRCS	field	public final IWeblabDRCSClient mDrcsClient;
+com.amazon.weblab.mobile.WeblabClientDRCS	field	public final ReentrantReadWriteLock mReadWriteLock;
+com.amazon.weblab.mobile.WeblabClientDRCS	field	public static final Future<Boolean> FUTURE_TRUE;
+com.amazon.weblab.mobile.WeblabClientDRCS	field	public static final String TAG;
+com.amazon.weblab.mobile.WeblabClientDRCS	field	public volatile String mMarketplaceId;
+com.amazon.weblab.mobile.WeblabClientDRCS	field	public volatile String mSessionId;
+com.amazon.weblab.mobile.WeblabClientDRCS	method	public IMobileWeblab getWeblab(String str) throws IllegalStateException, IllegalArgumentException
+com.amazon.weblab.mobile.WeblabClientDRCS	method	public WeblabClientDRCS(IMobileWeblabClientAttributes iMobileWeblabClientAttributes, IMobileWeblabRuntimeConfiguration iMobileWeblabRuntimeConfiguration, String str, String str2, String str3, IWeblabDRCSClient iWeblabDRCSClient)
+com.amazon.weblab.mobile.WeblabClientDRCS	method	public boolean update() throws MobileWeblabException
+com.amazon.weblab.mobile.WeblabClientDRCS	method	public static WeblabDomain drcsDomainFor(MobileWeblabDomain mobileWeblabDomain)
+com.amazon.weblab.mobile.WeblabClientDRCS	method	public void setDirectedId(String str)
+com.amazon.weblab.mobile.WeblabDRCS	field	public final AtomicLong mCacheEpochRef;
+com.amazon.weblab.mobile.WeblabDRCS	field	public final ConcurrentHashMap<String, TreatmentWithoutRecordTriggerResult> mTriggerTokenCache;
+com.amazon.weblab.mobile.WeblabDRCS	field	public final IWeblabDRCSClient mDrcsClient;
+com.amazon.weblab.mobile.WeblabDRCS	field	public final String mDefaultTreatment;
+com.amazon.weblab.mobile.WeblabDRCS	field	public final String mDirectedId;
+com.amazon.weblab.mobile.WeblabDRCS	field	public final String mMarketplaceId;
+com.amazon.weblab.mobile.WeblabDRCS	field	public final String mSessionId;
+com.amazon.weblab.mobile.WeblabDRCS	field	public final String mWeblabName;
+com.amazon.weblab.mobile.WeblabDRCS	field	public final long mSnapshotEpoch;
+com.amazon.weblab.mobile.WeblabDRCS	field	public static final String TAG;
+com.amazon.weblab.mobile.WeblabDRCS	method	public IMobileWeblabTreatmentAndTriggerResult getTreatmentAndRecordTrigger() throws RejectedExecutionException
+com.amazon.weblab.mobile.WeblabDRCS	method	public WeblabDRCS(String str, String str2, IWeblabDRCSClient iWeblabDRCSClient, String str3, String str4, String str5, ConcurrentHashMap<String, TreatmentWithoutRecordTriggerResult> concurrentHashMap, long j, AtomicLong atomicLong)
+com.amazon.weblab.mobile.experimental.PlatformWeblabs	field	public String mDefaultTreatment;
+com.amazon.weblab.mobile.experimental.PlatformWeblabs	field	public String mWeblabName;
+com.amazon.weblab.mobile.experimental.PlatformWeblabs	field	public final boolean mUpdateOnlyOnce;
+com.amazon.weblab.mobile.experimental.PlatformWeblabs	field	public static final Set<String> mWeblabNames;
+com.amazon.weblab.mobile.experimental.PlatformWeblabs	method	public String getWeblabName()
+com.amazon.weblab.mobile.experimental.PlatformWeblabs	method	public static boolean contains(String str)
+com.amazon.weblab.mobile.model.CustomerInfo	field	public volatile String mDirectedId;
+com.amazon.weblab.mobile.model.CustomerInfo	method	public CustomerInfo(String str)
+com.amazon.weblab.mobile.model.CustomerInfo	method	public String getDirectedId()
+com.amazon.weblab.mobile.model.CustomerInfo	method	public boolean equals(Object obj)
+com.amazon.weblab.mobile.model.CustomerInfo	method	public int hashCode()
+com.amazon.weblab.mobile.model.CustomerInfo	method	public void setDirectedId(String str)
+com.amazon.weblab.mobile.service.MobileWeblabDomain	field	public String domainValue;
+com.amazon.weblab.mobile.settings.Interval	field	public long durationInMillis;
+com.amazon.weblab.mobile.settings.Interval	method	public Interval(long j, TimeUnit timeUnit)
+com.amazon.weblab.mobile.settings.Interval	method	public String toString()
+com.amazon.weblab.mobile.settings.Interval	method	public String toString(TimeUnit timeUnit)
+com.amazon.weblab.mobile.settings.Interval	method	public boolean equals(Object obj)
+com.amazon.weblab.mobile.settings.Interval	method	public int hashCode()
+com.amazon.weblab.mobile.settings.Interval	method	public long convertTo(TimeUnit timeUnit)
+com.amazon.weblab.mobile.settings.MobileWeblabClientAttributes	field	public MobileWeblabDomain mWeblabDomain;
+com.amazon.weblab.mobile.settings.MobileWeblabClientAttributes	field	public MobileWeblabOS mOsName;
+com.amazon.weblab.mobile.settings.MobileWeblabClientAttributes	field	public String mAppName;
+com.amazon.weblab.mobile.settings.MobileWeblabClientAttributes	field	public String mAppVersion;
+com.amazon.weblab.mobile.settings.MobileWeblabClientAttributes	field	public String mIdentifier;
+com.amazon.weblab.mobile.settings.MobileWeblabClientAttributes	field	public String mOsVersion;
+com.amazon.weblab.mobile.settings.MobileWeblabClientAttributes	field	public final AtomicInteger mCustomWeblabsCount;
+com.amazon.weblab.mobile.settings.MobileWeblabClientAttributes	field	public final Map<String, String> mClientAttr;
+com.amazon.weblab.mobile.settings.MobileWeblabClientAttributes	field	public final Map<String, String> mWeblabs;
+com.amazon.weblab.mobile.settings.MobileWeblabClientAttributes	field	public static final Pattern VERSION_REGEX_PATTERN;
+com.amazon.weblab.mobile.settings.MobileWeblabClientAttributes	method	public MobileWeblabClientAttributes(String str, String str2, String str3, MobileWeblabOS mobileWeblabOS, String str4, MobileWeblabDomain mobileWeblabDomain)
+com.amazon.weblab.mobile.settings.MobileWeblabClientAttributes	method	public MobileWeblabDomain getDomain()
+com.amazon.weblab.mobile.settings.MobileWeblabClientAttributes	method	public String getApplicationVersion()
+com.amazon.weblab.mobile.settings.MobileWeblabClientAttributes	method	public String getIdentifier()
+com.amazon.weblab.mobile.settings.MobileWeblabClientAttributes	method	public String getWeblabTreatment(String str)
+com.amazon.weblab.mobile.settings.MobileWeblabClientAttributes	method	public boolean equals(Object obj)
+com.amazon.weblab.mobile.settings.MobileWeblabClientAttributes	method	public boolean hasWeblab(String str)
+com.amazon.weblab.mobile.settings.MobileWeblabClientAttributes	method	public final boolean validateVersion(String str)
+com.amazon.weblab.mobile.settings.MobileWeblabClientAttributes	method	public final void setApplicationName(String str) throws IllegalArgumentException
+com.amazon.weblab.mobile.settings.MobileWeblabClientAttributes	method	public final void setApplicationVersion(String str) throws IllegalArgumentException
+com.amazon.weblab.mobile.settings.MobileWeblabClientAttributes	method	public final void setIdentifier(String str)
+com.amazon.weblab.mobile.settings.MobileWeblabClientAttributes	method	public final void setOSName(MobileWeblabOS mobileWeblabOS) throws IllegalArgumentException
+com.amazon.weblab.mobile.settings.MobileWeblabClientAttributes	method	public final void setOSVersion(String str) throws IllegalArgumentException
+com.amazon.weblab.mobile.settings.MobileWeblabClientAttributes	method	public int hashCode()
+com.amazon.weblab.mobile.settings.MobileWeblabClientAttributes	method	public void addWeblab(String str, String str2) throws TooManyRegisteredWeblabsException, IllegalArgumentException
+com.amazon.weblab.mobile.settings.MobileWeblabOS	field	public final String value;
+com.amazon.weblab.mobile.settings.MobileWeblabOS	method	public String toString()
+com.amazon.weblab.mobile.settings.MobileWeblabRuntimeConfiguration	field	public Interval mTtl;
+com.amazon.weblab.mobile.settings.MobileWeblabRuntimeConfiguration	field	public MobileWeblabCachePolicyType mUpdatePolicy;
+com.amazon.weblab.mobile.settings.MobileWeblabRuntimeConfiguration	field	public MobileWeblabServiceEndpoint mEndpoint;
+com.amazon.weblab.mobile.settings.MobileWeblabRuntimeConfiguration	field	public RepositoryType mRepositoryType;
+com.amazon.weblab.mobile.settings.MobileWeblabRuntimeConfiguration	field	public String mDirectory;
+com.amazon.weblab.mobile.settings.MobileWeblabRuntimeConfiguration	field	public boolean mCleanUpAtInit;
+com.amazon.weblab.mobile.settings.MobileWeblabRuntimeConfiguration	field	public boolean mDeferRustCoreInit;
+com.amazon.weblab.mobile.settings.MobileWeblabRuntimeConfiguration	field	public boolean mLoadCacheAtInit;
+com.amazon.weblab.mobile.settings.MobileWeblabRuntimeConfiguration	field	public boolean mUpdateAtInit;
+com.amazon.weblab.mobile.settings.MobileWeblabRuntimeConfiguration	field	public int mMaxDegree;
+com.amazon.weblab.mobile.settings.MobileWeblabRuntimeConfiguration	field	public int mRetries;
+com.amazon.weblab.mobile.settings.MobileWeblabRuntimeConfiguration	field	public static final Interval DEFAULT_TTL;
+com.amazon.weblab.mobile.settings.MobileWeblabRuntimeConfiguration	field	public static final MobileWeblabCachePolicyType DEFAULT_CACHE_POLICY;
+com.amazon.weblab.mobile.settings.MobileWeblabRuntimeConfiguration	field	public static final MobileWeblabServiceEndpoint DEFAULT_ENDPOINT;
+com.amazon.weblab.mobile.settings.MobileWeblabRuntimeConfiguration	field	public static final RepositoryType DEFAULT_REPOSITORY_TYPE;
+com.amazon.weblab.mobile.settings.MobileWeblabRuntimeConfiguration	method	public MobileWeblabRuntimeConfiguration(Interval interval, int i, int i2, MobileWeblabCachePolicyType mobileWeblabCachePolicyType, MobileWeblabServiceEndpoint mobileWeblabServiceEndpoint, boolean z, boolean z2, RepositoryType repositoryType, String str, boolean z3, boolean z4)
+com.amazon.weblab.mobile.settings.MobileWeblabRuntimeConfiguration	method	public MobileWeblabRuntimeConfiguration(String str)
+com.amazon.weblab.mobile.settings.MobileWeblabRuntimeConfiguration	method	public boolean equals(Object obj)
+com.amazon.weblab.mobile.settings.MobileWeblabRuntimeConfiguration	method	public int hashCode()
+com.amazon.weblab.mobile.settings.MobileWeblabRuntimeConfiguration	method	public void setDirectory(String str) throws IllegalArgumentException
+com.amazon.weblab.mobile.settings.MobileWeblabRuntimeConfiguration	method	public void setUpdateAtInitEnabled(boolean z)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	public final ArcusThrottler mThrottler;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	public final Attributes mAttributes;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	public final ConfigurationDb mConfigurationDb;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	public final RemoteConfigurationFetcher mRemoteConfigurationFetcher;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	public final SharedPreferences mSharedPreferences;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	public final String mAppConfigId;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	public int mLastSuccessfulSyncAttributeHash;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	public static final String TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public Configuration openConfiguration()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public RemoteConfigurationManager(Builder builder)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public RemoteConfigurationManager(Context context, String str, JSONObject jSONObject, ConfigurationDb configurationDb, String str2, boolean z)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public RemoteConfigurationManager(Context context, String str, JSONObject jSONObject, boolean z)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public final RemoteConfiguration getAndValidateConfiguration()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public final String getOrGenerateLocalConfigurationInstanceId()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public final String getPreferencesFileNameForAppConfig()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public final synchronized void syncOnCurrentThread(RemoteConfiguration remoteConfiguration, ConfigurationSyncCallback configurationSyncCallback)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public final void setLocalConfigurationInstanceId(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public final void validateAndSyncOnNewThread(final ConfigurationSyncCallback configurationSyncCallback)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public static Builder forAppId(Context context, String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public static void verifyAppConfigId(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public void sync(ConfigurationSyncCallback configurationSyncCallback)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	field	public JSONObject mDefaultConfiguration;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	field	public boolean mCustomContext;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	field	public final Context mContext;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	field	public final String mAppConfigId;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	field	public static final ConcurrentHashMap<String, RemoteConfigurationManager> MANAGERS;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	method	public Builder withDefaultConfiguration(JSONObject jSONObject)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	method	public Builder(Context context, String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	method	public RemoteConfigurationManager createOrGet()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	method	public void ensureBuilderReady()
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.ConfigurationNotFoundException	method	public ConfigurationNotFoundException(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.MalformedAppConfigIdException	method	public MalformedAppConfigIdException(String str, Throwable th)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.NetworkException	method	public NetworkException(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.NetworkException	method	public NetworkException(String str, Throwable th)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.RemoteConfigurationException	method	public RemoteConfigurationException(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.RemoteConfigurationException	method	public RemoteConfigurationException(String str, Throwable th)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	public int mCause;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	public int mSyncAttempts;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	public long mNextSyncAttemptTime;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public boolean isSyncAllowedRightNow()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public int getCause()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public long getCurrentWindowSizeInMS()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public long getRandomTimeInsideCurrentWindowInMS()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public long getTimeToNextSyncInMS()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public void updateSyncTimeAfterFailure()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public void updateSyncTimeAfterSuccess()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	field	public final String account;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	field	public final String id;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	field	public final String region;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	field	public final String type;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	field	public final String vendor;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public Arn(String str, String str2, String str3, String str4, String str5)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public static Arn fromArn(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	public final ConcurrentMap<String, Object> mCustomAttributes;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	public final Integer mPackageVersion;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	public final String mPackageName;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	public static final String TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public AttributesImpl(Context context)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public AttributesImpl(String str, Integer num, Map<String, Object> map)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public Integer getPackageVersionCode()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public Integer getPackageVersionCode(Context context)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public String getCountry()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public String getLanguage()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public String getPackageName()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public String getPlatform()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public boolean equals(Object obj)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public final void addStandardAttributesTo(Map<String, Object> map)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public int hashCode()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public static boolean nullSafeEquals(Object obj, Object obj2)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public static int nullSafeHash(Object obj)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public synchronized AttributesImpl m3clone()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public synchronized Map<String, Object> getAllAttributes()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	public SQLiteDatabase mDatabase;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	public final AtomicInteger openCounter;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	public final DBHelper dbHelper;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	public static final Map<String, ConfigurationDb> INSTANCE_MAP;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	public static final String TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	public static final String[] PROJECTION_CONFIGURATION;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	public static final String[] PROJECTION_REMOTE_CONFIGURATION;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public ConfigurationDb(DBHelper dBHelper)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public final Configuration configurationFromCursor(Cursor cursor)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public final ContentValues getContentValues(String str, Integer num, Long l, String str2)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public final RemoteConfiguration remoteConfigurationFromCursor(Cursor cursor, String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public final boolean hasConfiguration(SQLiteDatabase sQLiteDatabase)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public final synchronized void closeDatabase()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public final void saveConfigurationPrivate(SQLiteDatabase sQLiteDatabase, String str, int i, Long l, String str2)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public static ConfigurationDb getOrCreateInstance(Context context, String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public synchronized Configuration readConfiguration() throws ConfigurationNotFoundException
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public synchronized RemoteConfiguration readRemoteConfiguration(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public synchronized SQLiteDatabase openDatabase()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public synchronized void deleteConfiguration()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public synchronized void saveConfiguration(String str, int i, Long l, String str2)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public void saveConfiguration(RemoteConfiguration remoteConfiguration)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	field	public final File mDbFile;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public DBHelper(Context context, String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public final void setupDb(SQLiteDatabase sQLiteDatabase)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public static String getDbFileNameFor(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public void onCreate(SQLiteDatabase sQLiteDatabase)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public void onDowngrade(SQLiteDatabase sQLiteDatabase, int i, int i2)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public void onOpen(SQLiteDatabase sQLiteDatabase)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public void onUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i2)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	field	public final Date timestamp;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	field	public final String json;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	method	public ConfigurationImpl(String str, Date date)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	method	public Date getTimestamp()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	method	public String getAsJsonString()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.Checks	method	public static void checkArgument(boolean z, String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.Checks	method	public static void checkNotNull(Object obj, String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper	field	public static final String TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper	field	public static final char[] HEX_ARRAY;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper	method	public static String convertBytesToHexString(byte[] bArr)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper	method	public static String generateLocalConfigInstanceId(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	field	public final Configuration mConfiguration;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	field	public final String mAppConfigurationId;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	field	public final String mEntityTag;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	field	public final boolean mUpdate;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	field	public final int mOrigin;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public Configuration getConfiguration()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public RemoteConfigurationImpl(Configuration configuration, String str, int i, String str2, boolean z)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public String getAppConfigurationId()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public String getEntityTag()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public boolean isUpdate()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public int getOrigin()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	public final Context mContext;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	public final URL mEndpoint;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	public AndroidRemoteConfigurationFetcher(Context context, URL url)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	public RemoteConfiguration buildRemoteConfiguration(String str, JSONObject jSONObject)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	public RemoteConfiguration fetch(String str, Attributes attributes, String str2, String str3) throws Throwable
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	public byte[] buildRequestBody(String str, Attributes attributes, String str2, String str3)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	public void setHeaders(HttpURLConnection httpURLConnection)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.NetworkCommonUtils	field	public static final Pattern ARCUS_CLIENT_VERSION_PATTERN;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.NetworkCommonUtils	method	public static InputStream getInputStreamFromConnection(HttpURLConnection httpURLConnection) throws IOException
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.NetworkCommonUtils	method	public static JSONObject readResponse(HttpURLConnection httpURLConnection)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.NetworkCommonUtils	method	public static String getArcusUserAgent()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.NetworkCommonUtils	method	public static boolean isNetworkAvailable(Context context)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.NetworkCommonUtils	method	public static void closeErrorStreamFromConnection(HttpURLConnection httpURLConnection)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.NetworkCommonUtils	method	public static void configureConnection(HttpURLConnection httpURLConnection)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.NetworkCommonUtils	method	public static void writeRequest(HttpURLConnection httpURLConnection, byte[] bArr)

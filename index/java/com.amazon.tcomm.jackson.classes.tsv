@@ -1,0 +1,1022 @@
+kind	class	extends	implements
+@interface	com.amazon.com.fasterxml.jackson.annotation.JacksonAnnotation		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JacksonAnnotationsInside		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JacksonInject		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonAnyGetter		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonAnySetter		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonAutoDetect		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonBackReference		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonClassDescription		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonCreator		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonEnumDefaultValue		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonFilter		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonFormat		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonGetter		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonIdentityInfo		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonIdentityReference		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonIgnore		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonIgnoreProperties		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonIgnoreType		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonInclude		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonManagedReference		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonProperty		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonPropertyDescription		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonPropertyOrder		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonRawValue		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonRootName		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonSetter		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonSubTypes		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonSubTypes$Type		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonTypeId		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonTypeInfo		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonTypeName		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonUnwrapped		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonValue		
+@interface	com.amazon.com.fasterxml.jackson.annotation.JsonView		
+@interface	com.amazon.com.fasterxml.jackson.databind.annotation.JacksonStdImpl		
+@interface	com.amazon.com.fasterxml.jackson.databind.annotation.JsonAppend		
+@interface	com.amazon.com.fasterxml.jackson.databind.annotation.JsonAppend$Attr		
+@interface	com.amazon.com.fasterxml.jackson.databind.annotation.JsonAppend$Prop		
+@interface	com.amazon.com.fasterxml.jackson.databind.annotation.JsonDeserialize		
+@interface	com.amazon.com.fasterxml.jackson.databind.annotation.JsonNaming		
+@interface	com.amazon.com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder		
+@interface	com.amazon.com.fasterxml.jackson.databind.annotation.JsonSerialize		
+@interface	com.amazon.com.fasterxml.jackson.databind.annotation.JsonTypeIdResolver		
+@interface	com.amazon.com.fasterxml.jackson.databind.annotation.JsonTypeResolver		
+@interface	com.amazon.com.fasterxml.jackson.databind.annotation.JsonValueInstantiator		
+@interface	com.amazon.com.fasterxml.jackson.databind.jsonschema.JsonSerializableSchema		
+class	com.amazon.com.fasterxml.jackson.annotation.JsonFormat$Features		
+class	com.amazon.com.fasterxml.jackson.annotation.JsonFormat$Value		JacksonAnnotationValue<JsonFormat>,Serializable
+class	com.amazon.com.fasterxml.jackson.annotation.JsonIgnoreProperties$Value		JacksonAnnotationValue<JsonIgnoreProperties>,Serializable
+class	com.amazon.com.fasterxml.jackson.annotation.JsonInclude$Value		JacksonAnnotationValue<JsonInclude>,Serializable
+class	com.amazon.com.fasterxml.jackson.annotation.JsonTypeInfo$None		
+class	com.amazon.com.fasterxml.jackson.annotation.ObjectIdGenerator		Serializable
+class	com.amazon.com.fasterxml.jackson.annotation.ObjectIdGenerator$IdKey		Serializable
+class	com.amazon.com.fasterxml.jackson.annotation.ObjectIdGenerators		
+class	com.amazon.com.fasterxml.jackson.annotation.ObjectIdGenerators$Base	ObjectIdGenerator<T>	
+class	com.amazon.com.fasterxml.jackson.annotation.ObjectIdGenerators$IntSequenceGenerator	Base<Integer>	
+class	com.amazon.com.fasterxml.jackson.annotation.ObjectIdGenerators$None	ObjectIdGenerator<Object>	
+class	com.amazon.com.fasterxml.jackson.annotation.ObjectIdGenerators$PropertyGenerator	Base<Object>	
+class	com.amazon.com.fasterxml.jackson.annotation.ObjectIdGenerators$StringIdGenerator	Base<String>	
+class	com.amazon.com.fasterxml.jackson.annotation.ObjectIdGenerators$UUIDGenerator	Base<UUID>	
+class	com.amazon.com.fasterxml.jackson.annotation.SimpleObjectIdResolver		ObjectIdResolver
+class	com.amazon.com.fasterxml.jackson.core.Base64Variant		Serializable
+class	com.amazon.com.fasterxml.jackson.core.Base64Variants		
+class	com.amazon.com.fasterxml.jackson.core.JsonFactory		Versioned,Serializable
+class	com.amazon.com.fasterxml.jackson.core.JsonGenerationException	JsonProcessingException	
+class	com.amazon.com.fasterxml.jackson.core.JsonGenerator		Closeable,Flushable,Versioned
+class	com.amazon.com.fasterxml.jackson.core.JsonLocation		Serializable
+class	com.amazon.com.fasterxml.jackson.core.JsonParseException	JsonProcessingException	
+class	com.amazon.com.fasterxml.jackson.core.JsonParser		Closeable,Versioned
+class	com.amazon.com.fasterxml.jackson.core.JsonPointer		
+class	com.amazon.com.fasterxml.jackson.core.JsonProcessingException	IOException	
+class	com.amazon.com.fasterxml.jackson.core.JsonStreamContext		
+class	com.amazon.com.fasterxml.jackson.core.JsonpCharacterEscapes	CharacterEscapes	
+class	com.amazon.com.fasterxml.jackson.core.ObjectCodec	TreeCodec	Versioned
+class	com.amazon.com.fasterxml.jackson.core.TreeCodec		
+class	com.amazon.com.fasterxml.jackson.core.Version		Comparable<Version>,Serializable
+class	com.amazon.com.fasterxml.jackson.core.base.GeneratorBase	JsonGenerator	
+class	com.amazon.com.fasterxml.jackson.core.base.ParserBase	ParserMinimalBase	
+class	com.amazon.com.fasterxml.jackson.core.base.ParserMinimalBase	JsonParser	
+class	com.amazon.com.fasterxml.jackson.core.filter.FilteringGeneratorDelegate	JsonGeneratorDelegate	
+class	com.amazon.com.fasterxml.jackson.core.filter.FilteringParserDelegate	JsonParserDelegate	
+class	com.amazon.com.fasterxml.jackson.core.filter.JsonPointerBasedFilter	TokenFilter	
+class	com.amazon.com.fasterxml.jackson.core.filter.TokenFilter		
+class	com.amazon.com.fasterxml.jackson.core.filter.TokenFilterContext	JsonStreamContext	
+class	com.amazon.com.fasterxml.jackson.core.format.DataFormatDetector		
+class	com.amazon.com.fasterxml.jackson.core.format.DataFormatMatcher		
+class	com.amazon.com.fasterxml.jackson.core.format.InputAccessor$Std		InputAccessor
+class	com.amazon.com.fasterxml.jackson.core.io.CharTypes		
+class	com.amazon.com.fasterxml.jackson.core.io.CharacterEscapes		Serializable
+class	com.amazon.com.fasterxml.jackson.core.io.DataOutputAsStream	OutputStream	
+class	com.amazon.com.fasterxml.jackson.core.io.IOContext		
+class	com.amazon.com.fasterxml.jackson.core.io.InputDecorator		Serializable
+class	com.amazon.com.fasterxml.jackson.core.io.JsonEOFException	JsonParseException	
+class	com.amazon.com.fasterxml.jackson.core.io.JsonStringEncoder		
+class	com.amazon.com.fasterxml.jackson.core.io.MergedStream	InputStream	
+class	com.amazon.com.fasterxml.jackson.core.io.NumberInput		
+class	com.amazon.com.fasterxml.jackson.core.io.NumberOutput		
+class	com.amazon.com.fasterxml.jackson.core.io.OutputDecorator		Serializable
+class	com.amazon.com.fasterxml.jackson.core.io.SegmentedStringWriter	Writer	
+class	com.amazon.com.fasterxml.jackson.core.io.SerializedString		SerializableString,Serializable
+class	com.amazon.com.fasterxml.jackson.core.io.UTF32Reader	Reader	
+class	com.amazon.com.fasterxml.jackson.core.io.UTF8Writer	Writer	
+class	com.amazon.com.fasterxml.jackson.core.json.ByteSourceJsonBootstrapper		
+class	com.amazon.com.fasterxml.jackson.core.json.DupDetector		
+class	com.amazon.com.fasterxml.jackson.core.json.JsonGeneratorImpl	GeneratorBase	
+class	com.amazon.com.fasterxml.jackson.core.json.JsonReadContext	JsonStreamContext	
+class	com.amazon.com.fasterxml.jackson.core.json.JsonWriteContext	JsonStreamContext	
+class	com.amazon.com.fasterxml.jackson.core.json.PackageVersion		Versioned
+class	com.amazon.com.fasterxml.jackson.core.json.ReaderBasedJsonParser	ParserBase	
+class	com.amazon.com.fasterxml.jackson.core.json.UTF8DataInputJsonParser	ParserBase	
+class	com.amazon.com.fasterxml.jackson.core.json.UTF8JsonGenerator	JsonGeneratorImpl	
+class	com.amazon.com.fasterxml.jackson.core.json.UTF8StreamJsonParser	ParserBase	
+class	com.amazon.com.fasterxml.jackson.core.json.WriterBasedJsonGenerator	JsonGeneratorImpl	
+class	com.amazon.com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer		
+class	com.amazon.com.fasterxml.jackson.core.sym.ByteQuadsCanonicalizer$TableInfo		
+class	com.amazon.com.fasterxml.jackson.core.sym.CharsToNameCanonicalizer		
+class	com.amazon.com.fasterxml.jackson.core.sym.CharsToNameCanonicalizer$Bucket		
+class	com.amazon.com.fasterxml.jackson.core.sym.CharsToNameCanonicalizer$TableInfo		
+class	com.amazon.com.fasterxml.jackson.core.sym.Name		
+class	com.amazon.com.fasterxml.jackson.core.sym.Name1	Name	
+class	com.amazon.com.fasterxml.jackson.core.sym.Name2	Name	
+class	com.amazon.com.fasterxml.jackson.core.sym.Name3	Name	
+class	com.amazon.com.fasterxml.jackson.core.sym.NameN	Name	
+class	com.amazon.com.fasterxml.jackson.core.type.ResolvedType		
+class	com.amazon.com.fasterxml.jackson.core.type.TypeReference		Comparable<TypeReference<T>>
+class	com.amazon.com.fasterxml.jackson.core.util.BufferRecycler		
+class	com.amazon.com.fasterxml.jackson.core.util.ByteArrayBuilder	OutputStream	
+class	com.amazon.com.fasterxml.jackson.core.util.DefaultIndenter	DefaultPrettyPrinter.NopIndenter	
+class	com.amazon.com.fasterxml.jackson.core.util.DefaultPrettyPrinter		PrettyPrinter,Instantiatable<DefaultPrettyPrinter>,Serializable
+class	com.amazon.com.fasterxml.jackson.core.util.DefaultPrettyPrinter$FixedSpaceIndenter	NopIndenter	
+class	com.amazon.com.fasterxml.jackson.core.util.DefaultPrettyPrinter$NopIndenter		Indenter,Serializable
+class	com.amazon.com.fasterxml.jackson.core.util.InternCache	ConcurrentHashMap<String, String>	
+class	com.amazon.com.fasterxml.jackson.core.util.JsonGeneratorDelegate	JsonGenerator	
+class	com.amazon.com.fasterxml.jackson.core.util.JsonParserDelegate	JsonParser	
+class	com.amazon.com.fasterxml.jackson.core.util.JsonParserSequence	JsonParserDelegate	
+class	com.amazon.com.fasterxml.jackson.core.util.MinimalPrettyPrinter		PrettyPrinter,Serializable
+class	com.amazon.com.fasterxml.jackson.core.util.RequestPayload		Serializable
+class	com.amazon.com.fasterxml.jackson.core.util.TextBuffer		
+class	com.amazon.com.fasterxml.jackson.core.util.VersionUtil		
+class	com.amazon.com.fasterxml.jackson.databind.AbstractTypeResolver		
+class	com.amazon.com.fasterxml.jackson.databind.AnnotationIntrospector		Versioned,Serializable
+class	com.amazon.com.fasterxml.jackson.databind.AnnotationIntrospector$ReferenceProperty		
+class	com.amazon.com.fasterxml.jackson.databind.BeanDescription		
+class	com.amazon.com.fasterxml.jackson.databind.BeanProperty$Std		BeanProperty
+class	com.amazon.com.fasterxml.jackson.databind.DatabindContext		
+class	com.amazon.com.fasterxml.jackson.databind.DeserializationConfig	MapperConfigBase<DeserializationFeature, DeserializationConfig>	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.DeserializationContext	DatabindContext	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.InjectableValues		
+class	com.amazon.com.fasterxml.jackson.databind.InjectableValues$Std	InjectableValues	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.JavaType	ResolvedType	Serializable,Type
+class	com.amazon.com.fasterxml.jackson.databind.JsonDeserializer		
+class	com.amazon.com.fasterxml.jackson.databind.JsonDeserializer$None	JsonDeserializer<Object>	
+class	com.amazon.com.fasterxml.jackson.databind.JsonMappingException	JsonProcessingException	
+class	com.amazon.com.fasterxml.jackson.databind.JsonMappingException$Reference		Serializable
+class	com.amazon.com.fasterxml.jackson.databind.JsonNode	JsonSerializable.Base	TreeNode,Iterable<JsonNode>
+class	com.amazon.com.fasterxml.jackson.databind.JsonSerializable$Base		JsonSerializable
+class	com.amazon.com.fasterxml.jackson.databind.JsonSerializer		JsonFormatVisitable
+class	com.amazon.com.fasterxml.jackson.databind.JsonSerializer$None	JsonSerializer<Object>	
+class	com.amazon.com.fasterxml.jackson.databind.KeyDeserializer		
+class	com.amazon.com.fasterxml.jackson.databind.KeyDeserializer$None	KeyDeserializer	
+class	com.amazon.com.fasterxml.jackson.databind.MappingIterator		Iterator<T>,Closeable
+class	com.amazon.com.fasterxml.jackson.databind.MappingJsonFactory	JsonFactory	
+class	com.amazon.com.fasterxml.jackson.databind.Module		Versioned
+class	com.amazon.com.fasterxml.jackson.databind.ObjectMapper	ObjectCodec	Versioned,Serializable
+class	com.amazon.com.fasterxml.jackson.databind.ObjectMapper$DefaultTypeResolverBuilder	StdTypeResolverBuilder	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.ObjectReader	ObjectCodec	Versioned,Serializable
+class	com.amazon.com.fasterxml.jackson.databind.ObjectWriter		Versioned,Serializable
+class	com.amazon.com.fasterxml.jackson.databind.ObjectWriter$GeneratorSettings		Serializable
+class	com.amazon.com.fasterxml.jackson.databind.ObjectWriter$Prefetch		Serializable
+class	com.amazon.com.fasterxml.jackson.databind.PropertyMetadata		Serializable
+class	com.amazon.com.fasterxml.jackson.databind.PropertyName		Serializable
+class	com.amazon.com.fasterxml.jackson.databind.PropertyNamingStrategy		Serializable
+class	com.amazon.com.fasterxml.jackson.databind.PropertyNamingStrategy$KebabCaseStrategy	PropertyNamingStrategyBase	
+class	com.amazon.com.fasterxml.jackson.databind.PropertyNamingStrategy$LowerCaseStrategy	PropertyNamingStrategyBase	
+class	com.amazon.com.fasterxml.jackson.databind.PropertyNamingStrategy$LowerCaseWithUnderscoresStrategy	SnakeCaseStrategy	
+class	com.amazon.com.fasterxml.jackson.databind.PropertyNamingStrategy$PascalCaseStrategy	UpperCamelCaseStrategy	
+class	com.amazon.com.fasterxml.jackson.databind.PropertyNamingStrategy$PropertyNamingStrategyBase	PropertyNamingStrategy	
+class	com.amazon.com.fasterxml.jackson.databind.PropertyNamingStrategy$SnakeCaseStrategy	PropertyNamingStrategyBase	
+class	com.amazon.com.fasterxml.jackson.databind.PropertyNamingStrategy$UpperCamelCaseStrategy	PropertyNamingStrategyBase	
+class	com.amazon.com.fasterxml.jackson.databind.RuntimeJsonMappingException	RuntimeException	
+class	com.amazon.com.fasterxml.jackson.databind.SequenceWriter		Versioned,Closeable,Flushable
+class	com.amazon.com.fasterxml.jackson.databind.SerializationConfig	MapperConfigBase<SerializationFeature, SerializationConfig>	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.SerializerProvider	DatabindContext	
+class	com.amazon.com.fasterxml.jackson.databind.annotation.JsonPOJOBuilder$Value		
+class	com.amazon.com.fasterxml.jackson.databind.annotation.NoClass		
+class	com.amazon.com.fasterxml.jackson.databind.cfg.BaseSettings		Serializable
+class	com.amazon.com.fasterxml.jackson.databind.cfg.ConfigOverride		
+class	com.amazon.com.fasterxml.jackson.databind.cfg.ConfigOverrides		Serializable
+class	com.amazon.com.fasterxml.jackson.databind.cfg.ContextAttributes		
+class	com.amazon.com.fasterxml.jackson.databind.cfg.ContextAttributes$Impl	ContextAttributes	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.cfg.DeserializerFactoryConfig		Serializable
+class	com.amazon.com.fasterxml.jackson.databind.cfg.HandlerInstantiator		
+class	com.amazon.com.fasterxml.jackson.databind.cfg.MapperConfig		ClassIntrospector.MixInResolver,Serializable
+class	com.amazon.com.fasterxml.jackson.databind.cfg.MapperConfigBase	MapperConfig<T>	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.cfg.MutableConfigOverride	ConfigOverride	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.cfg.PackageVersion		Versioned
+class	com.amazon.com.fasterxml.jackson.databind.cfg.SerializerFactoryConfig		Serializable
+class	com.amazon.com.fasterxml.jackson.databind.deser.AbstractDeserializer	JsonDeserializer<Object>	ContextualDeserializer,Serializable
+class	com.amazon.com.fasterxml.jackson.databind.deser.BasicDeserializerFactory	DeserializerFactory	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.deser.BeanDeserializer	BeanDeserializerBase	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.deser.BeanDeserializer$BeanReferring	ReadableObjectId.Referring	
+class	com.amazon.com.fasterxml.jackson.databind.deser.BeanDeserializerBase	StdDeserializer<Object>	ContextualDeserializer,ResolvableDeserializer,Serializable
+class	com.amazon.com.fasterxml.jackson.databind.deser.BeanDeserializerBuilder		
+class	com.amazon.com.fasterxml.jackson.databind.deser.BeanDeserializerFactory	BasicDeserializerFactory	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.deser.BeanDeserializerModifier		
+class	com.amazon.com.fasterxml.jackson.databind.deser.BuilderBasedDeserializer	BeanDeserializerBase	
+class	com.amazon.com.fasterxml.jackson.databind.deser.CreatorProperty	SettableBeanProperty	
+class	com.amazon.com.fasterxml.jackson.databind.deser.DataFormatReaders		
+class	com.amazon.com.fasterxml.jackson.databind.deser.DataFormatReaders$AccessorForReader	InputAccessor.Std	
+class	com.amazon.com.fasterxml.jackson.databind.deser.DataFormatReaders$Match		
+class	com.amazon.com.fasterxml.jackson.databind.deser.DefaultDeserializationContext	DeserializationContext	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.deser.DefaultDeserializationContext$Impl	DefaultDeserializationContext	
+class	com.amazon.com.fasterxml.jackson.databind.deser.DeserializationProblemHandler		
+class	com.amazon.com.fasterxml.jackson.databind.deser.DeserializerCache		Serializable
+class	com.amazon.com.fasterxml.jackson.databind.deser.DeserializerFactory		
+class	com.amazon.com.fasterxml.jackson.databind.deser.Deserializers$Base		Deserializers
+class	com.amazon.com.fasterxml.jackson.databind.deser.SettableAnyProperty		Serializable
+class	com.amazon.com.fasterxml.jackson.databind.deser.SettableAnyProperty$AnySetterReferring	ReadableObjectId.Referring	
+class	com.amazon.com.fasterxml.jackson.databind.deser.SettableBeanProperty	ConcreteBeanPropertyBase	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.deser.UnresolvedForwardReference	JsonMappingException	
+class	com.amazon.com.fasterxml.jackson.databind.deser.UnresolvedId		
+class	com.amazon.com.fasterxml.jackson.databind.deser.ValueInstantiator		
+class	com.amazon.com.fasterxml.jackson.databind.deser.ValueInstantiator$Base	ValueInstantiator	
+class	com.amazon.com.fasterxml.jackson.databind.deser.ValueInstantiators$Base		ValueInstantiators
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.BeanAsArrayBuilderDeserializer	BeanDeserializerBase	
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.BeanAsArrayDeserializer	BeanDeserializerBase	
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.BeanPropertyMap		Iterable<SettableBeanProperty>,Serializable
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.CreatorCollector		
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.CreatorCollector$StdTypeConstructor	AnnotatedWithParams	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.ErrorThrowingDeserializer	JsonDeserializer<Object>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler		
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler$Builder		
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.ExternalTypeHandler$ExtTypedProperty		
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.FailingDeserializer	StdDeserializer<Object>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.FieldProperty	SettableBeanProperty	
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.InnerClassProperty	SettableBeanProperty	
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.ManagedReferenceProperty	SettableBeanProperty	
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.MethodProperty	SettableBeanProperty	
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.ObjectIdReader		Serializable
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.ObjectIdReferenceProperty	SettableBeanProperty	
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.ObjectIdReferenceProperty$PropertyReferring	ReadableObjectId.Referring	
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.ObjectIdValueProperty	SettableBeanProperty	
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.PropertyBasedCreator		
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.PropertyBasedCreator$CaseInsensitiveMap	HashMap<String, SettableBeanProperty>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.PropertyBasedObjectIdGenerator	ObjectIdGenerators.PropertyGenerator	
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.PropertyValue		
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.PropertyValue$Any	PropertyValue	
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.PropertyValue$Map	PropertyValue	
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.PropertyValue$Regular	PropertyValue	
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.PropertyValueBuffer		
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.ReadableObjectId		
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.ReadableObjectId$Referring		
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.SetterlessProperty	SettableBeanProperty	
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.TypeWrappedDeserializer	JsonDeserializer<Object>	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.UnwrappedPropertyHandler		
+class	com.amazon.com.fasterxml.jackson.databind.deser.impl.ValueInjector	BeanProperty.Std	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.ArrayBlockingQueueDeserializer	CollectionDeserializer	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.AtomicBooleanDeserializer	StdScalarDeserializer<AtomicBoolean>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.AtomicReferenceDeserializer	ReferenceTypeDeserializer<AtomicReference<Object>>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.BaseNodeDeserializer	StdDeserializer<T>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.ByteBufferDeserializer	StdScalarDeserializer<ByteBuffer>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.CollectionDeserializer	ContainerDeserializerBase<Collection<Object>>	ContextualDeserializer
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.CollectionDeserializer$CollectionReferring	ReadableObjectId.Referring	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.CollectionDeserializer$CollectionReferringAccumulator		
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.ContainerDeserializerBase	StdDeserializer<T>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.DateDeserializers		
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.DateDeserializers$CalendarDeserializer	DateBasedDeserializer<Calendar>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.DateDeserializers$DateBasedDeserializer	StdScalarDeserializer<T>	ContextualDeserializer
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.DateDeserializers$DateDeserializer	DateBasedDeserializer<java.util.Date>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.DateDeserializers$SqlDateDeserializer	DateBasedDeserializer<Date>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.DateDeserializers$TimestampDeserializer	DateBasedDeserializer<Timestamp>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.DelegatingDeserializer	StdDeserializer<Object>	ContextualDeserializer,ResolvableDeserializer
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.EnumDeserializer	StdScalarDeserializer<Object>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.FactoryBasedEnumDeserializer	StdDeserializer<Object>	ContextualDeserializer
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.FromStringDeserializer	StdScalarDeserializer<T>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.FromStringDeserializer$Std	FromStringDeserializer<Object>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.JdkDeserializers		
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.JsonLocationInstantiator	ValueInstantiator.Base	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.JsonNodeDeserializer	BaseNodeDeserializer<JsonNode>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.JsonNodeDeserializer$ArrayDeserializer	BaseNodeDeserializer<ArrayNode>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.JsonNodeDeserializer$ObjectDeserializer	BaseNodeDeserializer<ObjectNode>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.MapDeserializer	ContainerDeserializerBase<Map<Object, Object>>	ContextualDeserializer,ResolvableDeserializer
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.MapDeserializer$MapReferring	ReadableObjectId.Referring	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.MapDeserializer$MapReferringAccumulator		
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.MapEntryDeserializer	ContainerDeserializerBase<Map.Entry<Object, Object>>	ContextualDeserializer
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.NullifyingDeserializer	StdDeserializer<Object>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.NumberDeserializers		
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.NumberDeserializers$BigDecimalDeserializer	StdScalarDeserializer<BigDecimal>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.NumberDeserializers$BigIntegerDeserializer	StdScalarDeserializer<BigInteger>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.NumberDeserializers$BooleanDeserializer	PrimitiveOrWrapperDeserializer<Boolean>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.NumberDeserializers$ByteDeserializer	PrimitiveOrWrapperDeserializer<Byte>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.NumberDeserializers$CharacterDeserializer	PrimitiveOrWrapperDeserializer<Character>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.NumberDeserializers$DoubleDeserializer	PrimitiveOrWrapperDeserializer<Double>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.NumberDeserializers$FloatDeserializer	PrimitiveOrWrapperDeserializer<Float>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.NumberDeserializers$IntegerDeserializer	PrimitiveOrWrapperDeserializer<Integer>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.NumberDeserializers$LongDeserializer	PrimitiveOrWrapperDeserializer<Long>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.NumberDeserializers$NumberDeserializer	StdScalarDeserializer<Object>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.NumberDeserializers$PrimitiveOrWrapperDeserializer	StdScalarDeserializer<T>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.NumberDeserializers$ShortDeserializer	PrimitiveOrWrapperDeserializer<Short>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.PrimitiveArrayDeserializers	StdDeserializer<T>	ContextualDeserializer
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.ReferenceTypeDeserializer	StdDeserializer<T>	ContextualDeserializer
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.StackTraceElementDeserializer	StdScalarDeserializer<StackTraceElement>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.StdDelegatingDeserializer	StdDeserializer<T>	ContextualDeserializer,ResolvableDeserializer
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.StdDeserializer	JsonDeserializer<T>	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer	KeyDeserializer	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer$DelegatingKD	KeyDeserializer	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer$EnumKD	StdKeyDeserializer	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer$StringCtorKeyDeserializer	StdKeyDeserializer	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer$StringFactoryKeyDeserializer	StdKeyDeserializer	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.StdKeyDeserializer$StringKD	StdKeyDeserializer	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.StdKeyDeserializers		KeyDeserializers,Serializable
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.StdNodeBasedDeserializer	StdDeserializer<T>	ResolvableDeserializer
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.StdScalarDeserializer	StdDeserializer<T>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.StdValueInstantiator	ValueInstantiator	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.StringCollectionDeserializer	ContainerDeserializerBase<Collection<String>>	ContextualDeserializer
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.StringDeserializer	StdScalarDeserializer<String>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.ThrowableDeserializer	BeanDeserializer	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.TokenBufferDeserializer	StdScalarDeserializer<TokenBuffer>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.UUIDDeserializer	FromStringDeserializer<UUID>	
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.UntypedObjectDeserializer	StdDeserializer<Object>	ResolvableDeserializer,ContextualDeserializer
+class	com.amazon.com.fasterxml.jackson.databind.deser.std.UntypedObjectDeserializer$Vanilla	StdDeserializer<Object>	
+class	com.amazon.com.fasterxml.jackson.databind.exc.IgnoredPropertyException	PropertyBindingException	
+class	com.amazon.com.fasterxml.jackson.databind.exc.InvalidFormatException	JsonMappingException	
+class	com.amazon.com.fasterxml.jackson.databind.exc.InvalidTypeIdException	JsonMappingException	
+class	com.amazon.com.fasterxml.jackson.databind.exc.PropertyBindingException	JsonMappingException	
+class	com.amazon.com.fasterxml.jackson.databind.exc.UnrecognizedPropertyException	PropertyBindingException	
+class	com.amazon.com.fasterxml.jackson.databind.ext.CoreXMLDeserializers	Deserializers.Base	
+class	com.amazon.com.fasterxml.jackson.databind.ext.CoreXMLDeserializers$Std	FromStringDeserializer<Object>	
+class	com.amazon.com.fasterxml.jackson.databind.ext.CoreXMLSerializers	Serializers.Base	
+class	com.amazon.com.fasterxml.jackson.databind.ext.CoreXMLSerializers$XMLGregorianCalendarSerializer	StdSerializer<XMLGregorianCalendar>	ContextualSerializer
+class	com.amazon.com.fasterxml.jackson.databind.ext.DOMDeserializer	FromStringDeserializer<T>	
+class	com.amazon.com.fasterxml.jackson.databind.ext.DOMDeserializer$DocumentDeserializer	DOMDeserializer<Document>	
+class	com.amazon.com.fasterxml.jackson.databind.ext.DOMDeserializer$NodeDeserializer	DOMDeserializer<Node>	
+class	com.amazon.com.fasterxml.jackson.databind.ext.DOMSerializer	StdSerializer<Node>	
+class	com.amazon.com.fasterxml.jackson.databind.ext.Java7Support		
+class	com.amazon.com.fasterxml.jackson.databind.ext.Java7SupportImpl	Java7Support	
+class	com.amazon.com.fasterxml.jackson.databind.ext.NioPathDeserializer	StdScalarDeserializer<Path>	
+class	com.amazon.com.fasterxml.jackson.databind.ext.NioPathSerializer	StdScalarSerializer<Path>	
+class	com.amazon.com.fasterxml.jackson.databind.ext.OptionalHandlerFactory		Serializable
+class	com.amazon.com.fasterxml.jackson.databind.introspect.Annotated		
+class	com.amazon.com.fasterxml.jackson.databind.introspect.AnnotatedClass	Annotated	TypeResolutionContext
+class	com.amazon.com.fasterxml.jackson.databind.introspect.AnnotatedConstructor	AnnotatedWithParams	
+class	com.amazon.com.fasterxml.jackson.databind.introspect.AnnotatedConstructor$Serialization		Serializable
+class	com.amazon.com.fasterxml.jackson.databind.introspect.AnnotatedField	AnnotatedMember	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.introspect.AnnotatedField$Serialization		Serializable
+class	com.amazon.com.fasterxml.jackson.databind.introspect.AnnotatedMember	Annotated	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.introspect.AnnotatedMethod	AnnotatedWithParams	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.introspect.AnnotatedMethod$Serialization		Serializable
+class	com.amazon.com.fasterxml.jackson.databind.introspect.AnnotatedMethodMap		Iterable<AnnotatedMethod>
+class	com.amazon.com.fasterxml.jackson.databind.introspect.AnnotatedParameter	AnnotatedMember	
+class	com.amazon.com.fasterxml.jackson.databind.introspect.AnnotatedWithParams	AnnotatedMember	
+class	com.amazon.com.fasterxml.jackson.databind.introspect.AnnotationIntrospectorPair	AnnotationIntrospector	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.introspect.AnnotationMap		Annotations
+class	com.amazon.com.fasterxml.jackson.databind.introspect.BasicBeanDescription	BeanDescription	
+class	com.amazon.com.fasterxml.jackson.databind.introspect.BasicClassIntrospector	ClassIntrospector	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.introspect.BeanPropertyDefinition		Named
+class	com.amazon.com.fasterxml.jackson.databind.introspect.ClassIntrospector		
+class	com.amazon.com.fasterxml.jackson.databind.introspect.ConcreteBeanPropertyBase		BeanProperty,Serializable
+class	com.amazon.com.fasterxml.jackson.databind.introspect.JacksonAnnotationIntrospector	AnnotationIntrospector	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.introspect.MemberKey		
+class	com.amazon.com.fasterxml.jackson.databind.introspect.NopAnnotationIntrospector	AnnotationIntrospector	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.introspect.ObjectIdInfo		
+class	com.amazon.com.fasterxml.jackson.databind.introspect.POJOPropertiesCollector		
+class	com.amazon.com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder	BeanPropertyDefinition	Comparable<POJOPropertyBuilder>
+class	com.amazon.com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder$Linked		
+class	com.amazon.com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder$MemberIterator		Iterator<T>
+class	com.amazon.com.fasterxml.jackson.databind.introspect.SimpleMixInResolver		ClassIntrospector.MixInResolver,Serializable
+class	com.amazon.com.fasterxml.jackson.databind.introspect.TypeResolutionContext$Basic		TypeResolutionContext
+class	com.amazon.com.fasterxml.jackson.databind.introspect.VirtualAnnotatedMember	AnnotatedMember	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.introspect.VisibilityChecker$Std		VisibilityChecker<Std>,Serializable
+class	com.amazon.com.fasterxml.jackson.databind.jsonFormatVisitors.JsonAnyFormatVisitor$Base		JsonAnyFormatVisitor
+class	com.amazon.com.fasterxml.jackson.databind.jsonFormatVisitors.JsonArrayFormatVisitor$Base		JsonArrayFormatVisitor
+class	com.amazon.com.fasterxml.jackson.databind.jsonFormatVisitors.JsonBooleanFormatVisitor$Base	JsonValueFormatVisitor.Base	JsonBooleanFormatVisitor
+class	com.amazon.com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper$Base		JsonFormatVisitorWrapper
+class	com.amazon.com.fasterxml.jackson.databind.jsonFormatVisitors.JsonIntegerFormatVisitor$Base	JsonValueFormatVisitor.Base	JsonIntegerFormatVisitor
+class	com.amazon.com.fasterxml.jackson.databind.jsonFormatVisitors.JsonMapFormatVisitor$Base		JsonMapFormatVisitor
+class	com.amazon.com.fasterxml.jackson.databind.jsonFormatVisitors.JsonNullFormatVisitor$Base		JsonNullFormatVisitor
+class	com.amazon.com.fasterxml.jackson.databind.jsonFormatVisitors.JsonNumberFormatVisitor$Base	JsonValueFormatVisitor.Base	JsonNumberFormatVisitor
+class	com.amazon.com.fasterxml.jackson.databind.jsonFormatVisitors.JsonObjectFormatVisitor$Base		JsonObjectFormatVisitor
+class	com.amazon.com.fasterxml.jackson.databind.jsonFormatVisitors.JsonStringFormatVisitor$Base	JsonValueFormatVisitor.Base	JsonStringFormatVisitor
+class	com.amazon.com.fasterxml.jackson.databind.jsonFormatVisitors.JsonValueFormatVisitor$Base		JsonValueFormatVisitor
+class	com.amazon.com.fasterxml.jackson.databind.jsonschema.JsonSchema		
+class	com.amazon.com.fasterxml.jackson.databind.jsontype.NamedType		Serializable
+class	com.amazon.com.fasterxml.jackson.databind.jsontype.SubtypeResolver		
+class	com.amazon.com.fasterxml.jackson.databind.jsontype.TypeDeserializer		
+class	com.amazon.com.fasterxml.jackson.databind.jsontype.TypeSerializer		
+class	com.amazon.com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeDeserializer	TypeDeserializerBase	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.jsontype.impl.AsArrayTypeSerializer	TypeSerializerBase	
+class	com.amazon.com.fasterxml.jackson.databind.jsontype.impl.AsExistingPropertyTypeSerializer	AsPropertyTypeSerializer	
+class	com.amazon.com.fasterxml.jackson.databind.jsontype.impl.AsExternalTypeDeserializer	AsArrayTypeDeserializer	
+class	com.amazon.com.fasterxml.jackson.databind.jsontype.impl.AsExternalTypeSerializer	TypeSerializerBase	
+class	com.amazon.com.fasterxml.jackson.databind.jsontype.impl.AsPropertyTypeDeserializer	AsArrayTypeDeserializer	
+class	com.amazon.com.fasterxml.jackson.databind.jsontype.impl.AsPropertyTypeSerializer	AsArrayTypeSerializer	
+class	com.amazon.com.fasterxml.jackson.databind.jsontype.impl.AsWrapperTypeDeserializer	TypeDeserializerBase	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.jsontype.impl.AsWrapperTypeSerializer	TypeSerializerBase	
+class	com.amazon.com.fasterxml.jackson.databind.jsontype.impl.ClassNameIdResolver	TypeIdResolverBase	
+class	com.amazon.com.fasterxml.jackson.databind.jsontype.impl.MinimalClassNameIdResolver	ClassNameIdResolver	
+class	com.amazon.com.fasterxml.jackson.databind.jsontype.impl.StdSubtypeResolver	SubtypeResolver	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.jsontype.impl.StdTypeResolverBuilder		TypeResolverBuilder<StdTypeResolverBuilder>
+class	com.amazon.com.fasterxml.jackson.databind.jsontype.impl.SubTypeValidator		
+class	com.amazon.com.fasterxml.jackson.databind.jsontype.impl.TypeDeserializerBase	TypeDeserializer	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.jsontype.impl.TypeIdResolverBase		TypeIdResolver
+class	com.amazon.com.fasterxml.jackson.databind.jsontype.impl.TypeNameIdResolver	TypeIdResolverBase	
+class	com.amazon.com.fasterxml.jackson.databind.jsontype.impl.TypeSerializerBase	TypeSerializer	
+class	com.amazon.com.fasterxml.jackson.databind.module.SimpleAbstractTypeResolver	AbstractTypeResolver	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.module.SimpleDeserializers		Deserializers,Serializable
+class	com.amazon.com.fasterxml.jackson.databind.module.SimpleKeyDeserializers		KeyDeserializers,Serializable
+class	com.amazon.com.fasterxml.jackson.databind.module.SimpleModule	Module	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.module.SimpleSerializers	Serializers.Base	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.module.SimpleValueInstantiators	ValueInstantiators.Base	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.node.ArrayNode	ContainerNode<ArrayNode>	
+class	com.amazon.com.fasterxml.jackson.databind.node.BaseJsonNode	JsonNode	JsonSerializable
+class	com.amazon.com.fasterxml.jackson.databind.node.BigIntegerNode	NumericNode	
+class	com.amazon.com.fasterxml.jackson.databind.node.BinaryNode	ValueNode	
+class	com.amazon.com.fasterxml.jackson.databind.node.BooleanNode	ValueNode	
+class	com.amazon.com.fasterxml.jackson.databind.node.ContainerNode	BaseJsonNode	JsonNodeCreator
+class	com.amazon.com.fasterxml.jackson.databind.node.DecimalNode	NumericNode	
+class	com.amazon.com.fasterxml.jackson.databind.node.DoubleNode	NumericNode	
+class	com.amazon.com.fasterxml.jackson.databind.node.FloatNode	NumericNode	
+class	com.amazon.com.fasterxml.jackson.databind.node.IntNode	NumericNode	
+class	com.amazon.com.fasterxml.jackson.databind.node.JsonNodeFactory		Serializable,JsonNodeCreator
+class	com.amazon.com.fasterxml.jackson.databind.node.LongNode	NumericNode	
+class	com.amazon.com.fasterxml.jackson.databind.node.MissingNode	ValueNode	
+class	com.amazon.com.fasterxml.jackson.databind.node.NodeCursor	JsonStreamContext	
+class	com.amazon.com.fasterxml.jackson.databind.node.NodeCursor$ArrayCursor	NodeCursor	
+class	com.amazon.com.fasterxml.jackson.databind.node.NodeCursor$ObjectCursor	NodeCursor	
+class	com.amazon.com.fasterxml.jackson.databind.node.NodeCursor$RootCursor	NodeCursor	
+class	com.amazon.com.fasterxml.jackson.databind.node.NullNode	ValueNode	
+class	com.amazon.com.fasterxml.jackson.databind.node.NumericNode	ValueNode	
+class	com.amazon.com.fasterxml.jackson.databind.node.ObjectNode	ContainerNode<ObjectNode>	
+class	com.amazon.com.fasterxml.jackson.databind.node.POJONode	ValueNode	
+class	com.amazon.com.fasterxml.jackson.databind.node.ShortNode	NumericNode	
+class	com.amazon.com.fasterxml.jackson.databind.node.TextNode	ValueNode	
+class	com.amazon.com.fasterxml.jackson.databind.node.TreeTraversingParser	ParserMinimalBase	
+class	com.amazon.com.fasterxml.jackson.databind.node.ValueNode	BaseJsonNode	
+class	com.amazon.com.fasterxml.jackson.databind.ser.AnyGetterWriter		
+class	com.amazon.com.fasterxml.jackson.databind.ser.BasicSerializerFactory	SerializerFactory	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.ser.BeanPropertyWriter	PropertyWriter	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.ser.BeanSerializer	BeanSerializerBase	
+class	com.amazon.com.fasterxml.jackson.databind.ser.BeanSerializerBuilder		
+class	com.amazon.com.fasterxml.jackson.databind.ser.BeanSerializerFactory	BasicSerializerFactory	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.ser.BeanSerializerModifier		
+class	com.amazon.com.fasterxml.jackson.databind.ser.ContainerSerializer	StdSerializer<T>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.DefaultSerializerProvider	SerializerProvider	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.ser.DefaultSerializerProvider$Impl	DefaultSerializerProvider	
+class	com.amazon.com.fasterxml.jackson.databind.ser.FilterProvider		
+class	com.amazon.com.fasterxml.jackson.databind.ser.PropertyBuilder		
+class	com.amazon.com.fasterxml.jackson.databind.ser.PropertyWriter	ConcreteBeanPropertyBase	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.ser.SerializerCache		
+class	com.amazon.com.fasterxml.jackson.databind.ser.SerializerFactory		
+class	com.amazon.com.fasterxml.jackson.databind.ser.Serializers$Base		Serializers
+class	com.amazon.com.fasterxml.jackson.databind.ser.VirtualBeanPropertyWriter	BeanPropertyWriter	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.ser.impl.AttributePropertyWriter	VirtualBeanPropertyWriter	
+class	com.amazon.com.fasterxml.jackson.databind.ser.impl.BeanAsArraySerializer	BeanSerializerBase	
+class	com.amazon.com.fasterxml.jackson.databind.ser.impl.FailingSerializer	StdSerializer<Object>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.impl.FilteredBeanPropertyWriter		
+class	com.amazon.com.fasterxml.jackson.databind.ser.impl.FilteredBeanPropertyWriter$MultiView	BeanPropertyWriter	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.ser.impl.FilteredBeanPropertyWriter$SingleView	BeanPropertyWriter	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.ser.impl.IndexedStringListSerializer	StaticListSerializerBase<List<String>>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.impl.ObjectIdWriter		
+class	com.amazon.com.fasterxml.jackson.databind.ser.impl.PropertyBasedObjectIdGenerator	ObjectIdGenerators.PropertyGenerator	
+class	com.amazon.com.fasterxml.jackson.databind.ser.impl.PropertySerializerMap		
+class	com.amazon.com.fasterxml.jackson.databind.ser.impl.PropertySerializerMap$Double	PropertySerializerMap	
+class	com.amazon.com.fasterxml.jackson.databind.ser.impl.PropertySerializerMap$Empty	PropertySerializerMap	
+class	com.amazon.com.fasterxml.jackson.databind.ser.impl.PropertySerializerMap$Multi	PropertySerializerMap	
+class	com.amazon.com.fasterxml.jackson.databind.ser.impl.PropertySerializerMap$SerializerAndMapResult		
+class	com.amazon.com.fasterxml.jackson.databind.ser.impl.PropertySerializerMap$Single	PropertySerializerMap	
+class	com.amazon.com.fasterxml.jackson.databind.ser.impl.PropertySerializerMap$TypeAndSerializer		
+class	com.amazon.com.fasterxml.jackson.databind.ser.impl.ReadOnlyClassToSerializerMap		
+class	com.amazon.com.fasterxml.jackson.databind.ser.impl.ReadOnlyClassToSerializerMap$Bucket		
+class	com.amazon.com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter		BeanPropertyFilter,PropertyFilter
+class	com.amazon.com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter$FilterExceptFilter	SimpleBeanPropertyFilter	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.ser.impl.SimpleBeanPropertyFilter$SerializeExceptFilter	SimpleBeanPropertyFilter	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.ser.impl.SimpleFilterProvider	FilterProvider	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.ser.impl.StringCollectionSerializer	StaticListSerializerBase<Collection<String>>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.impl.TypeWrappedSerializer	JsonSerializer<Object>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.impl.UnknownSerializer	StdSerializer<Object>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.impl.UnwrappingBeanPropertyWriter	BeanPropertyWriter	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.ser.impl.UnwrappingBeanSerializer	BeanSerializerBase	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.ser.impl.WritableObjectId		
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.ArraySerializerBase	ContainerSerializer<T>	ContextualSerializer
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.AsArraySerializerBase	ContainerSerializer<T>	ContextualSerializer
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.BeanSerializerBase	StdSerializer<Object>	ContextualSerializer,ResolvableSerializer,JsonFormatVisitable,SchemaAware
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.BooleanSerializer	NonTypedScalarSerializerBase<Boolean>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.ByteBufferSerializer	StdScalarSerializer<ByteBuffer>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.CalendarSerializer	DateTimeSerializerBase<Calendar>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.DateSerializer	DateTimeSerializerBase<Date>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.DateTimeSerializerBase	StdScalarSerializer<T>	ContextualSerializer
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.FileSerializer	StdScalarSerializer<File>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.InetAddressSerializer	StdScalarSerializer<InetAddress>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.InetSocketAddressSerializer	StdScalarSerializer<InetSocketAddress>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.JsonValueSerializer	StdSerializer<Object>	ContextualSerializer,JsonFormatVisitable,SchemaAware
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.JsonValueSerializer$TypeSerializerRerouter	TypeSerializer	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.MapProperty	PropertyWriter	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.NonTypedScalarSerializerBase	StdScalarSerializer<T>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.NullSerializer	StdSerializer<Object>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.NumberSerializer	StdScalarSerializer<Number>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.NumberSerializers		
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.NumberSerializers$Base	StdScalarSerializer<T>	ContextualSerializer
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.NumberSerializers$DoubleSerializer	Base<Object>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.NumberSerializers$FloatSerializer	Base<Object>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.NumberSerializers$IntLikeSerializer	Base<Object>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.NumberSerializers$IntegerSerializer	Base<Object>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.NumberSerializers$LongSerializer	Base<Object>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.NumberSerializers$ShortSerializer	Base<Object>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.RawSerializer	StdSerializer<T>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.ReferenceTypeSerializer	StdSerializer<T>	ContextualSerializer
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.SerializableSerializer	StdSerializer<JsonSerializable>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.SqlDateSerializer	DateTimeSerializerBase<Date>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.SqlTimeSerializer	StdScalarSerializer<Time>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.StaticListSerializerBase	StdSerializer<T>	ContextualSerializer
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.StdArraySerializers		
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.StdArraySerializers$TypedPrimitiveArraySerializer	ArraySerializerBase<T>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.StdDelegatingSerializer	StdSerializer<Object>	ContextualSerializer,ResolvableSerializer,JsonFormatVisitable,SchemaAware
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.StdJdkSerializers		
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.StdJdkSerializers$AtomicBooleanSerializer	StdScalarSerializer<AtomicBoolean>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.StdJdkSerializers$AtomicIntegerSerializer	StdScalarSerializer<AtomicInteger>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.StdJdkSerializers$AtomicLongSerializer	StdScalarSerializer<AtomicLong>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.StdKeySerializer	StdSerializer<Object>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.StdKeySerializers		
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.StdKeySerializers$Default	StdSerializer<Object>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.StdKeySerializers$Dynamic	StdSerializer<Object>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.StdKeySerializers$EnumKeySerializer	StdSerializer<Object>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.StdKeySerializers$StringKeySerializer	StdSerializer<Object>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.StdScalarSerializer	StdSerializer<T>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.StdSerializer	JsonSerializer<T>	JsonFormatVisitable,SchemaAware,Serializable
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.StringSerializer	NonTypedScalarSerializerBase<Object>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.TimeZoneSerializer	StdScalarSerializer<TimeZone>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.ToStringSerializer	StdSerializer<Object>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.TokenBufferSerializer	StdSerializer<TokenBuffer>	
+class	com.amazon.com.fasterxml.jackson.databind.ser.std.UUIDSerializer	StdScalarSerializer<UUID>	
+class	com.amazon.com.fasterxml.jackson.databind.type.ArrayType	TypeBase	
+class	com.amazon.com.fasterxml.jackson.databind.type.ClassKey		Comparable<ClassKey>,Serializable
+class	com.amazon.com.fasterxml.jackson.databind.type.ClassStack		
+class	com.amazon.com.fasterxml.jackson.databind.type.CollectionLikeType	TypeBase	
+class	com.amazon.com.fasterxml.jackson.databind.type.CollectionType	CollectionLikeType	
+class	com.amazon.com.fasterxml.jackson.databind.type.MapLikeType	TypeBase	
+class	com.amazon.com.fasterxml.jackson.databind.type.MapType	MapLikeType	
+class	com.amazon.com.fasterxml.jackson.databind.type.PlaceholderForType	TypeBase	
+class	com.amazon.com.fasterxml.jackson.databind.type.ReferenceType	SimpleType	
+class	com.amazon.com.fasterxml.jackson.databind.type.ResolvedRecursiveType	TypeBase	
+class	com.amazon.com.fasterxml.jackson.databind.type.SimpleType	TypeBase	
+class	com.amazon.com.fasterxml.jackson.databind.type.TypeBase	JavaType	JsonSerializable
+class	com.amazon.com.fasterxml.jackson.databind.type.TypeBindings		Serializable
+class	com.amazon.com.fasterxml.jackson.databind.type.TypeBindings$AsKey		
+class	com.amazon.com.fasterxml.jackson.databind.type.TypeBindings$TypeParamStash		
+class	com.amazon.com.fasterxml.jackson.databind.type.TypeFactory		Serializable
+class	com.amazon.com.fasterxml.jackson.databind.type.TypeModifier		
+class	com.amazon.com.fasterxml.jackson.databind.type.TypeParser		Serializable
+class	com.amazon.com.fasterxml.jackson.databind.type.TypeParser$MyTokenizer	StringTokenizer	
+class	com.amazon.com.fasterxml.jackson.databind.util.ArrayBuilders		
+class	com.amazon.com.fasterxml.jackson.databind.util.ArrayIterator		Iterator<T>,Iterable<T>
+class	com.amazon.com.fasterxml.jackson.databind.util.BeanUtil		
+class	com.amazon.com.fasterxml.jackson.databind.util.ByteBufferBackedInputStream	InputStream	
+class	com.amazon.com.fasterxml.jackson.databind.util.ByteBufferBackedOutputStream	OutputStream	
+class	com.amazon.com.fasterxml.jackson.databind.util.ClassUtil		
+class	com.amazon.com.fasterxml.jackson.databind.util.ClassUtil$Ctor		
+class	com.amazon.com.fasterxml.jackson.databind.util.ClassUtil$EmptyIterator		Iterator<T>
+class	com.amazon.com.fasterxml.jackson.databind.util.ClassUtil$EnumTypeLocator		
+class	com.amazon.com.fasterxml.jackson.databind.util.CompactStringObjectMap		Serializable
+class	com.amazon.com.fasterxml.jackson.databind.util.Converter$None		Converter<Object,Object>
+class	com.amazon.com.fasterxml.jackson.databind.util.EnumResolver		Serializable
+class	com.amazon.com.fasterxml.jackson.databind.util.EnumValues		Serializable
+class	com.amazon.com.fasterxml.jackson.databind.util.ISO8601DateFormat	DateFormat	
+class	com.amazon.com.fasterxml.jackson.databind.util.ISO8601Utils		
+class	com.amazon.com.fasterxml.jackson.databind.util.JSONPObject		JsonSerializable
+class	com.amazon.com.fasterxml.jackson.databind.util.JSONWrappedObject		JsonSerializable
+class	com.amazon.com.fasterxml.jackson.databind.util.LRUMap		Serializable
+class	com.amazon.com.fasterxml.jackson.databind.util.LinkedNode		
+class	com.amazon.com.fasterxml.jackson.databind.util.NameTransformer		
+class	com.amazon.com.fasterxml.jackson.databind.util.NameTransformer$Chained	NameTransformer	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.util.NameTransformer$NopTransformer	NameTransformer	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.util.ObjectBuffer		
+class	com.amazon.com.fasterxml.jackson.databind.util.PrimitiveArrayBuilder		
+class	com.amazon.com.fasterxml.jackson.databind.util.PrimitiveArrayBuilder$Node		
+class	com.amazon.com.fasterxml.jackson.databind.util.RawValue		JsonSerializable
+class	com.amazon.com.fasterxml.jackson.databind.util.RootNameLookup		Serializable
+class	com.amazon.com.fasterxml.jackson.databind.util.SimpleBeanPropertyDefinition	BeanPropertyDefinition	
+class	com.amazon.com.fasterxml.jackson.databind.util.StdConverter		Converter<IN,OUT>
+class	com.amazon.com.fasterxml.jackson.databind.util.StdDateFormat	DateFormat	
+class	com.amazon.com.fasterxml.jackson.databind.util.TokenBuffer	JsonGenerator	
+class	com.amazon.com.fasterxml.jackson.databind.util.TokenBuffer$Parser	ParserMinimalBase	
+class	com.amazon.com.fasterxml.jackson.databind.util.TokenBuffer$Segment		
+class	com.amazon.com.fasterxml.jackson.databind.util.TypeKey		
+class	com.amazon.com.fasterxml.jackson.databind.util.ViewMatcher		Serializable
+class	com.amazon.com.fasterxml.jackson.databind.util.ViewMatcher$Multi	ViewMatcher	Serializable
+class	com.amazon.com.fasterxml.jackson.databind.util.ViewMatcher$Single	ViewMatcher	
+class	com.amazon.ion.ContainedValueException	IonException	
+class	com.amazon.ion.Decimal	BigDecimal	
+class	com.amazon.ion.Decimal$NegativeZero	Decimal	
+class	com.amazon.ion.EmptySymbolException	IonException	
+class	com.amazon.ion.InvalidSystemSymbolException	IonException	
+class	com.amazon.ion.IonException	RuntimeException	
+class	com.amazon.ion.NullValueException	IonException	
+class	com.amazon.ion.ReadOnlyValueException	IonException	
+class	com.amazon.ion.SubstituteSymbolTableException	IonException	
+class	com.amazon.ion.SystemSymbols		
+class	com.amazon.ion.Timestamp		Comparable<Timestamp>,Cloneable
+class	com.amazon.ion.UnexpectedEofException	IonException	
+class	com.amazon.ion.UnknownSymbolException	IonException	
+class	com.amazon.ion.UnsupportedIonVersionException	IonException	
+class	com.amazon.ion.apps.BaseApp		
+class	com.amazon.ion.apps.EncodeApp	BaseApp	
+class	com.amazon.ion.apps.PrintApp	BaseApp	
+class	com.amazon.ion.apps.SymtabApp	BaseApp	
+class	com.amazon.ion.facet.Facets		
+class	com.amazon.ion.facet.UnsupportedFacetException	UnsupportedOperationException	
+class	com.amazon.ion.impl.AppendableFastAppendable		_Private_FastAppendable,Closeable,Flushable
+class	com.amazon.ion.impl.Base64Encoder		
+class	com.amazon.ion.impl.Base64Encoder$BinaryStream	Reader	
+class	com.amazon.ion.impl.Base64Encoder$EL		
+class	com.amazon.ion.impl.Base64Encoder$TextStream	Reader	
+class	com.amazon.ion.impl.BlockedBuffer		
+class	com.amazon.ion.impl.BlockedBuffer$BlockedBufferException	IonException	
+class	com.amazon.ion.impl.BlockedBuffer$BlockedByteInputStream	InputStream	
+class	com.amazon.ion.impl.BlockedBuffer$BlockedByteOutputStream	OutputStream	
+class	com.amazon.ion.impl.BlockedBuffer$BufferedOutputStream	OutputStream	
+class	com.amazon.ion.impl.BlockedBuffer$CompareMonitor		Comparator<Monitor>
+class	com.amazon.ion.impl.BlockedBuffer$PositionMonitor		Monitor
+class	com.amazon.ion.impl.BlockedBuffer$bbBlock		
+class	com.amazon.ion.impl.DowncastingFaceted		Faceted
+class	com.amazon.ion.impl.IonBinary		
+class	com.amazon.ion.impl.IonBinary$BufferManager		
+class	com.amazon.ion.impl.IonBinary$PositionMarker		
+class	com.amazon.ion.impl.IonBinary$Reader	BlockedBuffer.BlockedByteInputStream	
+class	com.amazon.ion.impl.IonBinary$Writer	BlockedBuffer.BlockedByteOutputStream	
+class	com.amazon.ion.impl.IonBinary$Writer$lhNode		
+class	com.amazon.ion.impl.IonCharacterReader	PushbackReader	
+class	com.amazon.ion.impl.IonIteratorImpl		Iterator<IonValue>
+class	com.amazon.ion.impl.IonMessages		
+class	com.amazon.ion.impl.IonReaderBinaryRawX		IonReader
+class	com.amazon.ion.impl.IonReaderBinarySystemX	IonReaderBinaryRawX	_Private_ReaderWriter
+class	com.amazon.ion.impl.IonReaderBinaryUserX	IonReaderBinarySystemX	_Private_ReaderWriter
+class	com.amazon.ion.impl.IonReaderBinaryUserX$ByteTransferReaderFacet		_Private_ByteTransferReader
+class	com.amazon.ion.impl.IonReaderBinaryUserX$IonReaderBinarySpan	DowncastingFaceted	Span,OffsetSpan
+class	com.amazon.ion.impl.IonReaderBinaryUserX$RawValueSpanProviderFacet		RawValueSpanProvider
+class	com.amazon.ion.impl.IonReaderBinaryUserX$SeekableReaderFacet	SpanProviderFacet	SeekableReader
+class	com.amazon.ion.impl.IonReaderBinaryUserX$SpanProviderFacet		SpanProvider
+class	com.amazon.ion.impl.IonReaderTextRawTokensX		
+class	com.amazon.ion.impl.IonReaderTextRawX		IonTextReader
+class	com.amazon.ion.impl.IonReaderTextRawX$IonReaderTextParsingException	IonException	
+class	com.amazon.ion.impl.IonReaderTextSystemX	IonReaderTextRawX	_Private_ReaderWriter
+class	com.amazon.ion.impl.IonReaderTextSystemX$Radix		
+class	com.amazon.ion.impl.IonReaderTextTokenException	IonException	
+class	com.amazon.ion.impl.IonReaderTextUserX	IonReaderTextSystemX	_Private_ReaderWriter
+class	com.amazon.ion.impl.IonReaderTextUserX$IonReaderTextSpan	DowncastingFaceted	Span,TextSpan,OffsetSpan
+class	com.amazon.ion.impl.IonReaderTextUserX$SeekableReaderFacet	SpanProviderFacet	SeekableReader
+class	com.amazon.ion.impl.IonReaderTextUserX$SpanProviderFacet		SpanProvider
+class	com.amazon.ion.impl.IonReaderTreeSystem		IonReader,_Private_ReaderWriter
+class	com.amazon.ion.impl.IonReaderTreeSystem$Children		Iterator<IonValue>
+class	com.amazon.ion.impl.IonReaderTreeUserX	IonReaderTreeSystem	_Private_ReaderWriter
+class	com.amazon.ion.impl.IonReaderTreeUserX$SeekableReaderFacet		SeekableReader
+class	com.amazon.ion.impl.IonReaderTreeUserX$TreeSpan	DowncastingFaceted	Span
+class	com.amazon.ion.impl.IonTextBufferedStream	InputStream	
+class	com.amazon.ion.impl.IonTextBufferedStream$OffsetBufferStream	IonTextBufferedStream	
+class	com.amazon.ion.impl.IonTextBufferedStream$SimpleBufferStream	IonTextBufferedStream	
+class	com.amazon.ion.impl.IonTextBufferedStream$StringStream	IonTextBufferedStream	
+class	com.amazon.ion.impl.IonTokenConstsX		
+class	com.amazon.ion.impl.IonTokenConstsX$CharacterSequence		
+class	com.amazon.ion.impl.IonTokenReader		
+class	com.amazon.ion.impl.IonTokenReader$Type$LocalReader	Reader	
+class	com.amazon.ion.impl.IonTokenReader$Type$timeinfo		
+class	com.amazon.ion.impl.IonUTF8		
+class	com.amazon.ion.impl.IonUTF8$InvalidUnicodeCodePoint	IonException	
+class	com.amazon.ion.impl.IonUTF8$UTF8ToChar	OutputStream	Closeable
+class	com.amazon.ion.impl.IonWriterSystem	_Private_IonWriterBase	
+class	com.amazon.ion.impl.IonWriterSystemBinary	IonWriterSystem	_Private_ListWriter
+class	com.amazon.ion.impl.IonWriterSystemBinary$CountingStream	OutputStream	
+class	com.amazon.ion.impl.IonWriterSystemBinary$PatchedValues		
+class	com.amazon.ion.impl.IonWriterSystemText	IonWriterSystem	
+class	com.amazon.ion.impl.IonWriterSystemTextMarkup	IonWriterSystemText	
+class	com.amazon.ion.impl.IonWriterSystemTree	IonWriterSystem	
+class	com.amazon.ion.impl.IonWriterUser	_Private_IonWriterBase	_Private_IonWriter
+class	com.amazon.ion.impl.IonWriterUserBinary	IonWriterUser	_Private_ListWriter
+class	com.amazon.ion.impl.LocalSymbolTable		SymbolTable
+class	com.amazon.ion.impl.LocalSymbolTable$Factory		_Private_LocalSymbolTableFactory
+class	com.amazon.ion.impl.LocalSymbolTable$SymbolIterator		Iterator<String>
+class	com.amazon.ion.impl.LocalSymbolTableAsStruct	LocalSymbolTable	
+class	com.amazon.ion.impl.LocalSymbolTableAsStruct$Factory		_Private_LocalSymbolTableFactory
+class	com.amazon.ion.impl.LocalSymbolTableImports		
+class	com.amazon.ion.impl.OutputStreamFastAppendable		_Private_FastAppendable,Closeable,Flushable
+class	com.amazon.ion.impl.Radix		
+class	com.amazon.ion.impl.SharedSymbolTable		SymbolTable
+class	com.amazon.ion.impl.SimpleByteBuffer		ByteBuffer
+class	com.amazon.ion.impl.SimpleByteBuffer$SimpleByteReader		ByteReader
+class	com.amazon.ion.impl.SimpleByteBuffer$SimpleByteWriter	OutputStream	ByteWriter
+class	com.amazon.ion.impl.SimpleByteBuffer$UserByteWriter	OutputStream	ByteWriter
+class	com.amazon.ion.impl.SubstituteSymbolTable		SymbolTable
+class	com.amazon.ion.impl.SubstituteSymbolTable$SymbolIterator		Iterator<String>
+class	com.amazon.ion.impl.SymbolTableReader		IonReader
+class	com.amazon.ion.impl.SymbolTokenImpl		_Private_SymbolToken
+class	com.amazon.ion.impl.UnifiedDataPageX		
+class	com.amazon.ion.impl.UnifiedDataPageX$Bytes	UnifiedDataPageX	
+class	com.amazon.ion.impl.UnifiedDataPageX$Chars	UnifiedDataPageX	
+class	com.amazon.ion.impl.UnifiedInputBufferX		
+class	com.amazon.ion.impl.UnifiedInputBufferX$Bytes	UnifiedInputBufferX	
+class	com.amazon.ion.impl.UnifiedInputBufferX$Chars	UnifiedInputBufferX	
+class	com.amazon.ion.impl.UnifiedInputStreamX		Closeable
+class	com.amazon.ion.impl.UnifiedInputStreamX$FromByteArray	UnifiedInputStreamX	
+class	com.amazon.ion.impl.UnifiedInputStreamX$FromByteStream	UnifiedInputStreamX	
+class	com.amazon.ion.impl.UnifiedInputStreamX$FromCharArray	UnifiedInputStreamX	
+class	com.amazon.ion.impl.UnifiedInputStreamX$FromCharStream	UnifiedInputStreamX	
+class	com.amazon.ion.impl.UnifiedSavePointManagerX		
+class	com.amazon.ion.impl.UnifiedSavePointManagerX$SavePoint		
+class	com.amazon.ion.impl._Private_CommandLine		
+class	com.amazon.ion.impl._Private_CurriedValueFactory		ValueFactory
+class	com.amazon.ion.impl._Private_FastAppendableDecorator		_Private_FastAppendable,Closeable,Flushable
+class	com.amazon.ion.impl._Private_FastAppendableTrampoline		
+class	com.amazon.ion.impl._Private_IonBinaryWriterBuilder	IonBinaryWriterBuilder	
+class	com.amazon.ion.impl._Private_IonBinaryWriterBuilder$Mutable	_Private_IonBinaryWriterBuilder	
+class	com.amazon.ion.impl._Private_IonBinaryWriterImpl	IonWriterUserBinary	IonBinaryWriter
+class	com.amazon.ion.impl._Private_IonConstants		
+class	com.amazon.ion.impl._Private_IonReaderFactory		
+class	com.amazon.ion.impl._Private_IonTextAppender		Closeable,Flushable
+class	com.amazon.ion.impl._Private_IonTextWriterBuilder	IonTextWriterBuilder	
+class	com.amazon.ion.impl._Private_IonTextWriterBuilder$Mutable	_Private_IonTextWriterBuilder	
+class	com.amazon.ion.impl._Private_IonWriterBase		IonWriter,_Private_ReaderWriter
+class	com.amazon.ion.impl._Private_IonWriterFactory		
+class	com.amazon.ion.impl._Private_MarkupCallback		
+class	com.amazon.ion.impl._Private_ScalarConversions		
+class	com.amazon.ion.impl._Private_ScalarConversions$AS_TYPE		
+class	com.amazon.ion.impl._Private_ScalarConversions$CantConvertException	ConversionException	
+class	com.amazon.ion.impl._Private_ScalarConversions$ConversionException	IonException	
+class	com.amazon.ion.impl._Private_ScalarConversions$ValueNotSetException	ConversionException	
+class	com.amazon.ion.impl._Private_ScalarConversions$ValueVariant		
+class	com.amazon.ion.impl._Private_SymtabExtendsCache		
+class	com.amazon.ion.impl._Private_Utils		
+class	com.amazon.ion.impl._Private_Utils$IntIterator		Iterator<Integer>
+class	com.amazon.ion.impl._Private_Utils$StringIterator		Iterator<String>
+class	com.amazon.ion.impl.bin.AbstractIonWriter		_Private_IonWriter,_Private_ByteTransferSink
+class	com.amazon.ion.impl.bin.AbstractSymbolTable		SymbolTable
+class	com.amazon.ion.impl.bin.Block		Closeable
+class	com.amazon.ion.impl.bin.BlockAllocator		Closeable
+class	com.amazon.ion.impl.bin.BlockAllocatorProvider		
+class	com.amazon.ion.impl.bin.BlockAllocatorProviders		
+class	com.amazon.ion.impl.bin.BlockAllocatorProviders$BasicBlockAllocatorProvider	BlockAllocatorProvider	
+class	com.amazon.ion.impl.bin.IonBinaryWriterAdapter		IonBinaryWriter
+class	com.amazon.ion.impl.bin.IonBinaryWriterAdapter$InternalByteArrayOutputStream	ByteArrayOutputStream	
+class	com.amazon.ion.impl.bin.IonManagedBinaryWriter	AbstractIonWriter	_Private_IonManagedWriter
+class	com.amazon.ion.impl.bin.IonManagedBinaryWriter$ImportDescriptor		
+class	com.amazon.ion.impl.bin.IonManagedBinaryWriter$ImportTablePosition		
+class	com.amazon.ion.impl.bin.IonManagedBinaryWriter$ImportedSymbolContext		
+class	com.amazon.ion.impl.bin.IonManagedBinaryWriter$LocalSymbolTableView	AbstractSymbolTable	
+class	com.amazon.ion.impl.bin.IonRawBinaryWriter	AbstractIonWriter	_Private_IonRawWriter
+class	com.amazon.ion.impl.bin.IonRawBinaryWriter$ContainerInfo		
+class	com.amazon.ion.impl.bin.IonRawBinaryWriter$PatchList		Iterable<PatchPoint>
+class	com.amazon.ion.impl.bin.IonRawBinaryWriter$PatchList$Node		
+class	com.amazon.ion.impl.bin.IonRawBinaryWriter$PatchPoint		
+class	com.amazon.ion.impl.bin.IonRawBinaryWriter$PreallocationMode		
+class	com.amazon.ion.impl.bin.PooledBlockAllocatorProvider	BlockAllocatorProvider	
+class	com.amazon.ion.impl.bin.PooledBlockAllocatorProvider$PooledBlockAllocator	BlockAllocator	
+class	com.amazon.ion.impl.bin.Symbols		
+class	com.amazon.ion.impl.bin.WriteBuffer		Closeable
+class	com.amazon.ion.impl.bin._Private_IonManagedBinaryWriterBuilder		
+class	com.amazon.ion.impl.lite.ContainerlessContext		IonContext
+class	com.amazon.ion.impl.lite.IonBlobLite	IonLobLite	IonBlob
+class	com.amazon.ion.impl.lite.IonBoolLite	IonValueLite	IonBool
+class	com.amazon.ion.impl.lite.IonClobLite	IonLobLite	IonClob
+class	com.amazon.ion.impl.lite.IonContainerLite	IonValueLite	_Private_IonContainer,IonContext
+class	com.amazon.ion.impl.lite.IonContainerLite$SequenceContentIterator		ListIterator<IonValue>
+class	com.amazon.ion.impl.lite.IonDatagramLite	IonSequenceLite	IonDatagram,IonContext,_Private_IonDatagram
+class	com.amazon.ion.impl.lite.IonDatagramLite$SystemContentIterator		ListIterator<IonValue>
+class	com.amazon.ion.impl.lite.IonDatagramLite$SystemIteratorPosition		
+class	com.amazon.ion.impl.lite.IonDecimalLite	IonValueLite	IonDecimal
+class	com.amazon.ion.impl.lite.IonFloatLite	IonValueLite	IonFloat
+class	com.amazon.ion.impl.lite.IonIntLite	IonValueLite	IonInt
+class	com.amazon.ion.impl.lite.IonListLite	IonSequenceLite	IonList
+class	com.amazon.ion.impl.lite.IonLoaderLite		IonLoader
+class	com.amazon.ion.impl.lite.IonLobLite	IonValueLite	IonLob
+class	com.amazon.ion.impl.lite.IonNullLite	IonValueLite	IonNull
+class	com.amazon.ion.impl.lite.IonSequenceLite	IonContainerLite	IonSequence
+class	com.amazon.ion.impl.lite.IonSequenceLite$SubListView		List<IonValue>
+class	com.amazon.ion.impl.lite.IonSexpLite	IonSequenceLite	IonSexp
+class	com.amazon.ion.impl.lite.IonStringLite	IonTextLite	IonString
+class	com.amazon.ion.impl.lite.IonStructLite	IonContainerLite	IonStruct
+class	com.amazon.ion.impl.lite.IonSymbolLite	IonTextLite	_Private_IonSymbol
+class	com.amazon.ion.impl.lite.IonSystemLite	ValueFactoryLite	_Private_IonSystem
+class	com.amazon.ion.impl.lite.IonSystemLite$ReaderIterator		Iterator<IonValue>,Closeable
+class	com.amazon.ion.impl.lite.IonTextLite	IonValueLite	IonText
+class	com.amazon.ion.impl.lite.IonTimestampLite	IonValueLite	IonTimestamp
+class	com.amazon.ion.impl.lite.IonValueLite		_Private_IonValue
+class	com.amazon.ion.impl.lite.IonValueLite$LazySymbolTableProvider		_Private_IonValue.SymbolTableProvider
+class	com.amazon.ion.impl.lite.ReverseBinaryEncoder		
+class	com.amazon.ion.impl.lite.TopLevelContext		IonContext
+class	com.amazon.ion.impl.lite.ValueFactoryLite		_Private_ValueFactory
+class	com.amazon.ion.impl.lite._Private_LiteDomTrampoline		
+class	com.amazon.ion.system.IonBinaryWriterBuilder	IonWriterBuilderBase<IonBinaryWriterBuilder>	
+class	com.amazon.ion.system.IonReaderBuilder		
+class	com.amazon.ion.system.IonReaderBuilder$Mutable	IonReaderBuilder	
+class	com.amazon.ion.system.IonSystemBuilder		
+class	com.amazon.ion.system.IonSystemBuilder$Mutable	IonSystemBuilder	
+class	com.amazon.ion.system.IonTextWriterBuilder	IonWriterBuilderBase<IonTextWriterBuilder>	
+class	com.amazon.ion.system.IonWriterBuilder		
+class	com.amazon.ion.system.IonWriterBuilderBase	IonWriterBuilder	
+class	com.amazon.ion.system.SimpleCatalog		IonMutableCatalog,Iterable<SymbolTable>
+class	com.amazon.ion.system.SystemFactory		
+class	com.amazon.ion.util.AbstractValueVisitor		ValueVisitor
+class	com.amazon.ion.util.Equivalence		
+class	com.amazon.ion.util.Equivalence$Field		
+class	com.amazon.ion.util.GzipOrRawInputStream	FilterInputStream	
+class	com.amazon.ion.util.IonStreamUtils		
+class	com.amazon.ion.util.IonTextUtils		
+class	com.amazon.ion.util.IonValueUtils		
+class	com.amazon.ion.util.JarInfo		
+class	com.amazon.ion.util.Printer		
+class	com.amazon.ion.util.Printer$BasicSymbolTableProvider		_Private_IonValue.SymbolTableProvider
+class	com.amazon.ion.util.Printer$Options		Cloneable
+class	com.amazon.ion.util.Printer$PrinterVisitor	AbstractValueVisitor	
+class	com.amazon.ion.util.Spans		
+class	com.amazon.jacksonion.CloseSafeUTF8Writer	Writer	
+class	com.amazon.jacksonion.DateAsIonTimestampModule	Module	
+class	com.amazon.jacksonion.EnumAsIonSymbolModule	SimpleModule	
+class	com.amazon.jacksonion.IonSymbolSerializer	StdScalarSerializer<String>	
+class	com.amazon.jacksonion.IonTimestampDeserializers		
+class	com.amazon.jacksonion.IonTimestampDeserializers$IonTimestampJavaDateDeserializer	DateDeserializers.DateDeserializer	
+class	com.amazon.jacksonion.IonTimestampDeserializers$IonTimestampSQLDateDeserializer	DateDeserializers.SqlDateDeserializer	
+class	com.amazon.jacksonion.IonTimestampSerializers		
+class	com.amazon.jacksonion.IonTimestampSerializers$IonTimestampJavaDateSerializer	StdScalarSerializer<Date>	
+class	com.amazon.jacksonion.IonTimestampSerializers$IonTimestampSQLDateSerializer	StdScalarSerializer<java.sql.Date>	
+class	com.amazon.jacksonion.JoiConfig		
+class	com.amazon.jacksonion.JoiConfig$JoiConfigBuilder		
+class	com.amazon.jacksonion.JoiFactory	JsonFactory	
+class	com.amazon.jacksonion.JoiGenerator	GeneratorBase	
+class	com.amazon.jacksonion.JoiObjectMapper	ObjectMapper	JoiObjectCodec
+class	com.amazon.jacksonion.JoiParser	ParserMinimalBase	
+class	com.amazon.jacksonion.JoiWriteContext	JsonWriteContext	
+class	com.amazon.jacksonion.ionvalue.DecimalDeserializer	StdScalarDeserializer<Decimal>	
+class	com.amazon.jacksonion.ionvalue.DecimalSerializer	StdScalarSerializer<Decimal>	
+class	com.amazon.jacksonion.ionvalue.IonTypeDeserializers	SimpleDeserializers	
+class	com.amazon.jacksonion.ionvalue.IonTypeSerializers	SimpleSerializers	
+class	com.amazon.jacksonion.ionvalue.IonValueDeserializer	JsonDeserializer<IonValue>	
+class	com.amazon.jacksonion.ionvalue.IonValueMapper	JoiObjectMapper	
+class	com.amazon.jacksonion.ionvalue.IonValueModule	Module	
+class	com.amazon.jacksonion.ionvalue.IonValueSerializer	StdScalarSerializer<IonValue>	
+class	com.amazon.jacksonion.ionvalue.TimestampDeserializer	StdScalarDeserializer<Timestamp>	
+class	com.amazon.jacksonion.ionvalue.TimestampSerializer	StdScalarSerializer<Timestamp>	
+class	com.amazon.jacksonion.polymorphism.IonAnnotationIntrospector	NopAnnotationIntrospector	
+class	com.amazon.jacksonion.polymorphism.IonAnnotationStdTypeResolverBuilder	StdTypeResolverBuilder	
+class	com.amazon.jacksonion.polymorphism.IonAnnotationTypeDeserializer	TypeDeserializerBase	
+class	com.amazon.jacksonion.polymorphism.IonAnnotationTypeResolverBuilder		TypeResolverBuilder<IonAnnotationTypeResolverBuilder>
+class	com.amazon.jacksonion.polymorphism.IonAnnotationTypeSerializer	TypeSerializer	
+class	com.amazon.tcomm.jackson.BuildConfig		
+enum	com.amazon.com.fasterxml.jackson.annotation.JsonAutoDetect$Visibility		
+enum	com.amazon.com.fasterxml.jackson.annotation.JsonCreator$Mode		
+enum	com.amazon.com.fasterxml.jackson.annotation.JsonFormat$Feature		
+enum	com.amazon.com.fasterxml.jackson.annotation.JsonFormat$Shape		
+enum	com.amazon.com.fasterxml.jackson.annotation.JsonInclude$Include		
+enum	com.amazon.com.fasterxml.jackson.annotation.JsonProperty$Access		
+enum	com.amazon.com.fasterxml.jackson.annotation.JsonTypeInfo$As		
+enum	com.amazon.com.fasterxml.jackson.annotation.JsonTypeInfo$Id		
+enum	com.amazon.com.fasterxml.jackson.annotation.OptBoolean		
+enum	com.amazon.com.fasterxml.jackson.annotation.PropertyAccessor		
+enum	com.amazon.com.fasterxml.jackson.core.JsonEncoding		
+enum	com.amazon.com.fasterxml.jackson.core.JsonFactory$Feature		
+enum	com.amazon.com.fasterxml.jackson.core.JsonGenerator$Feature		
+enum	com.amazon.com.fasterxml.jackson.core.JsonParser$Feature		
+enum	com.amazon.com.fasterxml.jackson.core.JsonParser$NumberType		
+enum	com.amazon.com.fasterxml.jackson.core.JsonToken		
+enum	com.amazon.com.fasterxml.jackson.core.format.MatchStrength		
+enum	com.amazon.com.fasterxml.jackson.databind.AnnotationIntrospector$ReferenceProperty$Type		
+enum	com.amazon.com.fasterxml.jackson.databind.DeserializationFeature		ConfigFeature
+enum	com.amazon.com.fasterxml.jackson.databind.MapperFeature		ConfigFeature
+enum	com.amazon.com.fasterxml.jackson.databind.ObjectMapper$DefaultTyping		
+enum	com.amazon.com.fasterxml.jackson.databind.SerializationFeature		ConfigFeature
+enum	com.amazon.com.fasterxml.jackson.databind.annotation.JsonSerialize$Inclusion		
+enum	com.amazon.com.fasterxml.jackson.databind.annotation.JsonSerialize$Typing		
+enum	com.amazon.com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatTypes		
+enum	com.amazon.com.fasterxml.jackson.databind.jsonFormatVisitors.JsonValueFormat		
+enum	com.amazon.com.fasterxml.jackson.databind.node.JsonNodeType		
+enum	com.amazon.ion.IntegerSize		
+enum	com.amazon.ion.IonType		
+enum	com.amazon.ion.Timestamp$Precision		
+enum	com.amazon.ion.impl.IonReaderBinaryRawX$State		
+enum	com.amazon.ion.impl.IonReaderTextRawTokensX$CommentStrategy		
+enum	com.amazon.ion.impl.IonReaderTextRawTokensX$NumericState		
+enum	com.amazon.ion.impl.IonReaderTextRawX$LOB_STATE		
+enum	com.amazon.ion.impl.IonTokenConstsX$EscapeType		
+enum	com.amazon.ion.impl.IonTokenReader$Context		
+enum	com.amazon.ion.impl.IonTokenReader$NumberType		
+enum	com.amazon.ion.impl.IonTokenReader$Type		
+enum	com.amazon.ion.impl.ProhibitedCharacters		
+enum	com.amazon.ion.impl.SymbolTableReader$Op		
+enum	com.amazon.ion.impl.UnifiedDataPageX$PageType		
+enum	com.amazon.ion.impl.UnifiedInputBufferX$BufferType		
+enum	com.amazon.ion.impl.UnifiedSavePointManagerX$SavePoint$SavePointState		
+enum	com.amazon.ion.impl._Private_IonConstants$HighNibble		
+enum	com.amazon.ion.impl.bin.AbstractIonWriter$WriteValueOptimization		
+enum	com.amazon.ion.impl.bin.IonManagedBinaryWriter$ImportedSymbolResolverMode		
+enum	com.amazon.ion.impl.bin.IonManagedBinaryWriter$SymbolState		
+enum	com.amazon.ion.impl.bin.IonManagedBinaryWriter$UserState		
+enum	com.amazon.ion.impl.bin.IonRawBinaryWriter$ContainerType		
+enum	com.amazon.ion.impl.bin.IonRawBinaryWriter$StreamCloseMode		
+enum	com.amazon.ion.impl.bin.IonRawBinaryWriter$StreamFlushMode		
+enum	com.amazon.ion.impl.bin._Private_IonManagedBinaryWriterBuilder$AllocatorMode		
+enum	com.amazon.ion.system.IonTextWriterBuilder$LstMinimizing		
+enum	com.amazon.ion.system.IonWriterBuilder$InitialIvmHandling		
+enum	com.amazon.ion.system.IonWriterBuilder$IvmMinimizing		
+enum	com.amazon.ion.util.IonTextUtils$EscapeMode		
+enum	com.amazon.ion.util.IonTextUtils$SymbolVariant		
+enum	com.amazon.jacksonion.StandardJoiFeature		JoiFeature
+interface	com.amazon.com.fasterxml.jackson.annotation.JacksonAnnotationValue		
+interface	com.amazon.com.fasterxml.jackson.annotation.ObjectIdResolver		
+interface	com.amazon.com.fasterxml.jackson.core.FormatFeature		
+interface	com.amazon.com.fasterxml.jackson.core.FormatSchema		
+interface	com.amazon.com.fasterxml.jackson.core.JsonTokenId		
+interface	com.amazon.com.fasterxml.jackson.core.PrettyPrinter		
+interface	com.amazon.com.fasterxml.jackson.core.SerializableString		
+interface	com.amazon.com.fasterxml.jackson.core.TreeNode		
+interface	com.amazon.com.fasterxml.jackson.core.Versioned		
+interface	com.amazon.com.fasterxml.jackson.core.format.InputAccessor		
+interface	com.amazon.com.fasterxml.jackson.core.util.DefaultPrettyPrinter$Indenter		
+interface	com.amazon.com.fasterxml.jackson.core.util.Instantiatable		
+interface	com.amazon.com.fasterxml.jackson.databind.BeanProperty	Named	
+interface	com.amazon.com.fasterxml.jackson.databind.JsonSerializable		
+interface	com.amazon.com.fasterxml.jackson.databind.Module$SetupContext		
+interface	com.amazon.com.fasterxml.jackson.databind.cfg.ConfigFeature		
+interface	com.amazon.com.fasterxml.jackson.databind.deser.ContextualDeserializer		
+interface	com.amazon.com.fasterxml.jackson.databind.deser.ContextualKeyDeserializer		
+interface	com.amazon.com.fasterxml.jackson.databind.deser.Deserializers		
+interface	com.amazon.com.fasterxml.jackson.databind.deser.KeyDeserializers		
+interface	com.amazon.com.fasterxml.jackson.databind.deser.ResolvableDeserializer		
+interface	com.amazon.com.fasterxml.jackson.databind.deser.ValueInstantiators		
+interface	com.amazon.com.fasterxml.jackson.databind.introspect.ClassIntrospector$MixInResolver		
+interface	com.amazon.com.fasterxml.jackson.databind.introspect.POJOPropertyBuilder$WithMember		
+interface	com.amazon.com.fasterxml.jackson.databind.introspect.TypeResolutionContext		
+interface	com.amazon.com.fasterxml.jackson.databind.introspect.VisibilityChecker		
+interface	com.amazon.com.fasterxml.jackson.databind.introspect.WithMember		
+interface	com.amazon.com.fasterxml.jackson.databind.jsonFormatVisitors.JsonAnyFormatVisitor		
+interface	com.amazon.com.fasterxml.jackson.databind.jsonFormatVisitors.JsonArrayFormatVisitor	JsonFormatVisitorWithSerializerProvider	
+interface	com.amazon.com.fasterxml.jackson.databind.jsonFormatVisitors.JsonBooleanFormatVisitor	JsonValueFormatVisitor	
+interface	com.amazon.com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitable		
+interface	com.amazon.com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWithSerializerProvider		
+interface	com.amazon.com.fasterxml.jackson.databind.jsonFormatVisitors.JsonFormatVisitorWrapper	JsonFormatVisitorWithSerializerProvider	
+interface	com.amazon.com.fasterxml.jackson.databind.jsonFormatVisitors.JsonIntegerFormatVisitor	JsonValueFormatVisitor	
+interface	com.amazon.com.fasterxml.jackson.databind.jsonFormatVisitors.JsonMapFormatVisitor	JsonFormatVisitorWithSerializerProvider	
+interface	com.amazon.com.fasterxml.jackson.databind.jsonFormatVisitors.JsonNullFormatVisitor		
+interface	com.amazon.com.fasterxml.jackson.databind.jsonFormatVisitors.JsonNumberFormatVisitor	JsonValueFormatVisitor	
+interface	com.amazon.com.fasterxml.jackson.databind.jsonFormatVisitors.JsonObjectFormatVisitor	JsonFormatVisitorWithSerializerProvider	
+interface	com.amazon.com.fasterxml.jackson.databind.jsonFormatVisitors.JsonStringFormatVisitor	JsonValueFormatVisitor	
+interface	com.amazon.com.fasterxml.jackson.databind.jsonFormatVisitors.JsonValueFormatVisitor		
+interface	com.amazon.com.fasterxml.jackson.databind.jsonschema.SchemaAware		
+interface	com.amazon.com.fasterxml.jackson.databind.jsontype.TypeIdResolver		
+interface	com.amazon.com.fasterxml.jackson.databind.jsontype.TypeResolverBuilder		
+interface	com.amazon.com.fasterxml.jackson.databind.node.JsonNodeCreator		
+interface	com.amazon.com.fasterxml.jackson.databind.ser.BeanPropertyFilter		
+interface	com.amazon.com.fasterxml.jackson.databind.ser.ContextualSerializer		
+interface	com.amazon.com.fasterxml.jackson.databind.ser.PropertyFilter		
+interface	com.amazon.com.fasterxml.jackson.databind.ser.ResolvableSerializer		
+interface	com.amazon.com.fasterxml.jackson.databind.ser.Serializers		
+interface	com.amazon.com.fasterxml.jackson.databind.util.Annotations		
+interface	com.amazon.com.fasterxml.jackson.databind.util.Converter		
+interface	com.amazon.com.fasterxml.jackson.databind.util.Named		
+interface	com.amazon.ion.IonBinaryWriter	IonWriter	
+interface	com.amazon.ion.IonBlob	IonLob	
+interface	com.amazon.ion.IonBool	IonValue	
+interface	com.amazon.ion.IonCatalog		
+interface	com.amazon.ion.IonClob	IonValue, IonLob	
+interface	com.amazon.ion.IonContainer	IonValue, Iterable<IonValue>	
+interface	com.amazon.ion.IonDatagram	IonSequence	
+interface	com.amazon.ion.IonDecimal	IonNumber	
+interface	com.amazon.ion.IonFloat	IonValue	
+interface	com.amazon.ion.IonInt	IonValue	
+interface	com.amazon.ion.IonList	IonValue, IonSequence, Collection<IonValue>	
+interface	com.amazon.ion.IonLoader		
+interface	com.amazon.ion.IonLob	IonValue	
+interface	com.amazon.ion.IonMutableCatalog	IonCatalog	
+interface	com.amazon.ion.IonNull	IonValue	
+interface	com.amazon.ion.IonNumber	IonValue	
+interface	com.amazon.ion.IonReader	Closeable, Faceted	
+interface	com.amazon.ion.IonSequence	IonContainer, List<IonValue>	
+interface	com.amazon.ion.IonSexp	IonValue, IonSequence, Collection<IonValue>	
+interface	com.amazon.ion.IonString	IonText	
+interface	com.amazon.ion.IonStruct	IonContainer	
+interface	com.amazon.ion.IonSymbol	IonText	
+interface	com.amazon.ion.IonSystem	ValueFactory	
+interface	com.amazon.ion.IonText	IonValue	
+interface	com.amazon.ion.IonTextReader	IonReader	
+interface	com.amazon.ion.IonTimestamp	IonValue	
+interface	com.amazon.ion.IonValue	Cloneable	
+interface	com.amazon.ion.IonWriter	Closeable, Flushable, Faceted	
+interface	com.amazon.ion.OffsetSpan		
+interface	com.amazon.ion.RawValueSpanProvider		
+interface	com.amazon.ion.SeekableReader	SpanProvider	
+interface	com.amazon.ion.Span	Faceted	
+interface	com.amazon.ion.SpanProvider		
+interface	com.amazon.ion.SymbolTable		
+interface	com.amazon.ion.SymbolToken		
+interface	com.amazon.ion.TextSpan		
+interface	com.amazon.ion.ValueFactory		
+interface	com.amazon.ion.ValueVisitor		
+interface	com.amazon.ion.facet.Faceted		
+interface	com.amazon.ion.impl.BlockedBuffer$Monitor		
+interface	com.amazon.ion.impl.ByteBuffer		
+interface	com.amazon.ion.impl.ByteReader		
+interface	com.amazon.ion.impl.ByteWriter		
+interface	com.amazon.ion.impl.SystemValueIterator	Iterator<IonValue>, Closeable	
+interface	com.amazon.ion.impl._Private_ByteTransferReader		
+interface	com.amazon.ion.impl._Private_ByteTransferSink		
+interface	com.amazon.ion.impl._Private_CallbackBuilder		
+interface	com.amazon.ion.impl._Private_IonContainer	IonContainer	
+interface	com.amazon.ion.impl._Private_IonDatagram	_Private_IonValue, IonDatagram	
+interface	com.amazon.ion.impl._Private_IonSymbol	IonSymbol	
+interface	com.amazon.ion.impl._Private_IonSystem	IonSystem	
+interface	com.amazon.ion.impl._Private_IonValue	IonValue	
+interface	com.amazon.ion.impl._Private_IonValue$SymbolTableProvider		
+interface	com.amazon.ion.impl._Private_IonWriter	IonWriter	
+interface	com.amazon.ion.impl._Private_ListWriter	IonWriter	
+interface	com.amazon.ion.impl._Private_LocalSymbolTableFactory		
+interface	com.amazon.ion.impl._Private_ReaderWriter		
+interface	com.amazon.ion.impl._Private_SymbolToken	SymbolToken	
+interface	com.amazon.ion.impl._Private_ValueFactory	ValueFactory	
+interface	com.amazon.ion.impl.bin.IonBinaryWriterAdapter$Factory		
+interface	com.amazon.ion.impl.bin.IonManagedBinaryWriter$SymbolResolver		
+interface	com.amazon.ion.impl.bin.IonManagedBinaryWriter$SymbolResolverBuilder		
+interface	com.amazon.ion.impl.bin._Private_IonManagedWriter	IonWriter	
+interface	com.amazon.ion.impl.bin._Private_IonRawWriter	IonWriter	
+interface	com.amazon.ion.impl.lite.IonContext		
+interface	com.amazon.ion.util._Private_FastAppendable	Appendable	
+interface	com.amazon.jacksonion.JoiFeature		
+interface	com.amazon.jacksonion.JoiObjectCodec		
+interface	com.amazon.jacksonion.polymorphism.MultipleTypeIdResolver	TypeIdResolver	

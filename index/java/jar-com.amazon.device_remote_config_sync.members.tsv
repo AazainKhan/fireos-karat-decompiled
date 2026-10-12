@@ -1,0 +1,415 @@
+class	kind	declaration
+com.amazon.device_remote_config_sync.AppContext	field	public String appId;
+com.amazon.device_remote_config_sync.AppContext	field	public String appVersion;
+com.amazon.device_remote_config_sync.AppContext	method	public final void readFromParcel(Parcel _aidl_parcel)
+com.amazon.device_remote_config_sync.AppContext	method	public final void writeToParcel(Parcel _aidl_parcel, int _aidl_flag)
+com.amazon.device_remote_config_sync.AppContext	method	public int describeContents()
+com.amazon.device_remote_config_sync.DRCSErrorCode	field	public static final int INTERNAL_ERROR;
+com.amazon.device_remote_config_sync.DRCSErrorCode	field	public static final int INVALID_INPUT;
+com.amazon.device_remote_config_sync.DRCSErrorCode	field	public static final int NONE;
+com.amazon.device_remote_config_sync.DRCSErrorCode	field	public static final int NO_RESULT;
+com.amazon.device_remote_config_sync.HasLocalOverrideResult	field	public String errorMessage;
+com.amazon.device_remote_config_sync.HasLocalOverrideResult	field	public boolean hasOverride;
+com.amazon.device_remote_config_sync.HasLocalOverrideResult	field	public int error;
+com.amazon.device_remote_config_sync.HasLocalOverrideResult	method	public final void readFromParcel(Parcel _aidl_parcel)
+com.amazon.device_remote_config_sync.HasLocalOverrideResult	method	public final void writeToParcel(Parcel parcel, int i)
+com.amazon.device_remote_config_sync.HasLocalOverrideResult	method	public int describeContents()
+com.amazon.device_remote_config_sync.IDeviceRemoteConfigSyncService	field	public static final String DESCRIPTOR;
+com.amazon.device_remote_config_sync.IDeviceRemoteConfigSyncService$Default	method	public IBinder asBinder()
+com.amazon.device_remote_config_sync.IDeviceRemoteConfigSyncService$Default	method	public IWeblabProvider get_weblab_provider() throws RemoteException
+com.amazon.device_remote_config_sync.IDeviceRemoteConfigSyncService$Stub	field	static final int TRANSACTION_get_weblab_provider;
+com.amazon.device_remote_config_sync.IDeviceRemoteConfigSyncService$Stub	method	public IBinder asBinder()
+com.amazon.device_remote_config_sync.IDeviceRemoteConfigSyncService$Stub	method	public Stub()
+com.amazon.device_remote_config_sync.IDeviceRemoteConfigSyncService$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.amazon.device_remote_config_sync.IDeviceRemoteConfigSyncService$Stub	method	public static IDeviceRemoteConfigSyncService asInterface(IBinder obj)
+com.amazon.device_remote_config_sync.IDeviceRemoteConfigSyncService$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.device_remote_config_sync.IDeviceRemoteConfigSyncService$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.device_remote_config_sync.IDeviceRemoteConfigSyncService$Stub$Proxy	method	public IWeblabProvider get_weblab_provider() throws RemoteException
+com.amazon.device_remote_config_sync.IDeviceRemoteConfigSyncService$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.device_remote_config_sync.IWeblabProvider	field	public static final String DESCRIPTOR;
+com.amazon.device_remote_config_sync.IWeblabProvider$Default	method	public HasLocalOverrideResult has_local_override(String weblab_name, int domain) throws RemoteException
+com.amazon.device_remote_config_sync.IWeblabProvider$Default	method	public IBinder asBinder()
+com.amazon.device_remote_config_sync.IWeblabProvider$Default	method	public RecordTriggerResult record_trigger(TreatmentWithoutRecordTriggerResult treatment_result, int domain) throws RemoteException
+com.amazon.device_remote_config_sync.IWeblabProvider$Default	method	public RemoveLocalOverrideResult remove_local_override(String weblab_name, int domain) throws RemoteException
+com.amazon.device_remote_config_sync.IWeblabProvider$Default	method	public SetLocalOverrideResult set_local_override(String weblab_name, String treatment, int domain) throws RemoteException
+com.amazon.device_remote_config_sync.IWeblabProvider$Default	method	public TreatmentResult get_treatment_with_record_trigger(String weblab_name, String customer_id, String session_id, int domain, String marketplace_id, AppContext app_context) throws RemoteException
+com.amazon.device_remote_config_sync.IWeblabProvider$Default	method	public TreatmentWithoutRecordTriggerResult get_treatment_without_record_trigger(String weblab_name, String customer_id, String session_id, int domain, String marketplace_id, AppContext app_context) throws RemoteException
+com.amazon.device_remote_config_sync.IWeblabProvider$Stub	field	static final int TRANSACTION_get_treatment_with_record_trigger;
+com.amazon.device_remote_config_sync.IWeblabProvider$Stub	field	static final int TRANSACTION_get_treatment_without_record_trigger;
+com.amazon.device_remote_config_sync.IWeblabProvider$Stub	field	static final int TRANSACTION_has_local_override;
+com.amazon.device_remote_config_sync.IWeblabProvider$Stub	field	static final int TRANSACTION_record_trigger;
+com.amazon.device_remote_config_sync.IWeblabProvider$Stub	field	static final int TRANSACTION_remove_local_override;
+com.amazon.device_remote_config_sync.IWeblabProvider$Stub	field	static final int TRANSACTION_set_local_override;
+com.amazon.device_remote_config_sync.IWeblabProvider$Stub	method	public IBinder asBinder()
+com.amazon.device_remote_config_sync.IWeblabProvider$Stub	method	public Stub()
+com.amazon.device_remote_config_sync.IWeblabProvider$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.amazon.device_remote_config_sync.IWeblabProvider$Stub	method	public static IWeblabProvider asInterface(IBinder obj)
+com.amazon.device_remote_config_sync.IWeblabProvider$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.device_remote_config_sync.IWeblabProvider$Stub$Proxy	method	public HasLocalOverrideResult has_local_override(String weblab_name, int domain) throws RemoteException
+com.amazon.device_remote_config_sync.IWeblabProvider$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.device_remote_config_sync.IWeblabProvider$Stub$Proxy	method	public RecordTriggerResult record_trigger(TreatmentWithoutRecordTriggerResult treatment_result, int domain) throws RemoteException
+com.amazon.device_remote_config_sync.IWeblabProvider$Stub$Proxy	method	public RemoveLocalOverrideResult remove_local_override(String weblab_name, int domain) throws RemoteException
+com.amazon.device_remote_config_sync.IWeblabProvider$Stub$Proxy	method	public SetLocalOverrideResult set_local_override(String weblab_name, String treatment, int domain) throws RemoteException
+com.amazon.device_remote_config_sync.IWeblabProvider$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.device_remote_config_sync.IWeblabProvider$Stub$Proxy	method	public TreatmentResult get_treatment_with_record_trigger(String weblab_name, String customer_id, String session_id, int domain, String marketplace_id, AppContext app_context) throws RemoteException
+com.amazon.device_remote_config_sync.IWeblabProvider$Stub$Proxy	method	public TreatmentWithoutRecordTriggerResult get_treatment_without_record_trigger(String weblab_name, String customer_id, String session_id, int domain, String marketplace_id, AppContext app_context) throws RemoteException
+com.amazon.device_remote_config_sync.IWeblabProvider$_Parcel	method	public static <T extends Parcelable> void writeTypedObject(Parcel parcel, T value, int parcelableFlags)
+com.amazon.device_remote_config_sync.IWeblabProvider$_Parcel	method	public static <T> T readTypedObject(Parcel parcel, Parcelable.Creator<T> c)
+com.amazon.device_remote_config_sync.RecordTriggerResult	field	public String errorMessage;
+com.amazon.device_remote_config_sync.RecordTriggerResult	field	public boolean success;
+com.amazon.device_remote_config_sync.RecordTriggerResult	field	public int error;
+com.amazon.device_remote_config_sync.RecordTriggerResult	method	public final void readFromParcel(Parcel _aidl_parcel)
+com.amazon.device_remote_config_sync.RecordTriggerResult	method	public final void writeToParcel(Parcel parcel, int i)
+com.amazon.device_remote_config_sync.RecordTriggerResult	method	public int describeContents()
+com.amazon.device_remote_config_sync.RemoveLocalOverrideResult	field	public String errorMessage;
+com.amazon.device_remote_config_sync.RemoveLocalOverrideResult	field	public boolean success;
+com.amazon.device_remote_config_sync.RemoveLocalOverrideResult	field	public int error;
+com.amazon.device_remote_config_sync.RemoveLocalOverrideResult	method	public final void readFromParcel(Parcel _aidl_parcel)
+com.amazon.device_remote_config_sync.RemoveLocalOverrideResult	method	public final void writeToParcel(Parcel parcel, int i)
+com.amazon.device_remote_config_sync.RemoveLocalOverrideResult	method	public int describeContents()
+com.amazon.device_remote_config_sync.SetLocalOverrideResult	field	public String errorMessage;
+com.amazon.device_remote_config_sync.SetLocalOverrideResult	field	public boolean success;
+com.amazon.device_remote_config_sync.SetLocalOverrideResult	field	public int error;
+com.amazon.device_remote_config_sync.SetLocalOverrideResult	method	public final void readFromParcel(Parcel _aidl_parcel)
+com.amazon.device_remote_config_sync.SetLocalOverrideResult	method	public final void writeToParcel(Parcel parcel, int i)
+com.amazon.device_remote_config_sync.SetLocalOverrideResult	method	public int describeContents()
+com.amazon.device_remote_config_sync.TreatmentResult	field	public String errorMessage;
+com.amazon.device_remote_config_sync.TreatmentResult	field	public String treatment;
+com.amazon.device_remote_config_sync.TreatmentResult	field	public int error;
+com.amazon.device_remote_config_sync.TreatmentResult	method	public final void readFromParcel(Parcel _aidl_parcel)
+com.amazon.device_remote_config_sync.TreatmentResult	method	public final void writeToParcel(Parcel _aidl_parcel, int _aidl_flag)
+com.amazon.device_remote_config_sync.TreatmentResult	method	public int describeContents()
+com.amazon.device_remote_config_sync.TreatmentWithoutRecordTriggerResult	field	public String errorMessage;
+com.amazon.device_remote_config_sync.TreatmentWithoutRecordTriggerResult	field	public String treatment;
+com.amazon.device_remote_config_sync.TreatmentWithoutRecordTriggerResult	field	public String triggerToken;
+com.amazon.device_remote_config_sync.TreatmentWithoutRecordTriggerResult	field	public String weblabName;
+com.amazon.device_remote_config_sync.TreatmentWithoutRecordTriggerResult	field	public int error;
+com.amazon.device_remote_config_sync.TreatmentWithoutRecordTriggerResult	method	public final void readFromParcel(Parcel _aidl_parcel)
+com.amazon.device_remote_config_sync.TreatmentWithoutRecordTriggerResult	method	public final void writeToParcel(Parcel _aidl_parcel, int _aidl_flag)
+com.amazon.device_remote_config_sync.TreatmentWithoutRecordTriggerResult	method	public int describeContents()
+com.amazon.device_remote_config_sync.WeblabDomain	field	public static final int PILOT;
+com.amazon.device_remote_config_sync.WeblabDomain	field	public static final int PROD;
+com.amazon.device_remote_config_sync.WeblabDomain	field	public static final int TEST;
+com.amazon.drcs.client.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.drcs.client.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.drcs.client.BuildConfig	field	public static final String FLAVOR;
+com.amazon.drcs.client.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.drcs.client.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.drcs.client.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.drcs.client.DRCSClientConfigBase	field	private final String appId;
+com.amazon.drcs.client.DRCSClientConfigBase	field	private final String appVersion;
+com.amazon.drcs.client.DRCSClientConfigBase	field	private static final String TO_STRING_FORMAT;
+com.amazon.drcs.client.DRCSClientConfigBase	method	protected DRCSClientConfigBase(BaseBuilder<?> builder)
+com.amazon.drcs.client.DRCSClientConfigBase	method	public String getAppId()
+com.amazon.drcs.client.DRCSClientConfigBase	method	public String getAppVersion()
+com.amazon.drcs.client.DRCSClientConfigBase	method	public String toString()
+com.amazon.drcs.client.DRCSClientConfigBase$BaseBuilder	method	protected BaseBuilder()
+com.amazon.drcs.client.DRCSClientConfigBase$BaseBuilder	method	protected abstract T self();
+com.amazon.drcs.client.DRCSClientConfigBase$BaseBuilder	method	public T appId(String str)
+com.amazon.drcs.client.DRCSClientConfigBase$BaseBuilder	method	public T appVersion(String str)
+com.amazon.drcs.client.DRCSClientFactory	method	private DRCSClientFactory()
+com.amazon.drcs.client.DRCSClientFactory	method	public static IWeblabDRCSClient createWeblabClient(DRCSWeblabClientConfig config)
+com.amazon.drcs.client.DRCSClientFactory	method	public static IWeblabDRCSClient getWeblabClient()
+com.amazon.drcs.client.NativeDRCSWeblabClient	field	private DRCSWeblabClientConfig config;
+com.amazon.drcs.client.NativeDRCSWeblabClient	field	private final IWeblabService weblabService;
+com.amazon.drcs.client.NativeDRCSWeblabClient	field	private static final DRCSLogger log;
+com.amazon.drcs.client.NativeDRCSWeblabClient	field	private static final String METHOD_GET_TREATMENT_WITHOUT_RECORD_TRIGGER;
+com.amazon.drcs.client.NativeDRCSWeblabClient	field	private static final String METHOD_GET_TREATMENT_WITH_RECORD_TRIGGER;
+com.amazon.drcs.client.NativeDRCSWeblabClient	field	private static final String METHOD_HAS_LOCAL_OVERRIDE;
+com.amazon.drcs.client.NativeDRCSWeblabClient	field	private static final String METHOD_RECORD_TRIGGER;
+com.amazon.drcs.client.NativeDRCSWeblabClient	field	private static final String METHOD_REMOVE_LOCAL_OVERRIDE;
+com.amazon.drcs.client.NativeDRCSWeblabClient	field	private static final String METHOD_SET_LOCAL_OVERRIDE;
+com.amazon.drcs.client.NativeDRCSWeblabClient	field	private static volatile NativeDRCSWeblabClient instance;
+com.amazon.drcs.client.NativeDRCSWeblabClient	method	private NativeDRCSWeblabClient(DRCSWeblabClientConfig config)
+com.amazon.drcs.client.NativeDRCSWeblabClient	method	private WeblabGetTreatmentAndRecordTriggerRequest buildGetTreatmentAndRecordTriggerRequest(String weblabName, String customerId, String sessionId, String marketplaceId)
+com.amazon.drcs.client.NativeDRCSWeblabClient	method	private WeblabGetTreatmentWithoutRecordTriggerRequest buildGetTreatmentWithoutRecordTriggerRequest(String weblabName, String customerId, String sessionId, String marketplaceId)
+com.amazon.drcs.client.NativeDRCSWeblabClient	method	private WeblabRecordTriggerRequest buildRecordTriggerRequest(TreatmentWithoutRecordTriggerResult treatmentWithoutRecordTriggerResult)
+com.amazon.drcs.client.NativeDRCSWeblabClient	method	private static void rejectIfMainThread(String methodName)
+com.amazon.drcs.client.NativeDRCSWeblabClient	method	public DRCSWeblabClientConfig getConfig()
+com.amazon.drcs.client.NativeDRCSWeblabClient	method	public HasLocalOverrideResult hasLocalOverride(String weblabName)
+com.amazon.drcs.client.NativeDRCSWeblabClient	method	public Optional<String> getTreatmentWithRecordTrigger(String weblabName, String customerId, String sessionId)
+com.amazon.drcs.client.NativeDRCSWeblabClient	method	public Optional<String> getTreatmentWithRecordTrigger(String weblabName, String customerId, String sessionId, String marketplaceId)
+com.amazon.drcs.client.NativeDRCSWeblabClient	method	public RemoveLocalOverrideResult removeLocalOverride(String weblabName)
+com.amazon.drcs.client.NativeDRCSWeblabClient	method	public SetLocalOverrideResult setLocalOverride(String weblabName, String treatment)
+com.amazon.drcs.client.NativeDRCSWeblabClient	method	public TreatmentWithoutRecordTriggerResult getTreatmentWithoutRecordTrigger(String weblabName, String customerId, String sessionId)
+com.amazon.drcs.client.NativeDRCSWeblabClient	method	public TreatmentWithoutRecordTriggerResult getTreatmentWithoutRecordTrigger(String weblabName, String customerId, String sessionId, String marketplaceId)
+com.amazon.drcs.client.NativeDRCSWeblabClient	method	public boolean recordTrigger(TreatmentWithoutRecordTriggerResult treatmentWithoutRecordTriggerResult)
+com.amazon.drcs.client.NativeDRCSWeblabClient	method	static IWeblabDRCSClient createInstance(DRCSWeblabClientConfig config)
+com.amazon.drcs.client.NativeDRCSWeblabClient	method	static IWeblabDRCSClient getInstance()
+com.amazon.drcs.client.exception.DRCSInvalidInputException	method	public DRCSInvalidInputException(String message)
+com.amazon.drcs.client.exception.DRCSInvalidInputException	method	public DRCSInvalidInputException(String message, Throwable cause)
+com.amazon.drcs.client.exception.DRCSServiceException	method	public DRCSServiceException(String message)
+com.amazon.drcs.client.exception.DRCSServiceException	method	public DRCSServiceException(String message, Throwable cause)
+com.amazon.drcs.client.exception.DRCSServiceRetryableException	method	public DRCSServiceRetryableException(String message)
+com.amazon.drcs.client.exception.DRCSServiceRetryableException	method	public DRCSServiceRetryableException(String message, Throwable cause)
+com.amazon.drcs.client.service.NativeDRCSBinder	field	private static BinderUtils sharedBinderUtils;
+com.amazon.drcs.client.service.NativeDRCSBinder	field	private static IBinder sharedServiceBinder;
+com.amazon.drcs.client.service.NativeDRCSBinder	field	private static IDeviceRemoteConfigSyncService sharedService;
+com.amazon.drcs.client.service.NativeDRCSBinder	field	private static IWeblabProvider sharedWeblabProvider;
+com.amazon.drcs.client.service.NativeDRCSBinder	field	private static ScheduledFuture<?> pendingDisconnect;
+com.amazon.drcs.client.service.NativeDRCSBinder	field	private static final AtomicInteger activeCallCount;
+com.amazon.drcs.client.service.NativeDRCSBinder	field	private static final DRCSLogger log;
+com.amazon.drcs.client.service.NativeDRCSBinder	field	private static final ReentrantLock lock;
+com.amazon.drcs.client.service.NativeDRCSBinder	field	private static final String DRCS_SERVICE_NAME;
+com.amazon.drcs.client.service.NativeDRCSBinder	field	private static final int CONNECTION_TIMEOUT_MS;
+com.amazon.drcs.client.service.NativeDRCSBinder	field	private static final int IDLE_TIMEOUT_MS;
+com.amazon.drcs.client.service.NativeDRCSBinder	field	private static final int LOCK_TIMEOUT_MS;
+com.amazon.drcs.client.service.NativeDRCSBinder	field	static final IWeblabProvider NO_OP_WEBLAB_PROVIDER;
+com.amazon.drcs.client.service.NativeDRCSBinder	method	private static IWeblabProvider getOrCreateWeblabConnection()
+com.amazon.drcs.client.service.NativeDRCSBinder	method	private static IWeblabProvider obtainWeblabProvider()
+com.amazon.drcs.client.service.NativeDRCSBinder	method	private static boolean isConnectionAlive()
+com.amazon.drcs.client.service.NativeDRCSBinder	method	private static void acquireLock()
+com.amazon.drcs.client.service.NativeDRCSBinder	method	private static void cancelAndReleaseRaceBinder(CompletableFuture<IBinder> future, BinderUtils localBinderUtils)
+com.amazon.drcs.client.service.NativeDRCSBinder	method	private static void cancelPendingDisconnect()
+com.amazon.drcs.client.service.NativeDRCSBinder	method	private static void connectService()
+com.amazon.drcs.client.service.NativeDRCSBinder	method	private static void decrementRefCount()
+com.amazon.drcs.client.service.NativeDRCSBinder	method	private static void incrementRefCount()
+com.amazon.drcs.client.service.NativeDRCSBinder	method	private static void scheduleIdleDisconnectIfIdle()
+com.amazon.drcs.client.service.NativeDRCSBinder	method	private static void tryScheduleIdleDisconnect()
+com.amazon.drcs.client.service.NativeDRCSBinder	method	public IWeblabProvider getWeblabProvider()
+com.amazon.drcs.client.service.NativeDRCSBinder	method	public static void disconnect()
+com.amazon.drcs.client.service.NativeDRCSBinder	method	public void releaseWeblabProvider()
+com.amazon.drcs.client.service.NativeDRCSBinder$DRCSServiceCallback	field	private final BinderUtils localBinderUtils;
+com.amazon.drcs.client.service.NativeDRCSBinder$DRCSServiceCallback	field	private final CompletableFuture<IBinder> connectionFuture;
+com.amazon.drcs.client.service.NativeDRCSBinder$DRCSServiceCallback	method	public void onServiceConnected(String serviceName, IBinder binder)
+com.amazon.drcs.client.service.NativeDRCSBinder$DRCSServiceCallback	method	public void onServiceFailed(String serviceName, String errMessage)
+com.amazon.drcs.client.service.NativeDRCSService	field	private static final DRCSLogger log;
+com.amazon.drcs.client.service.NativeDRCSService	field	private static final String ERROR_INVALID_INPUT_FORMAT;
+com.amazon.drcs.client.service.NativeDRCSService	field	private static final String ERROR_NULL_RESULT_FORMAT;
+com.amazon.drcs.client.service.NativeDRCSService	field	private static final String ERROR_SERVICE_ERROR_FORMAT;
+com.amazon.drcs.client.service.NativeDRCSService	field	private static final String ERROR_SERVICE_ERROR_FORMAT_WITH_ERROR_CODE;
+com.amazon.drcs.client.service.NativeDRCSService	field	private static final String METHOD_GET_TREATMENT_WITHOUT_RECORD_TRIGGER;
+com.amazon.drcs.client.service.NativeDRCSService	field	private static final String METHOD_GET_TREATMENT_WITH_RECORD_TRIGGER;
+com.amazon.drcs.client.service.NativeDRCSService	field	private static final String METHOD_HAS_LOCAL_OVERRIDE;
+com.amazon.drcs.client.service.NativeDRCSService	field	private static final String METHOD_RECORD_TRIGGER;
+com.amazon.drcs.client.service.NativeDRCSService	field	private static final String METHOD_REMOVE_LOCAL_OVERRIDE;
+com.amazon.drcs.client.service.NativeDRCSService	field	private static final String METHOD_SET_LOCAL_OVERRIDE;
+com.amazon.drcs.client.service.NativeDRCSService	method	private AppContext buildAppContext(String appId, String appVersion)
+com.amazon.drcs.client.service.NativeDRCSService	method	private DRCSServiceException handleException(String methodName, String weblabName, RemoteException exception)
+com.amazon.drcs.client.service.NativeDRCSService	method	private DRCSServiceException handleException(String methodName, String weblabName, TransactionTooLargeException exception)
+com.amazon.drcs.client.service.NativeDRCSService	method	private DRCSServiceRetryableException handleException(String methodName, String weblabName, DeadObjectException exception)
+com.amazon.drcs.client.service.NativeDRCSService	method	private int getWeblabDomain(WeblabDomain domain)
+com.amazon.drcs.client.service.NativeDRCSService	method	private void throwIfError(String methodName, String weblabName, int errorCode, String errorMessage)
+com.amazon.drcs.client.service.NativeDRCSService	method	private void throwIfNull(Object result, String methodName, String weblabName)
+com.amazon.drcs.client.service.NativeDRCSService	method	public String getTreatmentAndRecordTrigger(WeblabGetTreatmentAndRecordTriggerRequest request)
+com.amazon.drcs.client.service.NativeDRCSService	method	public WeblabTreatmentWithoutTriggerResult getTreatmentWithoutRecordTrigger(WeblabGetTreatmentWithoutRecordTriggerRequest request)
+com.amazon.drcs.client.service.NativeDRCSService	method	public boolean hasLocalOverride(WeblabHasLocalOverrideRequest request)
+com.amazon.drcs.client.service.NativeDRCSService	method	public boolean recordTrigger(WeblabRecordTriggerRequest request)
+com.amazon.drcs.client.service.NativeDRCSService	method	public boolean removeLocalOverride(WeblabRemoveLocalOverrideRequest request)
+com.amazon.drcs.client.service.NativeDRCSService	method	public boolean setLocalOverride(WeblabSetLocalOverrideRequest request)
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentAndRecordTriggerRequest	field	private final String customerId;
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentAndRecordTriggerRequest	field	private final String marketplaceId;
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentAndRecordTriggerRequest	field	private final String sessionId;
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentAndRecordTriggerRequest	field	private final String weblabName;
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentAndRecordTriggerRequest	field	private static final String TO_STRING_FORMAT;
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentAndRecordTriggerRequest	method	private WeblabGetTreatmentAndRecordTriggerRequest(Builder builder)
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentAndRecordTriggerRequest	method	public String getCustomerId()
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentAndRecordTriggerRequest	method	public String getMarketplaceId()
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentAndRecordTriggerRequest	method	public String getSessionId()
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentAndRecordTriggerRequest	method	public String getWeblabName()
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentAndRecordTriggerRequest	method	public String toString()
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentAndRecordTriggerRequest	method	public static Builder builder()
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentAndRecordTriggerRequest$Builder	field	private String customerId;
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentAndRecordTriggerRequest$Builder	field	private String marketplaceId;
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentAndRecordTriggerRequest$Builder	field	private String sessionId;
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentAndRecordTriggerRequest$Builder	field	private String weblabName;
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentAndRecordTriggerRequest$Builder	method	private Builder()
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentAndRecordTriggerRequest$Builder	method	public Builder customerId(String customerId)
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentAndRecordTriggerRequest$Builder	method	public Builder marketplaceId(String marketplaceId)
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentAndRecordTriggerRequest$Builder	method	public Builder self()
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentAndRecordTriggerRequest$Builder	method	public Builder sessionId(String sessionId)
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentAndRecordTriggerRequest$Builder	method	public Builder weblabName(String weblabName)
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentAndRecordTriggerRequest$Builder	method	public WeblabGetTreatmentAndRecordTriggerRequest build()
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentWithoutRecordTriggerRequest	field	private final String customerId;
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentWithoutRecordTriggerRequest	field	private final String marketplaceId;
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentWithoutRecordTriggerRequest	field	private final String sessionId;
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentWithoutRecordTriggerRequest	field	private final String weblabName;
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentWithoutRecordTriggerRequest	field	private static final String TO_STRING_FORMAT;
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentWithoutRecordTriggerRequest	method	private WeblabGetTreatmentWithoutRecordTriggerRequest(Builder builder)
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentWithoutRecordTriggerRequest	method	public String getCustomerId()
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentWithoutRecordTriggerRequest	method	public String getMarketplaceId()
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentWithoutRecordTriggerRequest	method	public String getSessionId()
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentWithoutRecordTriggerRequest	method	public String getWeblabName()
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentWithoutRecordTriggerRequest	method	public String toString()
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentWithoutRecordTriggerRequest	method	public static Builder builder()
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentWithoutRecordTriggerRequest$Builder	field	private String customerId;
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentWithoutRecordTriggerRequest$Builder	field	private String marketplaceId;
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentWithoutRecordTriggerRequest$Builder	field	private String sessionId;
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentWithoutRecordTriggerRequest$Builder	field	private String weblabName;
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentWithoutRecordTriggerRequest$Builder	method	private Builder()
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentWithoutRecordTriggerRequest$Builder	method	public Builder customerId(String customerId)
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentWithoutRecordTriggerRequest$Builder	method	public Builder marketplaceId(String marketplaceId)
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentWithoutRecordTriggerRequest$Builder	method	public Builder self()
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentWithoutRecordTriggerRequest$Builder	method	public Builder sessionId(String sessionId)
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentWithoutRecordTriggerRequest$Builder	method	public Builder weblabName(String weblabName)
+com.amazon.drcs.client.service.dto.WeblabGetTreatmentWithoutRecordTriggerRequest$Builder	method	public WeblabGetTreatmentWithoutRecordTriggerRequest build()
+com.amazon.drcs.client.service.dto.WeblabHasLocalOverrideRequest	field	private final String weblabName;
+com.amazon.drcs.client.service.dto.WeblabHasLocalOverrideRequest	field	private final WeblabDomain domain;
+com.amazon.drcs.client.service.dto.WeblabHasLocalOverrideRequest	field	private static final String TO_STRING_FORMAT;
+com.amazon.drcs.client.service.dto.WeblabHasLocalOverrideRequest	method	private WeblabHasLocalOverrideRequest(Builder builder)
+com.amazon.drcs.client.service.dto.WeblabHasLocalOverrideRequest	method	public String getWeblabName()
+com.amazon.drcs.client.service.dto.WeblabHasLocalOverrideRequest	method	public String toString()
+com.amazon.drcs.client.service.dto.WeblabHasLocalOverrideRequest	method	public WeblabDomain getDomain()
+com.amazon.drcs.client.service.dto.WeblabHasLocalOverrideRequest	method	public static Builder builder()
+com.amazon.drcs.client.service.dto.WeblabHasLocalOverrideRequest$Builder	field	private String weblabName;
+com.amazon.drcs.client.service.dto.WeblabHasLocalOverrideRequest$Builder	field	private WeblabDomain domain;
+com.amazon.drcs.client.service.dto.WeblabHasLocalOverrideRequest$Builder	method	private Builder()
+com.amazon.drcs.client.service.dto.WeblabHasLocalOverrideRequest$Builder	method	public Builder domain(WeblabDomain domain)
+com.amazon.drcs.client.service.dto.WeblabHasLocalOverrideRequest$Builder	method	public Builder weblabName(String weblabName)
+com.amazon.drcs.client.service.dto.WeblabHasLocalOverrideRequest$Builder	method	public WeblabHasLocalOverrideRequest build()
+com.amazon.drcs.client.service.dto.WeblabMultiTenantRequest	field	private final String appId;
+com.amazon.drcs.client.service.dto.WeblabMultiTenantRequest	field	private final String appVersion;
+com.amazon.drcs.client.service.dto.WeblabMultiTenantRequest	field	private final WeblabDomain domain;
+com.amazon.drcs.client.service.dto.WeblabMultiTenantRequest	field	private static final String TO_STRING_FORMAT;
+com.amazon.drcs.client.service.dto.WeblabMultiTenantRequest	method	protected WeblabMultiTenantRequest(Builder<?> builder)
+com.amazon.drcs.client.service.dto.WeblabMultiTenantRequest	method	public String getAppId()
+com.amazon.drcs.client.service.dto.WeblabMultiTenantRequest	method	public String getAppVersion()
+com.amazon.drcs.client.service.dto.WeblabMultiTenantRequest	method	public String toString()
+com.amazon.drcs.client.service.dto.WeblabMultiTenantRequest	method	public WeblabDomain getDomain()
+com.amazon.drcs.client.service.dto.WeblabMultiTenantRequest$Builder	field	private String appId;
+com.amazon.drcs.client.service.dto.WeblabMultiTenantRequest$Builder	field	private String appVersion;
+com.amazon.drcs.client.service.dto.WeblabMultiTenantRequest$Builder	field	private WeblabDomain domain;
+com.amazon.drcs.client.service.dto.WeblabMultiTenantRequest$Builder	method	protected Builder()
+com.amazon.drcs.client.service.dto.WeblabMultiTenantRequest$Builder	method	protected abstract T self();
+com.amazon.drcs.client.service.dto.WeblabMultiTenantRequest$Builder	method	public T appId(String str)
+com.amazon.drcs.client.service.dto.WeblabMultiTenantRequest$Builder	method	public T appVersion(String str)
+com.amazon.drcs.client.service.dto.WeblabMultiTenantRequest$Builder	method	public T domain(WeblabDomain weblabDomain)
+com.amazon.drcs.client.service.dto.WeblabRecordTriggerRequest	field	private final WeblabTreatmentWithoutTriggerResult treatmentWithoutTriggerResult;
+com.amazon.drcs.client.service.dto.WeblabRecordTriggerRequest	field	private static final String TO_STRING_FORMAT;
+com.amazon.drcs.client.service.dto.WeblabRecordTriggerRequest	method	private WeblabRecordTriggerRequest(Builder builder)
+com.amazon.drcs.client.service.dto.WeblabRecordTriggerRequest	method	public String toString()
+com.amazon.drcs.client.service.dto.WeblabRecordTriggerRequest	method	public WeblabTreatmentWithoutTriggerResult getTreatmentWithoutTriggerResult()
+com.amazon.drcs.client.service.dto.WeblabRecordTriggerRequest	method	public static Builder builder()
+com.amazon.drcs.client.service.dto.WeblabRecordTriggerRequest$Builder	field	private WeblabTreatmentWithoutTriggerResult treatmentWithoutTriggerResult;
+com.amazon.drcs.client.service.dto.WeblabRecordTriggerRequest$Builder	method	private Builder()
+com.amazon.drcs.client.service.dto.WeblabRecordTriggerRequest$Builder	method	public Builder treatmentWithoutTriggerResult(WeblabTreatmentWithoutTriggerResult treatmentWithoutTriggerResult)
+com.amazon.drcs.client.service.dto.WeblabRecordTriggerRequest$Builder	method	public WeblabRecordTriggerRequest build()
+com.amazon.drcs.client.service.dto.WeblabRemoveLocalOverrideRequest	field	private final String weblabName;
+com.amazon.drcs.client.service.dto.WeblabRemoveLocalOverrideRequest	field	private final WeblabDomain domain;
+com.amazon.drcs.client.service.dto.WeblabRemoveLocalOverrideRequest	field	private static final String TO_STRING_FORMAT;
+com.amazon.drcs.client.service.dto.WeblabRemoveLocalOverrideRequest	method	private WeblabRemoveLocalOverrideRequest(Builder builder)
+com.amazon.drcs.client.service.dto.WeblabRemoveLocalOverrideRequest	method	public String getWeblabName()
+com.amazon.drcs.client.service.dto.WeblabRemoveLocalOverrideRequest	method	public String toString()
+com.amazon.drcs.client.service.dto.WeblabRemoveLocalOverrideRequest	method	public WeblabDomain getDomain()
+com.amazon.drcs.client.service.dto.WeblabRemoveLocalOverrideRequest	method	public static Builder builder()
+com.amazon.drcs.client.service.dto.WeblabRemoveLocalOverrideRequest$Builder	field	private String weblabName;
+com.amazon.drcs.client.service.dto.WeblabRemoveLocalOverrideRequest$Builder	field	private WeblabDomain domain;
+com.amazon.drcs.client.service.dto.WeblabRemoveLocalOverrideRequest$Builder	method	private Builder()
+com.amazon.drcs.client.service.dto.WeblabRemoveLocalOverrideRequest$Builder	method	public Builder domain(WeblabDomain domain)
+com.amazon.drcs.client.service.dto.WeblabRemoveLocalOverrideRequest$Builder	method	public Builder weblabName(String weblabName)
+com.amazon.drcs.client.service.dto.WeblabRemoveLocalOverrideRequest$Builder	method	public WeblabRemoveLocalOverrideRequest build()
+com.amazon.drcs.client.service.dto.WeblabSetLocalOverrideRequest	field	private final String treatment;
+com.amazon.drcs.client.service.dto.WeblabSetLocalOverrideRequest	field	private final String weblabName;
+com.amazon.drcs.client.service.dto.WeblabSetLocalOverrideRequest	field	private final WeblabDomain domain;
+com.amazon.drcs.client.service.dto.WeblabSetLocalOverrideRequest	field	private static final String TO_STRING_FORMAT;
+com.amazon.drcs.client.service.dto.WeblabSetLocalOverrideRequest	method	private WeblabSetLocalOverrideRequest(Builder builder)
+com.amazon.drcs.client.service.dto.WeblabSetLocalOverrideRequest	method	public String getTreatment()
+com.amazon.drcs.client.service.dto.WeblabSetLocalOverrideRequest	method	public String getWeblabName()
+com.amazon.drcs.client.service.dto.WeblabSetLocalOverrideRequest	method	public String toString()
+com.amazon.drcs.client.service.dto.WeblabSetLocalOverrideRequest	method	public WeblabDomain getDomain()
+com.amazon.drcs.client.service.dto.WeblabSetLocalOverrideRequest	method	public static Builder builder()
+com.amazon.drcs.client.service.dto.WeblabSetLocalOverrideRequest$Builder	field	private String treatment;
+com.amazon.drcs.client.service.dto.WeblabSetLocalOverrideRequest$Builder	field	private String weblabName;
+com.amazon.drcs.client.service.dto.WeblabSetLocalOverrideRequest$Builder	field	private WeblabDomain domain;
+com.amazon.drcs.client.service.dto.WeblabSetLocalOverrideRequest$Builder	method	private Builder()
+com.amazon.drcs.client.service.dto.WeblabSetLocalOverrideRequest$Builder	method	public Builder domain(WeblabDomain domain)
+com.amazon.drcs.client.service.dto.WeblabSetLocalOverrideRequest$Builder	method	public Builder treatment(String treatment)
+com.amazon.drcs.client.service.dto.WeblabSetLocalOverrideRequest$Builder	method	public Builder weblabName(String weblabName)
+com.amazon.drcs.client.service.dto.WeblabSetLocalOverrideRequest$Builder	method	public WeblabSetLocalOverrideRequest build()
+com.amazon.drcs.client.service.dto.WeblabTreatmentWithoutTriggerResult	field	private final String treatment;
+com.amazon.drcs.client.service.dto.WeblabTreatmentWithoutTriggerResult	field	private final String triggerToken;
+com.amazon.drcs.client.service.dto.WeblabTreatmentWithoutTriggerResult	field	private final String weblabName;
+com.amazon.drcs.client.service.dto.WeblabTreatmentWithoutTriggerResult	field	private final WeblabDomain domain;
+com.amazon.drcs.client.service.dto.WeblabTreatmentWithoutTriggerResult	field	private static final String TO_STRING_FORMAT;
+com.amazon.drcs.client.service.dto.WeblabTreatmentWithoutTriggerResult	method	private WeblabTreatmentWithoutTriggerResult(Builder builder)
+com.amazon.drcs.client.service.dto.WeblabTreatmentWithoutTriggerResult	method	public String getTreatment()
+com.amazon.drcs.client.service.dto.WeblabTreatmentWithoutTriggerResult	method	public String getTriggerToken()
+com.amazon.drcs.client.service.dto.WeblabTreatmentWithoutTriggerResult	method	public String getWeblabName()
+com.amazon.drcs.client.service.dto.WeblabTreatmentWithoutTriggerResult	method	public String toString()
+com.amazon.drcs.client.service.dto.WeblabTreatmentWithoutTriggerResult	method	public WeblabDomain getDomain()
+com.amazon.drcs.client.service.dto.WeblabTreatmentWithoutTriggerResult	method	public static Builder builder()
+com.amazon.drcs.client.service.dto.WeblabTreatmentWithoutTriggerResult$Builder	field	private String treatment;
+com.amazon.drcs.client.service.dto.WeblabTreatmentWithoutTriggerResult$Builder	field	private String triggerToken;
+com.amazon.drcs.client.service.dto.WeblabTreatmentWithoutTriggerResult$Builder	field	private String weblabName;
+com.amazon.drcs.client.service.dto.WeblabTreatmentWithoutTriggerResult$Builder	field	private WeblabDomain domain;
+com.amazon.drcs.client.service.dto.WeblabTreatmentWithoutTriggerResult$Builder	method	private Builder()
+com.amazon.drcs.client.service.dto.WeblabTreatmentWithoutTriggerResult$Builder	method	public Builder domain(WeblabDomain domain)
+com.amazon.drcs.client.service.dto.WeblabTreatmentWithoutTriggerResult$Builder	method	public Builder treatment(String treatment)
+com.amazon.drcs.client.service.dto.WeblabTreatmentWithoutTriggerResult$Builder	method	public Builder triggerToken(String triggerToken)
+com.amazon.drcs.client.service.dto.WeblabTreatmentWithoutTriggerResult$Builder	method	public Builder weblabName(String weblabName)
+com.amazon.drcs.client.service.dto.WeblabTreatmentWithoutTriggerResult$Builder	method	public WeblabTreatmentWithoutTriggerResult build()
+com.amazon.drcs.client.utils.DRCSLogger	field	private final String tagToUse;
+com.amazon.drcs.client.utils.DRCSLogger	field	private static final String TAG;
+com.amazon.drcs.client.utils.DRCSLogger	field	private static final int MAX_TAG_LENGTH_ON_FOS6_AND_BELOW;
+com.amazon.drcs.client.utils.DRCSLogger	method	private static String makeTagSafe(String tag)
+com.amazon.drcs.client.utils.DRCSLogger	method	public DRCSLogger(String tag)
+com.amazon.drcs.client.utils.DRCSLogger	method	public String getTag()
+com.amazon.drcs.client.utils.DRCSLogger	method	public void debug(String message)
+com.amazon.drcs.client.utils.DRCSLogger	method	public void error(String message)
+com.amazon.drcs.client.utils.DRCSLogger	method	public void error(String message, Throwable throwable)
+com.amazon.drcs.client.utils.DRCSLogger	method	public void info(String message)
+com.amazon.drcs.client.utils.DRCSLogger	method	public void verbose(String message)
+com.amazon.drcs.client.utils.DRCSLogger	method	public void warning(String message)
+com.amazon.drcs.client.weblab.dto.DRCSWeblabClientConfig	field	private final WeblabDomain domain;
+com.amazon.drcs.client.weblab.dto.DRCSWeblabClientConfig	field	private static final String TO_STRING_FORMAT;
+com.amazon.drcs.client.weblab.dto.DRCSWeblabClientConfig	method	private DRCSWeblabClientConfig(Builder builder)
+com.amazon.drcs.client.weblab.dto.DRCSWeblabClientConfig	method	public String toString()
+com.amazon.drcs.client.weblab.dto.DRCSWeblabClientConfig	method	public WeblabDomain getDomain()
+com.amazon.drcs.client.weblab.dto.DRCSWeblabClientConfig	method	public static Builder builder()
+com.amazon.drcs.client.weblab.dto.DRCSWeblabClientConfig$Builder	field	private WeblabDomain domain;
+com.amazon.drcs.client.weblab.dto.DRCSWeblabClientConfig$Builder	method	public Builder domain(WeblabDomain domain)
+com.amazon.drcs.client.weblab.dto.DRCSWeblabClientConfig$Builder	method	public Builder self()
+com.amazon.drcs.client.weblab.dto.DRCSWeblabClientConfig$Builder	method	public DRCSWeblabClientConfig build()
+com.amazon.drcs.client.weblab.dto.HasLocalOverrideResult	field	private final boolean hasOverride;
+com.amazon.drcs.client.weblab.dto.HasLocalOverrideResult	field	private static final String TO_STRING_FORMAT;
+com.amazon.drcs.client.weblab.dto.HasLocalOverrideResult	method	private HasLocalOverrideResult(Builder builder)
+com.amazon.drcs.client.weblab.dto.HasLocalOverrideResult	method	public String toString()
+com.amazon.drcs.client.weblab.dto.HasLocalOverrideResult	method	public boolean hasOverride()
+com.amazon.drcs.client.weblab.dto.HasLocalOverrideResult	method	public static Builder builder()
+com.amazon.drcs.client.weblab.dto.HasLocalOverrideResult$Builder	field	private boolean hasOverride;
+com.amazon.drcs.client.weblab.dto.HasLocalOverrideResult$Builder	method	private Builder()
+com.amazon.drcs.client.weblab.dto.HasLocalOverrideResult$Builder	method	public Builder hasOverride(boolean hasOverride)
+com.amazon.drcs.client.weblab.dto.HasLocalOverrideResult$Builder	method	public HasLocalOverrideResult build()
+com.amazon.drcs.client.weblab.dto.RemoveLocalOverrideResult	field	private final boolean success;
+com.amazon.drcs.client.weblab.dto.RemoveLocalOverrideResult	field	private static final String TO_STRING_FORMAT;
+com.amazon.drcs.client.weblab.dto.RemoveLocalOverrideResult	method	private RemoveLocalOverrideResult(Builder builder)
+com.amazon.drcs.client.weblab.dto.RemoveLocalOverrideResult	method	public String toString()
+com.amazon.drcs.client.weblab.dto.RemoveLocalOverrideResult	method	public boolean isSuccess()
+com.amazon.drcs.client.weblab.dto.RemoveLocalOverrideResult	method	public static Builder builder()
+com.amazon.drcs.client.weblab.dto.RemoveLocalOverrideResult$Builder	field	private boolean success;
+com.amazon.drcs.client.weblab.dto.RemoveLocalOverrideResult$Builder	method	private Builder()
+com.amazon.drcs.client.weblab.dto.RemoveLocalOverrideResult$Builder	method	public Builder success(boolean success)
+com.amazon.drcs.client.weblab.dto.RemoveLocalOverrideResult$Builder	method	public RemoveLocalOverrideResult build()
+com.amazon.drcs.client.weblab.dto.SetLocalOverrideResult	field	private final boolean success;
+com.amazon.drcs.client.weblab.dto.SetLocalOverrideResult	field	private static final String TO_STRING_FORMAT;
+com.amazon.drcs.client.weblab.dto.SetLocalOverrideResult	method	private SetLocalOverrideResult(Builder builder)
+com.amazon.drcs.client.weblab.dto.SetLocalOverrideResult	method	public String toString()
+com.amazon.drcs.client.weblab.dto.SetLocalOverrideResult	method	public boolean isSuccess()
+com.amazon.drcs.client.weblab.dto.SetLocalOverrideResult	method	public static Builder builder()
+com.amazon.drcs.client.weblab.dto.SetLocalOverrideResult$Builder	field	private boolean success;
+com.amazon.drcs.client.weblab.dto.SetLocalOverrideResult$Builder	method	private Builder()
+com.amazon.drcs.client.weblab.dto.SetLocalOverrideResult$Builder	method	public Builder success(boolean success)
+com.amazon.drcs.client.weblab.dto.SetLocalOverrideResult$Builder	method	public SetLocalOverrideResult build()
+com.amazon.drcs.client.weblab.dto.TreatmentWithoutRecordTriggerResult	field	private final String treatment;
+com.amazon.drcs.client.weblab.dto.TreatmentWithoutRecordTriggerResult	field	private final String triggerToken;
+com.amazon.drcs.client.weblab.dto.TreatmentWithoutRecordTriggerResult	field	private final String weblabName;
+com.amazon.drcs.client.weblab.dto.TreatmentWithoutRecordTriggerResult	field	private final WeblabDomain domain;
+com.amazon.drcs.client.weblab.dto.TreatmentWithoutRecordTriggerResult	field	private static final String TO_STRING_FORMAT;
+com.amazon.drcs.client.weblab.dto.TreatmentWithoutRecordTriggerResult	method	private TreatmentWithoutRecordTriggerResult(Builder builder)
+com.amazon.drcs.client.weblab.dto.TreatmentWithoutRecordTriggerResult	method	public Optional<String> getTreatmentOptional()
+com.amazon.drcs.client.weblab.dto.TreatmentWithoutRecordTriggerResult	method	public String getTreatment()
+com.amazon.drcs.client.weblab.dto.TreatmentWithoutRecordTriggerResult	method	public String getTriggerToken()
+com.amazon.drcs.client.weblab.dto.TreatmentWithoutRecordTriggerResult	method	public String getWeblabName()
+com.amazon.drcs.client.weblab.dto.TreatmentWithoutRecordTriggerResult	method	public String toString()
+com.amazon.drcs.client.weblab.dto.TreatmentWithoutRecordTriggerResult	method	public WeblabDomain getWeblabDomain()
+com.amazon.drcs.client.weblab.dto.TreatmentWithoutRecordTriggerResult	method	public static Builder builder()
+com.amazon.drcs.client.weblab.dto.TreatmentWithoutRecordTriggerResult$Builder	field	private String treatment;
+com.amazon.drcs.client.weblab.dto.TreatmentWithoutRecordTriggerResult$Builder	field	private String triggerToken;
+com.amazon.drcs.client.weblab.dto.TreatmentWithoutRecordTriggerResult$Builder	field	private String weblabName;
+com.amazon.drcs.client.weblab.dto.TreatmentWithoutRecordTriggerResult$Builder	field	private WeblabDomain domain;
+com.amazon.drcs.client.weblab.dto.TreatmentWithoutRecordTriggerResult$Builder	method	private Builder()
+com.amazon.drcs.client.weblab.dto.TreatmentWithoutRecordTriggerResult$Builder	method	public Builder treatment(String treatment)
+com.amazon.drcs.client.weblab.dto.TreatmentWithoutRecordTriggerResult$Builder	method	public Builder triggerToken(String triggerToken)
+com.amazon.drcs.client.weblab.dto.TreatmentWithoutRecordTriggerResult$Builder	method	public Builder weblabDomain(WeblabDomain domain)
+com.amazon.drcs.client.weblab.dto.TreatmentWithoutRecordTriggerResult$Builder	method	public Builder weblabName(String weblabName)
+com.amazon.drcs.client.weblab.dto.TreatmentWithoutRecordTriggerResult$Builder	method	public TreatmentWithoutRecordTriggerResult build()

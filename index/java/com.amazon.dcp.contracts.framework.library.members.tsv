@@ -1,0 +1,495 @@
+class	kind	declaration
+com.amazon.dcp.common.ThirdPartyDeviceUtils	field	private static String sSerialNumber;
+com.amazon.dcp.common.ThirdPartyDeviceUtils	field	private static final String SERIAL_NUMBER_NAME;
+com.amazon.dcp.common.ThirdPartyDeviceUtils	field	private static final String TAG;
+com.amazon.dcp.common.ThirdPartyDeviceUtils	field	private static final String THIRD_PARTY_DEVICE_STATE_PREFS;
+com.amazon.dcp.common.ThirdPartyDeviceUtils	method	private ThirdPartyDeviceUtils()
+com.amazon.dcp.common.ThirdPartyDeviceUtils	method	public static synchronized String getSerialNumber(Context context)
+com.amazon.dcp.common.ThirdPartyDeviceUtils	method	static String generateSerialNumber(Context context)
+com.amazon.dcp.common.resources.R$drawable	field	public static final int ic_download_amazon_active;
+com.amazon.dcp.common.resources.R$drawable	field	public static final int ic_download_amazon_dark;
+com.amazon.dcp.common.resources.R$drawable	field	public static final int ic_download_amazon_light;
+com.amazon.dcp.common.resources.R$drawable	field	public static final int ic_settings_amazon_active;
+com.amazon.dcp.common.resources.R$drawable	field	public static final int ic_settings_amazon_dark;
+com.amazon.dcp.common.resources.R$drawable	field	public static final int ic_settings_amazon_light;
+com.amazon.dcp.common.resources.R$drawable	field	public static final int icon;
+com.amazon.dcp.contracts.framework.library.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.dcp.contracts.framework.library.BuildConfig	field	public static final String FLAVOR;
+com.amazon.dcp.contracts.framework.library.BuildConfig	field	public static final String PACKAGE_NAME;
+com.amazon.dcp.contracts.framework.library.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.dcp.contracts.framework.library.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.dcp.contracts.framework.library.R$drawable	field	public static final int ic_download_amazon_active;
+com.amazon.dcp.contracts.framework.library.R$drawable	field	public static final int ic_download_amazon_dark;
+com.amazon.dcp.contracts.framework.library.R$drawable	field	public static final int ic_download_amazon_light;
+com.amazon.dcp.contracts.framework.library.R$drawable	field	public static final int ic_settings_amazon_active;
+com.amazon.dcp.contracts.framework.library.R$drawable	field	public static final int ic_settings_amazon_dark;
+com.amazon.dcp.contracts.framework.library.R$drawable	field	public static final int ic_settings_amazon_light;
+com.amazon.dcp.contracts.framework.library.R$drawable	field	public static final int icon;
+com.amazon.dcp.framework.AndroidConstants	field	public static final int FLAG_INCLUDE_STOPPED_PACKAGES;
+com.amazon.dcp.framework.AndroidConstants	method	private AndroidConstants()
+com.amazon.dcp.framework.AsyncToSyncAdapter	field	private AtomicBoolean mHasRun;
+com.amazon.dcp.framework.AsyncToSyncAdapter	field	private static final String TAG;
+com.amazon.dcp.framework.AsyncToSyncAdapter	field	private volatile CountDownLatch mAsyncTaskDoneLatch;
+com.amazon.dcp.framework.AsyncToSyncAdapter	method	protected abstract void startAsyncOperation();
+com.amazon.dcp.framework.AsyncToSyncAdapter	method	protected void asyncOperationComplete()
+com.amazon.dcp.framework.AsyncToSyncAdapter	method	protected void interruptAsyncOperation()
+com.amazon.dcp.framework.AsyncToSyncAdapter	method	protected void onTimeout()
+com.amazon.dcp.framework.AsyncToSyncAdapter	method	public synchronized void run()
+com.amazon.dcp.framework.AsyncToSyncAdapter	method	public synchronized void run(Long timeout, TimeUnit unit)
+com.amazon.dcp.framework.BoundServiceCaller	field	private ServiceConnection mConnection;
+com.amazon.dcp.framework.BoundServiceCaller	field	private boolean mServiceConnectionWasEstablished;
+com.amazon.dcp.framework.BoundServiceCaller	field	private final Context mContext;
+com.amazon.dcp.framework.BoundServiceCaller	field	private final Intent mServiceIntent;
+com.amazon.dcp.framework.BoundServiceCaller	field	private final Object[] mLocker;
+com.amazon.dcp.framework.BoundServiceCaller	field	private final int mBindingFlags;
+com.amazon.dcp.framework.BoundServiceCaller	field	private static final String TAG;
+com.amazon.dcp.framework.BoundServiceCaller	field	private static final long CONNECTION_TIMEOUT;
+com.amazon.dcp.framework.BoundServiceCaller	method	private void safeUnbind()
+com.amazon.dcp.framework.BoundServiceCaller	method	protected void serviceTimedOut()
+com.amazon.dcp.framework.BoundServiceCaller	method	protected void unbind()
+com.amazon.dcp.framework.BoundServiceCaller	method	protected void useService(ComponentName name, IBinder service) throws RemoteException
+com.amazon.dcp.framework.BoundServiceCaller	method	protected void useService(IBinder service) throws RemoteException
+com.amazon.dcp.framework.BoundServiceCaller	method	public BoundServiceCaller(Context context, Intent serviceIntent, int bindingFlags)
+com.amazon.dcp.framework.BoundServiceCaller	method	public String getIntentDescription()
+com.amazon.dcp.framework.BoundServiceCaller	method	public final boolean call()
+com.amazon.dcp.framework.BroadcastIntentFactory	method	private BroadcastIntentFactory()
+com.amazon.dcp.framework.BroadcastIntentFactory	method	public static Intent createIntent()
+com.amazon.dcp.framework.BroadcastIntentFactory	method	public static Intent createIntent(String action)
+com.amazon.dcp.framework.BuildPropertyKeys	field	public static final String BUILD_TYPE;
+com.amazon.dcp.framework.BuildPropertyKeys	field	public static final String PRODUCT_DEVICE;
+com.amazon.dcp.framework.BuildPropertyKeys	field	public static final String PRODUCT_MODEL;
+com.amazon.dcp.framework.BuildPropertyKeys	field	public static final String PRODUCT_NAME;
+com.amazon.dcp.framework.BuildPropertyKeys	field	public static final String SIGNATURE_TYPE;
+com.amazon.dcp.framework.BuildPropertyKeys	field	public static final String VERSION_NAME;
+com.amazon.dcp.framework.BuildPropertyKeys	field	public static final String VERSION_NUMBER;
+com.amazon.dcp.framework.BuildPropertyKeys	method	private BuildPropertyKeys()
+com.amazon.dcp.framework.Checks	method	private Checks()
+com.amazon.dcp.framework.Checks	method	private static <T extends Throwable> void throwException(Class<T> clazz, String message, Object... args) throws Throwable
+com.amazon.dcp.framework.Checks	method	public static <T extends Throwable> void checkEquals(Comparable expected, Comparable actual, Class<T> clazz, String message, Object... args) throws Throwable
+com.amazon.dcp.framework.Checks	method	public static <T extends Throwable> void checkFalse(boolean condition, Class<T> clazz, String message, Object... args) throws Throwable
+com.amazon.dcp.framework.Checks	method	public static <T extends Throwable> void checkNotEmpty(Collection<?> collection, Class<T> clazz, String message, Object... args) throws Throwable
+com.amazon.dcp.framework.Checks	method	public static <T extends Throwable> void checkNotEmpty(Object[] collection, Class<T> clazz, String message, Object... args) throws Throwable
+com.amazon.dcp.framework.Checks	method	public static <T extends Throwable> void checkNotEmpty(String string, Class<T> clazz, String message, Object... args) throws Throwable
+com.amazon.dcp.framework.Checks	method	public static <T extends Throwable> void checkNotEquals(Comparable expected, Comparable actual, Class<T> clazz, String message, Object... args) throws Throwable
+com.amazon.dcp.framework.Checks	method	public static <T extends Throwable> void checkNotNull(Object object, Class<T> clazz, String message, Object... args) throws Throwable
+com.amazon.dcp.framework.Checks	method	public static <T extends Throwable> void checkTrue(boolean condition, Class<T> clazz, String message, Object... args) throws Throwable
+com.amazon.dcp.framework.CollectionHelpers	method	private CollectionHelpers()
+com.amazon.dcp.framework.CollectionHelpers	method	public static <T> T[] toArray(Collection<T> collection, Class<T> cls)
+com.amazon.dcp.framework.CollectionHelpers	method	public static <T> boolean containsAny(Collection<T> haystack, T... needles)
+com.amazon.dcp.framework.DCPComponentInformationProvider	field	private static final String TAG;
+com.amazon.dcp.framework.DCPComponentInformationProvider	method	private DCPComponentInformationProvider()
+com.amazon.dcp.framework.DCPComponentInformationProvider	method	private static Future<DCPComponentInformation> buildFuture(final Context context, final DCPComponentType type)
+com.amazon.dcp.framework.DCPComponentInformationProvider	method	public static Future<DCPComponentInformation> getComponentInformationFor(Context context, DCPComponentType type)
+com.amazon.dcp.framework.DCPComponentInformationProvider$DCPComponentInformation	field	private DCPComponentType mType;
+com.amazon.dcp.framework.DCPComponentInformationProvider$DCPComponentInformation	field	private String mVersion;
+com.amazon.dcp.framework.DCPComponentInformationProvider$DCPComponentInformation	method	public DCPComponentInformation(DCPComponentType type, String version)
+com.amazon.dcp.framework.DCPComponentInformationProvider$DCPComponentInformation	method	public DCPComponentType getType()
+com.amazon.dcp.framework.DCPComponentInformationProvider$DCPComponentInformation	method	public String getVersion()
+com.amazon.dcp.framework.DCPComponentInformationProvider$DCPComponentType	field	private String mAction;
+com.amazon.dcp.framework.DCPComponentInformationProvider$DCPComponentType	method	public String getAction()
+com.amazon.dcp.framework.DCPIntentFactory	field	private static final String DCP_PACKAGE_NAME;
+com.amazon.dcp.framework.DCPIntentFactory	field	protected final ComponentName mComponentName;
+com.amazon.dcp.framework.DCPIntentFactory	method	private static List<PackageInfo> getTrustedPackages(Context context)
+com.amazon.dcp.framework.DCPIntentFactory	method	protected static ComponentName findDCPComponent(Context context, String className, ComponentFinder finder)
+com.amazon.dcp.framework.DCPIntentFactory	method	public DCPIntentFactory(ComponentName componentName)
+com.amazon.dcp.framework.DCPIntentFactory	method	public Intent buildIntent()
+com.amazon.dcp.framework.DCPIntentFactory	method	public Intent buildIntent(String action)
+com.amazon.dcp.framework.DataMigratorContracts	field	public static final String INTENT_ACTION;
+com.amazon.dcp.framework.DataMigratorContracts	method	private DataMigratorContracts()
+com.amazon.dcp.framework.IDCPComponentInformationProvider$Stub	field	private static final String DESCRIPTOR;
+com.amazon.dcp.framework.IDCPComponentInformationProvider$Stub	field	static final int TRANSACTION_getComponentVersion;
+com.amazon.dcp.framework.IDCPComponentInformationProvider$Stub	method	public IBinder asBinder()
+com.amazon.dcp.framework.IDCPComponentInformationProvider$Stub	method	public Stub()
+com.amazon.dcp.framework.IDCPComponentInformationProvider$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.amazon.dcp.framework.IDCPComponentInformationProvider$Stub	method	public static IDCPComponentInformationProvider asInterface(IBinder obj)
+com.amazon.dcp.framework.IDCPComponentInformationProvider$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.dcp.framework.IDCPComponentInformationProvider$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.dcp.framework.IDCPComponentInformationProvider$Stub$Proxy	method	public String getComponentVersion() throws RemoteException
+com.amazon.dcp.framework.IDCPComponentInformationProvider$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.dcp.framework.IDataMigrator$Stub	field	private static final String DESCRIPTOR;
+com.amazon.dcp.framework.IDataMigrator$Stub	field	static final int TRANSACTION_deleteMigratedDatabase;
+com.amazon.dcp.framework.IDataMigrator$Stub	field	static final int TRANSACTION_deleteMigratedSharedPrefs;
+com.amazon.dcp.framework.IDataMigrator$Stub	field	static final int TRANSACTION_migrateDatabase;
+com.amazon.dcp.framework.IDataMigrator$Stub	field	static final int TRANSACTION_migrateSharedPrefs;
+com.amazon.dcp.framework.IDataMigrator$Stub	method	public IBinder asBinder()
+com.amazon.dcp.framework.IDataMigrator$Stub	method	public Stub()
+com.amazon.dcp.framework.IDataMigrator$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.amazon.dcp.framework.IDataMigrator$Stub	method	public static IDataMigrator asInterface(IBinder obj)
+com.amazon.dcp.framework.IDataMigrator$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.dcp.framework.IDataMigrator$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.dcp.framework.IDataMigrator$Stub$Proxy	method	public ParcelFileDescriptor migrateDatabase(String name) throws RemoteException
+com.amazon.dcp.framework.IDataMigrator$Stub$Proxy	method	public ParcelFileDescriptor migrateSharedPrefs(String name) throws RemoteException
+com.amazon.dcp.framework.IDataMigrator$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.dcp.framework.IDataMigrator$Stub$Proxy	method	public void deleteMigratedDatabase(String name) throws RemoteException
+com.amazon.dcp.framework.IDataMigrator$Stub$Proxy	method	public void deleteMigratedSharedPrefs(String name) throws RemoteException
+com.amazon.dcp.framework.SSODataMigrator$Stub	field	private static final String DESCRIPTOR;
+com.amazon.dcp.framework.SSODataMigrator$Stub	field	static final int TRANSACTION_confirmDataMigrated;
+com.amazon.dcp.framework.SSODataMigrator$Stub	field	static final int TRANSACTION_getAnonymousCredentialsStore;
+com.amazon.dcp.framework.SSODataMigrator$Stub	field	static final int TRANSACTION_getDcpProtectionStore;
+com.amazon.dcp.framework.SSODataMigrator$Stub	method	public IBinder asBinder()
+com.amazon.dcp.framework.SSODataMigrator$Stub	method	public Stub()
+com.amazon.dcp.framework.SSODataMigrator$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.amazon.dcp.framework.SSODataMigrator$Stub	method	public static SSODataMigrator asInterface(IBinder obj)
+com.amazon.dcp.framework.SSODataMigrator$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.dcp.framework.SSODataMigrator$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.dcp.framework.SSODataMigrator$Stub$Proxy	method	public ParcelFileDescriptor getAnonymousCredentialsStore() throws RemoteException
+com.amazon.dcp.framework.SSODataMigrator$Stub$Proxy	method	public ParcelFileDescriptor getDcpProtectionStore() throws RemoteException
+com.amazon.dcp.framework.SSODataMigrator$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.dcp.framework.SSODataMigrator$Stub$Proxy	method	public void confirmDataMigrated() throws RemoteException
+com.amazon.dcp.framework.ServiceBinder	field	private ComponentName mBoundComponent;
+com.amazon.dcp.framework.ServiceBinder	field	private Object mRetval;
+com.amazon.dcp.framework.ServiceBinder	field	private ServiceConnection mConnection;
+com.amazon.dcp.framework.ServiceBinder	field	private State mState;
+com.amazon.dcp.framework.ServiceBinder	field	private final Condition mStateChanged;
+com.amazon.dcp.framework.ServiceBinder	field	private final Context mContext;
+com.amazon.dcp.framework.ServiceBinder	field	private final Intent mIntent;
+com.amazon.dcp.framework.ServiceBinder	field	private final ReentrantLock mLock;
+com.amazon.dcp.framework.ServiceBinder	field	private final int mFlags;
+com.amazon.dcp.framework.ServiceBinder	field	private static final String TAG;
+com.amazon.dcp.framework.ServiceBinder	method	private Object unsafeBind(Timeout timeout) throws InterruptedException, TimeoutException
+com.amazon.dcp.framework.ServiceBinder	method	private boolean startBind() throws BindFailedException
+com.amazon.dcp.framework.ServiceBinder	method	private void enforceNotMainThread()
+com.amazon.dcp.framework.ServiceBinder	method	private void enforceState(State state, String exceptionMessage)
+com.amazon.dcp.framework.ServiceBinder	method	private void safeUnbind()
+com.amazon.dcp.framework.ServiceBinder	method	private void waitForBind(Timeout timeout) throws InterruptedException, TimeoutException
+com.amazon.dcp.framework.ServiceBinder	method	public ComponentName getComponentName()
+com.amazon.dcp.framework.ServiceBinder	method	public Object bind(long timeoutTime, TimeUnit timeoutUnit) throws InterruptedException, TimeoutException
+com.amazon.dcp.framework.ServiceBinder	method	public Object getService()
+com.amazon.dcp.framework.ServiceBinder	method	public ServiceBinder(Context context, Intent intent, int flags)
+com.amazon.dcp.framework.ServiceBinder	method	public void unbind()
+com.amazon.dcp.framework.ServiceBinder$BindFailedException	field	private static final long serialVersionUID;
+com.amazon.dcp.framework.ServiceBinder$BindFailedException	method	private BindFailedException()
+com.amazon.dcp.framework.SignatureHelper	field	private final PackageManager mPackageManager;
+com.amazon.dcp.framework.SignatureHelper	field	private final String mMyPackageName;
+com.amazon.dcp.framework.SignatureHelper	field	private static final String APP_DEBUG_SIGNATURE;
+com.amazon.dcp.framework.SignatureHelper	field	private static final String APP_RELEASE_SIGNATURE;
+com.amazon.dcp.framework.SignatureHelper	field	private static final String SYSTEM_DEBUG_SIGNATURE_1;
+com.amazon.dcp.framework.SignatureHelper	field	private static final String SYSTEM_DEBUG_SIGNATURE_2;
+com.amazon.dcp.framework.SignatureHelper	field	private static final String SYSTEM_DEBUG_SIGNATURE_3;
+com.amazon.dcp.framework.SignatureHelper	field	private static final String TAG;
+com.amazon.dcp.framework.SignatureHelper	method	private Signature[] getSignatures(String packageName) throws PackageManager.NameNotFoundException
+com.amazon.dcp.framework.SignatureHelper	method	private String getPermissionOwnerPackageName(String permission) throws PackageManager.NameNotFoundException
+com.amazon.dcp.framework.SignatureHelper	method	private boolean compareSignatures(String packageName, String signature) throws PackageManager.NameNotFoundException
+com.amazon.dcp.framework.SignatureHelper	method	private boolean doSignaturesMatch(String permissionOwnerPackageName) throws PackageManager.NameNotFoundException
+com.amazon.dcp.framework.SignatureHelper	method	private boolean isSignedWithAppDebugCert(String packageName) throws PackageManager.NameNotFoundException
+com.amazon.dcp.framework.SignatureHelper	method	private boolean isSignedWithAppReleaseCert(String packageName) throws PackageManager.NameNotFoundException
+com.amazon.dcp.framework.SignatureHelper	method	private boolean isSignedWithSystemDebugCert(String packageName) throws PackageManager.NameNotFoundException
+com.amazon.dcp.framework.SignatureHelper	method	public SignatureHelper(Context context)
+com.amazon.dcp.framework.SignatureHelper	method	public boolean shouldTrustPermissionOwner(String permission) throws PackageManager.NameNotFoundException
+com.amazon.dcp.framework.StreamHelpers	field	public static final String TAG;
+com.amazon.dcp.framework.StreamHelpers	method	private StreamHelpers()
+com.amazon.dcp.framework.StreamHelpers	method	public static byte[] readInputStream(InputStream stream) throws IOException
+com.amazon.dcp.framework.StreamHelpers	method	public static void closeParcelFileDescriptor(ParcelFileDescriptor pfd)
+com.amazon.dcp.framework.StreamHelpers	method	public static void closeReader(Reader reader)
+com.amazon.dcp.framework.StreamHelpers	method	public static void closeStream(InputStream inputStream)
+com.amazon.dcp.framework.StreamHelpers	method	public static void closeStream(OutputStream outputStream)
+com.amazon.dcp.framework.StreamHelpers	method	public static void closeWriter(Writer writer)
+com.amazon.dcp.framework.StreamHelpers	method	public static void flushStream(OutputStream outputStream) throws IOException
+com.amazon.dcp.framework.StreamHelpers	method	public static void flushWriter(Writer writer)
+com.amazon.dcp.framework.StringUtils	field	private static final Pattern NEW_LINE;
+com.amazon.dcp.framework.StringUtils	method	private StringUtils()
+com.amazon.dcp.framework.StringUtils	method	public static List<String> splitLines(String str)
+com.amazon.dcp.framework.StringUtils	method	public static String defaultWhenNull(String str, String defaultString)
+com.amazon.dcp.framework.StringUtils	method	public static String emptyWhenNull(String str)
+com.amazon.dcp.framework.StringUtils	method	public static String join(String separator, Collection<?> values)
+com.amazon.dcp.framework.StringUtils	method	public static String join(String separator, Object[] values)
+com.amazon.dcp.framework.StringUtils	method	public static String join(String separator, String[] values)
+com.amazon.dcp.framework.StringUtils	method	public static boolean equals(String str1, String str2)
+com.amazon.dcp.framework.StringUtils	method	public static boolean equalsAny(String str, String... candidates)
+com.amazon.dcp.framework.StringUtils	method	public static boolean isNullOrEmpty(String str)
+com.amazon.dcp.framework.SyncBoundServiceCaller	field	private final BoundServiceCaller mServiceCaller;
+com.amazon.dcp.framework.SyncBoundServiceCaller	field	private static final Executor THREAD_POOL;
+com.amazon.dcp.framework.SyncBoundServiceCaller	method	protected void doneUsingService()
+com.amazon.dcp.framework.SyncBoundServiceCaller	method	protected void startAsyncOperation()
+com.amazon.dcp.framework.SyncBoundServiceCaller	method	protected void useService(ComponentName name, IBinder service)
+com.amazon.dcp.framework.SyncBoundServiceCaller	method	protected void useService(IBinder service)
+com.amazon.dcp.framework.SyncBoundServiceCaller	method	public SyncBoundServiceCaller(Context context, Intent serviceIntent, int bindingFlags)
+com.amazon.dcp.framework.ThreadHelpers	method	private ThreadHelpers()
+com.amazon.dcp.framework.ThreadHelpers	method	public static boolean isRunningOnMainThread()
+com.amazon.dcp.framework.Timeout	field	private final TimeUnit mTimeoutUnit;
+com.amazon.dcp.framework.Timeout	field	private final long mStartTimeNanos;
+com.amazon.dcp.framework.Timeout	field	private final long mTimeoutTime;
+com.amazon.dcp.framework.Timeout	method	public TimeUnit getTimeoutUnit()
+com.amazon.dcp.framework.Timeout	method	public Timeout(Context context, long timeout, TimeUnit timeUnit)
+com.amazon.dcp.framework.Timeout	method	public boolean hasExpired()
+com.amazon.dcp.framework.Timeout	method	public long getElapsedTime()
+com.amazon.dcp.framework.Timeout	method	public long getRemainingTime()
+com.amazon.dcp.framework.UnitTestUtils	method	private UnitTestUtils()
+com.amazon.dcp.framework.UnitTestUtils	method	public static boolean isRunningInUnitTest()
+com.amazon.dcp.framework.tracing.BaseTracer	field	private static final int EXECUTING;
+com.amazon.dcp.framework.tracing.BaseTracer	field	private static final int NOT_EXECUTING;
+com.amazon.dcp.framework.tracing.BaseTracer	method	public <T, E extends Exception> T trace(Enum trace, int id, ThrowingCallable<T, E> callable) throws Exception
+com.amazon.dcp.framework.tracing.BaseTracer	method	public <T, E extends Exception> T traceOnCurrentThread(Enum r2, ThrowingCallable<T, E> throwingCallable) throws Exception
+com.amazon.dcp.framework.tracing.BaseTracer	method	public <T> T trace(Enum trace, int id, NotThrowingCallable<T> callable)
+com.amazon.dcp.framework.tracing.BaseTracer	method	public <T> T traceOnCurrentThread(Enum r2, NotThrowingCallable<T> notThrowingCallable)
+com.amazon.dcp.framework.tracing.BaseTracer	method	public abstract void trace(Enum r1, int i, int i2);
+com.amazon.dcp.framework.tracing.BaseTracer	method	public abstract void trace(Enum r1, int i, int i2, String str);
+com.amazon.dcp.framework.tracing.BaseTracer	method	public int currentThreadIdToExtra()
+com.amazon.dcp.framework.tracing.BaseTracer	method	public int objectToExtra(Object object)
+com.amazon.dcp.framework.tracing.BaseTracer	method	public int threadIdToExtra(long threadId)
+com.amazon.dcp.framework.tracing.ContractsTracer	field	private final TracerWrapper mTracerWrapper;
+com.amazon.dcp.framework.tracing.ContractsTracer	method	public ContractsTracer(TraceInformation[] traces)
+com.amazon.dcp.framework.tracing.ContractsTracer	method	public void disableTracing()
+com.amazon.dcp.framework.tracing.ContractsTracer	method	public void enableTracing()
+com.amazon.dcp.framework.tracing.ContractsTracer	method	public void setTracer(ITracer tracer)
+com.amazon.dcp.framework.tracing.ContractsTracer	method	public void trace(Enum trace, int extra, int id)
+com.amazon.dcp.framework.tracing.ContractsTracer	method	public void trace(Enum trace, int extra, int id, String message)
+com.amazon.dcp.framework.tracing.TracerWrapper	field	private ITracer mTracer;
+com.amazon.dcp.framework.tracing.TracerWrapper	field	private boolean mEnabled;
+com.amazon.dcp.framework.tracing.TracerWrapper	field	private final TraceInformation[] mTraces;
+com.amazon.dcp.framework.tracing.TracerWrapper	field	private int[] mTraceToTraceId;
+com.amazon.dcp.framework.tracing.TracerWrapper	method	private void registerTraces(TraceInformation[] traces)
+com.amazon.dcp.framework.tracing.TracerWrapper	method	public TracerWrapper(TraceInformation[] traces)
+com.amazon.dcp.framework.tracing.TracerWrapper	method	public void disable()
+com.amazon.dcp.framework.tracing.TracerWrapper	method	public void enable()
+com.amazon.dcp.framework.tracing.TracerWrapper	method	public void setTracer(ITracer tracer)
+com.amazon.dcp.framework.tracing.TracerWrapper	method	public void trace(Enum trace, int extra, int id)
+com.amazon.dcp.framework.tracing.TracerWrapper	method	public void trace(Enum trace, int extra, int id, String message)
+com.amazon.dcp.metrics.CentralDeviceMetricsCollector	field	private final MetricsCollector[] mCollectors;
+com.amazon.dcp.metrics.CentralDeviceMetricsCollector	field	private static final String TAG;
+com.amazon.dcp.metrics.CentralDeviceMetricsCollector	method	protected MetricsCollector[] getCollectors()
+com.amazon.dcp.metrics.CentralDeviceMetricsCollector	method	public CentralDeviceMetricsCollector(Context context)
+com.amazon.dcp.metrics.CrashDetectionHelper	field	private Thread.UncaughtExceptionHandler mPreviousHandler;
+com.amazon.dcp.metrics.CrashDetectionHelper	field	private final Context mContext;
+com.amazon.dcp.metrics.CrashDetectionHelper	field	private final String mDomain;
+com.amazon.dcp.metrics.CrashDetectionHelper	field	private static final ExecutorService SINGLE_THREADED_EXECUTOR;
+com.amazon.dcp.metrics.CrashDetectionHelper	field	private static final String ANDROID_BUILD_VERSION;
+com.amazon.dcp.metrics.CrashDetectionHelper	field	private static final String CRASH_ID;
+com.amazon.dcp.metrics.CrashDetectionHelper	field	private static final String CRASH_LOG_FILENAME;
+com.amazon.dcp.metrics.CrashDetectionHelper	field	private static final String CRASH_TIME;
+com.amazon.dcp.metrics.CrashDetectionHelper	field	private static final String PACKAGE_FILE_PATH;
+com.amazon.dcp.metrics.CrashDetectionHelper	field	private static final String PACKAGE_NAME;
+com.amazon.dcp.metrics.CrashDetectionHelper	field	private static final String PACKAGE_VERSION_CODE;
+com.amazon.dcp.metrics.CrashDetectionHelper	field	private static final String PACKAGE_VERSION_NAME;
+com.amazon.dcp.metrics.CrashDetectionHelper	field	private static final String REGEX_STACK_TRACE_DATA;
+com.amazon.dcp.metrics.CrashDetectionHelper	field	private static final String STACK_TRACE;
+com.amazon.dcp.metrics.CrashDetectionHelper	field	private static final String STACK_TRACE_EXTENDED;
+com.amazon.dcp.metrics.CrashDetectionHelper	field	private static final String TAG;
+com.amazon.dcp.metrics.CrashDetectionHelper	field	private static final String THREAD_DUMP;
+com.amazon.dcp.metrics.CrashDetectionHelper	field	private static final boolean LOG_CONTENTS;
+com.amazon.dcp.metrics.CrashDetectionHelper	field	public static final String INTENT_ACTION_INCREMENT_ACTIVITY_COUNTER;
+com.amazon.dcp.metrics.CrashDetectionHelper	field	public static final String INTENT_EXTRA_ACTIVITY_COUNTER_PACKAGE;
+com.amazon.dcp.metrics.CrashDetectionHelper	method	private CrashDetectionHelper(Context context, String domain)
+com.amazon.dcp.metrics.CrashDetectionHelper	method	private HashMap<String, String> collectCrashDetails(Throwable ex)
+com.amazon.dcp.metrics.CrashDetectionHelper	method	private String getFormattedReport(Map<String, String> details)
+com.amazon.dcp.metrics.CrashDetectionHelper	method	private boolean sendReportIfNeeded()
+com.amazon.dcp.metrics.CrashDetectionHelper	method	private static void collectCrashID(HashMap<String, String> details)
+com.amazon.dcp.metrics.CrashDetectionHelper	method	private void collectCrashTime(HashMap<String, String> details)
+com.amazon.dcp.metrics.CrashDetectionHelper	method	private void collectPackageDetails(HashMap<String, String> details)
+com.amazon.dcp.metrics.CrashDetectionHelper	method	private void collectStackTrace(Throwable ex, HashMap<String, String> details)
+com.amazon.dcp.metrics.CrashDetectionHelper	method	private void collectThreadDump(HashMap<String, String> details)
+com.amazon.dcp.metrics.CrashDetectionHelper	method	private void saveCrash(Throwable ex)
+com.amazon.dcp.metrics.CrashDetectionHelper	method	private void saveToFile(HashMap<String, String> details)
+com.amazon.dcp.metrics.CrashDetectionHelper	method	public boolean hasCrashReport()
+com.amazon.dcp.metrics.CrashDetectionHelper	method	public static CrashDetectionHelper setUpCrashDetection(Context context)
+com.amazon.dcp.metrics.CrashDetectionHelper	method	public static CrashDetectionHelper setUpCrashDetection(Context context, String domain)
+com.amazon.dcp.metrics.CrashDetectionHelper	method	public static void incrementActivityCounter(Context context, String packageName)
+com.amazon.dcp.metrics.CrashDetectionHelper	method	public static void reportCrash(Throwable ex)
+com.amazon.dcp.metrics.CrashDetectionHelper	method	public void tearDownCrashDetection()
+com.amazon.dcp.metrics.CrashDetectionHelper	method	public void uncaughtException(Thread thread, Throwable ex)
+com.amazon.dcp.metrics.DeviceDetailsCollector	method	private DeviceDetailsCollector()
+com.amazon.dcp.metrics.DeviceDetailsCollector	method	private static long getAvailableMemorySizeInBytes(File path)
+com.amazon.dcp.metrics.DeviceDetailsCollector	method	private static long getTotalMemorySizeInBytes(File path)
+com.amazon.dcp.metrics.DeviceDetailsCollector	method	public static long getAvailableCacheMemorySizeInBytes()
+com.amazon.dcp.metrics.DeviceDetailsCollector	method	public static long getAvailableInternalMemorySizeInBytes()
+com.amazon.dcp.metrics.DeviceDetailsCollector	method	public static long getTotalCacheMemorySizeInBytes()
+com.amazon.dcp.metrics.DeviceDetailsCollector	method	public static long getTotalInternalMemorySizeInBytes()
+com.amazon.dcp.metrics.IMetricIdentifier$Stub	field	private static final String DESCRIPTOR;
+com.amazon.dcp.metrics.IMetricIdentifier$Stub	field	static final int TRANSACTION_getComponent;
+com.amazon.dcp.metrics.IMetricIdentifier$Stub	field	static final int TRANSACTION_getDomain;
+com.amazon.dcp.metrics.IMetricIdentifier$Stub	field	static final int TRANSACTION_getLevelCode;
+com.amazon.dcp.metrics.IMetricIdentifier$Stub	field	static final int TRANSACTION_getName;
+com.amazon.dcp.metrics.IMetricIdentifier$Stub	method	public IBinder asBinder()
+com.amazon.dcp.metrics.IMetricIdentifier$Stub	method	public Stub()
+com.amazon.dcp.metrics.IMetricIdentifier$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.amazon.dcp.metrics.IMetricIdentifier$Stub	method	public static IMetricIdentifier asInterface(IBinder obj)
+com.amazon.dcp.metrics.IMetricIdentifier$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.dcp.metrics.IMetricIdentifier$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.dcp.metrics.IMetricIdentifier$Stub$Proxy	method	public String getComponent() throws RemoteException
+com.amazon.dcp.metrics.IMetricIdentifier$Stub$Proxy	method	public String getDomain() throws RemoteException
+com.amazon.dcp.metrics.IMetricIdentifier$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.dcp.metrics.IMetricIdentifier$Stub$Proxy	method	public String getName() throws RemoteException
+com.amazon.dcp.metrics.IMetricIdentifier$Stub$Proxy	method	public int getLevelCode() throws RemoteException
+com.amazon.dcp.metrics.IMetricsService$Stub	field	private static final String DESCRIPTOR;
+com.amazon.dcp.metrics.IMetricsService$Stub	field	static final int TRANSACTION_isLogCaptureStarted;
+com.amazon.dcp.metrics.IMetricsService$Stub	field	static final int TRANSACTION_sendCrashReport;
+com.amazon.dcp.metrics.IMetricsService$Stub	field	static final int TRANSACTION_startLogCapture;
+com.amazon.dcp.metrics.IMetricsService$Stub	field	static final int TRANSACTION_stopLogCapture;
+com.amazon.dcp.metrics.IMetricsService$Stub	method	public IBinder asBinder()
+com.amazon.dcp.metrics.IMetricsService$Stub	method	public Stub()
+com.amazon.dcp.metrics.IMetricsService$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.amazon.dcp.metrics.IMetricsService$Stub	method	public static IMetricsService asInterface(IBinder obj)
+com.amazon.dcp.metrics.IMetricsService$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.dcp.metrics.IMetricsService$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.dcp.metrics.IMetricsService$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.dcp.metrics.IMetricsService$Stub$Proxy	method	public boolean isLogCaptureStarted() throws RemoteException
+com.amazon.dcp.metrics.IMetricsService$Stub$Proxy	method	public boolean sendCrashReport(ParcelFileDescriptor pfd, String domain) throws RemoteException
+com.amazon.dcp.metrics.IMetricsService$Stub$Proxy	method	public void startLogCapture() throws RemoteException
+com.amazon.dcp.metrics.IMetricsService$Stub$Proxy	method	public void stopLogCapture() throws RemoteException
+com.amazon.dcp.metrics.IntentBasedMetricsCollector	field	private final Context mContext;
+com.amazon.dcp.metrics.IntentBasedMetricsCollector	field	private final MetricsServiceIntentFactory mIntentFactory;
+com.amazon.dcp.metrics.IntentBasedMetricsCollector	field	private static final String TAG;
+com.amazon.dcp.metrics.IntentBasedMetricsCollector	method	private void incrementExtraCounters(MetricIdentifier id, Map<String, ? extends Object> extraCounters)
+com.amazon.dcp.metrics.IntentBasedMetricsCollector	method	public IntentBasedMetricsCollector(Context context, MetricsServiceIntentFactory intentFactory)
+com.amazon.dcp.metrics.IntentBasedMetricsCollector	method	public long stopDurableTimer(MetricIdentifier id, String timerName)
+com.amazon.dcp.metrics.IntentBasedMetricsCollector	method	public long stopDurableTimer(MetricIdentifier id, String timerName, String... extraTimerNames)
+com.amazon.dcp.metrics.IntentBasedMetricsCollector	method	public void incrementMetricCounter(MetricIdentifier id, Map<String, Integer> extraCounters)
+com.amazon.dcp.metrics.IntentBasedMetricsCollector	method	public void incrementMetricCounter(MetricIdentifier id, String... extraCounters)
+com.amazon.dcp.metrics.IntentBasedMetricsCollector	method	public void incrementStateMetricCounter(MetricIdentifier id, Map<String, String> extraCounters)
+com.amazon.dcp.metrics.IntentBasedMetricsCollector	method	public void recordMetricTimerEvent(MetricIdentifier id, String timerName, long elapsedTimeMs)
+com.amazon.dcp.metrics.IntentBasedMetricsCollector	method	public void startDurableTimer(MetricIdentifier id, String timerName)
+com.amazon.dcp.metrics.LoggingMetricsCollector	field	private String mTag;
+com.amazon.dcp.metrics.LoggingMetricsCollector	method	private void incrementExtraCounters(MetricIdentifier id, Map<String, ? extends Object> extraCounters)
+com.amazon.dcp.metrics.LoggingMetricsCollector	method	protected void logMetric(String metric)
+com.amazon.dcp.metrics.LoggingMetricsCollector	method	public LoggingMetricsCollector(String loggingTag)
+com.amazon.dcp.metrics.LoggingMetricsCollector	method	public long stopDurableTimer(MetricIdentifier id, String timerName)
+com.amazon.dcp.metrics.LoggingMetricsCollector	method	public long stopDurableTimer(MetricIdentifier id, String timerName, String... extraTimerNames)
+com.amazon.dcp.metrics.LoggingMetricsCollector	method	public void incrementMetricCounter(MetricIdentifier id, Map<String, Integer> extraCounters)
+com.amazon.dcp.metrics.LoggingMetricsCollector	method	public void incrementMetricCounter(MetricIdentifier id, String... extraCounters)
+com.amazon.dcp.metrics.LoggingMetricsCollector	method	public void incrementStateMetricCounter(MetricIdentifier id, Map<String, String> extraCounters)
+com.amazon.dcp.metrics.LoggingMetricsCollector	method	public void recordMetricTimerEvent(MetricIdentifier id, String timerName, long elapsedTimeMs)
+com.amazon.dcp.metrics.LoggingMetricsCollector	method	public void startDurableTimer(MetricIdentifier id, String timerName)
+com.amazon.dcp.metrics.MetricIdentifier	field	final Level mLevel;
+com.amazon.dcp.metrics.MetricIdentifier	field	final String mComponent;
+com.amazon.dcp.metrics.MetricIdentifier	field	final String mDomain;
+com.amazon.dcp.metrics.MetricIdentifier	field	final String mName;
+com.amazon.dcp.metrics.MetricIdentifier	method	private static boolean equivalentStrings(String s1, String s2)
+com.amazon.dcp.metrics.MetricIdentifier	method	public Level getLevel()
+com.amazon.dcp.metrics.MetricIdentifier	method	public MetricIdentifier(Level level, String domain, String component, String name)
+com.amazon.dcp.metrics.MetricIdentifier	method	public MetricIdentifier(Parcel parcel)
+com.amazon.dcp.metrics.MetricIdentifier	method	public MetricIdentifier(String domain, String component, String name)
+com.amazon.dcp.metrics.MetricIdentifier	method	public String getComponent()
+com.amazon.dcp.metrics.MetricIdentifier	method	public String getDomain()
+com.amazon.dcp.metrics.MetricIdentifier	method	public String getName()
+com.amazon.dcp.metrics.MetricIdentifier	method	public String getPackage()
+com.amazon.dcp.metrics.MetricIdentifier	method	public String toString()
+com.amazon.dcp.metrics.MetricIdentifier	method	public boolean equals(Object other)
+com.amazon.dcp.metrics.MetricIdentifier	method	public int describeContents()
+com.amazon.dcp.metrics.MetricIdentifier	method	public int hashCode()
+com.amazon.dcp.metrics.MetricIdentifier	method	public void setPackage(String pkg)
+com.amazon.dcp.metrics.MetricIdentifier	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.dcp.metrics.MetricIdentifier$Level	method	public static Level fromCode(int code)
+com.amazon.dcp.metrics.MetricsContract	field	private static final List<String> VALID_URI_PATH_ROOTS;
+com.amazon.dcp.metrics.MetricsContract	field	private static final String ID_NAME;
+com.amazon.dcp.metrics.MetricsContract	field	private static final String LEVEL_QUERY_PARAM;
+com.amazon.dcp.metrics.MetricsContract	field	private static final String MIME_DELIMITER;
+com.amazon.dcp.metrics.MetricsContract	field	private static final int METRIC_URI_SEGMENT_COUNT;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String BROADCAST_LOG_OFFLOAD_FAILED;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String BROADCAST_LOG_OFFLOAD_SUCCESS;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String BROADCAST_UPLOAD_COMPLETE;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String COLUMN_METRIC_COMPONENT;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String COLUMN_METRIC_DOMAIN;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String COLUMN_METRIC_LEVEL;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String COLUMN_METRIC_NAME;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String COLUMN_METRIC_PACKAGE;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String COLUMN_METRIC_SWINVENTORY_ID;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String COLUMN_METRIC_TIMESTAMP;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String COLUMN_METRIC_VERSION;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String COLUMN_SWINVENTORY_HEADER;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String DEFAULT_COUNTER_NAME;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String EXTRA_UPLOAD_RESULT;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String INTENT_ACTION_INCREMENT_COUNTER;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String INTENT_ACTION_OFFLOAD_LOGS;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String INTENT_ACTION_RECORD_TIMING;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String INTENT_ACTION_START_LOG_CAPTURE;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String INTENT_ACTION_START_TIMER;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String INTENT_ACTION_STOP_LOG_CAPTURE;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String INTENT_ACTION_STOP_TIMER;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String INTENT_ACTION_UPLOAD_LOGS;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String INTENT_ACTION_UPLOAD_METRICS;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String INTENT_EXTRA_ELAPSED_TIME_MS;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String INTENT_EXTRA_LOGCAT_BUFFERS;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String INTENT_EXTRA_LOGCAT_FILTERS;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String INTENT_EXTRA_METRIC_COUNTERS;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String INTENT_EXTRA_METRIC_IDENTIFIER;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String INTENT_EXTRA_NAMES;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String INTENT_EXTRA_PACKAGE;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String INTENT_EXTRA_START_TIME;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String INTENT_EXTRA_STOP_TIME;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String INTENT_EXTRA_TIMER_NAME;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String INTENT_EXTRA_UPLOAD_ANONYMOUS;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String INTENT_EXTRA_UPLOAD_TAG;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String PERMISSION_METRICS_SERVICE;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String PRODUCTION_AUTHORITY;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String SYSTEM_COLLECTOR_DOMAIN;
+com.amazon.dcp.metrics.MetricsContract	field	public static final String TEST_AUTHORITY;
+com.amazon.dcp.metrics.MetricsContract	field	public static final Uri PRODUCTION_AUTHORITY_URI;
+com.amazon.dcp.metrics.MetricsContract	field	public static final Uri TEST_AUTHORITY_URI;
+com.amazon.dcp.metrics.MetricsContract	method	private MetricsContract()
+com.amazon.dcp.metrics.MetricsContract	method	private static <T extends Enum<T>> T parseEnum(Class<T> cls, String str, T t)
+com.amazon.dcp.metrics.MetricsContract	method	static MetricIdentifier identifierFromUri(Uri uri)
+com.amazon.dcp.metrics.MetricsContract	method	static Uri buildMetricUri(Uri baseUri, String rootPathSegment, MetricIdentifier identifier)
+com.amazon.dcp.metrics.MetricsContract$Counter	field	public static final String COLUMN_COUNTER_NAME;
+com.amazon.dcp.metrics.MetricsContract$Counter	field	public static final String COLUMN_COUNTER_VALUE;
+com.amazon.dcp.metrics.MetricsContract$Counter	field	public static final String COLUMN_METRIC_COMPONENT;
+com.amazon.dcp.metrics.MetricsContract$Counter	field	public static final String COLUMN_METRIC_DOMAIN;
+com.amazon.dcp.metrics.MetricsContract$Counter	field	public static final String COLUMN_METRIC_LEVEL;
+com.amazon.dcp.metrics.MetricsContract$Counter	field	public static final String COLUMN_METRIC_NAME;
+com.amazon.dcp.metrics.MetricsContract$Counter	field	public static final String COLUMN_METRIC_PACKAGE;
+com.amazon.dcp.metrics.MetricsContract$Counter	field	public static final String CONTENT_ITEM_TYPE;
+com.amazon.dcp.metrics.MetricsContract$Counter	field	public static final String CONTENT_MIME_SUBTYPE;
+com.amazon.dcp.metrics.MetricsContract$Counter	field	public static final String CONTENT_TYPE;
+com.amazon.dcp.metrics.MetricsContract$Counter	field	public static final String URI_PATH_ROOT;
+com.amazon.dcp.metrics.MetricsContract$Counter	method	private Counter()
+com.amazon.dcp.metrics.MetricsContract$Counter	method	public static Uri getContentItemUri(Uri baseUri, MetricIdentifier identifier)
+com.amazon.dcp.metrics.MetricsContract$Counter	method	public static Uri getContentUri(Uri baseUri)
+com.amazon.dcp.metrics.MetricsContract$Timer	field	public static final String COLUMN_ELAPSED_TIME;
+com.amazon.dcp.metrics.MetricsContract$Timer	field	public static final String COLUMN_END_TIME;
+com.amazon.dcp.metrics.MetricsContract$Timer	field	public static final String COLUMN_METRIC_COMPONENT;
+com.amazon.dcp.metrics.MetricsContract$Timer	field	public static final String COLUMN_METRIC_DOMAIN;
+com.amazon.dcp.metrics.MetricsContract$Timer	field	public static final String COLUMN_METRIC_NAME;
+com.amazon.dcp.metrics.MetricsContract$Timer	field	public static final String COLUMN_METRIC_PACKAGE;
+com.amazon.dcp.metrics.MetricsContract$Timer	field	public static final String COLUMN_START_TIME;
+com.amazon.dcp.metrics.MetricsContract$Timer	field	public static final String COLUMN_TIMER_NAME;
+com.amazon.dcp.metrics.MetricsContract$Timer	field	public static final String CONTENT_ITEM_TYPE;
+com.amazon.dcp.metrics.MetricsContract$Timer	field	public static final String CONTENT_MIME_SUBTYPE;
+com.amazon.dcp.metrics.MetricsContract$Timer	field	public static final String CONTENT_TYPE;
+com.amazon.dcp.metrics.MetricsContract$Timer	field	public static final String URI_PATH_ROOT;
+com.amazon.dcp.metrics.MetricsContract$Timer	method	private Timer()
+com.amazon.dcp.metrics.MetricsContract$Timer	method	public static Uri getContentItemUri(Uri baseUri, MetricIdentifier identifier)
+com.amazon.dcp.metrics.MetricsContract$Timer	method	public static Uri getContentUri(Uri baseUri)
+com.amazon.dcp.metrics.MetricsServiceIntentFactory	field	private static final String METRICS_SERVICE_CLASS_NAME;
+com.amazon.dcp.metrics.MetricsServiceIntentFactory	field	private static final String TAG;
+com.amazon.dcp.metrics.MetricsServiceIntentFactory	method	public Intent buildIncrementMetricWithExtraCountersIntent(MetricIdentifier id, Bundle extraBundle)
+com.amazon.dcp.metrics.MetricsServiceIntentFactory	method	public Intent buildIncrementMetricWithExtraCountersIntent(MetricIdentifier id, Map<String, ? extends Object> extras)
+com.amazon.dcp.metrics.MetricsServiceIntentFactory	method	public Intent buildIncrementMetricWithExtraCountersIntent(MetricIdentifier id, String... extras)
+com.amazon.dcp.metrics.MetricsServiceIntentFactory	method	public Intent buildRecordStartTimerIntent(MetricIdentifier id, String timerName, long startTime)
+com.amazon.dcp.metrics.MetricsServiceIntentFactory	method	public Intent buildRecordStopTimerIntent(MetricIdentifier id, String timerName, long stopTime)
+com.amazon.dcp.metrics.MetricsServiceIntentFactory	method	public Intent buildRecordStopTimerWithExtraIntent(MetricIdentifier id, String timerName, String[] extraTimerNames, long stopTime)
+com.amazon.dcp.metrics.MetricsServiceIntentFactory	method	public Intent buildRecordTimingIntent(MetricIdentifier id, String timerName, long elapsedTimeMs)
+com.amazon.dcp.metrics.MetricsServiceIntentFactory	method	public MetricsServiceIntentFactory(ComponentName componentName)
+com.amazon.dcp.metrics.MetricsServiceIntentFactory	method	public static MetricsServiceIntentFactory findMetricsService(Context context)
+com.amazon.dcp.metrics.MetricsTimer	field	private final MetricIdentifier mEventId;
+com.amazon.dcp.metrics.MetricsTimer	field	private final MetricsCollector mCollector;
+com.amazon.dcp.metrics.MetricsTimer	field	private final String mTimerName;
+com.amazon.dcp.metrics.MetricsTimer	field	private long mStart;
+com.amazon.dcp.metrics.MetricsTimer	field	private static final String TAG;
+com.amazon.dcp.metrics.MetricsTimer	field	private static final long MILLISECONDS_PER_NANOSECOND;
+com.amazon.dcp.metrics.MetricsTimer	method	public MetricIdentifier getEventId()
+com.amazon.dcp.metrics.MetricsTimer	method	public MetricsTimer(MetricsCollector collector, MetricIdentifier eventIdentifier, String timerName)
+com.amazon.dcp.metrics.MetricsTimer	method	public String getName()
+com.amazon.dcp.metrics.MetricsTimer	method	public void start()
+com.amazon.dcp.metrics.MetricsTimer	method	public void stop()
+com.amazon.dcp.metrics.MultiSinkMetricsCollector	method	private void validateExtraCounterNames(String... counterNames) throws Throwable
+com.amazon.dcp.metrics.MultiSinkMetricsCollector	method	protected abstract MetricsCollector[] getCollectors();
+com.amazon.dcp.metrics.MultiSinkMetricsCollector	method	public long stopDurableTimer(MetricIdentifier id, String timerName)
+com.amazon.dcp.metrics.MultiSinkMetricsCollector	method	public long stopDurableTimer(MetricIdentifier id, String timerName, String... extraTimerNames)
+com.amazon.dcp.metrics.MultiSinkMetricsCollector	method	public void incrementMetricCounter(MetricIdentifier id, Map<String, Integer> extraCounters)
+com.amazon.dcp.metrics.MultiSinkMetricsCollector	method	public void incrementMetricCounter(MetricIdentifier id, String... extraCounters) throws Throwable
+com.amazon.dcp.metrics.MultiSinkMetricsCollector	method	public void incrementStateMetricCounter(MetricIdentifier id, Map<String, String> extraCounters) throws Throwable
+com.amazon.dcp.metrics.MultiSinkMetricsCollector	method	public void recordMetricTimerEvent(MetricIdentifier id, String timerName, long elapsedTime)
+com.amazon.dcp.metrics.MultiSinkMetricsCollector	method	public void startDurableTimer(MetricIdentifier id, String timerName)
+com.amazon.dcp.metrics.UploadServiceHelper	method	public UploadServiceHelper(Context context)
+com.amazon.dcp.metrics.UploadServiceHelper	method	public UploadServiceHelper(Context context, String baseUploadTag)
+com.amazon.dcp.metrics.UploadServiceHelper	method	public static String generateUniqueUploadTag(String baseTagString)
+com.amazon.dcp.metrics.UploadServiceHelper	method	public static String standardUploadDateString(Date dateToFormat)
+com.amazon.dcp.metrics.UploadServiceHelper	method	public void setUploadResponseListener(UploadResponseListener listener)
+com.amazon.dcp.metrics.UploadServiceHelper	method	public void uploadLogs(String uploadTag, UploadIdentity identity)
+com.amazon.dcp.metrics.UploadServiceHelper	method	public void uploadLogs(UploadIdentity identity)
+com.amazon.dcp.metrics.UploadServiceHelper	method	public void uploadMetrics(String uploadTag, UploadIdentity identity)
+com.amazon.dcp.metrics.UploadServiceHelper	method	public void uploadMetrics(UploadIdentity identity)
+com.amazon.dcp.metrics.UploadServiceIntentFactory	field	private static final String UPLOAD_SERVICE_CLASS_NAME;
+com.amazon.dcp.metrics.UploadServiceIntentFactory	method	public Intent buildUploadLogsIntent(String uploadTag, UploadServiceHelper.UploadIdentity identity)
+com.amazon.dcp.metrics.UploadServiceIntentFactory	method	public Intent buildUploadMetricsIntent(String uploadTag, UploadServiceHelper.UploadIdentity identity)
+com.amazon.dcp.metrics.UploadServiceIntentFactory	method	public UploadServiceIntentFactory(ComponentName componentName)
+com.amazon.dcp.metrics.UploadServiceIntentFactory	method	public static UploadServiceIntentFactory findUploadService(Context context)

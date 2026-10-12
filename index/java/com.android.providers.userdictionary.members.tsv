@@ -1,0 +1,29 @@
+class	kind	declaration
+com.android.providers.userdictionary.DictionaryBackupAgent	field	private static final String[] PROJECTION;
+com.android.providers.userdictionary.DictionaryBackupAgent	field	private static final byte[] EMPTY_DATA;
+com.android.providers.userdictionary.DictionaryBackupAgent	method	private byte[] getDictionary() throws Throwable
+com.android.providers.userdictionary.DictionaryBackupAgent	method	private int readInt(byte[] bArr, int i)
+com.android.providers.userdictionary.DictionaryBackupAgent	method	private int writeInt(byte[] bArr, int i, int i2)
+com.android.providers.userdictionary.DictionaryBackupAgent	method	private long writeIfChanged(long j, String str, byte[] bArr, BackupDataOutput backupDataOutput)
+com.android.providers.userdictionary.DictionaryBackupAgent	method	private long[] readOldChecksums(ParcelFileDescriptor parcelFileDescriptor) throws IOException
+com.android.providers.userdictionary.DictionaryBackupAgent	method	private void restoreDictionary(BackupDataInput backupDataInput, Uri uri)
+com.android.providers.userdictionary.DictionaryBackupAgent	method	private void writeNewChecksums(long[] jArr, ParcelFileDescriptor parcelFileDescriptor) throws IOException
+com.android.providers.userdictionary.DictionaryBackupAgent	method	public void onBackup(ParcelFileDescriptor parcelFileDescriptor, BackupDataOutput backupDataOutput, ParcelFileDescriptor parcelFileDescriptor2) throws Throwable
+com.android.providers.userdictionary.DictionaryBackupAgent	method	public void onRestore(BackupDataInput backupDataInput, int i, ParcelFileDescriptor parcelFileDescriptor) throws IOException
+com.android.providers.userdictionary.R$string	field	public static final int app_label;
+com.android.providers.userdictionary.UserDictionaryProvider	field	private BackupManager mBackupManager;
+com.android.providers.userdictionary.UserDictionaryProvider	field	private DatabaseHelper mOpenHelper;
+com.android.providers.userdictionary.UserDictionaryProvider	field	private InputMethodManager mImeManager;
+com.android.providers.userdictionary.UserDictionaryProvider	field	private TextServicesManager mTextServiceManager;
+com.android.providers.userdictionary.UserDictionaryProvider	field	private static ArrayMap<String, String> sDictProjectionMap;
+com.android.providers.userdictionary.UserDictionaryProvider	field	private static final UriMatcher sUriMatcher;
+com.android.providers.userdictionary.UserDictionaryProvider	method	private boolean canCallerAccessUserDictionary()
+com.android.providers.userdictionary.UserDictionaryProvider	method	private static Cursor getEmptyCursorOrThrow(String[] strArr)
+com.android.providers.userdictionary.UserDictionaryProvider	method	public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2)
+com.android.providers.userdictionary.UserDictionaryProvider	method	public String getType(Uri uri)
+com.android.providers.userdictionary.UserDictionaryProvider	method	public Uri insert(Uri uri, ContentValues contentValues)
+com.android.providers.userdictionary.UserDictionaryProvider	method	public boolean onCreate()
+com.android.providers.userdictionary.UserDictionaryProvider	method	public int delete(Uri uri, String str, String[] strArr)
+com.android.providers.userdictionary.UserDictionaryProvider	method	public int update(Uri uri, ContentValues contentValues, String str, String[] strArr)
+com.android.providers.userdictionary.UserDictionaryProvider$DatabaseHelper	method	public void onCreate(SQLiteDatabase sQLiteDatabase)
+com.android.providers.userdictionary.UserDictionaryProvider$DatabaseHelper	method	public void onUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i2)

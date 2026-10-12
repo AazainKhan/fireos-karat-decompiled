@@ -1,0 +1,108 @@
+class	kind	declaration
+com.android.common.content.ProjectionMap	field	private String[] mColumns;
+com.android.common.content.ProjectionMap	method	public String put(String str, String str2)
+com.android.common.content.ProjectionMap	method	public static Builder builder()
+com.android.common.content.ProjectionMap	method	public void putAll(Map<? extends String, ? extends String> map)
+com.android.common.content.ProjectionMap	method	public void putColumn(String str, String str2)
+com.android.common.content.ProjectionMap$Builder	field	private ProjectionMap mMap;
+com.android.common.content.ProjectionMap$Builder	method	public Builder add(String str)
+com.android.common.content.ProjectionMap$Builder	method	public ProjectionMap build()
+com.android.ex.editstyledtext.EditStyledText$SavedStyledTextState	field	public int mBackgroundColor;
+com.android.ex.editstyledtext.EditStyledText$SavedStyledTextState	method	public String toString()
+com.android.ex.editstyledtext.EditStyledText$SavedStyledTextState	method	public void writeToParcel(Parcel parcel, int i)
+com.android.ex.editstyledtext.EditStyledText$SoftKeyReceiver	method	protected void onReceiveResult(int i, Bundle bundle)
+com.android.providers.blockednumber.BlockedNumberBackupAgent	field	private static final String[] BLOCKED_NUMBERS_PROJECTION;
+com.android.providers.blockednumber.BlockedNumberBackupAgent	method	private BackedUpBlockedNumber createBlockedNumberFromCursor(Cursor cursor)
+com.android.providers.blockednumber.BlockedNumberBackupAgent	method	private BackedUpBlockedNumber readBlockedNumberFromData(BackupDataInput backupDataInput)
+com.android.providers.blockednumber.BlockedNumberBackupAgent	method	private BackupState readState(DataInputStream dataInputStream) throws IOException
+com.android.providers.blockednumber.BlockedNumberBackupAgent	method	private Iterable<BackedUpBlockedNumber> getAllBlockedNumbers()
+com.android.providers.blockednumber.BlockedNumberBackupAgent	method	private String readString(DataInputStream dataInputStream) throws IOException
+com.android.providers.blockednumber.BlockedNumberBackupAgent	method	private static void logV(String str)
+com.android.providers.blockednumber.BlockedNumberBackupAgent	method	private void addToBackup(BackupDataOutput backupDataOutput, BackedUpBlockedNumber backedUpBlockedNumber) throws IOException
+com.android.providers.blockednumber.BlockedNumberBackupAgent	method	private void removeFromBackup(BackupDataOutput backupDataOutput, int i) throws IOException
+com.android.providers.blockednumber.BlockedNumberBackupAgent	method	private void runBackup(BackupState backupState, BackupDataOutput backupDataOutput, Iterable<BackedUpBlockedNumber> iterable) throws IOException
+com.android.providers.blockednumber.BlockedNumberBackupAgent	method	private void writeNewState(DataOutputStream dataOutputStream, BackupState backupState) throws IOException
+com.android.providers.blockednumber.BlockedNumberBackupAgent	method	private void writeString(DataOutputStream dataOutputStream, String str) throws IOException
+com.android.providers.blockednumber.BlockedNumberBackupAgent	method	private void writeToProvider(BackedUpBlockedNumber backedUpBlockedNumber)
+com.android.providers.blockednumber.BlockedNumberBackupAgent	method	public static boolean isDebug()
+com.android.providers.blockednumber.BlockedNumberBackupAgent	method	public void onBackup(ParcelFileDescriptor parcelFileDescriptor, BackupDataOutput backupDataOutput, ParcelFileDescriptor parcelFileDescriptor2) throws IOException
+com.android.providers.blockednumber.BlockedNumberBackupAgent	method	public void onRestore(BackupDataInput backupDataInput, int i, ParcelFileDescriptor parcelFileDescriptor) throws IOException
+com.android.providers.blockednumber.BlockedNumberBackupAgent$BackedUpBlockedNumber	field	final String e164Number;
+com.android.providers.blockednumber.BlockedNumberBackupAgent$BackedUpBlockedNumber	field	final String originalNumber;
+com.android.providers.blockednumber.BlockedNumberBackupAgent$BackedUpBlockedNumber	field	final int id;
+com.android.providers.blockednumber.BlockedNumberBackupAgent$BackedUpBlockedNumber	method	public String toString()
+com.android.providers.blockednumber.BlockedNumberBackupAgent$BackupState	field	final SortedSet<Integer> ids;
+com.android.providers.blockednumber.BlockedNumberDatabaseHelper	field	private final Context mContext;
+com.android.providers.blockednumber.BlockedNumberDatabaseHelper	field	private final OpenHelper mOpenHelper;
+com.android.providers.blockednumber.BlockedNumberDatabaseHelper	field	private static BlockedNumberDatabaseHelper sInstance;
+com.android.providers.blockednumber.BlockedNumberDatabaseHelper	method	private BlockedNumberDatabaseHelper(Context context, boolean z)
+com.android.providers.blockednumber.BlockedNumberDatabaseHelper	method	public SQLiteDatabase getReadableDatabase()
+com.android.providers.blockednumber.BlockedNumberDatabaseHelper	method	public SQLiteDatabase getWritableDatabase()
+com.android.providers.blockednumber.BlockedNumberDatabaseHelper	method	public static BlockedNumberDatabaseHelper newInstanceForTest(Context context)
+com.android.providers.blockednumber.BlockedNumberDatabaseHelper	method	public static synchronized BlockedNumberDatabaseHelper getInstance(Context context)
+com.android.providers.blockednumber.BlockedNumberDatabaseHelper$OpenHelper	method	private void createTables(SQLiteDatabase sQLiteDatabase)
+com.android.providers.blockednumber.BlockedNumberDatabaseHelper$OpenHelper	method	public OpenHelper(Context context, String str, SQLiteDatabase.CursorFactory cursorFactory, int i)
+com.android.providers.blockednumber.BlockedNumberDatabaseHelper$OpenHelper	method	public void onCreate(SQLiteDatabase sQLiteDatabase)
+com.android.providers.blockednumber.BlockedNumberDatabaseHelper$OpenHelper	method	public void onUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i2)
+com.android.providers.blockednumber.BlockedNumberProvider	field	private static final ProjectionMap sBlockedNumberColumns;
+com.android.providers.blockednumber.BlockedNumberProvider	field	private static final UriMatcher sUriMatcher;
+com.android.providers.blockednumber.BlockedNumberProvider	field	protected BackupManager mBackupManager;
+com.android.providers.blockednumber.BlockedNumberProvider	field	protected BlockedNumberDatabaseHelper mDbHelper;
+com.android.providers.blockednumber.BlockedNumberProvider	field	static boolean ALLOW_SELF_CALL;
+com.android.providers.blockednumber.BlockedNumberProvider	method	private BlockedNumberContract.SystemContract.BlockSuppressionStatus getBlockSuppressionStatus()
+com.android.providers.blockednumber.BlockedNumberProvider	method	private Cursor queryBlockedList(String[] strArr, String str, String[] strArr2, String str2, CancellationSignal cancellationSignal)
+com.android.providers.blockednumber.BlockedNumberProvider	method	private Cursor queryBlockedListWithId(long j, String[] strArr, String str, CancellationSignal cancellationSignal)
+com.android.providers.blockednumber.BlockedNumberProvider	method	private PersistableBundle getCarrierConfig()
+com.android.providers.blockednumber.BlockedNumberProvider	method	private Uri insertBlockedNumber(ContentValues contentValues)
+com.android.providers.blockednumber.BlockedNumberProvider	method	private boolean canCurrentUserBlockUsers()
+com.android.providers.blockednumber.BlockedNumberProvider	method	private boolean checkForPrivilegedApplications()
+com.android.providers.blockednumber.BlockedNumberProvider	method	private boolean getEnhancedBlockSetting(String str)
+com.android.providers.blockednumber.BlockedNumberProvider	method	private boolean isAnyEnhancedBlockingSettingEnabled()
+com.android.providers.blockednumber.BlockedNumberProvider	method	private boolean isBlocked(String str)
+com.android.providers.blockednumber.BlockedNumberProvider	method	private boolean isEmergencyNumber(String str)
+com.android.providers.blockednumber.BlockedNumberProvider	method	private boolean isEnhancedCallBlockingEnabledByPlatform()
+com.android.providers.blockednumber.BlockedNumberProvider	method	private boolean isSelf()
+com.android.providers.blockednumber.BlockedNumberProvider	method	private boolean isShowCallBlockingDisabledNotificationAlways()
+com.android.providers.blockednumber.BlockedNumberProvider	method	private boolean passesSystemPermissionCheck(String str)
+com.android.providers.blockednumber.BlockedNumberProvider	method	private boolean shouldShowEmergencyCallNotification()
+com.android.providers.blockednumber.BlockedNumberProvider	method	private int deleteBlockedNumber(String str, String[] strArr)
+com.android.providers.blockednumber.BlockedNumberProvider	method	private int deleteBlockedNumberWithId(long j, String str)
+com.android.providers.blockednumber.BlockedNumberProvider	method	private int shouldSystemBlockNumber(String str, Bundle bundle)
+com.android.providers.blockednumber.BlockedNumberProvider	method	private int unblock(String str)
+com.android.providers.blockednumber.BlockedNumberProvider	method	private long getBlockSuppressSecondsFromCarrierConfig()
+com.android.providers.blockednumber.BlockedNumberProvider	method	private static void throwIfSpecified(ContentValues contentValues, String str)
+com.android.providers.blockednumber.BlockedNumberProvider	method	private void checkForPermission(String str)
+com.android.providers.blockednumber.BlockedNumberProvider	method	private void checkForPermissionAndPrimaryUser(String str)
+com.android.providers.blockednumber.BlockedNumberProvider	method	private void endBlockSuppression()
+com.android.providers.blockednumber.BlockedNumberProvider	method	private void enforceReadPermissionAndPrimaryUser()
+com.android.providers.blockednumber.BlockedNumberProvider	method	private void enforceSystemPermissionAndUser(String str)
+com.android.providers.blockednumber.BlockedNumberProvider	method	private void enforceSystemReadPermissionAndPrimaryUser()
+com.android.providers.blockednumber.BlockedNumberProvider	method	private void enforceSystemWritePermissionAndPrimaryUser()
+com.android.providers.blockednumber.BlockedNumberProvider	method	private void enforceWritePermissionAndPrimaryUser()
+com.android.providers.blockednumber.BlockedNumberProvider	method	private void notifyBlockSuppressionStateChange()
+com.android.providers.blockednumber.BlockedNumberProvider	method	private void notifyEmergencyContact()
+com.android.providers.blockednumber.BlockedNumberProvider	method	private void setEnhancedBlockSetting(String str, boolean z)
+com.android.providers.blockednumber.BlockedNumberProvider	method	private void throwCurrentUserNotPermittedSecurityException()
+com.android.providers.blockednumber.BlockedNumberProvider	method	private void throwForNonEmptySelection(String str)
+com.android.providers.blockednumber.BlockedNumberProvider	method	private void throwSecurityException()
+com.android.providers.blockednumber.BlockedNumberProvider	method	private void writeBlockSuppressionExpiryTimePref(long j)
+com.android.providers.blockednumber.BlockedNumberProvider	method	private void writeEmergencyCallNotificationPref(boolean z)
+com.android.providers.blockednumber.BlockedNumberProvider	method	public Bundle call(String str, String str2, Bundle bundle)
+com.android.providers.blockednumber.BlockedNumberProvider	method	public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2)
+com.android.providers.blockednumber.BlockedNumberProvider	method	public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2, CancellationSignal cancellationSignal)
+com.android.providers.blockednumber.BlockedNumberProvider	method	public String getType(Uri uri)
+com.android.providers.blockednumber.BlockedNumberProvider	method	public Uri insert(Uri uri, ContentValues contentValues)
+com.android.providers.blockednumber.BlockedNumberProvider	method	public boolean onCreate()
+com.android.providers.blockednumber.BlockedNumberProvider	method	public int delete(Uri uri, String str, String[] strArr)
+com.android.providers.blockednumber.BlockedNumberProvider	method	public int update(Uri uri, ContentValues contentValues, String str, String[] strArr)
+com.android.providers.blockednumber.R$string	field	public static final int app_label;
+com.android.providers.blockednumber.Utils	field	private static final int NUM_DIALABLE_DIGITS_TO_LOG;
+com.android.providers.blockednumber.Utils	field	public static String TAG;
+com.android.providers.blockednumber.Utils	field	public static boolean VERBOSE;
+com.android.providers.blockednumber.Utils	method	private static int getDialableCount(String str)
+com.android.providers.blockednumber.Utils	method	private static void obfuscatePhoneNumber(StringBuilder sb, String str)
+com.android.providers.blockednumber.Utils	method	public static String getCurrentCountryIso(Context context)
+com.android.providers.blockednumber.Utils	method	public static String getE164Number(Context context, String str, String str2)
+com.android.providers.blockednumber.Utils	method	public static String pii(Object obj)
+com.android.providers.blockednumber.Utils	method	public static String piiHandle(Object obj)
+com.android.providers.blockednumber.Utils	method	public static String wrapSelectionWithParens(String str)

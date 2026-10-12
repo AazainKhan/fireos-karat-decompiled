@@ -1,0 +1,636 @@
+class	kind	declaration
+android.provider.settings.backup.DeviceSpecificSettings	field	public static final String[] DEVICE_SPECIFIC_SETTINGS_TO_BACKUP;
+android.provider.settings.backup.GlobalSettings	field	private static List<VendorSettingsCallback> sVendorCallbacks;
+android.provider.settings.backup.GlobalSettings	field	public static final String[] AOSP_SETTINGS_TO_BACKUP;
+android.provider.settings.backup.GlobalSettings	field	public static final String[] SETTINGS_TO_BACKUP;
+android.provider.settings.backup.SecureSettings	field	private static List<VendorSettingsCallback> sVendorCallbacks;
+android.provider.settings.backup.SecureSettings	field	public static final String[] AOSP_SETTINGS_TO_BACKUP;
+android.provider.settings.backup.SecureSettings	field	public static final String[] SETTINGS_TO_BACKUP;
+android.provider.settings.backup.SystemSettings	field	private static List<VendorSettingsCallback> sVendorCallbacks;
+android.provider.settings.backup.SystemSettings	field	public static final String[] AOSP_SETTINGS_TO_BACKUP;
+android.provider.settings.backup.SystemSettings	field	public static final String[] SETTINGS_TO_BACKUP;
+android.provider.settings.validators.AccessibilityShortcutTargetListValidator	method	protected boolean isEntryValid(String str)
+android.provider.settings.validators.AccessibilityShortcutTargetListValidator	method	protected boolean isItemValid(String str)
+android.provider.settings.validators.AccessibilityShortcutTargetListValidator	method	public AccessibilityShortcutTargetListValidator()
+android.provider.settings.validators.ComponentNameListValidator	method	protected boolean isEntryValid(String str)
+android.provider.settings.validators.ComponentNameListValidator	method	protected boolean isItemValid(String str)
+android.provider.settings.validators.ComponentNameListValidator	method	public ComponentNameListValidator(String str)
+android.provider.settings.validators.DiscreteValueValidator	field	private final String[] mValues;
+android.provider.settings.validators.DiscreteValueValidator	method	public DiscreteValueValidator(String[] strArr)
+android.provider.settings.validators.DiscreteValueValidator	method	public boolean validate(String str)
+android.provider.settings.validators.GlobalSettingsValidators	field	private static List<VendorSettingsCallback> sVendorCallbacks;
+android.provider.settings.validators.GlobalSettingsValidators	field	public static final Map<String, Validator> VALIDATORS;
+android.provider.settings.validators.InclusiveFloatRangeValidator	field	private final float mMax;
+android.provider.settings.validators.InclusiveFloatRangeValidator	field	private final float mMin;
+android.provider.settings.validators.InclusiveFloatRangeValidator	method	public boolean validate(String str)
+android.provider.settings.validators.InclusiveIntegerRangeValidator	field	private final int mMax;
+android.provider.settings.validators.InclusiveIntegerRangeValidator	field	private final int mMin;
+android.provider.settings.validators.InclusiveIntegerRangeValidator	method	public boolean validate(String str)
+android.provider.settings.validators.ListValidator	field	private String mListSplitRegex;
+android.provider.settings.validators.ListValidator	method	protected abstract boolean isEntryValid(String str);
+android.provider.settings.validators.ListValidator	method	protected abstract boolean isItemValid(String str);
+android.provider.settings.validators.ListValidator	method	public boolean validate(String str)
+android.provider.settings.validators.PackageNameListValidator	method	protected boolean isEntryValid(String str)
+android.provider.settings.validators.PackageNameListValidator	method	protected boolean isItemValid(String str)
+android.provider.settings.validators.SecureSettingsValidators	field	private static List<VendorSettingsCallback> sVendorCallbacks;
+android.provider.settings.validators.SecureSettingsValidators	field	public static final Map<String, Validator> VALIDATORS;
+android.provider.settings.validators.SettingsValidators	field	public static final Validator BOOLEAN_VALIDATOR;
+android.provider.settings.validators.SettingsValidators	field	public static final Validator TILE_LIST_VALIDATOR;
+android.provider.settings.validators.SettingsValidators	field	public static final Validator TTS_LIST_VALIDATOR;
+android.provider.settings.validators.SettingsValidators	field	static final Validator ACCESSIBILITY_SHORTCUT_TARGET_LIST_VALIDATOR;
+android.provider.settings.validators.SettingsValidators	field	static final Validator COLON_SEPARATED_COMPONENT_LIST_VALIDATOR;
+android.provider.settings.validators.SettingsValidators	field	static final Validator COLON_SEPARATED_PACKAGE_LIST_VALIDATOR;
+android.provider.settings.validators.SettingsValidators	field	static final Validator COMMA_SEPARATED_COMPONENT_LIST_VALIDATOR;
+android.provider.settings.validators.SettingsValidators	field	static final Validator PERCENTAGE_INTEGER_VALIDATOR;
+android.provider.settings.validators.SettingsValidators	field	static final Validator VIBRATION_INTENSITY_VALIDATOR;
+android.provider.settings.validators.SystemSettingsValidators	field	private static List<VendorSettingsCallback> sVendorCallbacks;
+android.provider.settings.validators.SystemSettingsValidators	field	public static final Map<String, Validator> VALIDATORS;
+android.provider.settings.validators.TTSListValidator	method	protected boolean isEntryValid(String str)
+android.provider.settings.validators.TTSListValidator	method	protected boolean isItemValid(String str)
+android.provider.settings.validators.TileListValidator	method	protected boolean isEntryValid(String str)
+android.provider.settings.validators.TileListValidator	method	protected boolean isItemValid(String str)
+com.android.providers.settings.DatabaseHelper	field	private Context mContext;
+com.android.providers.settings.DatabaseHelper	field	private int mUserHandle;
+com.android.providers.settings.DatabaseHelper	field	private static final HashSet<String> mValidTables;
+com.android.providers.settings.DatabaseHelper	method	private String getDefaultDeviceName()
+com.android.providers.settings.DatabaseHelper	method	private String getOldDefaultDeviceName()
+com.android.providers.settings.DatabaseHelper	method	private String getStringValueFromTable(SQLiteDatabase sQLiteDatabase, String str, String str2, String str3)
+com.android.providers.settings.DatabaseHelper	method	private String[] setToStringArray(Set<String> set)
+com.android.providers.settings.DatabaseHelper	method	private TelephonyManager getTelephonyManager()
+com.android.providers.settings.DatabaseHelper	method	private boolean isInMemory()
+com.android.providers.settings.DatabaseHelper	method	private int getIntValueFromSystem(SQLiteDatabase sQLiteDatabase, String str, int i)
+com.android.providers.settings.DatabaseHelper	method	private int getIntValueFromTable(SQLiteDatabase sQLiteDatabase, String str, String str2, int i)
+com.android.providers.settings.DatabaseHelper	method	private void createGlobalTable(SQLiteDatabase sQLiteDatabase)
+com.android.providers.settings.DatabaseHelper	method	private void createSecureTable(SQLiteDatabase sQLiteDatabase)
+com.android.providers.settings.DatabaseHelper	method	private void loadBookmarks(SQLiteDatabase sQLiteDatabase)
+com.android.providers.settings.DatabaseHelper	method	private void loadBooleanSetting(SQLiteStatement sQLiteStatement, String str, int i)
+com.android.providers.settings.DatabaseHelper	method	private void loadDefaultAnimationSettings(SQLiteStatement sQLiteStatement)
+com.android.providers.settings.DatabaseHelper	method	private void loadDefaultHapticSettings(SQLiteStatement sQLiteStatement)
+com.android.providers.settings.DatabaseHelper	method	private void loadFractionSetting(SQLiteStatement sQLiteStatement, String str, int i, int i2)
+com.android.providers.settings.DatabaseHelper	method	private void loadGlobalSettings(SQLiteDatabase sQLiteDatabase)
+com.android.providers.settings.DatabaseHelper	method	private void loadIntegerSetting(SQLiteStatement sQLiteStatement, String str, int i)
+com.android.providers.settings.DatabaseHelper	method	private void loadSecure35Settings(SQLiteStatement sQLiteStatement)
+com.android.providers.settings.DatabaseHelper	method	private void loadSecureSettings(SQLiteDatabase sQLiteDatabase)
+com.android.providers.settings.DatabaseHelper	method	private void loadSetting(SQLiteStatement sQLiteStatement, String str, Object obj)
+com.android.providers.settings.DatabaseHelper	method	private void loadSettings(SQLiteDatabase sQLiteDatabase)
+com.android.providers.settings.DatabaseHelper	method	private void loadStringSetting(SQLiteStatement sQLiteStatement, String str, int i)
+com.android.providers.settings.DatabaseHelper	method	private void loadSystemSettings(SQLiteDatabase sQLiteDatabase)
+com.android.providers.settings.DatabaseHelper	method	private void loadUISoundEffectsSettings(SQLiteStatement sQLiteStatement)
+com.android.providers.settings.DatabaseHelper	method	private void loadVibrateSetting(SQLiteDatabase sQLiteDatabase, boolean z)
+com.android.providers.settings.DatabaseHelper	method	private void loadVolumeLevels(SQLiteDatabase sQLiteDatabase)
+com.android.providers.settings.DatabaseHelper	method	private void movePrefixedSettingsToNewTable(SQLiteDatabase sQLiteDatabase, String str, String str2, String[] strArr) throws Throwable
+com.android.providers.settings.DatabaseHelper	method	private void moveSettingsToNewTable(SQLiteDatabase sQLiteDatabase, String str, String str2, String[] strArr, boolean z) throws Throwable
+com.android.providers.settings.DatabaseHelper	method	private void upgradeAutoBrightness(SQLiteDatabase sQLiteDatabase)
+com.android.providers.settings.DatabaseHelper	method	private void upgradeLockPatternLocation(SQLiteDatabase sQLiteDatabase)
+com.android.providers.settings.DatabaseHelper	method	private void upgradeScreenTimeoutFromNever(SQLiteDatabase sQLiteDatabase)
+com.android.providers.settings.DatabaseHelper	method	private void upgradeVibrateSettingFromNone(SQLiteDatabase sQLiteDatabase)
+com.android.providers.settings.DatabaseHelper	method	public DatabaseHelper(Context context, int i)
+com.android.providers.settings.DatabaseHelper	method	public static boolean isValidTable(String str)
+com.android.providers.settings.DatabaseHelper	method	public void dropDatabase()
+com.android.providers.settings.DatabaseHelper	method	public void onCreate(SQLiteDatabase sQLiteDatabase)
+com.android.providers.settings.DatabaseHelper	method	public void onUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i2) throws Throwable
+com.android.providers.settings.DatabaseHelper	method	public void recreateDatabase(SQLiteDatabase sQLiteDatabase, int i, int i2, int i3)
+com.android.providers.settings.DatabaseHelper	method	static String dbNameForUser(int i)
+com.android.providers.settings.DeviceConfigService	field	final SettingsProvider mProvider;
+com.android.providers.settings.DeviceConfigService	method	public DeviceConfigService(SettingsProvider settingsProvider)
+com.android.providers.settings.DeviceConfigService	method	public void onShellCommand(FileDescriptor fileDescriptor, FileDescriptor fileDescriptor2, FileDescriptor fileDescriptor3, String[] strArr, ShellCallback shellCallback, ResultReceiver resultReceiver)
+com.android.providers.settings.DeviceConfigService$MyShellCommand	field	final SettingsProvider mProvider;
+com.android.providers.settings.DeviceConfigService$MyShellCommand	method	private List<String> listAll(IContentProvider iContentProvider)
+com.android.providers.settings.DeviceConfigService$MyShellCommand	method	private boolean delete(IContentProvider iContentProvider, String str, String str2)
+com.android.providers.settings.DeviceConfigService$MyShellCommand	method	private static String resolveCallingPackage()
+com.android.providers.settings.DeviceConfigService$MyShellCommand	method	public int onCommand(String str)
+com.android.providers.settings.DeviceConfigService$MyShellCommand	method	public void onHelp()
+com.android.providers.settings.EventLogTags	method	public static void writeUnsupportedSettingsQuery(String str, String str2, String str3)
+com.android.providers.settings.GenerationRegistry	field	private MemoryIntArray mBackingStore;
+com.android.providers.settings.GenerationRegistry	field	private final Object mLock;
+com.android.providers.settings.GenerationRegistry	field	private final SparseIntArray mKeyToIndexMap;
+com.android.providers.settings.GenerationRegistry	method	private MemoryIntArray getBackingStoreLocked()
+com.android.providers.settings.GenerationRegistry	method	private static int findNextEmptyIndex(MemoryIntArray memoryIntArray) throws IOException
+com.android.providers.settings.GenerationRegistry	method	private static int getKeyIndexLocked(int i, SparseIntArray sparseIntArray, MemoryIntArray memoryIntArray) throws IOException
+com.android.providers.settings.GenerationRegistry	method	private static void resetSlotForKeyLocked(int i, SparseIntArray sparseIntArray, MemoryIntArray memoryIntArray) throws IOException
+com.android.providers.settings.GenerationRegistry	method	private void destroyBackingStore()
+com.android.providers.settings.GenerationRegistry	method	public GenerationRegistry(Object obj)
+com.android.providers.settings.GenerationRegistry	method	public void addGenerationData(Bundle bundle, int i)
+com.android.providers.settings.GenerationRegistry	method	public void incrementGeneration(int i)
+com.android.providers.settings.GenerationRegistry	method	public void onUserRemoved(int i)
+com.android.providers.settings.R$array	field	public static final int restore_blocked_device_specific_settings;
+com.android.providers.settings.R$array	field	public static final int restore_blocked_global_settings;
+com.android.providers.settings.R$array	field	public static final int restore_blocked_secure_settings;
+com.android.providers.settings.R$array	field	public static final int restore_blocked_system_settings;
+com.android.providers.settings.R$bool	field	public static final int assisted_gps_enabled;
+com.android.providers.settings.R$bool	field	public static final int def_accelerometer_rotation;
+com.android.providers.settings.R$bool	field	public static final int def_accessibility_display_magnification_auto_update;
+com.android.providers.settings.R$bool	field	public static final int def_accessibility_display_magnification_enabled;
+com.android.providers.settings.R$bool	field	public static final int def_accessibility_speak_password;
+com.android.providers.settings.R$bool	field	public static final int def_add_users_from_lockscreen;
+com.android.providers.settings.R$bool	field	public static final int def_airplane_mode_on;
+com.android.providers.settings.R$bool	field	public static final int def_apply_ramping_ringer;
+com.android.providers.settings.R$bool	field	public static final int def_auto_time;
+com.android.providers.settings.R$bool	field	public static final int def_auto_time_zone;
+com.android.providers.settings.R$bool	field	public static final int def_aware_enabled;
+com.android.providers.settings.R$bool	field	public static final int def_aware_lock_enabled;
+com.android.providers.settings.R$bool	field	public static final int def_backup_enabled;
+com.android.providers.settings.R$bool	field	public static final int def_bluetooth_on;
+com.android.providers.settings.R$bool	field	public static final int def_charging_sounds_enabled;
+com.android.providers.settings.R$bool	field	public static final int def_charging_vibration_enabled;
+com.android.providers.settings.R$bool	field	public static final int def_device_provisioned;
+com.android.providers.settings.R$bool	field	public static final int def_dim_screen;
+com.android.providers.settings.R$bool	field	public static final int def_double_tap_to_wake;
+com.android.providers.settings.R$bool	field	public static final int def_dtmf_tones_enabled;
+com.android.providers.settings.R$bool	field	public static final int def_haptic_feedback;
+com.android.providers.settings.R$bool	field	public static final int def_hdmiControlAutoDeviceOff;
+com.android.providers.settings.R$bool	field	public static final int def_install_non_market_apps;
+com.android.providers.settings.R$bool	field	public static final int def_lock_screen_allow_private_notifications;
+com.android.providers.settings.R$bool	field	public static final int def_lockscreen_disabled;
+com.android.providers.settings.R$bool	field	public static final int def_mobile_data_always_on;
+com.android.providers.settings.R$bool	field	public static final int def_mount_play_notification_snd;
+com.android.providers.settings.R$bool	field	public static final int def_mount_ums_autostart;
+com.android.providers.settings.R$bool	field	public static final int def_mount_ums_notify_enabled;
+com.android.providers.settings.R$bool	field	public static final int def_mount_ums_prompt;
+com.android.providers.settings.R$bool	field	public static final int def_netstats_enabled;
+com.android.providers.settings.R$bool	field	public static final int def_networks_available_notification_on;
+com.android.providers.settings.R$bool	field	public static final int def_notification_bubbles;
+com.android.providers.settings.R$bool	field	public static final int def_notification_pulse;
+com.android.providers.settings.R$bool	field	public static final int def_notifications_use_ring_volume;
+com.android.providers.settings.R$bool	field	public static final int def_restrict_background_data;
+com.android.providers.settings.R$bool	field	public static final int def_screen_brightness_automatic_mode;
+com.android.providers.settings.R$bool	field	public static final int def_show_ime_with_hard_keyboard;
+com.android.providers.settings.R$bool	field	public static final int def_silence_gesture;
+com.android.providers.settings.R$bool	field	public static final int def_skip_gesture;
+com.android.providers.settings.R$bool	field	public static final int def_sound_effects_enabled;
+com.android.providers.settings.R$bool	field	public static final int def_stay_on_while_plugged_in;
+com.android.providers.settings.R$bool	field	public static final int def_sync_parent_sounds;
+com.android.providers.settings.R$bool	field	public static final int def_theater_mode_on;
+com.android.providers.settings.R$bool	field	public static final int def_touch_exploration_enabled;
+com.android.providers.settings.R$bool	field	public static final int def_usb_mass_storage_enabled;
+com.android.providers.settings.R$bool	field	public static final int def_user_setup_complete;
+com.android.providers.settings.R$bool	field	public static final int def_vibrate_in_silent;
+com.android.providers.settings.R$bool	field	public static final int def_vibrate_when_ringing;
+com.android.providers.settings.R$bool	field	public static final int def_wake_gesture_enabled;
+com.android.providers.settings.R$bool	field	public static final int def_wifi_display_on;
+com.android.providers.settings.R$bool	field	public static final int def_wifi_on;
+com.android.providers.settings.R$bool	field	public static final int def_wifi_wakeup_enabled;
+com.android.providers.settings.R$drawable	field	public static final int ic_wifi_settings;
+com.android.providers.settings.R$fraction	field	public static final int def_accessibility_display_magnification_scale;
+com.android.providers.settings.R$fraction	field	public static final int def_window_animation_scale;
+com.android.providers.settings.R$fraction	field	public static final int def_window_transition_scale;
+com.android.providers.settings.R$integer	field	public static final int def_dock_audio_media_enabled;
+com.android.providers.settings.R$integer	field	public static final int def_dock_sounds_enabled;
+com.android.providers.settings.R$integer	field	public static final int def_dock_sounds_enabled_when_accessibility;
+com.android.providers.settings.R$integer	field	public static final int def_download_manager_max_bytes_over_mobile;
+com.android.providers.settings.R$integer	field	public static final int def_download_manager_recommended_max_bytes_over_mobile;
+com.android.providers.settings.R$integer	field	public static final int def_end_button_behavior;
+com.android.providers.settings.R$integer	field	public static final int def_heads_up_enabled;
+com.android.providers.settings.R$integer	field	public static final int def_location_mode;
+com.android.providers.settings.R$integer	field	public static final int def_lock_screen_show_notifications;
+com.android.providers.settings.R$integer	field	public static final int def_lockscreen_sounds_enabled;
+com.android.providers.settings.R$integer	field	public static final int def_long_press_timeout_millis;
+com.android.providers.settings.R$integer	field	public static final int def_low_battery_sound_timeout;
+com.android.providers.settings.R$integer	field	public static final int def_max_dhcp_retries;
+com.android.providers.settings.R$integer	field	public static final int def_max_sound_trigger_detection_service_ops_per_day;
+com.android.providers.settings.R$integer	field	public static final int def_multi_press_timeout_millis;
+com.android.providers.settings.R$integer	field	public static final int def_pointer_speed;
+com.android.providers.settings.R$integer	field	public static final int def_power_sounds_enabled;
+com.android.providers.settings.R$integer	field	public static final int def_screen_brightness;
+com.android.providers.settings.R$integer	field	public static final int def_screen_off_timeout;
+com.android.providers.settings.R$integer	field	public static final int def_sleep_timeout;
+com.android.providers.settings.R$integer	field	public static final int def_sound_trigger_detection_service_op_timeout;
+com.android.providers.settings.R$integer	field	public static final int def_user_rotation;
+com.android.providers.settings.R$integer	field	public static final int def_wifi_scan_always_available;
+com.android.providers.settings.R$integer	field	public static final int def_wifi_sleep_policy;
+com.android.providers.settings.R$integer	field	public static final int def_zen_duration;
+com.android.providers.settings.R$mipmap	field	public static final int ic_launcher_settings;
+com.android.providers.settings.R$string	field	public static final int airplane_mode_toggleable_radios;
+com.android.providers.settings.R$string	field	public static final int app_label;
+com.android.providers.settings.R$string	field	public static final int def_airplane_mode_radios;
+com.android.providers.settings.R$string	field	public static final int def_backup_agent_timeout_parameters;
+com.android.providers.settings.R$string	field	public static final int def_backup_local_transport_parameters;
+com.android.providers.settings.R$string	field	public static final int def_backup_manager_constants;
+com.android.providers.settings.R$string	field	public static final int def_backup_transport;
+com.android.providers.settings.R$string	field	public static final int def_bluetooth_disabled_profiles;
+com.android.providers.settings.R$string	field	public static final int def_car_dock_sound;
+com.android.providers.settings.R$string	field	public static final int def_car_undock_sound;
+com.android.providers.settings.R$string	field	public static final int def_charging_started_sound;
+com.android.providers.settings.R$string	field	public static final int def_desk_dock_sound;
+com.android.providers.settings.R$string	field	public static final int def_desk_undock_sound;
+com.android.providers.settings.R$string	field	public static final int def_device_name;
+com.android.providers.settings.R$string	field	public static final int def_device_name_simple;
+com.android.providers.settings.R$string	field	public static final int def_immersive_mode_confirmations;
+com.android.providers.settings.R$string	field	public static final int def_lock_sound;
+com.android.providers.settings.R$string	field	public static final int def_low_battery_sound;
+com.android.providers.settings.R$string	field	public static final int def_nfc_payment_component;
+com.android.providers.settings.R$string	field	public static final int def_trusted_sound;
+com.android.providers.settings.R$string	field	public static final int def_unlock_sound;
+com.android.providers.settings.R$string	field	public static final int def_wireless_charging_started_sound;
+com.android.providers.settings.R$string	field	public static final int wifi_softap_config_change;
+com.android.providers.settings.R$string	field	public static final int wifi_softap_config_change_summary;
+com.android.providers.settings.R$xml	field	public static final int bookmarks;
+com.android.providers.settings.SettingsBackupAgent	field	private WifiManager mWifiManager;
+com.android.providers.settings.SettingsBackupAgent	field	private int mRestoredFromSdkInt;
+com.android.providers.settings.SettingsBackupAgent	field	private static final ArraySet<String> RESTORE_FROM_HIGHER_SDK_INT_SUPPORTED_KEYS;
+com.android.providers.settings.SettingsBackupAgent	field	private static final byte[] NULL_VALUE;
+com.android.providers.settings.SettingsBackupAgent	field	private static final int[] STATE_SIZES;
+com.android.providers.settings.SettingsBackupAgent	field	static final String[] PROJECTION;
+com.android.providers.settings.SettingsBackupAgent	field	static final int DEVICE_SPECIFIC_VERSION;
+com.android.providers.settings.SettingsBackupAgent	method	private Integer getPreviousDensity()
+com.android.providers.settings.SettingsBackupAgent	method	private Set<String> getMovedToSecureSettings()
+com.android.providers.settings.SettingsBackupAgent	method	private Set<String> getSettingsToPreserveInRestore(Uri uri)
+com.android.providers.settings.SettingsBackupAgent	method	private String readString(byte[] bArr, AtomicInteger atomicInteger)
+com.android.providers.settings.SettingsBackupAgent	method	private boolean isBlockedByDynamicList(Set<String> set, Uri uri, String str)
+com.android.providers.settings.SettingsBackupAgent	method	private boolean isValidSettingValue(String str, String str2, Map<String, Validator> map)
+com.android.providers.settings.SettingsBackupAgent	method	private byte[] extractRelevantValues(Cursor cursor, String[] strArr)
+com.android.providers.settings.SettingsBackupAgent	method	private byte[] getDeviceSpecificSettings()
+com.android.providers.settings.SettingsBackupAgent	method	private byte[] getGlobalSettings()
+com.android.providers.settings.SettingsBackupAgent	method	private byte[] getLockSettings(int i)
+com.android.providers.settings.SettingsBackupAgent	method	private byte[] getNetworkPolicies()
+com.android.providers.settings.SettingsBackupAgent	method	private byte[] getNewWifiConfigData()
+com.android.providers.settings.SettingsBackupAgent	method	private byte[] getSecureSettings()
+com.android.providers.settings.SettingsBackupAgent	method	private byte[] getSoftAPConfiguration()
+com.android.providers.settings.SettingsBackupAgent	method	private byte[] getSystemSettings()
+com.android.providers.settings.SettingsBackupAgent	method	private int getForcedDensity() throws Settings.SettingNotFoundException
+com.android.providers.settings.SettingsBackupAgent	method	private int readInt(byte[] bArr, AtomicInteger atomicInteger)
+com.android.providers.settings.SettingsBackupAgent	method	private int readInt(byte[] bArr, int i)
+com.android.providers.settings.SettingsBackupAgent	method	private long writeIfChanged(long j, String str, byte[] bArr, BackupDataOutput backupDataOutput)
+com.android.providers.settings.SettingsBackupAgent	method	private long[] readOldChecksums(ParcelFileDescriptor parcelFileDescriptor) throws IOException
+com.android.providers.settings.SettingsBackupAgent	method	private static int writeBytes(byte[] bArr, int i, byte[] bArr2)
+com.android.providers.settings.SettingsBackupAgent	method	private static int writeInt(byte[] bArr, int i, int i2)
+com.android.providers.settings.SettingsBackupAgent	method	private void restoreLockSettings(int i, BackupDataInput backupDataInput)
+com.android.providers.settings.SettingsBackupAgent	method	private void restoreLockSettings(int i, byte[] bArr, int i2)
+com.android.providers.settings.SettingsBackupAgent	method	private void restoreNetworkPolicies(byte[] bArr) throws BackupUtils.BadVersionException
+com.android.providers.settings.SettingsBackupAgent	method	private void restoreNewWifiConfigData(byte[] bArr)
+com.android.providers.settings.SettingsBackupAgent	method	private void restoreSettings(BackupDataInput backupDataInput, Uri uri, HashSet<String> hashSet, Set<String> set, int i, Set<String> set2, Set<String> set3)
+com.android.providers.settings.SettingsBackupAgent	method	private void restoreSettings(byte[] bArr, int i, Uri uri, HashSet<String> hashSet, Set<String> set, int i2, Set<String> set2, Set<String> set3)
+com.android.providers.settings.SettingsBackupAgent	method	private void restoreSoftApConfiguration(byte[] bArr)
+com.android.providers.settings.SettingsBackupAgent	method	private void restoreSupplicantWifiConfigData(byte[] bArr, byte[] bArr2)
+com.android.providers.settings.SettingsBackupAgent	method	private void updateWindowManagerIfNeeded(Integer num)
+com.android.providers.settings.SettingsBackupAgent	method	private void writeNewChecksums(long[] jArr, ParcelFileDescriptor parcelFileDescriptor) throws IOException
+com.android.providers.settings.SettingsBackupAgent	method	protected Set<String> getBlockedSettings(int i)
+com.android.providers.settings.SettingsBackupAgent	method	public void onBackup(ParcelFileDescriptor parcelFileDescriptor, BackupDataOutput backupDataOutput, ParcelFileDescriptor parcelFileDescriptor2) throws IOException
+com.android.providers.settings.SettingsBackupAgent	method	public void onCreate()
+com.android.providers.settings.SettingsBackupAgent	method	public void onFullBackup(FullBackupDataOutput fullBackupDataOutput) throws IOException
+com.android.providers.settings.SettingsBackupAgent	method	public void onRestore(BackupDataInput backupDataInput, int i, ParcelFileDescriptor parcelFileDescriptor)
+com.android.providers.settings.SettingsBackupAgent	method	public void onRestore(BackupDataInput backupDataInput, long j, ParcelFileDescriptor parcelFileDescriptor, Set<String> set) throws BackupUtils.BadVersionException, IOException
+com.android.providers.settings.SettingsBackupAgent	method	public void onRestoreFile(ParcelFileDescriptor parcelFileDescriptor, long j, int i, String str, String str2, long j2, long j3) throws BackupUtils.BadVersionException, IOException
+com.android.providers.settings.SettingsBackupAgent	method	static String getQualifiedKeyForSetting(String str, Uri uri)
+com.android.providers.settings.SettingsBackupAgent	method	static byte[] toByteArray(String str)
+com.android.providers.settings.SettingsBackupAgent	method	static byte[] toByteArray(int i)
+com.android.providers.settings.SettingsBackupAgent$SettingsBackupWhitelist	field	final Map<String, Validator> mSettingsValidators;
+com.android.providers.settings.SettingsBackupAgent$SettingsBackupWhitelist	field	final String[] mSettingsWhitelist;
+com.android.providers.settings.SettingsCacheImpl	field	private SettingsState mSettingsState;
+com.android.providers.settings.SettingsCacheImpl	method	private SettingsCacheImpl(SettingsState settingsState)
+com.android.providers.settings.SettingsCacheImpl	method	public SettingsCache.Setting getSetting(String str)
+com.android.providers.settings.SettingsCacheImpl	method	public boolean insertSetting(String str, String str2)
+com.android.providers.settings.SettingsCacheImpl	method	public boolean updateSetting(String str, String str2)
+com.android.providers.settings.SettingsCacheImpl	method	public static final SettingsCache createInstanceFrom(SettingsState settingsState)
+com.android.providers.settings.SettingsCacheImpl$SettingImpl	field	private SettingsState.Setting mSetting;
+com.android.providers.settings.SettingsCacheImpl$SettingImpl	method	private SettingImpl(SettingsCacheImpl settingsCacheImpl, SettingsState.Setting setting)
+com.android.providers.settings.SettingsCacheImpl$SettingImpl	method	public String getValue()
+com.android.providers.settings.SettingsCacheImpl$SettingImpl	method	public boolean isNull()
+com.android.providers.settings.SettingsHelper	field	private AudioManager mAudioManager;
+com.android.providers.settings.SettingsHelper	field	private Context mContext;
+com.android.providers.settings.SettingsHelper	field	private TelephonyManager mTelephonyManager;
+com.android.providers.settings.SettingsHelper	field	private static SettingsLookup sGlobalLookup;
+com.android.providers.settings.SettingsHelper	field	private static SettingsLookup sSecureLookup;
+com.android.providers.settings.SettingsHelper	field	private static SettingsLookup sSystemLookup;
+com.android.providers.settings.SettingsHelper	field	private static final ArraySet<String> sBroadcastOnRestore;
+com.android.providers.settings.SettingsHelper	method	private String getCanonicalRingtoneValue(String str)
+com.android.providers.settings.SettingsHelper	method	private boolean isAlreadyConfiguredCriticalAccessibilitySetting(String str)
+com.android.providers.settings.SettingsHelper	method	private int getRingtoneType(String str)
+com.android.providers.settings.SettingsHelper	method	private static Locale toFullLocale(Locale locale)
+com.android.providers.settings.SettingsHelper	method	private void setAutoRestore(boolean z)
+com.android.providers.settings.SettingsHelper	method	private void setRingtone(String str, String str2)
+com.android.providers.settings.SettingsHelper	method	private void setSoundEffects(boolean z)
+com.android.providers.settings.SettingsHelper	method	public SettingsHelper(Context context)
+com.android.providers.settings.SettingsHelper	method	public String getRealValueForSystemSetting(String str)
+com.android.providers.settings.SettingsHelper	method	public String onBackupValue(String str, String str2)
+com.android.providers.settings.SettingsHelper	method	public boolean isReplacedSystemSetting(String str)
+com.android.providers.settings.SettingsHelper	method	public static LocaleList resolveLocales(LocaleList localeList, LocaleList localeList2, String[] strArr)
+com.android.providers.settings.SettingsHelper	method	public void restoreValue(Context context, ContentResolver contentResolver, ContentValues contentValues, Uri uri, String str, String str2, int i)
+com.android.providers.settings.SettingsProtoDumpUtil	field	private static final Map<String, Long> NAMESPACE_TO_FIELD_MAP;
+com.android.providers.settings.SettingsProtoDumpUtil	method	private static Map<String, Long> createNamespaceMap()
+com.android.providers.settings.SettingsProtoDumpUtil	method	private static void dumpProtoConfigSettingsLocked(ProtoOutputStream protoOutputStream, long j, SettingsState settingsState)
+com.android.providers.settings.SettingsProtoDumpUtil	method	private static void dumpProtoGlobalSettingsLocked(ProtoOutputStream protoOutputStream, long j, SettingsState settingsState)
+com.android.providers.settings.SettingsProtoDumpUtil	method	private static void dumpProtoSystemSettingsLocked(ProtoOutputStream protoOutputStream, long j, SettingsState settingsState)
+com.android.providers.settings.SettingsProtoDumpUtil	method	private static void dumpProtoUserSettingsLocked(ProtoOutputStream protoOutputStream, long j, SettingsProvider.SettingsRegistry settingsRegistry, UserHandle userHandle)
+com.android.providers.settings.SettingsProtoDumpUtil	method	private static void dumpRepeatedSetting(SettingsState settingsState, ProtoOutputStream protoOutputStream, String str, long j)
+com.android.providers.settings.SettingsProtoDumpUtil	method	private static void dumpSetting(SettingsState settingsState, ProtoOutputStream protoOutputStream, String str, long j)
+com.android.providers.settings.SettingsProtoDumpUtil	method	static void dumpProtoLocked(SettingsProvider.SettingsRegistry settingsRegistry, ProtoOutputStream protoOutputStream)
+com.android.providers.settings.SettingsProtoDumpUtil	method	static void dumpProtoSecureSettingsLocked(ProtoOutputStream protoOutputStream, long j, SettingsState settingsState)
+com.android.providers.settings.SettingsProvider	field	private Handler mHandler;
+com.android.providers.settings.SettingsProvider	field	private HandlerThread mHandlerThread;
+com.android.providers.settings.SettingsProvider	field	private List<VendorSettingsProviderCallback> mVendorCallbacks;
+com.android.providers.settings.SettingsProvider	field	private RemoteCallback mConfigMonitorCallback;
+com.android.providers.settings.SettingsProvider	field	private SettingsRegistry mSettingsRegistry;
+com.android.providers.settings.SettingsProvider	field	private final Object mLock;
+com.android.providers.settings.SettingsProvider	field	private static final Bundle NULL_SETTING_BUNDLE;
+com.android.providers.settings.SettingsProvider	field	private static final Set<String> CRITICAL_GLOBAL_SETTINGS;
+com.android.providers.settings.SettingsProvider	field	private static final Set<String> CRITICAL_SECURE_SETTINGS;
+com.android.providers.settings.SettingsProvider	field	private static final Set<String> OVERLAY_ALLOWED_GLOBAL_INSTANT_APP_SETTINGS;
+com.android.providers.settings.SettingsProvider	field	private static final Set<String> OVERLAY_ALLOWED_SECURE_INSTANT_APP_SETTINGS;
+com.android.providers.settings.SettingsProvider	field	private static final Set<String> OVERLAY_ALLOWED_SYSTEM_INSTANT_APP_SETTINGS;
+com.android.providers.settings.SettingsProvider	field	private static final Set<String> REMOVED_LEGACY_TABLES;
+com.android.providers.settings.SettingsProvider	field	private static final Set<String> sSecureCloneToManagedSettings;
+com.android.providers.settings.SettingsProvider	field	private static final Set<String> sSystemCloneToManagedSettings;
+com.android.providers.settings.SettingsProvider	field	private static final String[] ALL_COLUMNS;
+com.android.providers.settings.SettingsProvider	field	private static final String[] LEGACY_SQL_COLUMNS;
+com.android.providers.settings.SettingsProvider	field	private volatile IPackageManager mPackageManager;
+com.android.providers.settings.SettingsProvider	field	private volatile UserManager mUserManager;
+com.android.providers.settings.SettingsProvider	field	public static final Map<String, String> sSystemCloneFromParentOnDependency;
+com.android.providers.settings.SettingsProvider	field	static final Set<String> sGlobalMovedToSecureSettings;
+com.android.providers.settings.SettingsProvider	field	static final Set<String> sSecureMovedToGlobalSettings;
+com.android.providers.settings.SettingsProvider	field	static final Set<String> sSystemMovedToGlobalSettings;
+com.android.providers.settings.SettingsProvider	field	static final Set<String> sSystemMovedToSecureSettings;
+com.android.providers.settings.SettingsProvider	method	private ApplicationInfo getCallingApplicationInfoOrThrow()
+com.android.providers.settings.SettingsProvider	method	private ArrayList<String> buildSettingsList(Cursor cursor)
+com.android.providers.settings.SettingsProvider	method	private Bundle packageValueForCallResult(SettingsState.Setting setting, boolean z)
+com.android.providers.settings.SettingsProvider	method	private Bundle packageValuesForCallResult(HashMap<String, String> map, boolean z)
+com.android.providers.settings.SettingsProvider	method	private Cursor getAllGlobalSettings(String[] strArr)
+com.android.providers.settings.SettingsProvider	method	private Cursor getAllSecureSettings(int i, String[] strArr)
+com.android.providers.settings.SettingsProvider	method	private Cursor getAllSystemSettings(int i, String[] strArr)
+com.android.providers.settings.SettingsProvider	method	private File getRingtoneCacheDir(int i)
+com.android.providers.settings.SettingsProvider	method	private List<String> getSettingsNamesLocked(int i, int i2)
+com.android.providers.settings.SettingsProvider	method	private PackageInfo getCallingPackageInfo(int i)
+com.android.providers.settings.SettingsProvider	method	private PackageInfo getCallingPackageInfoOrThrow(int i)
+com.android.providers.settings.SettingsProvider	method	private Set<String> getInstantAppAccessibleSettings(int i)
+com.android.providers.settings.SettingsProvider	method	private Set<String> getOverlayInstantAppAccessibleSettings(int i)
+com.android.providers.settings.SettingsProvider	method	private SettingsState.Setting getConfigSetting(String str)
+com.android.providers.settings.SettingsProvider	method	private SettingsState.Setting getLocationModeSetting(int i)
+com.android.providers.settings.SettingsProvider	method	private SettingsState.Setting getSecureSetting(String str, int i, boolean z)
+com.android.providers.settings.SettingsProvider	method	private SettingsState.Setting getSsaidSettingLocked(PackageInfo packageInfo, int i)
+com.android.providers.settings.SettingsProvider	method	private SettingsState.Setting getSystemSetting(String str, int i)
+com.android.providers.settings.SettingsProvider	method	private SettingsState.Setting mascaradeSsaidSetting(SettingsState settingsState, SettingsState.Setting setting)
+com.android.providers.settings.SettingsProvider	method	private String resolveCallingPackage()
+com.android.providers.settings.SettingsProvider	method	private boolean deleteConfigSetting(String str)
+com.android.providers.settings.SettingsProvider	method	private boolean deleteGlobalSetting(String str, int i, boolean z)
+com.android.providers.settings.SettingsProvider	method	private boolean deleteSecureSetting(String str, int i, boolean z)
+com.android.providers.settings.SettingsProvider	method	private boolean deleteSystemSetting(String str, int i)
+com.android.providers.settings.SettingsProvider	method	private boolean hasWriteSecureSettingsPermission()
+com.android.providers.settings.SettingsProvider	method	private boolean insertConfigSetting(String str, String str2, boolean z)
+com.android.providers.settings.SettingsProvider	method	private boolean insertGlobalSetting(String str, String str2, String str3, boolean z, int i, boolean z2, boolean z3)
+com.android.providers.settings.SettingsProvider	method	private boolean insertSecureSetting(String str, String str2, String str3, boolean z, int i, boolean z2, boolean z3)
+com.android.providers.settings.SettingsProvider	method	private boolean insertSystemSetting(String str, String str2, int i, boolean z)
+com.android.providers.settings.SettingsProvider	method	private boolean isLocationProvidersAllowedRestricted(String str, int i, int i2)
+com.android.providers.settings.SettingsProvider	method	private boolean isNewSsaidSetting(String str)
+com.android.providers.settings.SettingsProvider	method	private boolean isSecureSettingAccessible(String str, int i, int i2)
+com.android.providers.settings.SettingsProvider	method	private boolean isSettingRestrictedForUser(String str, int i, String str2, int i2)
+com.android.providers.settings.SettingsProvider	method	private boolean isTrackingGeneration(Bundle bundle)
+com.android.providers.settings.SettingsProvider	method	private boolean isValidMediaUri(String str, String str2)
+com.android.providers.settings.SettingsProvider	method	private boolean mutateConfigSetting(String str, String str2, String str3, boolean z, int i, int i2)
+com.android.providers.settings.SettingsProvider	method	private boolean mutateGlobalSetting(String str, String str2, String str3, boolean z, int i, int i2, boolean z2, int i3)
+com.android.providers.settings.SettingsProvider	method	private boolean mutateGlobalSetting(String str, String str2, String str3, boolean z, int i, int i2, boolean z2, int i3, boolean z3)
+com.android.providers.settings.SettingsProvider	method	private boolean mutateSecureSetting(String str, String str2, String str3, boolean z, int i, int i2, boolean z2, int i3)
+com.android.providers.settings.SettingsProvider	method	private boolean mutateSecureSetting(String str, String str2, String str3, boolean z, int i, int i2, boolean z2, int i3, boolean z3)
+com.android.providers.settings.SettingsProvider	method	private boolean mutateSystemSetting(String str, String str2, int i, int i2)
+com.android.providers.settings.SettingsProvider	method	private boolean mutateSystemSetting(String str, String str2, int i, int i2, boolean z)
+com.android.providers.settings.SettingsProvider	method	private boolean setAllConfigSettings(String str, Map<String, String> map)
+com.android.providers.settings.SettingsProvider	method	private boolean updateLocationProvidersAllowedLocked(String str, String str2, int i, boolean z, boolean z2)
+com.android.providers.settings.SettingsProvider	method	private boolean updateSystemSetting(String str, String str2, int i)
+com.android.providers.settings.SettingsProvider	method	private int getGroupParentLocked(int i)
+com.android.providers.settings.SettingsProvider	method	private int resolveOwningUserIdForSecureSettingLocked(int i, String str)
+com.android.providers.settings.SettingsProvider	method	private int resolveOwningUserIdForSystemSettingLocked(int i, String str)
+com.android.providers.settings.SettingsProvider	method	private int resolveOwningUserIdLocked(int i, Set<String> set, String str)
+com.android.providers.settings.SettingsProvider	method	private static Map<String, String> getSettingFlags(Bundle bundle)
+com.android.providers.settings.SettingsProvider	method	private static MatrixCursor packageSettingForQuery(SettingsState.Setting setting, String[] strArr)
+com.android.providers.settings.SettingsProvider	method	private static String getSettingPrefix(Bundle bundle)
+com.android.providers.settings.SettingsProvider	method	private static String getSettingTag(Bundle bundle)
+com.android.providers.settings.SettingsProvider	method	private static String getSettingValue(Bundle bundle)
+com.android.providers.settings.SettingsProvider	method	private static String toDumpString(String str)
+com.android.providers.settings.SettingsProvider	method	private static String[] normalizeProjection(String[] strArr)
+com.android.providers.settings.SettingsProvider	method	private static boolean getSettingMakeDefault(Bundle bundle)
+com.android.providers.settings.SettingsProvider	method	private static boolean getSettingOverrideableByRestore(Bundle bundle)
+com.android.providers.settings.SettingsProvider	method	private static boolean isCallerSystemOrShellOrRootOnDebuggableBuild()
+com.android.providers.settings.SettingsProvider	method	private static boolean isKeyValid(String str)
+com.android.providers.settings.SettingsProvider	method	private static int getRequestingUserId(Bundle bundle)
+com.android.providers.settings.SettingsProvider	method	private static int getResetModeEnforcingPermission(Bundle bundle)
+com.android.providers.settings.SettingsProvider	method	private static int resolveCallingUserIdEnforcingPermissionsLocked(int i)
+com.android.providers.settings.SettingsProvider	method	private static void appendSettingToCursor(MatrixCursor matrixCursor, SettingsState.Setting setting)
+com.android.providers.settings.SettingsProvider	method	private static void warnOrThrowForUndesiredSecureSettingsMutationForTargetSdk(int i, String str)
+com.android.providers.settings.SettingsProvider	method	private void dumpForUserLocked(int i, PrintWriter printWriter)
+com.android.providers.settings.SettingsProvider	method	private void dumpSettingsLocked(SettingsState settingsState, PrintWriter printWriter)
+com.android.providers.settings.SettingsProvider	method	private void enforceRestrictedSystemSettingsMutationForCallingPackage(int i, String str, int i2)
+com.android.providers.settings.SettingsProvider	method	private void enforceSettingReadable(String str, int i, int i2)
+com.android.providers.settings.SettingsProvider	method	private void enforceWritePermission(String str)
+com.android.providers.settings.SettingsProvider	method	private void registerBroadcastReceivers()
+com.android.providers.settings.SettingsProvider	method	private void reportDeviceConfigAccess(String str)
+com.android.providers.settings.SettingsProvider	method	private void resetConfigSetting(int i, String str)
+com.android.providers.settings.SettingsProvider	method	private void resetGlobalSetting(int i, int i2, String str)
+com.android.providers.settings.SettingsProvider	method	private void resetSecureSetting(int i, int i2, String str)
+com.android.providers.settings.SettingsProvider	method	private void setMonitorCallback(RemoteCallback remoteCallback)
+com.android.providers.settings.SettingsProvider	method	private void startWatchingUserRestrictionChanges()
+com.android.providers.settings.SettingsProvider	method	private void validateSystemSettingValue(String str, String str2)
+com.android.providers.settings.SettingsProvider	method	public Bundle call(String str, String str2, Bundle bundle)
+com.android.providers.settings.SettingsProvider	method	public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2)
+com.android.providers.settings.SettingsProvider	method	public HashMap<String, String> getAllConfigFlags(String str)
+com.android.providers.settings.SettingsProvider	method	public ParcelFileDescriptor openFile(Uri uri, String str) throws FileNotFoundException
+com.android.providers.settings.SettingsProvider	method	public SettingsState.Setting getGlobalSetting(String str)
+com.android.providers.settings.SettingsProvider	method	public SettingsState.Setting getSecureSetting(String str, int i)
+com.android.providers.settings.SettingsProvider	method	public String getType(Uri uri)
+com.android.providers.settings.SettingsProvider	method	public Uri insert(Uri uri, ContentValues contentValues)
+com.android.providers.settings.SettingsProvider	method	public boolean onCreate()
+com.android.providers.settings.SettingsProvider	method	public boolean updateGlobalSetting(String str, String str2, String str3, boolean z, int i, boolean z2)
+com.android.providers.settings.SettingsProvider	method	public boolean updateSecureSetting(String str, String str2, String str3, boolean z, int i, boolean z2)
+com.android.providers.settings.SettingsProvider	method	public int bulkInsert(Uri uri, ContentValues[] contentValuesArr)
+com.android.providers.settings.SettingsProvider	method	public int delete(Uri uri, String str, String[] strArr)
+com.android.providers.settings.SettingsProvider	method	public int update(Uri uri, ContentValues contentValues, String str, String[] strArr)
+com.android.providers.settings.SettingsProvider	method	public static Set<String> getRestrictionDiff(Bundle bundle, Bundle bundle2)
+com.android.providers.settings.SettingsProvider	method	public static String getValidTableOrThrow(Uri uri)
+com.android.providers.settings.SettingsProvider	method	public static int getTypeFromKey(int i)
+com.android.providers.settings.SettingsProvider	method	public static int getUserIdFromKey(int i)
+com.android.providers.settings.SettingsProvider	method	public static int makeKey(int i, int i2)
+com.android.providers.settings.SettingsProvider	method	public static void writeFallBackSettingsFiles(List<String> list)
+com.android.providers.settings.SettingsProvider	method	public void dumpInternal(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr)
+com.android.providers.settings.SettingsProvider	method	public void reportDeviceConfigUpdate(String str)
+com.android.providers.settings.SettingsProvider	method	public void scheduleWriteFallbackFilesJob()
+com.android.providers.settings.SettingsProvider$Arguments	field	private static final Pattern WHERE_PATTERN_NO_PARAM_IN_BRACKETS;
+com.android.providers.settings.SettingsProvider$Arguments	field	private static final Pattern WHERE_PATTERN_NO_PARAM_NO_BRACKETS;
+com.android.providers.settings.SettingsProvider$Arguments	field	private static final Pattern WHERE_PATTERN_WITH_PARAM_IN_BRACKETS;
+com.android.providers.settings.SettingsProvider$Arguments	field	private static final Pattern WHERE_PATTERN_WITH_PARAM_NO_BRACKETS;
+com.android.providers.settings.SettingsProvider$Arguments	field	public final String name;
+com.android.providers.settings.SettingsProvider$Arguments	field	public final String table;
+com.android.providers.settings.SettingsProvider$Arguments	method	private static String computeTableForSetting(Uri uri, String str)
+com.android.providers.settings.SettingsProvider$Arguments	method	public Arguments(Uri uri, String str, String[] strArr, boolean z)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	field	private GenerationRegistry mGenerationRegistry;
+com.android.providers.settings.SettingsProvider$SettingsRegistry	field	private String mSettingsCreationBuildId;
+com.android.providers.settings.SettingsProvider$SettingsRegistry	field	private final BackupManager mBackupManager;
+com.android.providers.settings.SettingsProvider$SettingsRegistry	field	private final Handler mHandler;
+com.android.providers.settings.SettingsProvider$SettingsRegistry	field	private final SparseArray<SettingsState> mSettingsStates;
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	private SettingsState peekSettingsStateLocked(int i)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	private Uri getNotificationUriFor(int i, String str)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	private boolean isConfigSettingsKey(int i)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	private boolean isGlobalSettingsKey(int i)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	private boolean isSecureSettingsKey(int i)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	private boolean isSsaidSettingsKey(int i)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	private boolean isSystemSettingsKey(int i)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	private boolean shouldBan(int i)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	private boolean shouldExcludeSettingFromReset(SettingsState.Setting setting, String str)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	private byte[] getLengthPrefix(byte[] bArr)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	private int getMaxBytesPerPackageForType(int i)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	private void banConfigurationIfNecessary(int i, String str, SettingsState settingsState)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	private void ensureSecureSettingAndroidIdSetLocked(SettingsState settingsState)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	private void ensureSettingsStateLocked(int i)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	private void generateUserKeyLocked(int i)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	private void maybeNotifyProfiles(int i, int i2, Uri uri, String str, Collection<String> collection)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	private void migrateAllLegacySettingsIfNeeded()
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	private void migrateLegacySettingsForUserIfNeededLocked(int i)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	private void migrateLegacySettingsLocked(SettingsState settingsState, SQLiteDatabase sQLiteDatabase, String str)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	private void notifyForConfigSettingsChangeLocked(int i, String str, List<String> list)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	private void notifyLocationChangeForRunningUsers()
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	private void notifySettingChangeForRunningUsers(int i, String str)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	public File getSettingsFile(int i)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	public List<String> getSettingsNamesLocked(int i, int i2)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	public SettingsRegistry()
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	public SettingsState getSettingsLocked(int i, int i2)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	public SettingsState.Setting generateSsaidLocked(PackageInfo packageInfo, int i)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	public SettingsState.Setting getSettingLocked(int i, int i2, String str)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	public SparseBooleanArray getKnownUsersLocked()
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	public boolean deleteSettingLocked(int i, int i2, String str, boolean z, Set<String> set)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	public boolean ensureSettingsForUserLocked(int i)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	public boolean insertSettingLocked(int i, int i2, String str, String str2, String str3, boolean z, String str4, boolean z2, Set<String> set, boolean z3)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	public boolean insertSettingLocked(int i, int i2, String str, String str2, String str3, boolean z, boolean z2, String str4, boolean z3, Set<String> set, boolean z4)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	public boolean setConfigSettingsLocked(int i, String str, Map<String, String> map, String str2)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	public boolean updateSettingLocked(int i, int i2, String str, String str2, String str3, boolean z, String str4, boolean z2, Set<String> set)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	public void ensureLegacyDefaultValueAndSystemSetUpdatedLocked(SettingsState settingsState, int i)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	public void migrateLegacySettingsForUserLocked(DatabaseHelper databaseHelper, SQLiteDatabase sQLiteDatabase, int i)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	public void notifyForSettingsChange(int i, String str)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	public void onUidRemovedLocked(int i)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	public void removeSettingsForPackageLocked(String str, int i)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	public void removeUserStateLocked(int i, boolean z)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	public void resetSettingsLocked(int i, int i2, String str, int i3, String str2)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	public void resetSettingsLocked(int i, int i2, String str, int i3, String str2, String str3)
+com.android.providers.settings.SettingsProvider$SettingsRegistry	method	public void syncSsaidTableOnStart()
+com.android.providers.settings.SettingsProvider$SettingsRegistry$MyHandler	method	public MyHandler(Looper looper)
+com.android.providers.settings.SettingsProvider$SettingsRegistry$MyHandler	method	public void handleMessage(Message message)
+com.android.providers.settings.SettingsProvider$SettingsRegistry$UpgradeController	field	private final int mUserId;
+com.android.providers.settings.SettingsProvider$SettingsRegistry$UpgradeController	method	private SettingsState getGlobalSettingsLocked()
+com.android.providers.settings.SettingsProvider$SettingsRegistry$UpgradeController	method	private SettingsState getSecureSettingsLocked(int i)
+com.android.providers.settings.SettingsProvider$SettingsRegistry$UpgradeController	method	private SettingsState getSsaidSettingsLocked(int i)
+com.android.providers.settings.SettingsProvider$SettingsRegistry$UpgradeController	method	private SettingsState getSystemSettingsLocked(int i)
+com.android.providers.settings.SettingsProvider$SettingsRegistry$UpgradeController	method	private int onUpgradeLocked(int i, int i2, int i3)
+com.android.providers.settings.SettingsProvider$SettingsRegistry$UpgradeController	method	public UpgradeController(int i)
+com.android.providers.settings.SettingsProvider$SettingsRegistry$UpgradeController	method	public void upgradeIfNeededLocked()
+com.android.providers.settings.SettingsService	field	final SettingsProvider mProvider;
+com.android.providers.settings.SettingsService	method	protected void dump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr)
+com.android.providers.settings.SettingsService	method	public SettingsService(SettingsProvider settingsProvider)
+com.android.providers.settings.SettingsService	method	public void onShellCommand(FileDescriptor fileDescriptor, FileDescriptor fileDescriptor2, FileDescriptor fileDescriptor3, String[] strArr, ShellCallback shellCallback, ResultReceiver resultReceiver)
+com.android.providers.settings.SettingsService$MyShellCommand	field	final SettingsProvider mProvider;
+com.android.providers.settings.SettingsService$MyShellCommand	field	final boolean mDumping;
+com.android.providers.settings.SettingsService$MyShellCommand	method	public int onCommand(String str)
+com.android.providers.settings.SettingsService$MyShellCommand	method	public static String resolveCallingPackage()
+com.android.providers.settings.SettingsService$MyShellCommand	method	public void onHelp()
+com.android.providers.settings.SettingsService$MyShellCommand	method	static void dumpHelp(PrintWriter printWriter, boolean z)
+com.android.providers.settings.SettingsState	field	private boolean mDirty;
+com.android.providers.settings.SettingsState	field	private boolean mWriteScheduled;
+com.android.providers.settings.SettingsState	field	private final ArrayMap<String, Integer> mPackageToMemoryUsage;
+com.android.providers.settings.SettingsState	field	private final ArrayMap<String, Setting> mSettings;
+com.android.providers.settings.SettingsState	field	private final ArrayMap<String, String> mNamespaceBannedHashes;
+com.android.providers.settings.SettingsState	field	private final Context mContext;
+com.android.providers.settings.SettingsState	field	private final File mStatePersistFile;
+com.android.providers.settings.SettingsState	field	private final Handler mHandler;
+com.android.providers.settings.SettingsState	field	private final List<HistoricalOperation> mHistoricalOperations;
+com.android.providers.settings.SettingsState	field	private final Object mLock;
+com.android.providers.settings.SettingsState	field	private final Object mWriteLock;
+com.android.providers.settings.SettingsState	field	private final String mStatePersistTag;
+com.android.providers.settings.SettingsState	field	private final int mMaxBytesPerAppPackage;
+com.android.providers.settings.SettingsState	field	private int mNextHistoricalOpIdx;
+com.android.providers.settings.SettingsState	field	private int mVersion;
+com.android.providers.settings.SettingsState	field	private long mLastNotWrittenMutationTimeMillis;
+com.android.providers.settings.SettingsState	field	private long mNextId;
+com.android.providers.settings.SettingsState	field	private static Signature sSystemSignature;
+com.android.providers.settings.SettingsState	field	private static final Object sLock;
+com.android.providers.settings.SettingsState	field	private static final SparseIntArray sSystemUids;
+com.android.providers.settings.SettingsState	field	public final int mKey;
+com.android.providers.settings.SettingsState	method	private String getValueAttribute(XmlPullParser xmlPullParser, String str, String str2)
+com.android.providers.settings.SettingsState	method	private boolean hasSettingLocked(String str)
+com.android.providers.settings.SettingsState	method	private boolean isExemptFromMemoryUsageCap(String str)
+com.android.providers.settings.SettingsState	method	private boolean parseStateFromXmlStreamLocked(FileInputStream fileInputStream)
+com.android.providers.settings.SettingsState	method	private int getNewMemoryUsagePerPackageLocked(String str, int i, String str2, String str3, String str4, String str5)
+com.android.providers.settings.SettingsState	method	private static Map<String, String> removeNullValueOldStyle(Map<String, String> map)
+com.android.providers.settings.SettingsState	method	private static String base64Decode(String str)
+com.android.providers.settings.SettingsState	method	private static String base64Encode(String str)
+com.android.providers.settings.SettingsState	method	private static String fromBytes(byte[] bArr)
+com.android.providers.settings.SettingsState	method	private static String hashCode(Map<String, String> map)
+com.android.providers.settings.SettingsState	method	private static byte[] toBytes(String str)
+com.android.providers.settings.SettingsState	method	private static void logSettingsDirectoryInformation(File file)
+com.android.providers.settings.SettingsState	method	private static void writeSingleNamespaceHash(XmlSerializer xmlSerializer, String str, String str2) throws IOException
+com.android.providers.settings.SettingsState	method	private void addHistoricalOperationLocked(String str, Setting setting)
+com.android.providers.settings.SettingsState	method	private void checkNewMemoryUsagePerPackageLocked(String str, int i) throws IllegalStateException
+com.android.providers.settings.SettingsState	method	private void parseNamespaceHash(XmlPullParser xmlPullParser) throws XmlPullParserException, IOException
+com.android.providers.settings.SettingsState	method	private void parseSettingsLocked(XmlPullParser xmlPullParser) throws XmlPullParserException, IOException
+com.android.providers.settings.SettingsState	method	private void parseStateLocked(XmlPullParser xmlPullParser) throws XmlPullParserException, IOException
+com.android.providers.settings.SettingsState	method	private void readStateSyncLocked() throws IllegalStateException
+com.android.providers.settings.SettingsState	method	private void scheduleWriteIfNeededLocked()
+com.android.providers.settings.SettingsState	method	private void updateMemoryUsagePerPackageLocked(String str, int i)
+com.android.providers.settings.SettingsState	method	private void writeStateAsyncLocked()
+com.android.providers.settings.SettingsState	method	public List<String> getSettingNamesLocked()
+com.android.providers.settings.SettingsState	method	public List<String> setSettingsLocked(String str, Map<String, String> map, String str2)
+com.android.providers.settings.SettingsState	method	public Set<String> getAllConfigPrefixesLocked()
+com.android.providers.settings.SettingsState	method	public Setting getNullSetting()
+com.android.providers.settings.SettingsState	method	public Setting getSettingLocked(String str)
+com.android.providers.settings.SettingsState	method	public SettingsState(Context context, Object obj, File file, int i, int i2, Looper looper)
+com.android.providers.settings.SettingsState	method	public boolean deleteSettingLocked(String str)
+com.android.providers.settings.SettingsState	method	public boolean insertSettingLocked(String str, String str2, String str3, boolean z, String str4)
+com.android.providers.settings.SettingsState	method	public boolean insertSettingLocked(String str, String str2, String str3, boolean z, boolean z2, String str4, boolean z3)
+com.android.providers.settings.SettingsState	method	public boolean insertSettingOverrideableByRestoreLocked(String str, String str2, String str3, boolean z, String str4)
+com.android.providers.settings.SettingsState	method	public boolean isNewConfigBannedLocked(String str, Map<String, String> map)
+com.android.providers.settings.SettingsState	method	public boolean resetSettingLocked(String str)
+com.android.providers.settings.SettingsState	method	public boolean updateSettingLocked(String str, String str2, String str3, boolean z, String str4)
+com.android.providers.settings.SettingsState	method	public int getMemoryUsage(String str)
+com.android.providers.settings.SettingsState	method	public int getVersionLocked()
+com.android.providers.settings.SettingsState	method	public static boolean isBinary(String str)
+com.android.providers.settings.SettingsState	method	public static boolean isSystemPackage(Context context, String str)
+com.android.providers.settings.SettingsState	method	public static boolean isSystemPackage(Context context, String str, int i, int i2)
+com.android.providers.settings.SettingsState	method	public static boolean stateFileExists(File file)
+com.android.providers.settings.SettingsState	method	public static int getTypeFromKey(int i)
+com.android.providers.settings.SettingsState	method	public static int getUserIdFromKey(int i)
+com.android.providers.settings.SettingsState	method	public static int makeKey(int i, int i2)
+com.android.providers.settings.SettingsState	method	public void banConfigurationLocked(String str, Map<String, String> map)
+com.android.providers.settings.SettingsState	method	public void destroyLocked(Runnable runnable)
+com.android.providers.settings.SettingsState	method	public void doWriteState()
+com.android.providers.settings.SettingsState	method	public void dumpHistoricalOperations(PrintWriter printWriter)
+com.android.providers.settings.SettingsState	method	public void persistSyncLocked()
+com.android.providers.settings.SettingsState	method	public void removeSettingsForPackageLocked(String str)
+com.android.providers.settings.SettingsState	method	public void resetSettingDefaultValueLocked(String str)
+com.android.providers.settings.SettingsState	method	public void setVersionLocked(int i)
+com.android.providers.settings.SettingsState	method	public void unbanAllConfigIfBannedConfigUpdatedLocked(String str)
+com.android.providers.settings.SettingsState	method	static void setValueAttribute(String str, String str2, int i, XmlSerializer xmlSerializer, String str3) throws IOException
+com.android.providers.settings.SettingsState	method	static void writeSingleSetting(int i, XmlSerializer xmlSerializer, String str, String str2, String str3, String str4, String str5, String str6, boolean z, boolean z2) throws IOException
+com.android.providers.settings.SettingsState$HistoricalOperation	field	final Setting mSetting;
+com.android.providers.settings.SettingsState$HistoricalOperation	field	final String mOperation;
+com.android.providers.settings.SettingsState$HistoricalOperation	field	final long mTimestamp;
+com.android.providers.settings.SettingsState$HistoricalOperation	method	public HistoricalOperation(SettingsState settingsState, long j, String str, Setting setting)
+com.android.providers.settings.SettingsState$MyHandler	method	public MyHandler(Looper looper)
+com.android.providers.settings.SettingsState$MyHandler	method	public void handleMessage(Message message)
+com.android.providers.settings.SettingsState$Setting	field	private String defaultValue;
+com.android.providers.settings.SettingsState$Setting	field	private String id;
+com.android.providers.settings.SettingsState$Setting	field	private String name;
+com.android.providers.settings.SettingsState$Setting	field	private String packageName;
+com.android.providers.settings.SettingsState$Setting	field	private String tag;
+com.android.providers.settings.SettingsState$Setting	field	private String value;
+com.android.providers.settings.SettingsState$Setting	field	private boolean defaultFromSystem;
+com.android.providers.settings.SettingsState$Setting	field	private boolean isValuePreservedInRestore;
+com.android.providers.settings.SettingsState$Setting	method	private boolean shouldPreserveSetting(boolean z, boolean z2, String str, String str2)
+com.android.providers.settings.SettingsState$Setting	method	private boolean update(String str, boolean z, String str2, String str3, boolean z2, boolean z3, boolean z4)
+com.android.providers.settings.SettingsState$Setting	method	private void init(String str, String str2, String str3, String str4, String str5, boolean z, String str6, boolean z2)
+com.android.providers.settings.SettingsState$Setting	method	public Setting(Setting setting)
+com.android.providers.settings.SettingsState$Setting	method	public Setting(SettingsState settingsState, String str, String str2, String str3, String str4, String str5, boolean z, String str6)
+com.android.providers.settings.SettingsState$Setting	method	public Setting(SettingsState settingsState, String str, String str2, boolean z, String str3, String str4)
+com.android.providers.settings.SettingsState$Setting	method	public String getDefaultValue()
+com.android.providers.settings.SettingsState$Setting	method	public String getId()
+com.android.providers.settings.SettingsState$Setting	method	public String getName()
+com.android.providers.settings.SettingsState$Setting	method	public String getPackageName()
+com.android.providers.settings.SettingsState$Setting	method	public String getTag()
+com.android.providers.settings.SettingsState$Setting	method	public String getValue()
+com.android.providers.settings.SettingsState$Setting	method	public String toString()
+com.android.providers.settings.SettingsState$Setting	method	public boolean isDefaultFromSystem()
+com.android.providers.settings.SettingsState$Setting	method	public boolean isNull()
+com.android.providers.settings.SettingsState$Setting	method	public boolean isTransient()
+com.android.providers.settings.SettingsState$Setting	method	public boolean isValuePreservedInRestore()
+com.android.providers.settings.SettingsState$Setting	method	public boolean reset()
+com.android.providers.settings.SettingsState$Setting	method	public boolean update(String str, boolean z, String str2, String str3, boolean z2, boolean z3)
+com.android.providers.settings.SettingsState$Setting	method	public int getKey()
+com.android.providers.settings.WifiSoftApConfigChangedNotifier	method	private static Notification createConversionNotification(Context context)
+com.android.providers.settings.WifiSoftApConfigChangedNotifier	method	private static PendingIntent getPendingActivity(Context context)
+com.android.providers.settings.WifiSoftApConfigChangedNotifier	method	public static void notifyUserOfConfigConversion(Context context)
+com.android.providers.settings.WriteFallbackSettingsFilesJobService	method	public boolean onStartJob(JobParameters jobParameters)
+com.android.providers.settings.WriteFallbackSettingsFilesJobService	method	public boolean onStopJob(JobParameters jobParameters)
+com.android.settingslib.display.DisplayDensityConfiguration	method	public static void setForcedDisplayDensity(final int i, final int i2)

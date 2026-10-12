@@ -1,0 +1,33 @@
+class	kind	declaration
+com.android.pacprocessor.LibpacInterface	method	default boolean startPacSupport()
+com.android.pacprocessor.LibpacInterface	method	default boolean stopPacSupport()
+com.android.pacprocessor.PacNative	field	private boolean mIsActive;
+com.android.pacprocessor.PacNative	field	private static final PacNative sInstance;
+com.android.pacprocessor.PacNative	method	private PacNative()
+com.android.pacprocessor.PacNative	method	private native String makeProxyRequestNativeLocked(String str, String str2);
+com.android.pacprocessor.PacNative	method	private native boolean createV8ParserNativeLocked();
+com.android.pacprocessor.PacNative	method	private native boolean destroyV8ParserNativeLocked();
+com.android.pacprocessor.PacNative	method	private native boolean setProxyScriptNativeLocked(String str);
+com.android.pacprocessor.PacNative	method	public static PacNative getInstance()
+com.android.pacprocessor.PacNative	method	public synchronized String makeProxyRequest(String str, String str2)
+com.android.pacprocessor.PacNative	method	public synchronized boolean setCurrentProxyScript(String str)
+com.android.pacprocessor.PacNative	method	public synchronized boolean startPacSupport()
+com.android.pacprocessor.PacNative	method	public synchronized boolean stopPacSupport()
+com.android.pacprocessor.PacService	field	private ProxyServiceStub mStub;
+com.android.pacprocessor.PacService	field	private final LibpacInterface mLibpac;
+com.android.pacprocessor.PacService	field	private static final boolean sUseWebViewPacProcessor;
+com.android.pacprocessor.PacService	method	public IBinder onBind(Intent intent)
+com.android.pacprocessor.PacService	method	public PacService()
+com.android.pacprocessor.PacService	method	public void onCreate()
+com.android.pacprocessor.PacService	method	public void onDestroy()
+com.android.pacprocessor.PacService$ProxyServiceStub	method	private ProxyServiceStub()
+com.android.pacprocessor.PacService$ProxyServiceStub	method	public String resolvePacFile(String str, String str2) throws RemoteException
+com.android.pacprocessor.PacService$ProxyServiceStub	method	public void setPacFile(String str) throws RemoteException
+com.android.pacprocessor.PacService$ProxyServiceStub	method	public void startPacSystem() throws RemoteException
+com.android.pacprocessor.PacService$ProxyServiceStub	method	public void stopPacSystem() throws RemoteException
+com.android.pacprocessor.PacWebView	field	private PacProcessor mProcessor;
+com.android.pacprocessor.PacWebView	field	private static final PacWebView sInstance;
+com.android.pacprocessor.PacWebView	method	public static PacWebView getInstance()
+com.android.pacprocessor.PacWebView	method	public synchronized String makeProxyRequest(String str, String str2)
+com.android.pacprocessor.PacWebView	method	public synchronized boolean setCurrentProxyScript(String str)
+com.android.pacprocessor.R$string	field	public static final int app_name;

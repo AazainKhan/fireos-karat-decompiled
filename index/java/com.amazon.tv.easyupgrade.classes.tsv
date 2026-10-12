@@ -1,0 +1,205 @@
+kind	class	extends	implements
+class	com.amazon.tv.UnhandledException		
+class	com.amazon.tv.animation.Animation		
+class	com.amazon.tv.animation.Coast	Animation	
+class	com.amazon.tv.animation.Linear		
+class	com.amazon.tv.easyupgrade.BuildConfig		
+class	com.amazon.tv.easyupgrade.EasyUpgradeActivity	Activity	NavigationManager
+class	com.amazon.tv.easyupgrade.EasyUpgradeApplication	Application	
+class	com.amazon.tv.easyupgrade.EasyUpgradePageProvider		
+class	com.amazon.tv.easyupgrade.R		
+class	com.amazon.tv.easyupgrade.R$anim		
+class	com.amazon.tv.easyupgrade.R$animator		
+class	com.amazon.tv.easyupgrade.R$array		
+class	com.amazon.tv.easyupgrade.R$attr		
+class	com.amazon.tv.easyupgrade.R$bool		
+class	com.amazon.tv.easyupgrade.R$color		
+class	com.amazon.tv.easyupgrade.R$dimen		
+class	com.amazon.tv.easyupgrade.R$drawable		
+class	com.amazon.tv.easyupgrade.R$id		
+class	com.amazon.tv.easyupgrade.R$integer		
+class	com.amazon.tv.easyupgrade.R$layout		
+class	com.amazon.tv.easyupgrade.R$raw		
+class	com.amazon.tv.easyupgrade.R$string		
+class	com.amazon.tv.easyupgrade.R$style		
+class	com.amazon.tv.easyupgrade.R$styleable		
+class	com.amazon.tv.easyupgrade.R$xml		
+class	com.amazon.tv.easyupgrade.Utils		
+class	com.amazon.tv.easyupgrade.backup.EasyUpgradeContentProvider	ContentProvider	
+class	com.amazon.tv.easyupgrade.backup.EasyUpgradeContentProviderUtils		
+class	com.amazon.tv.easyupgrade.constants.Constants		
+class	com.amazon.tv.easyupgrade.constants.MetricsConstants		
+class	com.amazon.tv.easyupgrade.constants.RemoteConfigKeys		
+class	com.amazon.tv.easyupgrade.data.db.BaseTable		
+class	com.amazon.tv.easyupgrade.data.db.ClientInfoTable	BaseTable	
+class	com.amazon.tv.easyupgrade.data.db.EasyUpgradeDbHelper	SQLiteOpenHelper	
+class	com.amazon.tv.easyupgrade.data.db.EasyUpgradeTables		
+class	com.amazon.tv.easyupgrade.data.db.SettingInfoTable	BaseTable	
+class	com.amazon.tv.easyupgrade.data.db.SettingsTable	BaseTable	
+class	com.amazon.tv.easyupgrade.data.model.AppConfig		
+class	com.amazon.tv.easyupgrade.data.model.AppConfig$AppConfigBuilder		
+class	com.amazon.tv.easyupgrade.data.model.BackupDeviceInfo		Parcelable
+class	com.amazon.tv.easyupgrade.data.model.BackupDeviceInfo$BackupDeviceInfoBuilder		
+class	com.amazon.tv.easyupgrade.data.model.ClientConfig		
+class	com.amazon.tv.easyupgrade.data.model.ClientConfig$ClientConfigBuilder		
+class	com.amazon.tv.easyupgrade.data.model.Config		
+class	com.amazon.tv.easyupgrade.data.model.Config$ConfigBuilder		
+class	com.amazon.tv.easyupgrade.data.model.SettingConfig		
+class	com.amazon.tv.easyupgrade.data.model.SettingConfig$SettingConfigBuilder		
+class	com.amazon.tv.easyupgrade.data.provider.BackupDeviceInfoProvider		DataProvider<List<BackupDeviceInfo>>
+class	com.amazon.tv.easyupgrade.data.provider.BackupDeviceInfoProvider$FetchTaskRunnable		Runnable
+class	com.amazon.tv.easyupgrade.data.provider.ConfigProvider		DataProvider<Config>
+class	com.amazon.tv.easyupgrade.data.provider.ConfigProvider$FetchTaskRunnable		Runnable
+class	com.amazon.tv.easyupgrade.data.provider.ProviderFactory		
+class	com.amazon.tv.easyupgrade.data.provider.SettingsProvider		DataProvider<List<RestoredSetting>>
+class	com.amazon.tv.easyupgrade.data.provider.SettingsProvider$FetchTaskRunnable		Runnable
+class	com.amazon.tv.easyupgrade.job.EUJobParams		
+class	com.amazon.tv.easyupgrade.job.EUJobParams$EUJobParamsBuilder		
+class	com.amazon.tv.easyupgrade.job.EUJobScheduler		
+class	com.amazon.tv.easyupgrade.job.service.ConfigFetchService	JobService	
+class	com.amazon.tv.easyupgrade.job.service.SettingsUpdateService	JobService	
+class	com.amazon.tv.easyupgrade.metrics.AdditionalPivotConstants		
+class	com.amazon.tv.easyupgrade.metrics.MetricHook		
+class	com.amazon.tv.easyupgrade.metrics.MetricInfo		
+class	com.amazon.tv.easyupgrade.metrics.MetricsReporter		IMetricsReporter
+class	com.amazon.tv.easyupgrade.metrics.MetricsUtil		
+class	com.amazon.tv.easyupgrade.metrics.MinervaMetricFactory		
+class	com.amazon.tv.easyupgrade.network.AccountManager		
+class	com.amazon.tv.easyupgrade.network.HTTPRequestInterceptor		Interceptor
+class	com.amazon.tv.easyupgrade.network.NetworkManager		
+class	com.amazon.tv.easyupgrade.network.NetworkManager$NullOnEmptyConverterFactory	Converter.Factory	
+class	com.amazon.tv.easyupgrade.network.service.DpcDataConverter		
+class	com.amazon.tv.easyupgrade.network.service.EasyUpgradeDataConverter		
+class	com.amazon.tv.easyupgrade.network.service.model.BackupInfo		
+class	com.amazon.tv.easyupgrade.network.service.model.CustomerDeviceInfo		
+class	com.amazon.tv.easyupgrade.network.service.model.CustomerDevices		
+class	com.amazon.tv.easyupgrade.network.service.model.DeviceSetting		
+class	com.amazon.tv.easyupgrade.network.service.model.DeviceSettingValue		
+class	com.amazon.tv.easyupgrade.network.service.model.DeviceSettingValue$DeviceSettingValueBuilder		
+class	com.amazon.tv.easyupgrade.network.service.model.GetDeviceSettingsRequest		
+class	com.amazon.tv.easyupgrade.network.service.model.GetDeviceSettingsRequest$GetDeviceSettingsRequestBuilder		
+class	com.amazon.tv.easyupgrade.network.service.model.GetDeviceSettingsResponse		
+class	com.amazon.tv.easyupgrade.network.service.model.PutDeviceSettingsRequest		
+class	com.amazon.tv.easyupgrade.network.service.model.PutDeviceSettingsRequest$PutDeviceSettingsRequestBuilder		
+class	com.amazon.tv.easyupgrade.receiver.AccountChangeReceiver	BroadcastReceiver	
+class	com.amazon.tv.easyupgrade.receiver.ApplicationUpdateReceiver	BroadcastReceiver	
+class	com.amazon.tv.easyupgrade.receiver.TestJobScheduleReceiver	BroadcastReceiver	
+class	com.amazon.tv.easyupgrade.restore.RestoreContract		
+class	com.amazon.tv.easyupgrade.restore.RestoreHandler		
+class	com.amazon.tv.easyupgrade.restore.RestoreTask		
+class	com.amazon.tv.easyupgrade.restore.RestoreTaskInfo		
+class	com.amazon.tv.easyupgrade.restore.RestoreTaskInfo$RestoreTaskInfoBuilder		
+class	com.amazon.tv.easyupgrade.restore.RestoreTaskInfoBuilder		
+class	com.amazon.tv.easyupgrade.service.DeRegistrationService	Service	
+class	com.amazon.tv.easyupgrade.service.DeRegistrationService$DatabaseOperationsRunnable		Runnable
+class	com.amazon.tv.easyupgrade.task.BackupDeviceInfoFetchTask		Task<List<BackupDeviceInfo>>
+class	com.amazon.tv.easyupgrade.task.ConfigDbUpdateTask		Task<Void>
+class	com.amazon.tv.easyupgrade.task.ConfigFetchTask		Task<Config>
+class	com.amazon.tv.easyupgrade.task.PreSetupTask		
+class	com.amazon.tv.easyupgrade.task.SettingsFetchTask		Task<List<RestoredSetting>>
+class	com.amazon.tv.easyupgrade.task.SettingsUpdateTask		Task<Void>
+class	com.amazon.tv.easyupgrade.ui.Page	Fragment	
+class	com.amazon.tv.easyupgrade.ui.PageIds		
+class	com.amazon.tv.easyupgrade.ui.deviceselection.DeviceListAdapter	RecyclerView.Adapter<ViewHolder>	
+class	com.amazon.tv.easyupgrade.ui.deviceselection.DeviceListAdapter$ViewHolder	RecyclerView.ViewHolder	
+class	com.amazon.tv.easyupgrade.ui.deviceselection.DeviceSelectionPage	Page	DeviceSelectionPageVP.View
+class	com.amazon.tv.easyupgrade.ui.deviceselection.DeviceSelectionPagePresenter		DeviceSelectionPageVP.Presenter
+class	com.amazon.tv.easyupgrade.ui.entry.EUEntryPage	Page	EUEntryPageVP.View
+class	com.amazon.tv.easyupgrade.ui.entry.EUEntryPagePresenter		EUEntryPageVP.Presenter
+class	com.amazon.tv.easyupgrade.ui.loading.EULoadingPage	Page	
+class	com.amazon.tv.easyupgrade.ui.loading.EULoadingPagePresenter		EULoadingPageVP.Presenter
+class	com.amazon.tv.easyupgrade.ui.network.NetworkErrorDialog		
+class	com.amazon.tv.easyupgrade.ui.restore.RestorePage	Page	RestorePageVP.View
+class	com.amazon.tv.easyupgrade.ui.restore.RestorePagePresenter		RestorePageVP.Presenter
+class	com.amazon.tv.easyupgradelib.DeviceInfo		Parcelable
+class	com.amazon.tv.easyupgradelib.DimensionSettingValue		Parcelable
+class	com.amazon.tv.easyupgradelib.RestoreInfo		Parcelable
+class	com.amazon.tv.easyupgradelib.RestoreManager$Stub	Binder	RestoreManager
+class	com.amazon.tv.easyupgradelib.RestoreManager$Stub$Proxy		RestoreManager
+class	com.amazon.tv.easyupgradelib.RestoreObserver$Stub	Binder	RestoreObserver
+class	com.amazon.tv.easyupgradelib.RestoreObserver$Stub$Proxy		RestoreObserver
+class	com.amazon.tv.easyupgradelib.RestoredSetting		Parcelable
+class	com.amazon.tv.ftvpresetupclientlib.FTVPreSetupClientLib		
+class	com.amazon.tv.ftvpresetupclientlib.PreSetupService	Service	
+class	com.amazon.tv.ftvpresetupclientlib.easyupgrade.EasyUpgradeData		Parcelable
+class	com.amazon.tv.ftvpresetupclientlib.easyupgrade.EasyUpgradeManager$Stub	Binder	EasyUpgradeManager
+class	com.amazon.tv.ftvpresetupclientlib.easyupgrade.EasyUpgradeManager$Stub$Proxy		EasyUpgradeManager
+class	com.amazon.tv.oobe.analytics.CevicheMetrics		
+class	com.amazon.tv.oobe.analytics.CevicheMetricsHelper		
+class	com.amazon.tv.oobe.analytics.OobeEventProps		
+class	com.amazon.tv.oobe.analytics.OobeEventProps$ActionEventPropsBuilder	BaseBuilder<ActionEventPropsBuilder>	
+class	com.amazon.tv.oobe.analytics.OobeEventProps$BaseBuilder		
+class	com.amazon.tv.oobe.analytics.OobeEventProps$ScreenEventPropsBuilder	BaseBuilder<ScreenEventPropsBuilder>	
+class	com.amazon.tv.oobe.metricsclient.Metric		
+class	com.amazon.tv.oobe.metricsclient.OobeCustomPivots		
+class	com.amazon.tv.oobe.metricsclient.custompivots.ApkVersionPivotProvider		IPivotProvider
+class	com.amazon.tv.oobe.metricsclient.minerva.MinervaAttributes		
+class	com.amazon.tv.oobe.metricsclient.minerva.MinervaMetricsClient		IMetricsClient
+class	com.amazon.tv.util.FrameTime		
+class	com.amazon.tv.util.Utils		
+class	com.amazon.tv.view.FrameLayoutLTR	FrameLayout	
+class	com.amazon.tv.view.ImageViewLTR	ImageView	
+class	com.amazon.tv.view.LinearLayoutLTR	LinearLayout	
+class	com.amazon.tv.view.ProgressView	LinearLayout	
+class	com.amazon.tv.view.RatingBarLTR	RatingBar	
+class	com.amazon.tv.view.ShimmerTextView	TextView	
+class	com.amazon.tv.view.ViewLTR	View	
+class	com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager		
+class	com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder		
+class	com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.ConfigurationNotFoundException	KotlinNothingValueException	
+class	com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.MalformedAppConfigIdException	KotlinNothingValueException	
+class	com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.NetworkException	KotlinNothingValueException	
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler		
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn		
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl		Cloneable
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb		
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	SQLiteOpenHelper	
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl		Configuration
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.DowngradeException	UnsupportedOperationException	
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper		
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl		
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher		
+enum	com.amazon.tv.easyupgrade.EUTag		
+enum	com.amazon.tv.easyupgrade.data.provider.FetchFailureReason		
+enum	com.amazon.tv.easyupgrade.data.provider.ProviderIds		
+enum	com.amazon.tv.easyupgrade.data.provider.ProviderState		
+enum	com.amazon.tv.easyupgrade.job.EUJob		
+enum	com.amazon.tv.easyupgrade.network.service.api.BaseUrl		
+enum	com.amazon.tv.easyupgrade.restore.RestoreTaskResult		
+enum	com.amazon.tv.easyupgrade.task.TaskFailureReason		
+enum	com.amazon.tv.easyupgrade.ui.deviceselection.DeviceIcon		
+enum	com.amazon.tv.easyupgradelib.RestoreResultCode		Parcelable
+enum	com.amazon.tv.ftvpresetupclientlib.PreSetupStatusCode		Parcelable
+enum	com.amazon.tv.oobe.metricsclient.MetricType		
+enum	com.amazon.tv.oobe.metricsclient.minerva.MinervaPredefined		
+interface	com.amazon.tv.easyupgrade.data.provider.DataProvider		
+interface	com.amazon.tv.easyupgrade.data.provider.DataProvider$DataProviderCallback		
+interface	com.amazon.tv.easyupgrade.metrics.IMetricsReporter		
+interface	com.amazon.tv.easyupgrade.network.service.api.DpcServiceApi		
+interface	com.amazon.tv.easyupgrade.network.service.api.EasyUpgradeServiceApi		
+interface	com.amazon.tv.easyupgrade.restore.RestoreHandler$RestoreCompleteCallback		
+interface	com.amazon.tv.easyupgrade.restore.RestoreTask$Callback		
+interface	com.amazon.tv.easyupgrade.task.Task		
+interface	com.amazon.tv.easyupgrade.task.Task$TaskCallback		
+interface	com.amazon.tv.easyupgrade.ui.NavigationManager		
+interface	com.amazon.tv.easyupgrade.ui.deviceselection.DeviceListAdapter$DeviceSelectedCallback		
+interface	com.amazon.tv.easyupgrade.ui.network.NetworkErrorDialog$UserAction		
+interface	com.amazon.tv.easyupgrade.ui.vpinterface.DeviceSelectionPageVP		
+interface	com.amazon.tv.easyupgrade.ui.vpinterface.DeviceSelectionPageVP$Presenter		
+interface	com.amazon.tv.easyupgrade.ui.vpinterface.DeviceSelectionPageVP$View		
+interface	com.amazon.tv.easyupgrade.ui.vpinterface.EUEntryPageVP		
+interface	com.amazon.tv.easyupgrade.ui.vpinterface.EUEntryPageVP$Presenter		
+interface	com.amazon.tv.easyupgrade.ui.vpinterface.EUEntryPageVP$View		
+interface	com.amazon.tv.easyupgrade.ui.vpinterface.EULoadingPageVP		
+interface	com.amazon.tv.easyupgrade.ui.vpinterface.EULoadingPageVP$Presenter		
+interface	com.amazon.tv.easyupgrade.ui.vpinterface.RestorePageVP		
+interface	com.amazon.tv.easyupgrade.ui.vpinterface.RestorePageVP$Presenter		
+interface	com.amazon.tv.easyupgrade.ui.vpinterface.RestorePageVP$View		
+interface	com.amazon.tv.easyupgradelib.RestoreManager	IInterface	
+interface	com.amazon.tv.easyupgradelib.RestoreObserver	IInterface	
+interface	com.amazon.tv.ftvpresetupclientlib.PreSetupObserver	IInterface	
+interface	com.amazon.tv.ftvpresetupclientlib.easyupgrade.EasyUpgradeManager	IInterface	
+interface	com.amazon.tv.oobe.metricsclient.IMetricsClient		
+interface	com.amazon.tv.oobe.metricsclient.custompivots.IPivotProvider		
+interface	com.amazonaws.mobileconnectors.remoteconfiguration.Configuration		
+interface	com.amazonaws.mobileconnectors.remoteconfiguration.ConfigurationSyncCallback		

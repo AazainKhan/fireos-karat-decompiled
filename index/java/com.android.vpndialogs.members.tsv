@@ -1,0 +1,72 @@
+class	kind	declaration
+com.android.vpndialogs.AlwaysOnDisconnectedDialog	field	private IConnectivityManager mService;
+com.android.vpndialogs.AlwaysOnDisconnectedDialog	field	private String mVpnPackage;
+com.android.vpndialogs.AlwaysOnDisconnectedDialog	field	private int mUserId;
+com.android.vpndialogs.AlwaysOnDisconnectedDialog	method	private CharSequence getMessage(boolean z)
+com.android.vpndialogs.AlwaysOnDisconnectedDialog	method	private CharSequence getVpnLabel()
+com.android.vpndialogs.AlwaysOnDisconnectedDialog	method	private String getAlwaysOnVpnPackage()
+com.android.vpndialogs.AlwaysOnDisconnectedDialog	method	public void onClick(DialogInterface dialogInterface, int i)
+com.android.vpndialogs.AlwaysOnDisconnectedDialog	method	public void onCreate(Bundle bundle)
+com.android.vpndialogs.AlwaysOnDisconnectedDialog$VpnSpan	method	private VpnSpan()
+com.android.vpndialogs.AlwaysOnDisconnectedDialog$VpnSpan	method	public void onClick(View view)
+com.android.vpndialogs.ConfirmDialog	field	private IConnectivityManager mService;
+com.android.vpndialogs.ConfirmDialog	field	private String mPackage;
+com.android.vpndialogs.ConfirmDialog	field	private View mView;
+com.android.vpndialogs.ConfirmDialog	field	private final int mVpnType;
+com.android.vpndialogs.ConfirmDialog	method	private CharSequence getVpnLabel()
+com.android.vpndialogs.ConfirmDialog	method	private String getAlwaysOnVpnPackage()
+com.android.vpndialogs.ConfirmDialog	method	private String getSimplifiedLabel(String str, String str2)
+com.android.vpndialogs.ConfirmDialog	method	private boolean prepareVpn()
+com.android.vpndialogs.ConfirmDialog	method	protected String getSanitizedVpnLabel(String str, String str2)
+com.android.vpndialogs.ConfirmDialog	method	protected void onCreate(Bundle bundle)
+com.android.vpndialogs.ConfirmDialog	method	public ConfirmDialog()
+com.android.vpndialogs.ConfirmDialog	method	public ConfirmDialog(int i)
+com.android.vpndialogs.ConfirmDialog	method	public Drawable getDrawable(String str)
+com.android.vpndialogs.ConfirmDialog	method	public void onBackPressed()
+com.android.vpndialogs.ConfirmDialog	method	public void onClick(DialogInterface dialogInterface, int i)
+com.android.vpndialogs.ManageDialog	field	private Handler mHandler;
+com.android.vpndialogs.ManageDialog	field	private IConnectivityManager mService;
+com.android.vpndialogs.ManageDialog	field	private TextView mDataReceived;
+com.android.vpndialogs.ManageDialog	field	private TextView mDataTransmitted;
+com.android.vpndialogs.ManageDialog	field	private TextView mDuration;
+com.android.vpndialogs.ManageDialog	field	private VpnConfig mConfig;
+com.android.vpndialogs.ManageDialog	field	private boolean mDataRowsHidden;
+com.android.vpndialogs.ManageDialog	method	private String[] getNumbers() throws Throwable
+com.android.vpndialogs.ManageDialog	method	protected void onCreate(Bundle bundle)
+com.android.vpndialogs.ManageDialog	method	protected void onDestroy()
+com.android.vpndialogs.ManageDialog	method	public boolean handleMessage(Message message) throws Throwable
+com.android.vpndialogs.ManageDialog	method	public void onClick(DialogInterface dialogInterface, int i)
+com.android.vpndialogs.PlatformVpnConfirmDialog	method	public PlatformVpnConfirmDialog()
+com.android.vpndialogs.R$drawable	field	public static final int ic_vpn_dialog;
+com.android.vpndialogs.R$id	field	public static final int data_received;
+com.android.vpndialogs.R$id	field	public static final int data_received_row;
+com.android.vpndialogs.R$id	field	public static final int data_transmitted;
+com.android.vpndialogs.R$id	field	public static final int data_transmitted_row;
+com.android.vpndialogs.R$id	field	public static final int duration;
+com.android.vpndialogs.R$id	field	public static final int message;
+com.android.vpndialogs.R$id	field	public static final int session;
+com.android.vpndialogs.R$id	field	public static final int warning;
+com.android.vpndialogs.R$layout	field	public static final int always_on_disconnected;
+com.android.vpndialogs.R$layout	field	public static final int confirm;
+com.android.vpndialogs.R$layout	field	public static final int manage;
+com.android.vpndialogs.R$string	field	public static final int always_on_disconnected_message;
+com.android.vpndialogs.R$string	field	public static final int always_on_disconnected_message_lockdown;
+com.android.vpndialogs.R$string	field	public static final int always_on_disconnected_message_separator;
+com.android.vpndialogs.R$string	field	public static final int always_on_disconnected_message_settings_link;
+com.android.vpndialogs.R$string	field	public static final int always_on_disconnected_title;
+com.android.vpndialogs.R$string	field	public static final int configure;
+com.android.vpndialogs.R$string	field	public static final int data_received;
+com.android.vpndialogs.R$string	field	public static final int data_transmitted;
+com.android.vpndialogs.R$string	field	public static final int data_value_format;
+com.android.vpndialogs.R$string	field	public static final int disconnect;
+com.android.vpndialogs.R$string	field	public static final int dismiss;
+com.android.vpndialogs.R$string	field	public static final int duration;
+com.android.vpndialogs.R$string	field	public static final int legacy_title;
+com.android.vpndialogs.R$string	field	public static final int open_app;
+com.android.vpndialogs.R$string	field	public static final int prompt;
+com.android.vpndialogs.R$string	field	public static final int sanitized_vpn_label;
+com.android.vpndialogs.R$string	field	public static final int sanitized_vpn_label_with_ellipsis;
+com.android.vpndialogs.R$string	field	public static final int session;
+com.android.vpndialogs.R$string	field	public static final int warning;
+com.android.vpndialogs.R$style	field	public static final int label;
+com.android.vpndialogs.R$style	field	public static final int value;

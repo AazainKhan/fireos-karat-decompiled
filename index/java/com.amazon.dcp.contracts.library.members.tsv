@@ -1,0 +1,778 @@
+class	kind	declaration
+com.amazon.dcp.contracts.library.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.dcp.contracts.library.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.dcp.contracts.library.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.dcp.contracts.library.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.dcp.contracts.library.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.dcp.contracts.library.R	method	private R()
+com.amazon.dcp.ota.BuildProperties	field	private final Properties mProperties;
+com.amazon.dcp.ota.BuildProperties	field	private static final int VERSION;
+com.amazon.dcp.ota.BuildProperties	field	public static final String BUILD_TYPE;
+com.amazon.dcp.ota.BuildProperties	field	public static final String PRODUCT_DEVICE;
+com.amazon.dcp.ota.BuildProperties	field	public static final String PRODUCT_MODEL;
+com.amazon.dcp.ota.BuildProperties	field	public static final String PRODUCT_NAME;
+com.amazon.dcp.ota.BuildProperties	field	public static final String SIGNATURE_TYPE;
+com.amazon.dcp.ota.BuildProperties	field	public static final String VERSION_NAME;
+com.amazon.dcp.ota.BuildProperties	field	public static final String VERSION_NUMBER;
+com.amazon.dcp.ota.BuildProperties	method	public BuildProperties(Properties properties) throws Throwable
+com.amazon.dcp.ota.BuildProperties	method	public Integer getVersionNumber()
+com.amazon.dcp.ota.BuildProperties	method	public Long getBuildVersionNumber()
+com.amazon.dcp.ota.BuildProperties	method	public Properties getProperties()
+com.amazon.dcp.ota.BuildProperties	method	public String getBuildType()
+com.amazon.dcp.ota.BuildProperties	method	public String getProductDevice()
+com.amazon.dcp.ota.BuildProperties	method	public String getProductModel()
+com.amazon.dcp.ota.BuildProperties	method	public String getProductName()
+com.amazon.dcp.ota.BuildProperties	method	public String getSignatureType()
+com.amazon.dcp.ota.BuildProperties	method	public String getVersionName()
+com.amazon.dcp.ota.BuildProperties	method	public boolean isEmpty()
+com.amazon.dcp.ota.BuildProperties	method	public int describeContents()
+com.amazon.dcp.ota.BuildProperties	method	public static BuildProperties fromParcel(Parcel parcel) throws Throwable
+com.amazon.dcp.ota.BuildProperties	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.dcp.ota.Checks	method	private Checks()
+com.amazon.dcp.ota.Checks	method	private static <T extends Throwable> void throwException(Class<T> cls, String str, Object... objArr) throws Throwable
+com.amazon.dcp.ota.Checks	method	public static <T extends Throwable> void checkEquals(Comparable comparable, Comparable comparable2, Class<T> cls, String str, Object... objArr) throws Throwable
+com.amazon.dcp.ota.Checks	method	public static <T extends Throwable> void checkFalse(boolean z, Class<T> cls, String str, Object... objArr) throws Throwable
+com.amazon.dcp.ota.Checks	method	public static <T extends Throwable> void checkNotEmpty(Collection<?> collection, Class<T> cls, String str, Object... objArr) throws Throwable
+com.amazon.dcp.ota.Checks	method	public static <T extends Throwable> void checkNotEmpty(Object[] objArr, Class<T> cls, String str, Object... objArr2) throws Throwable
+com.amazon.dcp.ota.Checks	method	public static <T extends Throwable> void checkNotEmpty(String str, Class<T> cls, String str2, Object... objArr) throws Throwable
+com.amazon.dcp.ota.Checks	method	public static <T extends Throwable> void checkNotEquals(Comparable comparable, Comparable comparable2, Class<T> cls, String str, Object... objArr) throws Throwable
+com.amazon.dcp.ota.Checks	method	public static <T extends Throwable> void checkNotNull(Object obj, Class<T> cls, String str, Object... objArr) throws Throwable
+com.amazon.dcp.ota.Checks	method	public static <T extends Throwable> void checkTrue(boolean z, Class<T> cls, String str, Object... objArr) throws Throwable
+com.amazon.dcp.ota.Checks	method	public static <T> boolean containsAny(Collection<T> collection, T... tArr)
+com.amazon.dcp.ota.Checks	method	public static boolean equalsAny(String str, String... strArr)
+com.amazon.dcp.ota.IOTAControlService	field	public static final String DESCRIPTOR;
+com.amazon.dcp.ota.IOTAControlService$Default	method	public IBinder asBinder()
+com.amazon.dcp.ota.IOTAControlService$Default	method	public List<OTAInstallWaitReason> getReasonsNotToInstallUpdates(UpdateManifest updateManifest) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Default	method	public List<String> getAllBlockedApps() throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Default	method	public List<UpdateManifest> checkForUpdates(UpdateCheckReason updateCheckReason, List<UpdateType> list) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Default	method	public List<UpdateManifest> getActiveUpdates(List<UpdateType> list) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Default	method	public List<UpdateManifest> getAllUpdates(List<UpdateType> list) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Default	method	public Sideload buildSideload(String str) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Default	method	public String getLastCheckGroup() throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Default	method	public UpdateManifest getManifest(long j) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Default	method	public UpdatesProgress checkAndInstallUpdates(List<OfferUpdateType> list, IUpdatesProgressListener iUpdatesProgressListener, String str) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Default	method	public boolean isAppBlocked(String str) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Default	method	public int ensureSideloadCanBeInstalled(Sideload sideload) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Default	method	public int installSideload(Sideload sideload) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Default	method	public long getLastCheckTimeInMillis() throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Default	method	public long getLastOSInstallationTime() throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Default	method	public void blockApp(String str, String str2) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Default	method	public void downloadAppManifests(List<UpdateManifest> list) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Default	method	public void downloadManifest(UpdateManifest updateManifest) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Default	method	public void registerSideloadCallback(ISideloadCallback iSideloadCallback) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Default	method	public void registerUpdateListener(IUpdateStatusListener iUpdateStatusListener, UpdateManifest updateManifest) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Default	method	public void resumeOSInstallation(String str) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Default	method	public void startDirectedInstallUpdates(String str, UpdateManifest updateManifest) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Default	method	public void startInstallUpdates(String str, UpdateManifest updateManifest) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Default	method	public void suspendOSInstallation(String str, int i) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Default	method	public void unblockApp(String str, String str2) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Default	method	public void unregisterSideloadCallback(ISideloadCallback iSideloadCallback) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Default	method	public void unregisterUpdateListener(IUpdateStatusListener iUpdateStatusListener) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Default	method	public void unregisterUpdatesProgressListener(IUpdatesProgressListener iUpdatesProgressListener) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Stub	field	static final int TRANSACTION_blockApp;
+com.amazon.dcp.ota.IOTAControlService$Stub	field	static final int TRANSACTION_buildSideload;
+com.amazon.dcp.ota.IOTAControlService$Stub	field	static final int TRANSACTION_checkAndInstallUpdates;
+com.amazon.dcp.ota.IOTAControlService$Stub	field	static final int TRANSACTION_checkForUpdates;
+com.amazon.dcp.ota.IOTAControlService$Stub	field	static final int TRANSACTION_downloadAppManifests;
+com.amazon.dcp.ota.IOTAControlService$Stub	field	static final int TRANSACTION_downloadManifest;
+com.amazon.dcp.ota.IOTAControlService$Stub	field	static final int TRANSACTION_ensureSideloadCanBeInstalled;
+com.amazon.dcp.ota.IOTAControlService$Stub	field	static final int TRANSACTION_getActiveUpdates;
+com.amazon.dcp.ota.IOTAControlService$Stub	field	static final int TRANSACTION_getAllBlockedApps;
+com.amazon.dcp.ota.IOTAControlService$Stub	field	static final int TRANSACTION_getAllUpdates;
+com.amazon.dcp.ota.IOTAControlService$Stub	field	static final int TRANSACTION_getLastCheckGroup;
+com.amazon.dcp.ota.IOTAControlService$Stub	field	static final int TRANSACTION_getLastCheckTimeInMillis;
+com.amazon.dcp.ota.IOTAControlService$Stub	field	static final int TRANSACTION_getLastOSInstallationTime;
+com.amazon.dcp.ota.IOTAControlService$Stub	field	static final int TRANSACTION_getManifest;
+com.amazon.dcp.ota.IOTAControlService$Stub	field	static final int TRANSACTION_getReasonsNotToInstallUpdates;
+com.amazon.dcp.ota.IOTAControlService$Stub	field	static final int TRANSACTION_installSideload;
+com.amazon.dcp.ota.IOTAControlService$Stub	field	static final int TRANSACTION_isAppBlocked;
+com.amazon.dcp.ota.IOTAControlService$Stub	field	static final int TRANSACTION_registerSideloadCallback;
+com.amazon.dcp.ota.IOTAControlService$Stub	field	static final int TRANSACTION_registerUpdateListener;
+com.amazon.dcp.ota.IOTAControlService$Stub	field	static final int TRANSACTION_resumeOSInstallation;
+com.amazon.dcp.ota.IOTAControlService$Stub	field	static final int TRANSACTION_startDirectedInstallUpdates;
+com.amazon.dcp.ota.IOTAControlService$Stub	field	static final int TRANSACTION_startInstallUpdates;
+com.amazon.dcp.ota.IOTAControlService$Stub	field	static final int TRANSACTION_suspendOSInstallation;
+com.amazon.dcp.ota.IOTAControlService$Stub	field	static final int TRANSACTION_unblockApp;
+com.amazon.dcp.ota.IOTAControlService$Stub	field	static final int TRANSACTION_unregisterSideloadCallback;
+com.amazon.dcp.ota.IOTAControlService$Stub	field	static final int TRANSACTION_unregisterUpdateListener;
+com.amazon.dcp.ota.IOTAControlService$Stub	field	static final int TRANSACTION_unregisterUpdatesProgressListener;
+com.amazon.dcp.ota.IOTAControlService$Stub	method	public IBinder asBinder()
+com.amazon.dcp.ota.IOTAControlService$Stub	method	public Stub()
+com.amazon.dcp.ota.IOTAControlService$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Stub	method	public static IOTAControlService asInterface(IBinder iBinder)
+com.amazon.dcp.ota.IOTAControlService$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.dcp.ota.IOTAControlService$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.dcp.ota.IOTAControlService$Stub$Proxy	method	public List<OTAInstallWaitReason> getReasonsNotToInstallUpdates(UpdateManifest updateManifest) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Stub$Proxy	method	public List<String> getAllBlockedApps() throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Stub$Proxy	method	public List<UpdateManifest> checkForUpdates(UpdateCheckReason updateCheckReason, List<UpdateType> list) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Stub$Proxy	method	public List<UpdateManifest> getActiveUpdates(List<UpdateType> list) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Stub$Proxy	method	public List<UpdateManifest> getAllUpdates(List<UpdateType> list) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Stub$Proxy	method	public Sideload buildSideload(String str) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.dcp.ota.IOTAControlService$Stub$Proxy	method	public String getLastCheckGroup() throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Stub$Proxy	method	public UpdateManifest getManifest(long j) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Stub$Proxy	method	public UpdatesProgress checkAndInstallUpdates(List<OfferUpdateType> list, IUpdatesProgressListener iUpdatesProgressListener, String str) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Stub$Proxy	method	public boolean isAppBlocked(String str) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Stub$Proxy	method	public int ensureSideloadCanBeInstalled(Sideload sideload) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Stub$Proxy	method	public int installSideload(Sideload sideload) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Stub$Proxy	method	public long getLastCheckTimeInMillis() throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Stub$Proxy	method	public long getLastOSInstallationTime() throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Stub$Proxy	method	public void blockApp(String str, String str2) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Stub$Proxy	method	public void downloadAppManifests(List<UpdateManifest> list) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Stub$Proxy	method	public void downloadManifest(UpdateManifest updateManifest) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Stub$Proxy	method	public void registerSideloadCallback(ISideloadCallback iSideloadCallback) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Stub$Proxy	method	public void registerUpdateListener(IUpdateStatusListener iUpdateStatusListener, UpdateManifest updateManifest) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Stub$Proxy	method	public void resumeOSInstallation(String str) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Stub$Proxy	method	public void startDirectedInstallUpdates(String str, UpdateManifest updateManifest) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Stub$Proxy	method	public void startInstallUpdates(String str, UpdateManifest updateManifest) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Stub$Proxy	method	public void suspendOSInstallation(String str, int i) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Stub$Proxy	method	public void unblockApp(String str, String str2) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Stub$Proxy	method	public void unregisterSideloadCallback(ISideloadCallback iSideloadCallback) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Stub$Proxy	method	public void unregisterUpdateListener(IUpdateStatusListener iUpdateStatusListener) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$Stub$Proxy	method	public void unregisterUpdatesProgressListener(IUpdatesProgressListener iUpdatesProgressListener) throws RemoteException
+com.amazon.dcp.ota.IOTAControlService$_Parcel	method	public static <T extends Parcelable> void writeTypedObject(Parcel parcel, T t, int i)
+com.amazon.dcp.ota.IOTAControlService$_Parcel	method	public static <T> T readTypedObject(Parcel parcel, Parcelable.Creator<T> creator)
+com.amazon.dcp.ota.ISideloadCallback	field	public static final String DESCRIPTOR;
+com.amazon.dcp.ota.ISideloadCallback$Default	method	public IBinder asBinder()
+com.amazon.dcp.ota.ISideloadCallback$Default	method	public void onSideloadFound(Sideload sideload) throws RemoteException
+com.amazon.dcp.ota.ISideloadCallback$Default	method	public void onSideloadLost() throws RemoteException
+com.amazon.dcp.ota.ISideloadCallback$Stub	field	static final int TRANSACTION_onSideloadFound;
+com.amazon.dcp.ota.ISideloadCallback$Stub	field	static final int TRANSACTION_onSideloadLost;
+com.amazon.dcp.ota.ISideloadCallback$Stub	method	public IBinder asBinder()
+com.amazon.dcp.ota.ISideloadCallback$Stub	method	public Stub()
+com.amazon.dcp.ota.ISideloadCallback$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.dcp.ota.ISideloadCallback$Stub	method	public static ISideloadCallback asInterface(IBinder iBinder)
+com.amazon.dcp.ota.ISideloadCallback$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.dcp.ota.ISideloadCallback$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.dcp.ota.ISideloadCallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.dcp.ota.ISideloadCallback$Stub$Proxy	method	public void onSideloadFound(Sideload sideload) throws RemoteException
+com.amazon.dcp.ota.ISideloadCallback$Stub$Proxy	method	public void onSideloadLost() throws RemoteException
+com.amazon.dcp.ota.ISideloadCallback$_Parcel	method	public static <T extends Parcelable> void writeTypedObject(Parcel parcel, T t, int i)
+com.amazon.dcp.ota.ISideloadCallback$_Parcel	method	public static <T> T readTypedObject(Parcel parcel, Parcelable.Creator<T> creator)
+com.amazon.dcp.ota.IUpdateStatusListener	field	public static final String DESCRIPTOR;
+com.amazon.dcp.ota.IUpdateStatusListener$Default	method	public IBinder asBinder()
+com.amazon.dcp.ota.IUpdateStatusListener$Default	method	public void onStatusUpdate(UpdateManifest updateManifest) throws RemoteException
+com.amazon.dcp.ota.IUpdateStatusListener$Stub	field	static final int TRANSACTION_onStatusUpdate;
+com.amazon.dcp.ota.IUpdateStatusListener$Stub	method	public IBinder asBinder()
+com.amazon.dcp.ota.IUpdateStatusListener$Stub	method	public Stub()
+com.amazon.dcp.ota.IUpdateStatusListener$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.dcp.ota.IUpdateStatusListener$Stub	method	public static IUpdateStatusListener asInterface(IBinder iBinder)
+com.amazon.dcp.ota.IUpdateStatusListener$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.dcp.ota.IUpdateStatusListener$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.dcp.ota.IUpdateStatusListener$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.dcp.ota.IUpdateStatusListener$Stub$Proxy	method	public void onStatusUpdate(UpdateManifest updateManifest) throws RemoteException
+com.amazon.dcp.ota.IUpdateStatusListener$_Parcel	method	public static <T extends Parcelable> void writeTypedObject(Parcel parcel, T t, int i)
+com.amazon.dcp.ota.IUpdateStatusListener$_Parcel	method	public static <T> T readTypedObject(Parcel parcel, Parcelable.Creator<T> creator)
+com.amazon.dcp.ota.IUpdatesProgressListener	field	public static final String DESCRIPTOR;
+com.amazon.dcp.ota.IUpdatesProgressListener$Default	method	public IBinder asBinder()
+com.amazon.dcp.ota.IUpdatesProgressListener$Default	method	public void onProgressUpdate(UpdatesProgress updatesProgress) throws RemoteException
+com.amazon.dcp.ota.IUpdatesProgressListener$Stub	field	static final int TRANSACTION_onProgressUpdate;
+com.amazon.dcp.ota.IUpdatesProgressListener$Stub	method	public IBinder asBinder()
+com.amazon.dcp.ota.IUpdatesProgressListener$Stub	method	public Stub()
+com.amazon.dcp.ota.IUpdatesProgressListener$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.dcp.ota.IUpdatesProgressListener$Stub	method	public static IUpdatesProgressListener asInterface(IBinder iBinder)
+com.amazon.dcp.ota.IUpdatesProgressListener$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.dcp.ota.IUpdatesProgressListener$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.dcp.ota.IUpdatesProgressListener$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.dcp.ota.IUpdatesProgressListener$Stub$Proxy	method	public void onProgressUpdate(UpdatesProgress updatesProgress) throws RemoteException
+com.amazon.dcp.ota.IUpdatesProgressListener$_Parcel	method	public static <T extends Parcelable> void writeTypedObject(Parcel parcel, T t, int i)
+com.amazon.dcp.ota.IUpdatesProgressListener$_Parcel	method	public static <T> T readTypedObject(Parcel parcel, Parcelable.Creator<T> creator)
+com.amazon.dcp.ota.MaintenanceWindowModel	field	private final int mEndMinutes;
+com.amazon.dcp.ota.MaintenanceWindowModel	field	private final int mStartMinutes;
+com.amazon.dcp.ota.MaintenanceWindowModel	method	public MaintenanceWindowModel(int i, int i2)
+com.amazon.dcp.ota.MaintenanceWindowModel	method	public boolean equals(Object obj)
+com.amazon.dcp.ota.MaintenanceWindowModel	method	public int getEndMinutes()
+com.amazon.dcp.ota.MaintenanceWindowModel	method	public int getStartMinutes()
+com.amazon.dcp.ota.MaintenanceWindowModel	method	public int hashCode()
+com.amazon.dcp.ota.MaintenanceWindowProvider	field	private static final String OTA_CHECK_MAINTENANCE_WINDOW_URI;
+com.amazon.dcp.ota.MaintenanceWindowProvider	field	private static final String OTA_IS_IN_MAINTENANCE_WINDOW_URI;
+com.amazon.dcp.ota.MaintenanceWindowProvider	field	private static final String TAG;
+com.amazon.dcp.ota.MaintenanceWindowProvider	field	private static final String[] IS_IN_WINDOW_PROJECTION;
+com.amazon.dcp.ota.MaintenanceWindowProvider	field	private static final String[] WINDOW_PROJECTION;
+com.amazon.dcp.ota.MaintenanceWindowProvider	field	private static final Uri CONTENT_URI;
+com.amazon.dcp.ota.MaintenanceWindowProvider	field	private static final Uri IS_IN_WINDOW_URI;
+com.amazon.dcp.ota.MaintenanceWindowProvider	method	private MaintenanceWindowProvider()
+com.amazon.dcp.ota.MaintenanceWindowProvider	method	public static MaintenanceWindowModel queryWindow(ContentResolver contentResolver) throws Throwable
+com.amazon.dcp.ota.MaintenanceWindowProvider	method	public static MaintenanceWindowProvider getInstance()
+com.amazon.dcp.ota.MaintenanceWindowProvider	method	public static boolean isInMaintenanceWindow(ContentResolver contentResolver)
+com.amazon.dcp.ota.MaintenanceWindowProvider	method	public static boolean setWindow(ContentResolver contentResolver, int i, int i2)
+com.amazon.dcp.ota.NetworkType	field	private final String mServerString;
+com.amazon.dcp.ota.NetworkType	field	private final int mValue;
+com.amazon.dcp.ota.NetworkType	field	public static final String TAG;
+com.amazon.dcp.ota.NetworkType	method	private static NetworkType fromCollection(Set<NetworkType> set)
+com.amazon.dcp.ota.NetworkType	method	public String toString()
+com.amazon.dcp.ota.NetworkType	method	public int describeContents()
+com.amazon.dcp.ota.NetworkType	method	public int value()
+com.amazon.dcp.ota.NetworkType	method	public static NetworkType fromCollection(Collection<NetworkType> collection)
+com.amazon.dcp.ota.NetworkType	method	public static NetworkType fromServerString(String str)
+com.amazon.dcp.ota.NetworkType	method	public static NetworkType fromValue(int i)
+com.amazon.dcp.ota.NetworkType	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.dcp.ota.OTAConstants	field	public static final Integer VERSION_NUMBER_EXCEEDS_INT_RANGE;
+com.amazon.dcp.ota.OTAConstants	field	public static final String ACTION_AMAZON_PACKAGE_MANAGER_INTENT;
+com.amazon.dcp.ota.OTAConstants	field	public static final String ACTION_DISABLE_NETWORK_PROMPT;
+com.amazon.dcp.ota.OTAConstants	field	public static final String ACTION_DO_UPDATE;
+com.amazon.dcp.ota.OTAConstants	field	public static final String ACTION_NETWORK_NOTIFICATION;
+com.amazon.dcp.ota.OTAConstants	field	public static final String ACTION_OTA_BROADCAST;
+com.amazon.dcp.ota.OTAConstants	field	public static final String ACTION_OTA_CONTROLLER;
+com.amazon.dcp.ota.OTAConstants	field	public static final String ACTION_OTA_DEVICE_STORAGE_LOW;
+com.amazon.dcp.ota.OTAConstants	field	public static final String ACTION_OTA_DEVICE_STORAGE_OK;
+com.amazon.dcp.ota.OTAConstants	field	public static final String ACTION_OTA_DOWNLOAD_OBSERVER;
+com.amazon.dcp.ota.OTAConstants	field	public static final String ACTION_OTA_INSTALLED;
+com.amazon.dcp.ota.OTAConstants	field	public static final String ACTION_OTA_INSTALL_ERROR;
+com.amazon.dcp.ota.OTAConstants	field	public static final String ACTION_OTA_MONITOR_APP_STATE;
+com.amazon.dcp.ota.OTAConstants	field	public static final String ACTION_OTA_READY_TO_INSTALL;
+com.amazon.dcp.ota.OTAConstants	field	public static final String ACTION_OTA_UPDATE_INSTALLABLE;
+com.amazon.dcp.ota.OTAConstants	field	public static final String ACTION_PROCESS_UPDATES;
+com.amazon.dcp.ota.OTAConstants	field	public static final String ACTION_SHOW_SIZE_LIMIT_DIALOG;
+com.amazon.dcp.ota.OTAConstants	field	public static final String ACTION_SYSTEM_UPDATE_SETTINGS;
+com.amazon.dcp.ota.OTAConstants	field	public static final String ACTION_SYSTEM_UPDATE_SETTINGS_TABLET;
+com.amazon.dcp.ota.OTAConstants	field	public static final String ACTION_UPDATES_STATE_CHANGED;
+com.amazon.dcp.ota.OTAConstants	field	public static final String ACTION_UPDATE_ERROR;
+com.amazon.dcp.ota.OTAConstants	field	public static final String EXTRA_BROADCAST_OTA_MANIFEST_ID;
+com.amazon.dcp.ota.OTAConstants	field	public static final String EXTRA_BROADCAST_OTA_SW_COMPONENT_ID;
+com.amazon.dcp.ota.OTAConstants	field	public static final String EXTRA_BROADCAST_OTA_SW_COMPONENT_VERSION;
+com.amazon.dcp.ota.OTAConstants	field	public static final String EXTRA_BROADCAST_OTA_UPDATE_STATE;
+com.amazon.dcp.ota.OTAConstants	field	public static final String EXTRA_BROADCAST_OTA_UPDATE_TYPE;
+com.amazon.dcp.ota.OTAConstants	field	public static final String EXTRA_OTA_APPS_TO_KILL;
+com.amazon.dcp.ota.OTAConstants	field	public static final String EXTRA_OTA_INSTALLABLE_MANIFEST_ID;
+com.amazon.dcp.ota.OTAConstants	field	public static final String EXTRA_OTA_INSTALLED;
+com.amazon.dcp.ota.OTAConstants	field	public static final String EXTRA_OTA_INSTALL_ERROR;
+com.amazon.dcp.ota.OTAConstants	field	public static final String EXTRA_UPDATES_FOUND;
+com.amazon.dcp.ota.OTAConstants	field	public static final String EXTRA_UPDATE_ERROR;
+com.amazon.dcp.ota.OTAConstants	field	public static final String LOG_TAG;
+com.amazon.dcp.ota.OTAConstants	field	public static final String OTA_INSTALLATION_SUCCESSFUL;
+com.amazon.dcp.ota.OTAConstants	field	public static final String OTA_STARTUP_LOGIC_PERFORMED_INTENT;
+com.amazon.dcp.ota.OTAConstants	field	public static final String OTA_STATUS_PRODUCTION_AUTHORITY;
+com.amazon.dcp.ota.OTAConstants	field	public static final String OTA_STATUS_PRODUCTION_AUTHORITY_LIMIT_PARAM;
+com.amazon.dcp.ota.OTAConstants	field	public static final String PERMISSION_MONITOR_OTA_UPDATES;
+com.amazon.dcp.ota.OTAConstants	field	public static final String PERMISSION_OTA_CONTROLLER;
+com.amazon.dcp.ota.OTAConstants	field	public static final String SHARED_PREFERENCE_INVENTORY_NAME;
+com.amazon.dcp.ota.OTAConstants	field	public static final String SHARED_PREFERENCE_KEY_INVENTORY_HEX;
+com.amazon.dcp.ota.OTAConstants	method	private OTAConstants()
+com.amazon.dcp.ota.OTAConstants$UpdateError	field	private final int mValue;
+com.amazon.dcp.ota.OTAConstants$UpdateError	method	public int value()
+com.amazon.dcp.ota.OTAConstants$UpdateError	method	public static UpdateError fromValue(int i)
+com.amazon.dcp.ota.OTAController	field	private ContentResolver mResolver;
+com.amazon.dcp.ota.OTAController	field	private Context mContext;
+com.amazon.dcp.ota.OTAController	field	private OtaServiceConnectionManager.OtaServiceWrapper mService;
+com.amazon.dcp.ota.OTAController	field	private final Handler mHandler;
+com.amazon.dcp.ota.OTAController	field	private final MaintenanceWindowProvider mMaintenanceWindowProvider;
+com.amazon.dcp.ota.OTAController	field	private final Map<SideloadListener, SideloadCallback> mRegisteredSideloadListeners;
+com.amazon.dcp.ota.OTAController	field	private final Map<UpdateStatusListener, List<UpdateStatusListenerWrapper>> mRegisteredUpdateStatusListeners;
+com.amazon.dcp.ota.OTAController	field	private final Map<UpdatesProgressListener, UpdatesProgressListenerWrapper> mRegisteredUpdatesProgressListeners;
+com.amazon.dcp.ota.OTAController	field	private final OtaServiceConnectionManager mOtaServiceConnectionManager;
+com.amazon.dcp.ota.OTAController	field	private static final String BLOCK_UNBLOCK_APP_PERMISSION;
+com.amazon.dcp.ota.OTAController	field	private static final String SUSPEND_RESUME_OS_INSTALLATION_PERMISSION;
+com.amazon.dcp.ota.OTAController	field	private static final String TAG;
+com.amazon.dcp.ota.OTAController	field	private static final int MAXIMUM_OS_INSTALLATION_SUSPEND_DURATION_IN_MINUTES;
+com.amazon.dcp.ota.OTAController	field	private static final int MINIMUM_OS_INSTALLATION_SUSPEND_DURATION_IN_MINUTES;
+com.amazon.dcp.ota.OTAController	method	private List<UpdateType> createUpdateTypeList(UpdateType... updateTypeArr) throws Throwable
+com.amazon.dcp.ota.OTAController	method	private String getCallingPackageName(Context context)
+com.amazon.dcp.ota.OTAController	method	private void assertNotRunningOnMainThread() throws Throwable
+com.amazon.dcp.ota.OTAController	method	private void assertPermissionGranted(PackageManager packageManager, String str, String str2) throws Throwable
+com.amazon.dcp.ota.OTAController	method	private void throwExceptionOnError(OTASideloadException.ErrorType errorType) throws OTASideloadException
+com.amazon.dcp.ota.OTAController	method	private void unregisterQuietly()
+com.amazon.dcp.ota.OTAController	method	public Date getLastCheckDate() throws Throwable
+com.amazon.dcp.ota.OTAController	method	public Date getLastOSInstallationDate() throws Throwable
+com.amazon.dcp.ota.OTAController	method	public List<OTAInstallWaitReason> getReasonsNotToInstallUpdates(UpdateManifest updateManifest) throws Throwable
+com.amazon.dcp.ota.OTAController	method	public List<String> getAllBlockedApps() throws Throwable
+com.amazon.dcp.ota.OTAController	method	public List<UpdateManifest> checkForUpdates(UpdateCheckReason updateCheckReason, UpdateType... updateTypeArr) throws Throwable
+com.amazon.dcp.ota.OTAController	method	public List<UpdateManifest> getActiveUpdates(UpdateType... updateTypeArr) throws Throwable
+com.amazon.dcp.ota.OTAController	method	public List<UpdateManifest> getAllUpdates(UpdateType... updateTypeArr) throws Throwable
+com.amazon.dcp.ota.OTAController	method	public OTAController(Context context)
+com.amazon.dcp.ota.OTAController	method	public Sideload buildSideload(String str) throws OTASideloadException, OTAUnavailableException
+com.amazon.dcp.ota.OTAController	method	public String getLastCheckGroup() throws Throwable
+com.amazon.dcp.ota.OTAController	method	public UpdateManifest getManifest(long j) throws Throwable
+com.amazon.dcp.ota.OTAController	method	public UpdateStatusListener.Status getUpdateStatus(UpdateManifest updateManifest)
+com.amazon.dcp.ota.OTAController	method	public UpdatesProgress checkAndInstallUpdates(List<OfferUpdateType> list, UpdatesProgressListener updatesProgressListener) throws Throwable
+com.amazon.dcp.ota.OTAController	method	public boolean cancelUpdates(UpdateManifest updateManifest) throws OTAUnavailableException
+com.amazon.dcp.ota.OTAController	method	public boolean isAppBlocked(String str) throws Throwable
+com.amazon.dcp.ota.OTAController	method	public boolean isClosed()
+com.amazon.dcp.ota.OTAController	method	public boolean isInMaintenanceWindow() throws Throwable
+com.amazon.dcp.ota.OTAController	method	public boolean updateMaintenanceWindow(int i, int i2) throws Throwable
+com.amazon.dcp.ota.OTAController	method	public int[] queryMaintenanceWindow() throws Throwable
+com.amazon.dcp.ota.OTAController	method	public void blockApp(String str) throws Throwable
+com.amazon.dcp.ota.OTAController	method	public void close()
+com.amazon.dcp.ota.OTAController	method	public void downloadAppManifests(List<UpdateManifest> list) throws Throwable
+com.amazon.dcp.ota.OTAController	method	public void downloadKnownAppUpdatesOverWan() throws OTAUnavailableException
+com.amazon.dcp.ota.OTAController	method	public void downloadManifest(UpdateManifest updateManifest) throws Throwable
+com.amazon.dcp.ota.OTAController	method	public void ensureSideloadCanBeInstalled(Sideload sideload) throws Throwable
+com.amazon.dcp.ota.OTAController	method	public void installSideload(Sideload sideload) throws Throwable
+com.amazon.dcp.ota.OTAController	method	public void pauseWhenOnMeteredConnection(UpdateManifest updateManifest) throws OTAUnavailableException
+com.amazon.dcp.ota.OTAController	method	public void registerSideloadListener(SideloadListener sideloadListener) throws Throwable
+com.amazon.dcp.ota.OTAController	method	public void registerUpdateListener(UpdateManifest updateManifest, UpdateStatusListener updateStatusListener) throws OTAUnavailableException
+com.amazon.dcp.ota.OTAController	method	public void registerUpdateStatusListener(UpdateManifest updateManifest, UpdateStatusListener updateStatusListener)
+com.amazon.dcp.ota.OTAController	method	public void resumeOSInstallation(String str) throws Throwable
+com.amazon.dcp.ota.OTAController	method	public void startDirectedInstallUpdates(UpdateManifest updateManifest) throws Throwable
+com.amazon.dcp.ota.OTAController	method	public void startInstallAllUpdates() throws OTAUnavailableException
+com.amazon.dcp.ota.OTAController	method	public void startInstallUpdates(UpdateManifest updateManifest) throws Throwable
+com.amazon.dcp.ota.OTAController	method	public void suspendOSInstallation(String str, int i) throws Throwable
+com.amazon.dcp.ota.OTAController	method	public void unblockApp(String str) throws Throwable
+com.amazon.dcp.ota.OTAController	method	public void unregisterSideloadListener(SideloadListener sideloadListener) throws OTAUnavailableException
+com.amazon.dcp.ota.OTAController	method	public void unregisterStatusListener(UpdateStatusListener updateStatusListener)
+com.amazon.dcp.ota.OTAController	method	public void unregisterUpdatesProgressListener(UpdatesProgressListener updatesProgressListener)
+com.amazon.dcp.ota.OTAController$SideloadCallback	field	private final AtomicBoolean mIsActive;
+com.amazon.dcp.ota.OTAController$SideloadCallback	field	private final SideloadListener mListener;
+com.amazon.dcp.ota.OTAController$SideloadCallback	method	public SideloadCallback(SideloadListener sideloadListener)
+com.amazon.dcp.ota.OTAController$SideloadCallback	method	public void onSideloadFound(final Sideload sideload) throws RemoteException
+com.amazon.dcp.ota.OTAController$SideloadCallback	method	public void onSideloadLost() throws RemoteException
+com.amazon.dcp.ota.OTAController$SideloadCallback	method	public void shutdown()
+com.amazon.dcp.ota.OTAController$UpdateStatusListener$Status	field	private final OTAFailure mFailure;
+com.amazon.dcp.ota.OTAController$UpdateStatusListener$Status	field	private final UpdateManifest mManifest;
+com.amazon.dcp.ota.OTAController$UpdateStatusListener$Status	field	private final UpdateState mState;
+com.amazon.dcp.ota.OTAController$UpdateStatusListener$Status	field	private final float mDownloadProgress;
+com.amazon.dcp.ota.OTAController$UpdateStatusListener$Status	method	public OTAFailure getFailure()
+com.amazon.dcp.ota.OTAController$UpdateStatusListener$Status	method	public UpdateManifest getManifest()
+com.amazon.dcp.ota.OTAController$UpdateStatusListener$Status	method	public UpdateState getState()
+com.amazon.dcp.ota.OTAController$UpdateStatusListener$Status	method	public float getDownloadProgress()
+com.amazon.dcp.ota.OTAFailure	field	private final OTAStep mStep;
+com.amazon.dcp.ota.OTAFailure	field	private final String mFailureString;
+com.amazon.dcp.ota.OTAFailure	field	private final int mValue;
+com.amazon.dcp.ota.OTAFailure	method	public OTAStep getStep()
+com.amazon.dcp.ota.OTAFailure	method	public String toString()
+com.amazon.dcp.ota.OTAFailure	method	public int describeContents()
+com.amazon.dcp.ota.OTAFailure	method	public int value()
+com.amazon.dcp.ota.OTAFailure	method	public static OTAFailure fromValue(int i)
+com.amazon.dcp.ota.OTAFailure	method	public static boolean isUnexpectedForE2EScenario(OTAFailure oTAFailure)
+com.amazon.dcp.ota.OTAFailure	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.dcp.ota.OTAInstallWaitReason	field	private final Severity mSeverity;
+com.amazon.dcp.ota.OTAInstallWaitReason	field	private final int mId;
+com.amazon.dcp.ota.OTAInstallWaitReason	method	public Severity getSeverity()
+com.amazon.dcp.ota.OTAInstallWaitReason	method	public int describeContents()
+com.amazon.dcp.ota.OTAInstallWaitReason	method	public static OTAInstallWaitReason fromValue(int i)
+com.amazon.dcp.ota.OTAInstallWaitReason	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.dcp.ota.OTASideloadException	field	private final ErrorType mErrorType;
+com.amazon.dcp.ota.OTASideloadException	field	private static final long serialVersionUID;
+com.amazon.dcp.ota.OTASideloadException	method	protected OTASideloadException(ErrorType errorType)
+com.amazon.dcp.ota.OTASideloadException	method	protected OTASideloadException(ErrorType errorType, Throwable th)
+com.amazon.dcp.ota.OTASideloadException	method	public ErrorType getErrorType()
+com.amazon.dcp.ota.OTASideloadException$ErrorType	field	private final int mValue;
+com.amazon.dcp.ota.OTASideloadException$ErrorType	method	public int value()
+com.amazon.dcp.ota.OTASideloadException$ErrorType	method	public static ErrorType fromValue(int i)
+com.amazon.dcp.ota.OTASideloadExceptionLowBatt	field	private static final long serialVersionUID;
+com.amazon.dcp.ota.OTASideloadExceptionLowBatt	method	public OTASideloadExceptionLowBatt()
+com.amazon.dcp.ota.OTASideloadExceptionLowBatt	method	public OTASideloadExceptionLowBatt(Throwable th)
+com.amazon.dcp.ota.OTASideloadExceptionNotEnoughDiskSpace	field	private static final long serialVersionUID;
+com.amazon.dcp.ota.OTASideloadExceptionNotEnoughDiskSpace	method	public OTASideloadExceptionNotEnoughDiskSpace()
+com.amazon.dcp.ota.OTASideloadExceptionNotEnoughDiskSpace	method	public OTASideloadExceptionNotEnoughDiskSpace(Throwable th)
+com.amazon.dcp.ota.OTASideloadExceptionRecoverable	field	private static final long serialVersionUID;
+com.amazon.dcp.ota.OTASideloadExceptionRecoverable	method	public OTASideloadExceptionRecoverable(OTASideloadException.ErrorType errorType)
+com.amazon.dcp.ota.OTASideloadExceptionRecoverable	method	public OTASideloadExceptionRecoverable(OTASideloadException.ErrorType errorType, Throwable th)
+com.amazon.dcp.ota.OTASideloadExceptionUnrecoverable	field	private static final long serialVersionUID;
+com.amazon.dcp.ota.OTASideloadExceptionUnrecoverable	method	public OTASideloadExceptionUnrecoverable(OTASideloadException.ErrorType errorType)
+com.amazon.dcp.ota.OTASideloadExceptionUnrecoverable	method	public OTASideloadExceptionUnrecoverable(OTASideloadException.ErrorType errorType, Throwable th)
+com.amazon.dcp.ota.OTAStep	field	private final String mStep;
+com.amazon.dcp.ota.OTAStep	method	public String toString()
+com.amazon.dcp.ota.OTAUnavailableException	field	private static final long serialVersionUID;
+com.amazon.dcp.ota.OTAUnavailableException	method	public OTAUnavailableException(String str)
+com.amazon.dcp.ota.OTAUnavailableException	method	public OTAUnavailableException(Throwable th)
+com.amazon.dcp.ota.OfferUpdateType	field	private final int mValue;
+com.amazon.dcp.ota.OfferUpdateType	method	public int describeContents()
+com.amazon.dcp.ota.OfferUpdateType	method	public int value()
+com.amazon.dcp.ota.OfferUpdateType	method	public static OfferUpdateType fromValue(int i)
+com.amazon.dcp.ota.OfferUpdateType	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.dcp.ota.OfferedUpdate	field	private OTAFailure mFailureReason;
+com.amazon.dcp.ota.OfferedUpdate	field	private String mPackageName;
+com.amazon.dcp.ota.OfferedUpdate	field	private UpdateStatus mStatus;
+com.amazon.dcp.ota.OfferedUpdate	field	private UpdateType mType;
+com.amazon.dcp.ota.OfferedUpdate	method	public OTAFailure getFailureReason()
+com.amazon.dcp.ota.OfferedUpdate	method	public String getPackageName()
+com.amazon.dcp.ota.OfferedUpdate	method	public String toString()
+com.amazon.dcp.ota.OfferedUpdate	method	public UpdateStatus getStatus()
+com.amazon.dcp.ota.OfferedUpdate	method	public UpdateType getType()
+com.amazon.dcp.ota.OfferedUpdate	method	public boolean equals(Object obj)
+com.amazon.dcp.ota.OfferedUpdate	method	public int describeContents()
+com.amazon.dcp.ota.OfferedUpdate	method	public int hashCode()
+com.amazon.dcp.ota.OfferedUpdate	method	public static OfferedUpdate fromParcel(Parcel parcel)
+com.amazon.dcp.ota.OfferedUpdate	method	public void setFailureReason(OTAFailure oTAFailure)
+com.amazon.dcp.ota.OfferedUpdate	method	public void setPackageName(String str)
+com.amazon.dcp.ota.OfferedUpdate	method	public void setStatus(UpdateStatus updateStatus)
+com.amazon.dcp.ota.OfferedUpdate	method	public void setType(UpdateType updateType)
+com.amazon.dcp.ota.OfferedUpdate	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.dcp.ota.OtaServiceConnectionManager	field	private IOTAControlService mService;
+com.amazon.dcp.ota.OtaServiceConnectionManager	field	private ServiceBinder mBinder;
+com.amazon.dcp.ota.OtaServiceConnectionManager	field	private ServiceNotClosedException mOpenedTrace;
+com.amazon.dcp.ota.OtaServiceConnectionManager	field	private final Context mContext;
+com.amazon.dcp.ota.OtaServiceConnectionManager	field	private final OtaServiceWrapper mOtaServiceWrapper;
+com.amazon.dcp.ota.OtaServiceConnectionManager	field	private final ServiceBinder.Factory mServiceBinderFactory;
+com.amazon.dcp.ota.OtaServiceConnectionManager	field	private static final String TAG;
+com.amazon.dcp.ota.OtaServiceConnectionManager	field	private static final int DEFAULT_BIND_TIMEOUT_SECONDS;
+com.amazon.dcp.ota.OtaServiceConnectionManager	method	private int checkPermission(String str)
+com.amazon.dcp.ota.OtaServiceConnectionManager	method	private void ensureHasPermission(String str) throws Throwable
+com.amazon.dcp.ota.OtaServiceConnectionManager	method	protected void finalize()
+com.amazon.dcp.ota.OtaServiceConnectionManager	method	public OtaServiceConnectionManager(Context context, ServiceBinder.Factory factory)
+com.amazon.dcp.ota.OtaServiceConnectionManager	method	public OtaServiceWrapper getServiceWrapper()
+com.amazon.dcp.ota.OtaServiceConnectionManager	method	public synchronized IOTAControlService getServiceBinder() throws OTAUnavailableException
+com.amazon.dcp.ota.OtaServiceConnectionManager	method	public synchronized boolean isClosed()
+com.amazon.dcp.ota.OtaServiceConnectionManager	method	public void closeQuietly()
+com.amazon.dcp.ota.OtaServiceConnectionManager$OtaServiceWrapper	method	public List<OTAInstallWaitReason> getReasonsNotToInstallUpdates(UpdateManifest updateManifest) throws OTAUnavailableException
+com.amazon.dcp.ota.OtaServiceConnectionManager$OtaServiceWrapper	method	public List<String> getAllBlockedApps() throws OTAUnavailableException
+com.amazon.dcp.ota.OtaServiceConnectionManager$OtaServiceWrapper	method	public List<UpdateManifest> checkForUpdates(UpdateCheckReason updateCheckReason, List<UpdateType> list) throws OTAUnavailableException
+com.amazon.dcp.ota.OtaServiceConnectionManager$OtaServiceWrapper	method	public List<UpdateManifest> getActiveUpdates(List<UpdateType> list) throws OTAUnavailableException
+com.amazon.dcp.ota.OtaServiceConnectionManager$OtaServiceWrapper	method	public List<UpdateManifest> getAllUpdates(List<UpdateType> list) throws OTAUnavailableException
+com.amazon.dcp.ota.OtaServiceConnectionManager$OtaServiceWrapper	method	public OtaServiceWrapper()
+com.amazon.dcp.ota.OtaServiceConnectionManager$OtaServiceWrapper	method	public Sideload buildSideload(String str) throws OTAUnavailableException
+com.amazon.dcp.ota.OtaServiceConnectionManager$OtaServiceWrapper	method	public String getLastCheckGroup() throws OTAUnavailableException
+com.amazon.dcp.ota.OtaServiceConnectionManager$OtaServiceWrapper	method	public UpdateManifest getManifest(long j) throws OTAUnavailableException
+com.amazon.dcp.ota.OtaServiceConnectionManager$OtaServiceWrapper	method	public UpdatesProgress checkAndInstallUpdates(List<OfferUpdateType> list, IUpdatesProgressListener iUpdatesProgressListener, String str) throws OTAUnavailableException
+com.amazon.dcp.ota.OtaServiceConnectionManager$OtaServiceWrapper	method	public boolean isAppBlocked(String str) throws OTAUnavailableException
+com.amazon.dcp.ota.OtaServiceConnectionManager$OtaServiceWrapper	method	public int ensureSideloadCanBeInstalled(Sideload sideload) throws OTAUnavailableException
+com.amazon.dcp.ota.OtaServiceConnectionManager$OtaServiceWrapper	method	public int installSideload(Sideload sideload) throws OTAUnavailableException
+com.amazon.dcp.ota.OtaServiceConnectionManager$OtaServiceWrapper	method	public long getLastCheckTimeInMillis() throws OTAUnavailableException
+com.amazon.dcp.ota.OtaServiceConnectionManager$OtaServiceWrapper	method	public long getLastOSInstallationTime() throws OTAUnavailableException
+com.amazon.dcp.ota.OtaServiceConnectionManager$OtaServiceWrapper	method	public void blockApp(String str, String str2) throws OTAUnavailableException
+com.amazon.dcp.ota.OtaServiceConnectionManager$OtaServiceWrapper	method	public void downloadAppManifests(List<UpdateManifest> list) throws OTAUnavailableException
+com.amazon.dcp.ota.OtaServiceConnectionManager$OtaServiceWrapper	method	public void downloadManifest(UpdateManifest updateManifest) throws OTAUnavailableException
+com.amazon.dcp.ota.OtaServiceConnectionManager$OtaServiceWrapper	method	public void registerSideloadCallback(ISideloadCallback iSideloadCallback) throws OTAUnavailableException
+com.amazon.dcp.ota.OtaServiceConnectionManager$OtaServiceWrapper	method	public void registerUpdateListener(IUpdateStatusListener iUpdateStatusListener, UpdateManifest updateManifest) throws OTAUnavailableException
+com.amazon.dcp.ota.OtaServiceConnectionManager$OtaServiceWrapper	method	public void resumeOSInstallation(String str) throws OTAUnavailableException
+com.amazon.dcp.ota.OtaServiceConnectionManager$OtaServiceWrapper	method	public void startDirectedInstallUpdates(String str, UpdateManifest updateManifest) throws OTAUnavailableException
+com.amazon.dcp.ota.OtaServiceConnectionManager$OtaServiceWrapper	method	public void startInstallUpdates(String str, UpdateManifest updateManifest) throws OTAUnavailableException
+com.amazon.dcp.ota.OtaServiceConnectionManager$OtaServiceWrapper	method	public void suspendOSInstallation(String str, int i) throws OTAUnavailableException
+com.amazon.dcp.ota.OtaServiceConnectionManager$OtaServiceWrapper	method	public void unblockApp(String str, String str2) throws OTAUnavailableException
+com.amazon.dcp.ota.OtaServiceConnectionManager$OtaServiceWrapper	method	public void unregisterSideloadCallback(ISideloadCallback iSideloadCallback) throws OTAUnavailableException
+com.amazon.dcp.ota.OtaServiceConnectionManager$OtaServiceWrapper	method	public void unregisterUpdateListener(IUpdateStatusListener iUpdateStatusListener) throws OTAUnavailableException
+com.amazon.dcp.ota.OtaServiceConnectionManager$OtaServiceWrapper	method	public void unregisterUpdatesProgressListener(IUpdatesProgressListener iUpdatesProgressListener) throws OTAUnavailableException
+com.amazon.dcp.ota.OtaServiceConnectionManager$ServiceNotClosedException	method	public ServiceNotClosedException()
+com.amazon.dcp.ota.ServiceBinder	field	private ComponentName mBoundComponent;
+com.amazon.dcp.ota.ServiceBinder	field	private IBinder mRetval;
+com.amazon.dcp.ota.ServiceBinder	field	private ServiceConnection mConnection;
+com.amazon.dcp.ota.ServiceBinder	field	private final Condition mStateChanged;
+com.amazon.dcp.ota.ServiceBinder	field	private final Context mContext;
+com.amazon.dcp.ota.ServiceBinder	field	private final Intent mIntent;
+com.amazon.dcp.ota.ServiceBinder	field	private final ReentrantLock mLock;
+com.amazon.dcp.ota.ServiceBinder	field	private final int mFlags;
+com.amazon.dcp.ota.ServiceBinder	field	private static final String TAG;
+com.amazon.dcp.ota.ServiceBinder	field	private volatile State mState;
+com.amazon.dcp.ota.ServiceBinder	method	private IBinder unsafeBind(Timeout timeout) throws InterruptedException, TimeoutException
+com.amazon.dcp.ota.ServiceBinder	method	private boolean startBind() throws BindFailedException
+com.amazon.dcp.ota.ServiceBinder	method	private void enforceNotMainThread()
+com.amazon.dcp.ota.ServiceBinder	method	private void enforceState(State state, String str)
+com.amazon.dcp.ota.ServiceBinder	method	private void safeUnbind()
+com.amazon.dcp.ota.ServiceBinder	method	private void waitForBind(Timeout timeout) throws InterruptedException, TimeoutException
+com.amazon.dcp.ota.ServiceBinder	method	public ComponentName getComponentName()
+com.amazon.dcp.ota.ServiceBinder	method	public IBinder bind(long j, TimeUnit timeUnit) throws InterruptedException, TimeoutException
+com.amazon.dcp.ota.ServiceBinder	method	public Object getService()
+com.amazon.dcp.ota.ServiceBinder	method	public ServiceBinder(Context context, Intent intent, int i)
+com.amazon.dcp.ota.ServiceBinder	method	public void unbind()
+com.amazon.dcp.ota.ServiceBinder$BindFailedException	field	private static final long serialVersionUID;
+com.amazon.dcp.ota.ServiceBinder$BindFailedException	method	private BindFailedException()
+com.amazon.dcp.ota.ServiceBinder$Factory	method	public ServiceBinder create(Context context, Intent intent, int i)
+com.amazon.dcp.ota.ServiceBinder$Timeout	field	private final TimeUnit mTimeoutUnit;
+com.amazon.dcp.ota.ServiceBinder$Timeout	field	private final long mStartTimeNanos;
+com.amazon.dcp.ota.ServiceBinder$Timeout	field	private final long mTimeoutTime;
+com.amazon.dcp.ota.ServiceBinder$Timeout	method	public TimeUnit getTimeoutUnit()
+com.amazon.dcp.ota.ServiceBinder$Timeout	method	public Timeout(long j, TimeUnit timeUnit)
+com.amazon.dcp.ota.ServiceBinder$Timeout	method	public long getElapsedTime()
+com.amazon.dcp.ota.ServiceBinder$Timeout	method	public long getRemainingTime()
+com.amazon.dcp.ota.Sideload	field	private File mFile;
+com.amazon.dcp.ota.Sideload	field	private final BuildProperties mProperties;
+com.amazon.dcp.ota.Sideload	field	private static final int VERSION;
+com.amazon.dcp.ota.Sideload	method	public File getFile()
+com.amazon.dcp.ota.Sideload	method	public Integer getVersionNumber()
+com.amazon.dcp.ota.Sideload	method	public Long getBuildVersionNumber()
+com.amazon.dcp.ota.Sideload	method	public Properties getProperties()
+com.amazon.dcp.ota.Sideload	method	public Sideload(File file, BuildProperties buildProperties) throws Throwable
+com.amazon.dcp.ota.Sideload	method	public String getBuildType()
+com.amazon.dcp.ota.Sideload	method	public String getProductDevice()
+com.amazon.dcp.ota.Sideload	method	public String getProductModel()
+com.amazon.dcp.ota.Sideload	method	public String getSignatureType()
+com.amazon.dcp.ota.Sideload	method	public String getVersionName()
+com.amazon.dcp.ota.Sideload	method	public boolean isPropertiesEmpty()
+com.amazon.dcp.ota.Sideload	method	public int describeContents()
+com.amazon.dcp.ota.Sideload	method	public static Sideload fromParcel(Parcel parcel) throws Throwable
+com.amazon.dcp.ota.Sideload	method	public void setFile(File file) throws Throwable
+com.amazon.dcp.ota.Sideload	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.dcp.ota.Status	field	private final int mValue;
+com.amazon.dcp.ota.Status	method	public int describeContents()
+com.amazon.dcp.ota.Status	method	public int value()
+com.amazon.dcp.ota.Status	method	public static Status fromValue(int i)
+com.amazon.dcp.ota.Status	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.dcp.ota.StatusReason	field	private final int mValue;
+com.amazon.dcp.ota.StatusReason	method	public int describeContents()
+com.amazon.dcp.ota.StatusReason	method	public int value()
+com.amazon.dcp.ota.StatusReason	method	public static StatusReason fromValue(int i)
+com.amazon.dcp.ota.StatusReason	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.dcp.ota.SystemPartitionStub	field	private static final String SYSTEM_PARTITION_STUB_CATEGORY;
+com.amazon.dcp.ota.SystemPartitionStub	field	private static final int MATCH_EXTRA_NONE;
+com.amazon.dcp.ota.SystemPartitionStub	method	private SystemPartitionStub()
+com.amazon.dcp.ota.SystemPartitionStub	method	public static List<String> getSystemPartitionStubPackages(Context context)
+com.amazon.dcp.ota.SystemPartitionStub	method	public static List<Update> filterStubUpdatesFromAvailableUpdates(Context context, List<UpdateManifest> list)
+com.amazon.dcp.ota.SystemPartitionStub	method	public static boolean isPackageAStub(Context context, String str)
+com.amazon.dcp.ota.Update	field	private Integer mInstallOrder;
+com.amazon.dcp.ota.Update	field	private Long mPackageVersionCode;
+com.amazon.dcp.ota.Update	field	private OTAFailure mFailure;
+com.amazon.dcp.ota.Update	field	private String mPackageName;
+com.amazon.dcp.ota.Update	field	private String mPackageVersionName;
+com.amazon.dcp.ota.Update	field	private String mPriority;
+com.amazon.dcp.ota.Update	field	private UpdateState mState;
+com.amazon.dcp.ota.Update	field	private UpdateType mType;
+com.amazon.dcp.ota.Update	field	private boolean mForceInstall;
+com.amazon.dcp.ota.Update	field	private boolean mIsRetryable;
+com.amazon.dcp.ota.Update	field	private float mDownloadProgress;
+com.amazon.dcp.ota.Update	field	private long mBytesDownloaded;
+com.amazon.dcp.ota.Update	field	private long mDownloadID;
+com.amazon.dcp.ota.Update	field	private long mRemoteFileSize;
+com.amazon.dcp.ota.Update	field	private long mUpdateId;
+com.amazon.dcp.ota.Update	field	private static final int VERSION;
+com.amazon.dcp.ota.Update	method	private boolean isAnyObjectNull(Object... objArr)
+com.amazon.dcp.ota.Update	method	public NetworkType getNetworkType()
+com.amazon.dcp.ota.Update	method	public OTAFailure getFailureReason()
+com.amazon.dcp.ota.Update	method	public String getPackageName() throws Throwable
+com.amazon.dcp.ota.Update	method	public String getPackageVersionFriendlyName()
+com.amazon.dcp.ota.Update	method	public String getPackageVersionName()
+com.amazon.dcp.ota.Update	method	public String getPriority()
+com.amazon.dcp.ota.Update	method	public String getReleaseNotes()
+com.amazon.dcp.ota.Update	method	public String toString()
+com.amazon.dcp.ota.Update	method	public UpdateState getState()
+com.amazon.dcp.ota.Update	method	public UpdateType getUpdateType()
+com.amazon.dcp.ota.Update	method	public boolean equals(Object obj)
+com.amazon.dcp.ota.Update	method	public boolean getIsRetryable()
+com.amazon.dcp.ota.Update	method	public boolean isDone()
+com.amazon.dcp.ota.Update	method	public boolean isInState(UpdateState... updateStateArr)
+com.amazon.dcp.ota.Update	method	public boolean isValid()
+com.amazon.dcp.ota.Update	method	public boolean shouldAllowSilentDownloadOverWan()
+com.amazon.dcp.ota.Update	method	public boolean shouldForceInstall()
+com.amazon.dcp.ota.Update	method	public float getDownloadProgress()
+com.amazon.dcp.ota.Update	method	public int describeContents()
+com.amazon.dcp.ota.Update	method	public int getInstallOrder() throws Throwable
+com.amazon.dcp.ota.Update	method	public int getPackageVersionCode() throws Throwable
+com.amazon.dcp.ota.Update	method	public int hashCode()
+com.amazon.dcp.ota.Update	method	public long getBytesDownloaded()
+com.amazon.dcp.ota.Update	method	public long getDownloadID()
+com.amazon.dcp.ota.Update	method	public long getId()
+com.amazon.dcp.ota.Update	method	public long getPackageBuildVersionCode() throws Throwable
+com.amazon.dcp.ota.Update	method	public long getRemoteFileSize()
+com.amazon.dcp.ota.Update	method	public static Update fromParcel(Parcel parcel) throws Throwable
+com.amazon.dcp.ota.Update	method	public void setAllowSilentDownloadOverWan(boolean z)
+com.amazon.dcp.ota.Update	method	public void setBytesDownloaded(long j)
+com.amazon.dcp.ota.Update	method	public void setDownloadID(long j)
+com.amazon.dcp.ota.Update	method	public void setFailureReason(OTAFailure oTAFailure)
+com.amazon.dcp.ota.Update	method	public void setForceInstall(boolean z)
+com.amazon.dcp.ota.Update	method	public void setId(long j) throws Throwable
+com.amazon.dcp.ota.Update	method	public void setInstallOrder(int i) throws Throwable
+com.amazon.dcp.ota.Update	method	public void setIsRetryable(boolean z)
+com.amazon.dcp.ota.Update	method	public void setPackageBuildVersionCode(long j) throws Throwable
+com.amazon.dcp.ota.Update	method	public void setPackageName(String str) throws Throwable
+com.amazon.dcp.ota.Update	method	public void setPackageVersionCode(int i) throws Throwable
+com.amazon.dcp.ota.Update	method	public void setPackageVersionName(String str) throws Throwable
+com.amazon.dcp.ota.Update	method	public void setPriority(String str)
+com.amazon.dcp.ota.Update	method	public void setRemoteFileSize(long j) throws Throwable
+com.amazon.dcp.ota.Update	method	public void setState(UpdateState updateState)
+com.amazon.dcp.ota.Update	method	public void setUpdateType(UpdateType updateType) throws Throwable
+com.amazon.dcp.ota.Update	method	public void writeToParcel(Parcel parcel, int i) throws Throwable
+com.amazon.dcp.ota.UpdateCheckReason	field	private final int mValue;
+com.amazon.dcp.ota.UpdateCheckReason	method	public int describeContents()
+com.amazon.dcp.ota.UpdateCheckReason	method	public int value()
+com.amazon.dcp.ota.UpdateCheckReason	method	public static UpdateCheckReason fromValue(int i)
+com.amazon.dcp.ota.UpdateCheckReason	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.dcp.ota.UpdateManifest	field	private final List<Update> mUpdates;
+com.amazon.dcp.ota.UpdateManifest	field	private long mId;
+com.amazon.dcp.ota.UpdateManifest	field	private static final int VERSION;
+com.amazon.dcp.ota.UpdateManifest	method	public String toString()
+com.amazon.dcp.ota.UpdateManifest	method	public boolean getPauseWhenMetered()
+com.amazon.dcp.ota.UpdateManifest	method	public int describeContents()
+com.amazon.dcp.ota.UpdateState	field	private final int mValue;
+com.amazon.dcp.ota.UpdateState	field	public static final String TAG;
+com.amazon.dcp.ota.UpdateState	method	private static UpdateState fromCollection(Set<UpdateState> set)
+com.amazon.dcp.ota.UpdateState	method	public int describeContents()
+com.amazon.dcp.ota.UpdateState	method	public int value()
+com.amazon.dcp.ota.UpdateState	method	public static UpdateState fromCollection(Collection<UpdateState> collection)
+com.amazon.dcp.ota.UpdateState	method	public static UpdateState fromValue(int i)
+com.amazon.dcp.ota.UpdateState	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.dcp.ota.UpdateStatus	field	private final int mValue;
+com.amazon.dcp.ota.UpdateStatus	method	public int describeContents()
+com.amazon.dcp.ota.UpdateStatus	method	public int value()
+com.amazon.dcp.ota.UpdateStatus	method	public static UpdateStatus fromValue(int i)
+com.amazon.dcp.ota.UpdateStatus	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.dcp.ota.UpdateStatusListenerWrapper	field	private final OTAController.UpdateStatusListener mUpdateStatusListener;
+com.amazon.dcp.ota.UpdateStatusListenerWrapper	field	private final WeakReference<Context> mContextReference;
+com.amazon.dcp.ota.UpdateStatusListenerWrapper	field	private final long mManifestId;
+com.amazon.dcp.ota.UpdateStatusListenerWrapper	method	public boolean equals(Object obj)
+com.amazon.dcp.ota.UpdateStatusListenerWrapper	method	public int hashCode()
+com.amazon.dcp.ota.UpdateStatusListenerWrapper	method	public void onStatusUpdate(UpdateManifest updateManifest)
+com.amazon.dcp.ota.UpdateType	field	private final String mServerString;
+com.amazon.dcp.ota.UpdateType	field	private final int mValue;
+com.amazon.dcp.ota.UpdateType	method	public String toString()
+com.amazon.dcp.ota.UpdateType	method	public int describeContents()
+com.amazon.dcp.ota.UpdateType	method	public int value()
+com.amazon.dcp.ota.UpdateType	method	public static UpdateType fromServerString(String str)
+com.amazon.dcp.ota.UpdateType	method	public static UpdateType fromValue(int i)
+com.amazon.dcp.ota.UpdateType	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.dcp.ota.UpdatesProgress	field	private Status mStatus;
+com.amazon.dcp.ota.UpdatesProgress	field	private StatusReason mStatusReason;
+com.amazon.dcp.ota.UpdatesProgress	field	private final List<OfferedUpdate> mOfferedUpdates;
+com.amazon.dcp.ota.UpdatesProgress	field	private int mProgressPercentage;
+com.amazon.dcp.ota.UpdatesProgress	method	public List<OfferedUpdate> getOfferedUpdates()
+com.amazon.dcp.ota.UpdatesProgress	method	public Status getStatus()
+com.amazon.dcp.ota.UpdatesProgress	method	public StatusReason getStatusReason()
+com.amazon.dcp.ota.UpdatesProgress	method	public String toString()
+com.amazon.dcp.ota.UpdatesProgress	method	public boolean equals(Object obj)
+com.amazon.dcp.ota.UpdatesProgress	method	public int describeContents()
+com.amazon.dcp.ota.UpdatesProgress	method	public int getProgressPercentage()
+com.amazon.dcp.ota.UpdatesProgress	method	public int hashCode()
+com.amazon.dcp.ota.UpdatesProgress	method	public static UpdatesProgress fromParcel(Parcel parcel)
+com.amazon.dcp.ota.UpdatesProgress	method	public void addUpdate(OfferedUpdate offeredUpdate)
+com.amazon.dcp.ota.UpdatesProgress	method	public void setProgressPercentage(int i)
+com.amazon.dcp.ota.UpdatesProgress	method	public void setStatus(Status status)
+com.amazon.dcp.ota.UpdatesProgress	method	public void setStatusReason(StatusReason statusReason)
+com.amazon.dcp.ota.UpdatesProgress	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.dcp.ota.UpdatesProgressListenerWrapper	field	private final OTAController.UpdatesProgressListener mUpdatesProgressListener;
+com.amazon.dcp.ota.UpdatesProgressListenerWrapper	field	private final String mPackageName;
+com.amazon.dcp.ota.UpdatesProgressListenerWrapper	field	private final WeakReference<Context> mContextReference;
+com.amazon.dcp.ota.UpdatesProgressListenerWrapper	method	public void onProgressUpdate(final UpdatesProgress updatesProgress)
+com.amazon.dcp.provider.PendingUpdatesContract	field	private static final String ID_NAME;
+com.amazon.dcp.provider.PendingUpdatesContract	field	private static final String MIME_DELIMITER;
+com.amazon.dcp.provider.PendingUpdatesContract	field	public static final String AUTHORITY;
+com.amazon.dcp.provider.PendingUpdatesContract	field	public static final String PERMISSION_QUERY_PENDING_UPDATES;
+com.amazon.dcp.provider.PendingUpdatesContract	field	public static final Uri AUTHORITY_URI;
+com.amazon.dcp.provider.PendingUpdatesContract	method	private PendingUpdatesContract()
+com.amazon.dcp.provider.PendingUpdatesContract$DownloadManifests	field	public static final String CONTENT_MIME_SUBTYPE;
+com.amazon.dcp.provider.PendingUpdatesContract$DownloadManifests	field	public static final String ID;
+com.amazon.dcp.provider.PendingUpdatesContract$DownloadManifests	field	public static final String MANIFEST_CONTENT;
+com.amazon.dcp.provider.PendingUpdatesContract$DownloadManifests	field	public static final String MANIFEST_IDENTIFIER;
+com.amazon.dcp.provider.PendingUpdatesContract$DownloadManifests	field	public static final Uri CONTENT_URI;
+com.amazon.dcp.provider.PendingUpdatesContract$DownloadManifests	method	private DownloadManifests()
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateManifests	field	public static final String CHECK_REASON;
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateManifests	field	public static final String CONTENT_ITEM_TYPE;
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateManifests	field	public static final String CONTENT_MIME_SUBTYPE;
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateManifests	field	public static final String CONTENT_TYPE;
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateManifests	field	public static final String ID;
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateManifests	field	public static final String MANIFEST_IDENTIFIER;
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateManifests	field	public static final String PRIORITY;
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateManifests	field	public static final Uri CONTENT_URI;
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateManifests	method	private UpdateManifests()
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateProgress	field	public static final int ALL;
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateProgress	field	public static final int DOWNLOADED;
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateProgress	field	public static final int DOWNLOADING;
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateProgress	field	public static final int FORCED;
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateProgress	field	public static final int INSTALLING;
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateProgress	field	public static final int NONE;
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateProgress	field	public static final int PAUSED_BY_APP;
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateProgress	field	public static final int PAUSED_UNKNOWN;
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateProgress	field	public static final int PENDING_REBOOT;
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateProgress	field	public static final int QUEUED_FOR_WIFI;
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateProgress	field	public static final int STATUS_FAILED;
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateProgress	field	public static final int STATUS_IN_PROGRESS;
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateProgress	field	public static final int STATUS_NO_UPDATES;
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateProgress	field	public static final int STATUS_PAUSED;
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateProgress	field	public static final int STATUS_SUCCESS;
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateProgress	field	public static final int UPDATE_STATUS_FAILED;
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateProgress	field	public static final int UPDATE_STATUS_PENDING;
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateProgress	field	public static final int UPDATE_STATUS_SUCCESS;
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateProgress	field	public static final int WAITING_FOR_NETWORK;
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateProgress	field	public static final int WAITING_FOR_RETRY;
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateProgress	field	public static final int WAITING_FOR_STORAGE;
+com.amazon.dcp.provider.PendingUpdatesContract$UpdateProgress	method	private UpdateProgress()
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final String ALLOW_SILENT_DOWNLOAD_OVER_WAN;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final String BINARY_TYPE;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final String BYTES_DOWNLOADED;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final String CONTENT_ITEM_TYPE;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final String CONTENT_MIME_SUBTYPE;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final String CONTENT_TYPE;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final String DID_USER_APPROVE_WAN;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final String DOWNLOAD_NETWORK_TYPE;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final String DOWNLOAD_PROGRESS;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final String FAILURE_REASON;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final String FILE_SIZE;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final String FORCE_INSTALL;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final String ID;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final String IGNORE_NETWORK_PROMPT;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final String INSTALL_ORDER;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final String INSTALL_SCHEDULER_START_TIME;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final String LOCAL_PATH;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final String LOCAL_URI;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final String MANIFEST_ID;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final String MD5SUM;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final String PACKAGE_NAME;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final String PACKAGE_VERSION_CODE;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final String PACKAGE_VERSION_NAME;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final String PAUSE_WHEN_METERED;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final String RELEASE_NOTES;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final String REMOTE_URI;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final String START_DATE;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final String STATE;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final String UPDATE_TYPE;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final String USER_MADE_WAN_DECISION;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final Uri CONTENT_URI;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final int NETWORK_TYPE_LAN;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final int NETWORK_TYPE_ROAMING;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final int NETWORK_TYPE_WAN;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final int STATE_COMPLETE;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final int STATE_DEDUPED;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final int STATE_DOWNLOADED;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final int STATE_DOWNLOADING;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final int STATE_DOWNLOADPAUSED;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final int STATE_FAILED;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final int STATE_INSTALLED;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final int STATE_INSTALLING;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final int STATE_INSTALLPENDINGREBOOT;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final int STATE_INSUFFICIENT_SPACE_DOWNLOAD;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final int STATE_INSUFFICIENT_SPACE_INSTALL;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final int STATE_PENDING;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final int STATE_QUEUED_FOR_WIFI;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final int TYPE_APP;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	field	public static final int TYPE_OS;
+com.amazon.dcp.provider.PendingUpdatesContract$Updates	method	private Updates()
+com.amazon.dcp.tph.TPHConstants	field	public static final String ACTION_TPH_INFO_PROVIDER;
+com.amazon.dcp.tph.TPHConstants	field	public static final String ACTION_TPH_PHONE_HOME;
+com.amazon.dcp.tph.TPHConstants	method	private TPHConstants()
+com.android.amazon.dcp.ota.IAmazonPackageDataObserver	field	public static final String DESCRIPTOR;
+com.android.amazon.dcp.ota.IAmazonPackageDataObserver$Default	method	public IBinder asBinder()
+com.android.amazon.dcp.ota.IAmazonPackageDataObserver$Default	method	public void onRemoveCompleted(String str, boolean z) throws RemoteException
+com.android.amazon.dcp.ota.IAmazonPackageDataObserver$Stub	field	static final int TRANSACTION_onRemoveCompleted;
+com.android.amazon.dcp.ota.IAmazonPackageDataObserver$Stub	method	public IBinder asBinder()
+com.android.amazon.dcp.ota.IAmazonPackageDataObserver$Stub	method	public Stub()
+com.android.amazon.dcp.ota.IAmazonPackageDataObserver$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.android.amazon.dcp.ota.IAmazonPackageDataObserver$Stub	method	public static IAmazonPackageDataObserver asInterface(IBinder iBinder)
+com.android.amazon.dcp.ota.IAmazonPackageDataObserver$Stub$Proxy	field	private IBinder mRemote;
+com.android.amazon.dcp.ota.IAmazonPackageDataObserver$Stub$Proxy	method	public IBinder asBinder()
+com.android.amazon.dcp.ota.IAmazonPackageDataObserver$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.android.amazon.dcp.ota.IAmazonPackageDataObserver$Stub$Proxy	method	public void onRemoveCompleted(String str, boolean z) throws RemoteException
+com.android.amazon.dcp.ota.IAmazonPackageDeleteObserver	field	public static final String DESCRIPTOR;
+com.android.amazon.dcp.ota.IAmazonPackageDeleteObserver$Default	method	public IBinder asBinder()
+com.android.amazon.dcp.ota.IAmazonPackageDeleteObserver$Default	method	public void packageDeleted(boolean z) throws RemoteException
+com.android.amazon.dcp.ota.IAmazonPackageDeleteObserver$Stub	field	static final int TRANSACTION_packageDeleted;
+com.android.amazon.dcp.ota.IAmazonPackageDeleteObserver$Stub	method	public IBinder asBinder()
+com.android.amazon.dcp.ota.IAmazonPackageDeleteObserver$Stub	method	public Stub()
+com.android.amazon.dcp.ota.IAmazonPackageDeleteObserver$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.android.amazon.dcp.ota.IAmazonPackageDeleteObserver$Stub	method	public static IAmazonPackageDeleteObserver asInterface(IBinder iBinder)
+com.android.amazon.dcp.ota.IAmazonPackageDeleteObserver$Stub$Proxy	field	private IBinder mRemote;
+com.android.amazon.dcp.ota.IAmazonPackageDeleteObserver$Stub$Proxy	method	public IBinder asBinder()
+com.android.amazon.dcp.ota.IAmazonPackageDeleteObserver$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.android.amazon.dcp.ota.IAmazonPackageDeleteObserver$Stub$Proxy	method	public void packageDeleted(boolean z) throws RemoteException
+com.android.amazon.dcp.ota.IAmazonPackageInstallObserver	field	public static final String DESCRIPTOR;
+com.android.amazon.dcp.ota.IAmazonPackageInstallObserver$Default	method	public IBinder asBinder()
+com.android.amazon.dcp.ota.IAmazonPackageInstallObserver$Default	method	public void packageInstalled(String str, int i) throws RemoteException
+com.android.amazon.dcp.ota.IAmazonPackageInstallObserver$Stub	field	static final int TRANSACTION_packageInstalled;
+com.android.amazon.dcp.ota.IAmazonPackageInstallObserver$Stub	method	public IBinder asBinder()
+com.android.amazon.dcp.ota.IAmazonPackageInstallObserver$Stub	method	public Stub()
+com.android.amazon.dcp.ota.IAmazonPackageInstallObserver$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.android.amazon.dcp.ota.IAmazonPackageInstallObserver$Stub	method	public static IAmazonPackageInstallObserver asInterface(IBinder iBinder)
+com.android.amazon.dcp.ota.IAmazonPackageInstallObserver$Stub$Proxy	field	private IBinder mRemote;
+com.android.amazon.dcp.ota.IAmazonPackageInstallObserver$Stub$Proxy	method	public IBinder asBinder()
+com.android.amazon.dcp.ota.IAmazonPackageInstallObserver$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.android.amazon.dcp.ota.IAmazonPackageInstallObserver$Stub$Proxy	method	public void packageInstalled(String str, int i) throws RemoteException
+com.android.amazon.dcp.ota.IAmazonPackageManager	field	public static final String DESCRIPTOR;
+com.android.amazon.dcp.ota.IAmazonPackageManager$Default	method	public IBinder asBinder()
+com.android.amazon.dcp.ota.IAmazonPackageManager$Default	method	public void clearApplicationUserData(String str, IAmazonPackageDataObserver iAmazonPackageDataObserver) throws RemoteException
+com.android.amazon.dcp.ota.IAmazonPackageManager$Default	method	public void deleteApplicationCacheFiles(String str, IAmazonPackageDataObserver iAmazonPackageDataObserver) throws RemoteException
+com.android.amazon.dcp.ota.IAmazonPackageManager$Default	method	public void deletePackage(String str, IAmazonPackageDeleteObserver iAmazonPackageDeleteObserver, int i) throws RemoteException
+com.android.amazon.dcp.ota.IAmazonPackageManager$Default	method	public void installPackage(Uri uri, IAmazonPackageInstallObserver iAmazonPackageInstallObserver, int i, String str) throws RemoteException
+com.android.amazon.dcp.ota.IAmazonPackageManager$Stub	field	static final int TRANSACTION_clearApplicationUserData;
+com.android.amazon.dcp.ota.IAmazonPackageManager$Stub	field	static final int TRANSACTION_deleteApplicationCacheFiles;
+com.android.amazon.dcp.ota.IAmazonPackageManager$Stub	field	static final int TRANSACTION_deletePackage;
+com.android.amazon.dcp.ota.IAmazonPackageManager$Stub	field	static final int TRANSACTION_installPackage;
+com.android.amazon.dcp.ota.IAmazonPackageManager$Stub	method	public IBinder asBinder()
+com.android.amazon.dcp.ota.IAmazonPackageManager$Stub	method	public Stub()
+com.android.amazon.dcp.ota.IAmazonPackageManager$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.android.amazon.dcp.ota.IAmazonPackageManager$Stub	method	public static IAmazonPackageManager asInterface(IBinder iBinder)
+com.android.amazon.dcp.ota.IAmazonPackageManager$Stub$Proxy	field	private IBinder mRemote;
+com.android.amazon.dcp.ota.IAmazonPackageManager$Stub$Proxy	method	public IBinder asBinder()
+com.android.amazon.dcp.ota.IAmazonPackageManager$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.android.amazon.dcp.ota.IAmazonPackageManager$Stub$Proxy	method	public void clearApplicationUserData(String str, IAmazonPackageDataObserver iAmazonPackageDataObserver) throws RemoteException
+com.android.amazon.dcp.ota.IAmazonPackageManager$Stub$Proxy	method	public void deleteApplicationCacheFiles(String str, IAmazonPackageDataObserver iAmazonPackageDataObserver) throws RemoteException
+com.android.amazon.dcp.ota.IAmazonPackageManager$Stub$Proxy	method	public void deletePackage(String str, IAmazonPackageDeleteObserver iAmazonPackageDeleteObserver, int i) throws RemoteException
+com.android.amazon.dcp.ota.IAmazonPackageManager$Stub$Proxy	method	public void installPackage(Uri uri, IAmazonPackageInstallObserver iAmazonPackageInstallObserver, int i, String str) throws RemoteException
+com.android.amazon.dcp.ota.IAmazonPackageManager$_Parcel	method	public static <T extends Parcelable> void writeTypedObject(Parcel parcel, T t, int i)
+com.android.amazon.dcp.ota.IAmazonPackageManager$_Parcel	method	public static <T> T readTypedObject(Parcel parcel, Parcelable.Creator<T> creator)

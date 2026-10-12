@@ -1,0 +1,76 @@
+class	kind	declaration
+com.android.companiondevicemanager.DeviceChooserActivity	field	private View mCancelButton;
+com.android.companiondevicemanager.DeviceChooserActivity	field	private View mPairButton;
+com.android.companiondevicemanager.DeviceChooserActivity	method	private CharSequence getCallingAppName()
+com.android.companiondevicemanager.DeviceChooserActivity	method	private DeviceDiscoveryService getService()
+com.android.companiondevicemanager.DeviceChooserActivity	method	private ProgressBar getProgressBar()
+com.android.companiondevicemanager.DeviceChooserActivity	method	private void cancel()
+com.android.companiondevicemanager.DeviceChooserActivity	method	protected void onDeviceConfirmed(DeviceDiscoveryService.DeviceFilterPair deviceFilterPair)
+com.android.companiondevicemanager.DeviceChooserActivity	method	protected void onStop()
+com.android.companiondevicemanager.DeviceChooserActivity	method	public void onCreate(Bundle bundle)
+com.android.companiondevicemanager.DeviceChooserActivity	method	public void onSelectionUpdate()
+com.android.companiondevicemanager.DeviceChooserActivity	method	public void setTitle(CharSequence charSequence)
+com.android.companiondevicemanager.DeviceChooserActivity	method	static int getPadding(Resources resources)
+com.android.companiondevicemanager.DeviceDiscoveryService	field	private BluetoothAdapter mBluetoothAdapter;
+com.android.companiondevicemanager.DeviceDiscoveryService	field	private BluetoothBroadcastReceiver mBluetoothBroadcastReceiver;
+com.android.companiondevicemanager.DeviceDiscoveryService	field	private BluetoothLeScanner mBLEScanner;
+com.android.companiondevicemanager.DeviceDiscoveryService	field	private List<BluetoothDeviceFilter> mBluetoothFilters;
+com.android.companiondevicemanager.DeviceDiscoveryService	field	private List<BluetoothLeDeviceFilter> mBLEFilters;
+com.android.companiondevicemanager.DeviceDiscoveryService	field	private List<DeviceFilter<?>> mFilters;
+com.android.companiondevicemanager.DeviceDiscoveryService	field	private List<ScanFilter> mBLEScanFilters;
+com.android.companiondevicemanager.DeviceDiscoveryService	field	private List<WifiDeviceFilter> mWifiFilters;
+com.android.companiondevicemanager.DeviceDiscoveryService	field	private ScanCallback mBLEScanCallback;
+com.android.companiondevicemanager.DeviceDiscoveryService	field	private ScanSettings mDefaultScanSettings;
+com.android.companiondevicemanager.DeviceDiscoveryService	field	private WifiBroadcastReceiver mWifiBroadcastReceiver;
+com.android.companiondevicemanager.DeviceDiscoveryService	field	private WifiManager mWifiManager;
+com.android.companiondevicemanager.DeviceDiscoveryService	field	private final ICompanionDeviceDiscoveryService mBinder;
+com.android.companiondevicemanager.DeviceDiscoveryService	field	static DeviceDiscoveryService sInstance;
+com.android.companiondevicemanager.DeviceDiscoveryService	method	private boolean shouldScan(List<? extends DeviceFilter> list)
+com.android.companiondevicemanager.DeviceDiscoveryService	method	private void onReadyToShowUI()
+com.android.companiondevicemanager.DeviceDiscoveryService	method	private void reset()
+com.android.companiondevicemanager.DeviceDiscoveryService	method	public IBinder onBind(Intent intent)
+com.android.companiondevicemanager.DeviceDiscoveryService	method	public boolean onUnbind(Intent intent)
+com.android.companiondevicemanager.DeviceDiscoveryService	method	public void onCreate()
+com.android.companiondevicemanager.DeviceDiscoveryService	method	public void onDeviceFound(DeviceFilterPair deviceFilterPair)
+com.android.companiondevicemanager.DeviceDiscoveryService	method	public void onDeviceLost(DeviceFilterPair deviceFilterPair)
+com.android.companiondevicemanager.DeviceDiscoveryService	method	public void startDiscovery(AssociationRequest associationRequest)
+com.android.companiondevicemanager.DeviceDiscoveryService	method	public void stopScan()
+com.android.companiondevicemanager.DeviceDiscoveryService$AnonymousClass1	method	public void startDiscovery(AssociationRequest associationRequest, String str, IFindDeviceCallback iFindDeviceCallback, AndroidFuture androidFuture)
+com.android.companiondevicemanager.DeviceDiscoveryService$BLEScanCallback	method	public BLEScanCallback()
+com.android.companiondevicemanager.DeviceDiscoveryService$BLEScanCallback	method	public void onScanResult(int i, android.bluetooth.le.ScanResult scanResult)
+com.android.companiondevicemanager.DeviceDiscoveryService$BluetoothBroadcastReceiver	method	private BluetoothBroadcastReceiver()
+com.android.companiondevicemanager.DeviceDiscoveryService$BluetoothBroadcastReceiver	method	public void onReceive(Context context, Intent intent)
+com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair	field	public final DeviceFilter<T> filter;
+com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair	field	public final T device;
+com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair	method	private DeviceFilterPair(T t, DeviceFilter<T> deviceFilter)
+com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair	method	public String getDisplayName()
+com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair	method	public String toString()
+com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair	method	public boolean equals(Object obj)
+com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair	method	public int hashCode()
+com.android.companiondevicemanager.DeviceDiscoveryService$DeviceFilterPair	method	public static <T extends Parcelable> DeviceFilterPair<T> findMatch(final T t, List<? extends DeviceFilter<T>> list)
+com.android.companiondevicemanager.DeviceDiscoveryService$DevicesAdapter	field	private Drawable BLUETOOTH_ICON;
+com.android.companiondevicemanager.DeviceDiscoveryService$DevicesAdapter	field	private Drawable WIFI_ICON;
+com.android.companiondevicemanager.DeviceDiscoveryService$DevicesAdapter	method	private Drawable icon(int i)
+com.android.companiondevicemanager.DeviceDiscoveryService$DevicesAdapter	method	private TextView newView()
+com.android.companiondevicemanager.DeviceDiscoveryService$DevicesAdapter	method	private void bind(TextView textView, final DeviceFilterPair deviceFilterPair)
+com.android.companiondevicemanager.DeviceDiscoveryService$DevicesAdapter	method	public DevicesAdapter()
+com.android.companiondevicemanager.DeviceDiscoveryService$DevicesAdapter	method	public View getView(int i, View view, ViewGroup viewGroup)
+com.android.companiondevicemanager.DeviceDiscoveryService$WifiBroadcastReceiver	method	private WifiBroadcastReceiver()
+com.android.companiondevicemanager.DeviceDiscoveryService$WifiBroadcastReceiver	method	public void onReceive(Context context, Intent intent)
+com.android.companiondevicemanager.R$dimen	field	public static final int padding;
+com.android.companiondevicemanager.R$drawable	field	public static final int dialog_background;
+com.android.companiondevicemanager.R$id	field	public static final int button_cancel;
+com.android.companiondevicemanager.R$id	field	public static final int button_pair;
+com.android.companiondevicemanager.R$id	field	public static final int buttons;
+com.android.companiondevicemanager.R$id	field	public static final int container;
+com.android.companiondevicemanager.R$id	field	public static final int device_list;
+com.android.companiondevicemanager.R$id	field	public static final int title;
+com.android.companiondevicemanager.R$layout	field	public static final int buttons;
+com.android.companiondevicemanager.R$layout	field	public static final int device_chooser;
+com.android.companiondevicemanager.R$layout	field	public static final int device_confirmation;
+com.android.companiondevicemanager.R$layout	field	public static final int title;
+com.android.companiondevicemanager.R$string	field	public static final int app_label;
+com.android.companiondevicemanager.R$string	field	public static final int chooser_title;
+com.android.companiondevicemanager.R$string	field	public static final int confirmation_title;
+com.android.companiondevicemanager.R$style	field	public static final int ChooserActivity;
+com.android.companiondevicemanager.R$style	field	public static final int ContainerLayout;

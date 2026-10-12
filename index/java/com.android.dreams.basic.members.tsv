@@ -1,0 +1,58 @@
+class	kind	declaration
+com.android.dreams.basic.Colors	field	private ColorsGLRenderer mRenderer;
+com.android.dreams.basic.Colors	field	private Handler mRendererHandler;
+com.android.dreams.basic.Colors	field	private HandlerThread mRendererHandlerThread;
+com.android.dreams.basic.Colors	field	private SurfaceView mSurfaceView;
+com.android.dreams.basic.Colors	field	static final String TAG;
+com.android.dreams.basic.Colors	method	public static void LOG(String str, Object... objArr)
+com.android.dreams.basic.Colors	method	public void onAttachedToWindow()
+com.android.dreams.basic.Colors	method	public void onCreate()
+com.android.dreams.basic.Colors	method	public void surfaceChanged(SurfaceHolder surfaceHolder, int i, final int i2, final int i3)
+com.android.dreams.basic.Colors	method	public void surfaceCreated(final SurfaceHolder surfaceHolder)
+com.android.dreams.basic.Colors	method	public void surfaceDestroyed(SurfaceHolder surfaceHolder)
+com.android.dreams.basic.ColorsGLRenderer	field	private EGL10 mEgl;
+com.android.dreams.basic.ColorsGLRenderer	field	private EGLContext mEglContext;
+com.android.dreams.basic.ColorsGLRenderer	field	private EGLDisplay mEglDisplay;
+com.android.dreams.basic.ColorsGLRenderer	field	private EGLSurface mEglSurface;
+com.android.dreams.basic.ColorsGLRenderer	field	private Square mSquare;
+com.android.dreams.basic.ColorsGLRenderer	field	private final Choreographer mChoreographer;
+com.android.dreams.basic.ColorsGLRenderer	field	private final Surface mSurface;
+com.android.dreams.basic.ColorsGLRenderer	field	private int mFrameNum;
+com.android.dreams.basic.ColorsGLRenderer	field	private int mHeight;
+com.android.dreams.basic.ColorsGLRenderer	field	private int mWidth;
+com.android.dreams.basic.ColorsGLRenderer	field	static final String TAG;
+com.android.dreams.basic.ColorsGLRenderer	method	private EGLConfig chooseEglConfig()
+com.android.dreams.basic.ColorsGLRenderer	method	private static EGLContext createContext(EGL10 egl10, EGLDisplay eGLDisplay, EGLConfig eGLConfig)
+com.android.dreams.basic.ColorsGLRenderer	method	private static int buildShader(String str, int i)
+com.android.dreams.basic.ColorsGLRenderer	method	private static int[] getConfig()
+com.android.dreams.basic.ColorsGLRenderer	method	private static void checkGlError()
+com.android.dreams.basic.ColorsGLRenderer	method	private void checkCurrent()
+com.android.dreams.basic.ColorsGLRenderer	method	private void checkEglError()
+com.android.dreams.basic.ColorsGLRenderer	method	private void finishGL()
+com.android.dreams.basic.ColorsGLRenderer	method	private void initGL()
+com.android.dreams.basic.ColorsGLRenderer	method	public ColorsGLRenderer(Surface surface, int i, int i2)
+com.android.dreams.basic.ColorsGLRenderer	method	public static int buildProgram(String str, String str2)
+com.android.dreams.basic.ColorsGLRenderer	method	public static void checkGlError(String str)
+com.android.dreams.basic.ColorsGLRenderer	method	public void doFrame(long j)
+com.android.dreams.basic.ColorsGLRenderer	method	public void setSize(int i, int i2)
+com.android.dreams.basic.ColorsGLRenderer	method	public void start()
+com.android.dreams.basic.ColorsGLRenderer	method	public void stop()
+com.android.dreams.basic.ColorsGLRenderer$Square	field	final float[] _tmphsv;
+com.android.dreams.basic.ColorsGLRenderer$Square	field	private ShortBuffer drawListBuffer;
+com.android.dreams.basic.ColorsGLRenderer$Square	field	private final FloatBuffer colorBuffer;
+com.android.dreams.basic.ColorsGLRenderer$Square	field	private final FloatBuffer vertexBuffer;
+com.android.dreams.basic.ColorsGLRenderer$Square	field	private final float[] HUES;
+com.android.dreams.basic.ColorsGLRenderer$Square	field	private final int mProgram;
+com.android.dreams.basic.ColorsGLRenderer$Square	field	private final int vertexCount;
+com.android.dreams.basic.ColorsGLRenderer$Square	field	private float[] cornerFrequencies;
+com.android.dreams.basic.ColorsGLRenderer$Square	field	private int cornerRotation;
+com.android.dreams.basic.ColorsGLRenderer$Square	field	private int mColorHandle;
+com.android.dreams.basic.ColorsGLRenderer$Square	field	private int mPositionHandle;
+com.android.dreams.basic.ColorsGLRenderer$Square	field	private short[] drawOrder;
+com.android.dreams.basic.ColorsGLRenderer$Square	method	public Square()
+com.android.dreams.basic.ColorsGLRenderer$Square	method	public void draw()
+com.android.dreams.basic.R$id	field	public static final int webview;
+com.android.dreams.basic.R$layout	field	public static final int main;
+com.android.dreams.basic.R$mipmap	field	public static final int colors_icon;
+com.android.dreams.basic.R$string	field	public static final int app_name;
+com.android.dreams.basic.R$string	field	public static final int color_dream_name;

@@ -1,0 +1,704 @@
+class	kind	declaration
+com.amazon.tv.developer.com.amazon.neo.service.api.BinderInternal	method	public IBinder getGlobalContextObject()
+com.amazon.tv.developer.com.amazon.neo.service.api.BinderUtils	field	private BinderInternal binderInternal;
+com.amazon.tv.developer.com.amazon.neo.service.api.BinderUtils	field	protected static final int FOS8_BINDER_SYSTEM_HEADER;
+com.amazon.tv.developer.com.amazon.neo.service.api.BinderUtils	method	private static int bPackChars(char c1, char c2, char c3, char c4)
+com.amazon.tv.developer.com.amazon.neo.service.api.BinderUtils	method	protected IBinder getServiceBinder(String serviceName)
+com.amazon.tv.developer.com.amazon.neo.service.api.BinderUtils	method	protected void getServiceByHandle(final String serviceName, final ServiceCallback serviceCallback, IBinder nscBinder)
+com.amazon.tv.developer.com.amazon.neo.service.api.BinderUtils	method	public BinderUtils()
+com.amazon.tv.developer.com.amazon.neo.service.api.BinderUtils	method	public BinderUtils(BinderInternal binderInternal)
+com.amazon.tv.developer.com.amazon.neo.service.api.BinderUtils	method	public IBinder getPublicServiceCoordinator()
+com.amazon.tv.developer.com.amazon.neo.service.api.BinderUtils	method	public void getPublicService(String serviceName, ServiceCallback serviceCallback)
+com.amazon.tv.developer.com.amazon.neo.service.api.BinderUtils$Builder	field	private BinderInternal binderInternal;
+com.amazon.tv.developer.com.amazon.neo.service.api.BinderUtils$Builder	method	public BinderUtils build()
+com.amazon.tv.developer.com.amazon.neo.service.api.BinderUtils$Builder	method	public Builder withBinderInternal(BinderInternal binderInternal)
+com.amazon.tv.developer.com.amazon.neo.service.api.ServiceCallback	field	protected ArrayList<IBinder> mPendingRequests;
+com.amazon.tv.developer.com.amazon.neo.service.api.ServiceCallback	field	protected IBinder mToken;
+com.amazon.tv.developer.com.amazon.neo.service.api.ServiceCallback	method	public abstract void onServiceConnected(String str, IBinder iBinder);
+com.amazon.tv.developer.com.amazon.neo.service.api.ServiceCallback	method	public abstract void onServiceFailed(String str, String str2);
+com.amazon.tv.developer.com.amazon.p11.spy.logging.AndroidLogger	method	private String getMessage(String tag, String message)
+com.amazon.tv.developer.com.amazon.p11.spy.logging.AndroidLogger	method	public void d(String rootTag, String componentTag, String message)
+com.amazon.tv.developer.com.amazon.p11.spy.logging.AndroidLogger	method	public void d(String rootTag, String componentTag, String message, Object... args)
+com.amazon.tv.developer.com.amazon.p11.spy.logging.AndroidLogger	method	public void e(String rootTag, String componentTag, String message)
+com.amazon.tv.developer.com.amazon.p11.spy.logging.AndroidLogger	method	public void i(String rootTag, String componentTag, String message)
+com.amazon.tv.developer.com.amazon.p11.spy.logging.AndroidLogger	method	public void w(String rootTag, String componentTag, String message)
+com.amazon.tv.developer.com.amazon.p11.spy.logging.AndroidLoggerFactory	method	public Logger create()
+com.amazon.tv.developer.com.amazon.p11.spy.logging.Logg	field	private static LoggerFactory loggerFactory;
+com.amazon.tv.developer.com.amazon.p11.spy.logging.Logg	field	private static String rootTag;
+com.amazon.tv.developer.com.amazon.p11.spy.logging.Logg	method	private static Logger getLogger()
+com.amazon.tv.developer.com.amazon.p11.spy.logging.Logg	method	public static void d(String tag, String message)
+com.amazon.tv.developer.com.amazon.p11.spy.logging.Logg	method	public static void d(String tag, String message, Object... args)
+com.amazon.tv.developer.com.amazon.p11.spy.logging.Logg	method	public static void e(String tag, String message)
+com.amazon.tv.developer.com.amazon.p11.spy.logging.Logg	method	public static void i(String tag, String message)
+com.amazon.tv.developer.com.amazon.p11.spy.logging.Logg	method	public static void setRootTag(String tag)
+com.amazon.tv.developer.com.amazon.p11.spy.logging.Logg	method	public static void w(String tag, String message)
+com.amazon.tv.developer.com.amazon.p11.spy.logging.Logg$Initializer	field	private static final Logger INSTANCE;
+com.amazon.tv.developer.com.amazon.p11.spy.nuts.and.bolts.BoundedQueue	field	private final ArrayBlockingQueue<T> delegate;
+com.amazon.tv.developer.com.amazon.p11.spy.nuts.and.bolts.BoundedQueue	field	private final String name;
+com.amazon.tv.developer.com.amazon.p11.spy.nuts.and.bolts.BoundedQueue	field	private final int capacity;
+com.amazon.tv.developer.com.amazon.p11.spy.nuts.and.bolts.BoundedQueue	method	public BoundedQueue(String name, int capacity)
+com.amazon.tv.developer.com.amazon.p11.spy.nuts.and.bolts.BoundedQueue	method	public BoundedQueue(int capacity)
+com.amazon.tv.developer.com.amazon.p11.spy.nuts.and.bolts.BoundedQueue	method	public String toString()
+com.amazon.tv.developer.com.amazon.p11.spy.nuts.and.bolts.BoundedQueue	method	public T poll()
+com.amazon.tv.developer.com.amazon.p11.spy.nuts.and.bolts.BoundedQueue	method	public boolean add(T element)
+com.amazon.tv.developer.com.amazon.p11.spy.nuts.and.bolts.BoundedQueue	method	public int size()
+com.amazon.tv.developer.com.amazon.p11.spy.nuts.and.bolts.Exceptions	method	public static List<Throwable> getCauses(Exception e)
+com.amazon.tv.developer.com.amazon.p11.spy.nuts.and.bolts.Pre	method	public static void isNotNull(Object thing, String message)
+com.amazon.tv.developer.com.amazon.p11.spy.nuts.and.bolts.Pre	method	public static void isTrue(boolean condition, String message)
+com.amazon.tv.developer.com.amazon.p11.spy.retries.ExponentialBackoffStrategy	field	private final Sleeper sleeper;
+com.amazon.tv.developer.com.amazon.p11.spy.retries.ExponentialBackoffStrategy	field	private final long initialDelayMilliseconds;
+com.amazon.tv.developer.com.amazon.p11.spy.retries.ExponentialBackoffStrategy	field	private final long maxDelayMilliseconds;
+com.amazon.tv.developer.com.amazon.p11.spy.retries.ExponentialBackoffStrategy	field	private final long maxRetries;
+com.amazon.tv.developer.com.amazon.p11.spy.retries.ExponentialBackoffStrategy	field	protected long attempts;
+com.amazon.tv.developer.com.amazon.p11.spy.retries.ExponentialBackoffStrategy	method	public ExponentialBackoffStrategy(long initialDelayMilliseconds, long maxDelayMilliseconds, long maxRetries)
+com.amazon.tv.developer.com.amazon.p11.spy.retries.ExponentialBackoffStrategy	method	public boolean expired()
+com.amazon.tv.developer.com.amazon.p11.spy.retries.ExponentialBackoffStrategy	method	public void backoff() throws InterruptedException
+com.amazon.tv.developer.com.amazon.p11.spy.retries.ExponentialBackoffStrategyFactory	field	private final long initialDelayMilliseconds;
+com.amazon.tv.developer.com.amazon.p11.spy.retries.ExponentialBackoffStrategyFactory	field	private final long maxDelayMilliseconds;
+com.amazon.tv.developer.com.amazon.p11.spy.retries.ExponentialBackoffStrategyFactory	field	private final long maxRetries;
+com.amazon.tv.developer.com.amazon.p11.spy.retries.ExponentialBackoffStrategyFactory	method	public BackoffStrategy create()
+com.amazon.tv.developer.com.amazon.p11.spy.retries.ExponentialBackoffStrategyFactory	method	public ExponentialBackoffStrategyFactory(long initialDelayMilliseconds, long maxDelayMilliseconds, long maxRetries)
+com.amazon.tv.developer.com.amazon.p11.spy.retries.MaxRetriesReachedException	method	public MaxRetriesReachedException()
+com.amazon.tv.developer.com.amazon.p11.spy.retries.MaxRetriesReachedException	method	public MaxRetriesReachedException(Throwable cause)
+com.amazon.tv.developer.com.amazon.p11.spy.retries.NonRetryableException	method	public NonRetryableException(Throwable cause)
+com.amazon.tv.developer.com.amazon.p11.spy.retries.Retry	field	private final BackoffStrategyFactory backoffStrategyFactory;
+com.amazon.tv.developer.com.amazon.p11.spy.retries.Retry	field	private final RetryExceptionStrategyFactory retryExceptionStrategyFactory;
+com.amazon.tv.developer.com.amazon.p11.spy.retries.Retry	field	private final RetryResultStrategyFactory retryResultStrategyFactory;
+com.amazon.tv.developer.com.amazon.p11.spy.retries.Retry	method	public <T> T retry(String scope, Callable<T> function, OnRetryDone onRetryDone)
+com.amazon.tv.developer.com.amazon.p11.spy.retries.Retry	method	public <T> T retry(String str, Callable<T> callable)
+com.amazon.tv.developer.com.amazon.p11.spy.retries.Retry	method	public Retry(RetryResultStrategyFactory retryResultStrategyFactory, RetryExceptionStrategyFactory retryExceptionStrategyFactory, BackoffStrategyFactory backoffStrategyFactory)
+com.amazon.tv.developer.com.amazon.p11.spy.retries.RetryExceptionStrategy	field	private Exception lastException;
+com.amazon.tv.developer.com.amazon.p11.spy.retries.RetryExceptionStrategy	field	private final Set<Class<? extends Throwable>> typesToRetry;
+com.amazon.tv.developer.com.amazon.p11.spy.retries.RetryExceptionStrategy	method	private boolean shouldRetryException(Exception exception)
+com.amazon.tv.developer.com.amazon.p11.spy.retries.RetryExceptionStrategy	method	public Exception getLastException()
+com.amazon.tv.developer.com.amazon.p11.spy.retries.RetryExceptionStrategy	method	public RetryExceptionStrategy(Set<Class<? extends Throwable>> typesToRetry)
+com.amazon.tv.developer.com.amazon.p11.spy.retries.RetryExceptionStrategy	method	public boolean shouldRetry(Exception exception)
+com.amazon.tv.developer.com.amazon.p11.spy.retries.RetryExceptionStrategy	method	public void setLastException(Exception exception)
+com.amazon.tv.developer.com.amazon.p11.spy.retries.RetryExceptionStrategyFactory	field	private final Set<Class<? extends Throwable>> typesToRetry;
+com.amazon.tv.developer.com.amazon.p11.spy.retries.RetryExceptionStrategyFactory	method	public RetryExceptionStrategy create()
+com.amazon.tv.developer.com.amazon.p11.spy.retries.RetryExceptionStrategyFactory	method	public RetryExceptionStrategyFactory(Set<Class<? extends Throwable>> typesToRetry)
+com.amazon.tv.developer.com.amazon.p11.spy.retries.Sleeper	method	public void sleep(long delay) throws InterruptedException
+com.amazon.tv.developer.sdk.content.AmazonDataIntegrationService	field	private AmazonDataIntegrationServiceBinder mServiceBinder;
+com.amazon.tv.developer.sdk.content.AmazonDataIntegrationService	method	public IBinder onBind(Intent intent)
+com.amazon.tv.developer.sdk.content.AmazonDataIntegrationService	method	public abstract void getAllContentEntitlements(AmazonContentEntitlementReceiver amazonContentEntitlementReceiver);
+com.amazon.tv.developer.sdk.content.AmazonDataIntegrationService	method	public abstract void getAllCustomerListEntries(AmazonCustomerListReceiver amazonCustomerListReceiver, int i);
+com.amazon.tv.developer.sdk.content.AmazonDataIntegrationService	method	public abstract void getAllSubscriptionEntitlements(AmazonSubscriptionEntitlementReceiver amazonSubscriptionEntitlementReceiver);
+com.amazon.tv.developer.sdk.content.AmazonDataIntegrationService	method	public abstract void getRecentPlaybackEventsSince(AmazonPlaybackReceiver amazonPlaybackReceiver, long j);
+com.amazon.tv.developer.sdk.content.AmazonDataIntegrationService	method	public void getCustomerAffinities(AmazonCustomerAffinityReceiver receiver, String profileId)
+com.amazon.tv.developer.sdk.content.AmazonDataIntegrationService	method	public void onCreate()
+com.amazon.tv.developer.sdk.content.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.tv.developer.sdk.content.BuildConfig	field	public static final String LIBRARY_PACKAGE_NAME;
+com.amazon.tv.developer.sdk.content.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.tv.developer.sdk.content.entitlement.AmazonSubscriptionEntitlementReceiver	field	private final Context mContext;
+com.amazon.tv.developer.sdk.content.entitlement.AmazonSubscriptionEntitlementReceiver	field	private final MiddlewareMessenger mMiddlewareMessenger;
+com.amazon.tv.developer.sdk.content.entitlement.AmazonSubscriptionEntitlementReceiver	field	private static AmazonSubscriptionEntitlementReceiver instance;
+com.amazon.tv.developer.sdk.content.entitlement.AmazonSubscriptionEntitlementReceiver	field	private static final String TAG;
+com.amazon.tv.developer.sdk.content.entitlement.AmazonSubscriptionEntitlementReceiver	method	private AmazonSubscriptionEntitlementReceiver(Context context)
+com.amazon.tv.developer.sdk.content.entitlement.AmazonSubscriptionEntitlementReceiver	method	private void processSubscriptionsUpdate(List<AmazonSubscriptionEntitlement> subscriptions, UpdateType updateType)
+com.amazon.tv.developer.sdk.content.entitlement.AmazonSubscriptionEntitlementReceiver	method	public static synchronized AmazonSubscriptionEntitlementReceiver getInstance(Context context)
+com.amazon.tv.developer.sdk.content.entitlement.AmazonSubscriptionEntitlementReceiver	method	public void addSubscription(AmazonSubscriptionEntitlement subscription)
+com.amazon.tv.developer.sdk.content.entitlement.AmazonSubscriptionEntitlementReceiver	method	public void addSubscriptions(List<AmazonSubscriptionEntitlement> subscriptions)
+com.amazon.tv.developer.sdk.content.entitlement.AmazonSubscriptionEntitlementReceiver	method	public void removeSubscription(AmazonSubscriptionEntitlement subscription)
+com.amazon.tv.developer.sdk.content.entitlement.AmazonSubscriptionEntitlementReceiver	method	public void removeSubscriptions(List<AmazonSubscriptionEntitlement> subscriptions)
+com.amazon.tv.developer.sdk.content.entitlement.AmazonSubscriptionEntitlementReceiver	method	public void setSubscriptions(List<AmazonSubscriptionEntitlement> subscriptions)
+com.amazon.tv.developer.sdk.content.entitlement.AmazonSubscriptionEntitlementReceiver	method	public void setSubscriptions(int listStatus, List<AmazonSubscriptionEntitlement> subscriptions)
+com.amazon.tv.developer.sdk.content.entitlement.model.AmazonSubscriptionEntitlement	field	private String subscriptionId;
+com.amazon.tv.developer.sdk.content.entitlement.model.AmazonSubscriptionEntitlement	field	private long acquisitionTimestampMs;
+com.amazon.tv.developer.sdk.content.entitlement.model.AmazonSubscriptionEntitlement	field	private long expirationTimestampMs;
+com.amazon.tv.developer.sdk.content.entitlement.model.AmazonSubscriptionEntitlement	method	private AmazonSubscriptionEntitlement(Builder builder)
+com.amazon.tv.developer.sdk.content.entitlement.model.AmazonSubscriptionEntitlement	method	protected boolean canEqual(Object other)
+com.amazon.tv.developer.sdk.content.entitlement.model.AmazonSubscriptionEntitlement	method	public String getSubscriptionId()
+com.amazon.tv.developer.sdk.content.entitlement.model.AmazonSubscriptionEntitlement	method	public String toString()
+com.amazon.tv.developer.sdk.content.entitlement.model.AmazonSubscriptionEntitlement	method	public boolean equals(Object o)
+com.amazon.tv.developer.sdk.content.entitlement.model.AmazonSubscriptionEntitlement	method	public int hashCode()
+com.amazon.tv.developer.sdk.content.entitlement.model.AmazonSubscriptionEntitlement	method	public long getAcquisitionTimestampMs()
+com.amazon.tv.developer.sdk.content.entitlement.model.AmazonSubscriptionEntitlement	method	public long getExpirationTimestampMs()
+com.amazon.tv.developer.sdk.content.entitlement.model.AmazonSubscriptionEntitlement	method	public static Builder builder()
+com.amazon.tv.developer.sdk.content.entitlement.model.AmazonSubscriptionEntitlement$Builder	field	private Long acquisitionTimestampMs;
+com.amazon.tv.developer.sdk.content.entitlement.model.AmazonSubscriptionEntitlement$Builder	field	private Long expirationTimestampMs;
+com.amazon.tv.developer.sdk.content.entitlement.model.AmazonSubscriptionEntitlement$Builder	field	private String subscriptionId;
+com.amazon.tv.developer.sdk.content.entitlement.model.AmazonSubscriptionEntitlement$Builder	method	public AmazonSubscriptionEntitlement build() throws IllegalArgumentException
+com.amazon.tv.developer.sdk.content.entitlement.model.AmazonSubscriptionEntitlement$Builder	method	public Builder acquisitionTimestampMs(long acquisitionTimestampMs)
+com.amazon.tv.developer.sdk.content.entitlement.model.AmazonSubscriptionEntitlement$Builder	method	public Builder expirationTimestampMs(long expirationTimestampMs)
+com.amazon.tv.developer.sdk.content.entitlement.model.AmazonSubscriptionEntitlement$Builder	method	public Builder subscriptionId(String subscriptionId)
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	field	private final BoundedQueue<MetricReport> metricsQueue;
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	field	private final ExecutorService executorService;
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	field	private final MiddlewareMessenger middlewareMessenger;
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	field	private static final String METRIC_AFFINITIES_COUNT;
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	field	private static final String METRIC_AFFINITIES_TRUNCATED;
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	field	private static final String METRIC_CALL_SERVICE_FAILURE;
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	field	private static final String METRIC_CALL_SERVICE_FATAL_FAILURE;
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	field	private static final String METRIC_DEAD_SERVICE_ERROR;
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	field	private static final String METRIC_EXECUTOR_DELAY;
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	field	private static final String METRIC_GET_CUSTOMER_AFFINITIES;
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	field	private static final String METRIC_OBJECT_VALIDATION_ERROR;
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	field	private static final String METRIC_PARAM_VALIDATION_ERROR;
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	field	private static final String METRIC_RELATED_ENTITIES_COUNT;
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	field	private static final String METRIC_RELATED_ENTITIES_TRUNCATED;
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	field	private static final String METRIC_RETRIEVE_SERVICE_FAILURE;
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	field	private static final String METRIC_RETRIEVE_SERVICE_FATAL_FAILURE;
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	field	private static final String METRIC_SET_CUSTOMER_AFFINITIES;
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	field	private static final String METRIC_VALIDATION_FAILURE;
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	field	private static final String TAG;
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	field	private static final int MAX_METRICS_TO_HOLD;
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	method	private void addMetricAndAttemptQueueDrain(MetricReport report)
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	method	protected MetricReporter(MiddlewareMessenger messenger)
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	method	public static MetricReporter getInstance()
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	method	public void reportAffinitiesTruncated()
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	method	public void reportAffinityValidationFailure()
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	method	public void reportCallServiceFailure()
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	method	public void reportCallServiceFatalFailure()
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	method	public void reportCustomerAffinitiesCount(long count)
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	method	public void reportCustomerAffinitiesRelatedEntitiesCount(long count)
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	method	public void reportDeadServiceError()
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	method	public void reportExecutorDelay(long diff, String metricName)
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	method	public void reportGetCustomerAffinitiesInvocation()
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	method	public void reportMetricConnected(MetricReport r)
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	method	public void reportObjectValidationError(String objectName)
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	method	public void reportParamValidationError(String functionName)
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	method	public void reportRelatedEntitiesTruncated()
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	method	public void reportRetrieveServiceFailure()
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	method	public void reportRetrieveServiceFatalFailure()
+com.amazon.tv.developer.sdk.content.internal.MetricReporter	method	public void reportSetCustomerAffinitiesInvocation()
+com.amazon.tv.developer.sdk.content.internal.MetricReporter$InstanceHolder	field	static final MetricReporter INSTANCE;
+com.amazon.tv.developer.sdk.content.internal.MetricReporter$InstanceHolder	method	private InstanceHolder()
+com.amazon.tv.developer.sdk.content.internal.MetricReporter$MetricReport	method	private MetricReport(Long value, String metricFormattable, Object... args)
+com.amazon.tv.developer.sdk.content.internal.MetricReporter$MetricReport	method	public boolean isNumeric()
+com.amazon.tv.developer.sdk.content.internal.MetricReporter$MetricReport	method	public static MetricReport createNumericMetric(Long value, String metricFormattable, Object... args)
+com.amazon.tv.developer.sdk.content.internal.MetricReporter$MetricReport	method	public static MetricReport createStringMetric(String metricFormattable, Object... args)
+com.amazon.tv.developer.sdk.content.internal.UpdateType	field	private final String descriptor;
+com.amazon.tv.developer.sdk.content.internal.UpdateType	field	private final int value;
+com.amazon.tv.developer.sdk.content.internal.UpdateType	method	public String toString()
+com.amazon.tv.developer.sdk.content.internal.UpdateType	method	public int getValue()
+com.amazon.tv.developer.sdk.content.internal.UpdateType	method	public static UpdateType fromOverwriteListStatus(int status)
+com.amazon.tv.developer.sdk.content.internal.messaging.AlbertoServiceProvider	field	private final AlbertoServiceCallback callback;
+com.amazon.tv.developer.sdk.content.internal.messaging.AlbertoServiceProvider	field	private final AtomicBoolean connected;
+com.amazon.tv.developer.sdk.content.internal.messaging.AlbertoServiceProvider	field	private final BinderUtils binderUtils;
+com.amazon.tv.developer.sdk.content.internal.messaging.AlbertoServiceProvider	field	private final Lock lock;
+com.amazon.tv.developer.sdk.content.internal.messaging.AlbertoServiceProvider	field	private static AlbertoServiceProvider instance;
+com.amazon.tv.developer.sdk.content.internal.messaging.AlbertoServiceProvider	field	private static final Object INSTANCE_LOCK;
+com.amazon.tv.developer.sdk.content.internal.messaging.AlbertoServiceProvider	field	private static final String ALBERTO_SERVICE_NAME;
+com.amazon.tv.developer.sdk.content.internal.messaging.AlbertoServiceProvider	field	private static final String TAG;
+com.amazon.tv.developer.sdk.content.internal.messaging.AlbertoServiceProvider	field	private static final int MAX_WAIT_BETWEEN_BINDER_TRIES;
+com.amazon.tv.developer.sdk.content.internal.messaging.AlbertoServiceProvider	field	private static final int MAX_WAIT_FOR_BINDER;
+com.amazon.tv.developer.sdk.content.internal.messaging.AlbertoServiceProvider	field	private static final int RETRIES;
+com.amazon.tv.developer.sdk.content.internal.messaging.AlbertoServiceProvider	field	private volatile CountDownLatch latch;
+com.amazon.tv.developer.sdk.content.internal.messaging.AlbertoServiceProvider	field	private volatile IAlbertoServiceInterface albertoService;
+com.amazon.tv.developer.sdk.content.internal.messaging.AlbertoServiceProvider	method	private AlbertoServiceProvider()
+com.amazon.tv.developer.sdk.content.internal.messaging.AlbertoServiceProvider	method	public IAlbertoServiceInterface getServiceInternalLocked() throws InterruptedException, AlbertoConnectionFailedException
+com.amazon.tv.developer.sdk.content.internal.messaging.AlbertoServiceProvider	method	static AlbertoServiceProvider getInstance()
+com.amazon.tv.developer.sdk.content.internal.messaging.AlbertoServiceProvider$AlbertoServiceCallback	method	public void onServiceConnected(String serviceName, IBinder binder)
+com.amazon.tv.developer.sdk.content.internal.messaging.AlbertoServiceProvider$AlbertoServiceCallback	method	public void onServiceFailed(String serviceName, String errorMessage)
+com.amazon.tv.developer.sdk.content.internal.messaging.AmazonDataIntegrationServiceBinder	field	private final WeakReference<AmazonDataIntegrationService> mService;
+com.amazon.tv.developer.sdk.content.internal.messaging.AmazonDataIntegrationServiceBinder	field	private static final String TAG;
+com.amazon.tv.developer.sdk.content.internal.messaging.AmazonDataIntegrationServiceBinder	method	private AmazonDataIntegrationService getService() throws RemoteException
+com.amazon.tv.developer.sdk.content.internal.messaging.AmazonDataIntegrationServiceBinder	method	public AmazonDataIntegrationServiceBinder(AmazonDataIntegrationService service)
+com.amazon.tv.developer.sdk.content.internal.messaging.AmazonDataIntegrationServiceBinder	method	public void pullAllContentEntitlements() throws RemoteException
+com.amazon.tv.developer.sdk.content.internal.messaging.AmazonDataIntegrationServiceBinder	method	public void pullAllCustomerListEntries(int type) throws RemoteException
+com.amazon.tv.developer.sdk.content.internal.messaging.AmazonDataIntegrationServiceBinder	method	public void pullAllSubscriptionEntitlements() throws RemoteException
+com.amazon.tv.developer.sdk.content.internal.messaging.AmazonDataIntegrationServiceBinder	method	public void pullCustomerAffinities(String profileId) throws RemoteException
+com.amazon.tv.developer.sdk.content.internal.messaging.AmazonDataIntegrationServiceBinder	method	public void pullRecentPlaybackEvents(long startingTimestampMs) throws RemoteException
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessenger	field	private final AlbertoServiceProvider albertoServiceProvider;
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessenger	field	private final ExecutorService executor;
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessenger	field	private final MetricReporter metricReporter;
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessenger	field	private static MiddlewareMessenger instance;
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessenger	field	private static final Object INSTANCE_LOCK;
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessenger	field	private static final String EXECUTOR_DELAY_SEND_CONTENT_ENTITLEMENTS;
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessenger	field	private static final String EXECUTOR_DELAY_SEND_CONTENT_INTERACTION;
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessenger	field	private static final String EXECUTOR_DELAY_SEND_CUSTOMER_LIST;
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessenger	field	private static final String EXECUTOR_DELAY_SEND_PLAYBACK_EVENTS;
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessenger	field	private static final String EXECUTOR_DELAY_SEND_SUBSCRIPTION_ENTITLEMENTS;
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessenger	field	private static final String EXECUTOR_DELAY_SET_CUSTOMER_AFFINITIES;
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessenger	field	private static final String TAG;
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessenger	field	private static final int MESSAGE_BATCH_SIZE;
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessenger	method	private <T extends Parcelable> List<T[]> generatePagination(T[] payload)
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessenger	method	private <T extends Parcelable> void sendOrPage(final T[] items, final MiddlewarePageSender<T> sender)
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessenger	method	private MiddlewareMessenger()
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessenger	method	private void submitWithRerunnable(ThrowingRunnable runnable)
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessenger	method	public boolean isMiddlewareConnectionOpen()
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessenger	method	public static MiddlewareMessenger getInstance()
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessenger	method	public void reportNumericMetric(final long timestamp, final long number, final String metric)
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessenger	method	public void reportStringMetric(final long timestamp, final String metric)
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessenger	method	public void sendContentEntitlementsUpdate(final UpdateType action, ContentEntitlement[] contentEntitlements, final long messageTimestamp)
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessenger	method	public void sendContentInteraction(final ContentInteraction interaction, final long messageTimestamp)
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessenger	method	public void sendCustomerAffinities(final NamespacedId profileId, final AffinityEntry[] affinityEntries, final long messageTimestamp)
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessenger	method	public void sendCustomerListUpdate(final UpdateType action, final int type, CustomerListEntry[] listEntries, final long messageTimestamp)
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessenger	method	public void sendPlaybackEvents(PlaybackEvent[] playbackEvents, final long messageTimestamp)
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessenger	method	public void sendSubscriptionEntitlementsUpdate(final UpdateType action, SubscriptionEntitlement[] subscriptionEntitlements, final long messageTimestamp)
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessengerRunnable	field	private final Runnable reportDeath;
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessengerRunnable	field	private final ThrowingRunnable function;
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessengerRunnable	field	private static final String TAG;
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessengerRunnable	field	private static final int TOO_LARGE_TRANSACTION_SLEEP;
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessengerRunnable	method	public MiddlewareMessengerRunnable(ThrowingRunnable function, Runnable reportDeath)
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessengerRunnable	method	public void run()
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareMessengerRunnable	method	public void run(int retriesLeft)
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareObjectConverter	field	private static final String TAG;
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareObjectConverter	method	private MiddlewareObjectConverter()
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareObjectConverter	method	public static AffinityEntry[] toAffinityEntries(AmazonAffinityEntry[] sdkEntries, final int maxRelatedEntities)
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareObjectConverter	method	public static ContentEntitlement[] toContentEntitlements(List<AmazonContentEntitlement> sdkEntitlements)
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareObjectConverter	method	public static ContentInteraction toContentInteraction(final AmazonContentInteraction contentInteraction)
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareObjectConverter	method	public static CustomerListEntry[] toCustomerListEntries(List<AmazonCustomerListEntry> sdkEntries)
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareObjectConverter	method	public static NamespacedId getNamespacedId(final AmazonContentId aCid)
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareObjectConverter	method	public static NamespacedId getNamespacedId(final AmazonProfileId aPid)
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareObjectConverter	method	public static PlaybackEvent[] toPlaybackEvents(List<AmazonPlaybackEvent> events)
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareObjectConverter	method	public static RelatedEntity[] toRelatedEntities(AmazonRelatedEntity[] sdkEntities, int maxRelatedEntities)
+com.amazon.tv.developer.sdk.content.internal.messaging.MiddlewareObjectConverter	method	public static SubscriptionEntitlement[] toSubscriptionEntitlements(List<AmazonSubscriptionEntitlement> sdkEntitlements)
+com.amazon.tv.developer.sdk.content.internal.utils.AndroidUtils	method	private AndroidUtils()
+com.amazon.tv.developer.sdk.content.internal.utils.AndroidUtils	method	public static boolean isOnMainThread()
+com.amazon.tv.developer.sdk.content.internal.utils.ConversionUtils	field	private static final int UNSET_INT_REPRESENTATION;
+com.amazon.tv.developer.sdk.content.internal.utils.ConversionUtils	field	private static final int UNSET_LONG_REPRESENTATION;
+com.amazon.tv.developer.sdk.content.internal.utils.ConversionUtils	method	private ConversionUtils()
+com.amazon.tv.developer.sdk.content.internal.utils.ConversionUtils	method	public static int unboxSafely(Integer value)
+com.amazon.tv.developer.sdk.content.internal.utils.ConversionUtils	method	public static long unboxSafely(Long value)
+com.amazon.tv.developer.sdk.content.internal.utils.LogUtils	field	private static final int MAX_LIST_LENGTH_FOR_LOGGING;
+com.amazon.tv.developer.sdk.content.internal.utils.LogUtils	field	public static final String SDK_TAG;
+com.amazon.tv.developer.sdk.content.internal.utils.LogUtils	method	private LogUtils()
+com.amazon.tv.developer.sdk.content.internal.utils.LogUtils	method	private static String dataToString(Object data)
+com.amazon.tv.developer.sdk.content.internal.utils.LogUtils	method	private static String extrasMapToString(Map<String, String> extras)
+com.amazon.tv.developer.sdk.content.internal.utils.LogUtils	method	public static String formatSdkInvocationMessage(String consumerPackage, String sdkMethodName)
+com.amazon.tv.developer.sdk.content.internal.utils.LogUtils	method	public static String formatSdkInvocationMessage(String consumerPackage, String sdkMethodName, Object data)
+com.amazon.tv.developer.sdk.content.internal.utils.LogUtils	method	public static String formatSdkInvocationMessage(String consumerPackage, String sdkMethodName, Object data, Map<String, String> extras)
+com.amazon.tv.developer.sdk.content.internal.utils.LogUtils	method	public static void configureLogging()
+com.amazon.tv.developer.sdk.content.internal.utils.ObjectFieldValidator	field	private List<String> invalidNegativeValues;
+com.amazon.tv.developer.sdk.content.internal.utils.ObjectFieldValidator	field	private List<String> nullFields;
+com.amazon.tv.developer.sdk.content.internal.utils.ObjectFieldValidator	field	private List<String> pairedNullFields;
+com.amazon.tv.developer.sdk.content.internal.utils.ObjectFieldValidator	method	private boolean isNullOrEmpty(Object data)
+com.amazon.tv.developer.sdk.content.internal.utils.ObjectFieldValidator	method	public static void throwIfNullParam(Object paramToCheck, String paramName, String funcName)
+com.amazon.tv.developer.sdk.content.internal.utils.ObjectFieldValidator	method	public void isNonNegative(Long toBeValidated, String fieldName)
+com.amazon.tv.developer.sdk.content.internal.utils.ObjectFieldValidator	method	public void isNotNullOrEmpty(Object toBeValidated, String fieldName)
+com.amazon.tv.developer.sdk.content.internal.utils.ObjectFieldValidator	method	public void validate(String className)
+com.amazon.tv.developer.sdk.content.internal.utils.ObjectFieldValidator	method	public void validateAtLeastOneProvided(Object firstToBeValidated, String firstFieldName, Object secondToBeValidated, String secondFieldName)
+com.amazon.tv.developer.sdk.content.model.AmazonSetListStatus	field	public static final int COMPLETE;
+com.amazon.tv.developer.sdk.content.model.AmazonSetListStatus	field	public static final int ITEMS_PENDING;
+com.amazon.tv.developer.sdk.content.model.AmazonSetListStatus	method	private AmazonSetListStatus()
+com.amazon.tv.developer.sdk.content.model.AmazonSetListStatus	method	public static String toString(int value)
+com.amazon.tv.developer.sdk.content.personalization.AmazonContentEntitlementReceiver	field	private final Context mContext;
+com.amazon.tv.developer.sdk.content.personalization.AmazonContentEntitlementReceiver	field	private final MiddlewareMessenger mMiddlewareMessenger;
+com.amazon.tv.developer.sdk.content.personalization.AmazonContentEntitlementReceiver	field	private static AmazonContentEntitlementReceiver instance;
+com.amazon.tv.developer.sdk.content.personalization.AmazonContentEntitlementReceiver	field	private static final String TAG;
+com.amazon.tv.developer.sdk.content.personalization.AmazonContentEntitlementReceiver	method	private AmazonContentEntitlementReceiver(Context context)
+com.amazon.tv.developer.sdk.content.personalization.AmazonContentEntitlementReceiver	method	private void processContentEntitlementsUpdate(List<AmazonContentEntitlement> entitlements, UpdateType updateType)
+com.amazon.tv.developer.sdk.content.personalization.AmazonContentEntitlementReceiver	method	public static synchronized AmazonContentEntitlementReceiver getInstance(Context context)
+com.amazon.tv.developer.sdk.content.personalization.AmazonContentEntitlementReceiver	method	public void addContentEntitlement(AmazonContentEntitlement entitlement)
+com.amazon.tv.developer.sdk.content.personalization.AmazonContentEntitlementReceiver	method	public void addContentEntitlements(List<AmazonContentEntitlement> entitlements)
+com.amazon.tv.developer.sdk.content.personalization.AmazonContentEntitlementReceiver	method	public void removeContentEntitlement(AmazonContentEntitlement entitlement)
+com.amazon.tv.developer.sdk.content.personalization.AmazonContentEntitlementReceiver	method	public void removeContentEntitlements(List<AmazonContentEntitlement> entitlements)
+com.amazon.tv.developer.sdk.content.personalization.AmazonContentEntitlementReceiver	method	public void setContentEntitlements(List<AmazonContentEntitlement> entitlements)
+com.amazon.tv.developer.sdk.content.personalization.AmazonContentEntitlementReceiver	method	public void setContentEntitlements(int listStatus, List<AmazonContentEntitlement> entitlements)
+com.amazon.tv.developer.sdk.content.personalization.AmazonContentInteractionReceiver	field	private final Context mContext;
+com.amazon.tv.developer.sdk.content.personalization.AmazonContentInteractionReceiver	field	private final MiddlewareMessenger mMessenger;
+com.amazon.tv.developer.sdk.content.personalization.AmazonContentInteractionReceiver	field	private static AmazonContentInteractionReceiver instance;
+com.amazon.tv.developer.sdk.content.personalization.AmazonContentInteractionReceiver	field	private static final String TAG;
+com.amazon.tv.developer.sdk.content.personalization.AmazonContentInteractionReceiver	method	private AmazonContentInteractionReceiver(Context context)
+com.amazon.tv.developer.sdk.content.personalization.AmazonContentInteractionReceiver	method	private void processContentInteraction(AmazonContentInteraction contentInteraction)
+com.amazon.tv.developer.sdk.content.personalization.AmazonContentInteractionReceiver	method	public static synchronized AmazonContentInteractionReceiver getInstance(Context context)
+com.amazon.tv.developer.sdk.content.personalization.AmazonContentInteractionReceiver	method	public void addContentInteraction(AmazonContentInteraction contentInteraction)
+com.amazon.tv.developer.sdk.content.personalization.AmazonCustomerAffinityReceiver	field	private final Context mContext;
+com.amazon.tv.developer.sdk.content.personalization.AmazonCustomerAffinityReceiver	field	private final MiddlewareMessenger mMiddlewareMessenger;
+com.amazon.tv.developer.sdk.content.personalization.AmazonCustomerAffinityReceiver	field	private static AmazonCustomerAffinityReceiver instance;
+com.amazon.tv.developer.sdk.content.personalization.AmazonCustomerAffinityReceiver	field	private static final String TAG;
+com.amazon.tv.developer.sdk.content.personalization.AmazonCustomerAffinityReceiver	field	private static final int MAX_AFFINITIES;
+com.amazon.tv.developer.sdk.content.personalization.AmazonCustomerAffinityReceiver	field	private static final int MAX_RELATED_ENTITIES;
+com.amazon.tv.developer.sdk.content.personalization.AmazonCustomerAffinityReceiver	method	private AmazonCustomerAffinityReceiver(Context context)
+com.amazon.tv.developer.sdk.content.personalization.AmazonCustomerAffinityReceiver	method	public static synchronized AmazonCustomerAffinityReceiver getInstance(Context context)
+com.amazon.tv.developer.sdk.content.personalization.AmazonCustomerAffinityReceiver	method	public void setCustomerAffinities(AmazonCustomerAffinity customerAffinities)
+com.amazon.tv.developer.sdk.content.personalization.AmazonCustomerListReceiver	field	private final Context mContext;
+com.amazon.tv.developer.sdk.content.personalization.AmazonCustomerListReceiver	field	private final MiddlewareMessenger mMiddlewareMessenger;
+com.amazon.tv.developer.sdk.content.personalization.AmazonCustomerListReceiver	field	private static AmazonCustomerListReceiver instance;
+com.amazon.tv.developer.sdk.content.personalization.AmazonCustomerListReceiver	field	private static final String TAG;
+com.amazon.tv.developer.sdk.content.personalization.AmazonCustomerListReceiver	method	private AmazonCustomerListReceiver(Context context)
+com.amazon.tv.developer.sdk.content.personalization.AmazonCustomerListReceiver	method	private void processCustomerListUpdate(List<AmazonCustomerListEntry> entries, UpdateType updateType, int type)
+com.amazon.tv.developer.sdk.content.personalization.AmazonCustomerListReceiver	method	public static synchronized AmazonCustomerListReceiver getInstance(Context context)
+com.amazon.tv.developer.sdk.content.personalization.AmazonCustomerListReceiver	method	public void addCustomerListEntries(int type, List<AmazonCustomerListEntry> entries)
+com.amazon.tv.developer.sdk.content.personalization.AmazonCustomerListReceiver	method	public void addCustomerListEntry(int type, AmazonCustomerListEntry entry)
+com.amazon.tv.developer.sdk.content.personalization.AmazonCustomerListReceiver	method	public void removeCustomerListEntries(int type, List<AmazonCustomerListEntry> entries)
+com.amazon.tv.developer.sdk.content.personalization.AmazonCustomerListReceiver	method	public void removeCustomerListEntry(int type, AmazonCustomerListEntry entry)
+com.amazon.tv.developer.sdk.content.personalization.AmazonCustomerListReceiver	method	public void setCustomerList(final int type, final int listStatus, List<AmazonCustomerListEntry> entries)
+com.amazon.tv.developer.sdk.content.personalization.AmazonCustomerListReceiver	method	public void setCustomerList(int type, List<AmazonCustomerListEntry> entries)
+com.amazon.tv.developer.sdk.content.personalization.AmazonPlaybackReceiver	field	private final Context mContext;
+com.amazon.tv.developer.sdk.content.personalization.AmazonPlaybackReceiver	field	private final MiddlewareMessenger mMiddlewareMessenger;
+com.amazon.tv.developer.sdk.content.personalization.AmazonPlaybackReceiver	field	private static AmazonPlaybackReceiver instance;
+com.amazon.tv.developer.sdk.content.personalization.AmazonPlaybackReceiver	field	private static final String TAG;
+com.amazon.tv.developer.sdk.content.personalization.AmazonPlaybackReceiver	method	private AmazonPlaybackReceiver(Context context)
+com.amazon.tv.developer.sdk.content.personalization.AmazonPlaybackReceiver	method	private void setTimestampIfActive(AmazonPlaybackEvent e)
+com.amazon.tv.developer.sdk.content.personalization.AmazonPlaybackReceiver	method	public static synchronized AmazonPlaybackReceiver getInstance(Context context)
+com.amazon.tv.developer.sdk.content.personalization.AmazonPlaybackReceiver	method	public void addPlaybackEvent(AmazonPlaybackEvent amazonPlaybackEvent)
+com.amazon.tv.developer.sdk.content.personalization.AmazonPlaybackReceiver	method	public void addPlaybackEvents(List<AmazonPlaybackEvent> amazonPlaybackEventList)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityDimension	field	public static final int CREATOR;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityDimension	field	public static final int HASHTAG;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityDimension	field	public static final int TOPIC;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityDimension	method	private AmazonAffinityDimension()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry	field	private AmazonRelatedEntity[] relatedEntities;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry	field	private String affinityKey;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry	field	private String displayName;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry	field	private double confidenceScore;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry	field	private double preferenceScore;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry	field	private int dimension;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry	field	private long lastDatapointTimestampMs;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry	method	private AmazonAffinityEntry(Builder builder)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry	method	protected boolean canEqual(Object other)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry	method	public AmazonRelatedEntity[] getRelatedEntities()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry	method	public String getAffinityKey()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry	method	public String getDisplayName()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry	method	public String toString()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry	method	public boolean equals(Object o)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry	method	public double getConfidenceScore()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry	method	public double getPreferenceScore()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry	method	public int getDimension()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry	method	public int hashCode()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry	method	public long getLastDatapointTimestampMs()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry	method	public static Builder builder()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry$Builder	field	private AmazonRelatedEntity[] relatedEntities;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry$Builder	field	private Double confidenceScore;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry$Builder	field	private Double preferenceScore;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry$Builder	field	private Integer dimension;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry$Builder	field	private Long lastDatapointTimestampMs;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry$Builder	field	private String affinityKey;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry$Builder	field	private String displayName;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry$Builder	method	public AmazonAffinityEntry build() throws IllegalArgumentException
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry$Builder	method	public Builder affinityKey(String affinityKey)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry$Builder	method	public Builder confidenceScore(double confidenceScore)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry$Builder	method	public Builder dimension(int dimension)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry$Builder	method	public Builder displayName(String displayName)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry$Builder	method	public Builder lastDatapointTimestampMs(long lastDatapointTimestampMs)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry$Builder	method	public Builder preferenceScore(double preferenceScore)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonAffinityEntry$Builder	method	public Builder relatedEntities(AmazonRelatedEntity[] relatedEntities)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentEntitlement	field	private AmazonContentId contentId;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentEntitlement	field	private int type;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentEntitlement	field	private long acquisitionTimestampMs;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentEntitlement	field	private long expirationTimestampMs;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentEntitlement	method	private AmazonContentEntitlement(Builder builder)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentEntitlement	method	protected boolean canEqual(Object other)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentEntitlement	method	public AmazonContentId getContentId()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentEntitlement	method	public String toString()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentEntitlement	method	public boolean equals(Object o)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentEntitlement	method	public int getType()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentEntitlement	method	public int hashCode()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentEntitlement	method	public long getAcquisitionTimestampMs()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentEntitlement	method	public long getExpirationTimestampMs()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentEntitlement	method	public static Builder builder()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentEntitlement$Builder	field	private AmazonContentId contentId;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentEntitlement$Builder	field	private Integer type;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentEntitlement$Builder	field	private Long acquisitionTimestampMs;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentEntitlement$Builder	field	private Long expirationTimestampMs;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentEntitlement$Builder	method	public AmazonContentEntitlement build() throws IllegalArgumentException
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentEntitlement$Builder	method	public Builder acquisitionTimestampMs(long acquisitionTimestampMs)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentEntitlement$Builder	method	public Builder contentId(AmazonContentId contentId)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentEntitlement$Builder	method	public Builder expirationTimestampMs(long expirationTimestampMs)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentEntitlement$Builder	method	public Builder type(int type)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentId	field	private String id;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentId	field	private String namespace;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentId	field	public static final String NAMESPACE_CDF_ID;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentId	field	public static final String NAMESPACE_EIDR;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentId	field	public static final String NAMESPACE_GVD;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentId	field	public static final String NAMESPACE_LINEAR_CDF_ID;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentId	field	public static final String NAMESPACE_ONTV;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentId	method	private AmazonContentId(Builder builder)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentId	method	protected boolean canEqual(Object other)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentId	method	public String getId()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentId	method	public String getNamespace()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentId	method	public String toString()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentId	method	public boolean equals(Object o)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentId	method	public int hashCode()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentId	method	public static Builder builder()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentId$Builder	field	private String id;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentId$Builder	field	private String namespace;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentId$Builder	method	public AmazonContentId build() throws IllegalArgumentException
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentId$Builder	method	public Builder id(String id)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentId$Builder	method	public Builder namespace(String namespace)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentInteraction	field	private AmazonContentId contentId;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentInteraction	field	private AmazonProfileId profileId;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentInteraction	field	private int type;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentInteraction	field	private long interactionTimestampMs;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentInteraction	method	private AmazonContentInteraction(Builder builder)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentInteraction	method	protected boolean canEqual(Object other)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentInteraction	method	public AmazonContentId getContentId()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentInteraction	method	public AmazonProfileId getProfileId()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentInteraction	method	public String toString()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentInteraction	method	public boolean equals(Object o)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentInteraction	method	public int getType()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentInteraction	method	public int hashCode()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentInteraction	method	public long getInteractionTimestampMs()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentInteraction	method	public static Builder builder()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentInteraction$Builder	field	private AmazonContentId contentId;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentInteraction$Builder	field	private AmazonProfileId profileId;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentInteraction$Builder	field	private Integer type;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentInteraction$Builder	field	private Long interactionTimestampMs;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentInteraction$Builder	method	public AmazonContentInteraction build() throws IllegalArgumentException
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentInteraction$Builder	method	public Builder contentId(AmazonContentId contentId)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentInteraction$Builder	method	public Builder interactionTimestampMs(long interactionTimestampMs)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentInteraction$Builder	method	public Builder profileId(AmazonProfileId profileId)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentInteraction$Builder	method	public Builder type(int type)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentInteractionType	field	public static final int DETAIL_VIEW;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentInteractionType	field	public static final int DISLIKE;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentInteractionType	field	public static final int INGRESS;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentInteractionType	field	public static final int LIKE;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentInteractionType	field	public static final int REMOVE;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentInteractionType	field	public static final int TRAILER_VIEW;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonContentInteractionType	method	private AmazonContentInteractionType()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerAffinity	field	private AmazonAffinityEntry[] affinities;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerAffinity	field	private AmazonProfileId profileId;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerAffinity	field	public static final String ACTIVE_PROFILE;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerAffinity	method	private AmazonCustomerAffinity(Builder builder)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerAffinity	method	protected boolean canEqual(Object other)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerAffinity	method	public AmazonAffinityEntry[] getAffinities()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerAffinity	method	public AmazonProfileId getProfileId()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerAffinity	method	public String toString()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerAffinity	method	public boolean equals(Object o)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerAffinity	method	public int hashCode()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerAffinity	method	public static Builder builder()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerAffinity$Builder	field	private AmazonAffinityEntry[] affinities;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerAffinity$Builder	field	private AmazonProfileId profileId;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerAffinity$Builder	method	public AmazonCustomerAffinity build() throws IllegalArgumentException
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerAffinity$Builder	method	public Builder affinities(AmazonAffinityEntry[] affinities)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerAffinity$Builder	method	public Builder profileId(AmazonProfileId profileId)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerListEntry	field	private AmazonContentId contentId;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerListEntry	field	private AmazonProfileId profileId;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerListEntry	field	private long addedTimestampMs;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerListEntry	method	private AmazonCustomerListEntry(Builder builder)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerListEntry	method	protected boolean canEqual(Object other)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerListEntry	method	public AmazonContentId getContentId()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerListEntry	method	public AmazonProfileId getProfileId()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerListEntry	method	public String toString()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerListEntry	method	public boolean equals(Object o)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerListEntry	method	public int hashCode()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerListEntry	method	public long getAddedTimestampMs()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerListEntry	method	public static Builder builder()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerListEntry$Builder	field	private AmazonContentId contentId;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerListEntry$Builder	field	private AmazonProfileId profileId;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerListEntry$Builder	field	private Long addedTimestampMs;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerListEntry$Builder	method	public AmazonCustomerListEntry build() throws IllegalArgumentException
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerListEntry$Builder	method	public Builder addedTimestampMs(long addedTimestampMs)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerListEntry$Builder	method	public Builder contentId(AmazonContentId contentId)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerListEntry$Builder	method	public Builder profileId(AmazonProfileId profileId)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerListType	field	public static final int WATCHLIST;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerListType	method	private AmazonCustomerListType()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonCustomerListType	method	public static String toString(int value)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonEntitlementType	field	public static final int PURCHASE;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonEntitlementType	field	public static final int RECORDING;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonEntitlementType	field	public static final int RENTAL;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonEntitlementType	method	private AmazonEntitlementType()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonEntitlementType	method	public static String toString(int value)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent	field	private AmazonContentId contentId;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent	field	private AmazonContentId liveStationId;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent	field	private AmazonProfileId profileId;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent	field	private boolean isOffDevice;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent	field	private int state;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent	field	private long creditsPositionMs;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent	field	private long durationMs;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent	field	private long eventTimestampMs;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent	field	private long playbackPositionMs;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent	method	private AmazonPlaybackEvent(Builder builder, boolean isOffDevice)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent	method	protected boolean canEqual(Object other)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent	method	public AmazonContentId getContentId()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent	method	public AmazonContentId getLiveStationId()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent	method	public AmazonProfileId getProfileId()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent	method	public String toString()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent	method	public boolean equals(Object o)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent	method	public boolean isOffDevice()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent	method	public int getState()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent	method	public int hashCode()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent	method	public long getCreditsPositionMs()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent	method	public long getDurationMs()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent	method	public long getEventTimestampMs()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent	method	public long getPlaybackPositionMs()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent	method	public static Builder builder()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent	method	public void setEventTimestampMs(long eventTimestampMs)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent	method	public void setPlaybackPositionMs(long playbackPositionMs)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent	method	public void setState(int state)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent$Builder	field	private AmazonContentId contentId;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent$Builder	field	private AmazonContentId liveStationId;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent$Builder	field	private AmazonProfileId profileId;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent$Builder	field	private Integer state;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent$Builder	field	private Long creditsPositionMs;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent$Builder	field	private Long durationMs;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent$Builder	field	private Long eventTimestampMs;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent$Builder	field	private Long playbackPositionMs;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent$Builder	method	public AmazonPlaybackEvent buildActiveEvent() throws IllegalArgumentException
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent$Builder	method	public AmazonPlaybackEvent buildOffDeviceEvent()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent$Builder	method	public Builder contentId(AmazonContentId contentId)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent$Builder	method	public Builder creditsPositionMs(long creditsPositionMs)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent$Builder	method	public Builder durationMs(long durationMs)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent$Builder	method	public Builder eventTimestampMs(long eventTimestampMs)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent$Builder	method	public Builder liveStationId(AmazonContentId liveStationId)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent$Builder	method	public Builder playbackPositionMs(long playbackPositionMs)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent$Builder	method	public Builder profileId(AmazonProfileId profileId)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackEvent$Builder	method	public Builder state(int state)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackState	field	public static final int EXIT;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackState	field	public static final int INTERSTITIAL;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackState	field	public static final int PAUSED;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackState	field	public static final int PLAYING;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonPlaybackState	method	private AmazonPlaybackState()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonProfileId	field	private String id;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonProfileId	field	private String namespace;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonProfileId	field	public static final String NAMESPACE_APP_INTERNAL;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonProfileId	method	private AmazonProfileId(Builder builder)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonProfileId	method	protected boolean canEqual(Object other)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonProfileId	method	public String getId()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonProfileId	method	public String getNamespace()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonProfileId	method	public String toString()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonProfileId	method	public boolean equals(Object o)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonProfileId	method	public int hashCode()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonProfileId	method	public static Builder builder()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonProfileId$Builder	field	private String id;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonProfileId$Builder	field	private String namespace;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonProfileId$Builder	method	public AmazonProfileId build() throws IllegalArgumentException
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonProfileId$Builder	method	public Builder id(String id)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonProfileId$Builder	method	public Builder namespace(String namespace)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonRelatedEntity	field	private String id;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonRelatedEntity	field	private int dimension;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonRelatedEntity	method	private AmazonRelatedEntity(Builder builder)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonRelatedEntity	method	protected boolean canEqual(Object other)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonRelatedEntity	method	public String getId()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonRelatedEntity	method	public String toString()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonRelatedEntity	method	public boolean equals(Object o)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonRelatedEntity	method	public int getDimension()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonRelatedEntity	method	public int hashCode()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonRelatedEntity	method	public static Builder builder()
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonRelatedEntity$Builder	field	private Integer dimension;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonRelatedEntity$Builder	field	private String id;
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonRelatedEntity$Builder	method	public AmazonRelatedEntity build() throws IllegalArgumentException
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonRelatedEntity$Builder	method	public Builder dimension(int dimension)
+com.amazon.tv.developer.sdk.content.personalization.model.AmazonRelatedEntity$Builder	method	public Builder id(String id)
+com.amazon.tv.developer.sdk.personalization.messaging.AffinityEntry	field	public RelatedEntity[] relatedEntities;
+com.amazon.tv.developer.sdk.personalization.messaging.AffinityEntry	field	public String affinityKey;
+com.amazon.tv.developer.sdk.personalization.messaging.AffinityEntry	field	public String displayName;
+com.amazon.tv.developer.sdk.personalization.messaging.AffinityEntry	field	public double confidenceScore;
+com.amazon.tv.developer.sdk.personalization.messaging.AffinityEntry	field	public double preferenceScore;
+com.amazon.tv.developer.sdk.personalization.messaging.AffinityEntry	field	public int dimension;
+com.amazon.tv.developer.sdk.personalization.messaging.AffinityEntry	field	public long lastDatapointTimestampMs;
+com.amazon.tv.developer.sdk.personalization.messaging.AffinityEntry	method	private int describeContents(Object _v)
+com.amazon.tv.developer.sdk.personalization.messaging.AffinityEntry	method	public final void readFromParcel(Parcel _aidl_parcel)
+com.amazon.tv.developer.sdk.personalization.messaging.AffinityEntry	method	public final void writeToParcel(Parcel _aidl_parcel, int _aidl_flag)
+com.amazon.tv.developer.sdk.personalization.messaging.AffinityEntry	method	public int describeContents()
+com.amazon.tv.developer.sdk.personalization.messaging.ContentEntitlement	field	public NamespacedId contentId;
+com.amazon.tv.developer.sdk.personalization.messaging.ContentEntitlement	field	public int type;
+com.amazon.tv.developer.sdk.personalization.messaging.ContentEntitlement	field	public long acquisitionTimestampMs;
+com.amazon.tv.developer.sdk.personalization.messaging.ContentEntitlement	field	public long expirationTimestampMs;
+com.amazon.tv.developer.sdk.personalization.messaging.ContentEntitlement	method	private int describeContents(Object _v)
+com.amazon.tv.developer.sdk.personalization.messaging.ContentEntitlement	method	public final void readFromParcel(Parcel _aidl_parcel)
+com.amazon.tv.developer.sdk.personalization.messaging.ContentEntitlement	method	public final void writeToParcel(Parcel _aidl_parcel, int _aidl_flag)
+com.amazon.tv.developer.sdk.personalization.messaging.ContentEntitlement	method	public int describeContents()
+com.amazon.tv.developer.sdk.personalization.messaging.ContentEntitlement$_Parcel	method	public static <T extends Parcelable> void writeTypedObject(Parcel parcel, T value, int parcelableFlags)
+com.amazon.tv.developer.sdk.personalization.messaging.ContentEntitlement$_Parcel	method	public static <T> T readTypedObject(Parcel parcel, Parcelable.Creator<T> c)
+com.amazon.tv.developer.sdk.personalization.messaging.ContentInteraction	field	public NamespacedId contentId;
+com.amazon.tv.developer.sdk.personalization.messaging.ContentInteraction	field	public NamespacedId profileId;
+com.amazon.tv.developer.sdk.personalization.messaging.ContentInteraction	field	public int type;
+com.amazon.tv.developer.sdk.personalization.messaging.ContentInteraction	field	public long interactionTimestampMs;
+com.amazon.tv.developer.sdk.personalization.messaging.ContentInteraction	method	private int describeContents(Object _v)
+com.amazon.tv.developer.sdk.personalization.messaging.ContentInteraction	method	public final void readFromParcel(Parcel _aidl_parcel)
+com.amazon.tv.developer.sdk.personalization.messaging.ContentInteraction	method	public final void writeToParcel(Parcel _aidl_parcel, int _aidl_flag)
+com.amazon.tv.developer.sdk.personalization.messaging.ContentInteraction	method	public int describeContents()
+com.amazon.tv.developer.sdk.personalization.messaging.ContentInteraction$_Parcel	method	public static <T extends Parcelable> void writeTypedObject(Parcel parcel, T value, int parcelableFlags)
+com.amazon.tv.developer.sdk.personalization.messaging.ContentInteraction$_Parcel	method	public static <T> T readTypedObject(Parcel parcel, Parcelable.Creator<T> c)
+com.amazon.tv.developer.sdk.personalization.messaging.CustomerListEntry	field	public NamespacedId contentId;
+com.amazon.tv.developer.sdk.personalization.messaging.CustomerListEntry	field	public NamespacedId profileId;
+com.amazon.tv.developer.sdk.personalization.messaging.CustomerListEntry	field	public long addedTimestampMs;
+com.amazon.tv.developer.sdk.personalization.messaging.CustomerListEntry	method	private int describeContents(Object _v)
+com.amazon.tv.developer.sdk.personalization.messaging.CustomerListEntry	method	public final void readFromParcel(Parcel _aidl_parcel)
+com.amazon.tv.developer.sdk.personalization.messaging.CustomerListEntry	method	public final void writeToParcel(Parcel _aidl_parcel, int _aidl_flag)
+com.amazon.tv.developer.sdk.personalization.messaging.CustomerListEntry	method	public int describeContents()
+com.amazon.tv.developer.sdk.personalization.messaging.CustomerListEntry$_Parcel	method	public static <T extends Parcelable> void writeTypedObject(Parcel parcel, T value, int parcelableFlags)
+com.amazon.tv.developer.sdk.personalization.messaging.CustomerListEntry$_Parcel	method	public static <T> T readTypedObject(Parcel parcel, Parcelable.Creator<T> c)
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface	field	public static final String DESCRIPTOR;
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Default	method	public IBinder asBinder()
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Default	method	public void placeholder_function10() throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Default	method	public void placeholder_function11() throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Default	method	public void placeholder_function8() throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Default	method	public void placeholder_function9() throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Default	method	public void reportSdkNumericMetric(long metricTimestamp, String reportSdkMetric, long number) throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Default	method	public void reportSdkStringMetric(long metricTimestamp, String reportSdkMetric) throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Default	method	public void sendContentEntitlements(long sentTimestamp, int action, ContentEntitlement[] entitlements, int pageNo, int totalNumberOfPages) throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Default	method	public void sendContentInteraction(long sentTimestamp, ContentInteraction event) throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Default	method	public void sendCustomerAffinities(long sentTimestamp, NamespacedId profileId, AffinityEntry[] affinities) throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Default	method	public void sendCustomerListEntries(long sentTimestamp, int action, int type, CustomerListEntry[] entries, int pageNo, int totalNumberOfPages) throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Default	method	public void sendPlaybackEvents(long sentTimestamp, PlaybackEvent[] events, int pageNo, int totalNumberOfPages) throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Default	method	public void sendSubscriptionEntitlements(long sentTimestamp, int action, SubscriptionEntitlement[] entitlements, int pageNo, int totalNumberOfPages) throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub	field	static final int TRANSACTION_placeholder_function10;
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub	field	static final int TRANSACTION_placeholder_function11;
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub	field	static final int TRANSACTION_placeholder_function8;
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub	field	static final int TRANSACTION_placeholder_function9;
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub	field	static final int TRANSACTION_reportSdkNumericMetric;
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub	field	static final int TRANSACTION_reportSdkStringMetric;
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub	field	static final int TRANSACTION_sendContentEntitlements;
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub	field	static final int TRANSACTION_sendContentInteraction;
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub	field	static final int TRANSACTION_sendCustomerAffinities;
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub	field	static final int TRANSACTION_sendCustomerListEntries;
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub	field	static final int TRANSACTION_sendPlaybackEvents;
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub	field	static final int TRANSACTION_sendSubscriptionEntitlements;
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub	method	public IBinder asBinder()
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub	method	public Stub()
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub	method	public static IAlbertoServiceInterface asInterface(IBinder obj)
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub$Proxy	method	public void placeholder_function10() throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub$Proxy	method	public void placeholder_function11() throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub$Proxy	method	public void placeholder_function8() throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub$Proxy	method	public void placeholder_function9() throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub$Proxy	method	public void reportSdkNumericMetric(long metricTimestamp, String reportSdkMetric, long number) throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub$Proxy	method	public void reportSdkStringMetric(long metricTimestamp, String reportSdkMetric) throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub$Proxy	method	public void sendContentEntitlements(long sentTimestamp, int action, ContentEntitlement[] entitlements, int pageNo, int totalNumberOfPages) throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub$Proxy	method	public void sendContentInteraction(long sentTimestamp, ContentInteraction event) throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub$Proxy	method	public void sendCustomerAffinities(long sentTimestamp, NamespacedId profileId, AffinityEntry[] affinities) throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub$Proxy	method	public void sendCustomerListEntries(long sentTimestamp, int action, int type, CustomerListEntry[] entries, int pageNo, int totalNumberOfPages) throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub$Proxy	method	public void sendPlaybackEvents(long sentTimestamp, PlaybackEvent[] events, int pageNo, int totalNumberOfPages) throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$Stub$Proxy	method	public void sendSubscriptionEntitlements(long sentTimestamp, int action, SubscriptionEntitlement[] entitlements, int pageNo, int totalNumberOfPages) throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$_Parcel	method	public static <T extends Parcelable> void writeTypedObject(Parcel parcel, T value, int parcelableFlags)
+com.amazon.tv.developer.sdk.personalization.messaging.IAlbertoServiceInterface$_Parcel	method	public static <T> T readTypedObject(Parcel parcel, Parcelable.Creator<T> c)
+com.amazon.tv.developer.sdk.personalization.messaging.IAmazonDataIntegrationService	field	public static final String DESCRIPTOR;
+com.amazon.tv.developer.sdk.personalization.messaging.IAmazonDataIntegrationService$Default	method	public IBinder asBinder()
+com.amazon.tv.developer.sdk.personalization.messaging.IAmazonDataIntegrationService$Default	method	public void pullAllContentEntitlements() throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAmazonDataIntegrationService$Default	method	public void pullAllCustomerListEntries(int type) throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAmazonDataIntegrationService$Default	method	public void pullAllSubscriptionEntitlements() throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAmazonDataIntegrationService$Default	method	public void pullCustomerAffinities(String profileId) throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAmazonDataIntegrationService$Default	method	public void pullRecentPlaybackEvents(long startingTimestampMs) throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAmazonDataIntegrationService$Stub	field	static final int TRANSACTION_pullAllContentEntitlements;
+com.amazon.tv.developer.sdk.personalization.messaging.IAmazonDataIntegrationService$Stub	field	static final int TRANSACTION_pullAllCustomerListEntries;
+com.amazon.tv.developer.sdk.personalization.messaging.IAmazonDataIntegrationService$Stub	field	static final int TRANSACTION_pullAllSubscriptionEntitlements;
+com.amazon.tv.developer.sdk.personalization.messaging.IAmazonDataIntegrationService$Stub	field	static final int TRANSACTION_pullCustomerAffinities;
+com.amazon.tv.developer.sdk.personalization.messaging.IAmazonDataIntegrationService$Stub	field	static final int TRANSACTION_pullRecentPlaybackEvents;
+com.amazon.tv.developer.sdk.personalization.messaging.IAmazonDataIntegrationService$Stub	method	public IBinder asBinder()
+com.amazon.tv.developer.sdk.personalization.messaging.IAmazonDataIntegrationService$Stub	method	public Stub()
+com.amazon.tv.developer.sdk.personalization.messaging.IAmazonDataIntegrationService$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAmazonDataIntegrationService$Stub	method	public static IAmazonDataIntegrationService asInterface(IBinder obj)
+com.amazon.tv.developer.sdk.personalization.messaging.IAmazonDataIntegrationService$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.tv.developer.sdk.personalization.messaging.IAmazonDataIntegrationService$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.tv.developer.sdk.personalization.messaging.IAmazonDataIntegrationService$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.tv.developer.sdk.personalization.messaging.IAmazonDataIntegrationService$Stub$Proxy	method	public void pullAllContentEntitlements() throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAmazonDataIntegrationService$Stub$Proxy	method	public void pullAllCustomerListEntries(int type) throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAmazonDataIntegrationService$Stub$Proxy	method	public void pullAllSubscriptionEntitlements() throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAmazonDataIntegrationService$Stub$Proxy	method	public void pullCustomerAffinities(String profileId) throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.IAmazonDataIntegrationService$Stub$Proxy	method	public void pullRecentPlaybackEvents(long startingTimestampMs) throws RemoteException
+com.amazon.tv.developer.sdk.personalization.messaging.NamespacedId	field	public String id;
+com.amazon.tv.developer.sdk.personalization.messaging.NamespacedId	field	public String namespace;
+com.amazon.tv.developer.sdk.personalization.messaging.NamespacedId	method	public final void readFromParcel(Parcel _aidl_parcel)
+com.amazon.tv.developer.sdk.personalization.messaging.NamespacedId	method	public final void writeToParcel(Parcel _aidl_parcel, int _aidl_flag)
+com.amazon.tv.developer.sdk.personalization.messaging.NamespacedId	method	public int describeContents()
+com.amazon.tv.developer.sdk.personalization.messaging.PlaybackEvent	field	public NamespacedId contentId;
+com.amazon.tv.developer.sdk.personalization.messaging.PlaybackEvent	field	public NamespacedId liveStationId;
+com.amazon.tv.developer.sdk.personalization.messaging.PlaybackEvent	field	public NamespacedId profileId;
+com.amazon.tv.developer.sdk.personalization.messaging.PlaybackEvent	field	public boolean isOffDevice;
+com.amazon.tv.developer.sdk.personalization.messaging.PlaybackEvent	field	public int playbackState;
+com.amazon.tv.developer.sdk.personalization.messaging.PlaybackEvent	field	public long creditsPositionMs;
+com.amazon.tv.developer.sdk.personalization.messaging.PlaybackEvent	field	public long durationMs;
+com.amazon.tv.developer.sdk.personalization.messaging.PlaybackEvent	field	public long eventTimestampMs;
+com.amazon.tv.developer.sdk.personalization.messaging.PlaybackEvent	field	public long playbackPositionMs;
+com.amazon.tv.developer.sdk.personalization.messaging.PlaybackEvent	method	private int describeContents(Object _v)
+com.amazon.tv.developer.sdk.personalization.messaging.PlaybackEvent	method	public final void readFromParcel(Parcel _aidl_parcel)
+com.amazon.tv.developer.sdk.personalization.messaging.PlaybackEvent	method	public final void writeToParcel(Parcel parcel, int i)
+com.amazon.tv.developer.sdk.personalization.messaging.PlaybackEvent	method	public int describeContents()
+com.amazon.tv.developer.sdk.personalization.messaging.PlaybackEvent$_Parcel	method	public static <T extends Parcelable> void writeTypedObject(Parcel parcel, T value, int parcelableFlags)
+com.amazon.tv.developer.sdk.personalization.messaging.PlaybackEvent$_Parcel	method	public static <T> T readTypedObject(Parcel parcel, Parcelable.Creator<T> c)
+com.amazon.tv.developer.sdk.personalization.messaging.RelatedEntity	field	public String id;
+com.amazon.tv.developer.sdk.personalization.messaging.RelatedEntity	field	public int dimension;
+com.amazon.tv.developer.sdk.personalization.messaging.RelatedEntity	method	public final void readFromParcel(Parcel _aidl_parcel)
+com.amazon.tv.developer.sdk.personalization.messaging.RelatedEntity	method	public final void writeToParcel(Parcel _aidl_parcel, int _aidl_flag)
+com.amazon.tv.developer.sdk.personalization.messaging.RelatedEntity	method	public int describeContents()
+com.amazon.tv.developer.sdk.personalization.messaging.SubscriptionEntitlement	field	public String subscriptionId;
+com.amazon.tv.developer.sdk.personalization.messaging.SubscriptionEntitlement	field	public long acquisitionTimestampMs;
+com.amazon.tv.developer.sdk.personalization.messaging.SubscriptionEntitlement	field	public long expirationTimestampMs;
+com.amazon.tv.developer.sdk.personalization.messaging.SubscriptionEntitlement	method	public final void readFromParcel(Parcel _aidl_parcel)
+com.amazon.tv.developer.sdk.personalization.messaging.SubscriptionEntitlement	method	public final void writeToParcel(Parcel _aidl_parcel, int _aidl_flag)
+com.amazon.tv.developer.sdk.personalization.messaging.SubscriptionEntitlement	method	public int describeContents()

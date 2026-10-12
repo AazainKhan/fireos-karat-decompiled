@@ -1,0 +1,51 @@
+class	kind	declaration
+com.amazon.dp.logger.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.dp.logger.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.dp.logger.BuildConfig	field	public static final String FLAVOR;
+com.amazon.dp.logger.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.dp.logger.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.dp.logger.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.dp.logger.DPFormattedMessage	field	private Throwable mThrowable;
+com.amazon.dp.logger.DPFormattedMessage	field	private final String mFormattedString;
+com.amazon.dp.logger.DPFormattedMessage	method	public DPFormattedMessage(String origin, String message, Object... keyValuePairs)
+com.amazon.dp.logger.DPFormattedMessage	method	public String toString()
+com.amazon.dp.logger.DPFormattedMessage	method	public Throwable getThrowable()
+com.amazon.dp.logger.DPFormattedMessage	method	public static String toDPFormat(String origin, String message, Object... keyValuePairs)
+com.amazon.dp.logger.DPFormattedMessage	method	public void setThrowable(Throwable throwable)
+com.amazon.dp.logger.DPLogger	field	private static final String BUILD_TYPE;
+com.amazon.dp.logger.DPLogger	field	private static final String ENG;
+com.amazon.dp.logger.DPLogger	field	private static final boolean FORCE_ALL_LOGGING_ON;
+com.amazon.dp.logger.DPLogger	field	protected final String mName;
+com.amazon.dp.logger.DPLogger	field	protected static final int MAX_TAG_SIZE;
+com.amazon.dp.logger.DPLogger	method	private String ensureSafeName(String name)
+com.amazon.dp.logger.DPLogger	method	private static String removePackageName(String className)
+com.amazon.dp.logger.DPLogger	method	protected boolean isEnabled(DPLoggerBase.DPLevel level)
+com.amazon.dp.logger.DPLogger	method	protected void log(DPLoggerBase.DPLevel level, DPFormattedMessage message)
+com.amazon.dp.logger.DPLogger	method	public DPLogger()
+com.amazon.dp.logger.DPLogger	method	public DPLogger(Class<?> c)
+com.amazon.dp.logger.DPLogger	method	public DPLogger(String name)
+com.amazon.dp.logger.DPLoggerBase	method	private void logIfEnabled(DPLevel level, DPFormattedMessage msg)
+com.amazon.dp.logger.DPLoggerBase	method	private void logIfEnabled(DPLevel level, String name, String txt, Object... keyValuePairs)
+com.amazon.dp.logger.DPLoggerBase	method	protected abstract boolean isEnabled(DPLevel dPLevel);
+com.amazon.dp.logger.DPLoggerBase	method	protected abstract void log(DPLevel dPLevel, DPFormattedMessage dPFormattedMessage);
+com.amazon.dp.logger.DPLoggerBase	method	public boolean isDebugEnabled()
+com.amazon.dp.logger.DPLoggerBase	method	public boolean isErrorEnabled()
+com.amazon.dp.logger.DPLoggerBase	method	public boolean isFatalEnabled()
+com.amazon.dp.logger.DPLoggerBase	method	public boolean isInfoEnabled()
+com.amazon.dp.logger.DPLoggerBase	method	public boolean isTraceEnabled()
+com.amazon.dp.logger.DPLoggerBase	method	public boolean isVerboseEnabled()
+com.amazon.dp.logger.DPLoggerBase	method	public boolean isWarnEnabled()
+com.amazon.dp.logger.DPLoggerBase	method	public void debug(DPFormattedMessage msg)
+com.amazon.dp.logger.DPLoggerBase	method	public void debug(String name, String txt, Object... keyValuePairs)
+com.amazon.dp.logger.DPLoggerBase	method	public void error(DPFormattedMessage msg)
+com.amazon.dp.logger.DPLoggerBase	method	public void error(String name, String txt, Object... keyValuePairs)
+com.amazon.dp.logger.DPLoggerBase	method	public void fatal(DPFormattedMessage msg)
+com.amazon.dp.logger.DPLoggerBase	method	public void fatal(String name, String txt, Object... keyValuePairs)
+com.amazon.dp.logger.DPLoggerBase	method	public void info(DPFormattedMessage msg)
+com.amazon.dp.logger.DPLoggerBase	method	public void info(String name, String txt, Object... keyValuePairs)
+com.amazon.dp.logger.DPLoggerBase	method	public void trace(DPFormattedMessage msg)
+com.amazon.dp.logger.DPLoggerBase	method	public void trace(String name, String txt, Object... keyValuePairs)
+com.amazon.dp.logger.DPLoggerBase	method	public void verbose(DPFormattedMessage msg)
+com.amazon.dp.logger.DPLoggerBase	method	public void verbose(String name, String txt, Object... keyValuePairs)
+com.amazon.dp.logger.DPLoggerBase	method	public void warn(DPFormattedMessage msg)
+com.amazon.dp.logger.DPLoggerBase	method	public void warn(String name, String txt, Object... keyValuePairs)

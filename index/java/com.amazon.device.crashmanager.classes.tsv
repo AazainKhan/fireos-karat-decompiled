@@ -1,0 +1,182 @@
+kind	class	extends	implements
+class	com.amazon.android.crash.CrashCountHeader		
+class	com.amazon.android.crash.CrashCountMetadata		
+class	com.amazon.android.crash.CrashReporterManager		
+class	com.amazon.device.crashmanager.AllowlistAppArtifact	Artifact	
+class	com.amazon.device.crashmanager.Artifact		Closeable
+class	com.amazon.device.crashmanager.ArtifactOffloader		
+class	com.amazon.device.crashmanager.BuildConfig		
+class	com.amazon.device.crashmanager.CrashArtifactGenerator		
+class	com.amazon.device.crashmanager.CrashCountFileGenerator		
+class	com.amazon.device.crashmanager.CrashJobService	JobService	
+class	com.amazon.device.crashmanager.CrashJobService$ArcusAsyncTask	AsyncTask<Void, Void, Void>	
+class	com.amazon.device.crashmanager.CrashManagerActions		
+class	com.amazon.device.crashmanager.CrashManagerApplication	Application	
+class	com.amazon.device.crashmanager.CrashManagerBroadcastReceiver	BroadcastReceiver	
+class	com.amazon.device.crashmanager.CrashManagerConfigurationSyncCallback		ConfigurationSyncCallback
+class	com.amazon.device.crashmanager.CrashManagerDebugActivity	Activity	
+class	com.amazon.device.crashmanager.CrashManagerDebugActivity$CrashManagerDebugBroadcastReceiver	BroadcastReceiver	
+class	com.amazon.device.crashmanager.CrashManagerMapInformationProvider	MAPInformationProvider	
+class	com.amazon.device.crashmanager.CrashManagerPermissions		
+class	com.amazon.device.crashmanager.CrashManagerS2DMReceiver	BroadcastReceiver	
+class	com.amazon.device.crashmanager.CrashManagerSystemReceiver	BroadcastReceiver	
+class	com.amazon.device.crashmanager.CrashManagerUnifiedSearchReceiver	BroadcastReceiver	
+class	com.amazon.device.crashmanager.CrashReporterManagerWrapper		
+class	com.amazon.device.crashmanager.CrashUploadController		CrashControllerInterface
+class	com.amazon.device.crashmanager.CrashUploader		
+class	com.amazon.device.crashmanager.FirstPartyStatusNotifier	AbstractStatusNotifier	
+class	com.amazon.device.crashmanager.Manifest		
+class	com.amazon.device.crashmanager.Manifest$permission		
+class	com.amazon.device.crashmanager.R		
+class	com.amazon.device.crashmanager.R$drawable		
+class	com.amazon.device.crashmanager.R$id		
+class	com.amazon.device.crashmanager.R$layout		
+class	com.amazon.device.crashmanager.R$string		
+class	com.amazon.device.crashmanager.R$xml		
+class	com.amazon.device.crashmanager.constants.CrashHeaderConstants		
+class	com.amazon.device.crashmanager.constants.UploadConstants		
+class	com.amazon.device.crashmanager.dedupe.CrashDedupeHelper		
+class	com.amazon.device.crashmanager.dedupe.DropboxDedupeGenerator		
+class	com.amazon.device.crashmanager.library.BuildConfig		
+class	com.amazon.device.crashmanager.library.R		
+class	com.amazon.device.crashmanager.metrics.MetricCounter		
+class	com.amazon.device.crashmanager.metrics.MetricUtil		
+class	com.amazon.device.crashmanager.metrics.MetricsConstants		
+class	com.amazon.device.crashmanager.metrics.MinervaMetricsConstant		
+class	com.amazon.device.crashmanager.metrics.MutableInteger		
+class	com.amazon.device.crashmanager.model.CrashCountEntry	CrashEntry	
+class	com.amazon.device.crashmanager.model.CrashEntry		
+class	com.amazon.device.crashmanager.model.CrashFileEntry	CrashEntry	
+class	com.amazon.device.crashmanager.model.CrashUploadDetail		
+class	com.amazon.device.crashmanager.model.CrashUploadEntry		
+class	com.amazon.device.crashmanager.model.CrashUploadStatistics		
+class	com.amazon.device.crashmanager.model.UploadStatsCounter		
+class	com.amazon.device.crashmanager.processor.AbstractDetArtifactProcessor		ArtifactProcessor
+class	com.amazon.device.crashmanager.processor.AnrArtifactProcessor	AbstractDetArtifactProcessor	
+class	com.amazon.device.crashmanager.processor.CrashCountArtifactProcessor	AbstractDetArtifactProcessor	
+class	com.amazon.device.crashmanager.processor.DefaultArtifactProcessor	AbstractDetArtifactProcessor	
+class	com.amazon.device.crashmanager.processor.DefaultArtifactProcessorFactory		ArtifactProcessorFactory
+class	com.amazon.device.crashmanager.processor.DiagnosticArtifactProcessor	AbstractDetArtifactProcessor	
+class	com.amazon.device.crashmanager.processor.ExtractJavaVersionHeaderProcessor		DetUtil.HeaderProcessor
+class	com.amazon.device.crashmanager.processor.JavaCrashArtifactProcessor	AbstractDetArtifactProcessor	
+class	com.amazon.device.crashmanager.processor.MetricsHeaderProcessor		DetUtil.HeaderProcessor
+class	com.amazon.device.crashmanager.processor.MetricsHeaderProcessorFactory		
+class	com.amazon.device.crashmanager.processor.NativeCrashArtifactProcessor	AbstractDetArtifactProcessor	
+class	com.amazon.device.crashmanager.processor.PinFailuresArtifactProcessor	AbstractDetArtifactProcessor	
+class	com.amazon.device.crashmanager.processor.RamDumpArtifactProcessor	AbstractDetArtifactProcessor	
+class	com.amazon.device.crashmanager.processor.SmvArtifactProcessor	AbstractDetArtifactProcessor	
+class	com.amazon.device.crashmanager.source.AllowlistAppArtifactSource	DropBoxArtifactSource	
+class	com.amazon.device.crashmanager.source.CrashCountManager		
+class	com.amazon.device.crashmanager.source.CrashCountMetadata		
+class	com.amazon.device.crashmanager.source.DefaultNotBootupUploadArtifactSourceFactory		ArtifactSourceFactory
+class	com.amazon.device.crashmanager.source.DefaultOffloadArtifactSourceFactory		ArtifactSourceFactory
+class	com.amazon.device.crashmanager.source.DropBoxArtifactSource		ArtifactSource
+class	com.amazon.device.crashmanager.source.RamDumpArtifactSource		ArtifactSource
+class	com.amazon.device.crashmanager.source.RamDumpArtifactSource$LastModifiedFileComparator		Comparator<File>,Serializable
+class	com.amazon.device.crashmanager.source.RamDumpArtifactSource$RamDumpDirectoryFilter		FilenameFilter
+class	com.amazon.device.crashmanager.source.SharedPreferencesSettingsStore		SettingsStore
+class	com.amazon.device.crashmanager.util.CrashManagerConfigurationUtil		
+class	com.amazon.device.crashmanager.util.DeviceInfoUtil		
+class	com.amazon.device.crashmanager.util.DeviceProfileHelper		
+class	com.amazon.device.crashmanager.util.DirectBootHelper		
+class	com.amazon.device.crashmanager.util.FileUtils		
+class	com.amazon.device.crashmanager.util.JobSchedulerUtil		
+class	com.amazon.device.crashmanager.util.MetricRecordUtil		
+class	com.amazon.device.crashmanager.util.RemoteConfigurationManagerUtils		
+class	com.amazon.device.crashmanager.utils.AmazonPackageLookup		
+class	com.amazon.device.crashmanager.utils.Constants		
+class	com.amazon.device.crashmanager.utils.CrashCountUtil		
+class	com.amazon.device.crashmanager.utils.CrashDescriptorUtil		
+class	com.amazon.device.crashmanager.utils.CrashFileEntryMap		
+class	com.amazon.device.crashmanager.utils.CrashTimestampUtil		
+class	com.amazon.device.crashmanager.utils.CrashUploadStateUtil		
+class	com.amazon.device.crashmanager.utils.CrashUploadUtil		
+class	com.amazon.device.crashmanager.utils.ExtraDeviceInfoConstants		
+class	com.amazon.device.crashmanager.utils.SharedPreferencesStorageUtil		StorageUtil
+class	com.amazon.device.det.utils.BuildConfig		
+class	com.amazon.device.det.utils.R		
+class	com.amazon.device.utils.det.AbstractDeviceUtil	ContentObserver	DeviceUtil
+class	com.amazon.device.utils.det.AbstractStatusNotifier		StatusNotifier
+class	com.amazon.device.utils.det.AmazonDeviceUtil	AbstractDeviceUtil	DeviceUtil
+class	com.amazon.device.utils.det.BackgroundThreadFactory		ThreadFactory
+class	com.amazon.device.utils.det.BlockingAmazonDeviceUtil	AmazonDeviceUtil	
+class	com.amazon.device.utils.det.DefaultDomainChooser		DomainChooser
+class	com.amazon.device.utils.det.DetEndpointConfig		
+class	com.amazon.device.utils.det.DetUtil		
+class	com.amazon.device.utils.det.DetUtil$DefaultHeaderProcessor		HeaderProcessor
+class	com.amazon.device.utils.det.DetUtil$HeaderWriter		HeaderProcessor
+class	com.amazon.device.utils.det.DetUtil$PlainBodyWriter		BodyWriter
+class	com.amazon.device.utils.det.DetUtil$ReplaceHeader		HeaderProcessor
+class	com.amazon.device.utils.det.DetUtil$ReplaceValue		HeaderProcessor
+class	com.amazon.device.utils.det.DeviceDetailKeys		
+class	com.amazon.device.utils.det.DeviceDetailsCollector		
+class	com.amazon.device.utils.det.EncryptionStatusProvider		
+class	com.amazon.device.utils.det.EncryptionStatusProvider$EncryptionStatus		
+class	com.amazon.device.utils.det.GetProp		
+class	com.amazon.device.utils.det.MediaScannerHelper		
+class	com.amazon.device.utils.det.MfbsInputStream	InputStream	
+class	com.amazon.device.utils.det.MfbsInputStream$UnsafeByteArrayOutputStream	ByteArrayOutputStream	
+class	com.amazon.device.utils.det.NetworkBroadcastReceiver	BroadcastReceiver	
+class	com.amazon.device.utils.det.NetworkManager		
+class	com.amazon.device.utils.det.NullDeviceUtil		DeviceUtil
+class	com.amazon.device.utils.det.NullStatusNotifier		StatusNotifier
+class	com.amazon.device.utils.det.OTAGroupNameUtil		
+class	com.amazon.device.utils.det.ThreadUtil		
+class	com.amazon.device.utils.det.library.BuildConfig		
+class	com.amazon.device.utils.det.library.R		
+class	com.amazon.dp.logger.DPFormattedMessage		
+class	com.amazon.dp.logger.DPLogger	DPLoggerBase	
+class	com.amazon.dp.logger.DPLoggerBase		
+class	com.amazonaws.mobileconnectors.remoteconfiguration.BuildConfig		
+class	com.amazonaws.mobileconnectors.remoteconfiguration.R		
+class	com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager		
+class	com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder		
+class	com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.BuildConfig		
+class	com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.MapR5Wrapper		
+class	com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.R		
+class	com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.ReflectionHelper		
+class	com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.RemoteConfigurationAndroidClientContextDecorator		
+class	com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.SystemPropertiesWrapper		
+class	com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.ConfigurationNotFoundException	RemoteConfigurationException	
+class	com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.MalformedAppConfigIdException	RemoteConfigurationException	
+class	com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.NetworkException	RemoteConfigurationException	
+class	com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.RemoteConfigurationException	RuntimeException	
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler		
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn		
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl		Attributes
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb		
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$ConfigurationTable		BaseColumns
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	SQLiteOpenHelper	
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl		Configuration
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.DowngradeException	UnsupportedOperationException	
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.Checks		
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper		
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl		RemoteConfiguration
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher		RemoteConfigurationFetcher
+class	com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.RequestThrottledException	NetworkException	
+enum	com.amazon.device.crashmanager.model.ArtifactUploadStatus		
+enum	com.amazon.device.crashmanager.model.CrashUploadCheckpoint		
+enum	com.amazon.device.crashmanager.model.CrashUploadStatistics$CrashUploadStatus		
+enum	com.amazon.device.crashmanager.source.SettingsStore$SettingsKey		
+enum	com.amazon.device.utils.det.DeviceMode		
+enum	com.amazon.device.utils.det.Domain		
+enum	com.amazon.dp.logger.DPLoggerBase$DPLevel		
+interface	com.amazon.device.crashmanager.CrashControllerInterface		
+interface	com.amazon.device.crashmanager.processor.ArtifactProcessor		
+interface	com.amazon.device.crashmanager.processor.ArtifactProcessorFactory		
+interface	com.amazon.device.crashmanager.source.ArtifactSource		
+interface	com.amazon.device.crashmanager.source.ArtifactSourceFactory		
+interface	com.amazon.device.crashmanager.source.SettingsStore		
+interface	com.amazon.device.crashmanager.utils.StorageUtil		
+interface	com.amazon.device.utils.det.DetUtil$BodyWriter		
+interface	com.amazon.device.utils.det.DetUtil$HeaderProcessor		
+interface	com.amazon.device.utils.det.DeviceUtil		
+interface	com.amazon.device.utils.det.DmlConfigDataProvider		
+interface	com.amazon.device.utils.det.DomainChooser		
+interface	com.amazon.device.utils.det.NetworkListener		
+interface	com.amazon.device.utils.det.StatusNotifier		
+interface	com.amazonaws.mobileconnectors.remoteconfiguration.Attributes	Cloneable	
+interface	com.amazonaws.mobileconnectors.remoteconfiguration.Configuration		
+interface	com.amazonaws.mobileconnectors.remoteconfiguration.ConfigurationSyncCallback		
+interface	com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfiguration		
+interface	com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.RemoteConfigurationFetcher		

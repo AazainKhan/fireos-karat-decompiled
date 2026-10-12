@@ -1,6 +1,6 @@
 # fireos-karat-decompiled
 
-A machine-readable map of **Fire OS 8** (Android 11) on the **Fire TV Stick 4K, 2nd gen** (`AFTKRT`, codename `karat`, build `RS8182.3811N`, OTA `0032548774788`): every package, component, intent action, content provider, permission and dependency, plus declaration-level indexes of the 15 Amazon packages that matter most for building a replacement launcher.
+A machine-readable map of **Fire OS 8** (Android 11) on the **Fire TV Stick 4K, 2nd gen** (`AFTKRT`, codename `karat`, build `RS8182.3811N`, OTA `0032548774788`): every package, component, intent action, content provider, permission and dependency, plus declaration-level indexes of every package and framework JAR that contains code.
 
 > **Legal:** independent interoperability research, not affiliated with or endorsed by Amazon. No Amazon code, binaries, assets or keys are included. Not legal advice. See [Legal](#legal).
 
@@ -23,57 +23,56 @@ Built for coding agents (Claude Code, Codex, Cursor…) and people building Fire
 | `data/graph.json` | Dependency graph: who needs whom, and why (permission, library, meta-data) | |
 | `data/classification.tsv` | KEEP / REMOVE / INVESTIGATE verdict per package, with reason | |
 | `data/remove-candidates.tsv` | Removal batches proven safe by the lint gate | |
-| `index/java/<pkg>.classes.tsv` | Classes, superclass, interfaces (Amazon code only) | 15 packages |
+| `index/java/<pkg>.classes.tsv` | Classes, superclass, interfaces (bundled third-party libraries excluded) | 298 code units (223 APKs + 75 JARs) |
 | `index/java/<pkg>.members.tsv` | Method and field declarations, no bodies | |
 | `index/java/<pkg>.strings.tsv` | Intent actions, extras, URIs, settings keys and properties referenced in code | |
 | `docs/findings.md` | Triage and first facts (auto-pair triggers, home start strategies, HOME competitors) | |
 | `docs/package-classification.md` | Per-package removal evidence | |
 
-Decompiled packages: `com.amazon.tv.launcher`, `com.amazon.firehomestarter`, `com.amazon.autopairservice`, `com.amazon.uxcontrollerservice`, `com.amazon.dialservice`, `com.amazon.tv.settings.v2`, `com.amazon.tv.settings.core`, `com.amazon.cast.sink`, `com.amazon.whisperlink.core.android`, `com.amazon.tv.notificationcenter`, `com.amazon.tv.matter`, `com.amazon.tv.mattercohost`, `com.amazon.fireinputdevices`, `com.amazon.device.bluetoothkeymaplib`, `com.amazon.tv.ffsprovisioneeclient`. Bundled third-party libraries (androidx, Kotlin, Google, Glide…) are filtered out.
+Every APK with code (223) and every framework JAR (75, named `jar-<name>`, for example `jar-framework`, `jar-services`, `jar-fosframework`, `jar-fosservices`) is decompiled and indexed. The other 57 APKs are resource-only (overlays, `framework-res`); jadx produces only a resource-ID class for them. Bundled third-party libraries (androidx, Kotlin, Google, Glide…) are filtered out.
 
 ## Coverage
 
-What has been decompiled and indexed so far, measured against the Fire OS 8 OTA (280 packages).
+What has been decompiled and indexed, measured against the Fire OS 8 OTA.
 
 | Area | Done | Coverage |
 |---|---|---|
-| Manifests indexed (components, actions, providers, permissions) | 280 of 280 packages | **100%** |
-| Dependency graph | 280 of 280 packages, 1,247 edges | **100%** |
-| Target integration packages decompiled (launcher, home starter, settings, remote pairing, casting, Matter, input) | 15 of 15 | **100%** |
-| All packages decompiled | 15 of 280 | 5.4% |
-| Native code (`.so`, HALs, daemons) decompiled | not started | 0% |
+| Manifests indexed (components, actions, providers, permissions) | 280 of 280 APKs | **100%** |
+| Dependency graph | 280 of 280 APKs, 1,247 edges | **100%** |
+| APKs with code decompiled (jadx) | 223 of 223 | **100%** |
+| Framework JARs decompiled (`framework`, `services`, Fire OS `fos*`, Amazon SDKs) | 75 of 75 | **100%** |
+| Resource-only APKs (overlays, `framework-res`): no code to decompile | 57 | n/a |
+| Native code (`.so` libraries, daemons, HALs) | 0 of 582 files (477 `.so` + 105 binaries, 140 MB) | 0%, not started |
 
-### Structure
+### Totals
 
-| Index | Rows |
+| Measure | Count |
 |---|---|
+| Java files produced by jadx (local only) | 201,408 (183,130 from APKs, 18,278 from JARs) |
+| Classes indexed | 175,081 |
+| Method and field declarations indexed | 1,890,893 |
+| Integration strings (intent actions, extras, URIs, settings keys, properties) | 42,146 |
 | Components | 2,593 (377 exported) |
 | Intent actions and categories | 2,057 |
 | Content providers | 191 |
 | Declared permissions | 1,781 |
 
-### Decompiled packages
+### Largest code units
 
-| Package | APK size | Java files | Classes indexed | Members | Integration strings |
-|---|---|---|---|---|---|
-| `com.amazon.tv.launcher` | 26.4 MB | 11,310 | 11,954 | 96,405 | 1,397 |
-| `com.amazon.tv.settings.v2` | 9.9 MB | 3,941 | 3,370 | 35,649 | 1,556 |
-| `com.amazon.tv.notificationcenter` | 2.3 MB | 1,233 | 1,111 | 22,712 | 99 |
-| `com.amazon.cast.sink` | 2.2 MB | 543 | 131 | 2,097 | 61 |
-| `com.amazon.whisperlink.core.android` | 304 KB | 187 | 318 | 3,358 | 50 |
-| `com.amazon.device.bluetoothkeymaplib` | 152 KB | 104 | 50 | 749 | 18 |
-| `com.amazon.tv.matter` | 3.2 MB | 71 | 94 | 1,399 | 28 |
-| `com.amazon.tv.settings.core` | 64 KB | 24 | 62 | 885 | 55 |
-| `com.amazon.autopairservice` | 76 KB | 22 | 33 | 204 | 32 |
-| `com.amazon.firehomestarter` | 16 KB | 18 | 21 | 96 | 4 |
-| `com.amazon.uxcontrollerservice` | 132 KB | 13 | 18 | 135 | 8 |
-| `com.amazon.tv.mattercohost` | 32 KB | 8 | 13 | 84 | 7 |
-| `com.amazon.tv.ffsprovisioneeclient` | 12 KB | 5 | 5 | 6 | 0 |
-| `com.amazon.fireinputdevices` | 96 KB | 3 | 7 | 79 | 1 |
-| `com.amazon.dialservice` | 264 KB | 2 | 4 | 12 | 1 |
-| **Total** | **45.1 MB** | **17,484** | **17,191** | **163,870** | **3,317** |
+| Unit | Classes | Members | Integration strings |
+|---|---|---|---|
+| `jar-framework` (Android framework) | 14,937 | 226,606 | 4,647 |
+| `com.amazon.tv.launcher` | 11,954 | 96,405 | 1,397 |
+| `com.amazon.tahoe` (Kids) | 9,500 | 128,205 | 949 |
+| `com.amazon.venezia` (Appstore) | 9,478 | 80,857 | 4,108 |
+| `com.amazon.vizzini` (Alexa) | 9,424 | 95,895 | 1,843 |
+| `com.amazon.tv.livetv` | 6,509 | 52,475 | 986 |
+| `com.amazon.aria` | 5,403 | 37,616 | 477 |
+| `com.amazon.ftv.screensaver` | 4,595 | 38,092 | 367 |
+| `com.amazon.tv.devicecontrol` | 4,484 | 41,606 | 709 |
+| `jar-services` (system server) | 4,450 | 63,801 | 3,106 |
 
-Java files are the raw jadx output (kept locally, not published). Classes and members count Amazon code only; bundled libraries such as androidx, Kotlin and Google are excluded.
+Every unit has its own `index/java/<unit>.classes.tsv`, `.members.tsv` and `.strings.tsv`. Java files are the raw jadx output and stay local; only the declarations and strings are published.
 
 ## Use cases
 

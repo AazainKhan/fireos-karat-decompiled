@@ -1,0 +1,132 @@
+class	kind	declaration
+com.android.server.ethernet.EthernetConfigStore	field	private ArrayMap<String, IpConfiguration> mIpConfigurations;
+com.android.server.ethernet.EthernetConfigStore	field	private IpConfigStore mStore;
+com.android.server.ethernet.EthernetConfigStore	field	private IpConfiguration mIpConfigurationForDefaultInterface;
+com.android.server.ethernet.EthernetConfigStore	field	private final Object mSync;
+com.android.server.ethernet.EthernetConfigStore	field	private static final String ipConfigFile;
+com.android.server.ethernet.EthernetConfigStore	method	public ArrayMap<String, IpConfiguration> getIpConfigurations()
+com.android.server.ethernet.EthernetConfigStore	method	public IpConfiguration getIpConfigurationForDefaultInterface()
+com.android.server.ethernet.EthernetConfigStore	method	public void read()
+com.android.server.ethernet.EthernetConfigStore	method	public void write(String str, IpConfiguration ipConfiguration)
+com.android.server.ethernet.EthernetNetworkFactory	field	private final ConcurrentHashMap<String, NetworkInterfaceState> mTrackingInterfaces;
+com.android.server.ethernet.EthernetNetworkFactory	field	private final Context mContext;
+com.android.server.ethernet.EthernetNetworkFactory	field	private final Handler mHandler;
+com.android.server.ethernet.EthernetNetworkFactory	field	private static final String NETWORK_TYPE;
+com.android.server.ethernet.EthernetNetworkFactory	field	private static final String TAG;
+com.android.server.ethernet.EthernetNetworkFactory	field	private static final int NETWORK_SCORE;
+com.android.server.ethernet.EthernetNetworkFactory	field	static final boolean DBG;
+com.android.server.ethernet.EthernetNetworkFactory	method	private NetworkInterfaceState networkForRequest(NetworkRequest networkRequest)
+com.android.server.ethernet.EthernetNetworkFactory	method	private void updateCapabilityFilter()
+com.android.server.ethernet.EthernetNetworkFactory	method	protected void needNetworkFor(NetworkRequest networkRequest, int i)
+com.android.server.ethernet.EthernetNetworkFactory	method	protected void releaseNetworkFor(NetworkRequest networkRequest)
+com.android.server.ethernet.EthernetNetworkFactory	method	public EthernetNetworkFactory(Handler handler, Context context, NetworkCapabilities networkCapabilities)
+com.android.server.ethernet.EthernetNetworkFactory	method	public boolean acceptRequest(NetworkRequest networkRequest, int i)
+com.android.server.ethernet.EthernetNetworkFactory$ConfigurationException	method	public ConfigurationException(String str)
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState	field	final String name;
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState	field	private IpClientCallbacksImpl mIpClientCallback;
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState	field	private IpConfiguration mIpConfig;
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState	field	private LinkProperties mLinkProperties;
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState	field	private NetworkAgent mNetworkAgent;
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState	field	private boolean mLinkUp;
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState	field	private final Context mContext;
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState	field	private final Handler mHandler;
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState	field	private final NetworkCapabilities mCapabilities;
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState	field	private final NetworkFactory mNetworkFactory;
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState	field	private final String mHwAddress;
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState	field	private final int mLegacyType;
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState	field	private static String sTcpBufferSizes;
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState	field	private static final SparseArray<TransportInfo> sTransports;
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState	field	private volatile IIpClient mIpClient;
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState	method	private int getNetworkScore()
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState	method	private static int getLegacyType(int i)
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState	method	private static void provisionIpClient(IIpClient iIpClient, IpConfiguration ipConfiguration, String str)
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState	method	private static void shutdownIpClient(IIpClient iIpClient)
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState	method	private void updateAgent()
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState	method	public String toString()
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState	method	public void start()
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState$IpClientCallbacksImpl	field	private final ConditionVariable mIpClientShutdownCv;
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState$IpClientCallbacksImpl	field	private final ConditionVariable mIpClientStartCv;
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState$IpClientCallbacksImpl	method	private IpClientCallbacksImpl()
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState$IpClientCallbacksImpl	method	public void awaitIpClientShutdown()
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState$IpClientCallbacksImpl	method	public void awaitIpClientStart()
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState$IpClientCallbacksImpl	method	public void onIpClientCreated(IIpClient iIpClient)
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState$IpClientCallbacksImpl	method	public void onLinkPropertiesChange(final LinkProperties linkProperties)
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState$IpClientCallbacksImpl	method	public void onProvisioningFailure(final LinkProperties linkProperties)
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState$IpClientCallbacksImpl	method	public void onProvisioningSuccess(final LinkProperties linkProperties)
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState$IpClientCallbacksImpl	method	public void onQuit()
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState$TransportInfo	field	final int mLegacyType;
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState$TransportInfo	field	final int mScore;
+com.android.server.ethernet.EthernetNetworkFactory$NetworkInterfaceState$TransportInfo	method	private TransportInfo(int i, int i2)
+com.android.server.ethernet.EthernetService	field	final EthernetServiceImpl mImpl;
+com.android.server.ethernet.EthernetService	field	private static final String TAG;
+com.android.server.ethernet.EthernetService	method	public EthernetService(Context context)
+com.android.server.ethernet.EthernetService	method	public void onBootPhase(int i)
+com.android.server.ethernet.EthernetService	method	public void onStart()
+com.android.server.ethernet.EthernetServiceImpl	field	private EthernetTracker mTracker;
+com.android.server.ethernet.EthernetServiceImpl	field	private Handler mHandler;
+com.android.server.ethernet.EthernetServiceImpl	field	private final AtomicBoolean mStarted;
+com.android.server.ethernet.EthernetServiceImpl	field	private final Context mContext;
+com.android.server.ethernet.EthernetServiceImpl	field	private static final String TAG;
+com.android.server.ethernet.EthernetServiceImpl	method	private boolean checkUseRestrictedNetworksPermission()
+com.android.server.ethernet.EthernetServiceImpl	method	private void enforceAccessPermission()
+com.android.server.ethernet.EthernetServiceImpl	method	private void enforceUseRestrictedNetworksPermission()
+com.android.server.ethernet.EthernetServiceImpl	method	protected void dump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr)
+com.android.server.ethernet.EthernetServiceImpl	method	public EthernetServiceImpl(Context context)
+com.android.server.ethernet.EthernetServiceImpl	method	public IpConfiguration getConfiguration(String str)
+com.android.server.ethernet.EthernetServiceImpl	method	public String[] getAvailableInterfaces() throws RemoteException
+com.android.server.ethernet.EthernetServiceImpl	method	public boolean isAvailable(String str)
+com.android.server.ethernet.EthernetServiceImpl	method	public void addListener(IEthernetServiceListener iEthernetServiceListener)
+com.android.server.ethernet.EthernetServiceImpl	method	public void releaseTetheredInterface(ITetheredInterfaceCallback iTetheredInterfaceCallback)
+com.android.server.ethernet.EthernetServiceImpl	method	public void removeListener(IEthernetServiceListener iEthernetServiceListener)
+com.android.server.ethernet.EthernetServiceImpl	method	public void requestTetheredInterface(ITetheredInterfaceCallback iTetheredInterfaceCallback)
+com.android.server.ethernet.EthernetServiceImpl	method	public void setConfiguration(String str, IpConfiguration ipConfiguration)
+com.android.server.ethernet.EthernetServiceImpl	method	public void setIncludeTestInterfaces(boolean z)
+com.android.server.ethernet.EthernetServiceImpl	method	public void start()
+com.android.server.ethernet.EthernetTracker	field	private String mDefaultInterface;
+com.android.server.ethernet.EthernetTracker	field	private String mIfaceMatch;
+com.android.server.ethernet.EthernetTracker	field	private boolean mIncludeTestInterfaces;
+com.android.server.ethernet.EthernetTracker	field	private boolean mTetheredInterfaceWasAvailable;
+com.android.server.ethernet.EthernetTracker	field	private final ConcurrentHashMap<String, IpConfiguration> mIpConfigurations;
+com.android.server.ethernet.EthernetTracker	field	private final ConcurrentHashMap<String, NetworkCapabilities> mNetworkCapabilities;
+com.android.server.ethernet.EthernetTracker	field	private final Context mContext;
+com.android.server.ethernet.EthernetTracker	field	private final EthernetConfigStore mConfigStore;
+com.android.server.ethernet.EthernetTracker	field	private final EthernetNetworkFactory mFactory;
+com.android.server.ethernet.EthernetTracker	field	private final Handler mHandler;
+com.android.server.ethernet.EthernetTracker	field	private final INetworkManagementService mNMService;
+com.android.server.ethernet.EthernetTracker	field	private final RemoteCallbackList<IEthernetServiceListener> mListeners;
+com.android.server.ethernet.EthernetTracker	field	private final TetheredInterfaceRequestList mTetheredInterfaceRequests;
+com.android.server.ethernet.EthernetTracker	field	private int mDefaultInterfaceMode;
+com.android.server.ethernet.EthernetTracker	field	private static final String TAG;
+com.android.server.ethernet.EthernetTracker	field	private static final String TEST_IFACE_REGEXP;
+com.android.server.ethernet.EthernetTracker	field	private static final boolean DBG;
+com.android.server.ethernet.EthernetTracker	field	private static final int INTERFACE_MODE_CLIENT;
+com.android.server.ethernet.EthernetTracker	field	private static final int INTERFACE_MODE_SERVER;
+com.android.server.ethernet.EthernetTracker	field	private volatile IpConfiguration mIpConfigForDefaultInterface;
+com.android.server.ethernet.EthernetTracker	method	private int getInterfaceMode(String str)
+com.android.server.ethernet.EthernetTracker	method	private static IpConfiguration createDefaultIpConfiguration()
+com.android.server.ethernet.EthernetTracker	method	private static NetworkCapabilities createDefaultNetworkCapabilities(boolean z)
+com.android.server.ethernet.EthernetTracker	method	private static NetworkCapabilities createNetworkCapabilities(boolean z)
+com.android.server.ethernet.EthernetTracker	method	private void addInterface(String str)
+com.android.server.ethernet.EthernetTracker	method	private void maybeUpdateServerModeInterfaceState(String str, boolean z)
+com.android.server.ethernet.EthernetTracker	method	private void notifyTetheredInterfaceAvailable(ITetheredInterfaceCallback iTetheredInterfaceCallback, String str)
+com.android.server.ethernet.EthernetTracker	method	private void notifyTetheredInterfaceUnavailable(ITetheredInterfaceCallback iTetheredInterfaceCallback)
+com.android.server.ethernet.EthernetTracker	method	private void parseEthernetConfig(String str)
+com.android.server.ethernet.EthernetTracker	method	private void postAndWaitForRunnable(Runnable runnable)
+com.android.server.ethernet.EthernetTracker	method	private void removeInterface(String str)
+com.android.server.ethernet.EthernetTracker	method	private void setDefaultInterfaceMode(int i)
+com.android.server.ethernet.EthernetTracker	method	private void updateIfaceMatchRegexp()
+com.android.server.ethernet.EthernetTracker	method	public void maybeTrackInterface(String str)
+com.android.server.ethernet.EthernetTracker	method	public void maybeUntetherDefaultInterface()
+com.android.server.ethernet.EthernetTracker	method	public void releaseTetheredInterface(final ITetheredInterfaceCallback iTetheredInterfaceCallback)
+com.android.server.ethernet.EthernetTracker	method	public void requestTetheredInterface(final ITetheredInterfaceCallback iTetheredInterfaceCallback)
+com.android.server.ethernet.EthernetTracker	method	public void setIncludeTestInterfaces(final boolean z)
+com.android.server.ethernet.EthernetTracker	method	public void stopTrackingInterface(String str)
+com.android.server.ethernet.EthernetTracker	method	public void updateInterfaceState(String str, boolean z)
+com.android.server.ethernet.EthernetTracker	method	static IpConfiguration parseStaticIpConfiguration(String str)
+com.android.server.ethernet.EthernetTracker	method	static NetworkCapabilities createNetworkCapabilities(boolean z, String str, String str2)
+com.android.server.ethernet.EthernetTracker$InterfaceObserver	method	private InterfaceObserver()
+com.android.server.ethernet.EthernetTracker$InterfaceObserver	method	public void interfaceAdded(final String str)
+com.android.server.ethernet.EthernetTracker$InterfaceObserver	method	public void interfaceLinkStateChanged(final String str, final boolean z)
+com.android.server.ethernet.EthernetTracker$InterfaceObserver	method	public void interfaceRemoved(final String str)
+com.android.server.ethernet.EthernetTracker$TetheredInterfaceRequestList	method	private TetheredInterfaceRequestList()
+com.android.server.ethernet.EthernetTracker$TetheredInterfaceRequestList	method	public void onCallbackDied(ITetheredInterfaceCallback iTetheredInterfaceCallback, Object obj)

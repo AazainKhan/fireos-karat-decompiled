@@ -1,0 +1,127 @@
+kind	class	extends	implements
+class	com.amazon.client.metrics.AbstractMetricsFactoryImpl	BaseMetricsFactoryImpl	
+class	com.amazon.client.metrics.AndroidMetricsFactoryImpl	AbstractMetricsFactoryImpl	
+class	com.amazon.client.metrics.BaseMetricsFactoryImpl		MetricsFactory
+class	com.amazon.client.metrics.ConcurrentMetricEvent		MetricEvent
+class	com.amazon.client.metrics.DataPoint		
+class	com.amazon.client.metrics.LoggerMetricsFactoryImpl	BaseMetricsFactoryImpl	
+class	com.amazon.client.metrics.MetricsException	Exception	
+class	com.amazon.client.metrics.NullClickStreamMetricEvent	NullMetricEvent	ClickStreamMetricsEvent
+class	com.amazon.client.metrics.NullMetricEvent		MetricEvent
+class	com.amazon.client.metrics.NullMetricsFactory		MetricsFactory
+class	com.amazon.client.metrics.PeriodicMetricReporterImpl		PeriodicMetricReporter
+class	com.amazon.client.metrics.clickstream.ASINData		
+class	com.amazon.client.metrics.clickstream.ECommerceInfo		ClickStreamInfo
+class	com.amazon.client.metrics.clickstream.EventBasedUsageInfo		ClickStreamInfo
+class	com.amazon.client.metrics.clickstream.EventBasedUsageInfo$EventBasedUsageInfoBuilder		
+class	com.amazon.client.metrics.clickstream.UsageInfo		ClickStreamInfo
+class	com.amazon.client.metrics.clickstream.WeblabInfo		ClickStreamInfo
+class	com.amazon.dcp.common.resources.R		
+class	com.amazon.dcp.common.resources.R$drawable		
+class	com.amazon.device.sync.AbstractSyncableDataset		SyncableDataset<E>
+class	com.amazon.device.sync.BackgroundSyncer	BroadcastReceiver	
+class	com.amazon.device.sync.BuildConfig		
+class	com.amazon.device.sync.Change		
+class	com.amazon.device.sync.Conflict		
+class	com.amazon.device.sync.Notifications		
+class	com.amazon.device.sync.R		
+class	com.amazon.device.sync.R$drawable		
+class	com.amazon.device.sync.R$id		
+class	com.amazon.device.sync.R$layout		
+class	com.amazon.device.sync.R$string		
+class	com.amazon.device.sync.R$xml		
+class	com.amazon.device.sync.SyncApplication	Application	
+class	com.amazon.device.sync.SyncInit		
+class	com.amazon.device.sync.SyncableDataDirectory	AbstractSyncableDataset<SyncableDatasetInfo>	Iterable<SyncableDatasetInfo>
+class	com.amazon.device.sync.SyncableDataStore		
+class	com.amazon.device.sync.SyncableDatasetInfo		
+class	com.amazon.device.sync.SyncableDeletedException	Exception	
+class	com.amazon.device.sync.SyncableStringMap	AbstractSyncableDataset<Map.Entry<String, String>>	ConcurrentMap<String,String>
+class	com.amazon.device.sync.dx.AccountDeregisteredReceiver	BroadcastReceiver	
+class	com.amazon.device.sync.dx.AccountDeregisteredReceiverService	IntentService	
+class	com.amazon.device.sync.dx.AccountsActivity	FragmentActivity	
+class	com.amazon.device.sync.dx.DatasetActivity	FragmentActivity	
+class	com.amazon.device.sync.dx.DatasetActivity$MapAsyncTask	AsyncTask<String, Void, List<Map.Entry<String, String>>>	
+class	com.amazon.device.sync.dx.DatasetAdderActivity	Activity	
+class	com.amazon.device.sync.dx.DatasetsActivity	FragmentActivity	
+class	com.amazon.device.sync.dx.DatasetsActivity$DatasetAsyncTask	AsyncTask<String, Void, List<String>>	
+class	com.amazon.device.sync.dx.NamespaceDialogFragment	DialogFragment	
+class	com.amazon.device.sync.dx.NamespacesActivity	FragmentActivity	
+class	com.amazon.device.sync.dx.RecordAdderActivity	Activity	
+class	com.amazon.device.sync.failures.AccessDeniedException	WhispersyncServerException	
+class	com.amazon.device.sync.failures.AuthenticationFailedException	WhispersyncServerException	
+class	com.amazon.device.sync.failures.LocalStoreException	WhispersyncClientException	
+class	com.amazon.device.sync.failures.WhispersyncClientException	RuntimeException	
+class	com.amazon.device.sync.failures.WhispersyncServerException	WhispersyncClientException	
+class	com.amazon.identity.auth.device.api.ADPCorpusSigningAuthenticationMethod$SignCorpusError		
+class	com.amazon.identity.auth.device.api.ADPCorpusSigningAuthenticationMethod$SignCorpusOption		
+class	com.amazon.identity.auth.device.api.AccountChangeEvent		
+class	com.amazon.identity.auth.device.api.AuthenticatedURLConnection	HttpsURLConnection	
+class	com.amazon.identity.auth.device.api.AuthenticatedURLConnection$AccountNeedsRecoveryException	IOException	
+class	com.amazon.identity.auth.device.api.AuthenticatedURLConnection$AuthenticationFailureIOException	IOException	
+class	com.amazon.identity.auth.device.api.AuthenticatedURLConnection$NoCredentialsException	IOException	
+class	com.amazon.identity.auth.device.api.AuthenticationMethod		
+class	com.amazon.identity.auth.device.api.AuthenticationMethod$GetAuthenticationHeadersForRequestError		
+class	com.amazon.identity.auth.device.api.AuthenticationMethodFactory		
+class	com.amazon.identity.auth.device.api.CookieKeys		
+class	com.amazon.identity.auth.device.api.CookieKeys$Options		
+class	com.amazon.identity.auth.device.api.CustomerAttributeKeys		
+class	com.amazon.identity.auth.device.api.CustomerAttributeStore		
+class	com.amazon.identity.auth.device.api.CustomerAttributeStore$RenameDeviceError		
+class	com.amazon.identity.auth.device.api.DefaultCallback		Callback
+class	com.amazon.identity.auth.device.api.DeviceDataKeys		
+class	com.amazon.identity.auth.device.api.DeviceDataStore		
+class	com.amazon.identity.auth.device.api.DeviceDataStoreException	Exception	
+class	com.amazon.identity.auth.device.api.LinkCodeErrorCodes		
+class	com.amazon.identity.auth.device.api.MAPAccountManager		
+class	com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalActivityUIOptions		
+class	com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalOptions		
+class	com.amazon.identity.auth.device.api.MAPAndroidWebViewClient	WebViewClient	
+class	com.amazon.identity.auth.device.api.MAPAndroidWebViewHelper		
+class	com.amazon.identity.auth.device.api.MAPBroadcastReceiver	BroadcastReceiver	
+class	com.amazon.identity.auth.device.api.MAPCallbackErrorException	Exception	
+class	com.amazon.identity.auth.device.api.MAPInformationProvider	ContentProvider	
+class	com.amazon.identity.auth.device.api.MAPInit		
+class	com.amazon.identity.auth.device.api.MAPWebViewEventHelper		
+class	com.amazon.identity.auth.device.api.MultipleAccountManager		
+class	com.amazon.identity.auth.device.api.MultipleAccountManager$AccountMappingType		
+class	com.amazon.identity.auth.device.api.MultipleAccountManager$CustomKeyMappingType	AccountMappingType	
+class	com.amazon.identity.auth.device.api.MultipleAccountManager$PackageMappingType	AccountMappingType	
+class	com.amazon.identity.auth.device.api.MultipleAccountManager$PrimaryUserMappingType	AccountMappingType	
+class	com.amazon.identity.auth.device.api.MultipleAccountManager$SessionPackageMappingAlreadySetException	RuntimeException	
+class	com.amazon.identity.auth.device.api.MultipleAccountManager$SessionPackageMappingType	AccountMappingType	
+class	com.amazon.identity.auth.device.api.MultipleAccountManager$SessionUserMappingType	AccountMappingType	
+class	com.amazon.identity.auth.device.api.TokenKeys		
+class	com.amazon.identity.auth.device.api.TokenKeys$Options		
+class	com.amazon.identity.auth.device.api.TokenManagement		
+enum	com.amazon.client.metrics.Channel		
+enum	com.amazon.client.metrics.DataPointType		
+enum	com.amazon.client.metrics.MetricEventType		
+enum	com.amazon.client.metrics.Priority		
+enum	com.amazon.client.metrics.clickstream.EventBasedUsageInfo$ACTION		
+enum	com.amazon.device.sync.Change$Type		
+enum	com.amazon.device.sync.DatasetType		
+enum	com.amazon.device.sync.dx.DatasetsActivity$DownloadStatus		
+enum	com.amazon.device.sync.failures.WhispersyncClientException$SyncDirection		
+enum	com.amazon.identity.auth.device.api.AuthenticationType		
+enum	com.amazon.identity.auth.device.api.CustomerAttributeStore$GetAttributeOptions		
+enum	com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalActivityUIOptions$ProgressBarState		
+enum	com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalActivityUIOptions$ScreenPosition		
+enum	com.amazon.identity.auth.device.api.MAPAccountManager$BootstrapError		
+enum	com.amazon.identity.auth.device.api.MAPAccountManager$RegistrationError		
+enum	com.amazon.identity.auth.device.api.RegistrationType		
+enum	com.amazon.identity.auth.device.api.SigninOption		
+interface	com.amazon.client.metrics.ClickStreamMetricsEvent	GenericClickStreamMetricEvent	
+interface	com.amazon.client.metrics.MetricEvent		
+interface	com.amazon.client.metrics.MetricsFactory		
+interface	com.amazon.client.metrics.PeriodicMetricReporter		
+interface	com.amazon.client.metrics.clickstream.ClickStreamInfo		
+interface	com.amazon.client.metrics.clickstream.GenericClickStreamMetricEvent	MetricEvent	
+interface	com.amazon.device.sync.Subscription		
+interface	com.amazon.device.sync.SyncableDataset		
+interface	com.amazon.device.sync.SyncableDatasetListener		
+interface	com.amazon.identity.auth.device.api.ADPCorpusSigningAuthenticationMethod		
+interface	com.amazon.identity.auth.device.api.Callback		
+interface	com.amazon.identity.auth.device.api.MAPAccountManager$MAPAccountChangeObserver		
+interface	com.amazon.identity.auth.device.api.MAPAndroidWebViewNavigator		
+interface	com.amazon.identity.auth.device.api.MAPFuture		

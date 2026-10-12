@@ -1,0 +1,158 @@
+class	kind	declaration
+com.amazon.alta.h2contracts.AbstractServiceCallHelper	field	private IBinder.DeathRecipient mDeathRecipient;
+com.amazon.alta.h2contracts.AbstractServiceCallHelper	field	private IH2ClientService mService;
+com.amazon.alta.h2contracts.AbstractServiceCallHelper	field	private final IH2Callback<RSP> mCallback;
+com.amazon.alta.h2contracts.AbstractServiceCallHelper	field	private final Looper mCallerLooper;
+com.amazon.alta.h2contracts.AbstractServiceCallHelper	method	protected void postOnMainThread(final RSP response)
+com.amazon.alta.h2contracts.AbstractServiceCallHelper	method	public AbstractServiceCallHelper(IH2Callback<RSP> callback)
+com.amazon.alta.h2contracts.AbstractServiceCallHelper	method	public Looper getCallerLooper()
+com.amazon.alta.h2contracts.AbstractServiceCallHelper	method	public abstract CB getIPCCallback();
+com.amazon.alta.h2contracts.AbstractServiceCallHelper	method	public abstract RSP mo0getDeathResponse();
+com.amazon.alta.h2contracts.AbstractServiceCallHelper	method	public void linkDeathRecipient(IH2ClientService service) throws RemoteException
+com.amazon.alta.h2contracts.AbstractServiceCallHelper	method	public void performCallback(RSP response)
+com.amazon.alta.h2contracts.AbstractServiceCallHelper	method	public void performServiceCall(IH2ClientService service, CB callback) throws RemoteException
+com.amazon.alta.h2contracts.AbstractServiceCallHelper	method	public void unlinkDeathRecipient()
+com.amazon.alta.h2contracts.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.alta.h2contracts.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.alta.h2contracts.BuildConfig	field	public static final String FLAVOR;
+com.amazon.alta.h2contracts.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.alta.h2contracts.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.alta.h2contracts.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.alta.h2contracts.ConnectionManager	field	private IH2ClientService mService;
+com.amazon.alta.h2contracts.ConnectionManager	field	private ServiceConnection mServiceConnection;
+com.amazon.alta.h2contracts.ConnectionManager	field	private final Context mAppContext;
+com.amazon.alta.h2contracts.ConnectionManager	field	private static ConnectionManager mInstance;
+com.amazon.alta.h2contracts.ConnectionManager	field	private static final String TAG;
+com.amazon.alta.h2contracts.ConnectionManager	method	private ConnectionManager(Context context)
+com.amazon.alta.h2contracts.ConnectionManager	method	public <CB, RSP extends H2Response> void ensureAndCallService(final AbstractServiceCallHelper<CB, RSP> helper)
+com.amazon.alta.h2contracts.ConnectionManager	method	public IH2ClientService getService()
+com.amazon.alta.h2contracts.ConnectionManager	method	public boolean isConnected()
+com.amazon.alta.h2contracts.ConnectionManager	method	public boolean openConnection()
+com.amazon.alta.h2contracts.ConnectionManager	method	public static synchronized ConnectionManager getInstance(Context context)
+com.amazon.alta.h2contracts.ConnectionManager	method	public synchronized boolean ensureConnection()
+com.amazon.alta.h2contracts.ConnectionManager	method	public synchronized void closeConnection()
+com.amazon.alta.h2contracts.HouseholdAPILogic	field	private final ConfigHelper mConfigHelper;
+com.amazon.alta.h2contracts.HouseholdAPILogic	field	private final ConnectionManager mConnectionManager;
+com.amazon.alta.h2contracts.HouseholdAPILogic	field	private final UserHelper mUserHelper;
+com.amazon.alta.h2contracts.HouseholdAPILogic	field	private static final String TAG;
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public ConnectionManager getConnectionManager()
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public HouseholdAPILogic(Context context)
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public HouseholdRole getProcessUserHouseholdRole()
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public ServiceEndpoint getServiceEndpoint()
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public String getHouseholdId()
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public boolean switchToUser(int androidId)
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public int getProcessUserId()
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public void addAndroidAccount(final String agentId, final AmazonUser user, IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public void addCloudAdultToDevice(final String agentId, final String userId, final String token, IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public void addCloudUserToDevice(final String agentId, final String userId, IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public void addUser(final String agentId, final UserMetadata metadata, IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public void addUserWithMergePreview(final String directedId, final String token, final UserState state, final HouseholdRole role, IH2Callback.IGetUsersCallback callback)
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public void addWarmUser(final String agentId, final String directedId, final String token, IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public void downloadAvatars(IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public void getActiveUser(IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public void getHouseholdAgreements(IH2Callback.IGetHouseholdAgreementsCallback callback)
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public void getHouseholdVpcStatus(final String directedId, final String clientId, IH2Callback.IGetHouseholdVpcStatusCallback callback)
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public void getSharedBenefits(IH2Callback.IGetSharedBenefitsCallback callback)
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public void getUser(final String directedId, IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public void getUsers(final UserState state, final HouseholdRole role, IH2Callback.IGetUsersCallback callback)
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public void getUsersBlocking(final UserState state, final HouseholdRole role, IH2Callback.IGetUsersBlockingCallback callback)
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public void getVpcStatus(final String directedId, final String clientId, final boolean checkAbleToSetVpc, IH2Callback.IGetVpcStatusCallback callback)
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public void leaveHousehold(IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public void registerPendingUser(String userId, String email, String password, IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public void registerPendingUser(String userId, String token, TokenType tokenType, IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public void registerUserWithExistingAndroidId(final String agentId, final AmazonUser user, final String password, IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public void removeAndroidAccount(final String agentId, final AmazonUser user, IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public void removeSharedBenefits(final String agentId, final List<Beneficiary> beneficiaries, IH2Callback.IH2StatusCallback callback)
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public void removeUserFromDevice(final String userId, final boolean keepData, IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public void removeUserFromHousehold(final String agentId, final String userId, IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public void setAgreementStatus(final Map<String, Boolean> householdAgreements, IH2Callback.IH2StatusCallback callback)
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public void setServiceEndpoint(ServiceEndpoint endpoint)
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public void setSharingBenefits(final String agentId, final List<Beneficiary> beneficiaries, IH2Callback.IH2StatusCallback callback)
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public void syncHouseholdFromCloud(final String agentId, IH2Callback.IH2StatusCallback callback)
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public void syncSharedBenefits(final String agentId, IH2Callback.IH2StatusCallback callback)
+com.amazon.alta.h2contracts.HouseholdAPILogic	method	public void updateUser(final String agentId, final AmazonUser user, IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.api.AmazonHouseholdAPI	field	private final HouseholdAPILogic mApiLogic;
+com.amazon.alta.h2contracts.api.AmazonHouseholdAPI	field	private static final String TAG;
+com.amazon.alta.h2contracts.api.AmazonHouseholdAPI	field	protected Context mContext;
+com.amazon.alta.h2contracts.api.AmazonHouseholdAPI	method	protected HouseholdAPILogic getApiLogic()
+com.amazon.alta.h2contracts.api.AmazonHouseholdAPI	method	public AmazonHouseholdAPI(Context context)
+com.amazon.alta.h2contracts.api.AmazonHouseholdAPI	method	public HouseholdRole getProcessUserHouseholdRole()
+com.amazon.alta.h2contracts.api.AmazonHouseholdAPI	method	public String getHouseholdId()
+com.amazon.alta.h2contracts.api.AmazonHouseholdAPI	method	public int getProcessUserId()
+com.amazon.alta.h2contracts.api.AmazonHouseholdAPI	method	public void addAndroidAccount(String agentId, AmazonUser user, IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.api.AmazonHouseholdAPI	method	public void downloadAvatars(IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.api.AmazonHouseholdAPI	method	public void getActiveUser(IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.api.AmazonHouseholdAPI	method	public void getUser(String directedId, IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.api.AmazonHouseholdAPI	method	public void getUsers(UserState state, HouseholdRole role, IH2Callback.IGetUsersCallback callback)
+com.amazon.alta.h2contracts.api.AmazonHouseholdAPI	method	public void getUsersBlocking(UserState state, HouseholdRole role, IH2Callback.IGetUsersBlockingCallback callback)
+com.amazon.alta.h2contracts.api.AmazonHouseholdAPI	method	public void registerUserWithExistingAndroidId(String agentId, AmazonUser user, String password, IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.api.AmazonHouseholdAPI	method	public void removeAndroidAccount(String agentId, AmazonUser user, IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.api.AmazonHouseholdManager	field	private final ConnectionManager mConnectionManager;
+com.amazon.alta.h2contracts.api.AmazonHouseholdManager	field	private static final String TAG;
+com.amazon.alta.h2contracts.api.AmazonHouseholdManager	method	public AmazonHouseholdManager(Context context)
+com.amazon.alta.h2contracts.api.AmazonHouseholdManager	method	public void addUser(String agentId, UserMetadata metadata, IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.api.AmazonHouseholdManager	method	public void addUserWithMergePreview(String directedId, String token, UserState state, HouseholdRole role, IH2Callback.IGetUsersCallback callback)
+com.amazon.alta.h2contracts.api.AmazonHouseholdManager	method	public void addWarmUser(String agentId, String directedId, String token, IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.api.AmazonHouseholdManager	method	public void getSharedBenefits(IH2Callback.IGetSharedBenefitsCallback callback)
+com.amazon.alta.h2contracts.api.AmazonHouseholdManager	method	public void registerPendingUser(String email, String password, IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.api.AmazonHouseholdManager	method	public void registerPendingUser(String token, TokenType tokenType, IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.api.AmazonHouseholdManager	method	public void removeSharedBenefits(String agentId, List<Beneficiary> beneficiaries, IH2Callback.IH2StatusCallback callback)
+com.amazon.alta.h2contracts.api.AmazonHouseholdManager	method	public void setSharingBenefits(String agentId, List<Beneficiary> beneficiaries, IH2Callback.IH2StatusCallback callback)
+com.amazon.alta.h2contracts.api.AmazonHouseholdManager	method	public void syncSharedBenefits(String agentId, IH2Callback.IH2StatusCallback callback)
+com.amazon.alta.h2contracts.api.AmazonHouseholdManager	method	public void updateUser(String agentId, AmazonUser user, IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.api.H2Constants	field	public static final String AMAZON_ID_EXTRA;
+com.amazon.alta.h2contracts.api.H2Constants	field	public static final String EDIT_USER_ACTION;
+com.amazon.alta.h2contracts.api.H2Constants	field	public static final String FOR_CHILD_EXTRA;
+com.amazon.alta.h2contracts.api.H2Constants	field	public static final String HOUSEHOLD_MODIFIED_ACTION;
+com.amazon.alta.h2contracts.api.H2Constants	field	public static final String ICON_DOWNLOADED_ACTION;
+com.amazon.alta.h2contracts.api.H2Constants	field	public static final String MAP_ROLE_KEY;
+com.amazon.alta.h2contracts.api.H2Constants	field	public static final String MODIFICATIONS_EXTRA;
+com.amazon.alta.h2contracts.api.H2Constants	field	public static final String REGISTER_USER_ACTION;
+com.amazon.alta.h2contracts.api.H2Constants	field	public static final String REMOVE_USER_ACTION;
+com.amazon.alta.h2contracts.api.H2Constants	field	public static final String SELECT_USER_EXPERIENCE_EXTRA;
+com.amazon.alta.h2contracts.api.H2Constants	field	public static final String USER_EXTRA;
+com.amazon.alta.h2contracts.api.H2Constants	field	public static final int MAX_ADULTS_IN_HOUSEHOLD;
+com.amazon.alta.h2contracts.api.H2Constants	field	public static final int MAX_CHILDREN_IN_HOUSEHOLD;
+com.amazon.alta.h2contracts.api.H2Constants	method	private H2Constants()
+com.amazon.alta.h2contracts.api.H2HouseholdManager	field	private static final String TAG;
+com.amazon.alta.h2contracts.api.H2HouseholdManager	method	public H2HouseholdManager(Context context)
+com.amazon.alta.h2contracts.api.H2HouseholdManager	method	public ServiceEndpoint getServiceEndpoint()
+com.amazon.alta.h2contracts.api.H2HouseholdManager	method	public boolean switchToUser(int androidId)
+com.amazon.alta.h2contracts.api.H2HouseholdManager	method	public void addCloudAdultToDevice(String agentId, String userId, String token, IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.api.H2HouseholdManager	method	public void addCloudUserToDevice(String agentId, String userId, IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.api.H2HouseholdManager	method	public void getHouseholdAgreements(IH2Callback.IGetHouseholdAgreementsCallback callback)
+com.amazon.alta.h2contracts.api.H2HouseholdManager	method	public void leaveHousehold(IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.api.H2HouseholdManager	method	public void registerPendingUser(String userId, String email, String password, IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.api.H2HouseholdManager	method	public void removeUserFromDevice(String userId, boolean keepData, IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.api.H2HouseholdManager	method	public void removeUserFromHousehold(String agentId, String userId, IH2Callback.IUserCallback callback)
+com.amazon.alta.h2contracts.api.H2HouseholdManager	method	public void setAgreementStatus(Map<String, Boolean> householdAgreements, IH2Callback.IH2StatusCallback callback)
+com.amazon.alta.h2contracts.api.H2HouseholdManager	method	public void setServiceEndpoint(ServiceEndpoint endpoint)
+com.amazon.alta.h2contracts.api.H2HouseholdManager	method	public void syncHouseholdFromCloud(String agentId, IH2Callback.IH2StatusCallback callback)
+com.amazon.alta.h2contracts.api.H2SharingManager	field	private static final String TAG;
+com.amazon.alta.h2contracts.api.H2SharingManager	method	public H2SharingManager(Context context)
+com.amazon.alta.h2contracts.api.H2SharingManager	method	public void getSharedBenefits(IH2Callback.IGetSharedBenefitsCallback callback)
+com.amazon.alta.h2contracts.api.H2SharingManager	method	public void removeSharedBenefits(String agentId, List<Beneficiary> beneficiaries, IH2Callback.IH2StatusCallback callback)
+com.amazon.alta.h2contracts.api.H2SharingManager	method	public void setSharingBenefits(String agentId, List<Beneficiary> beneficiaries, IH2Callback.IH2StatusCallback callback)
+com.amazon.alta.h2contracts.api.H2SharingManager	method	public void syncSharedBenefits(String agentId, IH2Callback.IH2StatusCallback callback)
+com.amazon.householdclient.HouseholdManager	field	private Context mContext;
+com.amazon.householdclient.HouseholdManager	field	private HouseholdAPILogic mApiLogic;
+com.amazon.householdclient.HouseholdManager	field	private static final String TAG;
+com.amazon.householdclient.HouseholdManager	field	public static HouseholdRole ANY_ROLE;
+com.amazon.householdclient.HouseholdManager	field	public static UserState ANY_STATE;
+com.amazon.householdclient.HouseholdManager	method	public HouseholdManager(Context context)
+com.amazon.householdclient.HouseholdManager	method	public void addAdultUser(String newUserId, String newUserToken, IH2Callback.IUserCallback callback)
+com.amazon.householdclient.HouseholdManager	method	public void addChildUser(UserMetadata userMetadata, IH2Callback.IUserCallback callback)
+com.amazon.householdclient.HouseholdManager	method	public void addCloudAdultToDevice(String userId, String token, IH2Callback.IUserCallback callback)
+com.amazon.householdclient.HouseholdManager	method	public void addCloudUserToDevice(String userId, IH2Callback.IUserCallback callback)
+com.amazon.householdclient.HouseholdManager	method	public void findUsers(UserState stateFilter, HouseholdRole roleFilter, IH2Callback.IGetUsersCallback callback)
+com.amazon.householdclient.HouseholdManager	method	public void getActiveUser(IH2Callback.IUserCallback callback)
+com.amazon.householdclient.HouseholdManager	method	public void getHouseholdAgreements(IH2Callback.IGetHouseholdAgreementsCallback callback)
+com.amazon.householdclient.HouseholdManager	method	public void getHouseholdVpcStatus(String userId, String clientId, IH2Callback.IGetHouseholdVpcStatusCallback callback)
+com.amazon.householdclient.HouseholdManager	method	public void getUser(String directedId, IH2Callback.IUserCallback callback)
+com.amazon.householdclient.HouseholdManager	method	public void getUsers(IH2Callback.IGetUsersCallback callback)
+com.amazon.householdclient.HouseholdManager	method	public void getVpcStatus(String userId, String clientId, boolean checkAbleToSetVpc, IH2Callback.IGetVpcStatusCallback callback)
+com.amazon.householdclient.HouseholdManager	method	public void leaveHousehold(IH2Callback.IUserCallback callback)
+com.amazon.householdclient.HouseholdManager	method	public void previewHouseholdMerger(String newUserId, String token, UserState stateFilter, HouseholdRole roleFilter, IH2Callback.IGetUsersCallback callback)
+com.amazon.householdclient.HouseholdManager	method	public void removeUserFromDevice(String userId, IH2Callback.IUserCallback callback)
+com.amazon.householdclient.HouseholdManager	method	public void setAgreementStatus(Map<String, Boolean> householdAgreements, IH2Callback.IH2StatusCallback callback)
+com.amazon.householdclient.HouseholdManager	method	public void updateUser(AmazonUser user, IH2Callback.IUserCallback callback)

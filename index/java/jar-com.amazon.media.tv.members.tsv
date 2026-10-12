@@ -1,0 +1,1953 @@
+class	kind	declaration
+amazon.media.tv.AmazonTvInputCallback	method	public void onApplicationKeySetChanged(String inputId, int keySetBitMask, int[] otherKeys)
+amazon.media.tv.AmazonTvInputCallback	method	public void onChannelSignalQualityChanged(String inputId, int signalQuality)
+amazon.media.tv.AmazonTvInputCallback	method	public void onChannelSignalStrengthChanged(String inputId, int signalStrength)
+amazon.media.tv.AmazonTvInputCallback	method	public void onFrequencyManualTuneInfo(String inputId, float[] supportedOffset, float currentOffset)
+amazon.media.tv.AmazonTvInputCallback	method	public void onInteractiveAppStatusChanged(String inputId, int status)
+amazon.media.tv.AmazonTvInputCallback	method	public void onPlaybackConflict(String inputId, PlaybackConflict playbackConflict)
+amazon.media.tv.AmazonTvInputCallback	method	public void onPlaybackConflictResolutionFailed(String inputId, int errorCode)
+amazon.media.tv.AmazonTvInputCallback	method	public void onPlaybackConflictResolved(String inputId)
+amazon.media.tv.AmazonTvInputCallback	method	public void onPlaybackStateChanged(int state)
+amazon.media.tv.AmazonTvInputCallback	method	public void onSupportsTrickplayPreview(String inputId, boolean isSupported)
+amazon.media.tv.AmazonTvInputCallback	method	public void onTeletextStatusChanged(String inputId, int status)
+amazon.media.tv.ApiBinder	field	private final Handler mHandler;
+amazon.media.tv.ApiBinder	field	private final TvViewManager mTvViewManager;
+amazon.media.tv.ApiBinder	field	private static final String TAG;
+amazon.media.tv.ApiBinder	field	private static final boolean DEBUG;
+amazon.media.tv.ApiBinder	method	public List<TvTrackInfo> getTracks(int type) throws RemoteException
+amazon.media.tv.ApiBinder	method	public String getSelectedTrack(int type) throws RemoteException
+amazon.media.tv.ApiBinder	method	public ViewState getViewState() throws RemoteException
+amazon.media.tv.ApiBinder	method	public boolean dispatchInputEvent(IBinder token, InputEvent event)
+amazon.media.tv.ApiBinder	method	public void clearViewState(final IBinder token)
+amazon.media.tv.ApiBinder	method	public void createOverlayView(final IBinder token) throws RemoteException
+amazon.media.tv.ApiBinder	method	public void hideSurface(final IBinder token) throws RemoteException
+amazon.media.tv.ApiBinder	method	public void requestUnblockContent(final IBinder token, final String unblockedRating)
+amazon.media.tv.ApiBinder	method	public void requestWindowFocus(final IBinder token) throws RemoteException
+amazon.media.tv.ApiBinder	method	public void reset(final IBinder token)
+amazon.media.tv.ApiBinder	method	public void resolvePlaybackConflict(final IBinder token, final ConflictResolutionGroup resolutionGroup) throws RemoteException
+amazon.media.tv.ApiBinder	method	public void selectTrack(final IBinder token, final int type, final String trackId) throws RemoteException
+amazon.media.tv.ApiBinder	method	public void sendAppPrivateCommand(final IBinder token, final String action, final Bundle data) throws RemoteException
+amazon.media.tv.ApiBinder	method	public void sendHint(final IBinder token, final int hint) throws RemoteException
+amazon.media.tv.ApiBinder	method	public void sendInteractiveAppCommand(final IBinder token, final int command) throws RemoteException
+amazon.media.tv.ApiBinder	method	public void setAttachedWindowToken(final IBinder token, final IBinder windowToken) throws RemoteException
+amazon.media.tv.ApiBinder	method	public void setCallback(final IBinder token, final IRemoteTvViewCallback callback) throws RemoteException
+amazon.media.tv.ApiBinder	method	public void setCaptionEnabled(final IBinder token, final boolean enabled) throws RemoteException
+amazon.media.tv.ApiBinder	method	public void setStreamVolume(final IBinder token, final float volume) throws RemoteException
+amazon.media.tv.ApiBinder	method	public void setTimeShiftConfigurations(final IBinder token, final TimeShiftConfiguration[] configs) throws RemoteException
+amazon.media.tv.ApiBinder	method	public void setTrickplaySurface(final IBinder token, final Surface surface) throws RemoteException
+amazon.media.tv.ApiBinder	method	public void setTrickplayTime(final IBinder token, final long timeMs, final int speed) throws RemoteException
+amazon.media.tv.ApiBinder	method	public void setWindowSize(final IBinder token, final int l, final int t, final int r, final int b, final boolean isVisible)
+amazon.media.tv.ApiBinder	method	public void setZOrderOnTop(final IBinder token, final boolean onTop, final boolean isVisible) throws RemoteException
+amazon.media.tv.ApiBinder	method	public void showSurface(final IBinder token) throws RemoteException
+amazon.media.tv.ApiBinder	method	public void timeShiftPause(final IBinder token) throws RemoteException
+amazon.media.tv.ApiBinder	method	public void timeShiftPlay(final IBinder token, final String inputId, final Uri recordedProgramUri) throws RemoteException
+amazon.media.tv.ApiBinder	method	public void timeShiftResume(final IBinder token) throws RemoteException
+amazon.media.tv.ApiBinder	method	public void timeShiftSeekTo(final IBinder token, final long timeMs) throws RemoteException
+amazon.media.tv.ApiBinder	method	public void tune(final IBinder token, final String inputId, final Uri channelUri, final Bundle params) throws RemoteException
+amazon.media.tv.BaseScannerService	field	private final ArraySet<MessengerTuple> mClients;
+amazon.media.tv.BaseScannerService	field	private final Object mLock;
+amazon.media.tv.BaseScannerService	field	private final ScannerService mSService;
+amazon.media.tv.BaseScannerService	field	private static final String TAG;
+amazon.media.tv.BaseScannerService	field	private static final int MAX_PROGRESS;
+amazon.media.tv.BaseScannerService	field	static final String MESSAGE_OBJECT_KEY;
+amazon.media.tv.BaseScannerService	method	private void doSendMessage(int what, int arg1, int arg2, Parcelable parcelable, Messenger messenger)
+amazon.media.tv.BaseScannerService	method	private void sendMessage(int what, int arg1, int arg2, Parcelable parcelable)
+amazon.media.tv.BaseScannerService	method	public ConnectionStatus getConnectionStatus(ConnectionType type)
+amazon.media.tv.BaseScannerService	method	public IBinder onBind(Intent intent)
+amazon.media.tv.BaseScannerService	method	public ISDBScannedMetadata getISDBScannedMetadata()
+amazon.media.tv.BaseScannerService	method	public List<AutoDiseqcResult> getAutoDiseqcResults()
+amazon.media.tv.BaseScannerService	method	public List<M7Operator> getSatelliteM7Operators()
+amazon.media.tv.BaseScannerService	method	public List<SatDbFile> getSatDbFiles()
+amazon.media.tv.BaseScannerService	method	public List<SatelliteConfiguration> getSatellitesByOperator(String operator)
+amazon.media.tv.BaseScannerService	method	public List<ScanOption> getSupportedScanOptions(String tunerInputId)
+amazon.media.tv.BaseScannerService	method	public List<String> getSupportedOperators(String operatorType)
+amazon.media.tv.BaseScannerService	method	public List<String> getSupportedProtocols()
+amazon.media.tv.BaseScannerService	method	public ScannedMetadata getScannedMetadata()
+amazon.media.tv.BaseScannerService	method	public SignalInfo getCurrentSignalInfo()
+amazon.media.tv.BaseScannerService	method	public abstract ScanStatus getScanStatus();
+amazon.media.tv.BaseScannerService	method	public abstract void cancelScan();
+amazon.media.tv.BaseScannerService	method	public abstract void startAutoScan(ScanProtocol scanProtocol, ScanType scanType);
+amazon.media.tv.BaseScannerService	method	public boolean diseqcMotorGoToStoredPosition()
+amazon.media.tv.BaseScannerService	method	public boolean diseqcMotorMoveCommand(int movementControl)
+amazon.media.tv.BaseScannerService	method	public boolean diseqcMotorStorePositionAt(int port)
+amazon.media.tv.BaseScannerService	method	public boolean doesSatDbFileExist(int type)
+amazon.media.tv.BaseScannerService	method	public boolean isConnectionCheckRequired(ConnectionType type)
+amazon.media.tv.BaseScannerService	method	public final void deregisterMessenger(Messenger client)
+amazon.media.tv.BaseScannerService	method	public final void registerMessenger(Messenger client) throws RemoteException
+amazon.media.tv.BaseScannerService	method	public int getZipCode()
+amazon.media.tv.BaseScannerService	method	public void clearChannels(ClearChannelsConfig clearChannelsConfig)
+amazon.media.tv.BaseScannerService	method	public void commitSatDbFile(SatDbFile file)
+amazon.media.tv.BaseScannerService	method	public void setCableConfig(CableConfiguration cableConfig)
+amazon.media.tv.BaseScannerService	method	public void setISDBConfig(ISDBConfiguration isdbConfig)
+amazon.media.tv.BaseScannerService	method	public void setPreferredRegion(TargetRegion targetRegion)
+amazon.media.tv.BaseScannerService	method	public void setSatelliteConfig(SatelliteConfiguration satelliteConfig)
+amazon.media.tv.BaseScannerService	method	public void setScanArea(String scanArea)
+amazon.media.tv.BaseScannerService	method	public void setScanInitiator(String scanInitiator)
+amazon.media.tv.BaseScannerService	method	public void setScanTasks(List<ScanTask> scanTasks)
+amazon.media.tv.BaseScannerService	method	public void setTerrestrialConfig(TerrestrialConfiguration terrestrialConfig)
+amazon.media.tv.BaseScannerService	method	public void setZipCode(int zipCode)
+amazon.media.tv.BaseScannerService	method	public void startManualScan(ScanProtocol protocol, ScanType type, int[] frequencies)
+amazon.media.tv.BaseScannerService	method	public void startManualScanInHz(ScanProtocol protocol, ScanType type, long frequencyHz)
+amazon.media.tv.BaseScannerService	method	public void updateChannelCount(ChannelType type, int count)
+amazon.media.tv.BaseScannerService	method	public void updateChannelCountPerProtocol(String protocolType, int count)
+amazon.media.tv.BaseScannerService	method	public void updateCurrentScanTask(ScanTaskType type)
+amazon.media.tv.BaseScannerService	method	public void updateProgress(int progress)
+amazon.media.tv.BaseScannerService	method	public void updateStatus(ScanStatusType type)
+amazon.media.tv.BaseScannerService$MessengerTuple	field	private final Messenger mMessenger;
+amazon.media.tv.BaseScannerService$MessengerTuple	field	private final MessengerUndertaker mUndertaker;
+amazon.media.tv.BaseScannerService$MessengerTuple	method	private MessengerTuple(Messenger messenger) throws RemoteException
+amazon.media.tv.BaseScannerService$MessengerTuple	method	public Messenger getMessenger()
+amazon.media.tv.BaseScannerService$MessengerTuple	method	public boolean equals(Object o)
+amazon.media.tv.BaseScannerService$MessengerTuple	method	public int hashCode()
+amazon.media.tv.BaseScannerService$MessengerTuple	method	public void unlink()
+amazon.media.tv.BaseScannerService$MessengerUndertaker	field	private final Messenger mClient;
+amazon.media.tv.BaseScannerService$MessengerUndertaker	method	private MessengerUndertaker(Messenger client)
+amazon.media.tv.BaseScannerService$MessengerUndertaker	method	public void binderDied()
+amazon.media.tv.BuildConfig	field	public static final String BUILD_TYPE;
+amazon.media.tv.BuildConfig	field	public static final String LIBRARY_PACKAGE_NAME;
+amazon.media.tv.BuildConfig	field	public static final boolean DEBUG;
+amazon.media.tv.ChannelType	method	public int describeContents()
+amazon.media.tv.ChannelType	method	public void writeToParcel(Parcel parcel, int i)
+amazon.media.tv.ConnectionStatus	field	private ConnectionType mConnectionType;
+amazon.media.tv.ConnectionStatus	field	private int mResponseCode;
+amazon.media.tv.ConnectionStatus	field	private static final long serialVersionUID;
+amazon.media.tv.ConnectionStatus	method	private ConnectionStatus(int connectionStatusResponseCode, ConnectionType connectionType)
+amazon.media.tv.ConnectionStatus	method	public ConnectionType getConnectionType()
+amazon.media.tv.ConnectionStatus	method	public int describeContents()
+amazon.media.tv.ConnectionStatus	method	public int getResponseCode()
+amazon.media.tv.ConnectionStatus	method	public static Builder builder()
+amazon.media.tv.ConnectionStatus	method	public void writeToParcel(Parcel parcel, int flags)
+amazon.media.tv.ConnectionStatus$Builder	field	private ConnectionType mConnectionType;
+amazon.media.tv.ConnectionStatus$Builder	field	private int mResponseCode;
+amazon.media.tv.ConnectionStatus$Builder	method	private Builder()
+amazon.media.tv.ConnectionStatus$Builder	method	public Builder withConnectionType(ConnectionType connectionType)
+amazon.media.tv.ConnectionStatus$Builder	method	public Builder withResponseCode(int responseCode)
+amazon.media.tv.ConnectionStatus$Builder	method	public ConnectionStatus build()
+amazon.media.tv.ConnectionStatus$ResponseCode	field	public static final int BCAS_CARD_TO_BE_REPLACED;
+amazon.media.tv.ConnectionStatus$ResponseCode	field	public static final int BCAS_INVALID_CARD;
+amazon.media.tv.ConnectionStatus$ResponseCode	field	public static final int BCAS_NO_CARD;
+amazon.media.tv.ConnectionStatus$ResponseCode	field	public static final int BCAS_OTHER_ERRORS;
+amazon.media.tv.ConnectionStatus$ResponseCode	field	public static final int BCAS_TERRESTRIAL_ONLY_CARD;
+amazon.media.tv.ConnectionStatus$ResponseCode	field	public static final int BCAS_UNUSABLE_CARD;
+amazon.media.tv.ConnectionStatus$ResponseCode	field	public static final int BCAS_VALID_CARD;
+amazon.media.tv.ConnectionStatus$ResponseCode	field	public static final int FAILURE;
+amazon.media.tv.ConnectionStatus$ResponseCode	field	public static final int INVALID_RESPONSE;
+amazon.media.tv.ConnectionType	method	public int describeContents()
+amazon.media.tv.ConnectionType	method	public void writeToParcel(Parcel parcel, int flags)
+amazon.media.tv.Country	field	private final String mCountryCode;
+amazon.media.tv.Country	field	private final int mNameResId;
+amazon.media.tv.Country	method	public String getCountryCode()
+amazon.media.tv.Country	method	public int getNameResId()
+amazon.media.tv.IRemoteTvView	field	public static final String DESCRIPTOR;
+amazon.media.tv.IRemoteTvView$Default	method	public IBinder asBinder()
+amazon.media.tv.IRemoteTvView$Default	method	public List<TvTrackInfo> getTracks(int type) throws RemoteException
+amazon.media.tv.IRemoteTvView$Default	method	public String getSelectedTrack(int type) throws RemoteException
+amazon.media.tv.IRemoteTvView$Default	method	public ViewState getViewState() throws RemoteException
+amazon.media.tv.IRemoteTvView$Default	method	public boolean dispatchInputEvent(IBinder token, InputEvent inputEvent) throws RemoteException
+amazon.media.tv.IRemoteTvView$Default	method	public void clearViewState(IBinder token) throws RemoteException
+amazon.media.tv.IRemoteTvView$Default	method	public void createOverlayView(IBinder token) throws RemoteException
+amazon.media.tv.IRemoteTvView$Default	method	public void hideSurface(IBinder token) throws RemoteException
+amazon.media.tv.IRemoteTvView$Default	method	public void requestUnblockContent(IBinder token, String unblockedRating) throws RemoteException
+amazon.media.tv.IRemoteTvView$Default	method	public void requestWindowFocus(IBinder token) throws RemoteException
+amazon.media.tv.IRemoteTvView$Default	method	public void reset(IBinder token) throws RemoteException
+amazon.media.tv.IRemoteTvView$Default	method	public void resolvePlaybackConflict(IBinder token, ConflictResolutionGroup resolutionGroup) throws RemoteException
+amazon.media.tv.IRemoteTvView$Default	method	public void selectTrack(IBinder token, int type, String trackId) throws RemoteException
+amazon.media.tv.IRemoteTvView$Default	method	public void sendAppPrivateCommand(IBinder token, String action, Bundle data) throws RemoteException
+amazon.media.tv.IRemoteTvView$Default	method	public void sendHint(IBinder token, int hint) throws RemoteException
+amazon.media.tv.IRemoteTvView$Default	method	public void sendInteractiveAppCommand(IBinder token, int command) throws RemoteException
+amazon.media.tv.IRemoteTvView$Default	method	public void setAttachedWindowToken(IBinder token, IBinder windowToken) throws RemoteException
+amazon.media.tv.IRemoteTvView$Default	method	public void setCallback(IBinder token, IRemoteTvViewCallback callback) throws RemoteException
+amazon.media.tv.IRemoteTvView$Default	method	public void setCaptionEnabled(IBinder token, boolean enabled) throws RemoteException
+amazon.media.tv.IRemoteTvView$Default	method	public void setStreamVolume(IBinder token, float volume) throws RemoteException
+amazon.media.tv.IRemoteTvView$Default	method	public void setTimeShiftConfigurations(IBinder token, TimeShiftConfiguration[] configs) throws RemoteException
+amazon.media.tv.IRemoteTvView$Default	method	public void setTrickplaySurface(IBinder token, Surface surface) throws RemoteException
+amazon.media.tv.IRemoteTvView$Default	method	public void setTrickplayTime(IBinder token, long timeMs, int speed) throws RemoteException
+amazon.media.tv.IRemoteTvView$Default	method	public void setWindowSize(IBinder token, int left, int top, int right, int bottom, boolean isVisible) throws RemoteException
+amazon.media.tv.IRemoteTvView$Default	method	public void setZOrderOnTop(IBinder token, boolean onTop, boolean isVisible) throws RemoteException
+amazon.media.tv.IRemoteTvView$Default	method	public void showSurface(IBinder token) throws RemoteException
+amazon.media.tv.IRemoteTvView$Default	method	public void timeShiftPause(IBinder token) throws RemoteException
+amazon.media.tv.IRemoteTvView$Default	method	public void timeShiftPlay(IBinder token, String inputId, Uri recordedProgramUri) throws RemoteException
+amazon.media.tv.IRemoteTvView$Default	method	public void timeShiftResume(IBinder token) throws RemoteException
+amazon.media.tv.IRemoteTvView$Default	method	public void timeShiftSeekTo(IBinder token, long timeMs) throws RemoteException
+amazon.media.tv.IRemoteTvView$Default	method	public void tune(IBinder token, String inputId, Uri channelUri, Bundle params) throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub	field	static final int TRANSACTION_clearViewState;
+amazon.media.tv.IRemoteTvView$Stub	field	static final int TRANSACTION_createOverlayView;
+amazon.media.tv.IRemoteTvView$Stub	field	static final int TRANSACTION_dispatchInputEvent;
+amazon.media.tv.IRemoteTvView$Stub	field	static final int TRANSACTION_getSelectedTrack;
+amazon.media.tv.IRemoteTvView$Stub	field	static final int TRANSACTION_getTracks;
+amazon.media.tv.IRemoteTvView$Stub	field	static final int TRANSACTION_getViewState;
+amazon.media.tv.IRemoteTvView$Stub	field	static final int TRANSACTION_hideSurface;
+amazon.media.tv.IRemoteTvView$Stub	field	static final int TRANSACTION_requestUnblockContent;
+amazon.media.tv.IRemoteTvView$Stub	field	static final int TRANSACTION_requestWindowFocus;
+amazon.media.tv.IRemoteTvView$Stub	field	static final int TRANSACTION_reset;
+amazon.media.tv.IRemoteTvView$Stub	field	static final int TRANSACTION_resolvePlaybackConflict;
+amazon.media.tv.IRemoteTvView$Stub	field	static final int TRANSACTION_selectTrack;
+amazon.media.tv.IRemoteTvView$Stub	field	static final int TRANSACTION_sendAppPrivateCommand;
+amazon.media.tv.IRemoteTvView$Stub	field	static final int TRANSACTION_sendHint;
+amazon.media.tv.IRemoteTvView$Stub	field	static final int TRANSACTION_sendInteractiveAppCommand;
+amazon.media.tv.IRemoteTvView$Stub	field	static final int TRANSACTION_setAttachedWindowToken;
+amazon.media.tv.IRemoteTvView$Stub	field	static final int TRANSACTION_setCallback;
+amazon.media.tv.IRemoteTvView$Stub	field	static final int TRANSACTION_setCaptionEnabled;
+amazon.media.tv.IRemoteTvView$Stub	field	static final int TRANSACTION_setStreamVolume;
+amazon.media.tv.IRemoteTvView$Stub	field	static final int TRANSACTION_setTimeShiftConfigurations;
+amazon.media.tv.IRemoteTvView$Stub	field	static final int TRANSACTION_setTrickplaySurface;
+amazon.media.tv.IRemoteTvView$Stub	field	static final int TRANSACTION_setTrickplayTime;
+amazon.media.tv.IRemoteTvView$Stub	field	static final int TRANSACTION_setWindowSize;
+amazon.media.tv.IRemoteTvView$Stub	field	static final int TRANSACTION_setZOrderOnTop;
+amazon.media.tv.IRemoteTvView$Stub	field	static final int TRANSACTION_showSurface;
+amazon.media.tv.IRemoteTvView$Stub	field	static final int TRANSACTION_timeShiftPause;
+amazon.media.tv.IRemoteTvView$Stub	field	static final int TRANSACTION_timeShiftPlay;
+amazon.media.tv.IRemoteTvView$Stub	field	static final int TRANSACTION_timeShiftResume;
+amazon.media.tv.IRemoteTvView$Stub	field	static final int TRANSACTION_timeShiftSeekTo;
+amazon.media.tv.IRemoteTvView$Stub	field	static final int TRANSACTION_tune;
+amazon.media.tv.IRemoteTvView$Stub	method	public IBinder asBinder()
+amazon.media.tv.IRemoteTvView$Stub	method	public Stub()
+amazon.media.tv.IRemoteTvView$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub	method	public static IRemoteTvView asInterface(IBinder obj)
+amazon.media.tv.IRemoteTvView$Stub$Proxy	field	private IBinder mRemote;
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public IBinder asBinder()
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public List<TvTrackInfo> getTracks(int type) throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public String getInterfaceDescriptor()
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public String getSelectedTrack(int type) throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public ViewState getViewState() throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public boolean dispatchInputEvent(IBinder token, InputEvent inputEvent) throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public void clearViewState(IBinder token) throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public void createOverlayView(IBinder token) throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public void hideSurface(IBinder token) throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public void requestUnblockContent(IBinder token, String unblockedRating) throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public void requestWindowFocus(IBinder token) throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public void reset(IBinder token) throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public void resolvePlaybackConflict(IBinder token, ConflictResolutionGroup resolutionGroup) throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public void selectTrack(IBinder token, int type, String trackId) throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public void sendAppPrivateCommand(IBinder token, String action, Bundle data) throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public void sendHint(IBinder token, int hint) throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public void sendInteractiveAppCommand(IBinder token, int command) throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public void setAttachedWindowToken(IBinder token, IBinder windowToken) throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public void setCallback(IBinder token, IRemoteTvViewCallback callback) throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public void setCaptionEnabled(IBinder token, boolean enabled) throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public void setStreamVolume(IBinder token, float volume) throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public void setTimeShiftConfigurations(IBinder token, TimeShiftConfiguration[] configs) throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public void setTrickplaySurface(IBinder token, Surface surface) throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public void setTrickplayTime(IBinder token, long timeMs, int speed) throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public void setWindowSize(IBinder token, int left, int top, int right, int bottom, boolean isVisible) throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public void setZOrderOnTop(IBinder token, boolean onTop, boolean isVisible) throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public void showSurface(IBinder token) throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public void timeShiftPause(IBinder token) throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public void timeShiftPlay(IBinder token, String inputId, Uri recordedProgramUri) throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public void timeShiftResume(IBinder token) throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public void timeShiftSeekTo(IBinder token, long timeMs) throws RemoteException
+amazon.media.tv.IRemoteTvView$Stub$Proxy	method	public void tune(IBinder token, String inputId, Uri channelUri, Bundle params) throws RemoteException
+amazon.media.tv.IRemoteTvView$_Parcel	method	public static <T extends Parcelable> void writeTypedList(Parcel parcel, List<T> value, int parcelableFlags)
+amazon.media.tv.IRemoteTvView$_Parcel	method	public static <T extends Parcelable> void writeTypedObject(Parcel parcel, T value, int parcelableFlags)
+amazon.media.tv.IRemoteTvView$_Parcel	method	public static <T> T readTypedObject(Parcel parcel, Parcelable.Creator<T> c)
+amazon.media.tv.IRemoteTvViewCallback	field	public static final String DESCRIPTOR;
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public IBinder asBinder()
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onApplicationKeySetChanged(String inputId, int keySetBitMask, int[] otherKeys) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onChannelRetuned(String inputId, Uri channelUri) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onChannelSignalQualityChanged(String inputId, int signalQuality) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onChannelSignalStrengthChanged(String inputId, int signalStrength) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onConnectionFailed(String inputId) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onContentAllowed(String inputId) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onContentBlocked(String inputId, String rating) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onDisconnected(String inputId) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onFrequencyManualTuneInfo(String inputId, float[] supportedOffsets, float currentOffset) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onInteractiveAppStatusChanged(String inputId, int status) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onLayoutSurface(int left, int top, int right, int bottom) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onPlaybackConflict(String inputId, PlaybackConflict playbackConflict) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onPlaybackConflictResolutionFailed(String inputId, int errorCode) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onPlaybackConflictResolved(String inputId) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onPlaybackStateChanged(int state) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onSessionEvent(String inputId, String name, Bundle args) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onSupportsTrickplayPreview(String inputId, boolean isSupported) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onTeletextStatusChanged(String inputId, int status) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onTimeShiftCurrentPositionChanged(String inputId, long timeMs) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onTimeShiftErrorEvent(String inputId, TimeShiftConfiguration config, int reason) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onTimeShiftLivePositionDelta(String inputId, long timeMs) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onTimeShiftStartPositionChanged(String inputId, long timeMs) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onTimeShiftStatusChanged(String inputId, int status) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onTrackSelected(String inputId, int type, String trackId) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onTracksChanged(String inputId, List<TvTrackInfo> tracks) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onTvExtensionConnected(String inputId) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onTvExtensionConnectionFailed(String inputId) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onTvExtensionDisconnected(String inputId) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onUnhandledInputEvent(InputEvent event) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onVideoAvailable(String inputId) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onVideoSizeChanged(String inputId, int width, int height) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Default	method	public void onVideoUnavailable(String inputId, int reason) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onApplicationKeySetChanged;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onChannelRetuned;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onChannelSignalQualityChanged;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onChannelSignalStrengthChanged;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onConnectionFailed;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onContentAllowed;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onContentBlocked;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onDisconnected;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onFrequencyManualTuneInfo;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onInteractiveAppStatusChanged;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onLayoutSurface;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onPlaybackConflict;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onPlaybackConflictResolutionFailed;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onPlaybackConflictResolved;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onPlaybackStateChanged;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onSessionEvent;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onSupportsTrickplayPreview;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onTeletextStatusChanged;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onTimeShiftCurrentPositionChanged;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onTimeShiftErrorEvent;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onTimeShiftLivePositionDelta;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onTimeShiftStartPositionChanged;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onTimeShiftStatusChanged;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onTrackSelected;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onTracksChanged;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onTvExtensionConnected;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onTvExtensionConnectionFailed;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onTvExtensionDisconnected;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onUnhandledInputEvent;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onVideoAvailable;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onVideoSizeChanged;
+amazon.media.tv.IRemoteTvViewCallback$Stub	field	static final int TRANSACTION_onVideoUnavailable;
+amazon.media.tv.IRemoteTvViewCallback$Stub	method	public IBinder asBinder()
+amazon.media.tv.IRemoteTvViewCallback$Stub	method	public Stub()
+amazon.media.tv.IRemoteTvViewCallback$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub	method	public static IRemoteTvViewCallback asInterface(IBinder obj)
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	field	private IBinder mRemote;
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public IBinder asBinder()
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onApplicationKeySetChanged(String inputId, int keySetBitMask, int[] otherKeys) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onChannelRetuned(String inputId, Uri channelUri) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onChannelSignalQualityChanged(String inputId, int signalQuality) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onChannelSignalStrengthChanged(String inputId, int signalStrength) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onConnectionFailed(String inputId) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onContentAllowed(String inputId) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onContentBlocked(String inputId, String rating) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onDisconnected(String inputId) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onFrequencyManualTuneInfo(String inputId, float[] supportedOffsets, float currentOffset) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onInteractiveAppStatusChanged(String inputId, int status) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onLayoutSurface(int left, int top, int right, int bottom) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onPlaybackConflict(String inputId, PlaybackConflict playbackConflict) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onPlaybackConflictResolutionFailed(String inputId, int errorCode) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onPlaybackConflictResolved(String inputId) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onPlaybackStateChanged(int state) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onSessionEvent(String inputId, String name, Bundle args) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onSupportsTrickplayPreview(String inputId, boolean isSupported) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onTeletextStatusChanged(String inputId, int status) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onTimeShiftCurrentPositionChanged(String inputId, long timeMs) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onTimeShiftErrorEvent(String inputId, TimeShiftConfiguration config, int reason) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onTimeShiftLivePositionDelta(String inputId, long timeMs) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onTimeShiftStartPositionChanged(String inputId, long timeMs) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onTimeShiftStatusChanged(String inputId, int status) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onTrackSelected(String inputId, int type, String trackId) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onTracksChanged(String inputId, List<TvTrackInfo> tracks) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onTvExtensionConnected(String inputId) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onTvExtensionConnectionFailed(String inputId) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onTvExtensionDisconnected(String inputId) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onUnhandledInputEvent(InputEvent event) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onVideoAvailable(String inputId) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onVideoSizeChanged(String inputId, int width, int height) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy	method	public void onVideoUnavailable(String inputId, int reason) throws RemoteException
+amazon.media.tv.IRemoteTvViewCallback$_Parcel	method	public static <T extends Parcelable> void writeTypedList(Parcel parcel, List<T> value, int parcelableFlags)
+amazon.media.tv.IRemoteTvViewCallback$_Parcel	method	public static <T extends Parcelable> void writeTypedObject(Parcel parcel, T value, int parcelableFlags)
+amazon.media.tv.IRemoteTvViewCallback$_Parcel	method	public static <T> T readTypedObject(Parcel parcel, Parcelable.Creator<T> c)
+amazon.media.tv.IScannerService	field	public static final String DESCRIPTOR;
+amazon.media.tv.IScannerService$Default	method	public ConnectionStatus getConnectionStatus(ConnectionType connectionType) throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public IBinder asBinder()
+amazon.media.tv.IScannerService$Default	method	public ISDBScannedMetadata getISDBScannedMetadata() throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public List<AutoDiseqcResult> getAutoDiseqcResults() throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public List<M7Operator> getSatelliteM7Operators() throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public List<SatDbFile> getSatDbFiles() throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public List<SatelliteConfiguration> getSatellitesByOperator(String operator) throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public List<ScanOption> getSupportedScanOptions(String tunerInputId) throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public List<String> getSupportedOperators(String operatorType) throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public List<String> getSupportedProtocols() throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public ScanStatus getScanStatus() throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public ScannedMetadata getScannedMetadata() throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public SignalInfo getCurrentSignalInfo() throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public boolean diseqcMotorGoToStoredPosition() throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public boolean diseqcMotorMoveCommand(int movementControl) throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public boolean diseqcMotorStorePositionAt(int port) throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public boolean doesSatDbFileExist(int type) throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public boolean isConnectionCheckRequired(ConnectionType connectionType) throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public int getZipCode() throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public void cancelScan() throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public void clearChannels(ClearChannelsConfig clearChannelsConfig) throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public void commitSatDbFile(SatDbFile file) throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public void deregisterMessenger(Messenger client) throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public void registerMessenger(Messenger client) throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public void setCableConfig(CableConfiguration cableConfiguration) throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public void setISDBConfig(ISDBConfiguration isdbConfig) throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public void setPreferredRegion(TargetRegion targetRegion) throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public void setSatelliteConfig(SatelliteConfiguration satelliteConfig) throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public void setScanArea(String scanArea) throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public void setScanInitiator(String scanInitiator) throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public void setScanTasks(List<ScanTask> scanTasks) throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public void setTerrestrialConfig(TerrestrialConfiguration terrestrialConfig) throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public void setZipCode(int zipCode) throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public void startAutoScan(ScanProtocol protocol, ScanType type) throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public void startManualScan(ScanProtocol protocol, ScanType type, int[] frequencies) throws RemoteException
+amazon.media.tv.IScannerService$Default	method	public void startManualScanInHz(ScanProtocol protocol, ScanType type, long frequencyHz) throws RemoteException
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_cancelScan;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_clearChannels;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_commitSatDbFile;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_deregisterMessenger;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_diseqcMotorGoToStoredPosition;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_diseqcMotorMoveCommand;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_diseqcMotorStorePositionAt;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_doesSatDbFileExist;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_getAutoDiseqcResults;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_getConnectionStatus;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_getCurrentSignalInfo;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_getISDBScannedMetadata;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_getSatDbFiles;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_getSatelliteM7Operators;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_getSatellitesByOperator;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_getScanStatus;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_getScannedMetadata;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_getSupportedOperators;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_getSupportedProtocols;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_getSupportedScanOptions;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_getZipCode;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_isConnectionCheckRequired;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_registerMessenger;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_setCableConfig;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_setISDBConfig;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_setPreferredRegion;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_setSatelliteConfig;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_setScanArea;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_setScanInitiator;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_setScanTasks;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_setTerrestrialConfig;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_setZipCode;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_startAutoScan;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_startManualScan;
+amazon.media.tv.IScannerService$Stub	field	static final int TRANSACTION_startManualScanInHz;
+amazon.media.tv.IScannerService$Stub	method	public IBinder asBinder()
+amazon.media.tv.IScannerService$Stub	method	public Stub()
+amazon.media.tv.IScannerService$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+amazon.media.tv.IScannerService$Stub	method	public static IScannerService asInterface(IBinder obj)
+amazon.media.tv.IScannerService$Stub$Proxy	field	private IBinder mRemote;
+amazon.media.tv.IScannerService$Stub$Proxy	method	public ConnectionStatus getConnectionStatus(ConnectionType connectionType) throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public IBinder asBinder()
+amazon.media.tv.IScannerService$Stub$Proxy	method	public ISDBScannedMetadata getISDBScannedMetadata() throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public List<AutoDiseqcResult> getAutoDiseqcResults() throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public List<M7Operator> getSatelliteM7Operators() throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public List<SatDbFile> getSatDbFiles() throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public List<SatelliteConfiguration> getSatellitesByOperator(String operator) throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public List<ScanOption> getSupportedScanOptions(String tunerInputId) throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public List<String> getSupportedOperators(String operatorType) throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public List<String> getSupportedProtocols() throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public ScanStatus getScanStatus() throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public ScannedMetadata getScannedMetadata() throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public SignalInfo getCurrentSignalInfo() throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public String getInterfaceDescriptor()
+amazon.media.tv.IScannerService$Stub$Proxy	method	public boolean diseqcMotorGoToStoredPosition() throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public boolean diseqcMotorMoveCommand(int movementControl) throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public boolean diseqcMotorStorePositionAt(int port) throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public boolean doesSatDbFileExist(int type) throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public boolean isConnectionCheckRequired(ConnectionType connectionType) throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public int getZipCode() throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public void cancelScan() throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public void clearChannels(ClearChannelsConfig clearChannelsConfig) throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public void commitSatDbFile(SatDbFile file) throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public void deregisterMessenger(Messenger client) throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public void registerMessenger(Messenger client) throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public void setCableConfig(CableConfiguration cableConfiguration) throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public void setISDBConfig(ISDBConfiguration isdbConfig) throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public void setPreferredRegion(TargetRegion targetRegion) throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public void setSatelliteConfig(SatelliteConfiguration satelliteConfig) throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public void setScanArea(String scanArea) throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public void setScanInitiator(String scanInitiator) throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public void setScanTasks(List<ScanTask> scanTasks) throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public void setTerrestrialConfig(TerrestrialConfiguration terrestrialConfig) throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public void setZipCode(int zipCode) throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public void startAutoScan(ScanProtocol protocol, ScanType type) throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public void startManualScan(ScanProtocol protocol, ScanType type, int[] frequencies) throws RemoteException
+amazon.media.tv.IScannerService$Stub$Proxy	method	public void startManualScanInHz(ScanProtocol protocol, ScanType type, long frequencyHz) throws RemoteException
+amazon.media.tv.IScannerService$_Parcel	method	public static <T extends Parcelable> void writeTypedList(Parcel parcel, List<T> value, int parcelableFlags)
+amazon.media.tv.IScannerService$_Parcel	method	public static <T extends Parcelable> void writeTypedObject(Parcel parcel, T value, int parcelableFlags)
+amazon.media.tv.IScannerService$_Parcel	method	public static <T> T readTypedObject(Parcel parcel, Parcelable.Creator<T> c)
+amazon.media.tv.ProtocolType	field	private String mProtocolType;
+amazon.media.tv.ProtocolType	method	private ProtocolType(Parcel in)
+amazon.media.tv.ProtocolType	method	private ProtocolType(String protocolType)
+amazon.media.tv.ProtocolType	method	public String getProtocolType()
+amazon.media.tv.ProtocolType	method	public boolean equals(Object o)
+amazon.media.tv.ProtocolType	method	public int describeContents()
+amazon.media.tv.ProtocolType	method	public int hashCode()
+amazon.media.tv.ProtocolType	method	public static Builder builder()
+amazon.media.tv.ProtocolType	method	public void writeToParcel(Parcel parcel, int i)
+amazon.media.tv.ProtocolType$Builder	field	private String mProtocolType;
+amazon.media.tv.ProtocolType$Builder	field	private static final Map<String, ProtocolType> instances;
+amazon.media.tv.ProtocolType$Builder	method	private Builder()
+amazon.media.tv.ProtocolType$Builder	method	public Builder withProtocolType(String protocolType)
+amazon.media.tv.ProtocolType$Builder	method	public ProtocolType build()
+amazon.media.tv.RemoteTvView	field	private Boolean mCaptionEnabled;
+amazon.media.tv.RemoteTvView	field	private Boolean mOnTop;
+amazon.media.tv.RemoteTvView	field	private Bundle mAppPrivateCommandData;
+amazon.media.tv.RemoteTvView	field	private Bundle mTuneParams;
+amazon.media.tv.RemoteTvView	field	private ComponentName mServiceComponentName;
+amazon.media.tv.RemoteTvView	field	private ContentResolver contentResolver;
+amazon.media.tv.RemoteTvView	field	private Context context;
+amazon.media.tv.RemoteTvView	field	private Float mStreamVolume;
+amazon.media.tv.RemoteTvView	field	private IBinder mAttachedWindowToken;
+amazon.media.tv.RemoteTvView	field	private IBinder mToken;
+amazon.media.tv.RemoteTvView	field	private IRemoteTvView mService;
+amazon.media.tv.RemoteTvView	field	private Integer mHint;
+amazon.media.tv.RemoteTvView	field	private Integer mInteractiveAppCommand;
+amazon.media.tv.RemoteTvView	field	private OnConnectionStateChangeListener mOnConnectionStateChangeListener;
+amazon.media.tv.RemoteTvView	field	private Rect mCachedViewSize;
+amazon.media.tv.RemoteTvView	field	private RemoteServiceConnection mServiceConnection;
+amazon.media.tv.RemoteTvView	field	private String mAppPrivateCommandAction;
+amazon.media.tv.RemoteTvView	field	private String mInputId;
+amazon.media.tv.RemoteTvView	field	private TimeShiftConfiguration[] mTsConfigurations;
+amazon.media.tv.RemoteTvView	field	private TimeShiftPlaybackManager timeShiftPlaybackManager;
+amazon.media.tv.RemoteTvView	field	private TvExtensionCallback mTvExtensionCallback;
+amazon.media.tv.RemoteTvView	field	private TvExtensionCallbackProxy tvExtensionCallbackProxy;
+amazon.media.tv.RemoteTvView	field	private TvExtensions tvExtensions;
+amazon.media.tv.RemoteTvView	field	private TvView tvView;
+amazon.media.tv.RemoteTvView	field	private TvView.OnUnhandledInputEventListener mOnUnhandledInputEventListener;
+amazon.media.tv.RemoteTvView	field	private TvView.TimeShiftPositionCallback mTimeShiftPositionCallback;
+amazon.media.tv.RemoteTvView	field	private TvView.TvInputCallback mCallback;
+amazon.media.tv.RemoteTvView	field	private Uri mChannelUri;
+amazon.media.tv.RemoteTvView	field	private Uri mRecordedProgramUri;
+amazon.media.tv.RemoteTvView	field	private boolean mConnecting;
+amazon.media.tv.RemoteTvView	field	private boolean mDisableAutoBinding;
+amazon.media.tv.RemoteTvView	field	private boolean mHideOnUnbind;
+amazon.media.tv.RemoteTvView	field	private boolean mLockAspectRatio;
+amazon.media.tv.RemoteTvView	field	private boolean mWindowFocusRequested;
+amazon.media.tv.RemoteTvView	field	private final Handler mUiHandler;
+amazon.media.tv.RemoteTvView	field	private final IRemoteTvViewCallback mClient;
+amazon.media.tv.RemoteTvView	field	private final Object mLock;
+amazon.media.tv.RemoteTvView	field	private int mState;
+amazon.media.tv.RemoteTvView	field	private static final String ANDROID_TV_VIEW_SUPPORT;
+amazon.media.tv.RemoteTvView	field	private static final String ANDROID_TV_VIEW_SUPPORT_ENABLED;
+amazon.media.tv.RemoteTvView	field	private static final String LATEST_TUNED_CHANNELID_KEY;
+amazon.media.tv.RemoteTvView	field	private static final String LATEST_TUNED_INPUTID_KEY;
+amazon.media.tv.RemoteTvView	field	private static final String LIVE_TV_PREWARM_INTENT_ACTION;
+amazon.media.tv.RemoteTvView	field	private static final String LIVE_TV_PREWARM_PERMISSION;
+amazon.media.tv.RemoteTvView	field	private static final String SERVICE_CLASS;
+amazon.media.tv.RemoteTvView	field	private static final String SERVICE_PKG;
+amazon.media.tv.RemoteTvView	field	private static final String TAG;
+amazon.media.tv.RemoteTvView	field	private static final String WRITE_SECURE_SETTINGS_PERMISSION;
+amazon.media.tv.RemoteTvView	field	private static final int MAX_HEIGHT;
+amazon.media.tv.RemoteTvView	field	private static final int MAX_WIDTH;
+amazon.media.tv.RemoteTvView	field	private static final int STATE_BOUND;
+amazon.media.tv.RemoteTvView	field	private static final int STATE_IDLE;
+amazon.media.tv.RemoteTvView	field	private static final long PRE_WARM_DELAY;
+amazon.media.tv.RemoteTvView	method	private ComponentName getServiceComponentName()
+amazon.media.tv.RemoteTvView	method	private Rect getViewFrameOnScreen()
+amazon.media.tv.RemoteTvView	method	private boolean dispatchInputEvent(InputEvent event)
+amazon.media.tv.RemoteTvView	method	private void bindService()
+amazon.media.tv.RemoteTvView	method	private void bindToTvExtension(String inputId)
+amazon.media.tv.RemoteTvView	method	private void notifyAttachedWindowToken()
+amazon.media.tv.RemoteTvView	method	private void setLatestTuneInfo(final String inputId, final Uri uri)
+amazon.media.tv.RemoteTvView	method	private void unbindService()
+amazon.media.tv.RemoteTvView	method	private void warmLiveApp()
+amazon.media.tv.RemoteTvView	method	protected void onAttachedToWindow()
+amazon.media.tv.RemoteTvView	method	protected void onDetachedFromWindow()
+amazon.media.tv.RemoteTvView	method	protected void onDraw(Canvas canvas)
+amazon.media.tv.RemoteTvView	method	protected void onLayout(boolean changed, int l, int t, int r, int b)
+amazon.media.tv.RemoteTvView	method	protected void onMeasure(int widthMeasureSpec, int heightMeasureSpec)
+amazon.media.tv.RemoteTvView	method	protected void onWindowVisibilityChanged(int visibility)
+amazon.media.tv.RemoteTvView	method	public List<TvTrackInfo> getTracks(int type)
+amazon.media.tv.RemoteTvView	method	public RemoteTvView(Context context)
+amazon.media.tv.RemoteTvView	method	public RemoteTvView(Context context, AttributeSet attrs)
+amazon.media.tv.RemoteTvView	method	public RemoteTvView(Context context, AttributeSet attrs, int defStyleAttr)
+amazon.media.tv.RemoteTvView	method	public String getSelectedTrack(int type)
+amazon.media.tv.RemoteTvView	method	public TvView getTvView()
+amazon.media.tv.RemoteTvView	method	public ViewState getViewState()
+amazon.media.tv.RemoteTvView	method	public boolean dispatchGenericMotionEvent(MotionEvent event)
+amazon.media.tv.RemoteTvView	method	public boolean dispatchKeyEvent(KeyEvent event)
+amazon.media.tv.RemoteTvView	method	public boolean dispatchKeyEventToSession(KeyEvent event)
+amazon.media.tv.RemoteTvView	method	public boolean dispatchTouchEvent(MotionEvent event)
+amazon.media.tv.RemoteTvView	method	public boolean dispatchTrackballEvent(MotionEvent event)
+amazon.media.tv.RemoteTvView	method	public boolean dispatchUnhandledInputEvent(InputEvent event)
+amazon.media.tv.RemoteTvView	method	public boolean onUnhandledInputEvent(InputEvent event)
+amazon.media.tv.RemoteTvView	method	public void bind()
+amazon.media.tv.RemoteTvView	method	public void clearViewState()
+amazon.media.tv.RemoteTvView	method	public void createOverlayView()
+amazon.media.tv.RemoteTvView	method	public void disableAutoBinding(boolean disable)
+amazon.media.tv.RemoteTvView	method	public void hideSurface()
+amazon.media.tv.RemoteTvView	method	public void lockAspectRatio(boolean enabled)
+amazon.media.tv.RemoteTvView	method	public void requestUnblockContent(TvContentRating unblockedRating)
+amazon.media.tv.RemoteTvView	method	public void requestWindowFocus()
+amazon.media.tv.RemoteTvView	method	public void reset()
+amazon.media.tv.RemoteTvView	method	public void resetPlaybackParams()
+amazon.media.tv.RemoteTvView	method	public void resolvePlaybackConflict(ConflictResolutionGroup resolutionGroup)
+amazon.media.tv.RemoteTvView	method	public void resolvePlaybackConflict(String resolutionGroupId)
+amazon.media.tv.RemoteTvView	method	public void selectTrack(int type, String trackId)
+amazon.media.tv.RemoteTvView	method	public void sendAppPrivateCommand(String action, Bundle data)
+amazon.media.tv.RemoteTvView	method	public void sendHint(int hint)
+amazon.media.tv.RemoteTvView	method	public void sendInteractiveAppCommand(int command)
+amazon.media.tv.RemoteTvView	method	public void setAttachedWindowToken(IBinder windowToken)
+amazon.media.tv.RemoteTvView	method	public void setCallback(TvView.TvInputCallback callback)
+amazon.media.tv.RemoteTvView	method	public void setCaptionEnabled(boolean enabled)
+amazon.media.tv.RemoteTvView	method	public void setHideOnUnbind(boolean hideOnUnbind)
+amazon.media.tv.RemoteTvView	method	public void setLayoutParams(ViewGroup.LayoutParams params)
+amazon.media.tv.RemoteTvView	method	public void setMain()
+amazon.media.tv.RemoteTvView	method	public void setOnConnectionStateChangeListener(OnConnectionStateChangeListener listener)
+amazon.media.tv.RemoteTvView	method	public void setOnUnhandledInputEventListener(TvView.OnUnhandledInputEventListener listener)
+amazon.media.tv.RemoteTvView	method	public void setStreamVolume(float volume)
+amazon.media.tv.RemoteTvView	method	public void setTimeShiftConfigurations(TimeShiftConfiguration[] configs)
+amazon.media.tv.RemoteTvView	method	public void setTimeShiftPositionCallback(TvView.TimeShiftPositionCallback callback)
+amazon.media.tv.RemoteTvView	method	public void setTrickplaySurface(Surface surface)
+amazon.media.tv.RemoteTvView	method	public void setTrickplayTime(long timeMs, int speed)
+amazon.media.tv.RemoteTvView	method	public void setTvExtensionCallback(TvExtensionCallback callback)
+amazon.media.tv.RemoteTvView	method	public void setVisibility(int visibility)
+amazon.media.tv.RemoteTvView	method	public void setWindowSize()
+amazon.media.tv.RemoteTvView	method	public void setZOrderOnTop()
+amazon.media.tv.RemoteTvView	method	public void setZOrderOnTop(boolean onTop)
+amazon.media.tv.RemoteTvView	method	public void showSurface()
+amazon.media.tv.RemoteTvView	method	public void timeShiftPause()
+amazon.media.tv.RemoteTvView	method	public void timeShiftPlay(String inputId, Uri recordedProgramUri)
+amazon.media.tv.RemoteTvView	method	public void timeShiftResume()
+amazon.media.tv.RemoteTvView	method	public void timeShiftSeekTo(long timeMs)
+amazon.media.tv.RemoteTvView	method	public void tune(String inputId, Uri channelUri)
+amazon.media.tv.RemoteTvView	method	public void tune(String inputId, Uri channelUri, Bundle params)
+amazon.media.tv.RemoteTvView	method	public void tune(String inputId, Uri channelUri, TimeShiftConfiguration[] tsConfigs)
+amazon.media.tv.RemoteTvView	method	public void unbind()
+amazon.media.tv.RemoteTvView$RemoteServiceConnection	method	private RemoteServiceConnection()
+amazon.media.tv.RemoteTvView$RemoteServiceConnection	method	public boolean connect(ComponentName cn)
+amazon.media.tv.RemoteTvView$RemoteServiceConnection	method	public void disconnect()
+amazon.media.tv.RemoteTvView$RemoteServiceConnection	method	public void onServiceConnected(ComponentName name, IBinder service)
+amazon.media.tv.RemoteTvView$RemoteServiceConnection	method	public void onServiceDisconnected(ComponentName name)
+amazon.media.tv.RemoteTvView$TimeShiftPositionCallback	method	public void onTimeShiftLivePositionDelta(String inputId, long timeMs)
+amazon.media.tv.RemoteTvViewService	field	private Handler mServiceHandler;
+amazon.media.tv.RemoteTvViewService	field	private TvViewManager mTvViewManager;
+amazon.media.tv.RemoteTvViewService	field	private int mNumClients;
+amazon.media.tv.RemoteTvViewService	field	private static final String CHANNEL_ID;
+amazon.media.tv.RemoteTvViewService	field	private static final String CHANNEL_NAME;
+amazon.media.tv.RemoteTvViewService	field	private static final String SUPPRESS_NOTIFICATIONS;
+amazon.media.tv.RemoteTvViewService	field	private static final String TAG;
+amazon.media.tv.RemoteTvViewService	field	private static final boolean DEBUG;
+amazon.media.tv.RemoteTvViewService	field	private static final int AUTO_MUTE_THRESHOLD;
+amazon.media.tv.RemoteTvViewService	field	private static final int AUTO_SHUTDOWN_THRESHOLD;
+amazon.media.tv.RemoteTvViewService	field	private static final int NOTIFICATION_ID;
+amazon.media.tv.RemoteTvViewService	field	private static final long MAX_IN_MEMORY_TIMESHIFT_BUFFER_SIZE_BYTE;
+amazon.media.tv.RemoteTvViewService	method	private long getValidBufferSize(long bufferSize)
+amazon.media.tv.RemoteTvViewService	method	private void addBoundClient()
+amazon.media.tv.RemoteTvViewService	method	private void createNotificationChannel()
+amazon.media.tv.RemoteTvViewService	method	private void createServiceComponents()
+amazon.media.tv.RemoteTvViewService	method	protected void setLifecycleObserver(LifecycleObserver observer, Handler handler)
+amazon.media.tv.RemoteTvViewService	method	protected void setMaxInMemTimeshiftBuffer(long maxTimeshiftBuffer)
+amazon.media.tv.RemoteTvViewService	method	public IBinder onBind(Intent intent)
+amazon.media.tv.RemoteTvViewService	method	public boolean onUnbind(Intent intent)
+amazon.media.tv.RemoteTvViewService	method	public int onStartCommand(Intent intent, int flags, int startId)
+amazon.media.tv.RemoteTvViewService	method	public void onCreate()
+amazon.media.tv.RemoteTvViewService	method	public void onDestroy()
+amazon.media.tv.RemoteTvViewService	method	public void onRebind(Intent intent)
+amazon.media.tv.RemoteTvViewService$LifecycleObserver	method	public void onContentAllowed(boolean fromSource)
+amazon.media.tv.RemoteTvViewService$LifecycleObserver	method	public void onContentBlocked(TvContentRating rating, boolean fromSource)
+amazon.media.tv.RemoteTvViewService$LifecycleObserver	method	public void onSessionCreated(String inputId)
+amazon.media.tv.RemoteTvViewService$LifecycleObserver	method	public void onSessionReleased(String inputId)
+amazon.media.tv.RemoteTvViewService$LifecycleObserver	method	public void onStart()
+amazon.media.tv.RemoteTvViewService$LifecycleObserver	method	public void onStop()
+amazon.media.tv.RemoteTvViewService$LifecycleObserver	method	public void onTimeShiftPlay(String inputId, Uri recordedProgramUri)
+amazon.media.tv.RemoteTvViewService$LifecycleObserver	method	public void onTune(String inputId, Uri channelUri)
+amazon.media.tv.RemoteTvViewService$LifecycleObserver	method	public void onVideoAvailable(String inputId, Uri channelUri, boolean fromSource)
+amazon.media.tv.RemoteTvViewService$LifecycleObserver	method	public void onVideoUnavailable(String inputId, Uri channelUri, int reason, boolean fromSource)
+amazon.media.tv.RemoteTvViewService$MyLifecycleObserver	field	private final Handler mHandler;
+amazon.media.tv.RemoteTvViewService$MyLifecycleObserver	field	private final LifecycleObserver mObserver;
+amazon.media.tv.RemoteTvViewService$MyLifecycleObserver	method	public void onContentAllowed(final boolean fromSource)
+amazon.media.tv.RemoteTvViewService$MyLifecycleObserver	method	public void onContentBlocked(final TvContentRating rating, final boolean fromSource)
+amazon.media.tv.RemoteTvViewService$MyLifecycleObserver	method	public void onSessionCreated(final String inputId)
+amazon.media.tv.RemoteTvViewService$MyLifecycleObserver	method	public void onSessionReleased(final String inputId)
+amazon.media.tv.RemoteTvViewService$MyLifecycleObserver	method	public void onStart()
+amazon.media.tv.RemoteTvViewService$MyLifecycleObserver	method	public void onStop()
+amazon.media.tv.RemoteTvViewService$MyLifecycleObserver	method	public void onTimeShiftPlay(final String inputId, final Uri recordedProgramUri)
+amazon.media.tv.RemoteTvViewService$MyLifecycleObserver	method	public void onTune(final String inputId, final Uri channelUri)
+amazon.media.tv.RemoteTvViewService$MyLifecycleObserver	method	public void onVideoAvailable(final String inputId, final Uri channelUri, final boolean fromSource)
+amazon.media.tv.RemoteTvViewService$MyLifecycleObserver	method	public void onVideoUnavailable(final String inputId, final Uri channelUri, final int reason, final boolean fromSource)
+amazon.media.tv.ScanConstants	field	public static final String SCAN_INITIATOR_LIVETV;
+amazon.media.tv.ScanConstants	field	public static final String SCAN_INITIATOR_OOBE;
+amazon.media.tv.ScanConstants	field	public static final String SCAN_INITIATOR_SETTINGS;
+amazon.media.tv.ScanConstants	field	public static final int SCAN_MODE_BACKGROUND;
+amazon.media.tv.ScanConstants	field	public static final int SCAN_MODE_FULL;
+amazon.media.tv.ScanConstants	field	public static final int SCAN_MODE_LNB;
+amazon.media.tv.ScanConstants	field	public static final int SCAN_MODE_M7;
+amazon.media.tv.ScanConstants	field	public static final int SCAN_MODE_MANUAL;
+amazon.media.tv.ScanConstants	field	public static final int SCAN_MODE_QUICK;
+amazon.media.tv.ScanConstants	field	public static final int SCAN_MODE_RESCAN;
+amazon.media.tv.ScanConstants	field	static final int MSG_SCAN_UPDATE_COUNT;
+amazon.media.tv.ScanConstants	field	static final int MSG_SCAN_UPDATE_COUNT_PER_PROTOCOL;
+amazon.media.tv.ScanConstants	field	static final int MSG_SCAN_UPDATE_PROG;
+amazon.media.tv.ScanConstants	field	static final int MSG_SCAN_UPDATE_STATUS;
+amazon.media.tv.ScanConstants	field	static final int MSG_SCAN_UPDATE_TASK;
+amazon.media.tv.ScanConstants	method	private ScanConstants()
+amazon.media.tv.ScanEventListener	method	public void onChannelCountUpdate(ChannelType type, int count)
+amazon.media.tv.ScanEventListener	method	public void onChannelCountUpdatePerProtocol(String protocolType, int count)
+amazon.media.tv.ScanEventListener	method	public void onScanStatusUpdate(ScanStatusType status)
+amazon.media.tv.ScanEventListener	method	public void onScanTaskUpdate(ScanTaskType scanTaskType)
+amazon.media.tv.ScanEventListener	method	public void onScanningProgressUpdate(int progress)
+amazon.media.tv.ScanOption	field	private String mScanOptionId;
+amazon.media.tv.ScanOption	field	private static final Map<String, ScanOption> ID_MAP;
+amazon.media.tv.ScanOption	field	public static final Parcelable.Creator<ScanOption> CREATOR;
+amazon.media.tv.ScanOption	method	public String getScanOptionId()
+amazon.media.tv.ScanOption	method	public int describeContents()
+amazon.media.tv.ScanOption	method	public static ScanOption getScanOptionById(String scanOptionId)
+amazon.media.tv.ScanOption	method	public void writeToParcel(Parcel parcel, int i)
+amazon.media.tv.ScanProtocol	method	public int describeContents()
+amazon.media.tv.ScanProtocol	method	public void writeToParcel(Parcel parcel, int i)
+amazon.media.tv.ScanProvider	field	private final Intent mScannerIntent;
+amazon.media.tv.ScanProvider	field	private final List<ScanOption> mScanOptions;
+amazon.media.tv.ScanProvider	field	private final String mInputId;
+amazon.media.tv.ScanProvider	field	private final boolean mManagesZipCode;
+amazon.media.tv.ScanProvider	field	public static final int UNKNOWN_ZIP_CODE;
+amazon.media.tv.ScanProvider	method	public Intent getScannerIntent()
+amazon.media.tv.ScanProvider	method	public List<ScanOption> getScanOptions()
+amazon.media.tv.ScanProvider	method	public String getInputId()
+amazon.media.tv.ScanProvider	method	public boolean getManagesZipCode()
+amazon.media.tv.ScanStatus	field	private final Map<ChannelType, Integer> mCounts;
+amazon.media.tv.ScanStatus	field	private final ScanStatusType mStatus;
+amazon.media.tv.ScanStatus	field	private final int mScanningComplete;
+amazon.media.tv.ScanStatus	method	public Map<ChannelType, Integer> getCounts()
+amazon.media.tv.ScanStatus	method	public ScanStatus(Parcel in)
+amazon.media.tv.ScanStatus	method	public ScanStatus(int complete, ScanStatusType status, Map<ChannelType, Integer> counts)
+amazon.media.tv.ScanStatus	method	public ScanStatusType getStatus()
+amazon.media.tv.ScanStatus	method	public int describeContents()
+amazon.media.tv.ScanStatus	method	public int getScanningProgress()
+amazon.media.tv.ScanStatus	method	public void writeToParcel(Parcel parcel, int i)
+amazon.media.tv.ScanStatusType	method	public int describeContents()
+amazon.media.tv.ScanStatusType	method	public void writeToParcel(Parcel out, int flags)
+amazon.media.tv.ScanTask	field	private final ScanTaskType mType;
+amazon.media.tv.ScanTask	method	private ScanTask(Parcel in)
+amazon.media.tv.ScanTask	method	private ScanTask(ScanTaskType type)
+amazon.media.tv.ScanTask	method	public ScanTaskType getType()
+amazon.media.tv.ScanTask	method	public boolean equals(Object o)
+amazon.media.tv.ScanTask	method	public int describeContents()
+amazon.media.tv.ScanTask	method	public int hashCode()
+amazon.media.tv.ScanTask	method	public static Builder builder()
+amazon.media.tv.ScanTask	method	public void writeToParcel(Parcel dest, int flags)
+amazon.media.tv.ScanTask$Builder	field	private ScanTaskType mType;
+amazon.media.tv.ScanTask$Builder	method	private Builder()
+amazon.media.tv.ScanTask$Builder	method	public Builder withType(ScanTaskType type)
+amazon.media.tv.ScanTask$Builder	method	public ScanTask build()
+amazon.media.tv.ScanTaskType	method	public int describeContents()
+amazon.media.tv.ScanTaskType	method	public void writeToParcel(Parcel dest, int flags)
+amazon.media.tv.ScanType	method	public int describeContents()
+amazon.media.tv.ScanType	method	public void writeToParcel(Parcel parcel, int i)
+amazon.media.tv.Scanner	field	private IScannerService mService;
+amazon.media.tv.Scanner	field	private boolean mBound;
+amazon.media.tv.Scanner	field	private final Context mContext;
+amazon.media.tv.Scanner	field	private final Messenger mMessenger;
+amazon.media.tv.Scanner	field	private final Object mLock;
+amazon.media.tv.Scanner	field	private final ScanEventListener mSEListener;
+amazon.media.tv.Scanner	field	private final ScanProvider mScanProvider;
+amazon.media.tv.Scanner	field	private final ServiceConnection mConnection;
+amazon.media.tv.Scanner	field	private static final ComponentName mStarComponentName;
+amazon.media.tv.Scanner	field	private static final String MSTAR_SCANNER_CLASS;
+amazon.media.tv.Scanner	field	private static final String MSTAR_SCANNER_PACKAGE;
+amazon.media.tv.Scanner	field	private static final String TAG;
+amazon.media.tv.Scanner	field	static final Intent MSTAR_INTENT;
+amazon.media.tv.Scanner	method	public ConnectionStatus getConnectionStatus(ConnectionType type) throws ScannerCommunicationException
+amazon.media.tv.Scanner	method	public ISDBScannedMetadata getISDBScannedMetadata() throws ScannerCommunicationException
+amazon.media.tv.Scanner	method	public List<AutoDiseqcResult> getAutoDiseqcResults() throws ScannerCommunicationException
+amazon.media.tv.Scanner	method	public List<M7Operator> getSatelliteM7Operators() throws ScannerCommunicationException
+amazon.media.tv.Scanner	method	public List<SatDbFile> getSatDbFiles() throws ScannerCommunicationException
+amazon.media.tv.Scanner	method	public List<SatelliteConfiguration> getSatellitesByOperator(String operator) throws ScannerCommunicationException
+amazon.media.tv.Scanner	method	public List<ScanOption> getSupportedScanOptions(String tunerInputId) throws ScannerCommunicationException
+amazon.media.tv.Scanner	method	public List<String> getSupportedOperators(String operatorType) throws ScannerCommunicationException
+amazon.media.tv.Scanner	method	public List<String> getSupportedProtocols() throws ScannerCommunicationException
+amazon.media.tv.Scanner	method	public ScanProvider getScanProvider()
+amazon.media.tv.Scanner	method	public ScanStatus getStatus() throws ScannerCommunicationException, RemoteException
+amazon.media.tv.Scanner	method	public ScannedMetadata getScannedMetadata() throws ScannerCommunicationException
+amazon.media.tv.Scanner	method	public Scanner(Context context, ScanEventListener scanEventListener, BaseScannerService bss)
+amazon.media.tv.Scanner	method	public Scanner(Context context, ScanEventListener scanEventListener, Intent scanningService) throws ClassNotFoundException
+amazon.media.tv.Scanner	method	public SignalInfo getCurrentSignalInfo()
+amazon.media.tv.Scanner	method	public boolean cancelScan() throws ScannerCommunicationException
+amazon.media.tv.Scanner	method	public boolean diseqcMotorGoToStoredPosition() throws ScannerCommunicationException
+amazon.media.tv.Scanner	method	public boolean diseqcMotorMoveCommand(int movementControl) throws ScannerCommunicationException
+amazon.media.tv.Scanner	method	public boolean diseqcMotorStorePositionAt(int port) throws ScannerCommunicationException
+amazon.media.tv.Scanner	method	public boolean doesSatDbFileExist(int type) throws ScannerCommunicationException
+amazon.media.tv.Scanner	method	public boolean isConnectionCheckRequired(ConnectionType type) throws ScannerCommunicationException
+amazon.media.tv.Scanner	method	public boolean setZipCode(int zipCode) throws ScannerCommunicationException
+amazon.media.tv.Scanner	method	public boolean shutdown()
+amazon.media.tv.Scanner	method	public boolean startManualScan(ScanProtocol scanProtocol, ScanType scanType, int[] frequencies) throws ScannerCommunicationException
+amazon.media.tv.Scanner	method	public boolean startManualScanInHz(ScanProtocol scanProtocol, ScanType scanType, long frequencyHz) throws ScannerCommunicationException
+amazon.media.tv.Scanner	method	public boolean startScan(ScanProtocol scanProtocol, ScanType scanType) throws ScannerCommunicationException
+amazon.media.tv.Scanner	method	public int getZipCode() throws ScannerCommunicationException
+amazon.media.tv.Scanner	method	public static Intent[] findScanProviders()
+amazon.media.tv.Scanner	method	public static Intent[] findScanProviders(Context context)
+amazon.media.tv.Scanner	method	public void cleanChannels(ClearChannelsConfig clearChannelsConfig) throws ScannerCommunicationException
+amazon.media.tv.Scanner	method	public void commitSatDbFile(SatDbFile file) throws ScannerCommunicationException
+amazon.media.tv.Scanner	method	public void setCableConfig(CableConfiguration cableConfig) throws ScannerCommunicationException
+amazon.media.tv.Scanner	method	public void setISDBConfig(ISDBConfiguration isdbConfig) throws ScannerCommunicationException
+amazon.media.tv.Scanner	method	public void setPreferredRegion(TargetRegion targetRegion) throws ScannerCommunicationException
+amazon.media.tv.Scanner	method	public void setSatelliteConfig(SatelliteConfiguration satelliteConfig) throws ScannerCommunicationException
+amazon.media.tv.Scanner	method	public void setScanArea(String scanArea) throws ScannerCommunicationException
+amazon.media.tv.Scanner	method	public void setScanInitiator(String scanInitiator) throws ScannerCommunicationException
+amazon.media.tv.Scanner	method	public void setScanTasks(List<ScanTask> scanTasks) throws ScannerCommunicationException
+amazon.media.tv.Scanner	method	public void setTerrestrialConfig(TerrestrialConfiguration terrestrialConfig) throws ScannerCommunicationException
+amazon.media.tv.Scanner$IncomingHandler	method	private IncomingHandler()
+amazon.media.tv.Scanner$IncomingHandler	method	public void handleMessage(Message msg)
+amazon.media.tv.ScannerCommunicationException	method	public ScannerCommunicationException(Throwable cause)
+amazon.media.tv.ScannerHelper	field	private static final String SCANNER_MANAGES_ZIP_CODE;
+amazon.media.tv.ScannerHelper	field	private static final String SCANNER_SUPPORTED_OPTIONS;
+amazon.media.tv.ScannerHelper	field	private static final String SCAN_OPTION_DELIMITER;
+amazon.media.tv.ScannerHelper	field	private static final String TAG;
+amazon.media.tv.ScannerHelper	field	private static final String XML_START_TAG_NAME;
+amazon.media.tv.ScannerHelper	field	private static final boolean DEBUG;
+amazon.media.tv.ScannerHelper	field	public static final String SCANNER_SERVICE_METADATA;
+amazon.media.tv.ScannerHelper	field	public static final String TV_INPUT_CHANNEL_SCAN_PACKAGE_KEY;
+amazon.media.tv.ScannerHelper	field	static final String TV_INPUT_CHANNEL_SCAN_KEY;
+amazon.media.tv.ScannerHelper	method	private static ComponentName getFirstScannerService(PackageManager pm, String packageName) throws PackageManager.NameNotFoundException
+amazon.media.tv.ScannerHelper	method	private static ScanProvider getScanProvider(Context context, TvInputInfo tvInputInfo)
+amazon.media.tv.ScannerHelper	method	private static boolean isOptedInToDeclareScannerService(ApplicationInfo applicationInfo)
+amazon.media.tv.ScannerHelper	method	public static ComponentName getSelfDeclaredScannerService(Context context)
+amazon.media.tv.ScannerHelper	method	public static ScanProvider getScanProvider(Context context, String inputId)
+amazon.media.tv.ScannerHelper	method	public static Scanner createScanner(Context context, ScanEventListener scanEventListener, ScanProvider provider)
+amazon.media.tv.ScannerService	field	private final ScannerServiceInterface mScannerServiceInterface;
+amazon.media.tv.ScannerService	method	public ConnectionStatus getConnectionStatus(ConnectionType type) throws RemoteException
+amazon.media.tv.ScannerService	method	public ISDBScannedMetadata getISDBScannedMetadata() throws RemoteException
+amazon.media.tv.ScannerService	method	public List<AutoDiseqcResult> getAutoDiseqcResults()
+amazon.media.tv.ScannerService	method	public List<M7Operator> getSatelliteM7Operators()
+amazon.media.tv.ScannerService	method	public List<SatDbFile> getSatDbFiles() throws RemoteException
+amazon.media.tv.ScannerService	method	public List<SatelliteConfiguration> getSatellitesByOperator(String operator)
+amazon.media.tv.ScannerService	method	public List<ScanOption> getSupportedScanOptions(String tunerInputId) throws RemoteException
+amazon.media.tv.ScannerService	method	public List<String> getSupportedOperators(String operatorType)
+amazon.media.tv.ScannerService	method	public List<String> getSupportedProtocols()
+amazon.media.tv.ScannerService	method	public ScanStatus getScanStatus() throws RemoteException
+amazon.media.tv.ScannerService	method	public ScannedMetadata getScannedMetadata() throws RemoteException
+amazon.media.tv.ScannerService	method	public ScannerService(ScannerServiceInterface ssi)
+amazon.media.tv.ScannerService	method	public SignalInfo getCurrentSignalInfo()
+amazon.media.tv.ScannerService	method	public boolean diseqcMotorGoToStoredPosition()
+amazon.media.tv.ScannerService	method	public boolean diseqcMotorMoveCommand(int movementControl)
+amazon.media.tv.ScannerService	method	public boolean diseqcMotorStorePositionAt(int port)
+amazon.media.tv.ScannerService	method	public boolean doesSatDbFileExist(int type) throws RemoteException
+amazon.media.tv.ScannerService	method	public boolean isConnectionCheckRequired(ConnectionType type) throws RemoteException
+amazon.media.tv.ScannerService	method	public int getZipCode() throws RemoteException
+amazon.media.tv.ScannerService	method	public void cancelScan() throws RemoteException
+amazon.media.tv.ScannerService	method	public void clearChannels(ClearChannelsConfig clearChannelsConfig)
+amazon.media.tv.ScannerService	method	public void commitSatDbFile(SatDbFile file) throws RemoteException
+amazon.media.tv.ScannerService	method	public void deregisterMessenger(Messenger client) throws RemoteException
+amazon.media.tv.ScannerService	method	public void registerMessenger(Messenger client) throws RemoteException
+amazon.media.tv.ScannerService	method	public void setCableConfig(CableConfiguration cableConfig)
+amazon.media.tv.ScannerService	method	public void setISDBConfig(ISDBConfiguration isdbConfig)
+amazon.media.tv.ScannerService	method	public void setPreferredRegion(TargetRegion targetRegion) throws RemoteException
+amazon.media.tv.ScannerService	method	public void setSatelliteConfig(SatelliteConfiguration satelliteConfig)
+amazon.media.tv.ScannerService	method	public void setScanArea(String scanArea) throws RemoteException
+amazon.media.tv.ScannerService	method	public void setScanInitiator(String scanInitiator) throws RemoteException
+amazon.media.tv.ScannerService	method	public void setScanTasks(List<ScanTask> scanTasks) throws RemoteException
+amazon.media.tv.ScannerService	method	public void setTerrestrialConfig(TerrestrialConfiguration terrestrialConfig)
+amazon.media.tv.ScannerService	method	public void setZipCode(int zipCode) throws RemoteException
+amazon.media.tv.ScannerService	method	public void startAutoScan(ScanProtocol protocol, ScanType type) throws RemoteException
+amazon.media.tv.ScannerService	method	public void startManualScan(ScanProtocol protocol, ScanType type, int[] frequencies) throws RemoteException
+amazon.media.tv.ScannerService	method	public void startManualScanInHz(ScanProtocol protocol, ScanType type, long frequencyHz) throws RemoteException
+amazon.media.tv.Session	field	private SessionExtCallback mSessionCallback;
+amazon.media.tv.Session	field	private final Handler mHandler;
+amazon.media.tv.Session	field	private final Object mSessionCallbackLock;
+amazon.media.tv.Session	field	private final TvExtensionSession.Stub mSession;
+amazon.media.tv.Session	field	private static final String TAG;
+amazon.media.tv.Session	field	static final String INITIALIZE_ACTION;
+amazon.media.tv.Session	field	static final String INITIALIZE_CALLBACK;
+amazon.media.tv.Session	method	private void postExecutable(Runnable action)
+amazon.media.tv.Session	method	protected void notifyChannelSignalStrengthChanged(final int signalStrength)
+amazon.media.tv.Session	method	protected void notifyInteractiveAppStatusChanged(final int status)
+amazon.media.tv.Session	method	protected void notifyPlaybackConflictResolutionFailed(final int errorCode)
+amazon.media.tv.Session	method	protected void notifyPlaybackConflictResolved()
+amazon.media.tv.Session	method	protected void notifySupportsTrickplayPreview(final boolean isSupported)
+amazon.media.tv.Session	method	protected void onResolvePlaybackConflict(ConflictResolutionGroup resolutionGroup)
+amazon.media.tv.Session	method	protected void onResolvePlaybackConflict(String resolutionGroupId)
+amazon.media.tv.Session	method	public Session(Context context)
+amazon.media.tv.Session	method	public boolean onTune(Uri channelUri, Bundle params)
+amazon.media.tv.Session	method	public void handleInitializeCommand(SessionExtCallback callback)
+amazon.media.tv.Session	method	public void notifyApplicationKeySetChanged(final int keySetBitMask, final int[] otherKeys)
+amazon.media.tv.Session	method	public void notifyChannelSignalQualityChanged(final int signalQuality)
+amazon.media.tv.Session	method	public void notifyFrequencyManualTuneInfo(final float[] supportedOffsets, final float currentOffset)
+amazon.media.tv.Session	method	public void notifyPlaybackConflict(final PlaybackConflict playbackConflict)
+amazon.media.tv.Session	method	public void notifyTeletextStatusChanged(final int status)
+amazon.media.tv.Session	method	public void notifyTimeShiftErrorEvent(final TimeShiftConfiguration config, final int notificationType)
+amazon.media.tv.Session	method	public void notifyTimeShiftLivePositionDelta(long timeMs)
+amazon.media.tv.Session	method	public void onAppPrivateCommand(String action, Bundle data)
+amazon.media.tv.Session	method	public void onConfigureTimeShiftBuffer(TimeShiftConfiguration[] configs)
+amazon.media.tv.Session	method	public void onReceiveHint(int hint)
+amazon.media.tv.Session	method	public void onReceiveInteractiveAppCommand(int command)
+amazon.media.tv.Session	method	public void onRelease()
+amazon.media.tv.Session	method	public void onSetTrickplaySurface(Surface surface)
+amazon.media.tv.Session	method	public void onSetTrickplayTime(long timeMs, int speed)
+amazon.media.tv.Session	method	public void releaseInternal()
+amazon.media.tv.SessionExtCallback	field	public static final String DESCRIPTOR;
+amazon.media.tv.SessionExtCallback$Default	method	public IBinder asBinder()
+amazon.media.tv.SessionExtCallback$Default	method	public void onApplicationKeySetChanged(int keySetBitMask, int[] otherKeys) throws RemoteException
+amazon.media.tv.SessionExtCallback$Default	method	public void onChannelSignalQualityChanged(int signalQuality) throws RemoteException
+amazon.media.tv.SessionExtCallback$Default	method	public void onChannelSignalStrengthChanged(int signalStrength) throws RemoteException
+amazon.media.tv.SessionExtCallback$Default	method	public void onConnect(TvExtensionSession session) throws RemoteException
+amazon.media.tv.SessionExtCallback$Default	method	public void onFrequencyManualTuneInfo(float[] supportedOffsets, float currentOffset) throws RemoteException
+amazon.media.tv.SessionExtCallback$Default	method	public void onInteractiveAppStatusChanged(int status) throws RemoteException
+amazon.media.tv.SessionExtCallback$Default	method	public void onPlaybackConflict(PlaybackConflict playbackConflict) throws RemoteException
+amazon.media.tv.SessionExtCallback$Default	method	public void onPlaybackConflictResolutionFailed(int errorCode) throws RemoteException
+amazon.media.tv.SessionExtCallback$Default	method	public void onPlaybackConflictResolved() throws RemoteException
+amazon.media.tv.SessionExtCallback$Default	method	public void onSupportsTrickplayPreview(boolean isSupported) throws RemoteException
+amazon.media.tv.SessionExtCallback$Default	method	public void onTeletextStatusChanged(int status) throws RemoteException
+amazon.media.tv.SessionExtCallback$Default	method	public void onTimeShiftErrorEvent(TimeShiftConfiguration config, int reason) throws RemoteException
+amazon.media.tv.SessionExtCallback$Default	method	public void onTimeShiftLivePositionDelta(long timeMs) throws RemoteException
+amazon.media.tv.SessionExtCallback$Stub	field	static final int TRANSACTION_onApplicationKeySetChanged;
+amazon.media.tv.SessionExtCallback$Stub	field	static final int TRANSACTION_onChannelSignalQualityChanged;
+amazon.media.tv.SessionExtCallback$Stub	field	static final int TRANSACTION_onChannelSignalStrengthChanged;
+amazon.media.tv.SessionExtCallback$Stub	field	static final int TRANSACTION_onConnect;
+amazon.media.tv.SessionExtCallback$Stub	field	static final int TRANSACTION_onFrequencyManualTuneInfo;
+amazon.media.tv.SessionExtCallback$Stub	field	static final int TRANSACTION_onInteractiveAppStatusChanged;
+amazon.media.tv.SessionExtCallback$Stub	field	static final int TRANSACTION_onPlaybackConflict;
+amazon.media.tv.SessionExtCallback$Stub	field	static final int TRANSACTION_onPlaybackConflictResolutionFailed;
+amazon.media.tv.SessionExtCallback$Stub	field	static final int TRANSACTION_onPlaybackConflictResolved;
+amazon.media.tv.SessionExtCallback$Stub	field	static final int TRANSACTION_onSupportsTrickplayPreview;
+amazon.media.tv.SessionExtCallback$Stub	field	static final int TRANSACTION_onTeletextStatusChanged;
+amazon.media.tv.SessionExtCallback$Stub	field	static final int TRANSACTION_onTimeShiftErrorEvent;
+amazon.media.tv.SessionExtCallback$Stub	field	static final int TRANSACTION_onTimeShiftLivePositionDelta;
+amazon.media.tv.SessionExtCallback$Stub	method	public IBinder asBinder()
+amazon.media.tv.SessionExtCallback$Stub	method	public Stub()
+amazon.media.tv.SessionExtCallback$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+amazon.media.tv.SessionExtCallback$Stub	method	public static SessionExtCallback asInterface(IBinder obj)
+amazon.media.tv.SessionExtCallback$Stub$Proxy	field	private IBinder mRemote;
+amazon.media.tv.SessionExtCallback$Stub$Proxy	method	public IBinder asBinder()
+amazon.media.tv.SessionExtCallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+amazon.media.tv.SessionExtCallback$Stub$Proxy	method	public void onApplicationKeySetChanged(int keySetBitMask, int[] otherKeys) throws RemoteException
+amazon.media.tv.SessionExtCallback$Stub$Proxy	method	public void onChannelSignalQualityChanged(int signalQuality) throws RemoteException
+amazon.media.tv.SessionExtCallback$Stub$Proxy	method	public void onChannelSignalStrengthChanged(int signalStrength) throws RemoteException
+amazon.media.tv.SessionExtCallback$Stub$Proxy	method	public void onConnect(TvExtensionSession session) throws RemoteException
+amazon.media.tv.SessionExtCallback$Stub$Proxy	method	public void onFrequencyManualTuneInfo(float[] supportedOffsets, float currentOffset) throws RemoteException
+amazon.media.tv.SessionExtCallback$Stub$Proxy	method	public void onInteractiveAppStatusChanged(int status) throws RemoteException
+amazon.media.tv.SessionExtCallback$Stub$Proxy	method	public void onPlaybackConflict(PlaybackConflict playbackConflict) throws RemoteException
+amazon.media.tv.SessionExtCallback$Stub$Proxy	method	public void onPlaybackConflictResolutionFailed(int errorCode) throws RemoteException
+amazon.media.tv.SessionExtCallback$Stub$Proxy	method	public void onPlaybackConflictResolved() throws RemoteException
+amazon.media.tv.SessionExtCallback$Stub$Proxy	method	public void onSupportsTrickplayPreview(boolean isSupported) throws RemoteException
+amazon.media.tv.SessionExtCallback$Stub$Proxy	method	public void onTeletextStatusChanged(int status) throws RemoteException
+amazon.media.tv.SessionExtCallback$Stub$Proxy	method	public void onTimeShiftErrorEvent(TimeShiftConfiguration config, int reason) throws RemoteException
+amazon.media.tv.SessionExtCallback$Stub$Proxy	method	public void onTimeShiftLivePositionDelta(long timeMs) throws RemoteException
+amazon.media.tv.SessionExtCallback$_Parcel	method	public static <T extends Parcelable> void writeTypedObject(Parcel parcel, T value, int parcelableFlags)
+amazon.media.tv.SessionExtCallback$_Parcel	method	public static <T> T readTypedObject(Parcel parcel, Parcelable.Creator<T> c)
+amazon.media.tv.TimeShiftConfiguration	field	private String mPath;
+amazon.media.tv.TimeShiftConfiguration	field	private long mBufferSize;
+amazon.media.tv.TimeShiftConfiguration	field	private static final String TIME_SHIFT_CONFIGURATION_KEY;
+amazon.media.tv.TimeShiftConfiguration	method	private TimeShiftConfiguration()
+amazon.media.tv.TimeShiftConfiguration	method	protected TimeShiftConfiguration(Parcel in)
+amazon.media.tv.TimeShiftConfiguration	method	public String getPath()
+amazon.media.tv.TimeShiftConfiguration	method	public String toString()
+amazon.media.tv.TimeShiftConfiguration	method	public boolean equals(Object o)
+amazon.media.tv.TimeShiftConfiguration	method	public int describeContents()
+amazon.media.tv.TimeShiftConfiguration	method	public int hashCode()
+amazon.media.tv.TimeShiftConfiguration	method	public long getBufferSize()
+amazon.media.tv.TimeShiftConfiguration	method	public void writeToParcel(Parcel dest, int flags)
+amazon.media.tv.TimeShiftConfiguration$Builder	field	private final String path;
+amazon.media.tv.TimeShiftConfiguration$Builder	field	private long bufferSize;
+amazon.media.tv.TimeShiftConfiguration$Builder	method	public Builder setBufferSize(long bufferSize)
+amazon.media.tv.TimeShiftConfiguration$Builder	method	public Builder(String path)
+amazon.media.tv.TimeShiftConfiguration$Builder	method	public TimeShiftConfiguration build()
+amazon.media.tv.TimeShiftConfiguration$Serializer	method	private Serializer()
+amazon.media.tv.TimeShiftConfiguration$Serializer	method	private static TimeShiftConfiguration[] unmarshall(byte[] data)
+amazon.media.tv.TimeShiftConfiguration$Serializer	method	private static byte[] marshall(TimeShiftConfiguration[] configs)
+amazon.media.tv.TimeShiftConfiguration$Serializer	method	static Bundle pack(Bundle bundle, TimeShiftConfiguration[] configs)
+amazon.media.tv.TimeShiftConfiguration$Serializer	method	static TimeShiftConfiguration[] unpack(Bundle bundle)
+amazon.media.tv.TimeShiftPolicyManager	field	final Map<String, TimeShiftConfigurationRecord> mKnownConfigurations;
+amazon.media.tv.TimeShiftPolicyManager	field	private PolicyChangeListener mPolicyListener;
+amazon.media.tv.TimeShiftPolicyManager	field	private TimeShiftConfiguration[] mCurrentTimeShiftConfigurations;
+amazon.media.tv.TimeShiftPolicyManager	field	private final Context mContext;
+amazon.media.tv.TimeShiftPolicyManager	field	private static TimeShiftPolicyManager sInstance;
+amazon.media.tv.TimeShiftPolicyManager	field	private static final String IN_MEMORY_BUFFER_DIR;
+amazon.media.tv.TimeShiftPolicyManager	field	private static final String TAG;
+amazon.media.tv.TimeShiftPolicyManager	field	private static final String TIMESHIFT_BUFFER_DIR;
+amazon.media.tv.TimeShiftPolicyManager	field	private static final float TIMESHIFT_FREESPACE_RATIO;
+amazon.media.tv.TimeShiftPolicyManager	field	private static final long TIMESHIFT_MAX_BUFFER_SIZE_BYTE;
+amazon.media.tv.TimeShiftPolicyManager	field	static final long DEFAULT_IN_MEMORY_MAX_TIMESHIFT_BUFFER_SIZE_BYTE;
+amazon.media.tv.TimeShiftPolicyManager	method	private File getTimeShiftBufferDir(String mountPath)
+amazon.media.tv.TimeShiftPolicyManager	method	private TimeShiftConfiguration buildTimeShiftConfiguration(String mountPoint)
+amazon.media.tv.TimeShiftPolicyManager	method	private TimeShiftPolicyManager(Context context)
+amazon.media.tv.TimeShiftPolicyManager	method	private static List<File> getExternalStoragePaths()
+amazon.media.tv.TimeShiftPolicyManager	method	public synchronized void handleExternalStorageAdded(Uri mountPoint, boolean isReadOnly)
+amazon.media.tv.TimeShiftPolicyManager	method	public synchronized void handleExternalStorageRemoved(Uri mountPoint)
+amazon.media.tv.TimeShiftPolicyManager	method	static TimeShiftPolicyManager getInstance(Context context)
+amazon.media.tv.TimeShiftPolicyManager	method	synchronized void updateTimeShiftConfigurations()
+amazon.media.tv.TimeShiftPolicyManager$TimeShiftConfigurationRecord	method	public int compareTo(TimeShiftConfigurationRecord another)
+amazon.media.tv.TvExtensionCallback	method	public abstract void onChannelSignalQualityChanged(String str, int i);
+amazon.media.tv.TvExtensionCallback	method	public abstract void onChannelSignalStrengthChanged(String str, int i);
+amazon.media.tv.TvExtensionCallback	method	public abstract void onFrequencyManualTuneInfo(String str, float[] fArr, float f);
+amazon.media.tv.TvExtensionCallback	method	public abstract void onFrequencyManualTuneInfo(float[] fArr, float f);
+amazon.media.tv.TvExtensionCallback	method	public abstract void onInteractiveAppStatusChanged(String str, int i);
+amazon.media.tv.TvExtensionCallback	method	public abstract void onPlaybackConflict(String str, PlaybackConflict playbackConflict);
+amazon.media.tv.TvExtensionCallback	method	public abstract void onPlaybackConflictResolutionFailed(String str, int i);
+amazon.media.tv.TvExtensionCallback	method	public abstract void onPlaybackConflictResolved(String str);
+amazon.media.tv.TvExtensionCallback	method	public abstract void onSupportsTrickplayPreview(String str, boolean z);
+amazon.media.tv.TvExtensionCallback	method	public abstract void onTeletextStatusChanged(String str, int i);
+amazon.media.tv.TvExtensionCallback	method	public abstract void onTimeShiftErrorEvent(String str, TimeShiftConfiguration timeShiftConfiguration, int i);
+amazon.media.tv.TvExtensionCallback	method	public abstract void onTimeShiftLivePositionDelta(String str, long j);
+amazon.media.tv.TvExtensionCallback	method	public void onApplicationKeySetChanged(String inputId, int keySetBitMask, int[] otherKeys)
+amazon.media.tv.TvExtensionCallback	method	public void onConnected(String inputId)
+amazon.media.tv.TvExtensionCallback	method	public void onConnectionFailed(String inputId)
+amazon.media.tv.TvExtensionCallback	method	public void onDisconnected(String inputId)
+amazon.media.tv.TvExtensionSession	field	public static final String DESCRIPTOR;
+amazon.media.tv.TvExtensionSession$Default	method	public IBinder asBinder()
+amazon.media.tv.TvExtensionSession$Default	method	public void resolvePlaybackConflict(ConflictResolutionGroup resolutionGroup) throws RemoteException
+amazon.media.tv.TvExtensionSession$Default	method	public void sendHint(int hint) throws RemoteException
+amazon.media.tv.TvExtensionSession$Default	method	public void sendInteractiveAppCommand(int command) throws RemoteException
+amazon.media.tv.TvExtensionSession$Default	method	public void setTimeShiftConfigurations(TimeShiftConfiguration[] configs) throws RemoteException
+amazon.media.tv.TvExtensionSession$Default	method	public void setTrickplaySurface(Surface surface) throws RemoteException
+amazon.media.tv.TvExtensionSession$Default	method	public void setTrickplayTime(long timeMs, int speed) throws RemoteException
+amazon.media.tv.TvExtensionSession$Stub	field	static final int TRANSACTION_resolvePlaybackConflict;
+amazon.media.tv.TvExtensionSession$Stub	field	static final int TRANSACTION_sendHint;
+amazon.media.tv.TvExtensionSession$Stub	field	static final int TRANSACTION_sendInteractiveAppCommand;
+amazon.media.tv.TvExtensionSession$Stub	field	static final int TRANSACTION_setTimeShiftConfigurations;
+amazon.media.tv.TvExtensionSession$Stub	field	static final int TRANSACTION_setTrickplaySurface;
+amazon.media.tv.TvExtensionSession$Stub	field	static final int TRANSACTION_setTrickplayTime;
+amazon.media.tv.TvExtensionSession$Stub	method	public IBinder asBinder()
+amazon.media.tv.TvExtensionSession$Stub	method	public Stub()
+amazon.media.tv.TvExtensionSession$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+amazon.media.tv.TvExtensionSession$Stub	method	public static TvExtensionSession asInterface(IBinder obj)
+amazon.media.tv.TvExtensionSession$Stub$Proxy	field	private IBinder mRemote;
+amazon.media.tv.TvExtensionSession$Stub$Proxy	method	public IBinder asBinder()
+amazon.media.tv.TvExtensionSession$Stub$Proxy	method	public String getInterfaceDescriptor()
+amazon.media.tv.TvExtensionSession$Stub$Proxy	method	public void resolvePlaybackConflict(ConflictResolutionGroup resolutionGroup) throws RemoteException
+amazon.media.tv.TvExtensionSession$Stub$Proxy	method	public void sendHint(int hint) throws RemoteException
+amazon.media.tv.TvExtensionSession$Stub$Proxy	method	public void sendInteractiveAppCommand(int command) throws RemoteException
+amazon.media.tv.TvExtensionSession$Stub$Proxy	method	public void setTimeShiftConfigurations(TimeShiftConfiguration[] configs) throws RemoteException
+amazon.media.tv.TvExtensionSession$Stub$Proxy	method	public void setTrickplaySurface(Surface surface) throws RemoteException
+amazon.media.tv.TvExtensionSession$Stub$Proxy	method	public void setTrickplayTime(long timeMs, int speed) throws RemoteException
+amazon.media.tv.TvExtensionSession$_Parcel	method	public static <T extends Parcelable> void writeTypedObject(Parcel parcel, T value, int parcelableFlags)
+amazon.media.tv.TvExtensionSession$_Parcel	method	public static <T> T readTypedObject(Parcel parcel, Parcelable.Creator<T> c)
+amazon.media.tv.TvExtensions	field	private Integer mHint;
+amazon.media.tv.TvExtensions	field	private Integer mInteractiveAppCommand;
+amazon.media.tv.TvExtensions	field	private SessionCallback mSessionCallback;
+amazon.media.tv.TvExtensions	field	private TimeShiftConfiguration[] mTimeShiftConfigurations;
+amazon.media.tv.TvExtensions	field	private TvExtensionCallback mCallback;
+amazon.media.tv.TvExtensions	field	private TvExtensionSession mSession;
+amazon.media.tv.TvExtensions	field	private final Handler mHandler;
+amazon.media.tv.TvExtensions	field	private static final String TAG;
+amazon.media.tv.TvExtensions	field	private static final boolean DEBUG;
+amazon.media.tv.TvExtensions	field	public static final String AUDIO_TRACK_QUALITY_KEY;
+amazon.media.tv.TvExtensions	field	public static final String AUDIO_TRACK_QUALITY_VALUE_DOLBY;
+amazon.media.tv.TvExtensions	field	public static final String BUNDLE_ANALOG_TUNING_FREQUENCY_OFFSET_KEY;
+amazon.media.tv.TvExtensions	field	public static final String TRACK_HIDE_KEY;
+amazon.media.tv.TvExtensions	field	public static final int HINT_FULLSCREEN_PLAYBACK;
+amazon.media.tv.TvExtensions	field	public static final int HINT_PREVIEW_PLAYBACK;
+amazon.media.tv.TvExtensions	field	public static final int INTERACTIVE_APP_COMMAND_HIDE;
+amazon.media.tv.TvExtensions	field	public static final int INTERACTIVE_APP_COMMAND_RESET;
+amazon.media.tv.TvExtensions	field	public static final int INTERACTIVE_APP_COMMAND_SHOW;
+amazon.media.tv.TvExtensions	field	public static final int INTERACTIVE_APP_STATUS_AVAILABLE;
+amazon.media.tv.TvExtensions	field	public static final int INTERACTIVE_APP_STATUS_UNAVAILABLE;
+amazon.media.tv.TvExtensions	field	public static final int INTERACTIVE_APP_STATUS_UNSUPPORTED;
+amazon.media.tv.TvExtensions	field	public static final int INTERACTIVE_APP_STATUS_VISIBLE;
+amazon.media.tv.TvExtensions	field	public static final int PLAYBACK_RESOLUTION_ERROR_INVALID_ID;
+amazon.media.tv.TvExtensions	field	public static final int PLAYBACK_RESOLUTION_ERROR_UNKNOWN;
+amazon.media.tv.TvExtensions	field	public static final int TELETEXT_STATUS_ACTIVE;
+amazon.media.tv.TvExtensions	field	public static final int TELETEXT_STATUS_AVAILABLE;
+amazon.media.tv.TvExtensions	field	public static final int TELETEXT_STATUS_UNAVAILABLE;
+amazon.media.tv.TvExtensions	field	public static final int TIMESHIFT_BUFFER_OVERFLOW;
+amazon.media.tv.TvExtensions	field	public static final int TIMESHIFT_BUFFER_PATH_FULL;
+amazon.media.tv.TvExtensions	field	public static final int TIMESHIFT_BUFFER_READWRITE_ERROR;
+amazon.media.tv.TvExtensions	field	public static final int VIDEO_UNAVAILABLE_REASON_ENCRYPTED_CHANNEL;
+amazon.media.tv.TvExtensions	field	public static final int VIDEO_UNAVAILABLE_REASON_INVALID_FILE;
+amazon.media.tv.TvExtensions	field	public static final int VIDEO_UNAVAILABLE_REASON_NO_NETWORK;
+amazon.media.tv.TvExtensions	field	public static final int VIDEO_UNAVAILABLE_REASON_PLAYBACK_STREAM_ENDED;
+amazon.media.tv.TvExtensions	field	public static final int VIDEO_UNAVAILABLE_REASON_RESOURCES_UNAVAILABLE;
+amazon.media.tv.TvExtensions	field	public static final int VIDEO_UNAVAILABLE_REASON_STREAMING_DEVICE_UNPAIRED;
+amazon.media.tv.TvExtensions	field	public static final int VIDEO_UNAVAILABLE_REASON_STREAMING_SERVICE_DISCONNECTED;
+amazon.media.tv.TvExtensions	method	public void configureTimeShiftBuffer(TimeShiftConfiguration[] configs)
+amazon.media.tv.TvExtensions	method	public void execute(Runnable action)
+amazon.media.tv.TvExtensions	method	public void releaseInternal()
+amazon.media.tv.TvExtensions$SessionCallback	field	private String inputId;
+amazon.media.tv.TvExtensions$SessionCallback	method	private SessionCallback(String inputId)
+amazon.media.tv.TvExtensions$SessionCallback	method	public void onApplicationKeySetChanged(int keySetBitMask, int[] otherKeys)
+amazon.media.tv.TvExtensions$SessionCallback	method	public void onChannelSignalQualityChanged(int signalQuality) throws RemoteException
+amazon.media.tv.TvExtensions$SessionCallback	method	public void onChannelSignalStrengthChanged(int signalStrength) throws RemoteException
+amazon.media.tv.TvExtensions$SessionCallback	method	public void onConnect(final TvExtensionSession session)
+amazon.media.tv.TvExtensions$SessionCallback	method	public void onFrequencyManualTuneInfo(float[] supportedOffsets, float currentOffset) throws RemoteException
+amazon.media.tv.TvExtensions$SessionCallback	method	public void onInteractiveAppStatusChanged(int status) throws RemoteException
+amazon.media.tv.TvExtensions$SessionCallback	method	public void onPlaybackConflict(PlaybackConflict playbackConflict)
+amazon.media.tv.TvExtensions$SessionCallback	method	public void onPlaybackConflictResolutionFailed(int errorCode) throws RemoteException
+amazon.media.tv.TvExtensions$SessionCallback	method	public void onPlaybackConflictResolved() throws RemoteException
+amazon.media.tv.TvExtensions$SessionCallback	method	public void onSupportsTrickplayPreview(boolean isSupported) throws RemoteException
+amazon.media.tv.TvExtensions$SessionCallback	method	public void onTeletextStatusChanged(int status) throws RemoteException
+amazon.media.tv.TvExtensions$SessionCallback	method	public void onTimeShiftErrorEvent(TimeShiftConfiguration config, int reason)
+amazon.media.tv.TvExtensions$SessionCallback	method	public void onTimeShiftLivePositionDelta(long timeMs) throws RemoteException
+amazon.media.tv.TvViewManager	field	private IBinder mCurrentOverlayWindowToken;
+amazon.media.tv.TvViewManager	field	private IBinder mFocusedToken;
+amazon.media.tv.TvViewManager	field	private IBinder mLastVisibleToken;
+amazon.media.tv.TvViewManager	field	private IBinder mWindowToken;
+amazon.media.tv.TvViewManager	field	private Rect mOverrideSurfaceRect;
+amazon.media.tv.TvViewManager	field	private TvView mTvView;
+amazon.media.tv.TvViewManager	field	private boolean mHasStreamVolume;
+amazon.media.tv.TvViewManager	field	private boolean mUseOverrideSurface;
+amazon.media.tv.TvViewManager	field	private final ApiBinder mApiBinder;
+amazon.media.tv.TvViewManager	field	private final Context mContext;
+amazon.media.tv.TvViewManager	field	private final Handler mHandler;
+amazon.media.tv.TvViewManager	field	private final Map<IBinder, IRemoteTvViewCallback> mCallbacks;
+amazon.media.tv.TvViewManager	field	private final Map<IBinder, Integer> mSurfaceLayerMap;
+amazon.media.tv.TvViewManager	field	private final Map<IBinder, Rect> mSurfaceRegionMap;
+amazon.media.tv.TvViewManager	field	private final Object mLock;
+amazon.media.tv.TvViewManager	field	private final Queue<Pair<String, Bundle>> mPendingAppPrivateCommands;
+amazon.media.tv.TvViewManager	field	private final TvExtensions mTvExtensions;
+amazon.media.tv.TvViewManager	field	private float mStreamVolume;
+amazon.media.tv.TvViewManager	field	private int mCaptionEnabled;
+amazon.media.tv.TvViewManager	field	private static TvViewManager sInstance;
+amazon.media.tv.TvViewManager	field	private static final String TAG;
+amazon.media.tv.TvViewManager	field	private static final boolean DEBUG;
+amazon.media.tv.TvViewManager	field	private static final int Z_ORDER_BACKGROUND;
+amazon.media.tv.TvViewManager	field	private static final int Z_ORDER_FOREGROUND;
+amazon.media.tv.TvViewManager	field	static final int CAPTION_DEFAULT;
+amazon.media.tv.TvViewManager	field	static final int CAPTION_DISABLED;
+amazon.media.tv.TvViewManager	field	static final int CAPTION_ENABLED;
+amazon.media.tv.TvViewManager	field	static final long TIMESHIFT_BUFFER_TO_RESUME_IN_MSEC;
+amazon.media.tv.TvViewManager	method	private void createSessionOverlayView(boolean forceCreation)
+amazon.media.tv.TvViewManager	method	private void hideSurfaceInternal(IBinder token)
+amazon.media.tv.TvViewManager	method	private void removeSessionOverlayView()
+amazon.media.tv.TvViewManager	method	private void resetInternal()
+amazon.media.tv.TvViewManager	method	private void setWindowForToken(IBinder token)
+amazon.media.tv.TvViewManager	method	public void mute()
+amazon.media.tv.TvViewManager	method	public void requestUnblockContent(String unblockedRating)
+amazon.media.tv.TvViewManager	method	public void showSurfaceInternal(IBinder token)
+amazon.media.tv.TvViewManager	method	public void shutdown()
+amazon.media.tv.TvViewManager	method	static TvViewManager getInstance(Context context)
+amazon.media.tv.TvViewManager	method	synchronized void hideSurface(IBinder token)
+amazon.media.tv.TvViewManager	method	synchronized void showSurface(IBinder token)
+amazon.media.tv.TvViewManager$DummyOverlayView	field	private final IBinder mToken;
+amazon.media.tv.TvViewManager$DummyOverlayView	method	public DummyOverlayView(Context context, IBinder token)
+amazon.media.tv.TvViewManager$DummyOverlayView	method	public IBinder getWindowToken()
+amazon.media.tv.TvViewManager$MyExtensionCallback	method	private MyExtensionCallback()
+amazon.media.tv.TvViewManager$MyExtensionCallback	method	public void onApplicationKeySetChanged(String inputId, int keySetBitMask, int[] otherKeys)
+amazon.media.tv.TvViewManager$MyExtensionCallback	method	public void onChannelSignalQualityChanged(String inputId, int signalQuality)
+amazon.media.tv.TvViewManager$MyExtensionCallback	method	public void onChannelSignalStrengthChanged(String inputId, int signalStrength)
+amazon.media.tv.TvViewManager$MyExtensionCallback	method	public void onConnected(String inputId)
+amazon.media.tv.TvViewManager$MyExtensionCallback	method	public void onConnectionFailed(String inputId)
+amazon.media.tv.TvViewManager$MyExtensionCallback	method	public void onDisconnected(String inputId)
+amazon.media.tv.TvViewManager$MyExtensionCallback	method	public void onFrequencyManualTuneInfo(String inputId, float[] supportedOffsets, float currentOffset)
+amazon.media.tv.TvViewManager$MyExtensionCallback	method	public void onFrequencyManualTuneInfo(float[] supportedOffsets, float currentOffset)
+amazon.media.tv.TvViewManager$MyExtensionCallback	method	public void onInteractiveAppStatusChanged(String inputId, int status)
+amazon.media.tv.TvViewManager$MyExtensionCallback	method	public void onPlaybackConflict(String inputId, PlaybackConflict playbackConflict)
+amazon.media.tv.TvViewManager$MyExtensionCallback	method	public void onPlaybackConflictResolutionFailed(String inputId, int errorCode)
+amazon.media.tv.TvViewManager$MyExtensionCallback	method	public void onPlaybackConflictResolved(String inputId)
+amazon.media.tv.TvViewManager$MyExtensionCallback	method	public void onSupportsTrickplayPreview(String inputId, boolean isSupported)
+amazon.media.tv.TvViewManager$MyExtensionCallback	method	public void onTeletextStatusChanged(String inputId, int status)
+amazon.media.tv.TvViewManager$MyExtensionCallback	method	public void onTimeShiftErrorEvent(String inputId, TimeShiftConfiguration config, int notificationType)
+amazon.media.tv.TvViewManager$MyExtensionCallback	method	public void onTimeShiftLivePositionDelta(String inputId, long timeMs)
+amazon.media.tv.TvViewManager$MyTvInputCallback	field	final String mInputId;
+amazon.media.tv.TvViewManager$MyTvInputCallback	method	public String toString()
+amazon.media.tv.TvViewManager$MyTvInputCallback	method	public void onApplicationKeySetChanged(int keySetBitMask, int[] otherKeys)
+amazon.media.tv.TvViewManager$MyTvInputCallback	method	public void onChannelRetuned(String inputId, Uri channelUri)
+amazon.media.tv.TvViewManager$MyTvInputCallback	method	public void onChannelSignalQualityChanged(int signalQuality)
+amazon.media.tv.TvViewManager$MyTvInputCallback	method	public void onChannelSignalStrengthChanged(int signalStrength)
+amazon.media.tv.TvViewManager$MyTvInputCallback	method	public void onContentAllowed(String inputId)
+amazon.media.tv.TvViewManager$MyTvInputCallback	method	public void onContentBlocked(String inputId, TvContentRating rating)
+amazon.media.tv.TvViewManager$MyTvInputCallback	method	public void onFrequencyManualTuneInfo(float[] supportedOffsets, float currentOffset)
+amazon.media.tv.TvViewManager$MyTvInputCallback	method	public void onInteractiveAppStatusChanged(int status)
+amazon.media.tv.TvViewManager$MyTvInputCallback	method	public void onPlaybackConflict(PlaybackConflict playbackConflict)
+amazon.media.tv.TvViewManager$MyTvInputCallback	method	public void onPlaybackConflictResolved()
+amazon.media.tv.TvViewManager$MyTvInputCallback	method	public void onPlaybackStateChanged(int newState)
+amazon.media.tv.TvViewManager$MyTvInputCallback	method	public void onSupportsTrickplayPreview(boolean isSupported)
+amazon.media.tv.TvViewManager$MyTvInputCallback	method	public void onTeletextStatusChanged(int status)
+amazon.media.tv.TvViewManager$MyTvInputCallback	method	public void onTimeShiftCurrentPositionChanged(long timeMs)
+amazon.media.tv.TvViewManager$MyTvInputCallback	method	public void onTimeShiftLivePositionDelta(long timeMs)
+amazon.media.tv.TvViewManager$MyTvInputCallback	method	public void onTimeShiftStartPositionChanged(long startPos)
+amazon.media.tv.TvViewManager$MyTvInputCallback	method	public void onTimeShiftStatusChanged(String inputId, int status)
+amazon.media.tv.TvViewManager$MyTvInputCallback	method	public void onTrackSelected(String inputId, int type, String trackId)
+amazon.media.tv.TvViewManager$MyTvInputCallback	method	public void onTracksChanged(String inputId, List<TvTrackInfo> tracks)
+amazon.media.tv.TvViewManager$MyTvInputCallback	method	public void onVideoAvailable(String inputId)
+amazon.media.tv.TvViewManager$MyTvInputCallback	method	public void onVideoUnavailable(String inputId, int reason)
+amazon.media.tv.ViewState	field	private final Bundle mTuneParams;
+amazon.media.tv.ViewState	field	private final String mInputId;
+amazon.media.tv.ViewState	field	private final TimeShiftConfiguration[] mTimeShiftConfiguration;
+amazon.media.tv.ViewState	field	private final Uri mChannelUri;
+amazon.media.tv.ViewState	field	private final Uri mRecordedProgramUri;
+amazon.media.tv.ViewState	field	private final boolean mHasStreamVolume;
+amazon.media.tv.ViewState	field	private final float mStreamVolume;
+amazon.media.tv.ViewState	field	private final int mCaptionEnabled;
+amazon.media.tv.ViewState	field	private final int mPlaybackState;
+amazon.media.tv.ViewState	method	private ViewState(boolean hasStreamVolume, float streamVolume, int captionEnabled, String inputId, Uri channelUri, Uri recordedProgramUri, Bundle tuneParams, int playbackState, TimeShiftConfiguration[] timeShiftConfiguration)
+amazon.media.tv.ViewState	method	private static boolean equalBundles(Bundle one, Bundle two)
+amazon.media.tv.ViewState	method	protected ViewState(Parcel in)
+amazon.media.tv.ViewState	method	public Boolean isCaptionEnabled()
+amazon.media.tv.ViewState	method	public Bundle getCurrentTuneParams()
+amazon.media.tv.ViewState	method	public String getCurrentInputId()
+amazon.media.tv.ViewState	method	public String toString()
+amazon.media.tv.ViewState	method	public TimeShiftConfiguration[] getTimeShiftConfiguration()
+amazon.media.tv.ViewState	method	public Uri getCurrentChannelUri()
+amazon.media.tv.ViewState	method	public Uri getRecordedProgramUri()
+amazon.media.tv.ViewState	method	public boolean equals(Object o)
+amazon.media.tv.ViewState	method	public boolean hasSetCaptionEnabled()
+amazon.media.tv.ViewState	method	public boolean hasStreamVolume()
+amazon.media.tv.ViewState	method	public float getStreamVolume()
+amazon.media.tv.ViewState	method	public int describeContents()
+amazon.media.tv.ViewState	method	public int getPlaybackState()
+amazon.media.tv.ViewState	method	public int hashCode()
+amazon.media.tv.ViewState	method	public void writeToParcel(Parcel parcel, int i)
+amazon.media.tv.ViewState$Builder	field	private Bundle tuneParams;
+amazon.media.tv.ViewState$Builder	field	private String inputId;
+amazon.media.tv.ViewState$Builder	field	private TimeShiftConfiguration[] timeShiftConfiguration;
+amazon.media.tv.ViewState$Builder	field	private Uri channelUri;
+amazon.media.tv.ViewState$Builder	field	private Uri recordedProgramUri;
+amazon.media.tv.ViewState$Builder	field	private final boolean hasStreamVolume;
+amazon.media.tv.ViewState$Builder	field	private final float streamVolume;
+amazon.media.tv.ViewState$Builder	field	private final int captionEnabled;
+amazon.media.tv.ViewState$Builder	field	private int playbackState;
+amazon.media.tv.dvb.models.AutoDiseqcResult	field	private final String mSatelliteName;
+amazon.media.tv.dvb.models.AutoDiseqcResult	field	private final int mOrbitalPosition;
+amazon.media.tv.dvb.models.AutoDiseqcResult	field	private final int mPort;
+amazon.media.tv.dvb.models.AutoDiseqcResult	method	public AutoDiseqcResult(String satelliteName, Integer orbitalPosition, Integer port)
+amazon.media.tv.dvb.models.AutoDiseqcResult	method	public Integer getOrbitalPosition()
+amazon.media.tv.dvb.models.AutoDiseqcResult	method	public Integer getPort()
+amazon.media.tv.dvb.models.AutoDiseqcResult	method	public String getSatelliteName()
+amazon.media.tv.dvb.models.AutoDiseqcResult	method	public String toString()
+amazon.media.tv.dvb.models.AutoDiseqcResult	method	public boolean equals(Object o)
+amazon.media.tv.dvb.models.AutoDiseqcResult	method	public int describeContents()
+amazon.media.tv.dvb.models.AutoDiseqcResult	method	public void writeToParcel(Parcel parcel, int flags)
+amazon.media.tv.dvb.models.CableConfiguration	field	private Integer mNetworkId;
+amazon.media.tv.dvb.models.CableConfiguration	field	private Integer mStartFrequency;
+amazon.media.tv.dvb.models.CableConfiguration	field	private LcnConfig mLcnConfig;
+amazon.media.tv.dvb.models.CableConfiguration	field	private String mOperatorId;
+amazon.media.tv.dvb.models.CableConfiguration	field	private boolean mIsUpdateScan;
+amazon.media.tv.dvb.models.CableConfiguration	field	private int mScanMode;
+amazon.media.tv.dvb.models.CableConfiguration	field	private static final long serialVersionUID;
+amazon.media.tv.dvb.models.CableConfiguration	method	private CableConfiguration(Builder builder)
+amazon.media.tv.dvb.models.CableConfiguration	method	public CableConfiguration()
+amazon.media.tv.dvb.models.CableConfiguration	method	public CableConfiguration(String operatorId)
+amazon.media.tv.dvb.models.CableConfiguration	method	public CableConfiguration(String operatorId, int scanMode, Integer networkId)
+amazon.media.tv.dvb.models.CableConfiguration	method	public CableConfiguration(String operatorId, int scanMode, Integer networkId, Integer startFrequency)
+amazon.media.tv.dvb.models.CableConfiguration	method	public Integer getNetworkId()
+amazon.media.tv.dvb.models.CableConfiguration	method	public Integer getStartFrequency()
+amazon.media.tv.dvb.models.CableConfiguration	method	public LcnConfig getLcnConfig()
+amazon.media.tv.dvb.models.CableConfiguration	method	public String getOperatorId()
+amazon.media.tv.dvb.models.CableConfiguration	method	public String toString()
+amazon.media.tv.dvb.models.CableConfiguration	method	public boolean isUpdateScan()
+amazon.media.tv.dvb.models.CableConfiguration	method	public int describeContents()
+amazon.media.tv.dvb.models.CableConfiguration	method	public int getScanMode()
+amazon.media.tv.dvb.models.CableConfiguration	method	public static Builder builder()
+amazon.media.tv.dvb.models.CableConfiguration	method	public void setIsUpdateScan(boolean isUpdateScan)
+amazon.media.tv.dvb.models.CableConfiguration	method	public void setLcnConfig(LcnConfig lcnConfig)
+amazon.media.tv.dvb.models.CableConfiguration	method	public void setNetworkId(Integer networkId)
+amazon.media.tv.dvb.models.CableConfiguration	method	public void setOperatorId(String operatorId)
+amazon.media.tv.dvb.models.CableConfiguration	method	public void setScanMode(int scanMode)
+amazon.media.tv.dvb.models.CableConfiguration	method	public void setStartFrequency(Integer startFrequency)
+amazon.media.tv.dvb.models.CableConfiguration	method	public void writeToParcel(Parcel parcel, int i)
+amazon.media.tv.dvb.models.CableConfiguration$Builder	field	private Integer mNetworkId;
+amazon.media.tv.dvb.models.CableConfiguration$Builder	field	private Integer mStartFrequency;
+amazon.media.tv.dvb.models.CableConfiguration$Builder	field	private LcnConfig mLcnConfig;
+amazon.media.tv.dvb.models.CableConfiguration$Builder	field	private String mOperatorId;
+amazon.media.tv.dvb.models.CableConfiguration$Builder	field	private boolean mIsUpdateScan;
+amazon.media.tv.dvb.models.CableConfiguration$Builder	field	private int mScanMode;
+amazon.media.tv.dvb.models.CableConfiguration$Builder	method	private Builder()
+amazon.media.tv.dvb.models.CableConfiguration$Builder	method	public Builder withIsUpdateScan(boolean isUpdateScan)
+amazon.media.tv.dvb.models.CableConfiguration$Builder	method	public Builder withLcnConfig(LcnConfig lcnConfig)
+amazon.media.tv.dvb.models.CableConfiguration$Builder	method	public Builder withNetworkId(Integer networkId)
+amazon.media.tv.dvb.models.CableConfiguration$Builder	method	public Builder withOperatorId(String operatorId)
+amazon.media.tv.dvb.models.CableConfiguration$Builder	method	public Builder withScanMode(int scanMode)
+amazon.media.tv.dvb.models.CableConfiguration$Builder	method	public Builder withStartFrequency(Integer startFrequency)
+amazon.media.tv.dvb.models.CableConfiguration$Builder	method	public CableConfiguration build()
+amazon.media.tv.dvb.models.CableOperator	field	public static final String AKADO;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String ANTENNA_HD;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String BLIZOO;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String CABLE_HD;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String CANAL_DIGITAL;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String COMHEM;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String DIVAN_TV;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String GLENTEN;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String KBW;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String KDG;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String KDG_HD;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String KRS;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String MTS;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String NET1;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String NUMERICABLE;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String ONLIME;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String OTHERS;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String OTHERS_NL;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String RCS_RDS;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String RCS_RDS_DIGI_FR;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String RCS_RDS_DIGI_NL;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String RIKS_TV;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String STOFA;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String TELE2;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String TELECOLUMBUS;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String TELEING;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String TELEKOM;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String TELEMACH;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String TELENET;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String TKT;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String TVOE_EKA;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String TVOE_STP;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String UNITYMEDIA;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String UPC;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String VOLIA;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String VOO;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String YOUSEE;
+amazon.media.tv.dvb.models.CableOperator	field	public static final String ZIGGO;
+amazon.media.tv.dvb.models.ClearChannelsConfig	field	private ScanProtocol mScanProtocol;
+amazon.media.tv.dvb.models.ClearChannelsConfig	field	private static final long serialVersionUID;
+amazon.media.tv.dvb.models.ClearChannelsConfig	method	public ScanProtocol getScanProtocol()
+amazon.media.tv.dvb.models.ClearChannelsConfig	method	public int describeContents()
+amazon.media.tv.dvb.models.ClearChannelsConfig	method	public void setScanProtocol(ScanProtocol scanProtocol)
+amazon.media.tv.dvb.models.ClearChannelsConfig	method	public void writeToParcel(Parcel parcel, int i)
+amazon.media.tv.dvb.models.DiseqcConfig	field	private boolean mLimitEastRotation;
+amazon.media.tv.dvb.models.DiseqcConfig	field	private boolean mLimitWestRotation;
+amazon.media.tv.dvb.models.DiseqcConfig	field	private int mCurrentPort;
+amazon.media.tv.dvb.models.DiseqcConfig	field	private int mDiseqcMode;
+amazon.media.tv.dvb.models.DiseqcConfig	field	private int mMovementType;
+amazon.media.tv.dvb.models.DiseqcConfig	field	private int mStepSize;
+amazon.media.tv.dvb.models.DiseqcConfig	field	private int mTimeout;
+amazon.media.tv.dvb.models.DiseqcConfig	field	private static final long serialVersionUID;
+amazon.media.tv.dvb.models.DiseqcConfig	field	public static final int DISEQC_1_0;
+amazon.media.tv.dvb.models.DiseqcConfig	field	public static final int DISEQC_1_1;
+amazon.media.tv.dvb.models.DiseqcConfig	field	public static final int DISEQC_1_2;
+amazon.media.tv.dvb.models.DiseqcConfig	field	public static final int DISEQC_NONE;
+amazon.media.tv.dvb.models.DiseqcConfig	field	public static final int EAST;
+amazon.media.tv.dvb.models.DiseqcConfig	field	public static final int NEUTRAL_PORT;
+amazon.media.tv.dvb.models.DiseqcConfig	field	public static final int NON_STOP;
+amazon.media.tv.dvb.models.DiseqcConfig	field	public static final int NO_PORT;
+amazon.media.tv.dvb.models.DiseqcConfig	field	public static final int STEP;
+amazon.media.tv.dvb.models.DiseqcConfig	field	public static final int STOP;
+amazon.media.tv.dvb.models.DiseqcConfig	field	public static final int TIMEOUT;
+amazon.media.tv.dvb.models.DiseqcConfig	field	public static final int WEST;
+amazon.media.tv.dvb.models.DiseqcConfig	method	private DiseqcConfig(Builder builder)
+amazon.media.tv.dvb.models.DiseqcConfig	method	public String toString()
+amazon.media.tv.dvb.models.DiseqcConfig	method	public boolean getLimitEastRotation()
+amazon.media.tv.dvb.models.DiseqcConfig	method	public boolean getLimitWestRotation()
+amazon.media.tv.dvb.models.DiseqcConfig	method	public int describeContents()
+amazon.media.tv.dvb.models.DiseqcConfig	method	public int getCurrentPort()
+amazon.media.tv.dvb.models.DiseqcConfig	method	public int getDiseqcMode()
+amazon.media.tv.dvb.models.DiseqcConfig	method	public int getMovementType()
+amazon.media.tv.dvb.models.DiseqcConfig	method	public int getStepSize()
+amazon.media.tv.dvb.models.DiseqcConfig	method	public int getTimeout()
+amazon.media.tv.dvb.models.DiseqcConfig	method	public static Builder builder()
+amazon.media.tv.dvb.models.DiseqcConfig	method	public void setCurrentPort(int port)
+amazon.media.tv.dvb.models.DiseqcConfig	method	public void setLimitEastRotation(boolean limitEastRotation)
+amazon.media.tv.dvb.models.DiseqcConfig	method	public void setLimitWestRotation(boolean limitWestRotation)
+amazon.media.tv.dvb.models.DiseqcConfig	method	public void setMovementType(int movementType)
+amazon.media.tv.dvb.models.DiseqcConfig	method	public void setStepSize(int stepSize)
+amazon.media.tv.dvb.models.DiseqcConfig	method	public void setTimeout(int timeout)
+amazon.media.tv.dvb.models.DiseqcConfig	method	public void writeToParcel(Parcel parcel, int flags)
+amazon.media.tv.dvb.models.DiseqcConfig$Builder	field	private boolean mLimitEastRotation;
+amazon.media.tv.dvb.models.DiseqcConfig$Builder	field	private boolean mLimitWestRotation;
+amazon.media.tv.dvb.models.DiseqcConfig$Builder	field	private int mCurrentPort;
+amazon.media.tv.dvb.models.DiseqcConfig$Builder	field	private int mDiseqcMode;
+amazon.media.tv.dvb.models.DiseqcConfig$Builder	field	private int mMovementType;
+amazon.media.tv.dvb.models.DiseqcConfig$Builder	field	private int mStepSize;
+amazon.media.tv.dvb.models.DiseqcConfig$Builder	field	private int mTimeout;
+amazon.media.tv.dvb.models.DiseqcConfig$Builder	method	private Builder()
+amazon.media.tv.dvb.models.DiseqcConfig$Builder	method	public Builder withCurrentPort(int currentPort)
+amazon.media.tv.dvb.models.DiseqcConfig$Builder	method	public Builder withDiseqcMode(int diseqcMode)
+amazon.media.tv.dvb.models.DiseqcConfig$Builder	method	public Builder withLimitEastRotation(boolean limitEastRotation)
+amazon.media.tv.dvb.models.DiseqcConfig$Builder	method	public Builder withLimitWestRotation(boolean limitWestRotation)
+amazon.media.tv.dvb.models.DiseqcConfig$Builder	method	public Builder withMovementStepSize(int stepSize)
+amazon.media.tv.dvb.models.DiseqcConfig$Builder	method	public Builder withMovementTimeout(int timeout)
+amazon.media.tv.dvb.models.DiseqcConfig$Builder	method	public Builder withMovementType(int movementType)
+amazon.media.tv.dvb.models.DiseqcConfig$Builder	method	public DiseqcConfig build()
+amazon.media.tv.dvb.models.LcnConfig	field	private boolean mSelfCarryingLcn;
+amazon.media.tv.dvb.models.LcnConfig	field	private int mAudioOffset;
+amazon.media.tv.dvb.models.LcnConfig	field	private int mFirstNonLcn;
+amazon.media.tv.dvb.models.LcnConfig	method	private LcnConfig()
+amazon.media.tv.dvb.models.LcnConfig	method	private LcnConfig(Builder builder)
+amazon.media.tv.dvb.models.LcnConfig	method	public String toString()
+amazon.media.tv.dvb.models.LcnConfig	method	public boolean equals(Object o)
+amazon.media.tv.dvb.models.LcnConfig	method	public boolean getSelfCarryingLcn()
+amazon.media.tv.dvb.models.LcnConfig	method	public int describeContents()
+amazon.media.tv.dvb.models.LcnConfig	method	public int getAudioOffset()
+amazon.media.tv.dvb.models.LcnConfig	method	public int getFirstNonLcn()
+amazon.media.tv.dvb.models.LcnConfig	method	public static Builder builder()
+amazon.media.tv.dvb.models.LcnConfig	method	public void setAudioOffset(int audioOffset)
+amazon.media.tv.dvb.models.LcnConfig	method	public void setFirstNonLcn(int firstNonLcn)
+amazon.media.tv.dvb.models.LcnConfig	method	public void setSelfCarryingLcn(boolean selfCarryingLcn)
+amazon.media.tv.dvb.models.LcnConfig	method	public void writeToParcel(Parcel parcel, int flags)
+amazon.media.tv.dvb.models.LcnConfig$Builder	field	private boolean mSelfCarryingLcn;
+amazon.media.tv.dvb.models.LcnConfig$Builder	field	private int mAudioOffset;
+amazon.media.tv.dvb.models.LcnConfig$Builder	field	private int mFirstNonLcn;
+amazon.media.tv.dvb.models.LcnConfig$Builder	method	private Builder()
+amazon.media.tv.dvb.models.LcnConfig$Builder	method	public Builder withAudioOffset(int audioOffset)
+amazon.media.tv.dvb.models.LcnConfig$Builder	method	public Builder withFirstNonLcn(int firstNonLcn)
+amazon.media.tv.dvb.models.LcnConfig$Builder	method	public Builder withSelfCarryingLcn(boolean selfCarryingLcn)
+amazon.media.tv.dvb.models.LcnConfig$Builder	method	public LcnConfig build()
+amazon.media.tv.dvb.models.M7Operator	field	private final List<Integer> mOrbitInfo;
+amazon.media.tv.dvb.models.M7Operator	field	private final String mAud1LanguageCode;
+amazon.media.tv.dvb.models.M7Operator	field	private final String mAud2LanguageCode;
+amazon.media.tv.dvb.models.M7Operator	field	private final String mCountryCode;
+amazon.media.tv.dvb.models.M7Operator	field	private final String mMenuLanguageCode;
+amazon.media.tv.dvb.models.M7Operator	field	private final String mName;
+amazon.media.tv.dvb.models.M7Operator	field	private final String mSublistName;
+amazon.media.tv.dvb.models.M7Operator	field	private final String mSubsLanguageCode;
+amazon.media.tv.dvb.models.M7Operator	field	private final boolean mSpecialRegionSetup;
+amazon.media.tv.dvb.models.M7Operator	field	private final boolean mSubtitlesEnabled;
+amazon.media.tv.dvb.models.M7Operator	field	private final int mDefaultCharSet;
+amazon.media.tv.dvb.models.M7Operator	field	private final int mNetworkId;
+amazon.media.tv.dvb.models.M7Operator	field	private final int mParentalControlRate;
+amazon.media.tv.dvb.models.M7Operator	field	private final int mSublistId;
+amazon.media.tv.dvb.models.M7Operator	method	public Boolean isSpecialRegionSetup()
+amazon.media.tv.dvb.models.M7Operator	method	public Boolean isSubtitlesEnabled()
+amazon.media.tv.dvb.models.M7Operator	method	public Integer getDefaultCharSet()
+amazon.media.tv.dvb.models.M7Operator	method	public Integer getNetworkId()
+amazon.media.tv.dvb.models.M7Operator	method	public Integer getParentalControlRate()
+amazon.media.tv.dvb.models.M7Operator	method	public Integer getSublistId()
+amazon.media.tv.dvb.models.M7Operator	method	public List<Integer> getOrbitInfo()
+amazon.media.tv.dvb.models.M7Operator	method	public M7Operator(String name, String sublistName, Integer networkId, Integer sublistId, String countryCode, String menuLanguageCode, String aud1LanguageCode, String aud2LanguageCode, String subsLanguageCode, Integer parentalControlRate, Integer defaultCharSet, Boolean subtitlesEnabled, Boolean specialRegionSetup)
+amazon.media.tv.dvb.models.M7Operator	method	public M7Operator(String name, String sublistName, Integer networkId, Integer sublistId, String countryCode, String menuLanguageCode, String aud1LanguageCode, String aud2LanguageCode, String subsLanguageCode, Integer parentalControlRate, Integer defaultCharSet, Boolean subtitlesEnabled, Boolean specialRegionSetup, List<Integer> orbitInfo)
+amazon.media.tv.dvb.models.M7Operator	method	public String getAud1LanguageCode()
+amazon.media.tv.dvb.models.M7Operator	method	public String getAud2LanguageCode()
+amazon.media.tv.dvb.models.M7Operator	method	public String getCountryCode()
+amazon.media.tv.dvb.models.M7Operator	method	public String getMenuLanguageCode()
+amazon.media.tv.dvb.models.M7Operator	method	public String getName()
+amazon.media.tv.dvb.models.M7Operator	method	public String getSublistName()
+amazon.media.tv.dvb.models.M7Operator	method	public String getSubsLanguageCode()
+amazon.media.tv.dvb.models.M7Operator	method	public String toString()
+amazon.media.tv.dvb.models.M7Operator	method	public boolean equals(Object o)
+amazon.media.tv.dvb.models.M7Operator	method	public int describeContents()
+amazon.media.tv.dvb.models.M7Operator	method	public void writeToParcel(Parcel parcel, int flags)
+amazon.media.tv.dvb.models.SatDbFile	field	private String mName;
+amazon.media.tv.dvb.models.SatDbFile	field	private int mNumOfChannels;
+amazon.media.tv.dvb.models.SatDbFile	field	private int mType;
+amazon.media.tv.dvb.models.SatDbFile	field	private long mLastModifiedDate;
+amazon.media.tv.dvb.models.SatDbFile	field	private static final long serialVersionUID;
+amazon.media.tv.dvb.models.SatDbFile	field	public static final int TYPE_DEF;
+amazon.media.tv.dvb.models.SatDbFile	field	public static final int TYPE_USER;
+amazon.media.tv.dvb.models.SatDbFile	method	public SatDbFile(String name, int type, int numOfChannels, long lastModified)
+amazon.media.tv.dvb.models.SatDbFile	method	public String getName()
+amazon.media.tv.dvb.models.SatDbFile	method	public int describeContents()
+amazon.media.tv.dvb.models.SatDbFile	method	public int getNumOfChannels()
+amazon.media.tv.dvb.models.SatDbFile	method	public int getType()
+amazon.media.tv.dvb.models.SatDbFile	method	public long getLastModifiedDate()
+amazon.media.tv.dvb.models.SatDbFile	method	public void writeToParcel(Parcel parcel, int i)
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	private HashMap<Integer, DiseqcConfig> mDiseqcConfigMap;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	private LcnConfig mLcnConfig;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	private LinkedHashMap<Integer, Integer> mDiseqcMap;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	private String mId;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	private String mOperatorId;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	private TransponderConfiguration[] mTransponderConfigurations;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	private boolean mIsUpdateScan;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	private boolean mUnicable;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	private int mActiveDiseqcMode;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	private int mDiseqcPort;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	private int mDiseqcVersion;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	private int mLnbFrequencyHigh;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	private int mLnbFrequencyLow;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	private int mLnbPower;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	private int mM7NetworkId;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	private int mM7SublistId;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	private int mOrbitalPosition;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	private int mPolarization;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	private int mScanFilter;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	private int mScanMode;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	private int mSymbolRate;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	private int mToneBurst;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	private int mTransponderFrequency;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	private int mUnicableFrequency;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	private int mUnicableLnb;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	private int mUnicableUserBand;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	private int mUnicableVersion;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	private static final String TAG;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	private static final long serialVersionUID;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_ASTRA_HD_PLUS;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_ASTRA_INTERNATIONAL_LCN;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_AUSTRIASAT;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_CANALDIGITAAL;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_CANALDIGITAAL_SD;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_CANAL_DIGITAL;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_CANAL_DIGITAL_DNK;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_CANAL_DIGITAL_FIN;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_CANAL_DIGITAL_NOR;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_CANAL_DIGITAL_SWE;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_CANAL_PLUS;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_CYFRA_PLUS;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_CYFROWY_POLSAT;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_DD_FREE_DISH;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_DIGITURK_EUTELSAT;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_DIGITURK_TURKSAT;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_DIGI_TV;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_DIGI_TV_CZE;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_DIGI_TV_CZE_MOBILE;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_DIGI_TV_HUN;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_DIGI_TV_ROU;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_DIGI_TV_SRB;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_DIGI_TV_SVK;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_DIGI_TV_SVK_MAGIO;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_DIVEO;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_D_SMART;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_FRANSAT;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_FREENETTV;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_FREEVIEW_SAT;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_HELLO;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_JOYNE_BEL;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_JOYNE_NLD;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_KABELIO;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_M7_FAST_SCAN;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_MTS;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_NNK;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_NTV_PLUS;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_ORS;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_OSTERREICHLISTE;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_SIMPLITV;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_SKYLINK_CZ;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_SKYLINK_SK;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_SKY_DEUTSCHLAND;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_SMART_HD_PLUS;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_TELEKARTA;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_TELESAT_BELGIUM;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_TELESAT_LUXEMBOURG;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_TIVIBU;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_TIVUSAT;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_TKGS;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_TRICOLOR;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_TV_VLAANDEREN;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_TV_VLAANDEREN_SD;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final String SAT_OP_ID_WHITE_LABEL_PLATFORM_LCN;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final int DISEQC_NONE;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final int DISEQC_ONE_DOT_ONE;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final int DISEQC_ONE_DOT_TWO;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final int DISEQC_ONE_DOT_ZERO;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final int DISEQC_VERSION_UNKNOWN;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final int LNB_POWER_13V_18V;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final int LNB_POWER_14V_19V;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final int LNB_POWER_OFF;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final int POLARIZATION_HORIZONTAL_LINEAR;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final int POLARIZATION_LEFT_CIRCULAR;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final int POLARIZATION_RIGHT_CIRCULAR;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final int POLARIZATION_VERTICAL_LINEAR;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final int SCAN_FILTER_FREE_ONLY;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final int SCAN_FILTER_NONE;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final int SCAN_FILTER_SCRAMBLED_ONLY;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final int TONEBURST_A;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final int TONEBURST_B;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final int TONEBURST_DISABLE;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final int UNICABLE_LNB_A;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final int UNICABLE_LNB_B;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final int UNICABLE_LNB_C;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final int UNICABLE_LNB_D;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final int UNICABLE_VERSION_1;
+amazon.media.tv.dvb.models.SatelliteConfiguration	field	public static final int UNICABLE_VERSION_2;
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	private SatelliteConfiguration(Builder builder)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public DiseqcConfig getActiveDiseqcConfig()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public HashMap<Integer, DiseqcConfig> getDiseqcConfigMap()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public LcnConfig getLcnConfig()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public LinkedHashMap<Integer, Integer> getDiseqcModes()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public SatelliteConfiguration()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public SatelliteConfiguration(String id, String operatorId, int diseqcVersion, int diseqcPort, int toneBurstEnum, int lnbFrequencyLow, int lnbFrequencyHigh, int polarization, boolean unicable, int unicableUserBand, int unicableFrequency)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public SatelliteConfiguration(String id, String operatorId, int scanMode, LinkedHashMap<Integer, Integer> diseqcModes, int toneBurstEnum, int lnbFrequencyLow, int lnbFrequencyHigh, int polarization, boolean unicable, int unicableUserBand, int unicableFrequency, int unicableVersion)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public SatelliteConfiguration(String id, String operatorId, int scanMode, int diseqcVersion, int diseqcPort, int toneBurstEnum, int lnbFrequencyLow, int lnbFrequencyHigh, int polarization, boolean unicable, int unicableUserBand, int unicableFrequency)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public SatelliteConfiguration(String id, String operatorId, int scanMode, int diseqcVersion, int diseqcPort, int toneBurstEnum, int lnbFrequencyLow, int lnbFrequencyHigh, int polarization, boolean unicable, int unicableUserBand, int unicableFrequency, int unicableVersion)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public String getId()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public String getOperatorId()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public String toString()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public TransponderConfiguration[] getTransponderConfigurations()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public boolean getUnicable()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public boolean isUnicable()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public boolean isUpdateScan()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public int describeContents()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public int getActiveDiseqcMode()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public int getDiseqcPort()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public int getDiseqcVersion()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public int getLnbFrequencyHigh()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public int getLnbFrequencyLow()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public int getLnbPower()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public int getM7NetworkId()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public int getM7SublistId()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public int getOrbitalPosition()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public int getPolarization()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public int getScanFilter()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public int getScanMode()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public int getSymbolRate()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public int getToneBurst()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public int getTransponderFrequency()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public int getUnicableFrequency()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public int getUnicableLnb()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public int getUnicableUserBand()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public int getUnicableVersion()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public static Builder builder()
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void addDiseqcMode(int version, int port)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void modifyDiseqcConfigForVersion(int diseqcVersion, DiseqcConfig diseqcConfig)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void modifyDiseqcPort(int version, int port)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void removeDiseqcMode(int version)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void setActiveDiseqcMode(int diseqcMode)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void setDiseqcMap(LinkedHashMap<Integer, Integer> map)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void setDiseqcPort(int diseqcPort)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void setDiseqcVersion(int diseqcVersion)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void setId(String id)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void setIsUpdateScan(boolean isUpdateScan)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void setLcnConfig(LcnConfig lcnConfig)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void setLnbFrequencyHigh(int lnbFrequencyHigh)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void setLnbFrequencyLow(int lnbFrequencyLow)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void setLnbPower(int lnbPower)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void setM7NetworkId(int m7NetworkId)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void setM7SublistId(int m7SublistId)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void setOperatorId(String operatorId)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void setOrbitalPosition(int orbitalPosition)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void setPolarization(int polarization)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void setScanFilter(int scanFilter)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void setScanMode(int scanMode)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void setSymbolRate(int symbolRate)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void setToneBurst(int toneBurst)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void setTransponderConfigurations(TransponderConfiguration[] transponderConfigurations)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void setTransponderFrequency(int transponderFrequency)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void setUnicable(boolean unicable)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void setUnicableFrequency(int unicableFrequency)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void setUnicableLnb(int unicableLnb)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void setUnicableUserBand(int unicableUserBand)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void setUnicableVersion(int unicableVersion)
+amazon.media.tv.dvb.models.SatelliteConfiguration	method	public void writeToParcel(Parcel parcel, int i)
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	field	private HashMap<Integer, DiseqcConfig> mDiseqcConfigMap;
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	field	private LcnConfig mLcnConfig;
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	field	private String mId;
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	field	private String mOperatorId;
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	field	private TransponderConfiguration[] mTransponderConfigurations;
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	field	private boolean mIsUpdateScan;
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	field	private boolean mUnicable;
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	field	private int mActiveDiseqcMode;
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	field	private int mLnbFrequencyHigh;
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	field	private int mLnbFrequencyLow;
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	field	private int mLnbPower;
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	field	private int mM7NetworkId;
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	field	private int mM7SublistId;
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	field	private int mOrbitalPosition;
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	field	private int mPolarization;
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	field	private int mScanFilter;
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	field	private int mScanMode;
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	field	private int mSymbolRate;
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	field	private int mToneBurst;
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	field	private int mTransponderFrequency;
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	field	private int mUnicableFrequency;
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	field	private int mUnicableLnb;
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	field	private int mUnicableUserBand;
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	field	private int mUnicableVersion;
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	method	private Builder()
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	method	public Builder withActiveDiseqcMode(int activeDiseqcMode)
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	method	public Builder withDiseqcConfigMap(HashMap<Integer, DiseqcConfig> diseqcConfigMap)
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	method	public Builder withId(String id)
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	method	public Builder withIsUpdateScan(boolean isUpdateScan)
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	method	public Builder withLcnConfig(LcnConfig lcnConfig)
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	method	public Builder withLnbFrequencyHigh(int lnbFrequencyHigh)
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	method	public Builder withLnbFrequencyLow(int lnbFrequencyLow)
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	method	public Builder withLnbPower(int lnbPower)
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	method	public Builder withM7NetworkId(int m7NetworkId)
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	method	public Builder withM7SublistId(int m7SublistId)
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	method	public Builder withOperatorId(String operatorId)
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	method	public Builder withOrbitalPosition(int orbitalPosition)
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	method	public Builder withPolarization(int polarization)
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	method	public Builder withScanFilter(int scanFilter)
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	method	public Builder withScanMode(int scanMode)
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	method	public Builder withSymbolRate(int symbolRate)
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	method	public Builder withToneBurst(int toneBurst)
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	method	public Builder withTransponderConfigurations(TransponderConfiguration[] transponderConfigurations)
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	method	public Builder withTransponderFrequency(int transponderFrequency)
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	method	public Builder withUnicable(boolean unicable)
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	method	public Builder withUnicableFrequency(int unicableFrequency)
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	method	public Builder withUnicableLnb(int unicableLnb)
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	method	public Builder withUnicableUserBand(int unicableUserBand)
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	method	public Builder withUnicableVersion(int unicableVersion)
+amazon.media.tv.dvb.models.SatelliteConfiguration$Builder	method	public SatelliteConfiguration build()
+amazon.media.tv.dvb.models.SatelliteConfiguration$DiseqcConfigException	method	public DiseqcConfigException(String message)
+amazon.media.tv.dvb.models.ScanConfiguration	field	private String mCountry;
+amazon.media.tv.dvb.models.ScanConfiguration	method	public String getCountry()
+amazon.media.tv.dvb.models.ScanConfiguration	method	public void setCountry(String country)
+amazon.media.tv.dvb.models.ScannedMetadata	field	private List<TargetRegion> mTargetRegions;
+amazon.media.tv.dvb.models.ScannedMetadata	field	private static final long serialVersionUID;
+amazon.media.tv.dvb.models.ScannedMetadata	method	public List<TargetRegion> getTargetRegions()
+amazon.media.tv.dvb.models.ScannedMetadata	method	public int describeContents()
+amazon.media.tv.dvb.models.ScannedMetadata	method	public void setTargetRegions(List<TargetRegion> targetRegions)
+amazon.media.tv.dvb.models.ScannedMetadata	method	public void writeToParcel(Parcel parcel, int i)
+amazon.media.tv.dvb.models.SdxFile	field	private static final long serialVersionUID;
+amazon.media.tv.dvb.models.SdxFile	method	public SdxFile(String name, int type, int numOfChannels, long lastModified)
+amazon.media.tv.dvb.models.SignalInfo	field	private int mSignalQuality;
+amazon.media.tv.dvb.models.SignalInfo	field	private int mSignalStrength;
+amazon.media.tv.dvb.models.SignalInfo	field	private static final long serialVersionUID;
+amazon.media.tv.dvb.models.SignalInfo	method	public SignalInfo(int signalStrength, int signalQuality)
+amazon.media.tv.dvb.models.SignalInfo	method	public int describeContents()
+amazon.media.tv.dvb.models.SignalInfo	method	public int getSignalQuality()
+amazon.media.tv.dvb.models.SignalInfo	method	public int getSignalStrength()
+amazon.media.tv.dvb.models.SignalInfo	method	public void writeToParcel(Parcel parcel, int i)
+amazon.media.tv.dvb.models.TargetRegion	field	private String mId;
+amazon.media.tv.dvb.models.TargetRegion	field	private String mName;
+amazon.media.tv.dvb.models.TargetRegion	field	private String mPrimaryRegionId;
+amazon.media.tv.dvb.models.TargetRegion	field	private String mSecondaryRegionId;
+amazon.media.tv.dvb.models.TargetRegion	field	private String mTertiaryRegionId;
+amazon.media.tv.dvb.models.TargetRegion	field	private int mType;
+amazon.media.tv.dvb.models.TargetRegion	field	private static final long serialVersionUID;
+amazon.media.tv.dvb.models.TargetRegion	field	public static final int TYPE_PRIMARY;
+amazon.media.tv.dvb.models.TargetRegion	field	public static final int TYPE_SECONDARY;
+amazon.media.tv.dvb.models.TargetRegion	field	public static final int TYPE_TERTIARY;
+amazon.media.tv.dvb.models.TargetRegion	method	public String getId()
+amazon.media.tv.dvb.models.TargetRegion	method	public String getName()
+amazon.media.tv.dvb.models.TargetRegion	method	public String getPrimaryRegionId()
+amazon.media.tv.dvb.models.TargetRegion	method	public String getSecondaryRegionId()
+amazon.media.tv.dvb.models.TargetRegion	method	public String getTertiaryRegionId()
+amazon.media.tv.dvb.models.TargetRegion	method	public TargetRegion()
+amazon.media.tv.dvb.models.TargetRegion	method	public TargetRegion(String id, String name, int type, String primaryRegionId, String secondaryRegionId, String tertiaryRegionId)
+amazon.media.tv.dvb.models.TargetRegion	method	public boolean equals(Object o)
+amazon.media.tv.dvb.models.TargetRegion	method	public int describeContents()
+amazon.media.tv.dvb.models.TargetRegion	method	public int getType()
+amazon.media.tv.dvb.models.TargetRegion	method	public int hashCode()
+amazon.media.tv.dvb.models.TargetRegion	method	public void setId(String id)
+amazon.media.tv.dvb.models.TargetRegion	method	public void setName(String name)
+amazon.media.tv.dvb.models.TargetRegion	method	public void setPrimaryRegionId(String primaryRegionId)
+amazon.media.tv.dvb.models.TargetRegion	method	public void setSecondaryRegionId(String secondaryRegionId)
+amazon.media.tv.dvb.models.TargetRegion	method	public void setTertiaryRegionId(String tertiaryRegionId)
+amazon.media.tv.dvb.models.TargetRegion	method	public void setType(int type)
+amazon.media.tv.dvb.models.TargetRegion	method	public void writeToParcel(Parcel parcel, int i)
+amazon.media.tv.dvb.models.TerrestrialConfiguration	field	private LcnConfig mLcnConfig;
+amazon.media.tv.dvb.models.TerrestrialConfiguration	field	private boolean mIsUpdateScan;
+amazon.media.tv.dvb.models.TerrestrialConfiguration	field	private int mFrequency;
+amazon.media.tv.dvb.models.TerrestrialConfiguration	field	private static final long serialVersionUID;
+amazon.media.tv.dvb.models.TerrestrialConfiguration	method	private TerrestrialConfiguration(Builder builder)
+amazon.media.tv.dvb.models.TerrestrialConfiguration	method	public LcnConfig getLcnConfig()
+amazon.media.tv.dvb.models.TerrestrialConfiguration	method	public String toString()
+amazon.media.tv.dvb.models.TerrestrialConfiguration	method	public TerrestrialConfiguration()
+amazon.media.tv.dvb.models.TerrestrialConfiguration	method	public TerrestrialConfiguration(int frequency)
+amazon.media.tv.dvb.models.TerrestrialConfiguration	method	public boolean isUpdateScan()
+amazon.media.tv.dvb.models.TerrestrialConfiguration	method	public int describeContents()
+amazon.media.tv.dvb.models.TerrestrialConfiguration	method	public int getFrequency()
+amazon.media.tv.dvb.models.TerrestrialConfiguration	method	public static Builder builder()
+amazon.media.tv.dvb.models.TerrestrialConfiguration	method	public void setFrequency(int frequency)
+amazon.media.tv.dvb.models.TerrestrialConfiguration	method	public void setIsUpdateScan(boolean isUpdateScan)
+amazon.media.tv.dvb.models.TerrestrialConfiguration	method	public void setLcnConfig(LcnConfig lcnConfig)
+amazon.media.tv.dvb.models.TerrestrialConfiguration	method	public void writeToParcel(Parcel parcel, int i)
+amazon.media.tv.dvb.models.TerrestrialConfiguration$Builder	field	private LcnConfig mLcnConfig;
+amazon.media.tv.dvb.models.TerrestrialConfiguration$Builder	field	private boolean mIsUpdateScan;
+amazon.media.tv.dvb.models.TerrestrialConfiguration$Builder	field	private int mFrequency;
+amazon.media.tv.dvb.models.TerrestrialConfiguration$Builder	method	public Builder withFrequency(int frequency)
+amazon.media.tv.dvb.models.TerrestrialConfiguration$Builder	method	public Builder withIsUpdateScan(boolean isUpdateScan)
+amazon.media.tv.dvb.models.TerrestrialConfiguration$Builder	method	public Builder withLcnConfig(LcnConfig lcnConfig)
+amazon.media.tv.dvb.models.TerrestrialConfiguration$Builder	method	public TerrestrialConfiguration build()
+amazon.media.tv.dvb.models.TransponderConfiguration	field	private int mFrequency;
+amazon.media.tv.dvb.models.TransponderConfiguration	field	private int mPolarization;
+amazon.media.tv.dvb.models.TransponderConfiguration	field	private int mSymbolRate;
+amazon.media.tv.dvb.models.TransponderConfiguration	method	private TransponderConfiguration(Builder builder)
+amazon.media.tv.dvb.models.TransponderConfiguration	method	public String toString()
+amazon.media.tv.dvb.models.TransponderConfiguration	method	public boolean equals(Object obj)
+amazon.media.tv.dvb.models.TransponderConfiguration	method	public int describeContents()
+amazon.media.tv.dvb.models.TransponderConfiguration	method	public int getFrequency()
+amazon.media.tv.dvb.models.TransponderConfiguration	method	public int getPolarization()
+amazon.media.tv.dvb.models.TransponderConfiguration	method	public int getSymbolRate()
+amazon.media.tv.dvb.models.TransponderConfiguration	method	public int hashCode()
+amazon.media.tv.dvb.models.TransponderConfiguration	method	public static Builder builder()
+amazon.media.tv.dvb.models.TransponderConfiguration	method	public void setFrequency(int frequency)
+amazon.media.tv.dvb.models.TransponderConfiguration	method	public void setPolarization(int polarization)
+amazon.media.tv.dvb.models.TransponderConfiguration	method	public void setSymbolRate(int symbolRate)
+amazon.media.tv.dvb.models.TransponderConfiguration	method	public void writeToParcel(Parcel parcel, int flags)
+amazon.media.tv.dvb.models.TransponderConfiguration$Builder	field	private int mFrequency;
+amazon.media.tv.dvb.models.TransponderConfiguration$Builder	field	private int mPolarization;
+amazon.media.tv.dvb.models.TransponderConfiguration$Builder	field	private int mSymbolRate;
+amazon.media.tv.dvb.models.TransponderConfiguration$Builder	method	private Builder()
+amazon.media.tv.dvb.models.TransponderConfiguration$Builder	method	public Builder withFrequency(int frequency)
+amazon.media.tv.dvb.models.TransponderConfiguration$Builder	method	public Builder withPolarization(int polarization)
+amazon.media.tv.dvb.models.TransponderConfiguration$Builder	method	public Builder withSymbolRate(int symbolRate)
+amazon.media.tv.dvb.models.TransponderConfiguration$Builder	method	public TransponderConfiguration build()
+amazon.media.tv.isdb.models.ISDBConfiguration	field	private final ISDBTScanConfiguration mISDBTScanConfiguration;
+amazon.media.tv.isdb.models.ISDBConfiguration	field	private static final long serialVersionUID;
+amazon.media.tv.isdb.models.ISDBConfiguration	method	private ISDBConfiguration(ISDBTScanConfiguration isdbtScanConfiguration)
+amazon.media.tv.isdb.models.ISDBConfiguration	method	public ISDBTScanConfiguration getISDBTScanConfiguration()
+amazon.media.tv.isdb.models.ISDBConfiguration	method	public int describeContents()
+amazon.media.tv.isdb.models.ISDBConfiguration	method	public static Builder builder()
+amazon.media.tv.isdb.models.ISDBConfiguration	method	public void writeToParcel(Parcel dest, int flags)
+amazon.media.tv.isdb.models.ISDBConfiguration$Builder	field	private ISDBTScanConfiguration mISDBTScanConfiguration;
+amazon.media.tv.isdb.models.ISDBConfiguration$Builder	method	private Builder()
+amazon.media.tv.isdb.models.ISDBConfiguration$Builder	method	public Builder withISDBTScanConfiguration(ISDBTScanConfiguration isdbtScanConfiguration)
+amazon.media.tv.isdb.models.ISDBConfiguration$Builder	method	public ISDBConfiguration build()
+amazon.media.tv.isdb.models.scan.ISDBScanConfiguration	method	protected ISDBScanConfiguration()
+amazon.media.tv.isdb.models.scan.ISDBScanConfiguration	method	public int describeContents()
+amazon.media.tv.isdb.models.scan.ISDBScannedChannel	field	private final String mChannelName;
+amazon.media.tv.isdb.models.scan.ISDBScannedChannel	field	private final String mChannelNumber;
+amazon.media.tv.isdb.models.scan.ISDBScannedChannel	field	private final int mChannelSignalStrength;
+amazon.media.tv.isdb.models.scan.ISDBScannedChannel	field	private final int mRemoteButtonNumber;
+amazon.media.tv.isdb.models.scan.ISDBScannedChannel	field	private static final long serialVersionUID;
+amazon.media.tv.isdb.models.scan.ISDBScannedChannel	method	private ISDBScannedChannel(int remoteButtonNumber, String channelNumber, String channelName, int channelSignalStrength)
+amazon.media.tv.isdb.models.scan.ISDBScannedChannel	method	public String getChannelName()
+amazon.media.tv.isdb.models.scan.ISDBScannedChannel	method	public String getChannelNumber()
+amazon.media.tv.isdb.models.scan.ISDBScannedChannel	method	public int describeContents()
+amazon.media.tv.isdb.models.scan.ISDBScannedChannel	method	public int getChannelSignalStrength()
+amazon.media.tv.isdb.models.scan.ISDBScannedChannel	method	public int getRemoteButtonNumber()
+amazon.media.tv.isdb.models.scan.ISDBScannedChannel	method	public static Builder builder()
+amazon.media.tv.isdb.models.scan.ISDBScannedChannel	method	public void writeToParcel(Parcel parcel, int flags)
+amazon.media.tv.isdb.models.scan.ISDBScannedChannel$Builder	field	private String mChannelName;
+amazon.media.tv.isdb.models.scan.ISDBScannedChannel$Builder	field	private String mChannelNumber;
+amazon.media.tv.isdb.models.scan.ISDBScannedChannel$Builder	field	private int mChannelSignalStrength;
+amazon.media.tv.isdb.models.scan.ISDBScannedChannel$Builder	field	private int mRemoteButtonNumber;
+amazon.media.tv.isdb.models.scan.ISDBScannedChannel$Builder	field	private static final int MAX_REMOTE_BUTTON_NUMBER;
+amazon.media.tv.isdb.models.scan.ISDBScannedChannel$Builder	field	private static final int MIN_REMOTE_BUTTON_NUMBER;
+amazon.media.tv.isdb.models.scan.ISDBScannedChannel$Builder	method	private Builder()
+amazon.media.tv.isdb.models.scan.ISDBScannedChannel$Builder	method	public Builder withChannelName(String channelName)
+amazon.media.tv.isdb.models.scan.ISDBScannedChannel$Builder	method	public Builder withChannelNumber(String channelNumber)
+amazon.media.tv.isdb.models.scan.ISDBScannedChannel$Builder	method	public Builder withChannelSignalStrength(int channelSignalStrength)
+amazon.media.tv.isdb.models.scan.ISDBScannedChannel$Builder	method	public Builder withRemoteButtonNumber(int remoteButtonNumber)
+amazon.media.tv.isdb.models.scan.ISDBScannedChannel$Builder	method	public ISDBScannedChannel build()
+amazon.media.tv.isdb.models.scan.ISDBScannedMetadata	field	private final List<ISDBScannedChannel> mISDBScannedChannels;
+amazon.media.tv.isdb.models.scan.ISDBScannedMetadata	field	private static final long serialVersionUID;
+amazon.media.tv.isdb.models.scan.ISDBScannedMetadata	method	private ISDBScannedMetadata(List<ISDBScannedChannel> isdbScannedChannels)
+amazon.media.tv.isdb.models.scan.ISDBScannedMetadata	method	public List<ISDBScannedChannel> getISDBScannedChannels()
+amazon.media.tv.isdb.models.scan.ISDBScannedMetadata	method	public int describeContents()
+amazon.media.tv.isdb.models.scan.ISDBScannedMetadata	method	public static Builder builder()
+amazon.media.tv.isdb.models.scan.ISDBScannedMetadata	method	public void writeToParcel(Parcel parcel, int flags)
+amazon.media.tv.isdb.models.scan.ISDBScannedMetadata$Builder	field	private List<ISDBScannedChannel> mISDBScannedChannels;
+amazon.media.tv.isdb.models.scan.ISDBScannedMetadata$Builder	method	private Builder()
+amazon.media.tv.isdb.models.scan.ISDBScannedMetadata$Builder	method	public Builder withISDBScannedChannels(List<ISDBScannedChannel> isdbScannedChannels)
+amazon.media.tv.isdb.models.scan.ISDBScannedMetadata$Builder	method	public ISDBScannedMetadata build()
+amazon.media.tv.isdb.models.scan.ISDBTScanConfiguration	field	private final int mBandwidth;
+amazon.media.tv.isdb.models.scan.ISDBTScanConfiguration	field	private final int mScanMode;
+amazon.media.tv.isdb.models.scan.ISDBTScanConfiguration	field	private static final long serialVersionUID;
+amazon.media.tv.isdb.models.scan.ISDBTScanConfiguration	method	private ISDBTScanConfiguration(int bandwidth, int scanMode)
+amazon.media.tv.isdb.models.scan.ISDBTScanConfiguration	method	public String toString()
+amazon.media.tv.isdb.models.scan.ISDBTScanConfiguration	method	public int getBandwidth()
+amazon.media.tv.isdb.models.scan.ISDBTScanConfiguration	method	public int getScanMode()
+amazon.media.tv.isdb.models.scan.ISDBTScanConfiguration	method	public static Builder builder()
+amazon.media.tv.isdb.models.scan.ISDBTScanConfiguration	method	public void writeToParcel(Parcel dest, int flags)
+amazon.media.tv.isdb.models.scan.ISDBTScanConfiguration$Bandwidth	field	public static final int AIR;
+amazon.media.tv.isdb.models.scan.ISDBTScanConfiguration$Bandwidth	field	public static final int ALL;
+amazon.media.tv.isdb.models.scan.ISDBTScanConfiguration$Bandwidth	field	public static final int CABLE;
+amazon.media.tv.isdb.models.scan.ISDBTScanConfiguration$Builder	field	private int mBandwidth;
+amazon.media.tv.isdb.models.scan.ISDBTScanConfiguration$Builder	field	private int mScanMode;
+amazon.media.tv.isdb.models.scan.ISDBTScanConfiguration$Builder	method	private Builder()
+amazon.media.tv.isdb.models.scan.ISDBTScanConfiguration$Builder	method	public Builder withBandwidth(int bandwidth)
+amazon.media.tv.isdb.models.scan.ISDBTScanConfiguration$Builder	method	public Builder withScanMode(int scanMode)
+amazon.media.tv.isdb.models.scan.ISDBTScanConfiguration$Builder	method	public ISDBTScanConfiguration build()
+amazon.media.tv.playbackconflict.ConflictResolutionGroup	field	private final ConflictResolutionType mConflictResolutionType;
+amazon.media.tv.playbackconflict.ConflictResolutionGroup	field	private final List<PlaybackSession> mPlaybackSessions;
+amazon.media.tv.playbackconflict.ConflictResolutionGroup	field	private final List<RecordingSession> mRecordingSessions;
+amazon.media.tv.playbackconflict.ConflictResolutionGroup	field	private final String mInternalProviderData;
+amazon.media.tv.playbackconflict.ConflictResolutionGroup	field	public static final Parcelable.Creator<ConflictResolutionGroup> CREATOR;
+amazon.media.tv.playbackconflict.ConflictResolutionGroup	method	protected ConflictResolutionGroup(Parcel source)
+amazon.media.tv.playbackconflict.ConflictResolutionGroup	method	public ConflictResolutionType getResolutionType()
+amazon.media.tv.playbackconflict.ConflictResolutionGroup	method	public List<PlaybackSession> getPlaybackSessions()
+amazon.media.tv.playbackconflict.ConflictResolutionGroup	method	public List<RecordingSession> getRecordingSessions()
+amazon.media.tv.playbackconflict.ConflictResolutionGroup	method	public String getInternalProviderData()
+amazon.media.tv.playbackconflict.ConflictResolutionGroup	method	public String toString()
+amazon.media.tv.playbackconflict.ConflictResolutionGroup	method	public boolean equals(Object other)
+amazon.media.tv.playbackconflict.ConflictResolutionGroup	method	public int describeContents()
+amazon.media.tv.playbackconflict.ConflictResolutionGroup	method	public int hashCode()
+amazon.media.tv.playbackconflict.ConflictResolutionGroup	method	public void writeToParcel(Parcel destination, int flags)
+amazon.media.tv.playbackconflict.ConflictResolutionGroup$Builder	field	private ConflictResolutionType mConflictResolutionType;
+amazon.media.tv.playbackconflict.ConflictResolutionGroup$Builder	field	private List<PlaybackSession> mPlaybackSessions;
+amazon.media.tv.playbackconflict.ConflictResolutionGroup$Builder	field	private List<RecordingSession> mRecordingSessions;
+amazon.media.tv.playbackconflict.ConflictResolutionGroup$Builder	field	private String mInternalProviderData;
+amazon.media.tv.playbackconflict.ConflictResolutionGroup$Builder	method	public Builder internalProviderData(String internalProviderData)
+amazon.media.tv.playbackconflict.ConflictResolutionGroup$Builder	method	public Builder playbackSessions(List<PlaybackSession> playbackSessions)
+amazon.media.tv.playbackconflict.ConflictResolutionGroup$Builder	method	public Builder recordingSessions(List<RecordingSession> recordingSessions)
+amazon.media.tv.playbackconflict.ConflictResolutionGroup$Builder	method	public Builder resolutionType(ConflictResolutionType conflictResolutionType)
+amazon.media.tv.playbackconflict.ConflictResolutionGroup$Builder	method	public ConflictResolutionGroup build()
+amazon.media.tv.playbackconflict.ConflictResolutionGroup$ConflictResolutionGroupCreator	method	private ConflictResolutionGroupCreator()
+amazon.media.tv.playbackconflict.ConflictResolutionGroup$ConflictResolutionGroupCreator	method	public ConflictResolutionGroup createFromParcel(Parcel source)
+amazon.media.tv.playbackconflict.ConflictResolutionGroup$ConflictResolutionGroupCreator	method	public ConflictResolutionGroup[] newArray(int size)
+amazon.media.tv.playbackconflict.PlaybackConflict	field	private final List<ConflictResolutionGroup> mConflictGroups;
+amazon.media.tv.playbackconflict.PlaybackConflict	field	private final List<PlaybackConflictResolutionGroup> mResolutionGroups;
+amazon.media.tv.playbackconflict.PlaybackConflict	field	private final Uri mPlaybackUri;
+amazon.media.tv.playbackconflict.PlaybackConflict	field	private final boolean mIsChannelUri;
+amazon.media.tv.playbackconflict.PlaybackConflict	field	public static final Parcelable.Creator<PlaybackConflict> CREATOR;
+amazon.media.tv.playbackconflict.PlaybackConflict	method	protected PlaybackConflict(Parcel source)
+amazon.media.tv.playbackconflict.PlaybackConflict	method	public List<ConflictResolutionGroup> getConflictGroups()
+amazon.media.tv.playbackconflict.PlaybackConflict	method	public List<PlaybackConflictResolutionGroup> getResolutionGroups()
+amazon.media.tv.playbackconflict.PlaybackConflict	method	public String toString()
+amazon.media.tv.playbackconflict.PlaybackConflict	method	public Uri getPlaybackUri()
+amazon.media.tv.playbackconflict.PlaybackConflict	method	public boolean equals(Object other)
+amazon.media.tv.playbackconflict.PlaybackConflict	method	public boolean isChannelUri()
+amazon.media.tv.playbackconflict.PlaybackConflict	method	public int describeContents()
+amazon.media.tv.playbackconflict.PlaybackConflict	method	public int hashCode()
+amazon.media.tv.playbackconflict.PlaybackConflict	method	public void writeToParcel(Parcel parcel, int i)
+amazon.media.tv.playbackconflict.PlaybackConflict$Builder	field	private List<ConflictResolutionGroup> mConflictGroups;
+amazon.media.tv.playbackconflict.PlaybackConflict$Builder	field	private List<PlaybackConflictResolutionGroup> mResolutionGroups;
+amazon.media.tv.playbackconflict.PlaybackConflict$Builder	field	private Uri mPlaybackUri;
+amazon.media.tv.playbackconflict.PlaybackConflict$Builder	field	private boolean mIsChannelUri;
+amazon.media.tv.playbackconflict.PlaybackConflict$Builder	method	public Builder channelUri(Uri channelUri)
+amazon.media.tv.playbackconflict.PlaybackConflict$Builder	method	public Builder conflictGroups(List<ConflictResolutionGroup> conflictGroups)
+amazon.media.tv.playbackconflict.PlaybackConflict$Builder	method	public Builder recordedContentUri(Uri recordedContentUri)
+amazon.media.tv.playbackconflict.PlaybackConflict$Builder	method	public Builder resolutionGroups(List<PlaybackConflictResolutionGroup> resolutionGroups)
+amazon.media.tv.playbackconflict.PlaybackConflict$Builder	method	public PlaybackConflict build()
+amazon.media.tv.playbackconflict.PlaybackConflict$PlaybackConflictCreator	method	private PlaybackConflictCreator()
+amazon.media.tv.playbackconflict.PlaybackConflict$PlaybackConflictCreator	method	public PlaybackConflict createFromParcel(Parcel source)
+amazon.media.tv.playbackconflict.PlaybackConflict$PlaybackConflictCreator	method	public PlaybackConflict[] newArray(int size)
+amazon.media.tv.playbackconflict.PlaybackConflictResolutionGroup	field	private final List<PlaybackSession> mPlaybackSessions;
+amazon.media.tv.playbackconflict.PlaybackConflictResolutionGroup	field	private final List<RecordingSession> mRecordingSessions;
+amazon.media.tv.playbackconflict.PlaybackConflictResolutionGroup	field	private final String mResolutionId;
+amazon.media.tv.playbackconflict.PlaybackConflictResolutionGroup	field	public static final Parcelable.Creator<PlaybackConflictResolutionGroup> CREATOR;
+amazon.media.tv.playbackconflict.PlaybackConflictResolutionGroup	method	protected PlaybackConflictResolutionGroup(Parcel source)
+amazon.media.tv.playbackconflict.PlaybackConflictResolutionGroup	method	public List<PlaybackSession> getPlaybackSessions()
+amazon.media.tv.playbackconflict.PlaybackConflictResolutionGroup	method	public List<RecordingSession> getRecordingSessions()
+amazon.media.tv.playbackconflict.PlaybackConflictResolutionGroup	method	public String getResolutionId()
+amazon.media.tv.playbackconflict.PlaybackConflictResolutionGroup	method	public String toString()
+amazon.media.tv.playbackconflict.PlaybackConflictResolutionGroup	method	public boolean equals(Object other)
+amazon.media.tv.playbackconflict.PlaybackConflictResolutionGroup	method	public boolean isResolvable()
+amazon.media.tv.playbackconflict.PlaybackConflictResolutionGroup	method	public int describeContents()
+amazon.media.tv.playbackconflict.PlaybackConflictResolutionGroup	method	public int hashCode()
+amazon.media.tv.playbackconflict.PlaybackConflictResolutionGroup	method	public void writeToParcel(Parcel destination, int flags)
+amazon.media.tv.playbackconflict.PlaybackConflictResolutionGroup$Builder	field	private List<PlaybackSession> mPlaybackSessions;
+amazon.media.tv.playbackconflict.PlaybackConflictResolutionGroup$Builder	field	private List<RecordingSession> mRecordingSessions;
+amazon.media.tv.playbackconflict.PlaybackConflictResolutionGroup$Builder	field	private String mResolutionId;
+amazon.media.tv.playbackconflict.PlaybackConflictResolutionGroup$Builder	method	public Builder playbackSessions(List<PlaybackSession> playbackSessions)
+amazon.media.tv.playbackconflict.PlaybackConflictResolutionGroup$Builder	method	public Builder recordingSessions(List<RecordingSession> recordingSessions)
+amazon.media.tv.playbackconflict.PlaybackConflictResolutionGroup$Builder	method	public Builder resolutionId(String resolutionId)
+amazon.media.tv.playbackconflict.PlaybackConflictResolutionGroup$Builder	method	public PlaybackConflictResolutionGroup build()
+amazon.media.tv.playbackconflict.PlaybackConflictResolutionGroup$PlaybackConflictResolutionGroupCreator	method	private PlaybackConflictResolutionGroupCreator()
+amazon.media.tv.playbackconflict.PlaybackConflictResolutionGroup$PlaybackConflictResolutionGroupCreator	method	public PlaybackConflictResolutionGroup createFromParcel(Parcel source)
+amazon.media.tv.playbackconflict.PlaybackConflictResolutionGroup$PlaybackConflictResolutionGroupCreator	method	public PlaybackConflictResolutionGroup[] newArray(int size)
+amazon.media.tv.playbackconflict.PlaybackSession	field	private final String mClientFriendlyName;
+amazon.media.tv.playbackconflict.PlaybackSession	field	private final String mInternalProviderData;
+amazon.media.tv.playbackconflict.PlaybackSession	field	private final Uri mPlaybackUri;
+amazon.media.tv.playbackconflict.PlaybackSession	field	private final boolean mIsChannelUri;
+amazon.media.tv.playbackconflict.PlaybackSession	field	public static final Parcelable.Creator<PlaybackSession> CREATOR;
+amazon.media.tv.playbackconflict.PlaybackSession	method	protected PlaybackSession(Parcel source)
+amazon.media.tv.playbackconflict.PlaybackSession	method	public String getClientFriendlyName()
+amazon.media.tv.playbackconflict.PlaybackSession	method	public String getInternalProviderData()
+amazon.media.tv.playbackconflict.PlaybackSession	method	public String toString()
+amazon.media.tv.playbackconflict.PlaybackSession	method	public Uri getPlaybackUri()
+amazon.media.tv.playbackconflict.PlaybackSession	method	public boolean equals(Object other)
+amazon.media.tv.playbackconflict.PlaybackSession	method	public boolean isChannelUri()
+amazon.media.tv.playbackconflict.PlaybackSession	method	public int describeContents()
+amazon.media.tv.playbackconflict.PlaybackSession	method	public int hashCode()
+amazon.media.tv.playbackconflict.PlaybackSession	method	public void writeToParcel(Parcel parcel, int i)
+amazon.media.tv.playbackconflict.PlaybackSession$Builder	field	private String mClientFriendlyName;
+amazon.media.tv.playbackconflict.PlaybackSession$Builder	field	private String mInternalProviderData;
+amazon.media.tv.playbackconflict.PlaybackSession$Builder	field	private Uri mPlaybackUri;
+amazon.media.tv.playbackconflict.PlaybackSession$Builder	field	private boolean mIsChannelUri;
+amazon.media.tv.playbackconflict.PlaybackSession$Builder	method	public Builder channelUri(Uri channelUri)
+amazon.media.tv.playbackconflict.PlaybackSession$Builder	method	public Builder clientFriendlyName(String clientFriendlyName)
+amazon.media.tv.playbackconflict.PlaybackSession$Builder	method	public Builder internalProviderData(String internalProviderData)
+amazon.media.tv.playbackconflict.PlaybackSession$Builder	method	public Builder recordedProgramUri(Uri recordedProgramUri)
+amazon.media.tv.playbackconflict.PlaybackSession$Builder	method	public PlaybackSession build()
+amazon.media.tv.playbackconflict.PlaybackSession$PlaybackSessionCreator	method	private PlaybackSessionCreator()
+amazon.media.tv.playbackconflict.PlaybackSession$PlaybackSessionCreator	method	public PlaybackSession createFromParcel(Parcel source)
+amazon.media.tv.playbackconflict.PlaybackSession$PlaybackSessionCreator	method	public PlaybackSession[] newArray(int size)
+amazon.media.tv.playbackconflict.RecordingSession	field	private final String mInternalProviderData;
+amazon.media.tv.playbackconflict.RecordingSession	field	private final Uri mRecordingUri;
+amazon.media.tv.playbackconflict.RecordingSession	field	private final boolean mIsFutureRecording;
+amazon.media.tv.playbackconflict.RecordingSession	field	private final int mRecordingProgress;
+amazon.media.tv.playbackconflict.RecordingSession	field	public static final Parcelable.Creator<RecordingSession> CREATOR;
+amazon.media.tv.playbackconflict.RecordingSession	method	protected RecordingSession(Parcel source)
+amazon.media.tv.playbackconflict.RecordingSession	method	public String getInternalProviderData()
+amazon.media.tv.playbackconflict.RecordingSession	method	public String toString()
+amazon.media.tv.playbackconflict.RecordingSession	method	public Uri getRecordingUri()
+amazon.media.tv.playbackconflict.RecordingSession	method	public boolean equals(Object other)
+amazon.media.tv.playbackconflict.RecordingSession	method	public boolean isFutureRecording()
+amazon.media.tv.playbackconflict.RecordingSession	method	public int describeContents()
+amazon.media.tv.playbackconflict.RecordingSession	method	public int getRecordingProgress()
+amazon.media.tv.playbackconflict.RecordingSession	method	public int hashCode()
+amazon.media.tv.playbackconflict.RecordingSession	method	public void writeToParcel(Parcel parcel, int i)
+amazon.media.tv.playbackconflict.RecordingSession$Builder	field	private String mInternalProviderData;
+amazon.media.tv.playbackconflict.RecordingSession$Builder	field	private Uri mRecordingUri;
+amazon.media.tv.playbackconflict.RecordingSession$Builder	field	private boolean mIsFutureRecording;
+amazon.media.tv.playbackconflict.RecordingSession$Builder	field	private int mRecordingProgress;
+amazon.media.tv.playbackconflict.RecordingSession$Builder	method	public Builder internalProviderData(String internalProviderData)
+amazon.media.tv.playbackconflict.RecordingSession$Builder	method	public Builder progress(int recordingProgress)
+amazon.media.tv.playbackconflict.RecordingSession$Builder	method	public Builder recordedProgramUri(Uri recordedProgramUri)
+amazon.media.tv.playbackconflict.RecordingSession$Builder	method	public Builder scheduledRecordingUri(Uri scheduledRecordingUri)
+amazon.media.tv.playbackconflict.RecordingSession$Builder	method	public RecordingSession build()
+amazon.media.tv.playbackconflict.RecordingSession$RecordingSessionCreator	method	private RecordingSessionCreator()
+amazon.media.tv.playbackconflict.RecordingSession$RecordingSessionCreator	method	public RecordingSession createFromParcel(Parcel source)
+amazon.media.tv.playbackconflict.RecordingSession$RecordingSessionCreator	method	public RecordingSession[] newArray(int size)
+amazon.media.tv.tvview.RemoteTvViewFeature	method	public RemoteTvViewFeature(Context context)
+amazon.media.tv.tvview.RemoteTvViewFeature	method	public boolean isAndroidTvViewEnabled()
+amazon.media.tv.tvview.TimeShiftPlaybackManager	field	private AmazonTvInputCallback amazonTvInputCallback;
+amazon.media.tv.tvview.TimeShiftPlaybackManager	field	private int currentState;
+amazon.media.tv.tvview.TimeShiftPlaybackManager	field	private static final String TAG;
+amazon.media.tv.tvview.TimeShiftPlaybackManager	method	private void setPlaybackState(int playbackState)
+amazon.media.tv.tvview.TimeShiftPlaybackManager	method	public void clear()
+amazon.media.tv.tvview.TimeShiftPlaybackManager	method	public void pause()
+amazon.media.tv.tvview.TimeShiftPlaybackManager	method	public void setAmazonTvInputCallback(AmazonTvInputCallback amazonTvInputCallback)
+amazon.media.tv.tvview.TimeShiftPlaybackManager	method	public void start()
+amazon.media.tv.tvview.TvExtensionCallbackProxy	field	private AmazonTvInputCallback amazonTvInputCallback;
+amazon.media.tv.tvview.TvExtensionCallbackProxy	field	private RemoteTvView.TimeShiftPositionCallback timeShiftPositionCallback;
+amazon.media.tv.tvview.TvExtensionCallbackProxy	field	private TvExtensionCallback tvExtensionCallback;
+amazon.media.tv.tvview.TvExtensionCallbackProxy	field	private final Handler handler;
+amazon.media.tv.tvview.TvExtensionCallbackProxy	field	private static final String TAG;
+amazon.media.tv.tvview.TvExtensionCallbackProxy	method	public TvExtensionCallbackProxy(Handler handler)
+amazon.media.tv.tvview.TvExtensionCallbackProxy	method	public void onApplicationKeySetChanged(final String inputId, final int keySetBitMask, final int[] otherKeys)
+amazon.media.tv.tvview.TvExtensionCallbackProxy	method	public void onChannelSignalQualityChanged(final String inputId, final int signalQuality)
+amazon.media.tv.tvview.TvExtensionCallbackProxy	method	public void onChannelSignalStrengthChanged(final String inputId, final int signalStrength)
+amazon.media.tv.tvview.TvExtensionCallbackProxy	method	public void onFrequencyManualTuneInfo(final String inputId, final float[] supportedOffsets, final float currentOffset)
+amazon.media.tv.tvview.TvExtensionCallbackProxy	method	public void onFrequencyManualTuneInfo(float[] supportedOffsets, float currentOffset)
+amazon.media.tv.tvview.TvExtensionCallbackProxy	method	public void onInteractiveAppStatusChanged(final String inputId, final int status)
+amazon.media.tv.tvview.TvExtensionCallbackProxy	method	public void onPlaybackConflict(final String inputId, final PlaybackConflict playbackConflict)
+amazon.media.tv.tvview.TvExtensionCallbackProxy	method	public void onPlaybackConflictResolutionFailed(final String inputId, final int errorCode)
+amazon.media.tv.tvview.TvExtensionCallbackProxy	method	public void onPlaybackConflictResolved(final String inputId)
+amazon.media.tv.tvview.TvExtensionCallbackProxy	method	public void onSupportsTrickplayPreview(final String inputId, final boolean isSupported)
+amazon.media.tv.tvview.TvExtensionCallbackProxy	method	public void onTeletextStatusChanged(final String inputId, final int status)
+amazon.media.tv.tvview.TvExtensionCallbackProxy	method	public void onTimeShiftErrorEvent(final String inputId, final TimeShiftConfiguration config, final int notificationType)
+amazon.media.tv.tvview.TvExtensionCallbackProxy	method	public void onTimeShiftLivePositionDelta(final String inputId, final long timeMs)
+amazon.media.tv.tvview.TvExtensionCallbackProxy	method	public void setAmazonTvInputCallback(AmazonTvInputCallback amazonTvInputCallback)
+amazon.media.tv.tvview.TvExtensionCallbackProxy	method	public void setTimeShiftPositionCallback(RemoteTvView.TimeShiftPositionCallback timeShiftPositionCallback)
+amazon.media.tv.tvview.TvExtensionCallbackProxy	method	public void setTvExtensionCallback(TvExtensionCallback tvExtensionCallback)

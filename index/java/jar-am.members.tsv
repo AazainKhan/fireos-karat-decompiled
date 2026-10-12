@@ -1,0 +1,76 @@
+class	kind	declaration
+com.android.commands.am.Am	field	private IActivityManager mAm;
+com.android.commands.am.Am	field	private IPackageManager mPm;
+com.android.commands.am.Am	method	public static void main(String[] strArr)
+com.android.commands.am.Am	method	public void onRun() throws Exception
+com.android.commands.am.Am	method	public void onShowUsage(PrintStream printStream)
+com.android.commands.am.Am	method	public void runInstrument() throws Exception
+com.android.commands.am.Am$MyShellCallback	method	public ParcelFileDescriptor onOpenFile(String str, String str2, String str3)
+com.android.commands.am.Instrument	field	private final IActivityManager mAm;
+com.android.commands.am.Instrument	field	private final IPackageManager mPm;
+com.android.commands.am.Instrument	field	private final IWindowManager mWm;
+com.android.commands.am.Instrument	field	private static final String TAG;
+com.android.commands.am.Instrument	field	private static final int STATUS_TEST_FAILED_ASSERTION;
+com.android.commands.am.Instrument	field	private static final int STATUS_TEST_FAILED_OTHER;
+com.android.commands.am.Instrument	field	private static final int STATUS_TEST_PASSED;
+com.android.commands.am.Instrument	field	private static final int STATUS_TEST_STARTED;
+com.android.commands.am.Instrument	field	public Bundle args;
+com.android.commands.am.Instrument	field	public String abi;
+com.android.commands.am.Instrument	field	public String componentNameArg;
+com.android.commands.am.Instrument	field	public String profileFile;
+com.android.commands.am.Instrument	field	public boolean disableHiddenApiChecks;
+com.android.commands.am.Instrument	field	public boolean disableIsolatedStorage;
+com.android.commands.am.Instrument	field	public boolean disableTestApiChecks;
+com.android.commands.am.Instrument	field	public boolean noWindowAnimation;
+com.android.commands.am.Instrument	field	public boolean rawMode;
+com.android.commands.am.Instrument	field	public boolean wait;
+com.android.commands.am.Instrument	field	public int userId;
+com.android.commands.am.Instrument	field	public static final String DEFAULT_LOG_DIR;
+com.android.commands.am.Instrument	method	private ComponentName parseComponentName(String str) throws Exception
+com.android.commands.am.Instrument	method	public Instrument(IActivityManager iActivityManager, IPackageManager iPackageManager)
+com.android.commands.am.Instrument	method	public static Collection<String> sorted(Collection<String> collection)
+com.android.commands.am.Instrument	method	public static String readLogcat(long j)
+com.android.commands.am.Instrument	method	public void run() throws Exception
+com.android.commands.am.Instrument$InstrumentationWatcher	field	private boolean mFinished;
+com.android.commands.am.Instrument$InstrumentationWatcher	field	private final StatusReporter mReporter;
+com.android.commands.am.Instrument$InstrumentationWatcher	method	public InstrumentationWatcher(StatusReporter statusReporter)
+com.android.commands.am.Instrument$InstrumentationWatcher	method	public boolean waitForFinish()
+com.android.commands.am.Instrument$InstrumentationWatcher	method	public void instrumentationFinished(ComponentName componentName, int i, Bundle bundle)
+com.android.commands.am.Instrument$InstrumentationWatcher	method	public void instrumentationStatus(ComponentName componentName, int i, Bundle bundle)
+com.android.commands.am.Instrument$ProtoStatusReporter	field	private File mLog;
+com.android.commands.am.Instrument$ProtoStatusReporter	field	private long mTestStartMs;
+com.android.commands.am.Instrument$ProtoStatusReporter	method	private void outputProto(ProtoOutputStream protoOutputStream)
+com.android.commands.am.Instrument$ProtoStatusReporter	method	private void writeBundle(ProtoOutputStream protoOutputStream, long j, Bundle bundle)
+com.android.commands.am.Instrument$ProtoStatusReporter	method	public void onError(String str, boolean z)
+com.android.commands.am.Instrument$ProtoStatusReporter	method	public void onInstrumentationFinishedLocked(ComponentName componentName, int i, Bundle bundle)
+com.android.commands.am.Instrument$ProtoStatusReporter	method	public void onInstrumentationStatusLocked(ComponentName componentName, int i, Bundle bundle)
+com.android.commands.am.Instrument$TextStatusReporter	field	private boolean mRawMode;
+com.android.commands.am.Instrument$TextStatusReporter	method	public TextStatusReporter(boolean z)
+com.android.commands.am.Instrument$TextStatusReporter	method	public void onError(String str, boolean z)
+com.android.commands.am.Instrument$TextStatusReporter	method	public void onInstrumentationFinishedLocked(ComponentName componentName, int i, Bundle bundle)
+com.android.commands.am.Instrument$TextStatusReporter	method	public void onInstrumentationStatusLocked(ComponentName componentName, int i, Bundle bundle)
+com.android.commands.am.InstrumentationData	field	public static final int SESSION_ABORTED;
+com.android.commands.am.InstrumentationData	field	public static final int SESSION_FINISHED;
+com.android.commands.am.InstrumentationData$ResultsBundle	field	public static final long ENTRIES;
+com.android.commands.am.InstrumentationData$ResultsBundle	method	public ResultsBundle()
+com.android.commands.am.InstrumentationData$ResultsBundleEntry	field	public static final long KEY;
+com.android.commands.am.InstrumentationData$ResultsBundleEntry	field	public static final long VALUE_BUNDLE;
+com.android.commands.am.InstrumentationData$ResultsBundleEntry	field	public static final long VALUE_BYTES;
+com.android.commands.am.InstrumentationData$ResultsBundleEntry	field	public static final long VALUE_DOUBLE;
+com.android.commands.am.InstrumentationData$ResultsBundleEntry	field	public static final long VALUE_FLOAT;
+com.android.commands.am.InstrumentationData$ResultsBundleEntry	field	public static final long VALUE_INT;
+com.android.commands.am.InstrumentationData$ResultsBundleEntry	field	public static final long VALUE_LONG;
+com.android.commands.am.InstrumentationData$ResultsBundleEntry	field	public static final long VALUE_STRING;
+com.android.commands.am.InstrumentationData$ResultsBundleEntry	method	public ResultsBundleEntry()
+com.android.commands.am.InstrumentationData$Session	field	public static final long SESSION_STATUS;
+com.android.commands.am.InstrumentationData$Session	field	public static final long TEST_STATUS;
+com.android.commands.am.InstrumentationData$Session	method	public Session()
+com.android.commands.am.InstrumentationData$SessionStatus	field	public static final long ERROR_TEXT;
+com.android.commands.am.InstrumentationData$SessionStatus	field	public static final long RESULTS;
+com.android.commands.am.InstrumentationData$SessionStatus	field	public static final long RESULT_CODE;
+com.android.commands.am.InstrumentationData$SessionStatus	field	public static final long STATUS_CODE;
+com.android.commands.am.InstrumentationData$SessionStatus	method	public SessionStatus()
+com.android.commands.am.InstrumentationData$TestStatus	field	public static final long LOGCAT;
+com.android.commands.am.InstrumentationData$TestStatus	field	public static final long RESULTS;
+com.android.commands.am.InstrumentationData$TestStatus	field	public static final long RESULT_CODE;
+com.android.commands.am.InstrumentationData$TestStatus	method	public TestStatus()

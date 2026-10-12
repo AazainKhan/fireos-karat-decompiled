@@ -1,0 +1,94 @@
+class	kind	declaration
+com.android.commands.hid.Device	field	private final DeviceHandler mHandler;
+com.android.commands.hid.Device	field	private final HandlerThread mThread;
+com.android.commands.hid.Device	field	private final Map<ByteBuffer, byte[]> mOutputs;
+com.android.commands.hid.Device	field	private final Object mCond;
+com.android.commands.hid.Device	field	private final SparseArray<byte[]> mFeatureReports;
+com.android.commands.hid.Device	field	private final int mId;
+com.android.commands.hid.Device	field	private long mTimeToSend;
+com.android.commands.hid.Device	field	private static final String TAG;
+com.android.commands.hid.Device	field	private static final int MSG_CLOSE_DEVICE;
+com.android.commands.hid.Device	field	private static final int MSG_OPEN_DEVICE;
+com.android.commands.hid.Device	field	private static final int MSG_SEND_GET_FEATURE_REPORT_REPLY;
+com.android.commands.hid.Device	field	private static final int MSG_SEND_REPORT;
+com.android.commands.hid.Device	method	public Device(int i, String str, int i2, int i3, int i4, byte[] bArr, byte[] bArr2, SparseArray<byte[]> sparseArray, Map<ByteBuffer, byte[]> map)
+com.android.commands.hid.Device	method	public static native long nativeOpenDevice(String str, int i, int i2, int i3, int i4, byte[] bArr, DeviceCallback deviceCallback);
+com.android.commands.hid.Device	method	public static native void nativeCloseDevice(long j);
+com.android.commands.hid.Device	method	public static native void nativeSendGetFeatureReportReply(long j, int i, byte[] bArr);
+com.android.commands.hid.Device	method	public static native void nativeSendReport(long j, byte[] bArr);
+com.android.commands.hid.Device	method	public void addDelay(int i)
+com.android.commands.hid.Device	method	public void close()
+com.android.commands.hid.Device	method	public void sendReport(byte[] bArr)
+com.android.commands.hid.Device$DeviceCallback	method	private DeviceCallback()
+com.android.commands.hid.Device$DeviceCallback	method	public void onDeviceError()
+com.android.commands.hid.Device$DeviceCallback	method	public void onDeviceGetReport(int i, int i2)
+com.android.commands.hid.Device$DeviceCallback	method	public void onDeviceOpen()
+com.android.commands.hid.Device$DeviceCallback	method	public void onDeviceOutput(byte[] bArr)
+com.android.commands.hid.Device$DeviceHandler	field	private int mBarrierToken;
+com.android.commands.hid.Device$DeviceHandler	field	private long mPtr;
+com.android.commands.hid.Device$DeviceHandler	method	public DeviceHandler(Looper looper)
+com.android.commands.hid.Device$DeviceHandler	method	public void handleMessage(Message message)
+com.android.commands.hid.Device$DeviceHandler	method	public void pauseEvents()
+com.android.commands.hid.Device$DeviceHandler	method	public void resumeEvents()
+com.android.commands.hid.Event	field	private Bus mBus;
+com.android.commands.hid.Event	field	private Map<ByteBuffer, byte[]> mOutputs;
+com.android.commands.hid.Event	field	private SparseArray<byte[]> mFeatureReports;
+com.android.commands.hid.Event	field	private String mCommand;
+com.android.commands.hid.Event	field	private String mName;
+com.android.commands.hid.Event	field	private byte[] mDescriptor;
+com.android.commands.hid.Event	field	private byte[] mReport;
+com.android.commands.hid.Event	field	private int mDuration;
+com.android.commands.hid.Event	field	private int mId;
+com.android.commands.hid.Event	field	private int mPid;
+com.android.commands.hid.Event	field	private int mVid;
+com.android.commands.hid.Event	field	private static final String TAG;
+com.android.commands.hid.Event	field	public static final String COMMAND_DELAY;
+com.android.commands.hid.Event	field	public static final String COMMAND_REGISTER;
+com.android.commands.hid.Event	field	public static final String COMMAND_REPORT;
+com.android.commands.hid.Event	method	public Map<ByteBuffer, byte[]> getOutputs()
+com.android.commands.hid.Event	method	public SparseArray<byte[]> getFeatureReports()
+com.android.commands.hid.Event	method	public String getCommand()
+com.android.commands.hid.Event	method	public String getName()
+com.android.commands.hid.Event	method	public String toString()
+com.android.commands.hid.Event	method	public byte[] getDescriptor()
+com.android.commands.hid.Event	method	public byte[] getReport()
+com.android.commands.hid.Event	method	public int getBus()
+com.android.commands.hid.Event	method	public int getDuration()
+com.android.commands.hid.Event	method	public int getId()
+com.android.commands.hid.Event	method	public int getProductId()
+com.android.commands.hid.Event	method	public int getVendorId()
+com.android.commands.hid.Event	method	public static void error(String str, Exception exc)
+com.android.commands.hid.Event$Builder	field	private Event mEvent;
+com.android.commands.hid.Event$Builder	method	public Event build()
+com.android.commands.hid.Event$Builder	method	public void setBus(Bus bus)
+com.android.commands.hid.Event$Builder	method	public void setCommand(String str)
+com.android.commands.hid.Event$Builder	method	public void setDescriptor(byte[] bArr)
+com.android.commands.hid.Event$Builder	method	public void setDuration(int i)
+com.android.commands.hid.Event$Builder	method	public void setFeatureReports(SparseArray<byte[]> sparseArray)
+com.android.commands.hid.Event$Builder	method	public void setId(int i)
+com.android.commands.hid.Event$Builder	method	public void setName(String str)
+com.android.commands.hid.Event$Builder	method	public void setOutputs(Map<ByteBuffer, byte[]> map)
+com.android.commands.hid.Event$Builder	method	public void setPid(int i)
+com.android.commands.hid.Event$Builder	method	public void setReport(byte[] bArr)
+com.android.commands.hid.Event$Builder	method	public void setVid(int i)
+com.android.commands.hid.Event$Bus	field	private int mValue;
+com.android.commands.hid.Event$Reader	field	private JsonReader mReader;
+com.android.commands.hid.Event$Reader	method	private Bus readBus() throws IOException
+com.android.commands.hid.Event$Reader	method	private Map<ByteBuffer, byte[]> readOutputs() throws IllegalStateException, IOException
+com.android.commands.hid.Event$Reader	method	private SparseArray<byte[]> readFeatureReports() throws IllegalStateException, IOException
+com.android.commands.hid.Event$Reader	method	private byte[] readData() throws IOException
+com.android.commands.hid.Event$Reader	method	private int readInt() throws IOException
+com.android.commands.hid.Event$Reader	method	private void consumeRemainingElements() throws IOException
+com.android.commands.hid.Event$Reader	method	public Event getNextEvent() throws IOException
+com.android.commands.hid.Event$Reader	method	public Reader(InputStreamReader inputStreamReader)
+com.android.commands.hid.Hid	field	private final Event.Reader mReader;
+com.android.commands.hid.Hid	field	private final SparseArray<Device> mDevices;
+com.android.commands.hid.Hid	field	private static final String TAG;
+com.android.commands.hid.Hid	method	private Hid(InputStream inputStream)
+com.android.commands.hid.Hid	method	private static void error(String str)
+com.android.commands.hid.Hid	method	private static void error(String str, Exception exc)
+com.android.commands.hid.Hid	method	private static void usage()
+com.android.commands.hid.Hid	method	private void process(Event event)
+com.android.commands.hid.Hid	method	private void registerDevice(Event event)
+com.android.commands.hid.Hid	method	private void run()
+com.android.commands.hid.Hid	method	public static void main(String[] strArr)

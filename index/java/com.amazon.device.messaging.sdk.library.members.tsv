@@ -1,0 +1,345 @@
+class	kind	declaration
+com.amazon.device.messaging.ADM	field	private final ContentResolver mResolver;
+com.amazon.device.messaging.ADM	field	private final Context mContext;
+com.amazon.device.messaging.ADM	field	private static final String TAG;
+com.amazon.device.messaging.ADM	method	private Bundle retryableContentProviderCall(Uri uri, String method, Bundle extras) throws RPCFailureException
+com.amazon.device.messaging.ADM	method	private Callable<Bundle> buildContentProviderCallable(final Uri uri, final String method, final Bundle extras)
+com.amazon.device.messaging.ADM	method	private Intent createDummyIntent()
+com.amazon.device.messaging.ADM	method	private static boolean isSupported(Context context)
+com.amazon.device.messaging.ADM	method	private static void requireADM(Context context)
+com.amazon.device.messaging.ADM	method	private void ensureNotRunningOnMainThread() throws ADMRegistrationException
+com.amazon.device.messaging.ADM	method	private void logForegroundExecutionWarning()
+com.amazon.device.messaging.ADM	method	public ADM(Context context)
+com.amazon.device.messaging.ADM	method	public String getRegistrationId()
+com.amazon.device.messaging.ADM	method	public String getRegistrationId(ApiFlavor apiFlavor)
+com.amazon.device.messaging.ADM	method	public String register(ApiFlavor apiFlavor, String... senders) throws ADMRegistrationException
+com.amazon.device.messaging.ADM	method	public String register(String... senders) throws ADMRegistrationException
+com.amazon.device.messaging.ADM	method	public boolean isSupported()
+com.amazon.device.messaging.ADM	method	public void startRegister()
+com.amazon.device.messaging.ADM	method	public void startUnregister()
+com.amazon.device.messaging.ADM	method	public void subscribeToTopic(String topic)
+com.amazon.device.messaging.ADM	method	public void unregister() throws ADMRegistrationException
+com.amazon.device.messaging.ADM	method	public void unregister(ApiFlavor apiFlavor) throws ADMRegistrationException
+com.amazon.device.messaging.ADM	method	public void unsubscribeFromTopic(String topic)
+com.amazon.device.messaging.ADMConstants	field	public static final String ERROR_AUTHENTICATION_FAILED;
+com.amazon.device.messaging.ADMConstants	field	public static final String ERROR_INVALID_SENDER;
+com.amazon.device.messaging.ADMConstants	field	public static final String ERROR_INVALID_TOPIC;
+com.amazon.device.messaging.ADMConstants	field	public static final String ERROR_SERVICE_NOT_AVAILABLE;
+com.amazon.device.messaging.ADMConstants	field	public static final String EXTRA_APP_WHITELISTED;
+com.amazon.device.messaging.ADMConstants	field	public static final String EXTRA_FROM;
+com.amazon.device.messaging.ADMConstants	field	public static final String EXTRA_MD5;
+com.amazon.device.messaging.ADMConstants	field	public static final String EXTRA_PRIORITY;
+com.amazon.device.messaging.ADMConstants	field	public static final String LOG_TAG;
+com.amazon.device.messaging.ADMConstants	method	private ADMConstants()
+com.amazon.device.messaging.ADMConstants$LowLevel	field	public static final String ACTION_APP_REGISTRATION_EVENT;
+com.amazon.device.messaging.ADMConstants$LowLevel	field	public static final String ACTION_RECEIVE_ADM_MESSAGE;
+com.amazon.device.messaging.ADMConstants$LowLevel	field	public static final String ACTION_REGISTER;
+com.amazon.device.messaging.ADMConstants$LowLevel	field	public static final String ACTION_SUBSCRIBE;
+com.amazon.device.messaging.ADMConstants$LowLevel	field	public static final String ACTION_SYNC;
+com.amazon.device.messaging.ADMConstants$LowLevel	field	public static final String ACTION_UNREGISTER;
+com.amazon.device.messaging.ADMConstants$LowLevel	field	public static final String ACTION_UNSUBSCRIBE;
+com.amazon.device.messaging.ADMConstants$LowLevel	field	public static final String ADM_PACKAGE_NAME;
+com.amazon.device.messaging.ADMConstants$LowLevel	field	public static final String EXTRA_APPLICATION_PENDING_INTENT;
+com.amazon.device.messaging.ADMConstants$LowLevel	field	public static final String EXTRA_ERROR;
+com.amazon.device.messaging.ADMConstants$LowLevel	field	public static final String EXTRA_ERROR_DESCRIPTION;
+com.amazon.device.messaging.ADMConstants$LowLevel	field	public static final String EXTRA_OLD_REGISTRATION_ID;
+com.amazon.device.messaging.ADMConstants$LowLevel	field	public static final String EXTRA_REGISTRATION_ID;
+com.amazon.device.messaging.ADMConstants$LowLevel	field	public static final String EXTRA_SENDER;
+com.amazon.device.messaging.ADMConstants$LowLevel	field	public static final String EXTRA_SUBSCRIPTION_EVENT;
+com.amazon.device.messaging.ADMConstants$LowLevel	field	public static final String EXTRA_SYNC_STATE;
+com.amazon.device.messaging.ADMConstants$LowLevel	field	public static final String EXTRA_TOPIC;
+com.amazon.device.messaging.ADMConstants$LowLevel	field	public static final String EXTRA_UNREGISTERED;
+com.amazon.device.messaging.ADMConstants$LowLevel	field	public static final String PERMISSION_SEND_ADM_MESSAGE;
+com.amazon.device.messaging.ADMConstants$LowLevel	field	public static final String PERMISSION_TO_RECEIVE;
+com.amazon.device.messaging.ADMConstants$LowLevel	field	public static final String STATE_SUBSCRIBED;
+com.amazon.device.messaging.ADMConstants$LowLevel	field	public static final String STATE_UNSUBSCRIBED;
+com.amazon.device.messaging.ADMConstants$LowLevel	method	private LowLevel()
+com.amazon.device.messaging.ADMConstants$MessageNotificationKeys	field	public static final String BODY;
+com.amazon.device.messaging.ADMConstants$MessageNotificationKeys	field	public static final String CHANNEL_ID;
+com.amazon.device.messaging.ADMConstants$MessageNotificationKeys	field	public static final String CLICK_ACTION;
+com.amazon.device.messaging.ADMConstants$MessageNotificationKeys	field	public static final String COLOR;
+com.amazon.device.messaging.ADMConstants$MessageNotificationKeys	field	public static final String DEFAULT_SOUND;
+com.amazon.device.messaging.ADMConstants$MessageNotificationKeys	field	public static final String ENABLE_NOTIFICATION;
+com.amazon.device.messaging.ADMConstants$MessageNotificationKeys	field	public static final String EVENT_TIME;
+com.amazon.device.messaging.ADMConstants$MessageNotificationKeys	field	public static final String ICON;
+com.amazon.device.messaging.ADMConstants$MessageNotificationKeys	field	public static final String IMAGE;
+com.amazon.device.messaging.ADMConstants$MessageNotificationKeys	field	public static final String LOCAL_ONLY;
+com.amazon.device.messaging.ADMConstants$MessageNotificationKeys	field	public static final String NOTIFICATION_COUNT;
+com.amazon.device.messaging.ADMConstants$MessageNotificationKeys	field	public static final String NOTIFICATION_PREFIX;
+com.amazon.device.messaging.ADMConstants$MessageNotificationKeys	field	public static final String NOTIFICATION_PRIORITY;
+com.amazon.device.messaging.ADMConstants$MessageNotificationKeys	field	public static final String SOUND;
+com.amazon.device.messaging.ADMConstants$MessageNotificationKeys	field	public static final String STICKY;
+com.amazon.device.messaging.ADMConstants$MessageNotificationKeys	field	public static final String TAG;
+com.amazon.device.messaging.ADMConstants$MessageNotificationKeys	field	public static final String TEXT_ARGS_SUFFIX;
+com.amazon.device.messaging.ADMConstants$MessageNotificationKeys	field	public static final String TEXT_RESOURCE_SUFFIX;
+com.amazon.device.messaging.ADMConstants$MessageNotificationKeys	field	public static final String TITLE;
+com.amazon.device.messaging.ADMConstants$MessageNotificationKeys	field	public static final String VISIBILITY;
+com.amazon.device.messaging.ADMConstants$MessageNotificationKeys	method	private MessageNotificationKeys()
+com.amazon.device.messaging.ADMMessageHandlerBase	field	private static Handler sHandler;
+com.amazon.device.messaging.ADMMessageHandlerBase	field	private static PowerManager.WakeLock sWakeLock;
+com.amazon.device.messaging.ADMMessageHandlerBase	field	private static final Object[] LOCK;
+com.amazon.device.messaging.ADMMessageHandlerBase	method	private static void releaseWakeLock()
+com.amazon.device.messaging.ADMMessageHandlerBase	method	private void handleMessageIntent(Context context, Intent intent)
+com.amazon.device.messaging.ADMMessageHandlerBase	method	private void handleNewRegistrationID(Intent intent)
+com.amazon.device.messaging.ADMMessageHandlerBase	method	private void handleRegistrationChange(Intent intent)
+com.amazon.device.messaging.ADMMessageHandlerBase	method	private void handleRegistrationError(String error)
+com.amazon.device.messaging.ADMMessageHandlerBase	method	private void handleSubscriptionChange(Intent intent)
+com.amazon.device.messaging.ADMMessageHandlerBase	method	private void handleSubscriptionError(String error, String topic, Boolean subscriptionEvent)
+com.amazon.device.messaging.ADMMessageHandlerBase	method	private void handleUnregister(Intent intent)
+com.amazon.device.messaging.ADMMessageHandlerBase	method	protected ADMMessageHandlerBase(String className)
+com.amazon.device.messaging.ADMMessageHandlerBase	method	protected abstract void onMessage(Intent intent);
+com.amazon.device.messaging.ADMMessageHandlerBase	method	protected abstract void onRegistered(String str);
+com.amazon.device.messaging.ADMMessageHandlerBase	method	protected abstract void onRegistrationError(String str);
+com.amazon.device.messaging.ADMMessageHandlerBase	method	protected abstract void onUnregistered(String str);
+com.amazon.device.messaging.ADMMessageHandlerBase	method	protected final void onHandleIntent(Intent intent)
+com.amazon.device.messaging.ADMMessageHandlerBase	method	protected void onSubscribe(String topic)
+com.amazon.device.messaging.ADMMessageHandlerBase	method	protected void onSubscribeError(String topic, String errorId)
+com.amazon.device.messaging.ADMMessageHandlerBase	method	protected void onUnsubscribe(String topic)
+com.amazon.device.messaging.ADMMessageHandlerBase	method	protected void onUnsubscribeError(String topic, String errorId)
+com.amazon.device.messaging.ADMMessageHandlerBase	method	static void acquireWakeLock(Context context)
+com.amazon.device.messaging.ADMMessageHandlerJobBase	method	private void handleMessageIntent(Context context, Intent intent)
+com.amazon.device.messaging.ADMMessageHandlerJobBase	method	private void handleNewRegistrationID(Context context, Intent intent)
+com.amazon.device.messaging.ADMMessageHandlerJobBase	method	private void handleRegistrationChange(Intent intent)
+com.amazon.device.messaging.ADMMessageHandlerJobBase	method	private void handleRegistrationError(Context context, String error)
+com.amazon.device.messaging.ADMMessageHandlerJobBase	method	private void handleSubscriptionChange(Intent intent)
+com.amazon.device.messaging.ADMMessageHandlerJobBase	method	private void handleSubscriptionError(Context context, String error, String topic, Boolean subscriptionEvent)
+com.amazon.device.messaging.ADMMessageHandlerJobBase	method	private void handleUnregister(Context context, Intent intent)
+com.amazon.device.messaging.ADMMessageHandlerJobBase	method	protected ADMMessageHandlerJobBase()
+com.amazon.device.messaging.ADMMessageHandlerJobBase	method	protected abstract void onMessage(Context context, Intent intent);
+com.amazon.device.messaging.ADMMessageHandlerJobBase	method	protected abstract void onRegistered(Context context, String str);
+com.amazon.device.messaging.ADMMessageHandlerJobBase	method	protected abstract void onRegistrationError(Context context, String str);
+com.amazon.device.messaging.ADMMessageHandlerJobBase	method	protected abstract void onUnregistered(Context context, String str);
+com.amazon.device.messaging.ADMMessageHandlerJobBase	method	protected final void onHandleWork(Intent intent)
+com.amazon.device.messaging.ADMMessageHandlerJobBase	method	protected void onSubscribe(Context context, String topic)
+com.amazon.device.messaging.ADMMessageHandlerJobBase	method	protected void onSubscribeError(Context context, String topic, String errorId)
+com.amazon.device.messaging.ADMMessageHandlerJobBase	method	protected void onUnsubscribe(Context context, String topic)
+com.amazon.device.messaging.ADMMessageHandlerJobBase	method	protected void onUnsubscribeError(Context context, String topic, String errorId)
+com.amazon.device.messaging.ADMMessageReceiver	field	private String mServiceClassName;
+com.amazon.device.messaging.ADMMessageReceiver	field	private boolean mServiceClassIsJob;
+com.amazon.device.messaging.ADMMessageReceiver	field	private int mJobId;
+com.amazon.device.messaging.ADMMessageReceiver	method	protected ADMMessageReceiver()
+com.amazon.device.messaging.ADMMessageReceiver	method	protected ADMMessageReceiver(Class<? extends ADMMessageHandlerBase> serviceClass)
+com.amazon.device.messaging.ADMMessageReceiver	method	protected ADMMessageReceiver(Class<? extends ADMMessageHandlerJobBase> serviceClass, int jobId)
+com.amazon.device.messaging.ADMMessageReceiver	method	protected void registerIntentServiceClass(Class<? extends ADMMessageHandlerBase> serviceClass)
+com.amazon.device.messaging.ADMMessageReceiver	method	protected void registerJobServiceClass(Class<? extends ADMMessageHandlerJobBase> serviceClass, int jobId)
+com.amazon.device.messaging.ADMMessageReceiver	method	public final void onReceive(Context context, Intent intent)
+com.amazon.device.messaging.ADMRegistrationConstants	field	public static final String ARG_API_FLAVOR;
+com.amazon.device.messaging.ADMRegistrationConstants	field	public static final String ARG_PACKAGE_NAME;
+com.amazon.device.messaging.ADMRegistrationConstants	field	public static final String ARG_SENDERS;
+com.amazon.device.messaging.ADMRegistrationConstants	field	public static final String AUTHORITY;
+com.amazon.device.messaging.ADMRegistrationConstants	field	public static final String CALL_EXCEPTION;
+com.amazon.device.messaging.ADMRegistrationConstants	field	public static final String CALL_RESPONSE;
+com.amazon.device.messaging.ADMRegistrationConstants	field	public static final String METHOD_GET_REGISTRATION;
+com.amazon.device.messaging.ADMRegistrationConstants	field	public static final String METHOD_REGISTER;
+com.amazon.device.messaging.ADMRegistrationConstants	field	public static final String METHOD_UNREGISTER;
+com.amazon.device.messaging.ADMRegistrationConstants	field	public static final Uri CONTENT_URI;
+com.amazon.device.messaging.ADMRegistrationConstants	method	private ADMRegistrationConstants()
+com.amazon.device.messaging.ADMRegistrationException	field	private final ErrorCode mErrorCode;
+com.amazon.device.messaging.ADMRegistrationException	field	private final String mErrorDescription;
+com.amazon.device.messaging.ADMRegistrationException	method	public ADMRegistrationException(ErrorCode errorCode)
+com.amazon.device.messaging.ADMRegistrationException	method	public ADMRegistrationException(ErrorCode errorCode, String errorDescription)
+com.amazon.device.messaging.ADMRegistrationException	method	public ADMRegistrationException(ErrorCode errorCode, String errorDescription, Throwable cause)
+com.amazon.device.messaging.ADMRegistrationException	method	public ADMRegistrationException(ErrorCode errorCode, Throwable cause)
+com.amazon.device.messaging.ADMRegistrationException	method	public ErrorCode getErrorCode()
+com.amazon.device.messaging.ADMRegistrationException	method	public String getErrorDescription()
+com.amazon.device.messaging.ADMRegistrationException	method	public String getMessage()
+com.amazon.device.messaging.ADMRegistrationException$ErrorCode	field	final String mValue;
+com.amazon.device.messaging.ADMRegistrationException$ErrorCode	method	public String getValue()
+com.amazon.device.messaging.ADMSubscriptionException	field	private final ErrorCode mErrorCode;
+com.amazon.device.messaging.ADMSubscriptionException	field	private final String mErrorDescription;
+com.amazon.device.messaging.ADMSubscriptionException	method	public ADMSubscriptionException(ErrorCode errorCode)
+com.amazon.device.messaging.ADMSubscriptionException	method	public ADMSubscriptionException(ErrorCode errorCode, String errorDescription)
+com.amazon.device.messaging.ADMSubscriptionException	method	public ADMSubscriptionException(ErrorCode errorCode, String errorDescription, Throwable cause)
+com.amazon.device.messaging.ADMSubscriptionException	method	public ADMSubscriptionException(ErrorCode errorCode, Throwable cause)
+com.amazon.device.messaging.ADMSubscriptionException	method	public ErrorCode getErrorCode()
+com.amazon.device.messaging.ADMSubscriptionException	method	public String getErrorDescription()
+com.amazon.device.messaging.ADMSubscriptionException	method	public String getMessage()
+com.amazon.device.messaging.ADMSubscriptionException$ErrorCode	field	final String mValue;
+com.amazon.device.messaging.ADMSubscriptionException$ErrorCode	method	public String getValue()
+com.amazon.device.messaging.CommonNotificationBuilder	field	public static final String ADM_FALLBACK_NOTIFICATION_CHANNEL;
+com.amazon.device.messaging.CommonNotificationBuilder	field	public static final String ADM_FALLBACK_NOTIFICATION_CHANNEL_LABEL;
+com.amazon.device.messaging.CommonNotificationBuilder	method	private CommonNotificationBuilder()
+com.amazon.device.messaging.CommonNotificationBuilder	method	private static Intent createTargetIntent(String packageName, NotificationParams notificationParams, PackageManager packageManager)
+com.amazon.device.messaging.CommonNotificationBuilder	method	private static Notification.Builder getNotificationBuilder(Context context, NotificationParams notificationParams)
+com.amazon.device.messaging.CommonNotificationBuilder	method	private static PendingIntent createContentIntent(Context context, String packageName, NotificationParams notificationParams, PackageManager packageManager)
+com.amazon.device.messaging.CommonNotificationBuilder	method	private static String getOrCreateNotificationChannel(Context context, String channelId)
+com.amazon.device.messaging.CommonNotificationBuilder	method	private static String getTag(NotificationParams notificationParams)
+com.amazon.device.messaging.CommonNotificationBuilder	method	private static Uri getSound(String packageName, String soundName, Resources resources)
+com.amazon.device.messaging.CommonNotificationBuilder	method	private static int getRequestCode()
+com.amazon.device.messaging.CommonNotificationBuilder	method	private static int getSmallIcon(PackageManager packageManager, Resources resources, String packageName, String resourceKey)
+com.amazon.device.messaging.CommonNotificationBuilder	method	private static void setBody(Context context, Notification.Builder builder, NotificationParams notificationParams)
+com.amazon.device.messaging.CommonNotificationBuilder	method	private static void setClickAction(Context context, Notification.Builder builder, NotificationParams notificationParams)
+com.amazon.device.messaging.CommonNotificationBuilder	method	private static void setColor(Notification.Builder builder, NotificationParams notificationParams)
+com.amazon.device.messaging.CommonNotificationBuilder	method	private static void setDefaults(Notification.Builder builder, NotificationParams notificationParams)
+com.amazon.device.messaging.CommonNotificationBuilder	method	private static void setEventTime(Notification.Builder builder, NotificationParams notificationParams)
+com.amazon.device.messaging.CommonNotificationBuilder	method	private static void setLocalOnly(Notification.Builder builder, NotificationParams notificationParams)
+com.amazon.device.messaging.CommonNotificationBuilder	method	private static void setNotificationCount(Notification.Builder builder, NotificationParams notificationParams)
+com.amazon.device.messaging.CommonNotificationBuilder	method	private static void setNotificationPriority(Notification.Builder builder, NotificationParams notificationParams)
+com.amazon.device.messaging.CommonNotificationBuilder	method	private static void setSmallIcon(Context context, Notification.Builder builder, NotificationParams notificationParams)
+com.amazon.device.messaging.CommonNotificationBuilder	method	private static void setSound(Context context, Notification.Builder builder, NotificationParams notificationParams)
+com.amazon.device.messaging.CommonNotificationBuilder	method	private static void setSticky(Notification.Builder builder, NotificationParams notificationParams)
+com.amazon.device.messaging.CommonNotificationBuilder	method	private static void setTitle(Context context, Notification.Builder builder, NotificationParams notificationParams)
+com.amazon.device.messaging.CommonNotificationBuilder	method	private static void setVisibility(Notification.Builder builder, NotificationParams notificationParams)
+com.amazon.device.messaging.CommonNotificationBuilder	method	public static DisplayNotificationInfo createNotificationInfo(Context context, NotificationParams notificationParams)
+com.amazon.device.messaging.CommonNotificationBuilder$DisplayNotificationInfo	field	public final Notification.Builder mNotificationBuilder;
+com.amazon.device.messaging.CommonNotificationBuilder$DisplayNotificationInfo	field	public final String mTag;
+com.amazon.device.messaging.CommonNotificationBuilder$DisplayNotificationInfo	field	public final int mId;
+com.amazon.device.messaging.DisplayNotification	method	private DisplayNotification()
+com.amazon.device.messaging.DisplayNotification	method	private static Future<Bitmap> startImageDownloadInBackground(NotificationParams notificationParams, ExecutorService executor)
+com.amazon.device.messaging.DisplayNotification	method	private static void showNotification(CommonNotificationBuilder.DisplayNotificationInfo displayNotificationInfo, Context context)
+com.amazon.device.messaging.DisplayNotification	method	private static void waitForImageDownloadAndApply(Future<Bitmap> futureImage, Notification.Builder builder)
+com.amazon.device.messaging.DisplayNotification	method	public static boolean isAppInForeground(Context context)
+com.amazon.device.messaging.DisplayNotification	method	public static void handleNotification(Bundle data, Context context)
+com.amazon.device.messaging.ImageDownload	field	private final URL mUrl;
+com.amazon.device.messaging.ImageDownload	field	private static final int MAX_IMAGE_SIZE;
+com.amazon.device.messaging.ImageDownload	method	private Bitmap getDecodedBitmap() throws IOException
+com.amazon.device.messaging.ImageDownload	method	private ImageDownload(URL url)
+com.amazon.device.messaging.ImageDownload	method	private byte[] downloadImageBytes() throws IOException
+com.amazon.device.messaging.ImageDownload	method	private byte[] getBytesFromInputStream(InputStream inputStream) throws IOException
+com.amazon.device.messaging.ImageDownload	method	public Bitmap call() throws Exception
+com.amazon.device.messaging.ImageDownload	method	public static ImageDownload create(String imageUrl)
+com.amazon.device.messaging.InvalidManifestException	method	public InvalidManifestException(String detailMessage)
+com.amazon.device.messaging.InvalidManifestException	method	public InvalidManifestException(String detailMessage, Throwable throwable)
+com.amazon.device.messaging.InvalidManifestException	method	public InvalidManifestException(Throwable throwable)
+com.amazon.device.messaging.JobIntentService	field	final ArrayList<CompatWorkItem> mCompatQueue;
+com.amazon.device.messaging.JobIntentService	field	static final HashMap<ComponentName, WorkEnqueuer> S_CLASS_WORK_ENQUEUER;
+com.amazon.device.messaging.JobIntentService	field	static final HashMap<ComponentName, WorkEnqueuer> S_PRIORITY_CLASS_WORK_ENQUEUER;
+com.amazon.device.messaging.JobIntentService	field	static final Object S_LOCK;
+com.amazon.device.messaging.JobIntentService	field	static final String HIGH_PRIORITY;
+com.amazon.device.messaging.JobIntentService	field	static final String NORMAL_PRIORITY;
+com.amazon.device.messaging.JobIntentService	field	static final String TAG;
+com.amazon.device.messaging.JobIntentService	field	static final boolean DEBUG;
+com.amazon.device.messaging.JobIntentService	method	protected abstract void onHandleWork(Intent intent);
+com.amazon.device.messaging.JobIntentService	method	public IBinder onBind(Intent intent)
+com.amazon.device.messaging.JobIntentService	method	public boolean isStopped()
+com.amazon.device.messaging.JobIntentService	method	public boolean onStopCurrentWork()
+com.amazon.device.messaging.JobIntentService	method	public int onStartCommand(Intent intent, int flags, int startId)
+com.amazon.device.messaging.JobIntentService	method	public static void enqueueWork(Context context, Class cls, int jobId, Intent work)
+com.amazon.device.messaging.JobIntentService	method	public static void enqueueWork(Context context, ComponentName component, int jobId, Intent work)
+com.amazon.device.messaging.JobIntentService	method	public void onCreate()
+com.amazon.device.messaging.JobIntentService	method	public void onDestroy()
+com.amazon.device.messaging.JobIntentService	method	public void setInterruptIfStopped(boolean interruptIfStopped)
+com.amazon.device.messaging.JobIntentService	method	static WorkEnqueuer getPriorityWorkEnqueuer(Context context, ComponentName cn)
+com.amazon.device.messaging.JobIntentService	method	static WorkEnqueuer getWorkEnqueuer(Context context, ComponentName cn, boolean hasJobId, int jobId)
+com.amazon.device.messaging.JobIntentService	method	static WorkEnqueuer getWorkEnqueuer(Context context, ComponentName cn, boolean hasJobId, int jobId, String priority, boolean whitelisted)
+com.amazon.device.messaging.JobIntentService	method	static boolean isTempWhitelisted(Context context, boolean whitelistedFromExtra)
+com.amazon.device.messaging.JobIntentService$CommandProcessor	method	public Void doInBackground(Void... params)
+com.amazon.device.messaging.JobIntentService$CommandProcessor	method	public void onCancelled(Void aVoid)
+com.amazon.device.messaging.JobIntentService$CommandProcessor	method	public void onPostExecute(Void aVoid)
+com.amazon.device.messaging.JobIntentService$CompatWorkEnqueuer	field	private final Context mContext;
+com.amazon.device.messaging.JobIntentService$CompatWorkEnqueuer	field	private final PowerManager.WakeLock mLaunchWakeLock;
+com.amazon.device.messaging.JobIntentService$CompatWorkEnqueuer	field	private final PowerManager.WakeLock mRunWakeLock;
+com.amazon.device.messaging.JobIntentService$CompatWorkEnqueuer	method	public void serviceProcessingFinished()
+com.amazon.device.messaging.JobIntentService$CompatWorkEnqueuer	method	public void serviceProcessingStarted()
+com.amazon.device.messaging.JobIntentService$CompatWorkEnqueuer	method	public void serviceStartReceived()
+com.amazon.device.messaging.JobIntentService$CompatWorkItem	field	final Intent mIntent;
+com.amazon.device.messaging.JobIntentService$CompatWorkItem	field	final int mStartId;
+com.amazon.device.messaging.JobIntentService$CompatWorkItem	method	public Intent getIntent()
+com.amazon.device.messaging.JobIntentService$CompatWorkItem	method	public void complete()
+com.amazon.device.messaging.JobIntentService$JobServiceEngineImpl	field	final JobIntentService mService;
+com.amazon.device.messaging.JobIntentService$JobServiceEngineImpl	field	final Object mLock;
+com.amazon.device.messaging.JobIntentService$JobServiceEngineImpl	field	static final String TAG;
+com.amazon.device.messaging.JobIntentService$JobServiceEngineImpl	field	static final boolean DEBUG;
+com.amazon.device.messaging.JobIntentService$JobServiceEngineImpl	method	public GenericWorkItem dequeueWork()
+com.amazon.device.messaging.JobIntentService$JobServiceEngineImpl	method	public IBinder compatGetBinder()
+com.amazon.device.messaging.JobIntentService$JobServiceEngineImpl	method	public boolean onStartJob(JobParameters params)
+com.amazon.device.messaging.JobIntentService$JobServiceEngineImpl	method	public boolean onStopJob(JobParameters params)
+com.amazon.device.messaging.JobIntentService$JobServiceEngineImpl$WrapperWorkItem	field	final JobWorkItem mJobWork;
+com.amazon.device.messaging.JobIntentService$JobServiceEngineImpl$WrapperWorkItem	method	public Intent getIntent()
+com.amazon.device.messaging.JobIntentService$JobServiceEngineImpl$WrapperWorkItem	method	public void complete()
+com.amazon.device.messaging.JobIntentService$JobWorkEnqueuer	field	private final JobInfo mJobInfo;
+com.amazon.device.messaging.JobIntentService$JobWorkEnqueuer	field	private final JobScheduler mJobScheduler;
+com.amazon.device.messaging.JobIntentService$WorkEnqueuer	field	final ComponentName mComponentName;
+com.amazon.device.messaging.JobIntentService$WorkEnqueuer	method	abstract void enqueueWork(Intent intent);
+com.amazon.device.messaging.JobIntentService$WorkEnqueuer	method	public void serviceProcessingFinished()
+com.amazon.device.messaging.JobIntentService$WorkEnqueuer	method	public void serviceProcessingStarted()
+com.amazon.device.messaging.JobIntentService$WorkEnqueuer	method	public void serviceStartReceived()
+com.amazon.device.messaging.ManifestChecker	field	private List<ReceiverChecker> mReceiverCheckers;
+com.amazon.device.messaging.ManifestChecker	field	private final List<String> mExtraPermissions;
+com.amazon.device.messaging.ManifestChecker	field	private final String mPackageName;
+com.amazon.device.messaging.ManifestChecker	field	private final String mUseMessagingPermission;
+com.amazon.device.messaging.ManifestChecker	field	private static final String TAG;
+com.amazon.device.messaging.ManifestChecker	method	private void verifyPermissionGranted(Context context, String permission) throws InvalidManifestException
+com.amazon.device.messaging.ManifestChecker	method	protected ManifestChecker(Builder builder)
+com.amazon.device.messaging.ManifestChecker	method	public void check(Context context) throws InvalidManifestException
+com.amazon.device.messaging.ManifestChecker$Builder	field	private List<ReceiverChecker> mReceiverCheckers;
+com.amazon.device.messaging.ManifestChecker$Builder	field	private List<String> mExtraPermissions;
+com.amazon.device.messaging.ManifestChecker$Builder	field	private String mPackageName;
+com.amazon.device.messaging.ManifestChecker$Builder	field	private String mUseMessagingPermission;
+com.amazon.device.messaging.ManifestChecker$Builder	method	private void validate()
+com.amazon.device.messaging.ManifestChecker$Builder	method	public Builder addExtraPermission(String permission)
+com.amazon.device.messaging.ManifestChecker$Builder	method	public Builder addReceiverChecker(ReceiverChecker checker)
+com.amazon.device.messaging.ManifestChecker$Builder	method	public Builder setPackageName(String packageName)
+com.amazon.device.messaging.ManifestChecker$Builder	method	public Builder setUseMessagingPermission(String useMessagingPermission)
+com.amazon.device.messaging.ManifestChecker$Builder	method	public ManifestChecker build()
+com.amazon.device.messaging.NotificationParams	field	private final Bundle mData;
+com.amazon.device.messaging.NotificationParams	method	private static String getUserFriendlyKey(String key)
+com.amazon.device.messaging.NotificationParams	method	private static boolean isNotificationKey(String key)
+com.amazon.device.messaging.NotificationParams	method	public Bundle bundleWithNotificationParametersRemoved()
+com.amazon.device.messaging.NotificationParams	method	public Integer getInteger(String key)
+com.amazon.device.messaging.NotificationParams	method	public Integer getNotificationCount()
+com.amazon.device.messaging.NotificationParams	method	public Integer getNotificationPriority()
+com.amazon.device.messaging.NotificationParams	method	public Integer getVisibility()
+com.amazon.device.messaging.NotificationParams	method	public JSONArray getJSONArray(String key)
+com.amazon.device.messaging.NotificationParams	method	public Long getLong(String key)
+com.amazon.device.messaging.NotificationParams	method	public NotificationParams(Bundle data)
+com.amazon.device.messaging.NotificationParams	method	public Object[] getLocalizationArgsForKey(String key)
+com.amazon.device.messaging.NotificationParams	method	public String getLocalizationResourceForKey(String key)
+com.amazon.device.messaging.NotificationParams	method	public String getLocalizedString(Resources resources, String packageName, String key)
+com.amazon.device.messaging.NotificationParams	method	public String getPossibleLocalizedString(Resources resources, String packageName, String key)
+com.amazon.device.messaging.NotificationParams	method	public String getString(String key)
+com.amazon.device.messaging.NotificationParams	method	public boolean getBoolean(String key)
+com.amazon.device.messaging.NotificationParams	method	public static boolean isNotification(Bundle data)
+com.amazon.device.messaging.RPCFailureException	method	public RPCFailureException(String message)
+com.amazon.device.messaging.ReceiverChecker	field	private final String mAction;
+com.amazon.device.messaging.ReceiverChecker	field	private final String mSenderPermission;
+com.amazon.device.messaging.ReceiverChecker	field	private final boolean mShouldLogIfMissing;
+com.amazon.device.messaging.ReceiverChecker	field	private final boolean mShouldThrowIfMissing;
+com.amazon.device.messaging.ReceiverChecker	field	private static final String TAG;
+com.amazon.device.messaging.ReceiverChecker	method	protected ReceiverChecker(Builder builder)
+com.amazon.device.messaging.ReceiverChecker	method	public void check(Context context, String packageName) throws InvalidManifestException
+com.amazon.device.messaging.ReceiverChecker$Builder	field	private Boolean mShouldLogIfMissing;
+com.amazon.device.messaging.ReceiverChecker$Builder	field	private Boolean mShouldThrowIfMissing;
+com.amazon.device.messaging.ReceiverChecker$Builder	field	private String mAction;
+com.amazon.device.messaging.ReceiverChecker$Builder	field	private String mSenderPermission;
+com.amazon.device.messaging.ReceiverChecker$Builder	method	private void validate()
+com.amazon.device.messaging.ReceiverChecker$Builder	method	public Builder setAction(String action)
+com.amazon.device.messaging.ReceiverChecker$Builder	method	public Builder setSenderPermission(String permission)
+com.amazon.device.messaging.ReceiverChecker$Builder	method	public Builder setShouldLogIfMissing(boolean shouldLog)
+com.amazon.device.messaging.ReceiverChecker$Builder	method	public Builder setShouldThrowIfMissing(boolean shouldThrow)
+com.amazon.device.messaging.ReceiverChecker$Builder	method	public ReceiverChecker build()
+com.amazon.device.messaging.development.ADMManifest	field	private static final String ADM_PACKAGE_RECEIVER_PERMISSION_FORMAT_STRING;
+com.amazon.device.messaging.development.ADMManifest	field	private static final String API_KEY_CONSTANT;
+com.amazon.device.messaging.development.ADMManifest	field	private static final String API_KEY_FILENAME;
+com.amazon.device.messaging.development.ADMManifest	field	public static final String DEFAULT_MESSAGE_HANDLER_CLASS_NAME;
+com.amazon.device.messaging.development.ADMManifest	field	public static final String PERMISSION_RECEIVE_MESSAGES;
+com.amazon.device.messaging.development.ADMManifest	field	public static final String PERMISSION_SEND_MESSAGES;
+com.amazon.device.messaging.development.ADMManifest	method	private ADMManifest()
+com.amazon.device.messaging.development.ADMManifest	method	private static boolean apiKeyInAssets(Context context)
+com.amazon.device.messaging.development.ADMManifest	method	private static boolean apiKeyInManifest(PackageInfo info)
+com.amazon.device.messaging.development.ADMManifest	method	private static void checkAmazonAPIKey(Context context, PackageInfo info)
+com.amazon.device.messaging.development.ADMManifest	method	public static String getReceiverPermission(Context context)
+com.amazon.device.messaging.development.ADMManifest	method	public static String getReceiverPermission(String packageName)
+com.amazon.device.messaging.development.ADMManifest	method	public static void checkManifestAuthoredProperly(Context context)
+com.amazon.device.messaging.sdk.lib.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.device.messaging.sdk.lib.BuildConfig	field	public static final String FLAVOR;
+com.amazon.device.messaging.sdk.lib.BuildConfig	field	public static final String LIBRARY_PACKAGE_NAME;
+com.amazon.device.messaging.sdk.lib.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.device.messaging.sdk.library.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.device.messaging.sdk.library.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.device.messaging.sdk.library.BuildConfig	field	public static final String FLAVOR;
+com.amazon.device.messaging.sdk.library.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.device.messaging.sdk.library.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.device.messaging.sdk.library.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.device.messaging.test.ADMEnqueuerConstants	field	public static final String ARG_CLIENTID;
+com.amazon.device.messaging.test.ADMEnqueuerConstants	field	public static final String ARG_MESSAGE;
+com.amazon.device.messaging.test.ADMEnqueuerConstants	field	public static final String ARG_REGID;
+com.amazon.device.messaging.test.ADMEnqueuerConstants	field	public static final String ARG_REGIDS;
+com.amazon.device.messaging.test.ADMEnqueuerConstants	field	public static final String ARG_RETRIES;
+com.amazon.device.messaging.test.ADMEnqueuerConstants	field	public static final String ARG_SECRET;
+com.amazon.device.messaging.test.ADMEnqueuerConstants	field	public static final String AUTHORITY;
+com.amazon.device.messaging.test.ADMEnqueuerConstants	field	public static final String CALL_EXCEPTION;
+com.amazon.device.messaging.test.ADMEnqueuerConstants	field	public static final String CALL_RESPONSE;
+com.amazon.device.messaging.test.ADMEnqueuerConstants	field	public static final String METHOD_SEND;
+com.amazon.device.messaging.test.ADMEnqueuerConstants	field	public static final Uri CONTENT_URI;
+com.amazon.device.messaging.test.ADMEnqueuerConstants	method	private ADMEnqueuerConstants()

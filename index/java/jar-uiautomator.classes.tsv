@@ -1,0 +1,313 @@
+kind	class	extends	implements
+@interface	org.hamcrest.Factory		
+@interface	org.junit.After		
+@interface	org.junit.AfterClass		
+@interface	org.junit.Before		
+@interface	org.junit.BeforeClass		
+@interface	org.junit.ClassRule		
+@interface	org.junit.FixMethodOrder		
+@interface	org.junit.Ignore		
+@interface	org.junit.Rule		
+@interface	org.junit.Test		
+@interface	org.junit.experimental.categories.Categories$ExcludeCategory		
+@interface	org.junit.experimental.categories.Categories$IncludeCategory		
+@interface	org.junit.experimental.categories.Category		
+@interface	org.junit.experimental.theories.DataPoint		
+@interface	org.junit.experimental.theories.DataPoints		
+@interface	org.junit.experimental.theories.FromDataPoints		
+@interface	org.junit.experimental.theories.ParametersSuppliedBy		
+@interface	org.junit.experimental.theories.Theory		
+@interface	org.junit.experimental.theories.suppliers.TestedOn		
+@interface	org.junit.runner.RunWith		
+@interface	org.junit.runner.notification.RunListener$ThreadSafe		
+@interface	org.junit.runners.Parameterized$Parameter		
+@interface	org.junit.runners.Parameterized$Parameters		
+@interface	org.junit.runners.Parameterized$UseParametersRunnerFactory		
+@interface	org.junit.runners.Suite$SuiteClasses		
+@interface	org.junit.validator.ValidateWith		
+class	com.android.commands.uiautomator.DumpCommand	Launcher.Command	
+class	com.android.commands.uiautomator.EventsCommand	Launcher.Command	
+class	com.android.commands.uiautomator.Launcher		
+class	com.android.commands.uiautomator.Launcher$Command		
+class	com.android.commands.uiautomator.RunTestCommand	Launcher.Command	
+class	com.android.uiautomator.core.AccessibilityNodeInfoDumper		
+class	com.android.uiautomator.core.AccessibilityNodeInfoHelper		
+class	com.android.uiautomator.core.Configurator		
+class	com.android.uiautomator.core.InteractionController		
+class	com.android.uiautomator.core.InteractionController$EventCollectingPredicate		UiAutomation.AccessibilityEventFilter
+class	com.android.uiautomator.core.InteractionController$WaitForAllEventPredicate		UiAutomation.AccessibilityEventFilter
+class	com.android.uiautomator.core.InteractionController$WaitForAnyEventPredicate		UiAutomation.AccessibilityEventFilter
+class	com.android.uiautomator.core.QueryController		
+class	com.android.uiautomator.core.ShellUiAutomatorBridge	UiAutomatorBridge	
+class	com.android.uiautomator.core.Tracer		
+class	com.android.uiautomator.core.Tracer$FileSink		TracerSink
+class	com.android.uiautomator.core.Tracer$LogcatSink		TracerSink
+class	com.android.uiautomator.core.UiAutomationShellWrapper		
+class	com.android.uiautomator.core.UiAutomationShellWrapper$DummyActivityController	IActivityController.Stub	
+class	com.android.uiautomator.core.UiAutomatorBridge		
+class	com.android.uiautomator.core.UiCollection	UiObject	
+class	com.android.uiautomator.core.UiDevice		
+class	com.android.uiautomator.core.UiObject		
+class	com.android.uiautomator.core.UiObjectNotFoundException	Exception	
+class	com.android.uiautomator.core.UiScrollable	UiCollection	
+class	com.android.uiautomator.core.UiSelector		
+class	com.android.uiautomator.testrunner.TestCaseCollector		
+class	com.android.uiautomator.testrunner.UiAutomatorTestCase	TestCase	
+class	com.android.uiautomator.testrunner.UiAutomatorTestCaseFilter		TestCaseCollector.TestCaseFilter
+class	com.android.uiautomator.testrunner.UiAutomatorTestRunner		
+class	com.android.uiautomator.testrunner.UiAutomatorTestRunner$FakeInstrumentationWatcher		IInstrumentationWatcher
+class	com.android.uiautomator.testrunner.UiAutomatorTestRunner$SimpleResultPrinter	ResultPrinter	ResultReporter
+class	com.android.uiautomator.testrunner.UiAutomatorTestRunner$WatcherResultPrinter		ResultReporter
+class	junit.extensions.ActiveTestSuite	TestSuite	
+class	junit.extensions.RepeatedTest	TestDecorator	
+class	junit.extensions.TestDecorator	Assert	Test
+class	junit.extensions.TestSetup	TestDecorator	
+class	junit.framework.Assert		
+class	junit.framework.AssertionFailedError	AssertionError	
+class	junit.framework.ComparisonCompactor		
+class	junit.framework.ComparisonFailure	AssertionFailedError	
+class	junit.framework.JUnit4TestAdapter		Test,Filterable,Sortable,Describable
+class	junit.framework.JUnit4TestAdapterCache	HashMap<Description, Test>	
+class	junit.framework.JUnit4TestCaseFacade		Test,Describable
+class	junit.framework.TestCase	Assert	Test
+class	junit.framework.TestFailure		
+class	junit.framework.TestResult		
+class	junit.framework.TestSuite		Test
+class	junit.runner.BaseTestRunner		TestListener
+class	junit.runner.Version		
+class	junit.textui.ResultPrinter		TestListener
+class	junit.textui.TestRunner	BaseTestRunner	
+class	org.hamcrest.BaseDescription		Description
+class	org.hamcrest.BaseMatcher		Matcher<T>
+class	org.hamcrest.Condition		
+class	org.hamcrest.Condition$Matched	Condition<T>	
+class	org.hamcrest.Condition$NotMatched	Condition<T>	
+class	org.hamcrest.CoreMatchers		
+class	org.hamcrest.CustomMatcher	BaseMatcher<T>	
+class	org.hamcrest.CustomTypeSafeMatcher	TypeSafeMatcher<T>	
+class	org.hamcrest.Description$NullDescription		Description
+class	org.hamcrest.DiagnosingMatcher	BaseMatcher<T>	
+class	org.hamcrest.FeatureMatcher	TypeSafeDiagnosingMatcher<T>	
+class	org.hamcrest.MatcherAssert		
+class	org.hamcrest.StringDescription	BaseDescription	
+class	org.hamcrest.TypeSafeDiagnosingMatcher	BaseMatcher<T>	
+class	org.hamcrest.TypeSafeMatcher	BaseMatcher<T>	
+class	org.hamcrest.core.AllOf	DiagnosingMatcher<T>	
+class	org.hamcrest.core.AnyOf	ShortcutCombination<T>	
+class	org.hamcrest.core.CombinableMatcher	TypeSafeDiagnosingMatcher<T>	
+class	org.hamcrest.core.CombinableMatcher$CombinableBothMatcher		
+class	org.hamcrest.core.CombinableMatcher$CombinableEitherMatcher		
+class	org.hamcrest.core.DescribedAs	BaseMatcher<T>	
+class	org.hamcrest.core.Every		
+class	org.hamcrest.core.Is	BaseMatcher<T>	
+class	org.hamcrest.core.IsAnything	BaseMatcher<T>	
+class	org.hamcrest.core.IsCollectionContaining		
+class	org.hamcrest.core.IsEqual	BaseMatcher<T>	
+class	org.hamcrest.core.IsInstanceOf	DiagnosingMatcher<Object>	
+class	org.hamcrest.core.IsNot	BaseMatcher<T>	
+class	org.hamcrest.core.IsNull	BaseMatcher<T>	
+class	org.hamcrest.core.IsSame	BaseMatcher<T>	
+class	org.hamcrest.core.ShortcutCombination	BaseMatcher<T>	
+class	org.hamcrest.core.StringContains	SubstringMatcher	
+class	org.hamcrest.core.StringEndsWith	SubstringMatcher	
+class	org.hamcrest.core.StringStartsWith	SubstringMatcher	
+class	org.hamcrest.core.SubstringMatcher	TypeSafeMatcher<String>	
+class	org.hamcrest.internal.ArrayIterator		Iterator<Object>
+class	org.hamcrest.internal.NullSafety		
+class	org.hamcrest.internal.ReflectiveTypeFinder		
+class	org.hamcrest.internal.SelfDescribingValue		SelfDescribing
+class	org.hamcrest.internal.SelfDescribingValueIterator		Iterator<SelfDescribing>
+class	org.junit.Assert		
+class	org.junit.Assume		
+class	org.junit.AssumptionViolatedException	org.junit.internal.AssumptionViolatedException	
+class	org.junit.ComparisonFailure	AssertionError	
+class	org.junit.ComparisonFailure$ComparisonCompactor		
+class	org.junit.ComparisonFailure$ComparisonCompactor$DiffExtractor		
+class	org.junit.Test$None	Throwable	
+class	org.junit.experimental.ParallelComputer	Computer	
+class	org.junit.experimental.categories.Categories	Suite	
+class	org.junit.experimental.categories.Categories$CategoryFilter	Filter	
+class	org.junit.experimental.categories.CategoryFilterFactory		FilterFactory
+class	org.junit.experimental.categories.CategoryValidator	AnnotationValidator	
+class	org.junit.experimental.categories.ExcludeCategories	CategoryFilterFactory	
+class	org.junit.experimental.categories.ExcludeCategories$ExcludesAny	Categories.CategoryFilter	
+class	org.junit.experimental.categories.IncludeCategories	CategoryFilterFactory	
+class	org.junit.experimental.categories.IncludeCategories$IncludesAny	Categories.CategoryFilter	
+class	org.junit.experimental.max.CouldNotReadCoreException	Exception	
+class	org.junit.experimental.max.MaxCore		
+class	org.junit.experimental.max.MaxHistory		Serializable
+class	org.junit.experimental.max.MaxHistory$RememberingListener	RunListener	
+class	org.junit.experimental.max.MaxHistory$TestComparator		Comparator<Description>
+class	org.junit.experimental.results.FailureList		
+class	org.junit.experimental.results.PrintableResult		
+class	org.junit.experimental.results.ResultMatchers		
+class	org.junit.experimental.runners.Enclosed	Suite	
+class	org.junit.experimental.theories.ParameterSignature		
+class	org.junit.experimental.theories.ParameterSupplier		
+class	org.junit.experimental.theories.PotentialAssignment		
+class	org.junit.experimental.theories.PotentialAssignment$CouldNotGenerateValueException	Exception	
+class	org.junit.experimental.theories.Theories	BlockJUnit4ClassRunner	
+class	org.junit.experimental.theories.Theories$TheoryAnchor	Statement	
+class	org.junit.experimental.theories.internal.AllMembersSupplier	ParameterSupplier	
+class	org.junit.experimental.theories.internal.AllMembersSupplier$MethodParameterValue	PotentialAssignment	
+class	org.junit.experimental.theories.internal.Assignments		
+class	org.junit.experimental.theories.internal.BooleanSupplier	ParameterSupplier	
+class	org.junit.experimental.theories.internal.EnumSupplier	ParameterSupplier	
+class	org.junit.experimental.theories.internal.ParameterizedAssertionError	AssertionError	
+class	org.junit.experimental.theories.internal.SpecificDataPointsSupplier	AllMembersSupplier	
+class	org.junit.experimental.theories.suppliers.TestedOnSupplier	ParameterSupplier	
+class	org.junit.internal.ArrayComparisonFailure	AssertionError	
+class	org.junit.internal.AssumptionViolatedException	RuntimeException	SelfDescribing
+class	org.junit.internal.Classes		
+class	org.junit.internal.ComparisonCriteria		
+class	org.junit.internal.ExactComparisonCriteria	ComparisonCriteria	
+class	org.junit.internal.InexactComparisonCriteria	ComparisonCriteria	
+class	org.junit.internal.MethodSorter		
+class	org.junit.internal.RealSystem		JUnitSystem
+class	org.junit.internal.TextListener	RunListener	
+class	org.junit.internal.Throwables		
+class	org.junit.internal.builders.AllDefaultPossibilitiesBuilder	RunnerBuilder	
+class	org.junit.internal.builders.AnnotatedBuilder	RunnerBuilder	
+class	org.junit.internal.builders.IgnoredBuilder	RunnerBuilder	
+class	org.junit.internal.builders.IgnoredClassRunner	Runner	
+class	org.junit.internal.builders.JUnit3Builder	RunnerBuilder	
+class	org.junit.internal.builders.JUnit4Builder	RunnerBuilder	
+class	org.junit.internal.builders.NullBuilder	RunnerBuilder	
+class	org.junit.internal.builders.SuiteMethodBuilder	RunnerBuilder	
+class	org.junit.internal.matchers.StacktracePrintingMatcher	org.hamcrest.TypeSafeMatcher<T>	
+class	org.junit.internal.matchers.ThrowableCauseMatcher	org.hamcrest.TypeSafeMatcher<T>	
+class	org.junit.internal.matchers.ThrowableMessageMatcher	org.hamcrest.TypeSafeMatcher<T>	
+class	org.junit.internal.matchers.TypeSafeMatcher	BaseMatcher<T>	
+class	org.junit.internal.requests.ClassRequest	Request	
+class	org.junit.internal.requests.FilterRequest	Request	
+class	org.junit.internal.requests.SortingRequest	Request	
+class	org.junit.internal.runners.ClassRoadie		
+class	org.junit.internal.runners.ErrorReportingRunner	Runner	
+class	org.junit.internal.runners.FailedBefore	Exception	
+class	org.junit.internal.runners.InitializationError	Exception	
+class	org.junit.internal.runners.JUnit38ClassRunner	Runner	Filterable,Sortable
+class	org.junit.internal.runners.JUnit38ClassRunner$OldTestClassAdaptingListener		TestListener
+class	org.junit.internal.runners.JUnit4ClassRunner	Runner	Filterable,Sortable
+class	org.junit.internal.runners.MethodRoadie		
+class	org.junit.internal.runners.MethodValidator		
+class	org.junit.internal.runners.SuiteMethod	JUnit38ClassRunner	
+class	org.junit.internal.runners.TestClass		
+class	org.junit.internal.runners.TestMethod		
+class	org.junit.internal.runners.model.EachTestNotifier		
+class	org.junit.internal.runners.model.MultipleFailureException	org.junit.runners.model.MultipleFailureException	
+class	org.junit.internal.runners.model.ReflectiveCallable		
+class	org.junit.internal.runners.rules.RuleMemberValidator		
+class	org.junit.internal.runners.rules.RuleMemberValidator$Builder		
+class	org.junit.internal.runners.rules.RuleMemberValidator$DeclaringClassMustBePublic		RuleValidator
+class	org.junit.internal.runners.rules.RuleMemberValidator$FieldMustBeARule		RuleValidator
+class	org.junit.internal.runners.rules.RuleMemberValidator$FieldMustBeATestRule		RuleValidator
+class	org.junit.internal.runners.rules.RuleMemberValidator$MemberMustBeNonStaticOrAlsoClassRule		RuleValidator
+class	org.junit.internal.runners.rules.RuleMemberValidator$MemberMustBePublic		RuleValidator
+class	org.junit.internal.runners.rules.RuleMemberValidator$MemberMustBeStatic		RuleValidator
+class	org.junit.internal.runners.rules.RuleMemberValidator$MethodMustBeARule		RuleValidator
+class	org.junit.internal.runners.rules.RuleMemberValidator$MethodMustBeATestRule		RuleValidator
+class	org.junit.internal.runners.rules.ValidationError	Exception	
+class	org.junit.internal.runners.statements.ExpectException	Statement	
+class	org.junit.internal.runners.statements.Fail	Statement	
+class	org.junit.internal.runners.statements.FailOnTimeout	Statement	
+class	org.junit.internal.runners.statements.FailOnTimeout$Builder		
+class	org.junit.internal.runners.statements.FailOnTimeout$CallableStatement		Callable<Throwable>
+class	org.junit.internal.runners.statements.InvokeMethod	Statement	
+class	org.junit.internal.runners.statements.RunAfters	Statement	
+class	org.junit.internal.runners.statements.RunBefores	Statement	
+class	org.junit.matchers.JUnitMatchers		
+class	org.junit.rules.ErrorCollector	Verifier	
+class	org.junit.rules.ExpectedException		TestRule
+class	org.junit.rules.ExpectedException$ExpectedExceptionStatement	Statement	
+class	org.junit.rules.ExpectedExceptionMatcherBuilder		
+class	org.junit.rules.ExternalResource		TestRule
+class	org.junit.rules.RuleChain		TestRule
+class	org.junit.rules.RunRules	Statement	
+class	org.junit.rules.Stopwatch		TestRule
+class	org.junit.rules.Stopwatch$Clock		
+class	org.junit.rules.Stopwatch$InternalWatcher	TestWatcher	
+class	org.junit.rules.TemporaryFolder	ExternalResource	
+class	org.junit.rules.TestName	TestWatcher	
+class	org.junit.rules.TestWatcher		TestRule
+class	org.junit.rules.TestWatchman		MethodRule
+class	org.junit.rules.Timeout		TestRule
+class	org.junit.rules.Timeout$Builder		
+class	org.junit.rules.Verifier		TestRule
+class	org.junit.runner.Computer		
+class	org.junit.runner.Description		Serializable
+class	org.junit.runner.FilterFactories		
+class	org.junit.runner.FilterFactory$FilterNotCreatedException	Exception	
+class	org.junit.runner.FilterFactoryParams		
+class	org.junit.runner.JUnitCommandLineParseResult		
+class	org.junit.runner.JUnitCommandLineParseResult$CommandLineParserError	Exception	
+class	org.junit.runner.JUnitCore		
+class	org.junit.runner.Request		
+class	org.junit.runner.Result		Serializable
+class	org.junit.runner.Result$Listener	RunListener	
+class	org.junit.runner.Result$SerializedForm		Serializable
+class	org.junit.runner.Runner		Describable
+class	org.junit.runner.manipulation.Filter		
+class	org.junit.runner.manipulation.NoTestsRemainException	Exception	
+class	org.junit.runner.manipulation.Sorter		Comparator<Description>
+class	org.junit.runner.notification.Failure		Serializable
+class	org.junit.runner.notification.RunListener		
+class	org.junit.runner.notification.RunNotifier		
+class	org.junit.runner.notification.RunNotifier$SafeNotifier		
+class	org.junit.runner.notification.StoppedByUserException	RuntimeException	
+class	org.junit.runner.notification.SynchronizedRunListener	RunListener	
+class	org.junit.runners.AllTests	SuiteMethod	
+class	org.junit.runners.BlockJUnit4ClassRunner	ParentRunner<FrameworkMethod>	
+class	org.junit.runners.JUnit4	BlockJUnit4ClassRunner	
+class	org.junit.runners.Parameterized	Suite	
+class	org.junit.runners.ParentRunner	Runner	Filterable,Sortable
+class	org.junit.runners.Suite	ParentRunner<Runner>	
+class	org.junit.runners.model.FrameworkField	FrameworkMember<FrameworkField>	
+class	org.junit.runners.model.FrameworkMember		Annotatable
+class	org.junit.runners.model.FrameworkMethod	FrameworkMember<FrameworkMethod>	
+class	org.junit.runners.model.InitializationError	Exception	
+class	org.junit.runners.model.MultipleFailureException	Exception	
+class	org.junit.runners.model.NoGenericTypeParametersValidator		
+class	org.junit.runners.model.RunnerBuilder		
+class	org.junit.runners.model.Statement		
+class	org.junit.runners.model.TestClass		Annotatable
+class	org.junit.runners.model.TestClass$FieldComparator		Comparator<Field>
+class	org.junit.runners.model.TestClass$MethodComparator		Comparator<FrameworkMethod>
+class	org.junit.runners.model.TestTimedOutException	Exception	
+class	org.junit.runners.parameterized.BlockJUnit4ClassRunnerWithParameters	BlockJUnit4ClassRunner	
+class	org.junit.runners.parameterized.BlockJUnit4ClassRunnerWithParametersFactory		ParametersRunnerFactory
+class	org.junit.runners.parameterized.TestWithParameters		
+class	org.junit.validator.AnnotationValidator		
+class	org.junit.validator.AnnotationValidatorFactory		
+class	org.junit.validator.AnnotationsValidator		TestClassValidator
+class	org.junit.validator.AnnotationsValidator$AnnotatableValidator		
+class	org.junit.validator.AnnotationsValidator$ClassValidator	AnnotatableValidator<TestClass>	
+class	org.junit.validator.AnnotationsValidator$FieldValidator	AnnotatableValidator<FrameworkField>	
+class	org.junit.validator.AnnotationsValidator$MethodValidator	AnnotatableValidator<FrameworkMethod>	
+class	org.junit.validator.PublicClassValidator		TestClassValidator
+enum	com.android.uiautomator.core.Tracer$Mode		
+enum	org.junit.runners.MethodSorters		
+interface	com.android.uiautomator.core.Tracer$TracerSink		
+interface	com.android.uiautomator.core.UiWatcher		
+interface	com.android.uiautomator.testrunner.IAutomationSupport		
+interface	com.android.uiautomator.testrunner.TestCaseCollector$TestCaseFilter		
+interface	com.android.uiautomator.testrunner.UiAutomatorTestRunner$ResultReporter	TestListener	
+interface	junit.framework.Protectable		
+interface	junit.framework.Test		
+interface	junit.framework.TestListener		
+interface	junit.runner.TestRunListener		
+interface	org.hamcrest.Condition$Step		
+interface	org.hamcrest.Description		
+interface	org.hamcrest.Matcher	SelfDescribing	
+interface	org.hamcrest.SelfDescribing		
+interface	org.junit.internal.JUnitSystem		
+interface	org.junit.internal.runners.rules.RuleMemberValidator$RuleValidator		
+interface	org.junit.rules.MethodRule		
+interface	org.junit.rules.TestRule		
+interface	org.junit.runner.Describable		
+interface	org.junit.runner.FilterFactory		
+interface	org.junit.runner.manipulation.Filterable		
+interface	org.junit.runner.manipulation.Sortable		
+interface	org.junit.runners.model.Annotatable		
+interface	org.junit.runners.model.RunnerScheduler		
+interface	org.junit.runners.parameterized.ParametersRunnerFactory		
+interface	org.junit.validator.TestClassValidator		

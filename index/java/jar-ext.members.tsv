@@ -1,0 +1,1264 @@
+class	kind	declaration
+com.android.i18n.phonenumbers.AlternateFormatsCountryCodeSet	method	static Set<Integer> getCountryCodeSet()
+com.android.i18n.phonenumbers.AsYouTypeFormatter	field	private List<Phonemetadata.NumberFormat> possibleFormats;
+com.android.i18n.phonenumbers.AsYouTypeFormatter	field	private Phonemetadata.PhoneMetadata currentMetadata;
+com.android.i18n.phonenumbers.AsYouTypeFormatter	field	private Phonemetadata.PhoneMetadata defaultMetadata;
+com.android.i18n.phonenumbers.AsYouTypeFormatter	field	private RegexCache regexCache;
+com.android.i18n.phonenumbers.AsYouTypeFormatter	field	private String currentFormattingPattern;
+com.android.i18n.phonenumbers.AsYouTypeFormatter	field	private String currentOutput;
+com.android.i18n.phonenumbers.AsYouTypeFormatter	field	private String defaultCountry;
+com.android.i18n.phonenumbers.AsYouTypeFormatter	field	private String extractedNationalPrefix;
+com.android.i18n.phonenumbers.AsYouTypeFormatter	field	private StringBuilder accruedInput;
+com.android.i18n.phonenumbers.AsYouTypeFormatter	field	private StringBuilder accruedInputWithoutFormatting;
+com.android.i18n.phonenumbers.AsYouTypeFormatter	field	private StringBuilder formattingTemplate;
+com.android.i18n.phonenumbers.AsYouTypeFormatter	field	private StringBuilder nationalNumber;
+com.android.i18n.phonenumbers.AsYouTypeFormatter	field	private StringBuilder prefixBeforeNationalNumber;
+com.android.i18n.phonenumbers.AsYouTypeFormatter	field	private boolean ableToFormat;
+com.android.i18n.phonenumbers.AsYouTypeFormatter	field	private boolean inputHasFormatting;
+com.android.i18n.phonenumbers.AsYouTypeFormatter	field	private boolean isCompleteNumber;
+com.android.i18n.phonenumbers.AsYouTypeFormatter	field	private boolean isExpectingCountryCallingCode;
+com.android.i18n.phonenumbers.AsYouTypeFormatter	field	private boolean shouldAddSpaceAfterNationalPrefix;
+com.android.i18n.phonenumbers.AsYouTypeFormatter	field	private final PhoneNumberUtil phoneUtil;
+com.android.i18n.phonenumbers.AsYouTypeFormatter	field	private int lastMatchPosition;
+com.android.i18n.phonenumbers.AsYouTypeFormatter	field	private int originalPosition;
+com.android.i18n.phonenumbers.AsYouTypeFormatter	field	private int positionToRemember;
+com.android.i18n.phonenumbers.AsYouTypeFormatter	field	private static final Pattern DIGIT_PATTERN;
+com.android.i18n.phonenumbers.AsYouTypeFormatter	field	private static final Pattern ELIGIBLE_FORMAT_PATTERN;
+com.android.i18n.phonenumbers.AsYouTypeFormatter	field	private static final Pattern NATIONAL_PREFIX_SEPARATORS_PATTERN;
+com.android.i18n.phonenumbers.AsYouTypeFormatter	field	private static final Phonemetadata.PhoneMetadata EMPTY_METADATA;
+com.android.i18n.phonenumbers.AsYouTypeFormatter	field	private static final String DIGIT_PLACEHOLDER;
+com.android.i18n.phonenumbers.AsYouTypeFormatter	field	private static final char SEPARATOR_BEFORE_NATIONAL_NUMBER;
+com.android.i18n.phonenumbers.AsYouTypeFormatter	field	private static final int MIN_LEADING_DIGITS_LENGTH;
+com.android.i18n.phonenumbers.AsYouTypeFormatter	method	private Phonemetadata.PhoneMetadata getMetadataForRegion(String str)
+com.android.i18n.phonenumbers.AsYouTypeFormatter	method	private String appendNationalNumber(String str)
+com.android.i18n.phonenumbers.AsYouTypeFormatter	method	private String attemptToChooseFormattingPattern()
+com.android.i18n.phonenumbers.AsYouTypeFormatter	method	private String attemptToChoosePatternWithPrefixExtracted()
+com.android.i18n.phonenumbers.AsYouTypeFormatter	method	private String getFormattingTemplate(String str, String str2)
+com.android.i18n.phonenumbers.AsYouTypeFormatter	method	private String inputAccruedNationalNumber()
+com.android.i18n.phonenumbers.AsYouTypeFormatter	method	private String inputDigitHelper(char c)
+com.android.i18n.phonenumbers.AsYouTypeFormatter	method	private String inputDigitWithOptionToRememberPosition(char c, boolean z)
+com.android.i18n.phonenumbers.AsYouTypeFormatter	method	private String removeNationalPrefixFromNationalNumber()
+com.android.i18n.phonenumbers.AsYouTypeFormatter	method	private boolean ableToExtractLongerNdd()
+com.android.i18n.phonenumbers.AsYouTypeFormatter	method	private boolean attemptToExtractCountryCallingCode()
+com.android.i18n.phonenumbers.AsYouTypeFormatter	method	private boolean attemptToExtractIdd()
+com.android.i18n.phonenumbers.AsYouTypeFormatter	method	private boolean createFormattingTemplate(Phonemetadata.NumberFormat numberFormat)
+com.android.i18n.phonenumbers.AsYouTypeFormatter	method	private boolean isDigitOrLeadingPlusSign(char c)
+com.android.i18n.phonenumbers.AsYouTypeFormatter	method	private boolean isNanpaNumberWithNationalPrefix()
+com.android.i18n.phonenumbers.AsYouTypeFormatter	method	private boolean maybeCreateNewTemplate()
+com.android.i18n.phonenumbers.AsYouTypeFormatter	method	private char normalizeAndAccrueDigitsAndPlusSign(char c, boolean z)
+com.android.i18n.phonenumbers.AsYouTypeFormatter	method	private void getAvailableFormats(String str)
+com.android.i18n.phonenumbers.AsYouTypeFormatter	method	private void narrowDownPossibleFormats(String str)
+com.android.i18n.phonenumbers.AsYouTypeFormatter	method	public String inputDigit(char c)
+com.android.i18n.phonenumbers.AsYouTypeFormatter	method	public String inputDigitAndRememberPosition(char c)
+com.android.i18n.phonenumbers.AsYouTypeFormatter	method	public int getRememberedPosition()
+com.android.i18n.phonenumbers.AsYouTypeFormatter	method	public void clear()
+com.android.i18n.phonenumbers.CountryCodeToRegionCodeMap	method	static Map<Integer, List<String>> getCountryCodeToRegionCodeMap()
+com.android.i18n.phonenumbers.MetadataManager	field	private static final ConcurrentHashMap<Integer, Phonemetadata.PhoneMetadata> alternateFormatsMap;
+com.android.i18n.phonenumbers.MetadataManager	field	private static final ConcurrentHashMap<String, Phonemetadata.PhoneMetadata> shortNumberMetadataMap;
+com.android.i18n.phonenumbers.MetadataManager	field	private static final Logger logger;
+com.android.i18n.phonenumbers.MetadataManager	field	private static final Set<Integer> alternateFormatsCountryCodes;
+com.android.i18n.phonenumbers.MetadataManager	field	private static final Set<String> shortNumberMetadataRegionCodes;
+com.android.i18n.phonenumbers.MetadataManager	field	private static final String ALTERNATE_FORMATS_FILE_PREFIX;
+com.android.i18n.phonenumbers.MetadataManager	field	private static final String SHORT_NUMBER_METADATA_FILE_PREFIX;
+com.android.i18n.phonenumbers.MetadataManager	field	static final String MULTI_FILE_PHONE_NUMBER_METADATA_FILE_PREFIX;
+com.android.i18n.phonenumbers.MetadataManager	field	static final String SINGLE_FILE_PHONE_NUMBER_METADATA_FILE_NAME;
+com.android.i18n.phonenumbers.MetadataManager	method	private MetadataManager()
+com.android.i18n.phonenumbers.MetadataManager	method	private static Phonemetadata.PhoneMetadataCollection loadMetadataAndCloseInput(InputStream inputStream) throws Throwable
+com.android.i18n.phonenumbers.MetadataManager	method	public static List<Phonemetadata.PhoneMetadata> getMetadataFromSingleFileName(String str, MetadataLoader metadataLoader)
+com.android.i18n.phonenumbers.MetadataManager	method	static <T> Phonemetadata.PhoneMetadata getMetadataFromMultiFilePrefix(T t, ConcurrentHashMap<T, Phonemetadata.PhoneMetadata> concurrentHashMap, String str, MetadataLoader metadataLoader)
+com.android.i18n.phonenumbers.MetadataManager	method	static Phonemetadata.PhoneMetadata getAlternateFormatsForCountry(int i)
+com.android.i18n.phonenumbers.MetadataManager	method	static Phonemetadata.PhoneMetadata getShortNumberMetadataForRegion(String str)
+com.android.i18n.phonenumbers.MetadataManager	method	static Set<String> getSupportedShortNumberRegions()
+com.android.i18n.phonenumbers.MetadataManager	method	static SingleFileMetadataMaps getSingleFileMetadataMaps(AtomicReference<SingleFileMetadataMaps> atomicReference, String str, MetadataLoader metadataLoader)
+com.android.i18n.phonenumbers.MetadataManager$SingleFileMetadataMaps	field	private final Map<Integer, Phonemetadata.PhoneMetadata> countryCallingCodeToMetadata;
+com.android.i18n.phonenumbers.MetadataManager$SingleFileMetadataMaps	field	private final Map<String, Phonemetadata.PhoneMetadata> regionCodeToMetadata;
+com.android.i18n.phonenumbers.MetadataManager$SingleFileMetadataMaps	method	private SingleFileMetadataMaps(Map<String, Phonemetadata.PhoneMetadata> map, Map<Integer, Phonemetadata.PhoneMetadata> map2)
+com.android.i18n.phonenumbers.MetadataManager$SingleFileMetadataMaps	method	static SingleFileMetadataMaps load(String str, MetadataLoader metadataLoader)
+com.android.i18n.phonenumbers.MultiFileMetadataSourceImpl	field	private final ConcurrentHashMap<Integer, Phonemetadata.PhoneMetadata> nonGeographicalRegions;
+com.android.i18n.phonenumbers.MultiFileMetadataSourceImpl	field	private final ConcurrentHashMap<String, Phonemetadata.PhoneMetadata> geographicalRegions;
+com.android.i18n.phonenumbers.MultiFileMetadataSourceImpl	field	private final MetadataLoader metadataLoader;
+com.android.i18n.phonenumbers.MultiFileMetadataSourceImpl	field	private final String phoneNumberMetadataFilePrefix;
+com.android.i18n.phonenumbers.MultiFileMetadataSourceImpl	method	private boolean isNonGeographical(int i)
+com.android.i18n.phonenumbers.MultiFileMetadataSourceImpl	method	public Phonemetadata.PhoneMetadata getMetadataForNonGeographicalRegion(int i)
+com.android.i18n.phonenumbers.MultiFileMetadataSourceImpl	method	public Phonemetadata.PhoneMetadata getMetadataForRegion(String str)
+com.android.i18n.phonenumbers.NumberParseException	field	private ErrorType errorType;
+com.android.i18n.phonenumbers.NumberParseException	field	private String message;
+com.android.i18n.phonenumbers.NumberParseException	method	public ErrorType getErrorType()
+com.android.i18n.phonenumbers.NumberParseException	method	public NumberParseException(ErrorType errorType, String str)
+com.android.i18n.phonenumbers.NumberParseException	method	public String toString()
+com.android.i18n.phonenumbers.PhoneNumberMatch	field	private final Phonenumber.PhoneNumber number;
+com.android.i18n.phonenumbers.PhoneNumberMatch	field	private final String rawString;
+com.android.i18n.phonenumbers.PhoneNumberMatch	field	private final int start;
+com.android.i18n.phonenumbers.PhoneNumberMatch	method	public Phonenumber.PhoneNumber number()
+com.android.i18n.phonenumbers.PhoneNumberMatch	method	public String rawString()
+com.android.i18n.phonenumbers.PhoneNumberMatch	method	public String toString()
+com.android.i18n.phonenumbers.PhoneNumberMatch	method	public boolean equals(Object obj)
+com.android.i18n.phonenumbers.PhoneNumberMatch	method	public int end()
+com.android.i18n.phonenumbers.PhoneNumberMatch	method	public int hashCode()
+com.android.i18n.phonenumbers.PhoneNumberMatch	method	public int start()
+com.android.i18n.phonenumbers.PhoneNumberMatcher	field	private PhoneNumberMatch lastMatch;
+com.android.i18n.phonenumbers.PhoneNumberMatcher	field	private State state;
+com.android.i18n.phonenumbers.PhoneNumberMatcher	field	private final CharSequence text;
+com.android.i18n.phonenumbers.PhoneNumberMatcher	field	private final PhoneNumberUtil phoneUtil;
+com.android.i18n.phonenumbers.PhoneNumberMatcher	field	private final PhoneNumberUtil.Leniency leniency;
+com.android.i18n.phonenumbers.PhoneNumberMatcher	field	private final RegexCache regexCache;
+com.android.i18n.phonenumbers.PhoneNumberMatcher	field	private final String preferredRegion;
+com.android.i18n.phonenumbers.PhoneNumberMatcher	field	private int searchIndex;
+com.android.i18n.phonenumbers.PhoneNumberMatcher	field	private long maxTries;
+com.android.i18n.phonenumbers.PhoneNumberMatcher	field	private static final Pattern LEAD_CLASS;
+com.android.i18n.phonenumbers.PhoneNumberMatcher	field	private static final Pattern MATCHING_BRACKETS;
+com.android.i18n.phonenumbers.PhoneNumberMatcher	field	private static final Pattern PATTERN;
+com.android.i18n.phonenumbers.PhoneNumberMatcher	field	private static final Pattern PUB_PAGES;
+com.android.i18n.phonenumbers.PhoneNumberMatcher	field	private static final Pattern SLASH_SEPARATED_DATES;
+com.android.i18n.phonenumbers.PhoneNumberMatcher	field	private static final Pattern TIME_STAMPS;
+com.android.i18n.phonenumbers.PhoneNumberMatcher	field	private static final Pattern TIME_STAMPS_SUFFIX;
+com.android.i18n.phonenumbers.PhoneNumberMatcher	field	private static final Pattern[] INNER_MATCHES;
+com.android.i18n.phonenumbers.PhoneNumberMatcher	method	private PhoneNumberMatch extractInnerMatch(CharSequence charSequence, int i)
+com.android.i18n.phonenumbers.PhoneNumberMatcher	method	private PhoneNumberMatch extractMatch(CharSequence charSequence, int i)
+com.android.i18n.phonenumbers.PhoneNumberMatcher	method	private PhoneNumberMatch find(int i)
+com.android.i18n.phonenumbers.PhoneNumberMatcher	method	private PhoneNumberMatch parseAndVerify(CharSequence charSequence, int i)
+com.android.i18n.phonenumbers.PhoneNumberMatcher	method	private static CharSequence trimAfterFirstMatch(Pattern pattern, CharSequence charSequence)
+com.android.i18n.phonenumbers.PhoneNumberMatcher	method	private static String limit(int i, int i2)
+com.android.i18n.phonenumbers.PhoneNumberMatcher	method	private static String[] getNationalNumberGroups(PhoneNumberUtil phoneNumberUtil, Phonenumber.PhoneNumber phoneNumber)
+com.android.i18n.phonenumbers.PhoneNumberMatcher	method	private static String[] getNationalNumberGroups(PhoneNumberUtil phoneNumberUtil, Phonenumber.PhoneNumber phoneNumber, Phonemetadata.NumberFormat numberFormat)
+com.android.i18n.phonenumbers.PhoneNumberMatcher	method	private static boolean isInvalidPunctuationSymbol(char c)
+com.android.i18n.phonenumbers.PhoneNumberMatcher	method	public PhoneNumberMatch next()
+com.android.i18n.phonenumbers.PhoneNumberMatcher	method	public boolean hasNext()
+com.android.i18n.phonenumbers.PhoneNumberMatcher	method	public void remove()
+com.android.i18n.phonenumbers.PhoneNumberMatcher	method	static boolean allNumberGroupsAreExactlyPresent(PhoneNumberUtil phoneNumberUtil, Phonenumber.PhoneNumber phoneNumber, StringBuilder sb, String[] strArr)
+com.android.i18n.phonenumbers.PhoneNumberMatcher	method	static boolean allNumberGroupsRemainGrouped(PhoneNumberUtil phoneNumberUtil, Phonenumber.PhoneNumber phoneNumber, StringBuilder sb, String[] strArr)
+com.android.i18n.phonenumbers.PhoneNumberMatcher	method	static boolean containsMoreThanOneSlashInNationalNumber(Phonenumber.PhoneNumber phoneNumber, String str)
+com.android.i18n.phonenumbers.PhoneNumberMatcher	method	static boolean containsOnlyValidXChars(Phonenumber.PhoneNumber phoneNumber, String str, PhoneNumberUtil phoneNumberUtil)
+com.android.i18n.phonenumbers.PhoneNumberMatcher	method	static boolean isLatinLetter(char c)
+com.android.i18n.phonenumbers.PhoneNumberMatcher	method	static boolean isNationalPrefixPresentIfRequired(Phonenumber.PhoneNumber phoneNumber, PhoneNumberUtil phoneNumberUtil)
+com.android.i18n.phonenumbers.PhoneNumberToTimeZonesMapper	field	private PrefixTimeZonesMap prefixTimeZonesMap;
+com.android.i18n.phonenumbers.PhoneNumberToTimeZonesMapper	field	private static final Logger logger;
+com.android.i18n.phonenumbers.PhoneNumberToTimeZonesMapper	field	private static final String MAPPING_DATA_DIRECTORY;
+com.android.i18n.phonenumbers.PhoneNumberToTimeZonesMapper	field	private static final String MAPPING_DATA_FILE_NAME;
+com.android.i18n.phonenumbers.PhoneNumberToTimeZonesMapper	field	private static final String UNKNOWN_TIMEZONE;
+com.android.i18n.phonenumbers.PhoneNumberToTimeZonesMapper	field	static final List<String> UNKNOWN_TIME_ZONE_LIST;
+com.android.i18n.phonenumbers.PhoneNumberToTimeZonesMapper	method	private List<String> getCountryLevelTimeZonesforNumber(Phonenumber.PhoneNumber phoneNumber)
+com.android.i18n.phonenumbers.PhoneNumberToTimeZonesMapper	method	private List<String> getTimeZonesForGeocodableNumber(Phonenumber.PhoneNumber phoneNumber)
+com.android.i18n.phonenumbers.PhoneNumberToTimeZonesMapper	method	private PhoneNumberToTimeZonesMapper(PrefixTimeZonesMap prefixTimeZonesMap)
+com.android.i18n.phonenumbers.PhoneNumberToTimeZonesMapper	method	private static void close(InputStream inputStream)
+com.android.i18n.phonenumbers.PhoneNumberToTimeZonesMapper	method	public List<String> getTimeZonesForGeographicalNumber(Phonenumber.PhoneNumber phoneNumber)
+com.android.i18n.phonenumbers.PhoneNumberToTimeZonesMapper	method	public List<String> getTimeZonesForNumber(Phonenumber.PhoneNumber phoneNumber)
+com.android.i18n.phonenumbers.PhoneNumberToTimeZonesMapper	method	public static PrefixTimeZonesMap loadPrefixTimeZonesMapFromFile(String str) throws Throwable
+com.android.i18n.phonenumbers.PhoneNumberToTimeZonesMapper	method	public static String getUnknownTimeZone()
+com.android.i18n.phonenumbers.PhoneNumberToTimeZonesMapper	method	public static synchronized PhoneNumberToTimeZonesMapper getInstance()
+com.android.i18n.phonenumbers.PhoneNumberToTimeZonesMapper$LazyHolder	field	private static final PhoneNumberToTimeZonesMapper INSTANCE;
+com.android.i18n.phonenumbers.PhoneNumberToTimeZonesMapper$LazyHolder	method	private LazyHolder()
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private final Map<Integer, List<String>> countryCallingCodeToRegionCodeMap;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private final MatcherApi matcherApi;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private final MetadataSource metadataSource;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private final RegexCache regexCache;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private final Set<Integer> countryCodesForNonGeographicalRegion;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private final Set<String> nanpaRegions;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private final Set<String> supportedRegions;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static PhoneNumberUtil instance;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final Logger logger;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final Map<Character, Character> ALL_PLUS_NUMBER_GROUPING_SYMBOLS;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final Map<Character, Character> ALPHA_MAPPINGS;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final Map<Character, Character> ALPHA_PHONE_MAPPINGS;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final Map<Character, Character> DIALLABLE_CHAR_MAPPINGS;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final Map<Integer, String> MOBILE_TOKEN_MAPPINGS;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final Pattern CAPTURING_DIGIT_PATTERN;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final Pattern EXTN_PATTERN;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final Pattern FIRST_GROUP_ONLY_PREFIX_PATTERN;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final Pattern FIRST_GROUP_PATTERN;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final Pattern SEPARATOR_PATTERN;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final Pattern SINGLE_INTERNATIONAL_PREFIX;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final Pattern VALID_ALPHA_PHONE_PATTERN;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final Pattern VALID_PHONE_NUMBER_PATTERN;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final Pattern VALID_START_CHAR_PATTERN;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final Set<Integer> GEO_MOBILE_COUNTRIES;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final Set<Integer> GEO_MOBILE_COUNTRIES_WITHOUT_MOBILE_AREA_CODES;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final String CAPTURING_EXTN_DIGITS;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final String CC_STRING;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final String COLOMBIA_MOBILE_TO_FIXED_LINE_PREFIX;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final String DEFAULT_EXTN_PREFIX;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final String DIGITS;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final String EXTN_PATTERNS_FOR_PARSING;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final String FG_STRING;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final String NP_STRING;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final String RFC3966_EXTN_PREFIX;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final String RFC3966_ISDN_SUBADDRESS;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final String RFC3966_PHONE_CONTEXT;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final String RFC3966_PREFIX;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final String SECOND_NUMBER_START;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final String UNKNOWN_REGION;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final String UNWANTED_END_CHARS;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final String VALID_ALPHA;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final String VALID_PHONE_NUMBER;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final String VALID_START_CHAR;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final char STAR_SIGN;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final int MAX_INPUT_STRING_LENGTH;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final int MIN_LENGTH_FOR_NSN;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	private static final int NANPA_COUNTRY_CODE;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	public static final String REGION_CODE_FOR_NON_GEO_ENTITY;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	static final Pattern NON_DIGITS_PATTERN;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	static final Pattern PLUS_CHARS_PATTERN;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	static final Pattern SECOND_NUMBER_START_PATTERN;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	static final Pattern UNWANTED_END_CHAR_PATTERN;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	static final String EXTN_PATTERNS_FOR_MATCHING;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	static final String PLUS_CHARS;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	static final String VALID_PUNCTUATION;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	static final char PLUS_SIGN;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	static final int MAX_LENGTH_COUNTRY_CODE;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	static final int MAX_LENGTH_FOR_NSN;
+com.android.i18n.phonenumbers.PhoneNumberUtil	field	static final int REGEX_FLAGS;
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	private PhoneNumberType getNumberTypeHelper(String str, Phonemetadata.PhoneMetadata phoneMetadata)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	private Phonemetadata.PhoneMetadata getMetadataForRegionOrCallingCode(int i, String str)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	private Set<PhoneNumberType> getSupportedTypesForMetadata(Phonemetadata.PhoneMetadata phoneMetadata)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	private String formatNsn(String str, Phonemetadata.PhoneMetadata phoneMetadata, PhoneNumberFormat phoneNumberFormat)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	private String formatNsn(String str, Phonemetadata.PhoneMetadata phoneMetadata, PhoneNumberFormat phoneNumberFormat, CharSequence charSequence)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	private String formatNsnUsingPattern(String str, Phonemetadata.NumberFormat numberFormat, PhoneNumberFormat phoneNumberFormat, CharSequence charSequence)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	private String getRegionCodeForNumberFromRegionList(Phonenumber.PhoneNumber phoneNumber, List<String> list)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	private ValidationResult testNumberLength(CharSequence charSequence, Phonemetadata.PhoneMetadata phoneMetadata)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	private ValidationResult testNumberLength(CharSequence charSequence, Phonemetadata.PhoneMetadata phoneMetadata, PhoneNumberType phoneNumberType)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	private boolean checkRegionForParsing(CharSequence charSequence, String str)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	private boolean hasFormattingPatternForNumber(Phonenumber.PhoneNumber phoneNumber)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	private boolean hasValidCountryCallingCode(int i)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	private boolean isNationalNumberSuffixOfTheOther(Phonenumber.PhoneNumber phoneNumber, Phonenumber.PhoneNumber phoneNumber2)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	private boolean isValidRegionCode(String str)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	private boolean parsePrefixAsIdd(Pattern pattern, StringBuilder sb)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	private boolean rawInputContainsNationalPrefix(String str, String str2, String str3)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	private int getCountryCodeForValidRegion(String str)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	private static PhoneNumberUtil createInstance(MetadataSource metadataSource)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	private static Phonenumber.PhoneNumber copyCoreFieldsOnly(Phonenumber.PhoneNumber phoneNumber)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	private static String createExtnPattern(String str)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	private static String normalizeHelper(CharSequence charSequence, Map<Character, Character> map, boolean z)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	private static boolean descHasData(Phonemetadata.PhoneNumberDesc phoneNumberDesc)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	private static boolean descHasPossibleNumberData(Phonemetadata.PhoneNumberDesc phoneNumberDesc)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	private void buildNationalNumberForParsing(String str, StringBuilder sb)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	private void maybeAppendFormattedExtension(Phonenumber.PhoneNumber phoneNumber, Phonemetadata.PhoneMetadata phoneMetadata, PhoneNumberFormat phoneNumberFormat, StringBuilder sb)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	private void parseHelper(CharSequence charSequence, String str, boolean z, boolean z2, Phonenumber.PhoneNumber phoneNumber) throws NumberParseException
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	private void prefixNumberWithCountryCallingCode(int i, PhoneNumberFormat phoneNumberFormat, StringBuilder sb)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public AsYouTypeFormatter getAsYouTypeFormatter(String str)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public Iterable<PhoneNumberMatch> findNumbers(CharSequence charSequence, String str)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public Iterable<PhoneNumberMatch> findNumbers(final CharSequence charSequence, final String str, final Leniency leniency, final long j)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public List<String> getRegionCodesForCountryCode(int i)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public MatchType isNumberMatch(CharSequence charSequence, CharSequence charSequence2)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public MatchType isNumberMatch(Phonenumber.PhoneNumber phoneNumber, CharSequence charSequence)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public MatchType isNumberMatch(Phonenumber.PhoneNumber phoneNumber, Phonenumber.PhoneNumber phoneNumber2)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public PhoneNumberType getNumberType(Phonenumber.PhoneNumber phoneNumber)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public Phonenumber.PhoneNumber getExampleNumber(String str)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public Phonenumber.PhoneNumber getExampleNumberForNonGeoEntity(int i)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public Phonenumber.PhoneNumber getExampleNumberForType(PhoneNumberType phoneNumberType)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public Phonenumber.PhoneNumber getExampleNumberForType(String str, PhoneNumberType phoneNumberType)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public Phonenumber.PhoneNumber getInvalidExampleNumber(String str)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public Phonenumber.PhoneNumber parse(CharSequence charSequence, String str) throws NumberParseException
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public Phonenumber.PhoneNumber parseAndKeepRawInput(CharSequence charSequence, String str) throws NumberParseException
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public Set<Integer> getSupportedCallingCodes()
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public Set<Integer> getSupportedGlobalNetworkCallingCodes()
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public Set<PhoneNumberType> getSupportedTypesForNonGeoEntity(int i)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public Set<PhoneNumberType> getSupportedTypesForRegion(String str)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public Set<String> getSupportedRegions()
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public String format(Phonenumber.PhoneNumber phoneNumber, PhoneNumberFormat phoneNumberFormat)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public String formatByPattern(Phonenumber.PhoneNumber phoneNumber, PhoneNumberFormat phoneNumberFormat, List<Phonemetadata.NumberFormat> list)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public String formatInOriginalFormat(Phonenumber.PhoneNumber phoneNumber, String str)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public String formatNationalNumberWithCarrierCode(Phonenumber.PhoneNumber phoneNumber, CharSequence charSequence)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public String formatNationalNumberWithPreferredCarrierCode(Phonenumber.PhoneNumber phoneNumber, CharSequence charSequence)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public String formatNumberForMobileDialing(Phonenumber.PhoneNumber phoneNumber, String str, boolean z)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public String formatOutOfCountryCallingNumber(Phonenumber.PhoneNumber phoneNumber, String str)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public String formatOutOfCountryKeepingAlphaChars(Phonenumber.PhoneNumber phoneNumber, String str)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public String getNationalSignificantNumber(Phonenumber.PhoneNumber phoneNumber)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public String getNddPrefixForRegion(String str, boolean z)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public String getRegionCodeForCountryCode(int i)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public String getRegionCodeForNumber(Phonenumber.PhoneNumber phoneNumber)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public ValidationResult isPossibleNumberForTypeWithReason(Phonenumber.PhoneNumber phoneNumber, PhoneNumberType phoneNumberType)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public ValidationResult isPossibleNumberWithReason(Phonenumber.PhoneNumber phoneNumber)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public boolean canBeInternationallyDialled(Phonenumber.PhoneNumber phoneNumber)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public boolean isAlphaNumber(CharSequence charSequence)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public boolean isMobileNumberPortableRegion(String str)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public boolean isNANPACountry(String str)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public boolean isNumberGeographical(PhoneNumberType phoneNumberType, int i)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public boolean isNumberGeographical(Phonenumber.PhoneNumber phoneNumber)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public boolean isPossibleNumber(CharSequence charSequence, String str)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public boolean isPossibleNumber(Phonenumber.PhoneNumber phoneNumber)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public boolean isPossibleNumberForType(Phonenumber.PhoneNumber phoneNumber, PhoneNumberType phoneNumberType)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public boolean isValidNumber(Phonenumber.PhoneNumber phoneNumber)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public boolean isValidNumberForRegion(Phonenumber.PhoneNumber phoneNumber, String str)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public boolean truncateTooLongNumber(Phonenumber.PhoneNumber phoneNumber)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public int getCountryCodeForRegion(String str)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public int getLengthOfGeographicalAreaCode(Phonenumber.PhoneNumber phoneNumber)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public int getLengthOfNationalDestinationCode(Phonenumber.PhoneNumber phoneNumber)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public static PhoneNumberUtil createInstance(MetadataLoader metadataLoader)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public static String convertAlphaCharactersInNumber(CharSequence charSequence)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public static String getCountryMobileToken(int i)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public static String normalizeDiallableCharsOnly(CharSequence charSequence)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public static String normalizeDigitsOnly(CharSequence charSequence)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public static synchronized PhoneNumberUtil getInstance()
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public void format(Phonenumber.PhoneNumber phoneNumber, PhoneNumberFormat phoneNumberFormat, StringBuilder sb)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public void parse(CharSequence charSequence, String str, Phonenumber.PhoneNumber phoneNumber) throws NumberParseException
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	public void parseAndKeepRawInput(CharSequence charSequence, String str, Phonenumber.PhoneNumber phoneNumber) throws NumberParseException
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	static CharSequence extractPossibleNumber(CharSequence charSequence)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	static StringBuilder normalize(StringBuilder sb)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	static StringBuilder normalizeDigits(CharSequence charSequence, boolean z)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	static boolean formattingRuleHasFirstGroupOnly(String str)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	static boolean isViablePhoneNumber(CharSequence charSequence)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	static synchronized void setInstance(PhoneNumberUtil phoneNumberUtil)
+com.android.i18n.phonenumbers.PhoneNumberUtil	method	static void setItalianLeadingZerosForPhoneNumber(CharSequence charSequence, Phonenumber.PhoneNumber phoneNumber)
+com.android.i18n.phonenumbers.PhoneNumberUtil$Leniency	method	abstract boolean verify(Phonenumber.PhoneNumber phoneNumber, CharSequence charSequence, PhoneNumberUtil phoneNumberUtil, PhoneNumberMatcher phoneNumberMatcher);
+com.android.i18n.phonenumbers.Phonemetadata	method	private Phonemetadata()
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	field	private List<String> leadingDigitsPattern_;
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	field	private String domesticCarrierCodeFormattingRule_;
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	field	private String format_;
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	field	private String nationalPrefixFormattingRule_;
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	field	private String pattern_;
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	field	private boolean hasDomesticCarrierCodeFormattingRule;
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	field	private boolean hasFormat;
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	field	private boolean hasNationalPrefixFormattingRule;
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	field	private boolean hasNationalPrefixOptionalWhenFormatting;
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	field	private boolean hasPattern;
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	field	private boolean nationalPrefixOptionalWhenFormatting_;
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	field	private static final long serialVersionUID;
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	method	public List<String> leadingDigitPatterns()
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	method	public NumberFormat addLeadingDigitsPattern(String str)
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	method	public NumberFormat clearNationalPrefixFormattingRule()
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	method	public NumberFormat setDomesticCarrierCodeFormattingRule(String str)
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	method	public NumberFormat setFormat(String str)
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	method	public NumberFormat setNationalPrefixFormattingRule(String str)
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	method	public NumberFormat setNationalPrefixOptionalWhenFormatting(boolean z)
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	method	public NumberFormat setPattern(String str)
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	method	public String getDomesticCarrierCodeFormattingRule()
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	method	public String getFormat()
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	method	public String getLeadingDigitsPattern(int i)
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	method	public String getNationalPrefixFormattingRule()
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	method	public String getPattern()
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	method	public boolean getNationalPrefixOptionalWhenFormatting()
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	method	public boolean hasDomesticCarrierCodeFormattingRule()
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	method	public boolean hasFormat()
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	method	public boolean hasNationalPrefixFormattingRule()
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	method	public boolean hasNationalPrefixOptionalWhenFormatting()
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	method	public boolean hasPattern()
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	method	public int leadingDigitsPatternSize()
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	method	public static Builder newBuilder()
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	method	public void readExternal(ObjectInput objectInput) throws IOException
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat	method	public void writeExternal(ObjectOutput objectOutput) throws IOException
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat$Builder	method	public Builder mergeFrom(NumberFormat numberFormat)
+com.android.i18n.phonenumbers.Phonemetadata$NumberFormat$Builder	method	public NumberFormat build()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private List<NumberFormat> intlNumberFormat_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private List<NumberFormat> numberFormat_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private PhoneNumberDesc carrierSpecific_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private PhoneNumberDesc emergency_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private PhoneNumberDesc fixedLine_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private PhoneNumberDesc generalDesc_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private PhoneNumberDesc mobile_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private PhoneNumberDesc noInternationalDialling_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private PhoneNumberDesc pager_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private PhoneNumberDesc personalNumber_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private PhoneNumberDesc premiumRate_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private PhoneNumberDesc sharedCost_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private PhoneNumberDesc shortCode_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private PhoneNumberDesc smsServices_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private PhoneNumberDesc standardRate_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private PhoneNumberDesc tollFree_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private PhoneNumberDesc uan_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private PhoneNumberDesc voicemail_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private PhoneNumberDesc voip_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private String id_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private String internationalPrefix_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private String leadingDigits_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private String nationalPrefixForParsing_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private String nationalPrefixTransformRule_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private String nationalPrefix_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private String preferredExtnPrefix_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private String preferredInternationalPrefix_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean hasCarrierSpecific;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean hasCountryCode;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean hasEmergency;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean hasFixedLine;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean hasGeneralDesc;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean hasId;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean hasInternationalPrefix;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean hasLeadingDigits;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean hasLeadingZeroPossible;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean hasMainCountryForCode;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean hasMobile;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean hasMobileNumberPortableRegion;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean hasNationalPrefix;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean hasNationalPrefixForParsing;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean hasNationalPrefixTransformRule;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean hasNoInternationalDialling;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean hasPager;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean hasPersonalNumber;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean hasPreferredExtnPrefix;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean hasPreferredInternationalPrefix;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean hasPremiumRate;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean hasSameMobileAndFixedLinePattern;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean hasSharedCost;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean hasShortCode;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean hasSmsServices;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean hasStandardRate;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean hasTollFree;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean hasUan;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean hasVoicemail;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean hasVoip;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean leadingZeroPossible_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean mainCountryForCode_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean mobileNumberPortableRegion_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private boolean sameMobileAndFixedLinePattern_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private int countryCode_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	field	private static final long serialVersionUID;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public List<NumberFormat> intlNumberFormats()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public List<NumberFormat> numberFormats()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public NumberFormat getIntlNumberFormat(int i)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public NumberFormat getNumberFormat(int i)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata addIntlNumberFormat(NumberFormat numberFormat)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata addNumberFormat(NumberFormat numberFormat)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata clearIntlNumberFormat()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata clearLeadingZeroPossible()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata clearMainCountryForCode()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata clearMobileNumberPortableRegion()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata clearNationalPrefix()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata clearNationalPrefixTransformRule()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata clearPreferredExtnPrefix()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata clearPreferredInternationalPrefix()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata clearSameMobileAndFixedLinePattern()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata setCarrierSpecific(PhoneNumberDesc phoneNumberDesc)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata setCountryCode(int i)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata setEmergency(PhoneNumberDesc phoneNumberDesc)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata setFixedLine(PhoneNumberDesc phoneNumberDesc)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata setGeneralDesc(PhoneNumberDesc phoneNumberDesc)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata setId(String str)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata setInternationalPrefix(String str)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata setLeadingDigits(String str)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata setLeadingZeroPossible(boolean z)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata setMainCountryForCode(boolean z)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata setMobile(PhoneNumberDesc phoneNumberDesc)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata setMobileNumberPortableRegion(boolean z)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata setNationalPrefix(String str)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata setNationalPrefixForParsing(String str)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata setNationalPrefixTransformRule(String str)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata setNoInternationalDialling(PhoneNumberDesc phoneNumberDesc)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata setPager(PhoneNumberDesc phoneNumberDesc)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata setPersonalNumber(PhoneNumberDesc phoneNumberDesc)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata setPreferredExtnPrefix(String str)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata setPreferredInternationalPrefix(String str)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata setPremiumRate(PhoneNumberDesc phoneNumberDesc)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata setSameMobileAndFixedLinePattern(boolean z)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata setSharedCost(PhoneNumberDesc phoneNumberDesc)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata setShortCode(PhoneNumberDesc phoneNumberDesc)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata setSmsServices(PhoneNumberDesc phoneNumberDesc)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata setStandardRate(PhoneNumberDesc phoneNumberDesc)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata setTollFree(PhoneNumberDesc phoneNumberDesc)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata setUan(PhoneNumberDesc phoneNumberDesc)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata setVoicemail(PhoneNumberDesc phoneNumberDesc)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneMetadata setVoip(PhoneNumberDesc phoneNumberDesc)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneNumberDesc getCarrierSpecific()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneNumberDesc getEmergency()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneNumberDesc getFixedLine()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneNumberDesc getGeneralDesc()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneNumberDesc getMobile()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneNumberDesc getNoInternationalDialling()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneNumberDesc getPager()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneNumberDesc getPersonalNumber()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneNumberDesc getPremiumRate()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneNumberDesc getSharedCost()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneNumberDesc getShortCode()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneNumberDesc getSmsServices()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneNumberDesc getStandardRate()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneNumberDesc getTollFree()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneNumberDesc getUan()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneNumberDesc getVoicemail()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public PhoneNumberDesc getVoip()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public String getId()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public String getInternationalPrefix()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public String getLeadingDigits()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public String getNationalPrefix()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public String getNationalPrefixForParsing()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public String getNationalPrefixTransformRule()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public String getPreferredExtnPrefix()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public String getPreferredInternationalPrefix()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean getMainCountryForCode()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean getSameMobileAndFixedLinePattern()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean hasCarrierSpecific()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean hasCountryCode()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean hasEmergency()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean hasFixedLine()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean hasGeneralDesc()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean hasId()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean hasInternationalPrefix()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean hasLeadingDigits()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean hasLeadingZeroPossible()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean hasMainCountryForCode()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean hasMobile()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean hasMobileNumberPortableRegion()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean hasNationalPrefix()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean hasNationalPrefixForParsing()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean hasNationalPrefixTransformRule()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean hasNoInternationalDialling()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean hasPager()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean hasPersonalNumber()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean hasPreferredExtnPrefix()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean hasPreferredInternationalPrefix()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean hasPremiumRate()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean hasSameMobileAndFixedLinePattern()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean hasSharedCost()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean hasShortCode()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean hasSmsServices()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean hasStandardRate()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean hasTollFree()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean hasUan()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean hasVoicemail()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean hasVoip()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean isLeadingZeroPossible()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean isMainCountryForCode()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public boolean isMobileNumberPortableRegion()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public int getCountryCode()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public int intlNumberFormatSize()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public int numberFormatSize()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public static Builder newBuilder()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public void readExternal(ObjectInput objectInput) throws IOException
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata	method	public void writeExternal(ObjectOutput objectOutput) throws IOException
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadata$Builder	method	public PhoneMetadata build()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadataCollection	field	private List<PhoneMetadata> metadata_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadataCollection	field	private static final long serialVersionUID;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadataCollection	method	public List<PhoneMetadata> getMetadataList()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadataCollection	method	public PhoneMetadataCollection addMetadata(PhoneMetadata phoneMetadata)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadataCollection	method	public PhoneMetadataCollection clear()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadataCollection	method	public int getMetadataCount()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadataCollection	method	public static Builder newBuilder()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadataCollection	method	public void readExternal(ObjectInput objectInput) throws IOException
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadataCollection	method	public void writeExternal(ObjectOutput objectOutput) throws IOException
+com.android.i18n.phonenumbers.Phonemetadata$PhoneMetadataCollection$Builder	method	public PhoneMetadataCollection build()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc	field	private List<Integer> possibleLengthLocalOnly_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc	field	private List<Integer> possibleLength_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc	field	private String exampleNumber_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc	field	private String nationalNumberPattern_;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc	field	private boolean hasExampleNumber;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc	field	private boolean hasNationalNumberPattern;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc	field	private static final long serialVersionUID;
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc	method	public List<Integer> getPossibleLengthList()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc	method	public List<Integer> getPossibleLengthLocalOnlyList()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc	method	public PhoneNumberDesc addPossibleLength(int i)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc	method	public PhoneNumberDesc addPossibleLengthLocalOnly(int i)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc	method	public PhoneNumberDesc clearExampleNumber()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc	method	public PhoneNumberDesc clearNationalNumberPattern()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc	method	public PhoneNumberDesc clearPossibleLength()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc	method	public PhoneNumberDesc clearPossibleLengthLocalOnly()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc	method	public PhoneNumberDesc setExampleNumber(String str)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc	method	public PhoneNumberDesc setNationalNumberPattern(String str)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc	method	public String getExampleNumber()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc	method	public String getNationalNumberPattern()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc	method	public boolean exactlySameAs(PhoneNumberDesc phoneNumberDesc)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc	method	public boolean hasExampleNumber()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc	method	public boolean hasNationalNumberPattern()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc	method	public int getPossibleLength(int i)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc	method	public int getPossibleLengthCount()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc	method	public int getPossibleLengthLocalOnly(int i)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc	method	public int getPossibleLengthLocalOnlyCount()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc	method	public static Builder newBuilder()
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc	method	public void readExternal(ObjectInput objectInput) throws IOException
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc	method	public void writeExternal(ObjectOutput objectOutput) throws IOException
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc$Builder	method	public Builder mergeFrom(PhoneNumberDesc phoneNumberDesc)
+com.android.i18n.phonenumbers.Phonemetadata$PhoneNumberDesc$Builder	method	public PhoneNumberDesc build()
+com.android.i18n.phonenumbers.Phonenumber	method	private Phonenumber()
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	field	private CountryCodeSource countryCodeSource_;
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	field	private String extension_;
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	field	private String preferredDomesticCarrierCode_;
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	field	private String rawInput_;
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	field	private boolean hasCountryCode;
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	field	private boolean hasCountryCodeSource;
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	field	private boolean hasExtension;
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	field	private boolean hasItalianLeadingZero;
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	field	private boolean hasNationalNumber;
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	field	private boolean hasNumberOfLeadingZeros;
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	field	private boolean hasPreferredDomesticCarrierCode;
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	field	private boolean hasRawInput;
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	field	private boolean italianLeadingZero_;
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	field	private int countryCode_;
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	field	private int numberOfLeadingZeros_;
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	field	private long nationalNumber_;
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	field	private static final long serialVersionUID;
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public CountryCodeSource getCountryCodeSource()
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public PhoneNumber clearCountryCode()
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public PhoneNumber clearCountryCodeSource()
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public PhoneNumber clearExtension()
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public PhoneNumber clearItalianLeadingZero()
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public PhoneNumber clearNationalNumber()
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public PhoneNumber clearNumberOfLeadingZeros()
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public PhoneNumber clearPreferredDomesticCarrierCode()
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public PhoneNumber clearRawInput()
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public PhoneNumber mergeFrom(PhoneNumber phoneNumber)
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public PhoneNumber setCountryCode(int i)
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public PhoneNumber setCountryCodeSource(CountryCodeSource countryCodeSource)
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public PhoneNumber setExtension(String str)
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public PhoneNumber setItalianLeadingZero(boolean z)
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public PhoneNumber setNationalNumber(long j)
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public PhoneNumber setNumberOfLeadingZeros(int i)
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public PhoneNumber setPreferredDomesticCarrierCode(String str)
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public PhoneNumber setRawInput(String str)
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public String getExtension()
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public String getPreferredDomesticCarrierCode()
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public String getRawInput()
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public String toString()
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public boolean equals(Object obj)
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public boolean exactlySameAs(PhoneNumber phoneNumber)
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public boolean hasCountryCode()
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public boolean hasCountryCodeSource()
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public boolean hasExtension()
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public boolean hasItalianLeadingZero()
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public boolean hasNationalNumber()
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public boolean hasNumberOfLeadingZeros()
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public boolean hasPreferredDomesticCarrierCode()
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public boolean hasRawInput()
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public boolean isItalianLeadingZero()
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public final PhoneNumber clear()
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public int getCountryCode()
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public int getNumberOfLeadingZeros()
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public int hashCode()
+com.android.i18n.phonenumbers.Phonenumber$PhoneNumber	method	public long getNationalNumber()
+com.android.i18n.phonenumbers.ShortNumberInfo	field	private final Map<Integer, List<String>> countryCallingCodeToRegionCodeMap;
+com.android.i18n.phonenumbers.ShortNumberInfo	field	private final MatcherApi matcherApi;
+com.android.i18n.phonenumbers.ShortNumberInfo	field	private static final Logger logger;
+com.android.i18n.phonenumbers.ShortNumberInfo	field	private static final Set<String> REGIONS_WHERE_EMERGENCY_NUMBERS_MUST_BE_EXACT;
+com.android.i18n.phonenumbers.ShortNumberInfo	field	private static final ShortNumberInfo INSTANCE;
+com.android.i18n.phonenumbers.ShortNumberInfo	method	private List<String> getRegionCodesForCountryCode(int i)
+com.android.i18n.phonenumbers.ShortNumberInfo	method	private String getRegionCodeForShortNumberFromRegionList(Phonenumber.PhoneNumber phoneNumber, List<String> list)
+com.android.i18n.phonenumbers.ShortNumberInfo	method	private boolean matchesEmergencyNumberHelper(CharSequence charSequence, String str, boolean z)
+com.android.i18n.phonenumbers.ShortNumberInfo	method	private boolean matchesPossibleNumberAndNationalNumber(String str, Phonemetadata.PhoneNumberDesc phoneNumberDesc)
+com.android.i18n.phonenumbers.ShortNumberInfo	method	private boolean regionDialingFromMatchesNumber(Phonenumber.PhoneNumber phoneNumber, String str)
+com.android.i18n.phonenumbers.ShortNumberInfo	method	private static String getNationalSignificantNumber(Phonenumber.PhoneNumber phoneNumber)
+com.android.i18n.phonenumbers.ShortNumberInfo	method	public ShortNumberCost getExpectedCost(Phonenumber.PhoneNumber phoneNumber)
+com.android.i18n.phonenumbers.ShortNumberInfo	method	public ShortNumberCost getExpectedCostForRegion(Phonenumber.PhoneNumber phoneNumber, String str)
+com.android.i18n.phonenumbers.ShortNumberInfo	method	public boolean connectsToEmergencyNumber(String str, String str2)
+com.android.i18n.phonenumbers.ShortNumberInfo	method	public boolean isCarrierSpecific(Phonenumber.PhoneNumber phoneNumber)
+com.android.i18n.phonenumbers.ShortNumberInfo	method	public boolean isCarrierSpecificForRegion(Phonenumber.PhoneNumber phoneNumber, String str)
+com.android.i18n.phonenumbers.ShortNumberInfo	method	public boolean isEmergencyNumber(CharSequence charSequence, String str)
+com.android.i18n.phonenumbers.ShortNumberInfo	method	public boolean isPossibleShortNumber(Phonenumber.PhoneNumber phoneNumber)
+com.android.i18n.phonenumbers.ShortNumberInfo	method	public boolean isPossibleShortNumberForRegion(Phonenumber.PhoneNumber phoneNumber, String str)
+com.android.i18n.phonenumbers.ShortNumberInfo	method	public boolean isSmsServiceForRegion(Phonenumber.PhoneNumber phoneNumber, String str)
+com.android.i18n.phonenumbers.ShortNumberInfo	method	public boolean isValidShortNumber(Phonenumber.PhoneNumber phoneNumber)
+com.android.i18n.phonenumbers.ShortNumberInfo	method	public boolean isValidShortNumberForRegion(Phonenumber.PhoneNumber phoneNumber, String str)
+com.android.i18n.phonenumbers.ShortNumberInfo	method	public static ShortNumberInfo getInstance()
+com.android.i18n.phonenumbers.ShortNumbersRegionCodeSet	method	static Set<String> getRegionCodeSet()
+com.android.i18n.phonenumbers.SingleFileMetadataSourceImpl	field	private final AtomicReference<MetadataManager.SingleFileMetadataMaps> phoneNumberMetadataRef;
+com.android.i18n.phonenumbers.SingleFileMetadataSourceImpl	field	private final MetadataLoader metadataLoader;
+com.android.i18n.phonenumbers.SingleFileMetadataSourceImpl	field	private final String phoneNumberMetadataFileName;
+com.android.i18n.phonenumbers.SingleFileMetadataSourceImpl	method	public Phonemetadata.PhoneMetadata getMetadataForNonGeographicalRegion(int i)
+com.android.i18n.phonenumbers.SingleFileMetadataSourceImpl	method	public Phonemetadata.PhoneMetadata getMetadataForRegion(String str)
+com.android.i18n.phonenumbers.geocoding.PhoneNumberOfflineGeocoder	field	private PrefixFileReader prefixFileReader;
+com.android.i18n.phonenumbers.geocoding.PhoneNumberOfflineGeocoder	field	private final PhoneNumberUtil phoneUtil;
+com.android.i18n.phonenumbers.geocoding.PhoneNumberOfflineGeocoder	field	private static PhoneNumberOfflineGeocoder instance;
+com.android.i18n.phonenumbers.geocoding.PhoneNumberOfflineGeocoder	field	private static final String MAPPING_DATA_DIRECTORY;
+com.android.i18n.phonenumbers.geocoding.PhoneNumberOfflineGeocoder	method	private String getCountryNameForNumber(Phonenumber.PhoneNumber phoneNumber, Locale locale)
+com.android.i18n.phonenumbers.geocoding.PhoneNumberOfflineGeocoder	method	private String getRegionDisplayName(String str, Locale locale)
+com.android.i18n.phonenumbers.geocoding.PhoneNumberOfflineGeocoder	method	public String getDescriptionForNumber(Phonenumber.PhoneNumber phoneNumber, Locale locale)
+com.android.i18n.phonenumbers.geocoding.PhoneNumberOfflineGeocoder	method	public String getDescriptionForNumber(Phonenumber.PhoneNumber phoneNumber, Locale locale, String str)
+com.android.i18n.phonenumbers.geocoding.PhoneNumberOfflineGeocoder	method	public String getDescriptionForValidNumber(Phonenumber.PhoneNumber phoneNumber, Locale locale) throws Throwable
+com.android.i18n.phonenumbers.geocoding.PhoneNumberOfflineGeocoder	method	public String getDescriptionForValidNumber(Phonenumber.PhoneNumber phoneNumber, Locale locale, String str)
+com.android.i18n.phonenumbers.geocoding.PhoneNumberOfflineGeocoder	method	public static synchronized PhoneNumberOfflineGeocoder getInstance()
+com.android.i18n.phonenumbers.internal.RegexBasedMatcher	field	private final RegexCache regexCache;
+com.android.i18n.phonenumbers.internal.RegexBasedMatcher	method	private RegexBasedMatcher()
+com.android.i18n.phonenumbers.internal.RegexBasedMatcher	method	private static boolean match(CharSequence charSequence, Pattern pattern, boolean z)
+com.android.i18n.phonenumbers.internal.RegexBasedMatcher	method	public boolean matchNationalNumber(CharSequence charSequence, Phonemetadata.PhoneNumberDesc phoneNumberDesc, boolean z)
+com.android.i18n.phonenumbers.internal.RegexBasedMatcher	method	public static MatcherApi create()
+com.android.i18n.phonenumbers.internal.RegexCache	field	private LRUCache<String, Pattern> cache;
+com.android.i18n.phonenumbers.internal.RegexCache	method	public Pattern getPatternForRegex(String str)
+com.android.i18n.phonenumbers.internal.RegexCache	method	public RegexCache(int i)
+com.android.i18n.phonenumbers.internal.RegexCache$LRUCache	field	private LinkedHashMap<K, V> map;
+com.android.i18n.phonenumbers.internal.RegexCache$LRUCache	field	private int size;
+com.android.i18n.phonenumbers.internal.RegexCache$LRUCache	method	public LRUCache(int i)
+com.android.i18n.phonenumbers.internal.RegexCache$LRUCache	method	public synchronized V get(K k)
+com.android.i18n.phonenumbers.internal.RegexCache$LRUCache	method	public synchronized boolean containsKey(K k)
+com.android.i18n.phonenumbers.internal.RegexCache$LRUCache	method	public synchronized void put(K k, V v)
+com.android.i18n.phonenumbers.prefixmapper.DefaultMapStorage	field	private String[] descriptions;
+com.android.i18n.phonenumbers.prefixmapper.DefaultMapStorage	field	private int[] phoneNumberPrefixes;
+com.android.i18n.phonenumbers.prefixmapper.DefaultMapStorage	method	public String getDescription(int i)
+com.android.i18n.phonenumbers.prefixmapper.DefaultMapStorage	method	public int getPrefix(int i)
+com.android.i18n.phonenumbers.prefixmapper.DefaultMapStorage	method	public void readExternal(ObjectInput objectInput) throws IOException
+com.android.i18n.phonenumbers.prefixmapper.DefaultMapStorage	method	public void readFromSortedMap(SortedMap<Integer, String> sortedMap)
+com.android.i18n.phonenumbers.prefixmapper.DefaultMapStorage	method	public void writeExternal(ObjectOutput objectOutput) throws IOException
+com.android.i18n.phonenumbers.prefixmapper.FlyweightMapStorage	field	private ByteBuffer descriptionIndexes;
+com.android.i18n.phonenumbers.prefixmapper.FlyweightMapStorage	field	private ByteBuffer phoneNumberPrefixes;
+com.android.i18n.phonenumbers.prefixmapper.FlyweightMapStorage	field	private String[] descriptionPool;
+com.android.i18n.phonenumbers.prefixmapper.FlyweightMapStorage	field	private int descIndexSizeInBytes;
+com.android.i18n.phonenumbers.prefixmapper.FlyweightMapStorage	field	private int prefixSizeInBytes;
+com.android.i18n.phonenumbers.prefixmapper.FlyweightMapStorage	field	private static final int INT_NUM_BYTES;
+com.android.i18n.phonenumbers.prefixmapper.FlyweightMapStorage	field	private static final int SHORT_NUM_BYTES;
+com.android.i18n.phonenumbers.prefixmapper.FlyweightMapStorage	method	private static int getOptimalNumberOfBytesForValue(int i)
+com.android.i18n.phonenumbers.prefixmapper.FlyweightMapStorage	method	private static int readWordFromBuffer(ByteBuffer byteBuffer, int i, int i2)
+com.android.i18n.phonenumbers.prefixmapper.FlyweightMapStorage	method	private static void readExternalWord(ObjectInput objectInput, int i, ByteBuffer byteBuffer, int i2) throws IOException
+com.android.i18n.phonenumbers.prefixmapper.FlyweightMapStorage	method	private static void storeWordInBuffer(ByteBuffer byteBuffer, int i, int i2, int i3)
+com.android.i18n.phonenumbers.prefixmapper.FlyweightMapStorage	method	private static void writeExternalWord(ObjectOutput objectOutput, int i, ByteBuffer byteBuffer, int i2) throws IOException
+com.android.i18n.phonenumbers.prefixmapper.FlyweightMapStorage	method	private void createDescriptionPool(SortedSet<String> sortedSet, SortedMap<Integer, String> sortedMap)
+com.android.i18n.phonenumbers.prefixmapper.FlyweightMapStorage	method	private void readEntries(ObjectInput objectInput) throws IOException
+com.android.i18n.phonenumbers.prefixmapper.FlyweightMapStorage	method	public String getDescription(int i)
+com.android.i18n.phonenumbers.prefixmapper.FlyweightMapStorage	method	public int getPrefix(int i)
+com.android.i18n.phonenumbers.prefixmapper.FlyweightMapStorage	method	public void readExternal(ObjectInput objectInput) throws IOException
+com.android.i18n.phonenumbers.prefixmapper.FlyweightMapStorage	method	public void readFromSortedMap(SortedMap<Integer, String> sortedMap)
+com.android.i18n.phonenumbers.prefixmapper.FlyweightMapStorage	method	public void writeExternal(ObjectOutput objectOutput) throws IOException
+com.android.i18n.phonenumbers.prefixmapper.MappingFileProvider	field	private List<Set<String>> availableLanguages;
+com.android.i18n.phonenumbers.prefixmapper.MappingFileProvider	field	private int numOfEntries;
+com.android.i18n.phonenumbers.prefixmapper.MappingFileProvider	field	private int[] countryCallingCodes;
+com.android.i18n.phonenumbers.prefixmapper.MappingFileProvider	field	private static final Map<String, String> LOCALE_NORMALIZATION_MAP;
+com.android.i18n.phonenumbers.prefixmapper.MappingFileProvider	method	private String findBestMatchingLanguageCode(Set<String> set, String str, String str2, String str3)
+com.android.i18n.phonenumbers.prefixmapper.MappingFileProvider	method	private StringBuilder constructFullLocale(String str, String str2, String str3)
+com.android.i18n.phonenumbers.prefixmapper.MappingFileProvider	method	private boolean onlyOneOfScriptOrRegionIsEmpty(String str, String str2)
+com.android.i18n.phonenumbers.prefixmapper.MappingFileProvider	method	private void appendSubsequentLocalePart(String str, StringBuilder sb)
+com.android.i18n.phonenumbers.prefixmapper.MappingFileProvider	method	public String toString()
+com.android.i18n.phonenumbers.prefixmapper.MappingFileProvider	method	public void readExternal(ObjectInput objectInput) throws IOException
+com.android.i18n.phonenumbers.prefixmapper.MappingFileProvider	method	public void readFileConfigs(SortedMap<Integer, Set<String>> sortedMap)
+com.android.i18n.phonenumbers.prefixmapper.MappingFileProvider	method	public void writeExternal(ObjectOutput objectOutput) throws IOException
+com.android.i18n.phonenumbers.prefixmapper.PhonePrefixMap	field	private PhonePrefixMapStorageStrategy phonePrefixMapStorage;
+com.android.i18n.phonenumbers.prefixmapper.PhonePrefixMap	field	private final PhoneNumberUtil phoneUtil;
+com.android.i18n.phonenumbers.prefixmapper.PhonePrefixMap	field	private static final Logger logger;
+com.android.i18n.phonenumbers.prefixmapper.PhonePrefixMap	method	private PhonePrefixMapStorageStrategy createDefaultMapStorage()
+com.android.i18n.phonenumbers.prefixmapper.PhonePrefixMap	method	private PhonePrefixMapStorageStrategy createFlyweightMapStorage()
+com.android.i18n.phonenumbers.prefixmapper.PhonePrefixMap	method	private int binarySearch(int i, int i2, long j)
+com.android.i18n.phonenumbers.prefixmapper.PhonePrefixMap	method	private static int getSizeOfPhonePrefixMapStorage(PhonePrefixMapStorageStrategy phonePrefixMapStorageStrategy, SortedMap<Integer, String> sortedMap) throws IOException
+com.android.i18n.phonenumbers.prefixmapper.PhonePrefixMap	method	public String lookup(Phonenumber.PhoneNumber phoneNumber)
+com.android.i18n.phonenumbers.prefixmapper.PhonePrefixMap	method	public String toString()
+com.android.i18n.phonenumbers.prefixmapper.PhonePrefixMap	method	public void readExternal(ObjectInput objectInput) throws IOException
+com.android.i18n.phonenumbers.prefixmapper.PhonePrefixMap	method	public void readPhonePrefixMap(SortedMap<Integer, String> sortedMap)
+com.android.i18n.phonenumbers.prefixmapper.PhonePrefixMap	method	public void writeExternal(ObjectOutput objectOutput) throws IOException
+com.android.i18n.phonenumbers.prefixmapper.PhonePrefixMapStorageStrategy	field	protected final TreeSet<Integer> possibleLengths;
+com.android.i18n.phonenumbers.prefixmapper.PhonePrefixMapStorageStrategy	field	protected int numOfEntries;
+com.android.i18n.phonenumbers.prefixmapper.PhonePrefixMapStorageStrategy	method	public String toString()
+com.android.i18n.phonenumbers.prefixmapper.PhonePrefixMapStorageStrategy	method	public TreeSet<Integer> getPossibleLengths()
+com.android.i18n.phonenumbers.prefixmapper.PhonePrefixMapStorageStrategy	method	public abstract String getDescription(int i);
+com.android.i18n.phonenumbers.prefixmapper.PhonePrefixMapStorageStrategy	method	public abstract int getPrefix(int i);
+com.android.i18n.phonenumbers.prefixmapper.PhonePrefixMapStorageStrategy	method	public abstract void readExternal(ObjectInput objectInput) throws IOException;
+com.android.i18n.phonenumbers.prefixmapper.PhonePrefixMapStorageStrategy	method	public abstract void readFromSortedMap(SortedMap<Integer, String> sortedMap);
+com.android.i18n.phonenumbers.prefixmapper.PhonePrefixMapStorageStrategy	method	public abstract void writeExternal(ObjectOutput objectOutput) throws IOException;
+com.android.i18n.phonenumbers.prefixmapper.PhonePrefixMapStorageStrategy	method	public int getNumOfEntries()
+com.android.i18n.phonenumbers.prefixmapper.PrefixFileReader	field	private Map<String, PhonePrefixMap> availablePhonePrefixMaps;
+com.android.i18n.phonenumbers.prefixmapper.PrefixFileReader	field	private MappingFileProvider mappingFileProvider;
+com.android.i18n.phonenumbers.prefixmapper.PrefixFileReader	field	private final String phonePrefixDataDirectory;
+com.android.i18n.phonenumbers.prefixmapper.PrefixFileReader	field	private static final Logger logger;
+com.android.i18n.phonenumbers.prefixmapper.PrefixFileReader	method	private PhonePrefixMap getPhonePrefixDescriptions(int i, String str, String str2, String str3) throws Throwable
+com.android.i18n.phonenumbers.prefixmapper.PrefixFileReader	method	private boolean mayFallBackToEnglish(String str)
+com.android.i18n.phonenumbers.prefixmapper.PrefixFileReader	method	private static void close(InputStream inputStream)
+com.android.i18n.phonenumbers.prefixmapper.PrefixFileReader	method	private void loadMappingFileProvider() throws Throwable
+com.android.i18n.phonenumbers.prefixmapper.PrefixFileReader	method	private void loadPhonePrefixMapFromFile(String str) throws Throwable
+com.android.i18n.phonenumbers.prefixmapper.PrefixFileReader	method	public PrefixFileReader(String str) throws Throwable
+com.android.i18n.phonenumbers.prefixmapper.PrefixFileReader	method	public String getDescriptionForNumber(Phonenumber.PhoneNumber phoneNumber, String str, String str2, String str3) throws Throwable
+com.android.i18n.phonenumbers.prefixmapper.PrefixTimeZonesMap	field	private final PhonePrefixMap phonePrefixMap;
+com.android.i18n.phonenumbers.prefixmapper.PrefixTimeZonesMap	field	private static final String RAW_STRING_TIMEZONES_SEPARATOR;
+com.android.i18n.phonenumbers.prefixmapper.PrefixTimeZonesMap	method	private List<String> lookupTimeZonesForNumber(long j)
+com.android.i18n.phonenumbers.prefixmapper.PrefixTimeZonesMap	method	private List<String> tokenizeRawOutputString(String str)
+com.android.i18n.phonenumbers.prefixmapper.PrefixTimeZonesMap	method	public List<String> lookupCountryLevelTimeZonesForNumber(Phonenumber.PhoneNumber phoneNumber)
+com.android.i18n.phonenumbers.prefixmapper.PrefixTimeZonesMap	method	public List<String> lookupTimeZonesForNumber(Phonenumber.PhoneNumber phoneNumber)
+com.android.i18n.phonenumbers.prefixmapper.PrefixTimeZonesMap	method	public String toString()
+com.android.i18n.phonenumbers.prefixmapper.PrefixTimeZonesMap	method	public void readExternal(ObjectInput objectInput) throws IOException
+com.android.i18n.phonenumbers.prefixmapper.PrefixTimeZonesMap	method	public void readPrefixTimeZonesMap(SortedMap<Integer, String> sortedMap)
+com.android.i18n.phonenumbers.prefixmapper.PrefixTimeZonesMap	method	public void writeExternal(ObjectOutput objectOutput) throws IOException
+org.ccil.cowan.tagsoup.AttributesImpl	method	private void badIndex(int i) throws ArrayIndexOutOfBoundsException
+org.ccil.cowan.tagsoup.AttributesImpl	method	private void ensureCapacity(int i)
+org.ccil.cowan.tagsoup.AttributesImpl	method	public AttributesImpl()
+org.ccil.cowan.tagsoup.AttributesImpl	method	public AttributesImpl(Attributes attributes)
+org.ccil.cowan.tagsoup.AttributesImpl	method	public String getLocalName(int i)
+org.ccil.cowan.tagsoup.AttributesImpl	method	public String getQName(int i)
+org.ccil.cowan.tagsoup.AttributesImpl	method	public String getType(String str)
+org.ccil.cowan.tagsoup.AttributesImpl	method	public String getType(String str, String str2)
+org.ccil.cowan.tagsoup.AttributesImpl	method	public String getType(int i)
+org.ccil.cowan.tagsoup.AttributesImpl	method	public String getURI(int i)
+org.ccil.cowan.tagsoup.AttributesImpl	method	public String getValue(String str)
+org.ccil.cowan.tagsoup.AttributesImpl	method	public String getValue(String str, String str2)
+org.ccil.cowan.tagsoup.AttributesImpl	method	public String getValue(int i)
+org.ccil.cowan.tagsoup.AttributesImpl	method	public int getIndex(String str)
+org.ccil.cowan.tagsoup.AttributesImpl	method	public int getIndex(String str, String str2)
+org.ccil.cowan.tagsoup.AttributesImpl	method	public int getLength()
+org.ccil.cowan.tagsoup.AttributesImpl	method	public void addAttribute(String str, String str2, String str3, String str4, String str5)
+org.ccil.cowan.tagsoup.AttributesImpl	method	public void clear()
+org.ccil.cowan.tagsoup.AttributesImpl	method	public void removeAttribute(int i)
+org.ccil.cowan.tagsoup.AttributesImpl	method	public void setAttribute(int i, String str, String str2, String str3, String str4, String str5)
+org.ccil.cowan.tagsoup.AttributesImpl	method	public void setAttributes(Attributes attributes)
+org.ccil.cowan.tagsoup.AttributesImpl	method	public void setLocalName(int i, String str)
+org.ccil.cowan.tagsoup.AttributesImpl	method	public void setQName(int i, String str)
+org.ccil.cowan.tagsoup.AttributesImpl	method	public void setType(int i, String str)
+org.ccil.cowan.tagsoup.AttributesImpl	method	public void setURI(int i, String str)
+org.ccil.cowan.tagsoup.AttributesImpl	method	public void setValue(int i, String str)
+org.ccil.cowan.tagsoup.CommandLine	field	private static HTMLSchema theSchema;
+org.ccil.cowan.tagsoup.CommandLine	field	private static Parser theParser;
+org.ccil.cowan.tagsoup.CommandLine	field	private static String theOutputEncoding;
+org.ccil.cowan.tagsoup.CommandLine	field	static Hashtable options;
+org.ccil.cowan.tagsoup.CommandLine	method	private static ContentHandler chooseContentHandler(Writer writer)
+org.ccil.cowan.tagsoup.CommandLine	method	private static boolean hasOption(Hashtable hashtable, String str)
+org.ccil.cowan.tagsoup.CommandLine	method	private static int getopts(Hashtable hashtable, String[] strArr)
+org.ccil.cowan.tagsoup.CommandLine	method	private static void doHelp()
+org.ccil.cowan.tagsoup.CommandLine	method	private static void process(String str, OutputStream outputStream) throws SAXException, IOException
+org.ccil.cowan.tagsoup.CommandLine	method	public static void main(String[] strArr) throws SAXException, IOException
+org.ccil.cowan.tagsoup.Element	field	private AttributesImpl theAtts;
+org.ccil.cowan.tagsoup.Element	field	private Element theNext;
+org.ccil.cowan.tagsoup.Element	field	private ElementType theType;
+org.ccil.cowan.tagsoup.Element	field	private boolean preclosed;
+org.ccil.cowan.tagsoup.Element	method	public AttributesImpl atts()
+org.ccil.cowan.tagsoup.Element	method	public Element next()
+org.ccil.cowan.tagsoup.Element	method	public Element(ElementType elementType, boolean z)
+org.ccil.cowan.tagsoup.Element	method	public ElementType parent()
+org.ccil.cowan.tagsoup.Element	method	public ElementType type()
+org.ccil.cowan.tagsoup.Element	method	public String localName()
+org.ccil.cowan.tagsoup.Element	method	public String name()
+org.ccil.cowan.tagsoup.Element	method	public String namespace()
+org.ccil.cowan.tagsoup.Element	method	public boolean canContain(Element element)
+org.ccil.cowan.tagsoup.Element	method	public boolean isPreclosed()
+org.ccil.cowan.tagsoup.Element	method	public int flags()
+org.ccil.cowan.tagsoup.Element	method	public int memberOf()
+org.ccil.cowan.tagsoup.Element	method	public int model()
+org.ccil.cowan.tagsoup.Element	method	public void anonymize()
+org.ccil.cowan.tagsoup.Element	method	public void clean()
+org.ccil.cowan.tagsoup.Element	method	public void preclose()
+org.ccil.cowan.tagsoup.Element	method	public void setAttribute(String str, String str2, String str3)
+org.ccil.cowan.tagsoup.Element	method	public void setNext(Element element)
+org.ccil.cowan.tagsoup.ElementType	field	private AttributesImpl theAtts;
+org.ccil.cowan.tagsoup.ElementType	field	private ElementType theParent;
+org.ccil.cowan.tagsoup.ElementType	field	private Schema theSchema;
+org.ccil.cowan.tagsoup.ElementType	field	private String theLocalName;
+org.ccil.cowan.tagsoup.ElementType	field	private String theName;
+org.ccil.cowan.tagsoup.ElementType	field	private String theNamespace;
+org.ccil.cowan.tagsoup.ElementType	field	private int theFlags;
+org.ccil.cowan.tagsoup.ElementType	field	private int theMemberOf;
+org.ccil.cowan.tagsoup.ElementType	field	private int theModel;
+org.ccil.cowan.tagsoup.ElementType	method	public AttributesImpl atts()
+org.ccil.cowan.tagsoup.ElementType	method	public ElementType parent()
+org.ccil.cowan.tagsoup.ElementType	method	public ElementType(String str, int i, int i2, int i3, Schema schema)
+org.ccil.cowan.tagsoup.ElementType	method	public Schema schema()
+org.ccil.cowan.tagsoup.ElementType	method	public String localName()
+org.ccil.cowan.tagsoup.ElementType	method	public String localName(String str)
+org.ccil.cowan.tagsoup.ElementType	method	public String name()
+org.ccil.cowan.tagsoup.ElementType	method	public String namespace()
+org.ccil.cowan.tagsoup.ElementType	method	public String namespace(String str, boolean z)
+org.ccil.cowan.tagsoup.ElementType	method	public boolean canContain(ElementType elementType)
+org.ccil.cowan.tagsoup.ElementType	method	public int flags()
+org.ccil.cowan.tagsoup.ElementType	method	public int memberOf()
+org.ccil.cowan.tagsoup.ElementType	method	public int model()
+org.ccil.cowan.tagsoup.ElementType	method	public static String normalize(String str)
+org.ccil.cowan.tagsoup.ElementType	method	public void setAttribute(AttributesImpl attributesImpl, String str, String str2, String str3)
+org.ccil.cowan.tagsoup.ElementType	method	public void setAttribute(String str, String str2, String str3)
+org.ccil.cowan.tagsoup.ElementType	method	public void setFlags(int i)
+org.ccil.cowan.tagsoup.ElementType	method	public void setMemberOf(int i)
+org.ccil.cowan.tagsoup.ElementType	method	public void setModel(int i)
+org.ccil.cowan.tagsoup.ElementType	method	public void setParent(ElementType elementType)
+org.ccil.cowan.tagsoup.HTMLModels	field	public static final int M_AREA;
+org.ccil.cowan.tagsoup.HTMLModels	field	public static final int M_BLOCK;
+org.ccil.cowan.tagsoup.HTMLModels	field	public static final int M_BLOCKINLINE;
+org.ccil.cowan.tagsoup.HTMLModels	field	public static final int M_BODY;
+org.ccil.cowan.tagsoup.HTMLModels	field	public static final int M_CELL;
+org.ccil.cowan.tagsoup.HTMLModels	field	public static final int M_COL;
+org.ccil.cowan.tagsoup.HTMLModels	field	public static final int M_DEF;
+org.ccil.cowan.tagsoup.HTMLModels	field	public static final int M_FORM;
+org.ccil.cowan.tagsoup.HTMLModels	field	public static final int M_FRAME;
+org.ccil.cowan.tagsoup.HTMLModels	field	public static final int M_HEAD;
+org.ccil.cowan.tagsoup.HTMLModels	field	public static final int M_HTML;
+org.ccil.cowan.tagsoup.HTMLModels	field	public static final int M_INLINE;
+org.ccil.cowan.tagsoup.HTMLModels	field	public static final int M_LEGEND;
+org.ccil.cowan.tagsoup.HTMLModels	field	public static final int M_LI;
+org.ccil.cowan.tagsoup.HTMLModels	field	public static final int M_NOLINK;
+org.ccil.cowan.tagsoup.HTMLModels	field	public static final int M_OPTION;
+org.ccil.cowan.tagsoup.HTMLModels	field	public static final int M_OPTIONS;
+org.ccil.cowan.tagsoup.HTMLModels	field	public static final int M_P;
+org.ccil.cowan.tagsoup.HTMLModels	field	public static final int M_PARAM;
+org.ccil.cowan.tagsoup.HTMLModels	field	public static final int M_TABLE;
+org.ccil.cowan.tagsoup.HTMLModels	field	public static final int M_TABULAR;
+org.ccil.cowan.tagsoup.HTMLModels	field	public static final int M_TR;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private String thePublicid;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private String theSystemid;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private int theCurrentColumn;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private int theCurrentLine;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private int theLastColumn;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private int theLastLine;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final String[] debug_actionnames;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final String[] debug_statenames;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_ADUP;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_ADUP_SAVE;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_ADUP_STAGC;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_ANAME;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_ANAME_ADUP;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_ANAME_ADUP_STAGC;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_AVAL;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_AVAL_STAGC;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_CDATA;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_CMNT;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_DECL;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_EMPTYTAG;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_ENTITY;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_ENTITY_START;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_ETAG;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_GI;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_GI_STAGC;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_LT;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_LT_PCDATA;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_MINUS2;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_MINUS3;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_MINUS;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_PCDATA;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_PI;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_PITARGET;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_PITARGET_PI;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_SAVE;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_SKIP;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_SP;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_STAGC;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_UNGET;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int A_UNSAVE_PCDATA;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_ANAME;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_APOS;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_AVAL;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_BB;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_BBC;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_BBCD;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_BBCDA;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_BBCDAT;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_BBCDATA;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_CDATA2;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_CDATA;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_CDSECT1;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_CDSECT2;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_CDSECT;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_COM2;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_COM3;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_COM4;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_COM;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_DECL2;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_DECL;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_DONE;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_EMPTYTAG;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_ENT;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_EQ;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_ETAG;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_GI;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_NCR;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_PCDATA;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_PI;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_PITARGET;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_QUOT;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_STAGC;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_TAG;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_TAGWS;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static final int S_XNCR;
+org.ccil.cowan.tagsoup.HTMLScanner	field	private static int[] statetable;
+org.ccil.cowan.tagsoup.HTMLScanner	field	static int statetableIndexMaxChar;
+org.ccil.cowan.tagsoup.HTMLScanner	field	static short[][] statetableIndex;
+org.ccil.cowan.tagsoup.HTMLScanner	method	private static String nicechar(int i)
+org.ccil.cowan.tagsoup.HTMLScanner	method	private void mark()
+org.ccil.cowan.tagsoup.HTMLScanner	method	private void save(int i, ScanHandler scanHandler) throws SAXException, IOException
+org.ccil.cowan.tagsoup.HTMLScanner	method	private void unread(PushbackReader pushbackReader, int i) throws IOException
+org.ccil.cowan.tagsoup.HTMLScanner	method	public String getPublicId()
+org.ccil.cowan.tagsoup.HTMLScanner	method	public String getSystemId()
+org.ccil.cowan.tagsoup.HTMLScanner	method	public int getColumnNumber()
+org.ccil.cowan.tagsoup.HTMLScanner	method	public int getLineNumber()
+org.ccil.cowan.tagsoup.HTMLScanner	method	public static void main(String[] strArr) throws SAXException, IOException
+org.ccil.cowan.tagsoup.HTMLScanner	method	public void resetDocumentLocator(String str, String str2)
+org.ccil.cowan.tagsoup.HTMLScanner	method	public void scan(Reader reader, ScanHandler scanHandler) throws SAXException, IOException
+org.ccil.cowan.tagsoup.HTMLScanner	method	public void startCDATA()
+org.ccil.cowan.tagsoup.HTMLSchema	method	public HTMLSchema()
+org.ccil.cowan.tagsoup.PYXScanner	method	public static void main(String[] strArr) throws SAXException, IOException
+org.ccil.cowan.tagsoup.PYXScanner	method	public void resetDocumentLocator(String str, String str2)
+org.ccil.cowan.tagsoup.PYXScanner	method	public void scan(Reader reader, ScanHandler scanHandler) throws SAXException, IOException
+org.ccil.cowan.tagsoup.PYXScanner	method	public void startCDATA()
+org.ccil.cowan.tagsoup.PYXWriter	field	private PrintWriter theWriter;
+org.ccil.cowan.tagsoup.PYXWriter	field	private String attrName;
+org.ccil.cowan.tagsoup.PYXWriter	field	private static char[] dummy;
+org.ccil.cowan.tagsoup.PYXWriter	method	public PYXWriter(Writer writer)
+org.ccil.cowan.tagsoup.PYXWriter	method	public int getEntity()
+org.ccil.cowan.tagsoup.PYXWriter	method	public void adup(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void aname(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void aval(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void cdsect(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void characters(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void cmnt(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void comment(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void decl(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void endCDATA() throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void endDTD() throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void endDocument() throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void endElement(String str, String str2, String str3) throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void endEntity(String str) throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void endPrefixMapping(String str) throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void entity(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void eof(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void etag(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void gi(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void ignorableWhitespace(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void pcdata(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void pi(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void pitarget(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void processingInstruction(String str, String str2) throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void setDocumentLocator(Locator locator)
+org.ccil.cowan.tagsoup.PYXWriter	method	public void skippedEntity(String str) throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void stagc(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void stage(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void startCDATA() throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void startDTD(String str, String str2, String str3) throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void startDocument() throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void startElement(String str, String str2, String str3, Attributes attributes) throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void startEntity(String str) throws SAXException
+org.ccil.cowan.tagsoup.PYXWriter	method	public void startPrefixMapping(String str, String str2) throws SAXException
+org.ccil.cowan.tagsoup.Parser	field	private AutoDetector theAutoDetector;
+org.ccil.cowan.tagsoup.Parser	field	private ContentHandler theContentHandler;
+org.ccil.cowan.tagsoup.Parser	field	private DTDHandler theDTDHandler;
+org.ccil.cowan.tagsoup.Parser	field	private Element theNewElement;
+org.ccil.cowan.tagsoup.Parser	field	private Element thePCDATA;
+org.ccil.cowan.tagsoup.Parser	field	private Element theSaved;
+org.ccil.cowan.tagsoup.Parser	field	private Element theStack;
+org.ccil.cowan.tagsoup.Parser	field	private EntityResolver theEntityResolver;
+org.ccil.cowan.tagsoup.Parser	field	private ErrorHandler theErrorHandler;
+org.ccil.cowan.tagsoup.Parser	field	private HashMap theFeatures;
+org.ccil.cowan.tagsoup.Parser	field	private LexicalHandler theLexicalHandler;
+org.ccil.cowan.tagsoup.Parser	field	private Scanner theScanner;
+org.ccil.cowan.tagsoup.Parser	field	private Schema theSchema;
+org.ccil.cowan.tagsoup.Parser	field	private String theAttributeName;
+org.ccil.cowan.tagsoup.Parser	field	private String theDoctypeName;
+org.ccil.cowan.tagsoup.Parser	field	private String theDoctypePublicId;
+org.ccil.cowan.tagsoup.Parser	field	private String theDoctypeSystemId;
+org.ccil.cowan.tagsoup.Parser	field	private String thePITarget;
+org.ccil.cowan.tagsoup.Parser	field	private boolean CDATAElements;
+org.ccil.cowan.tagsoup.Parser	field	private boolean bogonsEmpty;
+org.ccil.cowan.tagsoup.Parser	field	private boolean defaultAttributes;
+org.ccil.cowan.tagsoup.Parser	field	private boolean ignorableWhitespace;
+org.ccil.cowan.tagsoup.Parser	field	private boolean ignoreBogons;
+org.ccil.cowan.tagsoup.Parser	field	private boolean namespaces;
+org.ccil.cowan.tagsoup.Parser	field	private boolean restartElements;
+org.ccil.cowan.tagsoup.Parser	field	private boolean rootBogons;
+org.ccil.cowan.tagsoup.Parser	field	private boolean theDoctypeIsPresent;
+org.ccil.cowan.tagsoup.Parser	field	private boolean translateColons;
+org.ccil.cowan.tagsoup.Parser	field	private boolean virginStack;
+org.ccil.cowan.tagsoup.Parser	field	private char[] theCommentBuffer;
+org.ccil.cowan.tagsoup.Parser	field	private int theEntity;
+org.ccil.cowan.tagsoup.Parser	field	private static String legal;
+org.ccil.cowan.tagsoup.Parser	field	private static boolean DEFAULT_BOGONS_EMPTY;
+org.ccil.cowan.tagsoup.Parser	field	private static boolean DEFAULT_CDATA_ELEMENTS;
+org.ccil.cowan.tagsoup.Parser	field	private static boolean DEFAULT_DEFAULT_ATTRIBUTES;
+org.ccil.cowan.tagsoup.Parser	field	private static boolean DEFAULT_IGNORABLE_WHITESPACE;
+org.ccil.cowan.tagsoup.Parser	field	private static boolean DEFAULT_IGNORE_BOGONS;
+org.ccil.cowan.tagsoup.Parser	field	private static boolean DEFAULT_NAMESPACES;
+org.ccil.cowan.tagsoup.Parser	field	private static boolean DEFAULT_RESTART_ELEMENTS;
+org.ccil.cowan.tagsoup.Parser	field	private static boolean DEFAULT_ROOT_BOGONS;
+org.ccil.cowan.tagsoup.Parser	field	private static boolean DEFAULT_TRANSLATE_COLONS;
+org.ccil.cowan.tagsoup.Parser	field	private static char[] etagchars;
+org.ccil.cowan.tagsoup.Parser	field	public static final String CDATAElementsFeature;
+org.ccil.cowan.tagsoup.Parser	field	public static final String XML11Feature;
+org.ccil.cowan.tagsoup.Parser	field	public static final String autoDetectorProperty;
+org.ccil.cowan.tagsoup.Parser	field	public static final String bogonsEmptyFeature;
+org.ccil.cowan.tagsoup.Parser	field	public static final String defaultAttributesFeature;
+org.ccil.cowan.tagsoup.Parser	field	public static final String externalGeneralEntitiesFeature;
+org.ccil.cowan.tagsoup.Parser	field	public static final String externalParameterEntitiesFeature;
+org.ccil.cowan.tagsoup.Parser	field	public static final String ignorableWhitespaceFeature;
+org.ccil.cowan.tagsoup.Parser	field	public static final String ignoreBogonsFeature;
+org.ccil.cowan.tagsoup.Parser	field	public static final String isStandaloneFeature;
+org.ccil.cowan.tagsoup.Parser	field	public static final String lexicalHandlerParameterEntitiesFeature;
+org.ccil.cowan.tagsoup.Parser	field	public static final String lexicalHandlerProperty;
+org.ccil.cowan.tagsoup.Parser	field	public static final String namespacePrefixesFeature;
+org.ccil.cowan.tagsoup.Parser	field	public static final String namespacesFeature;
+org.ccil.cowan.tagsoup.Parser	field	public static final String resolveDTDURIsFeature;
+org.ccil.cowan.tagsoup.Parser	field	public static final String restartElementsFeature;
+org.ccil.cowan.tagsoup.Parser	field	public static final String rootBogonsFeature;
+org.ccil.cowan.tagsoup.Parser	field	public static final String scannerProperty;
+org.ccil.cowan.tagsoup.Parser	field	public static final String schemaProperty;
+org.ccil.cowan.tagsoup.Parser	field	public static final String stringInterningFeature;
+org.ccil.cowan.tagsoup.Parser	field	public static final String translateColonsFeature;
+org.ccil.cowan.tagsoup.Parser	field	public static final String unicodeNormalizationCheckingFeature;
+org.ccil.cowan.tagsoup.Parser	field	public static final String useAttributes2Feature;
+org.ccil.cowan.tagsoup.Parser	field	public static final String useEntityResolver2Feature;
+org.ccil.cowan.tagsoup.Parser	field	public static final String useLocator2Feature;
+org.ccil.cowan.tagsoup.Parser	field	public static final String validationFeature;
+org.ccil.cowan.tagsoup.Parser	field	public static final String xmlnsURIsFeature;
+org.ccil.cowan.tagsoup.Parser	method	private InputStream getInputStream(String str, String str2) throws SAXException, IOException
+org.ccil.cowan.tagsoup.Parser	method	private Reader getReader(InputSource inputSource) throws SAXException, IOException
+org.ccil.cowan.tagsoup.Parser	method	private String cleanPublicid(String str)
+org.ccil.cowan.tagsoup.Parser	method	private String expandEntities(String str)
+org.ccil.cowan.tagsoup.Parser	method	private String makeName(char[] cArr, int i, int i2)
+org.ccil.cowan.tagsoup.Parser	method	private String prefixOf(String str)
+org.ccil.cowan.tagsoup.Parser	method	private boolean foreign(String str, String str2)
+org.ccil.cowan.tagsoup.Parser	method	private int lookupEntity(char[] cArr, int i, int i2)
+org.ccil.cowan.tagsoup.Parser	method	private static Boolean truthValue(boolean z)
+org.ccil.cowan.tagsoup.Parser	method	private static String trimquotes(String str)
+org.ccil.cowan.tagsoup.Parser	method	private static String[] split(String str) throws IllegalArgumentException
+org.ccil.cowan.tagsoup.Parser	method	private void pop() throws SAXException
+org.ccil.cowan.tagsoup.Parser	method	private void push(Element element) throws SAXException
+org.ccil.cowan.tagsoup.Parser	method	private void rectify(Element element) throws SAXException
+org.ccil.cowan.tagsoup.Parser	method	private void restart(Element element) throws SAXException
+org.ccil.cowan.tagsoup.Parser	method	private void restartablyPop() throws SAXException
+org.ccil.cowan.tagsoup.Parser	method	private void setup()
+org.ccil.cowan.tagsoup.Parser	method	public ContentHandler getContentHandler()
+org.ccil.cowan.tagsoup.Parser	method	public DTDHandler getDTDHandler()
+org.ccil.cowan.tagsoup.Parser	method	public EntityResolver getEntityResolver()
+org.ccil.cowan.tagsoup.Parser	method	public ErrorHandler getErrorHandler()
+org.ccil.cowan.tagsoup.Parser	method	public Object getProperty(String str) throws SAXNotRecognizedException, SAXNotSupportedException
+org.ccil.cowan.tagsoup.Parser	method	public Parser()
+org.ccil.cowan.tagsoup.Parser	method	public boolean etag_cdata(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.Parser	method	public boolean getFeature(String str) throws SAXNotRecognizedException, SAXNotSupportedException
+org.ccil.cowan.tagsoup.Parser	method	public int getEntity()
+org.ccil.cowan.tagsoup.Parser	method	public void adup(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.Parser	method	public void aname(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.Parser	method	public void aval(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.Parser	method	public void cdsect(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.Parser	method	public void cmnt(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.Parser	method	public void comment(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.Parser	method	public void decl(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.Parser	method	public void endCDATA() throws SAXException
+org.ccil.cowan.tagsoup.Parser	method	public void endDTD() throws SAXException
+org.ccil.cowan.tagsoup.Parser	method	public void endEntity(String str) throws SAXException
+org.ccil.cowan.tagsoup.Parser	method	public void entity(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.Parser	method	public void eof(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.Parser	method	public void etag(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.Parser	method	public void etag_basic(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.Parser	method	public void gi(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.Parser	method	public void parse(InputSource inputSource) throws SAXException, IOException
+org.ccil.cowan.tagsoup.Parser	method	public void parse(String str) throws SAXException, IOException
+org.ccil.cowan.tagsoup.Parser	method	public void pcdata(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.Parser	method	public void pi(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.Parser	method	public void pitarget(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.Parser	method	public void setContentHandler(ContentHandler contentHandler)
+org.ccil.cowan.tagsoup.Parser	method	public void setDTDHandler(DTDHandler dTDHandler)
+org.ccil.cowan.tagsoup.Parser	method	public void setEntityResolver(EntityResolver entityResolver)
+org.ccil.cowan.tagsoup.Parser	method	public void setErrorHandler(ErrorHandler errorHandler)
+org.ccil.cowan.tagsoup.Parser	method	public void setFeature(String str, boolean z) throws SAXNotRecognizedException, SAXNotSupportedException
+org.ccil.cowan.tagsoup.Parser	method	public void setProperty(String str, Object obj) throws SAXNotRecognizedException, SAXNotSupportedException
+org.ccil.cowan.tagsoup.Parser	method	public void stagc(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.Parser	method	public void stage(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.Parser	method	public void startCDATA() throws SAXException
+org.ccil.cowan.tagsoup.Parser	method	public void startDTD(String str, String str2, String str3) throws SAXException
+org.ccil.cowan.tagsoup.Parser	method	public void startEntity(String str) throws SAXException
+org.ccil.cowan.tagsoup.Schema	field	private ElementType theRoot;
+org.ccil.cowan.tagsoup.Schema	field	private HashMap theElementTypes;
+org.ccil.cowan.tagsoup.Schema	field	private HashMap theEntities;
+org.ccil.cowan.tagsoup.Schema	field	private String thePrefix;
+org.ccil.cowan.tagsoup.Schema	field	private String theURI;
+org.ccil.cowan.tagsoup.Schema	field	public static final int F_CDATA;
+org.ccil.cowan.tagsoup.Schema	field	public static final int F_NOFORCE;
+org.ccil.cowan.tagsoup.Schema	field	public static final int F_RESTART;
+org.ccil.cowan.tagsoup.Schema	field	public static final int M_ANY;
+org.ccil.cowan.tagsoup.Schema	field	public static final int M_EMPTY;
+org.ccil.cowan.tagsoup.Schema	field	public static final int M_PCDATA;
+org.ccil.cowan.tagsoup.Schema	field	public static final int M_ROOT;
+org.ccil.cowan.tagsoup.Schema	method	public ElementType getElementType(String str)
+org.ccil.cowan.tagsoup.Schema	method	public ElementType rootElementType()
+org.ccil.cowan.tagsoup.Schema	method	public String getPrefix()
+org.ccil.cowan.tagsoup.Schema	method	public String getURI()
+org.ccil.cowan.tagsoup.Schema	method	public int getEntity(String str)
+org.ccil.cowan.tagsoup.Schema	method	public void attribute(String str, String str2, String str3, String str4)
+org.ccil.cowan.tagsoup.Schema	method	public void elementType(String str, int i, int i2, int i3)
+org.ccil.cowan.tagsoup.Schema	method	public void entity(String str, int i)
+org.ccil.cowan.tagsoup.Schema	method	public void parent(String str, String str2)
+org.ccil.cowan.tagsoup.Schema	method	public void setPrefix(String str)
+org.ccil.cowan.tagsoup.Schema	method	public void setURI(String str)
+org.ccil.cowan.tagsoup.XMLWriter	field	private Hashtable doneDeclTable;
+org.ccil.cowan.tagsoup.XMLWriter	field	private Hashtable forcedDeclTable;
+org.ccil.cowan.tagsoup.XMLWriter	field	private Hashtable prefixTable;
+org.ccil.cowan.tagsoup.XMLWriter	field	private NamespaceSupport nsSupport;
+org.ccil.cowan.tagsoup.XMLWriter	field	private Properties outputProperties;
+org.ccil.cowan.tagsoup.XMLWriter	field	private String outputEncoding;
+org.ccil.cowan.tagsoup.XMLWriter	field	private String overridePublic;
+org.ccil.cowan.tagsoup.XMLWriter	field	private String overrideSystem;
+org.ccil.cowan.tagsoup.XMLWriter	field	private String standalone;
+org.ccil.cowan.tagsoup.XMLWriter	field	private String version;
+org.ccil.cowan.tagsoup.XMLWriter	field	private String[] booleans;
+org.ccil.cowan.tagsoup.XMLWriter	field	private Writer output;
+org.ccil.cowan.tagsoup.XMLWriter	field	private boolean cdataElement;
+org.ccil.cowan.tagsoup.XMLWriter	field	private boolean forceDTD;
+org.ccil.cowan.tagsoup.XMLWriter	field	private boolean hasOutputDTD;
+org.ccil.cowan.tagsoup.XMLWriter	field	private boolean htmlMode;
+org.ccil.cowan.tagsoup.XMLWriter	field	private boolean unicodeMode;
+org.ccil.cowan.tagsoup.XMLWriter	field	private final Attributes EMPTY_ATTS;
+org.ccil.cowan.tagsoup.XMLWriter	field	private int elementLevel;
+org.ccil.cowan.tagsoup.XMLWriter	field	private int prefixCounter;
+org.ccil.cowan.tagsoup.XMLWriter	field	public static final String CDATA_SECTION_ELEMENTS;
+org.ccil.cowan.tagsoup.XMLWriter	field	public static final String DOCTYPE_PUBLIC;
+org.ccil.cowan.tagsoup.XMLWriter	field	public static final String DOCTYPE_SYSTEM;
+org.ccil.cowan.tagsoup.XMLWriter	field	public static final String ENCODING;
+org.ccil.cowan.tagsoup.XMLWriter	field	public static final String INDENT;
+org.ccil.cowan.tagsoup.XMLWriter	field	public static final String MEDIA_TYPE;
+org.ccil.cowan.tagsoup.XMLWriter	field	public static final String METHOD;
+org.ccil.cowan.tagsoup.XMLWriter	field	public static final String OMIT_XML_DECLARATION;
+org.ccil.cowan.tagsoup.XMLWriter	field	public static final String STANDALONE;
+org.ccil.cowan.tagsoup.XMLWriter	field	public static final String VERSION;
+org.ccil.cowan.tagsoup.XMLWriter	method	private String doPrefix(String str, String str2, boolean z)
+org.ccil.cowan.tagsoup.XMLWriter	method	private boolean booleanAttribute(String str, String str2, String str3)
+org.ccil.cowan.tagsoup.XMLWriter	method	private void forceNSDecls()
+org.ccil.cowan.tagsoup.XMLWriter	method	private void init(Writer writer)
+org.ccil.cowan.tagsoup.XMLWriter	method	private void write(String str) throws SAXException
+org.ccil.cowan.tagsoup.XMLWriter	method	private void write(char c) throws SAXException
+org.ccil.cowan.tagsoup.XMLWriter	method	private void writeAttributes(Attributes attributes) throws SAXException
+org.ccil.cowan.tagsoup.XMLWriter	method	private void writeEsc(char[] cArr, int i, int i2, boolean z) throws SAXException
+org.ccil.cowan.tagsoup.XMLWriter	method	private void writeNSDecls() throws SAXException
+org.ccil.cowan.tagsoup.XMLWriter	method	private void writeName(String str, String str2, String str3, boolean z) throws SAXException
+org.ccil.cowan.tagsoup.XMLWriter	method	public String getOutputProperty(String str)
+org.ccil.cowan.tagsoup.XMLWriter	method	public String getPrefix(String str)
+org.ccil.cowan.tagsoup.XMLWriter	method	public XMLWriter()
+org.ccil.cowan.tagsoup.XMLWriter	method	public XMLWriter(Writer writer)
+org.ccil.cowan.tagsoup.XMLWriter	method	public XMLWriter(XMLReader xMLReader)
+org.ccil.cowan.tagsoup.XMLWriter	method	public XMLWriter(XMLReader xMLReader, Writer writer)
+org.ccil.cowan.tagsoup.XMLWriter	method	public void characters(String str) throws SAXException
+org.ccil.cowan.tagsoup.XMLWriter	method	public void characters(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.XMLWriter	method	public void comment(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.XMLWriter	method	public void dataElement(String str, String str2) throws SAXException
+org.ccil.cowan.tagsoup.XMLWriter	method	public void dataElement(String str, String str2, String str3) throws SAXException
+org.ccil.cowan.tagsoup.XMLWriter	method	public void dataElement(String str, String str2, String str3, Attributes attributes, String str4) throws SAXException
+org.ccil.cowan.tagsoup.XMLWriter	method	public void emptyElement(String str) throws SAXException
+org.ccil.cowan.tagsoup.XMLWriter	method	public void emptyElement(String str, String str2) throws SAXException
+org.ccil.cowan.tagsoup.XMLWriter	method	public void emptyElement(String str, String str2, String str3, Attributes attributes) throws SAXException
+org.ccil.cowan.tagsoup.XMLWriter	method	public void endCDATA() throws SAXException
+org.ccil.cowan.tagsoup.XMLWriter	method	public void endDTD() throws SAXException
+org.ccil.cowan.tagsoup.XMLWriter	method	public void endDocument() throws SAXException
+org.ccil.cowan.tagsoup.XMLWriter	method	public void endElement(String str) throws SAXException
+org.ccil.cowan.tagsoup.XMLWriter	method	public void endElement(String str, String str2) throws SAXException
+org.ccil.cowan.tagsoup.XMLWriter	method	public void endElement(String str, String str2, String str3) throws SAXException
+org.ccil.cowan.tagsoup.XMLWriter	method	public void endEntity(String str) throws SAXException
+org.ccil.cowan.tagsoup.XMLWriter	method	public void flush() throws IOException
+org.ccil.cowan.tagsoup.XMLWriter	method	public void forceNSDecl(String str)
+org.ccil.cowan.tagsoup.XMLWriter	method	public void forceNSDecl(String str, String str2)
+org.ccil.cowan.tagsoup.XMLWriter	method	public void ignorableWhitespace(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.XMLWriter	method	public void processingInstruction(String str, String str2) throws SAXException
+org.ccil.cowan.tagsoup.XMLWriter	method	public void reset()
+org.ccil.cowan.tagsoup.XMLWriter	method	public void setOutput(Writer writer)
+org.ccil.cowan.tagsoup.XMLWriter	method	public void setOutputProperty(String str, String str2)
+org.ccil.cowan.tagsoup.XMLWriter	method	public void setPrefix(String str, String str2)
+org.ccil.cowan.tagsoup.XMLWriter	method	public void startCDATA() throws SAXException
+org.ccil.cowan.tagsoup.XMLWriter	method	public void startDTD(String str, String str2, String str3) throws SAXException
+org.ccil.cowan.tagsoup.XMLWriter	method	public void startDocument() throws SAXException
+org.ccil.cowan.tagsoup.XMLWriter	method	public void startElement(String str) throws SAXException
+org.ccil.cowan.tagsoup.XMLWriter	method	public void startElement(String str, String str2) throws SAXException
+org.ccil.cowan.tagsoup.XMLWriter	method	public void startElement(String str, String str2, String str3, Attributes attributes) throws SAXException
+org.ccil.cowan.tagsoup.XMLWriter	method	public void startEntity(String str) throws SAXException
+org.ccil.cowan.tagsoup.jaxp.JAXPTest	method	private void test(String[] strArr) throws Exception
+org.ccil.cowan.tagsoup.jaxp.JAXPTest	method	public static void main(String[] strArr) throws Exception
+org.ccil.cowan.tagsoup.jaxp.SAX1ParserAdapter	field	final XMLReader xmlReader;
+org.ccil.cowan.tagsoup.jaxp.SAX1ParserAdapter	method	public SAX1ParserAdapter(XMLReader xMLReader)
+org.ccil.cowan.tagsoup.jaxp.SAX1ParserAdapter	method	public void parse(InputSource inputSource) throws SAXException
+org.ccil.cowan.tagsoup.jaxp.SAX1ParserAdapter	method	public void parse(String str) throws SAXException
+org.ccil.cowan.tagsoup.jaxp.SAX1ParserAdapter	method	public void setDTDHandler(DTDHandler dTDHandler)
+org.ccil.cowan.tagsoup.jaxp.SAX1ParserAdapter	method	public void setDocumentHandler(DocumentHandler documentHandler)
+org.ccil.cowan.tagsoup.jaxp.SAX1ParserAdapter	method	public void setEntityResolver(EntityResolver entityResolver)
+org.ccil.cowan.tagsoup.jaxp.SAX1ParserAdapter	method	public void setErrorHandler(ErrorHandler errorHandler)
+org.ccil.cowan.tagsoup.jaxp.SAX1ParserAdapter	method	public void setLocale(Locale locale) throws SAXException
+org.ccil.cowan.tagsoup.jaxp.SAX1ParserAdapter$AttributesWrapper	method	public String getName(int i)
+org.ccil.cowan.tagsoup.jaxp.SAX1ParserAdapter$AttributesWrapper	method	public String getType(String str)
+org.ccil.cowan.tagsoup.jaxp.SAX1ParserAdapter$AttributesWrapper	method	public String getType(int i)
+org.ccil.cowan.tagsoup.jaxp.SAX1ParserAdapter$AttributesWrapper	method	public String getValue(String str)
+org.ccil.cowan.tagsoup.jaxp.SAX1ParserAdapter$AttributesWrapper	method	public String getValue(int i)
+org.ccil.cowan.tagsoup.jaxp.SAX1ParserAdapter$AttributesWrapper	method	public int getLength()
+org.ccil.cowan.tagsoup.jaxp.SAX1ParserAdapter$AttributesWrapper	method	public void setAttributes(Attributes attributes)
+org.ccil.cowan.tagsoup.jaxp.SAX1ParserAdapter$DocHandlerWrapper	field	final AttributesWrapper mAttrWrapper;
+org.ccil.cowan.tagsoup.jaxp.SAX1ParserAdapter$DocHandlerWrapper	field	final DocumentHandler docHandler;
+org.ccil.cowan.tagsoup.jaxp.SAX1ParserAdapter$DocHandlerWrapper	method	public void characters(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.jaxp.SAX1ParserAdapter$DocHandlerWrapper	method	public void endDocument() throws SAXException
+org.ccil.cowan.tagsoup.jaxp.SAX1ParserAdapter$DocHandlerWrapper	method	public void endElement(String str, String str2, String str3) throws SAXException
+org.ccil.cowan.tagsoup.jaxp.SAX1ParserAdapter$DocHandlerWrapper	method	public void endPrefixMapping(String str)
+org.ccil.cowan.tagsoup.jaxp.SAX1ParserAdapter$DocHandlerWrapper	method	public void ignorableWhitespace(char[] cArr, int i, int i2) throws SAXException
+org.ccil.cowan.tagsoup.jaxp.SAX1ParserAdapter$DocHandlerWrapper	method	public void processingInstruction(String str, String str2) throws SAXException
+org.ccil.cowan.tagsoup.jaxp.SAX1ParserAdapter$DocHandlerWrapper	method	public void setDocumentLocator(Locator locator)
+org.ccil.cowan.tagsoup.jaxp.SAX1ParserAdapter$DocHandlerWrapper	method	public void skippedEntity(String str)
+org.ccil.cowan.tagsoup.jaxp.SAX1ParserAdapter$DocHandlerWrapper	method	public void startDocument() throws SAXException
+org.ccil.cowan.tagsoup.jaxp.SAX1ParserAdapter$DocHandlerWrapper	method	public void startElement(String str, String str2, String str3, Attributes attributes) throws SAXException
+org.ccil.cowan.tagsoup.jaxp.SAX1ParserAdapter$DocHandlerWrapper	method	public void startPrefixMapping(String str, String str2)
+org.ccil.cowan.tagsoup.jaxp.SAXFactoryImpl	field	private HashMap features;
+org.ccil.cowan.tagsoup.jaxp.SAXFactoryImpl	field	private SAXParserImpl prototypeParser;
+org.ccil.cowan.tagsoup.jaxp.SAXFactoryImpl	method	private SAXParserImpl getPrototype()
+org.ccil.cowan.tagsoup.jaxp.SAXFactoryImpl	method	public SAXParser newSAXParser() throws ParserConfigurationException
+org.ccil.cowan.tagsoup.jaxp.SAXFactoryImpl	method	public boolean getFeature(String str) throws SAXNotRecognizedException, SAXNotSupportedException, ParserConfigurationException
+org.ccil.cowan.tagsoup.jaxp.SAXFactoryImpl	method	public void setFeature(String str, boolean z) throws SAXNotRecognizedException, SAXNotSupportedException, ParserConfigurationException
+org.ccil.cowan.tagsoup.jaxp.SAXParserImpl	field	final Parser parser;
+org.ccil.cowan.tagsoup.jaxp.SAXParserImpl	method	protected SAXParserImpl()
+org.ccil.cowan.tagsoup.jaxp.SAXParserImpl	method	public Object getProperty(String str) throws SAXNotRecognizedException, SAXNotSupportedException
+org.ccil.cowan.tagsoup.jaxp.SAXParserImpl	method	public XMLReader getXMLReader()
+org.ccil.cowan.tagsoup.jaxp.SAXParserImpl	method	public boolean getFeature(String str) throws SAXNotRecognizedException, SAXNotSupportedException
+org.ccil.cowan.tagsoup.jaxp.SAXParserImpl	method	public boolean isNamespaceAware()
+org.ccil.cowan.tagsoup.jaxp.SAXParserImpl	method	public boolean isValidating()
+org.ccil.cowan.tagsoup.jaxp.SAXParserImpl	method	public org.xml.sax.Parser getParser() throws SAXException
+org.ccil.cowan.tagsoup.jaxp.SAXParserImpl	method	public static SAXParserImpl newInstance(Map map) throws SAXException
+org.ccil.cowan.tagsoup.jaxp.SAXParserImpl	method	public void setFeature(String str, boolean z) throws SAXNotRecognizedException, SAXNotSupportedException
+org.ccil.cowan.tagsoup.jaxp.SAXParserImpl	method	public void setProperty(String str, Object obj) throws SAXNotRecognizedException, SAXNotSupportedException

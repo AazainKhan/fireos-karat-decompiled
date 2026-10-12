@@ -1,0 +1,973 @@
+kind	class	extends	implements
+@interface	com.android.internal.telephony.MultiSimSettingController$PrimarySubChangeType		
+@interface	com.android.internal.telephony.ServiceStateTracker$CarrierNameDisplayBitmask		
+@interface	com.android.internal.telephony.cdnr.EfData$EFSource		
+@interface	com.android.internal.telephony.dataconnection.DataConnection$HandoverState		
+@interface	com.android.internal.telephony.dataconnection.DataEnabledOverride$OverrideConditions$Condition		
+@interface	com.android.internal.telephony.dataconnection.DataEnabledSettings$DataEnabledChangedReason		
+@interface	com.android.internal.telephony.dataconnection.DcController$PhysicalLinkState		
+@interface	com.android.internal.telephony.dataconnection.DcTracker$RecoveryAction		
+@interface	com.android.internal.telephony.dataconnection.DcTracker$ReleaseNetworkType		
+@interface	com.android.internal.telephony.dataconnection.DcTracker$RequestNetworkType		
+@interface	com.android.internal.telephony.dataconnection.TransportManager$IwlanOperationMode		
+@interface	com.android.internal.telephony.euicc.EuiccOperation$Action		
+@interface	com.android.internal.telephony.nitz.TimeZoneLookupHelper$CountryResult$Quality		
+@interface	com.android.internal.telephony.uicc.IccRecords$CarrierNameDisplayConditionBitmask		
+@interface	com.android.internal.telephony.uicc.PlmnActRecord$AccessTech		
+@interface	com.android.internal.telephony.uicc.euicc.EuiccCardErrorException$OperationCode		
+@interface	com.android.net.module.annotation.CallbackExecutor		
+@interface	com.android.net.module.annotation.CheckResult		
+@interface	com.android.net.module.annotation.CurrentTimeMillisLong		
+@interface	com.android.net.module.annotation.GuardedBy		
+@interface	com.android.net.module.annotation.Hide		
+@interface	com.android.net.module.annotation.Immutable		
+@interface	com.android.net.module.annotation.IntDef		
+@interface	com.android.net.module.annotation.IntRange		
+@interface	com.android.net.module.annotation.LongDef		
+@interface	com.android.net.module.annotation.NonNull		
+@interface	com.android.net.module.annotation.Nullable		
+@interface	com.android.net.module.annotation.RequiresPermission		
+@interface	com.android.net.module.annotation.RequiresPermission$Read		
+@interface	com.android.net.module.annotation.RequiresPermission$Write		
+@interface	com.android.net.module.annotation.SdkConstant		
+@interface	com.android.net.module.annotation.StringDef		
+@interface	com.android.net.module.annotation.SystemApi		
+@interface	com.android.net.module.annotation.SystemApi$Container		
+@interface	com.android.net.module.annotation.SystemService		
+@interface	com.android.net.module.annotation.TestApi		
+@interface	com.android.net.module.annotation.VisibleForTesting		
+@interface	com.android.net.module.annotation.WorkerThread		
+class	android.hardware.radio.config.V1_0.IRadioConfig$Proxy		IRadioConfig
+class	android.hardware.radio.config.V1_0.IRadioConfig$Stub	HwBinder	IRadioConfig
+class	android.hardware.radio.config.V1_0.IRadioConfigIndication$Proxy		IRadioConfigIndication
+class	android.hardware.radio.config.V1_0.IRadioConfigIndication$Stub	HwBinder	IRadioConfigIndication
+class	android.hardware.radio.config.V1_0.IRadioConfigResponse$Proxy		IRadioConfigResponse
+class	android.hardware.radio.config.V1_0.IRadioConfigResponse$Stub	HwBinder	IRadioConfigResponse
+class	android.hardware.radio.config.V1_0.SimSlotStatus		
+class	android.hardware.radio.config.V1_0.SlotState		
+class	android.hardware.radio.config.V1_1.IRadioConfig$Proxy		IRadioConfig
+class	android.hardware.radio.config.V1_1.IRadioConfig$Stub	HwBinder	IRadioConfig
+class	android.hardware.radio.config.V1_1.IRadioConfigIndication$Proxy		IRadioConfigIndication
+class	android.hardware.radio.config.V1_1.IRadioConfigIndication$Stub	HwBinder	IRadioConfigIndication
+class	android.hardware.radio.config.V1_1.IRadioConfigResponse$Proxy		IRadioConfigResponse
+class	android.hardware.radio.config.V1_1.IRadioConfigResponse$Stub	HwBinder	IRadioConfigResponse
+class	android.hardware.radio.config.V1_1.ModemInfo		
+class	android.hardware.radio.config.V1_1.ModemsConfig		
+class	android.hardware.radio.config.V1_1.PhoneCapability		
+class	android.hardware.radio.config.V1_2.IRadioConfigIndication$Proxy		IRadioConfigIndication
+class	android.hardware.radio.config.V1_2.IRadioConfigIndication$Stub	HwBinder	IRadioConfigIndication
+class	android.hardware.radio.config.V1_2.IRadioConfigResponse$Proxy		IRadioConfigResponse
+class	android.hardware.radio.config.V1_2.IRadioConfigResponse$Stub	HwBinder	IRadioConfigResponse
+class	android.hardware.radio.config.V1_2.SimSlotStatus		
+class	android.hardware.radio.deprecated.V1_0.IOemHook$Proxy		IOemHook
+class	android.hardware.radio.deprecated.V1_0.IOemHook$Stub	HwBinder	IOemHook
+class	android.hardware.radio.deprecated.V1_0.IOemHookIndication$Proxy		IOemHookIndication
+class	android.hardware.radio.deprecated.V1_0.IOemHookIndication$Stub	HwBinder	IOemHookIndication
+class	android.hardware.radio.deprecated.V1_0.IOemHookResponse$Proxy		IOemHookResponse
+class	android.hardware.radio.deprecated.V1_0.IOemHookResponse$Stub	HwBinder	IOemHookResponse
+class	android.internal.telephony.sysprop.AdbProperties		
+class	android.internal.telephony.sysprop.ApkVerityProperties		
+class	android.internal.telephony.sysprop.CarProperties		
+class	android.internal.telephony.sysprop.ContactsProperties		
+class	android.internal.telephony.sysprop.CryptoProperties		
+class	android.internal.telephony.sysprop.DisplayProperties		
+class	android.internal.telephony.sysprop.HdmiProperties		
+class	android.internal.telephony.sysprop.MediaProperties		
+class	android.internal.telephony.sysprop.OtaProperties		
+class	android.internal.telephony.sysprop.PowerProperties		
+class	android.internal.telephony.sysprop.SetupWizardProperties		
+class	android.internal.telephony.sysprop.TelephonyProperties		
+class	android.internal.telephony.sysprop.TraceProperties		
+class	android.internal.telephony.sysprop.VndkProperties		
+class	android.internal.telephony.sysprop.VoldProperties		
+class	android.internal.telephony.sysprop.WifiProperties		
+class	android.telephony.gsm.SmsManager		
+class	android.telephony.gsm.SmsMessage		
+class	android.telephony.gsm.SmsMessage$SubmitPdu		
+class	com.android.cellbroadcastservice.CellBroadcastStatsLog		
+class	com.android.internal.telephony.ATParseEx	RuntimeException	
+class	com.android.internal.telephony.ATResponseParser		
+class	com.android.internal.telephony.AppSmsManager		
+class	com.android.internal.telephony.AppSmsManager$AppRequestInfo		
+class	com.android.internal.telephony.AsyncChannel		
+class	com.android.internal.telephony.AsyncChannel$AsyncChannelConnection		ServiceConnection
+class	com.android.internal.telephony.AsyncChannel$DeathMonitor		IBinder.DeathRecipient
+class	com.android.internal.telephony.AsyncChannel$SyncMessenger		
+class	com.android.internal.telephony.AsyncChannel$SyncMessenger$SyncHandler	Handler	
+class	com.android.internal.telephony.AsyncEmergencyContactNotifier	AsyncTask<Void, Void, Void>	
+class	com.android.internal.telephony.AsyncService	Service	
+class	com.android.internal.telephony.AsyncService$AsyncServiceInfo		
+class	com.android.internal.telephony.BaseCommands		CommandsInterface
+class	com.android.internal.telephony.BasicShellCommandHandler		
+class	com.android.internal.telephony.BitwiseInputStream		
+class	com.android.internal.telephony.BitwiseInputStream$AccessException	Exception	
+class	com.android.internal.telephony.BlockChecker		
+class	com.android.internal.telephony.BtSmsInterfaceManager		
+class	com.android.internal.telephony.BtSmsInterfaceManager$MapMessageSender		BluetoothProfile.ServiceListener
+class	com.android.internal.telephony.Call		
+class	com.android.internal.telephony.CallForwardInfo		
+class	com.android.internal.telephony.CallManager		
+class	com.android.internal.telephony.CallManager$CallManagerHandler	Handler	
+class	com.android.internal.telephony.CallStateException	Exception	
+class	com.android.internal.telephony.CallTracker	Handler	
+class	com.android.internal.telephony.CarrierActionAgent	Handler	
+class	com.android.internal.telephony.CarrierInfoManager		
+class	com.android.internal.telephony.CarrierKeyDownloadManager	Handler	
+class	com.android.internal.telephony.CarrierPrivilegesTracker	Handler	
+class	com.android.internal.telephony.CarrierResolver	Handler	
+class	com.android.internal.telephony.CarrierResolver$CarrierMatchingRule		
+class	com.android.internal.telephony.CarrierServiceBindHelper		
+class	com.android.internal.telephony.CarrierServiceBindHelper$AppBinding		
+class	com.android.internal.telephony.CarrierServiceBindHelper$CarrierServiceConnection		ServiceConnection
+class	com.android.internal.telephony.CarrierServiceBindHelper$CarrierServicePackageMonitor	PackageChangeReceiver	
+class	com.android.internal.telephony.CarrierServiceStateTracker	Handler	
+class	com.android.internal.telephony.CarrierServiceStateTracker$EmergencyNetworkNotification		NotificationType
+class	com.android.internal.telephony.CarrierServiceStateTracker$PrefNetworkNotification		NotificationType
+class	com.android.internal.telephony.CarrierServicesSmsFilter		
+class	com.android.internal.telephony.CarrierServicesSmsFilter$CallbackTimeoutHandler	Handler	
+class	com.android.internal.telephony.CarrierServicesSmsFilter$CarrierSmsFilter	CarrierMessagingServiceWrapper	
+class	com.android.internal.telephony.CarrierServicesSmsFilter$CarrierSmsFilterCallback	CarrierMessagingServiceWrapper.CarrierMessagingCallbackWrapper	
+class	com.android.internal.telephony.CarrierServicesSmsFilter$FilterAggregator		
+class	com.android.internal.telephony.CarrierSignalAgent	Handler	
+class	com.android.internal.telephony.CarrierSmsUtils		
+class	com.android.internal.telephony.CellBroadcastServiceManager		
+class	com.android.internal.telephony.CellBroadcastServiceManager$CellBroadcastServiceConnection		ServiceConnection
+class	com.android.internal.telephony.CellularNetworkService	NetworkService	
+class	com.android.internal.telephony.CellularNetworkService$CellularNetworkServiceProvider	NetworkService.NetworkServiceProvider	
+class	com.android.internal.telephony.CellularNetworkValidator		
+class	com.android.internal.telephony.CellularNetworkValidator$ConnectivityNetworkCallback	ConnectivityManager.NetworkCallback	
+class	com.android.internal.telephony.CellularNetworkValidator$ValidatedNetworkCache		
+class	com.android.internal.telephony.CellularNetworkValidator$ValidatedNetworkCache$ValidatedNetwork		
+class	com.android.internal.telephony.ClientWakelockAccountant		
+class	com.android.internal.telephony.ClientWakelockTracker		
+class	com.android.internal.telephony.CommandException	RuntimeException	
+class	com.android.internal.telephony.Connection		
+class	com.android.internal.telephony.Connection$Capability		
+class	com.android.internal.telephony.Connection$ListenerBase		Listener
+class	com.android.internal.telephony.DebugService		
+class	com.android.internal.telephony.DefaultPhoneNotifier		PhoneNotifier
+class	com.android.internal.telephony.DeviceStateMonitor	Handler	
+class	com.android.internal.telephony.DeviceStateMonitor$AccessNetworkThresholds		
+class	com.android.internal.telephony.DisplayInfoController	Handler	
+class	com.android.internal.telephony.DriverCall		Comparable<DriverCall>
+class	com.android.internal.telephony.EventLogTags		
+class	com.android.internal.telephony.FastXmlSerializer		XmlSerializer
+class	com.android.internal.telephony.GlobalSettingsHelper		
+class	com.android.internal.telephony.GsmCdmaCall	Call	
+class	com.android.internal.telephony.GsmCdmaCallTracker	CallTracker	
+class	com.android.internal.telephony.GsmCdmaConnection	Connection	
+class	com.android.internal.telephony.GsmCdmaConnection$MyHandler	Handler	
+class	com.android.internal.telephony.GsmCdmaPhone	Phone	
+class	com.android.internal.telephony.GsmCdmaPhone$Cfu		
+class	com.android.internal.telephony.HalVersion		Comparable<HalVersion>
+class	com.android.internal.telephony.HardwareConfig		
+class	com.android.internal.telephony.HexDump		
+class	com.android.internal.telephony.IIccPhoneBook$Default		IIccPhoneBook
+class	com.android.internal.telephony.IIccPhoneBook$Stub	Binder	IIccPhoneBook
+class	com.android.internal.telephony.IIccPhoneBook$Stub$Proxy		IIccPhoneBook
+class	com.android.internal.telephony.IccCard		
+class	com.android.internal.telephony.IccPhoneBookInterfaceManager		
+class	com.android.internal.telephony.IccPhoneBookInterfaceManager$Request		
+class	com.android.internal.telephony.IccProvider	ContentProvider	
+class	com.android.internal.telephony.IccSmsInterfaceManager		
+class	com.android.internal.telephony.IccSmsInterfaceManager$CdmaBroadcastRangeManager	IntRangeManager	
+class	com.android.internal.telephony.IccSmsInterfaceManager$CellBroadcastRangeManager	IntRangeManager	
+class	com.android.internal.telephony.ImsSmsDispatcher	SMSDispatcher	
+class	com.android.internal.telephony.ImsSmsDispatcher$AnonymousClass3	IImsSmsListener.Stub	
+class	com.android.internal.telephony.InboundSmsHandler	StateMachine	
+class	com.android.internal.telephony.InboundSmsHandler$CarrierServicesSmsFilterCallback		CarrierServicesSmsFilter.CarrierServicesSmsFilterCallbackInterface
+class	com.android.internal.telephony.InboundSmsHandler$CbTestBroadcastReceiver	BroadcastReceiver	
+class	com.android.internal.telephony.InboundSmsHandler$DefaultState	State	
+class	com.android.internal.telephony.InboundSmsHandler$DeliveringState	State	
+class	com.android.internal.telephony.InboundSmsHandler$IdleState	State	
+class	com.android.internal.telephony.InboundSmsHandler$NewMessageNotificationActionReceiver	BroadcastReceiver	
+class	com.android.internal.telephony.InboundSmsHandler$SmsBroadcastReceiver	BroadcastReceiver	
+class	com.android.internal.telephony.InboundSmsHandler$StartupState	State	
+class	com.android.internal.telephony.InboundSmsHandler$WaitingState	State	
+class	com.android.internal.telephony.InboundSmsTracker		
+class	com.android.internal.telephony.IndentingPrintWriter	PrintWriter	
+class	com.android.internal.telephony.IntRangeManager		
+class	com.android.internal.telephony.IntRangeManager$ClientRange		
+class	com.android.internal.telephony.IntRangeManager$IntRange		
+class	com.android.internal.telephony.IntentBroadcaster		
+class	com.android.internal.telephony.LastCallFailCause		
+class	com.android.internal.telephony.LinkCapacityEstimate		
+class	com.android.internal.telephony.LocalLog		
+class	com.android.internal.telephony.LocalLog$ReadOnlyLocalLog		
+class	com.android.internal.telephony.LocaleTracker	Handler	
+class	com.android.internal.telephony.MccTable		
+class	com.android.internal.telephony.MccTable$MccEntry		Comparable<MccEntry>
+class	com.android.internal.telephony.MccTable$MccMnc		
+class	com.android.internal.telephony.MissedIncomingCallSmsFilter		
+class	com.android.internal.telephony.MultiSimSettingController	Handler	
+class	com.android.internal.telephony.MultiSimSettingController$SimCombinationWarningParams		
+class	com.android.internal.telephony.NetworkFactory	Handler	
+class	com.android.internal.telephony.NetworkFactory$NetworkRequestInfo		
+class	com.android.internal.telephony.NetworkRegistrationManager	Handler	
+class	com.android.internal.telephony.NetworkRegistrationManager$NetworkRegStateCallback	INetworkServiceCallback.Stub	
+class	com.android.internal.telephony.NetworkRegistrationManager$NetworkServiceConnection		ServiceConnection
+class	com.android.internal.telephony.NetworkRegistrationManager$RegManagerDeathRecipient		IBinder.DeathRecipient
+class	com.android.internal.telephony.NetworkScanRequestTracker		
+class	com.android.internal.telephony.NetworkScanRequestTracker$NetworkScanRequestInfo		IBinder.DeathRecipient
+class	com.android.internal.telephony.NetworkScanRequestTracker$NetworkScanRequestScheduler		
+class	com.android.internal.telephony.NetworkTypeController	StateMachine	
+class	com.android.internal.telephony.NetworkTypeController$DefaultState	State	
+class	com.android.internal.telephony.NetworkTypeController$IdleState	State	
+class	com.android.internal.telephony.NetworkTypeController$LegacyState	State	
+class	com.android.internal.telephony.NetworkTypeController$LteConnectedState	State	
+class	com.android.internal.telephony.NetworkTypeController$NrConnectedState	State	
+class	com.android.internal.telephony.NetworkTypeController$OverrideTimerRule		
+class	com.android.internal.telephony.NitzData		
+class	com.android.internal.telephony.NitzStateMachine$DeviceStateImpl		DeviceState
+class	com.android.internal.telephony.OemHookIndication	IOemHookIndication.Stub	
+class	com.android.internal.telephony.OemHookResponse	IOemHookResponse.Stub	
+class	com.android.internal.telephony.PackageBasedTokenUtil		
+class	com.android.internal.telephony.Phone	Handler	PhoneInternalInterface
+class	com.android.internal.telephony.Phone$NetworkSelectMessage		
+class	com.android.internal.telephony.Phone$SilentRedialParam		
+class	com.android.internal.telephony.PhoneConfigurationManager		
+class	com.android.internal.telephony.PhoneConfigurationManager$ConfigManagerHandler	Handler	
+class	com.android.internal.telephony.PhoneConfigurationManager$MockableInterface		
+class	com.android.internal.telephony.PhoneFactory		
+class	com.android.internal.telephony.PhoneInternalInterface$DialArgs		
+class	com.android.internal.telephony.PhoneInternalInterface$DialArgs$Builder		
+class	com.android.internal.telephony.PhoneSubInfoController	IPhoneSubInfo.Stub	
+class	com.android.internal.telephony.PhoneSwitcher	Handler	
+class	com.android.internal.telephony.PhoneSwitcher$DefaultNetworkCallback	ConnectivityManager.NetworkCallback	
+class	com.android.internal.telephony.PhoneSwitcher$EmergencyOverrideRequest		
+class	com.android.internal.telephony.PhoneSwitcher$PhoneState		
+class	com.android.internal.telephony.PhoneSwitcher$PhoneSwitcherNetworkRequestListener	NetworkFactory	
+class	com.android.internal.telephony.Preconditions		
+class	com.android.internal.telephony.ProxyController		
+class	com.android.internal.telephony.RIL	BaseCommands	CommandsInterface
+class	com.android.internal.telephony.RIL$RadioProxyDeathRecipient		IHwBinder.DeathRecipient
+class	com.android.internal.telephony.RIL$RilHandler	Handler	
+class	com.android.internal.telephony.RILRequest		
+class	com.android.internal.telephony.RadioBugDetector		
+class	com.android.internal.telephony.RadioCapability		
+class	com.android.internal.telephony.RadioConfig	Handler	
+class	com.android.internal.telephony.RadioConfig$ServiceDeathRecipient		IHwBinder.DeathRecipient
+class	com.android.internal.telephony.RadioConfigIndication	IRadioConfigIndication.Stub	
+class	com.android.internal.telephony.RadioConfigResponse	IRadioConfigResponse.Stub	
+class	com.android.internal.telephony.RadioIndication	IRadioIndication.Stub	
+class	com.android.internal.telephony.RadioResponse	IRadioResponse.Stub	
+class	com.android.internal.telephony.RatRatcheter		
+class	com.android.internal.telephony.Registrant		
+class	com.android.internal.telephony.RegistrantList		
+class	com.android.internal.telephony.RegistrationFailedEvent		
+class	com.android.internal.telephony.RestrictedState		
+class	com.android.internal.telephony.RetryManager		
+class	com.android.internal.telephony.RetryManager$RetryRec		
+class	com.android.internal.telephony.RilWakelockInfo		
+class	com.android.internal.telephony.SMSDispatcher	Handler	
+class	com.android.internal.telephony.SMSDispatcher$ConfirmDialogListener		DialogInterface.OnClickListener,DialogInterface.OnCancelListener,CompoundButton.OnCheckedChangeListener
+class	com.android.internal.telephony.SMSDispatcher$DataSmsSender	SmsSender	
+class	com.android.internal.telephony.SMSDispatcher$MultipartSmsSender	CarrierMessagingServiceWrapper	
+class	com.android.internal.telephony.SMSDispatcher$MultipartSmsSenderCallback	CarrierMessagingServiceWrapper.CarrierMessagingCallbackWrapper	
+class	com.android.internal.telephony.SMSDispatcher$SettingsObserver	ContentObserver	
+class	com.android.internal.telephony.SMSDispatcher$SmsSender	CarrierMessagingServiceWrapper	
+class	com.android.internal.telephony.SMSDispatcher$SmsSenderCallback	CarrierMessagingServiceWrapper.CarrierMessagingCallbackWrapper	
+class	com.android.internal.telephony.SMSDispatcher$SmsTracker		
+class	com.android.internal.telephony.SMSDispatcher$TextSmsSender	SmsSender	
+class	com.android.internal.telephony.ServiceStateTracker	Handler	
+class	com.android.internal.telephony.ServiceStateTracker$SstSubscriptionsChangedListener	SubscriptionManager.OnSubscriptionsChangedListener	
+class	com.android.internal.telephony.SettingsObserver	ContentObserver	
+class	com.android.internal.telephony.SimActivationTracker		
+class	com.android.internal.telephony.SmsBroadcastUndelivered		
+class	com.android.internal.telephony.SmsBroadcastUndelivered$ScanRawTableThread	Thread	
+class	com.android.internal.telephony.SmsBroadcastUndelivered$SmsReferenceKey		
+class	com.android.internal.telephony.SmsController	ISmsImplBase	
+class	com.android.internal.telephony.SmsDispatchersController	Handler	
+class	com.android.internal.telephony.SmsPermissions		
+class	com.android.internal.telephony.SmsResponse		
+class	com.android.internal.telephony.SmsStorageMonitor	Handler	
+class	com.android.internal.telephony.SmsUsageMonitor		
+class	com.android.internal.telephony.SmsUsageMonitor$SettingsObserver	ContentObserver	
+class	com.android.internal.telephony.SmsUsageMonitor$SettingsObserverHandler	Handler	
+class	com.android.internal.telephony.SmsUsageMonitor$ShortCodePatternMatcher		
+class	com.android.internal.telephony.SomeArgs		
+class	com.android.internal.telephony.State		IState
+class	com.android.internal.telephony.StateMachine		
+class	com.android.internal.telephony.StateMachine$LogRec		
+class	com.android.internal.telephony.StateMachine$LogRecords		
+class	com.android.internal.telephony.StateMachine$SmHandler	Handler	
+class	com.android.internal.telephony.StateMachine$SmHandler$HaltingState	State	
+class	com.android.internal.telephony.StateMachine$SmHandler$QuittingState	State	
+class	com.android.internal.telephony.StateMachine$SmHandler$StateInfo		
+class	com.android.internal.telephony.SubscriptionController	ISub.Stub	
+class	com.android.internal.telephony.SubscriptionController$WatchedInt		
+class	com.android.internal.telephony.SubscriptionController$WatchedSlotIndexToSubIds		
+class	com.android.internal.telephony.SubscriptionInfoUpdater	Handler	
+class	com.android.internal.telephony.TelephonyCapabilities		
+class	com.android.internal.telephony.TelephonyComponentFactory		
+class	com.android.internal.telephony.TelephonyComponentFactory$InjectedComponents		
+class	com.android.internal.telephony.TelephonyDevController	Handler	
+class	com.android.internal.telephony.TelephonyStatsLog		
+class	com.android.internal.telephony.TelephonyTester		
+class	com.android.internal.telephony.TimeUtils		
+class	com.android.internal.telephony.UUSInfo		
+class	com.android.internal.telephony.UiccPhoneBookController	IIccPhoneBook.Stub	
+class	com.android.internal.telephony.UserIcons		
+class	com.android.internal.telephony.VisualVoicemailSmsFilter		
+class	com.android.internal.telephony.VisualVoicemailSmsFilter$FullMessage		
+class	com.android.internal.telephony.VisualVoicemailSmsParser		
+class	com.android.internal.telephony.VisualVoicemailSmsParser$WrappedMessageData		
+class	com.android.internal.telephony.WakeLockStateMachine	StateMachine	
+class	com.android.internal.telephony.WakeLockStateMachine$DefaultState	State	
+class	com.android.internal.telephony.WakeLockStateMachine$IdleState	State	
+class	com.android.internal.telephony.WakeLockStateMachine$WaitingState	State	
+class	com.android.internal.telephony.WapPushManagerParams		
+class	com.android.internal.telephony.WapPushOverSms		ServiceConnection
+class	com.android.internal.telephony.WapPushOverSms$BindServiceThread	Thread	
+class	com.android.internal.telephony.WapPushOverSms$DecodedResult		
+class	com.android.internal.telephony.WspTypeDecoder		
+class	com.android.internal.telephony.cat.BIPClientParams	CommandParams	
+class	com.android.internal.telephony.cat.BerTlv		
+class	com.android.internal.telephony.cat.CallSetupParams	CommandParams	
+class	com.android.internal.telephony.cat.CatCmdMessage		Parcelable
+class	com.android.internal.telephony.cat.CatCmdMessage$BrowserSettings		
+class	com.android.internal.telephony.cat.CatCmdMessage$BrowserTerminationCauses		
+class	com.android.internal.telephony.cat.CatCmdMessage$CallSettings		
+class	com.android.internal.telephony.cat.CatCmdMessage$SetupEventListConstants		
+class	com.android.internal.telephony.cat.CatCmdMessage$SetupEventListSettings		
+class	com.android.internal.telephony.cat.CatException	AndroidException	
+class	com.android.internal.telephony.cat.CatLog		
+class	com.android.internal.telephony.cat.CatResponseMessage		
+class	com.android.internal.telephony.cat.CatService	Handler	AppInterface
+class	com.android.internal.telephony.cat.CommandDetails	ValueObject	Parcelable
+class	com.android.internal.telephony.cat.CommandParams		
+class	com.android.internal.telephony.cat.CommandParamsFactory	Handler	
+class	com.android.internal.telephony.cat.ComprehensionTlv		
+class	com.android.internal.telephony.cat.DTTZResponseData	ResponseData	
+class	com.android.internal.telephony.cat.DeviceIdentities	ValueObject	
+class	com.android.internal.telephony.cat.DisplayTextParams	CommandParams	
+class	com.android.internal.telephony.cat.Duration		Parcelable
+class	com.android.internal.telephony.cat.GetInkeyInputResponseData	ResponseData	
+class	com.android.internal.telephony.cat.GetInputParams	CommandParams	
+class	com.android.internal.telephony.cat.IconId	ValueObject	
+class	com.android.internal.telephony.cat.IconLoader	Handler	
+class	com.android.internal.telephony.cat.ImageDescriptor		
+class	com.android.internal.telephony.cat.Input		Parcelable
+class	com.android.internal.telephony.cat.Item		Parcelable
+class	com.android.internal.telephony.cat.ItemsIconId	ValueObject	
+class	com.android.internal.telephony.cat.LanguageParams	CommandParams	
+class	com.android.internal.telephony.cat.LanguageResponseData	ResponseData	
+class	com.android.internal.telephony.cat.LaunchBrowserParams	CommandParams	
+class	com.android.internal.telephony.cat.Menu		Parcelable
+class	com.android.internal.telephony.cat.PlayToneParams	CommandParams	
+class	com.android.internal.telephony.cat.ResponseData		
+class	com.android.internal.telephony.cat.ResultException	CatException	
+class	com.android.internal.telephony.cat.RilMessage		
+class	com.android.internal.telephony.cat.RilMessageDecoder	StateMachine	
+class	com.android.internal.telephony.cat.RilMessageDecoder$StateCmdParamsReady	State	
+class	com.android.internal.telephony.cat.RilMessageDecoder$StateStart	State	
+class	com.android.internal.telephony.cat.SelectItemParams	CommandParams	
+class	com.android.internal.telephony.cat.SelectItemResponseData	ResponseData	
+class	com.android.internal.telephony.cat.SetEventListParams	CommandParams	
+class	com.android.internal.telephony.cat.TextAttribute		
+class	com.android.internal.telephony.cat.TextMessage		Parcelable
+class	com.android.internal.telephony.cat.ToneSettings		Parcelable
+class	com.android.internal.telephony.cat.ValueObject		
+class	com.android.internal.telephony.cat.ValueParser		
+class	com.android.internal.telephony.cdma.CdmaCallWaitingNotification		
+class	com.android.internal.telephony.cdma.CdmaInboundSmsHandler	InboundSmsHandler	
+class	com.android.internal.telephony.cdma.CdmaInboundSmsHandler$CdmaCbTestBroadcastReceiver	InboundSmsHandler.CbTestBroadcastReceiver	
+class	com.android.internal.telephony.cdma.CdmaInboundSmsHandler$CdmaScpTestBroadcastReceiver	InboundSmsHandler.CbTestBroadcastReceiver	
+class	com.android.internal.telephony.cdma.CdmaInformationRecords		
+class	com.android.internal.telephony.cdma.CdmaInformationRecords$CdmaDisplayInfoRec		
+class	com.android.internal.telephony.cdma.CdmaInformationRecords$CdmaLineControlInfoRec		
+class	com.android.internal.telephony.cdma.CdmaInformationRecords$CdmaNumberInfoRec		
+class	com.android.internal.telephony.cdma.CdmaInformationRecords$CdmaRedirectingNumberInfoRec		
+class	com.android.internal.telephony.cdma.CdmaInformationRecords$CdmaSignalInfoRec		
+class	com.android.internal.telephony.cdma.CdmaInformationRecords$CdmaT53AudioControlInfoRec		
+class	com.android.internal.telephony.cdma.CdmaInformationRecords$CdmaT53ClirInfoRec		
+class	com.android.internal.telephony.cdma.CdmaMmiCode	Handler	MmiCode
+class	com.android.internal.telephony.cdma.CdmaSMSDispatcher	SMSDispatcher	
+class	com.android.internal.telephony.cdma.CdmaSmsBroadcastConfigInfo		
+class	com.android.internal.telephony.cdma.CdmaSubscriptionSourceManager	Handler	
+class	com.android.internal.telephony.cdma.EriInfo		
+class	com.android.internal.telephony.cdma.EriManager		
+class	com.android.internal.telephony.cdma.EriManager$EriDisplayInformation		
+class	com.android.internal.telephony.cdma.EriManager$EriFile		
+class	com.android.internal.telephony.cdma.SignalToneUtil		
+class	com.android.internal.telephony.cdma.SmsMessageConverter		
+class	com.android.internal.telephony.cdnr.BrandOverrideEfData		EfData
+class	com.android.internal.telephony.cdnr.CarrierConfigEfData		EfData
+class	com.android.internal.telephony.cdnr.CarrierDisplayNameData		Parcelable
+class	com.android.internal.telephony.cdnr.CarrierDisplayNameData$Builder		
+class	com.android.internal.telephony.cdnr.CarrierDisplayNameResolver		
+class	com.android.internal.telephony.cdnr.CarrierDisplayNameResolver$CarrierDisplayNameConditionRule		
+class	com.android.internal.telephony.cdnr.CarrierDisplayNameResolver$WfcCarrierNameFormatter		
+class	com.android.internal.telephony.cdnr.EriEfData		EfData
+class	com.android.internal.telephony.cdnr.RuimEfData		EfData
+class	com.android.internal.telephony.cdnr.UsimEfData		EfData
+class	com.android.internal.telephony.dataconnection.AccessNetworksManager	Handler	
+class	com.android.internal.telephony.dataconnection.AccessNetworksManager$AccessNetworksManagerDeathRecipient		IBinder.DeathRecipient
+class	com.android.internal.telephony.dataconnection.AccessNetworksManager$QualifiedNetworks		
+class	com.android.internal.telephony.dataconnection.AccessNetworksManager$QualifiedNetworksServiceCallback	IQualifiedNetworksServiceCallback.Stub	
+class	com.android.internal.telephony.dataconnection.AccessNetworksManager$QualifiedNetworksServiceConnection		ServiceConnection
+class	com.android.internal.telephony.dataconnection.ApnConfigType		
+class	com.android.internal.telephony.dataconnection.ApnConfigTypeRepository		
+class	com.android.internal.telephony.dataconnection.ApnContext		
+class	com.android.internal.telephony.dataconnection.ApnSettingUtils		
+class	com.android.internal.telephony.dataconnection.CellularDataService	DataService	
+class	com.android.internal.telephony.dataconnection.CellularDataService$CellularDataServiceProvider	DataService.DataServiceProvider	
+class	com.android.internal.telephony.dataconnection.DataConnection	StateMachine	
+class	com.android.internal.telephony.dataconnection.DataConnection$ConnectionParams		
+class	com.android.internal.telephony.dataconnection.DataConnection$DcActivatingState	State	
+class	com.android.internal.telephony.dataconnection.DataConnection$DcActiveState	State	
+class	com.android.internal.telephony.dataconnection.DataConnection$DcDefaultState	State	
+class	com.android.internal.telephony.dataconnection.DataConnection$DcDisconnectingState	State	
+class	com.android.internal.telephony.dataconnection.DataConnection$DcDisconnectionErrorCreatingConnection	State	
+class	com.android.internal.telephony.dataconnection.DataConnection$DcInactiveState	State	
+class	com.android.internal.telephony.dataconnection.DataConnection$DisconnectParams		
+class	com.android.internal.telephony.dataconnection.DataConnection$UpdateLinkPropertyResult		
+class	com.android.internal.telephony.dataconnection.DataConnectionReasons		
+class	com.android.internal.telephony.dataconnection.DataEnabledOverride		
+class	com.android.internal.telephony.dataconnection.DataEnabledOverride$OverrideConditions		
+class	com.android.internal.telephony.dataconnection.DataEnabledOverride$OverrideRule		
+class	com.android.internal.telephony.dataconnection.DataEnabledSettings		
+class	com.android.internal.telephony.dataconnection.DataServiceManager	Handler	
+class	com.android.internal.telephony.dataconnection.DataServiceManager$CellularDataServiceCallback	IDataServiceCallback.Stub	
+class	com.android.internal.telephony.dataconnection.DataServiceManager$CellularDataServiceConnection		ServiceConnection
+class	com.android.internal.telephony.dataconnection.DataServiceManager$DataServiceManagerDeathRecipient		IBinder.DeathRecipient
+class	com.android.internal.telephony.dataconnection.DcController	StateMachine	
+class	com.android.internal.telephony.dataconnection.DcController$DccDefaultState	State	
+class	com.android.internal.telephony.dataconnection.DcFailBringUp		
+class	com.android.internal.telephony.dataconnection.DcNetworkAgent	NetworkAgent	
+class	com.android.internal.telephony.dataconnection.DcNetworkAgent$DcKeepaliveTracker		
+class	com.android.internal.telephony.dataconnection.DcNetworkAgent$DcKeepaliveTracker$KeepaliveRecord		
+class	com.android.internal.telephony.dataconnection.DcRequest		Comparable<DcRequest>
+class	com.android.internal.telephony.dataconnection.DcTesterDeactivateAll		
+class	com.android.internal.telephony.dataconnection.DcTesterFailBringUpAll		
+class	com.android.internal.telephony.dataconnection.DcTracker	Handler	
+class	com.android.internal.telephony.dataconnection.DcTracker$ApnChangeObserver	ContentObserver	
+class	com.android.internal.telephony.dataconnection.DcTracker$DataStallRecoveryHandler		
+class	com.android.internal.telephony.dataconnection.DcTracker$ProvisionNotificationBroadcastReceiver	BroadcastReceiver	
+class	com.android.internal.telephony.dataconnection.DcTracker$TxRxSum		
+class	com.android.internal.telephony.dataconnection.KeepaliveStatus		Parcelable
+class	com.android.internal.telephony.dataconnection.TelephonyNetworkFactory	NetworkFactory	
+class	com.android.internal.telephony.dataconnection.TelephonyNetworkFactory$InternalHandler	Handler	
+class	com.android.internal.telephony.dataconnection.TransportManager	Handler	
+class	com.android.internal.telephony.dataconnection.TransportManager$HandoverParams		
+class	com.android.internal.telephony.emergency.EmergencyNumberTracker	Handler	
+class	com.android.internal.telephony.euicc.EuiccCardController	IEuiccCardController.Stub	
+class	com.android.internal.telephony.euicc.EuiccCardController$SimSlotStatusChangedBroadcastReceiver	BroadcastReceiver	
+class	com.android.internal.telephony.euicc.EuiccConnector	StateMachine	ServiceConnection
+class	com.android.internal.telephony.euicc.EuiccConnector$AvailableState	State	
+class	com.android.internal.telephony.euicc.EuiccConnector$BindingState	State	
+class	com.android.internal.telephony.euicc.EuiccConnector$ConnectedState	State	
+class	com.android.internal.telephony.euicc.EuiccConnector$ConnectedState$AnonymousClass1	IGetEidCallback.Stub	
+class	com.android.internal.telephony.euicc.EuiccConnector$ConnectedState$AnonymousClass10	IEraseSubscriptionsCallback.Stub	
+class	com.android.internal.telephony.euicc.EuiccConnector$ConnectedState$AnonymousClass11	IEraseSubscriptionsCallback.Stub	
+class	com.android.internal.telephony.euicc.EuiccConnector$ConnectedState$AnonymousClass12	IRetainSubscriptionsForFactoryResetCallback.Stub	
+class	com.android.internal.telephony.euicc.EuiccConnector$ConnectedState$AnonymousClass13	IGetOtaStatusCallback.Stub	
+class	com.android.internal.telephony.euicc.EuiccConnector$ConnectedState$AnonymousClass14	IOtaStatusChangedCallback.Stub	
+class	com.android.internal.telephony.euicc.EuiccConnector$ConnectedState$AnonymousClass15	IEuiccServiceDumpResultCallback.Stub	
+class	com.android.internal.telephony.euicc.EuiccConnector$ConnectedState$AnonymousClass2	IGetDownloadableSubscriptionMetadataCallback.Stub	
+class	com.android.internal.telephony.euicc.EuiccConnector$ConnectedState$AnonymousClass3	IDownloadSubscriptionCallback.Stub	
+class	com.android.internal.telephony.euicc.EuiccConnector$ConnectedState$AnonymousClass4	IGetEuiccProfileInfoListCallback.Stub	
+class	com.android.internal.telephony.euicc.EuiccConnector$ConnectedState$AnonymousClass5	IGetDefaultDownloadableSubscriptionListCallback.Stub	
+class	com.android.internal.telephony.euicc.EuiccConnector$ConnectedState$AnonymousClass6	IGetEuiccInfoCallback.Stub	
+class	com.android.internal.telephony.euicc.EuiccConnector$ConnectedState$AnonymousClass7	IDeleteSubscriptionCallback.Stub	
+class	com.android.internal.telephony.euicc.EuiccConnector$ConnectedState$AnonymousClass8	ISwitchToSubscriptionCallback.Stub	
+class	com.android.internal.telephony.euicc.EuiccConnector$ConnectedState$AnonymousClass9	IUpdateSubscriptionNicknameCallback.Stub	
+class	com.android.internal.telephony.euicc.EuiccConnector$DeleteRequest		
+class	com.android.internal.telephony.euicc.EuiccConnector$DisconnectedState	State	
+class	com.android.internal.telephony.euicc.EuiccConnector$DownloadRequest		
+class	com.android.internal.telephony.euicc.EuiccConnector$EuiccPackageMonitor	PackageChangeReceiver	
+class	com.android.internal.telephony.euicc.EuiccConnector$GetDefaultListRequest		
+class	com.android.internal.telephony.euicc.EuiccConnector$GetMetadataRequest		
+class	com.android.internal.telephony.euicc.EuiccConnector$SwitchRequest		
+class	com.android.internal.telephony.euicc.EuiccConnector$UnavailableState	State	
+class	com.android.internal.telephony.euicc.EuiccConnector$UpdateNicknameRequest		
+class	com.android.internal.telephony.euicc.EuiccController	IEuiccController.Stub	
+class	com.android.internal.telephony.euicc.EuiccController$DownloadSubscriptionGetMetadataCommandCallback	GetMetadataCommandCallback	
+class	com.android.internal.telephony.euicc.EuiccController$GetDefaultListCommandCallback		EuiccConnector.GetDefaultListCommandCallback
+class	com.android.internal.telephony.euicc.EuiccController$GetMetadataCommandCallback		EuiccConnector.GetMetadataCommandCallback
+class	com.android.internal.telephony.euicc.EuiccOperation		Parcelable
+class	com.android.internal.telephony.gsm.GsmInboundSmsHandler	InboundSmsHandler	
+class	com.android.internal.telephony.gsm.GsmInboundSmsHandler$GsmCbTestBroadcastReceiver	InboundSmsHandler.CbTestBroadcastReceiver	
+class	com.android.internal.telephony.gsm.GsmMmiCode	Handler	MmiCode
+class	com.android.internal.telephony.gsm.GsmSMSDispatcher	SMSDispatcher	
+class	com.android.internal.telephony.gsm.SimTlv		
+class	com.android.internal.telephony.gsm.SsData		
+class	com.android.internal.telephony.gsm.SuppServiceNotification		
+class	com.android.internal.telephony.gsm.UsimDataDownloadHandler	Handler	
+class	com.android.internal.telephony.gsm.UsimPhoneBookManager	Handler	IccConstants
+class	com.android.internal.telephony.gsm.UsimPhoneBookManager$File		
+class	com.android.internal.telephony.gsm.UsimPhoneBookManager$PbrRecord		
+class	com.android.internal.telephony.ims.ImsConfigCompatAdapter	ImsConfigImplBase	
+class	com.android.internal.telephony.ims.ImsRegistrationCompatAdapter	ImsRegistrationImplBase	
+class	com.android.internal.telephony.ims.ImsResolver		ImsServiceController.ImsServiceControllerCallbacks
+class	com.android.internal.telephony.ims.ImsResolver$ImsServiceInfo		
+class	com.android.internal.telephony.ims.ImsResolver$OverrideConfig		
+class	com.android.internal.telephony.ims.ImsServiceController		
+class	com.android.internal.telephony.ims.ImsServiceController$ImsFeatureContainer		
+class	com.android.internal.telephony.ims.ImsServiceController$ImsFeatureStatusCallback		
+class	com.android.internal.telephony.ims.ImsServiceController$ImsServiceConnection		ServiceConnection
+class	com.android.internal.telephony.ims.ImsServiceControllerCompat	ImsServiceController	
+class	com.android.internal.telephony.ims.ImsServiceFeatureQueryManager		
+class	com.android.internal.telephony.ims.ImsServiceFeatureQueryManager$ImsServiceFeatureQuery		ServiceConnection
+class	com.android.internal.telephony.ims.MmTelFeatureCompatAdapter	MmTelFeature	
+class	com.android.internal.telephony.ims.MmTelFeatureCompatAdapter$ConfigListener	ImsConfigListener.Stub	
+class	com.android.internal.telephony.ims.MmTelFeatureCompatAdapter$ImsRegistrationListenerBase	IImsRegistrationListener.Stub	
+class	com.android.internal.telephony.ims.MmTelInterfaceAdapter		
+class	com.android.internal.telephony.imsphone.ImsExternalCall	Call	
+class	com.android.internal.telephony.imsphone.ImsExternalCallTracker		ImsPhoneCallTracker.PhoneStateListener
+class	com.android.internal.telephony.imsphone.ImsExternalCallTracker$ExternalCallStateListener	ImsExternalCallStateListener	
+class	com.android.internal.telephony.imsphone.ImsExternalCallTracker$ExternalConnectionListener		ImsExternalConnection.Listener
+class	com.android.internal.telephony.imsphone.ImsExternalConnection	Connection	
+class	com.android.internal.telephony.imsphone.ImsPhone	ImsPhoneBase	
+class	com.android.internal.telephony.imsphone.ImsPhone$Cf		
+class	com.android.internal.telephony.imsphone.ImsPhone$ImsDialArgs	PhoneInternalInterface.DialArgs	
+class	com.android.internal.telephony.imsphone.ImsPhone$ImsDialArgs$Builder	PhoneInternalInterface.DialArgs.Builder<Builder>	
+class	com.android.internal.telephony.imsphone.ImsPhoneBase	Phone	
+class	com.android.internal.telephony.imsphone.ImsPhoneCall	Call	
+class	com.android.internal.telephony.imsphone.ImsPhoneCallTracker	CallTracker	ImsPullCall
+class	com.android.internal.telephony.imsphone.ImsPhoneCallTracker$CacheEntry		
+class	com.android.internal.telephony.imsphone.ImsPhoneCallTracker$MmTelFeatureListener	MmTelFeature.Listener	
+class	com.android.internal.telephony.imsphone.ImsPhoneCallTracker$VtDataUsageProvider	NetworkStatsProvider	
+class	com.android.internal.telephony.imsphone.ImsPhoneCommandInterface	BaseCommands	CommandsInterface
+class	com.android.internal.telephony.imsphone.ImsPhoneConnection	Connection	ImsVideoCallProviderWrapper.ImsVideoProviderWrapperCallback
+class	com.android.internal.telephony.imsphone.ImsPhoneConnection$MyHandler	Handler	
+class	com.android.internal.telephony.imsphone.ImsPhoneFactory		
+class	com.android.internal.telephony.imsphone.ImsPhoneMmiCode	Handler	MmiCode
+class	com.android.internal.telephony.imsphone.ImsRegistrationCallbackHelper		
+class	com.android.internal.telephony.imsphone.ImsRttTextHandler	Handler	
+class	com.android.internal.telephony.imsphone.ImsRttTextHandler$InCallReaderThread	Thread	
+class	com.android.internal.telephony.metrics.CallQualityMetrics		
+class	com.android.internal.telephony.metrics.CallQualityMetrics$TimestampedQualitySnapshot		Comparable<TimestampedQualitySnapshot>
+class	com.android.internal.telephony.metrics.CallSessionEventBuilder		
+class	com.android.internal.telephony.metrics.InProgressCallSession		
+class	com.android.internal.telephony.metrics.InProgressSmsSession		
+class	com.android.internal.telephony.metrics.MetricsCollector		StatsManager.StatsPullAtomCallback
+class	com.android.internal.telephony.metrics.ModemPowerMetrics		
+class	com.android.internal.telephony.metrics.PersistAtomsStorage		
+class	com.android.internal.telephony.metrics.SimSlotState		
+class	com.android.internal.telephony.metrics.SmsSessionEventBuilder		
+class	com.android.internal.telephony.metrics.TelephonyEventBuilder		
+class	com.android.internal.telephony.metrics.TelephonyMetrics		
+class	com.android.internal.telephony.metrics.VoiceCallRatTracker		
+class	com.android.internal.telephony.metrics.VoiceCallRatTracker$Key		
+class	com.android.internal.telephony.metrics.VoiceCallRatTracker$Value		
+class	com.android.internal.telephony.metrics.VoiceCallSessionStats		
+class	com.android.internal.telephony.nano.CarrierIdProto$CarrierAttribute	ExtendableMessageNano<CarrierAttribute>	
+class	com.android.internal.telephony.nano.CarrierIdProto$CarrierId	ExtendableMessageNano<CarrierId>	
+class	com.android.internal.telephony.nano.CarrierIdProto$CarrierList	ExtendableMessageNano<CarrierList>	
+class	com.android.internal.telephony.nano.PersistAtomsProto$PersistAtoms	ExtendableMessageNano<PersistAtoms>	
+class	com.android.internal.telephony.nano.PersistAtomsProto$RawVoiceCallRatUsage	ExtendableMessageNano<RawVoiceCallRatUsage>	
+class	com.android.internal.telephony.nano.PersistAtomsProto$VoiceCallSession	ExtendableMessageNano<VoiceCallSession>	
+class	com.android.internal.telephony.nano.TelephonyProto$ActiveSubscriptionInfo	ExtendableMessageNano<ActiveSubscriptionInfo>	
+class	com.android.internal.telephony.nano.TelephonyProto$EmergencyNumberInfo	ExtendableMessageNano<EmergencyNumberInfo>	
+class	com.android.internal.telephony.nano.TelephonyProto$ImsCapabilities	ExtendableMessageNano<ImsCapabilities>	
+class	com.android.internal.telephony.nano.TelephonyProto$ImsConnectionState	ExtendableMessageNano<ImsConnectionState>	
+class	com.android.internal.telephony.nano.TelephonyProto$ImsReasonInfo	ExtendableMessageNano<ImsReasonInfo>	
+class	com.android.internal.telephony.nano.TelephonyProto$ModemPowerStats	ExtendableMessageNano<ModemPowerStats>	
+class	com.android.internal.telephony.nano.TelephonyProto$RilDataCall	ExtendableMessageNano<RilDataCall>	
+class	com.android.internal.telephony.nano.TelephonyProto$SmsSession	ExtendableMessageNano<SmsSession>	
+class	com.android.internal.telephony.nano.TelephonyProto$SmsSession$Event	ExtendableMessageNano<Event>	
+class	com.android.internal.telephony.nano.TelephonyProto$SmsSession$Event$CBMessage	ExtendableMessageNano<CBMessage>	
+class	com.android.internal.telephony.nano.TelephonyProto$SmsSession$Event$IncompleteSms	ExtendableMessageNano<IncompleteSms>	
+class	com.android.internal.telephony.nano.TelephonyProto$TelephonyCallSession	ExtendableMessageNano<TelephonyCallSession>	
+class	com.android.internal.telephony.nano.TelephonyProto$TelephonyCallSession$Event	ExtendableMessageNano<Event>	
+class	com.android.internal.telephony.nano.TelephonyProto$TelephonyCallSession$Event$CallQuality	ExtendableMessageNano<CallQuality>	
+class	com.android.internal.telephony.nano.TelephonyProto$TelephonyCallSession$Event$CallQualitySummary	ExtendableMessageNano<CallQualitySummary>	
+class	com.android.internal.telephony.nano.TelephonyProto$TelephonyCallSession$Event$RilCall	ExtendableMessageNano<RilCall>	
+class	com.android.internal.telephony.nano.TelephonyProto$TelephonyCallSession$Event$SignalStrength	ExtendableMessageNano<SignalStrength>	
+class	com.android.internal.telephony.nano.TelephonyProto$TelephonyEvent	ExtendableMessageNano<TelephonyEvent>	
+class	com.android.internal.telephony.nano.TelephonyProto$TelephonyEvent$CarrierIdMatching	ExtendableMessageNano<CarrierIdMatching>	
+class	com.android.internal.telephony.nano.TelephonyProto$TelephonyEvent$CarrierIdMatchingResult	ExtendableMessageNano<CarrierIdMatchingResult>	
+class	com.android.internal.telephony.nano.TelephonyProto$TelephonyEvent$CarrierKeyChange	ExtendableMessageNano<CarrierKeyChange>	
+class	com.android.internal.telephony.nano.TelephonyProto$TelephonyEvent$DataSwitch	ExtendableMessageNano<DataSwitch>	
+class	com.android.internal.telephony.nano.TelephonyProto$TelephonyEvent$ModemRestart	ExtendableMessageNano<ModemRestart>	
+class	com.android.internal.telephony.nano.TelephonyProto$TelephonyEvent$NetworkCapabilitiesInfo	ExtendableMessageNano<NetworkCapabilitiesInfo>	
+class	com.android.internal.telephony.nano.TelephonyProto$TelephonyEvent$OnDemandDataSwitch	ExtendableMessageNano<OnDemandDataSwitch>	
+class	com.android.internal.telephony.nano.TelephonyProto$TelephonyEvent$RilDeactivateDataCall	ExtendableMessageNano<RilDeactivateDataCall>	
+class	com.android.internal.telephony.nano.TelephonyProto$TelephonyEvent$RilSetupDataCall	ExtendableMessageNano<RilSetupDataCall>	
+class	com.android.internal.telephony.nano.TelephonyProto$TelephonyEvent$RilSetupDataCallResponse	ExtendableMessageNano<RilSetupDataCallResponse>	
+class	com.android.internal.telephony.nano.TelephonyProto$TelephonyHistogram	ExtendableMessageNano<TelephonyHistogram>	
+class	com.android.internal.telephony.nano.TelephonyProto$TelephonyLog	ExtendableMessageNano<TelephonyLog>	
+class	com.android.internal.telephony.nano.TelephonyProto$TelephonyServiceState	ExtendableMessageNano<TelephonyServiceState>	
+class	com.android.internal.telephony.nano.TelephonyProto$TelephonyServiceState$NetworkRegistrationInfo	ExtendableMessageNano<NetworkRegistrationInfo>	
+class	com.android.internal.telephony.nano.TelephonyProto$TelephonyServiceState$TelephonyOperator	ExtendableMessageNano<TelephonyOperator>	
+class	com.android.internal.telephony.nano.TelephonyProto$TelephonySettings	ExtendableMessageNano<TelephonySettings>	
+class	com.android.internal.telephony.nano.TelephonyProto$Time	ExtendableMessageNano<Time>	
+class	com.android.internal.telephony.nitz.NitzSignalInputFilterPredicateFactory		
+class	com.android.internal.telephony.nitz.NitzSignalInputFilterPredicateFactory$NitzSignalInputFilterPredicateImpl		NitzStateMachineImpl.NitzSignalInputFilterPredicate
+class	com.android.internal.telephony.nitz.NitzStateMachineImpl		NitzStateMachine
+class	com.android.internal.telephony.nitz.TimeServiceHelperImpl		TimeServiceHelper
+class	com.android.internal.telephony.nitz.TimeZoneLookupHelper		
+class	com.android.internal.telephony.nitz.TimeZoneLookupHelper$CountryResult		
+class	com.android.internal.telephony.nitz.TimeZoneSuggesterImpl		NitzStateMachineImpl.TimeZoneSuggester
+class	com.android.internal.telephony.phonenumbers.AlternateFormatsCountryCodeSet		
+class	com.android.internal.telephony.phonenumbers.AsYouTypeFormatter		
+class	com.android.internal.telephony.phonenumbers.CountryCodeToRegionCodeMap		
+class	com.android.internal.telephony.phonenumbers.MetadataManager		
+class	com.android.internal.telephony.phonenumbers.MetadataManager$SingleFileMetadataMaps		
+class	com.android.internal.telephony.phonenumbers.MultiFileMetadataSourceImpl		MetadataSource
+class	com.android.internal.telephony.phonenumbers.NumberParseException	Exception	
+class	com.android.internal.telephony.phonenumbers.PhoneNumberMatch		
+class	com.android.internal.telephony.phonenumbers.PhoneNumberMatcher		Iterator<PhoneNumberMatch>
+class	com.android.internal.telephony.phonenumbers.PhoneNumberToCarrierMapper		
+class	com.android.internal.telephony.phonenumbers.PhoneNumberUtil		
+class	com.android.internal.telephony.phonenumbers.Phonemetadata		
+class	com.android.internal.telephony.phonenumbers.Phonemetadata$NumberFormat		Externalizable
+class	com.android.internal.telephony.phonenumbers.Phonemetadata$NumberFormat$Builder	NumberFormat	
+class	com.android.internal.telephony.phonenumbers.Phonemetadata$PhoneMetadata		Externalizable
+class	com.android.internal.telephony.phonenumbers.Phonemetadata$PhoneMetadata$Builder	PhoneMetadata	
+class	com.android.internal.telephony.phonenumbers.Phonemetadata$PhoneMetadataCollection		Externalizable
+class	com.android.internal.telephony.phonenumbers.Phonemetadata$PhoneMetadataCollection$Builder	PhoneMetadataCollection	
+class	com.android.internal.telephony.phonenumbers.Phonemetadata$PhoneNumberDesc		Externalizable
+class	com.android.internal.telephony.phonenumbers.Phonemetadata$PhoneNumberDesc$Builder	PhoneNumberDesc	
+class	com.android.internal.telephony.phonenumbers.Phonenumber		
+class	com.android.internal.telephony.phonenumbers.Phonenumber$PhoneNumber		Serializable
+class	com.android.internal.telephony.phonenumbers.ShortNumberInfo		
+class	com.android.internal.telephony.phonenumbers.ShortNumbersRegionCodeSet		
+class	com.android.internal.telephony.phonenumbers.SingleFileMetadataSourceImpl		MetadataSource
+class	com.android.internal.telephony.phonenumbers.internal.RegexBasedMatcher		MatcherApi
+class	com.android.internal.telephony.phonenumbers.internal.RegexCache		
+class	com.android.internal.telephony.phonenumbers.internal.RegexCache$LRUCache		
+class	com.android.internal.telephony.phonenumbers.prefixmapper.DefaultMapStorage	PhonePrefixMapStorageStrategy	
+class	com.android.internal.telephony.phonenumbers.prefixmapper.FlyweightMapStorage	PhonePrefixMapStorageStrategy	
+class	com.android.internal.telephony.phonenumbers.prefixmapper.MappingFileProvider		Externalizable
+class	com.android.internal.telephony.phonenumbers.prefixmapper.PhonePrefixMap		Externalizable
+class	com.android.internal.telephony.phonenumbers.prefixmapper.PhonePrefixMapStorageStrategy		
+class	com.android.internal.telephony.phonenumbers.prefixmapper.PrefixFileReader		
+class	com.android.internal.telephony.phonenumbers.prefixmapper.PrefixTimeZonesMap		Externalizable
+class	com.android.internal.telephony.protobuf.nano.CodedInputByteBufferNano		
+class	com.android.internal.telephony.protobuf.nano.CodedOutputByteBufferNano		
+class	com.android.internal.telephony.protobuf.nano.CodedOutputByteBufferNano$OutOfSpaceException	IOException	
+class	com.android.internal.telephony.protobuf.nano.ExtendableMessageNano	MessageNano	
+class	com.android.internal.telephony.protobuf.nano.Extension		
+class	com.android.internal.telephony.protobuf.nano.Extension$PrimitiveExtension	Extension<M, T>	
+class	com.android.internal.telephony.protobuf.nano.FieldArray		Cloneable
+class	com.android.internal.telephony.protobuf.nano.FieldData		Cloneable
+class	com.android.internal.telephony.protobuf.nano.InternalNano		
+class	com.android.internal.telephony.protobuf.nano.InvalidProtocolBufferNanoException	IOException	
+class	com.android.internal.telephony.protobuf.nano.MapFactories		
+class	com.android.internal.telephony.protobuf.nano.MapFactories$DefaultMapFactory		MapFactory
+class	com.android.internal.telephony.protobuf.nano.MessageNano		
+class	com.android.internal.telephony.protobuf.nano.MessageNanoPrinter		
+class	com.android.internal.telephony.protobuf.nano.UnknownFieldData		
+class	com.android.internal.telephony.protobuf.nano.WireFormatNano		
+class	com.android.internal.telephony.protobuf.nano.android.ParcelableExtendableMessageNano	ExtendableMessageNano<M>	Parcelable
+class	com.android.internal.telephony.protobuf.nano.android.ParcelableMessageNano	MessageNano	Parcelable
+class	com.android.internal.telephony.protobuf.nano.android.ParcelableMessageNanoCreator		Parcelable.Creator<T>
+class	com.android.internal.telephony.sip.SipCallBase	Call	
+class	com.android.internal.telephony.sip.SipCommandInterface	BaseCommands	CommandsInterface
+class	com.android.internal.telephony.sip.SipConnectionBase	Connection	
+class	com.android.internal.telephony.sip.SipPhone	SipPhoneBase	
+class	com.android.internal.telephony.sip.SipPhone$SipAudioCallAdapter	SipAudioCall.Listener	
+class	com.android.internal.telephony.sip.SipPhone$SipCall	SipCallBase	
+class	com.android.internal.telephony.sip.SipPhone$SipConnection	SipConnectionBase	
+class	com.android.internal.telephony.sip.SipPhoneBase	Phone	
+class	com.android.internal.telephony.sip.SipPhoneFactory		
+class	com.android.internal.telephony.test.TestConferenceEventPackageParser		
+class	com.android.internal.telephony.uicc.AdnRecord		Parcelable
+class	com.android.internal.telephony.uicc.AdnRecordCache	Handler	IccConstants
+class	com.android.internal.telephony.uicc.AdnRecordLoader	Handler	
+class	com.android.internal.telephony.uicc.AnswerToReset		
+class	com.android.internal.telephony.uicc.AnswerToReset$HistoricalBytes		
+class	com.android.internal.telephony.uicc.AnswerToReset$InterfaceByte		
+class	com.android.internal.telephony.uicc.CarrierAppInstallReceiver	BroadcastReceiver	
+class	com.android.internal.telephony.uicc.CarrierTestOverride		
+class	com.android.internal.telephony.uicc.CsimFileHandler	IccFileHandler	IccConstants
+class	com.android.internal.telephony.uicc.IccCardApplicationStatus		
+class	com.android.internal.telephony.uicc.IccCardStatus		
+class	com.android.internal.telephony.uicc.IccException	Exception	
+class	com.android.internal.telephony.uicc.IccFileHandler	Handler	IccConstants
+class	com.android.internal.telephony.uicc.IccFileHandler$LoadLinearFixedContext		
+class	com.android.internal.telephony.uicc.IccFileNotFound	IccException	
+class	com.android.internal.telephony.uicc.IccFileTypeMismatch	IccException	
+class	com.android.internal.telephony.uicc.IccIoResult		
+class	com.android.internal.telephony.uicc.IccRecords	Handler	IccConstants
+class	com.android.internal.telephony.uicc.IccRecords$AuthAsyncResponse		
+class	com.android.internal.telephony.uicc.IccRecords$OperatorPlmnInfo		
+class	com.android.internal.telephony.uicc.IccRecords$PlmnNetworkName		
+class	com.android.internal.telephony.uicc.IccRefreshResponse		
+class	com.android.internal.telephony.uicc.IccServiceTable		
+class	com.android.internal.telephony.uicc.IccSlotStatus		
+class	com.android.internal.telephony.uicc.IccVmFixedException	IccException	
+class	com.android.internal.telephony.uicc.IccVmNotSupportedException	IccException	
+class	com.android.internal.telephony.uicc.InstallCarrierAppTrampolineActivity	Activity	
+class	com.android.internal.telephony.uicc.InstallCarrierAppUtils		
+class	com.android.internal.telephony.uicc.IsimFileHandler	IccFileHandler	IccConstants
+class	com.android.internal.telephony.uicc.IsimUiccRecords	IccRecords	IsimRecords
+class	com.android.internal.telephony.uicc.IsimUiccRecords$EfIsimDomainLoaded		IccRecords.IccRecordLoaded
+class	com.android.internal.telephony.uicc.IsimUiccRecords$EfIsimImpiLoaded		IccRecords.IccRecordLoaded
+class	com.android.internal.telephony.uicc.IsimUiccRecords$EfIsimImpuLoaded		IccRecords.IccRecordLoaded
+class	com.android.internal.telephony.uicc.IsimUiccRecords$EfIsimIstLoaded		IccRecords.IccRecordLoaded
+class	com.android.internal.telephony.uicc.IsimUiccRecords$EfIsimPcscfLoaded		IccRecords.IccRecordLoaded
+class	com.android.internal.telephony.uicc.PlmnActRecord		Parcelable
+class	com.android.internal.telephony.uicc.RuimFileHandler	IccFileHandler	
+class	com.android.internal.telephony.uicc.RuimRecords	IccRecords	
+class	com.android.internal.telephony.uicc.RuimRecords$EfCsimCdmaHomeLoaded		IccRecords.IccRecordLoaded
+class	com.android.internal.telephony.uicc.RuimRecords$EfCsimEprlLoaded		IccRecords.IccRecordLoaded
+class	com.android.internal.telephony.uicc.RuimRecords$EfCsimImsimLoaded		IccRecords.IccRecordLoaded
+class	com.android.internal.telephony.uicc.RuimRecords$EfCsimLiLoaded		IccRecords.IccRecordLoaded
+class	com.android.internal.telephony.uicc.RuimRecords$EfCsimMdnLoaded		IccRecords.IccRecordLoaded
+class	com.android.internal.telephony.uicc.RuimRecords$EfCsimMipUppLoaded		IccRecords.IccRecordLoaded
+class	com.android.internal.telephony.uicc.RuimRecords$EfCsimSpnLoaded		IccRecords.IccRecordLoaded
+class	com.android.internal.telephony.uicc.RuimRecords$EfPlLoaded		IccRecords.IccRecordLoaded
+class	com.android.internal.telephony.uicc.SIMFileHandler	IccFileHandler	IccConstants
+class	com.android.internal.telephony.uicc.SIMRecords	IccRecords	
+class	com.android.internal.telephony.uicc.SIMRecords$EfPlLoaded		IccRecords.IccRecordLoaded
+class	com.android.internal.telephony.uicc.SIMRecords$EfUsimLiLoaded		IccRecords.IccRecordLoaded
+class	com.android.internal.telephony.uicc.ShowInstallAppNotificationReceiver	BroadcastReceiver	
+class	com.android.internal.telephony.uicc.UiccCard		
+class	com.android.internal.telephony.uicc.UiccCardApplication		
+class	com.android.internal.telephony.uicc.UiccCarrierPrivilegeRules	Handler	
+class	com.android.internal.telephony.uicc.UiccCarrierPrivilegeRules$TLV		
+class	com.android.internal.telephony.uicc.UiccController	Handler	
+class	com.android.internal.telephony.uicc.UiccPkcs15	Handler	
+class	com.android.internal.telephony.uicc.UiccPkcs15$FileHandler	Handler	
+class	com.android.internal.telephony.uicc.UiccPkcs15$Pkcs15Selector	Handler	
+class	com.android.internal.telephony.uicc.UiccProfile	IccCard	
+class	com.android.internal.telephony.uicc.UiccSlot	Handler	
+class	com.android.internal.telephony.uicc.UiccStateChangedLauncher	Handler	
+class	com.android.internal.telephony.uicc.UsimFileHandler	IccFileHandler	IccConstants
+class	com.android.internal.telephony.uicc.UsimServiceTable	IccServiceTable	
+class	com.android.internal.telephony.uicc.VoiceMailConstants		
+class	com.android.internal.telephony.uicc.euicc.EuiccCard	UiccCard	
+class	com.android.internal.telephony.uicc.euicc.EuiccCardErrorException	EuiccCardException	
+class	com.android.internal.telephony.uicc.euicc.EuiccCardException	Exception	
+class	com.android.internal.telephony.uicc.euicc.EuiccSpecVersion		Comparable<EuiccSpecVersion>
+class	com.android.internal.telephony.uicc.euicc.Tags		
+class	com.android.internal.telephony.uicc.euicc.apdu.ApduCommand		
+class	com.android.internal.telephony.uicc.euicc.apdu.ApduException	Exception	
+class	com.android.internal.telephony.uicc.euicc.apdu.ApduSender		
+class	com.android.internal.telephony.uicc.euicc.apdu.CloseLogicalChannelInvocation	AsyncMessageInvocation<Integer, Boolean>	
+class	com.android.internal.telephony.uicc.euicc.apdu.OpenLogicalChannelInvocation	AsyncMessageInvocation<String, IccOpenLogicalChannelResponse>	
+class	com.android.internal.telephony.uicc.euicc.apdu.RequestBuilder		
+class	com.android.internal.telephony.uicc.euicc.apdu.TransmitApduLogicalChannelInvocation	AsyncMessageInvocation<ApduCommand, IccIoResult>	
+class	com.android.internal.telephony.uicc.euicc.async.AsyncMessageInvocation		Handler.Callback
+class	com.android.internal.telephony.uicc.euicc.async.AsyncResultCallback		
+class	com.android.internal.telephony.uicc.euicc.async.AsyncResultHelper		
+class	com.android.internal.telephony.util.DnsPacket		
+class	com.android.internal.telephony.util.DnsPacket$DnsHeader		
+class	com.android.internal.telephony.util.DnsPacket$DnsRecord		
+class	com.android.internal.telephony.util.DnsPacket$ParseException	RuntimeException	
+class	com.android.internal.telephony.util.Inet4AddressUtils		
+class	com.android.internal.telephony.util.InetAddressUtils		
+class	com.android.internal.telephony.util.IpRange		
+class	com.android.internal.telephony.util.LinkPropertiesUtils		
+class	com.android.internal.telephony.util.LinkPropertiesUtils$CompareOrUpdateResult		
+class	com.android.internal.telephony.util.LinkPropertiesUtils$CompareResult		
+class	com.android.internal.telephony.util.LocaleUtils		
+class	com.android.internal.telephony.util.MacAddressUtils		
+class	com.android.internal.telephony.util.NetUtils		
+class	com.android.internal.telephony.util.NotificationChannelController		
+class	com.android.internal.telephony.util.SMSDispatcherUtil		
+class	com.android.internal.telephony.util.VoicemailNotificationSettingsUtil		
+class	com.android.internal.telephony.util.nsd.DnsSdTxtRecord		Parcelable
+class	com.android.internal.telephony.vendor.VendorGsmCdmaPhone	GsmCdmaPhone	
+class	com.android.internal.telephony.vendor.VendorMultiSimSettingController	MultiSimSettingController	
+class	com.android.internal.telephony.vendor.VendorPhoneSwitcher	PhoneSwitcher	
+class	com.android.internal.telephony.vendor.VendorServiceStateTracker	ServiceStateTracker	
+class	com.android.internal.telephony.vendor.VendorSubscriptionController	SubscriptionController	
+class	com.android.internal.telephony.vendor.VendorSubscriptionInfoUpdater	SubscriptionInfoUpdater	
+class	com.android.internal.telephony.vendor.dataconnection.VendorDataResetEventTracker		
+class	com.android.internal.telephony.vendor.dataconnection.VendorDcTracker	DcTracker	
+class	com.android.phone.ecc.nano.CodedInputByteBufferNano		
+class	com.android.phone.ecc.nano.CodedOutputByteBufferNano		
+class	com.android.phone.ecc.nano.CodedOutputByteBufferNano$OutOfSpaceException	IOException	
+class	com.android.phone.ecc.nano.ExtendableMessageNano	MessageNano	
+class	com.android.phone.ecc.nano.Extension		
+class	com.android.phone.ecc.nano.Extension$PrimitiveExtension	Extension<M, T>	
+class	com.android.phone.ecc.nano.FieldArray		Cloneable
+class	com.android.phone.ecc.nano.FieldData		Cloneable
+class	com.android.phone.ecc.nano.InternalNano		
+class	com.android.phone.ecc.nano.InvalidProtocolBufferNanoException	IOException	
+class	com.android.phone.ecc.nano.MapFactories		
+class	com.android.phone.ecc.nano.MapFactories$DefaultMapFactory		MapFactory
+class	com.android.phone.ecc.nano.MessageNano		
+class	com.android.phone.ecc.nano.MessageNanoPrinter		
+class	com.android.phone.ecc.nano.ProtobufEccData$AllInfo	ExtendableMessageNano<AllInfo>	
+class	com.android.phone.ecc.nano.ProtobufEccData$CountryInfo	ExtendableMessageNano<CountryInfo>	
+class	com.android.phone.ecc.nano.ProtobufEccData$EccInfo	ExtendableMessageNano<EccInfo>	
+class	com.android.phone.ecc.nano.UnknownFieldData		
+class	com.android.phone.ecc.nano.WireFormatNano		
+class	com.android.phone.ecc.nano.android.ParcelableExtendableMessageNano	ExtendableMessageNano<M>	Parcelable
+class	com.android.phone.ecc.nano.android.ParcelableMessageNano	MessageNano	Parcelable
+class	com.android.phone.ecc.nano.android.ParcelableMessageNanoCreator		Parcelable.Creator<T>
+enum	android.internal.telephony.sysprop.CryptoProperties$state_values		
+enum	android.internal.telephony.sysprop.CryptoProperties$type_values		
+enum	android.telephony.gsm.SmsMessage$MessageClass		
+enum	com.android.internal.telephony.Call$SrvccState		
+enum	com.android.internal.telephony.Call$State		
+enum	com.android.internal.telephony.CommandException$Error		
+enum	com.android.internal.telephony.Connection$PostDialState		
+enum	com.android.internal.telephony.DriverCall$State		
+enum	com.android.internal.telephony.MmiCode$State		
+enum	com.android.internal.telephony.PhoneInternalInterface$DataActivityState		
+enum	com.android.internal.telephony.PhoneInternalInterface$SuppService		
+enum	com.android.internal.telephony.cat.AppInterface$CommandType		
+enum	com.android.internal.telephony.cat.ComprehensionTlvTag		
+enum	com.android.internal.telephony.cat.Duration$TimeUnit		
+enum	com.android.internal.telephony.cat.FontSize		
+enum	com.android.internal.telephony.cat.LaunchBrowserMode		
+enum	com.android.internal.telephony.cat.PresentationType		
+enum	com.android.internal.telephony.cat.ResultCode		
+enum	com.android.internal.telephony.cat.TextAlignment		
+enum	com.android.internal.telephony.cat.TextColor		
+enum	com.android.internal.telephony.cat.Tone		Parcelable
+enum	com.android.internal.telephony.dataconnection.DataConnection$SetupResult		
+enum	com.android.internal.telephony.dataconnection.DataConnectionReasons$DataAllowedReasonType		
+enum	com.android.internal.telephony.dataconnection.DataConnectionReasons$DataDisallowedReasonType		
+enum	com.android.internal.telephony.dataconnection.DcTracker$RetryFailures		
+enum	com.android.internal.telephony.gsm.SsData$RequestType		
+enum	com.android.internal.telephony.gsm.SsData$ServiceType		
+enum	com.android.internal.telephony.gsm.SsData$TeleserviceType		
+enum	com.android.internal.telephony.imsphone.ImsPhoneCallTracker$HoldSwapState		
+enum	com.android.internal.telephony.phonenumbers.NumberParseException$ErrorType		
+enum	com.android.internal.telephony.phonenumbers.PhoneNumberMatcher$State		
+enum	com.android.internal.telephony.phonenumbers.PhoneNumberUtil$Leniency		
+enum	com.android.internal.telephony.phonenumbers.PhoneNumberUtil$MatchType		
+enum	com.android.internal.telephony.phonenumbers.PhoneNumberUtil$PhoneNumberFormat		
+enum	com.android.internal.telephony.phonenumbers.PhoneNumberUtil$PhoneNumberType		
+enum	com.android.internal.telephony.phonenumbers.PhoneNumberUtil$ValidationResult		
+enum	com.android.internal.telephony.phonenumbers.Phonenumber$PhoneNumber$CountryCodeSource		
+enum	com.android.internal.telephony.phonenumbers.ShortNumberInfo$ShortNumberCost		
+enum	com.android.internal.telephony.uicc.IccCardApplicationStatus$AppState		
+enum	com.android.internal.telephony.uicc.IccCardApplicationStatus$AppType		
+enum	com.android.internal.telephony.uicc.IccCardApplicationStatus$PersoSubState		
+enum	com.android.internal.telephony.uicc.IccCardStatus$CardState		
+enum	com.android.internal.telephony.uicc.IccCardStatus$PinState		
+enum	com.android.internal.telephony.uicc.IccSlotStatus$SlotState		
+enum	com.android.internal.telephony.uicc.SIMRecords$GetSpnFsmState		
+enum	com.android.internal.telephony.uicc.UsimServiceTable$UsimService		
+enum	com.android.internal.telephony.vendor.VendorPhoneSwitcher$DdsSwitchState		
+enum	com.android.net.module.annotation.SdkConstant$SdkConstantType		
+enum	com.android.net.module.annotation.SystemApi$Client		
+enum	com.android.net.module.annotation.VisibleForTesting$Visibility		
+interface	android.hardware.radio.config.V1_0.IRadioConfig	IBase	
+interface	android.hardware.radio.config.V1_0.IRadioConfigIndication	IBase	
+interface	android.hardware.radio.config.V1_0.IRadioConfigResponse	IBase	
+interface	android.hardware.radio.config.V1_1.IRadioConfig	android.hardware.radio.config.V1_0.IRadioConfig	
+interface	android.hardware.radio.config.V1_1.IRadioConfigIndication	android.hardware.radio.config.V1_0.IRadioConfigIndication	
+interface	android.hardware.radio.config.V1_1.IRadioConfigResponse	android.hardware.radio.config.V1_0.IRadioConfigResponse	
+interface	android.hardware.radio.config.V1_2.IRadioConfigIndication	android.hardware.radio.config.V1_1.IRadioConfigIndication	
+interface	android.hardware.radio.config.V1_2.IRadioConfigResponse	android.hardware.radio.config.V1_1.IRadioConfigResponse	
+interface	android.hardware.radio.deprecated.V1_0.IOemHook	IBase	
+interface	android.hardware.radio.deprecated.V1_0.IOemHookIndication	IBase	
+interface	android.hardware.radio.deprecated.V1_0.IOemHookResponse	IBase	
+interface	com.android.internal.telephony.CallFailCause		
+interface	com.android.internal.telephony.CarrierServiceStateTracker$NotificationType		
+interface	com.android.internal.telephony.CarrierServicesSmsFilter$CarrierServicesSmsFilterCallbackInterface		
+interface	com.android.internal.telephony.CellularNetworkValidator$ValidationCallback		
+interface	com.android.internal.telephony.CommandsInterface		
+interface	com.android.internal.telephony.Connection$Listener		
+interface	com.android.internal.telephony.Connection$PostDialListener		
+interface	com.android.internal.telephony.IIccPhoneBook	IInterface	
+interface	com.android.internal.telephony.IState		
+interface	com.android.internal.telephony.MmiCode		
+interface	com.android.internal.telephony.MultiSimSettingController$UpdateDefaultAction		
+interface	com.android.internal.telephony.NitzStateMachine		
+interface	com.android.internal.telephony.NitzStateMachine$DeviceState		
+interface	com.android.internal.telephony.PhoneInternalInterface		
+interface	com.android.internal.telephony.PhoneNotifier		
+interface	com.android.internal.telephony.PhoneSubInfoController$CallPhoneMethodHelper		
+interface	com.android.internal.telephony.PhoneSubInfoController$PermissionCheckHelper		
+interface	com.android.internal.telephony.RadioNVItems		
+interface	com.android.internal.telephony.SmsDispatchersController$SmsInjectionCallback		
+interface	com.android.internal.telephony.SubscriptionInfoUpdater$UpdateEmbeddedSubsCallback		
+interface	com.android.internal.telephony.VisualVoicemailSmsFilter$PhoneAccountHandleConverter		
+interface	com.android.internal.telephony.cat.AppInterface		
+interface	com.android.internal.telephony.cdnr.EfData		
+interface	com.android.internal.telephony.dataconnection.TransportManager$HandoverParams$HandoverCallback		
+interface	com.android.internal.telephony.euicc.EuiccConnector$BaseEuiccCommandCallback		
+interface	com.android.internal.telephony.euicc.EuiccConnector$DeleteCommandCallback	BaseEuiccCommandCallback	
+interface	com.android.internal.telephony.euicc.EuiccConnector$DownloadCommandCallback	BaseEuiccCommandCallback	
+interface	com.android.internal.telephony.euicc.EuiccConnector$DumpEuiccServiceCommandCallback	BaseEuiccCommandCallback	
+interface	com.android.internal.telephony.euicc.EuiccConnector$EraseCommandCallback	BaseEuiccCommandCallback	
+interface	com.android.internal.telephony.euicc.EuiccConnector$GetDefaultListCommandCallback	BaseEuiccCommandCallback	
+interface	com.android.internal.telephony.euicc.EuiccConnector$GetEidCommandCallback	BaseEuiccCommandCallback	
+interface	com.android.internal.telephony.euicc.EuiccConnector$GetEuiccInfoCommandCallback	BaseEuiccCommandCallback	
+interface	com.android.internal.telephony.euicc.EuiccConnector$GetEuiccProfileInfoListCommandCallback	BaseEuiccCommandCallback	
+interface	com.android.internal.telephony.euicc.EuiccConnector$GetMetadataCommandCallback	BaseEuiccCommandCallback	
+interface	com.android.internal.telephony.euicc.EuiccConnector$GetOtaStatusCommandCallback	BaseEuiccCommandCallback	
+interface	com.android.internal.telephony.euicc.EuiccConnector$OtaStatusChangedCallback	BaseEuiccCommandCallback	
+interface	com.android.internal.telephony.euicc.EuiccConnector$RetainSubscriptionsCommandCallback	BaseEuiccCommandCallback	
+interface	com.android.internal.telephony.euicc.EuiccConnector$SwitchCommandCallback	BaseEuiccCommandCallback	
+interface	com.android.internal.telephony.euicc.EuiccConnector$UpdateNicknameCommandCallback	BaseEuiccCommandCallback	
+interface	com.android.internal.telephony.ims.ImsResolver$ImsDynamicQueryManagerFactory		
+interface	com.android.internal.telephony.ims.ImsResolver$ImsServiceControllerFactory		
+interface	com.android.internal.telephony.ims.ImsResolver$SubscriptionManagerProxy		
+interface	com.android.internal.telephony.ims.ImsResolver$TelephonyManagerProxy		
+interface	com.android.internal.telephony.ims.ImsServiceController$ImsServiceControllerCallbacks		
+interface	com.android.internal.telephony.ims.ImsServiceController$RebindRetry		
+interface	com.android.internal.telephony.ims.ImsServiceFeatureQueryManager$Listener		
+interface	com.android.internal.telephony.imsphone.ImsExternalCallTracker$ImsCallNotify		
+interface	com.android.internal.telephony.imsphone.ImsExternalConnection$Listener		
+interface	com.android.internal.telephony.imsphone.ImsPhoneCallTracker$PhoneNumberUtilsProxy		
+interface	com.android.internal.telephony.imsphone.ImsPhoneCallTracker$PhoneStateListener		
+interface	com.android.internal.telephony.imsphone.ImsPhoneCallTracker$SharedPreferenceProxy		
+interface	com.android.internal.telephony.imsphone.ImsPullCall		
+interface	com.android.internal.telephony.imsphone.ImsRcsStatusListener		
+interface	com.android.internal.telephony.imsphone.ImsRegistrationCallbackHelper$ImsRegistrationUpdate		
+interface	com.android.internal.telephony.imsphone.ImsRttTextHandler$NetworkWriter		
+interface	com.android.internal.telephony.nano.CarrierIdProto		
+interface	com.android.internal.telephony.nano.PersistAtomsProto		
+interface	com.android.internal.telephony.nano.TelephonyProto		
+interface	com.android.internal.telephony.nano.TelephonyProto$ImsConnectionState$State		
+interface	com.android.internal.telephony.nano.TelephonyProto$ImsServiceErrno		
+interface	com.android.internal.telephony.nano.TelephonyProto$PdpType		
+interface	com.android.internal.telephony.nano.TelephonyProto$RadioAccessTechnology		
+interface	com.android.internal.telephony.nano.TelephonyProto$RilDataCall$State		
+interface	com.android.internal.telephony.nano.TelephonyProto$RilErrno		
+interface	com.android.internal.telephony.nano.TelephonyProto$SimState		
+interface	com.android.internal.telephony.nano.TelephonyProto$SmsSession$Event$CBMessageType		
+interface	com.android.internal.telephony.nano.TelephonyProto$SmsSession$Event$CBPriority		
+interface	com.android.internal.telephony.nano.TelephonyProto$SmsSession$Event$Format		
+interface	com.android.internal.telephony.nano.TelephonyProto$SmsSession$Event$SmsType		
+interface	com.android.internal.telephony.nano.TelephonyProto$SmsSession$Event$Tech		
+interface	com.android.internal.telephony.nano.TelephonyProto$SmsSession$Event$Type		
+interface	com.android.internal.telephony.nano.TelephonyProto$TelephonyCallSession$Event$AudioCodec		
+interface	com.android.internal.telephony.nano.TelephonyProto$TelephonyCallSession$Event$CallQuality$CallQualityLevel		
+interface	com.android.internal.telephony.nano.TelephonyProto$TelephonyCallSession$Event$CallState		
+interface	com.android.internal.telephony.nano.TelephonyProto$TelephonyCallSession$Event$ImsCommand		
+interface	com.android.internal.telephony.nano.TelephonyProto$TelephonyCallSession$Event$PhoneState		
+interface	com.android.internal.telephony.nano.TelephonyProto$TelephonyCallSession$Event$RilCall$Type		
+interface	com.android.internal.telephony.nano.TelephonyProto$TelephonyCallSession$Event$RilRequest		
+interface	com.android.internal.telephony.nano.TelephonyProto$TelephonyCallSession$Event$RilSrvccState		
+interface	com.android.internal.telephony.nano.TelephonyProto$TelephonyCallSession$Event$Type		
+interface	com.android.internal.telephony.nano.TelephonyProto$TelephonyEvent$ApnType		
+interface	com.android.internal.telephony.nano.TelephonyProto$TelephonyEvent$CarrierKeyChange$KeyType		
+interface	com.android.internal.telephony.nano.TelephonyProto$TelephonyEvent$DataSwitch$Reason		
+interface	com.android.internal.telephony.nano.TelephonyProto$TelephonyEvent$EventState		
+interface	com.android.internal.telephony.nano.TelephonyProto$TelephonyEvent$NetworkValidationState		
+interface	com.android.internal.telephony.nano.TelephonyProto$TelephonyEvent$RilDeactivateDataCall$DeactivateReason		
+interface	com.android.internal.telephony.nano.TelephonyProto$TelephonyEvent$RilSetupDataCall$RilDataProfile		
+interface	com.android.internal.telephony.nano.TelephonyProto$TelephonyEvent$RilSetupDataCallResponse$RilDataCallFailCause		
+interface	com.android.internal.telephony.nano.TelephonyProto$TelephonyEvent$Type		
+interface	com.android.internal.telephony.nano.TelephonyProto$TelephonyServiceState$Domain		
+interface	com.android.internal.telephony.nano.TelephonyProto$TelephonyServiceState$FrequencyRange		
+interface	com.android.internal.telephony.nano.TelephonyProto$TelephonyServiceState$NrState		
+interface	com.android.internal.telephony.nano.TelephonyProto$TelephonyServiceState$RoamingType		
+interface	com.android.internal.telephony.nano.TelephonyProto$TelephonyServiceState$Transport		
+interface	com.android.internal.telephony.nano.TelephonyProto$TelephonySettings$RilNetworkMode		
+interface	com.android.internal.telephony.nano.TelephonyProto$TelephonySettings$WiFiCallingMode		
+interface	com.android.internal.telephony.nano.TelephonyProto$TimeInterval		
+interface	com.android.internal.telephony.nitz.NitzSignalInputFilterPredicateFactory$TrivalentPredicate		
+interface	com.android.internal.telephony.nitz.NitzStateMachineImpl$NitzSignalInputFilterPredicate		
+interface	com.android.internal.telephony.nitz.NitzStateMachineImpl$TimeZoneSuggester		
+interface	com.android.internal.telephony.nitz.TimeServiceHelper		
+interface	com.android.internal.telephony.phonenumbers.MetadataLoader		
+interface	com.android.internal.telephony.phonenumbers.MetadataSource		
+interface	com.android.internal.telephony.phonenumbers.PhoneNumberMatcher$NumberGroupingChecker		
+interface	com.android.internal.telephony.phonenumbers.internal.MatcherApi		
+interface	com.android.internal.telephony.protobuf.nano.MapFactories$MapFactory		
+interface	com.android.internal.telephony.test.SimulatedRadioControl		
+interface	com.android.internal.telephony.uicc.IccConstants		
+interface	com.android.internal.telephony.uicc.IccRecords$IccRecordLoaded		
+interface	com.android.internal.telephony.uicc.IsimRecords		
+interface	com.android.internal.telephony.uicc.euicc.EuiccCard$ApduExceptionHandler		
+interface	com.android.internal.telephony.uicc.euicc.EuiccCard$ApduIntermediateResultHandler		
+interface	com.android.internal.telephony.uicc.euicc.EuiccCard$ApduRequestBuilder		
+interface	com.android.internal.telephony.uicc.euicc.EuiccCard$ApduResponseHandler		
+interface	com.android.internal.telephony.uicc.euicc.apdu.RequestProvider		
+interface	com.android.internal.telephony.vendor.dataconnection.VendorDataResetEventTracker$ResetEventListener		
+interface	com.android.phone.ecc.nano.MapFactories$MapFactory		
+interface	com.android.phone.ecc.nano.ProtobufEccData		
+interface	com.android.phone.ecc.nano.ProtobufEccData$EccInfo$Type		

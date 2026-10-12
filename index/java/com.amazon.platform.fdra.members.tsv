@@ -1,0 +1,42 @@
+class	kind	declaration
+com.amazon.platform.fdra.PackageAllowlistingHandler	field	static final String TAG;
+com.amazon.platform.fdra.PackageAllowlistingHandler	method	public void onReceive(Context context, Intent intent)
+com.amazon.platform.fdra.Provider	field	private DatabaseOpener mOpener;
+com.amazon.platform.fdra.Provider	field	private static UriMatcher URI_MATCHER;
+com.amazon.platform.fdra.Provider	field	private static final String PACKAGE;
+com.amazon.platform.fdra.Provider	field	private static final String TAG;
+com.amazon.platform.fdra.Provider	field	public static final String AUTHORITY;
+com.amazon.platform.fdra.Provider	field	static List<String> sPackages;
+com.amazon.platform.fdra.Provider	method	private String getCallerPackage(int i)
+com.amazon.platform.fdra.Provider	method	private synchronized Cursor getItems(String[] strArr)
+com.amazon.platform.fdra.Provider	method	private synchronized Cursor getItemsForPackage(String[] strArr, String str)
+com.amazon.platform.fdra.Provider	method	private synchronized int deleteItemsForPackage(String str, String[] strArr, String str2)
+com.amazon.platform.fdra.Provider	method	private synchronized long insertItemForPackage(ContentValues contentValues, String str)
+com.amazon.platform.fdra.Provider	method	private void fetchCursorData(Cursor cursor)
+com.amazon.platform.fdra.Provider	method	private void updatePackagePath(String str, String str2) throws Throwable
+com.amazon.platform.fdra.Provider	method	private void updatePackagePathsFromConf(String str) throws Throwable
+com.amazon.platform.fdra.Provider	method	private void validateColumns(Collection<String> collection, Collection<String> collection2)
+com.amazon.platform.fdra.Provider	method	private void verifyCallerHasAnyPermission(String[] strArr)
+com.amazon.platform.fdra.Provider	method	private void verifyCallerHasPermission(String str)
+com.amazon.platform.fdra.Provider	method	public Bundle call(String str, String str2, Bundle bundle) throws Throwable
+com.amazon.platform.fdra.Provider	method	public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2)
+com.amazon.platform.fdra.Provider	method	public String getType(Uri uri)
+com.amazon.platform.fdra.Provider	method	public Uri insert(Uri uri, ContentValues contentValues)
+com.amazon.platform.fdra.Provider	method	public boolean onCreate() throws Throwable
+com.amazon.platform.fdra.Provider	method	public int delete(Uri uri, String str, String[] strArr)
+com.amazon.platform.fdra.Provider	method	public int update(Uri uri, ContentValues contentValues, String str, String[] strArr)
+com.amazon.platform.fdra.Provider	method	public void dump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr)
+com.amazon.platform.fdra.Provider	method	static UriMatcher buildUriMatcher()
+com.amazon.platform.fdra.Provider$DatabaseOpener	field	private Context mContext;
+com.amazon.platform.fdra.Provider$DatabaseOpener	field	private static final List<String> SUPPORTED_DEFAULT_CONFIG_VERSIONS;
+com.amazon.platform.fdra.Provider$DatabaseOpener	field	public static final String CREATE_STATEMENT;
+com.amazon.platform.fdra.Provider$DatabaseOpener	method	private void populatePredefinedItems(SQLiteDatabase sQLiteDatabase)
+com.amazon.platform.fdra.Provider$DatabaseOpener	method	public DatabaseOpener(Context context)
+com.amazon.platform.fdra.Provider$DatabaseOpener	method	public void onCreate(SQLiteDatabase sQLiteDatabase)
+com.amazon.platform.fdra.Provider$DatabaseOpener	method	public void onUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i2)
+com.amazon.platform.fdra.R$raw	field	public static final int fdra_default;
+com.amazon.platform.fdra.R$string	field	public static final int app_name;
+com.amazon.platform.fdra.R$string	field	public static final int read_permission_description;
+com.amazon.platform.fdra.R$string	field	public static final int read_permission_label;
+com.amazon.platform.fdra.R$string	field	public static final int write_permission_description;
+com.amazon.platform.fdra.R$string	field	public static final int write_permission_label;

@@ -1,0 +1,99 @@
+kind	class	extends	implements
+@interface	com.amazon.fireos.sdk.annotations.EmptyStub		
+@interface	com.amazon.fireos.sdk.annotations.Extends		
+@interface	com.amazon.fireos.sdk.annotations.FireOsSdk		
+@interface	com.amazon.fireos.sdk.annotations.FireOsSdkModule		
+@interface	com.amazon.fireos.sdk.annotations.HideImplements		
+@interface	com.amazon.fireos.sdk.annotations.PackageJavadoc		
+class	com.amazon.dcp.contracts.library.BuildConfig		
+class	com.amazon.dcp.contracts.library.R		
+class	com.amazon.dcp.ota.BuildProperties		Parcelable
+class	com.amazon.dcp.ota.Checks		
+class	com.amazon.dcp.ota.IOTAControlService$Default		IOTAControlService
+class	com.amazon.dcp.ota.IOTAControlService$Stub	Binder	IOTAControlService
+class	com.amazon.dcp.ota.IOTAControlService$Stub$Proxy		IOTAControlService
+class	com.amazon.dcp.ota.IOTAControlService$_Parcel		
+class	com.amazon.dcp.ota.ISideloadCallback$Default		ISideloadCallback
+class	com.amazon.dcp.ota.ISideloadCallback$Stub	Binder	ISideloadCallback
+class	com.amazon.dcp.ota.ISideloadCallback$Stub$Proxy		ISideloadCallback
+class	com.amazon.dcp.ota.ISideloadCallback$_Parcel		
+class	com.amazon.dcp.ota.IUpdateStatusListener$Default		IUpdateStatusListener
+class	com.amazon.dcp.ota.IUpdateStatusListener$Stub	Binder	IUpdateStatusListener
+class	com.amazon.dcp.ota.IUpdateStatusListener$Stub$Proxy		IUpdateStatusListener
+class	com.amazon.dcp.ota.IUpdateStatusListener$_Parcel		
+class	com.amazon.dcp.ota.IUpdatesProgressListener$Default		IUpdatesProgressListener
+class	com.amazon.dcp.ota.IUpdatesProgressListener$Stub	Binder	IUpdatesProgressListener
+class	com.amazon.dcp.ota.IUpdatesProgressListener$Stub$Proxy		IUpdatesProgressListener
+class	com.amazon.dcp.ota.IUpdatesProgressListener$_Parcel		
+class	com.amazon.dcp.ota.MaintenanceWindowModel		
+class	com.amazon.dcp.ota.MaintenanceWindowProvider		
+class	com.amazon.dcp.ota.OTAConstants		
+class	com.amazon.dcp.ota.OTAController		
+class	com.amazon.dcp.ota.OTAController$SideloadCallback	ISideloadCallback.Stub	
+class	com.amazon.dcp.ota.OTAController$UpdateStatusListener$Status		
+class	com.amazon.dcp.ota.OTASideloadException	Exception	
+class	com.amazon.dcp.ota.OTASideloadExceptionLowBatt	OTASideloadExceptionRecoverable	
+class	com.amazon.dcp.ota.OTASideloadExceptionNotEnoughDiskSpace	OTASideloadExceptionRecoverable	
+class	com.amazon.dcp.ota.OTASideloadExceptionRecoverable	OTASideloadException	
+class	com.amazon.dcp.ota.OTASideloadExceptionUnrecoverable	OTASideloadException	
+class	com.amazon.dcp.ota.OTAUnavailableException	Exception	
+class	com.amazon.dcp.ota.OfferedUpdate		Parcelable
+class	com.amazon.dcp.ota.OtaServiceConnectionManager		
+class	com.amazon.dcp.ota.OtaServiceConnectionManager$OtaServiceWrapper		
+class	com.amazon.dcp.ota.OtaServiceConnectionManager$ServiceNotClosedException	Exception	
+class	com.amazon.dcp.ota.ServiceBinder		
+class	com.amazon.dcp.ota.ServiceBinder$BindFailedException	Exception	
+class	com.amazon.dcp.ota.ServiceBinder$Factory		
+class	com.amazon.dcp.ota.ServiceBinder$Timeout		
+class	com.amazon.dcp.ota.Sideload		Parcelable
+class	com.amazon.dcp.ota.SystemPartitionStub		
+class	com.amazon.dcp.ota.Update		Parcelable
+class	com.amazon.dcp.ota.UpdateManifest		Parcelable
+class	com.amazon.dcp.ota.UpdateStatusListenerWrapper	IUpdateStatusListener.Stub	
+class	com.amazon.dcp.ota.UpdatesProgress		Parcelable
+class	com.amazon.dcp.ota.UpdatesProgressListenerWrapper	IUpdatesProgressListener.Stub	
+class	com.amazon.dcp.provider.PendingUpdatesContract		
+class	com.amazon.dcp.provider.PendingUpdatesContract$DownloadManifests		
+class	com.amazon.dcp.provider.PendingUpdatesContract$UpdateManifests		
+class	com.amazon.dcp.provider.PendingUpdatesContract$UpdateProgress		
+class	com.amazon.dcp.provider.PendingUpdatesContract$Updates		
+class	com.amazon.dcp.tph.TPHConstants		
+class	com.android.amazon.dcp.ota.IAmazonPackageDataObserver$Default		IAmazonPackageDataObserver
+class	com.android.amazon.dcp.ota.IAmazonPackageDataObserver$Stub	Binder	IAmazonPackageDataObserver
+class	com.android.amazon.dcp.ota.IAmazonPackageDataObserver$Stub$Proxy		IAmazonPackageDataObserver
+class	com.android.amazon.dcp.ota.IAmazonPackageDeleteObserver$Default		IAmazonPackageDeleteObserver
+class	com.android.amazon.dcp.ota.IAmazonPackageDeleteObserver$Stub	Binder	IAmazonPackageDeleteObserver
+class	com.android.amazon.dcp.ota.IAmazonPackageDeleteObserver$Stub$Proxy		IAmazonPackageDeleteObserver
+class	com.android.amazon.dcp.ota.IAmazonPackageInstallObserver$Default		IAmazonPackageInstallObserver
+class	com.android.amazon.dcp.ota.IAmazonPackageInstallObserver$Stub	Binder	IAmazonPackageInstallObserver
+class	com.android.amazon.dcp.ota.IAmazonPackageInstallObserver$Stub$Proxy		IAmazonPackageInstallObserver
+class	com.android.amazon.dcp.ota.IAmazonPackageManager$Default		IAmazonPackageManager
+class	com.android.amazon.dcp.ota.IAmazonPackageManager$Stub	Binder	IAmazonPackageManager
+class	com.android.amazon.dcp.ota.IAmazonPackageManager$Stub$Proxy		IAmazonPackageManager
+class	com.android.amazon.dcp.ota.IAmazonPackageManager$_Parcel		
+enum	com.amazon.dcp.ota.NetworkType		Parcelable
+enum	com.amazon.dcp.ota.OTAConstants$UpdateError		
+enum	com.amazon.dcp.ota.OTAFailure		Parcelable
+enum	com.amazon.dcp.ota.OTAInstallWaitReason		Parcelable
+enum	com.amazon.dcp.ota.OTAInstallWaitReason$Severity		
+enum	com.amazon.dcp.ota.OTASideloadException$ErrorType		
+enum	com.amazon.dcp.ota.OTAStep		
+enum	com.amazon.dcp.ota.OfferUpdateType		Parcelable
+enum	com.amazon.dcp.ota.ServiceBinder$State		
+enum	com.amazon.dcp.ota.Status		Parcelable
+enum	com.amazon.dcp.ota.StatusReason		Parcelable
+enum	com.amazon.dcp.ota.UpdateCheckReason		Parcelable
+enum	com.amazon.dcp.ota.UpdateState		Parcelable
+enum	com.amazon.dcp.ota.UpdateStatus		Parcelable
+enum	com.amazon.dcp.ota.UpdateType		Parcelable
+interface	com.amazon.dcp.ota.IOTAControlService	IInterface	
+interface	com.amazon.dcp.ota.ISideloadCallback	IInterface	
+interface	com.amazon.dcp.ota.IUpdateStatusListener	IInterface	
+interface	com.amazon.dcp.ota.IUpdatesProgressListener	IInterface	
+interface	com.amazon.dcp.ota.OTAController$SideloadListener		
+interface	com.amazon.dcp.ota.OTAController$UpdateStatusListener		
+interface	com.amazon.dcp.ota.OTAController$UpdatesProgressListener		
+interface	com.android.amazon.dcp.ota.IAmazonPackageDataObserver	IInterface	
+interface	com.android.amazon.dcp.ota.IAmazonPackageDeleteObserver	IInterface	
+interface	com.android.amazon.dcp.ota.IAmazonPackageInstallObserver	IInterface	
+interface	com.android.amazon.dcp.ota.IAmazonPackageManager	IInterface	

@@ -1,0 +1,365 @@
+kind	class	extends	implements
+@interface	com.amazon.fireos.sdk.annotations.EmptyStub		
+@interface	com.amazon.fireos.sdk.annotations.Extends		
+@interface	com.amazon.fireos.sdk.annotations.FireOsSdk		
+@interface	com.amazon.fireos.sdk.annotations.FireOsSdkModule		
+@interface	com.amazon.fireos.sdk.annotations.HideImplements		
+@interface	com.amazon.fireos.sdk.annotations.PackageJavadoc		
+class	amazon.communication.AuthenticationFailedException	UnexpectedHttpResponseException	
+class	amazon.communication.BlockingConnectionListener		Connection.ConnectionListener,IConnection.ConnectionListener
+class	amazon.communication.BlockingConnectionListenerBase		IConnection.ConnectionListener
+class	amazon.communication.BufferedMessageHandler		MessageHandler
+class	amazon.communication.CommunicationBaseException	Exception	
+class	amazon.communication.CommunicationFactory		
+class	amazon.communication.CommunicationFactoryBase		
+class	amazon.communication.CommunicationManagerDelegate		CommunicationManager,RemoteCommunicationManager
+class	amazon.communication.ConnectionAcquisitionFailedException	CommunicationBaseException	
+class	amazon.communication.ConnectionInterruptedException	CommunicationBaseException	
+class	amazon.communication.ConvertToInputStreamMessageImplMessageHandler		MessageHandler
+class	amazon.communication.DeviceConnectionPolicyBuilder	SimpleConnectionPolicyBuilder	
+class	amazon.communication.DeviceOneShotConnectionPolicyProvider	OneShotConnectionPolicyProvider	
+class	amazon.communication.DuplicateHandlerException	RegistrationFailedException	
+class	amazon.communication.ImpossibleToHandleMessageException	RuntimeException	
+class	amazon.communication.MessageFactory		
+class	amazon.communication.MessageHandlerRegistrar		
+class	amazon.communication.MissingCredentialsException	CommunicationBaseException	
+class	amazon.communication.NoFragmentMessageHandler		MessageHandler
+class	amazon.communication.NonInterleavingMessageHandler		MessageHandler
+class	amazon.communication.NonInterleavingMessageHandler$EndpointOnlyMessageIdentity		BufferedMessageManagerBase.MessageIdentityKey
+class	amazon.communication.RegistrationFailedException	CommunicationBaseException	
+class	amazon.communication.RequestFailedException	Exception	
+class	amazon.communication.ResponseHandlerWrapper		ResponseHandler,ResponseHandlerBase
+class	amazon.communication.SecurePortNotDefinedException	ConnectionAcquisitionFailedException	
+class	amazon.communication.TCommServiceDownException	Exception	
+class	amazon.communication.TimeoutException	Exception	
+class	amazon.communication.UnexpectedHttpResponseException	RequestFailedException	
+class	amazon.communication.WiFiUnavailableException	ConnectionAcquisitionFailedException	
+class	amazon.communication.authentication.AccountRequestContext		RequestContext
+class	amazon.communication.authentication.SigningException	Exception	
+class	amazon.communication.connection.Channels		
+class	amazon.communication.connection.ConnectionClosedDetails		
+class	amazon.communication.connection.ConnectionDelegate		Connection,IConnection
+class	amazon.communication.connection.ConnectionListenerDelegate		Connection.ConnectionListener,IConnection.ConnectionListener
+class	amazon.communication.connection.ConnectionPolicyException	CommunicationBaseException	
+class	amazon.communication.connection.ConnectionState		
+class	amazon.communication.connection.IllegalConnectionStateException	CommunicationBaseException	
+class	amazon.communication.connection.Policy		
+class	amazon.communication.connection.Policy$Builder		
+class	amazon.communication.connection.Purpose		
+class	amazon.communication.connection.SystemMessages		
+class	amazon.communication.connection.TransmissionFailedException	CommunicationBaseException	
+class	amazon.communication.devicetodevice.DeviceNotificationFailedException	Exception	
+class	amazon.communication.devicetodevice.DeviceToDeviceCommunicationManagerDelegate		DeviceToDeviceCommunicationManager
+class	amazon.communication.devicetodevice.NotificationServiceException	Exception	
+class	amazon.communication.devicetodevice.WakeupConnectionDelegate		WakeupConnection
+class	amazon.communication.gmd.GmdUnableToAcceptMessageException	CommunicationBaseException	
+class	amazon.communication.identity.DeviceIdentity	EndpointIdentity	
+class	amazon.communication.identity.EndpointIdentity		
+class	amazon.communication.identity.EndpointIdentityFactory		
+class	amazon.communication.identity.ExplicitServiceIdentity	ServiceIdentity	
+class	amazon.communication.identity.ServiceHostIdentity	EndpointIdentity	
+class	amazon.communication.identity.ServiceIdentity	EndpointIdentity	
+class	amazon.communication.identity.UrlEndpointIdentity	EndpointIdentity	
+class	amazon.communication.rlm.AckCodes		
+class	amazon.communication.rlm.NackErrorCodes		
+class	amazon.communication.rlm.PackCodes		
+class	amazon.communication.rlm.RlmCodes		
+class	amazon.communication.rmr.FullRmrTimeoutResponseHandler	PeriodicRmrResponseHandlerBase	
+class	amazon.communication.rmr.PeriodicRmrResponseHandlerBase		RmrResponseHandler
+class	amazon.communication.rmr.RmrException	CommunicationBaseException	
+class	amazon.communication.rmr.RmrInitializationFailedException	CommunicationBaseException	
+class	amazon.communication.rmr.RmrResponseException	CommunicationBaseException	
+class	amazon.communication.serialize.ObjectMapperFactory		
+class	amazon.communication.serialize.TypeReference		Comparable<TypeReference<T>>
+class	amazon.communication.srr.BlockingResponseHandlerDelegate		ResponseHandler,ResponseHandlerBase
+class	amazon.communication.srr.DeviceTCommSrrManager	TCommSrrManager	
+class	amazon.communication.srr.HttpClientSrrManager	HttpClientSrrManagerBase	SrrManager
+class	amazon.communication.srr.HttpClientSrrManagerBase		ISrrManager
+class	amazon.communication.srr.SrrConnectionListener		Connection.ConnectionListener,IConnection.ConnectionListener
+class	amazon.communication.srr.SrrDeleteRequestProcessor	SrrUriRequestProcessor<Void>	
+class	amazon.communication.srr.SrrGetRequestProcessor	SrrUriRequestProcessor<Void>	
+class	amazon.communication.srr.SrrPostRequestProcessor	SrrUriRequestProcessor<I>	
+class	amazon.communication.srr.SrrRequest	SrrRequestBase	
+class	amazon.communication.srr.SrrRequest$Builder	SrrRequestBase.Builder	
+class	amazon.communication.srr.SrrRequestBase		
+class	amazon.communication.srr.SrrRequestBase$Builder		
+class	amazon.communication.srr.SrrUriDiscoveryRequestProcessor	SrrUriDiscoveryRequestProcessorBase<I>	
+class	amazon.communication.srr.SrrUriDiscoveryRequestProcessorBase		
+class	amazon.communication.srr.SrrUriRequestProcessor		
+class	amazon.communication.srr.TCommSrrManager		SrrManager,SingleRequestResponseManager
+class	amazon.communication.sync.SyncPayloadWrapper		
+class	amazon.communication.v2.BlockingConnectionListenerV2		ConnectionV2.ConnectionListener,IConnection.ConnectionListener
+class	amazon.communication.v2.CommunicationFactoryV2		
+class	amazon.communication.v2.CommunicationManagerDelegateV2		CommunicationManagerV2,RemoteCommunicationManagerV2
+class	amazon.communication.v2.connection.ConnectionDelegateV2		ConnectionV2,IConnection
+class	amazon.communication.v2.connection.ConnectionListenerDelegateV2		ConnectionV2.ConnectionListener,IConnection.ConnectionListener
+class	amazon.communication.v2.devicetodevice.DeviceToDeviceCommunicationManagerDelegateV2		DeviceToDeviceCommunicationManagerV2
+class	amazon.communication.v2.devicetodevice.WakeupConnectionDelegateV2		WakeupConnectionV2
+class	com.amazon.communication.AndroidIdentityResolver		IdentityResolver
+class	com.amazon.communication.AndroidTCommManager	ICommunicationManagerBase	RemoteCommunicationManagerBase,ReliableICommunicationManager,IBinder.DeathRecipient
+class	com.amazon.communication.AndroidTCommServiceConnection		ServiceConnection
+class	com.amazon.communication.BlockingResponseHandler		ResponseHandlerBase
+class	com.amazon.communication.BufferedMessageManagerBase		
+class	com.amazon.communication.BufferedMessageManagerBase$ByteBufferChainMessageEntry	MessageEntry	
+class	com.amazon.communication.BufferedMessageManagerBase$MessageEntry		
+class	com.amazon.communication.BufferedMessageManagerBase$MessageIdentityWithMessageId	MessageIdentity	MessageIdentityKey
+class	com.amazon.communication.BufferedMessageManagerBase$MessageInstanceTracker		InstanceTracker<MessageIdentityKey>
+class	com.amazon.communication.ByteBufferChain		
+class	com.amazon.communication.ByteBufferChainInputStream	InputStream	
+class	com.amazon.communication.ByteBufferChainMessageImpl		ByteBufferBackedMessage,Message
+class	com.amazon.communication.ByteBufferChainOutputStream	OutputStream	
+class	com.amazon.communication.CommonConnectionPolicies		
+class	com.amazon.communication.CommunicationErrorCodes		
+class	com.amazon.communication.CommunicationServiceConstants		
+class	com.amazon.communication.CommunicationServiceConstants$TCOMM_IPC_STATUS		
+class	com.amazon.communication.ConnectionProxy	IConnectionListener.Stub	amazon.communication.connection.IConnection,ReliableConnection
+class	com.amazon.communication.GatewayConnectivityImpl	IConnectionListener.Stub	GatewayConnectivity
+class	com.amazon.communication.HttpRequestResponseConverterBase		HttpRequestResponseConverter
+class	com.amazon.communication.HttpResponseDecompressor		
+class	com.amazon.communication.HttpResponseValidator		
+class	com.amazon.communication.ICommunicationManagerBase		ICommunicationManager
+class	com.amazon.communication.ICommunicationService$Default		ICommunicationService
+class	com.amazon.communication.ICommunicationService$Stub	Binder	ICommunicationService
+class	com.amazon.communication.ICommunicationService$Stub$Proxy		ICommunicationService
+class	com.amazon.communication.ICommunicationService$_Parcel		
+class	com.amazon.communication.IConnection$Default		IConnection
+class	com.amazon.communication.IConnection$Stub	Binder	IConnection
+class	com.amazon.communication.IConnection$Stub$Proxy		IConnection
+class	com.amazon.communication.IConnection$_Parcel		
+class	com.amazon.communication.IConnectionListener$Default		IConnectionListener
+class	com.amazon.communication.IConnectionListener$Stub	Binder	IConnectionListener
+class	com.amazon.communication.IConnectionListener$Stub$Proxy		IConnectionListener
+class	com.amazon.communication.IGatewayConnectivity$Default		IGatewayConnectivity
+class	com.amazon.communication.IGatewayConnectivity$Stub	Binder	IGatewayConnectivity
+class	com.amazon.communication.IGatewayConnectivity$Stub$Proxy		IGatewayConnectivity
+class	com.amazon.communication.IInputStream$Default		IInputStream
+class	com.amazon.communication.IInputStream$Stub	Binder	IInputStream
+class	com.amazon.communication.IInputStream$Stub$Proxy		IInputStream
+class	com.amazon.communication.IMessageHandler$Default		IMessageHandler
+class	com.amazon.communication.IMessageHandler$Stub	Binder	IMessageHandler
+class	com.amazon.communication.IMessageHandler$Stub$Proxy		IMessageHandler
+class	com.amazon.communication.IMessageHandler$_Parcel		
+class	com.amazon.communication.IResponseHandler$Default		IResponseHandler
+class	com.amazon.communication.IResponseHandler$Stub	Binder	IResponseHandler
+class	com.amazon.communication.IResponseHandler$Stub$Proxy		IResponseHandler
+class	com.amazon.communication.IResponseHandler$_Parcel		
+class	com.amazon.communication.InputStreamMessageImpl		Message
+class	com.amazon.communication.InputStreamMessageImpl$PayloadInputStream	InputStream	BetterInputStream
+class	com.amazon.communication.InputStreamProxy	IInputStream.Stub	
+class	com.amazon.communication.JavaTCommTransport		TCommTransport
+class	com.amazon.communication.KnownSizeInputStreamMessage	InputStreamMessageImpl	
+class	com.amazon.communication.LargeArrayOptimizedIInputStream		IInputStream
+class	com.amazon.communication.MessageEnvelope		Parcelable
+class	com.amazon.communication.MessageHandlerProxy	IMessageHandler.Stub	
+class	com.amazon.communication.MessageIdentity		
+class	com.amazon.communication.NativeTCommConstants		
+class	com.amazon.communication.NativeTCommTransport		TCommTransport
+class	com.amazon.communication.OneShotConnectionPolicyProvider		ConnectionPolicyProvider
+class	com.amazon.communication.ParcelableConnectionPolicy	SimpleConnectionPolicy	Parcelable
+class	com.amazon.communication.ParcelableEndpointIdentity	EndpointIdentity	Parcelable
+class	com.amazon.communication.ParcelableEndpointIdentity$Creator		Parcelable.Creator<ParcelableEndpointIdentity>
+class	com.amazon.communication.ParcelablePolicy		Parcelable
+class	com.amazon.communication.ParcelableStatus		Parcelable
+class	com.amazon.communication.ParcelableStatus$Creator		Parcelable.Creator<ParcelableStatus>
+class	com.amazon.communication.PeriodicTimeoutInstanceRemover		
+class	com.amazon.communication.PlainTextHttpRequestResponseConverter	HttpRequestResponseConverterBase	
+class	com.amazon.communication.ProtocolException	CommunicationBaseException	
+class	com.amazon.communication.ReleaseConnectionResponseHandler		ResponseHandlerBase
+class	com.amazon.communication.ResponseHandlerProxy	IResponseHandler.Stub	
+class	com.amazon.communication.ServiceSideInputStreamProxy	InputStream	IBinder.DeathRecipient
+class	com.amazon.communication.SimpleConnectionPolicy		ConnectionPolicy
+class	com.amazon.communication.SimpleConnectionPolicyBuilder		ConnectionPolicyBuilder
+class	com.amazon.communication.StackDumper		
+class	com.amazon.communication.TCommImplementationSwitcher		
+class	com.amazon.communication.TCommMetrics		
+class	com.amazon.communication.TCommServiceDownException	Exception	
+class	com.amazon.communication.TCommUncaughtExceptionHandler		Thread.UncaughtExceptionHandler
+class	com.amazon.communication.ThreadName		
+class	com.amazon.communication.authentication.AbstractDcpRequestSigner		RequestSigner
+class	com.amazon.communication.authentication.AccountManagerWrapperImpl		AccountManagerWrapper
+class	com.amazon.communication.authentication.DcpOAuthRequestSigner	AbstractDcpRequestSigner	
+class	com.amazon.communication.authentication.DcpRequestSigner	AbstractDcpRequestSigner	
+class	com.amazon.communication.authentication.DcpUriSanitizer		
+class	com.amazon.communication.authentication.IgnoreBodyDcpRequestSigner	DcpRequestSigner	
+class	com.amazon.communication.authentication.MapAccountManagerWrapperImpl		MapAccountManagerWrapper
+class	com.amazon.communication.connection.ClosedConnectionReasonFactory		
+class	com.amazon.communication.connection.ConnectionBase		IConnection
+class	com.amazon.communication.connection.NullConnectionPolicyProvider		ConnectionPolicyProvider
+class	com.amazon.communication.devicetodevice.AndroidDeviceToDeviceCommunicationManager		IDeviceToDeviceCommunicationManager
+class	com.amazon.communication.devicetodevice.AndroidDeviceToDeviceCommunicationManager$EncodeOnlyDeviceD2DApplicationProtocol	D2DApplicationProtocol	
+class	com.amazon.communication.devicetodevice.D2DApplicationProtocol		
+class	com.amazon.communication.devicetodevice.D2DMessage		
+class	com.amazon.communication.devicetodevice.WakeupConnectionImpl		IWakeupConnection
+class	com.amazon.communication.ir.IIdentityResolver$Default		IIdentityResolver
+class	com.amazon.communication.ir.IIdentityResolver$Stub	Binder	IIdentityResolver
+class	com.amazon.communication.ir.IIdentityResolver$Stub$Proxy		IIdentityResolver
+class	com.amazon.communication.ir.IIdentityResolver$_Parcel		
+class	com.amazon.communication.ir.IRConfigurationException	RuntimeException	
+class	com.amazon.communication.ir.IRServiceEndpointImpl		IRServiceEndpoint
+class	com.amazon.communication.ir.IdentityResolverBase		IdentityResolver
+class	com.amazon.communication.ir.InvalidIRFileFormatException	Exception	
+class	com.amazon.communication.ir.IrMasterImpl		IrMaster
+class	com.amazon.communication.ir.ParcelableIRServiceEndpoint		Parcelable,IRServiceEndpoint
+class	com.amazon.communication.ir.ParcelableIRServiceEndpoint$Creator		Parcelable.Creator<ParcelableIRServiceEndpoint>
+class	com.amazon.communication.neo.NativeConnection	IConnection.Stub	
+class	com.amazon.communication.neo.NativeMessageHandlerProxy	MessageHandler.Stub	
+class	com.amazon.communication.neo.NativeTCommServiceConnection		
+class	com.amazon.communication.neo.NativeTCommServiceConnection$ConnectionListenerAdapter	ConnectionListener.Stub	
+class	com.amazon.communication.neo.NativeTCommServiceConnection$GatewayConnectionListenerAdapter	ConnectionListener.Stub	
+class	com.amazon.communication.neo.NativeTCommServiceConnection$NamedThreadFactory		ThreadFactory
+class	com.amazon.communication.neo.NeoIpcErrorCodes		
+class	com.amazon.communication.rlm.AckHandlerProxy	IAckHandler.Stub	
+class	com.amazon.communication.rlm.IAckHandler$Default		IAckHandler
+class	com.amazon.communication.rlm.IAckHandler$Stub	Binder	IAckHandler
+class	com.amazon.communication.rlm.IAckHandler$Stub$Proxy		IAckHandler
+class	com.amazon.communication.serialize.ByteBufferIonDeserializer	JsonDeserializer<ByteBuffer>	
+class	com.amazon.communication.serialize.ByteBufferJsonDeserializer	JsonDeserializer<ByteBuffer>	
+class	com.amazon.communication.serialize.ByteBufferJsonSerializer	JsonSerializer<ByteBuffer>	
+class	com.amazon.communication.serialize.IonObjectMapper		ObjectMapper
+class	com.amazon.communication.serialize.JsonObjectMapper		ObjectMapper
+class	com.amazon.communication.time.AndroidTimeSource		TimeSource
+class	com.amazon.communication.time.GlobalTimeSource		
+class	com.amazon.communication.time.SystemTimeSource		TimeSource
+class	com.amazon.communication.utils.HttpUtils		
+class	com.amazon.communication.utils.StackTraceUtils		
+class	com.amazon.communication.utils.StringUtils		
+class	com.amazon.communication.websocket.CloseStatusCodes		
+class	com.amazon.nativemessagerelayneoservice.ConnectionListener$Default		ConnectionListener
+class	com.amazon.nativemessagerelayneoservice.ConnectionListener$Stub	Binder	ConnectionListener
+class	com.amazon.nativemessagerelayneoservice.ConnectionListener$Stub$Proxy		ConnectionListener
+class	com.amazon.nativemessagerelayneoservice.ConnectionState		Parcelable
+class	com.amazon.nativemessagerelayneoservice.EndpointIdentityType		Parcelable
+class	com.amazon.nativemessagerelayneoservice.IConnection$Default		IConnection
+class	com.amazon.nativemessagerelayneoservice.IConnection$Stub	Binder	IConnection
+class	com.amazon.nativemessagerelayneoservice.IConnection$Stub$Proxy		IConnection
+class	com.amazon.nativemessagerelayneoservice.IGatewayConnectivity$Default		IGatewayConnectivity
+class	com.amazon.nativemessagerelayneoservice.IGatewayConnectivity$Stub	Binder	IGatewayConnectivity
+class	com.amazon.nativemessagerelayneoservice.IGatewayConnectivity$Stub$Proxy		IGatewayConnectivity
+class	com.amazon.nativemessagerelayneoservice.MessageHandler$Default		MessageHandler
+class	com.amazon.nativemessagerelayneoservice.MessageHandler$Stub	Binder	MessageHandler
+class	com.amazon.nativemessagerelayneoservice.MessageHandler$Stub$Proxy		MessageHandler
+class	com.amazon.nativemessagerelayneoservice.MessageHandler$_Parcel		
+class	com.amazon.nativemessagerelayneoservice.NativeMessageRelayNeoService$Default		NativeMessageRelayNeoService
+class	com.amazon.nativemessagerelayneoservice.NativeMessageRelayNeoService$Stub	Binder	NativeMessageRelayNeoService
+class	com.amazon.nativemessagerelayneoservice.NativeMessageRelayNeoService$Stub$Proxy		NativeMessageRelayNeoService
+class	com.amazon.nativemessagerelayneoservice.NativeMessageRelayNeoService$_Parcel		
+class	com.amazon.nativemessagerelayneoservice.ParcelableEndpointIdentity		Parcelable
+class	com.amazon.nativemessagerelayneoservice.ParcelableStatus		Parcelable
+class	com.amazon.neo.service.api.BinderInternal		
+class	com.amazon.neo.service.api.BinderUtils		
+class	com.amazon.neo.service.api.BinderUtils$Builder		
+class	com.amazon.neo.service.api.BuildConfig		
+class	com.amazon.neo.service.api.Bundle		Parcelable
+class	com.amazon.neo.service.api.EventUtils		
+class	com.amazon.neo.service.api.NeoBundle		Parcelable
+class	com.amazon.neo.service.api.PackageManagerUtils		
+class	com.amazon.neo.service.api.R		
+class	com.amazon.neo.service.api.ServiceCallback		
+class	com.amazon.neo.service.api.UnsupportedTypeException	RuntimeException	
+class	com.amazon.tcomm.api.BuildConfig		
+class	com.amazon.tcomm.api.R		
+class	com.amazon.tcomm.client.BuildConfig		
+class	com.amazon.tcomm.client.R		
+class	com.amazon.tcomm.client.R$attr		
+class	com.amazon.tcomm.client.R$drawable		
+class	com.amazon.tcomm.client.R$string		
+class	com.amazon.tcomm.device.BuildConfig		
+class	com.amazon.tcomm.device.R		
+class	com.dp.framework.ByteBufferInputStream	InputStream	
+class	com.dp.framework.ByteBufferOutputStream	OutputStream	
+class	com.dp.framework.CodecException	Exception	
+class	com.dp.framework.FlatStreamCodec	StreamCodecBase	
+class	com.dp.framework.HexStreamCodec	StreamCodecBase	
+class	com.dp.framework.StreamCodecBase		StreamCodec
+class	com.dp.utils.FailFast		
+class	com.dp.utils.FailFastException	RuntimeException	
+class	com.dp.utils.ThreadGuard		
+enum	amazon.communication.Priority		
+enum	amazon.communication.connection.CompressionOption		
+enum	amazon.communication.connection.ConnectionPolicy$CompressionOption		
+enum	amazon.communication.connection.KeepAlive		
+enum	amazon.communication.connection.Priority		
+enum	amazon.communication.identity.EndpointIdentity$Type		
+enum	amazon.communication.identity.IRServiceEndpoint$ClearTextConnection		
+enum	amazon.communication.identity.IRServiceEndpoint$DataCompression		
+enum	amazon.communication.identity.IRServiceEndpoint$DirectConnection		
+enum	amazon.communication.identity.IRServiceEndpoint$Scheme		
+enum	amazon.communication.serialize.ObjectMapperFactory$ContentType		
+enum	com.amazon.communication.AndroidTCommServiceConnection$State		
+enum	com.amazon.communication.neo.NativeIdentityType		
+enum	com.amazon.communication.neo.NativeTCommServiceConnection$ServiceBindingState		
+interface	amazon.communication.CommunicationManager		
+interface	amazon.communication.GatewayConnectivity		
+interface	amazon.communication.GatewayConnectivity$GatewayConnectivityMonitor		
+interface	amazon.communication.ICommunicationManager		
+interface	amazon.communication.Message		
+interface	amazon.communication.MessageHandler		
+interface	amazon.communication.RemoteCommunicationManager	CommunicationManager	
+interface	amazon.communication.RemoteCommunicationManagerBase	ICommunicationManager	
+interface	amazon.communication.ResponseHandler		
+interface	amazon.communication.ResponseHandlerBase		
+interface	amazon.communication.ServiceConnectedHandler		
+interface	amazon.communication.ServiceConnectivityListener		
+interface	amazon.communication.authentication.RequestContext		
+interface	amazon.communication.authentication.RequestSigner		
+interface	amazon.communication.connection.Connection		
+interface	amazon.communication.connection.Connection$ConnectionListener		
+interface	amazon.communication.connection.ConnectionPolicy		
+interface	amazon.communication.connection.ConnectionPolicyBuilder		
+interface	amazon.communication.connection.ConnectionPolicyProvider		
+interface	amazon.communication.connection.IConnection		
+interface	amazon.communication.connection.IConnection$ConnectionListener		
+interface	amazon.communication.devicetodevice.DeviceToDeviceCommunicationManager		
+interface	amazon.communication.devicetodevice.DeviceToDeviceNotificationHandler		
+interface	amazon.communication.devicetodevice.IDeviceToDeviceCommunicationManager		
+interface	amazon.communication.devicetodevice.IWakeupConnection	IConnection	
+interface	amazon.communication.devicetodevice.WakeupConnection	Connection	
+interface	amazon.communication.devicetodevice.WakeupConnectionBase		
+interface	amazon.communication.gmd.GmdClient		
+interface	amazon.communication.identity.IRServiceEndpoint		
+interface	amazon.communication.identity.IdentityResolver		
+interface	amazon.communication.rlm.AckHandler		
+interface	amazon.communication.rlm.ReliableConnection	IConnection	
+interface	amazon.communication.rlm.ReliableICommunicationManager	ICommunicationManager	
+interface	amazon.communication.rmr.IRmrManager		
+interface	amazon.communication.rmr.RmrManager		
+interface	amazon.communication.rmr.RmrRequest		
+interface	amazon.communication.rmr.RmrResponseHandler		
+interface	amazon.communication.serialize.ObjectMapper		
+interface	amazon.communication.srr.ISrrManager		
+interface	amazon.communication.srr.SingleRequestResponseManager	SrrManager	
+interface	amazon.communication.srr.SingleRequestResponseManagerBase	ISrrManager	
+interface	amazon.communication.srr.SrrManager		
+interface	amazon.communication.v2.CommunicationManagerV2		
+interface	amazon.communication.v2.RemoteCommunicationManagerV2	CommunicationManagerV2	
+interface	amazon.communication.v2.connection.ConnectionV2		
+interface	amazon.communication.v2.connection.ConnectionV2$ConnectionListener		
+interface	amazon.communication.v2.devicetodevice.DeviceToDeviceCommunicationManagerV2		
+interface	amazon.communication.v2.devicetodevice.WakeupConnectionV2	ConnectionV2	
+interface	com.amazon.communication.BandwidthToolByteAccountant		
+interface	com.amazon.communication.BetterInputStream		
+interface	com.amazon.communication.BufferedMessageManagerBase$MessageIdentityKey		
+interface	com.amazon.communication.ByteBufferBackedMessage		
+interface	com.amazon.communication.HttpRequestResponseConverter		
+interface	com.amazon.communication.ICommunicationService	IInterface	
+interface	com.amazon.communication.IConnection	IInterface	
+interface	com.amazon.communication.IConnectionListener	IInterface	
+interface	com.amazon.communication.IGatewayConnectivity	IInterface	
+interface	com.amazon.communication.IInputStream	IInterface	
+interface	com.amazon.communication.IMessageHandler	IInterface	
+interface	com.amazon.communication.IResponseHandler	IInterface	
+interface	com.amazon.communication.InstanceTracker		
+interface	com.amazon.communication.TCommTransport		
+interface	com.amazon.communication.authentication.AccountManagerWrapper		
+interface	com.amazon.communication.authentication.MapAccountManagerWrapper		
+interface	com.amazon.communication.authentication.RequestSigner	amazon.communication.authentication.RequestSigner	
+interface	com.amazon.communication.ir.IIdentityResolver	IInterface	
+interface	com.amazon.communication.ir.IrMaster		
+interface	com.amazon.communication.rlm.IAckHandler	IInterface	
+interface	com.amazon.communication.time.TimeSource		
+interface	com.amazon.nativemessagerelayneoservice.ConnectionListener	IInterface	
+interface	com.amazon.nativemessagerelayneoservice.IConnection	IInterface	
+interface	com.amazon.nativemessagerelayneoservice.IGatewayConnectivity	IInterface	
+interface	com.amazon.nativemessagerelayneoservice.MessageHandler	IInterface	
+interface	com.amazon.nativemessagerelayneoservice.NativeMessageRelayNeoService	IInterface	
+interface	com.dp.framework.StreamCodec		

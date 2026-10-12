@@ -1,0 +1,596 @@
+class	kind	declaration
+android.test.ActivityInstrumentationTestCase	method	protected void setUp() throws Exception
+android.test.ActivityInstrumentationTestCase	method	protected void tearDown() throws Exception
+android.test.ActivityInstrumentationTestCase	method	public ActivityInstrumentationTestCase(String str, Class<T> cls)
+android.test.ActivityInstrumentationTestCase	method	public ActivityInstrumentationTestCase(String str, Class<T> cls, boolean z)
+android.test.ActivityInstrumentationTestCase	method	public T getActivity()
+android.test.ActivityInstrumentationTestCase	method	public void testActivityTestCaseSetUpProperly() throws Exception
+android.test.ActivityInstrumentationTestCase2	method	protected void runTest() throws Throwable
+android.test.ActivityInstrumentationTestCase2	method	protected void setUp() throws Exception
+android.test.ActivityInstrumentationTestCase2	method	protected void tearDown() throws Exception
+android.test.ActivityInstrumentationTestCase2	method	public ActivityInstrumentationTestCase2(Class<T> cls)
+android.test.ActivityInstrumentationTestCase2	method	public ActivityInstrumentationTestCase2(String str, Class<T> cls)
+android.test.ActivityInstrumentationTestCase2	method	public T getActivity()
+android.test.ActivityInstrumentationTestCase2	method	public void setActivityInitialTouchMode(boolean z)
+android.test.ActivityInstrumentationTestCase2	method	public void setActivityIntent(Intent intent)
+android.test.ActivityTestCase	field	private Activity mActivity;
+android.test.ActivityTestCase	method	protected Activity getActivity()
+android.test.ActivityTestCase	method	protected void scrubClass(Class<?> cls) throws IllegalAccessException
+android.test.ActivityTestCase	method	protected void setActivity(Activity activity)
+android.test.ActivityUnitTestCase	field	private Application mApplication;
+android.test.ActivityUnitTestCase	field	private Class<T> mActivityClass;
+android.test.ActivityUnitTestCase	field	private Context mActivityContext;
+android.test.ActivityUnitTestCase	field	private MockParent mMockParent;
+android.test.ActivityUnitTestCase	field	private boolean mAttached;
+android.test.ActivityUnitTestCase	field	private boolean mCreated;
+android.test.ActivityUnitTestCase	field	private static final String TAG;
+android.test.ActivityUnitTestCase	method	protected T startActivity(Intent intent, Bundle bundle, Object obj)
+android.test.ActivityUnitTestCase	method	protected void setUp() throws Exception
+android.test.ActivityUnitTestCase	method	protected void tearDown() throws Exception
+android.test.ActivityUnitTestCase	method	public ActivityUnitTestCase(Class<T> cls)
+android.test.ActivityUnitTestCase	method	public Intent getStartedActivityIntent()
+android.test.ActivityUnitTestCase	method	public T getActivity()
+android.test.ActivityUnitTestCase	method	public boolean isFinishCalled()
+android.test.ActivityUnitTestCase	method	public int getFinishedActivityRequest()
+android.test.ActivityUnitTestCase	method	public int getRequestedOrientation()
+android.test.ActivityUnitTestCase	method	public int getStartedActivityRequest()
+android.test.ActivityUnitTestCase	method	public void setActivityContext(Context context)
+android.test.ActivityUnitTestCase	method	public void setApplication(Application application)
+android.test.ActivityUnitTestCase$MockParent	field	public Intent mStartedActivityIntent;
+android.test.ActivityUnitTestCase$MockParent	field	public boolean mFinished;
+android.test.ActivityUnitTestCase$MockParent	field	public int mFinishedActivityRequest;
+android.test.ActivityUnitTestCase$MockParent	field	public int mRequestedOrientation;
+android.test.ActivityUnitTestCase$MockParent	field	public int mStartedActivityRequest;
+android.test.ActivityUnitTestCase$MockParent	method	private MockParent()
+android.test.ActivityUnitTestCase$MockParent	method	public Window getWindow()
+android.test.ActivityUnitTestCase$MockParent	method	public int getRequestedOrientation()
+android.test.ActivityUnitTestCase$MockParent	method	public void finishActivityFromChild(Activity activity, int i)
+android.test.ActivityUnitTestCase$MockParent	method	public void finishFromChild(Activity activity)
+android.test.ActivityUnitTestCase$MockParent	method	public void setRequestedOrientation(int i)
+android.test.ActivityUnitTestCase$MockParent	method	public void startActivityFromChild(Activity activity, Intent intent, int i)
+android.test.AndroidTestRunner	field	private Context mContext;
+android.test.AndroidTestRunner	field	private Instrumentation mInstrumentation;
+android.test.AndroidTestRunner	field	private List<TestCase> mTestCases;
+android.test.AndroidTestRunner	field	private List<TestListener> mTestListeners;
+android.test.AndroidTestRunner	field	private String mTestClassName;
+android.test.AndroidTestRunner	field	private TestResult mTestResult;
+android.test.AndroidTestRunner	field	private boolean mSkipExecution;
+android.test.AndroidTestRunner	method	private Class<? extends Test> loadTestClass(String str)
+android.test.AndroidTestRunner	method	private Test getTest(Class cls)
+android.test.AndroidTestRunner	method	private TestCase buildSingleTestMethod(Class cls, String str)
+android.test.AndroidTestRunner	method	private TestCase newSingleTestMethod(Class cls, String str, Constructor constructor, Object... objArr)
+android.test.AndroidTestRunner	method	private boolean shouldRunSingleTestMethod(String str, Class<? extends Test> cls)
+android.test.AndroidTestRunner	method	private void setContextIfAndroidTestCase(Test test, Context context, Context context2)
+android.test.AndroidTestRunner	method	private void setInstrumentationIfInstrumentationTestCase(Test test, Instrumentation instrumentation)
+android.test.AndroidTestRunner	method	private void setTest(Test test, Class<? extends Test> cls)
+android.test.AndroidTestRunner	method	protected Class loadSuiteClass(String str) throws ClassNotFoundException
+android.test.AndroidTestRunner	method	protected TestResult createTestResult()
+android.test.AndroidTestRunner	method	protected void runFailed(String str)
+android.test.AndroidTestRunner	method	public List<TestCase> getTestCases()
+android.test.AndroidTestRunner	method	public String getTestClassName()
+android.test.AndroidTestRunner	method	public TestResult getTestResult()
+android.test.AndroidTestRunner	method	public void addTestListener(TestListener testListener)
+android.test.AndroidTestRunner	method	public void clearTestListeners()
+android.test.AndroidTestRunner	method	public void runTest()
+android.test.AndroidTestRunner	method	public void runTest(TestResult testResult)
+android.test.AndroidTestRunner	method	public void setContext(Context context)
+android.test.AndroidTestRunner	method	public void setInstrumentaiton(Instrumentation instrumentation)
+android.test.AndroidTestRunner	method	public void setInstrumentation(Instrumentation instrumentation)
+android.test.AndroidTestRunner	method	public void setTest(Test test)
+android.test.AndroidTestRunner	method	public void setTestClassName(String str, String str2)
+android.test.AndroidTestRunner	method	public void testEnded(String str)
+android.test.AndroidTestRunner	method	public void testFailed(int i, Test test, Throwable th)
+android.test.AndroidTestRunner	method	public void testStarted(String str)
+android.test.ApplicationTestCase	field	private Context mSystemContext;
+android.test.ApplicationTestCase	field	private T mApplication;
+android.test.ApplicationTestCase	field	private boolean mAttached;
+android.test.ApplicationTestCase	field	private boolean mCreated;
+android.test.ApplicationTestCase	method	private void setupApplication()
+android.test.ApplicationTestCase	method	protected final void createApplication()
+android.test.ApplicationTestCase	method	protected final void terminateApplication()
+android.test.ApplicationTestCase	method	protected void setUp() throws Exception
+android.test.ApplicationTestCase	method	protected void tearDown() throws Exception
+android.test.ApplicationTestCase	method	public ApplicationTestCase(Class<T> cls)
+android.test.ApplicationTestCase	method	public Context getSystemContext()
+android.test.ApplicationTestCase	method	public T getApplication()
+android.test.ApplicationTestCase	method	public final void testApplicationTestCaseSetUpProperly() throws Exception
+android.test.AssertionFailedError	method	public AssertionFailedError()
+android.test.AssertionFailedError	method	public AssertionFailedError(String str)
+android.test.ClassPathPackageInfoSource	field	private final ClassLoader classLoader;
+android.test.ClassPathPackageInfoSource	field	private final String[] classPath;
+android.test.ClassPathPackageInfoSource	field	private static ClassPathPackageInfoSource classPathSource;
+android.test.ClassPathPackageInfoSource	field	private static String[] apkPaths;
+android.test.ClassPathPackageInfoSource	field	private static final ClassLoader CLASS_LOADER;
+android.test.ClassPathPackageInfoSource	method	private ClassPathPackageInfoSource(ClassLoader classLoader)
+android.test.ClassPathPackageInfoSource	method	private static String[] getClassPath()
+android.test.ClassPathPackageInfoSource	method	private static boolean isToplevelClass(String str)
+android.test.ClassPathPackageInfoSource	method	private void findClasses(String str, Set<String> set, Set<String> set2)
+android.test.ClassPathPackageInfoSource	method	private void findClassesInApk(String str, String str2, Set<String> set, Set<String> set2) throws IOException
+android.test.ClassPathPackageInfoSource	method	private void scanForApkFiles(File file, String str, Set<String> set, Set<String> set2) throws IOException
+android.test.ClassPathPackageInfoSource	method	public ClassPathPackageInfo createPackageInfo(String str)
+android.test.ClassPathPackageInfoSource	method	public Set<Class<?>> getTopLevelClassesRecursive(String str)
+android.test.ClassPathPackageInfoSource	method	public static ClassPathPackageInfoSource forClassPath(ClassLoader classLoader)
+android.test.ClassPathPackageInfoSource	method	static void setApkPaths(String[] strArr)
+android.test.ClassPathPackageInfoSource$ClassPathPackageInfo	field	private final Set<Class<?>> topLevelClasses;
+android.test.ClassPathPackageInfoSource$ClassPathPackageInfo	field	private final Set<String> subpackageNames;
+android.test.ClassPathPackageInfoSource$ClassPathPackageInfo	field	private final String packageName;
+android.test.ClassPathPackageInfoSource$ClassPathPackageInfo	method	private ClassPathPackageInfo(String str, Set<String> set, Set<Class<?>> set2)
+android.test.ClassPathPackageInfoSource$ClassPathPackageInfo	method	private Set<ClassPathPackageInfo> getSubpackages()
+android.test.ClassPathPackageInfoSource$ClassPathPackageInfo	method	private void addTopLevelClassesTo(Set<Class<?>> set)
+android.test.ClassPathPackageInfoSource$ClassPathPackageInfo	method	public Set<Class<?>> getTopLevelClassesRecursive()
+android.test.ClassPathPackageInfoSource$ClassPathPackageInfo	method	public boolean equals(Object obj)
+android.test.ClassPathPackageInfoSource$ClassPathPackageInfo	method	public int hashCode()
+android.test.ComparisonFailure	field	private junit.framework.ComparisonFailure mComparison;
+android.test.ComparisonFailure	method	public ComparisonFailure(String str, String str2, String str3)
+android.test.ComparisonFailure	method	public String getMessage()
+android.test.InstrumentationTestRunner	field	private AndroidTestRunner mTestRunner;
+android.test.InstrumentationTestRunner	field	private Bundle mArguments;
+android.test.InstrumentationTestRunner	field	private String mCoverageFilePath;
+android.test.InstrumentationTestRunner	field	private String mPackageOfTests;
+android.test.InstrumentationTestRunner	field	private boolean mCoverage;
+android.test.InstrumentationTestRunner	field	private boolean mDebug;
+android.test.InstrumentationTestRunner	field	private boolean mJustCount;
+android.test.InstrumentationTestRunner	field	private boolean mSuiteAssignmentMode;
+android.test.InstrumentationTestRunner	field	private final Bundle mResults;
+android.test.InstrumentationTestRunner	field	private int mDelayMsec;
+android.test.InstrumentationTestRunner	field	private int mTestCount;
+android.test.InstrumentationTestRunner	field	private static final Predicate<TestMethod> SELECT_LARGE;
+android.test.InstrumentationTestRunner	field	private static final Predicate<TestMethod> SELECT_MEDIUM;
+android.test.InstrumentationTestRunner	field	private static final Predicate<TestMethod> SELECT_SMALL;
+android.test.InstrumentationTestRunner	field	private static final String ARGUMENT_LOG_ONLY;
+android.test.InstrumentationTestRunner	field	private static final String ARGUMENT_TEST_PACKAGE;
+android.test.InstrumentationTestRunner	field	private static final String ARGUMENT_TEST_SIZE_PREDICATE;
+android.test.InstrumentationTestRunner	field	private static final String DEFAULT_COVERAGE_FILE_NAME;
+android.test.InstrumentationTestRunner	field	private static final String LARGE_SUITE;
+android.test.InstrumentationTestRunner	field	private static final String LOG_TAG;
+android.test.InstrumentationTestRunner	field	private static final String MEDIUM_SUITE;
+android.test.InstrumentationTestRunner	field	private static final String REPORT_KEY_COVERAGE_PATH;
+android.test.InstrumentationTestRunner	field	private static final String REPORT_KEY_NUM_ITERATIONS;
+android.test.InstrumentationTestRunner	field	private static final String REPORT_KEY_RUN_TIME;
+android.test.InstrumentationTestRunner	field	private static final String REPORT_KEY_SUITE_ASSIGNMENT;
+android.test.InstrumentationTestRunner	field	private static final String SMALL_SUITE;
+android.test.InstrumentationTestRunner	field	private static final float MEDIUM_SUITE_MAX_RUNTIME;
+android.test.InstrumentationTestRunner	field	private static final float SMALL_SUITE_MAX_RUNTIME;
+android.test.InstrumentationTestRunner	field	public static final String REPORT_KEY_NAME_CLASS;
+android.test.InstrumentationTestRunner	field	public static final String REPORT_KEY_NAME_TEST;
+android.test.InstrumentationTestRunner	field	public static final String REPORT_KEY_NUM_CURRENT;
+android.test.InstrumentationTestRunner	field	public static final String REPORT_KEY_NUM_TOTAL;
+android.test.InstrumentationTestRunner	field	public static final String REPORT_KEY_STACK;
+android.test.InstrumentationTestRunner	field	public static final String REPORT_VALUE_ID;
+android.test.InstrumentationTestRunner	field	public static final int REPORT_VALUE_RESULT_ERROR;
+android.test.InstrumentationTestRunner	field	public static final int REPORT_VALUE_RESULT_FAILURE;
+android.test.InstrumentationTestRunner	field	public static final int REPORT_VALUE_RESULT_OK;
+android.test.InstrumentationTestRunner	field	public static final int REPORT_VALUE_RESULT_START;
+android.test.InstrumentationTestRunner	field	static final String ARGUMENT_ANNOTATION;
+android.test.InstrumentationTestRunner	field	static final String ARGUMENT_DELAY_MSEC;
+android.test.InstrumentationTestRunner	field	static final String ARGUMENT_NOT_ANNOTATION;
+android.test.InstrumentationTestRunner	field	static final String ARGUMENT_TEST_CLASS;
+android.test.InstrumentationTestRunner	method	private Class<? extends Annotation> getAnnotationClass(String str)
+android.test.InstrumentationTestRunner	method	private Predicate<TestMethod> getAnnotationPredicate(String str)
+android.test.InstrumentationTestRunner	method	private Predicate<TestMethod> getNotAnnotationPredicate(String str)
+android.test.InstrumentationTestRunner	method	private Predicate<TestMethod> getSizePredicateFromArg(String str)
+android.test.InstrumentationTestRunner	method	private String getCoverageFilePath()
+android.test.InstrumentationTestRunner	method	private boolean getBooleanArgument(Bundle bundle, String str)
+android.test.InstrumentationTestRunner	method	private void generateCoverageReport()
+android.test.InstrumentationTestRunner	method	private void parseTestClass(String str, TestSuiteBuilder testSuiteBuilder)
+android.test.InstrumentationTestRunner	method	private void parseTestClasses(String str, TestSuiteBuilder testSuiteBuilder)
+android.test.InstrumentationTestRunner	method	private void reportEmmaError(Exception exc)
+android.test.InstrumentationTestRunner	method	private void reportEmmaError(String str, Exception exc)
+android.test.InstrumentationTestRunner	method	protected AndroidTestRunner getAndroidTestRunner()
+android.test.InstrumentationTestRunner	method	protected void addTestListener(TestListener testListener)
+android.test.InstrumentationTestRunner	method	public Bundle getArguments()
+android.test.InstrumentationTestRunner	method	public ClassLoader getLoader()
+android.test.InstrumentationTestRunner	method	public TestSuite getAllTests()
+android.test.InstrumentationTestRunner	method	public TestSuite getTestSuite()
+android.test.InstrumentationTestRunner	method	public void onCreate(Bundle bundle)
+android.test.InstrumentationTestRunner	method	public void onStart()
+android.test.InstrumentationTestRunner$StringResultPrinter	method	public StringResultPrinter(PrintStream printStream)
+android.test.InstrumentationTestRunner$StringResultPrinter	method	public synchronized void printResult(TestResult testResult, long j)
+android.test.InstrumentationTestRunner$SuiteAssignmentPrinter	field	private Bundle mTestResult;
+android.test.InstrumentationTestRunner$SuiteAssignmentPrinter	field	private boolean mTimingValid;
+android.test.InstrumentationTestRunner$SuiteAssignmentPrinter	field	private long mEndTime;
+android.test.InstrumentationTestRunner$SuiteAssignmentPrinter	field	private long mStartTime;
+android.test.InstrumentationTestRunner$SuiteAssignmentPrinter	method	public SuiteAssignmentPrinter()
+android.test.InstrumentationTestRunner$SuiteAssignmentPrinter	method	public void addError(Test test, Throwable th)
+android.test.InstrumentationTestRunner$SuiteAssignmentPrinter	method	public void addFailure(Test test, junit.framework.AssertionFailedError assertionFailedError)
+android.test.InstrumentationTestRunner$SuiteAssignmentPrinter	method	public void endTest(Test test)
+android.test.InstrumentationTestRunner$SuiteAssignmentPrinter	method	public void startTest(Test test)
+android.test.InstrumentationTestRunner$WatcherResultPrinter	field	private final Bundle mResultTemplate;
+android.test.InstrumentationTestRunner$WatcherResultPrinter	method	public WatcherResultPrinter(int i)
+android.test.InstrumentationTestRunner$WatcherResultPrinter	method	public void addError(Test test, Throwable th)
+android.test.InstrumentationTestRunner$WatcherResultPrinter	method	public void addFailure(Test test, junit.framework.AssertionFailedError assertionFailedError)
+android.test.InstrumentationTestRunner$WatcherResultPrinter	method	public void endTest(Test test)
+android.test.InstrumentationTestRunner$WatcherResultPrinter	method	public void startTest(Test test)
+android.test.IsolatedContext	field	private ContentResolver mResolver;
+android.test.IsolatedContext	field	private List<Intent> mBroadcastIntents;
+android.test.IsolatedContext	field	private final AccountManager mMockAccountManager;
+android.test.IsolatedContext	method	public ContentResolver getContentResolver()
+android.test.IsolatedContext	method	public File getFilesDir()
+android.test.IsolatedContext	method	public Intent registerReceiver(BroadcastReceiver broadcastReceiver, IntentFilter intentFilter)
+android.test.IsolatedContext	method	public IsolatedContext(ContentResolver contentResolver, Context context)
+android.test.IsolatedContext	method	public List<Intent> getAndClearBroadcastIntents()
+android.test.IsolatedContext	method	public Object getSystemService(String str)
+android.test.IsolatedContext	method	public boolean bindIsolatedService(Intent intent, int i, String str, Executor executor, ServiceConnection serviceConnection)
+android.test.IsolatedContext	method	public boolean bindService(Intent intent, ServiceConnection serviceConnection, int i)
+android.test.IsolatedContext	method	public boolean bindService(Intent intent, int i, Executor executor, ServiceConnection serviceConnection)
+android.test.IsolatedContext	method	public int checkUriPermission(Uri uri, String str, String str2, int i, int i2, int i3)
+android.test.IsolatedContext	method	public int checkUriPermission(Uri uri, int i, int i2, int i3)
+android.test.IsolatedContext	method	public void sendBroadcast(Intent intent)
+android.test.IsolatedContext	method	public void sendOrderedBroadcast(Intent intent, String str)
+android.test.IsolatedContext	method	public void unregisterReceiver(BroadcastReceiver broadcastReceiver)
+android.test.LaunchPerformanceBase	field	protected Bundle mResults;
+android.test.LaunchPerformanceBase	field	protected Intent mIntent;
+android.test.LaunchPerformanceBase	field	public static final String LOG_TAG;
+android.test.LaunchPerformanceBase	method	protected void LaunchApp()
+android.test.LaunchPerformanceBase	method	public LaunchPerformanceBase()
+android.test.LoaderTestCase	method	public <T> T getLoaderResultSynchronously(final Loader<T> loader)
+android.test.MoreAsserts	method	private MoreAsserts()
+android.test.MoreAsserts	method	private static Matcher getMatcher(String str, String str2)
+android.test.MoreAsserts	method	private static boolean equal(Object obj, Object obj2)
+android.test.MoreAsserts	method	private static void failContains(String str, String str2, String str3)
+android.test.MoreAsserts	method	private static void failEmpty(String str)
+android.test.MoreAsserts	method	private static void failEqual(String str, Object obj)
+android.test.MoreAsserts	method	private static void failMatch(String str, String str2, String str3)
+android.test.MoreAsserts	method	private static void failNotContains(String str, String str2, String str3)
+android.test.MoreAsserts	method	private static void failNotEmpty(String str, String str2)
+android.test.MoreAsserts	method	private static void failNotMatches(String str, String str2, String str3)
+android.test.MoreAsserts	method	private static void failWithMessage(String str, String str2)
+android.test.MoreAsserts	method	private static void failWrongElement(String str, int i, Object obj, Object obj2)
+android.test.MoreAsserts	method	private static void failWrongLength(String str, int i, int i2)
+android.test.MoreAsserts	method	public static MatchResult assertContainsRegex(String str, String str2)
+android.test.MoreAsserts	method	public static MatchResult assertContainsRegex(String str, String str2, String str3)
+android.test.MoreAsserts	method	public static MatchResult assertMatchesRegex(String str, String str2)
+android.test.MoreAsserts	method	public static MatchResult assertMatchesRegex(String str, String str2, String str3)
+android.test.MoreAsserts	method	public static void assertAssignableFrom(Class<?> cls, Class<?> cls2)
+android.test.MoreAsserts	method	public static void assertAssignableFrom(Class<?> cls, Object obj)
+android.test.MoreAsserts	method	public static void assertContentsInAnyOrder(Iterable<?> iterable, Object... objArr)
+android.test.MoreAsserts	method	public static void assertContentsInAnyOrder(String str, Iterable<?> iterable, Object... objArr)
+android.test.MoreAsserts	method	public static void assertContentsInOrder(Iterable<?> iterable, Object... objArr)
+android.test.MoreAsserts	method	public static void assertContentsInOrder(String str, Iterable<?> iterable, Object... objArr)
+android.test.MoreAsserts	method	public static void assertEmpty(Iterable<?> iterable)
+android.test.MoreAsserts	method	public static void assertEmpty(Map<?, ?> map)
+android.test.MoreAsserts	method	public static void assertEmpty(String str, Iterable<?> iterable)
+android.test.MoreAsserts	method	public static void assertEmpty(String str, Map<?, ?> map)
+android.test.MoreAsserts	method	public static void assertEquals(Object[] objArr, Object[] objArr2)
+android.test.MoreAsserts	method	public static void assertEquals(Set<? extends Object> set, Set<? extends Object> set2)
+android.test.MoreAsserts	method	public static void assertEquals(String str, Object[] objArr, Object[] objArr2)
+android.test.MoreAsserts	method	public static void assertEquals(String str, Set<? extends Object> set, Set<? extends Object> set2)
+android.test.MoreAsserts	method	public static void assertEquals(String str, byte[] bArr, byte[] bArr2)
+android.test.MoreAsserts	method	public static void assertEquals(String str, double[] dArr, double[] dArr2)
+android.test.MoreAsserts	method	public static void assertEquals(String str, int[] iArr, int[] iArr2)
+android.test.MoreAsserts	method	public static void assertEquals(String str, long[] jArr, long[] jArr2)
+android.test.MoreAsserts	method	public static void assertEquals(byte[] bArr, byte[] bArr2)
+android.test.MoreAsserts	method	public static void assertEquals(double[] dArr, double[] dArr2)
+android.test.MoreAsserts	method	public static void assertEquals(int[] iArr, int[] iArr2)
+android.test.MoreAsserts	method	public static void assertEquals(long[] jArr, long[] jArr2)
+android.test.MoreAsserts	method	public static void assertNotContainsRegex(String str, String str2)
+android.test.MoreAsserts	method	public static void assertNotContainsRegex(String str, String str2, String str3)
+android.test.MoreAsserts	method	public static void assertNotEmpty(Iterable<?> iterable)
+android.test.MoreAsserts	method	public static void assertNotEmpty(Map<?, ?> map)
+android.test.MoreAsserts	method	public static void assertNotEmpty(String str, Iterable<?> iterable)
+android.test.MoreAsserts	method	public static void assertNotEmpty(String str, Map<?, ?> map)
+android.test.MoreAsserts	method	public static void assertNotEqual(Object obj, Object obj2)
+android.test.MoreAsserts	method	public static void assertNotEqual(String str, Object obj, Object obj2)
+android.test.MoreAsserts	method	public static void assertNotMatchesRegex(String str, String str2)
+android.test.MoreAsserts	method	public static void assertNotMatchesRegex(String str, String str2, String str3)
+android.test.MoreAsserts	method	public static void checkEqualsAndHashCodeMethods(Object obj, Object obj2, boolean z)
+android.test.MoreAsserts	method	public static void checkEqualsAndHashCodeMethods(String str, Object obj, Object obj2, boolean z)
+android.test.NoExecTestResult	method	protected void run(TestCase testCase)
+android.test.ProviderTestCase	field	private IsolatedContext mProviderContext;
+android.test.ProviderTestCase	field	private MockContentResolver mResolver;
+android.test.ProviderTestCase	field	private T mProvider;
+android.test.ProviderTestCase	method	protected void setUp() throws Exception
+android.test.ProviderTestCase	method	protected void tearDown() throws Exception
+android.test.ProviderTestCase	method	public IsolatedContext getMockContext()
+android.test.ProviderTestCase	method	public MockContentResolver getMockContentResolver()
+android.test.ProviderTestCase	method	public ProviderTestCase(Class<T> cls, String str)
+android.test.ProviderTestCase	method	public T getProvider()
+android.test.ProviderTestCase	method	public static <T extends ContentProvider> ContentResolver newResolverWithContentProviderFromSql(Context context, Class<T> cls, String str, String str2, int i, String str3) throws IllegalAccessException, InstantiationException
+android.test.ProviderTestCase2	field	private IsolatedContext mProviderContext;
+android.test.ProviderTestCase2	field	private MockContentResolver mResolver;
+android.test.ProviderTestCase2	field	private T mProvider;
+android.test.ProviderTestCase2	method	protected void setUp() throws Exception
+android.test.ProviderTestCase2	method	protected void tearDown() throws Exception
+android.test.ProviderTestCase2	method	public IsolatedContext getMockContext()
+android.test.ProviderTestCase2	method	public MockContentResolver getMockContentResolver()
+android.test.ProviderTestCase2	method	public ProviderTestCase2(Class<T> cls, String str)
+android.test.ProviderTestCase2	method	public T getProvider()
+android.test.ProviderTestCase2	method	public static <T extends ContentProvider> ContentResolver newResolverWithContentProviderFromSql(Context context, String str, Class<T> cls, String str2, String str3, int i, String str4) throws IllegalAccessException, InstantiationException
+android.test.ProviderTestCase2	method	static <T extends ContentProvider> T createProviderForTest(Context context, Class<T> cls, String str) throws IllegalAccessException, InstantiationException
+android.test.ProviderTestCase2$MockContext2	method	private MockContext2()
+android.test.ProviderTestCase2$MockContext2	method	public Context getApplicationContext()
+android.test.ProviderTestCase2$MockContext2	method	public File getDir(String str, int i)
+android.test.ProviderTestCase2$MockContext2	method	public Resources getResources()
+android.test.RenamingDelegatingContext	field	private Context mFileContext;
+android.test.RenamingDelegatingContext	field	private File mCacheDir;
+android.test.RenamingDelegatingContext	field	private Set<String> mDatabaseNames;
+android.test.RenamingDelegatingContext	field	private Set<String> mFileNames;
+android.test.RenamingDelegatingContext	field	private String mFilePrefix;
+android.test.RenamingDelegatingContext	field	private final Object mSync;
+android.test.RenamingDelegatingContext	method	private String renamedFileName(String str)
+android.test.RenamingDelegatingContext	method	public File getCacheDir()
+android.test.RenamingDelegatingContext	method	public File getDatabasePath(String str)
+android.test.RenamingDelegatingContext	method	public File getFileStreamPath(String str)
+android.test.RenamingDelegatingContext	method	public FileInputStream openFileInput(String str) throws FileNotFoundException
+android.test.RenamingDelegatingContext	method	public FileOutputStream openFileOutput(String str, int i) throws FileNotFoundException
+android.test.RenamingDelegatingContext	method	public RenamingDelegatingContext(Context context, Context context2, String str)
+android.test.RenamingDelegatingContext	method	public RenamingDelegatingContext(Context context, String str)
+android.test.RenamingDelegatingContext	method	public SQLiteDatabase openOrCreateDatabase(String str, int i, SQLiteDatabase.CursorFactory cursorFactory)
+android.test.RenamingDelegatingContext	method	public SQLiteDatabase openOrCreateDatabase(String str, int i, SQLiteDatabase.CursorFactory cursorFactory, DatabaseErrorHandler databaseErrorHandler)
+android.test.RenamingDelegatingContext	method	public String getDatabasePrefix()
+android.test.RenamingDelegatingContext	method	public String[] databaseList()
+android.test.RenamingDelegatingContext	method	public String[] fileList()
+android.test.RenamingDelegatingContext	method	public boolean deleteDatabase(String str)
+android.test.RenamingDelegatingContext	method	public boolean deleteFile(String str)
+android.test.RenamingDelegatingContext	method	public static <T extends ContentProvider> T providerWithRenamedContext(Class<T> cls, Context context, String str) throws IllegalAccessException, InstantiationException
+android.test.RenamingDelegatingContext	method	public static <T extends ContentProvider> T providerWithRenamedContext(Class<T> cls, Context context, String str, boolean z) throws IllegalAccessException, InstantiationException
+android.test.RenamingDelegatingContext	method	public void makeExistingFilesAndDbsAccessible()
+android.test.ServiceTestCase	field	private Application mApplication;
+android.test.ServiceTestCase	field	private Context mSystemContext;
+android.test.ServiceTestCase	field	private Intent mServiceIntent;
+android.test.ServiceTestCase	field	private T mService;
+android.test.ServiceTestCase	field	private boolean mServiceAttached;
+android.test.ServiceTestCase	field	private boolean mServiceBound;
+android.test.ServiceTestCase	field	private boolean mServiceCreated;
+android.test.ServiceTestCase	field	private boolean mServiceStarted;
+android.test.ServiceTestCase	field	private int mServiceId;
+android.test.ServiceTestCase	method	protected IBinder bindService(Intent intent)
+android.test.ServiceTestCase	method	protected void setUp() throws Exception
+android.test.ServiceTestCase	method	protected void setupService()
+android.test.ServiceTestCase	method	protected void shutdownService()
+android.test.ServiceTestCase	method	protected void startService(Intent intent)
+android.test.ServiceTestCase	method	protected void tearDown() throws Exception
+android.test.ServiceTestCase	method	public Application getApplication()
+android.test.ServiceTestCase	method	public Context getSystemContext()
+android.test.ServiceTestCase	method	public ServiceTestCase(Class<T> cls)
+android.test.ServiceTestCase	method	public T getService()
+android.test.ServiceTestCase	method	public void setApplication(Application application)
+android.test.ServiceTestCase	method	public void testServiceTestCaseSetUpProperly() throws Exception
+android.test.SimpleCache	field	private Map<K, V> map;
+android.test.SimpleCache	method	final V get(K k)
+android.test.SimpleCache	method	protected abstract V load(K k);
+android.test.SingleLaunchActivityTestCase	field	private static Activity sActivity;
+android.test.SingleLaunchActivityTestCase	field	private static boolean sActivityLaunchedFlag;
+android.test.SingleLaunchActivityTestCase	field	private static int sTestCaseCounter;
+android.test.SingleLaunchActivityTestCase	method	protected void setUp() throws Exception
+android.test.SingleLaunchActivityTestCase	method	protected void tearDown() throws Exception
+android.test.SingleLaunchActivityTestCase	method	public SingleLaunchActivityTestCase(String str, Class<T> cls)
+android.test.SingleLaunchActivityTestCase	method	public T getActivity()
+android.test.SingleLaunchActivityTestCase	method	public void testActivityTestCaseSetUpProperly() throws Exception
+android.test.SyncBaseInstrumentation	field	private Context mTargetContext;
+android.test.SyncBaseInstrumentation	field	private static final int MAX_TIME_FOR_SYNC_IN_MINS;
+android.test.SyncBaseInstrumentation	method	protected void cancelSyncsandDisableAutoSync()
+android.test.SyncBaseInstrumentation	method	protected void setUp() throws Exception
+android.test.SyncBaseInstrumentation	method	protected void syncProvider(Uri uri, String str, String str2) throws Exception
+android.test.TestCaseUtil	method	private TestCaseUtil()
+android.test.TestCaseUtil	method	private static List<? extends Test> getTests(Test test, boolean z, Set<Class<?>> set)
+android.test.TestCaseUtil	method	public static List<? extends Test> getTests(Test test, boolean z)
+android.test.TestCaseUtil	method	static String getTestName(Test test)
+android.test.TestCaseUtil	method	static Test invokeSuiteMethodIfPossible(Class cls, Set<Class<?>> set)
+android.test.TestPrinter	field	private Set<String> mFailedTests;
+android.test.TestPrinter	field	private String mTag;
+android.test.TestPrinter	field	private boolean mOnlyFailures;
+android.test.TestPrinter	method	private void failed(String str, Throwable th)
+android.test.TestPrinter	method	private void failed(Test test, Throwable th)
+android.test.TestPrinter	method	private void finished(String str)
+android.test.TestPrinter	method	private void passed(String str)
+android.test.TestPrinter	method	private void started(String str)
+android.test.TestPrinter	method	public void addError(Test test, Throwable th)
+android.test.TestPrinter	method	public void addFailure(Test test, junit.framework.AssertionFailedError assertionFailedError)
+android.test.TestPrinter	method	public void endTest(Test test)
+android.test.TestPrinter	method	public void startTest(Test test)
+android.test.TouchUtils	method	private static Size getSizeExcludingNavigationBarAndCutout(WindowMetrics windowMetrics)
+android.test.TouchUtils	method	private static void getStartLocation(View view, int i, int[] iArr)
+android.test.TouchUtils	method	public static int dragViewBy(ActivityInstrumentationTestCase activityInstrumentationTestCase, View view, int i, int i2, int i3)
+android.test.TouchUtils	method	public static int dragViewBy(InstrumentationTestCase instrumentationTestCase, View view, int i, int i2, int i3)
+android.test.TouchUtils	method	public static int dragViewTo(ActivityInstrumentationTestCase activityInstrumentationTestCase, View view, int i, int i2, int i3)
+android.test.TouchUtils	method	public static int dragViewTo(InstrumentationTestCase instrumentationTestCase, View view, int i, int i2, int i3)
+android.test.TouchUtils	method	public static int dragViewToX(ActivityInstrumentationTestCase activityInstrumentationTestCase, View view, int i, int i2)
+android.test.TouchUtils	method	public static int dragViewToX(InstrumentationTestCase instrumentationTestCase, View view, int i, int i2)
+android.test.TouchUtils	method	public static int dragViewToY(ActivityInstrumentationTestCase activityInstrumentationTestCase, View view, int i, int i2)
+android.test.TouchUtils	method	public static int dragViewToY(InstrumentationTestCase instrumentationTestCase, View view, int i, int i2)
+android.test.TouchUtils	method	public static void clickView(InstrumentationTestCase instrumentationTestCase, View view)
+android.test.TouchUtils	method	public static void drag(ActivityInstrumentationTestCase activityInstrumentationTestCase, float f, float f2, float f3, float f4, int i)
+android.test.TouchUtils	method	public static void drag(InstrumentationTestCase instrumentationTestCase, float f, float f2, float f3, float f4, int i)
+android.test.TouchUtils	method	public static void dragQuarterScreenDown(ActivityInstrumentationTestCase activityInstrumentationTestCase)
+android.test.TouchUtils	method	public static void dragQuarterScreenDown(InstrumentationTestCase instrumentationTestCase, Activity activity)
+android.test.TouchUtils	method	public static void dragQuarterScreenUp(ActivityInstrumentationTestCase activityInstrumentationTestCase)
+android.test.TouchUtils	method	public static void dragQuarterScreenUp(InstrumentationTestCase instrumentationTestCase, Activity activity)
+android.test.TouchUtils	method	public static void dragViewToBottom(ActivityInstrumentationTestCase activityInstrumentationTestCase, View view)
+android.test.TouchUtils	method	public static void dragViewToBottom(ActivityInstrumentationTestCase activityInstrumentationTestCase, View view, int i)
+android.test.TouchUtils	method	public static void dragViewToBottom(InstrumentationTestCase instrumentationTestCase, Activity activity, View view)
+android.test.TouchUtils	method	public static void dragViewToBottom(InstrumentationTestCase instrumentationTestCase, Activity activity, View view, int i)
+android.test.TouchUtils	method	public static void dragViewToTop(ActivityInstrumentationTestCase activityInstrumentationTestCase, View view)
+android.test.TouchUtils	method	public static void dragViewToTop(ActivityInstrumentationTestCase activityInstrumentationTestCase, View view, int i)
+android.test.TouchUtils	method	public static void dragViewToTop(InstrumentationTestCase instrumentationTestCase, View view)
+android.test.TouchUtils	method	public static void dragViewToTop(InstrumentationTestCase instrumentationTestCase, View view, int i)
+android.test.TouchUtils	method	public static void longClickView(ActivityInstrumentationTestCase activityInstrumentationTestCase, View view)
+android.test.TouchUtils	method	public static void longClickView(InstrumentationTestCase instrumentationTestCase, View view)
+android.test.TouchUtils	method	public static void scrollToBottom(ActivityInstrumentationTestCase activityInstrumentationTestCase, ViewGroup viewGroup)
+android.test.TouchUtils	method	public static void scrollToBottom(InstrumentationTestCase instrumentationTestCase, Activity activity, ViewGroup viewGroup)
+android.test.TouchUtils	method	public static void scrollToTop(ActivityInstrumentationTestCase activityInstrumentationTestCase, ViewGroup viewGroup)
+android.test.TouchUtils	method	public static void scrollToTop(InstrumentationTestCase instrumentationTestCase, Activity activity, ViewGroup viewGroup)
+android.test.TouchUtils	method	public static void tapView(InstrumentationTestCase instrumentationTestCase, View view)
+android.test.TouchUtils	method	public static void touchAndCancelView(InstrumentationTestCase instrumentationTestCase, View view)
+android.test.TouchUtils$ViewStateSnapshot	field	final View mFirst;
+android.test.TouchUtils$ViewStateSnapshot	field	final View mLast;
+android.test.TouchUtils$ViewStateSnapshot	field	final int mChildCount;
+android.test.TouchUtils$ViewStateSnapshot	field	final int mFirstTop;
+android.test.TouchUtils$ViewStateSnapshot	field	final int mLastBottom;
+android.test.TouchUtils$ViewStateSnapshot	method	private ViewStateSnapshot(ViewGroup viewGroup)
+android.test.TouchUtils$ViewStateSnapshot	method	public boolean equals(Object obj)
+android.test.TouchUtils$ViewStateSnapshot	method	public int hashCode()
+android.test.ViewAsserts	method	private ViewAsserts()
+android.test.ViewAsserts	method	public static void assertBaselineAligned(View view, View view2)
+android.test.ViewAsserts	method	public static void assertBottomAligned(View view, View view2)
+android.test.ViewAsserts	method	public static void assertBottomAligned(View view, View view2, int i)
+android.test.ViewAsserts	method	public static void assertGroupContains(ViewGroup viewGroup, View view)
+android.test.ViewAsserts	method	public static void assertGroupIntegrity(ViewGroup viewGroup)
+android.test.ViewAsserts	method	public static void assertGroupNotContains(ViewGroup viewGroup, View view)
+android.test.ViewAsserts	method	public static void assertHasScreenCoordinates(View view, View view2, int i, int i2)
+android.test.ViewAsserts	method	public static void assertHorizontalCenterAligned(View view, View view2)
+android.test.ViewAsserts	method	public static void assertLeftAligned(View view, View view2)
+android.test.ViewAsserts	method	public static void assertLeftAligned(View view, View view2, int i)
+android.test.ViewAsserts	method	public static void assertOffScreenAbove(View view, View view2)
+android.test.ViewAsserts	method	public static void assertOffScreenBelow(View view, View view2)
+android.test.ViewAsserts	method	public static void assertOnScreen(View view, View view2)
+android.test.ViewAsserts	method	public static void assertRightAligned(View view, View view2)
+android.test.ViewAsserts	method	public static void assertRightAligned(View view, View view2, int i)
+android.test.ViewAsserts	method	public static void assertTopAligned(View view, View view2)
+android.test.ViewAsserts	method	public static void assertTopAligned(View view, View view2, int i)
+android.test.ViewAsserts	method	public static void assertVerticalCenterAligned(View view, View view2)
+android.test.suitebuilder.AssignableFrom	field	private final Class<?> root;
+android.test.suitebuilder.AssignableFrom	method	public boolean apply(TestMethod testMethod)
+android.test.suitebuilder.SmokeTestSuiteBuilder	method	public SmokeTestSuiteBuilder(Class cls)
+android.test.suitebuilder.SmokeTestSuiteBuilder	method	public SmokeTestSuiteBuilder(String str, ClassLoader classLoader)
+android.test.suitebuilder.TestGrouping	field	private final ClassLoader classLoader;
+android.test.suitebuilder.TestGrouping	field	private final SortedSet<Class<? extends TestCase>> testCaseClasses;
+android.test.suitebuilder.TestGrouping	field	private static final String LOG_TAG;
+android.test.suitebuilder.TestGrouping	field	static final Comparator<Class<? extends TestCase>> SORT_BY_FULLY_QUALIFIED_NAME;
+android.test.suitebuilder.TestGrouping	field	static final Comparator<Class<? extends TestCase>> SORT_BY_SIMPLE_NAME;
+android.test.suitebuilder.TestGrouping	method	private <T> List<T> select(Collection<T> collection, Predicate<T> predicate)
+android.test.suitebuilder.TestGrouping	method	private List<Class<? extends TestCase>> selectTestClasses(Set<Class<?>> set)
+android.test.suitebuilder.TestGrouping	method	private List<Class<? extends TestCase>> testCaseClassesInPackage(String str)
+android.test.suitebuilder.TestGrouping	method	private List<Method> getTestMethods(Class<? extends TestCase> cls)
+android.test.suitebuilder.TestGrouping	method	public List<TestMethod> getTests()
+android.test.suitebuilder.TestGrouping	method	public boolean equals(Object obj)
+android.test.suitebuilder.TestGrouping	method	public int hashCode()
+android.test.suitebuilder.TestGrouping$TestMethodPredicate	method	private TestMethodPredicate()
+android.test.suitebuilder.TestGrouping$TestMethodPredicate	method	public boolean apply(Method method)
+android.test.suitebuilder.TestMethod	field	private final Class<? extends TestCase> enclosingClass;
+android.test.suitebuilder.TestMethod	field	private final String enclosingClassname;
+android.test.suitebuilder.TestMethod	field	private final String testMethodName;
+android.test.suitebuilder.TestMethod	method	private TestCase instantiateTest(Class cls, String str) throws IllegalAccessException, InstantiationException, InvocationTargetException
+android.test.suitebuilder.TestMethod	method	private boolean noargsConstructor(Class[] clsArr)
+android.test.suitebuilder.TestMethod	method	private boolean singleStringConstructor(Class[] clsArr)
+android.test.suitebuilder.TestMethod	method	public <T extends Annotation> T getAnnotation(Class<T> cls)
+android.test.suitebuilder.TestMethod	method	public Class<? extends TestCase> getEnclosingClass()
+android.test.suitebuilder.TestMethod	method	public String getEnclosingClassname()
+android.test.suitebuilder.TestMethod	method	public String getName()
+android.test.suitebuilder.TestMethod	method	public String toString()
+android.test.suitebuilder.TestMethod	method	public TestCase createTest() throws IllegalAccessException, InstantiationException, InvocationTargetException
+android.test.suitebuilder.TestMethod	method	public TestMethod(Method method, Class<? extends TestCase> cls)
+android.test.suitebuilder.TestMethod	method	public TestMethod(String str, Class<? extends TestCase> cls)
+android.test.suitebuilder.TestMethod	method	public TestMethod(TestCase testCase)
+android.test.suitebuilder.TestMethod	method	public boolean equals(Object obj)
+android.test.suitebuilder.TestMethod	method	public int hashCode()
+android.test.suitebuilder.TestPredicates	field	static final Predicate<TestMethod> REJECT_INSTRUMENTATION;
+android.test.suitebuilder.TestPredicates	field	static final Predicate<TestMethod> REJECT_SUPPRESSED;
+android.test.suitebuilder.TestPredicates	field	static final Predicate<TestMethod> SELECT_SMOKE;
+android.test.suitebuilder.TestPredicates	method	public static <T> Predicate<T> not(Predicate<? super T> predicate)
+android.test.suitebuilder.TestPredicates	method	public static Predicate<TestMethod> hasAnnotation(Class<? extends Annotation> cls)
+android.test.suitebuilder.TestPredicates$HasAnnotation	field	private final Class<? extends Annotation> annotationClass;
+android.test.suitebuilder.TestPredicates$HasAnnotation	method	private HasAnnotation(Class<? extends Annotation> cls)
+android.test.suitebuilder.TestPredicates$HasAnnotation	method	public boolean apply(TestMethod testMethod)
+android.test.suitebuilder.TestPredicates$NotPredicate	field	private final Predicate<? super T> predicate;
+android.test.suitebuilder.TestPredicates$NotPredicate	method	private NotPredicate(Predicate<? super T> predicate)
+android.test.suitebuilder.TestPredicates$NotPredicate	method	public boolean apply(T t)
+android.test.suitebuilder.TestSuiteBuilder	field	private List<TestCase> testCases;
+android.test.suitebuilder.TestSuiteBuilder	field	private String currentClassname;
+android.test.suitebuilder.TestSuiteBuilder	field	private String suiteName;
+android.test.suitebuilder.TestSuiteBuilder	field	private TestSuite rootSuite;
+android.test.suitebuilder.TestSuiteBuilder	field	private TestSuite suiteForCurrentClass;
+android.test.suitebuilder.TestSuiteBuilder	field	private final Set<Predicate<TestMethod>> predicates;
+android.test.suitebuilder.TestSuiteBuilder	field	private final TestGrouping testGrouping;
+android.test.suitebuilder.TestSuiteBuilder	method	private boolean satisfiesAllPredicates(TestMethod testMethod)
+android.test.suitebuilder.TestSuiteBuilder	method	private static String parsePackageNameFromClassName(String str)
+android.test.suitebuilder.TestSuiteBuilder	method	private void addSuiteIfNecessary(String str)
+android.test.suitebuilder.TestSuiteBuilder	method	private void addTest(Test test)
+android.test.suitebuilder.TestSuiteBuilder	method	private void addTest(TestMethod testMethod) throws Exception
+android.test.suitebuilder.TestSuiteBuilder	method	protected String getSuiteName()
+android.test.suitebuilder.TestSuiteBuilder	method	public TestSuiteBuilder addRequirements(List<Predicate<TestMethod>> list)
+android.test.suitebuilder.TestSuiteBuilder	method	public TestSuiteBuilder addTestClassByName(String str, String str2, Context context)
+android.test.suitebuilder.TestSuiteBuilder	method	public TestSuiteBuilder addTestSuite(TestSuite testSuite)
+android.test.suitebuilder.TestSuiteBuilder	method	public TestSuiteBuilder excludePackages(String... strArr)
+android.test.suitebuilder.TestSuiteBuilder	method	public TestSuiteBuilder includePackages(String... strArr)
+android.test.suitebuilder.TestSuiteBuilder	method	public TestSuiteBuilder named(String str)
+android.test.suitebuilder.TestSuiteBuilder	method	public TestSuiteBuilder(Class cls)
+android.test.suitebuilder.TestSuiteBuilder	method	public TestSuiteBuilder(String str, ClassLoader classLoader)
+android.test.suitebuilder.TestSuiteBuilder	method	public final TestSuite build()
+android.test.suitebuilder.TestSuiteBuilder	method	public final TestSuiteBuilder addRequirements(Predicate<TestMethod>... predicateArr)
+android.test.suitebuilder.TestSuiteBuilder	method	public final TestSuiteBuilder includeAllPackagesUnderHere()
+android.test.suitebuilder.TestSuiteBuilder$FailedToCreateTests	field	private final Exception exception;
+android.test.suitebuilder.TestSuiteBuilder$FailedToCreateTests	method	public FailedToCreateTests(Exception exc)
+android.test.suitebuilder.TestSuiteBuilder$FailedToCreateTests	method	public void testSuiteConstructionFailed()
+android.test.suitebuilder.UnitTestSuiteBuilder	method	public UnitTestSuiteBuilder(Class cls)
+android.test.suitebuilder.UnitTestSuiteBuilder	method	public UnitTestSuiteBuilder(String str, ClassLoader classLoader)
+junit.runner.BaseTestRunner	field	private static Properties fPreferences;
+junit.runner.BaseTestRunner	field	public static final String SUITE_METHODNAME;
+junit.runner.BaseTestRunner	field	static boolean fgFilterStack;
+junit.runner.BaseTestRunner	field	static int fgMaxMessageLength;
+junit.runner.BaseTestRunner	method	private static File getPreferencesFile()
+junit.runner.BaseTestRunner	method	private static void readPreferences()
+junit.runner.BaseTestRunner	method	protected Class<?> loadSuiteClass(String str) throws ClassNotFoundException
+junit.runner.BaseTestRunner	method	protected String processArguments(String[] strArr)
+junit.runner.BaseTestRunner	method	protected abstract void runFailed(String str);
+junit.runner.BaseTestRunner	method	protected boolean useReloadingTestSuiteLoader()
+junit.runner.BaseTestRunner	method	protected static Properties getPreferences()
+junit.runner.BaseTestRunner	method	protected static boolean showStackRaw()
+junit.runner.BaseTestRunner	method	protected static void setPreferences(Properties properties)
+junit.runner.BaseTestRunner	method	protected void clearStatus()
+junit.runner.BaseTestRunner	method	public String elapsedTimeAsString(long j)
+junit.runner.BaseTestRunner	method	public String extractClassName(String str)
+junit.runner.BaseTestRunner	method	public Test getTest(String str)
+junit.runner.BaseTestRunner	method	public TestSuiteLoader getLoader()
+junit.runner.BaseTestRunner	method	public abstract void testEnded(String str);
+junit.runner.BaseTestRunner	method	public abstract void testFailed(int i, Test test, Throwable th);
+junit.runner.BaseTestRunner	method	public abstract void testStarted(String str);
+junit.runner.BaseTestRunner	method	public static String getFilteredTrace(String str)
+junit.runner.BaseTestRunner	method	public static String getFilteredTrace(Throwable th)
+junit.runner.BaseTestRunner	method	public static String getPreference(String str)
+junit.runner.BaseTestRunner	method	public static String truncate(String str)
+junit.runner.BaseTestRunner	method	public static boolean inVAJava()
+junit.runner.BaseTestRunner	method	public static int getPreference(String str, int i)
+junit.runner.BaseTestRunner	method	public static void savePreferences() throws IOException
+junit.runner.BaseTestRunner	method	public synchronized void addError(Test test, Throwable th)
+junit.runner.BaseTestRunner	method	public synchronized void addFailure(Test test, AssertionFailedError assertionFailedError)
+junit.runner.BaseTestRunner	method	public synchronized void endTest(Test test)
+junit.runner.BaseTestRunner	method	public synchronized void startTest(Test test)
+junit.runner.BaseTestRunner	method	public void setLoading(boolean z)
+junit.runner.BaseTestRunner	method	public void setPreference(String str, String str2)
+junit.runner.BaseTestRunner	method	static boolean filterLine(String str)
+junit.runner.StandardTestSuiteLoader	method	public Class load(String str) throws ClassNotFoundException
+junit.runner.StandardTestSuiteLoader	method	public Class reload(Class cls) throws ClassNotFoundException
+junit.runner.TestRunListener	field	public static final int STATUS_ERROR;
+junit.runner.TestRunListener	field	public static final int STATUS_FAILURE;
+junit.runner.Version	method	private Version()
+junit.runner.Version	method	public static String id()
+junit.runner.Version	method	public static void main(String[] strArr)
+junit.textui.ResultPrinter	method	protected String elapsedTimeAsString(long j)
+junit.textui.ResultPrinter	method	protected void printDefectHeader(TestFailure testFailure, int i)
+junit.textui.ResultPrinter	method	protected void printDefectTrace(TestFailure testFailure)
+junit.textui.ResultPrinter	method	protected void printDefects(Enumeration<TestFailure> enumeration, int i, String str)
+junit.textui.ResultPrinter	method	protected void printErrors(TestResult testResult)
+junit.textui.ResultPrinter	method	protected void printFailures(TestResult testResult)
+junit.textui.ResultPrinter	method	protected void printFooter(TestResult testResult)
+junit.textui.ResultPrinter	method	protected void printHeader(long j)
+junit.textui.ResultPrinter	method	public PrintStream getWriter()
+junit.textui.ResultPrinter	method	public ResultPrinter(PrintStream printStream)
+junit.textui.ResultPrinter	method	public void addError(Test test, Throwable th)
+junit.textui.ResultPrinter	method	public void addFailure(Test test, AssertionFailedError assertionFailedError)
+junit.textui.ResultPrinter	method	public void endTest(Test test)
+junit.textui.ResultPrinter	method	public void printDefect(TestFailure testFailure, int i)
+junit.textui.ResultPrinter	method	public void startTest(Test test)
+junit.textui.ResultPrinter	method	synchronized void print(TestResult testResult, long j)
+junit.textui.TestRunner	field	private ResultPrinter fPrinter;
+junit.textui.TestRunner	field	public static final int EXCEPTION_EXIT;
+junit.textui.TestRunner	field	public static final int FAILURE_EXIT;
+junit.textui.TestRunner	field	public static final int SUCCESS_EXIT;
+junit.textui.TestRunner	method	protected TestResult createTestResult()
+junit.textui.TestRunner	method	protected TestResult runSingleMethod(String str, String str2, boolean z) throws Exception
+junit.textui.TestRunner	method	protected void pause(boolean z)
+junit.textui.TestRunner	method	protected void runFailed(String str)
+junit.textui.TestRunner	method	public TestResult doRun(Test test)
+junit.textui.TestRunner	method	public TestResult doRun(Test test, boolean z)
+junit.textui.TestRunner	method	public TestResult start(String[] strArr) throws Exception
+junit.textui.TestRunner	method	public TestRunner()
+junit.textui.TestRunner	method	public TestRunner(PrintStream printStream)
+junit.textui.TestRunner	method	public TestRunner(ResultPrinter resultPrinter)
+junit.textui.TestRunner	method	public static TestResult run(Test test)
+junit.textui.TestRunner	method	public static void main(String[] strArr)
+junit.textui.TestRunner	method	public static void run(Class<? extends TestCase> cls)
+junit.textui.TestRunner	method	public static void runAndWait(Test test)
+junit.textui.TestRunner	method	public void setPrinter(ResultPrinter resultPrinter)
+junit.textui.TestRunner	method	public void testEnded(String str)
+junit.textui.TestRunner	method	public void testFailed(int i, Test test, Throwable th)
+junit.textui.TestRunner	method	public void testStarted(String str)

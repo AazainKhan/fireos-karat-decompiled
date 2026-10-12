@@ -1,0 +1,51 @@
+class	kind	declaration
+com.android.protips.ProtipWidget	field	private AppWidgetManager mWidgetManager;
+com.android.protips.ProtipWidget	field	private CharSequence[] mTips;
+com.android.protips.ProtipWidget	field	private Context mContext;
+com.android.protips.ProtipWidget	field	private int mIconRes;
+com.android.protips.ProtipWidget	field	private int mMessage;
+com.android.protips.ProtipWidget	field	private int mTipSet;
+com.android.protips.ProtipWidget	field	private int[] mWidgetIds;
+com.android.protips.ProtipWidget	field	private static Handler mAsyncHandler;
+com.android.protips.ProtipWidget	field	private static final Pattern sDrawableRegex;
+com.android.protips.ProtipWidget	field	private static final Pattern sNewlineRegex;
+com.android.protips.ProtipWidget	method	private int getNextMessageIndex()
+com.android.protips.ProtipWidget	method	private void blink(int i)
+com.android.protips.ProtipWidget	method	private void refresh()
+com.android.protips.ProtipWidget	method	private void setIcon(int i)
+com.android.protips.ProtipWidget	method	private void setup(Context context)
+com.android.protips.ProtipWidget	method	public RemoteViews buildUpdate(Context context)
+com.android.protips.ProtipWidget	method	public void goodmorning()
+com.android.protips.ProtipWidget	method	public void onReceive(final Context context, final Intent intent)
+com.android.protips.R$array	field	public static final int tips2;
+com.android.protips.R$array	field	public static final int tips;
+com.android.protips.R$drawable	field	public static final int all_apps;
+com.android.protips.R$drawable	field	public static final int droid_widget;
+com.android.protips.R$drawable	field	public static final int droid_widget_focused;
+com.android.protips.R$drawable	field	public static final int droid_widget_normal;
+com.android.protips.R$drawable	field	public static final int droid_widget_pressed;
+com.android.protips.R$drawable	field	public static final int droidman_closed;
+com.android.protips.R$drawable	field	public static final int droidman_down_closed;
+com.android.protips.R$drawable	field	public static final int droidman_down_open;
+com.android.protips.R$drawable	field	public static final int droidman_open;
+com.android.protips.R$drawable	field	public static final int icon;
+com.android.protips.R$drawable	field	public static final int preview;
+com.android.protips.R$drawable	field	public static final int trash;
+com.android.protips.R$id	field	public static final int bugdroid;
+com.android.protips.R$id	field	public static final int tip_bubble;
+com.android.protips.R$id	field	public static final int tip_callout;
+com.android.protips.R$id	field	public static final int tip_footer;
+com.android.protips.R$id	field	public static final int tip_header;
+com.android.protips.R$id	field	public static final int tip_message;
+com.android.protips.R$id	field	public static final int widget;
+com.android.protips.R$layout	field	public static final int bubble;
+com.android.protips.R$layout	field	public static final int droid;
+com.android.protips.R$layout	field	public static final int widget;
+com.android.protips.R$string	field	public static final int pager_footer;
+com.android.protips.R$string	field	public static final int tts_pause;
+com.android.protips.R$string	field	public static final int widget_name;
+com.android.protips.R$style	field	public static final int TipText;
+com.android.protips.R$style	field	public static final int TipText_Footer;
+com.android.protips.R$style	field	public static final int TipText_Header;
+com.android.protips.R$style	field	public static final int TipText_Message;
+com.android.protips.R$xml	field	public static final int widget_build;

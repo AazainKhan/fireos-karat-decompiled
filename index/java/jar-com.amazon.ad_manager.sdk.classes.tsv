@@ -1,0 +1,875 @@
+kind	class	extends	implements
+@interface	com.amazon.admanager.com.google.gson.annotations.Expose		
+@interface	com.amazon.admanager.com.google.gson.annotations.JsonAdapter		
+@interface	com.amazon.admanager.com.google.gson.annotations.SerializedName		
+@interface	com.amazon.admanager.com.google.gson.annotations.Since		
+@interface	com.amazon.admanager.com.google.gson.annotations.Until		
+@interface	com.amazon.admanager.dagger.Binds		
+@interface	com.amazon.admanager.dagger.BindsInstance		
+@interface	com.amazon.admanager.dagger.BindsOptionalOf		
+@interface	com.amazon.admanager.dagger.Component		
+@interface	com.amazon.admanager.dagger.Component$Builder		
+@interface	com.amazon.admanager.dagger.Component$Factory		
+@interface	com.amazon.admanager.dagger.MapKey		
+@interface	com.amazon.admanager.dagger.Module		
+@interface	com.amazon.admanager.dagger.Provides		
+@interface	com.amazon.admanager.dagger.Reusable		
+@interface	com.amazon.admanager.dagger.Subcomponent		
+@interface	com.amazon.admanager.dagger.Subcomponent$Builder		
+@interface	com.amazon.admanager.dagger.Subcomponent$Factory		
+@interface	com.amazon.admanager.dagger.assisted.Assisted		
+@interface	com.amazon.admanager.dagger.assisted.AssistedFactory		
+@interface	com.amazon.admanager.dagger.assisted.AssistedInject		
+@interface	com.amazon.admanager.dagger.internal.Beta		
+@interface	com.amazon.admanager.dagger.internal.ComponentDefinitionType		
+@interface	com.amazon.admanager.dagger.internal.DaggerGenerated		
+@interface	com.amazon.admanager.dagger.internal.GwtIncompatible		
+@interface	com.amazon.admanager.dagger.internal.InjectedFieldSignature		
+@interface	com.amazon.admanager.dagger.internal.QualifierMetadata		
+@interface	com.amazon.admanager.dagger.internal.ScopeMetadata		
+@interface	com.amazon.admanager.dagger.multibindings.ClassKey		
+@interface	com.amazon.admanager.dagger.multibindings.ElementsIntoSet		
+@interface	com.amazon.admanager.dagger.multibindings.IntKey		
+@interface	com.amazon.admanager.dagger.multibindings.IntoMap		
+@interface	com.amazon.admanager.dagger.multibindings.IntoSet		
+@interface	com.amazon.admanager.dagger.multibindings.LongKey		
+@interface	com.amazon.admanager.dagger.multibindings.Multibinds		
+@interface	com.amazon.admanager.dagger.multibindings.StringKey		
+class	com.amazon.admanager.BuildConfig		
+class	com.amazon.admanager.attributes.DeviceAttributeContext		
+class	com.amazon.admanager.attributes.DeviceAttributeContext$DeviceAttributeContextBuilder		
+class	com.amazon.admanager.attributes.DeviceAttributeManager		
+class	com.amazon.admanager.attributes.DeviceAttributeManager_Factory		Factory<DeviceAttributeManager>
+class	com.amazon.admanager.attributes.internal.DeviceAttributesSerializer		JsonSerializer<DeviceAttributes>
+class	com.amazon.admanager.attributes.internal.contexts.AccountAttributesContext	AttributesContext	
+class	com.amazon.admanager.attributes.internal.contexts.AccountAttributesContext$AccountAttributesContextBuilder	AttributesContext.AttributesContextBuilder<C, B>	
+class	com.amazon.admanager.attributes.internal.contexts.AccountAttributesContext$AccountAttributesContextBuilderImpl	AccountAttributesContextBuilder<AccountAttributesContext, AccountAttributesContextBuilderImpl>	
+class	com.amazon.admanager.attributes.internal.contexts.AdvertisingAttributesContext	AttributesContext	
+class	com.amazon.admanager.attributes.internal.contexts.AdvertisingAttributesContext$AdvertisingAttributesContextBuilder	AttributesContext.AttributesContextBuilder<C, B>	
+class	com.amazon.admanager.attributes.internal.contexts.AdvertisingAttributesContext$AdvertisingAttributesContextBuilderImpl	AdvertisingAttributesContextBuilder<AdvertisingAttributesContext, AdvertisingAttributesContextBuilderImpl>	
+class	com.amazon.admanager.attributes.internal.contexts.AttributesContext		
+class	com.amazon.admanager.attributes.internal.contexts.AttributesContext$AttributesContextBuilder		
+class	com.amazon.admanager.attributes.internal.contexts.EmptyAttributesContext	AttributesContext	
+class	com.amazon.admanager.attributes.internal.contexts.EmptyAttributesContext$EmptyAttributesContextBuilder	AttributesContext.AttributesContextBuilder<C, B>	
+class	com.amazon.admanager.attributes.internal.contexts.EmptyAttributesContext$EmptyAttributesContextBuilderImpl	EmptyAttributesContextBuilder<EmptyAttributesContext, EmptyAttributesContextBuilderImpl>	
+class	com.amazon.admanager.attributes.internal.models.AccountAttributes	Attributes	
+class	com.amazon.admanager.attributes.internal.models.AccountAttributes$AccountAttributesBuilder	Attributes.AttributesBuilder<C, B>	
+class	com.amazon.admanager.attributes.internal.models.AccountAttributes$AccountAttributesBuilderImpl	AccountAttributesBuilder<AccountAttributes, AccountAttributesBuilderImpl>	
+class	com.amazon.admanager.attributes.internal.models.AdvertisingAttributes	Attributes	
+class	com.amazon.admanager.attributes.internal.models.AdvertisingAttributes$AdvertisingAttributesBuilder	Attributes.AttributesBuilder<C, B>	
+class	com.amazon.admanager.attributes.internal.models.AdvertisingAttributes$AdvertisingAttributesBuilderImpl	AdvertisingAttributesBuilder<AdvertisingAttributes, AdvertisingAttributesBuilderImpl>	
+class	com.amazon.admanager.attributes.internal.models.Attributes		
+class	com.amazon.admanager.attributes.internal.models.Attributes$AttributesBuilder		
+class	com.amazon.admanager.attributes.internal.models.DeviceAttributes		
+class	com.amazon.admanager.attributes.internal.models.DeviceAttributes$DeviceAttributesBuilder		
+class	com.amazon.admanager.attributes.internal.models.PartnerAttributes	Attributes	
+class	com.amazon.admanager.attributes.internal.models.PartnerAttributes$PartnerAttributesBuilder	Attributes.AttributesBuilder<C, B>	
+class	com.amazon.admanager.attributes.internal.models.PartnerAttributes$PartnerAttributesBuilderImpl	PartnerAttributesBuilder<PartnerAttributes, PartnerAttributesBuilderImpl>	
+class	com.amazon.admanager.attributes.internal.models.SimpleAttributes	Attributes	
+class	com.amazon.admanager.attributes.internal.models.SimpleAttributes$SimpleAttributesBuilder	Attributes.AttributesBuilder<C, B>	
+class	com.amazon.admanager.attributes.internal.models.SimpleAttributes$SimpleAttributesBuilderImpl	SimpleAttributesBuilder<SimpleAttributes, SimpleAttributesBuilderImpl>	
+class	com.amazon.admanager.attributes.internal.retrievers.AccountAttributesRetriever		AttributesRetriever<AccountAttributesContext,AccountAttributes>
+class	com.amazon.admanager.attributes.internal.retrievers.AccountAttributesRetriever_Factory		Factory<AccountAttributesRetriever>
+class	com.amazon.admanager.attributes.internal.retrievers.AdvertisingAttributesRetriever		AttributesRetriever<AdvertisingAttributesContext,AdvertisingAttributes>
+class	com.amazon.admanager.attributes.internal.retrievers.AdvertisingAttributesRetriever_Factory		Factory<AdvertisingAttributesRetriever>
+class	com.amazon.admanager.attributes.internal.retrievers.PartnerAttributesRetriever		AttributesRetriever<EmptyAttributesContext,PartnerAttributes>
+class	com.amazon.admanager.attributes.internal.retrievers.PartnerAttributesRetriever_Factory		Factory<PartnerAttributesRetriever>
+class	com.amazon.admanager.attributes.internal.retrievers.SimpleAttributesRetriever		AttributesRetriever<EmptyAttributesContext,SimpleAttributes>
+class	com.amazon.admanager.attributes.internal.retrievers.SimpleAttributesRetriever_Factory		Factory<SimpleAttributesRetriever>
+class	com.amazon.admanager.com.amazon.ion.BufferConfiguration		
+class	com.amazon.admanager.com.amazon.ion.BufferConfiguration$Builder		
+class	com.amazon.admanager.com.amazon.ion.ContainedValueException	IonException	
+class	com.amazon.admanager.com.amazon.ion.Decimal	BigDecimal	
+class	com.amazon.admanager.com.amazon.ion.Decimal$NegativeZero	Decimal	
+class	com.amazon.admanager.com.amazon.ion.IonBufferConfiguration	BufferConfiguration<IonBufferConfiguration>	
+class	com.amazon.admanager.com.amazon.ion.IonBufferConfiguration$Builder	BufferConfiguration.Builder<IonBufferConfiguration, Builder>	
+class	com.amazon.admanager.com.amazon.ion.IonException	RuntimeException	
+class	com.amazon.admanager.com.amazon.ion.NullValueException	IonException	
+class	com.amazon.admanager.com.amazon.ion.ReadOnlyValueException	IonException	
+class	com.amazon.admanager.com.amazon.ion.SubstituteSymbolTableException	IonException	
+class	com.amazon.admanager.com.amazon.ion.Timestamp		Cloneable,Comparable<Timestamp>
+class	com.amazon.admanager.com.amazon.ion.UnexpectedEofException	IonException	
+class	com.amazon.admanager.com.amazon.ion.UnknownSymbolException	IonException	
+class	com.amazon.admanager.com.amazon.ion.UnsupportedIonVersionException	IonException	
+class	com.amazon.admanager.com.amazon.ion.impl.AppendableFastAppendable		_Private_FastAppendable,Closeable,Flushable
+class	com.amazon.admanager.com.amazon.ion.impl.Base64Encoder		
+class	com.amazon.admanager.com.amazon.ion.impl.Base64Encoder$EL		
+class	com.amazon.admanager.com.amazon.ion.impl.Base64Encoder$TextStream	Reader	
+class	com.amazon.admanager.com.amazon.ion.impl.ImportLocation		
+class	com.amazon.admanager.com.amazon.ion.impl.IonBinary		
+class	com.amazon.admanager.com.amazon.ion.impl.IonReaderBinaryIncremental		IonReader,_Private_ReaderWriter
+class	com.amazon.admanager.com.amazon.ion.impl.IonReaderBinaryIncremental$AnnotationIterator		Iterator<String>
+class	com.amazon.admanager.com.amazon.ion.impl.IonReaderBinaryIncremental$ContainerInfo		
+class	com.amazon.admanager.com.amazon.ion.impl.IonReaderBinaryIncremental$LocalSymbolTableSnapshot		SymbolTable,SymbolTableAsStruct
+class	com.amazon.admanager.com.amazon.ion.impl.IonReaderBinaryIncremental$SymbolTokenImpl		_Private_SymbolToken
+class	com.amazon.admanager.com.amazon.ion.impl.IonReaderBinaryRawX		IonReader
+class	com.amazon.admanager.com.amazon.ion.impl.IonReaderBinarySystemX	IonReaderBinaryRawX	_Private_ReaderWriter
+class	com.amazon.admanager.com.amazon.ion.impl.IonReaderBinaryUserX	IonReaderBinarySystemX	_Private_ReaderWriter
+class	com.amazon.admanager.com.amazon.ion.impl.IonReaderBinaryUserX$ByteTransferReaderFacet		_Private_ByteTransferReader
+class	com.amazon.admanager.com.amazon.ion.impl.IonReaderBinaryUserX$RawValueSpanProviderFacet		RawValueSpanProvider
+class	com.amazon.admanager.com.amazon.ion.impl.IonReaderBinaryUserX$SeekableReaderFacet	SpanProviderFacet	SeekableReader
+class	com.amazon.admanager.com.amazon.ion.impl.IonReaderBinaryUserX$SpanProviderFacet		SpanProvider
+class	com.amazon.admanager.com.amazon.ion.impl.IonReaderLookaheadBuffer	ReaderLookaheadBufferBase	
+class	com.amazon.admanager.com.amazon.ion.impl.IonReaderLookaheadBuffer$Marker		
+class	com.amazon.admanager.com.amazon.ion.impl.IonReaderLookaheadBuffer$VarUInt		
+class	com.amazon.admanager.com.amazon.ion.impl.IonReaderTextRawTokensX		
+class	com.amazon.admanager.com.amazon.ion.impl.IonReaderTextRawX		IonTextReader
+class	com.amazon.admanager.com.amazon.ion.impl.IonReaderTextRawX$IonReaderTextParsingException	IonException	
+class	com.amazon.admanager.com.amazon.ion.impl.IonReaderTextSystemX	IonReaderTextRawX	_Private_ReaderWriter
+class	com.amazon.admanager.com.amazon.ion.impl.IonReaderTextTokenException	IonException	
+class	com.amazon.admanager.com.amazon.ion.impl.IonReaderTextUserX	IonReaderTextSystemX	_Private_ReaderWriter
+class	com.amazon.admanager.com.amazon.ion.impl.IonReaderTextUserX$SeekableReaderFacet	SpanProviderFacet	SeekableReader
+class	com.amazon.admanager.com.amazon.ion.impl.IonReaderTextUserX$SpanProviderFacet		SpanProvider
+class	com.amazon.admanager.com.amazon.ion.impl.IonReaderTreeSystem		IonReader,_Private_ReaderWriter
+class	com.amazon.admanager.com.amazon.ion.impl.IonReaderTreeSystem$Children		Iterator<IonValue>
+class	com.amazon.admanager.com.amazon.ion.impl.IonTokenConstsX		
+class	com.amazon.admanager.com.amazon.ion.impl.IonTypeID		
+class	com.amazon.admanager.com.amazon.ion.impl.IonUTF8		
+class	com.amazon.admanager.com.amazon.ion.impl.IonWriterSystem	_Private_IonWriterBase	
+class	com.amazon.admanager.com.amazon.ion.impl.IonWriterSystemText	IonWriterSystem	
+class	com.amazon.admanager.com.amazon.ion.impl.IonWriterSystemTextMarkup	IonWriterSystemText	
+class	com.amazon.admanager.com.amazon.ion.impl.IonWriterSystemTree	IonWriterSystem	
+class	com.amazon.admanager.com.amazon.ion.impl.IonWriterUser	_Private_IonWriterBase	_Private_IonWriter
+class	com.amazon.admanager.com.amazon.ion.impl.LocalSymbolTable		SymbolTable
+class	com.amazon.admanager.com.amazon.ion.impl.LocalSymbolTable$Factory		_Private_LocalSymbolTableFactory
+class	com.amazon.admanager.com.amazon.ion.impl.LocalSymbolTable$SymbolIterator		Iterator<String>
+class	com.amazon.admanager.com.amazon.ion.impl.LocalSymbolTableAsStruct	LocalSymbolTable	SymbolTableAsStruct
+class	com.amazon.admanager.com.amazon.ion.impl.LocalSymbolTableAsStruct$Factory		_Private_LocalSymbolTableFactory
+class	com.amazon.admanager.com.amazon.ion.impl.LocalSymbolTableImports		
+class	com.amazon.admanager.com.amazon.ion.impl.OutputStreamFastAppendable		_Private_FastAppendable,Closeable,Flushable
+class	com.amazon.admanager.com.amazon.ion.impl.ReaderLookaheadBufferBase		
+class	com.amazon.admanager.com.amazon.ion.impl.ResizingPipedInputStream	InputStream	
+class	com.amazon.admanager.com.amazon.ion.impl.SharedSymbolTable		SymbolTable
+class	com.amazon.admanager.com.amazon.ion.impl.SubstituteSymbolTable		SymbolTable
+class	com.amazon.admanager.com.amazon.ion.impl.SubstituteSymbolTable$SymbolIterator		Iterator<String>
+class	com.amazon.admanager.com.amazon.ion.impl.SymbolTableReader		IonReader
+class	com.amazon.admanager.com.amazon.ion.impl.SymbolTableStructCache		
+class	com.amazon.admanager.com.amazon.ion.impl.SymbolTokenImpl		_Private_SymbolToken
+class	com.amazon.admanager.com.amazon.ion.impl.UnifiedDataPageX		
+class	com.amazon.admanager.com.amazon.ion.impl.UnifiedDataPageX$Bytes	UnifiedDataPageX	
+class	com.amazon.admanager.com.amazon.ion.impl.UnifiedDataPageX$Chars	UnifiedDataPageX	
+class	com.amazon.admanager.com.amazon.ion.impl.UnifiedInputBufferX		
+class	com.amazon.admanager.com.amazon.ion.impl.UnifiedInputBufferX$Bytes	UnifiedInputBufferX	
+class	com.amazon.admanager.com.amazon.ion.impl.UnifiedInputBufferX$Chars	UnifiedInputBufferX	
+class	com.amazon.admanager.com.amazon.ion.impl.UnifiedInputStreamX		Closeable
+class	com.amazon.admanager.com.amazon.ion.impl.UnifiedInputStreamX$FromByteArray	UnifiedInputStreamX	
+class	com.amazon.admanager.com.amazon.ion.impl.UnifiedInputStreamX$FromByteStream	UnifiedInputStreamX	
+class	com.amazon.admanager.com.amazon.ion.impl.UnifiedSavePointManagerX		
+class	com.amazon.admanager.com.amazon.ion.impl.UnifiedSavePointManagerX$SavePoint		
+class	com.amazon.admanager.com.amazon.ion.impl._Private_CurriedValueFactory		ValueFactory
+class	com.amazon.admanager.com.amazon.ion.impl._Private_IonBinaryWriterBuilder	IonBinaryWriterBuilder	
+class	com.amazon.admanager.com.amazon.ion.impl._Private_IonBinaryWriterBuilder$Mutable	_Private_IonBinaryWriterBuilder	
+class	com.amazon.admanager.com.amazon.ion.impl._Private_IonConstants		
+class	com.amazon.admanager.com.amazon.ion.impl._Private_IonReaderBuilder	IonReaderBuilder	
+class	com.amazon.admanager.com.amazon.ion.impl._Private_IonReaderBuilder$Mutable	_Private_IonReaderBuilder	
+class	com.amazon.admanager.com.amazon.ion.impl._Private_IonReaderFactory		
+class	com.amazon.admanager.com.amazon.ion.impl._Private_IonTextAppender		Closeable,Flushable
+class	com.amazon.admanager.com.amazon.ion.impl._Private_IonTextWriterBuilder	IonTextWriterBuilder	
+class	com.amazon.admanager.com.amazon.ion.impl._Private_IonTextWriterBuilder$Mutable	_Private_IonTextWriterBuilder	
+class	com.amazon.admanager.com.amazon.ion.impl._Private_IonWriterBase		IonWriter,_Private_ReaderWriter
+class	com.amazon.admanager.com.amazon.ion.impl._Private_MarkupCallback		
+class	com.amazon.admanager.com.amazon.ion.impl._Private_RecyclingStack		
+class	com.amazon.admanager.com.amazon.ion.impl._Private_ScalarConversions		
+class	com.amazon.admanager.com.amazon.ion.impl._Private_ScalarConversions$AS_TYPE		
+class	com.amazon.admanager.com.amazon.ion.impl._Private_ScalarConversions$CantConvertException	ConversionException	
+class	com.amazon.admanager.com.amazon.ion.impl._Private_ScalarConversions$ConversionException	IonException	
+class	com.amazon.admanager.com.amazon.ion.impl._Private_ScalarConversions$ValueNotSetException	ConversionException	
+class	com.amazon.admanager.com.amazon.ion.impl._Private_ScalarConversions$ValueVariant		
+class	com.amazon.admanager.com.amazon.ion.impl._Private_SymtabExtendsCache		
+class	com.amazon.admanager.com.amazon.ion.impl._Private_Utils		
+class	com.amazon.admanager.com.amazon.ion.impl.bin.AbstractIonWriter		_Private_ByteTransferSink,_Private_IonWriter
+class	com.amazon.admanager.com.amazon.ion.impl.bin.AbstractSymbolTable		SymbolTable
+class	com.amazon.admanager.com.amazon.ion.impl.bin.Block		Closeable
+class	com.amazon.admanager.com.amazon.ion.impl.bin.BlockAllocator		Closeable
+class	com.amazon.admanager.com.amazon.ion.impl.bin.BlockAllocatorProvider		
+class	com.amazon.admanager.com.amazon.ion.impl.bin.BlockAllocatorProviders		
+class	com.amazon.admanager.com.amazon.ion.impl.bin.BlockAllocatorProviders$BasicBlockAllocatorProvider	BlockAllocatorProvider	
+class	com.amazon.admanager.com.amazon.ion.impl.bin.IntList		
+class	com.amazon.admanager.com.amazon.ion.impl.bin.IonManagedBinaryWriter	AbstractIonWriter	_Private_IonManagedWriter
+class	com.amazon.admanager.com.amazon.ion.impl.bin.IonManagedBinaryWriter$ImportDescriptor		
+class	com.amazon.admanager.com.amazon.ion.impl.bin.IonManagedBinaryWriter$ImportTablePosition		
+class	com.amazon.admanager.com.amazon.ion.impl.bin.IonManagedBinaryWriter$ImportedSymbolContext		
+class	com.amazon.admanager.com.amazon.ion.impl.bin.IonManagedBinaryWriter$LocalSymbolTableView	AbstractSymbolTable	
+class	com.amazon.admanager.com.amazon.ion.impl.bin.IonRawBinaryWriter	AbstractIonWriter	_Private_IonRawWriter
+class	com.amazon.admanager.com.amazon.ion.impl.bin.IonRawBinaryWriter$ContainerInfo		
+class	com.amazon.admanager.com.amazon.ion.impl.bin.IonRawBinaryWriter$PatchList		Iterable<PatchPoint>
+class	com.amazon.admanager.com.amazon.ion.impl.bin.IonRawBinaryWriter$PatchList$Node		
+class	com.amazon.admanager.com.amazon.ion.impl.bin.IonRawBinaryWriter$PatchPoint		
+class	com.amazon.admanager.com.amazon.ion.impl.bin.IonRawBinaryWriter$PreallocationMode		
+class	com.amazon.admanager.com.amazon.ion.impl.bin.PooledBlockAllocatorProvider	BlockAllocatorProvider	
+class	com.amazon.admanager.com.amazon.ion.impl.bin.PooledBlockAllocatorProvider$PooledBlockAllocator	BlockAllocator	
+class	com.amazon.admanager.com.amazon.ion.impl.bin.Symbols		
+class	com.amazon.admanager.com.amazon.ion.impl.bin.WriteBuffer		Closeable
+class	com.amazon.admanager.com.amazon.ion.impl.bin._Private_IonManagedBinaryWriterBuilder		
+class	com.amazon.admanager.com.amazon.ion.impl.bin._Private_IonManagedBinaryWriterBuilder$AnonymousClass1		
+class	com.amazon.admanager.com.amazon.ion.impl.bin.utf8.ByteBufferPool	Pool<PoolableByteBuffer>	
+class	com.amazon.admanager.com.amazon.ion.impl.bin.utf8.Pool		
+class	com.amazon.admanager.com.amazon.ion.impl.bin.utf8.Poolable		Closeable
+class	com.amazon.admanager.com.amazon.ion.impl.bin.utf8.PoolableByteBuffer	Poolable<PoolableByteBuffer>	
+class	com.amazon.admanager.com.amazon.ion.impl.bin.utf8.Utf8StringDecoder	Poolable<Utf8StringDecoder>	
+class	com.amazon.admanager.com.amazon.ion.impl.bin.utf8.Utf8StringDecoderPool	Pool<Utf8StringDecoder>	
+class	com.amazon.admanager.com.amazon.ion.impl.bin.utf8.Utf8StringEncoder	Poolable<Utf8StringEncoder>	
+class	com.amazon.admanager.com.amazon.ion.impl.bin.utf8.Utf8StringEncoder$Result		
+class	com.amazon.admanager.com.amazon.ion.impl.bin.utf8.Utf8StringEncoderPool	Pool<Utf8StringEncoder>	
+class	com.amazon.admanager.com.amazon.ion.impl.lite.ContainerlessContext		IonContext
+class	com.amazon.admanager.com.amazon.ion.impl.lite.IonBlobLite	IonLobLite	IonBlob
+class	com.amazon.admanager.com.amazon.ion.impl.lite.IonBoolLite	IonValueLite	IonBool
+class	com.amazon.admanager.com.amazon.ion.impl.lite.IonClobLite	IonLobLite	IonClob
+class	com.amazon.admanager.com.amazon.ion.impl.lite.IonContainerLite	IonValueLite	_Private_IonContainer,IonContext
+class	com.amazon.admanager.com.amazon.ion.impl.lite.IonContainerLite$CloneContext		
+class	com.amazon.admanager.com.amazon.ion.impl.lite.IonContainerLite$SequenceContentIterator		ListIterator<IonValue>
+class	com.amazon.admanager.com.amazon.ion.impl.lite.IonDatagramLite	IonSequenceLite	IonDatagram,_Private_IonDatagram,IonContext
+class	com.amazon.admanager.com.amazon.ion.impl.lite.IonDatagramLite$SystemContentIterator		ListIterator<IonValue>
+class	com.amazon.admanager.com.amazon.ion.impl.lite.IonDatagramLite$SystemIteratorPosition		
+class	com.amazon.admanager.com.amazon.ion.impl.lite.IonDecimalLite	IonValueLite	IonDecimal
+class	com.amazon.admanager.com.amazon.ion.impl.lite.IonFloatLite	IonValueLite	IonFloat
+class	com.amazon.admanager.com.amazon.ion.impl.lite.IonIntLite	IonValueLite	IonInt
+class	com.amazon.admanager.com.amazon.ion.impl.lite.IonListLite	IonSequenceLite	IonList
+class	com.amazon.admanager.com.amazon.ion.impl.lite.IonLoaderLite		IonLoader
+class	com.amazon.admanager.com.amazon.ion.impl.lite.IonLobLite	IonValueLite	IonLob
+class	com.amazon.admanager.com.amazon.ion.impl.lite.IonNullLite	IonValueLite	IonNull
+class	com.amazon.admanager.com.amazon.ion.impl.lite.IonSequenceLite	IonContainerLite	IonSequence
+class	com.amazon.admanager.com.amazon.ion.impl.lite.IonSequenceLite$SubListView	AbstractList<IonValue>	
+class	com.amazon.admanager.com.amazon.ion.impl.lite.IonSexpLite	IonSequenceLite	IonSexp
+class	com.amazon.admanager.com.amazon.ion.impl.lite.IonStringLite	IonTextLite	IonString
+class	com.amazon.admanager.com.amazon.ion.impl.lite.IonStructLite	IonContainerLite	IonStruct
+class	com.amazon.admanager.com.amazon.ion.impl.lite.IonSymbolLite	IonTextLite	_Private_IonSymbol
+class	com.amazon.admanager.com.amazon.ion.impl.lite.IonSystemLite	ValueFactoryLite	_Private_IonSystem
+class	com.amazon.admanager.com.amazon.ion.impl.lite.IonTextLite	IonValueLite	IonText
+class	com.amazon.admanager.com.amazon.ion.impl.lite.IonTimestampLite	IonValueLite	IonTimestamp
+class	com.amazon.admanager.com.amazon.ion.impl.lite.IonValueLite		_Private_IonValue
+class	com.amazon.admanager.com.amazon.ion.impl.lite.IonValueLite$ClearSymbolIDsHolder		
+class	com.amazon.admanager.com.amazon.ion.impl.lite.IonValueLite$HashHolder		
+class	com.amazon.admanager.com.amazon.ion.impl.lite.IonValueLite$LazySymbolTableProvider		_Private_IonValue.SymbolTableProvider
+class	com.amazon.admanager.com.amazon.ion.impl.lite.TopLevelContext		IonContext
+class	com.amazon.admanager.com.amazon.ion.impl.lite.ValueFactoryLite		_Private_ValueFactory
+class	com.amazon.admanager.com.amazon.ion.impl.lite._Private_LiteDomTrampoline		
+class	com.amazon.admanager.com.amazon.ion.system.IonBinaryWriterBuilder	IonWriterBuilderBase<IonBinaryWriterBuilder>	
+class	com.amazon.admanager.com.amazon.ion.system.IonReaderBuilder		
+class	com.amazon.admanager.com.amazon.ion.system.IonSystemBuilder		
+class	com.amazon.admanager.com.amazon.ion.system.IonSystemBuilder$Mutable	IonSystemBuilder	
+class	com.amazon.admanager.com.amazon.ion.system.IonTextWriterBuilder	IonWriterBuilderBase<IonTextWriterBuilder>	
+class	com.amazon.admanager.com.amazon.ion.system.IonWriterBuilder		
+class	com.amazon.admanager.com.amazon.ion.system.IonWriterBuilderBase	IonWriterBuilder	
+class	com.amazon.admanager.com.amazon.ion.system.SimpleCatalog		IonMutableCatalog,Iterable<SymbolTable>
+class	com.amazon.admanager.com.amazon.ion.util.Equivalence		
+class	com.amazon.admanager.com.amazon.ion.util.Equivalence$Builder		
+class	com.amazon.admanager.com.amazon.ion.util.Equivalence$Configuration		
+class	com.amazon.admanager.com.amazon.ion.util.Equivalence$Field		
+class	com.amazon.admanager.com.amazon.ion.util.GzipOrRawInputStream	FilterInputStream	
+class	com.amazon.admanager.com.amazon.ion.util.IonStreamUtils		
+class	com.amazon.admanager.com.amazon.ion.util.IonTextUtils		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.MinervaServiceAndroidAdapter		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.MinervaServiceManager		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.aggregation.SimpleAvgAggregatedDoubleKeyValPair		AggregatedDoubleKeyValPair
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.aggregation.SimpleAvgAggregatedLongKeyValPair		AggregatedLongKeyValPair
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.aggregation.SimpleSumAggregatedDoubleKeyValPair		AggregatedDoubleKeyValPair
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.aggregation.SimpleSumAggregatedLongKeyValPair		AggregatedLongKeyValPair
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.api.AggregatedMetricEvent	MetricEvent	
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.api.AmazonMinervaAndroidClientBuilder		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.api.MetricEvent		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.api.callback.NoOpMetricRecordCallback		MetricRecordCallback
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.api.impl.AmazonMinervaAndroidClient		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.api.impl.AmazonMinervaImpl		AmazonMinerva
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.configuration.AssetFileParser		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.configuration.ConfigurationManager		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.configuration.CustomRemoteMetricsConfigurationUpdater		ConfigurationSyncCallback
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.configuration.DefaultRemoteMetricsConfigurationUpdater		ConfigurationSyncCallback
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.configuration.DenyListConfiguration		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.configuration.DenyListConfiguration$GroupSchemaPair		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.configuration.LocalConfiguration		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.configuration.MetricsConfigurationHelper		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.configuration.MultiProcessConfiguration		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.configuration.SamplingConfiguration		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.configuration.StorageConfiguration		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.configuration.ThrottleConfiguration		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.configuration.UploadConfiguration		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.configuration.ValidationConfiguration		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.kpi.AbstractKPIReporter		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.kpi.PeriodicKPIReporter	AbstractKPIReporter	
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.kpi.ServiceKPIReporter	AbstractKPIReporter	
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.metric.AggregatedDouble		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.metric.AggregatedLong		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.metric.DataPoint		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.metric.IonMetricEvent		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.metric.IonMetricEventBuilder		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.metric.IonMetricEventBuilder$SizedIonValue		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.metric.Timestamp		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.metric.TypedValue		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.sample.LocalSamplingKeyGenerator		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.sample.MetricEventSampler		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.serializer.IonMetricEventConverter		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.serializer.MetricBatchBinarySerializer		MetricBatchSerializer
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.serializer.MetricBatchTextSerializer		MetricBatchSerializer
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.storage.AbstractBatchCreatorScheduler		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.storage.AbstractBatchCreatorScheduler$BatchOpenTimeWatcher		Callable<Void>
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.storage.BatchCreator	AbstractBatchCreatorScheduler	
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.storage.BatchCreatorManager		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.storage.KPIBatchCreator	AbstractBatchCreatorScheduler	
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.storage.KPIBatchCreator$FlushKPIs		Callable<Void>
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.storage.StorageManager		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.storage.StorageManager$QueuesTTLPurger		Runnable
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.throttle.MetricEventThrottler		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.throttle.ThrottleProfile		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.transport.BoundedBatchFileQueue		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.transport.MetricEventResponse		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.transport.MetricsTransmissionManager		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.transport.MetricsTransmissionManager$Transmitter		Runnable
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.transport.MetricsTransporter		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.transport.SerializedBatch		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.transport.UploadResult		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.utils.BackgroundThreadFactory		ThreadFactory
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.utils.CustomDeviceUtil		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.utils.CustomMath		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.utils.LRUCache	LinkedHashMap<K, V>	
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.utils.MetricEventResponseIonConverter		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.utils.MinervaLogger		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.utils.MultiProcessUtil		
+class	com.amazon.admanager.com.amazon.minerva.client.thirdparty.utils.PredefinedKeyUtil		
+class	com.amazon.admanager.com.amazon.minerva.identifiers.schemaid.SchemaId		
+class	com.amazon.admanager.com.amazon.minerva.identifiers.schemaid.attribute.attributes.VersionedAttributes		
+class	com.amazon.admanager.com.amazon.minerva.identifiers.schemaid.attribute.parser.BaseAttributesParser		
+class	com.amazon.admanager.com.amazon.minerva.identifiers.schemaid.attribute.parser.Version2AttributesParser	BaseAttributesParser	
+class	com.amazon.admanager.com.amazon.weblab.mobile.ExceptionLoggingThreadPoolExecutor	ThreadPoolExecutor	
+class	com.amazon.admanager.com.amazon.weblab.mobile.MobileWeblabClientFactory		
+class	com.amazon.admanager.com.amazon.weblab.mobile.MobileWeblabFailedImmediateFuture		Future<E>
+class	com.amazon.admanager.com.amazon.weblab.mobile.MobileWeblabTreatmentAndTriggerResult		IMobileWeblabTreatmentAndTriggerResult
+class	com.amazon.admanager.com.amazon.weblab.mobile.TooManyRegisteredWeblabsException	IllegalStateException	
+class	com.amazon.admanager.com.amazon.weblab.mobile.WeblabBase		IMobileWeblab
+class	com.amazon.admanager.com.amazon.weblab.mobile.WeblabClientBase		IMobileWeblabClient
+class	com.amazon.admanager.com.amazon.weblab.mobile.WeblabClientBase$AnonymousClass1		Callable<Boolean>
+class	com.amazon.admanager.com.amazon.weblab.mobile.WeblabClientBase$CacheListener		ICacheRefresher
+class	com.amazon.admanager.com.amazon.weblab.mobile.WeblabClientBase$ServiceListener		ITriggerRequestListener
+class	com.amazon.admanager.com.amazon.weblab.mobile.WeblabClientWithNameValidation		IMobileWeblabClient
+class	com.amazon.admanager.com.amazon.weblab.mobile.cache.AutoPolicy	CachePolicy	
+class	com.amazon.admanager.com.amazon.weblab.mobile.cache.CachePolicy		ICachePolicy
+class	com.amazon.admanager.com.amazon.weblab.mobile.cache.CachePolicyFactory		
+class	com.amazon.admanager.com.amazon.weblab.mobile.cache.DisabledPolicy		ICachePolicy
+class	com.amazon.admanager.com.amazon.weblab.mobile.cache.LocalPolicy	CachePolicy	
+class	com.amazon.admanager.com.amazon.weblab.mobile.cache.OnFirstPolicy	LocalPolicy	
+class	com.amazon.admanager.com.amazon.weblab.mobile.experimental.PlatformWeblabsGlobalState		
+class	com.amazon.admanager.com.amazon.weblab.mobile.metrics.ApplicationContextHolder		
+class	com.amazon.admanager.com.amazon.weblab.mobile.metrics.MAPOAuthProvider		OAuthProvider
+class	com.amazon.admanager.com.amazon.weblab.mobile.metrics.MetricInfo		
+class	com.amazon.admanager.com.amazon.weblab.mobile.metrics.MobileWeblabChildProfileVerifier		ChildProfileVerifier
+class	com.amazon.admanager.com.amazon.weblab.mobile.metrics.MobileWeblabMetric		
+class	com.amazon.admanager.com.amazon.weblab.mobile.metrics.MobileWeblabMetricClient		IMobileWeblabMetricClient
+class	com.amazon.admanager.com.amazon.weblab.mobile.metrics.MobileWeblabUserControlVerifier		UserControlVerifier
+class	com.amazon.admanager.com.amazon.weblab.mobile.model.CustomerInfo		
+class	com.amazon.admanager.com.amazon.weblab.mobile.model.FlatBufferTreatmentAssignment	TreatmentAssignment	
+class	com.amazon.admanager.com.amazon.weblab.mobile.model.LazyTreatmentAssignment	TreatmentAssignment	
+class	com.amazon.admanager.com.amazon.weblab.mobile.model.MobileWeblabException	Exception	
+class	com.amazon.admanager.com.amazon.weblab.mobile.model.SessionInfo		
+class	com.amazon.admanager.com.amazon.weblab.mobile.model.TreatmentAssignment		Cloneable
+class	com.amazon.admanager.com.amazon.weblab.mobile.model.flatbuffer.Assignment	Table	
+class	com.amazon.admanager.com.amazon.weblab.mobile.model.flatbuffer.Assignments	Table	
+class	com.amazon.admanager.com.amazon.weblab.mobile.repository.BytesUtils		
+class	com.amazon.admanager.com.amazon.weblab.mobile.repository.FileStorage		IStorage
+class	com.amazon.admanager.com.amazon.weblab.mobile.repository.FileStorageJSONParser		
+class	com.amazon.admanager.com.amazon.weblab.mobile.repository.FlatBufferStorage	FileStorage	
+class	com.amazon.admanager.com.amazon.weblab.mobile.repository.LazyJSONKeys		
+class	com.amazon.admanager.com.amazon.weblab.mobile.repository.LazyParser		
+class	com.amazon.admanager.com.amazon.weblab.mobile.repository.LazyParser$Inflator		
+class	com.amazon.admanager.com.amazon.weblab.mobile.repository.LazyStorage	FileStorage	
+class	com.amazon.admanager.com.amazon.weblab.mobile.repository.Repository		IRepository
+class	com.amazon.admanager.com.amazon.weblab.mobile.repository.RepositoryFactory		
+class	com.amazon.admanager.com.amazon.weblab.mobile.repository.StorageEntity		
+class	com.amazon.admanager.com.amazon.weblab.mobile.service.AssignmentsServiceRequest	ServiceRequest	
+class	com.amazon.admanager.com.amazon.weblab.mobile.service.BasePathProvider		
+class	com.amazon.admanager.com.amazon.weblab.mobile.service.InternalServerErrorException	MobileWeblabException	
+class	com.amazon.admanager.com.amazon.weblab.mobile.service.LRUCache	LinkedHashMap<K, V>	
+class	com.amazon.admanager.com.amazon.weblab.mobile.service.Marketplaces		
+class	com.amazon.admanager.com.amazon.weblab.mobile.service.MobileWeblabGetTreatmentAssignmentResponse		
+class	com.amazon.admanager.com.amazon.weblab.mobile.service.RequestFilterCache		
+class	com.amazon.admanager.com.amazon.weblab.mobile.service.ServiceAssignment		
+class	com.amazon.admanager.com.amazon.weblab.mobile.service.ServiceAssignmentJSONParser		
+class	com.amazon.admanager.com.amazon.weblab.mobile.service.ServiceClient		
+class	com.amazon.admanager.com.amazon.weblab.mobile.service.ServiceProxy		IServiceProxy
+class	com.amazon.admanager.com.amazon.weblab.mobile.service.ServiceProxyFactory		
+class	com.amazon.admanager.com.amazon.weblab.mobile.service.ServiceRequest		
+class	com.amazon.admanager.com.amazon.weblab.mobile.service.ServiceResponse		
+class	com.amazon.admanager.com.amazon.weblab.mobile.service.ThrottledServiceCallException	MobileWeblabException	
+class	com.amazon.admanager.com.amazon.weblab.mobile.service.TriggersServiceRequest	ServiceRequest	
+class	com.amazon.admanager.com.amazon.weblab.mobile.service.UriTooLongException	RuntimeException	
+class	com.amazon.admanager.com.amazon.weblab.mobile.service.ratelimiter.ExponentialBackoffRequestRatePolicy		RequestRatePolicy
+class	com.amazon.admanager.com.amazon.weblab.mobile.service.ratelimiter.RequestEntry		
+class	com.amazon.admanager.com.amazon.weblab.mobile.service.ratelimiter.RequestHistory		
+class	com.amazon.admanager.com.amazon.weblab.mobile.service.ratelimiter.RequestsRateLimiter		IServiceProxy
+class	com.amazon.admanager.com.amazon.weblab.mobile.service.ratelimiter.RequestsRateLimiter$AllowAllRequestRatePolicy		RequestRatePolicy
+class	com.amazon.admanager.com.amazon.weblab.mobile.service.ratelimiter.RequestsRateLimiter$RecordLimiter		
+class	com.amazon.admanager.com.amazon.weblab.mobile.service.ratelimiter.ThrottledRequestRatePolicy		RequestRatePolicy
+class	com.amazon.admanager.com.amazon.weblab.mobile.settings.Interval		
+class	com.amazon.admanager.com.amazon.weblab.mobile.settings.MobileWeblabClientAttributes		IMobileWeblabClientAttributes
+class	com.amazon.admanager.com.amazon.weblab.mobile.settings.MobileWeblabRuntimeConfiguration		ICacheConfiguration,IMobileWeblabRuntimeConfiguration
+class	com.amazon.admanager.com.amazon.weblab.mobile.utils.TestUtils		
+class	com.amazon.admanager.com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager		
+class	com.amazon.admanager.com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder		
+class	com.amazon.admanager.com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.ConfigurationNotFoundException	RemoteConfigurationException	
+class	com.amazon.admanager.com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.MalformedAppConfigIdException	RemoteConfigurationException	
+class	com.amazon.admanager.com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.NetworkException	RemoteConfigurationException	
+class	com.amazon.admanager.com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.RemoteConfigurationException	RuntimeException	
+class	com.amazon.admanager.com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler		
+class	com.amazon.admanager.com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn		
+class	com.amazon.admanager.com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl		Attributes
+class	com.amazon.admanager.com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb		
+class	com.amazon.admanager.com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	SQLiteOpenHelper	
+class	com.amazon.admanager.com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl		Configuration
+class	com.amazon.admanager.com.amazonaws.mobileconnectors.remoteconfiguration.internal.DowngradeException	UnsupportedOperationException	
+class	com.amazon.admanager.com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.Checks		
+class	com.amazon.admanager.com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper		
+class	com.amazon.admanager.com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl		RemoteConfiguration
+class	com.amazon.admanager.com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher		RemoteConfigurationFetcher
+class	com.amazon.admanager.com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.RequestThrottledException	NetworkException	
+class	com.amazon.admanager.com.google.common.base.ExtraObjectsMethodsForWeb		
+class	com.amazon.admanager.com.google.common.base.Objects	ExtraObjectsMethodsForWeb	
+class	com.amazon.admanager.com.google.common.base.Platform		
+class	com.amazon.admanager.com.google.common.base.Platform$JdkPatternCompiler		PatternCompiler
+class	com.amazon.admanager.com.google.common.base.Preconditions		
+class	com.amazon.admanager.com.google.common.base.Strings		
+class	com.amazon.admanager.com.google.common.collect.AbstractIndexedListIterator	UnmodifiableListIterator<E>	
+class	com.amazon.admanager.com.google.common.collect.CollectPreconditions		
+class	com.amazon.admanager.com.google.common.collect.Collections2		
+class	com.amazon.admanager.com.google.common.collect.Hashing		
+class	com.amazon.admanager.com.google.common.collect.ImmutableCollection	AbstractCollection<E>	Serializable
+class	com.amazon.admanager.com.google.common.collect.ImmutableList	ImmutableCollection<E>	List<E>,RandomAccess
+class	com.amazon.admanager.com.google.common.collect.ImmutableList$Itr	AbstractIndexedListIterator<E>	
+class	com.amazon.admanager.com.google.common.collect.ImmutableList$SubList	ImmutableList<E>	
+class	com.amazon.admanager.com.google.common.collect.ImmutableMap		Serializable,Map<K,V>
+class	com.amazon.admanager.com.google.common.collect.ImmutableMap$Builder		
+class	com.amazon.admanager.com.google.common.collect.ImmutableMap$Builder$DuplicateKey		
+class	com.amazon.admanager.com.google.common.collect.ImmutableSet	ImmutableCollection<E>	Set<E>
+class	com.amazon.admanager.com.google.common.collect.Iterators		
+class	com.amazon.admanager.com.google.common.collect.Iterators$SingletonIterator	UnmodifiableIterator<T>	
+class	com.amazon.admanager.com.google.common.collect.Lists		
+class	com.amazon.admanager.com.google.common.collect.Maps		
+class	com.amazon.admanager.com.google.common.collect.ObjectArrays		
+class	com.amazon.admanager.com.google.common.collect.Platform		
+class	com.amazon.admanager.com.google.common.collect.RegularImmutableList	ImmutableList<E>	
+class	com.amazon.admanager.com.google.common.collect.RegularImmutableMap	ImmutableMap<K, V>	
+class	com.amazon.admanager.com.google.common.collect.RegularImmutableMap$EntrySet	ImmutableSet<Map.Entry<K, V>>	
+class	com.amazon.admanager.com.google.common.collect.RegularImmutableMap$KeySet	ImmutableSet<K>	
+class	com.amazon.admanager.com.google.common.collect.RegularImmutableMap$KeysOrValuesAsList	ImmutableList<Object>	
+class	com.amazon.admanager.com.google.common.collect.RegularImmutableSet	ImmutableSet<E>	
+class	com.amazon.admanager.com.google.common.collect.Sets		
+class	com.amazon.admanager.com.google.common.collect.SingletonImmutableSet	ImmutableSet<E>	
+class	com.amazon.admanager.com.google.common.collect.UnmodifiableIterator		Iterator<E>
+class	com.amazon.admanager.com.google.common.collect.UnmodifiableListIterator	UnmodifiableIterator<E>	ListIterator<E>
+class	com.amazon.admanager.com.google.common.hash.AbstractByteHasher	AbstractHasher	
+class	com.amazon.admanager.com.google.common.hash.AbstractHashFunction		HashFunction
+class	com.amazon.admanager.com.google.common.hash.AbstractHasher		Hasher
+class	com.amazon.admanager.com.google.common.hash.HashCode		
+class	com.amazon.admanager.com.google.common.hash.HashCode$BytesHashCode	HashCode	Serializable
+class	com.amazon.admanager.com.google.common.hash.Hashing		
+class	com.amazon.admanager.com.google.common.hash.Hashing$Sha1Holder		
+class	com.amazon.admanager.com.google.common.hash.MessageDigestHashFunction	AbstractHashFunction	Serializable
+class	com.amazon.admanager.com.google.common.hash.MessageDigestHashFunction$MessageDigestHasher	AbstractByteHasher	
+class	com.amazon.admanager.com.google.flatbuffers.FlatBufferBuilder		
+class	com.amazon.admanager.com.google.flatbuffers.FlatBufferBuilder$HeapByteBufferFactory		ByteBufferFactory
+class	com.amazon.admanager.com.google.flatbuffers.Table		
+class	com.amazon.admanager.com.google.gson.FieldAttributes		
+class	com.amazon.admanager.com.google.gson.FormattingStyle		
+class	com.amazon.admanager.com.google.gson.FutureTypeAdapter	SerializationDelegatingTypeAdapter<T>	
+class	com.amazon.admanager.com.google.gson.Gson		
+class	com.amazon.admanager.com.google.gson.GsonBuilder		
+class	com.amazon.admanager.com.google.gson.JsonArray	JsonElement	Iterable<JsonElement>
+class	com.amazon.admanager.com.google.gson.JsonElement		
+class	com.amazon.admanager.com.google.gson.JsonIOException	JsonParseException	
+class	com.amazon.admanager.com.google.gson.JsonNull	JsonElement	
+class	com.amazon.admanager.com.google.gson.JsonObject	JsonElement	
+class	com.amazon.admanager.com.google.gson.JsonParseException	RuntimeException	
+class	com.amazon.admanager.com.google.gson.JsonPrimitive	JsonElement	
+class	com.amazon.admanager.com.google.gson.TypeAdapter		
+class	com.amazon.admanager.com.google.gson.internal.ConstructorConstructor		
+class	com.amazon.admanager.com.google.gson.internal.Excluder		TypeAdapterFactory,Cloneable
+class	com.amazon.admanager.com.google.gson.internal.GenericArrayTypeImpl		Serializable,GenericArrayType
+class	com.amazon.admanager.com.google.gson.internal.JavaVersion		
+class	com.amazon.admanager.com.google.gson.internal.LazilyParsedNumber	Number	
+class	com.amazon.admanager.com.google.gson.internal.LinkedTreeMap	AbstractMap<K, V>	Serializable
+class	com.amazon.admanager.com.google.gson.internal.LinkedTreeMap$EntrySet	AbstractSet<Map.Entry<K, V>>	
+class	com.amazon.admanager.com.google.gson.internal.LinkedTreeMap$KeySet	AbstractSet<K>	
+class	com.amazon.admanager.com.google.gson.internal.LinkedTreeMap$LinkedTreeMapIterator		Iterator<T>
+class	com.amazon.admanager.com.google.gson.internal.LinkedTreeMap$Node		Map.Entry<K,V>
+class	com.amazon.admanager.com.google.gson.internal.NumberLimits		
+class	com.amazon.admanager.com.google.gson.internal.ParameterizedTypeImpl		Serializable,ParameterizedType
+class	com.amazon.admanager.com.google.gson.internal.PreJava9DateFormatProvider		
+class	com.amazon.admanager.com.google.gson.internal.Primitives		
+class	com.amazon.admanager.com.google.gson.internal.ReflectionAccessFilterHelper		
+class	com.amazon.admanager.com.google.gson.internal.ReflectionAccessFilterHelper$AccessChecker		
+class	com.amazon.admanager.com.google.gson.internal.Streams		
+class	com.amazon.admanager.com.google.gson.internal.Streams$AppendableWriter	Writer	
+class	com.amazon.admanager.com.google.gson.internal.Streams$AppendableWriter$CurrentWrite		CharSequence
+class	com.amazon.admanager.com.google.gson.internal.TroubleshootingGuide		
+class	com.amazon.admanager.com.google.gson.internal.UnsafeAllocator		
+class	com.amazon.admanager.com.google.gson.internal.WildcardTypeImpl		Serializable,WildcardType
+class	com.amazon.admanager.com.google.gson.internal.bind.ArrayTypeAdapter	TypeAdapter<Object>	
+class	com.amazon.admanager.com.google.gson.internal.bind.CollectionTypeAdapterFactory		TypeAdapterFactory
+class	com.amazon.admanager.com.google.gson.internal.bind.CollectionTypeAdapterFactory$Adapter	TypeAdapter<Collection<E>>	
+class	com.amazon.admanager.com.google.gson.internal.bind.DefaultDateTypeAdapter	TypeAdapter<T>	
+class	com.amazon.admanager.com.google.gson.internal.bind.DefaultDateTypeAdapter$DateType		
+class	com.amazon.admanager.com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactory		TypeAdapterFactory
+class	com.amazon.admanager.com.google.gson.internal.bind.JsonAdapterAnnotationTypeAdapterFactory$DummyTypeAdapterFactory		TypeAdapterFactory
+class	com.amazon.admanager.com.google.gson.internal.bind.JsonTreeWriter	JsonWriter	
+class	com.amazon.admanager.com.google.gson.internal.bind.MapTypeAdapterFactory		TypeAdapterFactory
+class	com.amazon.admanager.com.google.gson.internal.bind.MapTypeAdapterFactory$Adapter	TypeAdapter<Map<K, V>>	
+class	com.amazon.admanager.com.google.gson.internal.bind.NumberTypeAdapter	TypeAdapter<Number>	
+class	com.amazon.admanager.com.google.gson.internal.bind.ObjectTypeAdapter	TypeAdapter<Object>	
+class	com.amazon.admanager.com.google.gson.internal.bind.ReflectiveTypeAdapterFactory		TypeAdapterFactory
+class	com.amazon.admanager.com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$Adapter	TypeAdapter<T>	
+class	com.amazon.admanager.com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$BoundField		
+class	com.amazon.admanager.com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$FieldReflectionAdapter	Adapter<T, T>	
+class	com.amazon.admanager.com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$FieldsData		
+class	com.amazon.admanager.com.google.gson.internal.bind.ReflectiveTypeAdapterFactory$RecordAdapter		
+class	com.amazon.admanager.com.google.gson.internal.bind.SerializationDelegatingTypeAdapter	TypeAdapter<T>	
+class	com.amazon.admanager.com.google.gson.internal.bind.TreeTypeAdapter	SerializationDelegatingTypeAdapter<T>	
+class	com.amazon.admanager.com.google.gson.internal.bind.TreeTypeAdapter$GsonContextImpl		JsonSerializationContext
+class	com.amazon.admanager.com.google.gson.internal.bind.TreeTypeAdapter$SingleTypeFactory		TypeAdapterFactory
+class	com.amazon.admanager.com.google.gson.internal.bind.TypeAdapterRuntimeTypeWrapper	TypeAdapter<T>	
+class	com.amazon.admanager.com.google.gson.internal.bind.TypeAdapters		
+class	com.amazon.admanager.com.google.gson.internal.bind.TypeAdapters$EnumTypeAdapter	TypeAdapter<T>	
+class	com.amazon.admanager.com.google.gson.internal.reflect.ReflectionHelper		
+class	com.amazon.admanager.com.google.gson.internal.reflect.ReflectionHelper$RecordHelper		
+class	com.amazon.admanager.com.google.gson.internal.reflect.ReflectionHelper$RecordNotSupportedHelper	RecordHelper	
+class	com.amazon.admanager.com.google.gson.internal.reflect.ReflectionHelper$RecordSupportedHelper	RecordHelper	
+class	com.amazon.admanager.com.google.gson.internal.sql.SqlDateTypeAdapter	TypeAdapter<Date>	
+class	com.amazon.admanager.com.google.gson.internal.sql.SqlTimeTypeAdapter	TypeAdapter<Time>	
+class	com.amazon.admanager.com.google.gson.internal.sql.SqlTimestampTypeAdapter	TypeAdapter<Timestamp>	
+class	com.amazon.admanager.com.google.gson.internal.sql.SqlTypesSupport		
+class	com.amazon.admanager.com.google.gson.reflect.TypeToken		
+class	com.amazon.admanager.com.google.gson.stream.JsonWriter		Closeable,Flushable
+class	com.amazon.admanager.dagger.internal.AbstractMapFactory		Factory<Map<K,V2>>
+class	com.amazon.admanager.dagger.internal.AbstractMapFactory$Builder		
+class	com.amazon.admanager.dagger.internal.DaggerCollections		
+class	com.amazon.admanager.dagger.internal.DelegateFactory		Factory<T>
+class	com.amazon.admanager.dagger.internal.DoubleCheck		Lazy<T>,Provider<T>
+class	com.amazon.admanager.dagger.internal.InstanceFactory		Lazy<T>,Factory<T>
+class	com.amazon.admanager.dagger.internal.MapBuilder		
+class	com.amazon.admanager.dagger.internal.MapFactory	AbstractMapFactory<K, V, V>	
+class	com.amazon.admanager.dagger.internal.MapFactory$Builder	AbstractMapFactory.Builder<K, V, V>	
+class	com.amazon.admanager.dagger.internal.MapProviderFactory	AbstractMapFactory<K, V, Provider<V>>	Lazy<Map<K,Provider<V>>>
+class	com.amazon.admanager.dagger.internal.MapProviderFactory$Builder	AbstractMapFactory.Builder<K, V, Provider<V>>	
+class	com.amazon.admanager.dagger.internal.MembersInjectors		
+class	com.amazon.admanager.dagger.internal.Preconditions		
+class	com.amazon.admanager.dagger.internal.ProviderOfLazy		Provider<Lazy<T>>
+class	com.amazon.admanager.dagger.internal.SetBuilder		
+class	com.amazon.admanager.dagger.internal.SetFactory		Factory<Set<T>>
+class	com.amazon.admanager.dagger.internal.SetFactory$Builder		
+class	com.amazon.admanager.dagger.internal.SingleCheck		Provider<T>
+class	com.amazon.admanager.di.DaggerDaggerDependencies		
+class	com.amazon.admanager.di.DaggerDaggerDependencies$Builder		
+class	com.amazon.admanager.di.DaggerDaggerDependencies$DaggerDependenciesImpl	DaggerDependencies	
+class	com.amazon.admanager.di.DaggerDependencies		
+class	com.amazon.admanager.di.DeviceAttributeMetricsModule		
+class	com.amazon.admanager.di.DeviceAttributeMetricsModule_ProvideAdvertisingIdManagerFactory		Factory<AdvertisingIdManager>
+class	com.amazon.admanager.di.DeviceAttributeMetricsModule_ProvideCustomerAttributeStoreFactory		Factory<CustomerAttributeStore>
+class	com.amazon.admanager.di.DeviceAttributeMetricsModule_ProvideMAPAccountManagerFactory		Factory<MAPAccountManager>
+class	com.amazon.admanager.di.DeviceAttributeMetricsModule_ProvideNaatyamClientFactory		Factory<Naatyam>
+class	com.amazon.admanager.di.MinervaMetricsModule		
+class	com.amazon.admanager.di.MinervaMetricsModule_ProvideAmazonMinervaFactory		Factory<AmazonMinerva>
+class	com.amazon.admanager.di.MinervaMetricsModule_ProvideMetricsHelperFactory		Factory<MinervaMetricsRecorder>
+class	com.amazon.admanager.di.SharedModule		
+class	com.amazon.admanager.di.SharedModule_ProvideContextFactory		Factory<Context>
+class	com.amazon.admanager.di.SharedModule_ProvideEnabledWeblabsFactory		Factory<List<String>>
+class	com.amazon.admanager.di.TrackAdsMetricsModule		
+class	com.amazon.admanager.di.TrackAdsMetricsModule_ProvideCevicheFactory		Factory<Ceviche>
+class	com.amazon.admanager.di.TrackAdsMetricsModule_ProvideFixedSizeCacheFactory		Factory<FixedSizeCache>
+class	com.amazon.admanager.di.TrackAdsMetricsModule_ProvideHdmiScreenStateCheckerFactory		Factory<ScreenStateChecker>
+class	com.amazon.admanager.di.TrackAdsMetricsModule_ProvidePowerManagerScreenStateCheckerFactory		Factory<ScreenStateChecker>
+class	com.amazon.admanager.di.TrackAdsMetricsModule_ProvideProcessorsFactory		Factory<ProcessorBase>
+class	com.amazon.admanager.di.TrackAdsMetricsModule_ProvideThreePReportingProcessorsFactory		Factory<ProcessorBase>
+class	com.amazon.admanager.di.TrackAdsMetricsModule_ProviderSharedParallelExecutorFactory		Factory<ExecutorService>
+class	com.amazon.admanager.internal.HttpClient		
+class	com.amazon.admanager.internal.HttpClient_Factory		Factory<HttpClient>
+class	com.amazon.admanager.internal.HttpClient_Factory$InstanceHolder		
+class	com.amazon.admanager.internal.MapAccountClientWrapper		
+class	com.amazon.admanager.internal.MapAccountClientWrapper_Factory		Factory<MapAccountClientWrapper>
+class	com.amazon.admanager.internal.NamedThreadFactory		ThreadFactory
+class	com.amazon.admanager.internal.SettingsReader		
+class	com.amazon.admanager.internal.SettingsReader_Factory		Factory<SettingsReader>
+class	com.amazon.admanager.internal.SharedDeviceInfoWrapper		
+class	com.amazon.admanager.internal.SharedDeviceInfoWrapper_Factory		Factory<SharedDeviceInfoWrapper>
+class	com.amazon.admanager.internal.SharedUtils		
+class	com.amazon.admanager.internal.WeblabClient		
+class	com.amazon.admanager.internal.WeblabClient_Factory		Factory<WeblabClient>
+class	com.amazon.admanager.internal.minerva.MetricsHelper		
+class	com.amazon.admanager.internal.minerva.MetricsHelper$ApiUsageAndErrorMetricsSchema		
+class	com.amazon.admanager.internal.minerva.MetricsHelper$EventsDroppedDueToScreenStateSchema		
+class	com.amazon.admanager.internal.minerva.MetricsHelper$ThreePAdapterUrlDroppedSchema		
+class	com.amazon.admanager.internal.minerva.MetricsHelper$ThreePDedupeCacheSchema		
+class	com.amazon.admanager.internal.minerva.MinervaMetricsRecorder		
+class	com.amazon.admanager.internal.minerva.MinervaMetricsRecorder_Factory		Factory<MinervaMetricsRecorder>
+class	com.amazon.admanager.internal.screenstate.HdmiEventScreenStateChecker		ScreenStateChecker
+class	com.amazon.admanager.internal.screenstate.PowerManagerScreenStateChecker		ScreenStateChecker
+class	com.amazon.admanager.internal.screenstate.ScreenStateEventFilter		
+class	com.amazon.admanager.internal.screenstate.ScreenStateEventFilter_Factory		Factory<ScreenStateEventFilter>
+class	com.amazon.admanager.metrics.TrackAds		
+class	com.amazon.admanager.metrics.TrackAds_Factory		Factory<TrackAds>
+class	com.amazon.admanager.metrics.events.BaseAdEvent	BaseEvent	
+class	com.amazon.admanager.metrics.events.BaseEvent		
+class	com.amazon.admanager.metrics.events.BaseScreenItemEvent	BaseEvent	
+class	com.amazon.admanager.metrics.events.CheckedAdEvent	BaseAdEvent	
+class	com.amazon.admanager.metrics.events.ClickAdEvent	BaseAdEvent	
+class	com.amazon.admanager.metrics.events.EventProps		
+class	com.amazon.admanager.metrics.events.ImpressionAdEvent	BaseAdEvent	
+class	com.amazon.admanager.metrics.events.MiniDetailAdEvent	BaseAdEvent	
+class	com.amazon.admanager.metrics.events.ScreenItemClickEvent	BaseScreenItemEvent	
+class	com.amazon.admanager.metrics.events.ScreenItemSelectionEvent	BaseScreenItemEvent	
+class	com.amazon.admanager.metrics.events.ScreenVisibilityEvent	BaseEvent	
+class	com.amazon.admanager.metrics.events.SelectionAdEvent	BaseAdEvent	
+class	com.amazon.admanager.metrics.events.UserInteractionAdEvent	BaseAdEvent	
+class	com.amazon.admanager.metrics.events.VideoErrorAdEvent	BaseAdEvent	
+class	com.amazon.admanager.metrics.events.VideoStateAdEvent	BaseAdEvent	
+class	com.amazon.admanager.metrics.events.ViewabilityAdEvent	BaseAdEvent	
+class	com.amazon.admanager.metrics.events.metadata.BaseVisibilityChangeMetadata		
+class	com.amazon.admanager.metrics.events.metadata.ItemVisibilityChangeMetadata	BaseVisibilityChangeMetadata	
+class	com.amazon.admanager.metrics.events.metadata.ListVisibilityChangeMetadata	BaseVisibilityChangeMetadata	
+class	com.amazon.admanager.metrics.events.metadata.ScreenVisibilityChangeMetadata	BaseVisibilityChangeMetadata	
+class	com.amazon.admanager.metrics.internal.AdEventPropsNames		
+class	com.amazon.admanager.metrics.internal.CevicheCompliantProps		
+class	com.amazon.admanager.metrics.internal.Event		
+class	com.amazon.admanager.metrics.internal.Event$Flags		
+class	com.amazon.admanager.metrics.internal.EventNames		
+class	com.amazon.admanager.metrics.internal.Props		
+class	com.amazon.admanager.metrics.internal.SharedEventUtils		
+class	com.amazon.admanager.metrics.internal.processors.DeviceAttributesAttachmentProcessor	ProcessorBase	
+class	com.amazon.admanager.metrics.internal.processors.DeviceAttributesAttachmentProcessor_Factory		Factory<DeviceAttributesAttachmentProcessor>
+class	com.amazon.admanager.metrics.internal.processors.DeviceAttributesProcessorInput	ProcessorInput	
+class	com.amazon.admanager.metrics.internal.processors.DeviceAttributesProcessorInput$DeviceAttributesProcessorInputBuilder	ProcessorInput.ProcessorInputBuilder<C, B>	
+class	com.amazon.admanager.metrics.internal.processors.DeviceAttributesProcessorInput$DeviceAttributesProcessorInputBuilderImpl	DeviceAttributesProcessorInputBuilder<DeviceAttributesProcessorInput, DeviceAttributesProcessorInputBuilderImpl>	
+class	com.amazon.admanager.metrics.internal.processors.EventPropsMergerProcessor	ProcessorBase	
+class	com.amazon.admanager.metrics.internal.processors.EventPropsMergerProcessor_Factory		Factory<EventPropsMergerProcessor>
+class	com.amazon.admanager.metrics.internal.processors.ForwardToCevicheProcessor	ProcessorBase	
+class	com.amazon.admanager.metrics.internal.processors.ForwardToCevicheProcessor_Factory		Factory<ForwardToCevicheProcessor>
+class	com.amazon.admanager.metrics.internal.processors.ProcessorBase		
+class	com.amazon.admanager.metrics.internal.processors.ProcessorInput		
+class	com.amazon.admanager.metrics.internal.processors.ProcessorInput$ProcessorInputBuilder		
+class	com.amazon.admanager.metrics.internal.processors.ProcessorInput$ProcessorInputBuilderImpl	ProcessorInputBuilder<ProcessorInput, ProcessorInputBuilderImpl>	
+class	com.amazon.admanager.metrics.internal.processors.ScreenStateCheckProcessor	ProcessorBase	
+class	com.amazon.admanager.metrics.internal.processors.ScreenStateCheckProcessor_Factory		Factory<ScreenStateCheckProcessor>
+class	com.amazon.admanager.metrics.internal.processors.ThirdPartyCleaningProcessor	ProcessorBase	
+class	com.amazon.admanager.metrics.internal.processors.ThirdPartyCleaningProcessor_Factory		Factory<ThirdPartyCleaningProcessor>
+class	com.amazon.admanager.metrics.internal.processors.ThirdPartyDeviceAttributesProcessor	ProcessorBase	
+class	com.amazon.admanager.metrics.internal.processors.ThirdPartyDeviceAttributesProcessor_Factory		Factory<ThirdPartyDeviceAttributesProcessor>
+class	com.amazon.admanager.metrics.internal.processors.ThirdPartyProcessorInput	ProcessorInput	
+class	com.amazon.admanager.metrics.internal.processors.ThirdPartyProcessorInput$ThirdPartyProcessorInputBuilder	ProcessorInput.ProcessorInputBuilder<C, B>	
+class	com.amazon.admanager.metrics.internal.processors.ThirdPartyProcessorInput$ThirdPartyProcessorInputBuilderImpl	ThirdPartyProcessorInputBuilder<ThirdPartyProcessorInput, ThirdPartyProcessorInputBuilderImpl>	
+class	com.amazon.admanager.metrics.internal.processors.ThirdPartyProviderExtractorProcessor	ProcessorBase	
+class	com.amazon.admanager.metrics.internal.processors.ThirdPartyProviderExtractorProcessor_Factory		Factory<ThirdPartyProviderExtractorProcessor>
+class	com.amazon.admanager.metrics.internal.processors.ThirdPartyReportableCheckProcessor	ProcessorBase	
+class	com.amazon.admanager.metrics.internal.processors.ThirdPartyReportableCheckProcessor_Factory		Factory<ThirdPartyReportableCheckProcessor>
+class	com.amazon.admanager.metrics.internal.processors.ThirdPartyReporterProcessor	ProcessorBase	
+class	com.amazon.admanager.metrics.internal.processors.ThirdPartyReporterProcessor_Factory		Factory<ThirdPartyReporterProcessor>
+class	com.amazon.admanager.metrics.internal.processors.ThirdPartySushiEventRecorderProcessor	ProcessorBase	
+class	com.amazon.admanager.metrics.internal.processors.ThirdPartySushiEventRecorderProcessor_Factory		Factory<ThirdPartySushiEventRecorderProcessor>
+class	com.amazon.admanager.metrics.internal.processors.ThirdPartyUrlProcessor	ProcessorBase	
+class	com.amazon.admanager.metrics.internal.processors.ThirdPartyUrlProcessor_Factory		Factory<ThirdPartyUrlProcessor>
+class	com.amazon.admanager.metrics.internal.processors.ThirdPartyUrlProcessor_Factory$InstanceHolder		
+class	com.amazon.admanager.metrics.internal.processors.models.ThirdPartyDeviceAttributes		
+class	com.amazon.admanager.metrics.internal.processors.models.ThirdPartyDeviceAttributes$ThirdPartyDeviceAttributesBuilder		
+class	com.amazon.admanager.metrics.internal.processors.models.ThirdPartyProvider		
+class	com.amazon.admanager.metrics.internal.processors.models.ThirdPartyProvider$ThirdPartyProviderBuilder		
+class	com.amazon.admanager.metrics.internal.processors.models.ThirdPartyProviderCreator		
+class	com.amazon.admanager.metrics.internal.threep.AdClickEventThirdPartyProviderExtractor		ThirdPartyProviderExtractor
+class	com.amazon.admanager.metrics.internal.threep.AdImpressionEventThirdPartyProviderExtractor		ThirdPartyProviderExtractor
+class	com.amazon.admanager.metrics.internal.threep.AdapterUrlFilter		ThirdPartyCleaningFilter
+class	com.amazon.admanager.metrics.internal.threep.AdapterUrlFilter_Factory		Factory<AdapterUrlFilter>
+class	com.amazon.admanager.metrics.internal.threep.DuplicateProviderFilter		ThirdPartyCleaningFilter
+class	com.amazon.admanager.metrics.internal.threep.DuplicateProviderFilter_Factory		Factory<DuplicateProviderFilter>
+class	com.amazon.admanager.metrics.internal.threep.ExtractionException	RuntimeException	
+class	com.amazon.admanager.metrics.internal.threep.FixedSizeCache		
+class	com.amazon.admanager.metrics.internal.threep.FixedSizeCache_Factory		Factory<FixedSizeCache>
+class	com.amazon.admanager.metrics.internal.threep.ScreenItemClickEventThirdPartyProviderExtractor		ThirdPartyProviderExtractor
+class	com.amazon.admanager.metrics.internal.threep.ScreenVisibilityEventThirdPartyProviderExtractor		ThirdPartyProviderExtractor
+class	com.amazon.admanager.metrics.internal.threep.ThreePEventParsingHelper		
+class	com.amazon.admanager.metrics.internal.trackers.BaseAdEventTracker		EventTracker
+class	com.amazon.admanager.metrics.internal.trackers.BaseScreenItemEventTracker		EventTracker
+class	com.amazon.admanager.metrics.internal.trackers.CheckedAdEventTracker	BaseAdEventTracker<CheckedAdEvent>	
+class	com.amazon.admanager.metrics.internal.trackers.ClickAdEventTracker	BaseAdEventTracker<ClickAdEvent>	
+class	com.amazon.admanager.metrics.internal.trackers.ImpressionAdEventTracker	BaseAdEventTracker<ImpressionAdEvent>	
+class	com.amazon.admanager.metrics.internal.trackers.MiniDetailAdEventTracker	BaseAdEventTracker<MiniDetailAdEvent>	
+class	com.amazon.admanager.metrics.internal.trackers.ScreenItemClickEventTracker	BaseScreenItemEventTracker<ScreenItemClickEvent>	
+class	com.amazon.admanager.metrics.internal.trackers.ScreenItemSelectionEventTracker	BaseScreenItemEventTracker<ScreenItemSelectionEvent>	
+class	com.amazon.admanager.metrics.internal.trackers.ScreenVisibilityEventTracker		EventTracker
+class	com.amazon.admanager.metrics.internal.trackers.SelectionAdEventTracker	BaseAdEventTracker<SelectionAdEvent>	
+class	com.amazon.admanager.metrics.internal.trackers.UserInteractionAdEventTracker	BaseAdEventTracker<UserInteractionAdEvent>	
+class	com.amazon.admanager.metrics.internal.trackers.VideoErrorAdEventTracker	BaseAdEventTracker<VideoErrorAdEvent>	
+class	com.amazon.admanager.metrics.internal.trackers.VideoStateAdEventTracker	BaseAdEventTracker<VideoStateAdEvent>	
+class	com.amazon.admanager.metrics.internal.trackers.ViewabilityAdEventTracker	BaseAdEventTracker<ViewabilityAdEvent>	
+enum	com.amazon.admanager.com.amazon.ion.IntegerSize		
+enum	com.amazon.admanager.com.amazon.ion.IonType		
+enum	com.amazon.admanager.com.amazon.ion.Timestamp$Precision		
+enum	com.amazon.admanager.com.amazon.ion.impl.EscapeType		
+enum	com.amazon.admanager.com.amazon.ion.impl.IonReaderBinaryRawX$State		
+enum	com.amazon.admanager.com.amazon.ion.impl.IonReaderLookaheadBuffer$ReadTypeIdResult		
+enum	com.amazon.admanager.com.amazon.ion.impl.IonReaderLookaheadBuffer$State		
+enum	com.amazon.admanager.com.amazon.ion.impl.IonReaderLookaheadBuffer$VarUInt$Location		
+enum	com.amazon.admanager.com.amazon.ion.impl.IonReaderTextRawTokensX$CommentStrategy		
+enum	com.amazon.admanager.com.amazon.ion.impl.IonReaderTextRawTokensX$NumericState		
+enum	com.amazon.admanager.com.amazon.ion.impl.IonReaderTextRawX$LOB_STATE		
+enum	com.amazon.admanager.com.amazon.ion.impl.IonReaderTextSystemX$Radix		
+enum	com.amazon.admanager.com.amazon.ion.impl.ProhibitedCharacters		
+enum	com.amazon.admanager.com.amazon.ion.impl.Radix		
+enum	com.amazon.admanager.com.amazon.ion.impl.SymbolTableReader$Op		
+enum	com.amazon.admanager.com.amazon.ion.impl.UnifiedDataPageX$PageType		
+enum	com.amazon.admanager.com.amazon.ion.impl.UnifiedInputBufferX$BufferType		
+enum	com.amazon.admanager.com.amazon.ion.impl.UnifiedSavePointManagerX$SavePoint$SavePointState		
+enum	com.amazon.admanager.com.amazon.ion.impl.bin.AbstractIonWriter$WriteValueOptimization		
+enum	com.amazon.admanager.com.amazon.ion.impl.bin.IonManagedBinaryWriter$ImportedSymbolResolverMode		
+enum	com.amazon.admanager.com.amazon.ion.impl.bin.IonManagedBinaryWriter$SymbolState		
+enum	com.amazon.admanager.com.amazon.ion.impl.bin.IonManagedBinaryWriter$UserState		
+enum	com.amazon.admanager.com.amazon.ion.impl.bin.IonRawBinaryWriter$ContainerType		
+enum	com.amazon.admanager.com.amazon.ion.impl.bin.IonRawBinaryWriter$StreamCloseMode		
+enum	com.amazon.admanager.com.amazon.ion.impl.bin.IonRawBinaryWriter$StreamFlushMode		
+enum	com.amazon.admanager.com.amazon.ion.impl.bin._Private_IonManagedBinaryWriterBuilder$AllocatorMode		
+enum	com.amazon.admanager.com.amazon.ion.system.IonTextWriterBuilder$LstMinimizing		
+enum	com.amazon.admanager.com.amazon.ion.system.IonTextWriterBuilder$NewLineType		
+enum	com.amazon.admanager.com.amazon.ion.system.IonWriterBuilder$InitialIvmHandling		
+enum	com.amazon.admanager.com.amazon.ion.system.IonWriterBuilder$IvmMinimizing		
+enum	com.amazon.admanager.com.amazon.ion.util.IonTextUtils$EscapeMode		
+enum	com.amazon.admanager.com.amazon.ion.util.IonTextUtils$SymbolVariant		
+enum	com.amazon.admanager.com.amazon.minerva.client.thirdparty.api.AggregationType		
+enum	com.amazon.admanager.com.amazon.minerva.client.thirdparty.api.Predefined		
+enum	com.amazon.admanager.com.amazon.minerva.client.thirdparty.api.callback.MetricRecordStatus		
+enum	com.amazon.admanager.com.amazon.minerva.client.thirdparty.kpi.KPIMetric		
+enum	com.amazon.admanager.com.amazon.minerva.client.thirdparty.metric.ValueType		
+enum	com.amazon.admanager.com.amazon.minerva.client.thirdparty.transport.MetricEventResponseResult		
+enum	com.amazon.admanager.com.amazon.minerva.identifiers.schemaid.attribute.attributes.AttributeEnumV2		IAttributeEnum
+enum	com.amazon.admanager.com.amazon.weblab.mobile.experimental.PlatformWeblabs		
+enum	com.amazon.admanager.com.amazon.weblab.mobile.metrics.Metrics		
+enum	com.amazon.admanager.com.amazon.weblab.mobile.metrics.MobileWeblabMetric$ClientType		
+enum	com.amazon.admanager.com.amazon.weblab.mobile.model.MobileWeblabTriggerResult		
+enum	com.amazon.admanager.com.amazon.weblab.mobile.repository.RepositoryType		
+enum	com.amazon.admanager.com.amazon.weblab.mobile.service.BasePathProvider$BasePath		
+enum	com.amazon.admanager.com.amazon.weblab.mobile.service.MobileWeblabDomain		
+enum	com.amazon.admanager.com.amazon.weblab.mobile.service.ServiceCallStatus		
+enum	com.amazon.admanager.com.amazon.weblab.mobile.settings.MobileWeblabCachePolicyType		
+enum	com.amazon.admanager.com.amazon.weblab.mobile.settings.MobileWeblabOS		
+enum	com.amazon.admanager.com.amazon.weblab.mobile.settings.MobileWeblabServiceEndpoint		
+enum	com.amazon.admanager.com.google.gson.FieldNamingPolicy		FieldNamingStrategy
+enum	com.amazon.admanager.com.google.gson.LongSerializationPolicy		
+enum	com.amazon.admanager.com.google.gson.ReflectionAccessFilter$FilterResult		
+enum	com.amazon.admanager.com.google.gson.Strictness		
+enum	com.amazon.admanager.com.google.gson.ToNumberPolicy		ToNumberStrategy
+enum	com.amazon.admanager.dagger.internal.MembersInjectors$NoOpMembersInjector		MembersInjector<Object>
+interface	com.amazon.admanager.attributes.internal.retrievers.AttributesRetriever		
+interface	com.amazon.admanager.com.amazon.ion.BufferConfiguration$DataHandler		
+interface	com.amazon.admanager.com.amazon.ion.BufferConfiguration$OversizedValueHandler		
+interface	com.amazon.admanager.com.amazon.ion.IonBlob	IonLob	
+interface	com.amazon.admanager.com.amazon.ion.IonBool	IonValue	
+interface	com.amazon.admanager.com.amazon.ion.IonBufferConfiguration$OversizedSymbolTableHandler		
+interface	com.amazon.admanager.com.amazon.ion.IonCatalog		
+interface	com.amazon.admanager.com.amazon.ion.IonClob	IonLob, IonValue	
+interface	com.amazon.admanager.com.amazon.ion.IonContainer	IonValue, Iterable<IonValue>	
+interface	com.amazon.admanager.com.amazon.ion.IonDatagram	IonSequence	
+interface	com.amazon.admanager.com.amazon.ion.IonDecimal	IonNumber	
+interface	com.amazon.admanager.com.amazon.ion.IonFloat	IonNumber	
+interface	com.amazon.admanager.com.amazon.ion.IonInt	IonNumber	
+interface	com.amazon.admanager.com.amazon.ion.IonList	IonSequence, IonValue, Collection<IonValue>	
+interface	com.amazon.admanager.com.amazon.ion.IonLoader		
+interface	com.amazon.admanager.com.amazon.ion.IonLob	IonValue	
+interface	com.amazon.admanager.com.amazon.ion.IonMutableCatalog	IonCatalog	
+interface	com.amazon.admanager.com.amazon.ion.IonNull	IonValue	
+interface	com.amazon.admanager.com.amazon.ion.IonNumber	IonValue	
+interface	com.amazon.admanager.com.amazon.ion.IonReader	Faceted, Closeable	
+interface	com.amazon.admanager.com.amazon.ion.IonSequence	IonContainer, List<IonValue>	
+interface	com.amazon.admanager.com.amazon.ion.IonSexp	IonSequence, IonValue, Collection<IonValue>	
+interface	com.amazon.admanager.com.amazon.ion.IonString	IonText	
+interface	com.amazon.admanager.com.amazon.ion.IonStruct	IonContainer	
+interface	com.amazon.admanager.com.amazon.ion.IonSymbol	IonText	
+interface	com.amazon.admanager.com.amazon.ion.IonSystem	ValueFactory	
+interface	com.amazon.admanager.com.amazon.ion.IonText	IonValue	
+interface	com.amazon.admanager.com.amazon.ion.IonTextReader	IonReader	
+interface	com.amazon.admanager.com.amazon.ion.IonTimestamp	IonValue	
+interface	com.amazon.admanager.com.amazon.ion.IonValue	Cloneable	
+interface	com.amazon.admanager.com.amazon.ion.IonWriter	Faceted, Closeable, Flushable	
+interface	com.amazon.admanager.com.amazon.ion.RawValueSpanProvider		
+interface	com.amazon.admanager.com.amazon.ion.SeekableReader	SpanProvider	
+interface	com.amazon.admanager.com.amazon.ion.SpanProvider		
+interface	com.amazon.admanager.com.amazon.ion.SymbolTable		
+interface	com.amazon.admanager.com.amazon.ion.SymbolToken		
+interface	com.amazon.admanager.com.amazon.ion.ValueFactory		
+interface	com.amazon.admanager.com.amazon.ion.facet.Faceted		
+interface	com.amazon.admanager.com.amazon.ion.impl.ResizingPipedInputStream$NotificationConsumer		
+interface	com.amazon.admanager.com.amazon.ion.impl.SymbolTableAsStruct		
+interface	com.amazon.admanager.com.amazon.ion.impl.SystemValueIterator	Closeable, Iterator<IonValue>	
+interface	com.amazon.admanager.com.amazon.ion.impl._Private_ByteTransferReader		
+interface	com.amazon.admanager.com.amazon.ion.impl._Private_ByteTransferSink		
+interface	com.amazon.admanager.com.amazon.ion.impl._Private_CallbackBuilder		
+interface	com.amazon.admanager.com.amazon.ion.impl._Private_IonContainer	IonContainer	
+interface	com.amazon.admanager.com.amazon.ion.impl._Private_IonDatagram	IonDatagram, _Private_IonValue	
+interface	com.amazon.admanager.com.amazon.ion.impl._Private_IonSymbol	IonSymbol	
+interface	com.amazon.admanager.com.amazon.ion.impl._Private_IonSystem	IonSystem	
+interface	com.amazon.admanager.com.amazon.ion.impl._Private_IonValue	IonValue	
+interface	com.amazon.admanager.com.amazon.ion.impl._Private_IonValue$SymbolTableProvider		
+interface	com.amazon.admanager.com.amazon.ion.impl._Private_IonWriter	IonWriter	
+interface	com.amazon.admanager.com.amazon.ion.impl._Private_LocalSymbolTableFactory		
+interface	com.amazon.admanager.com.amazon.ion.impl._Private_ReaderWriter		
+interface	com.amazon.admanager.com.amazon.ion.impl._Private_RecyclingStack$ElementFactory		
+interface	com.amazon.admanager.com.amazon.ion.impl._Private_SymbolToken	SymbolToken	
+interface	com.amazon.admanager.com.amazon.ion.impl._Private_ValueFactory	ValueFactory	
+interface	com.amazon.admanager.com.amazon.ion.impl.bin.IonManagedBinaryWriter$SymbolResolver		
+interface	com.amazon.admanager.com.amazon.ion.impl.bin.IonManagedBinaryWriter$SymbolResolverBuilder		
+interface	com.amazon.admanager.com.amazon.ion.impl.bin._Private_IonManagedWriter	IonWriter	
+interface	com.amazon.admanager.com.amazon.ion.impl.bin._Private_IonRawWriter	IonWriter	
+interface	com.amazon.admanager.com.amazon.ion.impl.bin.utf8.Pool$Allocator		
+interface	com.amazon.admanager.com.amazon.ion.impl.lite.IonContext		
+interface	com.amazon.admanager.com.amazon.ion.util._Private_FastAppendable	Appendable	
+interface	com.amazon.admanager.com.amazon.minerva.client.thirdparty.aggregation.AggregatedDoubleKeyValPair		
+interface	com.amazon.admanager.com.amazon.minerva.client.thirdparty.aggregation.AggregatedLongKeyValPair		
+interface	com.amazon.admanager.com.amazon.minerva.client.thirdparty.api.AmazonMinerva		
+interface	com.amazon.admanager.com.amazon.minerva.client.thirdparty.api.callback.MetricRecordCallback		
+interface	com.amazon.admanager.com.amazon.minerva.client.thirdparty.api.provider.CustomerInfoProvider		
+interface	com.amazon.admanager.com.amazon.minerva.client.thirdparty.compliance.ChildProfileVerifier		
+interface	com.amazon.admanager.com.amazon.minerva.client.thirdparty.compliance.NonAnonymousCustomerIdProvider		
+interface	com.amazon.admanager.com.amazon.minerva.client.thirdparty.compliance.UserControlVerifier		
+interface	com.amazon.admanager.com.amazon.minerva.client.thirdparty.serializer.MetricBatchSerializer		
+interface	com.amazon.admanager.com.amazon.minerva.client.thirdparty.transport.OAuthProvider		
+interface	com.amazon.admanager.com.amazon.minerva.identifiers.schemaid.attribute.attributes.IAttributeEnum		
+interface	com.amazon.admanager.com.amazon.weblab.mobile.IMobileWeblab		
+interface	com.amazon.admanager.com.amazon.weblab.mobile.IMobileWeblabClient		
+interface	com.amazon.admanager.com.amazon.weblab.mobile.IMobileWeblabTreatmentAndTriggerResult		
+interface	com.amazon.admanager.com.amazon.weblab.mobile.cache.ICachePolicy		
+interface	com.amazon.admanager.com.amazon.weblab.mobile.cache.ICacheRefresher		
+interface	com.amazon.admanager.com.amazon.weblab.mobile.metrics.IMobileWeblabMetricClient		
+interface	com.amazon.admanager.com.amazon.weblab.mobile.repository.IRepository		
+interface	com.amazon.admanager.com.amazon.weblab.mobile.repository.IStorage		
+interface	com.amazon.admanager.com.amazon.weblab.mobile.service.IServiceProxy		
+interface	com.amazon.admanager.com.amazon.weblab.mobile.service.ITriggerRequestListener		
+interface	com.amazon.admanager.com.amazon.weblab.mobile.service.ratelimiter.RequestRatePolicy		
+interface	com.amazon.admanager.com.amazon.weblab.mobile.service.ratelimiter.RequestsRateLimiter$Operation		
+interface	com.amazon.admanager.com.amazon.weblab.mobile.settings.ICacheConfiguration		
+interface	com.amazon.admanager.com.amazon.weblab.mobile.settings.IMobileWeblabClientAttributes		
+interface	com.amazon.admanager.com.amazon.weblab.mobile.settings.IMobileWeblabRuntimeConfiguration		
+interface	com.amazon.admanager.com.amazonaws.mobileconnectors.remoteconfiguration.Attributes	Cloneable	
+interface	com.amazon.admanager.com.amazonaws.mobileconnectors.remoteconfiguration.Configuration		
+interface	com.amazon.admanager.com.amazonaws.mobileconnectors.remoteconfiguration.ConfigurationSyncCallback		
+interface	com.amazon.admanager.com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfiguration		
+interface	com.amazon.admanager.com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.RemoteConfigurationFetcher		
+interface	com.amazon.admanager.com.google.common.base.PatternCompiler		
+interface	com.amazon.admanager.com.google.common.collect.BiMap	Map<K, V>	
+interface	com.amazon.admanager.com.google.common.hash.HashFunction		
+interface	com.amazon.admanager.com.google.common.hash.Hasher		
+interface	com.amazon.admanager.com.google.common.util.concurrent.ListenableFuture	Future<V>	
+interface	com.amazon.admanager.com.google.common.util.concurrent.ListenableScheduledFuture	ListenableFuture<V>, ScheduledFuture<V>	
+interface	com.amazon.admanager.com.google.common.util.concurrent.ListeningExecutorService	ExecutorService	
+interface	com.amazon.admanager.com.google.common.util.concurrent.ListeningScheduledExecutorService	ListeningExecutorService, ScheduledExecutorService	
+interface	com.amazon.admanager.com.google.flatbuffers.FlatBufferBuilder$ByteBufferFactory		
+interface	com.amazon.admanager.com.google.gson.ExclusionStrategy		
+interface	com.amazon.admanager.com.google.gson.FieldNamingStrategy		
+interface	com.amazon.admanager.com.google.gson.InstanceCreator		
+interface	com.amazon.admanager.com.google.gson.JsonDeserializer		
+interface	com.amazon.admanager.com.google.gson.JsonSerializationContext		
+interface	com.amazon.admanager.com.google.gson.JsonSerializer		
+interface	com.amazon.admanager.com.google.gson.ReflectionAccessFilter		
+interface	com.amazon.admanager.com.google.gson.ToNumberStrategy		
+interface	com.amazon.admanager.com.google.gson.TypeAdapterFactory		
+interface	com.amazon.admanager.com.google.gson.internal.ObjectConstructor		
+interface	com.amazon.admanager.dagger.Lazy		
+interface	com.amazon.admanager.dagger.MembersInjector		
+interface	com.amazon.admanager.dagger.internal.Factory	Provider<T>	
+interface	com.amazon.admanager.internal.HttpClient$HttpMethod		
+interface	com.amazon.admanager.internal.Stage		
+interface	com.amazon.admanager.internal.screenstate.ScreenStateChecker		
+interface	com.amazon.admanager.javax.inject.Provider		
+interface	com.amazon.admanager.metrics.internal.threep.ThirdPartyCleaningFilter		
+interface	com.amazon.admanager.metrics.internal.threep.ThirdPartyProviderExtractor		
+interface	com.amazon.admanager.metrics.internal.trackers.EventTracker		

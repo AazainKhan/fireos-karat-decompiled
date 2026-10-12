@@ -1,0 +1,58 @@
+class	kind	declaration
+com.amazon.application.compatibility.enforcer.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.application.compatibility.enforcer.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.application.compatibility.enforcer.BuildConfig	field	public static final String FLAVOR;
+com.amazon.application.compatibility.enforcer.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.application.compatibility.enforcer.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.application.compatibility.enforcer.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.application.compatibility.enforcer.R$string	field	public static final int ERROR_INELIGIBLE_MESSAGE;
+com.amazon.application.compatibility.enforcer.R$string	field	public static final int ERROR_MESSAGE_OCCURRED;
+com.amazon.application.compatibility.enforcer.R$string	field	public static final int ERROR_MESSAGE_RETRY_OR_CS;
+com.amazon.application.compatibility.enforcer.R$string	field	public static final int ERROR_MESSAGE_TITLE;
+com.amazon.application.compatibility.enforcer.R$string	field	public static final int ERROR_OTA_FAILURE_MESSAGE;
+com.amazon.application.compatibility.enforcer.R$string	field	public static final int ERROR_OTA_UNAVAILABLE_MESSAGE;
+com.amazon.application.compatibility.enforcer.R$string	field	public static final int STATUS_DOWNLOADING;
+com.amazon.application.compatibility.enforcer.R$string	field	public static final int STATUS_INSTALLING;
+com.amazon.application.compatibility.enforcer.R$string	field	public static final int STATUS_WAITING;
+com.amazon.application.compatibility.enforcer.R$style	field	public static final int Theme_Transparent;
+com.amazon.compatibility.enforcer.CompatibilityCheckerFactory	field	private final Context mContext;
+com.amazon.compatibility.enforcer.CompatibilityCheckerFactory	method	public CompatibilityChecker create(String packageName)
+com.amazon.compatibility.enforcer.CompatibilityCheckerFactory	method	public CompatibilityCheckerFactory(Context context)
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	field	private AlertDialog mErrorDialog;
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	field	private CompatibilityCheckerFactory mCompatibilityCheckerFactory;
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	field	private ExecutorService mBackgroundThreadQueue;
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	field	private Handler mUIHandler;
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	field	private List<UpdateManifest> mPendingManifests;
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	field	private OTAController mOTAController;
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	field	private OTAControllerFactory mOTAControllerFactory;
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	field	private ProgressDialog mDownloadDialog;
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	field	private static final String SDK_PACKAGE_NAME;
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	field	private static final String TAG;
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	method	private AlertDialog createErrorDialog()
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	method	private Map<String, Integer> getIncompatiblePackageVersions()
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	method	private Map<String, Integer> getUpdatePackageVersions(List<UpdateManifest> manifests)
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	method	private ProgressDialog createDownloadDialog()
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	method	private String getAppLabel(String packageName)
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	method	private String getCallingPackageName()
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	method	private String getProgressDialogMessage(UpdateManifest manifest)
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	method	private String getProgressDialogTitle(UpdateState state)
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	method	private String getUpdateName(Update update)
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	method	private boolean doUpdatesSatisfyIncompatiblePackages(List<UpdateManifest> manifests, Map<String, Integer> incompatiblePackageVersions)
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	method	private boolean isCompatibilityEnforcerUpdateAvailable(List<UpdateManifest> manifests)
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	method	private boolean isOSUpdateAvailable(List<UpdateManifest> manifests)
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	method	private void cancelAllAsynchronousEvents()
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	method	private void lockOrientation()
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	method	private void shutdownThreadQueue()
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	method	private void startCheckForUpdates()
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	method	private void startManifestInstallation(final UpdateManifest manifest)
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	method	private void startProcessingActiveUpdates()
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	method	private void tryToExecBackgroundTask(Runnable runnable)
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	method	protected void onPause()
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	method	protected void onResume()
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	method	public void onCreate(Bundle savedInstanceState)
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	method	public void onStatusUpdate(OTAController.UpdateStatusListener.Status status)
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	method	public void processUpdates(List<UpdateManifest> manifests) throws OTAUnavailableException
+com.amazon.compatibility.enforcer.CompatibilityResolverActivity	method	public void showErrorDialog(int errorDetailResourceId)
+com.amazon.compatibility.enforcer.OTAControllerFactory	field	private final Context mContext;
+com.amazon.compatibility.enforcer.OTAControllerFactory	method	public OTAController create()
+com.amazon.compatibility.enforcer.OTAControllerFactory	method	public OTAControllerFactory(Context context)

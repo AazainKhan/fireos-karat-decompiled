@@ -1,0 +1,79 @@
+class	kind	declaration
+com.android.tts.compat.CompatTtsService	field	private SynthProxy mNativeSynth;
+com.android.tts.compat.CompatTtsService	method	protected String[] onGetLanguage()
+com.android.tts.compat.CompatTtsService	method	protected abstract String getSoFilename();
+com.android.tts.compat.CompatTtsService	method	protected int onIsLanguageAvailable(String str, String str2, String str3)
+com.android.tts.compat.CompatTtsService	method	protected int onLoadLanguage(String str, String str2, String str3)
+com.android.tts.compat.CompatTtsService	method	protected void onStop()
+com.android.tts.compat.CompatTtsService	method	protected void onSynthesizeText(SynthesisRequest synthesisRequest, SynthesisCallback synthesisCallback)
+com.android.tts.compat.CompatTtsService	method	public void onCreate()
+com.android.tts.compat.CompatTtsService	method	public void onDestroy()
+com.android.tts.compat.SynthProxy	field	private long mJniData;
+com.android.tts.compat.SynthProxy	field	private static final String TAG;
+com.android.tts.compat.SynthProxy	field	private static final float PICO_FILTER_GAIN;
+com.android.tts.compat.SynthProxy	field	private static final float PICO_FILTER_LOWSHELF_ATTENUATION;
+com.android.tts.compat.SynthProxy	field	private static final float PICO_FILTER_SHELF_SLOPE;
+com.android.tts.compat.SynthProxy	field	private static final float PICO_FILTER_TRANSITION_FREQ;
+com.android.tts.compat.SynthProxy	method	private boolean shouldApplyAudioFilter(String str)
+com.android.tts.compat.SynthProxy	method	private final native String[] native_getLanguage(long j);
+com.android.tts.compat.SynthProxy	method	private final native int native_isLanguageAvailable(long j, String str, String str2, String str3);
+com.android.tts.compat.SynthProxy	method	private final native int native_loadLanguage(long j, String str, String str2, String str3);
+com.android.tts.compat.SynthProxy	method	private final native int native_setLanguage(long j, String str, String str2, String str3);
+com.android.tts.compat.SynthProxy	method	private final native int native_setLowShelf(boolean z, float f, float f2, float f3, float f4);
+com.android.tts.compat.SynthProxy	method	private final native int native_setProperty(long j, String str, String str2);
+com.android.tts.compat.SynthProxy	method	private final native int native_speak(long j, String str, SynthesisCallback synthesisCallback);
+com.android.tts.compat.SynthProxy	method	private final native int native_stop(long j);
+com.android.tts.compat.SynthProxy	method	private final native int native_stopSync(long j);
+com.android.tts.compat.SynthProxy	method	private final native long native_setup(String str, String str2);
+com.android.tts.compat.SynthProxy	method	private final native void native_finalize(long j);
+com.android.tts.compat.SynthProxy	method	private final native void native_shutdown(long j);
+com.android.tts.compat.SynthProxy	method	protected void finalize()
+com.android.tts.compat.SynthProxy	method	public String[] getLanguage()
+com.android.tts.compat.SynthProxy	method	public SynthProxy(String str, String str2)
+com.android.tts.compat.SynthProxy	method	public final int setPitch(int i)
+com.android.tts.compat.SynthProxy	method	public final int setSpeechRate(int i)
+com.android.tts.compat.SynthProxy	method	public int isLanguageAvailable(String str, String str2, String str3)
+com.android.tts.compat.SynthProxy	method	public int loadLanguage(String str, String str2, String str3)
+com.android.tts.compat.SynthProxy	method	public int setConfig(String str)
+com.android.tts.compat.SynthProxy	method	public int setLanguage(String str, String str2, String str3)
+com.android.tts.compat.SynthProxy	method	public int speak(SynthesisRequest synthesisRequest, SynthesisCallback synthesisCallback)
+com.android.tts.compat.SynthProxy	method	public int stop()
+com.android.tts.compat.SynthProxy	method	public int stopSync()
+com.android.tts.compat.SynthProxy	method	public void shutdown()
+com.svox.pico.CheckVoiceData	field	private static final String PICO_LINGWARE_PATH;
+com.svox.pico.CheckVoiceData	field	private static final String[] dataFiles;
+com.svox.pico.CheckVoiceData	field	private static final String[] dataFilesInfo;
+com.svox.pico.CheckVoiceData	field	private static final String[] supportedLanguages;
+com.svox.pico.CheckVoiceData	method	private boolean fileExists(String str)
+com.svox.pico.CheckVoiceData	method	protected void onCreate(Bundle bundle)
+com.svox.pico.DownloadVoiceData	method	protected void onCreate(Bundle bundle)
+com.svox.pico.EngineSettings	method	protected void onCreate(Bundle bundle)
+com.svox.pico.EngineSettings	method	public void onActivityResult(int i, int i2, Intent intent)
+com.svox.pico.GetSampleText	method	protected void onCreate(Bundle bundle)
+com.svox.pico.LangPackUninstaller	method	public void onReceive(Context context, Intent intent)
+com.svox.pico.PicoService	method	protected String getSoFilename()
+com.svox.pico.R$layout	field	public static final int main;
+com.svox.pico.R$string	field	public static final int app_name;
+com.svox.pico.R$string	field	public static final int deu_deu_sample;
+com.svox.pico.R$string	field	public static final int eng_gbr_sample;
+com.svox.pico.R$string	field	public static final int eng_usa_sample;
+com.svox.pico.R$string	field	public static final int fra_fra_sample;
+com.svox.pico.R$string	field	public static final int installed;
+com.svox.pico.R$string	field	public static final int ita_ita_sample;
+com.svox.pico.R$string	field	public static final int not_installed;
+com.svox.pico.R$string	field	public static final int spa_esp_sample;
+com.svox.pico.R$xml	field	public static final int tts_engine;
+com.svox.pico.R$xml	field	public static final int voices_list;
+com.svox.pico.VoiceDataInstallerReceiver	method	private static String getPackageName(Intent intent)
+com.svox.pico.VoiceDataInstallerReceiver	method	public void onReceive(Context context, Intent intent)
+com.svox.pico.providers.SettingsProvider	method	public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2)
+com.svox.pico.providers.SettingsProvider	method	public String getType(Uri uri)
+com.svox.pico.providers.SettingsProvider	method	public Uri insert(Uri uri, ContentValues contentValues)
+com.svox.pico.providers.SettingsProvider	method	public boolean onCreate()
+com.svox.pico.providers.SettingsProvider	method	public int delete(Uri uri, String str, String[] strArr)
+com.svox.pico.providers.SettingsProvider	method	public int update(Uri uri, ContentValues contentValues, String str, String[] strArr)
+com.svox.pico.providers.SettingsProvider$SettingsCursor	field	private String settings;
+com.svox.pico.providers.SettingsProvider$SettingsCursor	method	public SettingsCursor(SettingsProvider settingsProvider, String[] strArr)
+com.svox.pico.providers.SettingsProvider$SettingsCursor	method	public String getString(int i)
+com.svox.pico.providers.SettingsProvider$SettingsCursor	method	public int getCount()
+com.svox.pico.providers.SettingsProvider$SettingsCursor	method	public void putSettings(String str)

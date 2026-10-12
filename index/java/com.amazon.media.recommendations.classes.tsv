@@ -1,0 +1,100 @@
+kind	class	extends	implements
+class	com.amazon.device.sale.api.card.BaseCard	CommonCardData	
+class	com.amazon.device.sale.api.card.BaseCard$BaseCardBuilder	CommonCardData	
+class	com.amazon.device.sale.api.card.CommonCardData		Parcelable
+class	com.amazon.device.sale.api.card.NotificationCard	BaseCard	
+class	com.amazon.device.sale.api.card.NotificationCard$Builder	BaseCard.BaseCardBuilder	
+class	com.amazon.device.sale.api.database.DbUtil		
+class	com.amazon.device.sale.api.database.NotificationKeyMap		
+class	com.amazon.device.sale.api.database.PendingIntentMap		
+class	com.amazon.device.sale.api.database.SaleContractBase		
+class	com.amazon.device.sale.api.database.SaleContractBase$Notification		
+class	com.amazon.device.sale.api.database.SaleContractBase$NotificationBlockPackageList		
+class	com.amazon.device.sale.api.database.SaleDatabase	SQLiteOpenHelper	
+class	com.amazon.device.sale.api.database.providers.SaleProvider	ContentProvider	
+class	com.amazon.device.sale.api.database.providers.SaleProviderNotification		
+class	com.amazon.device.sale.api.database.tables.TableBlockPackage		BaseColumns
+class	com.amazon.device.sale.api.database.tables.TableNotification		
+class	com.amazon.device.sale.api.database.tables.TableNotificationBase		BaseColumns
+class	com.amazon.device.sale.api.database.tables.TableNotificationBase$DismissCard		
+class	com.amazon.device.sale.api.database.tables.TableNotificationBlockListPackage		BaseColumns
+class	com.amazon.device.sale.api.imageprocessing.ImageCache		
+class	com.amazon.device.sale.api.utils.Compare		
+class	com.amazon.device.sale.api.utils.NotificationUtil		
+class	com.amazon.device.sale.api.utils.PackageManagerUtil		
+class	com.amazon.device.sale.api.utils.TagMgr		
+class	com.amazon.device.sale.api.utils.TimeUtil		
+class	com.amazon.device.sale.api.utils.Util		
+class	com.amazon.media.notifications.IAmazonNotificationManager$Stub	Binder	IAmazonNotificationManager
+class	com.amazon.media.notifications.INotificationPostedCallback$Stub	Binder	INotificationPostedCallback
+class	com.amazon.media.notifications.INotificationPostedCallback$Stub$Proxy		INotificationPostedCallback
+class	com.amazon.media.recommendations.IRecommendation		Parcelable
+class	com.amazon.media.recommendations.IRecommendationManager$Stub	Binder	IRecommendationManager
+class	com.amazon.media.recommendations.IRecommendationManagerExtender$Stub	Binder	IRecommendationManagerExtender
+class	com.amazon.media.recommendations.R		
+class	com.amazon.media.recommendations.R$array		
+class	com.amazon.media.recommendations.R$color		
+class	com.amazon.media.recommendations.R$dimen		
+class	com.amazon.media.recommendations.R$drawable		
+class	com.amazon.media.recommendations.R$id		
+class	com.amazon.media.recommendations.R$layout		
+class	com.amazon.media.recommendations.R$raw		
+class	com.amazon.media.recommendations.R$string		
+class	com.amazon.media.recommendations.R$style		
+class	com.amazon.media.recommendations.RecommendationConsumerService	Service	
+class	com.amazon.media.recommendations.RecommendationJni		
+class	com.amazon.media.recommendations.RecommendationManagerService	Service	
+class	com.amazon.media.recommendations.consumer.IPackageInfo		Parcelable
+class	com.amazon.media.recommendations.consumer.IRecommendationConfig		Parcelable
+class	com.amazon.media.recommendations.consumer.IRecommendationConsumer$Stub	Binder	IRecommendationConsumer
+class	com.amazon.media.recommendations.consumer.IRecommendationsResult		Parcelable
+class	com.amazon.media.recommendations.handlers.NotificationHandler		
+class	com.amazon.media.recommendations.handlers.NotificationImageHandler		
+class	com.amazon.media.recommendations.imageprocessing.AsyncTaskManager		
+class	com.amazon.media.recommendations.imageprocessing.ImageProcessManager		
+class	com.amazon.media.recommendations.imageprocessing.LetterBox		
+class	com.amazon.media.recommendations.imageprocessing.ProcessImageTask	AsyncTask<Void, Void, Void>	
+class	com.amazon.media.recommendations.notification.AmazonNotificationManagerService	Service	
+class	com.amazon.media.recommendations.utils.RecommendationConstants		
+class	com.amazon.media.recommendations.utils.RecommendationUtils		
+class	com.amazon.media.recommendations.utils.RecommendationValidator		
+class	com.amazon.notification.AmazonNotificationConfig		
+class	com.amazon.notification.AmazonNotificationService	Service	
+class	com.amazon.notification.AmazonNotificationService$IncomingHandler	Handler	
+class	com.amazon.notification.AmazonNotificationService$MyReceiver	BroadcastReceiver	
+class	com.amazon.notification.AmazonNotificationService$NotificationListener	NotificationListenerService	
+class	com.amazon.notification.BootReceiver	BroadcastReceiver	
+class	com.amazon.notification.BootReceiver$AnonymousClass1	BroadcastReceiver	
+class	com.amazon.notification.LogNotification		
+class	com.amazon.notification.ModeSwitchOverlay		
+class	com.amazon.notification.ModeSwitchOverlay$AnimatorListener		Animator.AnimatorListener
+class	com.amazon.notification.ModeSwitchOverlayReceiver	BroadcastReceiver	
+class	com.amazon.notification.NativeSaleServiceManager		INativeServiceManager
+class	com.amazon.notification.NativeSaleServiceManager$PendingIntentPair		
+class	com.amazon.notification.NotificationArcusManager		
+class	com.amazon.notification.NotificationArcusManager$NotificationArcusHandler	Handler	
+class	com.amazon.notification.NotificationMessage		
+class	com.amazon.notification.NotificationQueue		
+class	com.amazon.notification.NotificationWhiteListPlaybackUtil		
+class	com.amazon.notification.PackageUninstallReceiver	BroadcastReceiver	
+class	com.amazon.notification.SecureSettingsContentObserver	ContentObserver	
+class	com.amazon.notification.ShimmerTextView	TextView	
+class	com.amazon.notification.ui.NotificationLayout	LinearLayout	
+class	com.amazon.notification.ui.NotificationWrapper		
+class	com.amazon.notification.ui.NotificationWrapper$AnonymousClass1	TimerTask	
+class	com.amazon.notification.ui.NotificationWrapper$NotificationGestureDetector	GestureDetector.SimpleOnGestureListener	
+class	com.amazon.sale.service.INotificationReceived$Stub	Binder	INotificationReceived
+class	com.amazon.sale.service.INotificationReceiver$Stub	Binder	INotificationReceiver
+class	com.amazon.sale.service.INotificationReceiver$Stub$Proxy		INotificationReceiver
+interface	com.amazon.media.notifications.IAmazonNotificationManager	IInterface	
+interface	com.amazon.media.notifications.INotificationPostedCallback	IInterface	
+interface	com.amazon.media.recommendations.IRecommendationManager	IInterface	
+interface	com.amazon.media.recommendations.IRecommendationManagerExtender	IInterface	
+interface	com.amazon.media.recommendations.RecommendationConsumerCallback		
+interface	com.amazon.media.recommendations.consumer.IRecommendationConsumer	IInterface	
+interface	com.amazon.notification.INativeServiceManager		
+interface	com.amazon.notification.ModeSwitchOverlay$OnStateChangeListener		
+interface	com.amazon.notification.NativeSaleServiceManager$ServiceConnectionCallback		
+interface	com.amazon.notification.NotificationArcusCallback		
+interface	com.amazon.sale.service.INotificationReceived	IInterface	
+interface	com.amazon.sale.service.INotificationReceiver	IInterface	

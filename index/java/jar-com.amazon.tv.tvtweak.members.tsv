@@ -1,0 +1,1160 @@
+class	kind	declaration
+com.amazon.tv.tvtweak.BoolSettingValue	field	private final Boolean mDefaultValue;
+com.amazon.tv.tvtweak.BoolSettingValue	field	private final boolean mValue;
+com.amazon.tv.tvtweak.BoolSettingValue	field	private static final long serialVersionUID;
+com.amazon.tv.tvtweak.BoolSettingValue	method	protected boolean canEqual(Object other)
+com.amazon.tv.tvtweak.BoolSettingValue	method	public BoolSettingValue(boolean value)
+com.amazon.tv.tvtweak.BoolSettingValue	method	public BoolSettingValue(boolean value, Boolean defaultValue)
+com.amazon.tv.tvtweak.BoolSettingValue	method	public Boolean getDefaultValue()
+com.amazon.tv.tvtweak.BoolSettingValue	method	public String toString()
+com.amazon.tv.tvtweak.BoolSettingValue	method	public boolean equals(Object o)
+com.amazon.tv.tvtweak.BoolSettingValue	method	public boolean getValue()
+com.amazon.tv.tvtweak.BoolSettingValue	method	public int describeContents()
+com.amazon.tv.tvtweak.BoolSettingValue	method	public int hashCode()
+com.amazon.tv.tvtweak.BoolSettingValue	method	public void writeToParcel(Parcel out, int flags)
+com.amazon.tv.tvtweak.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.tv.tvtweak.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.tv.tvtweak.BuildConfig	field	public static final String FLAVOR;
+com.amazon.tv.tvtweak.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.tv.tvtweak.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.tv.tvtweak.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.tv.tvtweak.EnumSettingValue	field	private final E mDefaultValue;
+com.amazon.tv.tvtweak.EnumSettingValue	field	private final E mValue;
+com.amazon.tv.tvtweak.EnumSettingValue	field	private final E[] mValid;
+com.amazon.tv.tvtweak.EnumSettingValue	field	private static final long serialVersionUID;
+com.amazon.tv.tvtweak.EnumSettingValue	method	protected boolean canEqual(Object other)
+com.amazon.tv.tvtweak.EnumSettingValue	method	public E getDefaultValue()
+com.amazon.tv.tvtweak.EnumSettingValue	method	public E getValue()
+com.amazon.tv.tvtweak.EnumSettingValue	method	public E[] getValid()
+com.amazon.tv.tvtweak.EnumSettingValue	method	public EnumSettingValue(E value, E[] valid)
+com.amazon.tv.tvtweak.EnumSettingValue	method	public EnumSettingValue(E value, E[] valid, E defaultValue)
+com.amazon.tv.tvtweak.EnumSettingValue	method	public String toString()
+com.amazon.tv.tvtweak.EnumSettingValue	method	public boolean equals(Object o)
+com.amazon.tv.tvtweak.EnumSettingValue	method	public int describeContents()
+com.amazon.tv.tvtweak.EnumSettingValue	method	public int hashCode()
+com.amazon.tv.tvtweak.EnumSettingValue	method	public void writeToParcel(Parcel out, int flags)
+com.amazon.tv.tvtweak.IOemSettings$Stub	field	private static final String DESCRIPTOR;
+com.amazon.tv.tvtweak.IOemSettings$Stub	field	static final int TRANSACTION_deregisterCallbackMessenger;
+com.amazon.tv.tvtweak.IOemSettings$Stub	field	static final int TRANSACTION_getBatchSettings;
+com.amazon.tv.tvtweak.IOemSettings$Stub	field	static final int TRANSACTION_getBoolSetting;
+com.amazon.tv.tvtweak.IOemSettings$Stub	field	static final int TRANSACTION_getBoolSettingWithDefault;
+com.amazon.tv.tvtweak.IOemSettings$Stub	field	static final int TRANSACTION_getEnumSetting;
+com.amazon.tv.tvtweak.IOemSettings$Stub	field	static final int TRANSACTION_getIntSetting;
+com.amazon.tv.tvtweak.IOemSettings$Stub	field	static final int TRANSACTION_getStringSetting;
+com.amazon.tv.tvtweak.IOemSettings$Stub	field	static final int TRANSACTION_isSupported;
+com.amazon.tv.tvtweak.IOemSettings$Stub	field	static final int TRANSACTION_registerAudioOutputCallback;
+com.amazon.tv.tvtweak.IOemSettings$Stub	field	static final int TRANSACTION_registerAudioProfileCallback;
+com.amazon.tv.tvtweak.IOemSettings$Stub	field	static final int TRANSACTION_registerCallbackMessenger;
+com.amazon.tv.tvtweak.IOemSettings$Stub	field	static final int TRANSACTION_registerVideoProfileCallback;
+com.amazon.tv.tvtweak.IOemSettings$Stub	field	static final int TRANSACTION_resetAudioSettings;
+com.amazon.tv.tvtweak.IOemSettings$Stub	field	static final int TRANSACTION_resetDisplaySettingsOnProfile;
+com.amazon.tv.tvtweak.IOemSettings$Stub	field	static final int TRANSACTION_resetEcm;
+com.amazon.tv.tvtweak.IOemSettings$Stub	field	static final int TRANSACTION_resetVideoSettings;
+com.amazon.tv.tvtweak.IOemSettings$Stub	field	static final int TRANSACTION_resetVideoSettingsForPictureMode;
+com.amazon.tv.tvtweak.IOemSettings$Stub	field	static final int TRANSACTION_resetVideoSettingsForPictureModeOnProfile;
+com.amazon.tv.tvtweak.IOemSettings$Stub	field	static final int TRANSACTION_resetWhiteBalanceSettings;
+com.amazon.tv.tvtweak.IOemSettings$Stub	field	static final int TRANSACTION_saveEcm;
+com.amazon.tv.tvtweak.IOemSettings$Stub	field	static final int TRANSACTION_setBatchSettings;
+com.amazon.tv.tvtweak.IOemSettings$Stub	field	static final int TRANSACTION_setBoolSetting;
+com.amazon.tv.tvtweak.IOemSettings$Stub	field	static final int TRANSACTION_setEnumSetting;
+com.amazon.tv.tvtweak.IOemSettings$Stub	field	static final int TRANSACTION_setIntSetting;
+com.amazon.tv.tvtweak.IOemSettings$Stub	field	static final int TRANSACTION_setStringSetting;
+com.amazon.tv.tvtweak.IOemSettings$Stub	method	public IBinder asBinder()
+com.amazon.tv.tvtweak.IOemSettings$Stub	method	public Stub()
+com.amazon.tv.tvtweak.IOemSettings$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.tv.tvtweak.IOemSettings$Stub	method	public static IOemSettings asInterface(IBinder obj)
+com.amazon.tv.tvtweak.IOemSettings$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.tv.tvtweak.IOemSettings$Stub$Proxy	method	public BatchSettingOutput getBatchSettings(List<Setting> settings) throws RemoteException
+com.amazon.tv.tvtweak.IOemSettings$Stub$Proxy	method	public BoolSettingValue getBoolSettingWithDefault(BoolSetting setting) throws RemoteException
+com.amazon.tv.tvtweak.IOemSettings$Stub$Proxy	method	public EnumSettingValue getEnumSetting(EnumSetting setting) throws RemoteException
+com.amazon.tv.tvtweak.IOemSettings$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.tv.tvtweak.IOemSettings$Stub$Proxy	method	public IntSettingValue getIntSetting(IntSetting setting) throws RemoteException
+com.amazon.tv.tvtweak.IOemSettings$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.tv.tvtweak.IOemSettings$Stub$Proxy	method	public StringSettingValue getStringSetting(StringSetting setting) throws RemoteException
+com.amazon.tv.tvtweak.IOemSettings$Stub$Proxy	method	public boolean deregisterCallbackMessenger(Messenger msgr) throws RemoteException
+com.amazon.tv.tvtweak.IOemSettings$Stub$Proxy	method	public boolean getBoolSetting(BoolSetting setting) throws RemoteException
+com.amazon.tv.tvtweak.IOemSettings$Stub$Proxy	method	public boolean isSupported(Setting setting) throws RemoteException
+com.amazon.tv.tvtweak.IOemSettings$Stub$Proxy	method	public boolean registerAudioOutputCallback(AudioOutputChangeCallback callback) throws RemoteException
+com.amazon.tv.tvtweak.IOemSettings$Stub$Proxy	method	public boolean registerAudioProfileCallback(AudioProfileChangeCallback callback) throws RemoteException
+com.amazon.tv.tvtweak.IOemSettings$Stub$Proxy	method	public boolean registerCallbackMessenger(Messenger msgr) throws RemoteException
+com.amazon.tv.tvtweak.IOemSettings$Stub$Proxy	method	public boolean registerVideoProfileCallback(VideoProfileChangeCallback callback) throws RemoteException
+com.amazon.tv.tvtweak.IOemSettings$Stub$Proxy	method	public boolean resetAudioSettings() throws RemoteException
+com.amazon.tv.tvtweak.IOemSettings$Stub$Proxy	method	public boolean resetEcm() throws RemoteException
+com.amazon.tv.tvtweak.IOemSettings$Stub$Proxy	method	public boolean resetVideoSettings() throws RemoteException
+com.amazon.tv.tvtweak.IOemSettings$Stub$Proxy	method	public boolean resetVideoSettingsForPictureMode(String pictureModeName) throws RemoteException
+com.amazon.tv.tvtweak.IOemSettings$Stub$Proxy	method	public boolean resetWhiteBalanceSettings() throws RemoteException
+com.amazon.tv.tvtweak.IOemSettings$Stub$Proxy	method	public boolean saveEcm() throws RemoteException
+com.amazon.tv.tvtweak.IOemSettings$Stub$Proxy	method	public boolean setBoolSetting(BoolSetting setting, boolean value) throws RemoteException
+com.amazon.tv.tvtweak.IOemSettings$Stub$Proxy	method	public boolean setEnumSetting(EnumSetting setting, String name) throws RemoteException
+com.amazon.tv.tvtweak.IOemSettings$Stub$Proxy	method	public boolean setIntSetting(IntSetting setting, int value) throws RemoteException
+com.amazon.tv.tvtweak.IOemSettings$Stub$Proxy	method	public boolean setStringSetting(StringSetting setting, String value) throws RemoteException
+com.amazon.tv.tvtweak.IOemSettings$Stub$Proxy	method	public void resetDisplaySettingsOnProfile(List<BatchDisplayResetInput> input) throws RemoteException
+com.amazon.tv.tvtweak.IOemSettings$Stub$Proxy	method	public void resetVideoSettingsForPictureModeOnProfile(List<BatchPictureModeResetInput> input) throws RemoteException
+com.amazon.tv.tvtweak.IOemSettings$Stub$Proxy	method	public void setBatchSettings(List<BatchSettingInput> input) throws RemoteException
+com.amazon.tv.tvtweak.IOnChangeCallback$Stub	field	private static final String DESCRIPTOR;
+com.amazon.tv.tvtweak.IOnChangeCallback$Stub	field	static final int TRANSACTION_onAudioOutputChange;
+com.amazon.tv.tvtweak.IOnChangeCallback$Stub	field	static final int TRANSACTION_onSettingsChange;
+com.amazon.tv.tvtweak.IOnChangeCallback$Stub	field	static final int TRANSACTION_onVideoProfileChange;
+com.amazon.tv.tvtweak.IOnChangeCallback$Stub	method	public IBinder asBinder()
+com.amazon.tv.tvtweak.IOnChangeCallback$Stub	method	public Stub()
+com.amazon.tv.tvtweak.IOnChangeCallback$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.amazon.tv.tvtweak.IOnChangeCallback$Stub	method	public static IOnChangeCallback asInterface(IBinder obj)
+com.amazon.tv.tvtweak.IOnChangeCallback$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.tv.tvtweak.IOnChangeCallback$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.tv.tvtweak.IOnChangeCallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.tv.tvtweak.IOnChangeCallback$Stub$Proxy	method	public void onAudioOutputChange(String oldOutput, String newOutput) throws RemoteException
+com.amazon.tv.tvtweak.IOnChangeCallback$Stub$Proxy	method	public void onSettingsChange(SettingsChangeEvent settingsChangeEvent) throws RemoteException
+com.amazon.tv.tvtweak.IOnChangeCallback$Stub$Proxy	method	public void onVideoProfileChange(String oldProfile, String newProfile) throws RemoteException
+com.amazon.tv.tvtweak.IOnReadyCallback$Stub	field	private static final String DESCRIPTOR;
+com.amazon.tv.tvtweak.IOnReadyCallback$Stub	field	static final int TRANSACTION_onReady;
+com.amazon.tv.tvtweak.IOnReadyCallback$Stub	field	static final int TRANSACTION_onUnavailable;
+com.amazon.tv.tvtweak.IOnReadyCallback$Stub	method	public IBinder asBinder()
+com.amazon.tv.tvtweak.IOnReadyCallback$Stub	method	public Stub()
+com.amazon.tv.tvtweak.IOnReadyCallback$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.amazon.tv.tvtweak.IOnReadyCallback$Stub	method	public static IOnReadyCallback asInterface(IBinder obj)
+com.amazon.tv.tvtweak.IOnReadyCallback$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.tv.tvtweak.IOnReadyCallback$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.tv.tvtweak.IOnReadyCallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.tv.tvtweak.IOnReadyCallback$Stub$Proxy	method	public void onReady() throws RemoteException
+com.amazon.tv.tvtweak.IOnReadyCallback$Stub$Proxy	method	public void onUnavailable() throws RemoteException
+com.amazon.tv.tvtweak.ITvTweak$Stub	field	private static final String DESCRIPTOR;
+com.amazon.tv.tvtweak.ITvTweak$Stub	field	static final int TRANSACTION_getBatchSettings;
+com.amazon.tv.tvtweak.ITvTweak$Stub	field	static final int TRANSACTION_getBoolSetting;
+com.amazon.tv.tvtweak.ITvTweak$Stub	field	static final int TRANSACTION_getBoolSettingWithDefault;
+com.amazon.tv.tvtweak.ITvTweak$Stub	field	static final int TRANSACTION_getEnumSetting;
+com.amazon.tv.tvtweak.ITvTweak$Stub	field	static final int TRANSACTION_getIntSetting;
+com.amazon.tv.tvtweak.ITvTweak$Stub	field	static final int TRANSACTION_getSettingsMode;
+com.amazon.tv.tvtweak.ITvTweak$Stub	field	static final int TRANSACTION_getStringSetting;
+com.amazon.tv.tvtweak.ITvTweak$Stub	field	static final int TRANSACTION_isSupported;
+com.amazon.tv.tvtweak.ITvTweak$Stub	field	static final int TRANSACTION_registerOnChange;
+com.amazon.tv.tvtweak.ITvTweak$Stub	field	static final int TRANSACTION_registerOnReady;
+com.amazon.tv.tvtweak.ITvTweak$Stub	field	static final int TRANSACTION_resetAudioSettings;
+com.amazon.tv.tvtweak.ITvTweak$Stub	field	static final int TRANSACTION_resetDisplaySettings;
+com.amazon.tv.tvtweak.ITvTweak$Stub	field	static final int TRANSACTION_resetEcm;
+com.amazon.tv.tvtweak.ITvTweak$Stub	field	static final int TRANSACTION_resetVideoSettings;
+com.amazon.tv.tvtweak.ITvTweak$Stub	field	static final int TRANSACTION_resetVideoSettingsForPictureMode;
+com.amazon.tv.tvtweak.ITvTweak$Stub	field	static final int TRANSACTION_resetWhiteBalanceSettings;
+com.amazon.tv.tvtweak.ITvTweak$Stub	field	static final int TRANSACTION_saveEcm;
+com.amazon.tv.tvtweak.ITvTweak$Stub	field	static final int TRANSACTION_setBatchSettings;
+com.amazon.tv.tvtweak.ITvTweak$Stub	field	static final int TRANSACTION_setBoolSetting;
+com.amazon.tv.tvtweak.ITvTweak$Stub	field	static final int TRANSACTION_setEnumSetting;
+com.amazon.tv.tvtweak.ITvTweak$Stub	field	static final int TRANSACTION_setIntSetting;
+com.amazon.tv.tvtweak.ITvTweak$Stub	field	static final int TRANSACTION_setSettingsMode;
+com.amazon.tv.tvtweak.ITvTweak$Stub	field	static final int TRANSACTION_setStringSetting;
+com.amazon.tv.tvtweak.ITvTweak$Stub	field	static final int TRANSACTION_unregisterOnChange;
+com.amazon.tv.tvtweak.ITvTweak$Stub	field	static final int TRANSACTION_unregisterOnReady;
+com.amazon.tv.tvtweak.ITvTweak$Stub	method	public IBinder asBinder()
+com.amazon.tv.tvtweak.ITvTweak$Stub	method	public Stub()
+com.amazon.tv.tvtweak.ITvTweak$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.tv.tvtweak.ITvTweak$Stub	method	public static ITvTweak asInterface(IBinder obj)
+com.amazon.tv.tvtweak.ITvTweak$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.tv.tvtweak.ITvTweak$Stub$Proxy	method	public BatchSettingOutput getBatchSettings(List<Setting> settings) throws RemoteException
+com.amazon.tv.tvtweak.ITvTweak$Stub$Proxy	method	public BoolSettingValue getBoolSettingWithDefault(BoolSetting setting) throws RemoteException
+com.amazon.tv.tvtweak.ITvTweak$Stub$Proxy	method	public EnumSettingValue getEnumSetting(EnumSetting setting) throws RemoteException
+com.amazon.tv.tvtweak.ITvTweak$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.tv.tvtweak.ITvTweak$Stub$Proxy	method	public IntSettingValue getIntSetting(IntSetting setting) throws RemoteException
+com.amazon.tv.tvtweak.ITvTweak$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.tv.tvtweak.ITvTweak$Stub$Proxy	method	public String getSettingsMode() throws RemoteException
+com.amazon.tv.tvtweak.ITvTweak$Stub$Proxy	method	public StringSettingValue getStringSetting(StringSetting setting) throws RemoteException
+com.amazon.tv.tvtweak.ITvTweak$Stub$Proxy	method	public boolean getBoolSetting(BoolSetting setting) throws RemoteException
+com.amazon.tv.tvtweak.ITvTweak$Stub$Proxy	method	public boolean isSupported(Setting setting) throws RemoteException
+com.amazon.tv.tvtweak.ITvTweak$Stub$Proxy	method	public boolean registerOnChange(IOnChangeCallback callback) throws RemoteException
+com.amazon.tv.tvtweak.ITvTweak$Stub$Proxy	method	public boolean registerOnReady(IOnReadyCallback callback) throws RemoteException
+com.amazon.tv.tvtweak.ITvTweak$Stub$Proxy	method	public boolean resetAudioSettings() throws RemoteException
+com.amazon.tv.tvtweak.ITvTweak$Stub$Proxy	method	public boolean resetDisplaySettings() throws RemoteException
+com.amazon.tv.tvtweak.ITvTweak$Stub$Proxy	method	public boolean resetEcm() throws RemoteException
+com.amazon.tv.tvtweak.ITvTweak$Stub$Proxy	method	public boolean resetVideoSettings() throws RemoteException
+com.amazon.tv.tvtweak.ITvTweak$Stub$Proxy	method	public boolean resetVideoSettingsForPictureMode(String pictureModeName) throws RemoteException
+com.amazon.tv.tvtweak.ITvTweak$Stub$Proxy	method	public boolean resetWhiteBalanceSettings() throws RemoteException
+com.amazon.tv.tvtweak.ITvTweak$Stub$Proxy	method	public boolean saveEcm() throws RemoteException
+com.amazon.tv.tvtweak.ITvTweak$Stub$Proxy	method	public boolean setBatchSettings(List<BatchSettingInput> input) throws RemoteException
+com.amazon.tv.tvtweak.ITvTweak$Stub$Proxy	method	public boolean setBoolSetting(BoolSetting setting, boolean value) throws RemoteException
+com.amazon.tv.tvtweak.ITvTweak$Stub$Proxy	method	public boolean setEnumSetting(EnumSetting setting, String name) throws RemoteException
+com.amazon.tv.tvtweak.ITvTweak$Stub$Proxy	method	public boolean setIntSetting(IntSetting setting, int value) throws RemoteException
+com.amazon.tv.tvtweak.ITvTweak$Stub$Proxy	method	public boolean setSettingsMode(String modeName) throws RemoteException
+com.amazon.tv.tvtweak.ITvTweak$Stub$Proxy	method	public boolean setStringSetting(StringSetting setting, String value) throws RemoteException
+com.amazon.tv.tvtweak.ITvTweak$Stub$Proxy	method	public boolean unregisterOnChange(IOnChangeCallback callback) throws RemoteException
+com.amazon.tv.tvtweak.ITvTweak$Stub$Proxy	method	public boolean unregisterOnReady(IOnReadyCallback callback) throws RemoteException
+com.amazon.tv.tvtweak.IntSettingRange	field	private final int mMax;
+com.amazon.tv.tvtweak.IntSettingRange	field	private final int mMin;
+com.amazon.tv.tvtweak.IntSettingRange	field	private final int mStep;
+com.amazon.tv.tvtweak.IntSettingRange	field	private static final long serialVersionUID;
+com.amazon.tv.tvtweak.IntSettingRange	method	protected boolean canEqual(Object other)
+com.amazon.tv.tvtweak.IntSettingRange	method	public IntSettingRange(int min, int max, int step)
+com.amazon.tv.tvtweak.IntSettingRange	method	public String toString()
+com.amazon.tv.tvtweak.IntSettingRange	method	public boolean equals(Object o)
+com.amazon.tv.tvtweak.IntSettingRange	method	public int describeContents()
+com.amazon.tv.tvtweak.IntSettingRange	method	public int getMax()
+com.amazon.tv.tvtweak.IntSettingRange	method	public int getMin()
+com.amazon.tv.tvtweak.IntSettingRange	method	public int getStep()
+com.amazon.tv.tvtweak.IntSettingRange	method	public int hashCode()
+com.amazon.tv.tvtweak.IntSettingRange	method	public void writeToParcel(Parcel out, int flags)
+com.amazon.tv.tvtweak.IntSettingValue	field	private final IntSettingRange mRange;
+com.amazon.tv.tvtweak.IntSettingValue	field	private final Integer mDefaultValue;
+com.amazon.tv.tvtweak.IntSettingValue	field	private final int mValue;
+com.amazon.tv.tvtweak.IntSettingValue	field	private static final long serialVersionUID;
+com.amazon.tv.tvtweak.IntSettingValue	method	protected boolean canEqual(Object other)
+com.amazon.tv.tvtweak.IntSettingValue	method	public IntSettingRange getRange()
+com.amazon.tv.tvtweak.IntSettingValue	method	public IntSettingValue(int value, IntSettingRange range)
+com.amazon.tv.tvtweak.IntSettingValue	method	public IntSettingValue(int value, IntSettingRange range, Integer defaultValue)
+com.amazon.tv.tvtweak.IntSettingValue	method	public Integer getDefaultValue()
+com.amazon.tv.tvtweak.IntSettingValue	method	public String toString()
+com.amazon.tv.tvtweak.IntSettingValue	method	public boolean equals(Object o)
+com.amazon.tv.tvtweak.IntSettingValue	method	public int describeContents()
+com.amazon.tv.tvtweak.IntSettingValue	method	public int getValue()
+com.amazon.tv.tvtweak.IntSettingValue	method	public int hashCode()
+com.amazon.tv.tvtweak.IntSettingValue	method	public void writeToParcel(Parcel out, int flags)
+com.amazon.tv.tvtweak.OemSettings	field	public static final String DISPLAY_STATE_DATA_KEY;
+com.amazon.tv.tvtweak.OemSettings	field	public static final String SETTINGS_CHANGE_DATA_KEY;
+com.amazon.tv.tvtweak.OemSettings	field	public static final int AUDIO_OUTPUT_CHANGE_ID;
+com.amazon.tv.tvtweak.OemSettings	field	public static final int AUDIO_PROFILE_CHANGE_ID;
+com.amazon.tv.tvtweak.OemSettings	field	public static final int SETTINGS_CHANGE_ID;
+com.amazon.tv.tvtweak.OemSettings	field	public static final int VIDEO_DISPLAY_STATE_CHANGE_ID;
+com.amazon.tv.tvtweak.OemSettings	field	public static final int VIDEO_PROFILE_CHANGE_ID;
+com.amazon.tv.tvtweak.OemSettings	method	public BoolSettingValue getBoolSettingWithDefault(BoolSetting setting) throws RemoteException
+com.amazon.tv.tvtweak.OemSettings	method	public StringSettingValue getStringSetting(StringSetting setting) throws RemoteException
+com.amazon.tv.tvtweak.OemSettings	method	public abstract BatchSettingOutput getBatchSettings(List<Setting> list) throws RemoteException;
+com.amazon.tv.tvtweak.OemSettings	method	public abstract EnumSettingValue getEnumSetting(EnumSetting enumSetting) throws RemoteException;
+com.amazon.tv.tvtweak.OemSettings	method	public abstract IntSettingValue getIntSetting(IntSetting intSetting) throws RemoteException;
+com.amazon.tv.tvtweak.OemSettings	method	public abstract boolean getBoolSetting(BoolSetting boolSetting) throws RemoteException;
+com.amazon.tv.tvtweak.OemSettings	method	public abstract boolean isSupported(Setting setting) throws RemoteException;
+com.amazon.tv.tvtweak.OemSettings	method	public abstract boolean registerAudioOutputCallback(AudioOutputChangeCallback audioOutputChangeCallback) throws RemoteException;
+com.amazon.tv.tvtweak.OemSettings	method	public abstract boolean registerAudioProfileCallback(AudioProfileChangeCallback audioProfileChangeCallback) throws RemoteException;
+com.amazon.tv.tvtweak.OemSettings	method	public abstract boolean registerVideoProfileCallback(VideoProfileChangeCallback videoProfileChangeCallback) throws RemoteException;
+com.amazon.tv.tvtweak.OemSettings	method	public abstract boolean resetAudioSettings() throws RemoteException;
+com.amazon.tv.tvtweak.OemSettings	method	public abstract boolean resetVideoSettings() throws RemoteException;
+com.amazon.tv.tvtweak.OemSettings	method	public abstract boolean resetVideoSettingsForPictureMode(String str) throws RemoteException;
+com.amazon.tv.tvtweak.OemSettings	method	public abstract boolean setBoolSetting(BoolSetting boolSetting, boolean z) throws RemoteException;
+com.amazon.tv.tvtweak.OemSettings	method	public abstract boolean setEnumSetting(EnumSetting enumSetting, String str) throws RemoteException;
+com.amazon.tv.tvtweak.OemSettings	method	public abstract boolean setIntSetting(IntSetting intSetting, int i) throws RemoteException;
+com.amazon.tv.tvtweak.OemSettings	method	public abstract void resetVideoSettingsForPictureModeOnProfile(List<BatchPictureModeResetInput> list) throws RemoteException;
+com.amazon.tv.tvtweak.OemSettings	method	public abstract void setBatchSettings(List<BatchSettingInput> list) throws RemoteException;
+com.amazon.tv.tvtweak.OemSettings	method	public boolean deregisterCallbackMessenger(Messenger msgr) throws RemoteException
+com.amazon.tv.tvtweak.OemSettings	method	public boolean registerCallbackMessenger(Messenger msgr) throws RemoteException
+com.amazon.tv.tvtweak.OemSettings	method	public boolean resetEcm()
+com.amazon.tv.tvtweak.OemSettings	method	public boolean resetWhiteBalanceSettings() throws RemoteException
+com.amazon.tv.tvtweak.OemSettings	method	public boolean saveEcm()
+com.amazon.tv.tvtweak.OemSettings	method	public boolean setStringSetting(StringSetting setting, String value) throws RemoteException
+com.amazon.tv.tvtweak.OemSettings	method	public void resetDisplaySettingsOnProfile(List<BatchDisplayResetInput> input) throws RemoteException
+com.amazon.tv.tvtweak.OutOfRangeSettingValueException	method	public OutOfRangeSettingValueException(String msg)
+com.amazon.tv.tvtweak.StringSettingValue	field	private final String mValue;
+com.amazon.tv.tvtweak.StringSettingValue	field	private static final long serialVersionUID;
+com.amazon.tv.tvtweak.StringSettingValue	method	protected boolean canEqual(Object other)
+com.amazon.tv.tvtweak.StringSettingValue	method	public String getValue()
+com.amazon.tv.tvtweak.StringSettingValue	method	public String toString()
+com.amazon.tv.tvtweak.StringSettingValue	method	public StringSettingValue(String value)
+com.amazon.tv.tvtweak.StringSettingValue	method	public boolean equals(Object o)
+com.amazon.tv.tvtweak.StringSettingValue	method	public int describeContents()
+com.amazon.tv.tvtweak.StringSettingValue	method	public int hashCode()
+com.amazon.tv.tvtweak.StringSettingValue	method	public void writeToParcel(Parcel out, int flags)
+com.amazon.tv.tvtweak.UnsupportedDeviceException	method	public UnsupportedDeviceException(String msg)
+com.amazon.tv.tvtweak.api.BatchDisplayResetInput	field	private boolean mSuccessful;
+com.amazon.tv.tvtweak.api.BatchDisplayResetInput	field	private final VideoProfilesEnum mVideoProfile;
+com.amazon.tv.tvtweak.api.BatchDisplayResetInput	field	private static final long serialVersionUID;
+com.amazon.tv.tvtweak.api.BatchDisplayResetInput	method	protected boolean canEqual(Object other)
+com.amazon.tv.tvtweak.api.BatchDisplayResetInput	method	public BatchDisplayResetInput(VideoProfilesEnum videoProfile)
+com.amazon.tv.tvtweak.api.BatchDisplayResetInput	method	public String toString()
+com.amazon.tv.tvtweak.api.BatchDisplayResetInput	method	public VideoProfilesEnum getVideoProfile()
+com.amazon.tv.tvtweak.api.BatchDisplayResetInput	method	public boolean equals(Object o)
+com.amazon.tv.tvtweak.api.BatchDisplayResetInput	method	public boolean isSuccessful()
+com.amazon.tv.tvtweak.api.BatchDisplayResetInput	method	public int describeContents()
+com.amazon.tv.tvtweak.api.BatchDisplayResetInput	method	public int hashCode()
+com.amazon.tv.tvtweak.api.BatchDisplayResetInput	method	public void setSuccessful(boolean mSuccessful)
+com.amazon.tv.tvtweak.api.BatchDisplayResetInput	method	public void writeToParcel(Parcel out, int flags)
+com.amazon.tv.tvtweak.api.BatchPictureModeResetInput	field	private boolean mSuccessful;
+com.amazon.tv.tvtweak.api.BatchPictureModeResetInput	field	private final PictureModeEnum mPictureMode;
+com.amazon.tv.tvtweak.api.BatchPictureModeResetInput	field	private final VideoProfilesEnum mVideoProfile;
+com.amazon.tv.tvtweak.api.BatchPictureModeResetInput	field	private static final long serialVersionUID;
+com.amazon.tv.tvtweak.api.BatchPictureModeResetInput	method	protected boolean canEqual(Object other)
+com.amazon.tv.tvtweak.api.BatchPictureModeResetInput	method	public BatchPictureModeResetInput(VideoProfilesEnum videoProfile, PictureModeEnum pictureMode)
+com.amazon.tv.tvtweak.api.BatchPictureModeResetInput	method	public PictureModeEnum getPictureMode()
+com.amazon.tv.tvtweak.api.BatchPictureModeResetInput	method	public String toString()
+com.amazon.tv.tvtweak.api.BatchPictureModeResetInput	method	public VideoProfilesEnum getVideoProfile()
+com.amazon.tv.tvtweak.api.BatchPictureModeResetInput	method	public boolean equals(Object o)
+com.amazon.tv.tvtweak.api.BatchPictureModeResetInput	method	public boolean isSuccessful()
+com.amazon.tv.tvtweak.api.BatchPictureModeResetInput	method	public int describeContents()
+com.amazon.tv.tvtweak.api.BatchPictureModeResetInput	method	public int hashCode()
+com.amazon.tv.tvtweak.api.BatchPictureModeResetInput	method	public void setSuccessful(boolean mSuccessful)
+com.amazon.tv.tvtweak.api.BatchPictureModeResetInput	method	public void writeToParcel(Parcel out, int flags)
+com.amazon.tv.tvtweak.api.BatchSettingInput	field	private boolean mSuccessful;
+com.amazon.tv.tvtweak.api.BatchSettingInput	field	private final Object mValue;
+com.amazon.tv.tvtweak.api.BatchSettingInput	field	private final Setting mSetting;
+com.amazon.tv.tvtweak.api.BatchSettingInput	field	private final VideoProfilesEnum mVideoProfile;
+com.amazon.tv.tvtweak.api.BatchSettingInput	field	private static final long serialVersionUID;
+com.amazon.tv.tvtweak.api.BatchSettingInput	method	protected boolean canEqual(Object other)
+com.amazon.tv.tvtweak.api.BatchSettingInput	method	public BatchSettingInput(Setting setting, VideoProfilesEnum videoName, Object value)
+com.amazon.tv.tvtweak.api.BatchSettingInput	method	public Object getValue()
+com.amazon.tv.tvtweak.api.BatchSettingInput	method	public Setting getSetting()
+com.amazon.tv.tvtweak.api.BatchSettingInput	method	public String toString()
+com.amazon.tv.tvtweak.api.BatchSettingInput	method	public VideoProfilesEnum getVideoProfile()
+com.amazon.tv.tvtweak.api.BatchSettingInput	method	public boolean equals(Object o)
+com.amazon.tv.tvtweak.api.BatchSettingInput	method	public boolean isSuccessful()
+com.amazon.tv.tvtweak.api.BatchSettingInput	method	public int describeContents()
+com.amazon.tv.tvtweak.api.BatchSettingInput	method	public int hashCode()
+com.amazon.tv.tvtweak.api.BatchSettingInput	method	public void setSuccessful(boolean successful)
+com.amazon.tv.tvtweak.api.BatchSettingInput	method	public void writeToParcel(Parcel out, int flags)
+com.amazon.tv.tvtweak.api.BatchSettingOutput	field	private final Map<Setting, List<BatchSettingOutputItem>> mOutput;
+com.amazon.tv.tvtweak.api.BatchSettingOutput	field	private static final long serialVersionUID;
+com.amazon.tv.tvtweak.api.BatchSettingOutput	method	protected boolean canEqual(Object other)
+com.amazon.tv.tvtweak.api.BatchSettingOutput	method	public BatchSettingOutput(Map<Setting, List<BatchSettingOutputItem>> output)
+com.amazon.tv.tvtweak.api.BatchSettingOutput	method	public Map<Setting, List<BatchSettingOutputItem>> getOutput()
+com.amazon.tv.tvtweak.api.BatchSettingOutput	method	public String toString()
+com.amazon.tv.tvtweak.api.BatchSettingOutput	method	public boolean equals(Object o)
+com.amazon.tv.tvtweak.api.BatchSettingOutput	method	public int describeContents()
+com.amazon.tv.tvtweak.api.BatchSettingOutput	method	public int hashCode()
+com.amazon.tv.tvtweak.api.BatchSettingOutput	method	public void writeToParcel(Parcel out, int flags)
+com.amazon.tv.tvtweak.api.BatchSettingOutputItem	field	private final Object mValue;
+com.amazon.tv.tvtweak.api.BatchSettingOutputItem	field	private final VideoProfilesEnum mVideoProfile;
+com.amazon.tv.tvtweak.api.BatchSettingOutputItem	field	private static final long serialVersionUID;
+com.amazon.tv.tvtweak.api.BatchSettingOutputItem	method	protected boolean canEqual(Object other)
+com.amazon.tv.tvtweak.api.BatchSettingOutputItem	method	public BatchSettingOutputItem(VideoProfilesEnum videoProfile, Object value)
+com.amazon.tv.tvtweak.api.BatchSettingOutputItem	method	public Object getValue()
+com.amazon.tv.tvtweak.api.BatchSettingOutputItem	method	public String toString()
+com.amazon.tv.tvtweak.api.BatchSettingOutputItem	method	public VideoProfilesEnum getVideoProfile()
+com.amazon.tv.tvtweak.api.BatchSettingOutputItem	method	public boolean equals(Object o)
+com.amazon.tv.tvtweak.api.BatchSettingOutputItem	method	public int describeContents()
+com.amazon.tv.tvtweak.api.BatchSettingOutputItem	method	public int hashCode()
+com.amazon.tv.tvtweak.api.BatchSettingOutputItem	method	public void writeToParcel(Parcel out, int flags)
+com.amazon.tv.tvtweak.api.BoolSetting	field	private static final long serialVersionUID;
+com.amazon.tv.tvtweak.api.BoolSetting	method	public BoolSetting(String desc, SettingType type)
+com.amazon.tv.tvtweak.api.BoolSetting	method	public BoolSetting(String desc, SettingType type, boolean usableInBasicMode)
+com.amazon.tv.tvtweak.api.BoolSetting	method	public BoolSetting(String desc, boolean b, boolean b1, SettingType type)
+com.amazon.tv.tvtweak.api.BoolSetting	method	public BoolSetting(String desc, boolean b, boolean b1, SettingType type, boolean usableInBasicMode)
+com.amazon.tv.tvtweak.api.BoolSetting	method	public BoolSetting(String desc, boolean settable, SettingType type)
+com.amazon.tv.tvtweak.api.BoolSetting	method	public boolean runCheck(boolean value)
+com.amazon.tv.tvtweak.api.EnumSetting	field	private final Class<E> mEnumType;
+com.amazon.tv.tvtweak.api.EnumSetting	field	private static final long serialVersionUID;
+com.amazon.tv.tvtweak.api.EnumSetting	method	protected boolean canEqual(Object other)
+com.amazon.tv.tvtweak.api.EnumSetting	method	public Class<E> getEnumType()
+com.amazon.tv.tvtweak.api.EnumSetting	method	public EnumSetting(String desc, SettingType type, Class<E> enumType)
+com.amazon.tv.tvtweak.api.EnumSetting	method	public EnumSetting(String desc, SettingType type, Class<E> enumType, boolean usableInBasicMode)
+com.amazon.tv.tvtweak.api.EnumSetting	method	public EnumSetting(String desc, boolean b, SettingType type, Class<E> enumType)
+com.amazon.tv.tvtweak.api.EnumSetting	method	public EnumSetting(String desc, boolean b, boolean b1, SettingType type, Class<E> enumType)
+com.amazon.tv.tvtweak.api.EnumSetting	method	public EnumSetting(String desc, boolean b, boolean b1, SettingType type, Class<E> enumType, boolean usableInBasicMode)
+com.amazon.tv.tvtweak.api.EnumSetting	method	public String toString()
+com.amazon.tv.tvtweak.api.EnumSetting	method	public boolean equals(Object o)
+com.amazon.tv.tvtweak.api.EnumSetting	method	public boolean runCheck(String name)
+com.amazon.tv.tvtweak.api.EnumSetting	method	public boolean runGetCheck(String name)
+com.amazon.tv.tvtweak.api.EnumSetting	method	public int hashCode()
+com.amazon.tv.tvtweak.api.IntSetting	field	private static final long serialVersionUID;
+com.amazon.tv.tvtweak.api.IntSetting	method	public IntSetting(String desc, SettingType type)
+com.amazon.tv.tvtweak.api.IntSetting	method	public IntSetting(String desc, SettingType type, boolean usableInBasicMode)
+com.amazon.tv.tvtweak.api.IntSetting	method	public IntSetting(String desc, boolean canSet, SettingType type)
+com.amazon.tv.tvtweak.api.IntSetting	method	public IntSetting(String desc, boolean canSet, boolean managed, SettingType type)
+com.amazon.tv.tvtweak.api.IntSetting	method	public IntSetting(String desc, boolean canSet, boolean managed, SettingType type, boolean usableInBasicMode)
+com.amazon.tv.tvtweak.api.IntSetting	method	public boolean runCheck(int in)
+com.amazon.tv.tvtweak.api.OemSettingsChangeEvent	field	private final Map<Setting, Object> mChangedSettingValues;
+com.amazon.tv.tvtweak.api.OemSettingsChangeEvent	field	private static final long serialVersionUID;
+com.amazon.tv.tvtweak.api.OemSettingsChangeEvent	field	public static final String parcelableBundleKey;
+com.amazon.tv.tvtweak.api.OemSettingsChangeEvent	method	public Map<Setting, Object> getChangedSettingValues()
+com.amazon.tv.tvtweak.api.OemSettingsChangeEvent	method	public OemSettingsChangeEvent(Map<Setting, Object> changedSettingValues)
+com.amazon.tv.tvtweak.api.OemSettingsChangeEvent	method	public int describeContents()
+com.amazon.tv.tvtweak.api.OemSettingsChangeEvent	method	public void writeToParcel(Parcel dest, int flags)
+com.amazon.tv.tvtweak.api.Setting	field	private static final long serialVersionUID;
+com.amazon.tv.tvtweak.api.Setting	field	protected boolean mProfileManaged;
+com.amazon.tv.tvtweak.api.Setting	field	protected boolean mSettable;
+com.amazon.tv.tvtweak.api.Setting	field	protected boolean mUsableInBasicMode;
+com.amazon.tv.tvtweak.api.Setting	field	protected final SettingType mType;
+com.amazon.tv.tvtweak.api.Setting	field	protected final String mID;
+com.amazon.tv.tvtweak.api.Setting	method	protected boolean canEqual(Object other)
+com.amazon.tv.tvtweak.api.Setting	method	public Setting(String desc, SettingType type)
+com.amazon.tv.tvtweak.api.Setting	method	public Setting(String desc, SettingType type, boolean usableInBasicMode)
+com.amazon.tv.tvtweak.api.Setting	method	public Setting(String desc, boolean settable, SettingType type)
+com.amazon.tv.tvtweak.api.Setting	method	public Setting(String desc, boolean settable, boolean pManaged, SettingType type)
+com.amazon.tv.tvtweak.api.Setting	method	public Setting(String desc, boolean settable, boolean pManaged, SettingType type, boolean usableInBasicMode)
+com.amazon.tv.tvtweak.api.Setting	method	public SettingType getType()
+com.amazon.tv.tvtweak.api.Setting	method	public String getID()
+com.amazon.tv.tvtweak.api.Setting	method	public String toString()
+com.amazon.tv.tvtweak.api.Setting	method	public boolean equals(Object o)
+com.amazon.tv.tvtweak.api.Setting	method	public boolean isSettable()
+com.amazon.tv.tvtweak.api.Setting	method	public boolean isUsableInBasicMode()
+com.amazon.tv.tvtweak.api.Setting	method	public int describeContents()
+com.amazon.tv.tvtweak.api.Setting	method	public int hashCode()
+com.amazon.tv.tvtweak.api.Setting	method	public void writeToParcel(Parcel out, int flags)
+com.amazon.tv.tvtweak.api.SettingsChangeEvent	field	private final Map<Setting, Object> mChangedSettingValues;
+com.amazon.tv.tvtweak.api.SettingsChangeEvent	field	private static final long serialVersionUID;
+com.amazon.tv.tvtweak.api.SettingsChangeEvent	method	public Map<Setting, Object> getChangedSettingValues()
+com.amazon.tv.tvtweak.api.SettingsChangeEvent	method	public SettingsChangeEvent(Map<Setting, Object> changedSettingValues)
+com.amazon.tv.tvtweak.api.SettingsChangeEvent	method	public String toString()
+com.amazon.tv.tvtweak.api.SettingsChangeEvent	method	public int describeContents()
+com.amazon.tv.tvtweak.api.SettingsChangeEvent	method	public void writeToParcel(Parcel dest, int flags)
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	private static final Map<String, Setting> sIDToSetting;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting AMBIENT_LIGHT_SENSOR;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting AUDIO_DRC_ENABLED;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting AUDIO_EFFECTS_ENABLE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting AUDIO_MIXING_ENABLED;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting AUTO_ASPECT;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting AUTO_BACKLIGHT;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting AUTO_VOLUME_ENABLED;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting BLUE_STRETCH_ENABLE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting CLEAR_FRAME_HDR;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting COLOR_MODE_ENABLE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting DIALOG_CLARITY_BOOL;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting DOVI_NOTIFICATION;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting DTS_BYPASS;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting DYNAMIC_BACKLIGHT;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting DYNAMIC_CONTRAST;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting EDGE_ENHANCER;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting FOUR_THREE_STRETCH;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting GAME_MODE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting GAME_MODE_ALLM;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting HDR_CONVERSION;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting HDR_TONE_MAPPING;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting HEADPHONE_ENABLE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting HEADPHONE_JACK_INSERTED;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting HIGH_PASS_FILTER;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting LIGHT_SENSE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting LOCK_BACKLIGHT;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting MOTION_CLARITY;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting NATURAL_CINEMA;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting NAVIGATION_SOUNDS;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting NIGHT_MODE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting OLED_INSTANT_ON;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting OVERSCAN;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting PC_MODE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting PEQ_ENABLE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting SUBWOOFER_USED;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting SUPER_RESOLUTION;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting SUPPORTS_AUD_PROFILES;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting SUPPORTS_DV_IQ;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting SUPPORTS_VID_PROFILES;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting SURROUND_SOUND;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting TRU_BASS;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting TRU_SURROUND;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting TRU_VOLUME;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting TV_SPEAKERS;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting USE_SHOP_MODE_SETTINGS;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting VIBRANT_COLOR;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static BoolSetting WHITE_BALACANCE_11_ENABLE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<AC4DialogEnhancerEnum> AC4_DIALOG_ENHANCER;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<AdaptiveLumaEnum> ADAPTIVE_LUMA;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<ArcModeEnum> ARC_MODE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<AspectRatioEnum> ASPECT_RATIO;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<AudioFormatEnum> AUDIO_FORMAT;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<AudioJackModeEnum> AUDIO_JACK_MODE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<AudioModeEnum> AQ_MODE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<AudioModulationEnum> AUDIO_MODULATION;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<AudioOutputModeEnum> AUDIO_OUTPUT;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<AudioProfilesEnum> AUDIO_PROFILES;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<AutoBacklightEnum> AUTO_BACKLIGHT_ENUM;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<BlackLevelEnum> BLACK_LEVEL;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<ColorModeEnum> COLOR_MODE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<ColorModeSelectorEnum> COLOR_MODE_SELECTOR;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<ColorTemperatureEnum> COLOR_TEMPERATURE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<ColorTypeSelectorEnum> COLOR_TYPE_SELECTOR;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<DeContourEnum> DECONTOUR_MODE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<DebandingFilterEnum> DEBANDING_FILTER;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<DialogClarityEnum> DIALOG_CLARITY;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<DialogEnhancerEnum> DIALOG_ENHANCER;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<DisplayStateEnum> WINDOW_DISPLAY_STATE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<DolbyAudioProfileEnum> DOLBY_AUDIO_PROFILE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<DtsSurroundEnum> DTS_SURROUND;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<DynamicBacklightEnum> DYNAMIC_BACKLIGHT_ENUM;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<DynamicContrastEnum> DYNAMIC_CONTRAST_ENUM;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<EQModeEnum> EQ_MODE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<EdgeEnhancerEnum> EDGE_ENHANCER_ENUM;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<FilmModeEnum> FILM_MODE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<FleshToneEnum> FLESH_TONE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<GammaEnum> GAMMA_ENUM;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<GlobalAudioOutputFormatEnum> GLOBAL_AUDIO_OUTPUT_FORMAT;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<HdmiEdidModeEnum> HDMI_EDID_MODE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<HdmiRgbRangeEnum> HDMI_RGB_RANGE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<HeadphoneJackModeEnum> HEADPHONE_JACK_MODE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<LocalContrastEnum> LOCAL_CONTRAST;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<LocalDimmingEnum> LOCAL_DIMMING;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<MPEGNoiseReductionEnum> PQ_MPEG_NOISE_REDUCTION;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<MjcDemoEnum> MJC_DEMO;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<MjcEffectEnum> MJC_EFFECT;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<MjcModeEnum> MJC_MODE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<MotionSmoothingEnum> MOTION_SMOOTHING;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<NoiseReductionEnum> PQ_NOISE_REDUCTION;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<PanelTypeEnum> PANEL_TYPE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<PictureModeEnum> PQ_MODE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<SkinToneControlEnum> SKIN_TONE_CONTROL;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<SoundTypeEnum> SOUND_TYPE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<SpeakerLayoutEnum> SPEAKER_LAYOUT;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<SuperResolutionEnum> SUPER_RESOLUTION_ENUM;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<SurroundVirtualizerEnum> SURROUND_VIRTUALIZER;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<TestPatternEnum> TEST_PATTERN;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<TvLocationEnum> TV_LOCATION;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<VideoProfilesEnum> VIDEO_PROFILES;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<VideoScanEnum> VIDEO_SCAN;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<VolumeLevelerEnum> VOLUME_LEVELER;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static EnumSetting<WhiteBalance11GainEnum> WHITE_BALANCE_11_GAIN;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting ACTION_SMOOTHING;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting AUDIO_DELAY;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B10_FILTER;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B10_FO;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B10_GAIN;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B10_Q;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B11_FILTER;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B11_FO;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B11_GAIN;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B11_Q;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B12_FILTER;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B12_FO;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B12_GAIN;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B12_Q;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B13_FILTER;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B13_FO;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B13_GAIN;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B13_Q;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B1_FILTER;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B1_FO;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B1_GAIN;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B1_Q;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B2_FILTER;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B2_FO;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B2_GAIN;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B2_Q;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B3_FILTER;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B3_FO;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B3_GAIN;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B3_Q;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B4_FILTER;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B4_FO;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B4_GAIN;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B4_Q;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B5_FILTER;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B5_FO;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B5_GAIN;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B5_Q;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B6_FILTER;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B6_FO;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B6_GAIN;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B6_Q;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B7_FILTER;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B7_FO;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B7_GAIN;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B7_Q;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B8_FILTER;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B8_FO;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B8_GAIN;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B8_Q;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B9_FILTER;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B9_FO;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B9_GAIN;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting B9_Q;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting BACKLIGHT;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting BACK_LEFT_SPEAKER_DISTANCE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting BACK_LEFT_SPEAKER_FREQ_CUTOFF;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting BACK_LEFT_SPEAKER_LEVEL_CALIBRATION;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting BACK_RIGHT_SPEAKER_DISTANCE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting BACK_RIGHT_SPEAKER_FREQ_CUTOFF;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting BACK_RIGHT_SPEAKER_LEVEL_CALIBRATION;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting BASS;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting BLUE_STRETCH;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting BRIGHTNESS;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting CENTER_SPEAKER_DISTANCE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting CENTER_SPEAKER_FREQ_CUTOFF;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting CENTER_SPEAKER_LEVEL_CALIBRATION;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting COLOR_MODE_BLUE_BRI;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting COLOR_MODE_BLUE_GAIN;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting COLOR_MODE_BLUE_HUE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting COLOR_MODE_BLUE_OFFSET;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting COLOR_MODE_BLUE_SAT;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting COLOR_MODE_CYAN_BRI;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting COLOR_MODE_CYAN_HUE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting COLOR_MODE_CYAN_SAT;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting COLOR_MODE_FLESH_TONE_BRI;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting COLOR_MODE_FLESH_TONE_HUE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting COLOR_MODE_FLESH_TONE_SAT;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting COLOR_MODE_GREEN_BRI;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting COLOR_MODE_GREEN_GAIN;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting COLOR_MODE_GREEN_HUE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting COLOR_MODE_GREEN_OFFSET;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting COLOR_MODE_GREEN_SAT;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting COLOR_MODE_MAGENTA_BRI;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting COLOR_MODE_MAGENTA_HUE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting COLOR_MODE_MAGENTA_SAT;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting COLOR_MODE_RED_BRI;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting COLOR_MODE_RED_GAIN;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting COLOR_MODE_RED_HUE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting COLOR_MODE_RED_OFFSET;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting COLOR_MODE_RED_SAT;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting COLOR_MODE_YELLOW_BRI;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting COLOR_MODE_YELLOW_HUE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting COLOR_MODE_YELLOW_SAT;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting CONTRAST;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting EQ_FREQ_100HZ;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting EQ_FREQ_10KHZ;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting EQ_FREQ_1_5KHZ;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting EQ_FREQ_500HZ;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting EQ_FREQ_5KHZ;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting GAMMA;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting HUE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting LEFT_SPEAKER_DISTANCE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting LEFT_SPEAKER_FREQ_CUTOFF;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting LEFT_SPEAKER_LEVEL_CALIBRATION;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting MOTION_SMOOTHING_BLUR_REDUCTION;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting MOTION_SMOOTHING_JUDDER_REDUCTION;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting OSD_BRIGHTNESS;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting OSD_CONTRAST;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting OVERSCAN_HPOS;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting OVERSCAN_HSCALE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting OVERSCAN_VPOS;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting OVERSCAN_VSCALE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting RIGHT_SPEAKER_DISTANCE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting RIGHT_SPEAKER_FREQ_CUTOFF;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting RIGHT_SPEAKER_LEVEL_CALIBRATION;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting SATURATION;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting SHARPNESS;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting SKIN_TONE_HUE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting SKIN_TONE_SATURATION;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting SPDIF_AUDIO_DELAY;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting SPEAKER_AUDIO_DELAY;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting SPEAKER_BALANCE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting SUBWOOFER_LEVEL_CALIBRATION;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting SUBWOOFER_SPEAKER_DISTANCE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting SURR_LEFT_SPEAKER_DISTANCE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting SURR_LEFT_SPEAKER_FREQ_CUTOFF;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting SURR_LEFT_SPEAKER_LEVEL_CALIBRATION;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting SURR_RIGHT_SPEAKER_DISTANCE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting SURR_RIGHT_SPEAKER_FREQ_CUTOFF;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting SURR_RIGHT_SPEAKER_LEVEL_CALIBRATION;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting TINT;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting TREBLE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting VIDEO_HEIGHT;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting VIDEO_WIDTH;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting WHITE_BALANCE_11_BLUE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting WHITE_BALANCE_11_GREEN;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting WHITE_BALANCE_11_RED;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting WHITE_BALANCE_BLUE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting WHITE_BALANCE_BLUE_GAIN;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting WHITE_BALANCE_BLUE_OFFSET;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting WHITE_BALANCE_GREEN;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting WHITE_BALANCE_GREEN_GAIN;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting WHITE_BALANCE_GREEN_OFFSET;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting WHITE_BALANCE_RED;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting WHITE_BALANCE_RED_GAIN;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static IntSetting WHITE_BALANCE_RED_OFFSET;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static StringSetting VENDOR_DEMO_VIDEO_FILE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	field	public static StringSetting VENDOR_OVERLAY_FILE;
+com.amazon.tv.tvtweak.api.SettingsRegistry	method	public static Map<String, Setting> getIDToSetting()
+com.amazon.tv.tvtweak.api.StringSetting	field	private static final long serialVersionUID;
+com.amazon.tv.tvtweak.api.StringSetting	method	public StringSetting(String desc, SettingType type)
+com.amazon.tv.tvtweak.api.StringSetting	method	public StringSetting(String desc, SettingType type, boolean usableInBasicMode)
+com.amazon.tv.tvtweak.api.StringSetting	method	public StringSetting(String desc, boolean canSet, SettingType type)
+com.amazon.tv.tvtweak.api.StringSetting	method	public StringSetting(String desc, boolean canSet, boolean managed, SettingType type)
+com.amazon.tv.tvtweak.api.StringSetting	method	public StringSetting(String desc, boolean canSet, boolean managed, SettingType type, boolean usableInBasicMode)
+com.amazon.tv.tvtweak.api.StringSetting	method	public boolean runCheck(String in)
+com.amazon.tv.tvtweak.api.callback.AudioOutputChangeCallback	field	private static final long serialVersionUID;
+com.amazon.tv.tvtweak.api.callback.AudioProfileChangeCallback	field	private static final long serialVersionUID;
+com.amazon.tv.tvtweak.api.callback.OEMSettingsChangeCallback	field	private static final long serialVersionUID;
+com.amazon.tv.tvtweak.api.callback.OEMSettingsChangeCallback	method	protected abstract void onSettingsChange(OemSettingsChangeEvent oemSettingsChangeEvent);
+com.amazon.tv.tvtweak.api.callback.OEMSettingsChangeCallback	method	public int describeContents()
+com.amazon.tv.tvtweak.api.callback.OEMSettingsChangeCallback	method	public void writeToParcel(Parcel out, int flags)
+com.amazon.tv.tvtweak.api.callback.ProfileChangeCallback	field	private static final long serialVersionUID;
+com.amazon.tv.tvtweak.api.callback.ProfileChangeCallback	method	protected abstract void onProfileChangedEventCheck(String str, String str2);
+com.amazon.tv.tvtweak.api.callback.ProfileChangeCallback	method	protected abstract void onProfileChangedEventResponse(String str, String str2);
+com.amazon.tv.tvtweak.api.callback.ProfileChangeCallback	method	protected abstract void onSettingChangedEventResponse(Setting setting);
+com.amazon.tv.tvtweak.api.callback.ProfileChangeCallback	method	protected final void onSettingChangedEventCheck(Setting changedSetting)
+com.amazon.tv.tvtweak.api.callback.ProfileChangeCallback	method	public final void onProfileChangedEvent(String oldProfile, String newProfile)
+com.amazon.tv.tvtweak.api.callback.ProfileChangeCallback	method	public final void onSettingChangedEvent(Setting changedSetting)
+com.amazon.tv.tvtweak.api.callback.ProfileChangeCallback	method	public int describeContents()
+com.amazon.tv.tvtweak.api.callback.ProfileChangeCallback	method	public void writeToParcel(Parcel out, int flags)
+com.amazon.tv.tvtweak.api.callback.VideoProfileChangeCallback	field	private static final long serialVersionUID;
+com.amazon.tv.tvtweak.api.enums.VideoProfilesEnum	field	private final String mDynamicRangeType;
+com.amazon.tv.tvtweak.api.enums.VideoProfilesEnum	method	public String getDynamicRangeType()
+com.amazon.tv.tvtweak.api.enums.VideoProfilesEnum	method	public boolean isHdr()
+com.amazon.tv.tvtweak.api.enums.VideoProfilesEnum$DynamicRangeTypes	field	public static final String DV;
+com.amazon.tv.tvtweak.api.enums.VideoProfilesEnum$DynamicRangeTypes	field	public static final String HDR10_PLUS;
+com.amazon.tv.tvtweak.api.enums.VideoProfilesEnum$DynamicRangeTypes	field	public static final String HDR;
+com.amazon.tv.tvtweak.api.enums.VideoProfilesEnum$DynamicRangeTypes	field	public static final String HLG;
+com.amazon.tv.tvtweak.api.enums.VideoProfilesEnum$DynamicRangeTypes	field	public static final String SDR;
+com.amazon.tv.tvtweak.client.AudioOutputChangeEvent	field	private final String mNewOutput;
+com.amazon.tv.tvtweak.client.AudioOutputChangeEvent	field	private final String mOldOutput;
+com.amazon.tv.tvtweak.client.AudioOutputChangeEvent	method	public AudioOutputChangeEvent(String oldOutput, String newOutput)
+com.amazon.tv.tvtweak.client.AudioOutputChangeEvent	method	public String getNewOutput()
+com.amazon.tv.tvtweak.client.AudioOutputChangeEvent	method	public String getOldOutput()
+com.amazon.tv.tvtweak.client.BatchSettingsResponse	field	private BatchSettingOutput mBatchSettingOutput;
+com.amazon.tv.tvtweak.client.BatchSettingsResponse	method	public BatchSettingOutput getBatchSettingOutput()
+com.amazon.tv.tvtweak.client.BatchSettingsResponse	method	public void setBatchSettingOutput(BatchSettingOutput batchSettingOutput)
+com.amazon.tv.tvtweak.client.BoolResponse	field	private boolean mBoolValue;
+com.amazon.tv.tvtweak.client.BoolResponse	method	public boolean getBoolValue()
+com.amazon.tv.tvtweak.client.BoolResponse	method	public void setBoolValue(boolean boolValue)
+com.amazon.tv.tvtweak.client.BoolWithDefaultResponse	field	private BoolSettingValue mBoolValue;
+com.amazon.tv.tvtweak.client.BoolWithDefaultResponse	method	public BoolSettingValue getBoolValue()
+com.amazon.tv.tvtweak.client.BoolWithDefaultResponse	method	public void setBoolValue(BoolSettingValue boolValue)
+com.amazon.tv.tvtweak.client.EnumResponse	field	private EnumSettingValue mEnumValue;
+com.amazon.tv.tvtweak.client.EnumResponse	method	public EnumSettingValue getEnumValue()
+com.amazon.tv.tvtweak.client.EnumResponse	method	public void setEnumValue(EnumSettingValue enumValue)
+com.amazon.tv.tvtweak.client.IntResponse	field	private IntSettingValue mIntValue;
+com.amazon.tv.tvtweak.client.IntResponse	method	public IntSettingValue getIntValue()
+com.amazon.tv.tvtweak.client.IntResponse	method	public void setIntValue(IntSettingValue intValue)
+com.amazon.tv.tvtweak.client.ResetType	field	private static final String TAG;
+com.amazon.tv.tvtweak.client.ResetType	method	protected boolean resetSettings(TvTweakClient client, String mode) throws RemoteException
+com.amazon.tv.tvtweak.client.Response	field	protected ResponseMetadata mMetadata;
+com.amazon.tv.tvtweak.client.Response	method	public ResponseMetadata getMetadata()
+com.amazon.tv.tvtweak.client.Response	method	public void setMetadata(ResponseMetadata metadata)
+com.amazon.tv.tvtweak.client.ResponseHandler	field	private static final String TAG;
+com.amazon.tv.tvtweak.client.ResponseHandler	method	public abstract void handleResponse(Response response);
+com.amazon.tv.tvtweak.client.ResponseHandler	method	public final void handleMessage(Message inputMessage)
+com.amazon.tv.tvtweak.client.ResponseMetadata	field	private Direction mDirection;
+com.amazon.tv.tvtweak.client.ResponseMetadata	field	private Setting mSetting;
+com.amazon.tv.tvtweak.client.ResponseMetadata	field	private boolean mSuccessful;
+com.amazon.tv.tvtweak.client.ResponseMetadata	field	private boolean mSupported;
+com.amazon.tv.tvtweak.client.ResponseMetadata	method	public Direction getDirection()
+com.amazon.tv.tvtweak.client.ResponseMetadata	method	public Setting getSetting()
+com.amazon.tv.tvtweak.client.ResponseMetadata	method	public boolean isSuccessful()
+com.amazon.tv.tvtweak.client.ResponseMetadata	method	public boolean isSupported()
+com.amazon.tv.tvtweak.client.ResponseMetadata	method	public static ResponseMetadataBuilder builder()
+com.amazon.tv.tvtweak.client.ResponseMetadata$ResponseMetadataBuilder	field	private Direction direction;
+com.amazon.tv.tvtweak.client.ResponseMetadata$ResponseMetadataBuilder	field	private Setting setting;
+com.amazon.tv.tvtweak.client.ResponseMetadata$ResponseMetadataBuilder	field	private boolean successful;
+com.amazon.tv.tvtweak.client.ResponseMetadata$ResponseMetadataBuilder	field	private boolean supported;
+com.amazon.tv.tvtweak.client.ResponseMetadata$ResponseMetadataBuilder	method	public ResponseMetadata build()
+com.amazon.tv.tvtweak.client.ResponseMetadata$ResponseMetadataBuilder	method	public ResponseMetadataBuilder direction(Direction direction)
+com.amazon.tv.tvtweak.client.ResponseMetadata$ResponseMetadataBuilder	method	public ResponseMetadataBuilder setting(Setting setting)
+com.amazon.tv.tvtweak.client.ResponseMetadata$ResponseMetadataBuilder	method	public ResponseMetadataBuilder successful(boolean successful)
+com.amazon.tv.tvtweak.client.ResponseMetadata$ResponseMetadataBuilder	method	public ResponseMetadataBuilder supported(boolean supported)
+com.amazon.tv.tvtweak.client.ResponseMetadata$ResponseMetadataBuilder	method	public String toString()
+com.amazon.tv.tvtweak.client.ServiceUnavailableException	field	private static final long serialVersionUID;
+com.amazon.tv.tvtweak.client.ServiceUnavailableException	method	public ServiceUnavailableException(String message)
+com.amazon.tv.tvtweak.client.SettingsModeResponse	field	private String mMode;
+com.amazon.tv.tvtweak.client.SettingsModeResponse	method	public String getMode()
+com.amazon.tv.tvtweak.client.SettingsModeResponse	method	public void setMode(String mode)
+com.amazon.tv.tvtweak.client.StringResponse	field	private StringSettingValue mStringValue;
+com.amazon.tv.tvtweak.client.StringResponse	method	public StringSettingValue getStringValue()
+com.amazon.tv.tvtweak.client.StringResponse	method	public void setStringValue(StringSettingValue stringValue)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	field	private ConnectionCallback mConnectionCallback;
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	field	private ExecutorService mExecutor;
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	field	private boolean mForceCalls;
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	field	private final ArrayDeque<OEMRequestJob> mJobQueue;
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	field	private final AtomicReference<Object> mSupportedProfiles;
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	field	private final ConnectionCallback mUserCallback;
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	field	private final Handler mHandler;
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	field	private final TvTweakClient mClient;
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	field	private static final String TAG;
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	field	private static final int TSM_BIND_TIMEOUT;
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	private List<BatchSettingInput> createBatchSettingInputsCurrentProfile(List<Pair<Setting, Object>> settingValPairs)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	private VideoProfilesEnum getCurrentProfile()
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	private VideoProfilesEnum[] fetchSupportedProfiles()
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	private void enqueueJobLocked(OEMRequestJob job)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	private void setWatchdog()
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	protected void setExecutor(ExecutorService mExecutor)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public BatchSettingOutput filterForCurrentProfile(BatchSettingOutput batchSettingOutput)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public List<BatchSettingInput> createBatchSettingInputs(Setting setting, Object value)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public TvTweakAsyncClient(Context context)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public TvTweakAsyncClient(Context context, ConnectionCallback userCallback)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public VideoProfilesEnum[] getSupportedProfiles()
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public void RegisterWithEventBus(Object subscriber)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public void UnregisterWithEventBus(Object subscriber)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public void connect()
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public void disconnect()
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public void doGet(final ExecutorType type, final Setting setting, final ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public void doSet(final ExecutorType type, final Setting setting, final Object value, final ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public void getBoolean(BoolSetting setting, ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public void getBooleanWithDefault(BoolSetting setting, ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public void getEnum(EnumSetting setting, ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public void getInt(IntSetting setting, ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public void getSetting(Setting setting, ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public void getSettingsMode(final ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public void getSettingsOnCurrentProfile(final List<Setting> settings, final ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public void getString(StringSetting setting, ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public void reset(final ResetType type, final ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public void resetVideoByPictureMode(final ResponseHandler handler, final String pictureMode)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public void runQueueLocked()
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public void saveEcm(final ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public void setBoolean(BoolSetting setting, boolean value, ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public void setEnum(EnumSetting setting, String name, ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public void setInt(IntSetting setting, int value, ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public void setOnAllProfiles(final Setting setting, final Object value, final ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public void setSetting(Setting setting, Object value, ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public void setSettingsMode(final String mode, final ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public void setSettingsOnCurrentProfile(List<Pair<Setting, Object>> settingValPairs, final ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient	method	public void setString(StringSetting setting, String value, ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$BatchGetOEMRequestJob	field	private final List<Setting> mSettings;
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$BatchGetOEMRequestJob	method	protected void run()
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$BatchGetOEMRequestJob	method	public BatchGetOEMRequestJob(List<Setting> settings, ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$BatchGetOEMRequestJob	method	public String toString()
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$BatchSetCurrentProfileOEMRequestJob	field	private final List<Pair<Setting, Object>> mSettingValPairs;
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$BatchSetCurrentProfileOEMRequestJob	method	protected void run()
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$BatchSetCurrentProfileOEMRequestJob	method	public BatchSetCurrentProfileOEMRequestJob(List<Pair<Setting, Object>> settingValPairs, ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$BatchSetCurrentProfileOEMRequestJob	method	public String toString()
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$BatchSetOEMRequestJob	field	private final Object mValue;
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$BatchSetOEMRequestJob	field	private final Setting mSetting;
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$BatchSetOEMRequestJob	method	protected void run()
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$BatchSetOEMRequestJob	method	public BatchSetOEMRequestJob(Setting setting, Object value, ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$BatchSetOEMRequestJob	method	public String toString()
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$ExecutorType	method	protected abstract Object getValue(TvTweakClient tvTweakClient, Setting setting) throws RemoteException;
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$ExecutorType	method	protected abstract Response getResponse(Object obj);
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$ExecutorType	method	protected abstract Response setResponse(Object obj);
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$ExecutorType	method	protected abstract boolean setValue(TvTweakClient tvTweakClient, Setting setting, Object obj) throws RemoteException;
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$ExecutorType	method	public static ExecutorType getType(Setting setting)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$ExecutorType	method	public void runGet(TvTweakClient client, Setting setting, ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$ExecutorType	method	public void runSet(TvTweakClient client, Setting setting, Object value, ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$GenericOEMRequestJob	field	private final Runnable mTask;
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$GenericOEMRequestJob	method	protected void run()
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$GenericOEMRequestJob	method	public GenericOEMRequestJob(Runnable task, ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$GenericOEMRequestJob	method	public String toString()
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$GetOEMRequestJob	field	private final ExecutorType mType;
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$GetOEMRequestJob	field	private final Setting mSetting;
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$GetOEMRequestJob	method	protected void run()
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$GetOEMRequestJob	method	public GetOEMRequestJob(ExecutorType type, Setting setting, ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$GetOEMRequestJob	method	public String toString()
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$GetSettingsModeOEMRequestJob	method	protected void run()
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$GetSettingsModeOEMRequestJob	method	public GetSettingsModeOEMRequestJob(ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$GetSettingsModeOEMRequestJob	method	public String toString()
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$OEMRequestJob	field	protected final ResponseHandler mHandler;
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$OEMRequestJob	method	protected abstract void run();
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$OEMRequestJob	method	public OEMRequestJob(ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$OEMRequestJob	method	public String toString()
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$ResetOEMRequestJob	field	private final ResetType mResetType;
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$ResetOEMRequestJob	field	private final String mMode;
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$ResetOEMRequestJob	method	protected void run()
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$ResetOEMRequestJob	method	public ResetOEMRequestJob(ResetType type, ResponseHandler handler, String mode)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$ResetOEMRequestJob	method	public String toString()
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$SetOEMRequestJob	field	private final ExecutorType mType;
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$SetOEMRequestJob	field	private final Object mValue;
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$SetOEMRequestJob	field	private final Setting mSetting;
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$SetOEMRequestJob	method	protected void run()
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$SetOEMRequestJob	method	public SetOEMRequestJob(ExecutorType type, Setting setting, Object value, ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$SetOEMRequestJob	method	public String toString()
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$SetSettingsModeOEMRequestJob	field	private final String mMode;
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$SetSettingsModeOEMRequestJob	method	protected void run()
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$SetSettingsModeOEMRequestJob	method	public SetSettingsModeOEMRequestJob(String mode, ResponseHandler handler)
+com.amazon.tv.tvtweak.client.TvTweakAsyncClient$SetSettingsModeOEMRequestJob	method	public String toString()
+com.amazon.tv.tvtweak.client.TvTweakClient	field	private ITvTweak mTvTweak;
+com.amazon.tv.tvtweak.client.TvTweakClient	field	private boolean mReady;
+com.amazon.tv.tvtweak.client.TvTweakClient	field	private final ConnectionCallback mConnectionCallback;
+com.amazon.tv.tvtweak.client.TvTweakClient	field	private final Context mContext;
+com.amazon.tv.tvtweak.client.TvTweakClient	field	private final EventBus mEventBus;
+com.amazon.tv.tvtweak.client.TvTweakClient	field	private final IOnChangeCallback mChangeCallback;
+com.amazon.tv.tvtweak.client.TvTweakClient	field	private final IOnReadyCallback mCallback;
+com.amazon.tv.tvtweak.client.TvTweakClient	field	private final ServiceConnection mConn;
+com.amazon.tv.tvtweak.client.TvTweakClient	field	private static final String TAG;
+com.amazon.tv.tvtweak.client.TvTweakClient	method	private void checkServiceAvailability()
+com.amazon.tv.tvtweak.client.TvTweakClient	method	public BatchSettingOutput getBatchSettings(List<Setting> settings) throws RemoteException
+com.amazon.tv.tvtweak.client.TvTweakClient	method	public BatchSettingOutput getBatchSettings(Setting setting) throws RemoteException
+com.amazon.tv.tvtweak.client.TvTweakClient	method	public BoolSettingValue getBoolSettingWithDefault(BoolSetting setting) throws RemoteException
+com.amazon.tv.tvtweak.client.TvTweakClient	method	public EnumSettingValue getEnumSetting(EnumSetting setting) throws RemoteException
+com.amazon.tv.tvtweak.client.TvTweakClient	method	public IntSettingValue getIntSetting(IntSetting setting) throws RemoteException
+com.amazon.tv.tvtweak.client.TvTweakClient	method	public String getSettingsMode() throws RemoteException
+com.amazon.tv.tvtweak.client.TvTweakClient	method	public StringSettingValue getStringSetting(StringSetting setting) throws RemoteException
+com.amazon.tv.tvtweak.client.TvTweakClient	method	public TvTweakClient(Context context)
+com.amazon.tv.tvtweak.client.TvTweakClient	method	public TvTweakClient(Context context, ConnectionCallback connectionCallback)
+com.amazon.tv.tvtweak.client.TvTweakClient	method	public boolean getBoolSetting(BoolSetting setting) throws RemoteException
+com.amazon.tv.tvtweak.client.TvTweakClient	method	public boolean isReady()
+com.amazon.tv.tvtweak.client.TvTweakClient	method	public boolean isSupported(Setting setting) throws RemoteException
+com.amazon.tv.tvtweak.client.TvTweakClient	method	public boolean reset(ResetType type) throws RemoteException
+com.amazon.tv.tvtweak.client.TvTweakClient	method	public boolean resetAudioSettings() throws RemoteException
+com.amazon.tv.tvtweak.client.TvTweakClient	method	public boolean resetDisplaySettings() throws RemoteException
+com.amazon.tv.tvtweak.client.TvTweakClient	method	public boolean resetEcm() throws RemoteException
+com.amazon.tv.tvtweak.client.TvTweakClient	method	public boolean resetVideoSettings() throws RemoteException
+com.amazon.tv.tvtweak.client.TvTweakClient	method	public boolean resetVideoSettingsForPictureMode(String pictureModeName) throws RemoteException
+com.amazon.tv.tvtweak.client.TvTweakClient	method	public boolean resetWhiteBalanceSettings() throws RemoteException
+com.amazon.tv.tvtweak.client.TvTweakClient	method	public boolean saveEcm() throws RemoteException
+com.amazon.tv.tvtweak.client.TvTweakClient	method	public boolean setBatchSettings(List<BatchSettingInput> batchSettingInputs) throws RemoteException
+com.amazon.tv.tvtweak.client.TvTweakClient	method	public boolean setBoolSetting(BoolSetting setting, boolean value) throws RemoteException
+com.amazon.tv.tvtweak.client.TvTweakClient	method	public boolean setEnumSetting(EnumSetting setting, String name) throws RemoteException
+com.amazon.tv.tvtweak.client.TvTweakClient	method	public boolean setIntSetting(IntSetting setting, int value) throws RemoteException
+com.amazon.tv.tvtweak.client.TvTweakClient	method	public boolean setSettingsMode(String modeName) throws RemoteException
+com.amazon.tv.tvtweak.client.TvTweakClient	method	public boolean setStringSetting(StringSetting setting, String value) throws RemoteException
+com.amazon.tv.tvtweak.client.TvTweakClient	method	public void RegisterWithEventBus(Object subscriber)
+com.amazon.tv.tvtweak.client.TvTweakClient	method	public void UnregisterWithEventBus(Object subscriber)
+com.amazon.tv.tvtweak.client.TvTweakClient	method	public void connect()
+com.amazon.tv.tvtweak.client.TvTweakClient	method	public void disconnect()
+com.amazon.tv.tvtweak.client.VideoProfileChangeEvent	field	private final String mNewProfile;
+com.amazon.tv.tvtweak.client.VideoProfileChangeEvent	field	private final String mOldProfile;
+com.amazon.tv.tvtweak.client.VideoProfileChangeEvent	method	public String getNewProfile()
+com.amazon.tv.tvtweak.client.VideoProfileChangeEvent	method	public String getOldProfile()
+com.amazon.tv.tvtweak.client.VideoProfileChangeEvent	method	public VideoProfileChangeEvent(String oldProfile, String newProfile)
+com.amazon.tv.tvtweak.client.oem.OemSettingsIntentFactory	field	private static final Intent[] PRIORITIZED_OEM_SETTINGS_SERVICES;
+com.amazon.tv.tvtweak.client.oem.OemSettingsIntentFactory	method	public Intent getIntent(Context context)
+com.amazon.tv.tvtweak.client.oem.TvTweakOemClient	field	private IOemSettings mOemSettings;
+com.amazon.tv.tvtweak.client.oem.TvTweakOemClient	field	private final ConnectionCallback mConnectionCallback;
+com.amazon.tv.tvtweak.client.oem.TvTweakOemClient	field	private final Context mContext;
+com.amazon.tv.tvtweak.client.oem.TvTweakOemClient	field	private final OemSettingsIntentFactory mIntentFactory;
+com.amazon.tv.tvtweak.client.oem.TvTweakOemClient	field	private final ServiceConnection mConn;
+com.amazon.tv.tvtweak.client.oem.TvTweakOemClient	field	private static final String TAG;
+com.amazon.tv.tvtweak.client.oem.TvTweakOemClient	method	private VideoProfilesEnum getCurrentProfile()
+com.amazon.tv.tvtweak.client.oem.TvTweakOemClient	method	private void checkServiceAvailability()
+com.amazon.tv.tvtweak.client.oem.TvTweakOemClient	method	public BatchSettingOutput getBatchSettings(List<Setting> settings) throws RemoteException
+com.amazon.tv.tvtweak.client.oem.TvTweakOemClient	method	public BatchSettingOutput getBatchSettings(Setting setting) throws RemoteException
+com.amazon.tv.tvtweak.client.oem.TvTweakOemClient	method	public EnumSettingValue getEnumSetting(EnumSetting setting) throws RemoteException
+com.amazon.tv.tvtweak.client.oem.TvTweakOemClient	method	public IntSettingValue getIntSetting(IntSetting setting) throws RemoteException
+com.amazon.tv.tvtweak.client.oem.TvTweakOemClient	method	public StringSettingValue getStringSetting(StringSetting setting) throws RemoteException
+com.amazon.tv.tvtweak.client.oem.TvTweakOemClient	method	public TvTweakOemClient(Context context, ConnectionCallback connectionCallback)
+com.amazon.tv.tvtweak.client.oem.TvTweakOemClient	method	public boolean getBoolSetting(BoolSetting setting) throws RemoteException
+com.amazon.tv.tvtweak.client.oem.TvTweakOemClient	method	public boolean isSupported(Setting setting) throws RemoteException
+com.amazon.tv.tvtweak.client.oem.TvTweakOemClient	method	public boolean resetAudioSettings() throws RemoteException
+com.amazon.tv.tvtweak.client.oem.TvTweakOemClient	method	public boolean resetDisplaySettings() throws RemoteException
+com.amazon.tv.tvtweak.client.oem.TvTweakOemClient	method	public boolean resetVideoSettings() throws RemoteException
+com.amazon.tv.tvtweak.client.oem.TvTweakOemClient	method	public boolean resetVideoSettingsForPictureMode(String pictureModeName) throws RemoteException
+com.amazon.tv.tvtweak.client.oem.TvTweakOemClient	method	public boolean resetWhiteBalanceSettings() throws RemoteException
+com.amazon.tv.tvtweak.client.oem.TvTweakOemClient	method	public boolean setBoolSetting(BoolSetting setting, boolean value) throws RemoteException
+com.amazon.tv.tvtweak.client.oem.TvTweakOemClient	method	public boolean setEnumSetting(EnumSetting setting, String name) throws RemoteException
+com.amazon.tv.tvtweak.client.oem.TvTweakOemClient	method	public boolean setIntSetting(IntSetting setting, int value) throws RemoteException
+com.amazon.tv.tvtweak.client.oem.TvTweakOemClient	method	public boolean setStringSetting(StringSetting setting, String value) throws RemoteException
+com.amazon.tv.tvtweak.client.oem.TvTweakOemClient	method	public void connect()
+com.amazon.tv.tvtweak.client.oem.TvTweakOemClient	method	public void disconnect()
+com.amazon.tv.tvtweak.client.oem.TvTweakOemClient	method	public void setBatchSettings(List<BatchSettingInput> batchSettingInputs) throws RemoteException
+org.greenrobot.eventbus.AsyncPoster	field	private final EventBus eventBus;
+org.greenrobot.eventbus.AsyncPoster	field	private final PendingPostQueue queue;
+org.greenrobot.eventbus.AsyncPoster	method	public void enqueue(Subscription subscription, Object event)
+org.greenrobot.eventbus.AsyncPoster	method	public void run() throws IllegalAccessException, InvocationTargetException
+org.greenrobot.eventbus.BackgroundPoster	field	private final EventBus eventBus;
+org.greenrobot.eventbus.BackgroundPoster	field	private final PendingPostQueue queue;
+org.greenrobot.eventbus.BackgroundPoster	field	private volatile boolean executorRunning;
+org.greenrobot.eventbus.BackgroundPoster	method	public void enqueue(Subscription subscription, Object event)
+org.greenrobot.eventbus.BackgroundPoster	method	public void run()
+org.greenrobot.eventbus.EventBus	field	private final AsyncPoster asyncPoster;
+org.greenrobot.eventbus.EventBus	field	private final BackgroundPoster backgroundPoster;
+org.greenrobot.eventbus.EventBus	field	private final ExecutorService executorService;
+org.greenrobot.eventbus.EventBus	field	private final Logger logger;
+org.greenrobot.eventbus.EventBus	field	private final MainThreadSupport mainThreadSupport;
+org.greenrobot.eventbus.EventBus	field	private final Map<Class<?>, CopyOnWriteArrayList<Subscription>> subscriptionsByEventType;
+org.greenrobot.eventbus.EventBus	field	private final Map<Class<?>, Object> stickyEvents;
+org.greenrobot.eventbus.EventBus	field	private final Map<Object, List<Class<?>>> typesBySubscriber;
+org.greenrobot.eventbus.EventBus	field	private final Poster mainThreadPoster;
+org.greenrobot.eventbus.EventBus	field	private final SubscriberMethodFinder subscriberMethodFinder;
+org.greenrobot.eventbus.EventBus	field	private final ThreadLocal<PostingThreadState> currentPostingThreadState;
+org.greenrobot.eventbus.EventBus	field	private final boolean eventInheritance;
+org.greenrobot.eventbus.EventBus	field	private final boolean logNoSubscriberMessages;
+org.greenrobot.eventbus.EventBus	field	private final boolean logSubscriberExceptions;
+org.greenrobot.eventbus.EventBus	field	private final boolean sendNoSubscriberEvent;
+org.greenrobot.eventbus.EventBus	field	private final boolean sendSubscriberExceptionEvent;
+org.greenrobot.eventbus.EventBus	field	private final boolean throwSubscriberException;
+org.greenrobot.eventbus.EventBus	field	private final int indexCount;
+org.greenrobot.eventbus.EventBus	field	private static final EventBusBuilder DEFAULT_BUILDER;
+org.greenrobot.eventbus.EventBus	field	private static final Map<Class<?>, List<Class<?>>> eventTypesCache;
+org.greenrobot.eventbus.EventBus	field	public static String TAG;
+org.greenrobot.eventbus.EventBus	field	static volatile EventBus defaultInstance;
+org.greenrobot.eventbus.EventBus	method	private boolean isMainThread()
+org.greenrobot.eventbus.EventBus	method	private boolean postSingleEventForEventType(Object event, PostingThreadState postingState, Class<?> eventClass) throws IllegalAccessException, InvocationTargetException
+org.greenrobot.eventbus.EventBus	method	private static List<Class<?>> lookupAllEventTypes(Class<?> eventClass)
+org.greenrobot.eventbus.EventBus	method	private void checkPostStickyEventToSubscription(Subscription newSubscription, Object stickyEvent) throws IllegalAccessException, InvocationTargetException
+org.greenrobot.eventbus.EventBus	method	private void handleSubscriberException(Subscription subscription, Object event, Throwable cause) throws IllegalAccessException, InvocationTargetException
+org.greenrobot.eventbus.EventBus	method	private void postSingleEvent(Object event, PostingThreadState postingState) throws IllegalAccessException, Error, InvocationTargetException
+org.greenrobot.eventbus.EventBus	method	private void postToSubscription(Subscription subscription, Object event, boolean isMainThread) throws IllegalAccessException, InvocationTargetException
+org.greenrobot.eventbus.EventBus	method	private void subscribe(Object subscriber, SubscriberMethod subscriberMethod) throws IllegalAccessException, InvocationTargetException
+org.greenrobot.eventbus.EventBus	method	private void unsubscribeByEventType(Object subscriber, Class<?> eventType)
+org.greenrobot.eventbus.EventBus	method	public <T> T getStickyEvent(Class<T> eventType)
+org.greenrobot.eventbus.EventBus	method	public <T> T removeStickyEvent(Class<T> eventType)
+org.greenrobot.eventbus.EventBus	method	public EventBus()
+org.greenrobot.eventbus.EventBus	method	public Logger getLogger()
+org.greenrobot.eventbus.EventBus	method	public String toString()
+org.greenrobot.eventbus.EventBus	method	public boolean hasSubscriberForEvent(Class<?> eventClass)
+org.greenrobot.eventbus.EventBus	method	public boolean removeStickyEvent(Object event)
+org.greenrobot.eventbus.EventBus	method	public static EventBus getDefault()
+org.greenrobot.eventbus.EventBus	method	public static EventBusBuilder builder()
+org.greenrobot.eventbus.EventBus	method	public static void clearCaches()
+org.greenrobot.eventbus.EventBus	method	public synchronized boolean isRegistered(Object subscriber)
+org.greenrobot.eventbus.EventBus	method	public synchronized void unregister(Object subscriber)
+org.greenrobot.eventbus.EventBus	method	public void cancelEventDelivery(Object event)
+org.greenrobot.eventbus.EventBus	method	public void post(Object event) throws IllegalAccessException, InvocationTargetException
+org.greenrobot.eventbus.EventBus	method	public void postSticky(Object event) throws IllegalAccessException, InvocationTargetException
+org.greenrobot.eventbus.EventBus	method	public void register(Object subscriber)
+org.greenrobot.eventbus.EventBus	method	public void removeAllStickyEvents()
+org.greenrobot.eventbus.EventBus	method	static void addInterfaces(List<Class<?>> eventTypes, Class<?>[] interfaces)
+org.greenrobot.eventbus.EventBus$PostingThreadState	field	final List<Object> eventQueue;
+org.greenrobot.eventbus.EventBusBuilder	field	private static final ExecutorService DEFAULT_EXECUTOR_SERVICE;
+org.greenrobot.eventbus.EventBusBuilder	method	public EventBus build()
+org.greenrobot.eventbus.EventBusBuilder	method	public EventBus installDefaultEventBus()
+org.greenrobot.eventbus.EventBusBuilder	method	public EventBusBuilder addIndex(SubscriberInfoIndex index)
+org.greenrobot.eventbus.EventBusBuilder	method	public EventBusBuilder eventInheritance(boolean eventInheritance)
+org.greenrobot.eventbus.EventBusBuilder	method	public EventBusBuilder executorService(ExecutorService executorService)
+org.greenrobot.eventbus.EventBusBuilder	method	public EventBusBuilder ignoreGeneratedIndex(boolean ignoreGeneratedIndex)
+org.greenrobot.eventbus.EventBusBuilder	method	public EventBusBuilder logNoSubscriberMessages(boolean logNoSubscriberMessages)
+org.greenrobot.eventbus.EventBusBuilder	method	public EventBusBuilder logSubscriberExceptions(boolean logSubscriberExceptions)
+org.greenrobot.eventbus.EventBusBuilder	method	public EventBusBuilder logger(Logger logger)
+org.greenrobot.eventbus.EventBusBuilder	method	public EventBusBuilder sendNoSubscriberEvent(boolean sendNoSubscriberEvent)
+org.greenrobot.eventbus.EventBusBuilder	method	public EventBusBuilder sendSubscriberExceptionEvent(boolean sendSubscriberExceptionEvent)
+org.greenrobot.eventbus.EventBusBuilder	method	public EventBusBuilder skipMethodVerificationFor(Class<?> clazz)
+org.greenrobot.eventbus.EventBusBuilder	method	public EventBusBuilder strictMethodVerification(boolean strictMethodVerification)
+org.greenrobot.eventbus.EventBusBuilder	method	public EventBusBuilder throwSubscriberException(boolean throwSubscriberException)
+org.greenrobot.eventbus.EventBusException	field	private static final long serialVersionUID;
+org.greenrobot.eventbus.EventBusException	method	public EventBusException(String detailMessage)
+org.greenrobot.eventbus.EventBusException	method	public EventBusException(String detailMessage, Throwable throwable)
+org.greenrobot.eventbus.EventBusException	method	public EventBusException(Throwable throwable)
+org.greenrobot.eventbus.HandlerPoster	field	private boolean handlerActive;
+org.greenrobot.eventbus.HandlerPoster	field	private final EventBus eventBus;
+org.greenrobot.eventbus.HandlerPoster	field	private final PendingPostQueue queue;
+org.greenrobot.eventbus.HandlerPoster	field	private final int maxMillisInsideHandleMessage;
+org.greenrobot.eventbus.HandlerPoster	method	protected HandlerPoster(EventBus eventBus, Looper looper, int maxMillisInsideHandleMessage)
+org.greenrobot.eventbus.HandlerPoster	method	public void enqueue(Subscription subscription, Object event)
+org.greenrobot.eventbus.HandlerPoster	method	public void handleMessage(Message msg)
+org.greenrobot.eventbus.Logger$AndroidLogger	field	private final String tag;
+org.greenrobot.eventbus.Logger$AndroidLogger	field	static final boolean ANDROID_LOG_AVAILABLE;
+org.greenrobot.eventbus.Logger$AndroidLogger	method	protected int mapLevel(Level level)
+org.greenrobot.eventbus.Logger$AndroidLogger	method	public AndroidLogger(String tag)
+org.greenrobot.eventbus.Logger$AndroidLogger	method	public static boolean isAndroidLogAvailable()
+org.greenrobot.eventbus.Logger$AndroidLogger	method	public void log(Level level, String msg)
+org.greenrobot.eventbus.Logger$AndroidLogger	method	public void log(Level level, String msg, Throwable th)
+org.greenrobot.eventbus.Logger$JavaLogger	field	protected final java.util.logging.Logger logger;
+org.greenrobot.eventbus.Logger$JavaLogger	method	public JavaLogger(String tag)
+org.greenrobot.eventbus.Logger$JavaLogger	method	public void log(Level level, String msg)
+org.greenrobot.eventbus.Logger$JavaLogger	method	public void log(Level level, String msg, Throwable th)
+org.greenrobot.eventbus.Logger$SystemOutLogger	method	public void log(Level level, String msg)
+org.greenrobot.eventbus.Logger$SystemOutLogger	method	public void log(Level level, String msg, Throwable th)
+org.greenrobot.eventbus.MainThreadSupport$AndroidHandlerMainThreadSupport	field	private final Looper looper;
+org.greenrobot.eventbus.MainThreadSupport$AndroidHandlerMainThreadSupport	method	public AndroidHandlerMainThreadSupport(Looper looper)
+org.greenrobot.eventbus.MainThreadSupport$AndroidHandlerMainThreadSupport	method	public Poster createPoster(EventBus eventBus)
+org.greenrobot.eventbus.MainThreadSupport$AndroidHandlerMainThreadSupport	method	public boolean isMainThread()
+org.greenrobot.eventbus.NoSubscriberEvent	field	public final EventBus eventBus;
+org.greenrobot.eventbus.NoSubscriberEvent	field	public final Object originalEvent;
+org.greenrobot.eventbus.NoSubscriberEvent	method	public NoSubscriberEvent(EventBus eventBus, Object originalEvent)
+org.greenrobot.eventbus.PendingPost	field	private static final List<PendingPost> pendingPostPool;
+org.greenrobot.eventbus.PendingPost	method	private PendingPost(Object event, Subscription subscription)
+org.greenrobot.eventbus.PendingPost	method	static PendingPost obtainPendingPost(Subscription subscription, Object event)
+org.greenrobot.eventbus.PendingPost	method	static void releasePendingPost(PendingPost pendingPost)
+org.greenrobot.eventbus.PendingPostQueue	field	private PendingPost head;
+org.greenrobot.eventbus.PendingPostQueue	field	private PendingPost tail;
+org.greenrobot.eventbus.PendingPostQueue	method	synchronized PendingPost poll()
+org.greenrobot.eventbus.PendingPostQueue	method	synchronized PendingPost poll(int maxMillisToWait) throws InterruptedException
+org.greenrobot.eventbus.PendingPostQueue	method	synchronized void enqueue(PendingPost pendingPost)
+org.greenrobot.eventbus.SubscriberExceptionEvent	field	public final EventBus eventBus;
+org.greenrobot.eventbus.SubscriberExceptionEvent	field	public final Object causingEvent;
+org.greenrobot.eventbus.SubscriberExceptionEvent	field	public final Object causingSubscriber;
+org.greenrobot.eventbus.SubscriberExceptionEvent	field	public final Throwable throwable;
+org.greenrobot.eventbus.SubscriberExceptionEvent	method	public SubscriberExceptionEvent(EventBus eventBus, Throwable throwable, Object causingEvent, Object causingSubscriber)
+org.greenrobot.eventbus.SubscriberMethod	field	final Class<?> eventType;
+org.greenrobot.eventbus.SubscriberMethod	field	final Method method;
+org.greenrobot.eventbus.SubscriberMethod	field	final ThreadMode threadMode;
+org.greenrobot.eventbus.SubscriberMethod	field	final boolean sticky;
+org.greenrobot.eventbus.SubscriberMethod	field	final int priority;
+org.greenrobot.eventbus.SubscriberMethod	method	private synchronized void checkMethodString()
+org.greenrobot.eventbus.SubscriberMethod	method	public SubscriberMethod(Method method, Class<?> eventType, ThreadMode threadMode, int priority, boolean sticky)
+org.greenrobot.eventbus.SubscriberMethod	method	public boolean equals(Object other)
+org.greenrobot.eventbus.SubscriberMethod	method	public int hashCode()
+org.greenrobot.eventbus.SubscriberMethodFinder	field	private List<SubscriberInfoIndex> subscriberInfoIndexes;
+org.greenrobot.eventbus.SubscriberMethodFinder	field	private final boolean ignoreGeneratedIndex;
+org.greenrobot.eventbus.SubscriberMethodFinder	field	private final boolean strictMethodVerification;
+org.greenrobot.eventbus.SubscriberMethodFinder	field	private static final FindState[] FIND_STATE_POOL;
+org.greenrobot.eventbus.SubscriberMethodFinder	field	private static final Map<Class<?>, List<SubscriberMethod>> METHOD_CACHE;
+org.greenrobot.eventbus.SubscriberMethodFinder	field	private static final int BRIDGE;
+org.greenrobot.eventbus.SubscriberMethodFinder	field	private static final int MODIFIERS_IGNORE;
+org.greenrobot.eventbus.SubscriberMethodFinder	field	private static final int POOL_SIZE;
+org.greenrobot.eventbus.SubscriberMethodFinder	field	private static final int SYNTHETIC;
+org.greenrobot.eventbus.SubscriberMethodFinder	method	private FindState prepareFindState()
+org.greenrobot.eventbus.SubscriberMethodFinder	method	private List<SubscriberMethod> findUsingInfo(Class<?> subscriberClass)
+org.greenrobot.eventbus.SubscriberMethodFinder	method	private List<SubscriberMethod> findUsingReflection(Class<?> subscriberClass)
+org.greenrobot.eventbus.SubscriberMethodFinder	method	private List<SubscriberMethod> getMethodsAndRelease(FindState findState)
+org.greenrobot.eventbus.SubscriberMethodFinder	method	private SubscriberInfo getSubscriberInfo(FindState findState)
+org.greenrobot.eventbus.SubscriberMethodFinder	method	private void findUsingReflectionInSingleClass(FindState findState)
+org.greenrobot.eventbus.SubscriberMethodFinder	method	static void clearCaches()
+org.greenrobot.eventbus.SubscriberMethodFinder$FindState	field	final List<SubscriberMethod> subscriberMethods;
+org.greenrobot.eventbus.SubscriberMethodFinder$FindState	field	final Map<Class, Object> anyMethodByEventType;
+org.greenrobot.eventbus.SubscriberMethodFinder$FindState	field	final Map<String, Class> subscriberClassByMethodKey;
+org.greenrobot.eventbus.SubscriberMethodFinder$FindState	field	final StringBuilder methodKeyBuilder;
+org.greenrobot.eventbus.SubscriberMethodFinder$FindState	method	private boolean checkAddWithMethodSignature(Method method, Class<?> eventType)
+org.greenrobot.eventbus.Subscription	field	final Object subscriber;
+org.greenrobot.eventbus.Subscription	field	final SubscriberMethod subscriberMethod;
+org.greenrobot.eventbus.Subscription	field	volatile boolean active;
+org.greenrobot.eventbus.Subscription	method	public boolean equals(Object other)
+org.greenrobot.eventbus.Subscription	method	public int hashCode()
+org.greenrobot.eventbus.meta.AbstractSubscriberInfo	field	private final Class subscriberClass;
+org.greenrobot.eventbus.meta.AbstractSubscriberInfo	field	private final Class<? extends SubscriberInfo> superSubscriberInfoClass;
+org.greenrobot.eventbus.meta.AbstractSubscriberInfo	field	private final boolean shouldCheckSuperclass;
+org.greenrobot.eventbus.meta.AbstractSubscriberInfo	method	protected AbstractSubscriberInfo(Class subscriberClass, Class<? extends SubscriberInfo> superSubscriberInfoClass, boolean shouldCheckSuperclass)
+org.greenrobot.eventbus.meta.AbstractSubscriberInfo	method	protected SubscriberMethod createSubscriberMethod(String methodName, Class<?> eventType)
+org.greenrobot.eventbus.meta.AbstractSubscriberInfo	method	protected SubscriberMethod createSubscriberMethod(String methodName, Class<?> eventType, ThreadMode threadMode)
+org.greenrobot.eventbus.meta.AbstractSubscriberInfo	method	protected SubscriberMethod createSubscriberMethod(String methodName, Class<?> eventType, ThreadMode threadMode, int priority, boolean sticky)
+org.greenrobot.eventbus.meta.AbstractSubscriberInfo	method	public Class getSubscriberClass()
+org.greenrobot.eventbus.meta.AbstractSubscriberInfo	method	public SubscriberInfo getSuperSubscriberInfo()
+org.greenrobot.eventbus.meta.AbstractSubscriberInfo	method	public boolean shouldCheckSuperclass()
+org.greenrobot.eventbus.meta.SimpleSubscriberInfo	field	private final SubscriberMethodInfo[] methodInfos;
+org.greenrobot.eventbus.meta.SimpleSubscriberInfo	method	public SimpleSubscriberInfo(Class subscriberClass, boolean shouldCheckSuperclass, SubscriberMethodInfo[] methodInfos)
+org.greenrobot.eventbus.meta.SimpleSubscriberInfo	method	public synchronized SubscriberMethod[] getSubscriberMethods()
+org.greenrobot.eventbus.meta.SubscriberMethodInfo	field	final Class<?> eventType;
+org.greenrobot.eventbus.meta.SubscriberMethodInfo	field	final String methodName;
+org.greenrobot.eventbus.meta.SubscriberMethodInfo	field	final ThreadMode threadMode;
+org.greenrobot.eventbus.meta.SubscriberMethodInfo	field	final boolean sticky;
+org.greenrobot.eventbus.meta.SubscriberMethodInfo	field	final int priority;
+org.greenrobot.eventbus.meta.SubscriberMethodInfo	method	public SubscriberMethodInfo(String methodName, Class<?> eventType)
+org.greenrobot.eventbus.meta.SubscriberMethodInfo	method	public SubscriberMethodInfo(String methodName, Class<?> eventType, ThreadMode threadMode)
+org.greenrobot.eventbus.meta.SubscriberMethodInfo	method	public SubscriberMethodInfo(String methodName, Class<?> eventType, ThreadMode threadMode, int priority, boolean sticky)
+org.greenrobot.eventbus.util.AsyncExecutor	field	private final Constructor<?> failureEventConstructor;
+org.greenrobot.eventbus.util.AsyncExecutor	field	private final EventBus eventBus;
+org.greenrobot.eventbus.util.AsyncExecutor	field	private final Executor threadPool;
+org.greenrobot.eventbus.util.AsyncExecutor	field	private final Object scope;
+org.greenrobot.eventbus.util.AsyncExecutor	method	private AsyncExecutor(Executor threadPool, EventBus eventBus, Class<?> failureEventType, Object scope)
+org.greenrobot.eventbus.util.AsyncExecutor	method	public static AsyncExecutor create()
+org.greenrobot.eventbus.util.AsyncExecutor	method	public static Builder builder()
+org.greenrobot.eventbus.util.AsyncExecutor	method	public void execute(final RunnableEx runnable)
+org.greenrobot.eventbus.util.AsyncExecutor$Builder	field	private Class<?> failureEventType;
+org.greenrobot.eventbus.util.AsyncExecutor$Builder	field	private EventBus eventBus;
+org.greenrobot.eventbus.util.AsyncExecutor$Builder	field	private Executor threadPool;
+org.greenrobot.eventbus.util.AsyncExecutor$Builder	method	private Builder()
+org.greenrobot.eventbus.util.AsyncExecutor$Builder	method	public AsyncExecutor build()
+org.greenrobot.eventbus.util.AsyncExecutor$Builder	method	public AsyncExecutor buildForScope(Object executionContext)
+org.greenrobot.eventbus.util.AsyncExecutor$Builder	method	public Builder eventBus(EventBus eventBus)
+org.greenrobot.eventbus.util.AsyncExecutor$Builder	method	public Builder failureEventType(Class<?> failureEventType)
+org.greenrobot.eventbus.util.AsyncExecutor$Builder	method	public Builder threadPool(Executor threadPool)
+org.greenrobot.eventbus.util.ErrorDialogConfig	field	final ExceptionToResourceMapping mapping;
+org.greenrobot.eventbus.util.ErrorDialogConfig	field	final Resources resources;
+org.greenrobot.eventbus.util.ErrorDialogConfig	field	final int defaultErrorMsgId;
+org.greenrobot.eventbus.util.ErrorDialogConfig	field	final int defaultTitleId;
+org.greenrobot.eventbus.util.ErrorDialogConfig	method	public ErrorDialogConfig addMapping(Class<? extends Throwable> clazz, int msgId)
+org.greenrobot.eventbus.util.ErrorDialogConfig	method	public ErrorDialogConfig(Resources resources, int defaultTitleId, int defaultMsgId)
+org.greenrobot.eventbus.util.ErrorDialogConfig	method	public int getMessageIdForThrowable(Throwable throwable)
+org.greenrobot.eventbus.util.ErrorDialogConfig	method	public void disableExceptionLogging()
+org.greenrobot.eventbus.util.ErrorDialogConfig	method	public void setDefaultDialogIconId(int defaultDialogIconId)
+org.greenrobot.eventbus.util.ErrorDialogConfig	method	public void setDefaultEventTypeOnDialogClosed(Class<?> defaultEventTypeOnDialogClosed)
+org.greenrobot.eventbus.util.ErrorDialogConfig	method	public void setEventBus(EventBus eventBus)
+org.greenrobot.eventbus.util.ErrorDialogConfig	method	public void setTagForLoggingExceptions(String tagForLoggingExceptions)
+org.greenrobot.eventbus.util.ErrorDialogFragmentFactory	field	protected final ErrorDialogConfig config;
+org.greenrobot.eventbus.util.ErrorDialogFragmentFactory	method	protected ErrorDialogFragmentFactory(ErrorDialogConfig config)
+org.greenrobot.eventbus.util.ErrorDialogFragmentFactory	method	protected String getMessageFor(ThrowableFailureEvent event, Bundle arguments)
+org.greenrobot.eventbus.util.ErrorDialogFragmentFactory	method	protected String getTitleFor(ThrowableFailureEvent event, Bundle arguments)
+org.greenrobot.eventbus.util.ErrorDialogFragmentFactory	method	protected T prepareErrorFragment(ThrowableFailureEvent event, boolean finishAfterDialog, Bundle argumentsForErrorDialog)
+org.greenrobot.eventbus.util.ErrorDialogFragmentFactory	method	protected abstract T createErrorFragment(ThrowableFailureEvent throwableFailureEvent, Bundle bundle);
+org.greenrobot.eventbus.util.ErrorDialogFragmentFactory$Honeycomb	method	public Honeycomb(ErrorDialogConfig config)
+org.greenrobot.eventbus.util.ErrorDialogFragmentFactory$Honeycomb	method	public android.app.Fragment createErrorFragment(ThrowableFailureEvent event, Bundle arguments)
+org.greenrobot.eventbus.util.ErrorDialogFragmentFactory$Support	method	public Fragment createErrorFragment(ThrowableFailureEvent event, Bundle arguments)
+org.greenrobot.eventbus.util.ErrorDialogFragmentFactory$Support	method	public Support(ErrorDialogConfig config)
+org.greenrobot.eventbus.util.ErrorDialogFragments	field	public static Class<?> EVENT_TYPE_ON_CLICK;
+org.greenrobot.eventbus.util.ErrorDialogFragments	field	public static int ERROR_DIALOG_ICON;
+org.greenrobot.eventbus.util.ErrorDialogFragments	method	public static Dialog createDialog(Context context, Bundle arguments, DialogInterface.OnClickListener onClickListener)
+org.greenrobot.eventbus.util.ErrorDialogFragments	method	public static void handleOnClick(DialogInterface dialog, int which, Activity activity, Bundle arguments) throws IllegalAccessException, InvocationTargetException
+org.greenrobot.eventbus.util.ErrorDialogFragments$Honeycomb	method	public Dialog onCreateDialog(Bundle savedInstanceState)
+org.greenrobot.eventbus.util.ErrorDialogFragments$Honeycomb	method	public void onClick(DialogInterface dialog, int which) throws IllegalAccessException, InvocationTargetException
+org.greenrobot.eventbus.util.ErrorDialogFragments$Support	method	public Dialog onCreateDialog(Bundle savedInstanceState)
+org.greenrobot.eventbus.util.ErrorDialogFragments$Support	method	public void onClick(DialogInterface dialog, int which) throws IllegalAccessException, InvocationTargetException
+org.greenrobot.eventbus.util.ErrorDialogManager	field	protected static final String TAG_ERROR_DIALOG;
+org.greenrobot.eventbus.util.ErrorDialogManager	field	protected static final String TAG_ERROR_DIALOG_MANAGER;
+org.greenrobot.eventbus.util.ErrorDialogManager	field	public static ErrorDialogFragmentFactory<?> factory;
+org.greenrobot.eventbus.util.ErrorDialogManager	field	public static final String KEY_EVENT_TYPE_ON_CLOSE;
+org.greenrobot.eventbus.util.ErrorDialogManager	field	public static final String KEY_FINISH_AFTER_DIALOG;
+org.greenrobot.eventbus.util.ErrorDialogManager	field	public static final String KEY_ICON_ID;
+org.greenrobot.eventbus.util.ErrorDialogManager	field	public static final String KEY_MESSAGE;
+org.greenrobot.eventbus.util.ErrorDialogManager	field	public static final String KEY_TITLE;
+org.greenrobot.eventbus.util.ErrorDialogManager	method	private static boolean isSupportActivity(Activity activity)
+org.greenrobot.eventbus.util.ErrorDialogManager	method	protected static void checkLogException(ThrowableFailureEvent event)
+org.greenrobot.eventbus.util.ErrorDialogManager	method	public static boolean isInExecutionScope(Object executionScope, ThrowableFailureEvent event)
+org.greenrobot.eventbus.util.ErrorDialogManager	method	public static void attachTo(Activity activity)
+org.greenrobot.eventbus.util.ErrorDialogManager	method	public static void attachTo(Activity activity, Object executionScope, boolean finishAfterDialog, Bundle argumentsForErrorDialog)
+org.greenrobot.eventbus.util.ErrorDialogManager	method	public static void attachTo(Activity activity, boolean finishAfterDialog)
+org.greenrobot.eventbus.util.ErrorDialogManager	method	public static void attachTo(Activity activity, boolean finishAfterDialog, Bundle argumentsForErrorDialog)
+org.greenrobot.eventbus.util.ErrorDialogManager$HoneycombManagerFragment	field	private EventBus eventBus;
+org.greenrobot.eventbus.util.ErrorDialogManager$HoneycombManagerFragment	field	private Object executionScope;
+org.greenrobot.eventbus.util.ErrorDialogManager$HoneycombManagerFragment	field	protected Bundle argumentsForErrorDialog;
+org.greenrobot.eventbus.util.ErrorDialogManager$HoneycombManagerFragment	field	protected boolean finishAfterDialog;
+org.greenrobot.eventbus.util.ErrorDialogManager$HoneycombManagerFragment	method	public static void attachTo(Activity activity, Object executionScope, boolean finishAfterDialog, Bundle argumentsForErrorDialog)
+org.greenrobot.eventbus.util.ErrorDialogManager$HoneycombManagerFragment	method	public void onEventMainThread(ThrowableFailureEvent event)
+org.greenrobot.eventbus.util.ErrorDialogManager$HoneycombManagerFragment	method	public void onPause()
+org.greenrobot.eventbus.util.ErrorDialogManager$HoneycombManagerFragment	method	public void onResume()
+org.greenrobot.eventbus.util.ErrorDialogManager$SupportManagerFragment	field	private EventBus eventBus;
+org.greenrobot.eventbus.util.ErrorDialogManager$SupportManagerFragment	field	private Object executionScope;
+org.greenrobot.eventbus.util.ErrorDialogManager$SupportManagerFragment	field	private boolean skipRegisterOnNextResume;
+org.greenrobot.eventbus.util.ErrorDialogManager$SupportManagerFragment	field	protected Bundle argumentsForErrorDialog;
+org.greenrobot.eventbus.util.ErrorDialogManager$SupportManagerFragment	field	protected boolean finishAfterDialog;
+org.greenrobot.eventbus.util.ErrorDialogManager$SupportManagerFragment	method	public static void attachTo(Activity activity, Object executionScope, boolean finishAfterDialog, Bundle argumentsForErrorDialog)
+org.greenrobot.eventbus.util.ErrorDialogManager$SupportManagerFragment	method	public void onCreate(Bundle savedInstanceState)
+org.greenrobot.eventbus.util.ErrorDialogManager$SupportManagerFragment	method	public void onEventMainThread(ThrowableFailureEvent event)
+org.greenrobot.eventbus.util.ErrorDialogManager$SupportManagerFragment	method	public void onPause()
+org.greenrobot.eventbus.util.ErrorDialogManager$SupportManagerFragment	method	public void onResume()
+org.greenrobot.eventbus.util.ExceptionToResourceMapping	field	public final Map<Class<? extends Throwable>, Integer> throwableToMsgIdMap;
+org.greenrobot.eventbus.util.ExceptionToResourceMapping	method	protected Integer mapThrowableFlat(Throwable throwable)
+org.greenrobot.eventbus.util.ExceptionToResourceMapping	method	public ExceptionToResourceMapping addMapping(Class<? extends Throwable> clazz, int msgId)
+org.greenrobot.eventbus.util.ExceptionToResourceMapping	method	public Integer mapThrowable(Throwable throwable)
+org.greenrobot.eventbus.util.ThrowableFailureEvent	field	private Object executionContext;
+org.greenrobot.eventbus.util.ThrowableFailureEvent	field	protected final Throwable throwable;
+org.greenrobot.eventbus.util.ThrowableFailureEvent	field	protected final boolean suppressErrorUi;
+org.greenrobot.eventbus.util.ThrowableFailureEvent	method	public Object getExecutionScope()
+org.greenrobot.eventbus.util.ThrowableFailureEvent	method	public Throwable getThrowable()
+org.greenrobot.eventbus.util.ThrowableFailureEvent	method	public ThrowableFailureEvent(Throwable throwable)
+org.greenrobot.eventbus.util.ThrowableFailureEvent	method	public ThrowableFailureEvent(Throwable throwable, boolean suppressErrorUi)
+org.greenrobot.eventbus.util.ThrowableFailureEvent	method	public boolean isSuppressErrorUi()
+org.greenrobot.eventbus.util.ThrowableFailureEvent	method	public void setExecutionScope(Object executionContext)

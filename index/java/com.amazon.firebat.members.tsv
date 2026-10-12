@@ -1,0 +1,106 @@
+class	kind	declaration
+com.amazon.firebat.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.firebat.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.firebat.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.firebat.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.firebat.BuildConfig	field	public static final int APP_MAJOR_VERSION_NUMBER;
+com.amazon.firebat.BuildConfig	field	public static final int APP_VERSION_NUMBER;
+com.amazon.firebat.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.firebat.ErrorActivity	field	private static final String APP_STORE_LAUNCH_INTENT;
+com.amazon.firebat.ErrorActivity	method	protected void onCreate(final Bundle savedInstanceState)
+com.amazon.firebat.R	method	private R()
+com.amazon.firebat.R$color	field	public static final int off_white;
+com.amazon.firebat.R$color	method	private color()
+com.amazon.firebat.R$drawable	field	public static final int app_icon;
+com.amazon.firebat.R$drawable	method	private drawable()
+com.amazon.firebat.R$id	field	public static final int dialogTitle;
+com.amazon.firebat.R$id	field	public static final int errorCode;
+com.amazon.firebat.R$id	field	public static final int errorMessage;
+com.amazon.firebat.R$id	method	private id()
+com.amazon.firebat.R$layout	field	public static final int dialog_error;
+com.amazon.firebat.R$layout	field	public static final int dialog_title;
+com.amazon.firebat.R$layout	method	private layout()
+com.amazon.firebat.R$string	field	public static final int AV_FIRETV_APP_NAME;
+com.amazon.firebat.R$string	field	public static final int AV_FIRETV_BUTTON_CANCEL;
+com.amazon.firebat.R$string	field	public static final int AV_FIRETV_BUTTON_OK;
+com.amazon.firebat.R$string	field	public static final int AV_FIRETV_ERRORS_BUTTON_UPDATE_NOW;
+com.amazon.firebat.R$string	field	public static final int AV_FIRETV_ERRORS_ERROR_CODE_X_FORMAT;
+com.amazon.firebat.R$string	field	public static final int AV_FIRETV_ERRORS_SUNSET_SCREEN_DESCRIPTION_CANNOT_UPDATE;
+com.amazon.firebat.R$string	field	public static final int AV_FIRETV_ERRORS_SUNSET_SCREEN_DESCRIPTION_CAN_UPDATE;
+com.amazon.firebat.R$string	field	public static final int AV_FIRETV_ERRORS_SUNSET_SCREEN_TITLE;
+com.amazon.firebat.R$string	method	private string()
+com.amazon.firebat.R$style	field	public static final int FirebatMainTheme;
+com.amazon.firebat.R$style	method	private style()
+com.amazon.firebat.StubActivityErrorTypes	field	private static final String CHECK_FOR_UPDATES_ACTION;
+com.amazon.firebat.StubActivityErrorTypes	field	private static final String SETTINGS_PACKAGE_NAME;
+com.amazon.firebat.StubActivityErrorTypes	method	public Map<Enum<?>, ErrorType> getErrorTypes(final Activity activity)
+com.amazon.firebat.StubActivityErrorTypes	method	static Intent getIntentToLaunchSettings()
+com.amazon.firebat.errordialogs.ErrorCodeHandler	field	final Enum<?> mErrorCode;
+com.amazon.firebat.errordialogs.ErrorCodeHandler	field	final ErrorType mErrorType;
+com.amazon.firebat.errordialogs.ErrorCodeHandler	field	final Integer mOverrideNegativeButtonText;
+com.amazon.firebat.errordialogs.ErrorCodeHandler	field	final Integer mOverrideNeutralButtonText;
+com.amazon.firebat.errordialogs.ErrorCodeHandler	field	final Integer mOverridePositiveButtonText;
+com.amazon.firebat.errordialogs.ErrorCodeHandler	field	final PostErrorMessageAction mAdditionalPostAction;
+com.amazon.firebat.errordialogs.ErrorCodeHandler	field	final PostErrorMessageAction mOverrideNegativeButtonAction;
+com.amazon.firebat.errordialogs.ErrorCodeHandler	field	final PostErrorMessageAction mOverrideNeutralButtonAction;
+com.amazon.firebat.errordialogs.ErrorCodeHandler	field	final PostErrorMessageAction mOverridePositiveButtonAction;
+com.amazon.firebat.errordialogs.ErrorCodeHandler	field	private final Activity mActivity;
+com.amazon.firebat.errordialogs.ErrorCodeHandler	field	private final AlertDialogBuilderFactory mAlertDialogBuilderFactory;
+com.amazon.firebat.errordialogs.ErrorCodeHandler	method	private ErrorCodeHandler(final Activity activity, final ErrorType errorType, final PostErrorMessageAction additionalPostAction, final Integer overridePositiveButtonText, final PostErrorMessageAction overridePositiveButtonAction, final Integer overrideNeutralButtonText, final PostErrorMessageAction overrideNeutralButtonAction, final Integer overrideNegativeButtonText, final PostErrorMessageAction overrideNegativeButtonAction, final Enum<?> errorCode)
+com.amazon.firebat.errordialogs.ErrorCodeHandler	method	private void doAdditionalPostAction()
+com.amazon.firebat.errordialogs.ErrorCodeHandler	method	public AlertDialog createDialog()
+com.amazon.firebat.errordialogs.ErrorCodeHandler$Builder	field	private Integer mOverrideNegativeButtonText;
+com.amazon.firebat.errordialogs.ErrorCodeHandler$Builder	field	private Integer mOverrideNeutralButtonText;
+com.amazon.firebat.errordialogs.ErrorCodeHandler$Builder	field	private Integer mOverridePositiveButtonText;
+com.amazon.firebat.errordialogs.ErrorCodeHandler$Builder	field	private PostErrorMessageAction mAdditionalPostAction;
+com.amazon.firebat.errordialogs.ErrorCodeHandler$Builder	field	private PostErrorMessageAction mOverrideNegativeButtonAction;
+com.amazon.firebat.errordialogs.ErrorCodeHandler$Builder	field	private PostErrorMessageAction mOverrideNeutralButtonAction;
+com.amazon.firebat.errordialogs.ErrorCodeHandler$Builder	field	private PostErrorMessageAction mOverridePositiveButtonAction;
+com.amazon.firebat.errordialogs.ErrorCodeHandler$Builder	field	private final Activity mActivity;
+com.amazon.firebat.errordialogs.ErrorCodeHandler$Builder	field	private final Map<Enum<?>, ErrorType> mErrorTypes;
+com.amazon.firebat.errordialogs.ErrorCodeHandler$Builder	method	private ErrorType getErrorType(final Enum<?> errorCode)
+com.amazon.firebat.errordialogs.ErrorCodeHandler$Builder	method	private ErrorType getGenericError(final String errorCode)
+com.amazon.firebat.errordialogs.ErrorCodeHandler$Builder	method	public Builder load(final Class<? extends ErrorCodeTypeGroup> errorGroupClass)
+com.amazon.firebat.errordialogs.ErrorCodeHandler$Builder	method	public Builder overrideNegativeButton(final int negativeButtonTextResId, final PostErrorMessageAction negativeButtonAction)
+com.amazon.firebat.errordialogs.ErrorCodeHandler$Builder	method	public Builder overrideNeutralButton(final int neutralButtonTextResId, final PostErrorMessageAction neutralButtonAction)
+com.amazon.firebat.errordialogs.ErrorCodeHandler$Builder	method	public Builder overridePositiveButton(final int positiveButtonTextResId, final PostErrorMessageAction positiveButtonAction)
+com.amazon.firebat.errordialogs.ErrorCodeHandler$Builder	method	public Builder setAdditionalPostAction(final PostErrorMessageAction action)
+com.amazon.firebat.errordialogs.ErrorCodeHandler$Builder	method	public Builder(final Activity activity)
+com.amazon.firebat.errordialogs.ErrorCodeHandler$Builder	method	public ErrorCodeHandler build(final Enum<?> code)
+com.amazon.firebat.errordialogs.ErrorType	field	private final ErrorCode mErrorCode;
+com.amazon.firebat.errordialogs.ErrorType	field	private final Integer mNegativeButtonText;
+com.amazon.firebat.errordialogs.ErrorType	field	private final Integer mNeutralButtonText;
+com.amazon.firebat.errordialogs.ErrorType	field	private final PostErrorMessageAction mNegativeButtonAction;
+com.amazon.firebat.errordialogs.ErrorType	field	private final PostErrorMessageAction mNeutralButtonAction;
+com.amazon.firebat.errordialogs.ErrorType	field	private final PostErrorMessageAction mPositiveButtonAction;
+com.amazon.firebat.errordialogs.ErrorType	field	private final String mErrorCodeToDisplay;
+com.amazon.firebat.errordialogs.ErrorType	field	private final int mErrorMessageResId;
+com.amazon.firebat.errordialogs.ErrorType	field	private final int mErrorTitleResId;
+com.amazon.firebat.errordialogs.ErrorType	field	private final int mPositiveButtonText;
+com.amazon.firebat.errordialogs.ErrorType	method	private ErrorType(final ErrorCode errorCode, final int errorTitleResId, final int errorMessageResId, final int positiveButtonTextResId, final PostErrorMessageAction positiveButtonAction, final Integer neutralButtonTextResId, final PostErrorMessageAction neutralButtonAction, final Integer negativeButtonTextResId, final PostErrorMessageAction negativeButtonAction, final String errorCodeToDisplay)
+com.amazon.firebat.errordialogs.ErrorType	method	public ErrorCode getErrorCode()
+com.amazon.firebat.errordialogs.ErrorType	method	public Integer getNegativeButtonText()
+com.amazon.firebat.errordialogs.ErrorType	method	public Integer getNeutralButtonText()
+com.amazon.firebat.errordialogs.ErrorType	method	public PostErrorMessageAction getNegativeButtonAction()
+com.amazon.firebat.errordialogs.ErrorType	method	public PostErrorMessageAction getNeutralButtonAction()
+com.amazon.firebat.errordialogs.ErrorType	method	public PostErrorMessageAction getPositiveButtonAction()
+com.amazon.firebat.errordialogs.ErrorType	method	public String getErrorCodeToDisplay()
+com.amazon.firebat.errordialogs.ErrorType	method	public int getErrorMessageResId()
+com.amazon.firebat.errordialogs.ErrorType	method	public int getErrorTitleResId()
+com.amazon.firebat.errordialogs.ErrorType	method	public int getPositiveButtonText()
+com.amazon.firebat.errordialogs.ErrorType$Builder	field	private Integer mNegativeButtonText;
+com.amazon.firebat.errordialogs.ErrorType$Builder	field	private Integer mNeutralButtonText;
+com.amazon.firebat.errordialogs.ErrorType$Builder	field	private PostErrorMessageAction mNegativeButtonAction;
+com.amazon.firebat.errordialogs.ErrorType$Builder	field	private PostErrorMessageAction mNeutralButtonAction;
+com.amazon.firebat.errordialogs.ErrorType$Builder	field	private PostErrorMessageAction mPositiveButtonAction;
+com.amazon.firebat.errordialogs.ErrorType$Builder	field	private String mErrorCodeToDisplay;
+com.amazon.firebat.errordialogs.ErrorType$Builder	field	private final ErrorCode mErrorCode;
+com.amazon.firebat.errordialogs.ErrorType$Builder	field	private final int mErrorMessageResId;
+com.amazon.firebat.errordialogs.ErrorType$Builder	field	private final int mErrorTitleResId;
+com.amazon.firebat.errordialogs.ErrorType$Builder	field	private final int mPositiveButtonText;
+com.amazon.firebat.errordialogs.ErrorType$Builder	method	public Builder setErrorCodeToDisplay(final String errorCode)
+com.amazon.firebat.errordialogs.ErrorType$Builder	method	public Builder setNegativeButton(final int negativeButtonTextResId, final PostErrorMessageAction negativeButtonAction)
+com.amazon.firebat.errordialogs.ErrorType$Builder	method	public Builder setNeutralButton(final int neutralButtonTextResId, final PostErrorMessageAction neutralButtonAction)
+com.amazon.firebat.errordialogs.ErrorType$Builder	method	public Builder setPositiveButtonAction(final PostErrorMessageAction positiveButtonAction)
+com.amazon.firebat.errordialogs.ErrorType$Builder	method	public Builder(final ErrorCode errorCode, final int errorTitleResId, final int errorMessageResId, final int positiveButtonTextResId)
+com.amazon.firebat.errordialogs.ErrorType$Builder	method	public ErrorType build()

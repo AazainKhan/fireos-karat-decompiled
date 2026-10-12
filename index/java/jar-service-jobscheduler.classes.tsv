@@ -1,0 +1,103 @@
+kind	class	extends	implements
+class	com.android.server.AnyMotionDetector		
+class	com.android.server.AnyMotionDetector$RunningSignalStats		
+class	com.android.server.AnyMotionDetector$Vector3		
+class	com.android.server.DeviceIdleController	SystemService	AnyMotionDetector.DeviceIdleCallback
+class	com.android.server.DeviceIdleController$BinderService	IDeviceIdleController.Stub	
+class	com.android.server.DeviceIdleController$Constants	ContentObserver	
+class	com.android.server.DeviceIdleController$Injector		
+class	com.android.server.DeviceIdleController$LocalService		DeviceIdleInternal
+class	com.android.server.DeviceIdleController$MotionListener	TriggerEventListener	SensorEventListener
+class	com.android.server.DeviceIdleController$MyHandler	Handler	
+class	com.android.server.DeviceIdleController$Shell	ShellCommand	
+class	com.android.server.VendorDeviceIdleControllerCallback		
+class	com.android.server.deviceidle.BluetoothConstraint		IDeviceIdleConstraint
+class	com.android.server.deviceidle.DeviceIdleConstraintTracker		
+class	com.android.server.deviceidle.TvConstraintController		ConstraintController
+class	com.android.server.job.GrantedUriPermissions		
+class	com.android.server.job.JobConcurrencyManager		
+class	com.android.server.job.JobConcurrencyManager$JobCountTracker		
+class	com.android.server.job.JobPackageTracker		
+class	com.android.server.job.JobPackageTracker$DataSet		
+class	com.android.server.job.JobPackageTracker$PackageEntry		
+class	com.android.server.job.JobSchedulerService	SystemService	StateChangedListener,JobCompletedListener
+class	com.android.server.job.JobSchedulerService$Constants		
+class	com.android.server.job.JobSchedulerService$ConstantsObserver	ContentObserver	
+class	com.android.server.job.JobSchedulerService$DeferredJobCounter		Consumer<JobStatus>
+class	com.android.server.job.JobSchedulerService$JobHandler	Handler	
+class	com.android.server.job.JobSchedulerService$JobSchedulerStub	IJobScheduler.Stub	
+class	com.android.server.job.JobSchedulerService$LocalService		JobSchedulerInternal
+class	com.android.server.job.JobSchedulerService$MaxJobCounts		
+class	com.android.server.job.JobSchedulerService$MaxJobCountsPerMemoryTrimLevel		
+class	com.android.server.job.JobSchedulerService$MaybeReadyJobQueueFunctor		Consumer<JobStatus>
+class	com.android.server.job.JobSchedulerService$MySimpleClock	Clock	
+class	com.android.server.job.JobSchedulerService$ReadyJobQueueFunctor		Consumer<JobStatus>
+class	com.android.server.job.JobSchedulerService$StandbyTracker	AppStandbyInternal.AppIdleStateChangeListener	
+class	com.android.server.job.JobSchedulerShellCommand	BasicShellCommandHandler	
+class	com.android.server.job.JobServiceContext		ServiceConnection
+class	com.android.server.job.JobServiceContext$JobCallback	IJobCallback.Stub	
+class	com.android.server.job.JobServiceContext$JobServiceHandler	Handler	
+class	com.android.server.job.JobStore		
+class	com.android.server.job.JobStore$AnonymousClass1		Runnable
+class	com.android.server.job.JobStore$JobSet		
+class	com.android.server.job.JobStore$ReadJobMapFromDiskRunnable		Runnable
+class	com.android.server.job.VendorJobConcurrencyManagerCallback		
+class	com.android.server.job.VendorJobSchedulerServiceCallback		
+class	com.android.server.job.VendorJobServiceContextCallback		
+class	com.android.server.job.controllers.BackgroundJobsController	StateController	
+class	com.android.server.job.controllers.BackgroundJobsController$UpdateJobFunctor		Consumer<JobStatus>
+class	com.android.server.job.controllers.BatteryController	RestrictingController	
+class	com.android.server.job.controllers.BatteryController$ChargingTracker	BroadcastReceiver	
+class	com.android.server.job.controllers.ConnectivityController	RestrictingController	ConnectivityManager.OnNetworkActiveListener
+class	com.android.server.job.controllers.ConnectivityController$CcHandler	Handler	
+class	com.android.server.job.controllers.ContentObserverController	StateController	
+class	com.android.server.job.controllers.ContentObserverController$JobInstance		
+class	com.android.server.job.controllers.ContentObserverController$ObserverInstance	ContentObserver	
+class	com.android.server.job.controllers.ContentObserverController$TriggerRunnable		Runnable
+class	com.android.server.job.controllers.DeviceIdleJobsController	StateController	
+class	com.android.server.job.controllers.DeviceIdleJobsController$DeviceIdleJobsDelayHandler	Handler	
+class	com.android.server.job.controllers.DeviceIdleJobsController$DeviceIdleUpdateFunctor		Consumer<JobStatus>
+class	com.android.server.job.controllers.IdleController	RestrictingController	IdlenessListener
+class	com.android.server.job.controllers.JobStatus		
+class	com.android.server.job.controllers.QuotaController	StateController	
+class	com.android.server.job.controllers.QuotaController$AlarmQueue	PriorityQueue<Pair<Package, Long>>	
+class	com.android.server.job.controllers.QuotaController$ChargingTracker	BroadcastReceiver	
+class	com.android.server.job.controllers.QuotaController$DeleteTimingSessionsFunctor		Consumer<List<TimingSession>>
+class	com.android.server.job.controllers.QuotaController$EarliestEndTimeFunctor		Consumer<List<TimingSession>>
+class	com.android.server.job.controllers.QuotaController$ExecutionStats		
+class	com.android.server.job.controllers.QuotaController$InQuotaAlarmListener		AlarmManager.OnAlarmListener
+class	com.android.server.job.controllers.QuotaController$Package		
+class	com.android.server.job.controllers.QuotaController$QcConstants	ContentObserver	
+class	com.android.server.job.controllers.QuotaController$QcHandler	Handler	
+class	com.android.server.job.controllers.QuotaController$StandbyTracker	AppStandbyInternal.AppIdleStateChangeListener	
+class	com.android.server.job.controllers.QuotaController$Timer		
+class	com.android.server.job.controllers.QuotaController$TimerChargingUpdateFunctor		Consumer<Timer>
+class	com.android.server.job.controllers.QuotaController$TimingSession		
+class	com.android.server.job.controllers.QuotaController$UidConstraintUpdater		Consumer<JobStatus>
+class	com.android.server.job.controllers.RestrictingController	StateController	
+class	com.android.server.job.controllers.StateController		
+class	com.android.server.job.controllers.StorageController	StateController	
+class	com.android.server.job.controllers.StorageController$StorageTracker	BroadcastReceiver	
+class	com.android.server.job.controllers.TimeController	StateController	
+class	com.android.server.job.controllers.TimeController$TcConstants	ContentObserver	
+class	com.android.server.job.controllers.idle.CarIdlenessTracker	BroadcastReceiver	IdlenessTracker
+class	com.android.server.job.controllers.idle.DeviceIdlenessTracker	BroadcastReceiver	IdlenessTracker
+class	com.android.server.job.restrictions.JobRestriction		
+class	com.android.server.job.restrictions.ThermalStatusRestriction	JobRestriction	
+class	com.android.server.usage.AppIdleHistory		
+class	com.android.server.usage.AppIdleHistory$AppUsageHistory		
+class	com.android.server.usage.AppStandbyController		AppStandbyInternal
+class	com.android.server.usage.AppStandbyController$AppStandbyHandler	Handler	
+class	com.android.server.usage.AppStandbyController$DeviceStateReceiver	BroadcastReceiver	
+class	com.android.server.usage.AppStandbyController$Injector		
+class	com.android.server.usage.AppStandbyController$Lock		
+class	com.android.server.usage.AppStandbyController$PackageReceiver	BroadcastReceiver	
+class	com.android.server.usage.AppStandbyController$SettingsObserver	ContentObserver	
+class	com.android.server.usage.AppStandbyController$StandbyUpdateRecord		
+class	com.android.server.usage.VendorAppStandbyControllerCallback		
+interface	com.android.server.AnyMotionDetector$DeviceIdleCallback		
+interface	com.android.server.job.JobCompletedListener		
+interface	com.android.server.job.JobConcurrencyManager$Stats		
+interface	com.android.server.job.StateChangedListener		
+interface	com.android.server.job.controllers.idle.IdlenessListener		
+interface	com.android.server.job.controllers.idle.IdlenessTracker		

@@ -1,0 +1,66 @@
+kind	class	extends	implements
+class	com.amazon.minerva.client.aggregation.AggregationConstants		
+class	com.amazon.minerva.client.aggregation.SimpleAvgAggregatedDoubleKeyValPair		AggregatedDoubleKeyValPair
+class	com.amazon.minerva.client.aggregation.SimpleAvgAggregatedLongKeyValPair		AggregatedLongKeyValPair
+class	com.amazon.minerva.client.aggregation.SimpleSumAggregatedDoubleKeyValPair		AggregatedDoubleKeyValPair
+class	com.amazon.minerva.client.aggregation.SimpleSumAggregatedLongKeyValPair		AggregatedLongKeyValPair
+class	com.amazon.minerva.client.api.AggregatedMetricEvent	MetricEvent	
+class	com.amazon.minerva.client.api.AmazonMinervaClientBuilder		
+class	com.amazon.minerva.client.api.AmazonMinervaClientConfiguration		
+class	com.amazon.minerva.client.api.BuildConfig		
+class	com.amazon.minerva.client.api.MetricEvent		
+class	com.amazon.minerva.client.api.R		
+class	com.amazon.minerva.client.api.callback.NoOpMetricRecordCallback		MetricRecordCallback
+class	com.amazon.minerva.client.api.impl.AmazonMinervaImpl		AmazonMinerva
+class	com.amazon.minerva.client.api.impl.AmazonMinervaV2Impl	AmazonMinervaImpl	AmazonMinervaV2
+class	com.amazon.minerva.client.core.AggregatedDouble		
+class	com.amazon.minerva.client.core.AggregatedLong		
+class	com.amazon.minerva.client.core.AmazonMinervaClient		
+class	com.amazon.minerva.client.core.DataPoint		
+class	com.amazon.minerva.client.core.DataPointEnvelope		Parcelable
+class	com.amazon.minerva.client.core.IMinervaService$Default		IMinervaService
+class	com.amazon.minerva.client.core.IMinervaService$Stub	Binder	IMinervaService
+class	com.amazon.minerva.client.core.IMinervaService$Stub$Proxy		IMinervaService
+class	com.amazon.minerva.client.core.MetricEventBuffer		
+class	com.amazon.minerva.client.core.MinervaServiceConnection		ServiceConnection
+class	com.amazon.minerva.client.core.MinervaServiceWrapper		IMinervaService
+class	com.amazon.minerva.client.core.Timestamp		
+class	com.amazon.minerva.client.core.TypedValue		
+class	com.amazon.minerva.client.kpi.AbstractKPIReporter		
+class	com.amazon.minerva.client.kpi.KPIConstant		
+class	com.amazon.minerva.client.kpi.PeriodicKPIReporter	AbstractKPIReporter	
+class	com.amazon.minerva.client.neo.NativeMetricEvent		Parcelable
+class	com.amazon.minerva.client.neo.NativeMetricEvent$MetricValue		
+class	com.amazon.minerva.client.neo.NativeMinervaClient		
+class	com.amazon.minerva.client.neo.NativeMinervaKPIReporter	AbstractKPIReporter	
+class	com.amazon.minerva.client.neo.NativeMinervaService		
+class	com.amazon.minerva.client.neo.NativeMinervaService$ConnectTask		Runnable
+class	com.amazon.minerva.client.neo.NativeMinervaService$FlushBufferTask		Runnable
+class	com.amazon.minerva.client.utils.CustomMath		
+class	com.amazon.minerva.client.utils.MinervaLogger		
+class	com.amazon.minerva.client.utils.SchemaIdHelper		
+class	com.amazon.neo.minerva.service.api.BinderInternal		
+class	com.amazon.neo.minerva.service.api.BinderUtils		
+class	com.amazon.neo.minerva.service.api.BinderUtils$Builder		
+class	com.amazon.neo.minerva.service.api.BuildConfig		
+class	com.amazon.neo.minerva.service.api.Bundle		Parcelable
+class	com.amazon.neo.minerva.service.api.EventUtils		
+class	com.amazon.neo.minerva.service.api.NeoBundle		Parcelable
+class	com.amazon.neo.minerva.service.api.PackageManagerUtils		
+class	com.amazon.neo.minerva.service.api.ServiceCallback		
+class	com.amazon.neo.minerva.service.api.UnsupportedTypeException	RuntimeException	
+enum	com.amazon.minerva.client.api.AggregationType		
+enum	com.amazon.minerva.client.api.Predefined		
+enum	com.amazon.minerva.client.api.callback.MetricRecordStatus		
+enum	com.amazon.minerva.client.core.MetaDatapointConstants		
+enum	com.amazon.minerva.client.core.ValueType		
+enum	com.amazon.minerva.client.kpi.KPIMetric		
+enum	com.amazon.minerva.client.neo.NativeMinervaService$RecordResult		
+enum	com.amazon.minerva.client.utils.RemoteConfigurationConstant		
+interface	com.amazon.minerva.client.aggregation.AggregatedDoubleKeyValPair		
+interface	com.amazon.minerva.client.aggregation.AggregatedLongKeyValPair		
+interface	com.amazon.minerva.client.api.AmazonMinerva		
+interface	com.amazon.minerva.client.api.AmazonMinervaV2	AmazonMinerva	
+interface	com.amazon.minerva.client.api.ChildProfileVerifier		
+interface	com.amazon.minerva.client.api.callback.MetricRecordCallback		
+interface	com.amazon.minerva.client.core.IMinervaService	IInterface	

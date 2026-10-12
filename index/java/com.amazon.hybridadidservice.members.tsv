@@ -1,0 +1,79 @@
+class	kind	declaration
+com.amazon.hybridadidservice.service.AmazonRegionMarketPlace	field	private Map<String, String> mAmazonRegionMap;
+com.amazon.hybridadidservice.service.AmazonRegionMarketPlace	field	private Map<String, String> mAmazonRegionMarketPlaceMap;
+com.amazon.hybridadidservice.service.AmazonRegionMarketPlace	field	private Map<String, String> mAuthenticationDomainMap;
+com.amazon.hybridadidservice.service.AmazonRegionMarketPlace	field	private final Context mContext;
+com.amazon.hybridadidservice.service.AmazonRegionMarketPlace	field	private static AmazonRegionMarketPlace sRegionMarketPlaceInstance;
+com.amazon.hybridadidservice.service.AmazonRegionMarketPlace	field	private static final String TAG;
+com.amazon.hybridadidservice.service.AmazonRegionMarketPlace	method	private AmazonRegionMarketPlace(Context context)
+com.amazon.hybridadidservice.service.AmazonRegionMarketPlace	method	private void initialize()
+com.amazon.hybridadidservice.service.AmazonRegionMarketPlace	method	public String getAmazonRegionUrl(String str)
+com.amazon.hybridadidservice.service.AmazonRegionMarketPlace	method	public String getAuthenticationDomain(String str)
+com.amazon.hybridadidservice.service.AmazonRegionMarketPlace	method	public static synchronized AmazonRegionMarketPlace getInstance(Context context)
+com.amazon.hybridadidservice.service.AuthManager	field	private AuthenticationMethodFactory mAuthFactory;
+com.amazon.hybridadidservice.service.AuthManager	field	private static final AuthManager sInstance;
+com.amazon.hybridadidservice.service.AuthManager	field	private static final String TAG;
+com.amazon.hybridadidservice.service.AuthManager	field	private static final boolean DEBUG;
+com.amazon.hybridadidservice.service.AuthManager	method	private AuthManager()
+com.amazon.hybridadidservice.service.AuthManager	method	private synchronized void init(Context context)
+com.amazon.hybridadidservice.service.AuthManager	method	static synchronized AuthManager getInstance()
+com.amazon.hybridadidservice.service.AuthManager	method	synchronized void resetAuthFactory()
+com.amazon.hybridadidservice.service.HybridAdIdService	field	private Messenger mReplyMessenger;
+com.amazon.hybridadidservice.service.HybridAdIdService	field	private static final String AD_ID_MSG_KEY;
+com.amazon.hybridadidservice.service.HybridAdIdService	field	private static final String TAG;
+com.amazon.hybridadidservice.service.HybridAdIdService	field	private static final boolean DEBUG;
+com.amazon.hybridadidservice.service.HybridAdIdService	field	private static final int FETCH_AD_ID;
+com.amazon.hybridadidservice.service.HybridAdIdService	method	public IBinder onBind(Intent intent)
+com.amazon.hybridadidservice.service.HybridAdIdService$IncomingHandler	method	public void handleMessage(Message message)
+com.amazon.hybridadidservice.service.MauiAdIdUpdateManager	field	private Context mContext;
+com.amazon.hybridadidservice.service.MauiAdIdUpdateManager	field	private JobFinishedCallback mJobFinishedCallback;
+com.amazon.hybridadidservice.service.MauiAdIdUpdateManager	field	private MAPAccountManager mMapAccountManager;
+com.amazon.hybridadidservice.service.MauiAdIdUpdateManager	field	private static final String PERSIST_MAUISYNC_TIMEDELAY;
+com.amazon.hybridadidservice.service.MauiAdIdUpdateManager	field	private static final String TAG;
+com.amazon.hybridadidservice.service.MauiAdIdUpdateManager	field	private static final int PERIODIC_MAUI_UPDATE_JOB_ID;
+com.amazon.hybridadidservice.service.MauiAdIdUpdateManager	field	private static final long IMMEDIATE_UPDATE_LATENCY;
+com.amazon.hybridadidservice.service.MauiAdIdUpdateManager	field	private static final long PERIODIC_UPDATE_INTERVAL;
+com.amazon.hybridadidservice.service.MauiAdIdUpdateManager	field	protected static final ExecutorService mExecutor;
+com.amazon.hybridadidservice.service.MauiAdIdUpdateManager	method	public MauiAdIdUpdateManager(Context context)
+com.amazon.hybridadidservice.service.MauiAdIdUpdateManager	method	public MauiAdIdUpdateManager(Context context, JobFinishedCallback jobFinishedCallback)
+com.amazon.hybridadidservice.service.MauiAdIdUpdateManager	method	public void onHybridAdIdDataUpdated(final JobParameters jobParameters, final boolean z)
+com.amazon.hybridadidservice.service.MauiAdIdUpdateManager	method	public void schedulePeriodicUpdate()
+com.amazon.hybridadidservice.service.MauiBatchRequestTask	field	private final Context mContext;
+com.amazon.hybridadidservice.service.MauiBatchRequestTask	field	private final MAPAccountManager mMAPAccountManager;
+com.amazon.hybridadidservice.service.MauiBatchRequestTask	field	private final SharedPreferences mPreferences;
+com.amazon.hybridadidservice.service.MauiBatchRequestTask	field	private static final String HTTP_FIELD_APP;
+com.amazon.hybridadidservice.service.MauiBatchRequestTask	field	private static final String HTTP_FIELD_APP_ID;
+com.amazon.hybridadidservice.service.MauiBatchRequestTask	field	private static final String HTTP_FIELD_DT;
+com.amazon.hybridadidservice.service.MauiBatchRequestTask	field	private static final String HTTP_HEADER_CONTENT_TYPE;
+com.amazon.hybridadidservice.service.MauiBatchRequestTask	field	private static final String HTTP_MIME_JSON;
+com.amazon.hybridadidservice.service.MauiBatchRequestTask	field	private static final String HTTP_POST;
+com.amazon.hybridadidservice.service.MauiBatchRequestTask	field	private static final String TAG;
+com.amazon.hybridadidservice.service.MauiBatchRequestTask	field	private static final boolean DEBUG;
+com.amazon.hybridadidservice.service.MauiBatchRequestTask	field	private static final int POST_SUCCESS;
+com.amazon.hybridadidservice.service.MauiBatchRequestTask	field	public static final String PREFS_NAME;
+com.amazon.hybridadidservice.service.MauiBatchRequestTask	field	public static final String REFS_KEY_ADID_MAUI_LATEST_UPDATE_TIME;
+com.amazon.hybridadidservice.service.MauiBatchRequestTask	method	private void addRequestedBody(HttpURLConnection httpURLConnection, String str)
+com.amazon.hybridadidservice.service.MauiBatchRequestTask	method	private void performInBackground()
+com.amazon.hybridadidservice.service.MauiBatchRequestTask	method	public MauiBatchRequestTask(Context context, MAPAccountManager mAPAccountManager)
+com.amazon.hybridadidservice.service.MauiBatchRequestTask	method	public Void doInBackground(Void... voidArr)
+com.amazon.hybridadidservice.service.UpdateMauiJobService	field	private SharedPreferences mPreferences;
+com.amazon.hybridadidservice.service.UpdateMauiJobService	field	private static final String IS_MAUI_JOB_FIRST_RUN_KEY;
+com.amazon.hybridadidservice.service.UpdateMauiJobService	field	private static final String PREFS_NAME;
+com.amazon.hybridadidservice.service.UpdateMauiJobService	field	private static final String TAG;
+com.amazon.hybridadidservice.service.UpdateMauiJobService	method	private void handleFirstRun(JobParameters jobParameters)
+com.amazon.hybridadidservice.service.UpdateMauiJobService	method	private void markFirstRunComplete()
+com.amazon.hybridadidservice.service.UpdateMauiJobService	method	public boolean onStartJob(JobParameters jobParameters)
+com.amazon.hybridadidservice.service.UpdateMauiJobService	method	public boolean onStopJob(JobParameters jobParameters)
+com.amazon.hybridadidservice.service.UpdateMauiJobService	method	public void onJobFinished(JobParameters jobParameters, boolean z)
+com.amazon.hybridadidservice.service.UpdateMauiReceiver	field	private MauiAdIdUpdateManager mMauiAdIdUpdateManager;
+com.amazon.hybridadidservice.service.UpdateMauiReceiver	field	private static final String ACTION_BROADCAST_HYBRIDADID_UPDATE;
+com.amazon.hybridadidservice.service.UpdateMauiReceiver	field	private static final String IS_MAUI_JOB_FIRST_RUN_KEY;
+com.amazon.hybridadidservice.service.UpdateMauiReceiver	field	private static final String PERSIST_MAUISYNC_TIMEDELAY;
+com.amazon.hybridadidservice.service.UpdateMauiReceiver	field	private static final String PREFS_NAME;
+com.amazon.hybridadidservice.service.UpdateMauiReceiver	field	private static final String TAG;
+com.amazon.hybridadidservice.service.UpdateMauiReceiver	field	private static final boolean DEBUG;
+com.amazon.hybridadidservice.service.UpdateMauiReceiver	field	private static final long PERIODIC_UPDATE_INTERVAL;
+com.amazon.hybridadidservice.service.UpdateMauiReceiver	field	public static final String REFS_KEY_ADID_MAUI_LATEST_UPDATE_TIME;
+com.amazon.hybridadidservice.service.UpdateMauiReceiver	method	private void handleBootComplete(Context context)
+com.amazon.hybridadidservice.service.UpdateMauiReceiver	method	private void updateMauiAdId(Context context)
+com.amazon.hybridadidservice.service.UpdateMauiReceiver	method	public void onReceive(Context context, Intent intent)

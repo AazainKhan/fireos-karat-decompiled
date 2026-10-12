@@ -1,0 +1,77 @@
+class	kind	declaration
+com.android.localtransport.LocalTransport	field	private BufferedOutputStream mFullBackupOutputStream;
+com.android.localtransport.LocalTransport	field	private Context mContext;
+com.android.localtransport.LocalTransport	field	private File mCurrentSetDir;
+com.android.localtransport.LocalTransport	field	private File mCurrentSetFullDir;
+com.android.localtransport.LocalTransport	field	private File mDataDir;
+com.android.localtransport.LocalTransport	field	private File mRestoreSetDir;
+com.android.localtransport.LocalTransport	field	private File mRestoreSetFullDir;
+com.android.localtransport.LocalTransport	field	private FileInputStream mCurFullRestoreStream;
+com.android.localtransport.LocalTransport	field	private FileInputStream mSocketInputStream;
+com.android.localtransport.LocalTransport	field	private ParcelFileDescriptor mSocket;
+com.android.localtransport.LocalTransport	field	private String mFullTargetPackage;
+com.android.localtransport.LocalTransport	field	private byte[] mFullBackupBuffer;
+com.android.localtransport.LocalTransport	field	private byte[] mFullRestoreBuffer;
+com.android.localtransport.LocalTransport	field	private final LocalTransportParameters mParameters;
+com.android.localtransport.LocalTransport	field	private long mFullBackupSize;
+com.android.localtransport.LocalTransport	field	protected File mCurrentSetIncrementalDir;
+com.android.localtransport.LocalTransport	field	protected File mRestoreSetIncrementalDir;
+com.android.localtransport.LocalTransport	field	protected PackageInfo[] mRestorePackages;
+com.android.localtransport.LocalTransport	field	protected int mRestorePackage;
+com.android.localtransport.LocalTransport	field	protected int mRestoreType;
+com.android.localtransport.LocalTransport	field	static final long[] POSSIBLE_SETS;
+com.android.localtransport.LocalTransport	method	private ArrayList<DecodedFilename> contentsByKey(File file)
+com.android.localtransport.LocalTransport	method	private ArrayList<KVOperation> parseBackupStream(ParcelFileDescriptor parcelFileDescriptor) throws IOException
+com.android.localtransport.LocalTransport	method	private File tarballFile(String str)
+com.android.localtransport.LocalTransport	method	private int parseKeySizes(File file, ArrayMap<String, Integer> arrayMap)
+com.android.localtransport.LocalTransport	method	private int performBackupInternal(PackageInfo packageInfo, ParcelFileDescriptor parcelFileDescriptor, int i)
+com.android.localtransport.LocalTransport	method	private int tearDownFullBackup()
+com.android.localtransport.LocalTransport	method	private void deleteContents(File file)
+com.android.localtransport.LocalTransport	method	private void makeDataDirs()
+com.android.localtransport.LocalTransport	method	private void resetFullRestoreState()
+com.android.localtransport.LocalTransport	method	protected boolean hasRestoreDataForPackage(String str)
+com.android.localtransport.LocalTransport	method	public CharSequence dataManagementIntentLabel()
+com.android.localtransport.LocalTransport	method	public Intent configurationIntent()
+com.android.localtransport.LocalTransport	method	public Intent dataManagementIntent()
+com.android.localtransport.LocalTransport	method	public LocalTransport(Context context, LocalTransportParameters localTransportParameters)
+com.android.localtransport.LocalTransport	method	public LocalTransportParameters getParameters()
+com.android.localtransport.LocalTransport	method	public RestoreDescription nextRestorePackage()
+com.android.localtransport.LocalTransport	method	public RestoreSet[] getAvailableRestoreSets()
+com.android.localtransport.LocalTransport	method	public String currentDestinationString()
+com.android.localtransport.LocalTransport	method	public String dataManagementLabel()
+com.android.localtransport.LocalTransport	method	public String name()
+com.android.localtransport.LocalTransport	method	public String transportDirName()
+com.android.localtransport.LocalTransport	method	public int abortFullRestore()
+com.android.localtransport.LocalTransport	method	public int checkFullBackupSize(long j)
+com.android.localtransport.LocalTransport	method	public int clearBackupData(PackageInfo packageInfo)
+com.android.localtransport.LocalTransport	method	public int finishBackup()
+com.android.localtransport.LocalTransport	method	public int getNextFullRestoreDataChunk(ParcelFileDescriptor parcelFileDescriptor)
+com.android.localtransport.LocalTransport	method	public int getRestoreData(ParcelFileDescriptor parcelFileDescriptor)
+com.android.localtransport.LocalTransport	method	public int getTransportFlags()
+com.android.localtransport.LocalTransport	method	public int initializeDevice()
+com.android.localtransport.LocalTransport	method	public int performBackup(PackageInfo packageInfo, ParcelFileDescriptor parcelFileDescriptor)
+com.android.localtransport.LocalTransport	method	public int performBackup(PackageInfo packageInfo, ParcelFileDescriptor parcelFileDescriptor, int i)
+com.android.localtransport.LocalTransport	method	public int performFullBackup(PackageInfo packageInfo, ParcelFileDescriptor parcelFileDescriptor)
+com.android.localtransport.LocalTransport	method	public int sendBackupData(int i)
+com.android.localtransport.LocalTransport	method	public int startRestore(long j, PackageInfo[] packageInfoArr)
+com.android.localtransport.LocalTransport	method	public long getBackupQuota(String str, boolean z)
+com.android.localtransport.LocalTransport	method	public long getCurrentRestoreSet()
+com.android.localtransport.LocalTransport	method	public long requestBackupTime()
+com.android.localtransport.LocalTransport	method	public long requestFullBackupTime()
+com.android.localtransport.LocalTransport	method	public void cancelFullBackup()
+com.android.localtransport.LocalTransport	method	public void finishRestore()
+com.android.localtransport.LocalTransport$DecodedFilename	field	public File file;
+com.android.localtransport.LocalTransport$DecodedFilename	field	public String key;
+com.android.localtransport.LocalTransport$DecodedFilename	method	public DecodedFilename(File file)
+com.android.localtransport.LocalTransport$DecodedFilename	method	public int compareTo(DecodedFilename decodedFilename)
+com.android.localtransport.LocalTransport$KVOperation	field	final String key;
+com.android.localtransport.LocalTransport$KVOperation	field	final byte[] value;
+com.android.localtransport.LocalTransportParameters	field	private boolean mFakeEncryptionFlag;
+com.android.localtransport.LocalTransportParameters	field	private boolean mIsNonIncrementalOnly;
+com.android.localtransport.LocalTransportParameters	method	public LocalTransportParameters(Handler handler, ContentResolver contentResolver)
+com.android.localtransport.LocalTransportParameters	method	public String getSettingValue(ContentResolver contentResolver)
+com.android.localtransport.LocalTransportParameters	method	public void update(KeyValueListParser keyValueListParser)
+com.android.localtransport.LocalTransportService	field	private static LocalTransport sTransport;
+com.android.localtransport.LocalTransportService	method	public IBinder onBind(Intent intent)
+com.android.localtransport.LocalTransportService	method	public void onCreate()
+com.android.localtransport.LocalTransportService	method	public void onDestroy()

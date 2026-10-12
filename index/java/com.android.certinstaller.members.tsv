@@ -1,0 +1,187 @@
+class	kind	declaration
+com.android.certinstaller.CertInstaller	field	private CredentialHelper mCredentials;
+com.android.certinstaller.CertInstaller	field	private MyAction mNextAction;
+com.android.certinstaller.CertInstaller	field	private final ViewHelper mView;
+com.android.certinstaller.CertInstaller	field	private int mState;
+com.android.certinstaller.CertInstaller	method	private CredentialHelper createCredentialHelper(Intent intent)
+com.android.certinstaller.CertInstaller	method	private Dialog createInvalidCertificateDialog()
+com.android.certinstaller.CertInstaller	method	private Dialog createNameCertificateDialog()
+com.android.certinstaller.CertInstaller	method	private Dialog createPkcs12PasswordDialog()
+com.android.certinstaller.CertInstaller	method	private Dialog createRedirectCaCertificateDialog()
+com.android.certinstaller.CertInstaller	method	private Dialog createSelectCertificateUsageDialog()
+com.android.certinstaller.CertInstaller	method	private String getDefaultName()
+com.android.certinstaller.CertInstaller	method	private boolean installingCaCertificate()
+com.android.certinstaller.CertInstaller	method	private boolean validCertificateSelected()
+com.android.certinstaller.CertInstaller	method	private void createRedirectOrSelectUsageDialog()
+com.android.certinstaller.CertInstaller	method	private void extractPkcs12OrInstall()
+com.android.certinstaller.CertInstaller	method	private void installCertificateOrShowNameDialog()
+com.android.certinstaller.CertInstaller	method	private void installCertificateToKeystore(Context context)
+com.android.certinstaller.CertInstaller	method	private void toastErrorAndFinish(int i)
+com.android.certinstaller.CertInstaller	method	protected Dialog onCreateDialog(int i)
+com.android.certinstaller.CertInstaller	method	protected void onActivityResult(int i, int i2, Intent intent)
+com.android.certinstaller.CertInstaller	method	protected void onCreate(Bundle bundle)
+com.android.certinstaller.CertInstaller	method	protected void onPause()
+com.android.certinstaller.CertInstaller	method	protected void onResume()
+com.android.certinstaller.CertInstaller	method	protected void onSaveInstanceState(Bundle bundle)
+com.android.certinstaller.CertInstaller	method	public CharSequence getCallingAppLabel()
+com.android.certinstaller.CertInstaller	method	public void extractPkcs12InBackground(final String str)
+com.android.certinstaller.CertInstaller	method	public void installOthers()
+com.android.certinstaller.CertInstaller	method	public void onExtractionDone(boolean z)
+com.android.certinstaller.CertInstaller$InstallOthersAction	method	private InstallOthersAction()
+com.android.certinstaller.CertInstaller$InstallOthersAction	method	public void run(CertInstaller certInstaller)
+com.android.certinstaller.CertInstaller$InstallVpnAndAppsTrustAnchorsTask	method	private InstallVpnAndAppsTrustAnchorsTask()
+com.android.certinstaller.CertInstaller$InstallVpnAndAppsTrustAnchorsTask	method	public Boolean doInBackground(Void... voidArr)
+com.android.certinstaller.CertInstaller$InstallVpnAndAppsTrustAnchorsTask	method	public void onPostExecute(Boolean bool)
+com.android.certinstaller.CertInstaller$OnExtractionDoneAction	field	private final boolean mSuccess;
+com.android.certinstaller.CertInstaller$OnExtractionDoneAction	method	public void run(CertInstaller certInstaller)
+com.android.certinstaller.CertInstaller$Pkcs12ExtractAction	field	private final String mPassword;
+com.android.certinstaller.CertInstaller$Pkcs12ExtractAction	field	private transient boolean hasRun;
+com.android.certinstaller.CertInstaller$Pkcs12ExtractAction	method	public void run(CertInstaller certInstaller)
+com.android.certinstaller.CertInstallerMain	field	private static Map<String, String> MIME_MAPPINGS;
+com.android.certinstaller.CertInstallerMain	method	private boolean bundleContainsExtraCertificateUsageOnly(Bundle bundle)
+com.android.certinstaller.CertInstallerMain	method	private boolean bundleContainsInstallAsUidOnly(Bundle bundle)
+com.android.certinstaller.CertInstallerMain	method	private boolean bundleContainsNameOnly(Bundle bundle)
+com.android.certinstaller.CertInstallerMain	method	private boolean installingCaCertificate(Bundle bundle)
+com.android.certinstaller.CertInstallerMain	method	private boolean nullOrEmptyBundle(Bundle bundle)
+com.android.certinstaller.CertInstallerMain	method	private static byte[] readWithLimit(InputStream inputStream) throws IOException
+com.android.certinstaller.CertInstallerMain	method	private void confirmDeviceCredential()
+com.android.certinstaller.CertInstallerMain	method	private void startInstallActivity(Intent intent)
+com.android.certinstaller.CertInstallerMain	method	private void startInstallActivity(String str, Uri uri)
+com.android.certinstaller.CertInstallerMain	method	private void startOpenDocumentActivity()
+com.android.certinstaller.CertInstallerMain	method	private void startWifiInstallActivity(String str, Uri uri)
+com.android.certinstaller.CertInstallerMain	method	protected void onActivityResult(int i, int i2, Intent intent)
+com.android.certinstaller.CertInstallerMain	method	protected void onCreate(Bundle bundle)
+com.android.certinstaller.CredentialHelper	field	private HashMap<String, byte[]> mBundle;
+com.android.certinstaller.CredentialHelper	field	private List<X509Certificate> mCaCerts;
+com.android.certinstaller.CredentialHelper	field	private PrivateKey mUserKey;
+com.android.certinstaller.CredentialHelper	field	private String mCertUsageSelected;
+com.android.certinstaller.CredentialHelper	field	private String mName;
+com.android.certinstaller.CredentialHelper	field	private String mReferrer;
+com.android.certinstaller.CredentialHelper	field	private X509Certificate mUserCert;
+com.android.certinstaller.CredentialHelper	field	private int mUid;
+com.android.certinstaller.CredentialHelper	method	private KeyStore loadPkcs12Internal(KeyStore.PasswordProtection passwordProtection) throws Exception
+com.android.certinstaller.CredentialHelper	method	private boolean extractPkcs12Internal(KeyStore.PasswordProtection passwordProtection) throws Exception
+com.android.certinstaller.CredentialHelper	method	private boolean isCa(X509Certificate x509Certificate)
+com.android.certinstaller.CredentialHelper	method	private synchronized boolean installFrom(KeyStore.PrivateKeyEntry privateKeyEntry)
+com.android.certinstaller.CredentialHelper	method	private void maybeApproveCaCert(Context context, String str)
+com.android.certinstaller.CredentialHelper	method	private void parseCert(byte[] bArr)
+com.android.certinstaller.CredentialHelper	method	public String getReferrer()
+com.android.certinstaller.CredentialHelper	method	public boolean hasOnlyVpnAndAppsTrustAnchors()
+com.android.certinstaller.CredentialHelper	method	synchronized void onSaveStates(Bundle bundle)
+com.android.certinstaller.CredentialsInstallDialog	method	protected void onCreate(Bundle bundle)
+com.android.certinstaller.CredentialsInstallDialog	method	protected void onResume()
+com.android.certinstaller.CredentialsInstallDialog	method	public void displayDialog()
+com.android.certinstaller.R$array	field	public static final int credential_usage;
+com.android.certinstaller.R$color	field	public static final int red;
+com.android.certinstaller.R$dimen	field	public static final int dialog_normal_text_size;
+com.android.certinstaller.R$dimen	field	public static final int list_padding_left;
+com.android.certinstaller.R$dimen	field	public static final int settings_item_padding_left;
+com.android.certinstaller.R$dimen	field	public static final int settings_item_padding_right;
+com.android.certinstaller.R$dimen	field	public static final int settings_margin_left;
+com.android.certinstaller.R$dimen	field	public static final int settings_margin_right;
+com.android.certinstaller.R$dimen	field	public static final int top_margin;
+com.android.certinstaller.R$drawable	field	public static final int signal_wifi_4_bar_lock_black_24dp;
+com.android.certinstaller.R$id	field	public static final int certificate_name;
+com.android.certinstaller.R$id	field	public static final int certificate_usage;
+com.android.certinstaller.R$id	field	public static final int certificate_usage_group;
+com.android.certinstaller.R$id	field	public static final int credential_installed_content;
+com.android.certinstaller.R$id	field	public static final int credential_password;
+com.android.certinstaller.R$id	field	public static final int error;
+com.android.certinstaller.R$id	field	public static final int summary;
+com.android.certinstaller.R$id	field	public static final int title;
+com.android.certinstaller.R$id	field	public static final int user_certificate;
+com.android.certinstaller.R$id	field	public static final int wifi_certificate;
+com.android.certinstaller.R$id	field	public static final int wifi_info;
+com.android.certinstaller.R$layout	field	public static final int cert_item_layout;
+com.android.certinstaller.R$layout	field	public static final int cert_list_layout;
+com.android.certinstaller.R$layout	field	public static final int credentials_installed_dialog;
+com.android.certinstaller.R$layout	field	public static final int message_dialog;
+com.android.certinstaller.R$layout	field	public static final int name_certificate_dialog;
+com.android.certinstaller.R$layout	field	public static final int password_dialog;
+com.android.certinstaller.R$layout	field	public static final int select_certificate_usage_dialog;
+com.android.certinstaller.R$layout	field	public static final int wifi_main_dialog;
+com.android.certinstaller.R$string	field	public static final int action_missing_private_key;
+com.android.certinstaller.R$string	field	public static final int action_missing_user_cert;
+com.android.certinstaller.R$string	field	public static final int app_name;
+com.android.certinstaller.R$string	field	public static final int ca_cert_is_added;
+com.android.certinstaller.R$string	field	public static final int ca_certificate;
+com.android.certinstaller.R$string	field	public static final int cert_missing_error;
+com.android.certinstaller.R$string	field	public static final int cert_not_saved;
+com.android.certinstaller.R$string	field	public static final int cert_read_error;
+com.android.certinstaller.R$string	field	public static final int cert_temp_error;
+com.android.certinstaller.R$string	field	public static final int cert_too_large_error;
+com.android.certinstaller.R$string	field	public static final int certificate;
+com.android.certinstaller.R$string	field	public static final int certificate_capabilities_warning;
+com.android.certinstaller.R$string	field	public static final int certificate_name;
+com.android.certinstaller.R$string	field	public static final int config_system_install_component;
+com.android.certinstaller.R$string	field	public static final int credential_info;
+com.android.certinstaller.R$string	field	public static final int credential_password;
+com.android.certinstaller.R$string	field	public static final int credential_usage_label;
+com.android.certinstaller.R$string	field	public static final int done_label;
+com.android.certinstaller.R$string	field	public static final int extracting_pkcs12;
+com.android.certinstaller.R$string	field	public static final int install_done;
+com.android.certinstaller.R$string	field	public static final int install_done_title;
+com.android.certinstaller.R$string	field	public static final int install_from_sdcard;
+com.android.certinstaller.R$string	field	public static final int invalid_cert;
+com.android.certinstaller.R$string	field	public static final int invalid_certificate_close_button;
+com.android.certinstaller.R$string	field	public static final int invalid_certificate_message;
+com.android.certinstaller.R$string	field	public static final int invalid_certificate_title;
+com.android.certinstaller.R$string	field	public static final int n_cacrts;
+com.android.certinstaller.R$string	field	public static final int name_char_error;
+com.android.certinstaller.R$string	field	public static final int name_credential_dialog_title;
+com.android.certinstaller.R$string	field	public static final int name_empty_error;
+com.android.certinstaller.R$string	field	public static final int no_cert_to_saved;
+com.android.certinstaller.R$string	field	public static final int one_cacrt;
+com.android.certinstaller.R$string	field	public static final int one_usercrt;
+com.android.certinstaller.R$string	field	public static final int one_userkey;
+com.android.certinstaller.R$string	field	public static final int only_primary_user_allowed;
+com.android.certinstaller.R$string	field	public static final int p12_description;
+com.android.certinstaller.R$string	field	public static final int password_empty_error;
+com.android.certinstaller.R$string	field	public static final int password_error;
+com.android.certinstaller.R$string	field	public static final int pick_file_title;
+com.android.certinstaller.R$string	field	public static final int pkcs12_file_password_dialog_title;
+com.android.certinstaller.R$string	field	public static final int pkcs12_password_dialog_title;
+com.android.certinstaller.R$string	field	public static final int redirect_ca_certificate_close_button;
+com.android.certinstaller.R$string	field	public static final int redirect_ca_certificate_title;
+com.android.certinstaller.R$string	field	public static final int redirect_ca_certificate_with_app_info_message;
+com.android.certinstaller.R$string	field	public static final int select_certificate_usage_title;
+com.android.certinstaller.R$string	field	public static final int unable_to_save_cert;
+com.android.certinstaller.R$string	field	public static final int user_cert_is_added;
+com.android.certinstaller.R$string	field	public static final int user_certificate;
+com.android.certinstaller.R$string	field	public static final int userkey_type;
+com.android.certinstaller.R$string	field	public static final int wifi_cancel_label;
+com.android.certinstaller.R$string	field	public static final int wifi_cert_is_added;
+com.android.certinstaller.R$string	field	public static final int wifi_certificate;
+com.android.certinstaller.R$string	field	public static final int wifi_config_text;
+com.android.certinstaller.R$string	field	public static final int wifi_detail_label;
+com.android.certinstaller.R$string	field	public static final int wifi_detail_title;
+com.android.certinstaller.R$string	field	public static final int wifi_dismiss_label;
+com.android.certinstaller.R$string	field	public static final int wifi_install_label;
+com.android.certinstaller.R$string	field	public static final int wifi_installer_detail;
+com.android.certinstaller.R$string	field	public static final int wifi_installer_download_error;
+com.android.certinstaller.R$string	field	public static final int wifi_installer_fail;
+com.android.certinstaller.R$string	field	public static final int wifi_installer_fail_no_wifi;
+com.android.certinstaller.R$string	field	public static final int wifi_installer_fail_no_wifi_title;
+com.android.certinstaller.R$string	field	public static final int wifi_installer_fail_title;
+com.android.certinstaller.R$string	field	public static final int wifi_installing_label;
+com.android.certinstaller.R$string	field	public static final int wifi_no_config;
+com.android.certinstaller.R$string	field	public static final int wifi_sim_config_text;
+com.android.certinstaller.R$string	field	public static final int wifi_title;
+com.android.certinstaller.R$string	field	public static final int wifi_tls_config_text;
+com.android.certinstaller.R$string	field	public static final int wifi_trust_config_text;
+com.android.certinstaller.R$string	field	public static final int wifi_ttls_config_text;
+com.android.certinstaller.R$style	field	public static final int Transparent;
+com.android.certinstaller.R$style	field	public static final int dialog_button;
+com.android.certinstaller.R$style	field	public static final int dialog_edit_text;
+com.android.certinstaller.R$style	field	public static final int dialog_item;
+com.android.certinstaller.R$style	field	public static final int dialog_title;
+com.android.certinstaller.R$style	field	public static final int settings_custom_padding;
+com.android.certinstaller.R$xml	field	public static final int pick_file_pref;
+com.android.certinstaller.Util	method	static <T> T fromBytes(byte[] bArr)
+com.android.certinstaller.Util	method	static byte[] toBytes(Object obj)
+com.android.certinstaller.ViewHelper	field	private View mView;
+com.android.certinstaller.ViewHelper	field	private boolean mHasEmptyError;
+com.android.certinstaller.WiFiInstaller	method	private static void dropFile(Uri uri, Context context)
+com.android.certinstaller.WiFiInstaller	method	private void createMainDialog()
+com.android.certinstaller.WiFiInstaller	method	protected void onCreate(Bundle bundle)
+com.android.certinstaller.WiFiInstaller	method	protected void onResume()

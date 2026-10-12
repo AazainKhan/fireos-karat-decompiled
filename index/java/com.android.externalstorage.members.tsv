@@ -1,0 +1,79 @@
+class	kind	declaration
+com.android.externalstorage.ExternalStorageProvider	field	private ArrayMap<String, RootInfo> mRoots;
+com.android.externalstorage.ExternalStorageProvider	field	private StorageManager mStorageManager;
+com.android.externalstorage.ExternalStorageProvider	field	private UserManager mUserManager;
+com.android.externalstorage.ExternalStorageProvider	field	private final Object mRootsLock;
+com.android.externalstorage.ExternalStorageProvider	field	private static final String[] DEFAULT_DOCUMENT_PROJECTION;
+com.android.externalstorage.ExternalStorageProvider	field	private static final String[] DEFAULT_ROOT_PROJECTION;
+com.android.externalstorage.ExternalStorageProvider	field	private static final Uri BASE_URI;
+com.android.externalstorage.ExternalStorageProvider	method	private File buildFile(RootInfo rootInfo, String str, boolean z) throws FileNotFoundException
+com.android.externalstorage.ExternalStorageProvider	method	private File getFileForDocId(String str, boolean z, boolean z2) throws FileNotFoundException
+com.android.externalstorage.ExternalStorageProvider	method	private Pair<RootInfo, File> resolveDocId(String str) throws FileNotFoundException
+com.android.externalstorage.ExternalStorageProvider	method	private RootInfo getMostSpecificRootForPath(String str, boolean z)
+com.android.externalstorage.ExternalStorageProvider	method	private RootInfo getRootFromDocId(String str) throws FileNotFoundException
+com.android.externalstorage.ExternalStorageProvider	method	private String getDocIdForFileMaybeCreate(File file, boolean z) throws FileNotFoundException
+com.android.externalstorage.ExternalStorageProvider	method	private Uri getDocumentUri(String str, List<UriPermission> list) throws FileNotFoundException
+com.android.externalstorage.ExternalStorageProvider	method	private boolean isOnRemovableUsbStorage(String str)
+com.android.externalstorage.ExternalStorageProvider	method	private boolean isRestrictedPath(String str, String str2)
+com.android.externalstorage.ExternalStorageProvider	method	private static String[] resolveRootProjection(String[] strArr)
+com.android.externalstorage.ExternalStorageProvider	method	private static boolean allowsBothReadAndWrite(UriPermission uriPermission)
+com.android.externalstorage.ExternalStorageProvider	method	private static boolean equalIgnoringCase(String str, String str2)
+com.android.externalstorage.ExternalStorageProvider	method	private void enforceShellRestrictions()
+com.android.externalstorage.ExternalStorageProvider	method	private void updateVolumesLocked()
+com.android.externalstorage.ExternalStorageProvider	method	protected File getFileForDocId(String str, boolean z) throws FileNotFoundException
+com.android.externalstorage.ExternalStorageProvider	method	protected String getDocIdForFile(File file) throws FileNotFoundException
+com.android.externalstorage.ExternalStorageProvider	method	protected Uri buildNotificationUri(String str)
+com.android.externalstorage.ExternalStorageProvider	method	protected boolean shouldBlockDirectoryFromTree(String str) throws FileNotFoundException
+com.android.externalstorage.ExternalStorageProvider	method	protected boolean shouldHideDocument(String str)
+com.android.externalstorage.ExternalStorageProvider	method	protected int enforceReadPermissionInner(Uri uri, String str, String str2, IBinder iBinder) throws SecurityException
+com.android.externalstorage.ExternalStorageProvider	method	protected int enforceWritePermissionInner(Uri uri, String str, String str2, IBinder iBinder) throws SecurityException
+com.android.externalstorage.ExternalStorageProvider	method	protected void onDocIdChanged(String str)
+com.android.externalstorage.ExternalStorageProvider	method	protected void onDocIdDeleted(String str)
+com.android.externalstorage.ExternalStorageProvider	method	public Bundle call(String str, String str2, Bundle bundle)
+com.android.externalstorage.ExternalStorageProvider	method	public Cursor queryRoots(String[] strArr) throws FileNotFoundException
+com.android.externalstorage.ExternalStorageProvider	method	public Cursor querySearchDocuments(String str, String[] strArr, Bundle bundle) throws FileNotFoundException
+com.android.externalstorage.ExternalStorageProvider	method	public DocumentsContract.Path findDocumentPath(String str, String str2) throws FileNotFoundException
+com.android.externalstorage.ExternalStorageProvider	method	public boolean onCreate()
+com.android.externalstorage.ExternalStorageProvider	method	public void dump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr)
+com.android.externalstorage.ExternalStorageProvider	method	public void ejectRoot(String str)
+com.android.externalstorage.ExternalStorageProvider	method	public void updateVolumes()
+com.android.externalstorage.ExternalStorageProvider	method	static String getPathFromDocId(String str)
+com.android.externalstorage.ExternalStorageProvider$RootInfo	field	public File path;
+com.android.externalstorage.ExternalStorageProvider$RootInfo	field	public File visiblePath;
+com.android.externalstorage.ExternalStorageProvider$RootInfo	field	public String docId;
+com.android.externalstorage.ExternalStorageProvider$RootInfo	field	public String rootId;
+com.android.externalstorage.ExternalStorageProvider$RootInfo	field	public String title;
+com.android.externalstorage.ExternalStorageProvider$RootInfo	field	public String volumeId;
+com.android.externalstorage.ExternalStorageProvider$RootInfo	field	public UUID storageUuid;
+com.android.externalstorage.ExternalStorageProvider$RootInfo	field	public boolean reportAvailableBytes;
+com.android.externalstorage.ExternalStorageProvider$RootInfo	field	public int flags;
+com.android.externalstorage.ExternalStorageProvider$RootInfo	method	private RootInfo()
+com.android.externalstorage.MountReceiver	method	public void onReceive(Context context, Intent intent)
+com.android.externalstorage.R$string	field	public static final int app_label;
+com.android.externalstorage.R$string	field	public static final int root_documents;
+com.android.externalstorage.R$string	field	public static final int root_internal_storage;
+com.android.externalstorage.R$string	field	public static final int storage_description;
+com.android.externalstorage.TestDocumentsProvider	field	private WeakReference<CloudTask> mTask;
+com.android.externalstorage.TestDocumentsProvider	field	private static final String[] DEFAULT_DOCUMENT_PROJECTION;
+com.android.externalstorage.TestDocumentsProvider	field	private static final String[] DEFAULT_ROOT_PROJECTION;
+com.android.externalstorage.TestDocumentsProvider	method	private static String[] resolveDocumentProjection(String[] strArr)
+com.android.externalstorage.TestDocumentsProvider	method	private static String[] resolveRootProjection(String[] strArr)
+com.android.externalstorage.TestDocumentsProvider	method	public AssetFileDescriptor openDocumentThumbnail(String str, Point point, CancellationSignal cancellationSignal) throws FileNotFoundException
+com.android.externalstorage.TestDocumentsProvider	method	public Cursor queryChildDocuments(String str, String[] strArr, String str2) throws FileNotFoundException
+com.android.externalstorage.TestDocumentsProvider	method	public Cursor queryDocument(String str, String[] strArr) throws FileNotFoundException
+com.android.externalstorage.TestDocumentsProvider	method	public Cursor queryRecentDocuments(String str, String[] strArr) throws FileNotFoundException
+com.android.externalstorage.TestDocumentsProvider	method	public Cursor queryRoots(String[] strArr) throws FileNotFoundException
+com.android.externalstorage.TestDocumentsProvider	method	public ParcelFileDescriptor openDocument(String str, String str2, CancellationSignal cancellationSignal) throws FileNotFoundException
+com.android.externalstorage.TestDocumentsProvider	method	public String createDocument(String str, String str2, String str3) throws FileNotFoundException
+com.android.externalstorage.TestDocumentsProvider	method	public boolean onCreate()
+com.android.externalstorage.TestDocumentsProvider	method	public static void includeFile(MatrixCursor matrixCursor, String str, int i)
+com.android.externalstorage.TestDocumentsProvider	method	public void attachInfo(Context context, ProviderInfo providerInfo)
+com.android.externalstorage.TestDocumentsProvider$CloudCursor	field	public final Bundle extras;
+com.android.externalstorage.TestDocumentsProvider$CloudCursor	method	public Bundle getExtras()
+com.android.externalstorage.TestDocumentsProvider$CloudCursor	method	public CloudCursor(String[] strArr)
+com.android.externalstorage.TestDocumentsProvider$CloudTask	field	private final ContentResolver mResolver;
+com.android.externalstorage.TestDocumentsProvider$CloudTask	field	private final Uri mNotifyUri;
+com.android.externalstorage.TestDocumentsProvider$CloudTask	field	private volatile boolean mFinished;
+com.android.externalstorage.TestDocumentsProvider$CloudTask	method	public CloudTask(ContentResolver contentResolver, Uri uri)
+com.android.externalstorage.TestDocumentsProvider$CloudTask	method	public boolean includeIfFinished(MatrixCursor matrixCursor)
+com.android.externalstorage.TestDocumentsProvider$CloudTask	method	public void run()

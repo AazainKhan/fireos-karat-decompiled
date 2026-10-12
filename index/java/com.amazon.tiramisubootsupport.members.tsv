@@ -1,0 +1,57 @@
+class	kind	declaration
+com.amazon.tiramisubootsupport.R$array	field	public static final int AFTKM_disallowed_apps;
+com.amazon.tiramisubootsupport.TiramisuBootSupportReceiver	field	private static final String TAG;
+com.amazon.tiramisubootsupport.TiramisuBootSupportReceiver	method	public void onReceive(Context context, Intent intent)
+com.amazon.tiramisubootsupport.TiramisuPackageFactoryResetBackupService	field	private ContentProviderClient mFdraContentProviderClient;
+com.amazon.tiramisubootsupport.TiramisuPackageFactoryResetBackupService	field	private static final String DATA_PARTITION_PREFIX;
+com.amazon.tiramisubootsupport.TiramisuPackageFactoryResetBackupService	field	private static final String FDRA_PROVIDER_AUTHORITY;
+com.amazon.tiramisubootsupport.TiramisuPackageFactoryResetBackupService	field	private static final String FDRA_PROVIDER_ITEMS;
+com.amazon.tiramisubootsupport.TiramisuPackageFactoryResetBackupService	field	private static final String FDRA_PROVIDER_V1;
+com.amazon.tiramisubootsupport.TiramisuPackageFactoryResetBackupService	field	private static final String TAG;
+com.amazon.tiramisubootsupport.TiramisuPackageFactoryResetBackupService	field	private static final int FDRA_TIRAMISU_BACKUP_LIST_PRIORITY;
+com.amazon.tiramisubootsupport.TiramisuPackageFactoryResetBackupService	field	private static final int FDRA_TIRAMISU_PACKAGE_PRIORITY;
+com.amazon.tiramisubootsupport.TiramisuPackageFactoryResetBackupService	field	private static final int INIT_FDRA_CLIENT_MAX_RETRY;
+com.amazon.tiramisubootsupport.TiramisuPackageFactoryResetBackupService	field	static final String KEY_IS_PACKAGE;
+com.amazon.tiramisubootsupport.TiramisuPackageFactoryResetBackupService	field	static final String KEY_ITEM_TO_BACKUP;
+com.amazon.tiramisubootsupport.TiramisuPackageFactoryResetBackupService	method	private String getSourceDir(String str)
+com.amazon.tiramisubootsupport.TiramisuPackageFactoryResetBackupService	method	private Uri buildTiramisuUri()
+com.amazon.tiramisubootsupport.TiramisuPackageFactoryResetBackupService	method	private void addPackageToFdraAllowlist(String str)
+com.amazon.tiramisubootsupport.TiramisuPackageFactoryResetBackupService	method	private void closeFdraContentProviderClient()
+com.amazon.tiramisubootsupport.TiramisuPackageFactoryResetBackupService	method	private void createAndAddPackageBackupListToFdraAllowlist(String str)
+com.amazon.tiramisubootsupport.TiramisuPackageFactoryResetBackupService	method	private void initFdraContentProviderClient()
+com.amazon.tiramisubootsupport.TiramisuPackageFactoryResetBackupService	method	private void insertPathToFdraAllowlist(int i, String str)
+com.amazon.tiramisubootsupport.TiramisuPackageFactoryResetBackupService	method	private void queryAndMarkPathToKeep(File file)
+com.amazon.tiramisubootsupport.TiramisuPackageFactoryResetBackupService	method	protected void onHandleIntent(Intent intent)
+com.amazon.tiramisubootsupport.TiramisuPackageFactoryResetBackupService	method	public TiramisuPackageFactoryResetBackupService()
+com.amazon.tiramisubootsupport.TiramisuPackageInstallManager	field	private Context mContext;
+com.amazon.tiramisubootsupport.TiramisuPackageInstallManager	field	private HashSet<String> mPendingForInstall;
+com.amazon.tiramisubootsupport.TiramisuPackageInstallManager	field	private static final String ACTION_TIRAMISU_PACKAGE_INSTALL;
+com.amazon.tiramisubootsupport.TiramisuPackageInstallManager	field	private static final String APK_FILE_EXTENSION;
+com.amazon.tiramisubootsupport.TiramisuPackageInstallManager	field	private static final String DISALLOWED_APPS_AFFIX;
+com.amazon.tiramisubootsupport.TiramisuPackageInstallManager	field	private static final String PACKAGE_BACKUP_LIST_PATH;
+com.amazon.tiramisubootsupport.TiramisuPackageInstallManager	field	private static final String STRING_ARRAY_LOC;
+com.amazon.tiramisubootsupport.TiramisuPackageInstallManager	field	private static final String SYSTEM_PROPERTY_KEY_PRODUCT_MODEL;
+com.amazon.tiramisubootsupport.TiramisuPackageInstallManager	field	private static final String TAG;
+com.amazon.tiramisubootsupport.TiramisuPackageInstallManager	method	private String getPackageName(String str)
+com.amazon.tiramisubootsupport.TiramisuPackageInstallManager	method	private boolean addApkToInstallSession(PackageInstaller.Session session, String str)
+com.amazon.tiramisubootsupport.TiramisuPackageInstallManager	method	private boolean isInstalled(String str)
+com.amazon.tiramisubootsupport.TiramisuPackageInstallManager	method	private void doInstallApk(PackageInstaller.Session session, int i)
+com.amazon.tiramisubootsupport.TiramisuPackageInstallManager	method	private void installApk(String str)
+com.amazon.tiramisubootsupport.TiramisuPackageInstallManager	method	private void registerInstallResultReceiver()
+com.amazon.tiramisubootsupport.TiramisuPackageInstallManager	method	public TiramisuPackageInstallManager(Context context)
+com.amazon.tiramisubootsupport.TiramisuPackageInstallManager	method	public void markAsInstalled(String str)
+com.amazon.tiramisubootsupport.TiramisuPackageInstallManager	method	public void traverseAndInstallApks(File file)
+com.amazon.tiramisubootsupport.TiramisuPackageInstallManager$TiramisuInstallResultReceiver	field	private static final String TAG;
+com.amazon.tiramisubootsupport.TiramisuPackageInstallManager$TiramisuInstallResultReceiver	method	private TiramisuInstallResultReceiver()
+com.amazon.tiramisubootsupport.TiramisuPackageInstallManager$TiramisuInstallResultReceiver	method	private void disableTiramisuBootSupportReceiver()
+com.amazon.tiramisubootsupport.TiramisuPackageInstallManager$TiramisuInstallResultReceiver	method	private void startBackupService(boolean z, String str)
+com.amazon.tiramisubootsupport.TiramisuPackageInstallManager$TiramisuInstallResultReceiver	method	public void onReceive(Context context, Intent intent)
+com.amazon.tiramisubootsupport.TiramisuPackageInstallService	field	private static final String PREF_KEY_SERVICE_NUM_RETRY;
+com.amazon.tiramisubootsupport.TiramisuPackageInstallService	field	private static final String SERVICE_RETRY_NUM_PREF_FILE;
+com.amazon.tiramisubootsupport.TiramisuPackageInstallService	field	private static final String TAG;
+com.amazon.tiramisubootsupport.TiramisuPackageInstallService	field	private static final int SERVICE_RESTART_MAX_RETRIES;
+com.amazon.tiramisubootsupport.TiramisuPackageInstallService	method	private int getNumRetries()
+com.amazon.tiramisubootsupport.TiramisuPackageInstallService	method	private void updateNumRetries(int i)
+com.amazon.tiramisubootsupport.TiramisuPackageInstallService	method	public IBinder onBind(Intent intent)
+com.amazon.tiramisubootsupport.TiramisuPackageInstallService	method	public int onStartCommand(Intent intent, int i, int i2)
+com.amazon.tiramisubootsupport.TiramisuPackageInstallService	method	public void onDestroy()

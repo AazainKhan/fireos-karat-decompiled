@@ -1,0 +1,123 @@
+class	kind	declaration
+com.amazon.tv.sol.connector.ISettingsBinder	field	public static final String DESCRIPTOR;
+com.amazon.tv.sol.connector.ISettingsBinder$Default	method	public IBinder asBinder()
+com.amazon.tv.sol.connector.ISettingsBinder$Default	method	public List<SettingPkg> getSettings(List<String> list) throws RemoteException
+com.amazon.tv.sol.connector.ISettingsBinder$Default	method	public String registerListener(List<String> list, IValueListener iValueListener) throws RemoteException
+com.amazon.tv.sol.connector.ISettingsBinder$Default	method	public void setSettingValue(String str, String str2, ResultReceiver resultReceiver, String str3, String str4) throws RemoteException
+com.amazon.tv.sol.connector.ISettingsBinder$Default	method	public void unregisterListener(String str) throws RemoteException
+com.amazon.tv.sol.connector.ISettingsBinder$Stub	field	static final int TRANSACTION_getSettings;
+com.amazon.tv.sol.connector.ISettingsBinder$Stub	field	static final int TRANSACTION_registerListener;
+com.amazon.tv.sol.connector.ISettingsBinder$Stub	field	static final int TRANSACTION_setSettingValue;
+com.amazon.tv.sol.connector.ISettingsBinder$Stub	field	static final int TRANSACTION_unregisterListener;
+com.amazon.tv.sol.connector.ISettingsBinder$Stub	method	public IBinder asBinder()
+com.amazon.tv.sol.connector.ISettingsBinder$Stub	method	public Stub()
+com.amazon.tv.sol.connector.ISettingsBinder$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.tv.sol.connector.ISettingsBinder$Stub	method	public static ISettingsBinder asInterface(IBinder iBinder)
+com.amazon.tv.sol.connector.ISettingsBinder$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.tv.sol.connector.ISettingsBinder$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.tv.sol.connector.ISettingsBinder$Stub$Proxy	method	public List<SettingPkg> getSettings(List<String> list) throws RemoteException
+com.amazon.tv.sol.connector.ISettingsBinder$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.tv.sol.connector.ISettingsBinder$Stub$Proxy	method	public String registerListener(List<String> list, IValueListener iValueListener) throws RemoteException
+com.amazon.tv.sol.connector.ISettingsBinder$Stub$Proxy	method	public void setSettingValue(String str, String str2, ResultReceiver resultReceiver, String str3, String str4) throws RemoteException
+com.amazon.tv.sol.connector.ISettingsBinder$Stub$Proxy	method	public void unregisterListener(String str) throws RemoteException
+com.amazon.tv.sol.connector.ISettingsBinder$_Parcel	method	public static <T extends Parcelable> void writeTypedList(Parcel parcel, List<T> list, int i)
+com.amazon.tv.sol.connector.ISettingsBinder$_Parcel	method	public static <T extends Parcelable> void writeTypedObject(Parcel parcel, T t, int i)
+com.amazon.tv.sol.connector.ISettingsBinder$_Parcel	method	public static <T> T readTypedObject(Parcel parcel, Parcelable.Creator<T> creator)
+com.amazon.tv.sol.connector.IValueListener	field	public static final String DESCRIPTOR;
+com.amazon.tv.sol.connector.IValueListener$Default	method	public IBinder asBinder()
+com.amazon.tv.sol.connector.IValueListener$Default	method	public void onValueChanged(String str, String str2) throws RemoteException
+com.amazon.tv.sol.connector.IValueListener$Stub	field	static final int TRANSACTION_onValueChanged;
+com.amazon.tv.sol.connector.IValueListener$Stub	method	public IBinder asBinder()
+com.amazon.tv.sol.connector.IValueListener$Stub	method	public Stub()
+com.amazon.tv.sol.connector.IValueListener$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.tv.sol.connector.IValueListener$Stub	method	public static IValueListener asInterface(IBinder iBinder)
+com.amazon.tv.sol.connector.IValueListener$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.tv.sol.connector.IValueListener$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.tv.sol.connector.IValueListener$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.tv.sol.connector.IValueListener$Stub$Proxy	method	public void onValueChanged(String str, String str2) throws RemoteException
+com.amazon.tv.sol.connector.SOLConnectorBuilder	method	public final SOLConnector build()
+com.amazon.tv.sol.connector.SOLConnectorBuilder	method	public final SOLConnectorBuilder setContext(Context context)
+com.amazon.tv.sol.connector.SOLConnectorBuilder	method	public final SOLConnectorBuilder setTestId(String testId)
+com.amazon.tv.sol.connector.SettingItem$DefaultImpls	method	public static <T> List<T> getEnumerations(SettingItem<T> settingItem)
+com.amazon.tv.sol.connector.SettingItem$DefaultImpls	method	public static <T> Slider<T> getSliderInfo(SettingItem<T> settingItem)
+com.amazon.tv.sol.connector.SettingItem$DefaultImpls	method	public static <T> Toggle<T> getToggleInfo(SettingItem<T> settingItem)
+com.amazon.tv.sol.connector.SettingPkg	field	public Bundle decorationData;
+com.amazon.tv.sol.connector.SettingPkg	field	public List<String> enumerations;
+com.amazon.tv.sol.connector.SettingPkg	field	public SliderPkg slider;
+com.amazon.tv.sol.connector.SettingPkg	field	public String currentValue;
+com.amazon.tv.sol.connector.SettingPkg	field	public String defaultValue;
+com.amazon.tv.sol.connector.SettingPkg	field	public String setting;
+com.amazon.tv.sol.connector.SettingPkg	field	public String supported;
+com.amazon.tv.sol.connector.SettingPkg	field	public TogglePkg toggle;
+com.amazon.tv.sol.connector.SettingPkg	method	private int describeContents(Object obj)
+com.amazon.tv.sol.connector.SettingPkg	method	public final void readFromParcel(Parcel parcel)
+com.amazon.tv.sol.connector.SettingPkg	method	public final void writeToParcel(Parcel parcel, int i)
+com.amazon.tv.sol.connector.SettingPkg	method	public int describeContents()
+com.amazon.tv.sol.connector.SettingPkg$_Parcel	method	public static <T extends Parcelable> void writeTypedObject(Parcel parcel, T t, int i)
+com.amazon.tv.sol.connector.SettingPkg$_Parcel	method	public static <T> T readTypedObject(Parcel parcel, Parcelable.Creator<T> creator)
+com.amazon.tv.sol.connector.Slider	field	private final T max;
+com.amazon.tv.sol.connector.Slider	field	private final T min;
+com.amazon.tv.sol.connector.Slider	field	private final T tick;
+com.amazon.tv.sol.connector.Slider	method	public Slider(T min, T max, T tick)
+com.amazon.tv.sol.connector.Slider	method	public final T getMax()
+com.amazon.tv.sol.connector.Slider	method	public final T getMin()
+com.amazon.tv.sol.connector.Slider	method	public final T getTick()
+com.amazon.tv.sol.connector.SliderPkg	field	public String max;
+com.amazon.tv.sol.connector.SliderPkg	field	public String min;
+com.amazon.tv.sol.connector.SliderPkg	field	public String tick;
+com.amazon.tv.sol.connector.SliderPkg	method	public final void readFromParcel(Parcel parcel)
+com.amazon.tv.sol.connector.SliderPkg	method	public final void writeToParcel(Parcel parcel, int i)
+com.amazon.tv.sol.connector.SliderPkg	method	public int describeContents()
+com.amazon.tv.sol.connector.Toggle	field	private final T off;
+com.amazon.tv.sol.connector.Toggle	field	private final T on;
+com.amazon.tv.sol.connector.Toggle	method	public Toggle(T on, T off)
+com.amazon.tv.sol.connector.Toggle	method	public final T getOff()
+com.amazon.tv.sol.connector.Toggle	method	public final T getOn()
+com.amazon.tv.sol.connector.TogglePkg	field	public String off;
+com.amazon.tv.sol.connector.TogglePkg	field	public String on;
+com.amazon.tv.sol.connector.TogglePkg	method	public final void readFromParcel(Parcel parcel)
+com.amazon.tv.sol.connector.TogglePkg	method	public final void writeToParcel(Parcel parcel, int i)
+com.amazon.tv.sol.connector.TogglePkg	method	public int describeContents()
+com.amazon.tv.sol.namespaces.Accessibility	field	public static final Accessibility INSTANCE;
+com.amazon.tv.sol.namespaces.Accessibility	field	public static final SettingDef<Boolean> CAPTIONS_ON_OFF;
+com.amazon.tv.sol.namespaces.Accessibility	field	public static final SettingDef<Integer> CAPTIONS_BACKGROUND_OPACITY;
+com.amazon.tv.sol.namespaces.Accessibility	field	public static final SettingDef<Integer> CAPTIONS_TEXT_OPACITY;
+com.amazon.tv.sol.namespaces.Accessibility	field	public static final SettingDef<Integer> CAPTIONS_WIN_BACKGROUND_OPACITY;
+com.amazon.tv.sol.namespaces.Accessibility	field	public static final SettingDef<String> CAPTIONS_BACKGROUND_COLOR;
+com.amazon.tv.sol.namespaces.Accessibility	field	public static final SettingDef<String> CAPTIONS_EDGE_COLOR;
+com.amazon.tv.sol.namespaces.Accessibility	field	public static final SettingDef<String> CAPTIONS_EDGE_TYPE;
+com.amazon.tv.sol.namespaces.Accessibility	field	public static final SettingDef<String> CAPTIONS_MODE;
+com.amazon.tv.sol.namespaces.Accessibility	field	public static final SettingDef<String> CAPTIONS_TEXT_COLOR;
+com.amazon.tv.sol.namespaces.Accessibility	field	public static final SettingDef<String> CAPTIONS_TEXT_FONT;
+com.amazon.tv.sol.namespaces.Accessibility	field	public static final SettingDef<String> CAPTIONS_TEXT_SIZE;
+com.amazon.tv.sol.namespaces.Accessibility	field	public static final SettingDef<String> CAPTIONS_WIN_BACKGROUND_COLOR;
+com.amazon.tv.sol.namespaces.Accessibility	method	private Accessibility()
+com.amazon.tv.sol.namespaces.AccessibilityKt	field	private static final String NAMESPACE;
+com.amazon.tv.sol.namespaces.Capability	field	public static final Capability INSTANCE;
+com.amazon.tv.sol.namespaces.Capability	field	public static final SettingDef<Boolean> BACKGROUND_CHANNEL_SCAN;
+com.amazon.tv.sol.namespaces.Capability	field	public static final SettingDef<Boolean> CI_PLUS;
+com.amazon.tv.sol.namespaces.Capability	method	private Capability()
+com.amazon.tv.sol.namespaces.CapabilityKt	field	private static final String NAMESPACE;
+com.amazon.tv.sol.namespaces.LiveTv	field	public static final LiveTv INSTANCE;
+com.amazon.tv.sol.namespaces.LiveTv	field	public static final SettingDef<Boolean> ASPECT_WATERMARK_ON_OFF;
+com.amazon.tv.sol.namespaces.LiveTv	field	public static final SettingDef<Boolean> BACKGROUND_CHANNEL_SCAN;
+com.amazon.tv.sol.namespaces.LiveTv	field	public static final SettingDef<Boolean> GINGA_APP_AUTO_START;
+com.amazon.tv.sol.namespaces.LiveTv	field	public static final SettingDef<Boolean> HBBTV_DO_NOT_TRACK;
+com.amazon.tv.sol.namespaces.LiveTv	field	public static final SettingDef<Boolean> HBBTV_ON_OFF;
+com.amazon.tv.sol.namespaces.LiveTv	field	public static final SettingDef<Boolean> HBBTV_THIRD_PARTY_COOKIES;
+com.amazon.tv.sol.namespaces.LiveTv	field	public static final SettingDef<Boolean> INTERACTIVE_SERVICES;
+com.amazon.tv.sol.namespaces.LiveTv	field	public static final SettingDef<Boolean> LOW_SIGNAL_STRENGTH_ALERT;
+com.amazon.tv.sol.namespaces.LiveTv	field	public static final SettingDef<Boolean> SECURE_CHANNELS;
+com.amazon.tv.sol.namespaces.LiveTv	field	public static final SettingDef<String> AUDIO_DESC_LEVEL;
+com.amazon.tv.sol.namespaces.LiveTv	field	public static final SettingDef<String> AUDIO_TYPE;
+com.amazon.tv.sol.namespaces.LiveTv	field	public static final SettingDef<String> DIALOG_ENHANCEMENT_GAIN;
+com.amazon.tv.sol.namespaces.LiveTv	field	public static final SettingDef<String> PRIMARY_AUDIO_LANGUAGE;
+com.amazon.tv.sol.namespaces.LiveTv	field	public static final SettingDef<String> PRIMARY_SUBTITLE_LANGUAGE;
+com.amazon.tv.sol.namespaces.LiveTv	field	public static final SettingDef<String> SECONDARY_AUDIO_LANGUAGE;
+com.amazon.tv.sol.namespaces.LiveTv	field	public static final SettingDef<String> SECONDARY_SUBTITLE_LANGUAGE;
+com.amazon.tv.sol.namespaces.LiveTv	method	private LiveTv()
+com.amazon.tv.sol.namespaces.LiveTvKt	field	private static final String NAMESPACE;
+com.amazon.tv.sol.namespaces.SystemNS	field	public static final SettingDef<String> COUNTRY_OF_PURCHASE;
+com.amazon.tv.sol.namespaces.SystemNS	field	public static final SystemNS INSTANCE;
+com.amazon.tv.sol.namespaces.SystemNS	method	private SystemNS()
+com.amazon.tv.sol.namespaces.SystemNSKt	field	private static final String NAMESPACE;

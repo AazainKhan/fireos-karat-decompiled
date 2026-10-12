@@ -1,0 +1,155 @@
+class	kind	declaration
+com.amazon.ahtservice.api.ICalibrationUICallback$Default	method	public IBinder asBinder()
+com.amazon.ahtservice.api.ICalibrationUICallback$Default	method	public void onDeviceStateUpdated(Bundle bundle) throws RemoteException
+com.amazon.ahtservice.api.ICalibrationUICallback$Default	method	public void onFragmentOrViewTransitionComplete(String str) throws RemoteException
+com.amazon.ahtservice.api.ICalibrationUICallback$Default	method	public void onUIDestroyed() throws RemoteException
+com.amazon.ahtservice.api.ICalibrationUICallback$Default	method	public void onUIReady(ICalibrationUIController iCalibrationUIController) throws RemoteException
+com.amazon.ahtservice.api.ICalibrationUICallback$Default	method	public void onUserAction(String str, Bundle bundle) throws RemoteException
+com.amazon.ahtservice.api.ICalibrationUICallback$Stub	field	private static final String DESCRIPTOR;
+com.amazon.ahtservice.api.ICalibrationUICallback$Stub	field	static final int TRANSACTION_onDeviceStateUpdated;
+com.amazon.ahtservice.api.ICalibrationUICallback$Stub	field	static final int TRANSACTION_onFragmentOrViewTransitionComplete;
+com.amazon.ahtservice.api.ICalibrationUICallback$Stub	field	static final int TRANSACTION_onUIDestroyed;
+com.amazon.ahtservice.api.ICalibrationUICallback$Stub	field	static final int TRANSACTION_onUIReady;
+com.amazon.ahtservice.api.ICalibrationUICallback$Stub	field	static final int TRANSACTION_onUserAction;
+com.amazon.ahtservice.api.ICalibrationUICallback$Stub	method	public IBinder asBinder()
+com.amazon.ahtservice.api.ICalibrationUICallback$Stub	method	public Stub()
+com.amazon.ahtservice.api.ICalibrationUICallback$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.ahtservice.api.ICalibrationUICallback$Stub	method	public static ICalibrationUICallback asInterface(IBinder iBinder)
+com.amazon.ahtservice.api.ICalibrationUICallback$Stub	method	public static ICalibrationUICallback getDefaultImpl()
+com.amazon.ahtservice.api.ICalibrationUICallback$Stub	method	public static boolean setDefaultImpl(ICalibrationUICallback iCalibrationUICallback)
+com.amazon.ahtservice.api.ICalibrationUICallback$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.ahtservice.api.ICalibrationUICallback$Stub$Proxy	field	public static ICalibrationUICallback sDefaultImpl;
+com.amazon.ahtservice.api.ICalibrationUICallback$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.ahtservice.api.ICalibrationUICallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.ahtservice.api.ICalibrationUICallback$Stub$Proxy	method	public void onDeviceStateUpdated(Bundle bundle) throws RemoteException
+com.amazon.ahtservice.api.ICalibrationUICallback$Stub$Proxy	method	public void onFragmentOrViewTransitionComplete(String str) throws RemoteException
+com.amazon.ahtservice.api.ICalibrationUICallback$Stub$Proxy	method	public void onUIDestroyed() throws RemoteException
+com.amazon.ahtservice.api.ICalibrationUICallback$Stub$Proxy	method	public void onUIReady(ICalibrationUIController iCalibrationUIController) throws RemoteException
+com.amazon.ahtservice.api.ICalibrationUICallback$Stub$Proxy	method	public void onUserAction(String str, Bundle bundle) throws RemoteException
+com.amazon.ahtservice.api.ICalibrationUIController$Default	method	public Bundle getCurrentUIState() throws RemoteException
+com.amazon.ahtservice.api.ICalibrationUIController$Default	method	public IBinder asBinder()
+com.amazon.ahtservice.api.ICalibrationUIController$Default	method	public String updateDeviceState(Bundle bundle) throws RemoteException
+com.amazon.ahtservice.api.ICalibrationUIController$Default	method	public void registerCallback(ICalibrationUICallback iCalibrationUICallback) throws RemoteException
+com.amazon.ahtservice.api.ICalibrationUIController$Default	method	public void setUpFragmentOrView(String str, Bundle bundle) throws RemoteException
+com.amazon.ahtservice.api.ICalibrationUIController$Default	method	public void unregisterCallback(ICalibrationUICallback iCalibrationUICallback) throws RemoteException
+com.amazon.ahtservice.api.ICalibrationUIController$Stub	field	private static final String DESCRIPTOR;
+com.amazon.ahtservice.api.ICalibrationUIController$Stub	field	static final int TRANSACTION_getCurrentUIState;
+com.amazon.ahtservice.api.ICalibrationUIController$Stub	field	static final int TRANSACTION_registerCallback;
+com.amazon.ahtservice.api.ICalibrationUIController$Stub	field	static final int TRANSACTION_setUpFragmentOrView;
+com.amazon.ahtservice.api.ICalibrationUIController$Stub	field	static final int TRANSACTION_unregisterCallback;
+com.amazon.ahtservice.api.ICalibrationUIController$Stub	field	static final int TRANSACTION_updateDeviceState;
+com.amazon.ahtservice.api.ICalibrationUIController$Stub	method	public IBinder asBinder()
+com.amazon.ahtservice.api.ICalibrationUIController$Stub	method	public Stub()
+com.amazon.ahtservice.api.ICalibrationUIController$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.ahtservice.api.ICalibrationUIController$Stub	method	public static ICalibrationUIController asInterface(IBinder iBinder)
+com.amazon.ahtservice.api.ICalibrationUIController$Stub	method	public static ICalibrationUIController getDefaultImpl()
+com.amazon.ahtservice.api.ICalibrationUIController$Stub	method	public static boolean setDefaultImpl(ICalibrationUIController iCalibrationUIController)
+com.amazon.ahtservice.api.ICalibrationUIController$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.ahtservice.api.ICalibrationUIController$Stub$Proxy	field	public static ICalibrationUIController sDefaultImpl;
+com.amazon.ahtservice.api.ICalibrationUIController$Stub$Proxy	method	public Bundle getCurrentUIState() throws RemoteException
+com.amazon.ahtservice.api.ICalibrationUIController$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.ahtservice.api.ICalibrationUIController$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.ahtservice.api.ICalibrationUIController$Stub$Proxy	method	public String updateDeviceState(Bundle bundle) throws RemoteException
+com.amazon.ahtservice.api.ICalibrationUIController$Stub$Proxy	method	public void registerCallback(ICalibrationUICallback iCalibrationUICallback) throws RemoteException
+com.amazon.ahtservice.api.ICalibrationUIController$Stub$Proxy	method	public void setUpFragmentOrView(String str, Bundle bundle) throws RemoteException
+com.amazon.ahtservice.api.ICalibrationUIController$Stub$Proxy	method	public void unregisterCallback(ICalibrationUICallback iCalibrationUICallback) throws RemoteException
+com.amazon.ftvcalibrationservice.FabricBridge	field	private CommandCallback mCommandCallback;
+com.amazon.ftvcalibrationservice.FabricBridge	field	private static final String TAG;
+com.amazon.ftvcalibrationservice.FabricBridge	field	private static volatile FabricBridge instance;
+com.amazon.ftvcalibrationservice.FabricBridge	field	private volatile long nativeHandle;
+com.amazon.ftvcalibrationservice.FabricBridge	method	private FabricBridge()
+com.amazon.ftvcalibrationservice.FabricBridge	method	private native boolean nativeInvokeCalibrationServiceOnEFDs(long j);
+com.amazon.ftvcalibrationservice.FabricBridge	method	private native boolean nativeSendMessageToCoordinator(long j, String str, String str2);
+com.amazon.ftvcalibrationservice.FabricBridge	method	private native boolean nativeSendMetadataToCoordinator(long j, String str);
+com.amazon.ftvcalibrationservice.FabricBridge	method	private native long nativeInit();
+com.amazon.ftvcalibrationservice.FabricBridge	method	private native void nativeDestroy(long j);
+com.amazon.ftvcalibrationservice.FabricBridge	method	public boolean invokeCalibrationServiceOnEFDs()
+com.amazon.ftvcalibrationservice.FabricBridge	method	public boolean sendMessageToCoordinator(String str, String str2)
+com.amazon.ftvcalibrationservice.FabricBridge	method	public boolean sendMetadataToCoordinator(String str)
+com.amazon.ftvcalibrationservice.FabricBridge	method	public static synchronized FabricBridge getInstance()
+com.amazon.ftvcalibrationservice.FabricBridge	method	public void cleanUpNative()
+com.amazon.ftvcalibrationservice.FabricBridge	method	public void onFabricCommand(String str, String str2, String str3)
+com.amazon.ftvcalibrationservice.FabricBridge	method	public void registerCommandCallback(CommandCallback commandCallback)
+com.amazon.ftvcalibrationservice.calibration.CalibrationActivity	field	private CalibrationManager mCalibrationManager;
+com.amazon.ftvcalibrationservice.calibration.CalibrationActivity	field	private FabricBridge mFabricBridge;
+com.amazon.ftvcalibrationservice.calibration.CalibrationActivity	field	private List<Bundle> deviceStateList;
+com.amazon.ftvcalibrationservice.calibration.CalibrationActivity	field	private String devicesJson;
+com.amazon.ftvcalibrationservice.calibration.CalibrationActivity	field	private static final String DEVICE_TYPE_ECHO;
+com.amazon.ftvcalibrationservice.calibration.CalibrationActivity	field	private static final String DEVICE_TYPE_FIRE_TV;
+com.amazon.ftvcalibrationservice.calibration.CalibrationActivity	field	private static final String DEVICE_TYPE_SUBWOOFER;
+com.amazon.ftvcalibrationservice.calibration.CalibrationActivity	field	private static final String TAG;
+com.amazon.ftvcalibrationservice.calibration.CalibrationActivity	method	private String prepareCalibrationMetadata()
+com.amazon.ftvcalibrationservice.calibration.CalibrationActivity	method	private boolean parseDevicesFromIntent()
+com.amazon.ftvcalibrationservice.calibration.CalibrationActivity	method	private void launchCalibrationUI()
+com.amazon.ftvcalibrationservice.calibration.CalibrationActivity	method	private void startCalibrationProcess()
+com.amazon.ftvcalibrationservice.calibration.CalibrationActivity	method	protected void onCreate(Bundle bundle)
+com.amazon.ftvcalibrationservice.calibration.CalibrationActivity	method	protected void onDestroy()
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	private FabricBridge mFabricBridge;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	private Handler calibrationHandler;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	private Handler mMainHandler;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	private ICalibrationUIController mController;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	private List<Bundle> mDevicesList;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	private String[] deviceSequence;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	private boolean mIsCalibrationInProgress;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	private final Context mContext;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	private int currentDeviceIndex;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	private int troubleshootCount;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	private int troubleshootIndex1;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	private int troubleshootIndex2;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	private static final String COMMAND_CALIBRATION_COMPLETE;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	private static final String COMMAND_CALIBRATION_START;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	private static final String COMMAND_DISPLAY_ERROR;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	private static final String COMMAND_DISPLAY_RETRY;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	private static final String COMMAND_FALLBACK_CONFIG_STATUS;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	private static final String COMMAND_PLAYBACK_STATUS;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	private static final String COMMAND_USER_UTTERANCE_NEEDED;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	private static final String EVENT_ENABLE_FALLBACK_CONFIG;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	private static final String EVENT_UI_READY;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	private static final String EVENT_USER_ACTION_TROUBLESHOOT_DONE;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	private static final String EVENT_USER_EXIT_UI;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	private static final String EVENT_USER_UTTERANCE_DONE;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	private static final String MESSAGE_TYPE_UI;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	private static final String TAG;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	private static final long CALIBRATION_INTERVAL;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	public static final String FALLBACK_CONFIG_CLICKED;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	public static final String FIRETV_HOME_CLICKED;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	public static final String FRAGMENT_CALIBRATION_PROGRESS;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	public static final String FRAGMENT_LOADING;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	public static final String REQUEST_USER_UTTERANCE;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	public static final String SHOW_CALIBRATION_COMPLETE;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	public static final String SHOW_ERROR;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	public static final String SHOW_FALLBACK_STATUS;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	public static final String SHOW_RETRY;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	public static final String TROUBLESHOOT_CONTINUE_CLICKED;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	public static final String USER_UTTERANCE_CONTINUE_CLICKED;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	field	public static final String WATCH_PREVIEW_CLICKED;
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	method	private void handleCalibrationProgressCommand(String str, String str2)
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	method	private void handleCalibrationStartCommand(String str, String str2)
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	method	private void handleErrorCommand(String str, String str2)
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	method	private void handleUserUtteranceNeeded(String str, String str2)
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	method	private void notifyUIStateChange(Bundle bundle) throws RemoteException
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	method	private void sendMessageToCoordinator(String str, String str2)
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	method	private void showCalibrationScreen()
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	method	private void showTroubleshootScreen(final ArrayList<Bundle> arrayList)
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	method	private void startDeviceCalibrationSequence(int i, int i2)
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	method	public CalibrationManager(Context context)
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	method	public boolean updateNextDevice()
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	method	public void handleDisplayRetry(final String str)
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	method	public void handleFabricCommand(String str, String str2, String str3)
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	method	public void handleFallbackConfigStatus(final String str)
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	method	public void onCalibrationComplete()
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	method	public void onDeviceStateUpdated(Bundle bundle)
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	method	public void onUIDestroyed()
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	method	public void onUIReady(ICalibrationUIController iCalibrationUIController)
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	method	public void onUserAction(String str, Bundle bundle)
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	method	public void onUserAction_forTesting(String str, Bundle bundle)
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	method	public void setDevices(String str)
+com.amazon.ftvcalibrationservice.calibration.CalibrationManager	method	public void setUpFragmentOrView(String str, Bundle bundle)
+com.amazon.ftvcalibrationservice.calibration.CalibrationService	field	private CalibrationManager mManager;
+com.amazon.ftvcalibrationservice.calibration.CalibrationService	field	private FabricBridge mFabricBridge;
+com.amazon.ftvcalibrationservice.calibration.CalibrationService	field	private ICalibrationUIController mController;
+com.amazon.ftvcalibrationservice.calibration.CalibrationService	field	private static final String TAG;
+com.amazon.ftvcalibrationservice.calibration.CalibrationService	method	public IBinder onBind(Intent intent)
+com.amazon.ftvcalibrationservice.calibration.CalibrationService	method	public boolean onUnbind(Intent intent)
+com.amazon.ftvcalibrationservice.calibration.CalibrationService	method	public void onCreate()
+com.amazon.ftvcalibrationservice.calibration.CalibrationService	method	public void onDestroy()

@@ -1,0 +1,396 @@
+class	kind	declaration
+com.amazon.dcp.framework.BroadcastIntentFactory	field	private static final int FLAG_INCLUDE_STOPPED_PACKAGES;
+com.amazon.dcp.framework.BroadcastIntentFactory	method	private BroadcastIntentFactory()
+com.amazon.dcp.framework.BroadcastIntentFactory	method	public static Intent createIntent()
+com.amazon.dcp.framework.BroadcastIntentFactory	method	public static Intent createIntent(String action)
+com.amazon.dcp.framework.Checks	method	private Checks()
+com.amazon.dcp.framework.Checks	method	private static <T extends Throwable> void throwException(Class<T> clazz, String message, Object... args) throws Throwable
+com.amazon.dcp.framework.Checks	method	public static <T extends Throwable> void checkEquals(Comparable expected, Comparable actual, Class<T> clazz, String message, Object... args) throws Throwable
+com.amazon.dcp.framework.Checks	method	public static <T extends Throwable> void checkFalse(boolean condition, Class<T> clazz, String message, Object... args) throws Throwable
+com.amazon.dcp.framework.Checks	method	public static <T extends Throwable> void checkNotEmpty(Collection<?> collection, Class<T> clazz, String message, Object... args) throws Throwable
+com.amazon.dcp.framework.Checks	method	public static <T extends Throwable> void checkNotEmpty(Object[] collection, Class<T> clazz, String message, Object... args) throws Throwable
+com.amazon.dcp.framework.Checks	method	public static <T extends Throwable> void checkNotEmpty(String string, Class<T> clazz, String message, Object... args) throws Throwable
+com.amazon.dcp.framework.Checks	method	public static <T extends Throwable> void checkNotEquals(Comparable expected, Comparable actual, Class<T> clazz, String message, Object... args) throws Throwable
+com.amazon.dcp.framework.Checks	method	public static <T extends Throwable> void checkNotNull(Object object, Class<T> clazz, String message, Object... args) throws Throwable
+com.amazon.dcp.framework.Checks	method	public static <T extends Throwable> void checkTrue(boolean condition, Class<T> clazz, String message, Object... args) throws Throwable
+com.amazon.dcp.framework.ThreadHelpers	method	private ThreadHelpers()
+com.amazon.dcp.framework.ThreadHelpers	method	public static boolean isRunningOnMainThread()
+com.amazon.dcp.messaging.Device	field	private String mDeviceType;
+com.amazon.dcp.messaging.Device	field	private String mDsn;
+com.amazon.dcp.messaging.Device	method	public Device(String deviceType, String dsn)
+com.amazon.dcp.messaging.Device	method	public String getDeviceType()
+com.amazon.dcp.messaging.Device	method	public String getDsn()
+com.amazon.dcp.messaging.Endpoint	method	private static String getDSNFromIntent(Intent intent)
+com.amazon.dcp.messaging.Endpoint	method	private static String getDeviceTypeFromIntent(Intent intent)
+com.amazon.dcp.messaging.Endpoint	method	protected Endpoint()
+com.amazon.dcp.messaging.Endpoint	method	public static Device constructDeviceFromIntent(Intent intent)
+com.amazon.dcp.messaging.ExpirationDeliveryOption	field	private Date mDate;
+com.amazon.dcp.messaging.ExpirationDeliveryOption	method	public Date getValue()
+com.amazon.dcp.messaging.ExpirationDeliveryOption	method	public ExpirationDeliveryOption(Date expirationDate) throws Throwable
+com.amazon.dcp.messaging.ExpirationDeliveryOption	method	public String getType()
+com.amazon.dcp.messaging.Message	field	private final Priority mPriority;
+com.amazon.dcp.messaging.Message	field	private final String mAccountId;
+com.amazon.dcp.messaging.Message	field	private final String mId;
+com.amazon.dcp.messaging.Message	field	private final String mTopic;
+com.amazon.dcp.messaging.Message	field	private final byte[] mPayload;
+com.amazon.dcp.messaging.Message	method	private static Priority getPriorityFromIntent(Intent intent)
+com.amazon.dcp.messaging.Message	method	private static String getAccountIdFromIntent(Intent intent)
+com.amazon.dcp.messaging.Message	method	private static String getIdFromIntent(Intent intent)
+com.amazon.dcp.messaging.Message	method	private static String getTopicFromIntent(Intent intent)
+com.amazon.dcp.messaging.Message	method	private static byte[] getPayloadFromIntent(Intent intent)
+com.amazon.dcp.messaging.Message	method	public Message(String id, String topic, byte[] payload)
+com.amazon.dcp.messaging.Message	method	public Message(String id, String topic, byte[] payload, String accountId)
+com.amazon.dcp.messaging.Message	method	public Message(String id, String topic, byte[] payload, String accountId, Priority priority)
+com.amazon.dcp.messaging.Message	method	public Priority getPriority()
+com.amazon.dcp.messaging.Message	method	public String getAccountId()
+com.amazon.dcp.messaging.Message	method	public String getId()
+com.amazon.dcp.messaging.Message	method	public String getTopic()
+com.amazon.dcp.messaging.Message	method	public byte[] getPayload()
+com.amazon.dcp.messaging.Message	method	public static Message constructMessageFromIntent(Intent intent)
+com.amazon.dcp.messaging.MessagingContract	field	public static final String INTENT_ACTION_MESSAGING_HANDLER_PERMISSION;
+com.amazon.dcp.messaging.MessagingContract	field	public static final String INTENT_ACTION_MESSAGING_HANDLER_PREFIX;
+com.amazon.dcp.messaging.MessagingContract	field	public static final int STATUS_CODE_ACKNOWLEDGED;
+com.amazon.dcp.messaging.MessagingContract	field	public static final int STATUS_CODE_AUTHENTICATION_FAILURE;
+com.amazon.dcp.messaging.MessagingContract	field	public static final int STATUS_CODE_AUTHORIZATION_FAILURE;
+com.amazon.dcp.messaging.MessagingContract	field	public static final int STATUS_CODE_CORRUPT_MESSAGE;
+com.amazon.dcp.messaging.MessagingContract	field	public static final int STATUS_CODE_DEPENDENCY_FAILURE;
+com.amazon.dcp.messaging.MessagingContract	field	public static final int STATUS_CODE_GENERIC_RECEIVER_ERROR;
+com.amazon.dcp.messaging.MessagingContract	field	public static final int STATUS_CODE_GENERIC_SENDER_ERROR;
+com.amazon.dcp.messaging.MessagingContract	field	public static final int STATUS_CODE_INSUFFICENT_CAPACITY_ERROR;
+com.amazon.dcp.messaging.MessagingContract	field	public static final int STATUS_CODE_INVALID_MESSAGE;
+com.amazon.dcp.messaging.MessagingContract	field	public static final int STATUS_CODE_NO_ACTION_TAKEN;
+com.amazon.dcp.messaging.MessagingContract	field	public static final int STATUS_CODE_RETRY_AFTER_DIRECTBOOT;
+com.amazon.dcp.messaging.MessagingContract	field	public static final int STATUS_CODE_UNROUTABLE_MESSAGE;
+com.amazon.dcp.messaging.MessagingContract	method	private MessagingContract()
+com.amazon.dcp.messaging.MessagingContract	method	public static String convertTypeActionToTopic(String type, String action)
+com.amazon.dcp.messaging.MessagingContract	method	public static String getMessagingHandlerIntentAction(String topic)
+com.amazon.dcp.messaging.MessagingContract	method	public static String getMessagingHandlerIntentAction(String type, String action)
+com.amazon.dcp.messaging.MessagingContract	method	public static String getTodoItemTopic(String type, String action)
+com.amazon.dcp.messaging.MessagingHelper	field	private static final String TAG;
+com.amazon.dcp.messaging.MessagingHelper	field	private static final long QUEUE_MESSAGE_TIMEOUT;
+com.amazon.dcp.messaging.MessagingHelper	field	public static final String PERMISSION_QUEUE_MESSAGE;
+com.amazon.dcp.messaging.MessagingHelper	method	private MessagingHelper()
+com.amazon.dcp.messaging.MessagingHelper	method	private static String getAccount(Context context)
+com.amazon.dcp.messaging.MessagingHelper	method	private static String getTargetPackage(Context context)
+com.amazon.dcp.messaging.MessagingHelper	method	private static boolean isMessagingPackageInstalled(Context context)
+com.amazon.dcp.messaging.MessagingHelper	method	public static String queueMessage(Context context, String topic, byte[] payload, DeliveryOption... options) throws OdotQueueMessageException
+com.amazon.dcp.messaging.MessagingHelper	method	public static String queueMessageAsUser(Context context, String accountId, String topic, byte[] payload, DeliveryOption... options) throws Throwable
+com.amazon.dcp.messaging.MessagingHelper	method	public static void respondTo(Context context, Response response)
+com.amazon.dcp.messaging.MessagingHelper	method	static void rethrowOdotException(Throwable exception) throws Throwable
+com.amazon.dcp.messaging.OdotContract	method	private OdotContract()
+com.amazon.dcp.messaging.OdotContract$Algorithms	field	public static final String ALGORITHM;
+com.amazon.dcp.messaging.OdotContract$Algorithms	field	public static final String ID;
+com.amazon.dcp.messaging.OdotContract$Algorithms	field	public static final String TABLE_NAME;
+com.amazon.dcp.messaging.OdotContract$Algorithms	method	private Algorithms()
+com.amazon.dcp.messaging.OdotContract$Outbox	field	public static final String ALGORITHM_ID;
+com.amazon.dcp.messaging.OdotContract$Outbox	field	public static final String APP;
+com.amazon.dcp.messaging.OdotContract$Outbox	field	public static final String CRC;
+com.amazon.dcp.messaging.OdotContract$Outbox	field	public static final String DESCRIPTION;
+com.amazon.dcp.messaging.OdotContract$Outbox	field	public static final String DISPATCH_BY;
+com.amazon.dcp.messaging.OdotContract$Outbox	field	public static final String EXPIRATION;
+com.amazon.dcp.messaging.OdotContract$Outbox	field	public static final String ID;
+com.amazon.dcp.messaging.OdotContract$Outbox	field	public static final String PAYLOAD;
+com.amazon.dcp.messaging.OdotContract$Outbox	field	public static final String RETRIES;
+com.amazon.dcp.messaging.OdotContract$Outbox	field	public static final String RETRIES_LEFT;
+com.amazon.dcp.messaging.OdotContract$Outbox	field	public static final String RETRY_AFTER;
+com.amazon.dcp.messaging.OdotContract$Outbox	field	public static final String SIGNATURE;
+com.amazon.dcp.messaging.OdotContract$Outbox	field	public static final String STATUS;
+com.amazon.dcp.messaging.OdotContract$Outbox	field	public static final String TABLE_NAME;
+com.amazon.dcp.messaging.OdotContract$Outbox	field	public static final String TOKEN_ID;
+com.amazon.dcp.messaging.OdotContract$Outbox	field	public static final String TOPIC;
+com.amazon.dcp.messaging.OdotContract$Outbox	field	public static final String TRANSPORT;
+com.amazon.dcp.messaging.OdotContract$Outbox	field	public static final int TRANSPORT_LAN;
+com.amazon.dcp.messaging.OdotContract$Outbox	field	public static final int TRANSPORT_WAN;
+com.amazon.dcp.messaging.OdotContract$Outbox	method	private Outbox()
+com.amazon.dcp.messaging.OdotContract$Tokens	field	public static final String ID;
+com.amazon.dcp.messaging.OdotContract$Tokens	field	public static final String TABLE_NAME;
+com.amazon.dcp.messaging.OdotContract$Tokens	field	public static final String TOKEN;
+com.amazon.dcp.messaging.OdotContract$Tokens	method	private Tokens()
+com.amazon.dcp.messaging.OdotDBFullException	field	public static final long serialVersionUID;
+com.amazon.dcp.messaging.OdotDBFullException	method	public OdotDBFullException()
+com.amazon.dcp.messaging.OdotDBFullException	method	public OdotDBFullException(String reason)
+com.amazon.dcp.messaging.OdotIllegalQueueMessageException	field	public static final long serialVersionUID;
+com.amazon.dcp.messaging.OdotIllegalQueueMessageException	method	public OdotIllegalQueueMessageException(String message)
+com.amazon.dcp.messaging.OdotInternalErrorException	field	public static final long serialVersionUID;
+com.amazon.dcp.messaging.OdotInternalErrorException	method	public OdotInternalErrorException()
+com.amazon.dcp.messaging.OdotInternalErrorException	method	public OdotInternalErrorException(String reason)
+com.amazon.dcp.messaging.OdotInternalErrorException	method	public OdotInternalErrorException(String reason, Throwable cause)
+com.amazon.dcp.messaging.OdotInternalErrorException	method	public OdotInternalErrorException(Throwable cause)
+com.amazon.dcp.messaging.OdotNoCredentialsException	field	public static final long serialVersionUID;
+com.amazon.dcp.messaging.OdotNoCredentialsException	method	public OdotNoCredentialsException()
+com.amazon.dcp.messaging.OdotNoCredentialsException	method	public OdotNoCredentialsException(String reason)
+com.amazon.dcp.messaging.OdotQueueMessageException	field	public static final long serialVersionUID;
+com.amazon.dcp.messaging.OdotQueueMessageException	method	public OdotQueueMessageException()
+com.amazon.dcp.messaging.OdotQueueMessageException	method	public OdotQueueMessageException(String reason)
+com.amazon.dcp.messaging.OdotQueueMessageException	method	public OdotQueueMessageException(String reason, Throwable cause)
+com.amazon.dcp.messaging.OdotQueueMessageException	method	public OdotQueueMessageException(Throwable cause)
+com.amazon.dcp.messaging.OdotTransport	field	private int mValue;
+com.amazon.dcp.messaging.OdotTransport	method	public int describeContents()
+com.amazon.dcp.messaging.OdotTransport	method	public int value()
+com.amazon.dcp.messaging.OdotTransport	method	public static OdotTransport fromValue(int value)
+com.amazon.dcp.messaging.OdotTransport	method	public void writeToParcel(Parcel dest, int flags)
+com.amazon.dcp.messaging.Priority	field	private int mValue;
+com.amazon.dcp.messaging.Priority	method	public int describeContents()
+com.amazon.dcp.messaging.Priority	method	public int value()
+com.amazon.dcp.messaging.Priority	method	public static Priority fromValue(int value)
+com.amazon.dcp.messaging.Priority	method	public void writeToParcel(Parcel dest, int flags)
+com.amazon.dcp.messaging.ReplaceExistingDeliveryOption	method	public Boolean getValue()
+com.amazon.dcp.messaging.ReplaceExistingDeliveryOption	method	public ReplaceExistingDeliveryOption()
+com.amazon.dcp.messaging.ReplaceExistingDeliveryOption	method	public String getType()
+com.amazon.dcp.messaging.Response	field	private final String mDescription;
+com.amazon.dcp.messaging.Response	field	private final String mId;
+com.amazon.dcp.messaging.Response	field	private final boolean mRetry;
+com.amazon.dcp.messaging.Response	field	private final int mRetryAfter;
+com.amazon.dcp.messaging.Response	field	private final int mStatusCode;
+com.amazon.dcp.messaging.Response	method	public Response(String id, int statusCode, String description)
+com.amazon.dcp.messaging.Response	method	public Response(String id, int statusCode, int retryAfter, String description)
+com.amazon.dcp.messaging.Response	method	public String getDescription()
+com.amazon.dcp.messaging.Response	method	public String getId()
+com.amazon.dcp.messaging.Response	method	public boolean getRetry()
+com.amazon.dcp.messaging.Response	method	public int getRetryAfter()
+com.amazon.dcp.messaging.Response	method	public int getStatusCode()
+com.amazon.dcp.messaging.Response	method	public static Response deseralize(Intent intent)
+com.amazon.dcp.messaging.Response	method	public void seralizeToIntent(Intent intent)
+com.amazon.dcp.messaging.TodoV1Message	field	private Map<String, String> mTodoAttributesMap;
+com.amazon.dcp.messaging.TodoV1Message	field	private Map<String, String> mTodoNodesMap;
+com.amazon.dcp.messaging.TodoV1Message	field	private Message mMessage;
+com.amazon.dcp.messaging.TodoV1Message	field	private String mTextValue;
+com.amazon.dcp.messaging.TodoV1Message	field	private static final String TAG;
+com.amazon.dcp.messaging.TodoV1Message	method	private Element getTodoRootNodeFromPayload()
+com.amazon.dcp.messaging.TodoV1Message	method	private TodoV1Message(Message msg)
+com.amazon.dcp.messaging.TodoV1Message	method	private void parsePayload()
+com.amazon.dcp.messaging.TodoV1Message	method	private void parseTodoAttributes(Element rootNode)
+com.amazon.dcp.messaging.TodoV1Message	method	private void parseTodoNodes(Element rootNode)
+com.amazon.dcp.messaging.TodoV1Message	method	public Set<String> getAttributeNames()
+com.amazon.dcp.messaging.TodoV1Message	method	public Set<String> getValueNames()
+com.amazon.dcp.messaging.TodoV1Message	method	public String getAccountId()
+com.amazon.dcp.messaging.TodoV1Message	method	public String getAttribute(String attributeName)
+com.amazon.dcp.messaging.TodoV1Message	method	public String getId()
+com.amazon.dcp.messaging.TodoV1Message	method	public String getKey()
+com.amazon.dcp.messaging.TodoV1Message	method	public String getTextValue()
+com.amazon.dcp.messaging.TodoV1Message	method	public String getTopic()
+com.amazon.dcp.messaging.TodoV1Message	method	public String getValue(String todoItemNodeName)
+com.amazon.dcp.messaging.TodoV1Message	method	public TodoV1Message(String id, String topic, byte[] payload)
+com.amazon.dcp.messaging.TodoV1Message	method	public TodoV1Message(String id, String topic, byte[] payload, String accountId)
+com.amazon.dcp.messaging.TodoV1Message	method	public byte[] getPayload()
+com.amazon.dcp.messaging.TodoV1Message	method	public static TodoV1Message constructMessageFromIntent(Intent intent)
+com.amazon.dcp.messaging.TransportDeliveryOption	field	private OdotTransport mTransport;
+com.amazon.dcp.messaging.TransportDeliveryOption	method	public OdotTransport getValue()
+com.amazon.dcp.messaging.TransportDeliveryOption	method	public String getType()
+com.amazon.dcp.messaging.TransportDeliveryOption	method	public TransportDeliveryOption(OdotTransport transport) throws Throwable
+com.amazon.dcp.tph.TPHConstants	field	public static final String ACTION_TPH_INFO_PROVIDER;
+com.amazon.dcp.tph.TPHConstants	field	public static final String ACTION_TPH_PHONE_HOME;
+com.amazon.dcp.tph.TPHConstants	method	private TPHConstants()
+com.amazon.device.messaging.CloudMessagingClient	field	private CountDownLatch mServiceInitialized;
+com.amazon.device.messaging.CloudMessagingClient	field	private Handler mRebindHandler;
+com.amazon.device.messaging.CloudMessagingClient	field	private ICloudMessagingService mService;
+com.amazon.device.messaging.CloudMessagingClient	field	private final ContextWrapper mContextWrapper;
+com.amazon.device.messaging.CloudMessagingClient	field	private final ServiceConnection mServiceConnection;
+com.amazon.device.messaging.CloudMessagingClient	field	private int mRebindAttempts;
+com.amazon.device.messaging.CloudMessagingClient	field	private long mRebindDelayMs;
+com.amazon.device.messaging.CloudMessagingClient	field	private long mResponseTimeoutMs;
+com.amazon.device.messaging.CloudMessagingClient	field	private static final ComponentName CLOUD_MESSAGING_COMPONENT;
+com.amazon.device.messaging.CloudMessagingClient	field	private static final String ASYNC_TOPIC_PREFIX;
+com.amazon.device.messaging.CloudMessagingClient	field	private static final String CLOUD_MESSAGING_SERVICE_CLASS;
+com.amazon.device.messaging.CloudMessagingClient	field	private static final String MESSAGING_PACKAGE_NAME;
+com.amazon.device.messaging.CloudMessagingClient	field	private static final String TAG;
+com.amazon.device.messaging.CloudMessagingClient	field	private static final int REBIND_MAX_ATTEMPTS;
+com.amazon.device.messaging.CloudMessagingClient	field	private static final long DEFAULT_RESPONSE_TIMEOUT_MS;
+com.amazon.device.messaging.CloudMessagingClient	field	private static final long INITIALIZATION_TIMEOUT_MS;
+com.amazon.device.messaging.CloudMessagingClient	field	private static final long REBIND_INITIAL_DELAY_MS;
+com.amazon.device.messaging.CloudMessagingClient	field	private static final long REBIND_MAX_DELAY_MS;
+com.amazon.device.messaging.CloudMessagingClient	method	private ComponentName getComponentName()
+com.amazon.device.messaging.CloudMessagingClient	method	private String getFlattenedComponentName()
+com.amazon.device.messaging.CloudMessagingClient	method	private boolean bindToService()
+com.amazon.device.messaging.CloudMessagingClient	method	private boolean isInitialized()
+com.amazon.device.messaging.CloudMessagingClient	method	private boolean isMessagingPackageInstalled()
+com.amazon.device.messaging.CloudMessagingClient	method	private void checkInitialized()
+com.amazon.device.messaging.CloudMessagingClient	method	private void logForegroundExecutionWarning()
+com.amazon.device.messaging.CloudMessagingClient	method	private void respond(String messageId, byte[] content, String errorCode)
+com.amazon.device.messaging.CloudMessagingClient	method	private void scheduleRebindAttempt()
+com.amazon.device.messaging.CloudMessagingClient	method	private void unbindFromService()
+com.amazon.device.messaging.CloudMessagingClient	method	public CloudMessagingClient(ContextWrapper contextWrapper) throws CloudMessagingServiceException
+com.amazon.device.messaging.CloudMessagingClient	method	public CloudMessagingClient(ContextWrapper contextWrapper, final ConnectionCallback connectionCallback) throws CloudMessagingServiceException
+com.amazon.device.messaging.CloudMessagingClient	method	public String sendMessage(String topic, byte[] content, final MessageResponseCallback callback) throws IllegalArgumentException, CloudMessagingServiceException
+com.amazon.device.messaging.CloudMessagingClient	method	public void close()
+com.amazon.device.messaging.CloudMessagingClient	method	public void rebindToService()
+com.amazon.device.messaging.CloudMessagingClient	method	public void rebindWithBackoffIfNecessary()
+com.amazon.device.messaging.CloudMessagingClient	method	public void respondWithError(String messageId, String errorCode, String errorMessage)
+com.amazon.device.messaging.CloudMessagingClient	method	public void sendErrorResponse(String messageId, String errorMessage) throws CloudMessagingException
+com.amazon.device.messaging.CloudMessagingClient	method	public void sendErrorResponse(String messageId, Throwable error) throws CloudMessagingException
+com.amazon.device.messaging.CloudMessagingClient	method	public void sendResponse(String messageId, byte[] content) throws CloudMessagingException
+com.amazon.device.messaging.CloudMessagingClient	method	public void setResponseTimeout(long timeoutMs)
+com.amazon.device.messaging.CloudMessagingClient	method	public void subscribe(String topic, final InboundMessageCallback callback) throws IllegalArgumentException, CloudMessagingServiceException
+com.amazon.device.messaging.CloudMessagingClient	method	public void subscribeAsync(String topic, final InboundMessageAsyncCallback callback) throws IllegalArgumentException, CloudMessagingServiceException
+com.amazon.device.messaging.CloudMessagingClient	method	public void unsubscribe(String topic) throws IllegalArgumentException, CloudMessagingServiceException
+com.amazon.device.messaging.CloudMessagingClient	method	public void unsubscribeAsync(String topic) throws IllegalArgumentException, CloudMessagingServiceException
+com.amazon.device.messaging.CloudMessagingException	method	public CloudMessagingException(String message)
+com.amazon.device.messaging.CloudMessagingException	method	public CloudMessagingException(String message, Throwable cause)
+com.amazon.device.messaging.CloudMessagingException	method	public CloudMessagingException(Throwable cause)
+com.amazon.device.messaging.CloudMessagingRemoteException	method	public CloudMessagingRemoteException(String errorCode, byte[] errorDetails)
+com.amazon.device.messaging.CloudMessagingServiceException	method	public CloudMessagingServiceException(String message)
+com.amazon.device.messaging.CloudMessagingServiceException	method	public CloudMessagingServiceException(String message, Throwable cause)
+com.amazon.device.messaging.CloudMessagingServiceException	method	public CloudMessagingServiceException(Throwable cause)
+com.amazon.device.messaging.ICloudMessagingService$Stub	field	private static final String DESCRIPTOR;
+com.amazon.device.messaging.ICloudMessagingService$Stub	field	static final int TRANSACTION_handleAsyncMessage;
+com.amazon.device.messaging.ICloudMessagingService$Stub	field	static final int TRANSACTION_respond;
+com.amazon.device.messaging.ICloudMessagingService$Stub	field	static final int TRANSACTION_respondAsync;
+com.amazon.device.messaging.ICloudMessagingService$Stub	field	static final int TRANSACTION_sendMessage;
+com.amazon.device.messaging.ICloudMessagingService$Stub	field	static final int TRANSACTION_subscribe;
+com.amazon.device.messaging.ICloudMessagingService$Stub	field	static final int TRANSACTION_subscribeAsync;
+com.amazon.device.messaging.ICloudMessagingService$Stub	field	static final int TRANSACTION_unsubscribe;
+com.amazon.device.messaging.ICloudMessagingService$Stub	field	static final int TRANSACTION_unsubscribeAsync;
+com.amazon.device.messaging.ICloudMessagingService$Stub	method	public IBinder asBinder()
+com.amazon.device.messaging.ICloudMessagingService$Stub	method	public Stub()
+com.amazon.device.messaging.ICloudMessagingService$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.amazon.device.messaging.ICloudMessagingService$Stub	method	public static ICloudMessagingService asInterface(IBinder obj)
+com.amazon.device.messaging.ICloudMessagingService$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.device.messaging.ICloudMessagingService$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.device.messaging.ICloudMessagingService$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.device.messaging.ICloudMessagingService$Stub$Proxy	method	public String respond(String messageId, byte[] content, String errorCode) throws RemoteException
+com.amazon.device.messaging.ICloudMessagingService$Stub$Proxy	method	public String sendMessage(String topic, byte[] content, long timeoutMs, IMessageResponseCallback callback) throws RemoteException
+com.amazon.device.messaging.ICloudMessagingService$Stub$Proxy	method	public String subscribe(String topic, IInboundMessageCallback callback) throws RemoteException
+com.amazon.device.messaging.ICloudMessagingService$Stub$Proxy	method	public String subscribeAsync(String topic, IInboundMessageAsyncCallback callback) throws RemoteException
+com.amazon.device.messaging.ICloudMessagingService$Stub$Proxy	method	public String unsubscribe(String topic) throws RemoteException
+com.amazon.device.messaging.ICloudMessagingService$Stub$Proxy	method	public String unsubscribeAsync(String topic) throws RemoteException
+com.amazon.device.messaging.ICloudMessagingService$Stub$Proxy	method	public void handleAsyncMessage(String messageId, String topic, byte[] content, String accountId) throws RemoteException
+com.amazon.device.messaging.ICloudMessagingService$Stub$Proxy	method	public void respondAsync(String messageId, String errorCode) throws RemoteException
+com.amazon.device.messaging.IInboundMessageAsyncCallback$Stub	field	private static final String DESCRIPTOR;
+com.amazon.device.messaging.IInboundMessageAsyncCallback$Stub	field	static final int TRANSACTION_messageReceived;
+com.amazon.device.messaging.IInboundMessageAsyncCallback$Stub	method	public IBinder asBinder()
+com.amazon.device.messaging.IInboundMessageAsyncCallback$Stub	method	public Stub()
+com.amazon.device.messaging.IInboundMessageAsyncCallback$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.amazon.device.messaging.IInboundMessageAsyncCallback$Stub	method	public static IInboundMessageAsyncCallback asInterface(IBinder obj)
+com.amazon.device.messaging.IInboundMessageAsyncCallback$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.device.messaging.IInboundMessageAsyncCallback$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.device.messaging.IInboundMessageAsyncCallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.device.messaging.IInboundMessageAsyncCallback$Stub$Proxy	method	public void messageReceived(String messageId, String topic, byte[] content) throws RemoteException
+com.amazon.device.messaging.IInboundMessageCallback$Stub	field	private static final String DESCRIPTOR;
+com.amazon.device.messaging.IInboundMessageCallback$Stub	field	static final int TRANSACTION_messageReceived;
+com.amazon.device.messaging.IInboundMessageCallback$Stub	method	public IBinder asBinder()
+com.amazon.device.messaging.IInboundMessageCallback$Stub	method	public Stub()
+com.amazon.device.messaging.IInboundMessageCallback$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.amazon.device.messaging.IInboundMessageCallback$Stub	method	public static IInboundMessageCallback asInterface(IBinder obj)
+com.amazon.device.messaging.IInboundMessageCallback$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.device.messaging.IInboundMessageCallback$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.device.messaging.IInboundMessageCallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.device.messaging.IInboundMessageCallback$Stub$Proxy	method	public void messageReceived(String messageId, String topic, byte[] content) throws RemoteException
+com.amazon.device.messaging.IMessageResponseCallback$Stub	field	private static final String DESCRIPTOR;
+com.amazon.device.messaging.IMessageResponseCallback$Stub	field	static final int TRANSACTION_responseReceived;
+com.amazon.device.messaging.IMessageResponseCallback$Stub	method	public IBinder asBinder()
+com.amazon.device.messaging.IMessageResponseCallback$Stub	method	public Stub()
+com.amazon.device.messaging.IMessageResponseCallback$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.amazon.device.messaging.IMessageResponseCallback$Stub	method	public static IMessageResponseCallback asInterface(IBinder obj)
+com.amazon.device.messaging.IMessageResponseCallback$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.device.messaging.IMessageResponseCallback$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.device.messaging.IMessageResponseCallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.device.messaging.IMessageResponseCallback$Stub$Proxy	method	public void responseReceived(String messageId, String topic, byte[] content, String errorCode) throws RemoteException
+com.amazon.device.messaging.IMessagingConnectivityListener$Stub	field	private static final String DESCRIPTOR;
+com.amazon.device.messaging.IMessagingConnectivityListener$Stub	field	static final int TRANSACTION_onMessagingConnected;
+com.amazon.device.messaging.IMessagingConnectivityListener$Stub	field	static final int TRANSACTION_onMessagingDisconnected;
+com.amazon.device.messaging.IMessagingConnectivityListener$Stub	method	public IBinder asBinder()
+com.amazon.device.messaging.IMessagingConnectivityListener$Stub	method	public Stub()
+com.amazon.device.messaging.IMessagingConnectivityListener$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.amazon.device.messaging.IMessagingConnectivityListener$Stub	method	public static IMessagingConnectivityListener asInterface(IBinder obj)
+com.amazon.device.messaging.IMessagingConnectivityListener$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.device.messaging.IMessagingConnectivityListener$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.device.messaging.IMessagingConnectivityListener$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.device.messaging.IMessagingConnectivityListener$Stub$Proxy	method	public void onMessagingConnected() throws RemoteException
+com.amazon.device.messaging.IMessagingConnectivityListener$Stub$Proxy	method	public void onMessagingDisconnected() throws RemoteException
+com.amazon.device.messaging.IMessagingConnectivityService$Stub	field	private static final String DESCRIPTOR;
+com.amazon.device.messaging.IMessagingConnectivityService$Stub	field	static final int TRANSACTION_deregisterConnectivityListener;
+com.amazon.device.messaging.IMessagingConnectivityService$Stub	field	static final int TRANSACTION_getConnectivity;
+com.amazon.device.messaging.IMessagingConnectivityService$Stub	field	static final int TRANSACTION_registerConnectivityListener;
+com.amazon.device.messaging.IMessagingConnectivityService$Stub	method	public IBinder asBinder()
+com.amazon.device.messaging.IMessagingConnectivityService$Stub	method	public Stub()
+com.amazon.device.messaging.IMessagingConnectivityService$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.amazon.device.messaging.IMessagingConnectivityService$Stub	method	public static IMessagingConnectivityService asInterface(IBinder obj)
+com.amazon.device.messaging.IMessagingConnectivityService$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.device.messaging.IMessagingConnectivityService$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.device.messaging.IMessagingConnectivityService$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.device.messaging.IMessagingConnectivityService$Stub$Proxy	method	public boolean getConnectivity() throws RemoteException
+com.amazon.device.messaging.IMessagingConnectivityService$Stub$Proxy	method	public void deregisterConnectivityListener() throws RemoteException
+com.amazon.device.messaging.IMessagingConnectivityService$Stub$Proxy	method	public void registerConnectivityListener(IMessagingConnectivityListener listener) throws RemoteException
+com.amazon.device.messaging.MessageTransmissionException	method	public MessageTransmissionException(String message)
+com.amazon.device.messaging.MessageTransmissionException	method	public MessageTransmissionException(String message, Throwable cause)
+com.amazon.device.messaging.MessageTransmissionException	method	public MessageTransmissionException(Throwable cause)
+com.amazon.device.messaging.MessagingConnectivityClient	field	private IMessagingConnectivityService mService;
+com.amazon.device.messaging.MessagingConnectivityClient	field	private final ContextWrapper mContextWrapper;
+com.amazon.device.messaging.MessagingConnectivityClient	field	private static final ComponentName MESSAGING_CONNECTIVITY_COMPONENT;
+com.amazon.device.messaging.MessagingConnectivityClient	field	private static final String FLATTENED_MESSAGING_CONNECTIVITY_COMPONENT;
+com.amazon.device.messaging.MessagingConnectivityClient	field	private static final String TAG;
+com.amazon.device.messaging.MessagingConnectivityClient	method	public MessagingConnectivityClient(ContextWrapper contextWrapper) throws Exception
+com.amazon.device.messaging.MessagingConnectivityClient	method	public boolean getConnectivity()
+com.amazon.device.messaging.MessagingConnectivityClient	method	public void close()
+com.amazon.device.messaging.MessagingConnectivityClient	method	public void deregisterConnectivityListener() throws RemoteException
+com.amazon.device.messaging.MessagingConnectivityClient	method	public void registerConnectivityListener(final MessagingConnectivityListener listener) throws RemoteException
+com.amazon.device.messaging.MessagingContracts	field	public static final String ACTION_FLUSH_MESSAGES;
+com.amazon.device.messaging.MessagingContracts	field	public static final String ACTION_INTENT_RESPONSE_CALLBACK;
+com.amazon.device.messaging.MessagingContracts	field	public static final String ACTION_MESSAGE_CHECK_COMPLETE;
+com.amazon.device.messaging.MessagingContracts	field	public static final String ACTION_QUEUE_MESSAGE;
+com.amazon.device.messaging.MessagingContracts	field	public static final String ACTION_QUEUE_MESSAGE_RESPONSE;
+com.amazon.device.messaging.MessagingContracts	field	public static final String ACTION_SCHEDULE_FLUSH;
+com.amazon.device.messaging.MessagingContracts	field	public static final String EXPIRATION_DELIVERY_OPTION;
+com.amazon.device.messaging.MessagingContracts	field	public static final String EXTRA_ACCOUNT_ID;
+com.amazon.device.messaging.MessagingContracts	field	public static final String EXTRA_AQUILA_MESSAGE_PAYLOAD;
+com.amazon.device.messaging.MessagingContracts	field	public static final String EXTRA_DISPATCH_BY;
+com.amazon.device.messaging.MessagingContracts	field	public static final String EXTRA_ENDPOINT_DEVICE_TYPE;
+com.amazon.device.messaging.MessagingContracts	field	public static final String EXTRA_ENDPOINT_DSN;
+com.amazon.device.messaging.MessagingContracts	field	public static final String EXTRA_EXPIRATION;
+com.amazon.device.messaging.MessagingContracts	field	public static final String EXTRA_MESSAGE_CALLBACK_ID;
+com.amazon.device.messaging.MessagingContracts	field	public static final String EXTRA_MESSAGE_ID;
+com.amazon.device.messaging.MessagingContracts	field	public static final String EXTRA_MESSAGE_PAYLOAD;
+com.amazon.device.messaging.MessagingContracts	field	public static final String EXTRA_PACKAGE_NAME;
+com.amazon.device.messaging.MessagingContracts	field	public static final String EXTRA_PAYLOAD;
+com.amazon.device.messaging.MessagingContracts	field	public static final String EXTRA_PRIORITY;
+com.amazon.device.messaging.MessagingContracts	field	public static final String EXTRA_PROCESS_MESSAGES_PULL_REASON;
+com.amazon.device.messaging.MessagingContracts	field	public static final String EXTRA_QUEUE_MESSAGE_EXCEPTION;
+com.amazon.device.messaging.MessagingContracts	field	public static final String EXTRA_QUEUE_MESSAGE_ID;
+com.amazon.device.messaging.MessagingContracts	field	public static final String EXTRA_QUEUE_MESSAGE_RESPONSE;
+com.amazon.device.messaging.MessagingContracts	field	public static final String EXTRA_REPLACE_EXISTING;
+com.amazon.device.messaging.MessagingContracts	field	public static final String EXTRA_RESPONSE_MESSAGE_ID;
+com.amazon.device.messaging.MessagingContracts	field	public static final String EXTRA_RESPONSE_MESSAGE_RETRY;
+com.amazon.device.messaging.MessagingContracts	field	public static final String EXTRA_RESPONSE_MESSAGE_RETRY_AFTER;
+com.amazon.device.messaging.MessagingContracts	field	public static final String EXTRA_RESPONSE_MESSAGE_RETRY_DESCRIPTION;
+com.amazon.device.messaging.MessagingContracts	field	public static final String EXTRA_RESPONSE_MESSAGE_STATUS;
+com.amazon.device.messaging.MessagingContracts	field	public static final String EXTRA_TCOMM_ENDPOINT_IDENTITY_PAYLOAD;
+com.amazon.device.messaging.MessagingContracts	field	public static final String EXTRA_TCOMM_MESSAGE_PAYLOAD;
+com.amazon.device.messaging.MessagingContracts	field	public static final String EXTRA_TOPIC;
+com.amazon.device.messaging.MessagingContracts	field	public static final String EXTRA_TRANSPORT;
+com.amazon.device.messaging.MessagingContracts	field	public static final String EXTRA_USER_HANDLE;
+com.amazon.device.messaging.MessagingContracts	field	public static final String FETCH_TODO_V1_INTENT_ACTION;
+com.amazon.device.messaging.MessagingContracts	field	public static final String HANDLE_MESSAGE_PERMISSION;
+com.amazon.device.messaging.MessagingContracts	field	public static final String KEY_KEEP_CONNECTION_TIMEOUT;
+com.amazon.device.messaging.MessagingContracts	field	public static final String MESSAGING_PACKAGE_NAME;
+com.amazon.device.messaging.MessagingContracts	field	public static final String NO_QUEUED_MESSAGE_ID;
+com.amazon.device.messaging.MessagingContracts	field	public static final String QUEUE_MESSAGE_SUCCESSFUL_RESULT;
+com.amazon.device.messaging.MessagingContracts	field	public static final String REPLACE_EXISTING_OPTION;
+com.amazon.device.messaging.MessagingContracts	field	public static final String SERVICE_NOT_FOUND;
+com.amazon.device.messaging.MessagingContracts	field	public static final String TRANSPORT_OPTION;
+com.amazon.device.messaging.MessagingContracts	method	private MessagingContracts()
+com.amazon.device.messaging.ResponseTimeoutException	method	public ResponseTimeoutException(String message)
+com.amazon.device.messaging.ResponseTimeoutException	method	public ResponseTimeoutException(String message, Throwable cause)
+com.amazon.device.messaging.ResponseTimeoutException	method	public ResponseTimeoutException(Throwable cause)
+com.amazon.device.messaging.TopicSubscriptionException	method	public TopicSubscriptionException(String message)
+com.amazon.device.messaging.TopicSubscriptionException	method	public TopicSubscriptionException(String message, Throwable cause)
+com.amazon.device.messaging.TopicSubscriptionException	method	public TopicSubscriptionException(Throwable cause)
+com.amazon.device.messaging.UnknownTopicException	method	public UnknownTopicException(String message)
+com.amazon.device.messaging.UnknownTopicException	method	public UnknownTopicException(String message, Throwable cause)
+com.amazon.device.messaging.UnknownTopicException	method	public UnknownTopicException(Throwable cause)
+com.amazon.device.messaging.sdk.internal.lib.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.device.messaging.sdk.internal.lib.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.device.messaging.sdk.internal.lib.BuildConfig	field	public static final String FLAVOR;
+com.amazon.device.messaging.sdk.internal.lib.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.device.messaging.sdk.internal.lib.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.device.messaging.sdk.internal.lib.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.device.messaging.sdk.internal.library.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.device.messaging.sdk.internal.library.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.device.messaging.sdk.internal.library.BuildConfig	field	public static final String FLAVOR;
+com.amazon.device.messaging.sdk.internal.library.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.device.messaging.sdk.internal.library.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.device.messaging.sdk.internal.library.BuildConfig	field	public static final int VERSION_CODE;
+edu.umd.cs.findbugs.annotations.Confidence	field	private final int confidenceValue;
+edu.umd.cs.findbugs.annotations.Confidence	method	public int getConfidenceValue()
+edu.umd.cs.findbugs.annotations.Confidence	method	public static Confidence getConfidence(int prio)
+edu.umd.cs.findbugs.annotations.Priority	field	private final int priorityValue;
+edu.umd.cs.findbugs.annotations.Priority	method	public int getPriorityValue()

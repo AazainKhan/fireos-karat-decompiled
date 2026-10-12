@@ -1,0 +1,725 @@
+class	kind	declaration
+com.android.gallery3d.common.ExifOrientation	method	public static final int readRotation(InputStream inputStream, Context context) throws Throwable
+com.android.gallery3d.common.ExifOrientation	method	public static final int readRotation(String str)
+com.android.gallery3d.common.Utils	method	public static RectF getMaxCropRect(int i, int i2, int i3, int i4, boolean z)
+com.android.gallery3d.common.Utils	method	public static int ceilLog2(float f)
+com.android.gallery3d.common.Utils	method	public static int clamp(int i, int i2, int i3)
+com.android.gallery3d.common.Utils	method	public static int computeSampleSizeLarger(float f)
+com.android.gallery3d.common.Utils	method	public static int floorLog2(float f)
+com.android.gallery3d.common.Utils	method	public static int nextPowerOf2(int i)
+com.android.gallery3d.common.Utils	method	public static int prevPowerOf2(int i)
+com.android.gallery3d.common.Utils	method	public static void assertTrue(boolean z)
+com.android.gallery3d.common.Utils	method	public static void closeSilently(Closeable closeable)
+com.android.gallery3d.glrenderer.BasicTexture	field	private static ThreadLocal sInFinalizer;
+com.android.gallery3d.glrenderer.BasicTexture	field	private static WeakHashMap<BasicTexture, Object> sAllTextures;
+com.android.gallery3d.glrenderer.BasicTexture	field	protected GLCanvas mCanvasRef;
+com.android.gallery3d.glrenderer.BasicTexture	field	protected int mHeight;
+com.android.gallery3d.glrenderer.BasicTexture	field	protected int mId;
+com.android.gallery3d.glrenderer.BasicTexture	field	protected int mState;
+com.android.gallery3d.glrenderer.BasicTexture	field	protected int mTextureHeight;
+com.android.gallery3d.glrenderer.BasicTexture	field	protected int mTextureWidth;
+com.android.gallery3d.glrenderer.BasicTexture	field	protected int mWidth;
+com.android.gallery3d.glrenderer.BasicTexture	method	private void freeResource()
+com.android.gallery3d.glrenderer.BasicTexture	method	protected BasicTexture()
+com.android.gallery3d.glrenderer.BasicTexture	method	protected BasicTexture(GLCanvas gLCanvas, int i, int i2)
+com.android.gallery3d.glrenderer.BasicTexture	method	protected abstract boolean onBind(GLCanvas gLCanvas);
+com.android.gallery3d.glrenderer.BasicTexture	method	protected void finalize()
+com.android.gallery3d.glrenderer.BasicTexture	method	protected void setAssociatedCanvas(GLCanvas gLCanvas)
+com.android.gallery3d.glrenderer.BasicTexture	method	public boolean isLoaded()
+com.android.gallery3d.glrenderer.BasicTexture	method	public int getHeight()
+com.android.gallery3d.glrenderer.BasicTexture	method	public int getId()
+com.android.gallery3d.glrenderer.BasicTexture	method	public int getTextureHeight()
+com.android.gallery3d.glrenderer.BasicTexture	method	public int getTextureWidth()
+com.android.gallery3d.glrenderer.BasicTexture	method	public int getWidth()
+com.android.gallery3d.glrenderer.BasicTexture	method	public static void invalidateAllTextures()
+com.android.gallery3d.glrenderer.BasicTexture	method	public void draw(GLCanvas gLCanvas, int i, int i2, int i3, int i4)
+com.android.gallery3d.glrenderer.BasicTexture	method	public void recycle()
+com.android.gallery3d.glrenderer.BasicTexture	method	public void setSize(int i, int i2)
+com.android.gallery3d.glrenderer.BasicTexture	method	public void yield()
+com.android.gallery3d.glrenderer.BitmapTexture	field	protected Bitmap mContentBitmap;
+com.android.gallery3d.glrenderer.BitmapTexture	method	protected Bitmap onGetBitmap()
+com.android.gallery3d.glrenderer.BitmapTexture	method	protected void onFreeBitmap(Bitmap bitmap)
+com.android.gallery3d.glrenderer.BitmapTexture	method	public Bitmap getBitmap()
+com.android.gallery3d.glrenderer.BitmapTexture	method	public BitmapTexture(Bitmap bitmap)
+com.android.gallery3d.glrenderer.GLES20Canvas	field	private IntArray mSaveFlags;
+com.android.gallery3d.glrenderer.GLES20Canvas	field	private ShaderParameter[] mTextureParameters;
+com.android.gallery3d.glrenderer.GLES20Canvas	field	private final IntArray mUnboundTextures;
+com.android.gallery3d.glrenderer.GLES20Canvas	field	private final RectF mTempSourceRect;
+com.android.gallery3d.glrenderer.GLES20Canvas	field	private final RectF mTempTargetRect;
+com.android.gallery3d.glrenderer.GLES20Canvas	field	private final float[] mTempMatrix;
+com.android.gallery3d.glrenderer.GLES20Canvas	field	private final float[] mTempTextureMatrix;
+com.android.gallery3d.glrenderer.GLES20Canvas	field	private final int[] mTempIntArray;
+com.android.gallery3d.glrenderer.GLES20Canvas	field	private float[] mMatrices;
+com.android.gallery3d.glrenderer.GLES20Canvas	field	private float[] mProjectionMatrix;
+com.android.gallery3d.glrenderer.GLES20Canvas	field	private int mBoxCoordinates;
+com.android.gallery3d.glrenderer.GLES20Canvas	field	private int mCurrentMatrixIndex;
+com.android.gallery3d.glrenderer.GLES20Canvas	field	private int mHeight;
+com.android.gallery3d.glrenderer.GLES20Canvas	field	private int mTextureProgram;
+com.android.gallery3d.glrenderer.GLES20Canvas	field	private int mWidth;
+com.android.gallery3d.glrenderer.GLES20Canvas	field	private static final GLId mGLId;
+com.android.gallery3d.glrenderer.GLES20Canvas	field	private static final String TAG;
+com.android.gallery3d.glrenderer.GLES20Canvas	field	private static final float[] BOX_COORDINATES;
+com.android.gallery3d.glrenderer.GLES20Canvas	method	private ShaderParameter[] prepareTexture(BasicTexture basicTexture)
+com.android.gallery3d.glrenderer.GLES20Canvas	method	private int assembleProgram(int i, int i2, ShaderParameter[] shaderParameterArr)
+com.android.gallery3d.glrenderer.GLES20Canvas	method	private int uploadBuffer(Buffer buffer, int i)
+com.android.gallery3d.glrenderer.GLES20Canvas	method	private static FloatBuffer createBuffer(float[] fArr)
+com.android.gallery3d.glrenderer.GLES20Canvas	method	private static int loadShader(int i, String str)
+com.android.gallery3d.glrenderer.GLES20Canvas	method	private static void convertCoordinate(RectF rectF, RectF rectF2, BasicTexture basicTexture)
+com.android.gallery3d.glrenderer.GLES20Canvas	method	private static void copyTextureCoordinates(BasicTexture basicTexture, RectF rectF)
+com.android.gallery3d.glrenderer.GLES20Canvas	method	private void draw(ShaderParameter[] shaderParameterArr, int i, int i2, float f, float f2, float f3, float f4)
+com.android.gallery3d.glrenderer.GLES20Canvas	method	private void drawTextureRect(BasicTexture basicTexture, RectF rectF, RectF rectF2)
+com.android.gallery3d.glrenderer.GLES20Canvas	method	private void drawTextureRect(BasicTexture basicTexture, float[] fArr, RectF rectF)
+com.android.gallery3d.glrenderer.GLES20Canvas	method	private void prepareTexture(BasicTexture basicTexture, int i, ShaderParameter[] shaderParameterArr)
+com.android.gallery3d.glrenderer.GLES20Canvas	method	private void setMatrix(ShaderParameter[] shaderParameterArr, float f, float f2, float f3, float f4)
+com.android.gallery3d.glrenderer.GLES20Canvas	method	private void setPosition(ShaderParameter[] shaderParameterArr, int i)
+com.android.gallery3d.glrenderer.GLES20Canvas	method	private void setTextureMatrix(RectF rectF)
+com.android.gallery3d.glrenderer.GLES20Canvas	method	public GLES20Canvas()
+com.android.gallery3d.glrenderer.GLES20Canvas	method	public GLId getGLId()
+com.android.gallery3d.glrenderer.GLES20Canvas	method	public boolean unloadTexture(BasicTexture basicTexture)
+com.android.gallery3d.glrenderer.GLES20Canvas	method	public int uploadBuffer(FloatBuffer floatBuffer)
+com.android.gallery3d.glrenderer.GLES20Canvas	method	public static void checkError()
+com.android.gallery3d.glrenderer.GLES20Canvas	method	public void clearBuffer()
+com.android.gallery3d.glrenderer.GLES20Canvas	method	public void deleteRecycledResources()
+com.android.gallery3d.glrenderer.GLES20Canvas	method	public void drawTexture(BasicTexture basicTexture, RectF rectF, RectF rectF2)
+com.android.gallery3d.glrenderer.GLES20Canvas	method	public void drawTexture(BasicTexture basicTexture, int i, int i2, int i3, int i4)
+com.android.gallery3d.glrenderer.GLES20Canvas	method	public void initializeTexture(BasicTexture basicTexture, Bitmap bitmap)
+com.android.gallery3d.glrenderer.GLES20Canvas	method	public void initializeTextureSize(BasicTexture basicTexture, int i, int i2)
+com.android.gallery3d.glrenderer.GLES20Canvas	method	public void restore()
+com.android.gallery3d.glrenderer.GLES20Canvas	method	public void rotate(float f, float f2, float f3, float f4)
+com.android.gallery3d.glrenderer.GLES20Canvas	method	public void save(int i)
+com.android.gallery3d.glrenderer.GLES20Canvas	method	public void setSize(int i, int i2)
+com.android.gallery3d.glrenderer.GLES20Canvas	method	public void setTextureParameters(BasicTexture basicTexture)
+com.android.gallery3d.glrenderer.GLES20Canvas	method	public void texSubImage2D(BasicTexture basicTexture, int i, int i2, Bitmap bitmap, int i3, int i4)
+com.android.gallery3d.glrenderer.GLES20Canvas	method	public void translate(float f, float f2)
+com.android.gallery3d.glrenderer.GLES20Canvas$AttributeShaderParameter	method	public AttributeShaderParameter(String str)
+com.android.gallery3d.glrenderer.GLES20Canvas$AttributeShaderParameter	method	public void loadHandle(int i)
+com.android.gallery3d.glrenderer.GLES20Canvas$ShaderParameter	field	protected final String mName;
+com.android.gallery3d.glrenderer.GLES20Canvas$ShaderParameter	field	public int handle;
+com.android.gallery3d.glrenderer.GLES20Canvas$ShaderParameter	method	public ShaderParameter(String str)
+com.android.gallery3d.glrenderer.GLES20Canvas$ShaderParameter	method	public abstract void loadHandle(int i);
+com.android.gallery3d.glrenderer.GLES20Canvas$UniformShaderParameter	method	public UniformShaderParameter(String str)
+com.android.gallery3d.glrenderer.GLES20Canvas$UniformShaderParameter	method	public void loadHandle(int i)
+com.android.gallery3d.glrenderer.GLES20IdImpl	field	private final int[] mTempIntArray;
+com.android.gallery3d.glrenderer.GLES20IdImpl	method	public int generateTexture()
+com.android.gallery3d.glrenderer.GLES20IdImpl	method	public void glDeleteTextures(GL11 gl11, int i, int[] iArr, int i2)
+com.android.gallery3d.glrenderer.GLES20IdImpl	method	public void glGenBuffers(int i, int[] iArr, int i2)
+com.android.gallery3d.glrenderer.IntArray	field	private int mSize;
+com.android.gallery3d.glrenderer.IntArray	field	private int[] mData;
+com.android.gallery3d.glrenderer.IntArray	method	public int removeLast()
+com.android.gallery3d.glrenderer.IntArray	method	public int size()
+com.android.gallery3d.glrenderer.IntArray	method	public int[] getInternalArray()
+com.android.gallery3d.glrenderer.IntArray	method	public void add(int i)
+com.android.gallery3d.glrenderer.IntArray	method	public void clear()
+com.android.gallery3d.glrenderer.UploadedTexture	field	private boolean mContentValid;
+com.android.gallery3d.glrenderer.UploadedTexture	field	private static HashMap<BorderKey, Bitmap> sBorderLines;
+com.android.gallery3d.glrenderer.UploadedTexture	field	protected Bitmap mBitmap;
+com.android.gallery3d.glrenderer.UploadedTexture	method	private Bitmap getBitmap()
+com.android.gallery3d.glrenderer.UploadedTexture	method	private static Bitmap getBorderLine(boolean z, Bitmap.Config config, int i)
+com.android.gallery3d.glrenderer.UploadedTexture	method	private void freeBitmap()
+com.android.gallery3d.glrenderer.UploadedTexture	method	private void uploadToCanvas(GLCanvas gLCanvas)
+com.android.gallery3d.glrenderer.UploadedTexture	method	protected UploadedTexture()
+com.android.gallery3d.glrenderer.UploadedTexture	method	protected abstract Bitmap onGetBitmap();
+com.android.gallery3d.glrenderer.UploadedTexture	method	protected abstract void onFreeBitmap(Bitmap bitmap);
+com.android.gallery3d.glrenderer.UploadedTexture	method	protected boolean onBind(GLCanvas gLCanvas)
+com.android.gallery3d.glrenderer.UploadedTexture	method	protected void invalidateContent()
+com.android.gallery3d.glrenderer.UploadedTexture	method	public boolean isContentValid()
+com.android.gallery3d.glrenderer.UploadedTexture	method	public int getHeight()
+com.android.gallery3d.glrenderer.UploadedTexture	method	public int getWidth()
+com.android.gallery3d.glrenderer.UploadedTexture	method	public void recycle()
+com.android.gallery3d.glrenderer.UploadedTexture	method	public void updateContent(GLCanvas gLCanvas)
+com.android.gallery3d.glrenderer.UploadedTexture$BorderKey	method	public BorderKey(Bitmap.Config config, boolean z, int i)
+com.android.photos.BitmapRegionTileSource	field	private BasicTexture mPreview;
+com.android.photos.BitmapRegionTileSource	field	private BitmapFactory.Options mOptions;
+com.android.photos.BitmapRegionTileSource	field	private Rect mWantRegion;
+com.android.photos.BitmapRegionTileSource	field	private final int mRotation;
+com.android.photos.BitmapRegionTileSource	method	public BasicTexture getPreview()
+com.android.photos.BitmapRegionTileSource	method	public Bitmap getBitmap()
+com.android.photos.BitmapRegionTileSource	method	public Bitmap getTile(int i, int i2, int i3, Bitmap bitmap)
+com.android.photos.BitmapRegionTileSource	method	public BitmapRegionTileSource(Context context, BitmapSource bitmapSource, byte[] bArr)
+com.android.photos.BitmapRegionTileSource	method	public int getImageHeight()
+com.android.photos.BitmapRegionTileSource	method	public int getImageWidth()
+com.android.photos.BitmapRegionTileSource	method	public int getRotation()
+com.android.photos.BitmapRegionTileSource	method	public int getTileSize()
+com.android.photos.BitmapRegionTileSource$BitmapSource	field	private Bitmap mPreview;
+com.android.photos.BitmapRegionTileSource$BitmapSource	field	private SimpleBitmapRegionDecoder mDecoder;
+com.android.photos.BitmapRegionTileSource$BitmapSource	field	private State mState;
+com.android.photos.BitmapRegionTileSource$BitmapSource	field	private int mRotation;
+com.android.photos.BitmapRegionTileSource$BitmapSource	method	public Bitmap getPreviewBitmap()
+com.android.photos.BitmapRegionTileSource$BitmapSource	method	public SimpleBitmapRegionDecoder getBitmapRegionDecoder()
+com.android.photos.BitmapRegionTileSource$BitmapSource	method	public State getLoadingState()
+com.android.photos.BitmapRegionTileSource$BitmapSource	method	public abstract Bitmap loadPreviewBitmap(BitmapFactory.Options options);
+com.android.photos.BitmapRegionTileSource$BitmapSource	method	public abstract SimpleBitmapRegionDecoder loadBitmapRegionDecoder();
+com.android.photos.BitmapRegionTileSource$BitmapSource	method	public abstract int getExifRotation();
+com.android.photos.BitmapRegionTileSource$BitmapSource	method	public boolean loadInBackground(InBitmapProvider inBitmapProvider)
+com.android.photos.BitmapRegionTileSource$BitmapSource	method	public int getRotation()
+com.android.photos.BitmapRegionTileSource$FilePathBitmapSource	field	private String mPath;
+com.android.photos.BitmapRegionTileSource$FilePathBitmapSource	method	public FilePathBitmapSource(File file, Context context)
+com.android.photos.BitmapRegionTileSource$FilePathBitmapSource	method	public int getExifRotation()
+com.android.photos.BitmapRegionTileSource$InputStreamSource	field	private final Context mContext;
+com.android.photos.BitmapRegionTileSource$InputStreamSource	field	private final InputStreamProvider mStreamProvider;
+com.android.photos.BitmapRegionTileSource$InputStreamSource	method	public Bitmap loadPreviewBitmap(BitmapFactory.Options options)
+com.android.photos.BitmapRegionTileSource$InputStreamSource	method	public InputStreamSource(Context context, Uri uri)
+com.android.photos.BitmapRegionTileSource$InputStreamSource	method	public InputStreamSource(InputStreamProvider inputStreamProvider, Context context)
+com.android.photos.BitmapRegionTileSource$InputStreamSource	method	public InputStreamSource(Resources resources, int i, Context context)
+com.android.photos.BitmapRegionTileSource$InputStreamSource	method	public SimpleBitmapRegionDecoder loadBitmapRegionDecoder()
+com.android.photos.BitmapRegionTileSource$InputStreamSource	method	public int getExifRotation()
+com.android.photos.DumbBitmapRegionDecoder	method	private DumbBitmapRegionDecoder(Bitmap bitmap)
+com.android.photos.DumbBitmapRegionDecoder	method	public Bitmap decodeRegion(Rect rect, BitmapFactory.Options options)
+com.android.photos.DumbBitmapRegionDecoder	method	public int getHeight()
+com.android.photos.DumbBitmapRegionDecoder	method	public int getWidth()
+com.android.photos.DumbBitmapRegionDecoder	method	public static DumbBitmapRegionDecoder newInstance(InputStream inputStream)
+com.android.photos.SimpleBitmapRegionDecoderWrapper	method	private SimpleBitmapRegionDecoderWrapper(BitmapRegionDecoder bitmapRegionDecoder)
+com.android.photos.SimpleBitmapRegionDecoderWrapper	method	public Bitmap decodeRegion(Rect rect, BitmapFactory.Options options)
+com.android.photos.SimpleBitmapRegionDecoderWrapper	method	public int getHeight()
+com.android.photos.SimpleBitmapRegionDecoderWrapper	method	public int getWidth()
+com.android.photos.SimpleBitmapRegionDecoderWrapper	method	public static SimpleBitmapRegionDecoderWrapper newInstance(InputStream inputStream, boolean z)
+com.android.photos.views.TiledImageRenderer	field	private BasicTexture mPreview;
+com.android.photos.views.TiledImageRenderer	field	private TileDecoder mTileDecoder;
+com.android.photos.views.TiledImageRenderer	field	private TileSource mModel;
+com.android.photos.views.TiledImageRenderer	field	private View mParent;
+com.android.photos.views.TiledImageRenderer	field	private boolean mBackgroundTileUploaded;
+com.android.photos.views.TiledImageRenderer	field	private boolean mLayoutTiles;
+com.android.photos.views.TiledImageRenderer	field	private boolean mRenderComplete;
+com.android.photos.views.TiledImageRenderer	field	private final LongSparseArray<Tile> mActiveTiles;
+com.android.photos.views.TiledImageRenderer	field	private final Object mQueueLock;
+com.android.photos.views.TiledImageRenderer	field	private final Rect mTileRange;
+com.android.photos.views.TiledImageRenderer	field	private final RectF mSourceRect;
+com.android.photos.views.TiledImageRenderer	field	private final RectF mTargetRect;
+com.android.photos.views.TiledImageRenderer	field	private final Rect[] mActiveRange;
+com.android.photos.views.TiledImageRenderer	field	private final TileQueue mDecodeQueue;
+com.android.photos.views.TiledImageRenderer	field	private final TileQueue mRecycledQueue;
+com.android.photos.views.TiledImageRenderer	field	private final TileQueue mUploadQueue;
+com.android.photos.views.TiledImageRenderer	field	private int mLevel;
+com.android.photos.views.TiledImageRenderer	field	private int mOffsetX;
+com.android.photos.views.TiledImageRenderer	field	private int mOffsetY;
+com.android.photos.views.TiledImageRenderer	field	private int mTileSize;
+com.android.photos.views.TiledImageRenderer	field	private int mUploadQuota;
+com.android.photos.views.TiledImageRenderer	field	private int mViewHeight;
+com.android.photos.views.TiledImageRenderer	field	private int mViewWidth;
+com.android.photos.views.TiledImageRenderer	field	protected float mScale;
+com.android.photos.views.TiledImageRenderer	field	protected int mCenterX;
+com.android.photos.views.TiledImageRenderer	field	protected int mCenterY;
+com.android.photos.views.TiledImageRenderer	field	protected int mImageHeight;
+com.android.photos.views.TiledImageRenderer	field	protected int mImageWidth;
+com.android.photos.views.TiledImageRenderer	field	protected int mLevelCount;
+com.android.photos.views.TiledImageRenderer	field	protected int mRotation;
+com.android.photos.views.TiledImageRenderer	method	private Tile obtainTile(int i, int i2, int i3)
+com.android.photos.views.TiledImageRenderer	method	private boolean drawTile(Tile tile, GLCanvas gLCanvas, RectF rectF, RectF rectF2)
+com.android.photos.views.TiledImageRenderer	method	private static boolean isHighResolution(Context context)
+com.android.photos.views.TiledImageRenderer	method	private static long makeTileKey(int i, int i2, int i3)
+com.android.photos.views.TiledImageRenderer	method	private void activateTile(int i, int i2, int i3)
+com.android.photos.views.TiledImageRenderer	method	private void calculateLevelCount()
+com.android.photos.views.TiledImageRenderer	method	private void drawTile(GLCanvas gLCanvas, int i, int i2, int i3, float f, float f2, float f3)
+com.android.photos.views.TiledImageRenderer	method	private void getRange(Rect rect, int i, int i2, int i3, float f, int i4)
+com.android.photos.views.TiledImageRenderer	method	private void getRange(Rect rect, int i, int i2, int i3, int i4)
+com.android.photos.views.TiledImageRenderer	method	private void invalidate()
+com.android.photos.views.TiledImageRenderer	method	private void invalidateTiles()
+com.android.photos.views.TiledImageRenderer	method	private void layoutTiles()
+com.android.photos.views.TiledImageRenderer	method	private void queueForDecode(Tile tile)
+com.android.photos.views.TiledImageRenderer	method	private void recycleTile(Tile tile)
+com.android.photos.views.TiledImageRenderer	method	private void uploadBackgroundTiles(GLCanvas gLCanvas)
+com.android.photos.views.TiledImageRenderer	method	private void uploadTiles(GLCanvas gLCanvas)
+com.android.photos.views.TiledImageRenderer	method	public Tile getTile(int i, int i2, int i3)
+com.android.photos.views.TiledImageRenderer	method	public TiledImageRenderer(View view)
+com.android.photos.views.TiledImageRenderer	method	public boolean draw(GLCanvas gLCanvas)
+com.android.photos.views.TiledImageRenderer	method	public static int suggestedTileSize(Context context)
+com.android.photos.views.TiledImageRenderer	method	public void decodeTile(Tile tile)
+com.android.photos.views.TiledImageRenderer	method	public void freeTextures()
+com.android.photos.views.TiledImageRenderer	method	public void notifyModelInvalidated()
+com.android.photos.views.TiledImageRenderer	method	public void setModel(TileSource tileSource, int i)
+com.android.photos.views.TiledImageRenderer	method	public void setPosition(int i, int i2, float f)
+com.android.photos.views.TiledImageRenderer	method	public void setViewSize(int i, int i2)
+com.android.photos.views.TiledImageRenderer$Tile	field	public Bitmap mDecodedTile;
+com.android.photos.views.TiledImageRenderer$Tile	field	public Tile mNext;
+com.android.photos.views.TiledImageRenderer$Tile	field	public int mTileLevel;
+com.android.photos.views.TiledImageRenderer$Tile	field	public int mX;
+com.android.photos.views.TiledImageRenderer$Tile	field	public int mY;
+com.android.photos.views.TiledImageRenderer$Tile	field	public volatile int mTileState;
+com.android.photos.views.TiledImageRenderer$Tile	method	protected Bitmap onGetBitmap()
+com.android.photos.views.TiledImageRenderer$Tile	method	protected void onFreeBitmap(Bitmap bitmap)
+com.android.photos.views.TiledImageRenderer$Tile	method	public String toString()
+com.android.photos.views.TiledImageRenderer$Tile	method	public Tile getParentTile()
+com.android.photos.views.TiledImageRenderer$Tile	method	public Tile(int i, int i2, int i3)
+com.android.photos.views.TiledImageRenderer$Tile	method	public int getTextureHeight()
+com.android.photos.views.TiledImageRenderer$Tile	method	public int getTextureWidth()
+com.android.photos.views.TiledImageRenderer$Tile	method	public void update(int i, int i2, int i3)
+com.android.photos.views.TiledImageRenderer$TileDecoder	method	private Tile waitForTile() throws InterruptedException
+com.android.photos.views.TiledImageRenderer$TileDecoder	method	private TileDecoder()
+com.android.photos.views.TiledImageRenderer$TileDecoder	method	public void finishAndWait()
+com.android.photos.views.TiledImageRenderer$TileDecoder	method	public void run()
+com.android.photos.views.TiledImageRenderer$TileQueue	field	private Tile mHead;
+com.android.photos.views.TiledImageRenderer$TileQueue	method	private TileQueue()
+com.android.photos.views.TiledImageRenderer$TileQueue	method	private boolean contains(Tile tile)
+com.android.photos.views.TiledImageRenderer$TileQueue	method	public Tile pop()
+com.android.photos.views.TiledImageRenderer$TileQueue	method	public boolean push(Tile tile)
+com.android.photos.views.TiledImageRenderer$TileQueue	method	public void clean()
+com.android.photos.views.TiledImageView	field	private Choreographer.FrameCallback mFrameCallback;
+com.android.photos.views.TiledImageView	field	private GLSurfaceView mGLSurfaceView;
+com.android.photos.views.TiledImageView	field	private Runnable mFreeTextures;
+com.android.photos.views.TiledImageView	field	private boolean mInvalPending;
+com.android.photos.views.TiledImageView	field	protected ImageRendererWrapper mRenderer;
+com.android.photos.views.TiledImageView	field	protected Object mLock;
+com.android.photos.views.TiledImageView	method	private void invalOnVsync()
+com.android.photos.views.TiledImageView	method	private void updateScaleIfNecessaryLocked(ImageRendererWrapper imageRendererWrapper)
+com.android.photos.views.TiledImageView	method	protected void onLayout(boolean z, int i, int i2, int i3, int i4)
+com.android.photos.views.TiledImageView	method	public TiledImageRenderer.TileSource getTileSource()
+com.android.photos.views.TiledImageView	method	public TiledImageView(Context context)
+com.android.photos.views.TiledImageView	method	public TiledImageView(Context context, AttributeSet attributeSet)
+com.android.photos.views.TiledImageView	method	public void destroy()
+com.android.photos.views.TiledImageView	method	public void invalidate()
+com.android.photos.views.TiledImageView	method	public void setTileSource(TiledImageRenderer.TileSource tileSource, Runnable runnable)
+com.android.photos.views.TiledImageView	method	public void setVisibility(int i)
+com.android.photos.views.TiledImageView$ImageRendererWrapper	field	public TiledImageRenderer.TileSource source;
+com.android.photos.views.TiledImageView$ImageRendererWrapper	field	public float scale;
+com.android.photos.views.TiledImageView$ImageRendererWrapper	field	public int centerX;
+com.android.photos.views.TiledImageView$ImageRendererWrapper	field	public int centerY;
+com.android.photos.views.TiledImageView$ImageRendererWrapper	field	public int rotation;
+com.android.photos.views.TiledImageView$ImageRendererWrapper	method	protected ImageRendererWrapper()
+com.android.photos.views.TiledImageView$TileRenderer	field	private GLES20Canvas mCanvas;
+com.android.photos.views.TiledImageView$TileRenderer	method	private TileRenderer()
+com.android.photos.views.TiledImageView$TileRenderer	method	public void onDrawFrame(GL10 gl10)
+com.android.photos.views.TiledImageView$TileRenderer	method	public void onSurfaceChanged(GL10 gl10, int i, int i2)
+com.android.photos.views.TiledImageView$TileRenderer	method	public void onSurfaceCreated(GL10 gl10, EGLConfig eGLConfig)
+com.android.wallpaperpicker.AlphaDisableableButton	field	public static float DISABLED_ALPHA_VALUE;
+com.android.wallpaperpicker.AlphaDisableableButton	method	public AlphaDisableableButton(Context context)
+com.android.wallpaperpicker.AlphaDisableableButton	method	public AlphaDisableableButton(Context context, AttributeSet attributeSet)
+com.android.wallpaperpicker.AlphaDisableableButton	method	public AlphaDisableableButton(Context context, AttributeSet attributeSet, int i)
+com.android.wallpaperpicker.AlphaDisableableButton	method	public void setEnabled(boolean z)
+com.android.wallpaperpicker.CheckableFrameLayout	field	private static final int[] CHECKED_STATE_SET;
+com.android.wallpaperpicker.CheckableFrameLayout	method	protected int[] onCreateDrawableState(int i)
+com.android.wallpaperpicker.CheckableFrameLayout	method	public CheckableFrameLayout(Context context)
+com.android.wallpaperpicker.CheckableFrameLayout	method	public CheckableFrameLayout(Context context, AttributeSet attributeSet)
+com.android.wallpaperpicker.CheckableFrameLayout	method	public CheckableFrameLayout(Context context, AttributeSet attributeSet, int i)
+com.android.wallpaperpicker.CheckableFrameLayout	method	public boolean isChecked()
+com.android.wallpaperpicker.CheckableFrameLayout	method	public void setChecked(boolean z)
+com.android.wallpaperpicker.CheckableFrameLayout	method	public void toggle()
+com.android.wallpaperpicker.CropView	field	private RectF mTempEdges;
+com.android.wallpaperpicker.CropView	field	private ScaleGestureDetector mScaleGestureDetector;
+com.android.wallpaperpicker.CropView	field	private boolean mTouchEnabled;
+com.android.wallpaperpicker.CropView	field	private float mCenterX;
+com.android.wallpaperpicker.CropView	field	private float mCenterY;
+com.android.wallpaperpicker.CropView	field	private float mFirstX;
+com.android.wallpaperpicker.CropView	field	private float mFirstY;
+com.android.wallpaperpicker.CropView	field	private float mLastX;
+com.android.wallpaperpicker.CropView	field	private float mLastY;
+com.android.wallpaperpicker.CropView	field	private float mMinScale;
+com.android.wallpaperpicker.CropView	field	private float[] mTempAdjustment;
+com.android.wallpaperpicker.CropView	field	private float[] mTempCoef;
+com.android.wallpaperpicker.CropView	field	private float[] mTempImageDims;
+com.android.wallpaperpicker.CropView	field	private float[] mTempPoint;
+com.android.wallpaperpicker.CropView	field	private float[] mTempRendererCenter;
+com.android.wallpaperpicker.CropView	field	private long mTouchDownTime;
+com.android.wallpaperpicker.CropView	method	private float[] getImageDims()
+com.android.wallpaperpicker.CropView	method	private void getEdgesHelper(RectF rectF)
+com.android.wallpaperpicker.CropView	method	private void updateCenter()
+com.android.wallpaperpicker.CropView	method	private void updateMinScale(int i, int i2, TiledImageRenderer.TileSource tileSource, boolean z)
+com.android.wallpaperpicker.CropView	method	protected void onSizeChanged(int i, int i2, int i3, int i4)
+com.android.wallpaperpicker.CropView	method	public CropView(Context context)
+com.android.wallpaperpicker.CropView	method	public CropView(Context context, AttributeSet attributeSet)
+com.android.wallpaperpicker.CropView	method	public Point getSourceDimensions()
+com.android.wallpaperpicker.CropView	method	public RectF getCrop()
+com.android.wallpaperpicker.CropView	method	public boolean onScale(ScaleGestureDetector scaleGestureDetector)
+com.android.wallpaperpicker.CropView	method	public boolean onScaleBegin(ScaleGestureDetector scaleGestureDetector)
+com.android.wallpaperpicker.CropView	method	public boolean onTouchEvent(MotionEvent motionEvent)
+com.android.wallpaperpicker.CropView	method	public int getImageRotation()
+com.android.wallpaperpicker.CropView	method	public void moveToLeft()
+com.android.wallpaperpicker.CropView	method	public void onScaleEnd(ScaleGestureDetector scaleGestureDetector)
+com.android.wallpaperpicker.CropView	method	public void setParallaxOffset(float f, RectF rectF)
+com.android.wallpaperpicker.CropView	method	public void setScale(float f)
+com.android.wallpaperpicker.CropView	method	public void setTileSource(TiledImageRenderer.TileSource tileSource, Runnable runnable)
+com.android.wallpaperpicker.CropView	method	public void setTouchCallback(TouchCallback touchCallback)
+com.android.wallpaperpicker.CropView	method	public void setTouchEnabled(boolean z)
+com.android.wallpaperpicker.DrawableTileSource	field	private BitmapTexture mPreview;
+com.android.wallpaperpicker.DrawableTileSource	field	private Drawable mDrawable;
+com.android.wallpaperpicker.DrawableTileSource	field	private int mPreviewSize;
+com.android.wallpaperpicker.DrawableTileSource	field	private int mTileSize;
+com.android.wallpaperpicker.DrawableTileSource	method	public BasicTexture getPreview()
+com.android.wallpaperpicker.DrawableTileSource	method	public Bitmap getTile(int i, int i2, int i3, Bitmap bitmap)
+com.android.wallpaperpicker.DrawableTileSource	method	public DrawableTileSource(Context context, Drawable drawable, int i)
+com.android.wallpaperpicker.DrawableTileSource	method	public int getImageHeight()
+com.android.wallpaperpicker.DrawableTileSource	method	public int getImageWidth()
+com.android.wallpaperpicker.DrawableTileSource	method	public int getRotation()
+com.android.wallpaperpicker.DrawableTileSource	method	public int getTileSize()
+com.android.wallpaperpicker.R$anim	field	public static final int fade_out;
+com.android.wallpaperpicker.R$array	field	public static final int wallpapers;
+com.android.wallpaperpicker.R$array	field	public static final int which_wallpaper_options;
+com.android.wallpaperpicker.R$attr	field	public static final int coordinatorLayoutStyle;
+com.android.wallpaperpicker.R$attr	field	public static final int font;
+com.android.wallpaperpicker.R$attr	field	public static final int fontProviderAuthority;
+com.android.wallpaperpicker.R$attr	field	public static final int fontProviderCerts;
+com.android.wallpaperpicker.R$attr	field	public static final int fontProviderFetchStrategy;
+com.android.wallpaperpicker.R$attr	field	public static final int fontProviderFetchTimeout;
+com.android.wallpaperpicker.R$attr	field	public static final int fontProviderPackage;
+com.android.wallpaperpicker.R$attr	field	public static final int fontProviderQuery;
+com.android.wallpaperpicker.R$attr	field	public static final int fontStyle;
+com.android.wallpaperpicker.R$attr	field	public static final int fontVariationSettings;
+com.android.wallpaperpicker.R$attr	field	public static final int fontWeight;
+com.android.wallpaperpicker.R$attr	field	public static final int keylines;
+com.android.wallpaperpicker.R$attr	field	public static final int layout_anchor;
+com.android.wallpaperpicker.R$attr	field	public static final int layout_anchorGravity;
+com.android.wallpaperpicker.R$attr	field	public static final int layout_behavior;
+com.android.wallpaperpicker.R$attr	field	public static final int layout_dodgeInsetEdges;
+com.android.wallpaperpicker.R$attr	field	public static final int layout_insetEdge;
+com.android.wallpaperpicker.R$attr	field	public static final int layout_keyline;
+com.android.wallpaperpicker.R$attr	field	public static final int statusBarBackground;
+com.android.wallpaperpicker.R$attr	field	public static final int ttcIndex;
+com.android.wallpaperpicker.R$color	field	public static final int notification_action_color_filter;
+com.android.wallpaperpicker.R$color	field	public static final int notification_icon_bg_color;
+com.android.wallpaperpicker.R$color	field	public static final int notification_material_background_media_default_color;
+com.android.wallpaperpicker.R$color	field	public static final int primary_text_default_material_dark;
+com.android.wallpaperpicker.R$color	field	public static final int ripple_material_light;
+com.android.wallpaperpicker.R$color	field	public static final int secondary_text_default_material_dark;
+com.android.wallpaperpicker.R$color	field	public static final int secondary_text_default_material_light;
+com.android.wallpaperpicker.R$color	field	public static final int wallpaper_picker_translucent_gray;
+com.android.wallpaperpicker.R$dimen	field	public static final int compat_button_inset_horizontal_material;
+com.android.wallpaperpicker.R$dimen	field	public static final int compat_button_inset_vertical_material;
+com.android.wallpaperpicker.R$dimen	field	public static final int compat_button_padding_horizontal_material;
+com.android.wallpaperpicker.R$dimen	field	public static final int compat_button_padding_vertical_material;
+com.android.wallpaperpicker.R$dimen	field	public static final int compat_control_corner_material;
+com.android.wallpaperpicker.R$dimen	field	public static final int compat_notification_large_icon_max_height;
+com.android.wallpaperpicker.R$dimen	field	public static final int compat_notification_large_icon_max_width;
+com.android.wallpaperpicker.R$dimen	field	public static final int notification_action_icon_size;
+com.android.wallpaperpicker.R$dimen	field	public static final int notification_action_text_size;
+com.android.wallpaperpicker.R$dimen	field	public static final int notification_big_circle_margin;
+com.android.wallpaperpicker.R$dimen	field	public static final int notification_content_margin_start;
+com.android.wallpaperpicker.R$dimen	field	public static final int notification_large_icon_height;
+com.android.wallpaperpicker.R$dimen	field	public static final int notification_large_icon_width;
+com.android.wallpaperpicker.R$dimen	field	public static final int notification_main_column_padding_top;
+com.android.wallpaperpicker.R$dimen	field	public static final int notification_media_narrow_margin;
+com.android.wallpaperpicker.R$dimen	field	public static final int notification_right_icon_size;
+com.android.wallpaperpicker.R$dimen	field	public static final int notification_right_side_padding_top;
+com.android.wallpaperpicker.R$dimen	field	public static final int notification_small_icon_background_padding;
+com.android.wallpaperpicker.R$dimen	field	public static final int notification_small_icon_size_as_large;
+com.android.wallpaperpicker.R$dimen	field	public static final int notification_subtext_size;
+com.android.wallpaperpicker.R$dimen	field	public static final int notification_top_pad;
+com.android.wallpaperpicker.R$dimen	field	public static final int notification_top_pad_large_text;
+com.android.wallpaperpicker.R$dimen	field	public static final int subtitle_corner_radius;
+com.android.wallpaperpicker.R$dimen	field	public static final int subtitle_outline_width;
+com.android.wallpaperpicker.R$dimen	field	public static final int subtitle_shadow_offset;
+com.android.wallpaperpicker.R$dimen	field	public static final int subtitle_shadow_radius;
+com.android.wallpaperpicker.R$dimen	field	public static final int wallpaperItemIconSize;
+com.android.wallpaperpicker.R$dimen	field	public static final int wallpaperThumbnailHeight;
+com.android.wallpaperpicker.R$dimen	field	public static final int wallpaperThumbnailWidth;
+com.android.wallpaperpicker.R$drawable	field	public static final int ic_actionbar_accept;
+com.android.wallpaperpicker.R$drawable	field	public static final int ic_images;
+com.android.wallpaperpicker.R$drawable	field	public static final int ic_tick;
+com.android.wallpaperpicker.R$drawable	field	public static final int notification_action_background;
+com.android.wallpaperpicker.R$drawable	field	public static final int notification_bg;
+com.android.wallpaperpicker.R$drawable	field	public static final int notification_bg_low;
+com.android.wallpaperpicker.R$drawable	field	public static final int notification_bg_low_normal;
+com.android.wallpaperpicker.R$drawable	field	public static final int notification_bg_low_pressed;
+com.android.wallpaperpicker.R$drawable	field	public static final int notification_bg_normal;
+com.android.wallpaperpicker.R$drawable	field	public static final int notification_bg_normal_pressed;
+com.android.wallpaperpicker.R$drawable	field	public static final int notification_icon_background;
+com.android.wallpaperpicker.R$drawable	field	public static final int notification_template_icon_bg;
+com.android.wallpaperpicker.R$drawable	field	public static final int notification_template_icon_low_bg;
+com.android.wallpaperpicker.R$drawable	field	public static final int notification_tile_bg;
+com.android.wallpaperpicker.R$drawable	field	public static final int notify_panel_notification_icon_bg;
+com.android.wallpaperpicker.R$drawable	field	public static final int tile_shadow_bottom;
+com.android.wallpaperpicker.R$drawable	field	public static final int tile_shadow_top;
+com.android.wallpaperpicker.R$drawable	field	public static final int wallpaper_tile_fg;
+com.android.wallpaperpicker.R$id	field	public static final int action0;
+com.android.wallpaperpicker.R$id	field	public static final int action_container;
+com.android.wallpaperpicker.R$id	field	public static final int action_divider;
+com.android.wallpaperpicker.R$id	field	public static final int action_image;
+com.android.wallpaperpicker.R$id	field	public static final int action_text;
+com.android.wallpaperpicker.R$id	field	public static final int actions;
+com.android.wallpaperpicker.R$id	field	public static final int all;
+com.android.wallpaperpicker.R$id	field	public static final int async;
+com.android.wallpaperpicker.R$id	field	public static final int blocking;
+com.android.wallpaperpicker.R$id	field	public static final int bottom;
+com.android.wallpaperpicker.R$id	field	public static final int cancel_action;
+com.android.wallpaperpicker.R$id	field	public static final int center;
+com.android.wallpaperpicker.R$id	field	public static final int center_horizontal;
+com.android.wallpaperpicker.R$id	field	public static final int center_vertical;
+com.android.wallpaperpicker.R$id	field	public static final int chronometer;
+com.android.wallpaperpicker.R$id	field	public static final int clip_horizontal;
+com.android.wallpaperpicker.R$id	field	public static final int clip_vertical;
+com.android.wallpaperpicker.R$id	field	public static final int cropView;
+com.android.wallpaperpicker.R$id	field	public static final int end;
+com.android.wallpaperpicker.R$id	field	public static final int end_padder;
+com.android.wallpaperpicker.R$id	field	public static final int fill;
+com.android.wallpaperpicker.R$id	field	public static final int fill_horizontal;
+com.android.wallpaperpicker.R$id	field	public static final int fill_vertical;
+com.android.wallpaperpicker.R$id	field	public static final int forever;
+com.android.wallpaperpicker.R$id	field	public static final int icon;
+com.android.wallpaperpicker.R$id	field	public static final int icon_group;
+com.android.wallpaperpicker.R$id	field	public static final int info;
+com.android.wallpaperpicker.R$id	field	public static final int italic;
+com.android.wallpaperpicker.R$id	field	public static final int left;
+com.android.wallpaperpicker.R$id	field	public static final int line1;
+com.android.wallpaperpicker.R$id	field	public static final int line3;
+com.android.wallpaperpicker.R$id	field	public static final int live_wallpaper_list;
+com.android.wallpaperpicker.R$id	field	public static final int loading;
+com.android.wallpaperpicker.R$id	field	public static final int master_wallpaper_list;
+com.android.wallpaperpicker.R$id	field	public static final int media_actions;
+com.android.wallpaperpicker.R$id	field	public static final int menu_delete;
+com.android.wallpaperpicker.R$id	field	public static final int none;
+com.android.wallpaperpicker.R$id	field	public static final int normal;
+com.android.wallpaperpicker.R$id	field	public static final int notification_background;
+com.android.wallpaperpicker.R$id	field	public static final int notification_main_column;
+com.android.wallpaperpicker.R$id	field	public static final int notification_main_column_container;
+com.android.wallpaperpicker.R$id	field	public static final int right;
+com.android.wallpaperpicker.R$id	field	public static final int right_icon;
+com.android.wallpaperpicker.R$id	field	public static final int right_side;
+com.android.wallpaperpicker.R$id	field	public static final int set_wallpaper_button;
+com.android.wallpaperpicker.R$id	field	public static final int start;
+com.android.wallpaperpicker.R$id	field	public static final int status_bar_latest_event_content;
+com.android.wallpaperpicker.R$id	field	public static final int tag_transition_group;
+com.android.wallpaperpicker.R$id	field	public static final int tag_unhandled_key_event_manager;
+com.android.wallpaperpicker.R$id	field	public static final int tag_unhandled_key_listeners;
+com.android.wallpaperpicker.R$id	field	public static final int text2;
+com.android.wallpaperpicker.R$id	field	public static final int text;
+com.android.wallpaperpicker.R$id	field	public static final int third_party_wallpaper_list;
+com.android.wallpaperpicker.R$id	field	public static final int time;
+com.android.wallpaperpicker.R$id	field	public static final int title;
+com.android.wallpaperpicker.R$id	field	public static final int top;
+com.android.wallpaperpicker.R$id	field	public static final int wallpaper_icon;
+com.android.wallpaperpicker.R$id	field	public static final int wallpaper_image;
+com.android.wallpaperpicker.R$id	field	public static final int wallpaper_item_label;
+com.android.wallpaperpicker.R$id	field	public static final int wallpaper_list;
+com.android.wallpaperpicker.R$id	field	public static final int wallpaper_scroll_container;
+com.android.wallpaperpicker.R$id	field	public static final int wallpaper_strip;
+com.android.wallpaperpicker.R$integer	field	public static final int cancel_button_image_alpha;
+com.android.wallpaperpicker.R$integer	field	public static final int status_bar_notification_info_maxnum;
+com.android.wallpaperpicker.R$layout	field	public static final int actionbar_set_wallpaper;
+com.android.wallpaperpicker.R$layout	field	public static final int notification_action;
+com.android.wallpaperpicker.R$layout	field	public static final int notification_action_tombstone;
+com.android.wallpaperpicker.R$layout	field	public static final int notification_media_action;
+com.android.wallpaperpicker.R$layout	field	public static final int notification_media_cancel_action;
+com.android.wallpaperpicker.R$layout	field	public static final int notification_template_big_media;
+com.android.wallpaperpicker.R$layout	field	public static final int notification_template_big_media_custom;
+com.android.wallpaperpicker.R$layout	field	public static final int notification_template_big_media_narrow;
+com.android.wallpaperpicker.R$layout	field	public static final int notification_template_big_media_narrow_custom;
+com.android.wallpaperpicker.R$layout	field	public static final int notification_template_custom_big;
+com.android.wallpaperpicker.R$layout	field	public static final int notification_template_icon_group;
+com.android.wallpaperpicker.R$layout	field	public static final int notification_template_lines_media;
+com.android.wallpaperpicker.R$layout	field	public static final int notification_template_media;
+com.android.wallpaperpicker.R$layout	field	public static final int notification_template_media_custom;
+com.android.wallpaperpicker.R$layout	field	public static final int notification_template_part_chronometer;
+com.android.wallpaperpicker.R$layout	field	public static final int notification_template_part_time;
+com.android.wallpaperpicker.R$layout	field	public static final int wallpaper_cropper;
+com.android.wallpaperpicker.R$layout	field	public static final int wallpaper_picker;
+com.android.wallpaperpicker.R$layout	field	public static final int wallpaper_picker_image_picker_item;
+com.android.wallpaperpicker.R$layout	field	public static final int wallpaper_picker_item;
+com.android.wallpaperpicker.R$layout	field	public static final int wallpaper_picker_live_wallpaper_item;
+com.android.wallpaperpicker.R$layout	field	public static final int wallpaper_picker_third_party_item;
+com.android.wallpaperpicker.R$menu	field	public static final int cab_delete_wallpapers;
+com.android.wallpaperpicker.R$mipmap	field	public static final int ic_launcher_wallpaper;
+com.android.wallpaperpicker.R$plurals	field	public static final int number_of_items_selected;
+com.android.wallpaperpicker.R$string	field	public static final int announce_selection;
+com.android.wallpaperpicker.R$string	field	public static final int crop_wallpaper;
+com.android.wallpaperpicker.R$string	field	public static final int image_load_fail;
+com.android.wallpaperpicker.R$string	field	public static final int pick_image;
+com.android.wallpaperpicker.R$string	field	public static final int pick_wallpaper;
+com.android.wallpaperpicker.R$string	field	public static final int status_bar_notification_info_overflow;
+com.android.wallpaperpicker.R$string	field	public static final int wallpaper_accessibility_name;
+com.android.wallpaperpicker.R$string	field	public static final int wallpaper_delete;
+com.android.wallpaperpicker.R$string	field	public static final int wallpaper_instructions;
+com.android.wallpaperpicker.R$string	field	public static final int wallpaper_load_fail;
+com.android.wallpaperpicker.R$string	field	public static final int wallpaper_set_fail;
+com.android.wallpaperpicker.R$string	field	public static final int which_wallpaper_option_home_screen;
+com.android.wallpaperpicker.R$string	field	public static final int which_wallpaper_option_home_screen_and_lock_screen;
+com.android.wallpaperpicker.R$string	field	public static final int which_wallpaper_option_lock_screen;
+com.android.wallpaperpicker.R$style	field	public static final int ActionBarSetWallpaperStyle;
+com.android.wallpaperpicker.R$style	field	public static final int TextAppearance_Compat_Notification;
+com.android.wallpaperpicker.R$style	field	public static final int TextAppearance_Compat_Notification_Info;
+com.android.wallpaperpicker.R$style	field	public static final int TextAppearance_Compat_Notification_Info_Media;
+com.android.wallpaperpicker.R$style	field	public static final int TextAppearance_Compat_Notification_Line2;
+com.android.wallpaperpicker.R$style	field	public static final int TextAppearance_Compat_Notification_Line2_Media;
+com.android.wallpaperpicker.R$style	field	public static final int TextAppearance_Compat_Notification_Media;
+com.android.wallpaperpicker.R$style	field	public static final int TextAppearance_Compat_Notification_Time;
+com.android.wallpaperpicker.R$style	field	public static final int TextAppearance_Compat_Notification_Time_Media;
+com.android.wallpaperpicker.R$style	field	public static final int TextAppearance_Compat_Notification_Title;
+com.android.wallpaperpicker.R$style	field	public static final int TextAppearance_Compat_Notification_Title_Media;
+com.android.wallpaperpicker.R$style	field	public static final int WallpaperCropperActionBar;
+com.android.wallpaperpicker.R$style	field	public static final int WallpaperTheme;
+com.android.wallpaperpicker.R$style	field	public static final int WallpaperTheme_Picker;
+com.android.wallpaperpicker.R$style	field	public static final int Widget_Compat_NotificationActionContainer;
+com.android.wallpaperpicker.R$style	field	public static final int Widget_Compat_NotificationActionText;
+com.android.wallpaperpicker.R$style	field	public static final int Widget_Support_CoordinatorLayout;
+com.android.wallpaperpicker.SavedWallpaperImages	field	private final Context mContext;
+com.android.wallpaperpicker.SavedWallpaperImages	field	private final ImageDb mDb;
+com.android.wallpaperpicker.SavedWallpaperImages	field	private static String TAG;
+com.android.wallpaperpicker.SavedWallpaperImages	method	public List<SavedWallpaperInfo> loadThumbnailsAndImageIdList()
+com.android.wallpaperpicker.SavedWallpaperImages	method	public SavedWallpaperImages(Context context)
+com.android.wallpaperpicker.SavedWallpaperImages	method	public void deleteImage(int i)
+com.android.wallpaperpicker.SavedWallpaperImages	method	public void writeImage(Bitmap bitmap, byte[] bArr)
+com.android.wallpaperpicker.SavedWallpaperImages$ImageDb	method	public ImageDb(Context context)
+com.android.wallpaperpicker.SavedWallpaperImages$ImageDb	method	public static void moveFromCacheDirectoryIfNecessary(Context context)
+com.android.wallpaperpicker.SavedWallpaperImages$ImageDb	method	public void onCreate(SQLiteDatabase sQLiteDatabase)
+com.android.wallpaperpicker.SavedWallpaperImages$ImageDb	method	public void onUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i2)
+com.android.wallpaperpicker.SavedWallpaperImages$SavedWallpaperInfo	field	private int mDbId;
+com.android.wallpaperpicker.SavedWallpaperImages$SavedWallpaperInfo	method	public SavedWallpaperInfo(int i, File file, Drawable drawable)
+com.android.wallpaperpicker.SavedWallpaperImages$SavedWallpaperInfo	method	public void onDelete(WallpaperPickerActivity wallpaperPickerActivity)
+com.android.wallpaperpicker.ToggleOnTapCallback	field	private ViewPropertyAnimator mAnim;
+com.android.wallpaperpicker.ToggleOnTapCallback	field	private boolean mIgnoreNextTap;
+com.android.wallpaperpicker.ToggleOnTapCallback	field	private final View mViewtoToggle;
+com.android.wallpaperpicker.ToggleOnTapCallback	method	public ToggleOnTapCallback(View view)
+com.android.wallpaperpicker.ToggleOnTapCallback	method	public void onTap()
+com.android.wallpaperpicker.ToggleOnTapCallback	method	public void onTouchDown()
+com.android.wallpaperpicker.ToggleOnTapCallback	method	public void onTouchUp()
+com.android.wallpaperpicker.WallpaperCropActivity	field	private Handler mLoaderHandler;
+com.android.wallpaperpicker.WallpaperCropActivity	field	private HandlerThread mLoaderThread;
+com.android.wallpaperpicker.WallpaperCropActivity	field	private LoadRequest mCurrentLoadRequest;
+com.android.wallpaperpicker.WallpaperCropActivity	field	private Set<Bitmap> mReusableBitmaps;
+com.android.wallpaperpicker.WallpaperCropActivity	field	private byte[] mTempStorageForDecoding;
+com.android.wallpaperpicker.WallpaperCropActivity	field	protected CropView mCropView;
+com.android.wallpaperpicker.WallpaperCropActivity	field	protected View mProgressView;
+com.android.wallpaperpicker.WallpaperCropActivity	field	protected View mSetWallpaperButton;
+com.android.wallpaperpicker.WallpaperCropActivity	method	protected void init()
+com.android.wallpaperpicker.WallpaperCropActivity	method	protected void onLoadRequestComplete(LoadRequest loadRequest, boolean z)
+com.android.wallpaperpicker.WallpaperCropActivity	method	public DialogInterface.OnCancelListener getOnDialogCancelListener()
+com.android.wallpaperpicker.WallpaperCropActivity	method	public boolean enableRotation()
+com.android.wallpaperpicker.WallpaperCropActivity	method	public boolean handleMessage(Message message)
+com.android.wallpaperpicker.WallpaperCropActivity	method	public boolean isActivityDestroyed()
+com.android.wallpaperpicker.WallpaperCropActivity	method	public final void setCropViewTileSource(BitmapRegionTileSource.BitmapSource bitmapSource, boolean z, boolean z2, CropViewScaleAndOffsetProvider cropViewScaleAndOffsetProvider, Runnable runnable)
+com.android.wallpaperpicker.WallpaperCropActivity	method	public void addReusableBitmap(TiledImageRenderer.TileSource tileSource)
+com.android.wallpaperpicker.WallpaperCropActivity	method	public void cropImageAndSetWallpaper(Resources resources, int i, boolean z)
+com.android.wallpaperpicker.WallpaperCropActivity	method	public void cropImageAndSetWallpaper(Uri uri, CropAndSetWallpaperTask.OnBitmapCroppedHandler onBitmapCroppedHandler, boolean z)
+com.android.wallpaperpicker.WallpaperCropActivity	method	public void onCreate(Bundle bundle)
+com.android.wallpaperpicker.WallpaperCropActivity	method	public void onDestroy()
+com.android.wallpaperpicker.WallpaperCropActivity	method	public void setBoundsAndFinish(Point point, boolean z)
+com.android.wallpaperpicker.WallpaperCropActivity	method	public void showActionBarAndTiles()
+com.android.wallpaperpicker.WallpaperCropActivity$CropAndFinishHandler	field	private boolean mShouldFadeOutOnFinish;
+com.android.wallpaperpicker.WallpaperCropActivity$CropAndFinishHandler	field	private final Point mBounds;
+com.android.wallpaperpicker.WallpaperCropActivity$CropAndFinishHandler	method	public CropAndFinishHandler(Point point, boolean z)
+com.android.wallpaperpicker.WallpaperCropActivity$CropAndFinishHandler	method	public void run(boolean z)
+com.android.wallpaperpicker.WallpaperPickerActivity	field	private ActionMode mActionMode;
+com.android.wallpaperpicker.WallpaperPickerActivity	field	private HorizontalScrollView mWallpaperScrollContainer;
+com.android.wallpaperpicker.WallpaperPickerActivity	field	private LinearLayout mWallpapersView;
+com.android.wallpaperpicker.WallpaperPickerActivity	field	private SavedWallpaperImages mSavedImages;
+com.android.wallpaperpicker.WallpaperPickerActivity	field	private View mSelectedTile;
+com.android.wallpaperpicker.WallpaperPickerActivity	field	private View mWallpaperStrip;
+com.android.wallpaperpicker.WallpaperPickerActivity	field	private float mWallpaperParallaxOffset;
+com.android.wallpaperpicker.WallpaperPickerActivity	field	private int mSelectedIndex;
+com.android.wallpaperpicker.WallpaperPickerActivity	method	private View createTileView(ViewGroup viewGroup, WallpaperTileInfo wallpaperTileInfo, boolean z)
+com.android.wallpaperpicker.WallpaperPickerActivity	method	private void addTemporaryWallpaperTile(Uri uri, boolean z)
+com.android.wallpaperpicker.WallpaperPickerActivity	method	protected void init()
+com.android.wallpaperpicker.WallpaperPickerActivity	method	protected void onLoadRequestComplete(WallpaperCropActivity.LoadRequest loadRequest, boolean z)
+com.android.wallpaperpicker.WallpaperPickerActivity	method	protected void onRestoreInstanceState(Bundle bundle)
+com.android.wallpaperpicker.WallpaperPickerActivity	method	protected void setSystemWallpaperVisiblity(final boolean z)
+com.android.wallpaperpicker.WallpaperPickerActivity	method	public ArrayList<WallpaperTileInfo> findBundledWallpapers()
+com.android.wallpaperpicker.WallpaperPickerActivity	method	public Pair<ApplicationInfo, Integer> getWallpaperArrayResourceId()
+com.android.wallpaperpicker.WallpaperPickerActivity	method	public SavedWallpaperImages getSavedImages()
+com.android.wallpaperpicker.WallpaperPickerActivity	method	public boolean onActionItemClicked(ActionMode actionMode, MenuItem menuItem)
+com.android.wallpaperpicker.WallpaperPickerActivity	method	public boolean onCreateActionMode(ActionMode actionMode, Menu menu)
+com.android.wallpaperpicker.WallpaperPickerActivity	method	public boolean onLongClick(View view)
+com.android.wallpaperpicker.WallpaperPickerActivity	method	public boolean onPrepareActionMode(ActionMode actionMode, Menu menu)
+com.android.wallpaperpicker.WallpaperPickerActivity	method	public float getWallpaperParallaxOffset()
+com.android.wallpaperpicker.WallpaperPickerActivity	method	public void addWallpapers(ArrayList<WallpaperTileInfo> arrayList, Resources resources, String str, int i)
+com.android.wallpaperpicker.WallpaperPickerActivity	method	public void changeWallpaperFlags(boolean z)
+com.android.wallpaperpicker.WallpaperPickerActivity	method	public void initializeScrollForRtl()
+com.android.wallpaperpicker.WallpaperPickerActivity	method	public void onActivityResult(int i, int i2, Intent intent)
+com.android.wallpaperpicker.WallpaperPickerActivity	method	public void onClick(View view)
+com.android.wallpaperpicker.WallpaperPickerActivity	method	public void onDestroyActionMode(ActionMode actionMode)
+com.android.wallpaperpicker.WallpaperPickerActivity	method	public void onSaveInstanceState(Bundle bundle)
+com.android.wallpaperpicker.WallpaperPickerActivity	method	public void onStop()
+com.android.wallpaperpicker.WallpaperPickerActivity	method	public void populateWallpapers(ViewGroup viewGroup, List<? extends WallpaperTileInfo> list, boolean z)
+com.android.wallpaperpicker.WallpaperPickerActivity	method	public void selectTile(View view)
+com.android.wallpaperpicker.WallpaperPickerActivity	method	public void setWallpaperButtonEnabled(boolean z)
+com.android.wallpaperpicker.WallpaperPickerActivity	method	public void startActivityForResultSafely(Intent intent, int i)
+com.android.wallpaperpicker.WallpaperPickerActivity	method	public void updateTileIndices()
+com.android.wallpaperpicker.WallpaperUtils	field	private static Point sDefaultWallpaperSize;
+com.android.wallpaperpicker.WallpaperUtils	method	private static float wallpaperTravelToScreenWidthRatio(int i, int i2)
+com.android.wallpaperpicker.WallpaperUtils	method	public static Point getDefaultWallpaperSize(Resources resources, WindowManager windowManager)
+com.android.wallpaperpicker.WallpaperUtils	method	public static boolean isRtl(Resources resources)
+com.android.wallpaperpicker.WallpaperUtils	method	public static void saveWallpaperDimensions(int i, int i2, Activity activity)
+com.android.wallpaperpicker.WallpaperUtils	method	public static void suggestWallpaperDimensionPreK(Activity activity, boolean z)
+com.android.wallpaperpicker.common.CropAndSetWallpaperTask	field	private OnBitmapCroppedHandler mOnBitmapCroppedHandler;
+com.android.wallpaperpicker.common.CropAndSetWallpaperTask	field	private OnEndCropHandler mOnEndCropHandler;
+com.android.wallpaperpicker.common.CropAndSetWallpaperTask	field	private final Context mContext;
+com.android.wallpaperpicker.common.CropAndSetWallpaperTask	field	private final InputStreamProvider mStreamProvider;
+com.android.wallpaperpicker.common.CropAndSetWallpaperTask	field	private final RectF mCropBounds;
+com.android.wallpaperpicker.common.CropAndSetWallpaperTask	field	private int mOutHeight;
+com.android.wallpaperpicker.common.CropAndSetWallpaperTask	field	private int mOutWidth;
+com.android.wallpaperpicker.common.CropAndSetWallpaperTask	field	private int mRotation;
+com.android.wallpaperpicker.common.CropAndSetWallpaperTask	method	public Boolean doInBackground(Integer... numArr)
+com.android.wallpaperpicker.common.CropAndSetWallpaperTask	method	public CropAndSetWallpaperTask(InputStreamProvider inputStreamProvider, Context context, RectF rectF, int i, int i2, int i3, OnEndCropHandler onEndCropHandler)
+com.android.wallpaperpicker.common.CropAndSetWallpaperTask	method	public boolean cropBitmap(int i) throws Throwable
+com.android.wallpaperpicker.common.CropAndSetWallpaperTask	method	public void onPostExecute(Boolean bool)
+com.android.wallpaperpicker.common.CropAndSetWallpaperTask	method	public void setOnBitmapCropped(OnBitmapCroppedHandler onBitmapCroppedHandler)
+com.android.wallpaperpicker.common.DialogUtils	method	public static void executeCropTaskAfterPrompt(Context context, final AsyncTask<Integer, ?, ?> asyncTask, DialogInterface.OnCancelListener onCancelListener)
+com.android.wallpaperpicker.common.InputStreamProvider	method	public Bitmap readCroppedBitmap(RectF rectF, int i, int i2, int i3) throws Throwable
+com.android.wallpaperpicker.common.InputStreamProvider	method	public InputStream newStream()
+com.android.wallpaperpicker.common.InputStreamProvider	method	public Point getImageBounds()
+com.android.wallpaperpicker.common.InputStreamProvider	method	public abstract InputStream newStreamNotNull() throws IOException;
+com.android.wallpaperpicker.common.InputStreamProvider	method	public int getRotationFromExif(Context context)
+com.android.wallpaperpicker.common.InputStreamProvider	method	public static InputStreamProvider fromBytes(final byte[] bArr)
+com.android.wallpaperpicker.common.InputStreamProvider	method	public static InputStreamProvider fromResource(final Resources resources, final int i)
+com.android.wallpaperpicker.common.InputStreamProvider	method	public static InputStreamProvider fromUri(final Context context, final Uri uri)
+com.android.wallpaperpicker.common.Utilities	method	public static boolean isAtLeastN()
+com.android.wallpaperpicker.common.WallpaperManagerCompat	field	private static WallpaperManagerCompat sInstance;
+com.android.wallpaperpicker.common.WallpaperManagerCompat	field	private static final Object sInstanceLock;
+com.android.wallpaperpicker.common.WallpaperManagerCompat	method	public abstract void clear(int i) throws IOException;
+com.android.wallpaperpicker.common.WallpaperManagerCompat	method	public abstract void setStream(InputStream inputStream, Rect rect, boolean z, int i) throws IOException;
+com.android.wallpaperpicker.common.WallpaperManagerCompat	method	public static WallpaperManagerCompat getInstance(Context context)
+com.android.wallpaperpicker.common.WallpaperManagerCompatV16	field	protected WallpaperManager mWallpaperManager;
+com.android.wallpaperpicker.common.WallpaperManagerCompatV16	method	public WallpaperManagerCompatV16(Context context)
+com.android.wallpaperpicker.common.WallpaperManagerCompatV16	method	public void clear(int i) throws IOException
+com.android.wallpaperpicker.common.WallpaperManagerCompatV16	method	public void setStream(InputStream inputStream, Rect rect, boolean z, int i) throws IOException
+com.android.wallpaperpicker.common.WallpaperManagerCompatVN	method	public WallpaperManagerCompatVN(Context context)
+com.android.wallpaperpicker.common.WallpaperManagerCompatVN	method	public void clear(int i) throws IOException
+com.android.wallpaperpicker.common.WallpaperManagerCompatVN	method	public void setStream(InputStream inputStream, Rect rect, boolean z, int i) throws IOException
+com.android.wallpaperpicker.tileinfo.DefaultWallpaperInfo	method	private static DefaultWallpaperInfo getDefaultWallpaper(Context context)
+com.android.wallpaperpicker.tileinfo.DefaultWallpaperInfo	method	private static File getDefaultThumbFile(Context context)
+com.android.wallpaperpicker.tileinfo.DefaultWallpaperInfo	method	private static ResourceWallpaperInfo getPreKKDefaultWallpaperInfo(Context context)
+com.android.wallpaperpicker.tileinfo.DefaultWallpaperInfo	method	private static boolean saveDefaultWallpaperThumb(Context context, Bitmap bitmap)
+com.android.wallpaperpicker.tileinfo.DefaultWallpaperInfo	method	public DefaultWallpaperInfo(Drawable drawable)
+com.android.wallpaperpicker.tileinfo.DefaultWallpaperInfo	method	public boolean clearWallpaper(WallpaperPickerActivity wallpaperPickerActivity, int i)
+com.android.wallpaperpicker.tileinfo.DefaultWallpaperInfo	method	public boolean isNamelessWallpaper()
+com.android.wallpaperpicker.tileinfo.DefaultWallpaperInfo	method	public boolean isSelectable()
+com.android.wallpaperpicker.tileinfo.DefaultWallpaperInfo	method	public boolean setDefaultOnLock(WallpaperPickerActivity wallpaperPickerActivity)
+com.android.wallpaperpicker.tileinfo.DefaultWallpaperInfo	method	public static WallpaperTileInfo get(Context context)
+com.android.wallpaperpicker.tileinfo.DefaultWallpaperInfo	method	public void onClick(WallpaperPickerActivity wallpaperPickerActivity)
+com.android.wallpaperpicker.tileinfo.DefaultWallpaperInfo	method	public void onSave(final WallpaperPickerActivity wallpaperPickerActivity)
+com.android.wallpaperpicker.tileinfo.DrawableThumbWallpaperInfo	field	private final Drawable mThumb;
+com.android.wallpaperpicker.tileinfo.DrawableThumbWallpaperInfo	method	public View createView(Context context, LayoutInflater layoutInflater, ViewGroup viewGroup)
+com.android.wallpaperpicker.tileinfo.DrawableThumbWallpaperInfo	method	public void setThumb(Drawable drawable)
+com.android.wallpaperpicker.tileinfo.FileWallpaperInfo	field	private final File mFile;
+com.android.wallpaperpicker.tileinfo.FileWallpaperInfo	method	public FileWallpaperInfo(File file, Drawable drawable)
+com.android.wallpaperpicker.tileinfo.FileWallpaperInfo	method	public boolean isNamelessWallpaper()
+com.android.wallpaperpicker.tileinfo.FileWallpaperInfo	method	public boolean isSelectable()
+com.android.wallpaperpicker.tileinfo.FileWallpaperInfo	method	public void onClick(final WallpaperPickerActivity wallpaperPickerActivity)
+com.android.wallpaperpicker.tileinfo.FileWallpaperInfo	method	public void onSave(final WallpaperPickerActivity wallpaperPickerActivity)
+com.android.wallpaperpicker.tileinfo.LiveWallpaperInfo	field	private Drawable mThumbnail;
+com.android.wallpaperpicker.tileinfo.LiveWallpaperInfo	field	private WallpaperInfo mInfo;
+com.android.wallpaperpicker.tileinfo.LiveWallpaperInfo	method	public LiveWallpaperInfo(Drawable drawable, WallpaperInfo wallpaperInfo, Intent intent)
+com.android.wallpaperpicker.tileinfo.LiveWallpaperInfo	method	public View createView(Context context, LayoutInflater layoutInflater, ViewGroup viewGroup)
+com.android.wallpaperpicker.tileinfo.LiveWallpaperInfo	method	public void onClick(WallpaperPickerActivity wallpaperPickerActivity)
+com.android.wallpaperpicker.tileinfo.LiveWallpaperInfo$LoaderTask	field	private final Context mContext;
+com.android.wallpaperpicker.tileinfo.LiveWallpaperInfo$LoaderTask	method	public List<LiveWallpaperInfo> doInBackground(Void... voidArr)
+com.android.wallpaperpicker.tileinfo.LiveWallpaperInfo$LoaderTask	method	public LoaderTask(Context context)
+com.android.wallpaperpicker.tileinfo.PickImageInfo	method	private Bitmap getThumbnailOfLastPhoto(Context context)
+com.android.wallpaperpicker.tileinfo.PickImageInfo	method	public View createView(Context context, LayoutInflater layoutInflater, ViewGroup viewGroup)
+com.android.wallpaperpicker.tileinfo.PickImageInfo	method	public void onClick(WallpaperPickerActivity wallpaperPickerActivity)
+com.android.wallpaperpicker.tileinfo.ResourceWallpaperInfo	field	private final Resources mResources;
+com.android.wallpaperpicker.tileinfo.ResourceWallpaperInfo	field	private final int mResId;
+com.android.wallpaperpicker.tileinfo.ResourceWallpaperInfo	method	public ResourceWallpaperInfo(Resources resources, int i, Drawable drawable)
+com.android.wallpaperpicker.tileinfo.ResourceWallpaperInfo	method	public boolean isNamelessWallpaper()
+com.android.wallpaperpicker.tileinfo.ResourceWallpaperInfo	method	public boolean isSelectable()
+com.android.wallpaperpicker.tileinfo.ResourceWallpaperInfo	method	public void onClick(final WallpaperPickerActivity wallpaperPickerActivity)
+com.android.wallpaperpicker.tileinfo.ResourceWallpaperInfo	method	public void onSave(WallpaperPickerActivity wallpaperPickerActivity)
+com.android.wallpaperpicker.tileinfo.ThirdPartyWallpaperInfo	field	private final ResolveInfo mResolveInfo;
+com.android.wallpaperpicker.tileinfo.ThirdPartyWallpaperInfo	field	private final int mIconSize;
+com.android.wallpaperpicker.tileinfo.ThirdPartyWallpaperInfo	method	public ThirdPartyWallpaperInfo(ResolveInfo resolveInfo, int i)
+com.android.wallpaperpicker.tileinfo.ThirdPartyWallpaperInfo	method	public View createView(Context context, LayoutInflater layoutInflater, ViewGroup viewGroup)
+com.android.wallpaperpicker.tileinfo.ThirdPartyWallpaperInfo	method	public static List<ThirdPartyWallpaperInfo> getAll(Context context)
+com.android.wallpaperpicker.tileinfo.ThirdPartyWallpaperInfo	method	public void onClick(WallpaperPickerActivity wallpaperPickerActivity)
+com.android.wallpaperpicker.tileinfo.UriWallpaperInfo	field	public final Uri mUri;
+com.android.wallpaperpicker.tileinfo.UriWallpaperInfo	method	public UriWallpaperInfo(Uri uri)
+com.android.wallpaperpicker.tileinfo.UriWallpaperInfo	method	public boolean isNamelessWallpaper()
+com.android.wallpaperpicker.tileinfo.UriWallpaperInfo	method	public boolean isSelectable()
+com.android.wallpaperpicker.tileinfo.UriWallpaperInfo	method	public void loadThumbnaleAsync(final WallpaperPickerActivity wallpaperPickerActivity)
+com.android.wallpaperpicker.tileinfo.UriWallpaperInfo	method	public void onClick(final WallpaperPickerActivity wallpaperPickerActivity)
+com.android.wallpaperpicker.tileinfo.UriWallpaperInfo	method	public void onSave(final WallpaperPickerActivity wallpaperPickerActivity)
+com.android.wallpaperpicker.tileinfo.WallpaperTileInfo	field	protected View mView;
+com.android.wallpaperpicker.tileinfo.WallpaperTileInfo	method	protected static Bitmap createThumbnail(InputStreamProvider inputStreamProvider, Context context, int i, boolean z)
+com.android.wallpaperpicker.tileinfo.WallpaperTileInfo	method	protected static Point getDefaultThumbSize(Resources resources)
+com.android.wallpaperpicker.tileinfo.WallpaperTileInfo	method	public abstract View createView(Context context, LayoutInflater layoutInflater, ViewGroup viewGroup);
+com.android.wallpaperpicker.tileinfo.WallpaperTileInfo	method	public boolean isNamelessWallpaper()
+com.android.wallpaperpicker.tileinfo.WallpaperTileInfo	method	public boolean isSelectable()
+com.android.wallpaperpicker.tileinfo.WallpaperTileInfo	method	public void onClick(WallpaperPickerActivity wallpaperPickerActivity)
+com.android.wallpaperpicker.tileinfo.WallpaperTileInfo	method	public void onDelete(WallpaperPickerActivity wallpaperPickerActivity)
+com.android.wallpaperpicker.tileinfo.WallpaperTileInfo	method	public void onIndexUpdated(CharSequence charSequence)
+com.android.wallpaperpicker.tileinfo.WallpaperTileInfo	method	public void onSave(WallpaperPickerActivity wallpaperPickerActivity)

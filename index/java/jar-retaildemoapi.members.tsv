@@ -1,0 +1,80 @@
+class	kind	declaration
+com.amazon.kor.demo.lib.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.kor.demo.lib.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.kor.demo.lib.BuildConfig	field	public static final String FLAVOR;
+com.amazon.kor.demo.lib.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.kor.demo.lib.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.kor.demo.lib.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.kor.demo.lib.DemoManager	field	private final DemoManagerImpl demoManagerImpl;
+com.amazon.kor.demo.lib.DemoManager	field	public static final String DEMO_FEATURE_NOT_AVAILABLE_MSG;
+com.amazon.kor.demo.lib.DemoManager	method	public Collection<String> getGamesList()
+com.amazon.kor.demo.lib.DemoManager	method	public DemoManager(Context context)
+com.amazon.kor.demo.lib.DemoManager	method	public String getDemoWarningString(String type)
+com.amazon.kor.demo.lib.DemoManager	method	public boolean isDemo()
+com.amazon.kor.demo.lib.DemoManager	method	public boolean isDemoDevice()
+com.amazon.kor.demo.lib.DemoManager	method	public void registerDemoFlagObserver(DemoFlagObserver watcher)
+com.amazon.kor.demo.lib.DemoManager	method	public void unregisterDemoFlagObserver(DemoFlagObserver watcher)
+com.amazon.kor.demo.lib.impl.AsyncQuery	field	private final FutureTask<T> futureTask;
+com.amazon.kor.demo.lib.impl.AsyncQuery	field	private final IAsyncQueryObserver<T> asyncQueryObserver;
+com.amazon.kor.demo.lib.impl.AsyncQuery	field	private final IQuery<T> query;
+com.amazon.kor.demo.lib.impl.AsyncQuery	field	private static final String TAG;
+com.amazon.kor.demo.lib.impl.AsyncQuery	method	public AsyncQuery(Executor executor, IQuery<T> query, IAsyncQueryObserver<T> asyncQueryObserver)
+com.amazon.kor.demo.lib.impl.AsyncQuery	method	public T getResult() throws ExecutionException, InterruptedException
+com.amazon.kor.demo.lib.impl.AsyncQuery$AsyncQueryCallable	method	private AsyncQueryCallable()
+com.amazon.kor.demo.lib.impl.AsyncQuery$AsyncQueryCallable	method	public T call() throws Exception
+com.amazon.kor.demo.lib.impl.AsyncQuery$AsyncQueryFutureTask	method	protected void done()
+com.amazon.kor.demo.lib.impl.AsyncQuery$AsyncQueryFutureTask	method	public AsyncQueryFutureTask()
+com.amazon.kor.demo.lib.impl.BooleanUriQuery	method	public Boolean getValueFromCursor(Cursor cursor)
+com.amazon.kor.demo.lib.impl.BooleanUriQuery	method	public BooleanUriQuery(ContentResolver contentResolver, Uri uri)
+com.amazon.kor.demo.lib.impl.DemoDeviceFlagQuery	method	public Boolean performQuery()
+com.amazon.kor.demo.lib.impl.DemoManagerConstants	field	private static final String DEMO_CONTENT_AUTHORITY;
+com.amazon.kor.demo.lib.impl.DemoManagerConstants	field	private static final Uri DEMO_CONTENT_URI;
+com.amazon.kor.demo.lib.impl.DemoManagerConstants	field	public static final String DEMO_CONTENT_DIR;
+com.amazon.kor.demo.lib.impl.DemoManagerConstants	field	public static final String DEMO_DEVICE_FLAG_FILE_PATH;
+com.amazon.kor.demo.lib.impl.DemoManagerConstants	field	public static final Uri DEMO_CONTENT_STRING_URI;
+com.amazon.kor.demo.lib.impl.DemoManagerConstants	field	public static final Uri DEMO_MODE_FLAG_URI;
+com.amazon.kor.demo.lib.impl.DemoManagerConstants	method	public static String getContentFolderLocation()
+com.amazon.kor.demo.lib.impl.DemoManagerImpl	field	private final ContentResolver resolver;
+com.amazon.kor.demo.lib.impl.DemoManagerImpl	field	private static final String TAG;
+com.amazon.kor.demo.lib.impl.DemoManagerImpl	field	private static volatile Collection<DemoFlagObserver> demoFlagObservers;
+com.amazon.kor.demo.lib.impl.DemoManagerImpl	field	private static volatile DemoModeQueryManager demoModeManager;
+com.amazon.kor.demo.lib.impl.DemoManagerImpl	method	private void initializeStaticResourcesAsNeeded()
+com.amazon.kor.demo.lib.impl.DemoManagerImpl	method	public Collection<String> getGamesList()
+com.amazon.kor.demo.lib.impl.DemoManagerImpl	method	public DemoManagerImpl(Context context)
+com.amazon.kor.demo.lib.impl.DemoManagerImpl	method	public String getDemoWarningString(String type)
+com.amazon.kor.demo.lib.impl.DemoManagerImpl	method	public boolean isDemoActivated()
+com.amazon.kor.demo.lib.impl.DemoManagerImpl	method	public boolean isDemoDevice()
+com.amazon.kor.demo.lib.impl.DemoManagerImpl	method	public void registerDemoFlagObserver(DemoFlagObserver observer)
+com.amazon.kor.demo.lib.impl.DemoManagerImpl	method	public void unregisterDemoFlagObserver(DemoFlagObserver observer)
+com.amazon.kor.demo.lib.impl.DemoManagerImpl$DemoModeQueryObserver	method	public void onResultChange(Boolean newValue)
+com.amazon.kor.demo.lib.impl.DemoModeQuery	method	public DemoModeQuery(ContentResolver contentResolver)
+com.amazon.kor.demo.lib.impl.DemoModeQueryManager	method	public DemoModeQueryManager(ContentResolver contentResolver, QueryManager.IQueryObserver<Boolean> callback)
+com.amazon.kor.demo.lib.impl.FileQuery	field	protected final File file;
+com.amazon.kor.demo.lib.impl.FileQuery	method	public FileQuery(File file)
+com.amazon.kor.demo.lib.impl.FileQuery	method	public String getPath()
+com.amazon.kor.demo.lib.impl.QueryManager	field	private AsyncQuery<T> asyncQuery;
+com.amazon.kor.demo.lib.impl.QueryManager	field	private final ReadWriteLock asyncQueryLock;
+com.amazon.kor.demo.lib.impl.QueryManager	field	private static final String TAG;
+com.amazon.kor.demo.lib.impl.QueryManager	field	protected final ExecutorService executorService;
+com.amazon.kor.demo.lib.impl.QueryManager	field	protected final IQuery<T> query;
+com.amazon.kor.demo.lib.impl.QueryManager	field	protected final IQueryObserver<T> callback;
+com.amazon.kor.demo.lib.impl.QueryManager	method	private AsyncQuery<T> createAsyncQuery()
+com.amazon.kor.demo.lib.impl.QueryManager	method	private boolean isMainThread()
+com.amazon.kor.demo.lib.impl.QueryManager	method	protected void initiateAsyncQuery()
+com.amazon.kor.demo.lib.impl.QueryManager	method	public QueryManager(IQuery<T> query, IQueryObserver<T> callback)
+com.amazon.kor.demo.lib.impl.QueryManager	method	public T getValue()
+com.amazon.kor.demo.lib.impl.UriQuery	field	protected final ContentResolver contentResolver;
+com.amazon.kor.demo.lib.impl.UriQuery	field	protected final String orderBy;
+com.amazon.kor.demo.lib.impl.UriQuery	field	protected final String selection;
+com.amazon.kor.demo.lib.impl.UriQuery	field	protected final String[] projection;
+com.amazon.kor.demo.lib.impl.UriQuery	field	protected final String[] selectionArgs;
+com.amazon.kor.demo.lib.impl.UriQuery	field	protected final Uri uri;
+com.amazon.kor.demo.lib.impl.UriQuery	method	protected abstract T getValueFromCursor(Cursor cursor);
+com.amazon.kor.demo.lib.impl.UriQuery	method	public T performQuery()
+com.amazon.kor.demo.lib.impl.UriQuery	method	public Uri getUri()
+com.amazon.kor.demo.lib.impl.UriQuery	method	public UriQuery(ContentResolver contentResolver, Uri uri, String[] projection, String selection, String[] selectionArgs, String orderBy)
+com.amazon.kor.demo.lib.impl.UriQueryManager	method	public UriQueryManager(ContentResolver contentResolver, UriQuery<T> uriQuery, QueryManager.IQueryObserver<T> callback)
+com.amazon.kor.demo.lib.utilities.FileHelper	field	private static final String SECURED_STORAGE_DIRECTORY;
+com.amazon.kor.demo.lib.utilities.FileHelper	method	public static File getDemoDeviceFlagFile()
+com.amazon.kor.demo.lib.utilities.FileHelper	method	public static File getDemoDeviceFlagFileFromSecuredLocation()
+com.amazon.kor.demo.lib.utilities.FileHelper	method	public static File getSecuredStorageDirectory()

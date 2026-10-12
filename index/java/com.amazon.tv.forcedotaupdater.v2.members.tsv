@@ -1,0 +1,1411 @@
+class	kind	declaration
+com.amazon.i18nadapter.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.i18nadapter.BuildConfig	field	public static final String LIBRARY_PACKAGE_NAME;
+com.amazon.i18nadapter.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.i18nadapter.ProductNameFormatAdapter	field	private static Boolean slI18nLibraryAvailable;
+com.amazon.i18nadapter.ProductNameFormatAdapter	field	public static final String SL_I18N_SHARED_LIBRARY;
+com.amazon.i18nadapter.ProductNameFormatAdapter	method	public static String format(PackageManager packageManager, Resources resources, String str, Type type, Object... objArr)
+com.amazon.i18nadapter.ProductNameFormatAdapter	method	public static String format(PackageManager packageManager, Resources resources, int i, Type type, Object... objArr)
+com.amazon.i18nadapter.ProductNameFormatAdapter	method	public static boolean cacheAndFetchSLI18nLibraryAvailable(PackageManager packageManager)
+com.amazon.i18nadapter.ProductNameFormatAdapter	method	public static boolean containsSLI18nLibrary(PackageManager packageManager)
+com.amazon.i18nadapter.ProductNameFormatAdapter	method	static ProductNameFormat.Type getSLProductNameFormatType(Type type)
+com.amazon.i18nadapter.ProductNameFormatAdapter	method	static com.amazon.android.util.ProductNameFormat.Type getFosProductNameFormatType(Type type)
+com.amazon.i18nadapter.ProductNameFormatAdapter$Type	method	public int getNameResId(PackageManager packageManager)
+com.amazon.i18nadapter.R	method	private R()
+com.amazon.tv.forcedotaupdater.v2.AmazonPackageManagerConstants	field	public static final String FEATURE_AUTOMOTIVE_REAR_MODE;
+com.amazon.tv.forcedotaupdater.v2.AmazonPackageManagerConstants	field	public static final String FEATURE_ETHERNET_ONLY;
+com.amazon.tv.forcedotaupdater.v2.AmazonPackageManagerConstants	field	public static final String FEATURE_TV_SCREEN;
+com.amazon.tv.forcedotaupdater.v2.AmazonPackageManagerConstants	method	private AmazonPackageManagerConstants()
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallationPresenterImpl	field	private boolean mIsInstallationComplete;
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallationPresenterImpl	field	private final AppUpdatesInstallView mInstallView;
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallationPresenterImpl	field	private final AppUpdatesInstaller mAppUpdatesInstaller;
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallationPresenterImpl	field	private final IMetricsClient mMetricClient;
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallationPresenterImpl	field	private final RemoteButtonBlocker mRemoteButtonBlocker;
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallationPresenterImpl	field	private long mInstallStartTimeMs;
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallationPresenterImpl	field	private static final String ACTION_LAUNCH_SETTINGS_UPDATES;
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallationPresenterImpl	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallationPresenterImpl	method	public AppUpdatesInstallationPresenterImpl(AppUpdatesInstallView appUpdatesInstallView, AppUpdatesInstaller appUpdatesInstaller, RemoteButtonBlocker remoteButtonBlocker, IMetricsClient iMetricsClient)
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallationPresenterImpl	method	public boolean handleBackPress()
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallationPresenterImpl	method	public void cleanUp()
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallationPresenterImpl	method	public void onInstallBeginFailure(AppUpdatesInstallCallback.AppInstallErrorType appInstallErrorType)
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallationPresenterImpl	method	public void onInstallBeginSuccess()
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallationPresenterImpl	method	public void onInstallComplete(boolean z)
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallationPresenterImpl	method	public void startInstallation(List<UpdateManifest> list)
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstaller	field	private AppUpdatesInstallCallback mUpdatesCompleteCallback;
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstaller	field	private final Executor mExecutorService;
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstaller	field	private final OTAController mOtaController;
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstaller	field	private final OTAHelper mOtaHelper;
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstaller	field	private final OtaNotificationManager mOtaNotificationManager;
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstaller	field	private int mFailedUpdateCount;
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstaller	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstaller	method	private UpdateState getUpdateState(OTAController.UpdateStatusListener.Status status)
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstaller	method	public AppUpdatesInstaller(OTAController oTAController, OTAHelper oTAHelper, Executor executor, OtaNotificationManager otaNotificationManager)
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstaller	method	public void cleanUp()
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstaller	method	public void initializeStatusMap(List<UpdateManifest> list)
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstaller	method	public void onStatusUpdate(OTAController.UpdateStatusListener.Status status)
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstaller	method	public void registerListenerToAllUpdates(List<UpdateManifest> list) throws OTAUnavailableException
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstaller	method	public void setAppUpdatesInstallCallback(AppUpdatesInstallCallback appUpdatesInstallCallback)
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstaller	method	public void startInstallation(final List<UpdateManifest> list)
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallerActivity	field	private AnimationDrawable mLoadingAnimationDrawable;
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallerActivity	field	private AppUpdatesInstallationPresenter mInstallationPresenter;
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallerActivity	field	private Handler mainHandler;
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallerActivity	field	private TextView mInstallingInfoTextView;
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallerActivity	field	private TextView mInstallingTextView;
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallerActivity	field	private static final String ACTION_INSTALL_UPDATES;
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallerActivity	field	private static final String EXTRA_UPDATE_MANIFESTS;
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallerActivity	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallerActivity	field	private static final long LOADING_START_DELAY_MS;
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallerActivity	method	private List<UpdateManifest> obtainManifestsFromIntent(Intent intent)
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallerActivity	method	protected void onCreate(Bundle bundle)
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallerActivity	method	protected void onDestroy()
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallerActivity	method	public void exitAppInstallFlow(String str)
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallerActivity	method	public void hideLoadingDots()
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallerActivity	method	public void onBackPressed()
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallerActivity	method	public void showInstallingText()
+com.amazon.tv.forcedotaupdater.v2.AppUpdatesInstallerActivity	method	public void showLoadingDots()
+com.amazon.tv.forcedotaupdater.v2.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.tv.forcedotaupdater.v2.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.tv.forcedotaupdater.v2.BuildConfig	field	public static final String FLAVOR;
+com.amazon.tv.forcedotaupdater.v2.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.tv.forcedotaupdater.v2.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.tv.forcedotaupdater.v2.BuildConfig	field	public static final boolean IS_PROFILES_FEATURE_SUPPORTED;
+com.amazon.tv.forcedotaupdater.v2.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.tv.forcedotaupdater.v2.CheckOtaAvailabilityTask	field	private Context mContext;
+com.amazon.tv.forcedotaupdater.v2.CheckOtaAvailabilityTask	field	private List<UpdateManifest> mManifests;
+com.amazon.tv.forcedotaupdater.v2.CheckOtaAvailabilityTask	field	private OTAController mOtaController;
+com.amazon.tv.forcedotaupdater.v2.CheckOtaAvailabilityTask	field	private OTAHelper mOtaHelper;
+com.amazon.tv.forcedotaupdater.v2.CheckOtaAvailabilityTask	field	private OtaAvailabilityResultCallback mOtaAvailabilityResultCallback;
+com.amazon.tv.forcedotaupdater.v2.CheckOtaAvailabilityTask	field	private Throwable mThrown;
+com.amazon.tv.forcedotaupdater.v2.CheckOtaAvailabilityTask	field	private boolean mServerHasNoUpdates;
+com.amazon.tv.forcedotaupdater.v2.CheckOtaAvailabilityTask	field	private boolean mUpdateAvailable;
+com.amazon.tv.forcedotaupdater.v2.CheckOtaAvailabilityTask	field	private boolean mUpdatesAlreadyDownloaded;
+com.amazon.tv.forcedotaupdater.v2.CheckOtaAvailabilityTask	field	private final boolean mForcedUpdatesOnly;
+com.amazon.tv.forcedotaupdater.v2.CheckOtaAvailabilityTask	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.CheckOtaAvailabilityTask	method	public CheckOtaAvailabilityTask(OTAController oTAController, OTAHelper oTAHelper, OtaAvailabilityResultCallback otaAvailabilityResultCallback, boolean z, Context context)
+com.amazon.tv.forcedotaupdater.v2.CheckOtaAvailabilityTask	method	public Void doInBackground(Void... voidArr)
+com.amazon.tv.forcedotaupdater.v2.CheckOtaAvailabilityTask	method	public void onPostExecute(Void r3)
+com.amazon.tv.forcedotaupdater.v2.FOTAHelper	field	private boolean mHasOobeUpdate;
+com.amazon.tv.forcedotaupdater.v2.FOTAHelper	field	private boolean mHasOsUpdate;
+com.amazon.tv.forcedotaupdater.v2.FOTAHelper	field	private final IMetricsClient mMetricsClient;
+com.amazon.tv.forcedotaupdater.v2.FOTAHelper	field	private final Resources mResources;
+com.amazon.tv.forcedotaupdater.v2.FOTAHelper	field	private static final String PACKAGE_OOBE;
+com.amazon.tv.forcedotaupdater.v2.FOTAHelper	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.FOTAHelper	field	static final Map<OTAFailure, String> OTA_FAILURE_ERROR_CODE_MAP;
+com.amazon.tv.forcedotaupdater.v2.FOTAHelper	field	static final String UNKNOWN_ERROR_CODE;
+com.amazon.tv.forcedotaupdater.v2.FOTAHelper	method	private OTAFailure getFailureReason(UpdatesProgress updatesProgress)
+com.amazon.tv.forcedotaupdater.v2.FOTAHelper	method	private void emitUpdateAvailableMetric(OfferedUpdate offeredUpdate)
+com.amazon.tv.forcedotaupdater.v2.FOTAHelper	method	public FOTAHelper(Resources resources, IMetricsClient iMetricsClient)
+com.amazon.tv.forcedotaupdater.v2.FOTAHelper	method	public String getErrorCodeForFailure(UpdatesProgress updatesProgress)
+com.amazon.tv.forcedotaupdater.v2.FOTAHelper	method	public boolean hasOobeUpdate()
+com.amazon.tv.forcedotaupdater.v2.FOTAHelper	method	public boolean hasOsUpdate()
+com.amazon.tv.forcedotaupdater.v2.FOTAHelper	method	public int getInstallingTextId()
+com.amazon.tv.forcedotaupdater.v2.FOTAHelper	method	public void parseAvailableUpdates(List<OfferedUpdate> list)
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private ConnectivityManager mConnectivityManager;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private Context mContext;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private Handler mHandler;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private OTAController mOtaController;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private OTAHelper mOtaHelper;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private OtaView mOtaView;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private boolean mAbUpdateRebootPending;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private boolean mHasInstallStarted;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private boolean mInstallMetricEmitted;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private boolean mIsDfuCheckAlreadyInitiated;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private boolean mIsDfuInProgress;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private boolean mIsDfuStarted;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private boolean mIsNetworkLost;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private boolean mIsSlowNetworkReported;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private final AtomicReference<Float> mDownloadProgress;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private final IMetricsClient mMetricsClient;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private final IRemoteDfuManager mRemoteDfuManager;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private final Map<String, Double> appToInstallTimeMap;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private float mAverageSpeed;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private float mLastDownloadProgress;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private int mDownloadProgressStuckCount;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private int mHungAttemptThreshold;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private int mProgressPollCount;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private int mTotalAttemptsAfterThresholdTime;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private long mDownloadStartTimeMs;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private long mForcedOtaCheckStartTimeMS;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private long mInstallStartTimeMs;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private long mLastProgressTimeMs;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private static List<Integer> sBackPressTraps;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private static final Float DOWNLOAD_COMPLETE;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private static final String INTENT_ACTION_OTA_INSTALL;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private static final float SMOOTHING_FACTOR;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private static final int ATTEMPTS_BEFORE_ERROR;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private static final int NETWORK_LOSS_CONNECTIVITY_REPORT;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private static final int OTA_NO_SLOW_NETWORK_WINDOW_ATTEMPT;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private static final int THRESHOLD_DOWNLOAD_PROGRESS_HUNG_ATTEMPT;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private static final int THRESHOLD_DOWNLOAD_PROGRESS_HUNG_ATTEMPT_RSE;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private static final long ACCEPTABLE_NETWORK_OUTAGE_MS;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private static final long DFU_UI_TRANSITION_DELAY_MS;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private static final long INFINITE_TIME;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private static final long MIN_TIME_BEFORE_ERROR;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	field	private static final long TIME_POLLING_INTERVAL_MS;
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	private long calculateTimeToDownload(float f)
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	private void checkAndStartDfu()
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	private void emitDownloadAppMetric(OTAController.UpdateStatusListener.Status status)
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	private void emitInstallMetric()
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	private void exitDfuFlow()
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	private void handleDownloadStuck()
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	private void handleOtaDownloadFailedStatus(OTAController.UpdateStatusListener.Status status, String str, String str2)
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	private void handleUpdatesFinished()
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	private void logNetworkLoss()
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	private void logSlowNetworkIfNeeded()
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	private void registerOtaUpdateListener()
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	private void storeInstallMetric(OTAController.UpdateStatusListener.Status status)
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	public ForcedOtaPresenterImpl(OtaView otaView, OTAController oTAController, OTAHelper oTAHelper, Handler handler, ConnectivityManager connectivityManager, IRemoteDfuManager iRemoteDfuManager, boolean z, IMetricsClient iMetricsClient, Context context)
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	public boolean checkAndStartDfu(String str)
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	public boolean isNetworkConnected()
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	public void checkForUpdates(RetryableOtaChecker retryableOtaChecker)
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	public void cleanUp()
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	public void exitOtaFlow()
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	public void exitOtaFlow(long j)
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	public void fetchEducationalHints(final IConfigFetchCallback<EducationalHintsConfigModel> iConfigFetchCallback)
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	public void handleDownloadProgressMessage(float f)
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	public void handleNetworkLoss()
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	public void onBackPressed()
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	public void onDfuCompleted()
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	public void onDfuError()
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	public void onDfuStarted()
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	public void onFailedToGetUpdates(String str)
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	public void onNoDfuUpdate()
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	public void onNoUpdatesFound()
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	public void onOtaAvailable(List<UpdateManifest> list, boolean z)
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	public void onStatusUpdate(OTAController.UpdateStatusListener.Status status)
+com.amazon.tv.forcedotaupdater.v2.ForcedOtaPresenterImpl	method	public void recordEventAndShowOtaError(String str)
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	field	private AutoViewAnimator mAutoViewAnimator;
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	field	private BroadcastReceiver mWifiDiagBroadcastReceiver;
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	field	private ForcedOtaPresenter mForcedOtaPresenter;
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	field	private OTAHelper mOtaHelper;
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	field	private OtaViewHolder mOtaViewHolder;
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	field	private boolean mIsRseDevice;
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	field	private static final String ACCOUNT_SCREEN;
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	field	private static final String ACTION_RESTORE_OOBE;
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	field	private static final String EXTRA_AB_UPDATE_REBOOT_PENDING;
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	field	private static final String EXTRA_EVENT_DATA;
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	field	private static final String EXTRA_RESTORE_POINT;
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	field	private static final String NETWORK_SCREEN;
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	field	private static final String WIFI_DIAG_BROADCAST_RECEIVER_PERMISSION;
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	field	private static final String WIFI_DIAG_GOOD_CONNECTION;
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	field	private static final String WIFI_DIAG_INTENT_ACTION;
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	field	private static final String WIFI_DIAG_INTENT_FILTER;
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	field	public static final String EXTRA_REMOTE_INPUT_DESCRIPTOR;
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	method	private void registerWifiDiagBroadcastReceiver()
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	method	private void sendWifiDiagIntent()
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	method	private void startCheckingUpdates(final RetryableOtaChecker retryableOtaChecker)
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	method	protected void onCreate(Bundle bundle)
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	method	protected void onDestroy()
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	method	public int getCurrentLayoutId()
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	method	public void exitOtaFlow(boolean z)
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	method	public void hideSlowNetworkMessage()
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	method	public void initEducationalHintAnimator(EducationalHintsConfigModel educationalHintsConfigModel)
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	method	public void onBackPressed()
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	method	public void rewindToNetworkSetup()
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	method	public void showCheckingUpdates()
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	method	public void showDownloadingUpdates()
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	method	public void showInstallReminder()
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	method	public void showInstallingUpdates(String str, Intent intent)
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	method	public void showNetworkLost()
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	method	public void showOtaError()
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	method	public void showRemoteDfuCompletedView()
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	method	public void showRemoteDfuProgressView()
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	method	public void showRemoteDfuStatusView(String str)
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	method	public void showSlowNetworkMessage()
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	method	public void unregisterWifiDiagBroadcastReceiver()
+com.amazon.tv.forcedotaupdater.v2.ForcedUpdateActivity	method	public void updateDownloadProgress(int i)
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	field	private AutoViewAnimator mAutoViewAnimator;
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	field	private BroadcastReceiver mWifiDiagBroadcastReceiver;
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	field	private FOTAHelper mFotaHelper;
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	field	private FotaPresenter mFotaPresenter;
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	field	private FotaViewHolder mFotaViewHolder;
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	field	private IMetricsClient mMetricsClient;
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	field	private Resources mResources;
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	field	private boolean mIsRseDevice;
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	field	private static final String ACCOUNT_SCREEN;
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	field	private static final String ACTION_RESTORE_OOBE;
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	field	private static final String EXTRA_AB_UPDATE_REBOOT_PENDING;
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	field	private static final String EXTRA_EVENT_DATA;
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	field	private static final String EXTRA_REMOTE_INPUT_DESCRIPTOR;
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	field	private static final String EXTRA_RESTORE_POINT;
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	field	private static final String EXTRA_RESTORE_POINT_MOVE_FORWARD;
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	field	private static final String NETWORK_SCREEN;
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	field	private static final String PROGRESS_PERCENTAGE_SUFFIX;
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	field	private static final String WIFI_DIAG_BROADCAST_RECEIVER_PERMISSION;
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	field	private static final String WIFI_DIAG_GOOD_CONNECTION;
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	field	private static final String WIFI_DIAG_INTENT_ACTION;
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	field	private static final String WIFI_DIAG_INTENT_FILTER;
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	field	private static final int MAX_REMAINING_MINUTES;
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	field	private static final int ONE_REMAINING_MINUTE;
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	private String getInstallationText()
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	private boolean checkViewExists()
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	private void emitOtaErrorMetric(String str)
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	private void registerWifiDiagBroadcastReceiver()
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	private void sendWifiDiagIntent()
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	private void showCheckingForUpdatesViewWithText(int i)
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	private void showOtaErrorView(String str, String str2)
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	private void showSecondaryText(String str)
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	private void startOta()
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	protected void onCreate(Bundle bundle)
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	protected void onDestroy()
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public int getCurrentLayoutId()
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public void exitOtaFlow(boolean z)
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public void hideSecondaryText()
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public void initEducationalHintAnimator(EducationalHintsConfigModel educationalHintsConfigModel)
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public void onBackPressed()
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public void rewindToNetworkSetup()
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public void showCheckingForUpdates()
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public void showDeviceUpToDate()
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public void showDownloadInProgress(int i)
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public void showDownloadLimitExceeded()
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public void showInstallReminder()
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public void showInstallationInProgress(int i)
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public void showNetworkLost()
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public void showOtaError()
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public void showOtaError(String str)
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public void showOtaFailure()
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public void showOtaFailureOnLowStorage()
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public void showOtaPausedUnknownReason()
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public void showOtaSuccess()
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public void showPausedByApp()
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public void showProgressStuckMessage()
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public void showRemoteDfuCheckingForUpdatesView()
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public void showRemoteDfuCompletedView()
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public void showRemoteDfuNoUpdatesView()
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public void showRemoteDfuProgressView()
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public void showSlowProgressMessage()
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public void showUpdateDownloaded(Intent intent, int i)
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public void showWaitingForRetry()
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public void showWaitingForStorage()
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public void unregisterWifiDiagBroadcastReceiver()
+com.amazon.tv.forcedotaupdater.v2.FotaActivity	method	public void updateRemainingTime(int i)
+com.amazon.tv.forcedotaupdater.v2.FotaApplication	field	private GlobalSettingsDbHelper mGlobalSettingsDbHelper;
+com.amazon.tv.forcedotaupdater.v2.FotaApplication	field	private IMetricsClient mMetricClient;
+com.amazon.tv.forcedotaupdater.v2.FotaApplication	field	private List<UpdateManifest> mManifests;
+com.amazon.tv.forcedotaupdater.v2.FotaApplication	field	private String mInputDescriptor;
+com.amazon.tv.forcedotaupdater.v2.FotaApplication	field	private static FotaApplication sInstance;
+com.amazon.tv.forcedotaupdater.v2.FotaApplication	field	public static final String APPLICATION_NAME;
+com.amazon.tv.forcedotaupdater.v2.FotaApplication	method	public GlobalSettingsDbHelper getGlobalSettingsHelper()
+com.amazon.tv.forcedotaupdater.v2.FotaApplication	method	public IMetricsClient getMetricClient()
+com.amazon.tv.forcedotaupdater.v2.FotaApplication	method	public List<UpdateManifest> getManifests()
+com.amazon.tv.forcedotaupdater.v2.FotaApplication	method	public String getInputDescriptor()
+com.amazon.tv.forcedotaupdater.v2.FotaApplication	method	public static FotaApplication getInstance()
+com.amazon.tv.forcedotaupdater.v2.FotaApplication	method	public void onCreate()
+com.amazon.tv.forcedotaupdater.v2.FotaApplication	method	public void setInputDescriptor(String str)
+com.amazon.tv.forcedotaupdater.v2.FotaApplication	method	public void setManifests(List<UpdateManifest> list)
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private FotaView mFotaView;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private UpdatesProgress mLastUpdateProgress;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private boolean mIsAbUpdateRebootPending;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private boolean mIsDfuCheckAlreadyInitiated;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private boolean mIsDfuInProgress;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private boolean mIsDfuStarted;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private final AtomicReference<UpdatesProgress> mCurrentUpdateProgress;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private final ConnectivityManager mConnectivityManager;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private final FOTAHelper mFotaHelper;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private final Handler mHandler;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private final IMetricsClient mMetricsClient;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private final IRemoteDfuManager mRemoteDfuManager;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private final OTAController mOtaController;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private final Set<String> mPackageOtaFailureSet;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private final Set<String> mPackageOtaSuccessSet;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private final SharedPreferences mSharedPreferences;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private float mAverageSpeed;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private int mProgressStuckCount;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private int mRetryCheckCount;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private int mRetryDelayMs;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private int mTotalUpdatesOffered;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private long mLastProgressTimeMs;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private long mOtaDownloadStartTime;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private long mOtaStartTime;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private static List<Integer> sBackPressTraps;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private static final String INTENT_ACTION_OTA_INSTALL;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private static final String PREF_FOTA_START_TIME;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private static final float DOWNLOAD_COMPLETE;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private static final float SMOOTHING_FACTOR;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private static final int BACKOFF_MULTIPLIER;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private static final int MAX_OTA_RETRY_COUNT;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private static final int OTA_RETRY_CHECK_DELAY_MS;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private static final int PROGRESS_STUCK_COUNT_THRESHOLD;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private static final long DFU_START_TIMEOUT_MS;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private static final long DFU_UI_TRANSITION_DELAY_MS;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private static final long OTA_MESSAGE_DISPLAY_TIMEOUT_MS;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	private static final long OTA_SLOW_PROGRESS_PERCENTAGE_THRESHOLD;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	field	static final long PROGRESS_POLL_INTERVAL_MS;
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	private boolean isNetworkConnected()
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	private void checkAndStartDfu()
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	private void emitCommonMetricsOnStatusUpdate(UpdatesProgress updatesProgress)
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	private void emitOsOtaDownloadSuccessMetric(OfferedUpdate offeredUpdate)
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	private void emitOsOtaDownloadTimeMetric(OfferedUpdate offeredUpdate)
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	private void emitOtaBackPressedMetric(String str)
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	private void emitOtaFailureMetric(OfferedUpdate offeredUpdate)
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	private void emitOtaSlowStateMetric()
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	private void emitOtaStatusMetric(UpdatesProgress updatesProgress)
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	private void emitOtaStuckMetric()
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	private void emitOtaSuccessMetric(OfferedUpdate offeredUpdate)
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	private void exitDfuFlow()
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	private void handlePausedByAppStatusReason()
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	private void handlePausedUnknownStatusReason()
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	private void handleQueuedForWifiStatusReason()
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	private void handleWaitingForStorageStatusReason()
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	public FotaPresenterImpl(Handler handler, FotaView fotaView, FOTAHelper fOTAHelper, OTAController oTAController, IMetricsClient iMetricsClient, IRemoteDfuManager iRemoteDfuManager, SharedPreferences sharedPreferences, ConnectivityManager connectivityManager)
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	public Runnable getOtaProgressPollRunnable()
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	public boolean checkAndStartDfu(String str)
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	public void checkAndInstallForcedUpdates()
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	public void checkAndInstallForcedUpdates(long j)
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	public void cleanUp()
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	public void emitOtaExceptionMetric(String str)
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	public void emitOtaTotalTimeMetric(long j, UpdateType updateType, int i)
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	public void exitOtaFlow(long j)
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	public void fetchEducationalHints(final IConfigFetchCallback<EducationalHintsConfigModel> iConfigFetchCallback)
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	public void onBackPressed()
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	public void onDfuCompleted()
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	public void onDfuError()
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	public void onDfuStarted()
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	public void onNoDfuUpdate()
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	public void onProgressUpdate(UpdatesProgress updatesProgress)
+com.amazon.tv.forcedotaupdater.v2.FotaPresenterImpl	method	public void updateMinutesRemaining(int i, int i2)
+com.amazon.tv.forcedotaupdater.v2.GlobalSettingsDbHelper	field	private Context mContext;
+com.amazon.tv.forcedotaupdater.v2.GlobalSettingsDbHelper	method	public GlobalSettingsDbHelper(Context context)
+com.amazon.tv.forcedotaupdater.v2.GlobalSettingsDbHelper	method	public String readFromSettingsDb(String str)
+com.amazon.tv.forcedotaupdater.v2.GlobalSettingsDbHelper	method	public void writeToSettingsDb(String str, String str2)
+com.amazon.tv.forcedotaupdater.v2.HomeLongPressReceiver	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.HomeLongPressReceiver	method	public void onReceive(Context context, Intent intent)
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	private static final String METRIC_COUNTER_APP_OTA_ERROR_HEADER;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	private static final String METRIC_COUNTER_ERROR_HEADER;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String APP_UPDATES_PRESENTER;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String DEFAULT_EXCEPTION_PIVOT;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String FATAL_NO_DOWNLOAD_PROGRESS_APP_OTA;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String FATAL_NO_DOWNLOAD_PROGRESS_SYSTEM_OTA;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String FOTA_DEFAULT_ERROR;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String FOTA_ERROR_EXCEPTION;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String FOTA_ERROR_FAILED_TO_GET_UPDATES;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String FOTA_ERROR_STATUS_DEDUPED;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String FOTA_ERROR_STATUS_EXCEPTION;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String FOTA_ERROR_STATUS_FAILED;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String FOTA_ERROR_STATUS_UNKNOWN;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String FOTA_ERROR_SYSTEM_OTA_DOWNLOAD_STUCK;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String FOTA_ERROR_UNABLE_TO_INSTALL;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_APP_DOWNLOAD_SUCCESS;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_APP_INSTALL_BEGIN_FAILURE;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_APP_INSTALL_BEGIN_FAILURE_HAS_OS_UPDATES;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_APP_INSTALL_BEGIN_FAILURE_NULL_UPDATES;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_APP_INSTALL_BEGIN_FAILURE_OTA_EXCEPTION;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_APP_INSTALL_BEGIN_FAILURE_OTHER_EXCEPTION;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_APP_INSTALL_BEGIN_FAILURE_UPDATES_NOT_READY;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_APP_INSTALL_BEGIN_SUCCESS;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_APP_TIME_DOWNLOAD;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_APP_TIME_INSTALL;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_BACK_PRESS_HONOURED_PIVOT;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_COUNTER_APP_INSTALL_COMPLETE;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_COUNTER_APP_INSTALL_COMPLETE_WITH_ERRORS;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_COUNTER_APP_INSTALL_TIME;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_COUNTER_DOWNLOAD_SUCCESS;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_COUNTER_EDUCATIONAL_HINT_CACHE_HIT;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_COUNTER_EDUCATIONAL_HINT_FETCH_FAILURE;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_COUNTER_EDUCATIONAL_HINT_FETCH_SUCCESS;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_COUNTER_FAILED_OTA_CHECK;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_COUNTER_FORCED_APP_UPDATE;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_COUNTER_FORCED_OS_UPDATE;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_COUNTER_FORCED_OTA_CHECK_ATTEMPTS;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_COUNTER_NETWORK_LOST;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_COUNTER_NETWORK_SLOW;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_COUNTER_NO_UPDATE;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_COUNTER_TOTAL_ATTEMPTS;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_COUNTER_UPDATE_FOUND;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_COUNTER_USER_PRESSED_BACK_UPON_ERROR;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_DFU_ERROR;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_DFU_NO_UPDATE;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_DFU_STARTED;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_DFU_UPDATED;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_FORCED_OTA_ERROR;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_FORCED_OTA_ERROR_CODE;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_FORCED_OTA_ERROR_EXCEPTION;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_FOTA_ERROR_FAILED_TO_GET_UPDATES;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_FOTA_ERROR_STATUS_DEDUPED;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_FOTA_ERROR_STATUS_EXCEPTION;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_FOTA_ERROR_STATUS_FAILED;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_FOTA_ERROR_STATUS_UNKNOWN;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_FOTA_ERROR_SYSTEM_OTA_DOWNLOAD_STUCK;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_FOTA_ERROR_UNABLE_TO_INSTALL;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_GROUP_ID;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_OS_OTA_DOWNLOAD_SUCCESSFUL;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_OS_OTA_TOTAL_DOWNLOAD_TIME;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_OTA_BACK_PRESS;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_OTA_ERROR;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_OTA_EXCEPTION;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_OTA_FAILURE;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_OTA_INSTALL_COMPLETE;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_OTA_SLOW_UPDATE;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_OTA_STATUS;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_OTA_SUCCESS;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_OTA_TOTAL_TIME;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_OTA_UPDATE_AVAILABLE;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_OTA_UPDATE_STUCK;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_SOURCE_FOTA;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_TIMER_FORCED_OTA_TIME_SPENT_BEFORE_ERROR_MS;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_TIMER_FORCED_OTA_TIME_SPENT_BEFORE_NETWORK_ERROR_MS;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_TIMER_FORCED_OTA_TOTAL_TIME_SPENT_MS;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_TIME_DOWNLOAD;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_TIME_EDUCATIONAL_HINT_FETCH_FAILURE;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_TIME_EDUCATIONAL_HINT_FETCH_SUCCESS;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_TIME_INSTALL;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String METRIC_TRIGGER_APP_UPDATES_INSTALL;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String OTA_CHECKER_SERVICE;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String OTA_PRESENTER;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	field	public static final String PIVOT_BACK_PRESS_IGNORED_PIVOT;
+com.amazon.tv.forcedotaupdater.v2.MetricsConstants	method	private MetricsConstants()
+com.amazon.tv.forcedotaupdater.v2.OTAHelper	field	private HashMap<Long, UpdateState> mManifestToStateMap;
+com.amazon.tv.forcedotaupdater.v2.OTAHelper	field	private HashMap<String, OTAController.UpdateStatusListener.Status> mStatusMap;
+com.amazon.tv.forcedotaupdater.v2.OTAHelper	field	private List<UpdateManifest> mForcedManifestList;
+com.amazon.tv.forcedotaupdater.v2.OTAHelper	field	private Resources mResources;
+com.amazon.tv.forcedotaupdater.v2.OTAHelper	field	private boolean mHasFailedOsUpdate;
+com.amazon.tv.forcedotaupdater.v2.OTAHelper	field	private boolean mHasOobeUpdate;
+com.amazon.tv.forcedotaupdater.v2.OTAHelper	field	private boolean mIsOSUpdateAvailable;
+com.amazon.tv.forcedotaupdater.v2.OTAHelper	field	private static final List<UpdateState> UPDATE_STATES_FAILED;
+com.amazon.tv.forcedotaupdater.v2.OTAHelper	field	private static final List<UpdateState> UPDATE_STATES_IN_PROGRESS;
+com.amazon.tv.forcedotaupdater.v2.OTAHelper	field	private static final List<UpdateState> UPDATE_STATES_READY_FOR_INSTALL;
+com.amazon.tv.forcedotaupdater.v2.OTAHelper	field	private static final String PACKAGE_OOBE;
+com.amazon.tv.forcedotaupdater.v2.OTAHelper	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.OTAHelper	field	private static final float PERCENTAGE_MULTIPLIER;
+com.amazon.tv.forcedotaupdater.v2.OTAHelper	method	public OTAHelper(Resources resources)
+com.amazon.tv.forcedotaupdater.v2.OtaCheckReceiver	field	private static final String ACTION_CHECK_FOR_UPDATES;
+com.amazon.tv.forcedotaupdater.v2.OtaCheckReceiver	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.OtaCheckReceiver	field	private static final int JOB_ID;
+com.amazon.tv.forcedotaupdater.v2.OtaCheckReceiver	method	public void onReceive(Context context, Intent intent)
+com.amazon.tv.forcedotaupdater.v2.OtaChecker	field	private OtaNotificationManager mOtaNotificationManager;
+com.amazon.tv.forcedotaupdater.v2.OtaChecker	field	private final IMetricsClient mMetricsClient;
+com.amazon.tv.forcedotaupdater.v2.OtaChecker	field	private final OtaCheckCompleteCallback mOtaCheckCompleteCallback;
+com.amazon.tv.forcedotaupdater.v2.OtaChecker	field	private final RetryableOtaChecker mRetryableOtaChecker;
+com.amazon.tv.forcedotaupdater.v2.OtaChecker	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.OtaChecker	method	public OtaChecker(RetryableOtaChecker retryableOtaChecker, OtaNotificationManager otaNotificationManager, OtaCheckCompleteCallback otaCheckCompleteCallback, IMetricsClient iMetricsClient)
+com.amazon.tv.forcedotaupdater.v2.OtaChecker	method	public void notifyUpdatesIfPresent()
+com.amazon.tv.forcedotaupdater.v2.OtaChecker	method	public void onFailedToGetUpdates(String str)
+com.amazon.tv.forcedotaupdater.v2.OtaChecker	method	public void onNoUpdatesFound()
+com.amazon.tv.forcedotaupdater.v2.OtaChecker	method	public void onOtaAvailable(List<UpdateManifest> list, boolean z)
+com.amazon.tv.forcedotaupdater.v2.OtaCheckerJobService	field	private JobParameters mJobParams;
+com.amazon.tv.forcedotaupdater.v2.OtaCheckerJobService	field	private OTAController mOtaController;
+com.amazon.tv.forcedotaupdater.v2.OtaCheckerJobService	field	private boolean mJobFinishedCalled;
+com.amazon.tv.forcedotaupdater.v2.OtaCheckerJobService	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.OtaCheckerJobService	method	private void checkForUpdates()
+com.amazon.tv.forcedotaupdater.v2.OtaCheckerJobService	method	public boolean onStartJob(JobParameters jobParameters)
+com.amazon.tv.forcedotaupdater.v2.OtaCheckerJobService	method	public boolean onStopJob(JobParameters jobParameters)
+com.amazon.tv.forcedotaupdater.v2.OtaCheckerJobService	method	public void onOtaCheckComplete()
+com.amazon.tv.forcedotaupdater.v2.OtaCheckerJobService	method	public void onTimeout(int i, int i2)
+com.amazon.tv.forcedotaupdater.v2.OtaDownloadedNotificationActivity	field	private Button mCancelButton;
+com.amazon.tv.forcedotaupdater.v2.OtaDownloadedNotificationActivity	field	private Button mOkButton;
+com.amazon.tv.forcedotaupdater.v2.OtaDownloadedNotificationActivity	field	private static final List<String> OTA_LISTENERS;
+com.amazon.tv.forcedotaupdater.v2.OtaDownloadedNotificationActivity	field	private static final String DEFERRED_OS_INSTALL_INTENT_ACTION;
+com.amazon.tv.forcedotaupdater.v2.OtaDownloadedNotificationActivity	field	private static final String PERMISSION_OTA_CONTROLLER;
+com.amazon.tv.forcedotaupdater.v2.OtaDownloadedNotificationActivity	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.OtaDownloadedNotificationActivity	method	private void sendInstallOTABroadcast()
+com.amazon.tv.forcedotaupdater.v2.OtaDownloadedNotificationActivity	method	protected void onCreate(Bundle bundle)
+com.amazon.tv.forcedotaupdater.v2.OtaDownloadedNotificationActivity	method	protected void onPause()
+com.amazon.tv.forcedotaupdater.v2.OtaDownloadedNotificationActivity	method	public void onClick(View view)
+com.amazon.tv.forcedotaupdater.v2.OtaInstalledNotificationActivity	field	private static final String BUILD_NUMBER_PROPERTY;
+com.amazon.tv.forcedotaupdater.v2.OtaInstalledNotificationActivity	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.OtaInstalledNotificationActivity	method	protected void onCreate(Bundle bundle)
+com.amazon.tv.forcedotaupdater.v2.OtaInstalledNotificationActivity	method	protected void onPause()
+com.amazon.tv.forcedotaupdater.v2.OtaInstalledNotificationActivity	method	public void onClick(View view)
+com.amazon.tv.forcedotaupdater.v2.OtaIntentReceiver	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.OtaIntentReceiver	field	static final String ACTION_OTA_DOWNLOADED;
+com.amazon.tv.forcedotaupdater.v2.OtaIntentReceiver	field	static final String ACTION_OTA_INSTALLED;
+com.amazon.tv.forcedotaupdater.v2.OtaIntentReceiver	method	public void onReceive(Context context, Intent intent)
+com.amazon.tv.forcedotaupdater.v2.OtaNotificationManager	field	private final Context mContext;
+com.amazon.tv.forcedotaupdater.v2.OtaNotificationManager	field	private final NotificationManager mNotificationManager;
+com.amazon.tv.forcedotaupdater.v2.OtaNotificationManager	field	private static final String EXTRA_APP_DISPLAY_NAME;
+com.amazon.tv.forcedotaupdater.v2.OtaNotificationManager	field	private static final String OTA_NOTIFICATION_CHANNEL_ID;
+com.amazon.tv.forcedotaupdater.v2.OtaNotificationManager	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.OtaNotificationManager	field	static final String CATEGORY_FIRETV_NOTIFICATION;
+com.amazon.tv.forcedotaupdater.v2.OtaNotificationManager	field	static final String CATEGORY_LEGACY_FIRETV_NOTIFICATION;
+com.amazon.tv.forcedotaupdater.v2.OtaNotificationManager	method	private Bundle getBundleWithCustomAppName()
+com.amazon.tv.forcedotaupdater.v2.OtaNotificationManager	method	private Notification createOtaAvailableNotification(Notification.Builder builder)
+com.amazon.tv.forcedotaupdater.v2.OtaNotificationManager	method	private Notification createOtaDownloadedNotification(Notification.Builder builder)
+com.amazon.tv.forcedotaupdater.v2.OtaNotificationManager	method	private Notification createOtaInstalledNotification(Notification.Builder builder)
+com.amazon.tv.forcedotaupdater.v2.OtaNotificationManager	method	private void setupNotificationChannel()
+com.amazon.tv.forcedotaupdater.v2.OtaNotificationManager	method	public OtaNotificationManager(Context context, NotificationManager notificationManager)
+com.amazon.tv.forcedotaupdater.v2.OtaNotificationManager	method	public void removeOtaNotification(OtaNotificationType otaNotificationType)
+com.amazon.tv.forcedotaupdater.v2.OtaNotificationManager	method	public void showOtaNotification(OtaNotificationType otaNotificationType)
+com.amazon.tv.forcedotaupdater.v2.OtaNotificationType	field	private final String mNotificationTag;
+com.amazon.tv.forcedotaupdater.v2.OtaNotificationType	field	private final int mNotificationId;
+com.amazon.tv.forcedotaupdater.v2.OtaNotificationType	method	public String getNotificationTag()
+com.amazon.tv.forcedotaupdater.v2.OtaNotificationType	method	public int getNotificationId()
+com.amazon.tv.forcedotaupdater.v2.R	method	private R()
+com.amazon.tv.forcedotaupdater.v2.R$anim	field	public static final int educational_hint_anim_in;
+com.amazon.tv.forcedotaupdater.v2.R$anim	field	public static final int educational_hint_anim_out;
+com.amazon.tv.forcedotaupdater.v2.R$anim	method	private anim()
+com.amazon.tv.forcedotaupdater.v2.R$array	field	public static final int educational_hint_ids;
+com.amazon.tv.forcedotaupdater.v2.R$array	method	private array()
+com.amazon.tv.forcedotaupdater.v2.R$attr	field	public static final int child_layout_id;
+com.amazon.tv.forcedotaupdater.v2.R$attr	field	public static final int child_text_ids;
+com.amazon.tv.forcedotaupdater.v2.R$attr	field	public static final int child_text_values_array;
+com.amazon.tv.forcedotaupdater.v2.R$attr	field	public static final int switch_views_period;
+com.amazon.tv.forcedotaupdater.v2.R$attr	method	private attr()
+com.amazon.tv.forcedotaupdater.v2.R$color	field	public static final int educational_hint;
+com.amazon.tv.forcedotaupdater.v2.R$color	field	public static final int ota_notification_activity_button_focused_color;
+com.amazon.tv.forcedotaupdater.v2.R$color	field	public static final int ota_notification_activity_button_unfocused_color;
+com.amazon.tv.forcedotaupdater.v2.R$color	field	public static final int ota_notification_activity_text_color;
+com.amazon.tv.forcedotaupdater.v2.R$color	field	public static final int ota_progress_background;
+com.amazon.tv.forcedotaupdater.v2.R$color	field	public static final int ota_progress_filler;
+com.amazon.tv.forcedotaupdater.v2.R$color	field	public static final int rse_ota_bg;
+com.amazon.tv.forcedotaupdater.v2.R$color	field	public static final int subtitle;
+com.amazon.tv.forcedotaupdater.v2.R$color	field	public static final int title_color;
+com.amazon.tv.forcedotaupdater.v2.R$color	field	public static final int white;
+com.amazon.tv.forcedotaupdater.v2.R$color	method	private color()
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int checking_updates_text_top_margin;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int download_primary_text_top_margin;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int download_secondary_text_top_margin;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int educational_text_margin_top;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int educational_text_size;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int finishing_updates_info_margin_top;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int finishing_updates_margin_top;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int layout_animation_height;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int layout_animation_margin_bottom;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int layout_animation_width;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int ota_container_top_margin;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int ota_container_width;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int ota_downloaded_activity_button_side_margin;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int ota_downloaded_activity_button_top_margin;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int ota_downloaded_activity_message_text_size;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int ota_downloaded_activity_title_text_size;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int ota_installed_activity_button_top_margin;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int ota_installed_activity_text_size;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int ota_notification_activity_button_height;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int ota_notification_activity_button_text_size;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int ota_notification_activity_button_width;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int ota_notification_activity_side_margin;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int ota_notification_activity_top_margin;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int ota_progress_bar_height;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int ota_progress_bar_width;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int remote_dfu_status_title_margin_top;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int remote_dfu_status_top_margin;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int rse_device_image_top_margin;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int rse_download_primary_text_top_margin;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int rse_download_progress_bar_top_margin;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int rse_download_secondary_text_top_margin;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int rse_hint_text_size;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int rse_layout_animation_margin_bottom;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int rse_layout_animation_margin_top;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int rse_ota_progress_bar_height;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int rse_ota_progress_bar_width;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int rse_subtitle_text_size;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int rse_title_text_size;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int rse_title_top_margin;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int subtitle_size;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int title_size;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int title_top_margin;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int update_msg_top_margin;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	field	public static final int upgraded_message_top_margin;
+com.amazon.tv.forcedotaupdater.v2.R$dimen	method	private dimen()
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int amazon_fire_stick_logo;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int btn_detail_default;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int btn_detail_focused;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int button_ota;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int button_text;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int download_notification;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int fire_tv_logo;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int fota_background;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int ic_remote_default;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int ic_toast_tv;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int installation_notification;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int loading_dots_anim;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_000;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_001;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_002;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_003;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_004;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_005;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_006;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_007;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_008;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_009;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_010;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_011;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_012;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_013;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_014;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_015;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_016;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_017;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_018;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_019;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_020;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_021;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_022;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_023;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_024;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_025;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_026;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_027;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_028;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_029;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_030;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_031;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_032;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_033;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_034;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_035;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_036;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_037;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_038;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_039;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_040;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_041;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_042;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_043;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_044;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_045;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_046;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int pb_loading_dots_medium_047;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	field	public static final int rse_logo_firetv;
+com.amazon.tv.forcedotaupdater.v2.R$drawable	method	private drawable()
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int ack_button_id;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int cancel_button_id;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int device_image;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int educational_hint;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int educational_hints_animator;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int installing_app_update_info;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int installing_app_updates;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int loading_dots_view;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int main_view;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int ok_button_id;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int ota_checking_for_update;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int ota_checking_for_update_title;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int ota_download_primary_text;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int ota_download_progress;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int ota_download_secondary_text;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int ota_download_title;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int ota_downloading;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int ota_error_subtext;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int ota_error_title;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int ota_fatal_error;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int ota_install_progress;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int ota_network_lost;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int ota_network_lost_text;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int ota_network_lost_title;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int ota_progress;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int ota_root;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int ota_update;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int ota_update_primary_text;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int ota_update_remaining_time_text;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int ota_update_secondary_text;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int remote_dfu_completed_view;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int remote_dfu_progress;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int remote_dfu_progress_hint_1;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int remote_dfu_progress_hint_2;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int remote_dfu_progress_hint_3;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int remote_dfu_progress_message_1;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int remote_dfu_progress_message_2;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int remote_dfu_progress_title;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int remote_dfu_status_title;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int remote_dfu_status_view;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int update_msg;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int upgraded_message;
+com.amazon.tv.forcedotaupdater.v2.R$id	field	public static final int upgraded_title;
+com.amazon.tv.forcedotaupdater.v2.R$id	method	private id()
+com.amazon.tv.forcedotaupdater.v2.R$layout	field	public static final int activity_app_updater;
+com.amazon.tv.forcedotaupdater.v2.R$layout	field	public static final int activity_forced_update;
+com.amazon.tv.forcedotaupdater.v2.R$layout	field	public static final int activity_forced_update_rse;
+com.amazon.tv.forcedotaupdater.v2.R$layout	field	public static final int activity_fota;
+com.amazon.tv.forcedotaupdater.v2.R$layout	field	public static final int activity_fota_rse;
+com.amazon.tv.forcedotaupdater.v2.R$layout	field	public static final int activity_ota_downloaded_notification;
+com.amazon.tv.forcedotaupdater.v2.R$layout	field	public static final int activity_ota_installed_notification;
+com.amazon.tv.forcedotaupdater.v2.R$layout	field	public static final int educational_hint;
+com.amazon.tv.forcedotaupdater.v2.R$layout	field	public static final int remote_dfu_progress;
+com.amazon.tv.forcedotaupdater.v2.R$layout	method	private layout()
+com.amazon.tv.forcedotaupdater.v2.R$plurals	field	public static final int ota_remaining_time;
+com.amazon.tv.forcedotaupdater.v2.R$plurals	method	private plurals()
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int app_name;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int install_later;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int install_now;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int installing;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int okay;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_checking_title;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_download_limit_exceeded;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_download_slow_network;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_download_text;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_download_title;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_error_subtext;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_error_subtext_with_code;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_error_try_msg_mask;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_error_try_msg_mask_rse;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_failure_full_storage_title;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_in_progress_title;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_install_reminder_rse;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_installed_text;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_installed_title;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_max_remaining_min;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_network_lost_text;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_network_lost_try;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_network_lost_try_rse;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_network_lost_try_rse_b;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_no_update_title;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_notification_content_text;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_notification_content_text_smart_tv;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_notification_custom_app_name;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_notification_title;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_remaining_time_one_min;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_retry_description;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_success_title;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_title_app_update_downloaded;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_title_app_update_downloaded_info;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_title_app_update_downloaded_info_rse_b;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_title_downloading;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_title_downloading_description;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_title_error;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_title_error_rse;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_title_no_network;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_title_no_network_rse_b;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_title_os_update_downloaded;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_title_os_update_downloaded_ping_pong;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int ota_title_os_update_downloaded_rse;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int remote_dfu_checking;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int remote_dfu_completed;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int remote_dfu_no_updates;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int remote_dfu_progress_hint_1;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int remote_dfu_progress_hint_2;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int remote_dfu_progress_hint_3;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int remote_dfu_progress_message_1;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int remote_dfu_progress_message_2;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int remote_dfu_progress_title;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int system_upgraded_title;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int update_available;
+com.amazon.tv.forcedotaupdater.v2.R$string	field	public static final int upgraded_message;
+com.amazon.tv.forcedotaupdater.v2.R$string	method	private string()
+com.amazon.tv.forcedotaupdater.v2.R$style	field	public static final int EducationalText;
+com.amazon.tv.forcedotaupdater.v2.R$style	field	public static final int ErrorTitleText;
+com.amazon.tv.forcedotaupdater.v2.R$style	field	public static final int LoadingDots;
+com.amazon.tv.forcedotaupdater.v2.R$style	field	public static final int RSEErrorTitleText;
+com.amazon.tv.forcedotaupdater.v2.R$style	field	public static final int RSELargeTitleText;
+com.amazon.tv.forcedotaupdater.v2.R$style	field	public static final int RSESubTitleText;
+com.amazon.tv.forcedotaupdater.v2.R$style	field	public static final int RSETitleText;
+com.amazon.tv.forcedotaupdater.v2.R$style	field	public static final int SubTitleText;
+com.amazon.tv.forcedotaupdater.v2.R$style	field	public static final int TitleText;
+com.amazon.tv.forcedotaupdater.v2.R$style	method	private style()
+com.amazon.tv.forcedotaupdater.v2.R$styleable	field	public static final int AutoViewAnimator_child_layout_id;
+com.amazon.tv.forcedotaupdater.v2.R$styleable	field	public static final int AutoViewAnimator_child_text_ids;
+com.amazon.tv.forcedotaupdater.v2.R$styleable	field	public static final int AutoViewAnimator_child_text_values_array;
+com.amazon.tv.forcedotaupdater.v2.R$styleable	field	public static final int AutoViewAnimator_switch_views_period;
+com.amazon.tv.forcedotaupdater.v2.R$styleable	field	public static final int[] AutoViewAnimator;
+com.amazon.tv.forcedotaupdater.v2.R$styleable	method	private styleable()
+com.amazon.tv.forcedotaupdater.v2.RSEUtils	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.RSEUtils	method	private RSEUtils()
+com.amazon.tv.forcedotaupdater.v2.RSEUtils	method	public static boolean isRseBDevice()
+com.amazon.tv.forcedotaupdater.v2.RSEUtils	method	public static boolean isRseDevice()
+com.amazon.tv.forcedotaupdater.v2.RemoteButtonBlocker	field	private boolean mShouldTrapBackPress;
+com.amazon.tv.forcedotaupdater.v2.RemoteButtonBlocker	field	private final GlobalSettingsDbHelper mSettingsDbHelper;
+com.amazon.tv.forcedotaupdater.v2.RemoteButtonBlocker	field	private final PackageManager mPackageManager;
+com.amazon.tv.forcedotaupdater.v2.RemoteButtonBlocker	field	private static final String COMPONENT_HUD_RECEIVER;
+com.amazon.tv.forcedotaupdater.v2.RemoteButtonBlocker	field	private static final String RESTRICT_REMOTE_BUTTONS_KEY;
+com.amazon.tv.forcedotaupdater.v2.RemoteButtonBlocker	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.RemoteButtonBlocker	field	private static final int RESTRICT_REMOTE_BUTTONS_VALUE_FALSE;
+com.amazon.tv.forcedotaupdater.v2.RemoteButtonBlocker	field	private static final int RESTRICT_REMOTE_BUTTONS_VALUE_TRUE;
+com.amazon.tv.forcedotaupdater.v2.RemoteButtonBlocker	method	private void disableHomeLongPress()
+com.amazon.tv.forcedotaupdater.v2.RemoteButtonBlocker	method	private void enableHomeLongPress()
+com.amazon.tv.forcedotaupdater.v2.RemoteButtonBlocker	method	public RemoteButtonBlocker(PackageManager packageManager, GlobalSettingsDbHelper globalSettingsDbHelper)
+com.amazon.tv.forcedotaupdater.v2.RemoteButtonBlocker	method	public boolean isBackPressTrapped()
+com.amazon.tv.forcedotaupdater.v2.RemoteButtonBlocker	method	public void disableBackPressTrap()
+com.amazon.tv.forcedotaupdater.v2.RemoteButtonBlocker	method	public void enableBackPressTrap()
+com.amazon.tv.forcedotaupdater.v2.RemoteButtonBlocker	method	public void permitSpecialRemoteButtons()
+com.amazon.tv.forcedotaupdater.v2.RemoteButtonBlocker	method	public void restrictSpecialRemoteButtons()
+com.amazon.tv.forcedotaupdater.v2.RemoteButtonBlocker$ToggleRemoteButtonsTask	field	private final GlobalSettingsDbHelper mSettingsDbHelper;
+com.amazon.tv.forcedotaupdater.v2.RemoteButtonBlocker$ToggleRemoteButtonsTask	field	private final boolean mShouldRestrictRemoteButtons;
+com.amazon.tv.forcedotaupdater.v2.RemoteButtonBlocker$ToggleRemoteButtonsTask	method	public Void doInBackground(Void... voidArr)
+com.amazon.tv.forcedotaupdater.v2.RetryableOtaChecker	field	private CheckOtaAvailabilityTask.OtaAvailabilityResultCallback mResultCallback;
+com.amazon.tv.forcedotaupdater.v2.RetryableOtaChecker	field	private Context mContext;
+com.amazon.tv.forcedotaupdater.v2.RetryableOtaChecker	field	private Handler mHandler;
+com.amazon.tv.forcedotaupdater.v2.RetryableOtaChecker	field	private final IMetricsClient mMetricsClient;
+com.amazon.tv.forcedotaupdater.v2.RetryableOtaChecker	field	private final OTAController mOtaController;
+com.amazon.tv.forcedotaupdater.v2.RetryableOtaChecker	field	private final OTAHelper mOtaHelper;
+com.amazon.tv.forcedotaupdater.v2.RetryableOtaChecker	field	private final boolean mForcedUpdatesOnly;
+com.amazon.tv.forcedotaupdater.v2.RetryableOtaChecker	field	private int mRetryCheckCount;
+com.amazon.tv.forcedotaupdater.v2.RetryableOtaChecker	field	private int mRetryDelayMs;
+com.amazon.tv.forcedotaupdater.v2.RetryableOtaChecker	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.RetryableOtaChecker	field	private static final int MAX_RETRY_CHECK;
+com.amazon.tv.forcedotaupdater.v2.RetryableOtaChecker	field	private static final int RETRY_CHECK_DELAY_MS;
+com.amazon.tv.forcedotaupdater.v2.RetryableOtaChecker	method	public RetryableOtaChecker(OTAController oTAController, OTAHelper oTAHelper, boolean z, IMetricsClient iMetricsClient, Context context)
+com.amazon.tv.forcedotaupdater.v2.RetryableOtaChecker	method	public void onFailedToGetUpdates(String str)
+com.amazon.tv.forcedotaupdater.v2.RetryableOtaChecker	method	public void onNoUpdatesFound()
+com.amazon.tv.forcedotaupdater.v2.RetryableOtaChecker	method	public void onOtaAvailable(List<UpdateManifest> list, boolean z)
+com.amazon.tv.forcedotaupdater.v2.RetryableOtaChecker	method	public void performOtaCheck()
+com.amazon.tv.forcedotaupdater.v2.RetryableOtaChecker	method	public void setResultCallback(CheckOtaAvailabilityTask.OtaAvailabilityResultCallback otaAvailabilityResultCallback)
+com.amazon.tv.forcedotaupdater.v2.config.CloudConfigConstants	field	static final String EDUCATIONAL_HINTS_BETA_RES_ID;
+com.amazon.tv.forcedotaupdater.v2.config.CloudConfigConstants	field	static final String EDUCATIONAL_HINTS_PROD_RES_ID;
+com.amazon.tv.forcedotaupdater.v2.config.CloudConfigConstants	field	static final String SYSTEM_PROPERTY_CLOUD_CONFIG_ENDPOINT_KEY;
+com.amazon.tv.forcedotaupdater.v2.config.CloudConfigConstants	field	static final String SYSTEM_PROPERTY_CLOUD_CONFIG_ENDPOINT_VALUE_BETA;
+com.amazon.tv.forcedotaupdater.v2.config.CloudConfigConstants	field	static final long EDUCATIONAL_HINTS_EXPIRY_PERIOD;
+com.amazon.tv.forcedotaupdater.v2.config.CloudConfigConstants	method	private CloudConfigConstants()
+com.amazon.tv.forcedotaupdater.v2.config.ConfigFetchMetrics	field	private final MetricInfo mCacheHitMetric;
+com.amazon.tv.forcedotaupdater.v2.config.ConfigFetchMetrics	field	private final MetricInfo mFetchFailureMetric;
+com.amazon.tv.forcedotaupdater.v2.config.ConfigFetchMetrics	field	private final MetricInfo mFetchFailureTimeMetric;
+com.amazon.tv.forcedotaupdater.v2.config.ConfigFetchMetrics	field	private final MetricInfo mFetchSuccessMetric;
+com.amazon.tv.forcedotaupdater.v2.config.ConfigFetchMetrics	field	private final MetricInfo mFetchSuccessTimeMetric;
+com.amazon.tv.forcedotaupdater.v2.config.ConfigFetchMetrics	method	public ConfigFetchMetrics(MetricInfo metricInfo, MetricInfo metricInfo2, MetricInfo metricInfo3, MetricInfo metricInfo4, MetricInfo metricInfo5)
+com.amazon.tv.forcedotaupdater.v2.config.ConfigFetchMetrics	method	public MetricInfo getCacheHitMetric()
+com.amazon.tv.forcedotaupdater.v2.config.ConfigFetchMetrics	method	public MetricInfo getFetchFailureMetric()
+com.amazon.tv.forcedotaupdater.v2.config.ConfigFetchMetrics	method	public MetricInfo getFetchFailureTimeMetric()
+com.amazon.tv.forcedotaupdater.v2.config.ConfigFetchMetrics	method	public MetricInfo getFetchSuccessMetric()
+com.amazon.tv.forcedotaupdater.v2.config.ConfigFetchMetrics	method	public MetricInfo getFetchSuccessTimeMetric()
+com.amazon.tv.forcedotaupdater.v2.config.ConfigFetcher	field	private ConfigModel mConfig;
+com.amazon.tv.forcedotaupdater.v2.config.ConfigFetcher	field	private final ConfigFetchMetrics mConfigFetchMetrics;
+com.amazon.tv.forcedotaupdater.v2.config.ConfigFetcher	field	private final IMetricsClient mMetricsClient;
+com.amazon.tv.forcedotaupdater.v2.config.ConfigFetcher	field	private final RemoteConfigurationManager mRemoteConfigurationManager;
+com.amazon.tv.forcedotaupdater.v2.config.ConfigFetcher	field	private final SharedPreferences mSharedPreferences;
+com.amazon.tv.forcedotaupdater.v2.config.ConfigFetcher	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.config.ConfigFetcher	field	private static final long CONFIG_FETCH_TIMEOUT_IN_MS;
+com.amazon.tv.forcedotaupdater.v2.config.ConfigFetcher	method	protected ConfigModel fetchFromCache()
+com.amazon.tv.forcedotaupdater.v2.config.ConfigFetcher	method	protected abstract ConfigModel getConfigFromJson(String str);
+com.amazon.tv.forcedotaupdater.v2.config.ConfigFetcher	method	protected abstract String getArcusConfigId();
+com.amazon.tv.forcedotaupdater.v2.config.ConfigFetcher	method	protected abstract String getCacheConfigExpiryKey();
+com.amazon.tv.forcedotaupdater.v2.config.ConfigFetcher	method	protected abstract String getCacheConfigKey();
+com.amazon.tv.forcedotaupdater.v2.config.ConfigFetcher	method	protected abstract boolean isConfigValid(ConfigModel configmodel);
+com.amazon.tv.forcedotaupdater.v2.config.ConfigFetcher	method	protected abstract long getCacheExpiryTimeMs();
+com.amazon.tv.forcedotaupdater.v2.config.ConfigFetcher	method	protected void onConfigFetchFailure(long j, Exception exc)
+com.amazon.tv.forcedotaupdater.v2.config.ConfigFetcher	method	protected void onConfigFetchSuccess(long j, String str)
+com.amazon.tv.forcedotaupdater.v2.config.ConfigFetcher	method	protected void persistConfigInCache(ConfigModel configmodel)
+com.amazon.tv.forcedotaupdater.v2.config.ConfigFetcher	method	public ConfigModel fetch()
+com.amazon.tv.forcedotaupdater.v2.config.EducationalHintsConfigFetcher	field	private static final String CONFIG_CACHE_KEY;
+com.amazon.tv.forcedotaupdater.v2.config.EducationalHintsConfigFetcher	field	private static final String CONFIG_EXPIRY_CACHE_KEY;
+com.amazon.tv.forcedotaupdater.v2.config.EducationalHintsConfigFetcher	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.config.EducationalHintsConfigFetcher	method	protected String getArcusConfigId()
+com.amazon.tv.forcedotaupdater.v2.config.EducationalHintsConfigFetcher	method	protected String getCacheConfigExpiryKey()
+com.amazon.tv.forcedotaupdater.v2.config.EducationalHintsConfigFetcher	method	protected String getCacheConfigKey()
+com.amazon.tv.forcedotaupdater.v2.config.EducationalHintsConfigFetcher	method	protected long getCacheExpiryTimeMs()
+com.amazon.tv.forcedotaupdater.v2.config.EducationalHintsConfigFetcher	method	public EducationalHintsConfigFetcher(IMetricsClient iMetricsClient)
+com.amazon.tv.forcedotaupdater.v2.config.EducationalHintsConfigFetcher	method	public EducationalHintsConfigModel getConfigFromJson(String str)
+com.amazon.tv.forcedotaupdater.v2.config.EducationalHintsConfigFetcher	method	public boolean isConfigValid(EducationalHintsConfigModel educationalHintsConfigModel)
+com.amazon.tv.forcedotaupdater.v2.config.model.EducationalHintsConfigModel	field	private Map<String, List<String>> mHints;
+com.amazon.tv.forcedotaupdater.v2.config.model.EducationalHintsConfigModel	field	private boolean mEnabled;
+com.amazon.tv.forcedotaupdater.v2.config.model.EducationalHintsConfigModel	field	private int mHintSwitchPeriod;
+com.amazon.tv.forcedotaupdater.v2.config.model.EducationalHintsConfigModel	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.config.model.EducationalHintsConfigModel	method	public Map<String, List<String>> getHints()
+com.amazon.tv.forcedotaupdater.v2.config.model.EducationalHintsConfigModel	method	public boolean hintsAvailableForSystemLocale()
+com.amazon.tv.forcedotaupdater.v2.config.model.EducationalHintsConfigModel	method	public boolean isEnabled()
+com.amazon.tv.forcedotaupdater.v2.config.model.EducationalHintsConfigModel	method	public int getHintSwitchPeriod()
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager	field	private IRemoteDfuCallback mRemoteDfuCallback;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager	field	private boolean mCleanedUp;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager	field	private boolean mHasDfuStarted;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager	field	private boolean mIsReceiverRegistered;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager	field	private boolean mServiceConnected;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager	field	private final BroadcastReceiver mDfuReceiver;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager	field	private final ConnectivityEventCallback mConnectivityCallback;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager	field	private final ConnectivityManager mConnectivityManager;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager	field	private final Context mContext;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager	field	private final Handler mHandler;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager	field	private final RemoteServiceStatusCallback mCallback;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager	field	private final Runnable mDfuTimeoutRunnable;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager	field	private final Runnable mQueryConnectedDeviceRunnable;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager	field	private int mQueryAttempts;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager	field	private static final String ACTION_FORCE_DFU_CHECKED;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager	field	private static final long DFU_TIMEOUT_MS;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager	field	private static final long REMOTE_SERVICE_CONNECTION_DELAY_MS;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager	field	private static final long REMOTE_SERVICE_CONNECTION_MAX_RETRIES;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager	method	public void checkAndStartDfu(String str, IRemoteDfuCallback iRemoteDfuCallback)
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager	method	public void cleanUp()
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager	method	public void finishFlow(boolean z)
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager$ConnectivityEventCallbackImpl	method	public void onBatteryLevelChange(RemoteDevice remoteDevice, int i)
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager$ConnectivityEventCallbackImpl	method	public void onConnectStateChanged(RemoteDevice remoteDevice, int i)
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager$ConnectivityEventCallbackImpl	method	public void onConnectedDevicesList(int[] iArr, List<RemoteDevice> list)
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager$ConnectivityEventCallbackImpl	method	public void onDeviceAdded(RemoteDevice remoteDevice)
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager$ConnectivityEventCallbackImpl	method	public void onDeviceDeleted(RemoteDevice remoteDevice)
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager$ConnectivityEventCallbackImpl	method	public void onHeadphonePlugged(RemoteDevice remoteDevice, boolean z)
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager$ConnectivityEventCallbackImpl	method	public void onPairStateChanged(RemoteDevice remoteDevice, int i)
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager$ConnectivityEventCallbackImpl	method	public void onRemoteUpdateStarted(RemoteDevice remoteDevice, boolean z)
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager$ConnectivityEventCallbackImpl	method	public void onRemoteWipeComplete()
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager$ConnectivityEventCallbackImpl	method	public void onScanComplete(int[] iArr, List<RemoteDevice> list)
+com.amazon.tv.forcedotaupdater.v2.connectivity.ConnectivityControllerManager$ConnectivityEventCallbackImpl	method	public void onVersionUpdated(RemoteDevice remoteDevice, int i)
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	field	private IRemoteDfuCallback mCallback;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	field	private String mInputDescriptor;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	field	private String mRemoteDeviceAddress;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	field	private String mRemoteDeviceVersion;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	field	private boolean mIsReceiversRegistered;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	field	private boolean mIsRemoteUpdated;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	field	private final Context mContext;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	field	private final Handler mHandler;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	field	private static final String ACTION_DEVICE_UPDATED;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	field	private static final String ACTION_DFU_DONE;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	field	private static final String ACTION_DFU_INTIATED;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	field	private static final String DEVICE_ADDRESS;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	field	private static final String EXTRA_DFU_ERROR;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	field	private static final String EXTRA_DFU_TRIGGERED;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	field	private static final Uri PAIRED_URI;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	field	private static final int COLUMN_INPUT_DESCRIPTOR_ID;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	field	private static final int COLUMN_TYPE_ADDRESS;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	field	private static final int COLUMN_TYPE_VERSION;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	field	private static final long DFU_TIMEOUT_MS;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	field	private static final long FETCH_DEVICE_INFO_MAX_RETRY_ATTEMPT;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	field	private static final long FETCH_DEVICE_INFO_RETRY_INTERVAL_IN_MS;
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	method	private void registerReceiver(BroadcastReceiver broadcastReceiver, String str)
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	method	private void unregisterReceivers()
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	method	public String getRemoteVersion(String str) throws Throwable
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	method	public void checkAndStartDfu(String str, IRemoteDfuCallback iRemoteDfuCallback)
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	method	public void cleanUp()
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	method	public void fetchRemoteDeviceInfo(String str)
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	method	public void finishFlow(boolean z)
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	method	public void registerReceivers()
+com.amazon.tv.forcedotaupdater.v2.connectivity.ControllerProviderManager	method	public void sendDfuBroadcast(String str)
+com.amazon.tv.forcedotaupdater.v2.connectivity.RemoteDfuManagerFactory	field	private static final String FEATURE_DFU_ENABLED;
+com.amazon.tv.forcedotaupdater.v2.connectivity.RemoteDfuManagerFactory	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.connectivity.RemoteDfuManagerFactory	method	private RemoteDfuManagerFactory()
+com.amazon.tv.forcedotaupdater.v2.connectivity.RemoteDfuManagerFactory	method	private static boolean isRemoteDfuEnabled(Context context)
+com.amazon.tv.forcedotaupdater.v2.connectivity.RemoteDfuManagerFactory	method	public static IRemoteDfuManager getRemoteDfuManager(Context context)
+com.amazon.tv.forcedotaupdater.v2.device.DeviceCapability	field	public static final String PING_PONG_UPDATE_SUPPORT;
+com.amazon.tv.forcedotaupdater.v2.device.DeviceCapability	method	private DeviceCapability()
+com.amazon.tv.forcedotaupdater.v2.device.DeviceCapability	method	public static boolean isPingPongOTADevice(Context context)
+com.amazon.tv.forcedotaupdater.v2.device.DeviceCapability	method	public static boolean isProfilesFeatureSupported()
+com.amazon.tv.forcedotaupdater.v2.device.DeviceCapability	method	public static boolean isSmartTv(Context context)
+com.amazon.tv.forcedotaupdater.v2.metrics.AdditionalPivotConstants	field	public static final String APP_NAME;
+com.amazon.tv.forcedotaupdater.v2.metrics.AdditionalPivotConstants	field	public static final String BACK_PRESS_RESULT;
+com.amazon.tv.forcedotaupdater.v2.metrics.AdditionalPivotConstants	field	public static final String ERROR_CODE;
+com.amazon.tv.forcedotaupdater.v2.metrics.AdditionalPivotConstants	field	public static final String EXCEPTION_MESSAGE;
+com.amazon.tv.forcedotaupdater.v2.metrics.AdditionalPivotConstants	field	public static final String OFFERED_UPDATES_COUNT;
+com.amazon.tv.forcedotaupdater.v2.metrics.AdditionalPivotConstants	field	public static final String PACKAGE_NAME;
+com.amazon.tv.forcedotaupdater.v2.metrics.AdditionalPivotConstants	field	public static final String SOURCE;
+com.amazon.tv.forcedotaupdater.v2.metrics.AdditionalPivotConstants	field	public static final String STATUS;
+com.amazon.tv.forcedotaupdater.v2.metrics.AdditionalPivotConstants	field	public static final String STATUS_REASON;
+com.amazon.tv.forcedotaupdater.v2.metrics.AdditionalPivotConstants	field	public static final String UPDATE_TYPE;
+com.amazon.tv.forcedotaupdater.v2.metrics.AdditionalPivotConstants	method	private AdditionalPivotConstants()
+com.amazon.tv.forcedotaupdater.v2.metrics.MetricHook	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.metrics.MetricHook	field	private static final String TEST_HOOK_PIVOT_NAME;
+com.amazon.tv.forcedotaupdater.v2.metrics.MetricHook	field	private static final long TEST_HOOK_TIMER_DURATION;
+com.amazon.tv.forcedotaupdater.v2.metrics.MetricHook	method	public void emitMetrics()
+com.amazon.tv.forcedotaupdater.v2.metrics.MetricInfo	field	private final List<String> mAdditionalPivots;
+com.amazon.tv.forcedotaupdater.v2.metrics.MetricInfo	field	private final MetricType mMetricType;
+com.amazon.tv.forcedotaupdater.v2.metrics.MetricInfo	field	private final String mMetricGroupId;
+com.amazon.tv.forcedotaupdater.v2.metrics.MetricInfo	field	private final String mMetricName;
+com.amazon.tv.forcedotaupdater.v2.metrics.MetricInfo	field	private final String mMetricSchemaId;
+com.amazon.tv.forcedotaupdater.v2.metrics.MetricInfo	method	public List<String> getAdditionalPivots()
+com.amazon.tv.forcedotaupdater.v2.metrics.MetricInfo	method	public Metric getMetric()
+com.amazon.tv.forcedotaupdater.v2.metrics.MetricInfo	method	public Metric getMetricWithSource(String str)
+com.amazon.tv.forcedotaupdater.v2.metrics.MetricInfo	method	public MetricType getMetricType()
+com.amazon.tv.forcedotaupdater.v2.metrics.MetricInfo	method	public static Map<String, MinervaAttributes> getMinervaAttributes()
+com.amazon.tv.forcedotaupdater.v2.view.AutoViewAnimator	field	private Handler mHandler;
+com.amazon.tv.forcedotaupdater.v2.view.AutoViewAnimator	field	private final Runnable mSwitchViewRunnable;
+com.amazon.tv.forcedotaupdater.v2.view.AutoViewAnimator	field	private int mChildLayoutId;
+com.amazon.tv.forcedotaupdater.v2.view.AutoViewAnimator	field	private int mMaxChildCount;
+com.amazon.tv.forcedotaupdater.v2.view.AutoViewAnimator	field	private int mSwitchViewsPeriodMs;
+com.amazon.tv.forcedotaupdater.v2.view.AutoViewAnimator	field	private int[] mTextViewsIds;
+com.amazon.tv.forcedotaupdater.v2.view.AutoViewAnimator	field	public static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.view.AutoViewAnimator	field	public static final int DEFAULT_SWITCH_VIEWS_PERIOD;
+com.amazon.tv.forcedotaupdater.v2.view.AutoViewAnimator	method	private CharSequence[][] getTextViewValuesArray(Resources resources, int i)
+com.amazon.tv.forcedotaupdater.v2.view.AutoViewAnimator	method	private void createNeededViews(CharSequence[][] charSequenceArr)
+com.amazon.tv.forcedotaupdater.v2.view.AutoViewAnimator	method	private void populateTextViews(CharSequence[][] charSequenceArr)
+com.amazon.tv.forcedotaupdater.v2.view.AutoViewAnimator	method	private void updateChildren(CharSequence[][] charSequenceArr)
+com.amazon.tv.forcedotaupdater.v2.view.AutoViewAnimator	method	public AutoViewAnimator(Context context)
+com.amazon.tv.forcedotaupdater.v2.view.AutoViewAnimator	method	public AutoViewAnimator(Context context, AttributeSet attributeSet)
+com.amazon.tv.forcedotaupdater.v2.view.AutoViewAnimator	method	public void initViewAnimator(int i, int i2, CharSequence[] charSequenceArr)
+com.amazon.tv.forcedotaupdater.v2.view.AutoViewAnimator	method	public void initViewAnimator(int i, int i2, CharSequence[][] charSequenceArr)
+com.amazon.tv.forcedotaupdater.v2.view.AutoViewAnimator	method	public void initViewAnimator(int i, int i2, int i3)
+com.amazon.tv.forcedotaupdater.v2.view.AutoViewAnimator	method	public void initViewAnimator(int i, int[] iArr, CharSequence[][] charSequenceArr)
+com.amazon.tv.forcedotaupdater.v2.view.AutoViewAnimator	method	public void setMaxChildCount(int i)
+com.amazon.tv.forcedotaupdater.v2.view.AutoViewAnimator	method	public void setSwitchViewsPeriodMs(int i)
+com.amazon.tv.forcedotaupdater.v2.view.AutoViewAnimator	method	public void setTextViewValuesArray(int i)
+com.amazon.tv.forcedotaupdater.v2.view.AutoViewAnimator	method	public void start()
+com.amazon.tv.forcedotaupdater.v2.view.AutoViewAnimator	method	public void stop()
+com.amazon.tv.forcedotaupdater.v2.view.DeviceImageView	field	private final Context mContext;
+com.amazon.tv.forcedotaupdater.v2.view.DeviceImageView	field	private static final String OOBE_LOGO;
+com.amazon.tv.forcedotaupdater.v2.view.DeviceImageView	field	private static final String OOBE_LOGO_RESOURCE_TYPE;
+com.amazon.tv.forcedotaupdater.v2.view.DeviceImageView	field	private static final String OOBE_RESOURCE_PACKAGE_NAME;
+com.amazon.tv.forcedotaupdater.v2.view.DeviceImageView	field	private static final String SYSTEM_PROPERTY_BOOT_PROD;
+com.amazon.tv.forcedotaupdater.v2.view.DeviceImageView	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.view.DeviceImageView	field	private static final int SYSTEM_PROPERTY_BOOT_PROD_DEFAULT_VALUE;
+com.amazon.tv.forcedotaupdater.v2.view.DeviceImageView	method	private void setSmartTvLogo()
+com.amazon.tv.forcedotaupdater.v2.view.DeviceImageView	method	protected void onFinishInflate()
+com.amazon.tv.forcedotaupdater.v2.view.DeviceImageView	method	public DeviceImageView(Context context)
+com.amazon.tv.forcedotaupdater.v2.view.DeviceImageView	method	public DeviceImageView(Context context, AttributeSet attributeSet)
+com.amazon.tv.forcedotaupdater.v2.view.DeviceImageView	method	public DeviceImageView(Context context, AttributeSet attributeSet, int i)
+com.amazon.tv.forcedotaupdater.v2.view.DeviceImageView	method	public void setDefaultImage()
+com.amazon.tv.forcedotaupdater.v2.view.DeviceInfo	field	private DeviceType mDeviceType;
+com.amazon.tv.forcedotaupdater.v2.view.DeviceInfo	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.view.DeviceInfo	field	static final DeviceInfo INSTANCE;
+com.amazon.tv.forcedotaupdater.v2.view.DeviceInfo$DeviceType	field	private final String mDeviceModel;
+com.amazon.tv.forcedotaupdater.v2.view.DeviceInfo$DeviceType	method	private String getDeviceModel()
+com.amazon.tv.forcedotaupdater.v2.view.DeviceInfo$DeviceType	method	public static DeviceType getDeviceTypeForModel(String str)
+com.amazon.tv.forcedotaupdater.v2.view.FotaViewHolder	field	private LinearLayout mVisibleView;
+com.amazon.tv.forcedotaupdater.v2.view.FotaViewHolder	field	private final LinearLayout mCheckForUpdatesView;
+com.amazon.tv.forcedotaupdater.v2.view.FotaViewHolder	field	private final LinearLayout mNetworkFailureView;
+com.amazon.tv.forcedotaupdater.v2.view.FotaViewHolder	field	private final LinearLayout mOtaErrorView;
+com.amazon.tv.forcedotaupdater.v2.view.FotaViewHolder	field	private final LinearLayout mOtaUpdateView;
+com.amazon.tv.forcedotaupdater.v2.view.FotaViewHolder	field	private final LinearLayout mRemoteDfuCompletedView;
+com.amazon.tv.forcedotaupdater.v2.view.FotaViewHolder	field	private final LinearLayout mRemoteDfuProgressView;
+com.amazon.tv.forcedotaupdater.v2.view.FotaViewHolder	field	private final LinearLayout mRemoteDfuStatusView;
+com.amazon.tv.forcedotaupdater.v2.view.FotaViewHolder	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.view.FotaViewHolder	field	public static final int CHECKING_UPDATES_ID;
+com.amazon.tv.forcedotaupdater.v2.view.FotaViewHolder	field	public static final int NETWORK_ERROR_ID;
+com.amazon.tv.forcedotaupdater.v2.view.FotaViewHolder	field	public static final int OTA_ERROR_ID;
+com.amazon.tv.forcedotaupdater.v2.view.FotaViewHolder	field	public static final int OTA_UPDATES_ID;
+com.amazon.tv.forcedotaupdater.v2.view.FotaViewHolder	field	public static final int REMOTE_DFU_COMPLETED_ID;
+com.amazon.tv.forcedotaupdater.v2.view.FotaViewHolder	field	public static final int REMOTE_DFU_PROGRESS_ID;
+com.amazon.tv.forcedotaupdater.v2.view.FotaViewHolder	field	public static final int REMOTE_DFU_STATUS_ID;
+com.amazon.tv.forcedotaupdater.v2.view.FotaViewHolder	method	private int getIdForView(LinearLayout linearLayout)
+com.amazon.tv.forcedotaupdater.v2.view.FotaViewHolder	method	public FotaViewHolder(LinearLayout linearLayout, LinearLayout linearLayout2, LinearLayout linearLayout3, LinearLayout linearLayout4, LinearLayout linearLayout5, LinearLayout linearLayout6, LinearLayout linearLayout7)
+com.amazon.tv.forcedotaupdater.v2.view.FotaViewHolder	method	public LinearLayout getCheckForUpdatesView()
+com.amazon.tv.forcedotaupdater.v2.view.FotaViewHolder	method	public LinearLayout getOtaErrorView()
+com.amazon.tv.forcedotaupdater.v2.view.FotaViewHolder	method	public LinearLayout getOtaUpdateView()
+com.amazon.tv.forcedotaupdater.v2.view.FotaViewHolder	method	public int getVisibleViewId()
+com.amazon.tv.forcedotaupdater.v2.view.FotaViewHolder	method	public void setVisibleView(int i)
+com.amazon.tv.forcedotaupdater.v2.view.OtaViewHolder	field	private LinearLayout mVisibleView;
+com.amazon.tv.forcedotaupdater.v2.view.OtaViewHolder	field	private final LinearLayout mCheckOtaUpdatesView;
+com.amazon.tv.forcedotaupdater.v2.view.OtaViewHolder	field	private final LinearLayout mDownloadOtaUpdatesView;
+com.amazon.tv.forcedotaupdater.v2.view.OtaViewHolder	field	private final LinearLayout mNetworkFailureView;
+com.amazon.tv.forcedotaupdater.v2.view.OtaViewHolder	field	private final LinearLayout mOtaErrorView;
+com.amazon.tv.forcedotaupdater.v2.view.OtaViewHolder	field	private final LinearLayout mRemoteDfuCompletedView;
+com.amazon.tv.forcedotaupdater.v2.view.OtaViewHolder	field	private final LinearLayout mRemoteDfuProgressView;
+com.amazon.tv.forcedotaupdater.v2.view.OtaViewHolder	field	private final LinearLayout mRemoteDfuStatusView;
+com.amazon.tv.forcedotaupdater.v2.view.OtaViewHolder	field	private static final String TAG;
+com.amazon.tv.forcedotaupdater.v2.view.OtaViewHolder	field	public static final int CHECKING_UPDATES_ID;
+com.amazon.tv.forcedotaupdater.v2.view.OtaViewHolder	field	public static final int DOWNLOADING_UPDATES_ID;
+com.amazon.tv.forcedotaupdater.v2.view.OtaViewHolder	field	public static final int NETWORK_LOST_ID;
+com.amazon.tv.forcedotaupdater.v2.view.OtaViewHolder	field	public static final int OTA_ERROR_ID;
+com.amazon.tv.forcedotaupdater.v2.view.OtaViewHolder	field	public static final int REMOTE_DFU_COMPLETED_ID;
+com.amazon.tv.forcedotaupdater.v2.view.OtaViewHolder	field	public static final int REMOTE_DFU_PROGRESS_ID;
+com.amazon.tv.forcedotaupdater.v2.view.OtaViewHolder	field	public static final int REMOTE_DFU_STATUS_ID;
+com.amazon.tv.forcedotaupdater.v2.view.OtaViewHolder	method	private int getIdForView(LinearLayout linearLayout)
+com.amazon.tv.forcedotaupdater.v2.view.OtaViewHolder	method	public LinearLayout getCheckOtaUpdatesView()
+com.amazon.tv.forcedotaupdater.v2.view.OtaViewHolder	method	public LinearLayout getDownloadOtaUpdatesView()
+com.amazon.tv.forcedotaupdater.v2.view.OtaViewHolder	method	public LinearLayout getNetworkFailureView()
+com.amazon.tv.forcedotaupdater.v2.view.OtaViewHolder	method	public LinearLayout getOtaErrorView()
+com.amazon.tv.forcedotaupdater.v2.view.OtaViewHolder	method	public OtaViewHolder(LinearLayout linearLayout, LinearLayout linearLayout2, LinearLayout linearLayout3, LinearLayout linearLayout4, LinearLayout linearLayout5, LinearLayout linearLayout6, LinearLayout linearLayout7)
+com.amazon.tv.forcedotaupdater.v2.view.OtaViewHolder	method	public int getVisibleViewId()
+com.amazon.tv.forcedotaupdater.v2.view.OtaViewHolder	method	public void setVisibleView(int i)
+com.amazon.tv.oobe.metricsclient.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.tv.oobe.metricsclient.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.tv.oobe.metricsclient.BuildConfig	field	public static final String FLAVOR;
+com.amazon.tv.oobe.metricsclient.BuildConfig	field	public static final String LIBRARY_PACKAGE_NAME;
+com.amazon.tv.oobe.metricsclient.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.tv.oobe.metricsclient.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.tv.oobe.metricsclient.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.tv.oobe.metricsclient.Constants	field	public static final String METRIC_HOOK_PROPERTY_NAME;
+com.amazon.tv.oobe.metricsclient.Constants	method	private Constants()
+com.amazon.tv.oobe.metricsclient.Metric	field	private final Map<String, String> mAdditionalPivots;
+com.amazon.tv.oobe.metricsclient.Metric	field	private final String mMetricName;
+com.amazon.tv.oobe.metricsclient.Metric	method	public Map<String, String> getAdditionalPivots()
+com.amazon.tv.oobe.metricsclient.Metric	method	public Metric(String str)
+com.amazon.tv.oobe.metricsclient.Metric	method	public Metric(String str, Map<String, String> map)
+com.amazon.tv.oobe.metricsclient.Metric	method	public String getMetricName()
+com.amazon.tv.oobe.metricsclient.Metric	method	public String toString()
+com.amazon.tv.oobe.metricsclient.Metric	method	public boolean equals(Object obj)
+com.amazon.tv.oobe.metricsclient.Metric	method	public int hashCode()
+com.amazon.tv.oobe.metricsclient.Metric	method	public void addAdditionalPivots(String str, String str2)
+com.amazon.tv.oobe.metricsclient.OobeCustomPivots	field	private final Map<String, IPivotProvider> customPivotProviders;
+com.amazon.tv.oobe.metricsclient.OobeCustomPivots	field	private static final String APK_VERSION;
+com.amazon.tv.oobe.metricsclient.OobeCustomPivots	method	public Map<String, String> providePivots()
+com.amazon.tv.oobe.metricsclient.OobeCustomPivots	method	public OobeCustomPivots(Context context)
+com.amazon.tv.oobe.metricsclient.OobeMetricsClient	field	private final List<IMetricsClient> mMetricsClients;
+com.amazon.tv.oobe.metricsclient.OobeMetricsClient	method	public OobeMetricsClient(Context context, String str, Map<String, String> map, Map<String, MinervaAttributes> map2)
+com.amazon.tv.oobe.metricsclient.OobeMetricsClient	method	public OobeMetricsClient(Context context, String str, Map<String, String> map, Map<String, MinervaAttributes> map2, List<MinervaPredefined> list)
+com.amazon.tv.oobe.metricsclient.OobeMetricsClient	method	public void recordCounter(Metric metric)
+com.amazon.tv.oobe.metricsclient.OobeMetricsClient	method	public void recordDuration(Metric metric, long j)
+com.amazon.tv.oobe.metricsclient.OobeMetricsClient	method	public void recordTimer(Metric metric, long j)
+com.amazon.tv.oobe.metricsclient.R	method	private R()
+com.amazon.tv.oobe.metricsclient.custompivots.ApkVersionPivotProvider	field	private String mOobeVersion;
+com.amazon.tv.oobe.metricsclient.custompivots.ApkVersionPivotProvider	field	private final Context mContext;
+com.amazon.tv.oobe.metricsclient.custompivots.ApkVersionPivotProvider	field	private static final String DEFAULT_PACKAGE_VERSION;
+com.amazon.tv.oobe.metricsclient.custompivots.ApkVersionPivotProvider	field	private static final String TAG;
+com.amazon.tv.oobe.metricsclient.custompivots.ApkVersionPivotProvider	field	private static final String TEST_HOOK_PACKAGE_VERSION;
+com.amazon.tv.oobe.metricsclient.custompivots.ApkVersionPivotProvider	method	public ApkVersionPivotProvider(Context context)
+com.amazon.tv.oobe.metricsclient.custompivots.ApkVersionPivotProvider	method	public String providePivotValue()
+com.amazon.tv.oobe.metricsclient.dcm.DcmMetricsClient	field	private Boolean mIsNonMemberModeAvailable;
+com.amazon.tv.oobe.metricsclient.dcm.DcmMetricsClient	field	private final Context mContext;
+com.amazon.tv.oobe.metricsclient.dcm.DcmMetricsClient	field	private final Map<String, String> mMetricToSourceName;
+com.amazon.tv.oobe.metricsclient.dcm.DcmMetricsClient	field	private final String mAppName;
+com.amazon.tv.oobe.metricsclient.dcm.DcmMetricsClient	field	private static final Executor METRIC_EXECUTOR;
+com.amazon.tv.oobe.metricsclient.dcm.DcmMetricsClient	field	private static final String EXPERIENCE_MODE_FROZEN;
+com.amazon.tv.oobe.metricsclient.dcm.DcmMetricsClient	field	private static final String EXPERIENCE_MODE_FULL;
+com.amazon.tv.oobe.metricsclient.dcm.DcmMetricsClient	field	private static final String EXPERIENCE_MODE_KEY;
+com.amazon.tv.oobe.metricsclient.dcm.DcmMetricsClient	field	private static final String FEATURE_TV_SCREEN;
+com.amazon.tv.oobe.metricsclient.dcm.DcmMetricsClient	field	private static final String SETTING_ENABLED;
+com.amazon.tv.oobe.metricsclient.dcm.DcmMetricsClient	field	private static final String SETTING_FROZEN_MODE;
+com.amazon.tv.oobe.metricsclient.dcm.DcmMetricsClient	field	private static final String SOURCE_PIVOT_NAME;
+com.amazon.tv.oobe.metricsclient.dcm.DcmMetricsClient	field	private static final String TAG;
+com.amazon.tv.oobe.metricsclient.dcm.DcmMetricsClient	field	private static final String USER_IDENTITY_ANONYMOUS;
+com.amazon.tv.oobe.metricsclient.dcm.DcmMetricsClient	field	private static final String USER_IDENTITY_AUTHENTICATED;
+com.amazon.tv.oobe.metricsclient.dcm.DcmMetricsClient	field	private static final String USER_IDENTITY_KEY;
+com.amazon.tv.oobe.metricsclient.dcm.DcmMetricsClient	field	private static final String USER_IDENTITY_UNKNOWN;
+com.amazon.tv.oobe.metricsclient.dcm.DcmMetricsClient	field	private static final int COUNTER_COUNT;
+com.amazon.tv.oobe.metricsclient.dcm.DcmMetricsClient	method	private boolean isNonMemberModeAvailable()
+com.amazon.tv.oobe.metricsclient.dcm.DcmMetricsClient	method	private boolean isNonMemberModeEnabled(String str)
+com.amazon.tv.oobe.metricsclient.dcm.DcmMetricsClient	method	public DcmMetricsClient(Context context, String str, Map<String, String> map)
+com.amazon.tv.oobe.metricsclient.dcm.DcmMetricsClient	method	public void deliverMetricToService(Context context, MetricsFactory metricsFactory, MetricEvent metricEvent)
+com.amazon.tv.oobe.metricsclient.dcm.DcmMetricsClient	method	public void recordCounter(final Metric metric)
+com.amazon.tv.oobe.metricsclient.dcm.DcmMetricsClient	method	public void recordDuration(final Metric metric, final long j)
+com.amazon.tv.oobe.metricsclient.dcm.DcmMetricsClient	method	public void recordTimer(Metric metric, long j)
+com.amazon.tv.oobe.metricsclient.minerva.MinervaAttributes	field	private final String mGroupId;
+com.amazon.tv.oobe.metricsclient.minerva.MinervaAttributes	field	private final String mSchemaId;
+com.amazon.tv.oobe.metricsclient.minerva.MinervaAttributes	method	protected boolean canEqual(Object obj)
+com.amazon.tv.oobe.metricsclient.minerva.MinervaAttributes	method	public MinervaAttributes(String str, String str2)
+com.amazon.tv.oobe.metricsclient.minerva.MinervaAttributes	method	public String getGroupId()
+com.amazon.tv.oobe.metricsclient.minerva.MinervaAttributes	method	public String getSchemaId()
+com.amazon.tv.oobe.metricsclient.minerva.MinervaAttributes	method	public String toString()
+com.amazon.tv.oobe.metricsclient.minerva.MinervaAttributes	method	public boolean equals(Object obj)
+com.amazon.tv.oobe.metricsclient.minerva.MinervaAttributes	method	public int hashCode()
+com.amazon.tv.oobe.metricsclient.minerva.MinervaMetricsClient	field	private final AmazonMinerva mMinervaClient;
+com.amazon.tv.oobe.metricsclient.minerva.MinervaMetricsClient	field	private final List<MinervaPredefined> mPredefinedKeyList;
+com.amazon.tv.oobe.metricsclient.minerva.MinervaMetricsClient	field	private final Map<String, MinervaAttributes> mMinervaAttributes;
+com.amazon.tv.oobe.metricsclient.minerva.MinervaMetricsClient	field	private final OobeCustomPivots mOobeCustomPivots;
+com.amazon.tv.oobe.metricsclient.minerva.MinervaMetricsClient	field	private static final String MINERVA_REGION;
+com.amazon.tv.oobe.metricsclient.minerva.MinervaMetricsClient	field	private static final String TAG;
+com.amazon.tv.oobe.metricsclient.minerva.MinervaMetricsClient	field	private static final int COUNTER_COUNT;
+com.amazon.tv.oobe.metricsclient.minerva.MinervaMetricsClient	method	private MetricEvent createMinervaEvent(Metric metric, MinervaAttributes minervaAttributes)
+com.amazon.tv.oobe.metricsclient.minerva.MinervaMetricsClient	method	private boolean isValidMinervaAttribute(MinervaAttributes minervaAttributes)
+com.amazon.tv.oobe.metricsclient.minerva.MinervaMetricsClient	method	protected void finalize() throws Throwable
+com.amazon.tv.oobe.metricsclient.minerva.MinervaMetricsClient	method	public MinervaMetricsClient(Context context, Map<String, MinervaAttributes> map)
+com.amazon.tv.oobe.metricsclient.minerva.MinervaMetricsClient	method	public MinervaMetricsClient(Context context, Map<String, MinervaAttributes> map, List<MinervaPredefined> list)
+com.amazon.tv.oobe.metricsclient.minerva.MinervaMetricsClient	method	public void recordCounter(Metric metric)
+com.amazon.tv.oobe.metricsclient.minerva.MinervaMetricsClient	method	public void recordDuration(Metric metric, long j)
+com.amazon.tv.oobe.metricsclient.minerva.MinervaMetricsClient	method	public void recordTimer(Metric metric, long j)
+com.amazon.tv.oobe.metricsclient.minerva.MinervaPredefined	field	private final Predefined mPredefined;
+com.amazon.tv.oobe.metricsclient.util.LoggerUtil	field	private static final String BASE_TAG;
+com.amazon.tv.oobe.metricsclient.util.LoggerUtil	field	private static final int TAG_MAX_LEN;
+com.amazon.tv.oobe.metricsclient.util.LoggerUtil	method	private LoggerUtil()
+com.amazon.tv.oobe.metricsclient.util.LoggerUtil	method	public static String getSafeTag(Class cls)
+com.amazon.tv.oobe.metricsclient.util.MetricsUtil	field	private static final char[] CLEAN_METRIC_NAME;
+com.amazon.tv.oobe.metricsclient.util.MetricsUtil	field	private static final int METRIC_NAME_MAX_LENGTH;
+com.amazon.tv.oobe.metricsclient.util.MetricsUtil	method	private MetricsUtil()
+com.amazon.tv.oobe.metricsclient.util.MetricsUtil	method	public static String cleanStringForDCMMetric(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.Attributes	field	public static final String PREDEFINED_ATTRIBUTE_PREFIX;
+com.amazonaws.mobileconnectors.remoteconfiguration.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazonaws.mobileconnectors.remoteconfiguration.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazonaws.mobileconnectors.remoteconfiguration.BuildConfig	field	public static final String FLAVOR;
+com.amazonaws.mobileconnectors.remoteconfiguration.BuildConfig	field	public static final String VERSION_NAME;
+com.amazonaws.mobileconnectors.remoteconfiguration.BuildConfig	field	public static final boolean DEBUG;
+com.amazonaws.mobileconnectors.remoteconfiguration.BuildConfig	field	public static final int VERSION_CODE;
+com.amazonaws.mobileconnectors.remoteconfiguration.R	method	private R()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private ArcusThrottler mThrottler;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private final Attributes mAttributes;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private final ConfigurationDb mConfigurationDb;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private final RemoteConfigurationFetcher mRemoteConfigurationFetcher;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private final SharedPreferences mSharedPreferences;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private final String mAppConfigId;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private int mLastSuccessfulSyncAttributeHash;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private static final String DEFAULT_ENDPOINT;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private static final String KEY_SHARED_PREF_LOCAL_CONFIG_INSTANCE_ID;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private static final String REMOTE_CONFIG_SHARED_PREF_FILE_SUFFIX;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private static final String TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	private RemoteConfigurationManager(Builder builder)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	private String getOrGenerateLocalConfigurationInstanceId()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	private String getPreferencesFileNameForAppConfig()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	private void setLocalConfigurationInstanceId(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	private void validateAndSyncOnNewThread(final ConfigurationSyncCallback configurationSyncCallback)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public Attributes openAttributes()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public Configuration openConfiguration()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public RemoteConfiguration getAndValidateConfiguration()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public static Builder forAppId(Context context, String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public static Builder forAppId(Context context, String str, boolean z)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public static RemoteConfigurationManager getInstance(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public static void verifyAppConfigId(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public synchronized void syncOnCurrentThread(RemoteConfiguration remoteConfiguration, ConfigurationSyncCallback configurationSyncCallback)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public void overwriteConfiguration(JSONObject jSONObject)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public void setRampingKey(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public void sync(ConfigurationSyncCallback configurationSyncCallback)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	field	private JSONObject mDefaultConfiguration;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	field	private boolean mCustomContext;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	field	private final Context mContext;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	field	private final String mAppConfigId;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	field	private static final ConcurrentHashMap<String, RemoteConfigurationManager> mManagers;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	method	private void ensureBuilderReady()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	method	public Builder withDefaultConfiguration(JSONObject jSONObject)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	method	public Builder(Context context, String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	method	public Builder(Context context, String str, boolean z)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	method	public RemoteConfigurationManager createOrGet()
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.ConfigurationNotFoundException	field	private static final long serialVersionUID;
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.ConfigurationNotFoundException	method	public ConfigurationNotFoundException(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.ConfigurationNotFoundException	method	public ConfigurationNotFoundException(String str, Throwable th)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.MalformedAppConfigIdException	method	public MalformedAppConfigIdException(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.MalformedAppConfigIdException	method	public MalformedAppConfigIdException(String str, Throwable th)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.NetworkException	field	private static final long serialVersionUID;
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.NetworkException	method	public NetworkException(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.NetworkException	method	public NetworkException(String str, Throwable th)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.RemoteConfigurationException	field	private static final long serialVersionUID;
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.RemoteConfigurationException	method	public RemoteConfigurationException(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.RemoteConfigurationException	method	public RemoteConfigurationException(String str, Throwable th)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private int mCause;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private int mSyncAttempts;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private long mNextSyncAttemptTime;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private static final long DEFAULT_SYNC_JITTER_IN_MS;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private static final long DEFAULT_TIME_BETWEEN_SYNCS_IN_MS;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private static final long MAX_EXP_BACKOFF_WINDOW_SIZE_IN_MS;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private static final long ONE_SECOND_MS;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	public static final int CAUSE_FAILED_SYNC;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	public static final int CAUSE_NONE;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	public static final int CAUSE_SUCCESSFUL_SYNC;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	public static final int CAUSE_THROTTLED_SYNC;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	private long getCurrentWindowSizeInMS()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	private long getJitterInMS()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	private long getRandomTimeInsideCurrentWindowInMS()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public boolean isSyncAllowedRightNow()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public int getCause()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public long getTimeToNextSyncInMS()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public void updateSyncTimeAfterFailure()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public void updateSyncTimeAfterSuccess()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public void updateSyncTimeAfterThrottle(long j)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	field	private final String account;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	field	private final String id;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	field	private final String region;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	field	private final String type;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	field	private final String vendor;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public Arn(String str, String str2, String str3, String str4, String str5)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public String getAccount()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public String getId()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public String getRegion()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public String getType()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public String getVendor()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public String toArn()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public static Arn fromArn(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private final ConcurrentMap<String, Object> mCustomAttributes;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private final Integer mPackageVersion;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private final String mPackageName;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final String KEY_APP_IDENTIFIER;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final String KEY_COUNTRY;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final String KEY_LANGUAGE;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final String KEY_PLATFORM;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final String PLATFORM_ANDROID;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final String PLATFORM_FIRE_OS;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final String TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final int MAX_ALLOWED_CUSTOM_ATTRIBUTES;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	public static final String KEY_APP_VERSION;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	private AttributesImpl(String str, Integer num, Map<String, Object> map)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	private Object getStandardAttribute(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	private static final boolean nullSafeEquals(Object obj, Object obj2)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	private static final int nullSafeHash(Object obj)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	private synchronized <T> T getObjectPrivate(String str, Class<T> cls)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	private void addStandardAttributesTo(Map<String, Object> map)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected Integer getPackageVersionCode()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected Integer getPackageVersionCode(Context context)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected String getCountry()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected String getLanguage()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected String getPackageName()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected String getPlatform()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public AttributesImpl(Context context)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public Boolean getBoolean(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public Double getDouble(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public Integer getInt(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public Long getLong(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public String getString(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public boolean equals(Object obj)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public int hashCode()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public synchronized AttributesImpl m88clone()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public synchronized Map<String, Object> getAllAttributes()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public synchronized Object remove(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public synchronized void addAttributePrivate(String str, Object obj)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public void addAttribute(String str, Boolean bool)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public void addAttribute(String str, Double d)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public void addAttribute(String str, Integer num)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public void addAttribute(String str, Long l)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public void addAttribute(String str, String str2)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private AtomicInteger openCounter;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private DBHelper dbHelper;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private SQLiteDatabase mDatabase;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final Map<String, ConfigurationDb> instanceMap;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final String DB_NAME;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final String SQL_CREATE_CONFIGURATION_TABLE;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final String TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final String[] PROJECTION_CONFIGURATION;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final String[] PROJECTION_REMOTE_CONFIGURATION;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final int COL_ENTITY_TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final int COL_ORIGIN;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final int COL_TIMESTAMP;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final int COL_VALUE;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final int DATABASE_VERSION;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private Configuration configurationFromCursor(Cursor cursor)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private ContentValues getContentValues(String str, Integer num, Long l, String str2)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private RemoteConfiguration remoteConfigurationFromCursor(Cursor cursor, String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private boolean hasConfiguration(SQLiteDatabase sQLiteDatabase)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private synchronized SQLiteDatabase openDatabase()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private synchronized void closeDatabase()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private synchronized void saveConfiguration(String str, int i, Long l, String str2)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private void saveConfigurationPrivate(SQLiteDatabase sQLiteDatabase, String str, int i, Long l, String str2)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public static ConfigurationDb getOrCreateInstance(Context context, String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public synchronized Configuration readConfiguration() throws ConfigurationNotFoundException
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public synchronized RemoteConfiguration readRemoteConfiguration(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public synchronized void deleteConfiguration()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public void saveConfiguration(RemoteConfiguration remoteConfiguration)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$ConfigurationTable	field	private static final String COLUMN_ENTITY_TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$ConfigurationTable	field	private static final String COLUMN_JSON;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$ConfigurationTable	field	private static final String COLUMN_ORIGIN;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$ConfigurationTable	field	private static final String COLUMN_TIMESTAMP;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$ConfigurationTable	field	private static final String TABLE_NAME;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$ConfigurationTable	method	private ConfigurationTable()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	field	private final File mDbFile;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	private DBHelper(Context context, String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	private void setupDb(SQLiteDatabase sQLiteDatabase)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public File getDbFile()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public static String getDbFileNameFor(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public void onCreate(SQLiteDatabase sQLiteDatabase)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public void onDowngrade(SQLiteDatabase sQLiteDatabase, int i, int i2)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public void onOpen(SQLiteDatabase sQLiteDatabase)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public void onUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i2)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	field	private final Date timestamp;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	field	private final String json;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	method	public ConfigurationImpl(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	method	public ConfigurationImpl(String str, Date date)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	method	public Date getTimestamp()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	method	public JSONObject getAsJsonObject()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	method	public String getAsJsonString()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.DowngradeException	method	public DowngradeException()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.DowngradeException	method	public DowngradeException(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.DowngradeException	method	public DowngradeException(String str, Throwable th)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.DowngradeException	method	public DowngradeException(Throwable th)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.Checks	method	public static void checkArgument(boolean z, String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.Checks	method	public static void checkNotNull(Object obj, String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper	field	private static final String TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper	field	private static final char[] HEX_ARRAY;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper	method	private LocalConfigInstanceIdGenerationHelper()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper	method	private static String convertBytesToHexString(byte[] bArr)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper	method	public static String generateLocalConfigInstanceId(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfiguration	field	public static final int ORIGIN_DEFAULT;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfiguration	field	public static final int ORIGIN_OVERWRITTEN;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfiguration	field	public static final int ORIGIN_SYNCED;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	field	private final Configuration mConfiguration;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	field	private final String mAppConfigurationId;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	field	private final String mEntityTag;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	field	private final boolean mUpdate;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	field	private final int mOrigin;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public Configuration getConfiguration()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public RemoteConfigurationImpl(Configuration configuration, String str, int i, String str2, boolean z)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public String getAppConfigurationId()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public String getEntityTag()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public boolean isUpdate()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public int getOrigin()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private final Context mContext;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private final URL mEndpoint;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final Pattern ARCUS_CLIENT_VERSION_PATTERN;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String CHARSET_NAME_UTF8;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String GZIP_ENCODING;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String HEADER_ACCEPT_ENCODING;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String HEADER_AMZ_TARGET;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String HEADER_CONTENT_ENCODING;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String HEADER_CONTENT_TYPE;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String HEADER_USER_AGENT;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String QUERY_CONFIGURATION_TARGET;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String REQUEST_KEY_APP_CONFIG_ID;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String REQUEST_KEY_CLIENT_ATTRIBUTES;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String REQUEST_KEY_LAST_SEEN_ENTITY_TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String REQUEST_KEY_LOCAL_CONFIG_INSTANCE_ID;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String RESPONSE_KEY_CONFIGURATION;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String RESPONSE_KEY_ENTITY_TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String RESPONSE_KEY_UPDATED;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String USER_AGENT_PREFIX;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String XAMZ_JSON_CONTENT_TYPE;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final int DEFAULT_CONNECT_TIMEOUT;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final int DEFAULT_READ_TIMEOUT;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final int HTTP_OK_STATUS_CODE;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private JSONObject readResponse(HttpURLConnection httpURLConnection) throws Throwable
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private RemoteConfiguration buildRemoteConfiguration(String str, JSONObject jSONObject)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private String getArcusUserAgent()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private boolean isNetworkAvailable()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private byte[] buildRequestBody(String str, Attributes attributes, String str2, String str3)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private void closeErrorStreamFromConnection(HttpURLConnection httpURLConnection)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private void configureConnection(HttpURLConnection httpURLConnection)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private void setHeaders(HttpURLConnection httpURLConnection)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private void writeRequest(HttpURLConnection httpURLConnection, byte[] bArr)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	public AndroidRemoteConfigurationFetcher(Context context, URL url)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	public RemoteConfiguration fetch(String str, Attributes attributes, String str2, String str3) throws Throwable
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.RequestThrottledException	method	public RequestThrottledException(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.RequestThrottledException	method	public RequestThrottledException(String str, Throwable th)

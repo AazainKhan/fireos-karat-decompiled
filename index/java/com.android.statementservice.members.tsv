@@ -1,0 +1,171 @@
+class	kind	declaration
+com.android.statementservice.DirectStatementService	field	private AbstractStatementRetriever mStatementRetriever;
+com.android.statementservice.DirectStatementService	field	private Handler mHandler;
+com.android.statementservice.DirectStatementService	field	private HandlerThread mThread;
+com.android.statementservice.DirectStatementService	field	private HttpResponseCache mHttpResponseCache;
+com.android.statementservice.DirectStatementService	field	private static final String TAG;
+com.android.statementservice.DirectStatementService	method	public IBinder onBind(Intent intent)
+com.android.statementservice.DirectStatementService	method	public int onStartCommand(Intent intent, int i, int i2)
+com.android.statementservice.DirectStatementService	method	public void onCreate()
+com.android.statementservice.DirectStatementService	method	public void onCreate(AbstractStatementRetriever abstractStatementRetriever, Looper looper, File file)
+com.android.statementservice.DirectStatementService	method	public void onDestroy()
+com.android.statementservice.DirectStatementService$IsAssociatedCallable	field	private List<String> mSources;
+com.android.statementservice.DirectStatementService$IsAssociatedCallable	field	private ResultReceiver mResultReceiver;
+com.android.statementservice.DirectStatementService$IsAssociatedCallable	field	private String mRelation;
+com.android.statementservice.DirectStatementService$IsAssociatedCallable	field	private String mTarget;
+com.android.statementservice.DirectStatementService$IsAssociatedCallable	method	private boolean verifyOneSource(AbstractAsset abstractAsset, AbstractAssetMatcher abstractAssetMatcher, Relation relation) throws AssociationServiceException
+com.android.statementservice.DirectStatementService$IsAssociatedCallable	method	public IsAssociatedCallable(List<String> list, String str, String str2, ResultReceiver resultReceiver)
+com.android.statementservice.DirectStatementService$IsAssociatedCallable	method	public Void call()
+com.android.statementservice.ExceptionLoggingFutureTask	field	private final String mTag;
+com.android.statementservice.ExceptionLoggingFutureTask	method	protected void done()
+com.android.statementservice.ExceptionLoggingFutureTask	method	public ExceptionLoggingFutureTask(Callable<V> callable, String str)
+com.android.statementservice.IntentFilterVerificationReceiver	field	private static final Integer MAX_HOSTS_PER_REQUEST;
+com.android.statementservice.IntentFilterVerificationReceiver	field	private static final Pattern ANDROID_PACKAGE_NAME_PATTERN;
+com.android.statementservice.IntentFilterVerificationReceiver	field	private static final String TAG;
+com.android.statementservice.IntentFilterVerificationReceiver	method	private String createAndroidAssetString(Context context, String str) throws PackageManager.NameNotFoundException
+com.android.statementservice.IntentFilterVerificationReceiver	method	private String createWebAssetString(String str, String str2) throws MalformedURLException
+com.android.statementservice.IntentFilterVerificationReceiver	method	private void logValidationParametersForCTS(int i, String str, ArrayList<String> arrayList, String str2)
+com.android.statementservice.IntentFilterVerificationReceiver	method	public static void sendErrorToPackageManager(PackageManager packageManager, int i)
+com.android.statementservice.IntentFilterVerificationReceiver	method	public void onReceive(Context context, Intent intent)
+com.android.statementservice.IntentFilterVerificationReceiver$IsAssociatedResultReceiver	field	private final PackageManager mPackageManager;
+com.android.statementservice.IntentFilterVerificationReceiver$IsAssociatedResultReceiver	field	private final int mVerificationId;
+com.android.statementservice.IntentFilterVerificationReceiver$IsAssociatedResultReceiver	method	protected void onReceiveResult(int i, Bundle bundle)
+com.android.statementservice.IntentFilterVerificationReceiver$IsAssociatedResultReceiver	method	public IsAssociatedResultReceiver(Handler handler, PackageManager packageManager, int i)
+com.android.statementservice.R$string	field	public static final int service_name;
+com.android.statementservice.retriever.AbstractAsset	method	public abstract String toJson();
+com.android.statementservice.retriever.AbstractAsset	method	public abstract boolean followInsecureInclude();
+com.android.statementservice.retriever.AbstractAsset	method	public static AbstractAsset create(String str) throws AssociationServiceException
+com.android.statementservice.retriever.AbstractAssetMatcher	method	public abstract boolean matches(AbstractAsset abstractAsset);
+com.android.statementservice.retriever.AbstractAssetMatcher	method	public static AbstractAssetMatcher createMatcher(String str) throws JSONException, AssociationServiceException
+com.android.statementservice.retriever.AbstractStatementRetriever	method	public abstract Result retrieveStatements(AbstractAsset abstractAsset) throws AssociationServiceException;
+com.android.statementservice.retriever.AbstractStatementRetriever	method	public static AbstractStatementRetriever createDirectRetriever(Context context)
+com.android.statementservice.retriever.AndroidAppAsset	field	private final List<String> mCertFingerprints;
+com.android.statementservice.retriever.AndroidAppAsset	field	private final String mPackageName;
+com.android.statementservice.retriever.AndroidAppAsset	method	private AndroidAppAsset(String str, List<String> list)
+com.android.statementservice.retriever.AndroidAppAsset	method	private List<String> sortAndDeDuplicate(List<String> list)
+com.android.statementservice.retriever.AndroidAppAsset	method	public List<String> getCertFingerprints()
+com.android.statementservice.retriever.AndroidAppAsset	method	public String getPackageName()
+com.android.statementservice.retriever.AndroidAppAsset	method	public String toJson()
+com.android.statementservice.retriever.AndroidAppAsset	method	public String toString()
+com.android.statementservice.retriever.AndroidAppAsset	method	public boolean equals(Object obj)
+com.android.statementservice.retriever.AndroidAppAsset	method	public boolean followInsecureInclude()
+com.android.statementservice.retriever.AndroidAppAsset	method	public int hashCode()
+com.android.statementservice.retriever.AndroidAppAsset	method	public static AndroidAppAsset create(JSONObject jSONObject) throws AssociationServiceException
+com.android.statementservice.retriever.AndroidAppAsset	method	public static AndroidAppAsset create(String str, List<String> list)
+com.android.statementservice.retriever.AndroidAppAssetMatcher	field	private final AndroidAppAsset mQuery;
+com.android.statementservice.retriever.AndroidAppAssetMatcher	method	public AndroidAppAssetMatcher(AndroidAppAsset androidAppAsset)
+com.android.statementservice.retriever.AndroidAppAssetMatcher	method	public boolean matches(AbstractAsset abstractAsset)
+com.android.statementservice.retriever.AndroidPackageInfoFetcher	field	private Context mContext;
+com.android.statementservice.retriever.AndroidPackageInfoFetcher	method	public AndroidPackageInfoFetcher(Context context)
+com.android.statementservice.retriever.AndroidPackageInfoFetcher	method	public List<String> getCertFingerprints(String str) throws PackageManager.NameNotFoundException
+com.android.statementservice.retriever.AndroidPackageInfoFetcher	method	public List<String> getStatements(String str) throws PackageManager.NameNotFoundException
+com.android.statementservice.retriever.AssetFactory	method	public static AbstractAsset create(JSONObject jSONObject) throws AssociationServiceException
+com.android.statementservice.retriever.AssetJsonWriter	field	private JsonWriter mWriter;
+com.android.statementservice.retriever.AssetJsonWriter	field	private StringWriter mStringWriter;
+com.android.statementservice.retriever.AssetJsonWriter	field	private boolean mClosed;
+com.android.statementservice.retriever.AssetJsonWriter	method	public AssetJsonWriter()
+com.android.statementservice.retriever.AssetJsonWriter	method	public String closeAndGetString()
+com.android.statementservice.retriever.AssetJsonWriter	method	public void writeArrayUpper(String str, List<String> list)
+com.android.statementservice.retriever.AssetJsonWriter	method	public void writeFieldLower(String str, String str2)
+com.android.statementservice.retriever.AssetMatcherFactory	method	public static AbstractAssetMatcher create(String str) throws JSONException, AssociationServiceException
+com.android.statementservice.retriever.AssociationServiceException	method	public AssociationServiceException(String str)
+com.android.statementservice.retriever.AssociationServiceException	method	public AssociationServiceException(String str, Exception exc)
+com.android.statementservice.retriever.DirectStatementRetriever	field	private final AndroidPackageInfoFetcher mAndroidFetcher;
+com.android.statementservice.retriever.DirectStatementRetriever	field	private final URLFetcher mUrlFetcher;
+com.android.statementservice.retriever.DirectStatementRetriever	method	private Result retrieveFromAndroid(AndroidAppAsset androidAppAsset) throws AssociationServiceException
+com.android.statementservice.retriever.DirectStatementRetriever	method	private Result retrieveFromWeb(WebAsset webAsset) throws AssociationServiceException
+com.android.statementservice.retriever.DirectStatementRetriever	method	private Result retrieveStatementFromUrl(String str, int i, AbstractAsset abstractAsset) throws AssociationServiceException
+com.android.statementservice.retriever.DirectStatementRetriever	method	private String computeAssociationJsonUrl(WebAsset webAsset)
+com.android.statementservice.retriever.DirectStatementRetriever	method	public DirectStatementRetriever(URLFetcher uRLFetcher, AndroidPackageInfoFetcher androidPackageInfoFetcher)
+com.android.statementservice.retriever.DirectStatementRetriever	method	public Result retrieveStatements(AbstractAsset abstractAsset) throws AssociationServiceException
+com.android.statementservice.retriever.DirectStatementRetriever$Result	field	private final List<Statement> mStatements;
+com.android.statementservice.retriever.DirectStatementRetriever$Result	field	private final Long mExpireMillis;
+com.android.statementservice.retriever.DirectStatementRetriever$Result	method	private Result(List<Statement> list, Long l)
+com.android.statementservice.retriever.DirectStatementRetriever$Result	method	public List<Statement> getStatements()
+com.android.statementservice.retriever.DirectStatementRetriever$Result	method	public String toString()
+com.android.statementservice.retriever.DirectStatementRetriever$Result	method	public boolean equals(Object obj)
+com.android.statementservice.retriever.DirectStatementRetriever$Result	method	public int hashCode()
+com.android.statementservice.retriever.DirectStatementRetriever$Result	method	public static Result create(List<Statement> list, Long l)
+com.android.statementservice.retriever.JsonParser	method	public static JSONObject parse(JsonReader jsonReader) throws JSONException, IOException
+com.android.statementservice.retriever.JsonParser	method	public static List<String> parseArray(JsonReader jsonReader) throws IOException
+com.android.statementservice.retriever.ParsedStatement	field	private final List<Statement> mStatements;
+com.android.statementservice.retriever.ParsedStatement	field	private final List<String> mDelegates;
+com.android.statementservice.retriever.ParsedStatement	method	public List<Statement> getStatements()
+com.android.statementservice.retriever.ParsedStatement	method	public List<String> getDelegates()
+com.android.statementservice.retriever.ParsedStatement	method	public ParsedStatement(List<Statement> list, List<String> list2)
+com.android.statementservice.retriever.Relation	field	private final String mDetail;
+com.android.statementservice.retriever.Relation	field	private final String mKind;
+com.android.statementservice.retriever.Relation	field	private static final Pattern DETAIL_PATTERN;
+com.android.statementservice.retriever.Relation	field	private static final Pattern KIND_PATTERN;
+com.android.statementservice.retriever.Relation	method	private Relation(String str, String str2)
+com.android.statementservice.retriever.Relation	method	public String getDetail()
+com.android.statementservice.retriever.Relation	method	public String getKind()
+com.android.statementservice.retriever.Relation	method	public String toString()
+com.android.statementservice.retriever.Relation	method	public boolean equals(Object obj)
+com.android.statementservice.retriever.Relation	method	public boolean matches(Relation relation)
+com.android.statementservice.retriever.Relation	method	public int hashCode()
+com.android.statementservice.retriever.Relation	method	public static Relation create(String str) throws AssociationServiceException
+com.android.statementservice.retriever.Relation	method	public static Relation create(String str, String str2) throws AssociationServiceException
+com.android.statementservice.retriever.Statement	field	private final AbstractAsset mSource;
+com.android.statementservice.retriever.Statement	field	private final AbstractAsset mTarget;
+com.android.statementservice.retriever.Statement	field	private final Relation mRelation;
+com.android.statementservice.retriever.Statement	method	private Statement(AbstractAsset abstractAsset, AbstractAsset abstractAsset2, Relation relation)
+com.android.statementservice.retriever.Statement	method	public AbstractAsset getTarget()
+com.android.statementservice.retriever.Statement	method	public Relation getRelation()
+com.android.statementservice.retriever.Statement	method	public String toString()
+com.android.statementservice.retriever.Statement	method	public boolean equals(Object obj)
+com.android.statementservice.retriever.Statement	method	public int hashCode()
+com.android.statementservice.retriever.Statement	method	public static Statement create(AbstractAsset abstractAsset, AbstractAsset abstractAsset2, Relation relation)
+com.android.statementservice.retriever.StatementParser	method	static ParsedStatement parseStatement(JsonReader jsonReader, AbstractAsset abstractAsset) throws JSONException, AssociationServiceException, IOException
+com.android.statementservice.retriever.StatementParser	method	static ParsedStatement parseStatement(String str, AbstractAsset abstractAsset) throws JSONException, AssociationServiceException, IOException
+com.android.statementservice.retriever.StatementParser	method	static ParsedStatement parseStatementList(String str, AbstractAsset abstractAsset) throws JSONException, IOException
+com.android.statementservice.retriever.URLFetcher	field	private static final String TAG;
+com.android.statementservice.retriever.URLFetcher	method	private Long getExpirationTimeMillisFromHTTPHeader(Map<String, List<String>> map)
+com.android.statementservice.retriever.URLFetcher	method	private Map<String, String> joinHttpHeaders(Map<String, List<String>> map)
+com.android.statementservice.retriever.URLFetcher	method	public WebContent getWebContentFromUrl(URL url, long j, int i) throws Throwable
+com.android.statementservice.retriever.URLFetcher	method	public WebContent getWebContentFromUrlWithRetry(URL url, long j, int i, int i2, int i3) throws InterruptedException, AssociationServiceException, IOException
+com.android.statementservice.retriever.URLFetcher	method	public static String inputStreamToString(InputStream inputStream, int i, long j) throws AssociationServiceException, IOException
+com.android.statementservice.retriever.Utils	field	private static final char[] HEX_DIGITS;
+com.android.statementservice.retriever.Utils	method	private static String byteArrayToHexString(byte[] bArr)
+com.android.statementservice.retriever.Utils	method	public static List<String> getCertFingerprintsFromPackageManager(String str, Context context) throws PackageManager.NameNotFoundException
+com.android.statementservice.retriever.Utils	method	public static String computeNormalizedSha256Fingerprint(byte[] bArr)
+com.android.statementservice.retriever.Utils	method	public static String joinStrings(String str, List<String> list)
+com.android.statementservice.retriever.Utils	method	public static boolean hasCommonString(List<String> list, List<String> list2)
+com.android.statementservice.retriever.WebAsset	field	private final URL mUrl;
+com.android.statementservice.retriever.WebAsset	method	private WebAsset(URL url)
+com.android.statementservice.retriever.WebAsset	method	protected static WebAsset create(JSONObject jSONObject) throws AssociationServiceException
+com.android.statementservice.retriever.WebAsset	method	public String getDomain()
+com.android.statementservice.retriever.WebAsset	method	public String getScheme()
+com.android.statementservice.retriever.WebAsset	method	public String toJson()
+com.android.statementservice.retriever.WebAsset	method	public String toString()
+com.android.statementservice.retriever.WebAsset	method	public boolean equals(Object obj)
+com.android.statementservice.retriever.WebAsset	method	public boolean followInsecureInclude()
+com.android.statementservice.retriever.WebAsset	method	public int getPort()
+com.android.statementservice.retriever.WebAsset	method	public int hashCode()
+com.android.statementservice.retriever.WebAssetMatcher	field	private final WebAsset mQuery;
+com.android.statementservice.retriever.WebAssetMatcher	method	public WebAssetMatcher(WebAsset webAsset)
+com.android.statementservice.retriever.WebAssetMatcher	method	public boolean matches(AbstractAsset abstractAsset)
+com.android.statementservice.retriever.WebContent	field	private final Long mExpireTimeMillis;
+com.android.statementservice.retriever.WebContent	field	private final String mContent;
+com.android.statementservice.retriever.WebContent	method	public Long getExpireTimeMillis()
+com.android.statementservice.retriever.WebContent	method	public String getContent()
+com.android.statementservice.retriever.WebContent	method	public WebContent(String str, Long l)
+com.android.volley.Header	field	private final String mName;
+com.android.volley.Header	field	private final String mValue;
+com.android.volley.Header	method	public Header(String str, String str2)
+com.android.volley.Header	method	public String toString()
+com.android.volley.Header	method	public boolean equals(Object obj)
+com.android.volley.Header	method	public int hashCode()
+com.android.volley.NetworkResponse	field	public final List<Header> allHeaders;
+com.android.volley.NetworkResponse	field	public final Map<String, String> headers;
+com.android.volley.NetworkResponse	field	public final byte[] data;
+com.android.volley.NetworkResponse	method	private NetworkResponse(int i, byte[] bArr, Map<String, String> map, List<Header> list, boolean z, long j)
+com.android.volley.NetworkResponse	method	private static List<Header> toAllHeaderList(Map<String, String> map)
+com.android.volley.NetworkResponse	method	public NetworkResponse(byte[] bArr, Map<String, String> map)
+com.android.volley.NetworkResponse	method	public NetworkResponse(int i, byte[] bArr, Map<String, String> map, boolean z, long j)
+com.android.volley.VolleyLog	field	private static final String CLASS_NAME;
+com.android.volley.VolleyLog	field	public static String TAG;
+com.android.volley.VolleyLog	method	private static String buildMessage(String str, Object... objArr)
+com.android.volley.VolleyLog	method	public static void e(Throwable th, String str, Object... objArr)
+com.android.volley.toolbox.HttpHeaderParser	method	private static SimpleDateFormat newRfc1123Formatter()
+com.android.volley.toolbox.HttpHeaderParser	method	public static long parseDateAsEpoch(String str)

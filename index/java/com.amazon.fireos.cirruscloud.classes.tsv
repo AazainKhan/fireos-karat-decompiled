@@ -1,0 +1,966 @@
+kind	class	extends	implements
+class	com.amazon.fireos.cirruscloud.CirrusCloudService	Service	
+class	com.amazon.fireos.cirruscloud.R		
+class	com.amazon.fireos.cirruscloud.R$string		
+class	com.amazonaws.AbortedException	AmazonClientException	
+class	com.amazonaws.AmazonClientException	RuntimeException	
+class	com.amazonaws.AmazonServiceException	AmazonClientException	
+class	com.amazonaws.AmazonWebServiceClient		
+class	com.amazonaws.AmazonWebServiceRequest		Cloneable
+class	com.amazonaws.AmazonWebServiceResponse		
+class	com.amazonaws.ClientConfiguration		
+class	com.amazonaws.DefaultRequest		Request<T>
+class	com.amazonaws.R		
+class	com.amazonaws.R$string		
+class	com.amazonaws.RequestClientOptions		
+class	com.amazonaws.Response		
+class	com.amazonaws.ResponseMetadata		
+class	com.amazonaws.SDKGlobalConfiguration		
+class	com.amazonaws.auth.AWS3Signer	AbstractAWSSigner	
+class	com.amazonaws.auth.AWS4Signer	AbstractAWSSigner	ServiceAwareSigner,RegionAwareSigner,Presigner
+class	com.amazonaws.auth.AWS4Signer$HeaderSigningResult		
+class	com.amazonaws.auth.AWSAbstractCognitoDeveloperIdentityProvider	AWSAbstractCognitoIdentityProvider	
+class	com.amazonaws.auth.AWSAbstractCognitoIdentityProvider		AWSCognitoIdentityProvider
+class	com.amazonaws.auth.AWSBasicCognitoIdentityProvider	AWSAbstractCognitoIdentityProvider	
+class	com.amazonaws.auth.AWSCredentialsProviderChain		AWSCredentialsProvider
+class	com.amazonaws.auth.AWSEnhancedCognitoIdentityProvider	AWSAbstractCognitoIdentityProvider	
+class	com.amazonaws.auth.AbstractAWSSigner		Signer
+class	com.amazonaws.auth.AnonymousAWSCredentials		AWSCredentials
+class	com.amazonaws.auth.AwsChunkedEncodingInputStream	SdkInputStream	
+class	com.amazonaws.auth.BasicAWSCredentials		AWSCredentials
+class	com.amazonaws.auth.BasicSessionCredentials		AWSSessionCredentials
+class	com.amazonaws.auth.ChunkContentIterator		
+class	com.amazonaws.auth.ClasspathPropertiesFileCredentialsProvider		AWSCredentialsProvider
+class	com.amazonaws.auth.CognitoCachingCredentialsProvider	CognitoCredentialsProvider	
+class	com.amazonaws.auth.CognitoCredentialsProvider		AWSCredentialsProvider
+class	com.amazonaws.auth.DecodedStreamBuffer		
+class	com.amazonaws.auth.DefaultAWSCredentialsProviderChain	AWSCredentialsProviderChain	
+class	com.amazonaws.auth.NoOpSigner		Signer
+class	com.amazonaws.auth.PropertiesCredentials		AWSCredentials
+class	com.amazonaws.auth.PropertiesFileCredentialsProvider		AWSCredentialsProvider
+class	com.amazonaws.auth.QueryStringSigner	AbstractAWSSigner	Signer
+class	com.amazonaws.auth.STSAssumeRoleSessionCredentialsProvider		AWSCredentialsProvider
+class	com.amazonaws.auth.STSSessionCredentials		AWSRefreshableSessionCredentials
+class	com.amazonaws.auth.STSSessionCredentialsProvider		AWSCredentialsProvider
+class	com.amazonaws.auth.SessionCredentialsProviderFactory		
+class	com.amazonaws.auth.SessionCredentialsProviderFactory$Key		
+class	com.amazonaws.auth.SignerFactory		
+class	com.amazonaws.auth.SystemPropertiesCredentialsProvider		AWSCredentialsProvider
+class	com.amazonaws.auth.WebIdentityFederationSessionCredentialsProvider		AWSCredentialsProvider
+class	com.amazonaws.auth.policy.Condition		
+class	com.amazonaws.auth.policy.Policy		
+class	com.amazonaws.auth.policy.Principal		
+class	com.amazonaws.auth.policy.Resource		
+class	com.amazonaws.auth.policy.Statement		
+class	com.amazonaws.auth.policy.conditions.ArnCondition	Condition	
+class	com.amazonaws.auth.policy.conditions.BooleanCondition	Condition	
+class	com.amazonaws.auth.policy.conditions.ConditionFactory		
+class	com.amazonaws.auth.policy.conditions.DateCondition	Condition	
+class	com.amazonaws.auth.policy.conditions.IpAddressCondition	Condition	
+class	com.amazonaws.auth.policy.conditions.NumericCondition	Condition	
+class	com.amazonaws.auth.policy.conditions.S3ConditionFactory		
+class	com.amazonaws.auth.policy.conditions.StringCondition	Condition	
+class	com.amazonaws.auth.policy.internal.JsonDocumentFields		
+class	com.amazonaws.auth.policy.internal.JsonPolicyReader		
+class	com.amazonaws.auth.policy.internal.JsonPolicyReader$NamedAction		Action
+class	com.amazonaws.auth.policy.internal.JsonPolicyWriter		
+class	com.amazonaws.auth.policy.internal.JsonPolicyWriter$ConditionsByKey		
+class	com.amazonaws.auth.policy.resources.S3BucketResource	Resource	
+class	com.amazonaws.auth.policy.resources.S3ObjectResource	Resource	
+class	com.amazonaws.event.ProgressEvent		
+class	com.amazonaws.event.ProgressListenerCallbackExecutor		
+class	com.amazonaws.event.ProgressListenerChain		ProgressListener
+class	com.amazonaws.event.ProgressReportingInputStream	SdkFilterInputStream	
+class	com.amazonaws.handlers.AbstractRequestHandler		RequestHandler
+class	com.amazonaws.handlers.CredentialsRequestHandler	RequestHandler2	
+class	com.amazonaws.handlers.HandlerChainFactory		
+class	com.amazonaws.handlers.RequestHandler2		
+class	com.amazonaws.handlers.RequestHandler2Adaptor	RequestHandler2	
+class	com.amazonaws.http.AmazonHttpClient		
+class	com.amazonaws.http.DefaultErrorResponseHandler		HttpResponseHandler<AmazonServiceException>
+class	com.amazonaws.http.ExecutionContext		
+class	com.amazonaws.http.HttpHeader		
+class	com.amazonaws.http.HttpRequest		
+class	com.amazonaws.http.HttpRequestFactory		
+class	com.amazonaws.http.HttpResponse		
+class	com.amazonaws.http.HttpResponse$Builder		
+class	com.amazonaws.http.JsonErrorResponseHandler		HttpResponseHandler<AmazonServiceException>
+class	com.amazonaws.http.JsonErrorResponseHandler$JsonErrorResponse		
+class	com.amazonaws.http.JsonResponseHandler		HttpResponseHandler<AmazonWebServiceResponse<T>>
+class	com.amazonaws.http.StaxResponseHandler		HttpResponseHandler<AmazonWebServiceResponse<T>>
+class	com.amazonaws.http.UrlHttpClient		HttpClient
+class	com.amazonaws.http.UrlHttpClient$CurlBuilder		
+class	com.amazonaws.internal.CRC32MismatchException	IOException	
+class	com.amazonaws.internal.CustomBackoffStrategy		
+class	com.amazonaws.internal.DynamoDBBackoffStrategy	CustomBackoffStrategy	
+class	com.amazonaws.internal.ListWithAutoConstructFlag	ArrayList<T>	
+class	com.amazonaws.internal.ReleasableInputStream	SdkFilterInputStream	Releasable
+class	com.amazonaws.internal.ResettableInputStream	ReleasableInputStream	
+class	com.amazonaws.internal.ReturningRunnable		
+class	com.amazonaws.internal.SdkDigestInputStream	DigestInputStream	MetricAware
+class	com.amazonaws.internal.SdkFilterInputStream	FilterInputStream	MetricAware
+class	com.amazonaws.internal.SdkFilterOutputStream	FilterOutputStream	MetricAware
+class	com.amazonaws.internal.SdkInputStream	InputStream	MetricAware
+class	com.amazonaws.internal.StaticCredentialsProvider		AWSCredentialsProvider
+class	com.amazonaws.internal.config.HostRegexToRegionMapping		
+class	com.amazonaws.internal.config.HttpClientConfig		
+class	com.amazonaws.internal.config.InternalConfig		
+class	com.amazonaws.internal.config.InternalConfig$Factory		
+class	com.amazonaws.internal.config.SignerConfig		
+class	com.amazonaws.internal.keyvaluestore.AWSKeyValueStore		
+class	com.amazonaws.internal.keyvaluestore.KeyNotFoundException	Exception	
+class	com.amazonaws.internal.keyvaluestore.KeyNotGeneratedException	Exception	
+class	com.amazonaws.internal.keyvaluestore.KeyProvider10		KeyProvider
+class	com.amazonaws.internal.keyvaluestore.KeyProvider18		KeyProvider
+class	com.amazonaws.internal.keyvaluestore.KeyProvider23		KeyProvider
+class	com.amazonaws.logging.AndroidLog		Log
+class	com.amazonaws.logging.ApacheCommonsLogging		Log
+class	com.amazonaws.logging.ConsoleLog		Log
+class	com.amazonaws.logging.Environment		
+class	com.amazonaws.logging.LogFactory		
+class	com.amazonaws.metrics.AwsSdkMetrics$MetricRegistry		
+class	com.amazonaws.metrics.ByteThroughputHelper	ByteThroughputProvider	
+class	com.amazonaws.metrics.ByteThroughputProvider		
+class	com.amazonaws.metrics.MetricCollector		
+class	com.amazonaws.metrics.MetricFilterInputStream	SdkFilterInputStream	
+class	com.amazonaws.metrics.RequestMetricCollector		
+class	com.amazonaws.metrics.ServiceLatencyProvider		
+class	com.amazonaws.metrics.ServiceMetricCollector		
+class	com.amazonaws.metrics.SimpleMetricType		MetricType
+class	com.amazonaws.metrics.SimpleServiceMetricType	SimpleMetricType	ServiceMetricType
+class	com.amazonaws.metrics.SimpleThroughputMetricType	SimpleServiceMetricType	ThroughputMetricType
+class	com.amazonaws.mobile.config.AWSConfiguration		
+class	com.amazonaws.mobileconnectors.s3.transferutility.DownloadTask		Callable<Boolean>
+class	com.amazonaws.mobileconnectors.s3.transferutility.S3ClientReference		
+class	com.amazonaws.mobileconnectors.s3.transferutility.TransferDBBase		
+class	com.amazonaws.mobileconnectors.s3.transferutility.TransferDBUtil		
+class	com.amazonaws.mobileconnectors.s3.transferutility.TransferDatabaseHelper	SQLiteOpenHelper	
+class	com.amazonaws.mobileconnectors.s3.transferutility.TransferNetworkConnectionType		
+class	com.amazonaws.mobileconnectors.s3.transferutility.TransferNetworkLossHandler	BroadcastReceiver	
+class	com.amazonaws.mobileconnectors.s3.transferutility.TransferObserver		
+class	com.amazonaws.mobileconnectors.s3.transferutility.TransferObserver$TransferStatusListener		TransferListener
+class	com.amazonaws.mobileconnectors.s3.transferutility.TransferRecord		
+class	com.amazonaws.mobileconnectors.s3.transferutility.TransferService	Service	
+class	com.amazonaws.mobileconnectors.s3.transferutility.TransferStatusUpdater		
+class	com.amazonaws.mobileconnectors.s3.transferutility.TransferStatusUpdater$TransferProgressListener		ProgressListener
+class	com.amazonaws.mobileconnectors.s3.transferutility.TransferTable		
+class	com.amazonaws.mobileconnectors.s3.transferutility.TransferThreadPool		
+class	com.amazonaws.mobileconnectors.s3.transferutility.TransferUtility		
+class	com.amazonaws.mobileconnectors.s3.transferutility.TransferUtility$Builder		
+class	com.amazonaws.mobileconnectors.s3.transferutility.TransferUtilityException	Exception	
+class	com.amazonaws.mobileconnectors.s3.transferutility.TransferUtilityOptions		Serializable
+class	com.amazonaws.mobileconnectors.s3.transferutility.UploadOptions		
+class	com.amazonaws.mobileconnectors.s3.transferutility.UploadOptions$Builder		
+class	com.amazonaws.mobileconnectors.s3.transferutility.UploadPartTask		Callable<Boolean>
+class	com.amazonaws.mobileconnectors.s3.transferutility.UploadPartTask$UploadPartTaskProgressListener		ProgressListener
+class	com.amazonaws.mobileconnectors.s3.transferutility.UploadTask		Callable<Boolean>
+class	com.amazonaws.mobileconnectors.s3.transferutility.UploadTask$UploadPartTaskMetadata		
+class	com.amazonaws.mobileconnectors.s3.transferutility.UploadTask$UploadTaskProgressListener		ProgressListener
+class	com.amazonaws.regions.Region		
+class	com.amazonaws.regions.RegionDefaults		
+class	com.amazonaws.regions.RegionMetadata		
+class	com.amazonaws.regions.RegionMetadataParser		
+class	com.amazonaws.regions.RegionUtils		
+class	com.amazonaws.regions.ServiceAbbreviations		
+class	com.amazonaws.retry.PredefinedRetryPolicies		
+class	com.amazonaws.retry.PredefinedRetryPolicies$SDKDefaultBackoffStrategy		RetryPolicy.BackoffStrategy
+class	com.amazonaws.retry.PredefinedRetryPolicies$SDKDefaultRetryCondition		RetryPolicy.RetryCondition
+class	com.amazonaws.retry.RetryPolicy		
+class	com.amazonaws.retry.RetryUtils		
+class	com.amazonaws.services.cognitoidentity.AmazonCognitoIdentityClient	AmazonWebServiceClient	AmazonCognitoIdentity
+class	com.amazonaws.services.cognitoidentity.model.CognitoIdentityProvider		Serializable
+class	com.amazonaws.services.cognitoidentity.model.ConcurrentModificationException	AmazonServiceException	
+class	com.amazonaws.services.cognitoidentity.model.CreateIdentityPoolRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.cognitoidentity.model.CreateIdentityPoolResult		Serializable
+class	com.amazonaws.services.cognitoidentity.model.Credentials		Serializable
+class	com.amazonaws.services.cognitoidentity.model.DeleteIdentitiesRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.cognitoidentity.model.DeleteIdentitiesResult		Serializable
+class	com.amazonaws.services.cognitoidentity.model.DeleteIdentityPoolRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.cognitoidentity.model.DescribeIdentityPoolRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.cognitoidentity.model.DescribeIdentityPoolResult		Serializable
+class	com.amazonaws.services.cognitoidentity.model.DescribeIdentityRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.cognitoidentity.model.DescribeIdentityResult		Serializable
+class	com.amazonaws.services.cognitoidentity.model.DeveloperUserAlreadyRegisteredException	AmazonServiceException	
+class	com.amazonaws.services.cognitoidentity.model.ExternalServiceException	AmazonServiceException	
+class	com.amazonaws.services.cognitoidentity.model.GetCredentialsForIdentityRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.cognitoidentity.model.GetCredentialsForIdentityResult		Serializable
+class	com.amazonaws.services.cognitoidentity.model.GetIdRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.cognitoidentity.model.GetIdResult		Serializable
+class	com.amazonaws.services.cognitoidentity.model.GetIdentityPoolRolesRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.cognitoidentity.model.GetIdentityPoolRolesResult		Serializable
+class	com.amazonaws.services.cognitoidentity.model.GetOpenIdTokenForDeveloperIdentityRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.cognitoidentity.model.GetOpenIdTokenForDeveloperIdentityResult		Serializable
+class	com.amazonaws.services.cognitoidentity.model.GetOpenIdTokenRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.cognitoidentity.model.GetOpenIdTokenResult		Serializable
+class	com.amazonaws.services.cognitoidentity.model.GetPrincipalTagAttributeMapRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.cognitoidentity.model.GetPrincipalTagAttributeMapResult		Serializable
+class	com.amazonaws.services.cognitoidentity.model.IdentityDescription		Serializable
+class	com.amazonaws.services.cognitoidentity.model.IdentityPoolShortDescription		Serializable
+class	com.amazonaws.services.cognitoidentity.model.InternalErrorException	AmazonServiceException	
+class	com.amazonaws.services.cognitoidentity.model.InvalidIdentityPoolConfigurationException	AmazonServiceException	
+class	com.amazonaws.services.cognitoidentity.model.InvalidParameterException	AmazonServiceException	
+class	com.amazonaws.services.cognitoidentity.model.LimitExceededException	AmazonServiceException	
+class	com.amazonaws.services.cognitoidentity.model.ListIdentitiesRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.cognitoidentity.model.ListIdentitiesResult		Serializable
+class	com.amazonaws.services.cognitoidentity.model.ListIdentityPoolsRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.cognitoidentity.model.ListIdentityPoolsResult		Serializable
+class	com.amazonaws.services.cognitoidentity.model.ListTagsForResourceRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.cognitoidentity.model.ListTagsForResourceResult		Serializable
+class	com.amazonaws.services.cognitoidentity.model.LookupDeveloperIdentityRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.cognitoidentity.model.LookupDeveloperIdentityResult		Serializable
+class	com.amazonaws.services.cognitoidentity.model.MappingRule		Serializable
+class	com.amazonaws.services.cognitoidentity.model.MergeDeveloperIdentitiesRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.cognitoidentity.model.MergeDeveloperIdentitiesResult		Serializable
+class	com.amazonaws.services.cognitoidentity.model.NotAuthorizedException	AmazonServiceException	
+class	com.amazonaws.services.cognitoidentity.model.ResourceConflictException	AmazonServiceException	
+class	com.amazonaws.services.cognitoidentity.model.ResourceNotFoundException	AmazonServiceException	
+class	com.amazonaws.services.cognitoidentity.model.RoleMapping		Serializable
+class	com.amazonaws.services.cognitoidentity.model.RulesConfigurationType		Serializable
+class	com.amazonaws.services.cognitoidentity.model.SetIdentityPoolRolesRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.cognitoidentity.model.SetPrincipalTagAttributeMapRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.cognitoidentity.model.SetPrincipalTagAttributeMapResult		Serializable
+class	com.amazonaws.services.cognitoidentity.model.TagResourceRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.cognitoidentity.model.TagResourceResult		Serializable
+class	com.amazonaws.services.cognitoidentity.model.TooManyRequestsException	AmazonServiceException	
+class	com.amazonaws.services.cognitoidentity.model.UnlinkDeveloperIdentityRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.cognitoidentity.model.UnlinkIdentityRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.cognitoidentity.model.UnprocessedIdentityId		Serializable
+class	com.amazonaws.services.cognitoidentity.model.UntagResourceRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.cognitoidentity.model.UntagResourceResult		Serializable
+class	com.amazonaws.services.cognitoidentity.model.UpdateIdentityPoolRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.cognitoidentity.model.UpdateIdentityPoolResult		Serializable
+class	com.amazonaws.services.cognitoidentity.model.transform.CognitoIdentityProviderJsonMarshaller		
+class	com.amazonaws.services.cognitoidentity.model.transform.CognitoIdentityProviderJsonUnmarshaller		Unmarshaller<CognitoIdentityProvider,JsonUnmarshallerContext>
+class	com.amazonaws.services.cognitoidentity.model.transform.ConcurrentModificationExceptionUnmarshaller	JsonErrorUnmarshaller	
+class	com.amazonaws.services.cognitoidentity.model.transform.CreateIdentityPoolRequestMarshaller		Marshaller<Request<CreateIdentityPoolRequest>,CreateIdentityPoolRequest>
+class	com.amazonaws.services.cognitoidentity.model.transform.CreateIdentityPoolResultJsonUnmarshaller		Unmarshaller<CreateIdentityPoolResult,JsonUnmarshallerContext>
+class	com.amazonaws.services.cognitoidentity.model.transform.CredentialsJsonMarshaller		
+class	com.amazonaws.services.cognitoidentity.model.transform.CredentialsJsonUnmarshaller		Unmarshaller<Credentials,JsonUnmarshallerContext>
+class	com.amazonaws.services.cognitoidentity.model.transform.DeleteIdentitiesRequestMarshaller		Marshaller<Request<DeleteIdentitiesRequest>,DeleteIdentitiesRequest>
+class	com.amazonaws.services.cognitoidentity.model.transform.DeleteIdentitiesResultJsonUnmarshaller		Unmarshaller<DeleteIdentitiesResult,JsonUnmarshallerContext>
+class	com.amazonaws.services.cognitoidentity.model.transform.DeleteIdentityPoolRequestMarshaller		Marshaller<Request<DeleteIdentityPoolRequest>,DeleteIdentityPoolRequest>
+class	com.amazonaws.services.cognitoidentity.model.transform.DescribeIdentityPoolRequestMarshaller		Marshaller<Request<DescribeIdentityPoolRequest>,DescribeIdentityPoolRequest>
+class	com.amazonaws.services.cognitoidentity.model.transform.DescribeIdentityPoolResultJsonUnmarshaller		Unmarshaller<DescribeIdentityPoolResult,JsonUnmarshallerContext>
+class	com.amazonaws.services.cognitoidentity.model.transform.DescribeIdentityRequestMarshaller		Marshaller<Request<DescribeIdentityRequest>,DescribeIdentityRequest>
+class	com.amazonaws.services.cognitoidentity.model.transform.DescribeIdentityResultJsonUnmarshaller		Unmarshaller<DescribeIdentityResult,JsonUnmarshallerContext>
+class	com.amazonaws.services.cognitoidentity.model.transform.DeveloperUserAlreadyRegisteredExceptionUnmarshaller	JsonErrorUnmarshaller	
+class	com.amazonaws.services.cognitoidentity.model.transform.ExternalServiceExceptionUnmarshaller	JsonErrorUnmarshaller	
+class	com.amazonaws.services.cognitoidentity.model.transform.GetCredentialsForIdentityRequestMarshaller		Marshaller<Request<GetCredentialsForIdentityRequest>,GetCredentialsForIdentityRequest>
+class	com.amazonaws.services.cognitoidentity.model.transform.GetCredentialsForIdentityResultJsonUnmarshaller		Unmarshaller<GetCredentialsForIdentityResult,JsonUnmarshallerContext>
+class	com.amazonaws.services.cognitoidentity.model.transform.GetIdRequestMarshaller		Marshaller<Request<GetIdRequest>,GetIdRequest>
+class	com.amazonaws.services.cognitoidentity.model.transform.GetIdResultJsonUnmarshaller		Unmarshaller<GetIdResult,JsonUnmarshallerContext>
+class	com.amazonaws.services.cognitoidentity.model.transform.GetIdentityPoolRolesRequestMarshaller		Marshaller<Request<GetIdentityPoolRolesRequest>,GetIdentityPoolRolesRequest>
+class	com.amazonaws.services.cognitoidentity.model.transform.GetIdentityPoolRolesResultJsonUnmarshaller		Unmarshaller<GetIdentityPoolRolesResult,JsonUnmarshallerContext>
+class	com.amazonaws.services.cognitoidentity.model.transform.GetOpenIdTokenForDeveloperIdentityRequestMarshaller		Marshaller<Request<GetOpenIdTokenForDeveloperIdentityRequest>,GetOpenIdTokenForDeveloperIdentityRequest>
+class	com.amazonaws.services.cognitoidentity.model.transform.GetOpenIdTokenForDeveloperIdentityResultJsonUnmarshaller		Unmarshaller<GetOpenIdTokenForDeveloperIdentityResult,JsonUnmarshallerContext>
+class	com.amazonaws.services.cognitoidentity.model.transform.GetOpenIdTokenRequestMarshaller		Marshaller<Request<GetOpenIdTokenRequest>,GetOpenIdTokenRequest>
+class	com.amazonaws.services.cognitoidentity.model.transform.GetOpenIdTokenResultJsonUnmarshaller		Unmarshaller<GetOpenIdTokenResult,JsonUnmarshallerContext>
+class	com.amazonaws.services.cognitoidentity.model.transform.GetPrincipalTagAttributeMapRequestMarshaller		Marshaller<Request<GetPrincipalTagAttributeMapRequest>,GetPrincipalTagAttributeMapRequest>
+class	com.amazonaws.services.cognitoidentity.model.transform.GetPrincipalTagAttributeMapResultJsonUnmarshaller		Unmarshaller<GetPrincipalTagAttributeMapResult,JsonUnmarshallerContext>
+class	com.amazonaws.services.cognitoidentity.model.transform.IdentityDescriptionJsonMarshaller		
+class	com.amazonaws.services.cognitoidentity.model.transform.IdentityDescriptionJsonUnmarshaller		Unmarshaller<IdentityDescription,JsonUnmarshallerContext>
+class	com.amazonaws.services.cognitoidentity.model.transform.IdentityPoolShortDescriptionJsonMarshaller		
+class	com.amazonaws.services.cognitoidentity.model.transform.IdentityPoolShortDescriptionJsonUnmarshaller		Unmarshaller<IdentityPoolShortDescription,JsonUnmarshallerContext>
+class	com.amazonaws.services.cognitoidentity.model.transform.InternalErrorExceptionUnmarshaller	JsonErrorUnmarshaller	
+class	com.amazonaws.services.cognitoidentity.model.transform.InvalidIdentityPoolConfigurationExceptionUnmarshaller	JsonErrorUnmarshaller	
+class	com.amazonaws.services.cognitoidentity.model.transform.InvalidParameterExceptionUnmarshaller	JsonErrorUnmarshaller	
+class	com.amazonaws.services.cognitoidentity.model.transform.LimitExceededExceptionUnmarshaller	JsonErrorUnmarshaller	
+class	com.amazonaws.services.cognitoidentity.model.transform.ListIdentitiesRequestMarshaller		Marshaller<Request<ListIdentitiesRequest>,ListIdentitiesRequest>
+class	com.amazonaws.services.cognitoidentity.model.transform.ListIdentitiesResultJsonUnmarshaller		Unmarshaller<ListIdentitiesResult,JsonUnmarshallerContext>
+class	com.amazonaws.services.cognitoidentity.model.transform.ListIdentityPoolsRequestMarshaller		Marshaller<Request<ListIdentityPoolsRequest>,ListIdentityPoolsRequest>
+class	com.amazonaws.services.cognitoidentity.model.transform.ListIdentityPoolsResultJsonUnmarshaller		Unmarshaller<ListIdentityPoolsResult,JsonUnmarshallerContext>
+class	com.amazonaws.services.cognitoidentity.model.transform.ListTagsForResourceRequestMarshaller		Marshaller<Request<ListTagsForResourceRequest>,ListTagsForResourceRequest>
+class	com.amazonaws.services.cognitoidentity.model.transform.ListTagsForResourceResultJsonUnmarshaller		Unmarshaller<ListTagsForResourceResult,JsonUnmarshallerContext>
+class	com.amazonaws.services.cognitoidentity.model.transform.LookupDeveloperIdentityRequestMarshaller		Marshaller<Request<LookupDeveloperIdentityRequest>,LookupDeveloperIdentityRequest>
+class	com.amazonaws.services.cognitoidentity.model.transform.LookupDeveloperIdentityResultJsonUnmarshaller		Unmarshaller<LookupDeveloperIdentityResult,JsonUnmarshallerContext>
+class	com.amazonaws.services.cognitoidentity.model.transform.MappingRuleJsonMarshaller		
+class	com.amazonaws.services.cognitoidentity.model.transform.MappingRuleJsonUnmarshaller		Unmarshaller<MappingRule,JsonUnmarshallerContext>
+class	com.amazonaws.services.cognitoidentity.model.transform.MergeDeveloperIdentitiesRequestMarshaller		Marshaller<Request<MergeDeveloperIdentitiesRequest>,MergeDeveloperIdentitiesRequest>
+class	com.amazonaws.services.cognitoidentity.model.transform.MergeDeveloperIdentitiesResultJsonUnmarshaller		Unmarshaller<MergeDeveloperIdentitiesResult,JsonUnmarshallerContext>
+class	com.amazonaws.services.cognitoidentity.model.transform.NotAuthorizedExceptionUnmarshaller	JsonErrorUnmarshaller	
+class	com.amazonaws.services.cognitoidentity.model.transform.ResourceConflictExceptionUnmarshaller	JsonErrorUnmarshaller	
+class	com.amazonaws.services.cognitoidentity.model.transform.ResourceNotFoundExceptionUnmarshaller	JsonErrorUnmarshaller	
+class	com.amazonaws.services.cognitoidentity.model.transform.RoleMappingJsonMarshaller		
+class	com.amazonaws.services.cognitoidentity.model.transform.RoleMappingJsonUnmarshaller		Unmarshaller<RoleMapping,JsonUnmarshallerContext>
+class	com.amazonaws.services.cognitoidentity.model.transform.RulesConfigurationTypeJsonMarshaller		
+class	com.amazonaws.services.cognitoidentity.model.transform.RulesConfigurationTypeJsonUnmarshaller		Unmarshaller<RulesConfigurationType,JsonUnmarshallerContext>
+class	com.amazonaws.services.cognitoidentity.model.transform.SetIdentityPoolRolesRequestMarshaller		Marshaller<Request<SetIdentityPoolRolesRequest>,SetIdentityPoolRolesRequest>
+class	com.amazonaws.services.cognitoidentity.model.transform.SetPrincipalTagAttributeMapRequestMarshaller		Marshaller<Request<SetPrincipalTagAttributeMapRequest>,SetPrincipalTagAttributeMapRequest>
+class	com.amazonaws.services.cognitoidentity.model.transform.SetPrincipalTagAttributeMapResultJsonUnmarshaller		Unmarshaller<SetPrincipalTagAttributeMapResult,JsonUnmarshallerContext>
+class	com.amazonaws.services.cognitoidentity.model.transform.TagResourceRequestMarshaller		Marshaller<Request<TagResourceRequest>,TagResourceRequest>
+class	com.amazonaws.services.cognitoidentity.model.transform.TagResourceResultJsonUnmarshaller		Unmarshaller<TagResourceResult,JsonUnmarshallerContext>
+class	com.amazonaws.services.cognitoidentity.model.transform.TooManyRequestsExceptionUnmarshaller	JsonErrorUnmarshaller	
+class	com.amazonaws.services.cognitoidentity.model.transform.UnlinkDeveloperIdentityRequestMarshaller		Marshaller<Request<UnlinkDeveloperIdentityRequest>,UnlinkDeveloperIdentityRequest>
+class	com.amazonaws.services.cognitoidentity.model.transform.UnlinkIdentityRequestMarshaller		Marshaller<Request<UnlinkIdentityRequest>,UnlinkIdentityRequest>
+class	com.amazonaws.services.cognitoidentity.model.transform.UnprocessedIdentityIdJsonMarshaller		
+class	com.amazonaws.services.cognitoidentity.model.transform.UnprocessedIdentityIdJsonUnmarshaller		Unmarshaller<UnprocessedIdentityId,JsonUnmarshallerContext>
+class	com.amazonaws.services.cognitoidentity.model.transform.UntagResourceRequestMarshaller		Marshaller<Request<UntagResourceRequest>,UntagResourceRequest>
+class	com.amazonaws.services.cognitoidentity.model.transform.UntagResourceResultJsonUnmarshaller		Unmarshaller<UntagResourceResult,JsonUnmarshallerContext>
+class	com.amazonaws.services.cognitoidentity.model.transform.UpdateIdentityPoolRequestMarshaller		Marshaller<Request<UpdateIdentityPoolRequest>,UpdateIdentityPoolRequest>
+class	com.amazonaws.services.cognitoidentity.model.transform.UpdateIdentityPoolResultJsonUnmarshaller		Unmarshaller<UpdateIdentityPoolResult,JsonUnmarshallerContext>
+class	com.amazonaws.services.s3.AmazonS3Client	AmazonWebServiceClient	AmazonS3
+class	com.amazonaws.services.s3.AmazonS3EncryptionClient	AmazonS3Client	AmazonS3Encryption
+class	com.amazonaws.services.s3.AmazonS3EncryptionClient$S3DirectImpl	S3Direct	
+class	com.amazonaws.services.s3.AmazonS3URI		
+class	com.amazonaws.services.s3.KeyWrapException	SecurityException	
+class	com.amazonaws.services.s3.R		
+class	com.amazonaws.services.s3.R$string		
+class	com.amazonaws.services.s3.S3ClientOptions		
+class	com.amazonaws.services.s3.S3ClientOptions$Builder		
+class	com.amazonaws.services.s3.S3ResponseMetadata	ResponseMetadata	
+class	com.amazonaws.services.s3.UploadObjectObserver		
+class	com.amazonaws.services.s3.internal.AWSS3V4Signer	AWS4Signer	
+class	com.amazonaws.services.s3.internal.AbstractRepeatableCipherInputStream	SdkFilterInputStream	
+class	com.amazonaws.services.s3.internal.AbstractS3ResponseHandler		HttpResponseHandler<AmazonWebServiceResponse<T>>
+class	com.amazonaws.services.s3.internal.CompleteMultipartUploadRetryCondition		RetryPolicy.RetryCondition
+class	com.amazonaws.services.s3.internal.Constants		
+class	com.amazonaws.services.s3.internal.DeleteObjectTaggingHeaderHandler		HeaderHandler<DeleteObjectTaggingResult>
+class	com.amazonaws.services.s3.internal.DeleteObjectsResponse		S3RequesterChargedResult
+class	com.amazonaws.services.s3.internal.DigestValidationInputStream	SdkDigestInputStream	
+class	com.amazonaws.services.s3.internal.FileDeletionEvent		
+class	com.amazonaws.services.s3.internal.GetObjectTaggingResponseHeaderHandler		HeaderHandler<GetObjectTaggingResult>
+class	com.amazonaws.services.s3.internal.InputSubstream	SdkFilterInputStream	
+class	com.amazonaws.services.s3.internal.MD5DigestCalculatingInputStream	SdkFilterInputStream	
+class	com.amazonaws.services.s3.internal.MultiFileOutputStream	OutputStream	OnFileDelete
+class	com.amazonaws.services.s3.internal.ObjectExpirationHeaderHandler		HeaderHandler<T>
+class	com.amazonaws.services.s3.internal.ObjectRestoreHeaderHandler		HeaderHandler<T>
+class	com.amazonaws.services.s3.internal.PartCreationEvent		
+class	com.amazonaws.services.s3.internal.ProgressReportingInputStream	SdkFilterInputStream	
+class	com.amazonaws.services.s3.internal.RepeatableCipherInputStream	AbstractRepeatableCipherInputStream<CipherFactory>	
+class	com.amazonaws.services.s3.internal.RepeatableFileInputStream	SdkInputStream	
+class	com.amazonaws.services.s3.internal.ResponseHeaderHandlerChain	S3XmlResponseHandler<T>	
+class	com.amazonaws.services.s3.internal.RestUtils		
+class	com.amazonaws.services.s3.internal.S3Direct		S3DirectSpi
+class	com.amazonaws.services.s3.internal.S3ErrorResponseHandler		HttpResponseHandler<AmazonServiceException>
+class	com.amazonaws.services.s3.internal.S3ExecutionContext	ExecutionContext	
+class	com.amazonaws.services.s3.internal.S3HttpUtils		
+class	com.amazonaws.services.s3.internal.S3MetadataResponseHandler	AbstractS3ResponseHandler<ObjectMetadata>	
+class	com.amazonaws.services.s3.internal.S3ObjectResponseHandler	AbstractS3ResponseHandler<S3Object>	
+class	com.amazonaws.services.s3.internal.S3QueryStringSigner	AbstractAWSSigner	
+class	com.amazonaws.services.s3.internal.S3RequesterChargedHeaderHandler		HeaderHandler<T>
+class	com.amazonaws.services.s3.internal.S3Signer	AbstractAWSSigner	
+class	com.amazonaws.services.s3.internal.S3StringResponseHandler	AbstractS3ResponseHandler<String>	
+class	com.amazonaws.services.s3.internal.S3VersionHeaderHandler		HeaderHandler<T>
+class	com.amazonaws.services.s3.internal.S3XmlResponseHandler	AbstractS3ResponseHandler<T>	
+class	com.amazonaws.services.s3.internal.SSEResultBase		ServerSideEncryptionResult
+class	com.amazonaws.services.s3.internal.ServerSideEncryptionHeaderHandler		HeaderHandler<T>
+class	com.amazonaws.services.s3.internal.ServiceUtils		
+class	com.amazonaws.services.s3.internal.SetObjectTaggingResponseHeaderHandler		HeaderHandler<SetObjectTaggingResult>
+class	com.amazonaws.services.s3.internal.XmlWriter		
+class	com.amazonaws.services.s3.internal.crypto.AdjustedRangeInputStream	SdkInputStream	
+class	com.amazonaws.services.s3.internal.crypto.AesCbc	ContentCryptoScheme	
+class	com.amazonaws.services.s3.internal.crypto.AesCtr	ContentCryptoScheme	
+class	com.amazonaws.services.s3.internal.crypto.AesGcm	ContentCryptoScheme	
+class	com.amazonaws.services.s3.internal.crypto.ByteRangeCapturingInputStream	SdkFilterInputStream	
+class	com.amazonaws.services.s3.internal.crypto.CipherFactory		
+class	com.amazonaws.services.s3.internal.crypto.CipherLite		
+class	com.amazonaws.services.s3.internal.crypto.CipherLiteInputStream	SdkFilterInputStream	
+class	com.amazonaws.services.s3.internal.crypto.ContentCryptoMaterial		
+class	com.amazonaws.services.s3.internal.crypto.ContentCryptoScheme		
+class	com.amazonaws.services.s3.internal.crypto.CryptoModuleDispatcher	S3CryptoModule<MultipartUploadContext>	
+class	com.amazonaws.services.s3.internal.crypto.CryptoRuntime		
+class	com.amazonaws.services.s3.internal.crypto.CryptoRuntime$AesGcm		
+class	com.amazonaws.services.s3.internal.crypto.CryptoRuntime$RsaEcbOaepWithSHA256AndMGF1Padding		
+class	com.amazonaws.services.s3.internal.crypto.EncryptedUploadContext	MultipartUploadContext	
+class	com.amazonaws.services.s3.internal.crypto.EncryptionInstruction		
+class	com.amazonaws.services.s3.internal.crypto.EncryptionUtils		
+class	com.amazonaws.services.s3.internal.crypto.GCMCipherLite	CipherLite	
+class	com.amazonaws.services.s3.internal.crypto.JceEncryptionConstants		
+class	com.amazonaws.services.s3.internal.crypto.KMSSecuredCEK	SecuredCEK	
+class	com.amazonaws.services.s3.internal.crypto.MultipartUploadCbcContext	MultipartUploadCryptoContext	
+class	com.amazonaws.services.s3.internal.crypto.MultipartUploadContext		
+class	com.amazonaws.services.s3.internal.crypto.MultipartUploadCryptoContext	MultipartUploadContext	
+class	com.amazonaws.services.s3.internal.crypto.RenewableCipherLiteInputStream	CipherLiteInputStream	
+class	com.amazonaws.services.s3.internal.crypto.S3CryptoModule		
+class	com.amazonaws.services.s3.internal.crypto.S3CryptoModuleAE	S3CryptoModuleBase<MultipartUploadCryptoContext>	
+class	com.amazonaws.services.s3.internal.crypto.S3CryptoModuleAEStrict	S3CryptoModuleAE	
+class	com.amazonaws.services.s3.internal.crypto.S3CryptoModuleBase	S3CryptoModule<T>	
+class	com.amazonaws.services.s3.internal.crypto.S3CryptoModuleEO	S3CryptoModuleBase<MultipartUploadCbcContext>	
+class	com.amazonaws.services.s3.internal.crypto.S3CryptoScheme		
+class	com.amazonaws.services.s3.internal.crypto.S3KeyWrapScheme		
+class	com.amazonaws.services.s3.internal.crypto.S3ObjectWrapper		Closeable
+class	com.amazonaws.services.s3.internal.crypto.SecuredCEK		
+class	com.amazonaws.services.s3.iterable.S3Objects		Iterable<S3ObjectSummary>
+class	com.amazonaws.services.s3.iterable.S3Objects$S3ObjectIterator		Iterator<S3ObjectSummary>
+class	com.amazonaws.services.s3.iterable.S3Versions		Iterable<S3VersionSummary>
+class	com.amazonaws.services.s3.iterable.S3Versions$VersionIterator		Iterator<S3VersionSummary>
+class	com.amazonaws.services.s3.metrics.S3ServiceMetric	SimpleMetricType	ServiceMetricType
+class	com.amazonaws.services.s3.metrics.S3ServiceMetric$S3ThroughputMetric	S3ServiceMetric	ThroughputMetricType
+class	com.amazonaws.services.s3.model.AbortIncompleteMultipartUpload		Serializable
+class	com.amazonaws.services.s3.model.AbortMultipartUploadRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.s3.model.AbstractPutObjectRequest	AmazonWebServiceRequest	SSECustomerKeyProvider,SSEAwsKeyManagementParamsProvider,S3DataSource,Serializable
+class	com.amazonaws.services.s3.model.AccessControlList		Serializable,S3RequesterChargedResult
+class	com.amazonaws.services.s3.model.AmazonS3Exception	AmazonServiceException	Serializable
+class	com.amazonaws.services.s3.model.Bucket		Serializable
+class	com.amazonaws.services.s3.model.BucketAccelerateConfiguration		
+class	com.amazonaws.services.s3.model.BucketCrossOriginConfiguration		Serializable
+class	com.amazonaws.services.s3.model.BucketLifecycleConfiguration		Serializable
+class	com.amazonaws.services.s3.model.BucketLifecycleConfiguration$NoncurrentVersionTransition		Serializable
+class	com.amazonaws.services.s3.model.BucketLifecycleConfiguration$Rule		Serializable
+class	com.amazonaws.services.s3.model.BucketLifecycleConfiguration$Transition		Serializable
+class	com.amazonaws.services.s3.model.BucketLoggingConfiguration		Serializable
+class	com.amazonaws.services.s3.model.BucketNotificationConfiguration		Serializable
+class	com.amazonaws.services.s3.model.BucketNotificationConfiguration$TopicConfiguration	com.amazonaws.services.s3.model.TopicConfiguration	
+class	com.amazonaws.services.s3.model.BucketPolicy		Serializable
+class	com.amazonaws.services.s3.model.BucketReplicationConfiguration		Serializable
+class	com.amazonaws.services.s3.model.BucketTaggingConfiguration		Serializable
+class	com.amazonaws.services.s3.model.BucketVersioningConfiguration		Serializable
+class	com.amazonaws.services.s3.model.BucketWebsiteConfiguration		Serializable
+class	com.amazonaws.services.s3.model.CORSRule		
+class	com.amazonaws.services.s3.model.CanonicalGrantee		Grantee,Serializable
+class	com.amazonaws.services.s3.model.CloudFunctionConfiguration	NotificationConfiguration	Serializable
+class	com.amazonaws.services.s3.model.CompleteMultipartUploadRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.s3.model.CompleteMultipartUploadResult	SSEResultBase	ObjectExpirationResult,S3RequesterChargedResult,Serializable
+class	com.amazonaws.services.s3.model.CopyObjectRequest	AmazonWebServiceRequest	SSEAwsKeyManagementParamsProvider,Serializable,S3AccelerateUnsupported
+class	com.amazonaws.services.s3.model.CopyObjectResult	SSEResultBase	ObjectExpirationResult,S3RequesterChargedResult,S3VersionResult,Serializable
+class	com.amazonaws.services.s3.model.CopyPartRequest	AmazonWebServiceRequest	Serializable,S3AccelerateUnsupported
+class	com.amazonaws.services.s3.model.CopyPartResult	SSEResultBase	Serializable
+class	com.amazonaws.services.s3.model.CreateBucketRequest	AmazonWebServiceRequest	S3AccelerateUnsupported
+class	com.amazonaws.services.s3.model.CryptoConfiguration		Cloneable,Serializable
+class	com.amazonaws.services.s3.model.CryptoConfiguration$ReadOnly	CryptoConfiguration	
+class	com.amazonaws.services.s3.model.DeleteBucketAnalyticsConfigurationRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.s3.model.DeleteBucketAnalyticsConfigurationResult		Serializable
+class	com.amazonaws.services.s3.model.DeleteBucketCrossOriginConfigurationRequest	GenericBucketRequest	
+class	com.amazonaws.services.s3.model.DeleteBucketInventoryConfigurationRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.s3.model.DeleteBucketInventoryConfigurationResult		Serializable
+class	com.amazonaws.services.s3.model.DeleteBucketLifecycleConfigurationRequest	GenericBucketRequest	
+class	com.amazonaws.services.s3.model.DeleteBucketMetricsConfigurationRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.s3.model.DeleteBucketMetricsConfigurationResult		Serializable
+class	com.amazonaws.services.s3.model.DeleteBucketPolicyRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.s3.model.DeleteBucketReplicationConfigurationRequest	GenericBucketRequest	
+class	com.amazonaws.services.s3.model.DeleteBucketRequest	AmazonWebServiceRequest	Serializable,S3AccelerateUnsupported
+class	com.amazonaws.services.s3.model.DeleteBucketTaggingConfigurationRequest	GenericBucketRequest	Serializable
+class	com.amazonaws.services.s3.model.DeleteBucketWebsiteConfigurationRequest	GenericBucketRequest	Serializable
+class	com.amazonaws.services.s3.model.DeleteObjectRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.s3.model.DeleteObjectTaggingRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.s3.model.DeleteObjectTaggingResult		
+class	com.amazonaws.services.s3.model.DeleteObjectsRequest	AmazonWebServiceRequest	
+class	com.amazonaws.services.s3.model.DeleteObjectsRequest$KeyVersion		Serializable
+class	com.amazonaws.services.s3.model.DeleteObjectsResult		Serializable,S3RequesterChargedResult
+class	com.amazonaws.services.s3.model.DeleteObjectsResult$DeletedObject		Serializable
+class	com.amazonaws.services.s3.model.DeleteVersionRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.s3.model.EmailAddressGrantee		Grantee
+class	com.amazonaws.services.s3.model.EncryptedGetObjectRequest	GetObjectRequest	Serializable
+class	com.amazonaws.services.s3.model.EncryptedInitiateMultipartUploadRequest	InitiateMultipartUploadRequest	MaterialsDescriptionProvider,Serializable
+class	com.amazonaws.services.s3.model.EncryptedPutObjectRequest	PutObjectRequest	MaterialsDescriptionProvider,Serializable
+class	com.amazonaws.services.s3.model.EncryptionMaterials		Serializable
+class	com.amazonaws.services.s3.model.ExtraMaterialsDescription		Serializable
+class	com.amazonaws.services.s3.model.Filter		Serializable
+class	com.amazonaws.services.s3.model.FilterRule		Serializable
+class	com.amazonaws.services.s3.model.GeneratePresignedUrlRequest	AmazonWebServiceRequest	SSECustomerKeyProvider,Serializable
+class	com.amazonaws.services.s3.model.GenericBucketRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.s3.model.GetBucketAccelerateConfigurationRequest	GenericBucketRequest	
+class	com.amazonaws.services.s3.model.GetBucketAclRequest	AmazonWebServiceRequest	
+class	com.amazonaws.services.s3.model.GetBucketAnalyticsConfigurationRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.s3.model.GetBucketAnalyticsConfigurationResult		Serializable
+class	com.amazonaws.services.s3.model.GetBucketCrossOriginConfigurationRequest	GenericBucketRequest	Serializable
+class	com.amazonaws.services.s3.model.GetBucketInventoryConfigurationRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.s3.model.GetBucketInventoryConfigurationResult		
+class	com.amazonaws.services.s3.model.GetBucketLifecycleConfigurationRequest	GenericBucketRequest	Serializable
+class	com.amazonaws.services.s3.model.GetBucketLocationRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.s3.model.GetBucketLoggingConfigurationRequest	GenericBucketRequest	Serializable
+class	com.amazonaws.services.s3.model.GetBucketMetricsConfigurationRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.s3.model.GetBucketMetricsConfigurationResult		Serializable
+class	com.amazonaws.services.s3.model.GetBucketNotificationConfigurationRequest	GenericBucketRequest	Serializable
+class	com.amazonaws.services.s3.model.GetBucketPolicyRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.s3.model.GetBucketReplicationConfigurationRequest	GenericBucketRequest	Serializable
+class	com.amazonaws.services.s3.model.GetBucketTaggingConfigurationRequest	GenericBucketRequest	Serializable
+class	com.amazonaws.services.s3.model.GetBucketVersioningConfigurationRequest	GenericBucketRequest	Serializable
+class	com.amazonaws.services.s3.model.GetBucketWebsiteConfigurationRequest	AmazonWebServiceRequest	
+class	com.amazonaws.services.s3.model.GetObjectAclRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.s3.model.GetObjectMetadataRequest	AmazonWebServiceRequest	SSECustomerKeyProvider,Serializable
+class	com.amazonaws.services.s3.model.GetObjectRequest	AmazonWebServiceRequest	SSECustomerKeyProvider,Serializable
+class	com.amazonaws.services.s3.model.GetObjectTaggingRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.s3.model.GetObjectTaggingResult		
+class	com.amazonaws.services.s3.model.GetRequestPaymentConfigurationRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.s3.model.GetS3AccountOwnerRequest	AmazonWebServiceRequest	Serializable,S3AccelerateUnsupported
+class	com.amazonaws.services.s3.model.Grant		
+class	com.amazonaws.services.s3.model.HeadBucketRequest	AmazonWebServiceRequest	
+class	com.amazonaws.services.s3.model.HeadBucketResult		
+class	com.amazonaws.services.s3.model.InitiateMultipartUploadRequest	AmazonWebServiceRequest	SSECustomerKeyProvider,SSEAwsKeyManagementParamsProvider,Serializable
+class	com.amazonaws.services.s3.model.InitiateMultipartUploadResult	SSEResultBase	
+class	com.amazonaws.services.s3.model.InstructionFileId	S3ObjectId	
+class	com.amazonaws.services.s3.model.KMSEncryptionMaterials	EncryptionMaterials	Serializable
+class	com.amazonaws.services.s3.model.KMSEncryptionMaterialsProvider	StaticEncryptionMaterialsProvider	Serializable
+class	com.amazonaws.services.s3.model.LambdaConfiguration	NotificationConfiguration	Serializable
+class	com.amazonaws.services.s3.model.LegacyS3ProgressListener		com.amazonaws.event.ProgressListener
+class	com.amazonaws.services.s3.model.ListBucketAnalyticsConfigurationsRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.s3.model.ListBucketAnalyticsConfigurationsResult		Serializable
+class	com.amazonaws.services.s3.model.ListBucketInventoryConfigurationsRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.s3.model.ListBucketInventoryConfigurationsResult		Serializable
+class	com.amazonaws.services.s3.model.ListBucketMetricsConfigurationsRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.s3.model.ListBucketMetricsConfigurationsResult		Serializable
+class	com.amazonaws.services.s3.model.ListBucketsRequest	AmazonWebServiceRequest	S3AccelerateUnsupported
+class	com.amazonaws.services.s3.model.ListMultipartUploadsRequest	AmazonWebServiceRequest	
+class	com.amazonaws.services.s3.model.ListNextBatchOfObjectsRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.s3.model.ListNextBatchOfVersionsRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.s3.model.ListObjectsRequest	AmazonWebServiceRequest	
+class	com.amazonaws.services.s3.model.ListObjectsV2Request	AmazonWebServiceRequest	
+class	com.amazonaws.services.s3.model.ListObjectsV2Result		
+class	com.amazonaws.services.s3.model.ListPartsRequest	AmazonWebServiceRequest	
+class	com.amazonaws.services.s3.model.ListVersionsRequest	AmazonWebServiceRequest	
+class	com.amazonaws.services.s3.model.MultiFactorAuthentication		
+class	com.amazonaws.services.s3.model.MultiObjectDeleteException	AmazonS3Exception	
+class	com.amazonaws.services.s3.model.MultiObjectDeleteException$DeleteError		
+class	com.amazonaws.services.s3.model.MultipartUpload		
+class	com.amazonaws.services.s3.model.MultipartUploadListing		
+class	com.amazonaws.services.s3.model.NotificationConfiguration		
+class	com.amazonaws.services.s3.model.ObjectListing		Serializable
+class	com.amazonaws.services.s3.model.ObjectMetadata		ServerSideEncryptionResult,S3RequesterChargedResult,ObjectExpirationResult,ObjectRestoreResult,Cloneable,Serializable
+class	com.amazonaws.services.s3.model.ObjectTagging		Serializable
+class	com.amazonaws.services.s3.model.Owner		Serializable
+class	com.amazonaws.services.s3.model.PartETag		
+class	com.amazonaws.services.s3.model.PartListing		S3RequesterChargedResult
+class	com.amazonaws.services.s3.model.PartSummary		
+class	com.amazonaws.services.s3.model.ProgressEvent	com.amazonaws.event.ProgressEvent	
+class	com.amazonaws.services.s3.model.PutInstructionFileRequest	AmazonWebServiceRequest	MaterialsDescriptionProvider,EncryptionMaterialsFactory
+class	com.amazonaws.services.s3.model.PutObjectRequest	AbstractPutObjectRequest	Serializable
+class	com.amazonaws.services.s3.model.PutObjectResult	SSEResultBase	ObjectExpirationResult,S3RequesterChargedResult,S3VersionResult
+class	com.amazonaws.services.s3.model.QueueConfiguration	NotificationConfiguration	Serializable
+class	com.amazonaws.services.s3.model.RedirectRule		
+class	com.amazonaws.services.s3.model.ReplicationDestinationConfig		
+class	com.amazonaws.services.s3.model.ReplicationRule		
+class	com.amazonaws.services.s3.model.RequestPaymentConfiguration		
+class	com.amazonaws.services.s3.model.ResponseHeaderOverrides	AmazonWebServiceRequest	
+class	com.amazonaws.services.s3.model.RestoreObjectRequest	AmazonWebServiceRequest	
+class	com.amazonaws.services.s3.model.RoutingRule		
+class	com.amazonaws.services.s3.model.RoutingRuleCondition		
+class	com.amazonaws.services.s3.model.S3KeyFilter		Serializable
+class	com.amazonaws.services.s3.model.S3Object		Closeable,Serializable,S3RequesterChargedResult
+class	com.amazonaws.services.s3.model.S3ObjectId		Serializable
+class	com.amazonaws.services.s3.model.S3ObjectIdBuilder		Serializable
+class	com.amazonaws.services.s3.model.S3ObjectInputStream	SdkFilterInputStream	
+class	com.amazonaws.services.s3.model.S3ObjectSummary		
+class	com.amazonaws.services.s3.model.S3VersionSummary		
+class	com.amazonaws.services.s3.model.SSEAwsKeyManagementParams		Serializable
+class	com.amazonaws.services.s3.model.SSECustomerKey		
+class	com.amazonaws.services.s3.model.SetBucketAccelerateConfigurationRequest	AmazonWebServiceRequest	S3AccelerateUnsupported
+class	com.amazonaws.services.s3.model.SetBucketAclRequest	AmazonWebServiceRequest	
+class	com.amazonaws.services.s3.model.SetBucketAnalyticsConfigurationRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.s3.model.SetBucketAnalyticsConfigurationResult		Serializable
+class	com.amazonaws.services.s3.model.SetBucketCrossOriginConfigurationRequest	AmazonWebServiceRequest	
+class	com.amazonaws.services.s3.model.SetBucketInventoryConfigurationRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.s3.model.SetBucketInventoryConfigurationResult		Serializable
+class	com.amazonaws.services.s3.model.SetBucketLifecycleConfigurationRequest	AmazonWebServiceRequest	
+class	com.amazonaws.services.s3.model.SetBucketLoggingConfigurationRequest	AmazonWebServiceRequest	
+class	com.amazonaws.services.s3.model.SetBucketMetricsConfigurationRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.s3.model.SetBucketMetricsConfigurationResult		Serializable
+class	com.amazonaws.services.s3.model.SetBucketNotificationConfigurationRequest	AmazonWebServiceRequest	
+class	com.amazonaws.services.s3.model.SetBucketPolicyRequest	AmazonWebServiceRequest	
+class	com.amazonaws.services.s3.model.SetBucketReplicationConfigurationRequest	AmazonWebServiceRequest	
+class	com.amazonaws.services.s3.model.SetBucketTaggingConfigurationRequest	AmazonWebServiceRequest	
+class	com.amazonaws.services.s3.model.SetBucketVersioningConfigurationRequest	AmazonWebServiceRequest	
+class	com.amazonaws.services.s3.model.SetBucketWebsiteConfigurationRequest	AmazonWebServiceRequest	
+class	com.amazonaws.services.s3.model.SetObjectAclRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.s3.model.SetObjectTaggingRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.s3.model.SetObjectTaggingResult		
+class	com.amazonaws.services.s3.model.SetRequestPaymentConfigurationRequest	AmazonWebServiceRequest	
+class	com.amazonaws.services.s3.model.StaticEncryptionMaterialsProvider		EncryptionMaterialsProvider
+class	com.amazonaws.services.s3.model.Tag		Serializable
+class	com.amazonaws.services.s3.model.TagSet		
+class	com.amazonaws.services.s3.model.TopicConfiguration	NotificationConfiguration	Serializable
+class	com.amazonaws.services.s3.model.UploadObjectRequest	AbstractPutObjectRequest	MaterialsDescriptionProvider,Serializable
+class	com.amazonaws.services.s3.model.UploadPartRequest	AmazonWebServiceRequest	SSECustomerKeyProvider,S3DataSource,Serializable
+class	com.amazonaws.services.s3.model.UploadPartResult	SSEResultBase	S3RequesterChargedResult
+class	com.amazonaws.services.s3.model.VersionListing		
+class	com.amazonaws.services.s3.model.WebsiteConfiguration		
+class	com.amazonaws.services.s3.model.analytics.AnalyticsAndOperator	AnalyticsNAryOperator	
+class	com.amazonaws.services.s3.model.analytics.AnalyticsConfiguration		Serializable
+class	com.amazonaws.services.s3.model.analytics.AnalyticsExportDestination		Serializable
+class	com.amazonaws.services.s3.model.analytics.AnalyticsFilter		Serializable
+class	com.amazonaws.services.s3.model.analytics.AnalyticsFilterPredicate		Serializable
+class	com.amazonaws.services.s3.model.analytics.AnalyticsNAryOperator	AnalyticsFilterPredicate	
+class	com.amazonaws.services.s3.model.analytics.AnalyticsPrefixPredicate	AnalyticsFilterPredicate	
+class	com.amazonaws.services.s3.model.analytics.AnalyticsS3BucketDestination		Serializable
+class	com.amazonaws.services.s3.model.analytics.AnalyticsTagPredicate	AnalyticsFilterPredicate	
+class	com.amazonaws.services.s3.model.analytics.StorageClassAnalysis		Serializable
+class	com.amazonaws.services.s3.model.analytics.StorageClassAnalysisDataExport		Serializable
+class	com.amazonaws.services.s3.model.inventory.InventoryConfiguration		Serializable
+class	com.amazonaws.services.s3.model.inventory.InventoryDestination		Serializable
+class	com.amazonaws.services.s3.model.inventory.InventoryFilter		Serializable
+class	com.amazonaws.services.s3.model.inventory.InventoryFilterPredicate		Serializable
+class	com.amazonaws.services.s3.model.inventory.InventoryPrefixPredicate	InventoryFilterPredicate	
+class	com.amazonaws.services.s3.model.inventory.InventoryS3BucketDestination		Serializable
+class	com.amazonaws.services.s3.model.inventory.InventorySchedule		Serializable
+class	com.amazonaws.services.s3.model.lifecycle.LifecycleAndOperator	LifecycleNAryOperator	
+class	com.amazonaws.services.s3.model.lifecycle.LifecycleFilter		Serializable
+class	com.amazonaws.services.s3.model.lifecycle.LifecycleFilterPredicate		Serializable
+class	com.amazonaws.services.s3.model.lifecycle.LifecycleNAryOperator	LifecycleFilterPredicate	
+class	com.amazonaws.services.s3.model.lifecycle.LifecyclePrefixPredicate	LifecycleFilterPredicate	
+class	com.amazonaws.services.s3.model.lifecycle.LifecycleTagPredicate	LifecycleFilterPredicate	
+class	com.amazonaws.services.s3.model.metrics.MetricsAndOperator	MetricsNAryOperator	
+class	com.amazonaws.services.s3.model.metrics.MetricsConfiguration		Serializable
+class	com.amazonaws.services.s3.model.metrics.MetricsFilter		Serializable
+class	com.amazonaws.services.s3.model.metrics.MetricsFilterPredicate		Serializable
+class	com.amazonaws.services.s3.model.metrics.MetricsNAryOperator	MetricsFilterPredicate	
+class	com.amazonaws.services.s3.model.metrics.MetricsPrefixPredicate	MetricsFilterPredicate	
+class	com.amazonaws.services.s3.model.metrics.MetricsTagPredicate	MetricsFilterPredicate	
+class	com.amazonaws.services.s3.model.transform.AbstractHandler	DefaultHandler	
+class	com.amazonaws.services.s3.model.transform.AbstractSSEHandler	AbstractHandler	ServerSideEncryptionResult
+class	com.amazonaws.services.s3.model.transform.AclXmlFactory		
+class	com.amazonaws.services.s3.model.transform.BucketConfigurationXmlFactory		
+class	com.amazonaws.services.s3.model.transform.BucketConfigurationXmlFactory$AnalyticsPredicateVisitorImpl		AnalyticsPredicateVisitor
+class	com.amazonaws.services.s3.model.transform.BucketConfigurationXmlFactory$LifecyclePredicateVisitorImpl		LifecyclePredicateVisitor
+class	com.amazonaws.services.s3.model.transform.BucketConfigurationXmlFactory$MetricsPredicateVisitorImpl		MetricsPredicateVisitor
+class	com.amazonaws.services.s3.model.transform.BucketNotificationConfigurationStaxUnmarshaller		Unmarshaller<BucketNotificationConfiguration,InputStream>
+class	com.amazonaws.services.s3.model.transform.FilterRuleStaxUnmarshaller		Unmarshaller<FilterRule,StaxUnmarshallerContext>
+class	com.amazonaws.services.s3.model.transform.FilterStaxUnmarshaller		Unmarshaller<Filter,StaxUnmarshallerContext>
+class	com.amazonaws.services.s3.model.transform.HeadBucketResultHandler	AbstractS3ResponseHandler<HeadBucketResult>	
+class	com.amazonaws.services.s3.model.transform.LambdaConfigurationStaxUnmarshaller		Unmarshaller<Map.Entry<String,NotificationConfiguration>,StaxUnmarshallerContext>
+class	com.amazonaws.services.s3.model.transform.MultiObjectDeleteXmlFactory		
+class	com.amazonaws.services.s3.model.transform.NotificationConfigurationStaxUnmarshaller		Unmarshaller<Map.Entry<String,NotificationConfiguration>,StaxUnmarshallerContext>
+class	com.amazonaws.services.s3.model.transform.ObjectTaggingXmlFactory		
+class	com.amazonaws.services.s3.model.transform.QueueConfigurationStaxUnmarshaller	NotificationConfigurationStaxUnmarshaller<QueueConfiguration>	
+class	com.amazonaws.services.s3.model.transform.RequestPaymentConfigurationXmlFactory		
+class	com.amazonaws.services.s3.model.transform.RequestXmlFactory		
+class	com.amazonaws.services.s3.model.transform.S3KeyFilterStaxUnmarshaller		Unmarshaller<S3KeyFilter,StaxUnmarshallerContext>
+class	com.amazonaws.services.s3.model.transform.TopicConfigurationStaxUnmarshaller	NotificationConfigurationStaxUnmarshaller<TopicConfiguration>	
+class	com.amazonaws.services.s3.model.transform.Unmarshallers		
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$AccessControlListUnmarshaller		Unmarshaller<AccessControlList,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$BucketAccelerateConfigurationUnmarshaller		Unmarshaller<BucketAccelerateConfiguration,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$BucketCrossOriginConfigurationUnmarshaller		Unmarshaller<BucketCrossOriginConfiguration,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$BucketLifecycleConfigurationUnmarshaller		Unmarshaller<BucketLifecycleConfiguration,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$BucketLocationUnmarshaller		Unmarshaller<String,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$BucketLoggingConfigurationnmarshaller		Unmarshaller<BucketLoggingConfiguration,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$BucketReplicationConfigurationUnmarshaller		Unmarshaller<BucketReplicationConfiguration,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$BucketTaggingConfigurationUnmarshaller		Unmarshaller<BucketTaggingConfiguration,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$BucketVersioningConfigurationUnmarshaller		Unmarshaller<BucketVersioningConfiguration,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$BucketWebsiteConfigurationUnmarshaller		Unmarshaller<BucketWebsiteConfiguration,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$CompleteMultipartUploadResultUnmarshaller		Unmarshaller<XmlResponsesSaxParser.CompleteMultipartUploadHandler,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$CopyObjectUnmarshaller		Unmarshaller<XmlResponsesSaxParser.CopyObjectResultHandler,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$DeleteBucketAnalyticsConfigurationUnmarshaller		Unmarshaller<DeleteBucketAnalyticsConfigurationResult,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$DeleteBucketInventoryConfigurationUnmarshaller		Unmarshaller<DeleteBucketInventoryConfigurationResult,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$DeleteBucketMetricsConfigurationUnmarshaller		Unmarshaller<DeleteBucketMetricsConfigurationResult,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$DeleteObjectTaggingResponseUnmarshaller		Unmarshaller<DeleteObjectTaggingResult,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$DeleteObjectsResultUnmarshaller		Unmarshaller<DeleteObjectsResponse,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$GetBucketAnalyticsConfigurationUnmarshaller		Unmarshaller<GetBucketAnalyticsConfigurationResult,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$GetBucketInventoryConfigurationUnmarshaller		Unmarshaller<GetBucketInventoryConfigurationResult,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$GetBucketMetricsConfigurationUnmarshaller		Unmarshaller<GetBucketMetricsConfigurationResult,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$GetObjectTaggingResponseUnmarshaller		Unmarshaller<GetObjectTaggingResult,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$InitiateMultipartUploadResultUnmarshaller		Unmarshaller<InitiateMultipartUploadResult,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$InputStreamUnmarshaller		Unmarshaller<InputStream,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$ListBucketAnalyticsConfigurationUnmarshaller		Unmarshaller<ListBucketAnalyticsConfigurationsResult,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$ListBucketInventoryConfigurationsUnmarshaller		Unmarshaller<ListBucketInventoryConfigurationsResult,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$ListBucketMetricsConfigurationsUnmarshaller		Unmarshaller<ListBucketMetricsConfigurationsResult,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$ListBucketsOwnerUnmarshaller		Unmarshaller<Owner,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$ListBucketsUnmarshaller		Unmarshaller<List<Bucket>,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$ListMultipartUploadsResultUnmarshaller		Unmarshaller<MultipartUploadListing,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$ListObjectsUnmarshaller		Unmarshaller<ObjectListing,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$ListObjectsV2Unmarshaller		Unmarshaller<ListObjectsV2Result,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$ListPartsResultUnmarshaller		Unmarshaller<PartListing,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$RequestPaymentConfigurationUnmarshaller		Unmarshaller<RequestPaymentConfiguration,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$SetBucketAnalyticsConfigurationUnmarshaller		Unmarshaller<SetBucketAnalyticsConfigurationResult,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$SetBucketInventoryConfigurationUnmarshaller		Unmarshaller<SetBucketInventoryConfigurationResult,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$SetBucketMetricsConfigurationUnmarshaller		Unmarshaller<SetBucketMetricsConfigurationResult,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$SetObjectTaggingResponseUnmarshaller		Unmarshaller<SetObjectTaggingResult,InputStream>
+class	com.amazonaws.services.s3.model.transform.Unmarshallers$VersionListUnmarshaller		Unmarshaller<VersionListing,InputStream>
+class	com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser		
+class	com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$AccessControlListHandler	AbstractHandler	
+class	com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$BucketAccelerateConfigurationHandler	AbstractHandler	
+class	com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$BucketCrossOriginConfigurationHandler	AbstractHandler	
+class	com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$BucketLifecycleConfigurationHandler	AbstractHandler	
+class	com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$BucketLocationHandler	AbstractHandler	
+class	com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$BucketLoggingConfigurationHandler	AbstractHandler	
+class	com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$BucketReplicationConfigurationHandler	AbstractHandler	
+class	com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$BucketTaggingConfigurationHandler	AbstractHandler	
+class	com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$BucketVersioningConfigurationHandler	AbstractHandler	
+class	com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$BucketWebsiteConfigurationHandler	AbstractHandler	
+class	com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$CompleteMultipartUploadHandler	AbstractSSEHandler	ObjectExpirationResult,S3VersionResult,S3RequesterChargedResult
+class	com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$CopyObjectResultHandler	AbstractSSEHandler	ObjectExpirationResult,S3RequesterChargedResult,S3VersionResult
+class	com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$DeleteObjectsHandler	AbstractHandler	
+class	com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$GetBucketAnalyticsConfigurationHandler	AbstractHandler	
+class	com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$GetBucketInventoryConfigurationHandler	AbstractHandler	
+class	com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$GetBucketMetricsConfigurationHandler	AbstractHandler	
+class	com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$GetObjectTaggingHandler	AbstractHandler	
+class	com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$InitiateMultipartUploadHandler	AbstractHandler	
+class	com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$ListAllMyBucketsHandler	AbstractHandler	
+class	com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$ListBucketAnalyticsConfigurationHandler	AbstractHandler	
+class	com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$ListBucketHandler	AbstractHandler	
+class	com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$ListBucketInventoryConfigurationsHandler	AbstractHandler	
+class	com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$ListBucketMetricsConfigurationsHandler	AbstractHandler	
+class	com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$ListMultipartUploadsHandler	AbstractHandler	
+class	com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$ListObjectsV2Handler	AbstractHandler	
+class	com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$ListPartsHandler	AbstractHandler	
+class	com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$ListVersionsHandler	AbstractHandler	
+class	com.amazonaws.services.s3.model.transform.XmlResponsesSaxParser$RequestPaymentConfigurationHandler	AbstractHandler	
+class	com.amazonaws.services.s3.util.Mimetypes		
+class	com.amazonaws.services.securitytoken.AWSSecurityTokenServiceClient	AmazonWebServiceClient	AWSSecurityTokenService
+class	com.amazonaws.services.securitytoken.model.AssumeRoleRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.securitytoken.model.AssumeRoleResult		Serializable
+class	com.amazonaws.services.securitytoken.model.AssumeRoleWithSAMLRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.securitytoken.model.AssumeRoleWithSAMLResult		Serializable
+class	com.amazonaws.services.securitytoken.model.AssumeRoleWithWebIdentityRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.securitytoken.model.AssumeRoleWithWebIdentityResult		Serializable
+class	com.amazonaws.services.securitytoken.model.AssumedRoleUser		Serializable
+class	com.amazonaws.services.securitytoken.model.Credentials		Serializable
+class	com.amazonaws.services.securitytoken.model.DecodeAuthorizationMessageRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.securitytoken.model.DecodeAuthorizationMessageResult		Serializable
+class	com.amazonaws.services.securitytoken.model.ExpiredTokenException	AmazonServiceException	
+class	com.amazonaws.services.securitytoken.model.FederatedUser		Serializable
+class	com.amazonaws.services.securitytoken.model.GetAccessKeyInfoRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.securitytoken.model.GetAccessKeyInfoResult		Serializable
+class	com.amazonaws.services.securitytoken.model.GetCallerIdentityRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.securitytoken.model.GetCallerIdentityResult		Serializable
+class	com.amazonaws.services.securitytoken.model.GetFederationTokenRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.securitytoken.model.GetFederationTokenResult		Serializable
+class	com.amazonaws.services.securitytoken.model.GetSessionTokenRequest	AmazonWebServiceRequest	Serializable
+class	com.amazonaws.services.securitytoken.model.GetSessionTokenResult		Serializable
+class	com.amazonaws.services.securitytoken.model.IDPCommunicationErrorException	AmazonServiceException	
+class	com.amazonaws.services.securitytoken.model.IDPRejectedClaimException	AmazonServiceException	
+class	com.amazonaws.services.securitytoken.model.InvalidAuthorizationMessageException	AmazonServiceException	
+class	com.amazonaws.services.securitytoken.model.InvalidIdentityTokenException	AmazonServiceException	
+class	com.amazonaws.services.securitytoken.model.MalformedPolicyDocumentException	AmazonServiceException	
+class	com.amazonaws.services.securitytoken.model.PackedPolicyTooLargeException	AmazonServiceException	
+class	com.amazonaws.services.securitytoken.model.PolicyDescriptorType		Serializable
+class	com.amazonaws.services.securitytoken.model.RegionDisabledException	AmazonServiceException	
+class	com.amazonaws.services.securitytoken.model.Tag		Serializable
+class	com.amazonaws.services.securitytoken.model.transform.AssumeRoleRequestMarshaller		Marshaller<Request<AssumeRoleRequest>,AssumeRoleRequest>
+class	com.amazonaws.services.securitytoken.model.transform.AssumeRoleResultStaxUnmarshaller		Unmarshaller<AssumeRoleResult,StaxUnmarshallerContext>
+class	com.amazonaws.services.securitytoken.model.transform.AssumeRoleWithSAMLRequestMarshaller		Marshaller<Request<AssumeRoleWithSAMLRequest>,AssumeRoleWithSAMLRequest>
+class	com.amazonaws.services.securitytoken.model.transform.AssumeRoleWithSAMLResultStaxUnmarshaller		Unmarshaller<AssumeRoleWithSAMLResult,StaxUnmarshallerContext>
+class	com.amazonaws.services.securitytoken.model.transform.AssumeRoleWithWebIdentityRequestMarshaller		Marshaller<Request<AssumeRoleWithWebIdentityRequest>,AssumeRoleWithWebIdentityRequest>
+class	com.amazonaws.services.securitytoken.model.transform.AssumeRoleWithWebIdentityResultStaxUnmarshaller		Unmarshaller<AssumeRoleWithWebIdentityResult,StaxUnmarshallerContext>
+class	com.amazonaws.services.securitytoken.model.transform.AssumedRoleUserStaxMarshaller		
+class	com.amazonaws.services.securitytoken.model.transform.AssumedRoleUserStaxUnmarshaller		Unmarshaller<AssumedRoleUser,StaxUnmarshallerContext>
+class	com.amazonaws.services.securitytoken.model.transform.CredentialsStaxMarshaller		
+class	com.amazonaws.services.securitytoken.model.transform.CredentialsStaxUnmarshaller		Unmarshaller<Credentials,StaxUnmarshallerContext>
+class	com.amazonaws.services.securitytoken.model.transform.DecodeAuthorizationMessageRequestMarshaller		Marshaller<Request<DecodeAuthorizationMessageRequest>,DecodeAuthorizationMessageRequest>
+class	com.amazonaws.services.securitytoken.model.transform.DecodeAuthorizationMessageResultStaxUnmarshaller		Unmarshaller<DecodeAuthorizationMessageResult,StaxUnmarshallerContext>
+class	com.amazonaws.services.securitytoken.model.transform.ExpiredTokenExceptionUnmarshaller	StandardErrorUnmarshaller	
+class	com.amazonaws.services.securitytoken.model.transform.FederatedUserStaxMarshaller		
+class	com.amazonaws.services.securitytoken.model.transform.FederatedUserStaxUnmarshaller		Unmarshaller<FederatedUser,StaxUnmarshallerContext>
+class	com.amazonaws.services.securitytoken.model.transform.GetAccessKeyInfoRequestMarshaller		Marshaller<Request<GetAccessKeyInfoRequest>,GetAccessKeyInfoRequest>
+class	com.amazonaws.services.securitytoken.model.transform.GetAccessKeyInfoResultStaxUnmarshaller		Unmarshaller<GetAccessKeyInfoResult,StaxUnmarshallerContext>
+class	com.amazonaws.services.securitytoken.model.transform.GetCallerIdentityRequestMarshaller		Marshaller<Request<GetCallerIdentityRequest>,GetCallerIdentityRequest>
+class	com.amazonaws.services.securitytoken.model.transform.GetCallerIdentityResultStaxUnmarshaller		Unmarshaller<GetCallerIdentityResult,StaxUnmarshallerContext>
+class	com.amazonaws.services.securitytoken.model.transform.GetFederationTokenRequestMarshaller		Marshaller<Request<GetFederationTokenRequest>,GetFederationTokenRequest>
+class	com.amazonaws.services.securitytoken.model.transform.GetFederationTokenResultStaxUnmarshaller		Unmarshaller<GetFederationTokenResult,StaxUnmarshallerContext>
+class	com.amazonaws.services.securitytoken.model.transform.GetSessionTokenRequestMarshaller		Marshaller<Request<GetSessionTokenRequest>,GetSessionTokenRequest>
+class	com.amazonaws.services.securitytoken.model.transform.GetSessionTokenResultStaxUnmarshaller		Unmarshaller<GetSessionTokenResult,StaxUnmarshallerContext>
+class	com.amazonaws.services.securitytoken.model.transform.IDPCommunicationErrorExceptionUnmarshaller	StandardErrorUnmarshaller	
+class	com.amazonaws.services.securitytoken.model.transform.IDPRejectedClaimExceptionUnmarshaller	StandardErrorUnmarshaller	
+class	com.amazonaws.services.securitytoken.model.transform.InvalidAuthorizationMessageExceptionUnmarshaller	StandardErrorUnmarshaller	
+class	com.amazonaws.services.securitytoken.model.transform.InvalidIdentityTokenExceptionUnmarshaller	StandardErrorUnmarshaller	
+class	com.amazonaws.services.securitytoken.model.transform.MalformedPolicyDocumentExceptionUnmarshaller	StandardErrorUnmarshaller	
+class	com.amazonaws.services.securitytoken.model.transform.PackedPolicyTooLargeExceptionUnmarshaller	StandardErrorUnmarshaller	
+class	com.amazonaws.services.securitytoken.model.transform.PolicyDescriptorTypeStaxMarshaller		
+class	com.amazonaws.services.securitytoken.model.transform.PolicyDescriptorTypeStaxUnmarshaller		Unmarshaller<PolicyDescriptorType,StaxUnmarshallerContext>
+class	com.amazonaws.services.securitytoken.model.transform.RegionDisabledExceptionUnmarshaller	StandardErrorUnmarshaller	
+class	com.amazonaws.services.securitytoken.model.transform.TagStaxMarshaller		
+class	com.amazonaws.services.securitytoken.model.transform.TagStaxUnmarshaller		Unmarshaller<Tag,StaxUnmarshallerContext>
+class	com.amazonaws.transform.AbstractErrorUnmarshaller		Unmarshaller<AmazonServiceException,T>
+class	com.amazonaws.transform.JsonErrorUnmarshaller	AbstractErrorUnmarshaller<JsonErrorResponseHandler.JsonErrorResponse>	
+class	com.amazonaws.transform.JsonUnmarshallerContext		
+class	com.amazonaws.transform.LegacyErrorUnmarshaller		Unmarshaller<AmazonServiceException,Node>
+class	com.amazonaws.transform.ListUnmarshaller		Unmarshaller<List<T>,JsonUnmarshallerContext>
+class	com.amazonaws.transform.MapEntry		Map.Entry<K,V>
+class	com.amazonaws.transform.MapUnmarshaller		Unmarshaller<Map<String,V>,JsonUnmarshallerContext>
+class	com.amazonaws.transform.SimpleTypeJsonUnmarshallers		
+class	com.amazonaws.transform.SimpleTypeJsonUnmarshallers$BigDecimalJsonUnmarshaller		Unmarshaller<BigDecimal,JsonUnmarshallerContext>
+class	com.amazonaws.transform.SimpleTypeJsonUnmarshallers$BigIntegerJsonUnmarshaller		Unmarshaller<BigInteger,JsonUnmarshallerContext>
+class	com.amazonaws.transform.SimpleTypeJsonUnmarshallers$BooleanJsonUnmarshaller		Unmarshaller<Boolean,JsonUnmarshallerContext>
+class	com.amazonaws.transform.SimpleTypeJsonUnmarshallers$ByteBufferJsonUnmarshaller		Unmarshaller<ByteBuffer,JsonUnmarshallerContext>
+class	com.amazonaws.transform.SimpleTypeJsonUnmarshallers$ByteJsonUnmarshaller		Unmarshaller<Byte,JsonUnmarshallerContext>
+class	com.amazonaws.transform.SimpleTypeJsonUnmarshallers$DateJsonUnmarshaller		Unmarshaller<Date,JsonUnmarshallerContext>
+class	com.amazonaws.transform.SimpleTypeJsonUnmarshallers$DoubleJsonUnmarshaller		Unmarshaller<Double,JsonUnmarshallerContext>
+class	com.amazonaws.transform.SimpleTypeJsonUnmarshallers$FloatJsonUnmarshaller		Unmarshaller<Float,JsonUnmarshallerContext>
+class	com.amazonaws.transform.SimpleTypeJsonUnmarshallers$IntegerJsonUnmarshaller		Unmarshaller<Integer,JsonUnmarshallerContext>
+class	com.amazonaws.transform.SimpleTypeJsonUnmarshallers$LongJsonUnmarshaller		Unmarshaller<Long,JsonUnmarshallerContext>
+class	com.amazonaws.transform.SimpleTypeJsonUnmarshallers$StringJsonUnmarshaller		Unmarshaller<String,JsonUnmarshallerContext>
+class	com.amazonaws.transform.SimpleTypeStaxUnmarshallers		
+class	com.amazonaws.transform.SimpleTypeStaxUnmarshallers$BigDecimalStaxUnmarshaller		Unmarshaller<BigDecimal,StaxUnmarshallerContext>
+class	com.amazonaws.transform.SimpleTypeStaxUnmarshallers$BigIntegerStaxUnmarshaller		Unmarshaller<BigInteger,StaxUnmarshallerContext>
+class	com.amazonaws.transform.SimpleTypeStaxUnmarshallers$BooleanStaxUnmarshaller		Unmarshaller<Boolean,StaxUnmarshallerContext>
+class	com.amazonaws.transform.SimpleTypeStaxUnmarshallers$ByteBufferStaxUnmarshaller		Unmarshaller<ByteBuffer,StaxUnmarshallerContext>
+class	com.amazonaws.transform.SimpleTypeStaxUnmarshallers$ByteStaxUnmarshaller		Unmarshaller<Byte,StaxUnmarshallerContext>
+class	com.amazonaws.transform.SimpleTypeStaxUnmarshallers$DateStaxUnmarshaller		Unmarshaller<Date,StaxUnmarshallerContext>
+class	com.amazonaws.transform.SimpleTypeStaxUnmarshallers$DoubleStaxUnmarshaller		Unmarshaller<Double,StaxUnmarshallerContext>
+class	com.amazonaws.transform.SimpleTypeStaxUnmarshallers$FloatStaxUnmarshaller		Unmarshaller<Float,StaxUnmarshallerContext>
+class	com.amazonaws.transform.SimpleTypeStaxUnmarshallers$IntegerStaxUnmarshaller		Unmarshaller<Integer,StaxUnmarshallerContext>
+class	com.amazonaws.transform.SimpleTypeStaxUnmarshallers$LongStaxUnmarshaller		Unmarshaller<Long,StaxUnmarshallerContext>
+class	com.amazonaws.transform.SimpleTypeStaxUnmarshallers$StringStaxUnmarshaller		Unmarshaller<String,StaxUnmarshallerContext>
+class	com.amazonaws.transform.StandardErrorUnmarshaller	AbstractErrorUnmarshaller<Node>	
+class	com.amazonaws.transform.StaxUnmarshallerContext		
+class	com.amazonaws.transform.StaxUnmarshallerContext$MetadataExpression		
+class	com.amazonaws.transform.VoidJsonUnmarshaller		Unmarshaller<T,JsonUnmarshallerContext>
+class	com.amazonaws.transform.VoidStaxUnmarshaller		Unmarshaller<T,StaxUnmarshallerContext>
+class	com.amazonaws.transform.VoidUnmarshaller		Unmarshaller<Void,Node>
+class	com.amazonaws.util.AWSRequestMetrics		
+class	com.amazonaws.util.AWSRequestMetricsFullSupport	AWSRequestMetrics	
+class	com.amazonaws.util.AbstractBase32Codec		Codec
+class	com.amazonaws.util.AwsHostNameUtils		
+class	com.amazonaws.util.Base16Codec		Codec
+class	com.amazonaws.util.Base16Codec$LazyHolder		
+class	com.amazonaws.util.Base32Codec	AbstractBase32Codec	
+class	com.amazonaws.util.Base32Codec$LazyHolder		
+class	com.amazonaws.util.Base64Codec		Codec
+class	com.amazonaws.util.Base64Codec$LazyHolder		
+class	com.amazonaws.util.BinaryUtils		
+class	com.amazonaws.util.CRC32ChecksumCalculatingInputStream	SdkFilterInputStream	
+class	com.amazonaws.util.CountingInputStream	SdkFilterInputStream	
+class	com.amazonaws.util.DateUtils		
+class	com.amazonaws.util.HttpUtils		
+class	com.amazonaws.util.ImmutableMapParameter		Map<K,V>
+class	com.amazonaws.util.ImmutableMapParameter$Builder		
+class	com.amazonaws.util.LengthCheckInputStream	SdkFilterInputStream	
+class	com.amazonaws.util.Md5Utils		
+class	com.amazonaws.util.NamespaceRemovingInputStream	SdkFilterInputStream	
+class	com.amazonaws.util.NamespaceRemovingInputStream$StringPrefixSlicer		
+class	com.amazonaws.util.ResponseMetadataCache		
+class	com.amazonaws.util.ResponseMetadataCache$InternalCache	LinkedHashMap<Integer, ResponseMetadata>	
+class	com.amazonaws.util.RuntimeHttpUtils		
+class	com.amazonaws.util.ServiceClientHolderInputStream	SdkFilterInputStream	
+class	com.amazonaws.util.StringInputStream	ByteArrayInputStream	
+class	com.amazonaws.util.StringUtils		
+class	com.amazonaws.util.TimingInfo		
+class	com.amazonaws.util.TimingInfoFullSupport	TimingInfo	
+class	com.amazonaws.util.TimingInfoUnmodifiable	TimingInfo	
+class	com.amazonaws.util.URIBuilder		
+class	com.amazonaws.util.ValidationUtils		
+class	com.amazonaws.util.VersionInfoUtils		
+class	com.amazonaws.util.XMLWriter		
+class	com.amazonaws.util.XmlUtils		
+class	com.amazonaws.util.XpathUtils		
+class	com.amazonaws.util.json.DateDeserializer		JsonDeserializer<Date>,JsonSerializer<Date>
+class	com.amazonaws.util.json.GsonFactory		AwsJsonFactory
+class	com.amazonaws.util.json.GsonFactory$GsonReader		AwsJsonReader
+class	com.amazonaws.util.json.GsonFactory$GsonWriter		AwsJsonWriter
+class	com.amazonaws.util.json.JsonUtils		
+enum	com.amazonaws.AmazonServiceException$ErrorType		
+enum	com.amazonaws.HttpMethod		
+enum	com.amazonaws.Protocol		
+enum	com.amazonaws.RequestClientOptions$Marker		
+enum	com.amazonaws.ServiceNameFactory		
+enum	com.amazonaws.auth.SignatureVersion		
+enum	com.amazonaws.auth.SigningAlgorithm		
+enum	com.amazonaws.auth.policy.Principal$Services		
+enum	com.amazonaws.auth.policy.Principal$WebIdentityProviders		
+enum	com.amazonaws.auth.policy.STSActions		Action
+enum	com.amazonaws.auth.policy.Statement$Effect		
+enum	com.amazonaws.auth.policy.actions.S3Actions		Action
+enum	com.amazonaws.auth.policy.actions.SecurityTokenServiceActions		Action
+enum	com.amazonaws.auth.policy.conditions.ArnCondition$ArnComparisonType		
+enum	com.amazonaws.auth.policy.conditions.DateCondition$DateComparisonType		
+enum	com.amazonaws.auth.policy.conditions.IpAddressCondition$IpAddressComparisonType		
+enum	com.amazonaws.auth.policy.conditions.NumericCondition$NumericComparisonType		
+enum	com.amazonaws.auth.policy.conditions.StringCondition$StringComparisonType		
+enum	com.amazonaws.http.HttpMethodName		
+enum	com.amazonaws.logging.LogFactory$Level		
+enum	com.amazonaws.metrics.AwsSdkMetrics		
+enum	com.amazonaws.metrics.internal.ServiceMetricTypeGuesser		
+enum	com.amazonaws.mobileconnectors.s3.transferutility.TransferState		
+enum	com.amazonaws.mobileconnectors.s3.transferutility.TransferType		
+enum	com.amazonaws.regions.Regions		
+enum	com.amazonaws.services.cognitoidentity.model.AmbiguousRoleResolutionType		
+enum	com.amazonaws.services.cognitoidentity.model.ErrorCode		
+enum	com.amazonaws.services.cognitoidentity.model.MappingRuleMatchType		
+enum	com.amazonaws.services.cognitoidentity.model.RoleMappingType		
+enum	com.amazonaws.services.s3.internal.BucketNameUtils		
+enum	com.amazonaws.services.s3.model.BucketAccelerateStatus		
+enum	com.amazonaws.services.s3.model.CORSRule$AllowedMethods		
+enum	com.amazonaws.services.s3.model.CannedAccessControlList		
+enum	com.amazonaws.services.s3.model.CryptoMode		
+enum	com.amazonaws.services.s3.model.CryptoStorageMode		
+enum	com.amazonaws.services.s3.model.ExtraMaterialsDescription$ConflictResolution		
+enum	com.amazonaws.services.s3.model.GroupGrantee		Grantee
+enum	com.amazonaws.services.s3.model.Permission		
+enum	com.amazonaws.services.s3.model.Region		
+enum	com.amazonaws.services.s3.model.ReplicationRuleStatus		
+enum	com.amazonaws.services.s3.model.RequestPaymentConfiguration$Payer		
+enum	com.amazonaws.services.s3.model.S3DataSource$Utils		
+enum	com.amazonaws.services.s3.model.S3Event		
+enum	com.amazonaws.services.s3.model.S3KeyFilter$FilterRuleName		
+enum	com.amazonaws.services.s3.model.SSEAlgorithm		
+enum	com.amazonaws.services.s3.model.StorageClass		
+enum	com.amazonaws.services.s3.model.analytics.AnalyticsS3ExportFileFormat		Serializable
+enum	com.amazonaws.services.s3.model.analytics.StorageClassAnalysisSchemaVersion		Serializable
+enum	com.amazonaws.services.s3.model.inventory.InventoryFormat		
+enum	com.amazonaws.services.s3.model.inventory.InventoryFrequency		
+enum	com.amazonaws.services.s3.model.inventory.InventoryIncludedObjectVersions		
+enum	com.amazonaws.services.s3.model.inventory.InventoryOptionalField		
+enum	com.amazonaws.transform.TimestampFormat		
+enum	com.amazonaws.util.AWSRequestMetrics$Field		RequestMetricType
+enum	com.amazonaws.util.AWSServiceMetrics		ServiceMetricType
+enum	com.amazonaws.util.Base16		
+enum	com.amazonaws.util.Base32		
+enum	com.amazonaws.util.Base64		
+enum	com.amazonaws.util.ClassLoaderHelper		
+enum	com.amazonaws.util.Classes		
+enum	com.amazonaws.util.CodecUtils		
+enum	com.amazonaws.util.EncodingSchemeEnum		EncodingScheme
+enum	com.amazonaws.util.IOUtils		
+enum	com.amazonaws.util.Throwables		
+enum	com.amazonaws.util.json.AwsJsonToken		
+enum	com.amazonaws.util.json.JsonUtils$JsonEngine		
+interface	com.amazonaws.Request		
+interface	com.amazonaws.async.Callback		
+interface	com.amazonaws.auth.AWSCognitoIdentityProvider	AWSIdentityProvider	
+interface	com.amazonaws.auth.AWSCredentials		
+interface	com.amazonaws.auth.AWSCredentialsProvider		
+interface	com.amazonaws.auth.AWSIdentityProvider		
+interface	com.amazonaws.auth.AWSRefreshableSessionCredentials	AWSSessionCredentials	
+interface	com.amazonaws.auth.AWSSessionCredentials	AWSCredentials	
+interface	com.amazonaws.auth.IdentityChangedListener		
+interface	com.amazonaws.auth.NoSessionSupportCredentials		
+interface	com.amazonaws.auth.Presigner		
+interface	com.amazonaws.auth.RegionAwareSigner	Signer	
+interface	com.amazonaws.auth.ServiceAwareSigner	Signer	
+interface	com.amazonaws.auth.Signer		
+interface	com.amazonaws.auth.policy.Action		
+interface	com.amazonaws.event.ProgressListener		
+interface	com.amazonaws.event.ProgressListenerChain$ProgressEventFilter		
+interface	com.amazonaws.handlers.AsyncHandler		
+interface	com.amazonaws.handlers.RequestHandler		
+interface	com.amazonaws.http.HttpClient		
+interface	com.amazonaws.http.HttpResponseHandler		
+interface	com.amazonaws.http.conn.Wrapped		
+interface	com.amazonaws.internal.MetricAware		
+interface	com.amazonaws.internal.Releasable		
+interface	com.amazonaws.internal.keyvaluestore.KeyProvider		
+interface	com.amazonaws.logging.Log		
+interface	com.amazonaws.metrics.MetricCollector$Factory		
+interface	com.amazonaws.metrics.MetricType		
+interface	com.amazonaws.metrics.RequestMetricCollector$Factory		
+interface	com.amazonaws.metrics.RequestMetricType	MetricType	
+interface	com.amazonaws.metrics.ServiceMetricCollector$Factory		
+interface	com.amazonaws.metrics.ServiceMetricType	MetricType	
+interface	com.amazonaws.metrics.ThroughputMetricType	ServiceMetricType	
+interface	com.amazonaws.mobile.config.AWSConfigurable		
+interface	com.amazonaws.mobileconnectors.s3.transferutility.TransferListener		
+interface	com.amazonaws.retry.RetryPolicy$BackoffStrategy		
+interface	com.amazonaws.retry.RetryPolicy$RetryCondition		
+interface	com.amazonaws.services.cognitoidentity.AmazonCognitoIdentity		
+interface	com.amazonaws.services.s3.AmazonS3	S3DirectSpi	
+interface	com.amazonaws.services.s3.AmazonS3Encryption	AmazonS3	
+interface	com.amazonaws.services.s3.Headers		
+interface	com.amazonaws.services.s3.OnFileDelete		
+interface	com.amazonaws.services.s3.internal.HeaderHandler		
+interface	com.amazonaws.services.s3.internal.ObjectExpirationResult		
+interface	com.amazonaws.services.s3.internal.ObjectRestoreResult		
+interface	com.amazonaws.services.s3.internal.S3DirectSpi		
+interface	com.amazonaws.services.s3.internal.S3RequesterChargedResult		
+interface	com.amazonaws.services.s3.internal.S3VersionResult		
+interface	com.amazonaws.services.s3.internal.ServerSideEncryptionResult		
+interface	com.amazonaws.services.s3.internal.ServiceUtils$RetryableS3DownloadTask		
+interface	com.amazonaws.services.s3.model.EncryptionMaterialsAccessor		
+interface	com.amazonaws.services.s3.model.EncryptionMaterialsFactory		
+interface	com.amazonaws.services.s3.model.EncryptionMaterialsProvider	EncryptionMaterialsAccessor	
+interface	com.amazonaws.services.s3.model.Grantee		
+interface	com.amazonaws.services.s3.model.MaterialsDescriptionProvider		
+interface	com.amazonaws.services.s3.model.ProgressListener		
+interface	com.amazonaws.services.s3.model.S3AccelerateUnsupported		
+interface	com.amazonaws.services.s3.model.S3DataSource		
+interface	com.amazonaws.services.s3.model.SSEAwsKeyManagementParamsProvider		
+interface	com.amazonaws.services.s3.model.SSECustomerKeyProvider		
+interface	com.amazonaws.services.s3.model.analytics.AnalyticsPredicateVisitor		
+interface	com.amazonaws.services.s3.model.inventory.InventoryPredicateVisitor		
+interface	com.amazonaws.services.s3.model.lifecycle.LifecyclePredicateVisitor		
+interface	com.amazonaws.services.s3.model.metrics.MetricsPredicateVisitor		
+interface	com.amazonaws.services.securitytoken.AWSSecurityTokenService		
+interface	com.amazonaws.transform.Marshaller		
+interface	com.amazonaws.transform.Unmarshaller		
+interface	com.amazonaws.util.Codec		
+interface	com.amazonaws.util.EncodingScheme		
+interface	com.amazonaws.util.json.AwsJsonFactory		
+interface	com.amazonaws.util.json.AwsJsonReader		
+interface	com.amazonaws.util.json.AwsJsonWriter		

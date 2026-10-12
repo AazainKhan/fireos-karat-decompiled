@@ -1,0 +1,159 @@
+class	kind	declaration
+com.android.dynsystem.BootCompletedReceiver	field	private static final String TAG;
+com.android.dynsystem.BootCompletedReceiver	method	private boolean featureFlagEnabled()
+com.android.dynsystem.BootCompletedReceiver	method	public void onReceive(Context context, Intent intent)
+com.android.dynsystem.DynamicSystemInstallationService	field	final Messenger mMessenger;
+com.android.dynsystem.DynamicSystemInstallationService	field	private DynamicSystemManager mDynSystem;
+com.android.dynsystem.DynamicSystemInstallationService	field	private InstallationAsyncTask mInstallTask;
+com.android.dynsystem.DynamicSystemInstallationService	field	private NotificationManager mNM;
+com.android.dynsystem.DynamicSystemInstallationService	field	private String mCurrentPartitionName;
+com.android.dynsystem.DynamicSystemInstallationService	field	private boolean mEnableWhenCompleted;
+com.android.dynsystem.DynamicSystemInstallationService	field	private boolean mJustCancelledByUser;
+com.android.dynsystem.DynamicSystemInstallationService	field	private boolean mKeepNotification;
+com.android.dynsystem.DynamicSystemInstallationService	field	private int mNumInstalledPartitions;
+com.android.dynsystem.DynamicSystemInstallationService	field	private long mCurrentPartitionInstalledSize;
+com.android.dynsystem.DynamicSystemInstallationService	field	private long mCurrentPartitionSize;
+com.android.dynsystem.DynamicSystemInstallationService	field	private static final String ACTION_CANCEL_INSTALL;
+com.android.dynsystem.DynamicSystemInstallationService	field	private static final String ACTION_DISCARD_INSTALL;
+com.android.dynsystem.DynamicSystemInstallationService	field	private static final String ACTION_REBOOT_TO_DYN_SYSTEM;
+com.android.dynsystem.DynamicSystemInstallationService	field	private static final String ACTION_REBOOT_TO_NORMAL;
+com.android.dynsystem.DynamicSystemInstallationService	field	private static final String NOTIFICATION_CHANNEL_ID;
+com.android.dynsystem.DynamicSystemInstallationService	field	private static final String TAG;
+com.android.dynsystem.DynamicSystemInstallationService	field	private static final int NOTIFICATION_ID;
+com.android.dynsystem.DynamicSystemInstallationService	field	private static final long DEFAULT_USERDATA_SIZE;
+com.android.dynsystem.DynamicSystemInstallationService	field	static final String DEFAULT_DSU_SLOT;
+com.android.dynsystem.DynamicSystemInstallationService	field	static final String KEY_DSU_SLOT;
+com.android.dynsystem.DynamicSystemInstallationService	field	static final String KEY_ENABLE_WHEN_COMPLETED;
+com.android.dynsystem.DynamicSystemInstallationService	field	static final String KEY_PUBKEY;
+com.android.dynsystem.DynamicSystemInstallationService	method	private Notification buildNotification(int i, int i2)
+com.android.dynsystem.DynamicSystemInstallationService	method	private Notification buildNotification(int i, int i2, Throwable th)
+com.android.dynsystem.DynamicSystemInstallationService	method	private PendingIntent createPendingIntent(String str)
+com.android.dynsystem.DynamicSystemInstallationService	method	private boolean isDynamicSystemInstalled()
+com.android.dynsystem.DynamicSystemInstallationService	method	private boolean isInDynamicSystem()
+com.android.dynsystem.DynamicSystemInstallationService	method	private boolean verifyRequest(Intent intent)
+com.android.dynsystem.DynamicSystemInstallationService	method	private int getStatus()
+com.android.dynsystem.DynamicSystemInstallationService	method	private void executeCancelCommand()
+com.android.dynsystem.DynamicSystemInstallationService	method	private void executeDiscardCommand()
+com.android.dynsystem.DynamicSystemInstallationService	method	private void executeInstallCommand(Intent intent)
+com.android.dynsystem.DynamicSystemInstallationService	method	private void executeNotifyIfInUseCommand()
+com.android.dynsystem.DynamicSystemInstallationService	method	private void executeRebootToDynSystemCommand()
+com.android.dynsystem.DynamicSystemInstallationService	method	private void executeRebootToNormalCommand()
+com.android.dynsystem.DynamicSystemInstallationService	method	private void notifyOneClient(Messenger messenger, int i, int i2, Throwable th) throws RemoteException
+com.android.dynsystem.DynamicSystemInstallationService	method	private void postStatus(int i, int i2, Throwable th)
+com.android.dynsystem.DynamicSystemInstallationService	method	private void prepareNotification()
+com.android.dynsystem.DynamicSystemInstallationService	method	private void resetTaskAndStop()
+com.android.dynsystem.DynamicSystemInstallationService	method	public IBinder onBind(Intent intent)
+com.android.dynsystem.DynamicSystemInstallationService	method	public int onStartCommand(Intent intent, int i, int i2)
+com.android.dynsystem.DynamicSystemInstallationService	method	public void onCreate()
+com.android.dynsystem.DynamicSystemInstallationService	method	public void onDestroy()
+com.android.dynsystem.DynamicSystemInstallationService	method	public void onProgressUpdate(InstallationAsyncTask.Progress progress)
+com.android.dynsystem.DynamicSystemInstallationService	method	public void onResult(int i, Throwable th)
+com.android.dynsystem.DynamicSystemInstallationService$IncomingHandler	field	private final WeakReference<DynamicSystemInstallationService> mWeakService;
+com.android.dynsystem.DynamicSystemInstallationService$IncomingHandler	method	public void handleMessage(Message message)
+com.android.dynsystem.InstallationAsyncTask	field	private DynamicSystemManager.Session mInstallationSession;
+com.android.dynsystem.InstallationAsyncTask	field	private InputStream mStream;
+com.android.dynsystem.InstallationAsyncTask	field	private KeyRevocationList mKeyRevocationList;
+com.android.dynsystem.InstallationAsyncTask	field	private ZipFile mZipFile;
+com.android.dynsystem.InstallationAsyncTask	field	private boolean mIsCompleted;
+com.android.dynsystem.InstallationAsyncTask	field	private boolean mIsZip;
+com.android.dynsystem.InstallationAsyncTask	field	private final Context mContext;
+com.android.dynsystem.InstallationAsyncTask	field	private final DynamicSystemManager mDynSystem;
+com.android.dynsystem.InstallationAsyncTask	field	private final ProgressListener mListener;
+com.android.dynsystem.InstallationAsyncTask	field	private final String mDsuSlot;
+com.android.dynsystem.InstallationAsyncTask	field	private final String mPublicKey;
+com.android.dynsystem.InstallationAsyncTask	field	private final String mUrl;
+com.android.dynsystem.InstallationAsyncTask	field	private final boolean mIsDeviceBootloaderUnlocked;
+com.android.dynsystem.InstallationAsyncTask	field	private final boolean mIsNetworkUrl;
+com.android.dynsystem.InstallationAsyncTask	field	private final long mSystemSize;
+com.android.dynsystem.InstallationAsyncTask	field	private final long mUserdataSize;
+com.android.dynsystem.InstallationAsyncTask	field	private static final List<String> UNSUPPORTED_PARTITIONS;
+com.android.dynsystem.InstallationAsyncTask	field	private static final String TAG;
+com.android.dynsystem.InstallationAsyncTask	field	private static final int READ_BUFFER_SIZE;
+com.android.dynsystem.InstallationAsyncTask	field	private static final long MIN_PROGRESS_TO_PUBLISH;
+com.android.dynsystem.InstallationAsyncTask	field	static final int RESULT_CANCELLED;
+com.android.dynsystem.InstallationAsyncTask	field	static final int RESULT_ERROR_EXCEPTION;
+com.android.dynsystem.InstallationAsyncTask	field	static final int RESULT_ERROR_IO;
+com.android.dynsystem.InstallationAsyncTask	field	static final int RESULT_ERROR_UNSUPPORTED_FORMAT;
+com.android.dynsystem.InstallationAsyncTask	field	static final int RESULT_ERROR_UNSUPPORTED_URL;
+com.android.dynsystem.InstallationAsyncTask	field	static final int RESULT_OK;
+com.android.dynsystem.InstallationAsyncTask	field	static final int RESULT_UNSET;
+com.android.dynsystem.InstallationAsyncTask	method	private boolean installImageFromAnEntry(ZipEntry zipEntry, InputStream inputStream, int i) throws InterruptedException, IOException, ImageValidationException
+com.android.dynsystem.InstallationAsyncTask	method	private static String toHexString(byte[] bArr)
+com.android.dynsystem.InstallationAsyncTask	method	private void close()
+com.android.dynsystem.InstallationAsyncTask	method	private void imageValidationThrowOrWarning(ImageValidationException imageValidationException) throws ImageValidationException
+com.android.dynsystem.InstallationAsyncTask	method	private void installImage(final String str, long j, InputStream inputStream, int i) throws InterruptedException, IOException, ImageValidationException
+com.android.dynsystem.InstallationAsyncTask	method	private void installImages() throws InterruptedException, IOException, ImageValidationException
+com.android.dynsystem.InstallationAsyncTask	method	private void installLocalZipUpdate() throws InterruptedException, IOException, ImageValidationException
+com.android.dynsystem.InstallationAsyncTask	method	private void installStreamingGzUpdate() throws InterruptedException, IOException, ImageValidationException
+com.android.dynsystem.InstallationAsyncTask	method	private void installStreamingZipUpdate() throws InterruptedException, IOException, ImageValidationException
+com.android.dynsystem.InstallationAsyncTask	method	private void installUserdata() throws Exception
+com.android.dynsystem.InstallationAsyncTask	method	private void verifyAndPrepare() throws Exception
+com.android.dynsystem.InstallationAsyncTask	method	protected void onCancelled()
+com.android.dynsystem.InstallationAsyncTask	method	public Throwable doInBackground(String... strArr)
+com.android.dynsystem.InstallationAsyncTask	method	public void onPostExecute(Throwable th)
+com.android.dynsystem.InstallationAsyncTask	method	public void onProgressUpdate(Progress... progressArr)
+com.android.dynsystem.InstallationAsyncTask$UnsupportedFormatException	method	private UnsupportedFormatException(String str)
+com.android.dynsystem.InstallationAsyncTask$UnsupportedUrlException	method	private UnsupportedUrlException(String str)
+com.android.dynsystem.KeyRevocationList	field	private static final String JSON_ENTRIES;
+com.android.dynsystem.KeyRevocationList	field	private static final String JSON_PUBLIC_KEY;
+com.android.dynsystem.KeyRevocationList	field	private static final String JSON_REASON;
+com.android.dynsystem.KeyRevocationList	field	private static final String JSON_STATUS;
+com.android.dynsystem.KeyRevocationList	field	private static final String STATUS_REVOKED;
+com.android.dynsystem.KeyRevocationList	field	private static final String TAG;
+com.android.dynsystem.KeyRevocationList	method	private static String readFully(InputStream inputStream) throws IOException
+com.android.dynsystem.KeyRevocationList	method	static KeyRevocationList fromJsonString(String str) throws JSONException
+com.android.dynsystem.KeyRevocationList	method	static KeyRevocationList fromUrl(URL url) throws JSONException, IOException
+com.android.dynsystem.KeyRevocationList$RevocationStatus	field	final String mReason;
+com.android.dynsystem.KeyRevocationList$RevocationStatus	field	final String mStatus;
+com.android.dynsystem.R$drawable	field	public static final int ic_system_update_googblue_24dp;
+com.android.dynsystem.R$string	field	public static final int app_name;
+com.android.dynsystem.R$string	field	public static final int key_revocation_list_url;
+com.android.dynsystem.R$string	field	public static final int keyguard_description;
+com.android.dynsystem.R$string	field	public static final int keyguard_title;
+com.android.dynsystem.R$string	field	public static final int notification_action_cancel;
+com.android.dynsystem.R$string	field	public static final int notification_action_discard;
+com.android.dynsystem.R$string	field	public static final int notification_action_reboot_to_dynsystem;
+com.android.dynsystem.R$string	field	public static final int notification_action_reboot_to_origin;
+com.android.dynsystem.R$string	field	public static final int notification_channel_name;
+com.android.dynsystem.R$string	field	public static final int notification_dynsystem_in_use;
+com.android.dynsystem.R$string	field	public static final int notification_image_validation_failed;
+com.android.dynsystem.R$string	field	public static final int notification_install_completed;
+com.android.dynsystem.R$string	field	public static final int notification_install_failed;
+com.android.dynsystem.R$string	field	public static final int notification_install_inprogress;
+com.android.dynsystem.R$string	field	public static final int toast_dynsystem_discarded;
+com.android.dynsystem.R$string	field	public static final int toast_failed_to_reboot_to_dynsystem;
+com.android.dynsystem.SparseInputStream	field	private BufferedInputStream mIn;
+com.android.dynsystem.SparseInputStream	field	private SparseChunk mCur;
+com.android.dynsystem.SparseInputStream	field	private boolean mIsSparse;
+com.android.dynsystem.SparseInputStream	field	private int mCurChunks;
+com.android.dynsystem.SparseInputStream	field	private long mBlockSize;
+com.android.dynsystem.SparseInputStream	field	private long mLeft;
+com.android.dynsystem.SparseInputStream	field	private long mTotalBlocks;
+com.android.dynsystem.SparseInputStream	field	private long mTotalChunks;
+com.android.dynsystem.SparseInputStream	field	static final int CHUNK_HDR_SIZE;
+com.android.dynsystem.SparseInputStream	field	static final int FILE_HDR_SIZE;
+com.android.dynsystem.SparseInputStream	method	private ByteBuffer readBuffer(InputStream inputStream, int i) throws IOException
+com.android.dynsystem.SparseInputStream	method	private SparseChunk readChunk(InputStream inputStream) throws IOException
+com.android.dynsystem.SparseInputStream	method	private boolean prepareChunk() throws IOException
+com.android.dynsystem.SparseInputStream	method	private byte[] readFull(InputStream inputStream, int i) throws IOException
+com.android.dynsystem.SparseInputStream	method	public SparseInputStream(BufferedInputStream bufferedInputStream) throws IOException
+com.android.dynsystem.SparseInputStream	method	public int read() throws IOException
+com.android.dynsystem.SparseInputStream	method	public int read(byte[] bArr) throws IOException
+com.android.dynsystem.SparseInputStream	method	public long getUnsparseSize()
+com.android.dynsystem.SparseInputStream$SparseChunk	field	public byte[] fill;
+com.android.dynsystem.SparseInputStream$SparseChunk	field	public int mChunkSize;
+com.android.dynsystem.SparseInputStream$SparseChunk	field	public int mTotalSize;
+com.android.dynsystem.SparseInputStream$SparseChunk	field	public short mChunkType;
+com.android.dynsystem.SparseInputStream$SparseChunk	field	static final short DONTCARE;
+com.android.dynsystem.SparseInputStream$SparseChunk	field	static final short FILL;
+com.android.dynsystem.SparseInputStream$SparseChunk	field	static final short RAW;
+com.android.dynsystem.SparseInputStream$SparseChunk	method	private SparseChunk()
+com.android.dynsystem.SparseInputStream$SparseChunk	method	public String toString()
+com.android.dynsystem.VerificationActivity	field	private static String sVerifiedUrl;
+com.android.dynsystem.VerificationActivity	field	private static final String TAG;
+com.android.dynsystem.VerificationActivity	field	private static final int REQUEST_CODE;
+com.android.dynsystem.VerificationActivity	method	private boolean featureFlagEnabled()
+com.android.dynsystem.VerificationActivity	method	private void startInstallationService()
+com.android.dynsystem.VerificationActivity	method	protected void onActivityResult(int i, int i2, Intent intent)
+com.android.dynsystem.VerificationActivity	method	protected void onCreate(Bundle bundle)
+com.android.dynsystem.VerificationActivity	method	static boolean isVerified(String str)

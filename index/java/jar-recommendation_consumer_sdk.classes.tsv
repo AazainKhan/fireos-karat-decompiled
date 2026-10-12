@@ -1,0 +1,97 @@
+kind	class	extends	implements
+class	com.amazon.device.sale.api.card.BaseCard	CommonCardData	
+class	com.amazon.device.sale.api.card.BaseCard$BaseCardBuilder	CommonCardData	
+class	com.amazon.device.sale.api.card.CommonCardData		Parcelable
+class	com.amazon.device.sale.api.card.NotificationCard	BaseCard	
+class	com.amazon.device.sale.api.card.NotificationCard$Builder	BaseCard.BaseCardBuilder	
+class	com.amazon.device.sale.api.constant.SaleConstants		
+class	com.amazon.device.sale.api.database.DbUtil		
+class	com.amazon.device.sale.api.database.NotificationKeyMap		
+class	com.amazon.device.sale.api.database.PendingIntentMap		
+class	com.amazon.device.sale.api.database.PendingIntentMap$IterateState		
+class	com.amazon.device.sale.api.database.SaleContract	SaleContractBase	
+class	com.amazon.device.sale.api.database.SaleContractBase		
+class	com.amazon.device.sale.api.database.SaleContractBase$Notification		
+class	com.amazon.device.sale.api.database.SaleContractBase$NotificationBlockPackageList		
+class	com.amazon.device.sale.api.database.SaleDatabase	SQLiteOpenHelper	
+class	com.amazon.device.sale.api.database.providers.SaleProvider	ContentProvider	
+class	com.amazon.device.sale.api.database.providers.SaleProviderNotification		
+class	com.amazon.device.sale.api.database.tables.TableBlockPackage		BaseColumns
+class	com.amazon.device.sale.api.database.tables.TableNotification		
+class	com.amazon.device.sale.api.database.tables.TableNotificationBase		BaseColumns,CommonColumns
+class	com.amazon.device.sale.api.database.tables.TableNotificationBase$DismissCard		
+class	com.amazon.device.sale.api.database.tables.TableNotificationBlockListPackage		BaseColumns
+class	com.amazon.device.sale.api.imageprocessing.ImageCache		
+class	com.amazon.device.sale.api.utils.Compare		
+class	com.amazon.device.sale.api.utils.Json		
+class	com.amazon.device.sale.api.utils.NotificationUtil		
+class	com.amazon.device.sale.api.utils.PackageManagerUtil		
+class	com.amazon.device.sale.api.utils.TagMgr		
+class	com.amazon.device.sale.api.utils.TimeUtil		
+class	com.amazon.device.sale.api.utils.Util		
+class	com.amazon.media.notifications.AmazonNotificationManager		
+class	com.amazon.media.notifications.AmazonNotificationManager$NotificationPostedCallbackImpl	INotificationPostedCallback.Stub	
+class	com.amazon.media.notifications.AmazonNotificationManager$SynchronousExecutor		Executor
+class	com.amazon.media.notifications.IAmazonNotificationManager$Default		IAmazonNotificationManager
+class	com.amazon.media.notifications.IAmazonNotificationManager$Stub	Binder	IAmazonNotificationManager
+class	com.amazon.media.notifications.IAmazonNotificationManager$Stub$Proxy		IAmazonNotificationManager
+class	com.amazon.media.notifications.INotificationPostedCallback$Default		INotificationPostedCallback
+class	com.amazon.media.notifications.INotificationPostedCallback$Stub	Binder	INotificationPostedCallback
+class	com.amazon.media.notifications.INotificationPostedCallback$Stub$Proxy		INotificationPostedCallback
+class	com.amazon.media.recommendations.IRecommendation		Parcelable
+class	com.amazon.media.recommendations.IRecommendationManager$Default		IRecommendationManager
+class	com.amazon.media.recommendations.IRecommendationManager$Stub	Binder	IRecommendationManager
+class	com.amazon.media.recommendations.IRecommendationManager$Stub$Proxy		IRecommendationManager
+class	com.amazon.media.recommendations.IRecommendationManagerExtender$Default		IRecommendationManagerExtender
+class	com.amazon.media.recommendations.IRecommendationManagerExtender$Stub	Binder	IRecommendationManagerExtender
+class	com.amazon.media.recommendations.IRecommendationManagerExtender$Stub$Proxy		IRecommendationManagerExtender
+class	com.amazon.media.recommendations.Recommendation		
+class	com.amazon.media.recommendations.RecommendationConsumerService	Service	
+class	com.amazon.media.recommendations.RecommendationJni		
+class	com.amazon.media.recommendations.RecommendationManager		
+class	com.amazon.media.recommendations.RecommendationManager$SynchronousExecutor		Executor
+class	com.amazon.media.recommendations.RecommendationManagerExtender		
+class	com.amazon.media.recommendations.RecommendationManagerExtender$SynchronousExecutor		Executor
+class	com.amazon.media.recommendations.RecommendationManagerService	Service	
+class	com.amazon.media.recommendations.consumer.IPackageInfo		Parcelable
+class	com.amazon.media.recommendations.consumer.IRecommendationConfig		Parcelable
+class	com.amazon.media.recommendations.consumer.IRecommendationConsumer$Default		IRecommendationConsumer
+class	com.amazon.media.recommendations.consumer.IRecommendationConsumer$Stub	Binder	IRecommendationConsumer
+class	com.amazon.media.recommendations.consumer.IRecommendationConsumer$Stub$Proxy		IRecommendationConsumer
+class	com.amazon.media.recommendations.consumer.IRecommendationsResult		Parcelable
+class	com.amazon.media.recommendations.consumer.PackageInfo		
+class	com.amazon.media.recommendations.consumer.RecommendationConfig		
+class	com.amazon.media.recommendations.consumer.RecommendationConsumer		
+class	com.amazon.media.recommendations.consumer.RecommendationConsumer$SynchronousExecutor		Executor
+class	com.amazon.media.recommendations.consumer.RecommendationsResult		
+class	com.amazon.media.recommendations.handlers.NotificationHandler		AbstractNotificationHandler
+class	com.amazon.media.recommendations.handlers.NotificationImageHandler		
+class	com.amazon.media.recommendations.handlers.RecommendationHandler		AbstractNotificationHandler
+class	com.amazon.media.recommendations.handlers.RecommendationImageHandler		
+class	com.amazon.media.recommendations.imageprocessing.AsyncTaskManager		
+class	com.amazon.media.recommendations.imageprocessing.ImageDimensionKey		
+class	com.amazon.media.recommendations.imageprocessing.ImageProcessManager		
+class	com.amazon.media.recommendations.imageprocessing.LetterBox		
+class	com.amazon.media.recommendations.imageprocessing.ProcessImageTask	AsyncTask<Void, Void, Void>	
+class	com.amazon.media.recommendations.notification.AmazonNotification		
+class	com.amazon.media.recommendations.notification.AmazonNotificationHelper		
+class	com.amazon.media.recommendations.notification.NotificationLayout	LinearLayout	
+class	com.amazon.media.recommendations.notification.NotificationMessage		
+class	com.amazon.media.recommendations.utils.RecommendationConstants		
+class	com.amazon.media.recommendations.utils.RecommendationNotificationUtil		
+class	com.amazon.media.recommendations.utils.RecommendationUtils		
+class	com.amazon.media.recommendations.utils.RecommendationValidator		
+enum	com.amazon.media.recommendations.Recommendation$Category		
+enum	com.amazon.media.recommendations.Recommendation$DisplayAction		
+interface	com.amazon.device.sale.api.database.interfaces.CommonColumns		
+interface	com.amazon.media.notifications.IAmazonNotificationManager	IInterface	
+interface	com.amazon.media.notifications.INotificationPostedCallback	IInterface	
+interface	com.amazon.media.notifications.NotificationPostedCallback		
+interface	com.amazon.media.notifications.ServiceStateListener		
+interface	com.amazon.media.recommendations.IRecommendationManager	IInterface	
+interface	com.amazon.media.recommendations.IRecommendationManagerExtender	IInterface	
+interface	com.amazon.media.recommendations.RecommendationConsumerCallback		
+interface	com.amazon.media.recommendations.ServiceStateListener		
+interface	com.amazon.media.recommendations.consumer.IRecommendationConsumer	IInterface	
+interface	com.amazon.media.recommendations.handlers.AbstractNotificationHandler		
+interface	com.amazon.notification.INativeServiceManager		

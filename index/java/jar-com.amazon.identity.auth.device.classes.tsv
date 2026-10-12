@@ -1,0 +1,894 @@
+kind	class	extends	implements
+class	android.accounts.IAccountAuthenticatorResponse$Stub	Binder	IAccountAuthenticatorResponse
+class	android.accounts.IAccountAuthenticatorResponse$Stub$Proxy		IAccountAuthenticatorResponse
+class	com.amazon.dcp.sso.IAmazonAccountAuthenticator$Stub	Binder	IAmazonAccountAuthenticator
+class	com.amazon.dcp.sso.IAmazonAccountAuthenticator$Stub$Proxy		IAmazonAccountAuthenticator
+class	com.amazon.dcp.sso.IRequestAuthenticationMethod$Stub	Binder	IRequestAuthenticationMethod
+class	com.amazon.dcp.sso.IRequestAuthenticationMethod$Stub$Proxy		IRequestAuthenticationMethod
+class	com.amazon.dcp.sso.IRequestAuthenticationMethod$_Parcel		
+class	com.amazon.dcp.sso.ISessionUserChanger$Stub	Binder	ISessionUserChanger
+class	com.amazon.dcp.sso.ISessionUserChanger$Stub$Proxy		ISessionUserChanger
+class	com.amazon.dcp.sso.ISubAuthenticator$Stub	Binder	ISubAuthenticator
+class	com.amazon.dcp.sso.ISubAuthenticator$Stub$Proxy		ISubAuthenticator
+class	com.amazon.dcp.sso.ISubAuthenticatorResponse$Stub	Binder	ISubAuthenticatorResponse
+class	com.amazon.dcp.sso.ISubAuthenticatorResponse$Stub$Proxy		ISubAuthenticatorResponse
+class	com.amazon.dcp.sso.IWebserviceCallback$Stub	Binder	IWebserviceCallback
+class	com.amazon.dcp.sso.IWebserviceCallback$Stub$Proxy		IWebserviceCallback
+class	com.amazon.dcp.sso.ParcelableAccount		Parcelable
+class	com.amazon.dcp.sso.ReturnValueOrError		Parcelable
+class	com.amazon.device.information.contract.DeviceInformationContract		
+class	com.amazon.device.information.contract.DeviceInformationContract$DeviceInfo		
+class	com.amazon.identity.auth.accounts.ADPCredentials		
+class	com.amazon.identity.auth.accounts.AbstractSubAuthenticator		
+class	com.amazon.identity.auth.accounts.AbstractSubAuthenticator$Transport	ISubAuthenticator.Stub	
+class	com.amazon.identity.auth.accounts.AccountAuthenticatorQueue		
+class	com.amazon.identity.auth.accounts.AccountAuthenticatorQueue$AccountAuthenticatorAsyncToSyncTask	AsyncToSyncAdapter	
+class	com.amazon.identity.auth.accounts.AccountAuthenticatorResponseHelper		
+class	com.amazon.identity.auth.accounts.AccountDataCollector		
+class	com.amazon.identity.auth.accounts.AccountManagerImplementationFactory		
+class	com.amazon.identity.auth.accounts.AccountManagerLogic		AccountManagerDefinition
+class	com.amazon.identity.auth.accounts.AccountManagerLogic$AccountBroadcastMetadata		
+class	com.amazon.identity.auth.accounts.AccountManagerLogic$AnonymousClass10		DeregisterAccount.IDeregisterAccount
+class	com.amazon.identity.auth.accounts.AccountManagerLogic$AnonymousClass4		AccountRegistrar.Listener
+class	com.amazon.identity.auth.accounts.AccountManagerLogic$AnonymousClass6		AccountAuthenticatorQueue.AccountAuthenticatorTask
+class	com.amazon.identity.auth.accounts.AccountManagerLogic$AnonymousClass7		AccountRegistrar.Listener
+class	com.amazon.identity.auth.accounts.AccountManagerLogic$AnonymousClass8		DataStorage.DataPropogationCallback
+class	com.amazon.identity.auth.accounts.AccountMigrationLogic		
+class	com.amazon.identity.auth.accounts.AccountRegistrar		
+class	com.amazon.identity.auth.accounts.AccountRegistrar$AnonymousClass4	RegisterDeviceAmazonWebserviceCallListener	
+class	com.amazon.identity.auth.accounts.AccountRegistrar$RegisterDeviceAmazonWebserviceCallListener	DefaultAmazonWebserviceCallListener	
+class	com.amazon.identity.auth.accounts.AccountRegistrar$RegisterInfo		
+class	com.amazon.identity.auth.accounts.AccountRegistrarAuthenticator		
+class	com.amazon.identity.auth.accounts.AccountRemovedFlagStore		
+class	com.amazon.identity.auth.accounts.AccountStateBroadcasts		
+class	com.amazon.identity.auth.accounts.AccountsCallbackHelpers		
+class	com.amazon.identity.auth.accounts.AmazonAccountManager		
+class	com.amazon.identity.auth.accounts.AuthenticateAccountAction		
+class	com.amazon.identity.auth.accounts.AuthenticateAccountAction$AuthenticatedAccountInfo		
+class	com.amazon.identity.auth.accounts.AuthenticatedRequestServiceIntentFactory	SSOIntentFactory	
+class	com.amazon.identity.auth.accounts.CentralAccountManagerCommunication		AccountManagerDefinition
+class	com.amazon.identity.auth.accounts.CentralAccountManagerCommunication$AuthenticateAccountAction		IPCCommand
+class	com.amazon.identity.auth.accounts.CentralAccountManagerCommunication$AuthenticateAccountWithOAuthAction		IPCCommand
+class	com.amazon.identity.auth.accounts.CentralAccountManagerCommunication$DeregisterAccountAction		IPCCommand
+class	com.amazon.identity.auth.accounts.CentralAccountManagerCommunication$DeregisterDeviceAction		IPCCommand
+class	com.amazon.identity.auth.accounts.CentralAccountManagerCommunication$GetAccountAction		IPCCommand
+class	com.amazon.identity.auth.accounts.CentralAccountManagerCommunication$GetAccountsAction		IPCCommand
+class	com.amazon.identity.auth.accounts.CentralAccountManagerCommunication$GetPrimaryAccountAction		IPCCommand
+class	com.amazon.identity.auth.accounts.CentralAccountManagerCommunication$InitiateChallengeAction		IPCCommand
+class	com.amazon.identity.auth.accounts.CentralAccountManagerCommunication$IsAccountRegisteredAction		IPCCommand
+class	com.amazon.identity.auth.accounts.CentralAccountManagerCommunication$IsDeviceRegisteredAction		IPCCommand
+class	com.amazon.identity.auth.accounts.CentralAccountManagerCommunication$RegisterAccountAction		IPCCommand
+class	com.amazon.identity.auth.accounts.CentralAccountManagerCommunication$RegisterChildApplication		IPCCommand
+class	com.amazon.identity.auth.accounts.CentralAccountManagerCommunication$RenameDeviceAction		IPCCommand
+class	com.amazon.identity.auth.accounts.CentralAccountManagerCommunication$StoreAccountAction		IPCCommand
+class	com.amazon.identity.auth.accounts.CentralAccountManagerCommunication$UpdateCredentialsAction		IPCCommand
+class	com.amazon.identity.auth.accounts.ChildApplicationHelpers		
+class	com.amazon.identity.auth.accounts.ChildApplicationOverrideDSNHelper		
+class	com.amazon.identity.auth.accounts.DMSSubAuthenticator		ISubAuthenticator
+class	com.amazon.identity.auth.accounts.DMSSubAuthenticator$AnonymousClass1		ISubAuthenticatorResponse
+class	com.amazon.identity.auth.accounts.DMSSubAuthenticator$AnonymousClass2		ChildApplicationRegistrarCallback
+class	com.amazon.identity.auth.accounts.DMSSubAuthenticator$DataKey		
+class	com.amazon.identity.auth.accounts.DefaultMultipleAccountPlugin		MultipleAccountPlugin
+class	com.amazon.identity.auth.accounts.DeregisterAccount		
+class	com.amazon.identity.auth.accounts.DeregisterAccount$AnonymousClass1		ConnectionFactory
+class	com.amazon.identity.auth.accounts.DeregisterAccount$AnonymousClass2		ResponseListener
+class	com.amazon.identity.auth.accounts.DeregisterAccount$DefaultConnectionFactory		ConnectionFactory
+class	com.amazon.identity.auth.accounts.DeregisterAccount$DeregisterRequest		Runnable
+class	com.amazon.identity.auth.accounts.DeregisterAccount$SynchronousAccountRegistrarDeregistration	AsyncToSyncAdapter	AccountRegistrar.Listener
+class	com.amazon.identity.auth.accounts.DeregisterAccount$SynchronousSubAuthConnector	AsyncToSyncAdapter	SubAuthenticatorConnection.ISubAuthenticatorConnectionCallback
+class	com.amazon.identity.auth.accounts.DeregisterAccount$SynchronousSubAuthDeregistration	AsyncToSyncAdapter	SubAuthenticatorConnection.IDeregisterConnectionCallback
+class	com.amazon.identity.auth.accounts.InternalMAPAccountManager	MAPAccountManager	
+class	com.amazon.identity.auth.accounts.InvalidSubAuthenticatorDefinitionException	Exception	
+class	com.amazon.identity.auth.accounts.MAPSubAuthenticatorService	Service	
+class	com.amazon.identity.auth.accounts.MultipleAccountImplementationFactory		
+class	com.amazon.identity.auth.accounts.MultipleAccountPluginHolder		
+class	com.amazon.identity.auth.accounts.MultipleAccountsCommunication		MultipleAccountDefinition
+class	com.amazon.identity.auth.accounts.MultipleAccountsCommunication$DoesAccountHaveMappingAction		IPCCommand
+class	com.amazon.identity.auth.accounts.MultipleAccountsCommunication$GetAccountForMappingsUserAction		IPCCommand
+class	com.amazon.identity.auth.accounts.MultipleAccountsCommunication$RemoveAccountMappingsUserAction		IPCCommand
+class	com.amazon.identity.auth.accounts.MultipleAccountsCommunication$SetAccountMappingsUserAction		IPCCommand
+class	com.amazon.identity.auth.accounts.MultipleAccountsLogic		MultipleAccountDefinition
+class	com.amazon.identity.auth.accounts.MultipleAccountsLogic$CustomKeyMappingLogic	MetadataMappingClass	
+class	com.amazon.identity.auth.accounts.MultipleAccountsLogic$DevicePrimaryUserMappingLogic		AccountMappingLogic
+class	com.amazon.identity.auth.accounts.MultipleAccountsLogic$MetadataMappingClass		AccountMappingLogic
+class	com.amazon.identity.auth.accounts.MultipleAccountsLogic$NotificationInfo		
+class	com.amazon.identity.auth.accounts.MultipleAccountsLogic$PackageMappingLogic	MetadataMappingClass	
+class	com.amazon.identity.auth.accounts.MultipleAccountsLogic$ProfilePrimaryMappingLogic	MetadataMappingClass	
+class	com.amazon.identity.auth.accounts.MultipleAccountsLogic$SessionPackageMappingLogic		AccountMappingLogic
+class	com.amazon.identity.auth.accounts.MultipleAccountsLogic$SessionUserMappingLogic		AccountMappingLogic
+class	com.amazon.identity.auth.accounts.MultiplePrimaryAccountHelper		
+class	com.amazon.identity.auth.accounts.P2ATransitionStateMachine		
+class	com.amazon.identity.auth.accounts.PandaBeginAccountMigrationResponse		
+class	com.amazon.identity.auth.accounts.ProfileMultipleAccountPlugin		MultipleAccountPlugin
+class	com.amazon.identity.auth.accounts.RegisterChildApplicationAction		
+class	com.amazon.identity.auth.accounts.RegisterChildApplicationAction$NotChildApplicationException	Exception	
+class	com.amazon.identity.auth.accounts.RegisterChildApplicationAction$SubAuthenticatorCallbackAdapter		ISubAuthenticatorResponse
+class	com.amazon.identity.auth.accounts.RenameDevice		
+class	com.amazon.identity.auth.accounts.SessionUserChangedToAccountForPackageChangedAdpater	BroadcastReceiver	
+class	com.amazon.identity.auth.accounts.SessionUserChanger		
+class	com.amazon.identity.auth.accounts.StandardAccountManagerCallbackAdapter	AccountManagerCallbackAdapter<Bundle>	
+class	com.amazon.identity.auth.accounts.StandardAccountManagerFutureAdapter	AccountManagerFutureAdapter<Bundle>	
+class	com.amazon.identity.auth.accounts.StandardChildApplicationRegistrar		ChildApplicationRegistrar
+class	com.amazon.identity.auth.accounts.SubAuthChildApplicationRegistrar		ChildApplicationRegistrar
+class	com.amazon.identity.auth.accounts.SubAuthenticatorConnection		
+class	com.amazon.identity.auth.accounts.SubAuthenticatorDescription		
+class	com.amazon.identity.auth.accounts.SubAuthenticatorDescriptionParser		
+class	com.amazon.identity.auth.accounts.SubAuthenticatorDescriptionParser$Parser		
+class	com.amazon.identity.auth.accounts.SubAuthenticatorRegistry		
+class	com.amazon.identity.auth.accounts.SubAuthenticatorRegistry$DMSPackageInfo		
+class	com.amazon.identity.auth.attributes.AttributeCallbackHelpers		
+class	com.amazon.identity.auth.attributes.CORPFMResponse		
+class	com.amazon.identity.auth.attributes.CentralCustomerAttributeStoreCommunication		CustomerAttributeStoreDefinition
+class	com.amazon.identity.auth.attributes.CorPfmFetcher		
+class	com.amazon.identity.auth.attributes.CorPfmInfo		
+class	com.amazon.identity.auth.attributes.CorPfmLogic		
+class	com.amazon.identity.auth.attributes.CorPfmLogic$CorPfmFetcherTask		
+class	com.amazon.identity.auth.attributes.CustomerAttributeStoreKeyUtils		
+class	com.amazon.identity.auth.attributes.CustomerAttributeStoreLogic		CustomerAttributeStoreDefinition
+class	com.amazon.identity.auth.attributes.UserProfileLogic		
+class	com.amazon.identity.auth.attributes.UserProfileLogic$UserProfileException	Exception	
+class	com.amazon.identity.auth.attributes.UserProperties		
+class	com.amazon.identity.auth.device.AuthPortalUIActivity	Activity	
+class	com.amazon.identity.auth.device.AuthPortalUIActivity$AnonymousClass10		Runnable
+class	com.amazon.identity.auth.device.AuthPortalUIActivity$TimeoutTimerTask	TimerTask	
+class	com.amazon.identity.auth.device.MAPConfig		
+class	com.amazon.identity.auth.device.Manifest		
+class	com.amazon.identity.auth.device.Manifest$permission		
+class	com.amazon.identity.auth.device.activity.ActorEnrollActivity	MAPWebviewActivityTemplate	
+class	com.amazon.identity.auth.device.activity.ActorSignUpAndEnrollActivity	MAPWebviewActivityTemplate	
+class	com.amazon.identity.auth.device.activity.ActorUpdatePhoneNumberActivity	MAPWebviewActivityTemplate	
+class	com.amazon.identity.auth.device.activity.ActorUpdatePinActivity	MAPWebviewActivityTemplate	
+class	com.amazon.identity.auth.device.activity.ActorUpdatePinPreferenceActivity	MAPWebviewActivityTemplate	
+class	com.amazon.identity.auth.device.activity.AuthChallengeHandleActivity	MAPWebviewActivityTemplate	
+class	com.amazon.identity.auth.device.activity.AuthChallengeHandleActivity$AnonymousClass3	WebViewClient	
+class	com.amazon.identity.auth.device.activity.MAPWebviewActivityTemplate	Activity	
+class	com.amazon.identity.auth.device.actor.ActorInvolvedHelper		
+class	com.amazon.identity.auth.device.actor.ActorManagerCommunication		ActorManagerLogicDefinition
+class	com.amazon.identity.auth.device.actor.ActorManagerCommunication$EnrollActorWithUIAction		IPCCommand
+class	com.amazon.identity.auth.device.actor.ActorManagerCommunication$GetActorForMappingAction		IPCCommand
+class	com.amazon.identity.auth.device.actor.ActorManagerCommunication$RemoveActorMappingAction		IPCCommand
+class	com.amazon.identity.auth.device.actor.ActorManagerCommunication$SetActorMappingAction		IPCCommand
+class	com.amazon.identity.auth.device.actor.ActorManagerCommunication$SignUpAndEnrollActorWithUIAction		IPCCommand
+class	com.amazon.identity.auth.device.actor.ActorManagerCommunication$SwitchActorAction		IPCCommand
+class	com.amazon.identity.auth.device.actor.ActorManagerImplFactory		
+class	com.amazon.identity.auth.device.actor.ActorManagerLogic		ActorManagerLogicDefinition
+class	com.amazon.identity.auth.device.actor.ActorManagerLogic$ActorType		
+class	com.amazon.identity.auth.device.actor.ActorSignUpAndEnrollHelper	ActorInvolvedHelper	
+class	com.amazon.identity.auth.device.actor.ActorUpdatePhoneNumberHelper	ActorInvolvedHelper	
+class	com.amazon.identity.auth.device.actor.ActorUpdatePinHelper	ActorInvolvedHelper	
+class	com.amazon.identity.auth.device.actor.ActorUpdatePinPreferenceHelper	ActorInvolvedHelper	
+class	com.amazon.identity.auth.device.age.AgeBoundary		
+class	com.amazon.identity.auth.device.age.AgeClassificationAccessor		
+class	com.amazon.identity.auth.device.age.AgeClassificationCommunication		AgeClassificationLogicDefinition
+class	com.amazon.identity.auth.device.age.AgeClassificationCommunicationStreamline		AgeClassificationLogicDefinition
+class	com.amazon.identity.auth.device.age.AgeClassificationCommunicationStreamline$GetAgeAction		IPCCommand
+class	com.amazon.identity.auth.device.age.AgeClassificationCommunicationStreamline$GetAgeSignalCategoryAction		IPCCommand
+class	com.amazon.identity.auth.device.age.AgeClassificationCommunicationStreamline$SetAgeBoundaryAction		IPCCommand
+class	com.amazon.identity.auth.device.age.AgeClassificationCommunicationStreamline$UpdateAgeAction		IPCCommand
+class	com.amazon.identity.auth.device.age.AgeClassificationLogic		AgeClassificationLogicDefinition
+class	com.amazon.identity.auth.device.age.AgeClassificationStorage		
+class	com.amazon.identity.auth.device.age.AgeSignal		
+class	com.amazon.identity.auth.device.age.ComparableAgeClassification		Comparable<ComparableAgeClassification>
+class	com.amazon.identity.auth.device.age.InternalMAPAgeClassificationManager		
+class	com.amazon.identity.auth.device.api.ADPCorpusSigningAuthenticationMethod$SignCorpusError		
+class	com.amazon.identity.auth.device.api.ADPCorpusSigningAuthenticationMethod$SignCorpusOption		
+class	com.amazon.identity.auth.device.api.AccountChangeEvent		
+class	com.amazon.identity.auth.device.api.AccountStatusPolicy		Parcelable
+class	com.amazon.identity.auth.device.api.ActorInfo		
+class	com.amazon.identity.auth.device.api.AppFeatureAccessManager		
+class	com.amazon.identity.auth.device.api.AuthenticatedHttpURLConnection	WrappableHttpURLConnection	
+class	com.amazon.identity.auth.device.api.AuthenticatedHttpsURLConnection	HttpsURLConnection	
+class	com.amazon.identity.auth.device.api.AuthenticatedURLConnection	HttpsURLConnection	
+class	com.amazon.identity.auth.device.api.AuthenticatedURLConnection$AccountNeedsRecoveryException	IOException	
+class	com.amazon.identity.auth.device.api.AuthenticatedURLConnection$AuthenticationFailureIOException	IOException	
+class	com.amazon.identity.auth.device.api.AuthenticatedURLConnection$NoCredentialsException	IOException	
+class	com.amazon.identity.auth.device.api.AuthenticationMethod		
+class	com.amazon.identity.auth.device.api.AuthenticationMethod$GetAuthenticationHeadersForRequestError		
+class	com.amazon.identity.auth.device.api.AuthenticationMethodFactory		
+class	com.amazon.identity.auth.device.api.CentralDcpAuthenticationMethod	AuthenticationMethod	ADPCorpusSigningAuthenticationMethod
+class	com.amazon.identity.auth.device.api.CookieKeys		
+class	com.amazon.identity.auth.device.api.CookieKeys$Options		
+class	com.amazon.identity.auth.device.api.CustomerAttributeKeys		
+class	com.amazon.identity.auth.device.api.CustomerAttributeStore		
+class	com.amazon.identity.auth.device.api.CustomerAttributeStore$RenameDeviceError		
+class	com.amazon.identity.auth.device.api.DefaultAuthenticationMethod	AuthenticationMethod	
+class	com.amazon.identity.auth.device.api.DefaultCallback		Callback
+class	com.amazon.identity.auth.device.api.DeviceDataKeys		
+class	com.amazon.identity.auth.device.api.DeviceDataStore		
+class	com.amazon.identity.auth.device.api.DeviceDataStoreException	Exception	
+class	com.amazon.identity.auth.device.api.FederatedAuthConfig		Parcelable
+class	com.amazon.identity.auth.device.api.ImmutableP2AConfirmationMetadata	P2AConfirmationMetadata	
+class	com.amazon.identity.auth.device.api.ImmutableP2AConfirmationMetadata$Builder		
+class	com.amazon.identity.auth.device.api.ImmutableP2ATransitionMetadata	P2ATransitionMetadata	
+class	com.amazon.identity.auth.device.api.ImmutableP2ATransitionMetadata$Builder		
+class	com.amazon.identity.auth.device.api.InProcessAdpAuthenticationMethod	AuthenticationMethod	ADPCorpusSigningAuthenticationMethod
+class	com.amazon.identity.auth.device.api.InProcessOauthAuthenticationMethod	AuthenticationMethod	
+class	com.amazon.identity.auth.device.api.LinkCodeErrorCodes		
+class	com.amazon.identity.auth.device.api.MAPAccountManager		
+class	com.amazon.identity.auth.device.api.MAPAccountManager$AnonymousClass4		Callback
+class	com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalActivityUIOptions		
+class	com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalOptions		
+class	com.amazon.identity.auth.device.api.MAPActorManager		
+class	com.amazon.identity.auth.device.api.MAPAgeClassificationManager		
+class	com.amazon.identity.auth.device.api.MAPAndroidWebViewClient	WebViewClient	
+class	com.amazon.identity.auth.device.api.MAPAndroidWebViewHelper		
+class	com.amazon.identity.auth.device.api.MAPAndroidWebViewHelper$AnonymousClass3		Runnable
+class	com.amazon.identity.auth.device.api.MAPAndroidWebViewHelper$AnonymousClass4		Callback
+class	com.amazon.identity.auth.device.api.MAPAndroidWebViewHelper$Parameters		
+class	com.amazon.identity.auth.device.api.MAPBroadcastReceiver	BroadcastReceiver	
+class	com.amazon.identity.auth.device.api.MAPCallbackErrorException	Exception	
+class	com.amazon.identity.auth.device.api.MAPConfigKeys		
+class	com.amazon.identity.auth.device.api.MAPConfigKeys$MAPConfigUI		
+class	com.amazon.identity.auth.device.api.MAPDebugManager		
+class	com.amazon.identity.auth.device.api.MAPError		
+class	com.amazon.identity.auth.device.api.MAPError$AccountError	MAPError	
+class	com.amazon.identity.auth.device.api.MAPError$ActorError	MAPError	
+class	com.amazon.identity.auth.device.api.MAPError$AttributeError	MAPError	
+class	com.amazon.identity.auth.device.api.MAPError$BootstrapSSOError	MAPError	
+class	com.amazon.identity.auth.device.api.MAPError$CommonError	MAPError	
+class	com.amazon.identity.auth.device.api.MAPError$FidoAuthenticatorError	MAPError	
+class	com.amazon.identity.auth.device.api.MAPError$TokenError	MAPError	
+class	com.amazon.identity.auth.device.api.MAPErrorCallbackHelper		
+class	com.amazon.identity.auth.device.api.MAPInformationProvider	ContentProvider	
+class	com.amazon.identity.auth.device.api.MAPInformationProvider$SelectionInfo		
+class	com.amazon.identity.auth.device.api.MAPInit		
+class	com.amazon.identity.auth.device.api.MAPIsolationManager		
+class	com.amazon.identity.auth.device.api.MAPRegulationConfig		
+class	com.amazon.identity.auth.device.api.MAPRegulationConfig$PrivacyObligation		Parcelable
+class	com.amazon.identity.auth.device.api.MAPSettings		
+class	com.amazon.identity.auth.device.api.MAPWebViewEventHelper		
+class	com.amazon.identity.auth.device.api.MultipleAccountManager		
+class	com.amazon.identity.auth.device.api.MultipleAccountManager$AccountMappingType		
+class	com.amazon.identity.auth.device.api.MultipleAccountManager$CustomKeyMappingType	AccountMappingType	
+class	com.amazon.identity.auth.device.api.MultipleAccountManager$PackageMappingType	AccountMappingType	
+class	com.amazon.identity.auth.device.api.MultipleAccountManager$PrimaryUserMappingType	AccountMappingType	
+class	com.amazon.identity.auth.device.api.MultipleAccountManager$ProfileMappingType	PrimaryUserMappingType	
+class	com.amazon.identity.auth.device.api.MultipleAccountManager$SessionPackageMappingAlreadySetException	RuntimeException	
+class	com.amazon.identity.auth.device.api.MultipleAccountManager$SessionPackageMappingType	AccountMappingType	
+class	com.amazon.identity.auth.device.api.MultipleAccountManager$SessionUserMappingType	AccountMappingType	
+class	com.amazon.identity.auth.device.api.P2AConfirmationMetadata		
+class	com.amazon.identity.auth.device.api.P2ATransitionMetadata		
+class	com.amazon.identity.auth.device.api.ProfilePickerUIActivity	MAPWebviewActivityTemplate	
+class	com.amazon.identity.auth.device.api.TokenKeys		
+class	com.amazon.identity.auth.device.api.TokenKeys$Options		
+class	com.amazon.identity.auth.device.api.TokenManagement		
+class	com.amazon.identity.auth.device.api.ViewOptions		
+class	com.amazon.identity.auth.device.api.WebViewHelper		
+class	com.amazon.identity.auth.device.attribute.DeviceAttributeCache		
+class	com.amazon.identity.auth.device.attribute.PandaUserProfileRequest		
+class	com.amazon.identity.auth.device.bootstrapSSO.AuthoritySignature		
+class	com.amazon.identity.auth.device.bootstrapSSO.AuthoritySignatureRequest	PandaRequest	
+class	com.amazon.identity.auth.device.bootstrapSSO.BootstrapPandaRequestsCaller		
+class	com.amazon.identity.auth.device.bootstrapSSO.BootstrapRequest	PandaRequest	
+class	com.amazon.identity.auth.device.bootstrapSSO.BootstrapSSO		
+class	com.amazon.identity.auth.device.bootstrapSSO.BootstrapSSO$TimeoutTimerTask	TimerTask	
+class	com.amazon.identity.auth.device.bootstrapSSO.BootstrapSSOService	Service	
+class	com.amazon.identity.auth.device.bootstrapSSO.BootstrapUtils		
+class	com.amazon.identity.auth.device.bootstrapSSO.IBootstrapSSOService$Stub	Binder	IBootstrapSSOService
+class	com.amazon.identity.auth.device.bootstrapSSO.IBootstrapSSOService$Stub$Proxy		IBootstrapSSOService
+class	com.amazon.identity.auth.device.callback.AsyncToSyncAdapter		Runnable
+class	com.amazon.identity.auth.device.callback.CallbackFuture		MAPFuture<Bundle>,Callback
+class	com.amazon.identity.auth.device.callback.IGenericIPC$Stub	Binder	IGenericIPC
+class	com.amazon.identity.auth.device.callback.IGenericIPC$Stub$Proxy		IGenericIPC
+class	com.amazon.identity.auth.device.callback.IRemoteCallback$Stub	Binder	IRemoteCallback
+class	com.amazon.identity.auth.device.callback.IRemoteCallback$Stub$Proxy		IRemoteCallback
+class	com.amazon.identity.auth.device.callback.PendingRequestCallbackHolder		
+class	com.amazon.identity.auth.device.callback.PendingRequestCallbackHolder$InflightCallback		Callback
+class	com.amazon.identity.auth.device.callback.RemoteCallbackWrapper		Callback,Parcelable
+class	com.amazon.identity.auth.device.callback.RemoteCallbackWrapper$Transport	IRemoteCallback.Stub	
+class	com.amazon.identity.auth.device.cbl.CBLLogic		
+class	com.amazon.identity.auth.device.cbl.CBLLogic$AnonymousClass3	DefaultCallback	
+class	com.amazon.identity.auth.device.cbl.CBLLogic$CBLData		
+class	com.amazon.identity.auth.device.cbl.PandaAuthorizeCodeEndpointUtils		
+class	com.amazon.identity.auth.device.cbl.PandaCreateCodePairEndpointUtils		
+class	com.amazon.identity.auth.device.cbl.PandaCreateCodePairEndpointUtils$CreateCodePairSuccessResult		
+class	com.amazon.identity.auth.device.cbl.PandaGeneratePreAuthorizedCodeEndpointUtils		
+class	com.amazon.identity.auth.device.cbl.PandaGeneratePreAuthorizedCodeEndpointUtils$CreatePreAuthorizedCodeSuccessResult		
+class	com.amazon.identity.auth.device.credentials.AccountCredentials		
+class	com.amazon.identity.auth.device.credentials.AccountCredentialsHolder		
+class	com.amazon.identity.auth.device.credentials.AccountCredentialsWithFixedADPCredentials	AccountCredentials	
+class	com.amazon.identity.auth.device.credentials.AmazonAccountCredentials	AccountCredentials	
+class	com.amazon.identity.auth.device.credentials.AnonymousAccountCredentials	AccountCredentials	
+class	com.amazon.identity.auth.device.customtabs.CustomTabActivityHelper		
+class	com.amazon.identity.auth.device.customtabs.CustomTabsHelper		
+class	com.amazon.identity.auth.device.dependency.AtnToAtzTokenExchangeRequest	TokenExchangeRequest	
+class	com.amazon.identity.auth.device.dependency.AtrChildToParentScopedTokenExchangeRequest	TokenExchangeRequest	
+class	com.amazon.identity.auth.device.dependency.PandaRequest		
+class	com.amazon.identity.auth.device.dependency.PandaServiceAccessor		
+class	com.amazon.identity.auth.device.dependency.PandaServiceAccessor$PandaServiceException	Exception	
+class	com.amazon.identity.auth.device.dependency.PandaServiceAccessor$PandaServiceResponse		
+class	com.amazon.identity.auth.device.dependency.TokenExchangeRequest	PandaRequest	
+class	com.amazon.identity.auth.device.devicedata.AMDeviceDataLogic	DeviceDataLogic	
+class	com.amazon.identity.auth.device.devicedata.AmazonDeviceInformationProviderHelper		
+class	com.amazon.identity.auth.device.devicedata.AmazonDeviceInformationProviderHelper$ADIPDeviceInfo	AmazonDeviceInfo	
+class	com.amazon.identity.auth.device.devicedata.DeviceDataCommunication		DeviceDataStoreDefinition
+class	com.amazon.identity.auth.device.devicedata.DeviceDataInfo		
+class	com.amazon.identity.auth.device.devicedata.DeviceDataLogic		DeviceDataStoreDefinition
+class	com.amazon.identity.auth.device.devicedata.DeviceDataStoreCache		
+class	com.amazon.identity.auth.device.devicedata.DeviceDataStoreImplementationFactory		
+class	com.amazon.identity.auth.device.devicedata.DeviceDataStoreSystemPropertyDecorator		DeviceDataStoreDefinition
+class	com.amazon.identity.auth.device.devicedata.PreloadDeviceInformationProviderHelper		
+class	com.amazon.identity.auth.device.endpoint.OpenIdRequest		
+class	com.amazon.identity.auth.device.endpoint.OpenIdResponse		
+class	com.amazon.identity.auth.device.env.EnvironmentUtils		MAPCommonEnvironmentUtils
+class	com.amazon.identity.auth.device.env.ProdUtils	EnvironmentUtils	
+class	com.amazon.identity.auth.device.features.FeatureSet		
+class	com.amazon.identity.auth.device.features.FeatureSetCache	FeatureSet	
+class	com.amazon.identity.auth.device.features.FeatureSetProvider	FeatureSet	
+class	com.amazon.identity.auth.device.fragment.AuthFragment	Fragment	
+class	com.amazon.identity.auth.device.fragment.AuthFragment$AnonymousClass10		Runnable
+class	com.amazon.identity.auth.device.fragment.AuthFragment$AnonymousClass4		WebViewLifecycleCallback
+class	com.amazon.identity.auth.device.fragment.MAPGenericFragmentActivity	AppCompatActivity	
+class	com.amazon.identity.auth.device.fragment.MAPGenericWebViewClient	WebViewClient	
+class	com.amazon.identity.auth.device.fragment.MAPGenericWebViewController		
+class	com.amazon.identity.auth.device.fragment.P2AWebViewController	MAPGenericWebViewController	
+class	com.amazon.identity.auth.device.framework.AMDeviceInfo	AmazonDeviceInfo	
+class	com.amazon.identity.auth.device.framework.AccountManagerCallbackAdapter		AccountManagerCallback<T>
+class	com.amazon.identity.auth.device.framework.AccountManagerFutureAdapter		MAPFuture<Bundle>
+class	com.amazon.identity.auth.device.framework.AccountTokenEncryptor	AbstractTokenEncryptor	
+class	com.amazon.identity.auth.device.framework.AlarmManagerWrapper		
+class	com.amazon.identity.auth.device.framework.AmazonAuthenticatorPluginHelper		
+class	com.amazon.identity.auth.device.framework.AmazonDeviceInfo	SSODeviceInfo	
+class	com.amazon.identity.auth.device.framework.AmazonIntentService	IntentService	
+class	com.amazon.identity.auth.device.framework.AmazonWebServiceCallerCreator		
+class	com.amazon.identity.auth.device.framework.AndroidUser		
+class	com.amazon.identity.auth.device.framework.AppToBrowserSSOPluginHelper		
+class	com.amazon.identity.auth.device.framework.AsyncAmazonWebserviceCall		IAmazonWebserviceCall
+class	com.amazon.identity.auth.device.framework.AsyncAmazonWebserviceCaller		
+class	com.amazon.identity.auth.device.framework.AuthEndpointErrorParser		
+class	com.amazon.identity.auth.device.framework.AuthEndpointErrorParser$AuthEndpointError		
+class	com.amazon.identity.auth.device.framework.AuthEndpointErrorParser$AuthErrorType		
+class	com.amazon.identity.auth.device.framework.AuthenticatedUrlConnectionFactory		
+class	com.amazon.identity.auth.device.framework.AuthenticationWebViewClient	WebViewClient	
+class	com.amazon.identity.auth.device.framework.BoundServiceCaller		
+class	com.amazon.identity.auth.device.framework.BoundServiceManager		ServiceConnection
+class	com.amazon.identity.auth.device.framework.BoundServiceManager$BoundServiceCallback		Runnable
+class	com.amazon.identity.auth.device.framework.BoundServiceManager$OnErrorRunnable		Runnable
+class	com.amazon.identity.auth.device.framework.CommonInfoGenerator		
+class	com.amazon.identity.auth.device.framework.CommonInfoGetter		
+class	com.amazon.identity.auth.device.framework.DeviceInfoHolder		
+class	com.amazon.identity.auth.device.framework.ExchangeTokenRetryLogic	RetryLogic	
+class	com.amazon.identity.auth.device.framework.GenericIPCSender		
+class	com.amazon.identity.auth.device.framework.GenericIPCSender$ErrorCodeMapperCallback		Callback
+class	com.amazon.identity.auth.device.framework.GenericIPCSender$GenericIPCServiceCallback	BoundServiceManager.BoundServiceCallback<IGenericIPC>	Callback
+class	com.amazon.identity.auth.device.framework.GenericIPCSender$SimpleCallbackFuture		Callback
+class	com.amazon.identity.auth.device.framework.HttpURLConnectionBuilder		
+class	com.amazon.identity.auth.device.framework.HttpsURLConnectionBuilder	HttpURLConnectionBuilder	
+class	com.amazon.identity.auth.device.framework.InvalidEnumValueException	Exception	
+class	com.amazon.identity.auth.device.framework.IsolatedModeSwitcher		
+class	com.amazon.identity.auth.device.framework.LWASSOPluginHelper		
+class	com.amazon.identity.auth.device.framework.LWASSOPluginHelper$LWASSODependencyImpl	LWASSODependency	
+class	com.amazon.identity.auth.device.framework.MAPApplicationInformationQueryer		
+class	com.amazon.identity.auth.device.framework.MAPApplicationInformationQueryer$MAPApplicationCacheInvalidator	BroadcastReceiver	
+class	com.amazon.identity.auth.device.framework.MAPInitTasks		
+class	com.amazon.identity.auth.device.framework.MAPJavascriptInterface		
+class	com.amazon.identity.auth.device.framework.MAPRuntimePermissionHandler		
+class	com.amazon.identity.auth.device.framework.MAPSmsReceiver	BroadcastReceiver	
+class	com.amazon.identity.auth.device.framework.MAPSmsReceiver$AnonymousClass2		Runnable
+class	com.amazon.identity.auth.device.framework.MAPSmsReceiver$SmsRetrieverWrapper		
+class	com.amazon.identity.auth.device.framework.PendingIntentWrapper		
+class	com.amazon.identity.auth.device.framework.PlatformWrapper		
+class	com.amazon.identity.auth.device.framework.ProviderResolver		
+class	com.amazon.identity.auth.device.framework.RemoteMAPException	Exception	
+class	com.amazon.identity.auth.device.framework.RemoteMapInfo		
+class	com.amazon.identity.auth.device.framework.ResetableHttpURLConnection	HttpURLConnection	
+class	com.amazon.identity.auth.device.framework.RetryLogic		
+class	com.amazon.identity.auth.device.framework.RetryLogic$TryResult		
+class	com.amazon.identity.auth.device.framework.RetryableHttpURLConnection	WrappableHttpURLConnection	
+class	com.amazon.identity.auth.device.framework.RetryableHttpsURLConnection	HttpsURLConnection	
+class	com.amazon.identity.auth.device.framework.RetryableURLConnection		
+class	com.amazon.identity.auth.device.framework.SQLTable		
+class	com.amazon.identity.auth.device.framework.SSODeviceInfo		
+class	com.amazon.identity.auth.device.framework.SSOIntentFactory		
+class	com.amazon.identity.auth.device.framework.SecureContentResolver		
+class	com.amazon.identity.auth.device.framework.ServiceWrappingContext	ContextWrapper	
+class	com.amazon.identity.auth.device.framework.SingletonManager		
+class	com.amazon.identity.auth.device.framework.SyncBoundServiceCaller	AsyncToSyncAdapter	
+class	com.amazon.identity.auth.device.framework.SystemPropertiesWrapper		
+class	com.amazon.identity.auth.device.framework.TelephonyManagerWrapper		
+class	com.amazon.identity.auth.device.framework.Tracer		
+class	com.amazon.identity.auth.device.framework.TrustedAppUtils		
+class	com.amazon.identity.auth.device.framework.TrustedPackageManager		
+class	com.amazon.identity.auth.device.framework.UnitTestSafeExecutorService		Executor
+class	com.amazon.identity.auth.device.framework.UserManagerWrapper		
+class	com.amazon.identity.auth.device.framework.Value		PublicCloneable<Value<T>>
+class	com.amazon.identity.auth.device.framework.WhatsAppAutoreadOtpPluginHelper		
+class	com.amazon.identity.auth.device.framework.WindowManagerWrapper		
+class	com.amazon.identity.auth.device.framework.WrappableHttpURLConnection	HttpURLConnection	
+class	com.amazon.identity.auth.device.framework.crypto.AESCipher		
+class	com.amazon.identity.auth.device.framework.crypto.DCPOnlyTokenEncryptor	AbstractTokenEncryptor	
+class	com.amazon.identity.auth.device.framework.crypto.DummyDataStorageDataEncryptor		DataStorageDataEncryptor
+class	com.amazon.identity.auth.device.framework.crypto.DummyEncryptionKeyCryptoManager	EncryptionKeyCryptoManager	
+class	com.amazon.identity.auth.device.framework.crypto.EncryptionKeyCryptoManager		
+class	com.amazon.identity.auth.device.framework.crypto.LocalDataStorageEncryptor		DataStorageDataEncryptor
+class	com.amazon.identity.auth.device.framework.crypto.LocalDataStorageEncryptorFactory		
+class	com.amazon.identity.auth.device.framework.crypto.LocalDataStorageV2EncryptionKeyCryptoManager	EncryptionKeyCryptoManager	
+class	com.amazon.identity.auth.device.framework.crypto.LocalDataStorageV2EncryptionKeyCryptoManagerFactory		
+class	com.amazon.identity.auth.device.framework.crypto.LocalDataStorageV2RSAKeyPairManager		
+class	com.amazon.identity.auth.device.framework.phonenumberautofill.PhoneNumberAutoFillManager		
+class	com.amazon.identity.auth.device.framework.security.DebugReleaseDiffMethods		
+class	com.amazon.identity.auth.device.framework.security.EnhancedURLConnectionFactory		
+class	com.amazon.identity.auth.device.framework.security.SignatureBasedPackageTrustLogic		
+class	com.amazon.identity.auth.device.framework.smsretriever.RegisterMAPSmsReceiverResult		
+class	com.amazon.identity.auth.device.framework.smsretriever.RegisterMAPSmsReceiverResult$RegisterMAPSmsReceiverResultBuilder		
+class	com.amazon.identity.auth.device.framework.smsretriever.SmsRetrieverManager		
+class	com.amazon.identity.auth.device.framework.smsretriever.SmsRetrieverSupportInfo		
+class	com.amazon.identity.auth.device.framework.smsretriever.SmsRetrieverSupportInfo$SmsRetrieverSupportInfoBuilder		
+class	com.amazon.identity.auth.device.framework.sso.SingleSignOnEligibilityChecker		
+class	com.amazon.identity.auth.device.javascript.JavaScriptBridgeBase	JavaScriptBridgeCommon	
+class	com.amazon.identity.auth.device.javascript.JavaScriptBridgeBaseV2	JavaScriptBridgeCommonV2	
+class	com.amazon.identity.auth.device.javascript.MAPJavaScriptBridge	JavaScriptBridgeBase	
+class	com.amazon.identity.auth.device.javascript.MAPJavaScriptBridgeV2	JavaScriptBridgeBaseV2	
+class	com.amazon.identity.auth.device.javascript.P2ABeginAccountMigrationParams		
+class	com.amazon.identity.auth.device.javascript.P2AJavaScriptBridge	JavaScriptBridgeBaseV2	
+class	com.amazon.identity.auth.device.linkoutSSO.LinkOutSSOHelper		
+class	com.amazon.identity.auth.device.linkoutSSO.PandaPushedAuthorizationResponse		
+class	com.amazon.identity.auth.device.metadata.AppSmsSignatureHelper		
+class	com.amazon.identity.auth.device.metadata.DeviceMetadataCollector		
+class	com.amazon.identity.auth.device.observer.MAPAccountChangeObserverManager		
+class	com.amazon.identity.auth.device.reactnative.MAPAccessor		
+class	com.amazon.identity.auth.device.recovery.AccountRecoverContext		
+class	com.amazon.identity.auth.device.regulation.InternalMAPRegulationConfig	MAPRegulationConfig	
+class	com.amazon.identity.auth.device.regulation.MapConfigSstListener		Callback
+class	com.amazon.identity.auth.device.regulation.RegulationCommunication		RegulationLogicDefinition
+class	com.amazon.identity.auth.device.regulation.RegulationLogic		RegulationLogicDefinition
+class	com.amazon.identity.auth.device.regulation.RegulationLogicStorage		
+class	com.amazon.identity.auth.device.request.PandaActorInvolvedApiCall	PandaApiCallTemplate	
+class	com.amazon.identity.auth.device.request.PandaActorInvolvedApiCall$PandaEnrollActorApiCall	PandaActorInvolvedApiCall	
+class	com.amazon.identity.auth.device.request.PandaActorInvolvedApiCall$PandaSignUpAndEnrollApiCall	PandaActorInvolvedApiCall	
+class	com.amazon.identity.auth.device.request.PandaActorInvolvedApiCall$PandaUpdatePhoneNumberApiCall	PandaActorInvolvedApiCall	
+class	com.amazon.identity.auth.device.request.PandaActorInvolvedApiCall$PandaUpdatePinApiCall	PandaActorInvolvedApiCall	
+class	com.amazon.identity.auth.device.request.PandaActorInvolvedApiCall$PandaUpdatePinPreferenceApiCall	PandaActorInvolvedApiCall	
+class	com.amazon.identity.auth.device.request.PandaApiCallTemplate		
+class	com.amazon.identity.auth.device.request.PandaApiCallTemplate$PandaResponseBundle		
+class	com.amazon.identity.auth.device.request.PandaBeginAccountMigrationApiCall	PandaApiCallTemplate	
+class	com.amazon.identity.auth.device.request.PandaChallengeApiCall	PandaApiCallTemplate	
+class	com.amazon.identity.auth.device.request.PandaGetAuthCodeApiCall	PandaApiCallTemplate	
+class	com.amazon.identity.auth.device.request.PandaGetConfigForPrivacyRegulationsApiCall	PandaApiCallTemplate	
+class	com.amazon.identity.auth.device.request.PandaGetPushNotificationsForApplicationApiCall	PandaApiCallTemplate	
+class	com.amazon.identity.auth.device.request.PandaMobileAuthEncryptionKeyGenerateApiCall	PandaApiCallTemplate	
+class	com.amazon.identity.auth.device.request.PandaOAuthTokenUpgradeApiCall	PandaApiCallTemplate	
+class	com.amazon.identity.auth.device.request.PandaPushedAuthorizationRequestApiCall	PandaApiCallTemplate	
+class	com.amazon.identity.auth.device.request.PandaSigninApiCall	PandaApiCallTemplate	
+class	com.amazon.identity.auth.device.request.PandaTokenExchangeApiCall	PandaApiCallTemplate	
+class	com.amazon.identity.auth.device.request.PandaTokenExchangeApiCall$AuthorizationCodeToAccessTokenExchangeCall	PandaTokenExchangeApiCall	
+class	com.amazon.identity.auth.device.request.PandaTokenExchangeApiCall$DMSToOAuthTokenExchangeCall	PandaTokenExchangeApiCall	
+class	com.amazon.identity.auth.device.request.PandaTokenExchangeApiCall$DelegatedOAuthTokenExchangeCall	PandaTokenExchangeApiCall	
+class	com.amazon.identity.auth.device.storage.AbstractTokenEncryptor		
+class	com.amazon.identity.auth.device.storage.AccountInfo		PublicCloneable<AccountInfo>
+class	com.amazon.identity.auth.device.storage.AccountInfoV2		
+class	com.amazon.identity.auth.device.storage.AccountTransaction		
+class	com.amazon.identity.auth.device.storage.AnonymousCredentialsStore		
+class	com.amazon.identity.auth.device.storage.AppInstanceDataStore		
+class	com.amazon.identity.auth.device.storage.BackwardsCompatiableDataStorage	DataStorage	
+class	com.amazon.identity.auth.device.storage.BackwardsCompatiableDataStorage$BackwardsCompatibleDataStorageException	Exception	AccountRecoverContext.AccountRecoverable
+class	com.amazon.identity.auth.device.storage.CentralAccountManagerDataStorage	DataStorage	
+class	com.amazon.identity.auth.device.storage.CentralAccountManagerDataStorage$AccountInfo		PublicCloneable<AccountInfo>
+class	com.amazon.identity.auth.device.storage.CentralLocalDataStorage	DataStorage	
+class	com.amazon.identity.auth.device.storage.CookieDataStore		
+class	com.amazon.identity.auth.device.storage.CookieDataStoreFactory		
+class	com.amazon.identity.auth.device.storage.CookieJar		
+class	com.amazon.identity.auth.device.storage.DataStorage		
+class	com.amazon.identity.auth.device.storage.DataStorageFactoryImpl		DataStorageFactory
+class	com.amazon.identity.auth.device.storage.DatabaseCleaner		
+class	com.amazon.identity.auth.device.storage.DatabaseCleaner$DatabaseCleaningService	AmazonIntentService	
+class	com.amazon.identity.auth.device.storage.DatabaseValue		PublicCloneable<DatabaseValue<T>>
+class	com.amazon.identity.auth.device.storage.DirtyDataSyncingService	IntentService	
+class	com.amazon.identity.auth.device.storage.DistributedDataStorage	DataStorage	
+class	com.amazon.identity.auth.device.storage.GenericCookieDataStore	CookieDataStore	
+class	com.amazon.identity.auth.device.storage.IMPDataProviderDataStorage	DataStorage	
+class	com.amazon.identity.auth.device.storage.KeystoreProvider		
+class	com.amazon.identity.auth.device.storage.KeystoreProvider$KeystoreProviderException	Exception	
+class	com.amazon.identity.auth.device.storage.LambortishClock		
+class	com.amazon.identity.auth.device.storage.LambortishClock$ChangeTimestampsBroadcastReceiver	BroadcastReceiver	
+class	com.amazon.identity.auth.device.storage.LocalAppDataAwareDataStorage	DataStorage	
+class	com.amazon.identity.auth.device.storage.LocalDataStorage		
+class	com.amazon.identity.auth.device.storage.LocalDataStorage$LocalDataStorageDBHelper	SQLiteOpenHelper	
+class	com.amazon.identity.auth.device.storage.LocalDataStorageDatabaseUpgradeHelper		
+class	com.amazon.identity.auth.device.storage.LocalDataStorageUtils		
+class	com.amazon.identity.auth.device.storage.LocalDataStorageV2		AmazonDeviceLocalDataStorage
+class	com.amazon.identity.auth.device.storage.LocalDataStorageV2$LocalDataStorageDBHelper	SQLiteOpenHelper	
+class	com.amazon.identity.auth.device.storage.LocalDataStorageV2DatabaseV1ToV2UpgradeHelper		LocalDataStorageV2DatabaseUpgradeHelper
+class	com.amazon.identity.auth.device.storage.LocalDataStorageV2DatabaseV2ToV3UpgradeHelper		LocalDataStorageV2DatabaseUpgradeHelper
+class	com.amazon.identity.auth.device.storage.LocalDataStorageV2DatabaseV3ToV2DowngradeHelper		
+class	com.amazon.identity.auth.device.storage.LocalDataStorageV3		AmazonDeviceLocalDataStorage
+class	com.amazon.identity.auth.device.storage.LocalDataStorageV3$LocalDataStorageDBHelper	SQLiteOpenHelper	
+class	com.amazon.identity.auth.device.storage.LocalKeyValueStore		
+class	com.amazon.identity.auth.device.storage.MAPInformationProviderHelpers		
+class	com.amazon.identity.auth.device.storage.NonCanonicalDataStorage	DataStorage	
+class	com.amazon.identity.auth.device.storage.NonCanonicalDataStorage$GetAccountsAction		IPCCommand
+class	com.amazon.identity.auth.device.storage.NonCanonicalDataStorage$GetTokenAction		IPCCommand
+class	com.amazon.identity.auth.device.storage.NonCanonicalDataStorage$GetUserDataAction		IPCCommand
+class	com.amazon.identity.auth.device.storage.PreMergeDeviceCookieDataStore	CookieDataStore	
+class	com.amazon.identity.auth.device.storage.RemoteAmazonDataStorage		
+class	com.amazon.identity.auth.device.storage.RemoteAmazonDataStorage$AnonymousClass1		ContentProviderClientCallback<Collection<Map<String,String>>>
+class	com.amazon.identity.auth.device.storage.RemoteAmazonDataStorage$SelectionContentProviderInfo		
+class	com.amazon.identity.auth.device.storage.RetrySyncDirtyDataScheduler		
+class	com.amazon.identity.auth.device.storage.RetrySyncDirtyDataScheduler$RetrySyncDirtyDataUnscheduler		
+class	com.amazon.identity.auth.device.storage.RuntimeSwitchableDataStorage	DataStorage	
+class	com.amazon.identity.auth.device.storage.StorageKeyUtils		
+class	com.amazon.identity.auth.device.storage.StorageKeyUtils$StorageTokenKeyInfo		
+class	com.amazon.identity.auth.device.storage.TokenAccessInterceptor		
+class	com.amazon.identity.auth.device.storage.TokenCacheHolder		
+class	com.amazon.identity.auth.device.storage.TokenCacheHolder$TokenCacheInfo		
+class	com.amazon.identity.auth.device.token.AMTokenManagementCommunication		TokenManagementDefinition
+class	com.amazon.identity.auth.device.token.AtzTokenManager		
+class	com.amazon.identity.auth.device.token.AtzTokenManager$AtzTokenManagerException	Exception	
+class	com.amazon.identity.auth.device.token.CentralTokenManagementCommunication		TokenManagementDefinition
+class	com.amazon.identity.auth.device.token.CentralTokenManagementCommunication$GetCookiesCommand		IPCCommand
+class	com.amazon.identity.auth.device.token.CentralTokenManagementCommunication$GetCookiesForActorCommand		IPCCommand
+class	com.amazon.identity.auth.device.token.CentralTokenManagementCommunication$GetParentScopedTokenCommand		IPCCommand
+class	com.amazon.identity.auth.device.token.CentralTokenManagementCommunication$GetTokenCommand		IPCCommand
+class	com.amazon.identity.auth.device.token.CentralTokenManagementCommunication$GetTokenForActorCommand		IPCCommand
+class	com.amazon.identity.auth.device.token.CentralTokenManagementCommunication$InvalidateCookiesCommand		IPCCommand
+class	com.amazon.identity.auth.device.token.CentralTokenManagementCommunication$UpdateTokenCommand		IPCCommand
+class	com.amazon.identity.auth.device.token.IInternalListener$Stub	Binder	IInternalListener
+class	com.amazon.identity.auth.device.token.IInternalListener$Stub$Proxy		IInternalListener
+class	com.amazon.identity.auth.device.token.InternalListener		
+class	com.amazon.identity.auth.device.token.InternalTokenManagement		
+class	com.amazon.identity.auth.device.token.MAPCookie		Serializable
+class	com.amazon.identity.auth.device.token.MAPCookieManager		
+class	com.amazon.identity.auth.device.token.MAPCookieManager$CookieCacheResponse		
+class	com.amazon.identity.auth.device.token.MAPCookieManager$ExchangeTokenCookiesResponse		
+class	com.amazon.identity.auth.device.token.MAPCookieManagerHelper		
+class	com.amazon.identity.auth.device.token.MobileAuthEncryptionKeyManager		
+class	com.amazon.identity.auth.device.token.MobileAuthEncryptionKeyManager$MobileAuthEncryptionKeyManagerException	Exception	
+class	com.amazon.identity.auth.device.token.MobileAuthEncryptionKeyManager$MobileAuthEncryptionKeyModel		
+class	com.amazon.identity.auth.device.token.OAuthTokenManager		
+class	com.amazon.identity.auth.device.token.OAuthTokenManager$ActorAccessToken		
+class	com.amazon.identity.auth.device.token.OAuthTokenManager$ActorExchangeTokenResponse		
+class	com.amazon.identity.auth.device.token.OAuthTokenManager$ExchangeTokenResponse		
+class	com.amazon.identity.auth.device.token.OAuthTokenManager$OAuthTokenManagerException	Exception	AccountRecoverContext.AccountRecoverable
+class	com.amazon.identity.auth.device.token.PandaOAuthExchangeRequestHelper		
+class	com.amazon.identity.auth.device.token.PandaOAuthUpgradeRequestHelper		
+class	com.amazon.identity.auth.device.token.PandaOAuthUpgradeRequestHelper$UpgradedAccessToken		
+class	com.amazon.identity.auth.device.token.PandaOAuthUpgradeRequestHelper$UpgradedRefreshToken		
+class	com.amazon.identity.auth.device.token.PandaOAuthUpgradeRequestHelper$UpgradedTokenEntity		
+class	com.amazon.identity.auth.device.token.RemoteInternalListenerWrapper	InternalListener	Parcelable
+class	com.amazon.identity.auth.device.token.RemoteInternalListenerWrapper$Transport	IInternalListener.Stub	
+class	com.amazon.identity.auth.device.token.ScopedTokenManager		
+class	com.amazon.identity.auth.device.token.ScopedTokenManager$ScopedTokenManagerException	Exception	
+class	com.amazon.identity.auth.device.token.ServerRegistrationSyncHelper		
+class	com.amazon.identity.auth.device.token.SstPrefetcher		
+class	com.amazon.identity.auth.device.token.TokenCache		
+class	com.amazon.identity.auth.device.token.TokenCache$AnonymousClass2		AccountManagerCallback<Bundle>
+class	com.amazon.identity.auth.device.token.TokenCache$TokenInfo		
+class	com.amazon.identity.auth.device.token.TokenCallbackHelpers		
+class	com.amazon.identity.auth.device.token.TokenJobQueue		
+class	com.amazon.identity.auth.device.token.TokenJobQueue$BlockingJob	TokenQueueJob	
+class	com.amazon.identity.auth.device.token.TokenJobQueue$ConcurrentJob	TokenQueueJob	
+class	com.amazon.identity.auth.device.token.TokenJobQueue$TokenQueueJob		
+class	com.amazon.identity.auth.device.token.TokenManagementImplementationFactory		
+class	com.amazon.identity.auth.device.token.TokenManagementLogic		TokenManagementDefinition
+class	com.amazon.identity.auth.device.token.TokenOperationLock		
+class	com.amazon.identity.auth.device.userdictionary.CentralUserDictionaryCommunication		UserDictionary
+class	com.amazon.identity.auth.device.userdictionary.UserDictionaryContents		
+class	com.amazon.identity.auth.device.userdictionary.UserDictionaryContents$LRUCache		
+class	com.amazon.identity.auth.device.userdictionary.UserDictionaryHelper		
+class	com.amazon.identity.auth.device.userdictionary.UserDictionaryHelper$UserDictionaryInvalidUserLoginException	Exception	
+class	com.amazon.identity.auth.device.userdictionary.UserDictionaryLogic		UserDictionary
+class	com.amazon.identity.auth.device.utils.ADPCorpusSigningCallbackHelpers		
+class	com.amazon.identity.auth.device.utils.AccountConstants		
+class	com.amazon.identity.auth.device.utils.AccountManagerWrapper		
+class	com.amazon.identity.auth.device.utils.AccountManagerWrapper$AccountManagerCallbackWrapper		AccountManagerCallback<T>
+class	com.amazon.identity.auth.device.utils.AccountManagerWrapper$BlockingAddAccountCallback		AddAccountCallback
+class	com.amazon.identity.auth.device.utils.AmazonBuildUtils		
+class	com.amazon.identity.auth.device.utils.AmazonDomainHelper		
+class	com.amazon.identity.auth.device.utils.AmazonSerialNumber		
+class	com.amazon.identity.auth.device.utils.BackwardsCompatiabilityHelper		
+class	com.amazon.identity.auth.device.utils.BuildConfiguration		
+class	com.amazon.identity.auth.device.utils.BuildInfo		
+class	com.amazon.identity.auth.device.utils.BundleUtils		
+class	com.amazon.identity.auth.device.utils.CentralApkUtils		
+class	com.amazon.identity.auth.device.utils.CentralApkUtils$CentralApkDescription		
+class	com.amazon.identity.auth.device.utils.CodeChallengeUtil		
+class	com.amazon.identity.auth.device.utils.CollectionUtils		
+class	com.amazon.identity.auth.device.utils.CookieUtils		
+class	com.amazon.identity.auth.device.utils.DBHelpers		
+class	com.amazon.identity.auth.device.utils.DebugHelpers		
+class	com.amazon.identity.auth.device.utils.DeviceTypeHelpers		
+class	com.amazon.identity.auth.device.utils.GenericUtils		
+class	com.amazon.identity.auth.device.utils.HandlerHelpers		
+class	com.amazon.identity.auth.device.utils.IntentHelpers		
+class	com.amazon.identity.auth.device.utils.IntentHelpers$AnonymousClass1		
+class	com.amazon.identity.auth.device.utils.JSONHelpers		
+class	com.amazon.identity.auth.device.utils.KeyFactoryUtils		
+class	com.amazon.identity.auth.device.utils.KeyInfo		
+class	com.amazon.identity.auth.device.utils.MAPArgContracts		
+class	com.amazon.identity.auth.device.utils.MAPLog		
+class	com.amazon.identity.auth.device.utils.MAPVersionCollector		
+class	com.amazon.identity.auth.device.utils.MetaDataUtils		
+class	com.amazon.identity.auth.device.utils.NamedCachedThreadPool		Executor
+class	com.amazon.identity.auth.device.utils.NamedThreadFactory		ThreadFactory
+class	com.amazon.identity.auth.device.utils.PackageUtils		
+class	com.amazon.identity.auth.device.utils.ParcelUtils		
+class	com.amazon.identity.auth.device.utils.PhoneVerificationHelper		
+class	com.amazon.identity.auth.device.utils.Platform		
+class	com.amazon.identity.auth.device.utils.ReceiverHelper		
+class	com.amazon.identity.auth.device.utils.ReflectionHelper		
+class	com.amazon.identity.auth.device.utils.ReflectionHelper$CannotCallMethodException	Exception	
+class	com.amazon.identity.auth.device.utils.ReflectionHelper$MethodLookUpInfo		
+class	com.amazon.identity.auth.device.utils.RequestHelper		
+class	com.amazon.identity.auth.device.utils.ResourceHelper		
+class	com.amazon.identity.auth.device.utils.ResourceHelper$ResourceNotFoundException	RuntimeException	
+class	com.amazon.identity.auth.device.utils.SecurityHelpers		
+class	com.amazon.identity.auth.device.utils.SignatureHelpers		
+class	com.amazon.identity.auth.device.utils.StreamUtils		
+class	com.amazon.identity.auth.device.utils.StringConversionHelpers		
+class	com.amazon.identity.auth.device.utils.StringUtil		
+class	com.amazon.identity.auth.device.utils.TaskScheduler		
+class	com.amazon.identity.auth.device.utils.ThreadUtils		
+class	com.amazon.identity.auth.device.utils.TimeUtil		
+class	com.amazon.identity.auth.device.utils.UrlUtils		
+class	com.amazon.identity.auth.device.utils.UrlUtils$CustomUrlQuerySanitizer	UrlQuerySanitizer	
+class	com.amazon.identity.auth.device.utils.UrlUtils$QueryStringBuilder		
+class	com.amazon.identity.auth.device.utils.VersionUtils		
+class	com.amazon.identity.auth.device.utils.ViewUtils		
+class	com.amazon.identity.auth.device.utils.WebViewCookieUtils		
+class	com.amazon.identity.auth.device.utils.WebViewUtils		
+class	com.amazon.identity.auth.request.AuthenticatedRequestHelpers		
+class	com.amazon.identity.auth.request.AuthenticatedUrlConnectionAdapter		
+class	com.amazon.identity.auth.request.HttpOutputStreamWrapper	OutputStream	
+class	com.amazon.identity.auth.request.NoCredentialsException	AuthenticatedURLConnection.NoCredentialsException	
+class	com.amazon.identity.frc.FrcCookiesManager		
+class	com.amazon.identity.frc.FrcCookiesManager.a		
+class	com.amazon.identity.frc.FrcCookiesManager.b	JSONObject	
+class	com.amazon.identity.frc.FrcCookiesManager.c		
+class	com.amazon.identity.frc.FrcCookiesManager.d		
+class	com.amazon.identity.frc.FrcCookiesManager.e		
+class	com.amazon.identity.kcpsdk.auth.AmazonDeviceSecurity		
+class	com.amazon.identity.kcpsdk.auth.AmazonWebserviceCall		IAmazonWebserviceCall
+class	com.amazon.identity.kcpsdk.auth.AmazonWebserviceCallRetryLogic	RetryLogic	
+class	com.amazon.identity.kcpsdk.auth.AmazonWebserviceCaller		
+class	com.amazon.identity.kcpsdk.auth.AuthenticatedResponseHandler	WebResponseParser<T>	
+class	com.amazon.identity.kcpsdk.auth.AuthenticatedResponseHandlerAdapter		IWebResponseParser
+class	com.amazon.identity.kcpsdk.auth.AuthenticationChallenge		
+class	com.amazon.identity.kcpsdk.auth.AuthorizeChallengeResponseJsonParser	PandaRegisterDeviceResponseJsonParser	
+class	com.amazon.identity.kcpsdk.auth.Cookie		
+class	com.amazon.identity.kcpsdk.auth.CookieParser		
+class	com.amazon.identity.kcpsdk.auth.DefaultAmazonWebserviceCallListener		
+class	com.amazon.identity.kcpsdk.auth.DeregisterDeviceError		
+class	com.amazon.identity.kcpsdk.auth.DeregisterDeviceRequest		
+class	com.amazon.identity.kcpsdk.auth.DeregisterDeviceResponse		
+class	com.amazon.identity.kcpsdk.auth.DeregisterDeviceResponseParser	WebResponseParser<DeregisterDeviceResponse>	
+class	com.amazon.identity.kcpsdk.auth.PandaAnonymousRegistrationResponseJsonParser	PandaRegisterDeviceResponseJsonParser	
+class	com.amazon.identity.kcpsdk.auth.PandaAuthenticateAccountRequest		
+class	com.amazon.identity.kcpsdk.auth.PandaPrimaryRegistrationResponseJsonParser	PandaRegisterDeviceResponseJsonParser	
+class	com.amazon.identity.kcpsdk.auth.PandaRegisterDeviceResponseJsonParser	PandaResponseJsonParser<RegisterDeviceResponse>	
+class	com.amazon.identity.kcpsdk.auth.PandaResponseJsonParser		
+class	com.amazon.identity.kcpsdk.auth.ParseErrorException	Exception	
+class	com.amazon.identity.kcpsdk.auth.RegisterDeviceError		
+class	com.amazon.identity.kcpsdk.auth.RegisterDeviceRequest	RegisterRequest	
+class	com.amazon.identity.kcpsdk.auth.RegisterDeviceRequest$AnonymousData		
+class	com.amazon.identity.kcpsdk.auth.RegisterDeviceResponse		
+class	com.amazon.identity.kcpsdk.auth.RegisterDeviceResponseJsonParser	WebResponseParser<RegisterDeviceResponse>	
+class	com.amazon.identity.kcpsdk.auth.RegisterDeviceResponseParser	WebResponseParser<RegisterDeviceResponse>	AmazonWebserviceCallResponseParser
+class	com.amazon.identity.kcpsdk.auth.RegisterIsolatedAppWithoutNameDeviceParser	PandaRegisterDeviceResponseJsonParser	
+class	com.amazon.identity.kcpsdk.auth.RegisterRequest		
+class	com.amazon.identity.kcpsdk.auth.RenameDeviceRequest		
+class	com.amazon.identity.kcpsdk.auth.RenameDeviceResponse		
+class	com.amazon.identity.kcpsdk.auth.RenameDeviceResponseParser	WebResponseParser<RenameDeviceResponse>	
+class	com.amazon.identity.kcpsdk.auth.RequestSigner		
+class	com.amazon.identity.kcpsdk.auth.StandardAmazonWebServiceCallback		IAmazonWebServiceCallback
+class	com.amazon.identity.kcpsdk.auth.UpdateDeviceCredentialsRequest		
+class	com.amazon.identity.kcpsdk.auth.UpdateDeviceCredentialsResponseParser	RegisterDeviceResponseParser	
+class	com.amazon.identity.kcpsdk.auth.WebResponseParserAdapter		IWebResponseParser
+class	com.amazon.identity.kcpsdk.auth.register.PandaTokenExchangeRequest		
+class	com.amazon.identity.kcpsdk.auth.register.PandaTokenExchangeRequestBuilder		
+class	com.amazon.identity.kcpsdk.auth.register.PandaTokenExchangeResponse		
+class	com.amazon.identity.kcpsdk.common.BackoffException	IOException	
+class	com.amazon.identity.kcpsdk.common.BackoffInfo		
+class	com.amazon.identity.kcpsdk.common.ExponentialBackoffHelper		
+class	com.amazon.identity.kcpsdk.common.FIRSError		
+class	com.amazon.identity.kcpsdk.common.FIRSErrorParser		
+class	com.amazon.identity.kcpsdk.common.KindleWebserviceError		
+class	com.amazon.identity.kcpsdk.common.LocaleUtil		
+class	com.amazon.identity.kcpsdk.common.RequestValidationHelper		
+class	com.amazon.identity.kcpsdk.common.SoftwareInfo		
+class	com.amazon.identity.kcpsdk.common.SoftwareVersion		
+class	com.amazon.identity.kcpsdk.common.WebRequest		
+class	com.amazon.identity.kcpsdk.common.WebResponseHeaders		
+class	com.amazon.identity.kcpsdk.common.WebResponseParser		
+class	com.amazon.identity.kcpsdk.common.XMLAttribute	XMLEntity	
+class	com.amazon.identity.kcpsdk.common.XMLCData	XMLEntity	
+class	com.amazon.identity.kcpsdk.common.XMLDeviceTypeSoftwareVersionMap	XMLEntity	
+class	com.amazon.identity.kcpsdk.common.XMLElement	XMLEntity	
+class	com.amazon.identity.kcpsdk.common.XMLEntity		
+class	com.amazon.identity.kcpsdk.common.XMLParser		
+class	com.amazon.identity.kcpsdk.common.XMLParserHelpers		
+class	com.amazon.identity.mobi.common.BuildConfig		
+class	com.amazon.identity.mobi.common.javascript.JavaScriptBridgeCommon		
+class	com.amazon.identity.mobi.common.javascript.JavaScriptBridgeCommonV2		
+class	com.amazon.identity.mobi.common.javascript.JavaScriptBridgeErrorConstants		
+class	com.amazon.identity.mobi.common.javascript.type.JavaScriptBridgeError		
+class	com.amazon.identity.mobi.common.javascript.type.JavaScriptBridgeError$JavaScriptBridgeErrorBuilder		
+class	com.amazon.identity.mobi.common.javascript.type.JavaScriptBridgeErrorDetails		
+class	com.amazon.identity.mobi.common.javascript.type.JavaScriptBridgeErrorDetails$JavaScriptBridgeErrorDetailsBuilder		
+class	com.amazon.identity.mobi.common.ui.MAPUIActivityBase	Activity	
+class	com.amazon.identity.mobi.common.ui.MultiLayerPriorityUITaskQueue		
+class	com.amazon.identity.mobi.common.ui.UIMetrics		
+class	com.amazon.identity.mobi.common.ui.UIType$UITypeComparator		Comparator<UIType>,Serializable
+class	com.amazon.identity.mobi.common.utils.MainThreadExecutor		Executor
+class	com.amazon.identity.mobi.common.utils.Scheduler		
+class	com.amazon.identity.mobi.common.utils.StringUtils		
+class	com.amazon.identity.mobi.common.utils.SystemWrapper		
+class	com.amazon.identity.mobi.common.utils.ThreadUtils		
+class	com.amazon.identity.mobi.common.utils.ThreadUtils$NamedThreadFactory		ThreadFactory
+class	com.amazon.identity.mobi.common.utils.UrlCommonUtils		
+class	com.amazon.identity.mobi.common.utils.json.JSONUtils		
+class	com.amazon.identity.platform.device.ClientSideAmazonPlatformDependencyImpl		
+class	com.amazon.identity.platform.device.IMPDataProviderHelper		
+class	com.amazon.identity.platform.device.IMPDataProviderHelper$Command		
+class	com.amazon.identity.platform.metric.MetricUtils		
+class	com.amazon.identity.platform.metric.MetricsHelper		
+class	com.amazon.identity.platform.metric.MetricsHelper$AnonymousClass2		Callback
+class	com.amazon.identity.platform.metric.PlatformMetricsTimer		
+class	com.amazon.identity.platform.metric.PlatformMetricsTimer$FakeMetricsTimer	PlatformMetricsTimer	
+class	com.amazon.identity.platform.metric.csm.MAPCSMTransitionFactoryProvider		
+class	com.amazon.identity.platform.metric.csm.MAPCSMTransitionFactoryProvider$MAPCSMTransitionFactoryHolder		
+class	com.amazon.identity.platform.metric.minerva.MinervaPlatformMetricsTimer	PlatformMetricsTimer	
+class	com.amazon.identity.platform.metric.minerva.client.FireOSPlatformMinervaClient		
+class	com.amazon.identity.platform.metric.minerva.client.MinervaChildProfileVerifier		ChildProfileVerifier
+class	com.amazon.identity.platform.metric.minerva.client.MinervaOAuthProvider		OAuthProvider
+class	com.amazon.identity.platform.metric.minerva.client.MinervaUserControlVerifier		UserControlVerifier
+class	com.amazon.identity.platform.metric.minerva.client.ThirdPartyPlatformMinervaClient		
+class	com.amazon.identity.platform.metric.minerva.types.MAPFireOSPlatformMinervaMetricEvent	MinervaMetricEvent	
+class	com.amazon.identity.platform.metric.minerva.types.MAPFireOSPlatformMinervaMetricEvent$MAPFireOSPlatformMinervaMetricEventBuilder	MinervaMetricEvent.AbstractMetricBuilder<MAPFireOSPlatformMinervaMetricEvent>	
+class	com.amazon.identity.platform.metric.minerva.types.MAPThirdPartyPlatformMinervaMetricEvent	MinervaMetricEvent	
+class	com.amazon.identity.platform.metric.minerva.types.MAPThirdPartyPlatformMinervaMetricEvent$MAPThirdPartyPlatformMinervaMetricEventBuilder	MinervaMetricEvent.AbstractMetricBuilder<MAPThirdPartyPlatformMinervaMetricEvent>	
+class	com.amazon.identity.platform.metric.minerva.types.MinervaMetricEvent		
+class	com.amazon.identity.platform.metric.minerva.types.MinervaMetricEvent$AbstractMetricBuilder		MetricBuilder<T>
+class	com.amazon.identity.platform.metric.minerva.types.PlatformLoggingMetricEvent	MinervaMetricEvent	
+class	com.amazon.identity.platform.metric.minerva.types.PlatformLoggingMetricEvent$PlatformLoggingMetricEventBuilder	MinervaMetricEvent.AbstractMetricBuilder<PlatformLoggingMetricEvent>	
+class	com.amazon.identity.platform.metric.minerva.types.SchemaConfig		
+class	com.amazon.identity.platform.metric.minerva.types.SchemaConfig$DefaultMAPMetric		MinervaSchema
+class	com.amazon.identity.platform.metric.minerva.types.SchemaConfig$MAPMetricTracerSet1		MinervaSchema
+class	com.amazon.identity.platform.setting.PlatformSettings		
+class	com.amazon.identity.platform.util.PlatformUtils		
+enum	com.amazon.identity.auth.accounts.AmazonAccountManager$AccountRegistrationStatus		
+enum	com.amazon.identity.auth.accounts.P2ATransitionStateMachine$State		
+enum	com.amazon.identity.auth.accounts.SubAuthenticatorConnection$CurrentState		
+enum	com.amazon.identity.auth.attributes.CORPFMResponse$ComputationConfidenceValue		
+enum	com.amazon.identity.auth.device.age.AgeClassificationLogic$SetAgeOrigin		
+enum	com.amazon.identity.auth.device.api.AccountStatusPolicy$Policy		
+enum	com.amazon.identity.auth.device.api.AuthenticationType		
+enum	com.amazon.identity.auth.device.api.CustomerAttributeStore$GetAttributeOptions		
+enum	com.amazon.identity.auth.device.api.FederatedAuthConfig$IdentityProvider		
+enum	com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalActivityUIOptions$ProgressBarState		
+enum	com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalActivityUIOptions$ScreenPosition		
+enum	com.amazon.identity.auth.device.api.MAPAccountManager$BootstrapError		
+enum	com.amazon.identity.auth.device.api.MAPAccountManager$LinkOutSSOBrowserOpenMode		
+enum	com.amazon.identity.auth.device.api.MAPAccountManager$P2ATransitionStatus		
+enum	com.amazon.identity.auth.device.api.MAPAccountManager$RegistrationError		
+enum	com.amazon.identity.auth.device.api.MAPActorManager$ActorSwitchMode		
+enum	com.amazon.identity.auth.device.api.MAPActorManager$PinChoice		
+enum	com.amazon.identity.auth.device.api.MAPAgeClassificationManager$AgeClassification		
+enum	com.amazon.identity.auth.device.api.MAPAgeClassificationManager$AgeSignalCategory		
+enum	com.amazon.identity.auth.device.api.MAPAndroidWebViewHelper$URL_TYPE		
+enum	com.amazon.identity.auth.device.api.MAPError$AccountError$AccountErrorEnum		MAPErrorMethods
+enum	com.amazon.identity.auth.device.api.MAPError$ActorError$ActorErrorEnum		MAPErrorMethods
+enum	com.amazon.identity.auth.device.api.MAPError$AttributeError$AttributeErrorEnum		MAPErrorMethods
+enum	com.amazon.identity.auth.device.api.MAPError$BootstrapSSOError$BootstrapSSOErrorEnum		MAPErrorMethods
+enum	com.amazon.identity.auth.device.api.MAPError$CommonError$CommonErrorEnum		MAPErrorMethods
+enum	com.amazon.identity.auth.device.api.MAPError$FidoAuthenticatorError$FidoAuthenticatorErrorEnum		MAPErrorMethods
+enum	com.amazon.identity.auth.device.api.MAPError$TokenError$TokenErrorEnum		MAPErrorMethods
+enum	com.amazon.identity.auth.device.api.MAPSettings$StorageKeys		
+enum	com.amazon.identity.auth.device.api.P2AConfirmationMetadata$Action		
+enum	com.amazon.identity.auth.device.api.RegistrationType		
+enum	com.amazon.identity.auth.device.api.SigninOption		
+enum	com.amazon.identity.auth.device.attribute.DeviceAttribute		
+enum	com.amazon.identity.auth.device.diagnose.MAPCommonError		
+enum	com.amazon.identity.auth.device.endpoint.OpenIdRequest$REQUEST_TYPE		
+enum	com.amazon.identity.auth.device.endpoint.OpenIdRequest$TOKEN_SCOPE		
+enum	com.amazon.identity.auth.device.env.EnvironmentUtils$Environment		
+enum	com.amazon.identity.auth.device.features.Feature		
+enum	com.amazon.identity.auth.device.fragment.AuthFragment$FragmentState		
+enum	com.amazon.identity.auth.device.framework.MAPRuntimePermissionHandler$PermissionAction		
+enum	com.amazon.identity.auth.device.framework.PendingIntentWrapper$PendingIntentType		
+enum	com.amazon.identity.auth.device.framework.RetryLogic$RetryErrorMessageFromServerSide		
+enum	com.amazon.identity.auth.device.framework.TrustedAppUtils$TrustedCertificate		
+enum	com.amazon.identity.auth.device.framework.crypto.AESCipher$KeySize		
+enum	com.amazon.identity.auth.device.framework.phonenumberautofill.PhoneNumberAutoFillResultType		
+enum	com.amazon.identity.auth.device.framework.phonenumberautofill.PhoneNumberPickerMetric		
+enum	com.amazon.identity.auth.device.framework.sso.SingleSignOnEligibilityChecker$SSOType		
+enum	com.amazon.identity.auth.device.storage.LocalDataStorage$GetDataOptions		
+enum	com.amazon.identity.auth.device.token.OAuthTokenManager$AuthTokenExchangeType		
+enum	com.amazon.identity.auth.device.utils.AccountConstants$DeviceRenameError		
+enum	com.amazon.identity.auth.device.utils.KeyType		
+enum	com.amazon.identity.kcpsdk.auth.AuthenticateAccountError		
+enum	com.amazon.identity.kcpsdk.auth.CredentialStatus		
+enum	com.amazon.identity.kcpsdk.auth.DeregisterDeviceErrorType		
+enum	com.amazon.identity.kcpsdk.auth.PandaError		
+enum	com.amazon.identity.kcpsdk.auth.RegisterDeviceErrorType		
+enum	com.amazon.identity.kcpsdk.auth.RegisterDeviceRequest$CustomerAccountTokenType		
+enum	com.amazon.identity.kcpsdk.auth.RegisterDeviceRequest$DeviceAccountRole		
+enum	com.amazon.identity.kcpsdk.auth.RegisterDeviceRequest$RegisterEndpointEnum		
+enum	com.amazon.identity.kcpsdk.auth.RenameDeviceErrorType		
+enum	com.amazon.identity.kcpsdk.common.FIRSErrorType		
+enum	com.amazon.identity.kcpsdk.common.HttpVerb		
+enum	com.amazon.identity.kcpsdk.common.KindleWebserviceErrorType		
+enum	com.amazon.identity.kcpsdk.common.ParseError		
+enum	com.amazon.identity.kcpsdk.common.WebProtocol		
+enum	com.amazon.identity.kcpsdk.common.WebResponseParser$WebResponseParserState		
+enum	com.amazon.identity.mobi.common.ui.UIType		
+enum	com.amazon.identity.platform.DeviceCategory		
+enum	com.amazon.identity.platform.setting.PlatformSettings$Namespace		
+interface	android.accounts.IAccountAuthenticatorResponse	IInterface	
+interface	com.amazon.dcp.sso.IAmazonAccountAuthenticator	IInterface	
+interface	com.amazon.dcp.sso.IRequestAuthenticationMethod	IInterface	
+interface	com.amazon.dcp.sso.ISessionUserChanger	IInterface	
+interface	com.amazon.dcp.sso.ISubAuthenticator	IInterface	
+interface	com.amazon.dcp.sso.ISubAuthenticatorResponse	IInterface	
+interface	com.amazon.dcp.sso.IWebserviceCallback	IInterface	
+interface	com.amazon.identity.auth.accounts.AccountAuthenticatorQueue$AccountAuthenticatorTask		
+interface	com.amazon.identity.auth.accounts.AccountManagerDefinition		
+interface	com.amazon.identity.auth.accounts.AccountRegistrar$Listener		
+interface	com.amazon.identity.auth.accounts.ChildApplicationRegistrar		
+interface	com.amazon.identity.auth.accounts.ChildApplicationRegistrarCallback		
+interface	com.amazon.identity.auth.accounts.DeregisterAccount$ConnectionFactory		
+interface	com.amazon.identity.auth.accounts.DeregisterAccount$IDeregisterAccount		
+interface	com.amazon.identity.auth.accounts.DeregisterAccount$ResponseListener		
+interface	com.amazon.identity.auth.accounts.MultipleAccountDefinition		
+interface	com.amazon.identity.auth.accounts.MultipleAccountPlugin		
+interface	com.amazon.identity.auth.accounts.MultipleAccountsLogic$AccountMappingLogic		
+interface	com.amazon.identity.auth.accounts.SessionUserChanger$OnSessionUsersChangedListener		
+interface	com.amazon.identity.auth.accounts.SubAuthenticatorConnection$IDeregisterConnectionCallback		
+interface	com.amazon.identity.auth.accounts.SubAuthenticatorConnection$ISubAuthenticatorConnectionCallback		
+interface	com.amazon.identity.auth.attributes.CustomerAttributeStoreDefinition		
+interface	com.amazon.identity.auth.device.actor.ActorManagerLogicDefinition		
+interface	com.amazon.identity.auth.device.age.AgeClassificationLogicDefinition		
+interface	com.amazon.identity.auth.device.api.ADPCorpusSigningAuthenticationMethod		
+interface	com.amazon.identity.auth.device.api.AccountMigrationCallback		
+interface	com.amazon.identity.auth.device.api.AccountMigrationCallbackV2		
+interface	com.amazon.identity.auth.device.api.AppFeatureProvider		
+interface	com.amazon.identity.auth.device.api.AppFeatureProvider$PermissionFeatureProvider	AppFeatureProvider	
+interface	com.amazon.identity.auth.device.api.AppFeatureProvider$WeblabFeatureProvider	AppFeatureProvider	
+interface	com.amazon.identity.auth.device.api.Callback		
+interface	com.amazon.identity.auth.device.api.MAPAccountManager$MAPAccountChangeObserver		
+interface	com.amazon.identity.auth.device.api.MAPAgeClassificationManager$AgeClassificationListener		
+interface	com.amazon.identity.auth.device.api.MAPAndroidWebViewNavigator		
+interface	com.amazon.identity.auth.device.api.MAPError$MAPErrorMethods		
+interface	com.amazon.identity.auth.device.api.MAPFuture		
+interface	com.amazon.identity.auth.device.api.MAPInitListener		
+interface	com.amazon.identity.auth.device.api.TypedCallback		
+interface	com.amazon.identity.auth.device.bootstrapSSO.IBootstrapSSOService	IInterface	
+interface	com.amazon.identity.auth.device.callback.IGenericIPC	IInterface	
+interface	com.amazon.identity.auth.device.callback.IRemoteCallback	IInterface	
+interface	com.amazon.identity.auth.device.devicedata.DeviceDataStoreDefinition		
+interface	com.amazon.identity.auth.device.fragment.WebViewLifecycleCallback		
+interface	com.amazon.identity.auth.device.framework.AuthenticationWebViewClient$AuthenticationWebViewClientCallback		
+interface	com.amazon.identity.auth.device.framework.ContentProviderClientCallback		
+interface	com.amazon.identity.auth.device.framework.IPCCommand		
+interface	com.amazon.identity.auth.device.framework.MAPJavascriptInterface$MAPJavascriptInterfaceCallback		
+interface	com.amazon.identity.auth.device.framework.crypto.DataStorageDataEncryptor		
+interface	com.amazon.identity.auth.device.framework.smsretriever.SmsRetrieverManager$Consumer		
+interface	com.amazon.identity.auth.device.recovery.AccountRecoverContext$AccountRecoverable		
+interface	com.amazon.identity.auth.device.regulation.RegulationLogicDefinition		
+interface	com.amazon.identity.auth.device.storage.AmazonDeviceLocalDataStorage		
+interface	com.amazon.identity.auth.device.storage.DataStorage$DataPropogationCallback		
+interface	com.amazon.identity.auth.device.storage.DataStorageFactory		
+interface	com.amazon.identity.auth.device.storage.DistributedDataStorage$RemoteDataStorageAction		
+interface	com.amazon.identity.auth.device.storage.LocalDataStorageV2DatabaseUpgradeHelper		
+interface	com.amazon.identity.auth.device.token.IInternalListener	IInterface	
+interface	com.amazon.identity.auth.device.token.TokenCache$Listener		
+interface	com.amazon.identity.auth.device.token.TokenJobQueue$TokenTask		
+interface	com.amazon.identity.auth.device.token.TokenManagementDefinition		
+interface	com.amazon.identity.auth.device.userdictionary.UserDictionary		
+interface	com.amazon.identity.auth.device.utils.AccountManagerWrapper$AddAccountCallback		
+interface	com.amazon.identity.auth.device.utils.PublicCloneable	Cloneable	
+interface	com.amazon.identity.kcpsdk.auth.AmazonWebserviceCallResponseParser		
+interface	com.amazon.identity.kcpsdk.auth.IAmazonWebServiceCallback		
+interface	com.amazon.identity.kcpsdk.auth.IAmazonWebserviceCall		
+interface	com.amazon.identity.kcpsdk.common.IWebResponseParser		
+interface	com.amazon.identity.mobi.common.env.MAPCommonEnvironmentUtils		
+interface	com.amazon.identity.mobi.common.javascript.AsyncJavaScriptCall		
+interface	com.amazon.identity.mobi.common.javascript.JavaScriptBridgeCommon$FunctionEvaluator		
+interface	com.amazon.identity.mobi.common.javascript.Promise		
+interface	com.amazon.identity.mobi.common.ui.UITask		
+interface	com.amazon.identity.mobi.common.utils.Callback		
+interface	com.amazon.identity.mobi.common.utils.MetricsEmitter		
+interface	com.amazon.identity.platform.metric.csm.MAPCSMTransition		
+interface	com.amazon.identity.platform.metric.csm.MAPCSMTransitionFactory		
+interface	com.amazon.identity.platform.metric.minerva.types.MinervaMetricEvent$MetricBuilder		
+interface	com.amazon.identity.platform.metric.minerva.types.MinervaSchema		
+interface	com.amazon.identity.platform.weblab.MAPWeblabClient		

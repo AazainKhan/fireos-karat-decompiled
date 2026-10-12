@@ -1,0 +1,20 @@
+class	kind	declaration
+com.android.wallpaperbackup.WallpaperBackupAgent	field	private File mLockWallpaperFile;
+com.android.wallpaperbackup.WallpaperBackupAgent	field	private File mQuotaFile;
+com.android.wallpaperbackup.WallpaperBackupAgent	field	private File mWallpaperFile;
+com.android.wallpaperbackup.WallpaperBackupAgent	field	private File mWallpaperInfo;
+com.android.wallpaperbackup.WallpaperBackupAgent	field	private WallpaperManager mWm;
+com.android.wallpaperbackup.WallpaperBackupAgent	field	private boolean mQuotaExceeded;
+com.android.wallpaperbackup.WallpaperBackupAgent	method	private ComponentName parseWallpaperComponent(File file, String str)
+com.android.wallpaperbackup.WallpaperBackupAgent	method	private Rect parseCropHint(File file, String str)
+com.android.wallpaperbackup.WallpaperBackupAgent	method	private int getAttributeInt(XmlPullParser xmlPullParser, String str, int i)
+com.android.wallpaperbackup.WallpaperBackupAgent	method	private void applyComponentAtInstall(ComponentName componentName, boolean z)
+com.android.wallpaperbackup.WallpaperBackupAgent	method	private void restoreFromStage(File file, File file2, String str, int i) throws IOException
+com.android.wallpaperbackup.WallpaperBackupAgent	method	protected File getWallpaperDir()
+com.android.wallpaperbackup.WallpaperBackupAgent	method	protected void backupFile(File file, FullBackupDataOutput fullBackupDataOutput)
+com.android.wallpaperbackup.WallpaperBackupAgent	method	public void onBackup(ParcelFileDescriptor parcelFileDescriptor, BackupDataOutput backupDataOutput, ParcelFileDescriptor parcelFileDescriptor2) throws IOException
+com.android.wallpaperbackup.WallpaperBackupAgent	method	public void onCreate()
+com.android.wallpaperbackup.WallpaperBackupAgent	method	public void onFullBackup(FullBackupDataOutput fullBackupDataOutput) throws IOException
+com.android.wallpaperbackup.WallpaperBackupAgent	method	public void onQuotaExceeded(long j, long j2)
+com.android.wallpaperbackup.WallpaperBackupAgent	method	public void onRestore(BackupDataInput backupDataInput, int i, ParcelFileDescriptor parcelFileDescriptor) throws IOException
+com.android.wallpaperbackup.WallpaperBackupAgent	method	public void onRestoreFinished()

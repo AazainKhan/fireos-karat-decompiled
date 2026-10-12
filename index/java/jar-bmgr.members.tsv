@@ -1,0 +1,72 @@
+class	kind	declaration
+com.android.commands.bmgr.Bmgr	field	private IRestoreSession mRestore;
+com.android.commands.bmgr.Bmgr	field	private String[] mArgs;
+com.android.commands.bmgr.Bmgr	field	private final IBackupManager mBmgr;
+com.android.commands.bmgr.Bmgr	field	private int mNextArg;
+com.android.commands.bmgr.Bmgr	field	private static final String BMGR_ERR_NO_RESTORESESSION_FOR_USER;
+com.android.commands.bmgr.Bmgr	field	private static final String BMGR_NOT_ACTIVATED_FOR_USER;
+com.android.commands.bmgr.Bmgr	field	private static final String BMGR_NOT_RUNNING_ERR;
+com.android.commands.bmgr.Bmgr	field	private static final String PM_NOT_RUNNING_ERR;
+com.android.commands.bmgr.Bmgr	field	private static final String TRANSPORT_NOT_RUNNING_ERR;
+com.android.commands.bmgr.Bmgr	field	public static final String TAG;
+com.android.commands.bmgr.Bmgr	method	private String activatedToString(boolean z)
+com.android.commands.bmgr.Bmgr	method	private String enableToString(boolean z)
+com.android.commands.bmgr.Bmgr	method	private String nextArg()
+com.android.commands.bmgr.Bmgr	method	private boolean isBackupActive(int i)
+com.android.commands.bmgr.Bmgr	method	private int parseUserId()
+com.android.commands.bmgr.Bmgr	method	private static void showUsage()
+com.android.commands.bmgr.Bmgr	method	private void backupNowAllPackages(int i, boolean z, int i2)
+com.android.commands.bmgr.Bmgr	method	private void backupNowPackages(int i, List<String> list, boolean z, int i2)
+com.android.commands.bmgr.Bmgr	method	private void doActivateService(int i)
+com.android.commands.bmgr.Bmgr	method	private void doActivated(int i)
+com.android.commands.bmgr.Bmgr	method	private void doAutoRestore(int i)
+com.android.commands.bmgr.Bmgr	method	private void doBackup(int i)
+com.android.commands.bmgr.Bmgr	method	private void doBackupNow(int i)
+com.android.commands.bmgr.Bmgr	method	private void doCancel(int i)
+com.android.commands.bmgr.Bmgr	method	private void doEnable(int i)
+com.android.commands.bmgr.Bmgr	method	private void doEnabled(int i)
+com.android.commands.bmgr.Bmgr	method	private void doFullTransportBackup(int i)
+com.android.commands.bmgr.Bmgr	method	private void doInit(int i)
+com.android.commands.bmgr.Bmgr	method	private void doList(int i)
+com.android.commands.bmgr.Bmgr	method	private void doListRestoreSets()
+com.android.commands.bmgr.Bmgr	method	private void doListTransports(int i)
+com.android.commands.bmgr.Bmgr	method	private void doPrintWhitelist()
+com.android.commands.bmgr.Bmgr	method	private void doRestore(int i)
+com.android.commands.bmgr.Bmgr	method	private void doRestoreAll(int i, long j, HashSet<String> hashSet)
+com.android.commands.bmgr.Bmgr	method	private void doRestorePackage(String str)
+com.android.commands.bmgr.Bmgr	method	private void doTransport(int i)
+com.android.commands.bmgr.Bmgr	method	private void doTransportByComponent(int i)
+com.android.commands.bmgr.Bmgr	method	private void doWipe(int i)
+com.android.commands.bmgr.Bmgr	method	private void handleRemoteException(RemoteException remoteException)
+com.android.commands.bmgr.Bmgr	method	private void printRestoreSets(RestoreSet[] restoreSetArr)
+com.android.commands.bmgr.Bmgr	method	public static String convertBackupStatusToString(int i)
+com.android.commands.bmgr.Bmgr	method	public static String eventCategoryToString(int i)
+com.android.commands.bmgr.Bmgr	method	public static String eventIdToString(int i)
+com.android.commands.bmgr.Bmgr	method	public static void main(String[] strArr)
+com.android.commands.bmgr.Bmgr	method	public void run(String[] strArr)
+com.android.commands.bmgr.Bmgr$BackupMonitor	field	private final boolean mVerbose;
+com.android.commands.bmgr.Bmgr$BackupMonitor	method	private BackupMonitor(boolean z)
+com.android.commands.bmgr.Bmgr$BackupMonitor	method	public void onEvent(Bundle bundle) throws RemoteException
+com.android.commands.bmgr.Bmgr$BackupObserver	method	private BackupObserver()
+com.android.commands.bmgr.Bmgr$BackupObserver	method	public void backupFinished(int i)
+com.android.commands.bmgr.Bmgr$BackupObserver	method	public void onResult(String str, int i)
+com.android.commands.bmgr.Bmgr$BackupObserver	method	public void onUpdate(String str, BackupProgress backupProgress)
+com.android.commands.bmgr.Bmgr$InitObserver	field	public int result;
+com.android.commands.bmgr.Bmgr$InitObserver	method	public void backupFinished(int i)
+com.android.commands.bmgr.Bmgr$Monitor	field	public static final int NORMAL;
+com.android.commands.bmgr.Bmgr$Monitor	field	public static final int OFF;
+com.android.commands.bmgr.Bmgr$Monitor	field	public static final int VERBOSE;
+com.android.commands.bmgr.Bmgr$Observer	field	private final Object trigger;
+com.android.commands.bmgr.Bmgr$Observer	field	private volatile boolean done;
+com.android.commands.bmgr.Bmgr$Observer	method	private Observer()
+com.android.commands.bmgr.Bmgr$Observer	method	public boolean done()
+com.android.commands.bmgr.Bmgr$Observer	method	public void backupFinished(int i)
+com.android.commands.bmgr.Bmgr$Observer	method	public void onResult(String str, int i)
+com.android.commands.bmgr.Bmgr$Observer	method	public void onUpdate(String str, BackupProgress backupProgress)
+com.android.commands.bmgr.Bmgr$Observer	method	public void waitForCompletion()
+com.android.commands.bmgr.Bmgr$Observer	method	public void waitForCompletion(long j)
+com.android.commands.bmgr.Bmgr$RestoreObserver	method	public void onUpdate(int i, String str)
+com.android.commands.bmgr.Bmgr$RestoreObserver	method	public void restoreFinished(int i)
+com.android.commands.bmgr.Bmgr$RestoreObserver	method	public void restoreSetsAvailable(RestoreSet[] restoreSetArr)
+com.android.commands.bmgr.Bmgr$RestoreObserver	method	public void restoreStarting(int i)
+com.android.commands.bmgr.Bmgr$RestoreObserver	method	public void waitForCompletion()

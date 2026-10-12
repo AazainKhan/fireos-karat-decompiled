@@ -1,0 +1,29 @@
+class	kind	declaration
+com.amazon.application.compatibility.enforcer.sdk.library.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.application.compatibility.enforcer.sdk.library.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.application.compatibility.enforcer.sdk.library.BuildConfig	field	public static final String FLAVOR;
+com.amazon.application.compatibility.enforcer.sdk.library.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.application.compatibility.enforcer.sdk.library.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.application.compatibility.enforcer.sdk.library.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.compatibility.enforcer.CompatibilityChecker	field	private final Bundle mAppMetaData;
+com.amazon.compatibility.enforcer.CompatibilityChecker	field	private final PackageManager mPackageManager;
+com.amazon.compatibility.enforcer.CompatibilityChecker	field	private final String mPackageName;
+com.amazon.compatibility.enforcer.CompatibilityChecker	field	private static final String TAG;
+com.amazon.compatibility.enforcer.CompatibilityChecker	method	private List<String> getRequestedPermissions()
+com.amazon.compatibility.enforcer.CompatibilityChecker	method	private Map<String, Integer> getMinimumRequiredPackageVersions()
+com.amazon.compatibility.enforcer.CompatibilityChecker	method	private boolean containsAny(List<String> haystack, List<String> needles)
+com.amazon.compatibility.enforcer.CompatibilityChecker	method	private boolean isPackageUsed(String packageName, List<String> requestedPermissions)
+com.amazon.compatibility.enforcer.CompatibilityChecker	method	private int getPackageVersion(String packageName) throws PackageManager.NameNotFoundException
+com.amazon.compatibility.enforcer.CompatibilityChecker	method	private static Bundle getApplicationMetaData(Context context)
+com.amazon.compatibility.enforcer.CompatibilityChecker	method	public CompatibilityChecker(Context context)
+com.amazon.compatibility.enforcer.CompatibilityChecker	method	public CompatibilityStatus check()
+com.amazon.compatibility.enforcer.CompatibilityResolver	field	private final Context mContext;
+com.amazon.compatibility.enforcer.CompatibilityResolver	field	private static final String COMPATIBILITY_ENFORCER_PACKAGE;
+com.amazon.compatibility.enforcer.CompatibilityResolver	field	private static final String COMPATIBILITY_RESOLVER_ACTION;
+com.amazon.compatibility.enforcer.CompatibilityResolver	field	static final String KEY_COMPATIBILITY_STATUS;
+com.amazon.compatibility.enforcer.CompatibilityResolver	field	static final String KEY_PACKAGE_NAME;
+com.amazon.compatibility.enforcer.CompatibilityResolver	method	public CompatibilityResolver(Context context)
+com.amazon.compatibility.enforcer.CompatibilityResolver	method	public PendingIntent getErrorPendingIntent(CompatibilityStatus status, int requestCode)
+com.amazon.compatibility.enforcer.CompatibilityStatus	field	private final int mValue;
+com.amazon.compatibility.enforcer.CompatibilityStatus	method	public int getValue()
+com.amazon.compatibility.enforcer.CompatibilityStatus	method	public static CompatibilityStatus fromValue(int value)

@@ -1,0 +1,23 @@
+class	kind	declaration
+com.android.commands.appwidget.AppWidget	field	private static final String USAGE;
+com.android.commands.appwidget.AppWidget	method	public static void main(String[] strArr)
+com.android.commands.appwidget.AppWidget$Parser	field	private final Tokenizer mTokenizer;
+com.android.commands.appwidget.AppWidget$Parser	field	private static final String ARGUMENT_GRANT_BIND;
+com.android.commands.appwidget.AppWidget$Parser	field	private static final String ARGUMENT_PACKAGE;
+com.android.commands.appwidget.AppWidget$Parser	field	private static final String ARGUMENT_PREFIX;
+com.android.commands.appwidget.AppWidget$Parser	field	private static final String ARGUMENT_REVOKE_BIND;
+com.android.commands.appwidget.AppWidget$Parser	field	private static final String ARGUMENT_USER;
+com.android.commands.appwidget.AppWidget$Parser	field	private static final String VALUE_USER_CURRENT;
+com.android.commands.appwidget.AppWidget$Parser	method	private SetBindAppWidgetPermissionCommand parseSetGrantBindAppWidgetPermissionCommand(boolean z)
+com.android.commands.appwidget.AppWidget$Parser	method	private String argumentValueRequired(String str)
+com.android.commands.appwidget.AppWidget$Parser	method	public Parser(String[] strArr)
+com.android.commands.appwidget.AppWidget$Parser	method	public Runnable parseCommand()
+com.android.commands.appwidget.AppWidget$SetBindAppWidgetPermissionCommand	field	final String mPackageName;
+com.android.commands.appwidget.AppWidget$SetBindAppWidgetPermissionCommand	field	final boolean mGranted;
+com.android.commands.appwidget.AppWidget$SetBindAppWidgetPermissionCommand	field	final int mUserId;
+com.android.commands.appwidget.AppWidget$SetBindAppWidgetPermissionCommand	method	public SetBindAppWidgetPermissionCommand(String str, boolean z, int i)
+com.android.commands.appwidget.AppWidget$SetBindAppWidgetPermissionCommand	method	public void run()
+com.android.commands.appwidget.AppWidget$Tokenizer	field	private final String[] mArgs;
+com.android.commands.appwidget.AppWidget$Tokenizer	field	private int mNextArg;
+com.android.commands.appwidget.AppWidget$Tokenizer	method	public String nextArg()
+com.android.commands.appwidget.AppWidget$Tokenizer	method	public Tokenizer(String[] strArr)

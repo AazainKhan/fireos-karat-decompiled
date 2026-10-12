@@ -1,0 +1,410 @@
+class	kind	declaration
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent	method	private DaggerOTAOverrideApplicationComponent()
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent	method	public static Builder builder()
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$Builder	field	private OTAOverrideApplicationModule oTAOverrideApplicationModule;
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$Builder	method	private Builder()
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$Builder	method	public Builder oTAOverrideApplicationModule(OTAOverrideApplicationModule oTAOverrideApplicationModule)
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$Builder	method	public OTAOverrideApplicationComponent build()
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$OTAOverrideApplicationComponentImpl	field	private Provider<AmazonMinerva> provideMinervaClientProvider;
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$OTAOverrideApplicationComponentImpl	field	private Provider<ArcusSyncPersistence> arcusSyncPersistenceProvider;
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$OTAOverrideApplicationComponentImpl	field	private Provider<Context> provideContextProvider;
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$OTAOverrideApplicationComponentImpl	field	private Provider<JobIdProvider> jobIdProvider;
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$OTAOverrideApplicationComponentImpl	field	private Provider<JobScheduler> provideJobSchedulerProvider;
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$OTAOverrideApplicationComponentImpl	field	private Provider<MinervaMetricsManager> minervaMetricsManagerProvider;
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$OTAOverrideApplicationComponentImpl	field	private Provider<OTAController> provideOTAControllerProvider;
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$OTAOverrideApplicationComponentImpl	field	private Provider<RemoteConfigurationManagerWrapper> remoteConfigurationManagerWrapperProvider;
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$OTAOverrideApplicationComponentImpl	field	private Provider<SettingsManager> settingsManagerProvider;
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$OTAOverrideApplicationComponentImpl	field	private Provider<SharedPreferencesFactory> sharedPreferencesFactoryProvider;
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$OTAOverrideApplicationComponentImpl	field	private final OTAOverrideApplicationComponentImpl oTAOverrideApplicationComponentImpl;
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$OTAOverrideApplicationComponentImpl	field	private final OTAOverrideApplicationModule oTAOverrideApplicationModule;
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$OTAOverrideApplicationComponentImpl	method	private BatteryUtil batteryUtil()
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$OTAOverrideApplicationComponentImpl	method	private IdleOverrideActivity injectIdleOverrideActivity(IdleOverrideActivity idleOverrideActivity)
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$OTAOverrideApplicationComponentImpl	method	private IdleOverrideMetrics idleOverrideMetrics()
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$OTAOverrideApplicationComponentImpl	method	private IdleOverrideSettings idleOverrideSettings()
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$OTAOverrideApplicationComponentImpl	method	private InstallNowTask installNowTask()
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$OTAOverrideApplicationComponentImpl	method	private OTAOverrideApplicationComponentImpl(OTAOverrideApplicationModule oTAOverrideApplicationModule)
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$OTAOverrideApplicationComponentImpl	method	private OTAOverrideJobScheduler oTAOverrideJobScheduler()
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$OTAOverrideApplicationComponentImpl	method	private OTAOverrideJobService injectOTAOverrideJobService(OTAOverrideJobService oTAOverrideJobService)
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$OTAOverrideApplicationComponentImpl	method	private OTAOverrideTimeChangeReceiver injectOTAOverrideTimeChangeReceiver(OTAOverrideTimeChangeReceiver oTAOverrideTimeChangeReceiver)
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$OTAOverrideApplicationComponentImpl	method	private OverrideIdleTask overrideIdleTask()
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$OTAOverrideApplicationComponentImpl	method	private OverrideTimeResolver overrideTimeResolver()
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$OTAOverrideApplicationComponentImpl	method	private void initialize(OTAOverrideApplicationModule oTAOverrideApplicationModule)
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$OTAOverrideApplicationComponentImpl	method	public void inject(IdleOverrideActivity idleOverrideActivity)
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$OTAOverrideApplicationComponentImpl	method	public void inject(OTAOverrideApplication oTAOverrideApplication)
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$OTAOverrideApplicationComponentImpl	method	public void inject(OTAOverrideJobService oTAOverrideJobService)
+com.amazon.device.software.ota.override.DaggerOTAOverrideApplicationComponent$OTAOverrideApplicationComponentImpl	method	public void inject(OTAOverrideTimeChangeReceiver oTAOverrideTimeChangeReceiver)
+com.amazon.device.software.ota.override.IdleOverrideActivity	field	private IdleOverrideAlertFragment mIdleOverrideAlert;
+com.amazon.device.software.ota.override.IdleOverrideActivity	field	private static final String TAG;
+com.amazon.device.software.ota.override.IdleOverrideActivity	method	protected void onCreate(Bundle bundle)
+com.amazon.device.software.ota.override.IdleOverrideActivity	method	public void onAttachedToWindow()
+com.amazon.device.software.ota.override.IdleOverrideActivity	method	public void onDialogConfirmed(boolean z)
+com.amazon.device.software.ota.override.IdleOverrideActivity	method	public void onDialogDeclined(boolean z)
+com.amazon.device.software.ota.override.IdleOverrideActivity_MembersInjector	method	public static void injectMIdleOverrideMetrics(IdleOverrideActivity idleOverrideActivity, IdleOverrideMetrics idleOverrideMetrics)
+com.amazon.device.software.ota.override.IdleOverrideActivity_MembersInjector	method	public static void injectMInstallNowTask(IdleOverrideActivity idleOverrideActivity, InstallNowTask installNowTask)
+com.amazon.device.software.ota.override.IdleOverrideActivity_MembersInjector	method	public static void injectMOverrideJobScheduler(IdleOverrideActivity idleOverrideActivity, OTAOverrideJobScheduler oTAOverrideJobScheduler)
+com.amazon.device.software.ota.override.IdleOverrideAlertFragment	field	private CountDownTimer mCountDownTimer;
+com.amazon.device.software.ota.override.IdleOverrideAlertFragment	field	private IdleOverrideAlertListener mIdleOverrideAlertListener;
+com.amazon.device.software.ota.override.IdleOverrideAlertFragment	field	private boolean mActivityVisible;
+com.amazon.device.software.ota.override.IdleOverrideAlertFragment	field	private static final String TAG;
+com.amazon.device.software.ota.override.IdleOverrideAlertFragment	method	private DialogInterface.OnKeyListener getOnKeyPressedListener()
+com.amazon.device.software.ota.override.IdleOverrideAlertFragment	method	private View.OnClickListener getOnDelayClickListener()
+com.amazon.device.software.ota.override.IdleOverrideAlertFragment	method	private View.OnClickListener getOnInstallClickListener()
+com.amazon.device.software.ota.override.IdleOverrideAlertFragment	method	public Dialog onCreateDialog(Bundle bundle)
+com.amazon.device.software.ota.override.IdleOverrideAlertFragment	method	public void handleTimerFinished()
+com.amazon.device.software.ota.override.IdleOverrideAlertFragment	method	public void onAttach(Activity activity)
+com.amazon.device.software.ota.override.IdleOverrideAlertFragment	method	public void onPause()
+com.amazon.device.software.ota.override.IdleOverrideAlertFragment	method	public void onResume()
+com.amazon.device.software.ota.override.IdleOverrideAlertFragment	method	public void userDismissedDialog()
+com.amazon.device.software.ota.override.IdleOverrideMetrics	field	private final MinervaMetricsManager mMinervaMetricsManager;
+com.amazon.device.software.ota.override.IdleOverrideMetrics	method	private void incrementCounterEvent(String str)
+com.amazon.device.software.ota.override.IdleOverrideMetrics	method	private void recordTimerEvent(String str, long j)
+com.amazon.device.software.ota.override.IdleOverrideMetrics	method	public IdleOverrideMetrics(MinervaMetricsManager minervaMetricsManager)
+com.amazon.device.software.ota.override.IdleOverrideMetrics	method	public void recordDialogShown()
+com.amazon.device.software.ota.override.IdleOverrideMetrics	method	public void recordLowBatteryBlockedInstall()
+com.amazon.device.software.ota.override.IdleOverrideMetrics	method	public void recordRecurringWakeUp()
+com.amazon.device.software.ota.override.IdleOverrideMetrics	method	public void recordRetryWakeUp()
+com.amazon.device.software.ota.override.IdleOverrideMetrics	method	public void recordTimeoutInstall()
+com.amazon.device.software.ota.override.IdleOverrideMetrics	method	public void recordUpdateFound()
+com.amazon.device.software.ota.override.IdleOverrideMetrics	method	public void recordUserDelayed()
+com.amazon.device.software.ota.override.IdleOverrideMetrics	method	public void recordUserInstall()
+com.amazon.device.software.ota.override.IdleOverrideMetrics	method	public void recordUserPressedHome()
+com.amazon.device.software.ota.override.IdleOverrideMetrics	method	public void recordWaitTimeBeforeDialog(long j)
+com.amazon.device.software.ota.override.InstallNowTask	field	private final OTAController mOTAController;
+com.amazon.device.software.ota.override.InstallNowTask	field	private static final String TAG;
+com.amazon.device.software.ota.override.InstallNowTask	method	public InstallNowTask(OTAController oTAController)
+com.amazon.device.software.ota.override.InstallNowTask	method	public Void doInBackground(Void... voidArr)
+com.amazon.device.software.ota.override.MinervaMetricsManager	field	private final AmazonMinerva mMinervaClient;
+com.amazon.device.software.ota.override.MinervaMetricsManager	method	public MetricEvent getMetricEvent(String str)
+com.amazon.device.software.ota.override.MinervaMetricsManager	method	public MinervaMetricsManager(AmazonMinerva amazonMinerva)
+com.amazon.device.software.ota.override.MinervaMetricsManager	method	public void recordMetrics(MetricEvent metricEvent)
+com.amazon.device.software.ota.override.MinervaMetricsManager_Factory	field	private final Provider<AmazonMinerva> minervaClientProvider;
+com.amazon.device.software.ota.override.MinervaMetricsManager_Factory	method	public MinervaMetricsManager get()
+com.amazon.device.software.ota.override.MinervaMetricsManager_Factory	method	public MinervaMetricsManager_Factory(Provider<AmazonMinerva> provider)
+com.amazon.device.software.ota.override.MinervaMetricsManager_Factory	method	public static MinervaMetricsManager newInstance(AmazonMinerva amazonMinerva)
+com.amazon.device.software.ota.override.MinervaMetricsManager_Factory	method	public static MinervaMetricsManager_Factory create(Provider<AmazonMinerva> provider)
+com.amazon.device.software.ota.override.OTAOverrideApplication	field	private OTAOverrideApplicationComponent mComponent;
+com.amazon.device.software.ota.override.OTAOverrideApplication	method	public OTAOverrideApplicationComponent getApplicationComponent()
+com.amazon.device.software.ota.override.OTAOverrideApplication	method	public void onCreate()
+com.amazon.device.software.ota.override.OTAOverrideApplicationModule	field	private final Context mOTAOverrideApplicationContext;
+com.amazon.device.software.ota.override.OTAOverrideApplicationModule	field	private static final String TAG;
+com.amazon.device.software.ota.override.OTAOverrideApplicationModule	method	public AmazonMinerva provideMinervaClient()
+com.amazon.device.software.ota.override.OTAOverrideApplicationModule	method	public Context provideContext()
+com.amazon.device.software.ota.override.OTAOverrideApplicationModule	method	public JobScheduler provideJobScheduler()
+com.amazon.device.software.ota.override.OTAOverrideApplicationModule	method	public OTAController provideOTAController()
+com.amazon.device.software.ota.override.OTAOverrideApplicationModule	method	public OTAOverrideApplicationModule(OTAOverrideApplication oTAOverrideApplication)
+com.amazon.device.software.ota.override.OTAOverrideApplicationModule	method	public SharedPreferences provideSharedPreferences()
+com.amazon.device.software.ota.override.OTAOverrideApplicationModule_ProvideContextFactory	field	private final OTAOverrideApplicationModule module;
+com.amazon.device.software.ota.override.OTAOverrideApplicationModule_ProvideContextFactory	method	public Context get()
+com.amazon.device.software.ota.override.OTAOverrideApplicationModule_ProvideContextFactory	method	public OTAOverrideApplicationModule_ProvideContextFactory(OTAOverrideApplicationModule oTAOverrideApplicationModule)
+com.amazon.device.software.ota.override.OTAOverrideApplicationModule_ProvideContextFactory	method	public static Context provideContext(OTAOverrideApplicationModule oTAOverrideApplicationModule)
+com.amazon.device.software.ota.override.OTAOverrideApplicationModule_ProvideContextFactory	method	public static OTAOverrideApplicationModule_ProvideContextFactory create(OTAOverrideApplicationModule oTAOverrideApplicationModule)
+com.amazon.device.software.ota.override.OTAOverrideApplicationModule_ProvideJobSchedulerFactory	field	private final OTAOverrideApplicationModule module;
+com.amazon.device.software.ota.override.OTAOverrideApplicationModule_ProvideJobSchedulerFactory	method	public JobScheduler get()
+com.amazon.device.software.ota.override.OTAOverrideApplicationModule_ProvideJobSchedulerFactory	method	public OTAOverrideApplicationModule_ProvideJobSchedulerFactory(OTAOverrideApplicationModule oTAOverrideApplicationModule)
+com.amazon.device.software.ota.override.OTAOverrideApplicationModule_ProvideJobSchedulerFactory	method	public static JobScheduler provideJobScheduler(OTAOverrideApplicationModule oTAOverrideApplicationModule)
+com.amazon.device.software.ota.override.OTAOverrideApplicationModule_ProvideJobSchedulerFactory	method	public static OTAOverrideApplicationModule_ProvideJobSchedulerFactory create(OTAOverrideApplicationModule oTAOverrideApplicationModule)
+com.amazon.device.software.ota.override.OTAOverrideApplicationModule_ProvideMinervaClientFactory	field	private final OTAOverrideApplicationModule module;
+com.amazon.device.software.ota.override.OTAOverrideApplicationModule_ProvideMinervaClientFactory	method	public AmazonMinerva get()
+com.amazon.device.software.ota.override.OTAOverrideApplicationModule_ProvideMinervaClientFactory	method	public OTAOverrideApplicationModule_ProvideMinervaClientFactory(OTAOverrideApplicationModule oTAOverrideApplicationModule)
+com.amazon.device.software.ota.override.OTAOverrideApplicationModule_ProvideMinervaClientFactory	method	public static AmazonMinerva provideMinervaClient(OTAOverrideApplicationModule oTAOverrideApplicationModule)
+com.amazon.device.software.ota.override.OTAOverrideApplicationModule_ProvideMinervaClientFactory	method	public static OTAOverrideApplicationModule_ProvideMinervaClientFactory create(OTAOverrideApplicationModule oTAOverrideApplicationModule)
+com.amazon.device.software.ota.override.OTAOverrideApplicationModule_ProvideOTAControllerFactory	field	private final OTAOverrideApplicationModule module;
+com.amazon.device.software.ota.override.OTAOverrideApplicationModule_ProvideOTAControllerFactory	method	public OTAController get()
+com.amazon.device.software.ota.override.OTAOverrideApplicationModule_ProvideOTAControllerFactory	method	public OTAOverrideApplicationModule_ProvideOTAControllerFactory(OTAOverrideApplicationModule oTAOverrideApplicationModule)
+com.amazon.device.software.ota.override.OTAOverrideApplicationModule_ProvideOTAControllerFactory	method	public static OTAController provideOTAController(OTAOverrideApplicationModule oTAOverrideApplicationModule)
+com.amazon.device.software.ota.override.OTAOverrideApplicationModule_ProvideOTAControllerFactory	method	public static OTAOverrideApplicationModule_ProvideOTAControllerFactory create(OTAOverrideApplicationModule oTAOverrideApplicationModule)
+com.amazon.device.software.ota.override.OTAOverrideApplicationModule_ProvideSharedPreferencesFactory	method	public static SharedPreferences provideSharedPreferences(OTAOverrideApplicationModule oTAOverrideApplicationModule)
+com.amazon.device.software.ota.override.OTAOverrideJobScheduler	field	private final ComponentName mJobServiceComponentName;
+com.amazon.device.software.ota.override.OTAOverrideJobScheduler	field	private final IdleOverrideSettings mIdleOverrideSettings;
+com.amazon.device.software.ota.override.OTAOverrideJobScheduler	field	private final JobIdProvider mJobIdProvider;
+com.amazon.device.software.ota.override.OTAOverrideJobScheduler	field	private final JobScheduler mJobScheduler;
+com.amazon.device.software.ota.override.OTAOverrideJobScheduler	field	private static final String TAG;
+com.amazon.device.software.ota.override.OTAOverrideJobScheduler	method	public boolean scheduleRecurringJob()
+com.amazon.device.software.ota.override.OTAOverrideJobScheduler	method	public boolean scheduleRetryJob()
+com.amazon.device.software.ota.override.OTAOverrideJobScheduler	method	public void cancelAllJobs()
+com.amazon.device.software.ota.override.OTAOverrideJobService	field	private static final String TAG;
+com.amazon.device.software.ota.override.OTAOverrideJobService	method	public boolean onStartJob(JobParameters jobParameters)
+com.amazon.device.software.ota.override.OTAOverrideJobService	method	public boolean onStopJob(JobParameters jobParameters)
+com.amazon.device.software.ota.override.OTAOverrideJobService	method	public void onCreate()
+com.amazon.device.software.ota.override.OTAOverrideJobService_MembersInjector	method	public static void injectMIdleOverrideMetrics(OTAOverrideJobService oTAOverrideJobService, IdleOverrideMetrics idleOverrideMetrics)
+com.amazon.device.software.ota.override.OTAOverrideJobService_MembersInjector	method	public static void injectMJobIdProvider(OTAOverrideJobService oTAOverrideJobService, JobIdProvider jobIdProvider)
+com.amazon.device.software.ota.override.OTAOverrideJobService_MembersInjector	method	public static void injectMOverrideIdleTask(OTAOverrideJobService oTAOverrideJobService, OverrideIdleTask overrideIdleTask)
+com.amazon.device.software.ota.override.OTAOverrideTimeChangeReceiver	field	private static final String TAG;
+com.amazon.device.software.ota.override.OTAOverrideTimeChangeReceiver	method	public void onReceive(Context context, Intent intent)
+com.amazon.device.software.ota.override.OTAOverrideTimeChangeReceiver_MembersInjector	method	public static void injectMOTAOverrideJobScheduler(OTAOverrideTimeChangeReceiver oTAOverrideTimeChangeReceiver, OTAOverrideJobScheduler oTAOverrideJobScheduler)
+com.amazon.device.software.ota.override.OTAOverrideTimeChangeReceiver_MembersInjector	method	public static void injectMOverrideIdleTask(OTAOverrideTimeChangeReceiver oTAOverrideTimeChangeReceiver, OverrideIdleTask overrideIdleTask)
+com.amazon.device.software.ota.override.OverrideIdleTask	field	private final BatteryUtil mBatteryUtil;
+com.amazon.device.software.ota.override.OverrideIdleTask	field	private final Context mContext;
+com.amazon.device.software.ota.override.OverrideIdleTask	field	private final IdleOverrideMetrics mIdleOverrideMetrics;
+com.amazon.device.software.ota.override.OverrideIdleTask	field	private final IdleOverrideSettings mIdleOverrideSettings;
+com.amazon.device.software.ota.override.OverrideIdleTask	field	private final OTAController mOTAController;
+com.amazon.device.software.ota.override.OverrideIdleTask	field	private final OTAOverrideJobScheduler mOtaOverrideJobScheduler;
+com.amazon.device.software.ota.override.OverrideIdleTask	field	private final OverrideTimeResolver mOverrideTimeResolver;
+com.amazon.device.software.ota.override.OverrideIdleTask	field	private final SystemWrapper mSystemWrapper;
+com.amazon.device.software.ota.override.OverrideIdleTask	field	private static final String TAG;
+com.amazon.device.software.ota.override.OverrideIdleTask	method	private boolean isCheckTime(Context context)
+com.amazon.device.software.ota.override.OverrideIdleTask	method	private void setCheckTime(Context context, long j)
+com.amazon.device.software.ota.override.OverrideIdleTask	method	public OverrideIdleTask(OTAController oTAController, OverrideTimeResolver overrideTimeResolver, Context context, IdleOverrideMetrics idleOverrideMetrics, SystemWrapper systemWrapper, IdleOverrideSettings idleOverrideSettings, BatteryUtil batteryUtil, OTAOverrideJobScheduler oTAOverrideJobScheduler)
+com.amazon.device.software.ota.override.OverrideIdleTask	method	public Void doInBackground(Void... voidArr)
+com.amazon.device.software.ota.override.OverrideTimeResolver	field	private final IdleOverrideMetrics mIdleOverrideMetrics;
+com.amazon.device.software.ota.override.OverrideTimeResolver	field	private final IdleOverrideSettings mIdleOverrideSettings;
+com.amazon.device.software.ota.override.OverrideTimeResolver	field	private final SharedPreferences mSharedPreferences;
+com.amazon.device.software.ota.override.OverrideTimeResolver	field	private final SystemWrapper mSystemWrapper;
+com.amazon.device.software.ota.override.OverrideTimeResolver	field	private static final String TAG;
+com.amazon.device.software.ota.override.OverrideTimeResolver	method	public OverrideTimeResolver(IdleOverrideSettings idleOverrideSettings, SharedPreferences sharedPreferences, SystemWrapper systemWrapper, IdleOverrideMetrics idleOverrideMetrics)
+com.amazon.device.software.ota.override.OverrideTimeResolver	method	public boolean isOverrideTime(Update update)
+com.amazon.device.software.ota.override.R$color	field	public static final int material_grey_800;
+com.amazon.device.software.ota.override.R$color	field	public static final int material_grey_850;
+com.amazon.device.software.ota.override.R$color	field	public static final int material_grey_900;
+com.amazon.device.software.ota.override.R$dimen	field	public static final int activity_horizontal_margin;
+com.amazon.device.software.ota.override.R$dimen	field	public static final int activity_vertical_margin;
+com.amazon.device.software.ota.override.R$dimen	field	public static final int dialog_buttons_padding;
+com.amazon.device.software.ota.override.R$id	field	public static final int delayButton;
+com.amazon.device.software.ota.override.R$id	field	public static final int installButton;
+com.amazon.device.software.ota.override.R$id	field	public static final int linearLayout1;
+com.amazon.device.software.ota.override.R$id	field	public static final int textView3;
+com.amazon.device.software.ota.override.R$layout	field	public static final int ota_override_dialog;
+com.amazon.device.software.ota.override.R$string	field	public static final int app_name;
+com.amazon.device.software.ota.override.R$string	field	public static final int bottom_message;
+com.amazon.device.software.ota.override.R$string	field	public static final int install_message;
+com.amazon.device.software.ota.override.R$string	field	public static final int install_string;
+com.amazon.device.software.ota.override.R$string	field	public static final int ota_alert_title_string;
+com.amazon.device.software.ota.override.R$string	field	public static final int remind_later_string;
+com.amazon.device.software.ota.override.R$string	field	public static final int sys_updates;
+com.amazon.device.software.ota.override.R$style	field	public static final int AppTheme;
+com.amazon.device.software.ota.override.R$xml	field	public static final int button_color;
+com.amazon.device.software.ota.override.job.JobIdProvider	method	public Collection<Integer> getAllJobIds()
+com.amazon.device.software.ota.override.job.JobIdProvider	method	public int getRecurringJobId()
+com.amazon.device.software.ota.override.job.JobIdProvider	method	public int getRetryJobId()
+com.amazon.device.software.ota.override.job.JobIdProvider_Factory	method	public JobIdProvider get()
+com.amazon.device.software.ota.override.job.JobIdProvider_Factory	method	public static JobIdProvider newInstance()
+com.amazon.device.software.ota.override.job.JobIdProvider_Factory	method	public static JobIdProvider_Factory create()
+com.amazon.device.software.ota.override.job.JobIdProvider_Factory$InstanceHolder	field	private static final JobIdProvider_Factory INSTANCE;
+com.amazon.device.software.ota.override.job.JobIdProvider_Factory$InstanceHolder	method	private InstanceHolder()
+com.amazon.device.software.ota.override.remote.ArcusSyncPersistence	field	private final SharedPreferences mSharedPreferences;
+com.amazon.device.software.ota.override.remote.ArcusSyncPersistence	method	public ArcusSyncPersistence(SharedPreferencesFactory sharedPreferencesFactory)
+com.amazon.device.software.ota.override.remote.ArcusSyncPersistence	method	public long getLastCheckTime()
+com.amazon.device.software.ota.override.remote.ArcusSyncPersistence	method	public void setLastCheckTime(long j)
+com.amazon.device.software.ota.override.remote.ArcusSyncPersistence_Factory	field	private final Provider<SharedPreferencesFactory> sharedPreferencesFactoryProvider;
+com.amazon.device.software.ota.override.remote.ArcusSyncPersistence_Factory	method	public ArcusSyncPersistence get()
+com.amazon.device.software.ota.override.remote.ArcusSyncPersistence_Factory	method	public ArcusSyncPersistence_Factory(Provider<SharedPreferencesFactory> provider)
+com.amazon.device.software.ota.override.remote.ArcusSyncPersistence_Factory	method	public static ArcusSyncPersistence newInstance(SharedPreferencesFactory sharedPreferencesFactory)
+com.amazon.device.software.ota.override.remote.ArcusSyncPersistence_Factory	method	public static ArcusSyncPersistence_Factory create(Provider<SharedPreferencesFactory> provider)
+com.amazon.device.software.ota.override.remote.IdleOverrideSettings	field	private final SettingsManager mSettingsManager;
+com.amazon.device.software.ota.override.remote.IdleOverrideSettings	field	public static final long DIALOG_SETTING_MILLIS_DEFAULT_VALUE;
+com.amazon.device.software.ota.override.remote.IdleOverrideSettings	field	public static final long IDLE_OVERRIDE_INTERVAL_MILLIS_DEFAULT_VALUE;
+com.amazon.device.software.ota.override.remote.IdleOverrideSettings	field	public static final long MIN_CHECK_INTERVAL_MILLIS_DEFAULT;
+com.amazon.device.software.ota.override.remote.IdleOverrideSettings	field	public static final long RECURRING_PERIOD_MILLIS_SETTING_DEFAULT_VALUE;
+com.amazon.device.software.ota.override.remote.IdleOverrideSettings	field	public static final long RETRY_PERIOD_MILLIS_SETTING_DEFAULT_VALUE;
+com.amazon.device.software.ota.override.remote.IdleOverrideSettings	method	public IdleOverrideSettings(SettingsManager settingsManager)
+com.amazon.device.software.ota.override.remote.IdleOverrideSettings	method	public boolean getIdleOverrideEnabled()
+com.amazon.device.software.ota.override.remote.IdleOverrideSettings	method	public long getDialogTimeoutMillis()
+com.amazon.device.software.ota.override.remote.IdleOverrideSettings	method	public long getIdleOverrideIntervalMillis()
+com.amazon.device.software.ota.override.remote.IdleOverrideSettings	method	public long getMinimumCheckIntervalMillis()
+com.amazon.device.software.ota.override.remote.IdleOverrideSettings	method	public long getRecurringJobPeriodMillis()
+com.amazon.device.software.ota.override.remote.IdleOverrideSettings	method	public long getRetryJobPeriodMillis()
+com.amazon.device.software.ota.override.remote.SettingsManager	field	private final ArcusSyncPersistence mArcusSyncPersistence;
+com.amazon.device.software.ota.override.remote.SettingsManager	field	private final RemoteConfigurationManager mManager;
+com.amazon.device.software.ota.override.remote.SettingsManager	field	private final SystemWrapper mSystemWrapper;
+com.amazon.device.software.ota.override.remote.SettingsManager	field	private static final String TAG;
+com.amazon.device.software.ota.override.remote.SettingsManager	field	private static final long TWELVE_HOURS;
+com.amazon.device.software.ota.override.remote.SettingsManager	method	private void loadCloudConfig()
+com.amazon.device.software.ota.override.remote.SettingsManager	method	public SettingsManager(Context context, ArcusSyncPersistence arcusSyncPersistence, SystemWrapper systemWrapper, RemoteConfigurationManagerWrapper remoteConfigurationManagerWrapper, BuildWrapper buildWrapper)
+com.amazon.device.software.ota.override.remote.SettingsManager	method	public boolean getBoolean(String str, boolean z)
+com.amazon.device.software.ota.override.remote.SettingsManager	method	public long getLong(String str, long j)
+com.amazon.device.software.ota.override.remote.SettingsManager_Factory	field	private final Provider<ArcusSyncPersistence> arcusSyncPersistenceProvider;
+com.amazon.device.software.ota.override.remote.SettingsManager_Factory	field	private final Provider<BuildWrapper> buildWrapperProvider;
+com.amazon.device.software.ota.override.remote.SettingsManager_Factory	field	private final Provider<Context> contextProvider;
+com.amazon.device.software.ota.override.remote.SettingsManager_Factory	field	private final Provider<RemoteConfigurationManagerWrapper> remoteConfigurationManagerWrapperProvider;
+com.amazon.device.software.ota.override.remote.SettingsManager_Factory	field	private final Provider<SystemWrapper> systemWrapperProvider;
+com.amazon.device.software.ota.override.remote.SettingsManager_Factory	method	public SettingsManager get()
+com.amazon.device.software.ota.override.remote.SettingsManager_Factory	method	public SettingsManager_Factory(Provider<Context> provider, Provider<ArcusSyncPersistence> provider2, Provider<SystemWrapper> provider3, Provider<RemoteConfigurationManagerWrapper> provider4, Provider<BuildWrapper> provider5)
+com.amazon.device.software.ota.override.remote.SettingsManager_Factory	method	public static SettingsManager newInstance(Context context, ArcusSyncPersistence arcusSyncPersistence, SystemWrapper systemWrapper, RemoteConfigurationManagerWrapper remoteConfigurationManagerWrapper, BuildWrapper buildWrapper)
+com.amazon.device.software.ota.override.remote.SettingsManager_Factory	method	public static SettingsManager_Factory create(Provider<Context> provider, Provider<ArcusSyncPersistence> provider2, Provider<SystemWrapper> provider3, Provider<RemoteConfigurationManagerWrapper> provider4, Provider<BuildWrapper> provider5)
+com.amazon.device.software.ota.override.util.BatteryUtil	field	private final BuildWrapper mBuildWrapper;
+com.amazon.device.software.ota.override.util.BatteryUtil	field	private final Context mContext;
+com.amazon.device.software.ota.override.util.BatteryUtil	field	private static final String TAG;
+com.amazon.device.software.ota.override.util.BatteryUtil	method	private Intent getBatteryStatus()
+com.amazon.device.software.ota.override.util.BatteryUtil	method	private boolean isBatteryPresent()
+com.amazon.device.software.ota.override.util.BatteryUtil	method	private float getRequiredBatteryLevel()
+com.amazon.device.software.ota.override.util.BatteryUtil	method	public BatteryUtil(Context context, BuildWrapper buildWrapper)
+com.amazon.device.software.ota.override.util.BatteryUtil	method	public boolean isBatteryLow()
+com.amazon.device.software.ota.override.util.BuildWrapper	field	private static final String TAG;
+com.amazon.device.software.ota.override.util.BuildWrapper	method	public String getDeviceSerialNumber()
+com.amazon.device.software.ota.override.util.BuildWrapper	method	public float getRequiredBatteryLevel()
+com.amazon.device.software.ota.override.util.BuildWrapper_Factory	method	public BuildWrapper get()
+com.amazon.device.software.ota.override.util.BuildWrapper_Factory	method	public static BuildWrapper newInstance()
+com.amazon.device.software.ota.override.util.BuildWrapper_Factory	method	public static BuildWrapper_Factory create()
+com.amazon.device.software.ota.override.util.BuildWrapper_Factory$InstanceHolder	field	private static final BuildWrapper_Factory INSTANCE;
+com.amazon.device.software.ota.override.util.BuildWrapper_Factory$InstanceHolder	method	private InstanceHolder()
+com.amazon.device.software.ota.override.util.LogUtils	method	private LogUtils()
+com.amazon.device.software.ota.override.util.LogUtils	method	public static String getTag(Class<?> cls)
+com.amazon.device.software.ota.override.util.LogUtils	method	public static void d(String str, String str2)
+com.amazon.device.software.ota.override.util.LogUtils	method	public static void e(String str, String str2)
+com.amazon.device.software.ota.override.util.LogUtils	method	public static void e(String str, String str2, Throwable th)
+com.amazon.device.software.ota.override.util.LogUtils	method	public static void i(String str, String str2)
+com.amazon.device.software.ota.override.util.LogUtils	method	public static void w(String str, String str2)
+com.amazon.device.software.ota.override.util.LogUtils	method	public static void w(String str, String str2, Throwable th)
+com.amazon.device.software.ota.override.util.LogUtils	method	public static void wtf(String str, String str2)
+com.amazon.device.software.ota.override.util.RemoteConfigurationManagerWrapper	method	public RemoteConfigurationManager createForAppId(Context context, String str)
+com.amazon.device.software.ota.override.util.RemoteConfigurationManagerWrapper_Factory	method	public RemoteConfigurationManagerWrapper get()
+com.amazon.device.software.ota.override.util.RemoteConfigurationManagerWrapper_Factory	method	public static RemoteConfigurationManagerWrapper newInstance()
+com.amazon.device.software.ota.override.util.RemoteConfigurationManagerWrapper_Factory	method	public static RemoteConfigurationManagerWrapper_Factory create()
+com.amazon.device.software.ota.override.util.RemoteConfigurationManagerWrapper_Factory$InstanceHolder	field	private static final RemoteConfigurationManagerWrapper_Factory INSTANCE;
+com.amazon.device.software.ota.override.util.RemoteConfigurationManagerWrapper_Factory$InstanceHolder	method	private InstanceHolder()
+com.amazon.device.software.ota.override.util.SharedPreferencesFactory	field	private final Context mContext;
+com.amazon.device.software.ota.override.util.SharedPreferencesFactory	method	public SharedPreferences create(String str)
+com.amazon.device.software.ota.override.util.SharedPreferencesFactory	method	public SharedPreferences create(String str, int i)
+com.amazon.device.software.ota.override.util.SharedPreferencesFactory	method	public SharedPreferencesFactory(Context context)
+com.amazon.device.software.ota.override.util.SharedPreferencesFactory_Factory	field	private final Provider<Context> contextProvider;
+com.amazon.device.software.ota.override.util.SharedPreferencesFactory_Factory	method	public SharedPreferencesFactory get()
+com.amazon.device.software.ota.override.util.SharedPreferencesFactory_Factory	method	public SharedPreferencesFactory_Factory(Provider<Context> provider)
+com.amazon.device.software.ota.override.util.SharedPreferencesFactory_Factory	method	public static SharedPreferencesFactory newInstance(Context context)
+com.amazon.device.software.ota.override.util.SharedPreferencesFactory_Factory	method	public static SharedPreferencesFactory_Factory create(Provider<Context> provider)
+com.amazon.device.software.ota.override.util.SystemWrapper	method	public long currentTimeMillis()
+com.amazon.device.software.ota.override.util.SystemWrapper_Factory	method	public SystemWrapper get()
+com.amazon.device.software.ota.override.util.SystemWrapper_Factory	method	public static SystemWrapper newInstance()
+com.amazon.device.software.ota.override.util.SystemWrapper_Factory	method	public static SystemWrapper_Factory create()
+com.amazon.device.software.ota.override.util.SystemWrapper_Factory$InstanceHolder	field	private static final SystemWrapper_Factory INSTANCE;
+com.amazon.device.software.ota.override.util.SystemWrapper_Factory$InstanceHolder	method	private InstanceHolder()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private final ArcusThrottler mThrottler;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private final Attributes mAttributes;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private final ConfigurationDb mConfigurationDb;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private final RemoteConfigurationFetcher mRemoteConfigurationFetcher;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private final SharedPreferences mSharedPreferences;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private final String mAppConfigId;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private int mLastSuccessfulSyncAttributeHash;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private static final String TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	private RemoteConfiguration getAndValidateConfiguration()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	private RemoteConfigurationManager(Builder builder)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	private String getOrGenerateLocalConfigurationInstanceId()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	private String getPreferencesFileNameForAppConfig()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	private synchronized void syncOnCurrentThread(RemoteConfiguration remoteConfiguration, ConfigurationSyncCallback configurationSyncCallback)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	private void setLocalConfigurationInstanceId(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	private void validateAndSyncOnNewThread(final ConfigurationSyncCallback configurationSyncCallback)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public Attributes openAttributes()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public Configuration openConfiguration()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public static Builder forAppId(Context context, String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public static void verifyAppConfigId(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public void sync(ConfigurationSyncCallback configurationSyncCallback)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	field	private boolean mCustomContext;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	field	protected JSONObject mDefaultConfiguration;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	field	protected final Context mContext;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	field	protected final String mAppConfigId;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	field	protected static final ConcurrentHashMap<String, RemoteConfigurationManager> MANAGERS;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	method	protected void ensureBuilderReady()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	method	public Builder(Context context, String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	method	public RemoteConfigurationManager createOrGet()
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.ConfigurationNotFoundException	method	public ConfigurationNotFoundException(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.MalformedAppConfigIdException	method	public MalformedAppConfigIdException(String str, Throwable th)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.NetworkException	method	public NetworkException(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.NetworkException	method	public NetworkException(String str, Throwable th)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.RemoteConfigurationException	method	public RemoteConfigurationException(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.RemoteConfigurationException	method	public RemoteConfigurationException(String str, Throwable th)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private int mCause;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private int mSyncAttempts;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private long mNextSyncAttemptTime;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	protected long getCurrentWindowSizeInMS()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	protected long getRandomTimeInsideCurrentWindowInMS()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public boolean isSyncAllowedRightNow()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public int getCause()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public long getTimeToNextSyncInMS()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public void updateSyncTimeAfterFailure()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public void updateSyncTimeAfterSuccess()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	field	private final String account;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	field	private final String id;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	field	private final String region;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	field	private final String type;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	field	private final String vendor;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public Arn(String str, String str2, String str3, String str4, String str5)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public static Arn fromArn(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private final ConcurrentMap<String, Object> mCustomAttributes;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private final Integer mPackageVersion;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private final String mPackageName;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final String TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	private AttributesImpl(String str, Integer num, Map<String, Object> map)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	private void addStandardAttributesTo(Map<String, Object> map)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected Integer getPackageVersionCode()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected Integer getPackageVersionCode(Context context)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected String getCountry()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected String getLanguage()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected String getPackageName()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected String getPlatform()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected static boolean nullSafeEquals(Object obj, Object obj2)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected static int nullSafeHash(Object obj)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public AttributesImpl(Context context)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public boolean equals(Object obj)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public int hashCode()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public synchronized AttributesImpl m9clone()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public synchronized Map<String, Object> getAllAttributes()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public synchronized void addAttributePrivate(String str, Object obj)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public void addAttribute(String str, String str2)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private SQLiteDatabase mDatabase;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private final AtomicInteger openCounter;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private final DBHelper dbHelper;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final Map<String, ConfigurationDb> INSTANCE_MAP;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final String TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final String[] PROJECTION_CONFIGURATION;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final String[] PROJECTION_REMOTE_CONFIGURATION;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private Configuration configurationFromCursor(Cursor cursor)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private ContentValues getContentValues(String str, Integer num, Long l, String str2)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private RemoteConfiguration remoteConfigurationFromCursor(Cursor cursor, String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private boolean hasConfiguration(SQLiteDatabase sQLiteDatabase)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private synchronized void closeDatabase()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private void saveConfigurationPrivate(SQLiteDatabase sQLiteDatabase, String str, int i, Long l, String str2)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	protected synchronized SQLiteDatabase openDatabase()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	protected synchronized void saveConfiguration(String str, int i, Long l, String str2)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public static ConfigurationDb getOrCreateInstance(Context context, String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public synchronized Configuration readConfiguration() throws ConfigurationNotFoundException
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public synchronized RemoteConfiguration readRemoteConfiguration(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public synchronized void deleteConfiguration()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public void saveConfiguration(RemoteConfiguration remoteConfiguration)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	field	private final File mDbFile;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	private void setupDb(SQLiteDatabase sQLiteDatabase)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	protected DBHelper(Context context, String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public static String getDbFileNameFor(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public void onCreate(SQLiteDatabase sQLiteDatabase)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public void onDowngrade(SQLiteDatabase sQLiteDatabase, int i, int i2)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public void onOpen(SQLiteDatabase sQLiteDatabase)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public void onUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i2)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	field	private final Date timestamp;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	field	private final String json;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	method	public ConfigurationImpl(String str, Date date)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	method	public Date getTimestamp()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	method	public JSONObject getAsJsonObject()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	method	public String getAsJsonString()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.Checks	method	private Checks()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.Checks	method	public static void checkArgument(boolean z, String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.Checks	method	public static void checkNotNull(Object obj, String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper	field	private static final String TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper	field	private static final char[] HEX_ARRAY;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper	method	private LocalConfigInstanceIdGenerationHelper()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper	method	protected static String convertBytesToHexString(byte[] bArr)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper	method	public static String generateLocalConfigInstanceId(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	field	private final Configuration mConfiguration;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	field	private final String mAppConfigurationId;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	field	private final String mEntityTag;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	field	private final boolean mUpdate;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	field	private final int mOrigin;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public Configuration getConfiguration()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public RemoteConfigurationImpl(Configuration configuration, String str, int i, String str2, boolean z)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public String getAppConfigurationId()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public String getEntityTag()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public boolean isUpdate()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public int getOrigin()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private final Context mContext;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private final URL mEndpoint;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	protected RemoteConfiguration buildRemoteConfiguration(String str, JSONObject jSONObject)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	protected byte[] buildRequestBody(String str, Attributes attributes, String str2, String str3)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	protected void setHeaders(HttpURLConnection httpURLConnection)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	public AndroidRemoteConfigurationFetcher(Context context, URL url)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	public RemoteConfiguration fetch(String str, Attributes attributes, String str2, String str3) throws Throwable
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.NetworkCommonUtils	field	public static final Pattern ARCUS_CLIENT_VERSION_PATTERN;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.NetworkCommonUtils	method	private NetworkCommonUtils()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.NetworkCommonUtils	method	public static InputStream getInputStreamFromConnection(HttpURLConnection httpURLConnection) throws IOException
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.NetworkCommonUtils	method	public static JSONObject readResponse(HttpURLConnection httpURLConnection)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.NetworkCommonUtils	method	public static String getArcusUserAgent()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.NetworkCommonUtils	method	public static boolean isNetworkAvailable(Context context)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.NetworkCommonUtils	method	public static void closeErrorStreamFromConnection(HttpURLConnection httpURLConnection)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.NetworkCommonUtils	method	public static void configureConnection(HttpURLConnection httpURLConnection)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.NetworkCommonUtils	method	public static void writeRequest(HttpURLConnection httpURLConnection, byte[] bArr)

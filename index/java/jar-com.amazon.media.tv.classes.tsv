@@ -1,0 +1,141 @@
+kind	class	extends	implements
+@interface	amazon.media.tv.ConnectionStatus$ResponseCode		
+@interface	amazon.media.tv.ScanConstants$ScanInitiator		
+@interface	amazon.media.tv.ScanConstants$ScanMode		
+@interface	amazon.media.tv.dvb.models.DiseqcConfig$Mode		
+@interface	amazon.media.tv.dvb.models.DiseqcConfig$MovementControl		
+@interface	amazon.media.tv.dvb.models.DiseqcConfig$MovementType		
+@interface	amazon.media.tv.isdb.models.scan.ISDBTScanConfiguration$Bandwidth		
+class	amazon.media.tv.AmazonTvInputCallback	TvView.TvInputCallback	
+class	amazon.media.tv.ApiBinder	IRemoteTvView.Stub	
+class	amazon.media.tv.BaseScannerService	Service	ScannerServiceInterface
+class	amazon.media.tv.BaseScannerService$MessengerTuple		
+class	amazon.media.tv.BaseScannerService$MessengerUndertaker		IBinder.DeathRecipient
+class	amazon.media.tv.BuildConfig		
+class	amazon.media.tv.ConnectionStatus		Serializable,Parcelable
+class	amazon.media.tv.ConnectionStatus$Builder		
+class	amazon.media.tv.IRemoteTvView$Default		IRemoteTvView
+class	amazon.media.tv.IRemoteTvView$Stub	Binder	IRemoteTvView
+class	amazon.media.tv.IRemoteTvView$Stub$Proxy		IRemoteTvView
+class	amazon.media.tv.IRemoteTvView$_Parcel		
+class	amazon.media.tv.IRemoteTvViewCallback$Default		IRemoteTvViewCallback
+class	amazon.media.tv.IRemoteTvViewCallback$Stub	Binder	IRemoteTvViewCallback
+class	amazon.media.tv.IRemoteTvViewCallback$Stub$Proxy		IRemoteTvViewCallback
+class	amazon.media.tv.IRemoteTvViewCallback$_Parcel		
+class	amazon.media.tv.IScannerService$Default		IScannerService
+class	amazon.media.tv.IScannerService$Stub	Binder	IScannerService
+class	amazon.media.tv.IScannerService$Stub$Proxy		IScannerService
+class	amazon.media.tv.IScannerService$_Parcel		
+class	amazon.media.tv.ProtocolType		Parcelable
+class	amazon.media.tv.ProtocolType$Builder		
+class	amazon.media.tv.RemoteTvView	ViewGroup	ITvView
+class	amazon.media.tv.RemoteTvView$RemoteServiceConnection		ServiceConnection
+class	amazon.media.tv.RemoteTvView$TimeShiftPositionCallback	TvView.TimeShiftPositionCallback	
+class	amazon.media.tv.RemoteTvViewService	Service	
+class	amazon.media.tv.RemoteTvViewService$LifecycleObserver		ServiceLifecycleObserver
+class	amazon.media.tv.RemoteTvViewService$MyLifecycleObserver	LifecycleObserver	
+class	amazon.media.tv.ScanConstants		
+class	amazon.media.tv.ScanEventListener		ScanEventListenerInterface
+class	amazon.media.tv.ScanProvider		
+class	amazon.media.tv.ScanStatus		Parcelable
+class	amazon.media.tv.ScanTask		Parcelable
+class	amazon.media.tv.ScanTask$Builder		
+class	amazon.media.tv.Scanner		
+class	amazon.media.tv.Scanner$IncomingHandler	Handler	
+class	amazon.media.tv.ScannerCommunicationException	Exception	
+class	amazon.media.tv.ScannerHelper		
+class	amazon.media.tv.ScannerService	IScannerService.Stub	
+class	amazon.media.tv.Session	TvInputService.Session	
+class	amazon.media.tv.SessionExtCallback$Default		SessionExtCallback
+class	amazon.media.tv.SessionExtCallback$Stub	Binder	SessionExtCallback
+class	amazon.media.tv.SessionExtCallback$Stub$Proxy		SessionExtCallback
+class	amazon.media.tv.SessionExtCallback$_Parcel		
+class	amazon.media.tv.TimeShiftConfiguration		Parcelable
+class	amazon.media.tv.TimeShiftConfiguration$Builder		
+class	amazon.media.tv.TimeShiftConfiguration$Serializer		
+class	amazon.media.tv.TimeShiftPolicyManager		
+class	amazon.media.tv.TimeShiftPolicyManager$TimeShiftConfigurationRecord		Comparable<TimeShiftConfigurationRecord>
+class	amazon.media.tv.TvExtensionCallback		
+class	amazon.media.tv.TvExtensionSession$Default		TvExtensionSession
+class	amazon.media.tv.TvExtensionSession$Stub	Binder	TvExtensionSession
+class	amazon.media.tv.TvExtensionSession$Stub$Proxy		TvExtensionSession
+class	amazon.media.tv.TvExtensionSession$_Parcel		
+class	amazon.media.tv.TvExtensions		
+class	amazon.media.tv.TvExtensions$SessionCallback	SessionExtCallback.Stub	
+class	amazon.media.tv.TvViewManager		
+class	amazon.media.tv.TvViewManager$DummyOverlayView	View	
+class	amazon.media.tv.TvViewManager$MyExtensionCallback	TvExtensionCallback	
+class	amazon.media.tv.TvViewManager$MyTvInputCallback	AmazonTvInputCallback	
+class	amazon.media.tv.ViewState		Parcelable
+class	amazon.media.tv.ViewState$Builder		
+class	amazon.media.tv.dvb.models.AutoDiseqcResult		Serializable,Parcelable
+class	amazon.media.tv.dvb.models.CableConfiguration	ScanConfiguration	Serializable,Parcelable
+class	amazon.media.tv.dvb.models.CableConfiguration$Builder		
+class	amazon.media.tv.dvb.models.CableOperator		
+class	amazon.media.tv.dvb.models.ClearChannelsConfig		Serializable,Parcelable
+class	amazon.media.tv.dvb.models.DiseqcConfig		Serializable,Parcelable
+class	amazon.media.tv.dvb.models.DiseqcConfig$Builder		
+class	amazon.media.tv.dvb.models.LcnConfig		Serializable,Parcelable
+class	amazon.media.tv.dvb.models.LcnConfig$Builder		
+class	amazon.media.tv.dvb.models.M7Operator		Serializable,Parcelable
+class	amazon.media.tv.dvb.models.SatDbFile		Serializable,Parcelable
+class	amazon.media.tv.dvb.models.SatelliteConfiguration	ScanConfiguration	Serializable,Parcelable
+class	amazon.media.tv.dvb.models.SatelliteConfiguration$Builder		
+class	amazon.media.tv.dvb.models.SatelliteConfiguration$DiseqcConfigException	Exception	
+class	amazon.media.tv.dvb.models.ScanConfiguration		Serializable,Parcelable
+class	amazon.media.tv.dvb.models.ScannedMetadata		Serializable,Parcelable
+class	amazon.media.tv.dvb.models.SdxFile	SatDbFile	
+class	amazon.media.tv.dvb.models.SignalInfo		Parcelable,Serializable
+class	amazon.media.tv.dvb.models.TargetRegion		Serializable,Parcelable
+class	amazon.media.tv.dvb.models.TerrestrialConfiguration	ScanConfiguration	Serializable,Parcelable
+class	amazon.media.tv.dvb.models.TerrestrialConfiguration$Builder		
+class	amazon.media.tv.dvb.models.TransponderConfiguration		Serializable,Parcelable
+class	amazon.media.tv.dvb.models.TransponderConfiguration$Builder		
+class	amazon.media.tv.isdb.models.ISDBConfiguration		Serializable,Parcelable
+class	amazon.media.tv.isdb.models.ISDBConfiguration$Builder		
+class	amazon.media.tv.isdb.models.scan.ISDBScanConfiguration		Serializable,Parcelable
+class	amazon.media.tv.isdb.models.scan.ISDBScannedChannel		Serializable,Parcelable
+class	amazon.media.tv.isdb.models.scan.ISDBScannedChannel$Builder		
+class	amazon.media.tv.isdb.models.scan.ISDBScannedMetadata		Serializable,Parcelable
+class	amazon.media.tv.isdb.models.scan.ISDBScannedMetadata$Builder		
+class	amazon.media.tv.isdb.models.scan.ISDBTScanConfiguration	ISDBScanConfiguration	
+class	amazon.media.tv.isdb.models.scan.ISDBTScanConfiguration$Builder		
+class	amazon.media.tv.playbackconflict.ConflictResolutionGroup		Parcelable
+class	amazon.media.tv.playbackconflict.ConflictResolutionGroup$Builder		
+class	amazon.media.tv.playbackconflict.ConflictResolutionGroup$ConflictResolutionGroupCreator		Parcelable.Creator<ConflictResolutionGroup>
+class	amazon.media.tv.playbackconflict.PlaybackConflict		Parcelable
+class	amazon.media.tv.playbackconflict.PlaybackConflict$Builder		
+class	amazon.media.tv.playbackconflict.PlaybackConflict$PlaybackConflictCreator		Parcelable.Creator<PlaybackConflict>
+class	amazon.media.tv.playbackconflict.PlaybackConflictResolutionGroup		Parcelable
+class	amazon.media.tv.playbackconflict.PlaybackConflictResolutionGroup$Builder		
+class	amazon.media.tv.playbackconflict.PlaybackConflictResolutionGroup$PlaybackConflictResolutionGroupCreator		Parcelable.Creator<PlaybackConflictResolutionGroup>
+class	amazon.media.tv.playbackconflict.PlaybackSession		Parcelable
+class	amazon.media.tv.playbackconflict.PlaybackSession$Builder		
+class	amazon.media.tv.playbackconflict.PlaybackSession$PlaybackSessionCreator		Parcelable.Creator<PlaybackSession>
+class	amazon.media.tv.playbackconflict.RecordingSession		Parcelable
+class	amazon.media.tv.playbackconflict.RecordingSession$Builder		
+class	amazon.media.tv.playbackconflict.RecordingSession$RecordingSessionCreator		Parcelable.Creator<RecordingSession>
+class	amazon.media.tv.tvview.RemoteTvViewFeature		
+class	amazon.media.tv.tvview.TimeShiftPlaybackManager		
+class	amazon.media.tv.tvview.TvExtensionCallbackProxy	TvExtensionCallback	
+enum	amazon.media.tv.ChannelType		Parcelable
+enum	amazon.media.tv.ConnectionType		Parcelable
+enum	amazon.media.tv.Country		
+enum	amazon.media.tv.ScanOption		Parcelable
+enum	amazon.media.tv.ScanProtocol		Parcelable
+enum	amazon.media.tv.ScanStatusType		Parcelable
+enum	amazon.media.tv.ScanTaskType		Parcelable
+enum	amazon.media.tv.ScanType		Parcelable
+enum	amazon.media.tv.playbackconflict.ConflictResolutionType		
+interface	amazon.media.tv.IRemoteTvView	IInterface	
+interface	amazon.media.tv.IRemoteTvViewCallback	IInterface	
+interface	amazon.media.tv.IScannerService	IInterface	
+interface	amazon.media.tv.ITvView		
+interface	amazon.media.tv.RemoteTvView$OnConnectionStateChangeListener		
+interface	amazon.media.tv.ScanEventListenerInterface		
+interface	amazon.media.tv.ScannerServiceInterface		
+interface	amazon.media.tv.ServiceLifecycleObserver		
+interface	amazon.media.tv.SessionExtCallback	IInterface	
+interface	amazon.media.tv.TimeShiftPolicyManager$PolicyChangeListener		
+interface	amazon.media.tv.TvExtensionSession	IInterface	
+interface	amazon.media.tv.TvViewManager$ServiceEventHandler		

@@ -1,0 +1,164 @@
+class	kind	declaration
+com.amazon.neo.service.api.sdk.BinderInternal	field	private static final String TAG;
+com.amazon.neo.service.api.sdk.BinderInternal	method	public IBinder getGlobalContextObject()
+com.amazon.neo.service.api.sdk.BinderUtils	field	private BinderInternal binderInternal;
+com.amazon.neo.service.api.sdk.BinderUtils	field	private static final String NEO_SERVICE_COORDINATOR_PUBLIC;
+com.amazon.neo.service.api.sdk.BinderUtils	field	private static final String TAG;
+com.amazon.neo.service.api.sdk.BinderUtils	field	protected static final int FOS8_BINDER_SYSTEM_HEADER;
+com.amazon.neo.service.api.sdk.BinderUtils	field	protected static final int FOS8_NO_EXCEPTION;
+com.amazon.neo.service.api.sdk.BinderUtils	field	protected static final int FOS8_SDK_VERSION;
+com.amazon.neo.service.api.sdk.BinderUtils	field	protected static final int FOS8_WORK_SOURCE_UNSET_UID;
+com.amazon.neo.service.api.sdk.BinderUtils	field	public static final String ANDROID_OS_ISERVICE_MANAGER;
+com.amazon.neo.service.api.sdk.BinderUtils	field	public static final String NEO_SERVICE_COORDINATOR;
+com.amazon.neo.service.api.sdk.BinderUtils	field	public static final int ANDROID_SERVICE_MANAGER_GET_SERVICE;
+com.amazon.neo.service.api.sdk.BinderUtils	field	public static final int NEO_SERVICE_COORDINATOR_ADD_SERVICE;
+com.amazon.neo.service.api.sdk.BinderUtils	field	public static final int NEO_SERVICE_COORDINATOR_GET_SERVICE;
+com.amazon.neo.service.api.sdk.BinderUtils	field	public static final int NEO_SERVICE_COORDINATOR_GET_SERVICE_AS_USER;
+com.amazon.neo.service.api.sdk.BinderUtils	field	public static final int NEO_SERVICE_COORDINATOR_RELEASE_SERVICE;
+com.amazon.neo.service.api.sdk.BinderUtils	method	private static int bPackChars(char c1, char c2, char c3, char c4)
+com.amazon.neo.service.api.sdk.BinderUtils	method	protected IBinder getServiceBinder(String serviceName)
+com.amazon.neo.service.api.sdk.BinderUtils	method	protected void getServiceByHandle(final String serviceName, final ServiceCallback serviceCallback, IBinder nscBinder)
+com.amazon.neo.service.api.sdk.BinderUtils	method	public BinderUtils()
+com.amazon.neo.service.api.sdk.BinderUtils	method	public BinderUtils(BinderInternal binderInternal)
+com.amazon.neo.service.api.sdk.BinderUtils	method	public IBinder getPublicServiceCoordinator()
+com.amazon.neo.service.api.sdk.BinderUtils	method	public IBinder getServiceCoordinator()
+com.amazon.neo.service.api.sdk.BinderUtils	method	public boolean registerService(String serviceName, IBinder serviceBinder, IBinder lifecycle)
+com.amazon.neo.service.api.sdk.BinderUtils	method	public boolean releasePrivilegedService(IBinder handle)
+com.amazon.neo.service.api.sdk.BinderUtils	method	public static void linkAndDeliver(final IBinder binder, final String serviceName, final ServiceCallback serviceCallback)
+com.amazon.neo.service.api.sdk.BinderUtils	method	public void getPrivilegedService(String serviceName, ServiceCallback serviceCallback)
+com.amazon.neo.service.api.sdk.BinderUtils	method	public void getPrivilegedServiceAsUser(final String serviceName, final ServiceCallback serviceCallback, int user)
+com.amazon.neo.service.api.sdk.BinderUtils	method	public void getPublicService(String serviceName, ServiceCallback serviceCallback)
+com.amazon.neo.service.api.sdk.BinderUtils	method	public void getService(String serviceName, ServiceCallback serviceCallback)
+com.amazon.neo.service.api.sdk.BinderUtils$Builder	field	private BinderInternal binderInternal;
+com.amazon.neo.service.api.sdk.BinderUtils$Builder	method	public BinderUtils build()
+com.amazon.neo.service.api.sdk.BinderUtils$Builder	method	public Builder withBinderInternal(BinderInternal binderInternal)
+com.amazon.neo.service.api.sdk.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.neo.service.api.sdk.BuildConfig	field	public static final String LIBRARY_PACKAGE_NAME;
+com.amazon.neo.service.api.sdk.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.neo.service.api.sdk.Bundle	field	private ArrayMap<String, Object> mMap;
+com.amazon.neo.service.api.sdk.Bundle	field	private ClassLoader mClassLoader;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final String TAG;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final int VAL_BOOLEAN;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final int VAL_BOOLEANARRAY;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final int VAL_BUNDLE;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final int VAL_BYTE;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final int VAL_BYTEARRAY;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final int VAL_CHARSEQUENCE;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final int VAL_CHARSEQUENCEARRAY;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final int VAL_DOUBLE;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final int VAL_DOUBLEARRAY;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final int VAL_FLOAT;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final int VAL_IBINDER;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final int VAL_INTARRAY;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final int VAL_INTEGER;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final int VAL_LIST;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final int VAL_LONG;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final int VAL_LONGARRAY;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final int VAL_MAP;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final int VAL_NULL;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final int VAL_OBJECTARRAY;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final int VAL_PARCELABLE;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final int VAL_PARCELABLEARRAY;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final int VAL_PERSISTABLEBUNDLE;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final int VAL_SERIALIZABLE;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final int VAL_SHORT;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final int VAL_SIZE;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final int VAL_SIZEF;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final int VAL_SPARSEARRAY;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final int VAL_SPARSEBOOLEANARRAY;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final int VAL_STRING;
+com.amazon.neo.service.api.sdk.Bundle	field	private static final int VAL_STRINGARRAY;
+com.amazon.neo.service.api.sdk.Bundle	method	private Object readValue(Parcel source)
+com.amazon.neo.service.api.sdk.Bundle	method	private void readFromParcel(Parcel source)
+com.amazon.neo.service.api.sdk.Bundle	method	private void writeArrayMap(Parcel dest)
+com.amazon.neo.service.api.sdk.Bundle	method	private void writeBooleanArray(Parcel dest, boolean[] v)
+com.amazon.neo.service.api.sdk.Bundle	method	private void writeByteArray(Parcel dest, byte[] val)
+com.amazon.neo.service.api.sdk.Bundle	method	private void writeDoubleArray(Parcel dest, double[] val)
+com.amazon.neo.service.api.sdk.Bundle	method	private void writeIntArray(Parcel dest, int[] val)
+com.amazon.neo.service.api.sdk.Bundle	method	private void writeLongArray(Parcel dest, long[] val)
+com.amazon.neo.service.api.sdk.Bundle	method	private void writeSize(Parcel dest, Size val)
+com.amazon.neo.service.api.sdk.Bundle	method	private void writeSizeF(Parcel dest, SizeF val)
+com.amazon.neo.service.api.sdk.Bundle	method	private void writeStringArray(Parcel dest, String[] val)
+com.amazon.neo.service.api.sdk.Bundle	method	private void writeValue(Parcel dest, Object v)
+com.amazon.neo.service.api.sdk.Bundle	method	protected ArrayMap<String, Object> getMap()
+com.amazon.neo.service.api.sdk.Bundle	method	protected Bundle(Parcel in)
+com.amazon.neo.service.api.sdk.Bundle	method	public Bundle(android.os.Bundle bundle)
+com.amazon.neo.service.api.sdk.Bundle	method	public android.os.Bundle toBundle()
+com.amazon.neo.service.api.sdk.Bundle	method	public final void writeToParcel(Parcel dest, int flags)
+com.amazon.neo.service.api.sdk.Bundle	method	public int describeContents()
+com.amazon.neo.service.api.sdk.EventUtils	field	private final Context mContext;
+com.amazon.neo.service.api.sdk.EventUtils	field	private static final String TAG;
+com.amazon.neo.service.api.sdk.EventUtils	field	private static final boolean DEBUG;
+com.amazon.neo.service.api.sdk.EventUtils	method	protected boolean isObserverAvailable(String packageName, String subject)
+com.amazon.neo.service.api.sdk.EventUtils	method	protected boolean parseNeoJson(String json, String subject)
+com.amazon.neo.service.api.sdk.EventUtils	method	public EventUtils(Context context)
+com.amazon.neo.service.api.sdk.EventUtils	method	public List<String> getNeoEventObservers(@Nonnull String subject)
+com.amazon.neo.service.api.sdk.EventUtils	method	public boolean sendNeoEvent(String subject, String permission, Parcelable message)
+com.amazon.neo.service.api.sdk.NeoBundle	field	private ArrayMap<String, Object> mMap;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private ClassLoader mClassLoader;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final String TAG;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final int VAL_BOOLEAN;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final int VAL_BOOLEANARRAY;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final int VAL_BUNDLE;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final int VAL_BYTE;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final int VAL_BYTEARRAY;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final int VAL_CHARSEQUENCE;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final int VAL_CHARSEQUENCEARRAY;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final int VAL_DOUBLE;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final int VAL_DOUBLEARRAY;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final int VAL_FLOAT;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final int VAL_IBINDER;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final int VAL_INTARRAY;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final int VAL_INTEGER;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final int VAL_LIST;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final int VAL_LONG;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final int VAL_LONGARRAY;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final int VAL_MAP;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final int VAL_NULL;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final int VAL_OBJECTARRAY;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final int VAL_PARCELABLE;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final int VAL_PARCELABLEARRAY;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final int VAL_PERSISTABLEBUNDLE;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final int VAL_SERIALIZABLE;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final int VAL_SHORT;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final int VAL_SIZE;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final int VAL_SIZEF;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final int VAL_SPARSEARRAY;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final int VAL_SPARSEBOOLEANARRAY;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final int VAL_STRING;
+com.amazon.neo.service.api.sdk.NeoBundle	field	private static final int VAL_STRINGARRAY;
+com.amazon.neo.service.api.sdk.NeoBundle	method	private Object readValue(Parcel source)
+com.amazon.neo.service.api.sdk.NeoBundle	method	private void readFromParcel(Parcel source)
+com.amazon.neo.service.api.sdk.NeoBundle	method	private void writeArrayMap(Parcel dest)
+com.amazon.neo.service.api.sdk.NeoBundle	method	private void writeBooleanArray(Parcel dest, boolean[] v)
+com.amazon.neo.service.api.sdk.NeoBundle	method	private void writeByteArray(Parcel dest, byte[] val)
+com.amazon.neo.service.api.sdk.NeoBundle	method	private void writeDoubleArray(Parcel dest, double[] val)
+com.amazon.neo.service.api.sdk.NeoBundle	method	private void writeIntArray(Parcel dest, int[] val)
+com.amazon.neo.service.api.sdk.NeoBundle	method	private void writeLongArray(Parcel dest, long[] val)
+com.amazon.neo.service.api.sdk.NeoBundle	method	private void writeSize(Parcel dest, Size val)
+com.amazon.neo.service.api.sdk.NeoBundle	method	private void writeSizeF(Parcel dest, SizeF val)
+com.amazon.neo.service.api.sdk.NeoBundle	method	private void writeStringArray(Parcel dest, String[] val)
+com.amazon.neo.service.api.sdk.NeoBundle	method	private void writeValue(Parcel dest, Object v)
+com.amazon.neo.service.api.sdk.NeoBundle	method	protected NeoBundle(Parcel in)
+com.amazon.neo.service.api.sdk.NeoBundle	method	public NeoBundle(Bundle bundle)
+com.amazon.neo.service.api.sdk.NeoBundle	method	public NeoBundle(android.os.Bundle bundle)
+com.amazon.neo.service.api.sdk.NeoBundle	method	public android.os.Bundle toBundle()
+com.amazon.neo.service.api.sdk.NeoBundle	method	public final void writeToParcel(Parcel dest, int flags)
+com.amazon.neo.service.api.sdk.NeoBundle	method	public int describeContents()
+com.amazon.neo.service.api.sdk.PackageManagerUtils	field	private static final String META_DATA_NEO_ENABLED_KEY;
+com.amazon.neo.service.api.sdk.PackageManagerUtils	field	private static final String TAG;
+com.amazon.neo.service.api.sdk.PackageManagerUtils	field	private static final boolean DEBUG;
+com.amazon.neo.service.api.sdk.PackageManagerUtils	method	private PackageManagerUtils()
+com.amazon.neo.service.api.sdk.PackageManagerUtils	method	private static boolean isNeoEnabledInManifest(PackageInfo packageInfo)
+com.amazon.neo.service.api.sdk.PackageManagerUtils	method	private static boolean isNeoPresent(Context context) throws PackageManager.NameNotFoundException
+com.amazon.neo.service.api.sdk.PackageManagerUtils	method	public static List<String> listInstalledNeoPackageNames(Context context)
+com.amazon.neo.service.api.sdk.PackageManagerUtils	method	public static String readNeoManifest(Context context, String packageName)
+com.amazon.neo.service.api.sdk.PackageManagerUtils	method	public static boolean isNeoEnabled(Context context, String packageName)
+com.amazon.neo.service.api.sdk.ServiceCallback	field	protected ArrayList<IBinder> mPendingRequests;
+com.amazon.neo.service.api.sdk.ServiceCallback	field	protected IBinder mToken;
+com.amazon.neo.service.api.sdk.ServiceCallback	field	protected final ConcurrentHashMap<IBinder, IBinder.DeathRecipient> mDeathRecipients;
+com.amazon.neo.service.api.sdk.ServiceCallback	method	public abstract void onServiceConnected(String str, IBinder iBinder);
+com.amazon.neo.service.api.sdk.ServiceCallback	method	public abstract void onServiceFailed(String str, String str2);
+com.amazon.neo.service.api.sdk.ServiceCallback	method	public void onServiceDisconnected(String serviceName)
+com.amazon.neo.service.api.sdk.UnsupportedTypeException	method	public UnsupportedTypeException(String message)
+com.amazon.neo.service.api.sdk.UnsupportedTypeException	method	public UnsupportedTypeException(String message, Throwable cause)

@@ -1,0 +1,545 @@
+class	kind	declaration
+com.fireos.sdk.ftve.channelscan.BuildConfig	field	public static final String APPLICATION_ID;
+com.fireos.sdk.ftve.channelscan.BuildConfig	field	public static final String BUILD_TYPE;
+com.fireos.sdk.ftve.channelscan.BuildConfig	field	public static final String FLAVOR;
+com.fireos.sdk.ftve.channelscan.BuildConfig	field	public static final String VERSION_NAME;
+com.fireos.sdk.ftve.channelscan.BuildConfig	field	public static final boolean DEBUG;
+com.fireos.sdk.ftve.channelscan.BuildConfig	field	public static final int VERSION_CODE;
+com.fireos.sdk.ftve.channelscan.ScanConstants	field	public static final int AUSTRIA_COUNTRY;
+com.fireos.sdk.ftve.channelscan.ScanConstants	field	public static final int CANADA_COUNTRY;
+com.fireos.sdk.ftve.channelscan.ScanConstants	field	public static final int DVB_C_SCAN_PROTOCOL;
+com.fireos.sdk.ftve.channelscan.ScanConstants	field	public static final int DVB_S_SCAN_PROTOCOL;
+com.fireos.sdk.ftve.channelscan.ScanConstants	field	public static final int DVB_T_SCAN_PROTOCOL;
+com.fireos.sdk.ftve.channelscan.ScanConstants	field	public static final int FRANCE_COUNTRY;
+com.fireos.sdk.ftve.channelscan.ScanConstants	field	public static final int GERMANY_COUNTRY;
+com.fireos.sdk.ftve.channelscan.ScanConstants	field	public static final int INDIA_COUNTRY;
+com.fireos.sdk.ftve.channelscan.ScanConstants	field	public static final int IRELAND_COUNTRY;
+com.fireos.sdk.ftve.channelscan.ScanConstants	field	public static final int ITALY_COUNTRY;
+com.fireos.sdk.ftve.channelscan.ScanConstants	field	public static final int JAPAN_COUNTRY;
+com.fireos.sdk.ftve.channelscan.ScanConstants	field	public static final int LIECHTENSTEIN_COUNTRY;
+com.fireos.sdk.ftve.channelscan.ScanConstants	field	public static final int LUXEMBOURG_COUNTRY;
+com.fireos.sdk.ftve.channelscan.ScanConstants	field	public static final int MALTA_COUNTRY;
+com.fireos.sdk.ftve.channelscan.ScanConstants	field	public static final int MEXICO_COUNTRY;
+com.fireos.sdk.ftve.channelscan.ScanConstants	field	public static final int MONACO_COUNTRY;
+com.fireos.sdk.ftve.channelscan.ScanConstants	field	public static final int NETHERLANDS_COUNTRY;
+com.fireos.sdk.ftve.channelscan.ScanConstants	field	public static final int OTHERS_COUNTRY;
+com.fireos.sdk.ftve.channelscan.ScanConstants	field	public static final int POLAND_COUNTRY;
+com.fireos.sdk.ftve.channelscan.ScanConstants	field	public static final int PORTUGAL_COUNTRY;
+com.fireos.sdk.ftve.channelscan.ScanConstants	field	public static final int SPAIN_COUNTRY;
+com.fireos.sdk.ftve.channelscan.ScanConstants	field	public static final int SWITZERLAND_COUNTRY;
+com.fireos.sdk.ftve.channelscan.ScanConstants	field	public static final int UNITED_KINGDOM_COUNTRY;
+com.fireos.sdk.ftve.channelscan.ScanConstants	field	public static final int UNITED_STATES_COUNTRY;
+com.fireos.sdk.ftve.channelscan.clm.CLMConfiguration	field	private List<Configuration> mConfigurations;
+com.fireos.sdk.ftve.channelscan.clm.CLMConfiguration	method	private CLMConfiguration(List<Configuration> configurations)
+com.fireos.sdk.ftve.channelscan.clm.CLMConfiguration	method	private CLMConfiguration(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.CLMConfiguration	method	private void readFromParcel(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.CLMConfiguration	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.CLMConfiguration	method	public List<Configuration> getConfigurations()
+com.fireos.sdk.ftve.channelscan.clm.CLMConfiguration	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.CLMConfiguration	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.CLMConfiguration	method	public int describeContents()
+com.fireos.sdk.ftve.channelscan.clm.CLMConfiguration	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.CLMConfiguration	method	public static Builder builder()
+com.fireos.sdk.ftve.channelscan.clm.CLMConfiguration	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.channelscan.clm.CLMConfiguration$Builder	field	private List<Configuration> mConfigurations;
+com.fireos.sdk.ftve.channelscan.clm.CLMConfiguration$Builder	method	private Builder()
+com.fireos.sdk.ftve.channelscan.clm.CLMConfiguration$Builder	method	public Builder withConfigurations(List<Configuration> configurations)
+com.fireos.sdk.ftve.channelscan.clm.CLMConfiguration$Builder	method	public CLMConfiguration build()
+com.fireos.sdk.ftve.channelscan.clm.CLMConstants	field	public static final String CLM_META_DATA_KEY;
+com.fireos.sdk.ftve.channelscan.clm.CLMConstants	field	public static final String CLM_PERMISSION;
+com.fireos.sdk.ftve.channelscan.clm.CLMInput	field	private Input mInput;
+com.fireos.sdk.ftve.channelscan.clm.CLMInput	method	private CLMInput(Input input)
+com.fireos.sdk.ftve.channelscan.clm.CLMInput	method	private CLMInput(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.CLMInput	method	private void readFromParcel(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.CLMInput	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.CLMInput	method	public Input getInput()
+com.fireos.sdk.ftve.channelscan.clm.CLMInput	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.CLMInput	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.CLMInput	method	public int describeContents()
+com.fireos.sdk.ftve.channelscan.clm.CLMInput	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.CLMInput	method	public static Builder builder()
+com.fireos.sdk.ftve.channelscan.clm.CLMInput	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.channelscan.clm.CLMInput$Builder	field	private Input mInput;
+com.fireos.sdk.ftve.channelscan.clm.CLMInput$Builder	method	private Builder()
+com.fireos.sdk.ftve.channelscan.clm.CLMInput$Builder	method	public Builder withInput(Input input)
+com.fireos.sdk.ftve.channelscan.clm.CLMInput$Builder	method	public CLMInput build()
+com.fireos.sdk.ftve.channelscan.clm.CLMOutput	field	private Output mOutput;
+com.fireos.sdk.ftve.channelscan.clm.CLMOutput	method	private CLMOutput(Output output)
+com.fireos.sdk.ftve.channelscan.clm.CLMOutput	method	private CLMOutput(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.CLMOutput	method	private void readFromParcel(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.CLMOutput	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.CLMOutput	method	public Output getOutput()
+com.fireos.sdk.ftve.channelscan.clm.CLMOutput	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.CLMOutput	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.CLMOutput	method	public int describeContents()
+com.fireos.sdk.ftve.channelscan.clm.CLMOutput	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.CLMOutput	method	public static Builder builder()
+com.fireos.sdk.ftve.channelscan.clm.CLMOutput	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.channelscan.clm.CLMOutput$Builder	field	private Output mOutput;
+com.fireos.sdk.ftve.channelscan.clm.CLMOutput$Builder	method	private Builder()
+com.fireos.sdk.ftve.channelscan.clm.CLMOutput$Builder	method	public Builder withOutput(Output output)
+com.fireos.sdk.ftve.channelscan.clm.CLMOutput$Builder	method	public CLMOutput build()
+com.fireos.sdk.ftve.channelscan.clm.CLMReason	field	private Reason mReason;
+com.fireos.sdk.ftve.channelscan.clm.CLMReason	method	private CLMReason(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.CLMReason	method	private CLMReason(Reason reason)
+com.fireos.sdk.ftve.channelscan.clm.CLMReason	method	private void readFromParcel(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.CLMReason	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.CLMReason	method	public Reason getReason()
+com.fireos.sdk.ftve.channelscan.clm.CLMReason	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.CLMReason	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.CLMReason	method	public int describeContents()
+com.fireos.sdk.ftve.channelscan.clm.CLMReason	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.CLMReason	method	public static Builder builder()
+com.fireos.sdk.ftve.channelscan.clm.CLMReason	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.channelscan.clm.CLMReason$Builder	field	private Reason mReason;
+com.fireos.sdk.ftve.channelscan.clm.CLMReason$Builder	method	private Builder()
+com.fireos.sdk.ftve.channelscan.clm.CLMReason$Builder	method	public Builder withReason(Reason reason)
+com.fireos.sdk.ftve.channelscan.clm.CLMReason$Builder	method	public CLMReason build()
+com.fireos.sdk.ftve.channelscan.clm.CLMService	field	private CLMBinder mBinder;
+com.fireos.sdk.ftve.channelscan.clm.CLMService	field	private static final String TAG;
+com.fireos.sdk.ftve.channelscan.clm.CLMService	method	public IBinder onBind(Intent intent)
+com.fireos.sdk.ftve.channelscan.clm.CLMService	method	public abstract CLMOutput processInput(CLMInput cLMInput);
+com.fireos.sdk.ftve.channelscan.clm.CLMService	method	public abstract void connect(CLMConfiguration cLMConfiguration);
+com.fireos.sdk.ftve.channelscan.clm.CLMService	method	public abstract void disconnect(CLMReason cLMReason);
+com.fireos.sdk.ftve.channelscan.clm.CLMService	method	public void onCreate()
+com.fireos.sdk.ftve.channelscan.clm.CLMService$CLMBinder	field	private final WeakReference<CLMService> mService;
+com.fireos.sdk.ftve.channelscan.clm.CLMService$CLMBinder	method	private CLMBinder(CLMService service)
+com.fireos.sdk.ftve.channelscan.clm.CLMService$CLMBinder	method	private void checkService() throws RemoteException
+com.fireos.sdk.ftve.channelscan.clm.CLMService$CLMBinder	method	public CLMOutput processInput(CLMInput input) throws RemoteException
+com.fireos.sdk.ftve.channelscan.clm.CLMService$CLMBinder	method	public void connect(CLMConfiguration configuration) throws RemoteException
+com.fireos.sdk.ftve.channelscan.clm.CLMService$CLMBinder	method	public void disconnect(CLMReason reason) throws RemoteException
+com.fireos.sdk.ftve.channelscan.clm.ICLMService$Stub	field	private static final String DESCRIPTOR;
+com.fireos.sdk.ftve.channelscan.clm.ICLMService$Stub	field	static final int TRANSACTION_connect;
+com.fireos.sdk.ftve.channelscan.clm.ICLMService$Stub	field	static final int TRANSACTION_disconnect;
+com.fireos.sdk.ftve.channelscan.clm.ICLMService$Stub	field	static final int TRANSACTION_processInput;
+com.fireos.sdk.ftve.channelscan.clm.ICLMService$Stub	method	public IBinder asBinder()
+com.fireos.sdk.ftve.channelscan.clm.ICLMService$Stub	method	public Stub()
+com.fireos.sdk.ftve.channelscan.clm.ICLMService$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.fireos.sdk.ftve.channelscan.clm.ICLMService$Stub	method	public static ICLMService asInterface(IBinder obj)
+com.fireos.sdk.ftve.channelscan.clm.ICLMService$Stub$Proxy	field	private IBinder mRemote;
+com.fireos.sdk.ftve.channelscan.clm.ICLMService$Stub$Proxy	method	public CLMOutput processInput(CLMInput input) throws RemoteException
+com.fireos.sdk.ftve.channelscan.clm.ICLMService$Stub$Proxy	method	public IBinder asBinder()
+com.fireos.sdk.ftve.channelscan.clm.ICLMService$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.fireos.sdk.ftve.channelscan.clm.ICLMService$Stub$Proxy	method	public void connect(CLMConfiguration configuration) throws RemoteException
+com.fireos.sdk.ftve.channelscan.clm.ICLMService$Stub$Proxy	method	public void disconnect(CLMReason reason) throws RemoteException
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration	field	private Locale mLocale;
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration	field	private String mCountryCode;
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration	field	private String mOperatorId;
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration	field	private boolean mIsCancel;
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration	field	private boolean mIsDestructive;
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration	field	private boolean mIsInteractive;
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration	field	private boolean mIsResume;
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration	field	private int mCountry;
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration	field	private int mScanProtocol;
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration	method	private ChannelScanConfiguration(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration	method	private ChannelScanConfiguration(boolean isInteractive, boolean isDestructive, boolean isResume, Locale locale, String countryCode, int country, String operatorId, int scanProtocol, boolean isCancel)
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration	method	private void readFromParcel(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration	method	public Locale getLocale()
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration	method	public String getCountryCode()
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration	method	public String getOperatorId()
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration	method	public boolean getIsCancel()
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration	method	public boolean getIsDestructive()
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration	method	public boolean getIsInteractive()
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration	method	public boolean getIsResume()
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration	method	public int getCountry()
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration	method	public int getScanProtocol()
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration	method	public static Builder builder()
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration	method	public void writeToParcel(Parcel parcel, int i)
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration$Builder	field	private Boolean mIsDestructive;
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration$Builder	field	private Boolean mIsInteractive;
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration$Builder	field	private Boolean mIsResume;
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration$Builder	field	private Locale mLocale;
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration$Builder	field	private String mCountryCode;
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration$Builder	field	private String mOperatorId;
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration$Builder	field	private boolean mIsCancel;
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration$Builder	field	private int mCountry;
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration$Builder	field	private int mScanProtocol;
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration$Builder	method	private Builder()
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration$Builder	method	public Builder withCountry(int country)
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration$Builder	method	public Builder withCountryCode(String countryCode)
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration$Builder	method	public Builder withIsCancel(boolean isCancel)
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration$Builder	method	public Builder withIsDestructive(boolean isDestructive)
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration$Builder	method	public Builder withIsInteractive(boolean isInteractive)
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration$Builder	method	public Builder withIsResume(boolean isResume)
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration$Builder	method	public Builder withLocale(Locale locale)
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration$Builder	method	public Builder withOperatorId(String operatorId)
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration$Builder	method	public Builder withScanProtocol(int scanProtocol)
+com.fireos.sdk.ftve.channelscan.clm.configurations.ChannelScanConfiguration$Builder	method	public ChannelScanConfiguration build()
+com.fireos.sdk.ftve.channelscan.clm.configurations.Configuration	method	protected Configuration()
+com.fireos.sdk.ftve.channelscan.clm.configurations.Configuration	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.configurations.Configuration	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.configurations.Configuration	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.configurations.Configuration	method	public int describeContents()
+com.fireos.sdk.ftve.channelscan.clm.configurations.Configuration	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.configurations.FVPConfiguration	field	private boolean mCapability;
+com.fireos.sdk.ftve.channelscan.clm.configurations.FVPConfiguration	field	private boolean mTermsAcceptance;
+com.fireos.sdk.ftve.channelscan.clm.configurations.FVPConfiguration	method	private FVPConfiguration(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.configurations.FVPConfiguration	method	private FVPConfiguration(boolean capability, boolean termsAcceptance)
+com.fireos.sdk.ftve.channelscan.clm.configurations.FVPConfiguration	method	private void readFromParcel(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.configurations.FVPConfiguration	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.configurations.FVPConfiguration	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.configurations.FVPConfiguration	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.configurations.FVPConfiguration	method	public boolean getCapability()
+com.fireos.sdk.ftve.channelscan.clm.configurations.FVPConfiguration	method	public boolean getTermsAcceptance()
+com.fireos.sdk.ftve.channelscan.clm.configurations.FVPConfiguration	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.configurations.FVPConfiguration	method	public static Builder builder()
+com.fireos.sdk.ftve.channelscan.clm.configurations.FVPConfiguration	method	public void writeToParcel(Parcel parcel, int i)
+com.fireos.sdk.ftve.channelscan.clm.configurations.FVPConfiguration$Builder	field	private Boolean mCapability;
+com.fireos.sdk.ftve.channelscan.clm.configurations.FVPConfiguration$Builder	field	private Boolean mTermsAcceptance;
+com.fireos.sdk.ftve.channelscan.clm.configurations.FVPConfiguration$Builder	method	private Builder()
+com.fireos.sdk.ftve.channelscan.clm.configurations.FVPConfiguration$Builder	method	public Builder withCapability(boolean capability)
+com.fireos.sdk.ftve.channelscan.clm.configurations.FVPConfiguration$Builder	method	public Builder withTermsAcceptance(boolean termsAcceptance)
+com.fireos.sdk.ftve.channelscan.clm.configurations.FVPConfiguration$Builder	method	public FVPConfiguration build()
+com.fireos.sdk.ftve.channelscan.clm.configurations.OpAppConfiguration	field	private boolean mIncludeIpChannels;
+com.fireos.sdk.ftve.channelscan.clm.configurations.OpAppConfiguration	method	private OpAppConfiguration(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.configurations.OpAppConfiguration	method	private OpAppConfiguration(boolean mIncludeIpChannels)
+com.fireos.sdk.ftve.channelscan.clm.configurations.OpAppConfiguration	method	private void readFromParcel(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.configurations.OpAppConfiguration	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.configurations.OpAppConfiguration	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.configurations.OpAppConfiguration	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.configurations.OpAppConfiguration	method	public boolean getIncludeIpChannels()
+com.fireos.sdk.ftve.channelscan.clm.configurations.OpAppConfiguration	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.configurations.OpAppConfiguration	method	public static Builder builder()
+com.fireos.sdk.ftve.channelscan.clm.configurations.OpAppConfiguration	method	public void writeToParcel(Parcel parcel, int i)
+com.fireos.sdk.ftve.channelscan.clm.configurations.OpAppConfiguration$Builder	field	private Boolean mIncludeIpChannels;
+com.fireos.sdk.ftve.channelscan.clm.configurations.OpAppConfiguration$Builder	method	private Builder()
+com.fireos.sdk.ftve.channelscan.clm.configurations.OpAppConfiguration$Builder	method	public Builder withIncludeIpChannels(boolean mIncludeIpChannels)
+com.fireos.sdk.ftve.channelscan.clm.configurations.OpAppConfiguration$Builder	method	public OpAppConfiguration build()
+com.fireos.sdk.ftve.channelscan.clm.errors.MDSServiceError	field	private int mResponseValue;
+com.fireos.sdk.ftve.channelscan.clm.errors.MDSServiceError	field	public static final int BUSY_ERROR;
+com.fireos.sdk.ftve.channelscan.clm.errors.MDSServiceError	field	public static final int GENERIC_FAILURE_ERROR;
+com.fireos.sdk.ftve.channelscan.clm.errors.MDSServiceError	field	public static final int INVALID_ANSWER_TOKEN_ERROR;
+com.fireos.sdk.ftve.channelscan.clm.errors.MDSServiceError	field	public static final int INVALID_CONFIG_ERROR;
+com.fireos.sdk.ftve.channelscan.clm.errors.MDSServiceError	field	public static final int INVALID_MUX_INFO_ERROR;
+com.fireos.sdk.ftve.channelscan.clm.errors.MDSServiceError	field	public static final int INVALID_REQUEST_ERROR;
+com.fireos.sdk.ftve.channelscan.clm.errors.MDSServiceError	field	public static final int MDS_CONNECTION_FAILURE_ERROR;
+com.fireos.sdk.ftve.channelscan.clm.errors.MDSServiceError	field	public static final int MISSING_INTERACTIVE_FLAG_ERROR;
+com.fireos.sdk.ftve.channelscan.clm.errors.MDSServiceError	field	public static final int REGION_ID_REQUIRED_ERROR;
+com.fireos.sdk.ftve.channelscan.clm.errors.MDSServiceError	method	private MDSServiceError(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.errors.MDSServiceError	method	private MDSServiceError(int responseValue)
+com.fireos.sdk.ftve.channelscan.clm.errors.MDSServiceError	method	private void readFromParcel(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.errors.MDSServiceError	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.errors.MDSServiceError	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.errors.MDSServiceError	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.errors.MDSServiceError	method	public int getResponseValue()
+com.fireos.sdk.ftve.channelscan.clm.errors.MDSServiceError	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.errors.MDSServiceError	method	public static Builder builder()
+com.fireos.sdk.ftve.channelscan.clm.errors.MDSServiceError	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.channelscan.clm.errors.MDSServiceError$Builder	field	private int mResponseValue;
+com.fireos.sdk.ftve.channelscan.clm.errors.MDSServiceError$Builder	method	private Builder()
+com.fireos.sdk.ftve.channelscan.clm.errors.MDSServiceError$Builder	method	public Builder withResponseValue(int responseValue)
+com.fireos.sdk.ftve.channelscan.clm.errors.MDSServiceError$Builder	method	public MDSServiceError build()
+com.fireos.sdk.ftve.channelscan.clm.errors.ServiceError	method	protected ServiceError()
+com.fireos.sdk.ftve.channelscan.clm.errors.ServiceError	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.errors.ServiceError	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.errors.ServiceError	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.errors.ServiceError	method	public int describeContents()
+com.fireos.sdk.ftve.channelscan.clm.errors.ServiceError	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.errors.SoCServiceError	method	private SoCServiceError()
+com.fireos.sdk.ftve.channelscan.clm.errors.SoCServiceError	method	private SoCServiceError(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.errors.SoCServiceError	method	private void readFromParcel(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.errors.SoCServiceError	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.errors.SoCServiceError	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.errors.SoCServiceError	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.errors.SoCServiceError	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.errors.SoCServiceError	method	public static Builder builder()
+com.fireos.sdk.ftve.channelscan.clm.errors.SoCServiceError	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.channelscan.clm.errors.SoCServiceError$Builder	method	private Builder()
+com.fireos.sdk.ftve.channelscan.clm.errors.SoCServiceError$Builder	method	public SoCServiceError build()
+com.fireos.sdk.ftve.channelscan.clm.errors.TIFServiceError	method	private TIFServiceError()
+com.fireos.sdk.ftve.channelscan.clm.errors.TIFServiceError	method	private TIFServiceError(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.errors.TIFServiceError	method	private void readFromParcel(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.errors.TIFServiceError	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.errors.TIFServiceError	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.errors.TIFServiceError	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.errors.TIFServiceError	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.errors.TIFServiceError	method	public static Builder builder()
+com.fireos.sdk.ftve.channelscan.clm.errors.TIFServiceError	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.channelscan.clm.errors.TIFServiceError$Builder	method	private Builder()
+com.fireos.sdk.ftve.channelscan.clm.errors.TIFServiceError$Builder	method	public TIFServiceError build()
+com.fireos.sdk.ftve.channelscan.clm.inputs.CancelInput	method	private CancelInput()
+com.fireos.sdk.ftve.channelscan.clm.inputs.CancelInput	method	private CancelInput(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.inputs.CancelInput	method	private void readFromParcel(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.inputs.CancelInput	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.inputs.CancelInput	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.inputs.CancelInput	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.inputs.CancelInput	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.inputs.CancelInput	method	public static Builder builder()
+com.fireos.sdk.ftve.channelscan.clm.inputs.CancelInput	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.channelscan.clm.inputs.CancelInput$Builder	method	private Builder()
+com.fireos.sdk.ftve.channelscan.clm.inputs.CancelInput$Builder	method	public CancelInput build()
+com.fireos.sdk.ftve.channelscan.clm.inputs.Input	method	protected Input()
+com.fireos.sdk.ftve.channelscan.clm.inputs.Input	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.inputs.Input	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.inputs.Input	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.inputs.Input	method	public int describeContents()
+com.fireos.sdk.ftve.channelscan.clm.inputs.Input	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.inputs.SingleAnswerInput	field	private String mAnswer;
+com.fireos.sdk.ftve.channelscan.clm.inputs.SingleAnswerInput	method	private SingleAnswerInput(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.inputs.SingleAnswerInput	method	private SingleAnswerInput(String answer)
+com.fireos.sdk.ftve.channelscan.clm.inputs.SingleAnswerInput	method	private void readFromParcel(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.inputs.SingleAnswerInput	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.inputs.SingleAnswerInput	method	public String getAnswer()
+com.fireos.sdk.ftve.channelscan.clm.inputs.SingleAnswerInput	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.inputs.SingleAnswerInput	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.inputs.SingleAnswerInput	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.inputs.SingleAnswerInput	method	public static Builder builder()
+com.fireos.sdk.ftve.channelscan.clm.inputs.SingleAnswerInput	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.channelscan.clm.inputs.SingleAnswerInput$Builder	field	private String mAnswer;
+com.fireos.sdk.ftve.channelscan.clm.inputs.SingleAnswerInput$Builder	method	private Builder()
+com.fireos.sdk.ftve.channelscan.clm.inputs.SingleAnswerInput$Builder	method	public Builder withAnswer(String answer)
+com.fireos.sdk.ftve.channelscan.clm.inputs.SingleAnswerInput$Builder	method	public SingleAnswerInput build()
+com.fireos.sdk.ftve.channelscan.clm.inputs.SkipProvisionalScanInput	method	private SkipProvisionalScanInput()
+com.fireos.sdk.ftve.channelscan.clm.inputs.SkipProvisionalScanInput	method	private SkipProvisionalScanInput(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.inputs.SkipProvisionalScanInput	method	private void readFromParcel(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.inputs.SkipProvisionalScanInput	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.inputs.SkipProvisionalScanInput	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.inputs.SkipProvisionalScanInput	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.inputs.SkipProvisionalScanInput	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.inputs.SkipProvisionalScanInput	method	public static Builder builder()
+com.fireos.sdk.ftve.channelscan.clm.inputs.SkipProvisionalScanInput	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.channelscan.clm.inputs.SkipProvisionalScanInput$Builder	method	private Builder()
+com.fireos.sdk.ftve.channelscan.clm.inputs.SkipProvisionalScanInput$Builder	method	public SkipProvisionalScanInput build()
+com.fireos.sdk.ftve.channelscan.clm.inputs.StartInput	method	private StartInput()
+com.fireos.sdk.ftve.channelscan.clm.inputs.StartInput	method	private StartInput(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.inputs.StartInput	method	private void readFromParcel(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.inputs.StartInput	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.inputs.StartInput	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.inputs.StartInput	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.inputs.StartInput	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.inputs.StartInput	method	public static Builder builder()
+com.fireos.sdk.ftve.channelscan.clm.inputs.StartInput	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.channelscan.clm.inputs.StartInput$Builder	method	private Builder()
+com.fireos.sdk.ftve.channelscan.clm.inputs.StartInput$Builder	method	public StartInput build()
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolveLcnConflictsInput	field	private List<UhdResolvedLcnConflict> mConflicts;
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolveLcnConflictsInput	method	private UhdResolveLcnConflictsInput(List<UhdResolvedLcnConflict> conflicts)
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolveLcnConflictsInput	method	private UhdResolveLcnConflictsInput(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolveLcnConflictsInput	method	private void readFromParcel(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolveLcnConflictsInput	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolveLcnConflictsInput	method	public List<UhdResolvedLcnConflict> getConflicts()
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolveLcnConflictsInput	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolveLcnConflictsInput	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolveLcnConflictsInput	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolveLcnConflictsInput	method	public static Builder builder()
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolveLcnConflictsInput	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolveLcnConflictsInput$Builder	field	private List<UhdResolvedLcnConflict> mConflicts;
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolveLcnConflictsInput$Builder	method	private Builder()
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolveLcnConflictsInput$Builder	method	public Builder withConflicts(List<UhdResolvedLcnConflict> conflicts)
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolveLcnConflictsInput$Builder	method	public UhdResolveLcnConflictsInput build()
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolvedLcnConflict	field	private int mChannelId;
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolvedLcnConflict	field	private int mGroupId;
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolvedLcnConflict	method	private UhdResolvedLcnConflict(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolvedLcnConflict	method	private UhdResolvedLcnConflict(int groupId, int channelId)
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolvedLcnConflict	method	private void readFromParcel(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolvedLcnConflict	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolvedLcnConflict	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolvedLcnConflict	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolvedLcnConflict	method	public int describeContents()
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolvedLcnConflict	method	public int getChannelId()
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolvedLcnConflict	method	public int getGroupId()
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolvedLcnConflict	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolvedLcnConflict	method	public static Builder builder()
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolvedLcnConflict	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolvedLcnConflict$Builder	field	private Integer mChannelId;
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolvedLcnConflict$Builder	field	private Integer mGroupId;
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolvedLcnConflict$Builder	method	private Builder()
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolvedLcnConflict$Builder	method	public Builder withChannelId(int channelId)
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolvedLcnConflict$Builder	method	public Builder withGroupId(int groupId)
+com.fireos.sdk.ftve.channelscan.clm.inputs.UhdResolvedLcnConflict$Builder	method	public UhdResolvedLcnConflict build()
+com.fireos.sdk.ftve.channelscan.clm.outputs.CancelCompletionOutput	method	private CancelCompletionOutput(List<ServiceError> serviceErrors)
+com.fireos.sdk.ftve.channelscan.clm.outputs.CancelCompletionOutput	method	private CancelCompletionOutput(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.outputs.CancelCompletionOutput	method	private void readFromParcel(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.outputs.CancelCompletionOutput	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.outputs.CancelCompletionOutput	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.outputs.CancelCompletionOutput	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.outputs.CancelCompletionOutput	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.outputs.CancelCompletionOutput	method	public static Builder builder()
+com.fireos.sdk.ftve.channelscan.clm.outputs.CancelCompletionOutput	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.channelscan.clm.outputs.CancelCompletionOutput$Builder	method	private Builder()
+com.fireos.sdk.ftve.channelscan.clm.outputs.CancelCompletionOutput$Builder	method	public CancelCompletionOutput build()
+com.fireos.sdk.ftve.channelscan.clm.outputs.CompletionOutput	field	private List<ServiceError> mServiceErrors;
+com.fireos.sdk.ftve.channelscan.clm.outputs.CompletionOutput	method	private void readFromParcel(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.outputs.CompletionOutput	method	protected CompletionOutput(List<ServiceError> serviceErrors)
+com.fireos.sdk.ftve.channelscan.clm.outputs.CompletionOutput	method	protected CompletionOutput(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.outputs.CompletionOutput	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.outputs.CompletionOutput	method	public List<ServiceError> getServiceErrors()
+com.fireos.sdk.ftve.channelscan.clm.outputs.CompletionOutput	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.outputs.CompletionOutput	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.outputs.CompletionOutput	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.outputs.CompletionOutput	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.channelscan.clm.outputs.CompletionOutput$Builder	field	protected List<ServiceError> mServiceErrors;
+com.fireos.sdk.ftve.channelscan.clm.outputs.CompletionOutput$Builder	method	protected Builder()
+com.fireos.sdk.ftve.channelscan.clm.outputs.CompletionOutput$Builder	method	public Builder<T> withServiceErrors(List<ServiceError> serviceErrors)
+com.fireos.sdk.ftve.channelscan.clm.outputs.CompletionOutput$Builder	method	public abstract T build();
+com.fireos.sdk.ftve.channelscan.clm.outputs.ErrorCompletionOutput	method	private ErrorCompletionOutput(List<ServiceError> serviceErrors)
+com.fireos.sdk.ftve.channelscan.clm.outputs.ErrorCompletionOutput	method	private ErrorCompletionOutput(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.outputs.ErrorCompletionOutput	method	private void readFromParcel(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.outputs.ErrorCompletionOutput	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.outputs.ErrorCompletionOutput	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.outputs.ErrorCompletionOutput	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.outputs.ErrorCompletionOutput	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.outputs.ErrorCompletionOutput	method	public static Builder builder()
+com.fireos.sdk.ftve.channelscan.clm.outputs.ErrorCompletionOutput	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.channelscan.clm.outputs.ErrorCompletionOutput$Builder	method	private Builder()
+com.fireos.sdk.ftve.channelscan.clm.outputs.ErrorCompletionOutput$Builder	method	public ErrorCompletionOutput build()
+com.fireos.sdk.ftve.channelscan.clm.outputs.MultiChoiceQuestionOutput	field	private List<String> mAnswers;
+com.fireos.sdk.ftve.channelscan.clm.outputs.MultiChoiceQuestionOutput	field	private String mQuestion;
+com.fireos.sdk.ftve.channelscan.clm.outputs.MultiChoiceQuestionOutput	method	private MultiChoiceQuestionOutput(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.outputs.MultiChoiceQuestionOutput	method	private MultiChoiceQuestionOutput(String question, List<String> answers)
+com.fireos.sdk.ftve.channelscan.clm.outputs.MultiChoiceQuestionOutput	method	private void readFromParcel(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.outputs.MultiChoiceQuestionOutput	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.outputs.MultiChoiceQuestionOutput	method	public List<String> getAnswers()
+com.fireos.sdk.ftve.channelscan.clm.outputs.MultiChoiceQuestionOutput	method	public String getQuestion()
+com.fireos.sdk.ftve.channelscan.clm.outputs.MultiChoiceQuestionOutput	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.outputs.MultiChoiceQuestionOutput	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.outputs.MultiChoiceQuestionOutput	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.outputs.MultiChoiceQuestionOutput	method	public static Builder builder()
+com.fireos.sdk.ftve.channelscan.clm.outputs.MultiChoiceQuestionOutput	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.channelscan.clm.outputs.MultiChoiceQuestionOutput$Builder	field	private List<String> mAnswers;
+com.fireos.sdk.ftve.channelscan.clm.outputs.MultiChoiceQuestionOutput$Builder	field	private String mQuestion;
+com.fireos.sdk.ftve.channelscan.clm.outputs.MultiChoiceQuestionOutput$Builder	method	private Builder()
+com.fireos.sdk.ftve.channelscan.clm.outputs.MultiChoiceQuestionOutput$Builder	method	public Builder withAnswers(List<String> answers)
+com.fireos.sdk.ftve.channelscan.clm.outputs.MultiChoiceQuestionOutput$Builder	method	public Builder withQuestion(String question)
+com.fireos.sdk.ftve.channelscan.clm.outputs.MultiChoiceQuestionOutput$Builder	method	public MultiChoiceQuestionOutput build()
+com.fireos.sdk.ftve.channelscan.clm.outputs.Output	method	protected Output()
+com.fireos.sdk.ftve.channelscan.clm.outputs.Output	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.outputs.Output	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.outputs.Output	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.outputs.Output	method	public int describeContents()
+com.fireos.sdk.ftve.channelscan.clm.outputs.Output	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.outputs.PostCodeQuestionOutput	field	private String mMessage;
+com.fireos.sdk.ftve.channelscan.clm.outputs.PostCodeQuestionOutput	method	private PostCodeQuestionOutput(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.outputs.PostCodeQuestionOutput	method	private PostCodeQuestionOutput(String message)
+com.fireos.sdk.ftve.channelscan.clm.outputs.PostCodeQuestionOutput	method	private void readFromParcel(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.outputs.PostCodeQuestionOutput	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.outputs.PostCodeQuestionOutput	method	public String getMessage()
+com.fireos.sdk.ftve.channelscan.clm.outputs.PostCodeQuestionOutput	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.outputs.PostCodeQuestionOutput	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.outputs.PostCodeQuestionOutput	method	public boolean hasMessage()
+com.fireos.sdk.ftve.channelscan.clm.outputs.PostCodeQuestionOutput	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.outputs.PostCodeQuestionOutput	method	public static Builder builder()
+com.fireos.sdk.ftve.channelscan.clm.outputs.PostCodeQuestionOutput	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.channelscan.clm.outputs.PostCodeQuestionOutput$Builder	field	private String mMessage;
+com.fireos.sdk.ftve.channelscan.clm.outputs.PostCodeQuestionOutput$Builder	method	private Builder()
+com.fireos.sdk.ftve.channelscan.clm.outputs.PostCodeQuestionOutput$Builder	method	public Builder withMessage(String message)
+com.fireos.sdk.ftve.channelscan.clm.outputs.PostCodeQuestionOutput$Builder	method	public PostCodeQuestionOutput build()
+com.fireos.sdk.ftve.channelscan.clm.outputs.ProvisionalCompletionOutput	method	private ProvisionalCompletionOutput(List<ServiceError> serviceErrors)
+com.fireos.sdk.ftve.channelscan.clm.outputs.ProvisionalCompletionOutput	method	private ProvisionalCompletionOutput(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.outputs.ProvisionalCompletionOutput	method	private void readFromParcel(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.outputs.ProvisionalCompletionOutput	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.outputs.ProvisionalCompletionOutput	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.outputs.ProvisionalCompletionOutput	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.outputs.ProvisionalCompletionOutput	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.outputs.ProvisionalCompletionOutput	method	public static Builder builder()
+com.fireos.sdk.ftve.channelscan.clm.outputs.ProvisionalCompletionOutput	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.channelscan.clm.outputs.ProvisionalCompletionOutput$Builder	method	private Builder()
+com.fireos.sdk.ftve.channelscan.clm.outputs.ProvisionalCompletionOutput$Builder	method	public ProvisionalCompletionOutput build()
+com.fireos.sdk.ftve.channelscan.clm.outputs.TIFCompletionOutput	method	private TIFCompletionOutput(List<ServiceError> serviceErrors, int numberOfDeletedChannels, int numberOfUpdatedChannels, int numberOfNewChannels)
+com.fireos.sdk.ftve.channelscan.clm.outputs.TIFCompletionOutput	method	private TIFCompletionOutput(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.outputs.TIFCompletionOutput	method	private void readFromParcel(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.outputs.TIFCompletionOutput	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.outputs.TIFCompletionOutput	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.outputs.TIFCompletionOutput	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.outputs.TIFCompletionOutput	method	public int getNumberOfDeletedChannels()
+com.fireos.sdk.ftve.channelscan.clm.outputs.TIFCompletionOutput	method	public int getNumberOfNewChannels()
+com.fireos.sdk.ftve.channelscan.clm.outputs.TIFCompletionOutput	method	public int getNumberOfUpdatedChannels()
+com.fireos.sdk.ftve.channelscan.clm.outputs.TIFCompletionOutput	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.outputs.TIFCompletionOutput	method	public static Builder builder()
+com.fireos.sdk.ftve.channelscan.clm.outputs.TIFCompletionOutput	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.channelscan.clm.outputs.TIFCompletionOutput$Builder	method	private Builder()
+com.fireos.sdk.ftve.channelscan.clm.outputs.TIFCompletionOutput$Builder	method	public Builder withNumberOfDeletedChannels(int numberOfDeletedChannels)
+com.fireos.sdk.ftve.channelscan.clm.outputs.TIFCompletionOutput$Builder	method	public Builder withNumberOfNewChannels(int numberOfNewChannels)
+com.fireos.sdk.ftve.channelscan.clm.outputs.TIFCompletionOutput$Builder	method	public Builder withNumberOfUpdatedChannels(int numberOfUpdatedChannels)
+com.fireos.sdk.ftve.channelscan.clm.outputs.TIFCompletionOutput$Builder	method	public TIFCompletionOutput build()
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictChannel	field	private String mName;
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictChannel	field	private int mId;
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictChannel	method	private UhdLcnConflictChannel(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictChannel	method	private UhdLcnConflictChannel(int id, String name)
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictChannel	method	private void readFromParcel(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictChannel	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictChannel	method	public String getName()
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictChannel	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictChannel	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictChannel	method	public int describeContents()
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictChannel	method	public int getId()
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictChannel	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictChannel	method	public static Builder builder()
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictChannel	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictChannel$Builder	field	private Integer mId;
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictChannel$Builder	field	private String mName;
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictChannel$Builder	method	private Builder()
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictChannel$Builder	method	public Builder withId(int id)
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictChannel$Builder	method	public Builder withName(String name)
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictChannel$Builder	method	public UhdLcnConflictChannel build()
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroup	field	private List<UhdLcnConflictChannel> mChannels;
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroup	field	private int mId;
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroup	field	private int mLcn;
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroup	method	private UhdLcnConflictGroup(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroup	method	private UhdLcnConflictGroup(int id, int lcn, List<UhdLcnConflictChannel> channels)
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroup	method	private void readFromParcel(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroup	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroup	method	public List<UhdLcnConflictChannel> getChannels()
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroup	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroup	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroup	method	public int describeContents()
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroup	method	public int getId()
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroup	method	public int getLcn()
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroup	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroup	method	public static Builder builder()
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroup	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroup$Builder	field	private Integer mId;
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroup$Builder	field	private Integer mLcn;
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroup$Builder	field	private List<UhdLcnConflictChannel> mChannels;
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroup$Builder	method	private Builder()
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroup$Builder	method	public Builder withChannels(List<UhdLcnConflictChannel> channels)
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroup$Builder	method	public Builder withId(int id)
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroup$Builder	method	public Builder withLcn(int lcn)
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroup$Builder	method	public UhdLcnConflictGroup build()
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroupsOutput	field	private List<UhdLcnConflictGroup> mConflicts;
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroupsOutput	method	private UhdLcnConflictGroupsOutput(List<UhdLcnConflictGroup> conflicts)
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroupsOutput	method	private UhdLcnConflictGroupsOutput(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroupsOutput	method	private void readFromParcel(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroupsOutput	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroupsOutput	method	public List<UhdLcnConflictGroup> getConflicts()
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroupsOutput	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroupsOutput	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroupsOutput	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroupsOutput	method	public static Builder builder()
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroupsOutput	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroupsOutput$Builder	field	private List<UhdLcnConflictGroup> mConflicts;
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroupsOutput$Builder	method	private Builder()
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroupsOutput$Builder	method	public Builder withConflicts(List<UhdLcnConflictGroup> conflicts)
+com.fireos.sdk.ftve.channelscan.clm.outputs.UhdLcnConflictGroupsOutput$Builder	method	public UhdLcnConflictGroupsOutput build()
+com.fireos.sdk.ftve.channelscan.clm.reasons.CompletionReason	method	private CompletionReason()
+com.fireos.sdk.ftve.channelscan.clm.reasons.CompletionReason	method	private CompletionReason(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.reasons.CompletionReason	method	private void readFromParcel(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.reasons.CompletionReason	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.reasons.CompletionReason	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.reasons.CompletionReason	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.reasons.CompletionReason	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.reasons.CompletionReason	method	public static Builder builder()
+com.fireos.sdk.ftve.channelscan.clm.reasons.CompletionReason	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.channelscan.clm.reasons.CompletionReason$Builder	method	private Builder()
+com.fireos.sdk.ftve.channelscan.clm.reasons.CompletionReason$Builder	method	public CompletionReason build()
+com.fireos.sdk.ftve.channelscan.clm.reasons.Reason	method	protected Reason()
+com.fireos.sdk.ftve.channelscan.clm.reasons.Reason	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.reasons.Reason	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.reasons.Reason	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.reasons.Reason	method	public int describeContents()
+com.fireos.sdk.ftve.channelscan.clm.reasons.Reason	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.reasons.TimeoutReason	method	private TimeoutReason()
+com.fireos.sdk.ftve.channelscan.clm.reasons.TimeoutReason	method	private TimeoutReason(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.reasons.TimeoutReason	method	private void readFromParcel(Parcel in)
+com.fireos.sdk.ftve.channelscan.clm.reasons.TimeoutReason	method	protected boolean canEqual(Object other)
+com.fireos.sdk.ftve.channelscan.clm.reasons.TimeoutReason	method	public String toString()
+com.fireos.sdk.ftve.channelscan.clm.reasons.TimeoutReason	method	public boolean equals(Object o)
+com.fireos.sdk.ftve.channelscan.clm.reasons.TimeoutReason	method	public int hashCode()
+com.fireos.sdk.ftve.channelscan.clm.reasons.TimeoutReason	method	public static Builder builder()
+com.fireos.sdk.ftve.channelscan.clm.reasons.TimeoutReason	method	public void writeToParcel(Parcel dest, int flags)
+com.fireos.sdk.ftve.channelscan.clm.reasons.TimeoutReason$Builder	method	private Builder()
+com.fireos.sdk.ftve.channelscan.clm.reasons.TimeoutReason$Builder	method	public TimeoutReason build()
+com.fireos.sdk.ftve.channelscan.utils.CountryCodes	method	public static int getCountryFromCountryCode(String countryCode)

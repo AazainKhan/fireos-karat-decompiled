@@ -1,0 +1,64 @@
+class	kind	declaration
+com.amazon.providers.tv.FireTvProvider	field	private b c;
+com.amazon.providers.tv.FireTvProvider	field	private static final String[] b;
+com.amazon.providers.tv.FireTvProvider	field	private static final ThreadLocal<Set<Uri>> a;
+com.amazon.providers.tv.FireTvProvider	method	private static Set<Uri> a()
+com.amazon.providers.tv.FireTvProvider	method	private static g a(@NonNull Uri uri, String str, String[] strArr, int i, @NonNull c cVar)
+com.amazon.providers.tv.FireTvProvider	method	private void a(Uri uri)
+com.amazon.providers.tv.FireTvProvider	method	public ContentProviderResult[] applyBatch(@NonNull ArrayList<ContentProviderOperation> arrayList)
+com.amazon.providers.tv.FireTvProvider	method	public Cursor query(@NonNull Uri uri, @Nullable String[] strArr, @Nullable String str, @Nullable String[] strArr2, @Nullable String str2)
+com.amazon.providers.tv.FireTvProvider	method	public String getType(@NonNull Uri uri)
+com.amazon.providers.tv.FireTvProvider	method	public Uri insert(@NonNull Uri uri, ContentValues contentValues)
+com.amazon.providers.tv.FireTvProvider	method	public boolean onCreate()
+com.amazon.providers.tv.FireTvProvider	method	public int bulkInsert(@NonNull Uri uri, @NonNull ContentValues[] contentValuesArr)
+com.amazon.providers.tv.FireTvProvider	method	public int delete(@NonNull Uri uri, String str, String[] strArr) throws Throwable
+com.amazon.providers.tv.FireTvProvider	method	public int update(@NonNull Uri uri, ContentValues contentValues, String str, String[] strArr)
+com.amazon.providers.tv.R$string	field	public static final int app_name;
+com.amazon.providers.tv.a	field	private final String f;
+com.amazon.providers.tv.a	field	private final String g;
+com.amazon.providers.tv.a	field	private static final UriMatcher e;
+com.amazon.providers.tv.a	field	private static final a[] d;
+com.amazon.providers.tv.a	method	private int b()
+com.amazon.providers.tv.a	method	static String a(@NonNull Uri uri)
+com.amazon.providers.tv.a	method	static a a(int i)
+com.amazon.providers.tv.a	method	static boolean b(int i)
+com.amazon.providers.tv.a	method	static int a()
+com.amazon.providers.tv.a	method	static int b(@NonNull Uri uri)
+com.amazon.providers.tv.b	field	private final SparseArray<c> a;
+com.amazon.providers.tv.b	method	final c a(@NonNull a aVar)
+com.amazon.providers.tv.b	method	public final void onConfigure(@NonNull SQLiteDatabase sQLiteDatabase)
+com.amazon.providers.tv.b	method	public final void onCreate(@NonNull SQLiteDatabase sQLiteDatabase)
+com.amazon.providers.tv.b	method	public final void onOpen(@NonNull SQLiteDatabase sQLiteDatabase)
+com.amazon.providers.tv.b	method	public final void onUpgrade(@NonNull SQLiteDatabase sQLiteDatabase, int i, int i2)
+com.amazon.providers.tv.c	field	final Map<String, String> b;
+com.amazon.providers.tv.c	field	final String a;
+com.amazon.providers.tv.c	field	private final String c;
+com.amazon.providers.tv.c	method	abstract Uri a(long j);
+com.amazon.providers.tv.c	method	abstract void a(@NonNull SQLiteDatabase sQLiteDatabase);
+com.amazon.providers.tv.c	method	abstract void a(@NonNull SQLiteDatabase sQLiteDatabase, int i, int i2);
+com.amazon.providers.tv.c	method	abstract void a(@NonNull Uri uri, @NonNull g gVar);
+com.amazon.providers.tv.c	method	final void b(@NonNull Uri uri, @NonNull g gVar)
+com.amazon.providers.tv.d	field	private static final Map<String, String> c;
+com.amazon.providers.tv.d	method	final Uri a(long j)
+com.amazon.providers.tv.d	method	final void a(@NonNull SQLiteDatabase sQLiteDatabase)
+com.amazon.providers.tv.d	method	final void a(@NonNull SQLiteDatabase sQLiteDatabase, int i, int i2)
+com.amazon.providers.tv.d	method	final void a(@NonNull Uri uri, @NonNull g gVar)
+com.amazon.providers.tv.e	field	private static final Map<String, String> h;
+com.amazon.providers.tv.e	field	private static final String c;
+com.amazon.providers.tv.e	field	private static final String d;
+com.amazon.providers.tv.e	field	private static final String e;
+com.amazon.providers.tv.e	field	private static final String f;
+com.amazon.providers.tv.e	field	private static final String g;
+com.amazon.providers.tv.e	method	final Uri a(long j)
+com.amazon.providers.tv.e	method	final void a(@NonNull Uri uri, @NonNull g gVar)
+com.amazon.providers.tv.e	method	final void a(SQLiteDatabase sQLiteDatabase)
+com.amazon.providers.tv.e	method	final void a(SQLiteDatabase sQLiteDatabase, int i, int i2)
+com.amazon.providers.tv.f	field	private static final Map<String, String> c;
+com.amazon.providers.tv.f	method	final Uri a(@Nullable String str, @NonNull SQLiteDatabase sQLiteDatabase, ContentValues contentValues)
+com.amazon.providers.tv.f	method	final Uri a(long j)
+com.amazon.providers.tv.f	method	final void a(@NonNull Uri uri, @NonNull g gVar)
+com.amazon.providers.tv.f	method	final void a(SQLiteDatabase sQLiteDatabase)
+com.amazon.providers.tv.f	method	final void a(SQLiteDatabase sQLiteDatabase, int i, int i2)
+com.amazon.providers.tv.g	method	final void a(@Nullable String str, @Nullable String... strArr)
+com.amazon.providers.tv.h	method	public static String a(@NonNull String str, @NonNull String str2, @NonNull String str3)
+com.amazon.providers.tv.h	method	public static Uri a(@NonNull Uri uri, String str)

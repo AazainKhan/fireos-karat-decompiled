@@ -1,0 +1,50 @@
+class	kind	declaration
+com.amazon.ftvcapabilitylibrary.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.ftvcapabilitylibrary.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.ftvcapabilitylibrary.BuildConfig	field	public static final String FLAVOR;
+com.amazon.ftvcapabilitylibrary.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.ftvcapabilitylibrary.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.ftvcapabilitylibrary.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.ftvcapabilitylibrary.DeviceCapabilityProvider	field	private final Context context;
+com.amazon.ftvcapabilitylibrary.DeviceCapabilityProvider	field	private final SystemPropertyProvider systemPropertyProvider;
+com.amazon.ftvcapabilitylibrary.DeviceCapabilityProvider	field	private static final String TAG;
+com.amazon.ftvcapabilitylibrary.DeviceCapabilityProvider	method	private CapabilityHandler getCapabilityHandler(Capability capability)
+com.amazon.ftvcapabilitylibrary.DeviceCapabilityProvider	method	public DeviceCapabilityProvider(Context context)
+com.amazon.ftvcapabilitylibrary.DeviceCapabilityProvider	method	public String getDeviceProperty(DeviceProperty property)
+com.amazon.ftvcapabilitylibrary.DeviceCapabilityProvider	method	public boolean isFireTv()
+com.amazon.ftvcapabilitylibrary.DeviceCapabilityProvider	method	public boolean isSupported(Capability capability)
+com.amazon.ftvcapabilitylibrary.constants.Capability	field	private final CapabilityProviderFactory capabilityProviderFactory;
+com.amazon.ftvcapabilitylibrary.constants.Capability	method	public CapabilityProviderFactory getCapabilityProviderFactory()
+com.amazon.ftvcapabilitylibrary.constants.Constants	field	public static final String CAPABILITES_JSON_FILE_PATH;
+com.amazon.ftvcapabilitylibrary.constants.Constants	method	private Constants()
+com.amazon.ftvcapabilitylibrary.constants.DeviceProperty	field	private final String propertyName;
+com.amazon.ftvcapabilitylibrary.constants.DeviceProperty	method	public String getPropertyName()
+com.amazon.ftvcapabilitylibrary.providers.FarFieldCapabilityProvider	field	private final FeatureFlagCapabilityProvider ffFeatureFlagCapability;
+com.amazon.ftvcapabilitylibrary.providers.FarFieldCapabilityProvider	field	private final SystemPropertyCapabilityProvider ffSysPropCapability;
+com.amazon.ftvcapabilitylibrary.providers.FarFieldCapabilityProvider	field	private static final String SYSTEM_FEATURE_FLAG_FAR_FIELD;
+com.amazon.ftvcapabilitylibrary.providers.FarFieldCapabilityProvider	field	private static final String SYSTEM_PROPERTY_FAR_FIELD;
+com.amazon.ftvcapabilitylibrary.providers.FarFieldCapabilityProvider	field	private static final String TAG;
+com.amazon.ftvcapabilitylibrary.providers.FarFieldCapabilityProvider	field	private static final int API_LEVEL_34;
+com.amazon.ftvcapabilitylibrary.providers.FarFieldCapabilityProvider	method	public FarFieldCapabilityProvider(FeatureFlagCapabilityProvider ffFeatureFlagCapability, SystemPropertyCapabilityProvider ffSysPropCapability)
+com.amazon.ftvcapabilitylibrary.providers.FarFieldCapabilityProvider	method	public boolean isSupported(Context context)
+com.amazon.ftvcapabilitylibrary.providers.FarFieldCapabilityProvider	method	public static FarFieldCapabilityProvider create()
+com.amazon.ftvcapabilitylibrary.providers.FeatureFlagCapabilityProvider	field	private final String featureName;
+com.amazon.ftvcapabilitylibrary.providers.FeatureFlagCapabilityProvider	method	public FeatureFlagCapabilityProvider(String featureName)
+com.amazon.ftvcapabilitylibrary.providers.FeatureFlagCapabilityProvider	method	public boolean isSupported(Context context)
+com.amazon.ftvcapabilitylibrary.providers.SystemPropertyCapabilityProvider	field	private final String propertyName;
+com.amazon.ftvcapabilitylibrary.providers.SystemPropertyCapabilityProvider	field	private static final boolean DEFAULT_VALUE;
+com.amazon.ftvcapabilitylibrary.providers.SystemPropertyCapabilityProvider	method	public SystemPropertyCapabilityProvider(String propertyName)
+com.amazon.ftvcapabilitylibrary.providers.SystemPropertyCapabilityProvider	method	public boolean isSupported(Context context)
+com.amazon.ftvcapabilitylibrary.providers.SystemPropertyProvider	method	public String getDeviceProperty(Context context, DeviceProperty property)
+com.amazon.ftvcapabilitylibrary.util.SystemPropertiesWrapper	field	private static final String CLASS_SYSTEM_PROPERTIES;
+com.amazon.ftvcapabilitylibrary.util.SystemPropertiesWrapper	field	private static final String DEFAULT_GET_VALUE;
+com.amazon.ftvcapabilitylibrary.util.SystemPropertiesWrapper	field	private static final String METHOD_GET;
+com.amazon.ftvcapabilitylibrary.util.SystemPropertiesWrapper	field	private static final String METHOD_GET_BOOLEAN;
+com.amazon.ftvcapabilitylibrary.util.SystemPropertiesWrapper	field	private static final String REFLECTIVE_EXCEPTION_MESSAGE_FORMAT;
+com.amazon.ftvcapabilitylibrary.util.SystemPropertiesWrapper	field	private static final String TAG;
+com.amazon.ftvcapabilitylibrary.util.SystemPropertiesWrapper	method	private SystemPropertiesWrapper()
+com.amazon.ftvcapabilitylibrary.util.SystemPropertiesWrapper	method	private static Object invokeSystemPropertiesMethod(String methodName, Class<?>[] paramTypes, Object[] params, Object defaultValue)
+com.amazon.ftvcapabilitylibrary.util.SystemPropertiesWrapper	method	public static String get(String key)
+com.amazon.ftvcapabilitylibrary.util.SystemPropertiesWrapper	method	public static boolean getBoolean(String key, boolean def)
+com.amazon.ftvcapabilitylibrary.util.Util	method	public static String createLogTag(Class<?> cls)
+com.amazon.ftvcapabilitylibrary.util.Util	method	public static String createLogTag(String className)

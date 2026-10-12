@@ -1,0 +1,950 @@
+class	kind	declaration
+com.amazon.client.metrics.AbstractMetricsFactoryImpl	method	public AbstractMetricsFactoryImpl()
+com.amazon.client.metrics.AbstractMetricsFactoryImpl	method	public static String getSystemServiceName()
+com.amazon.client.metrics.AbstractMetricsFactoryImpl	method	public static void setInstance(MetricsFactory metricsFactory)
+com.amazon.client.metrics.AbstractMetricsFactoryImpl	method	public void record(MetricEvent metricEvent, Priority priority, Channel channel)
+com.amazon.client.metrics.AndroidMetricsFactoryImpl	method	private AndroidMetricsFactoryImpl()
+com.amazon.client.metrics.AndroidMetricsFactoryImpl	method	public String getSessionID()
+com.amazon.client.metrics.AndroidMetricsFactoryImpl	method	public static synchronized MetricsFactory getInstance()
+com.amazon.client.metrics.AndroidMetricsFactoryImpl	method	public static synchronized MetricsFactory getInstance(Context context)
+com.amazon.client.metrics.BaseMetricsFactoryImpl	method	public BaseMetricsFactoryImpl()
+com.amazon.client.metrics.BaseMetricsFactoryImpl	method	public ClickStreamMetricsEvent createClickStreamMetricEvent(String str, String str2)
+com.amazon.client.metrics.BaseMetricsFactoryImpl	method	public ClickStreamMetricsEvent createClickStreamMetricEvent(String str, String str2, MetricEventType metricEventType)
+com.amazon.client.metrics.BaseMetricsFactoryImpl	method	public ClickStreamMetricsEvent createClickStreamMetricEvent(String str, String str2, MetricEventType metricEventType, boolean z)
+com.amazon.client.metrics.BaseMetricsFactoryImpl	method	public GenericClickStreamMetricEvent createClickStreamWeblabTrigger(String str, String str2, String str3, String str4)
+com.amazon.client.metrics.BaseMetricsFactoryImpl	method	public MetricEvent createConcurrentMetricEvent(String str, String str2)
+com.amazon.client.metrics.BaseMetricsFactoryImpl	method	public MetricEvent createConcurrentMetricEvent(String str, String str2, MetricEventType metricEventType)
+com.amazon.client.metrics.BaseMetricsFactoryImpl	method	public MetricEvent createConcurrentMetricEvent(String str, String str2, MetricEventType metricEventType, boolean z)
+com.amazon.client.metrics.BaseMetricsFactoryImpl	method	public MetricEvent createMetricEvent(String str, String str2)
+com.amazon.client.metrics.BaseMetricsFactoryImpl	method	public MetricEvent createMetricEvent(String str, String str2, MetricEventType metricEventType)
+com.amazon.client.metrics.BaseMetricsFactoryImpl	method	public MetricEvent createMetricEvent(String str, String str2, MetricEventType metricEventType, boolean z)
+com.amazon.client.metrics.BaseMetricsFactoryImpl	method	public void record(MetricEvent metricEvent)
+com.amazon.client.metrics.Channel	method	public static Channel fromInt(int i)
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public ConcurrentMetricEvent(String str, String str2)
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public ConcurrentMetricEvent(String str, String str2, MetricEventType metricEventType)
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public ConcurrentMetricEvent(String str, String str2, MetricEventType metricEventType, boolean z)
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public List<DataPoint> getAsDataPoints()
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public List<DataPoint> getAsDataPointsAndClear()
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public MetricEventType getMetricEventType()
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public String getNonAnonymousCustomerId()
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public String getNonAnonymousSessionId()
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public String getProgram()
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public String getSource()
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public String toString()
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public boolean getAnonymous()
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public boolean hasDataPoints()
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public void addCounter(String str, double d)
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public void addDataPoint(DataPoint dataPoint) throws MetricsException
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public void addDataPoints(List<DataPoint> list) throws MetricsException
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public void addString(String str, String str2)
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public void addTimer(String str, double d)
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public void addTimer(String str, double d, int i)
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public void appendString(String str, String str2)
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public void clear()
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public void incrementCounter(String str, double d)
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public void removeCounter(String str)
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public void removeString(String str)
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public void removeTimer(String str)
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public void restoreFromMap(Map<String, String> map)
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public void saveToMap(Map<String, String> map)
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public void setAnonymous(boolean z)
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public void setClickstreamUserAgent(String str)
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public void setNonAnonymousCustomerId(String str)
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public void setNonAnonymousSessionId(String str)
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public void startTimer(String str)
+com.amazon.client.metrics.ConcurrentMetricEvent	method	public void stopTimer(String str)
+com.amazon.client.metrics.DataPoint	method	public DataPoint(String str, String str2, int i, DataPointType dataPointType)
+com.amazon.client.metrics.DataPoint	method	public DataPointType getType()
+com.amazon.client.metrics.DataPoint	method	public String getName()
+com.amazon.client.metrics.DataPoint	method	public String getValue()
+com.amazon.client.metrics.DataPoint	method	public String toString()
+com.amazon.client.metrics.DataPoint	method	public boolean equals(Object obj)
+com.amazon.client.metrics.DataPoint	method	public int getSamples()
+com.amazon.client.metrics.DataPoint	method	public int hashCode()
+com.amazon.client.metrics.DataPointType	method	public static DataPointType fromInt(int i)
+com.amazon.client.metrics.LoggerMetricsFactoryImpl	method	private LoggerMetricsFactoryImpl()
+com.amazon.client.metrics.LoggerMetricsFactoryImpl	method	protected boolean shouldRecordMetrics()
+com.amazon.client.metrics.LoggerMetricsFactoryImpl	method	public String getSessionID()
+com.amazon.client.metrics.LoggerMetricsFactoryImpl	method	public void record(MetricEvent metricEvent, Priority priority, Channel channel)
+com.amazon.client.metrics.MetricEventType	method	public static MetricEventType getDefault()
+com.amazon.client.metrics.MetricsException	method	public MetricsException()
+com.amazon.client.metrics.MetricsException	method	public MetricsException(String str)
+com.amazon.client.metrics.MetricsException	method	public MetricsException(String str, Throwable th)
+com.amazon.client.metrics.MetricsException	method	public MetricsException(Throwable th)
+com.amazon.client.metrics.MetricsFactory	field	public static final String SYSTEM_SERVICE_KEY;
+com.amazon.client.metrics.NullClickStreamMetricEvent	method	public Collection<ClickStreamInfo> getClickStreamInfo()
+com.amazon.client.metrics.NullClickStreamMetricEvent	method	public NullClickStreamMetricEvent(String str, String str2)
+com.amazon.client.metrics.NullClickStreamMetricEvent	method	public NullClickStreamMetricEvent(String str, String str2, MetricEventType metricEventType)
+com.amazon.client.metrics.NullClickStreamMetricEvent	method	public String getRequestId()
+com.amazon.client.metrics.NullClickStreamMetricEvent	method	public boolean validateMetricEvent()
+com.amazon.client.metrics.NullClickStreamMetricEvent	method	public void addClickStreamInfo(ClickStreamInfo clickStreamInfo)
+com.amazon.client.metrics.NullClickStreamMetricEvent	method	public void removeClickStreamInfo(Class<? extends ClickStreamInfo> cls)
+com.amazon.client.metrics.NullClickStreamMetricEvent	method	public void setECommerceInfo(ECommerceInfo eCommerceInfo)
+com.amazon.client.metrics.NullClickStreamMetricEvent	method	public void setUsageInfo(UsageInfo usageInfo)
+com.amazon.client.metrics.NullMetricEvent	method	public List<DataPoint> getAsDataPoints()
+com.amazon.client.metrics.NullMetricEvent	method	public MetricEventType getMetricEventType()
+com.amazon.client.metrics.NullMetricEvent	method	public NullMetricEvent(String str, String str2)
+com.amazon.client.metrics.NullMetricEvent	method	public NullMetricEvent(String str, String str2, MetricEventType metricEventType)
+com.amazon.client.metrics.NullMetricEvent	method	public String getNonAnonymousCustomerId()
+com.amazon.client.metrics.NullMetricEvent	method	public String getNonAnonymousSessionId()
+com.amazon.client.metrics.NullMetricEvent	method	public String getProgram()
+com.amazon.client.metrics.NullMetricEvent	method	public String getSource()
+com.amazon.client.metrics.NullMetricEvent	method	public boolean getAnonymous()
+com.amazon.client.metrics.NullMetricEvent	method	public boolean hasDataPoints()
+com.amazon.client.metrics.NullMetricEvent	method	public void addCounter(String str, double d)
+com.amazon.client.metrics.NullMetricEvent	method	public void addDataPoint(DataPoint dataPoint)
+com.amazon.client.metrics.NullMetricEvent	method	public void addDataPoints(List<DataPoint> list)
+com.amazon.client.metrics.NullMetricEvent	method	public void addString(String str, String str2)
+com.amazon.client.metrics.NullMetricEvent	method	public void addTimer(String str, double d)
+com.amazon.client.metrics.NullMetricEvent	method	public void addTimer(String str, double d, int i)
+com.amazon.client.metrics.NullMetricEvent	method	public void appendString(String str, String str2)
+com.amazon.client.metrics.NullMetricEvent	method	public void clear()
+com.amazon.client.metrics.NullMetricEvent	method	public void incrementCounter(String str, double d)
+com.amazon.client.metrics.NullMetricEvent	method	public void removeCounter(String str)
+com.amazon.client.metrics.NullMetricEvent	method	public void removeString(String str)
+com.amazon.client.metrics.NullMetricEvent	method	public void removeTimer(String str)
+com.amazon.client.metrics.NullMetricEvent	method	public void restoreFromMap(Map<String, String> map) throws IllegalArgumentException
+com.amazon.client.metrics.NullMetricEvent	method	public void saveToMap(Map<String, String> map)
+com.amazon.client.metrics.NullMetricEvent	method	public void setAnonymous(boolean z)
+com.amazon.client.metrics.NullMetricEvent	method	public void setClickstreamUserAgent(String str)
+com.amazon.client.metrics.NullMetricEvent	method	public void setNonAnonymousCustomerId(String str)
+com.amazon.client.metrics.NullMetricEvent	method	public void setNonAnonymousSessionId(String str)
+com.amazon.client.metrics.NullMetricEvent	method	public void startTimer(String str)
+com.amazon.client.metrics.NullMetricEvent	method	public void stopTimer(String str)
+com.amazon.client.metrics.NullMetricsFactory	method	public ClickStreamMetricsEvent createClickStreamMetricEvent(String str, String str2)
+com.amazon.client.metrics.NullMetricsFactory	method	public ClickStreamMetricsEvent createClickStreamMetricEvent(String str, String str2, MetricEventType metricEventType)
+com.amazon.client.metrics.NullMetricsFactory	method	public ClickStreamMetricsEvent createClickStreamMetricEvent(String str, String str2, MetricEventType metricEventType, boolean z)
+com.amazon.client.metrics.NullMetricsFactory	method	public ClickStreamMetricsEvent createClickStreamWeblabTrigger(String str, String str2, String str3, String str4)
+com.amazon.client.metrics.NullMetricsFactory	method	public MetricEvent createConcurrentMetricEvent(String str, String str2)
+com.amazon.client.metrics.NullMetricsFactory	method	public MetricEvent createConcurrentMetricEvent(String str, String str2, MetricEventType metricEventType)
+com.amazon.client.metrics.NullMetricsFactory	method	public MetricEvent createConcurrentMetricEvent(String str, String str2, MetricEventType metricEventType, boolean z)
+com.amazon.client.metrics.NullMetricsFactory	method	public MetricEvent createMetricEvent(String str, String str2)
+com.amazon.client.metrics.NullMetricsFactory	method	public MetricEvent createMetricEvent(String str, String str2, MetricEventType metricEventType)
+com.amazon.client.metrics.NullMetricsFactory	method	public MetricEvent createMetricEvent(String str, String str2, MetricEventType metricEventType, boolean z)
+com.amazon.client.metrics.NullMetricsFactory	method	public NullMetricsFactory()
+com.amazon.client.metrics.NullMetricsFactory	method	public String getSessionID()
+com.amazon.client.metrics.NullMetricsFactory	method	public void record(MetricEvent metricEvent)
+com.amazon.client.metrics.NullMetricsFactory	method	public void record(MetricEvent metricEvent, Priority priority)
+com.amazon.client.metrics.NullMetricsFactory	method	public void record(MetricEvent metricEvent, Priority priority, Channel channel)
+com.amazon.client.metrics.PeriodicMetricReporterImpl	method	public MetricEvent createTrackedMetricEvent(String str, String str2)
+com.amazon.client.metrics.PeriodicMetricReporterImpl	method	public MetricEvent createTrackedMetricEvent(String str, String str2, MetricEventType metricEventType)
+com.amazon.client.metrics.PeriodicMetricReporterImpl	method	public MetricEvent getMetricEvent()
+com.amazon.client.metrics.PeriodicMetricReporterImpl	method	public PeriodicMetricReporterImpl(MetricsFactory metricsFactory, String str, String str2)
+com.amazon.client.metrics.PeriodicMetricReporterImpl	method	public PeriodicMetricReporterImpl(MetricsFactory metricsFactory, String str, String str2, MetricEventType metricEventType)
+com.amazon.client.metrics.PeriodicMetricReporterImpl	method	public PeriodicMetricReporterImpl(MetricsFactory metricsFactory, String str, String str2, MetricEventType metricEventType, Priority priority, Channel channel)
+com.amazon.client.metrics.PeriodicMetricReporterImpl	method	public void shutdown()
+com.amazon.client.metrics.PeriodicMetricReporterImpl	method	public void startRecordingPeriodically(long j, TimeUnit timeUnit)
+com.amazon.client.metrics.PeriodicMetricReporterImpl	method	public void stopTrackingMetricEvent(MetricEvent metricEvent)
+com.amazon.client.metrics.Priority	method	public static Priority fromInt(int i)
+com.amazon.client.metrics.clickstream.ASINData	method	public ASINData(String str, long j)
+com.amazon.client.metrics.clickstream.ASINData	method	public List<DataPoint> getDatapoints()
+com.amazon.client.metrics.clickstream.ASINData	method	public String getGroupingASIN()
+com.amazon.client.metrics.clickstream.ASINData	method	public String getProductGLID()
+com.amazon.client.metrics.clickstream.ECommerceInfo	method	public ECommerceInfo isGlanceView(Boolean bool)
+com.amazon.client.metrics.clickstream.ECommerceInfo	method	public ECommerceInfo isPrimeEligibleItem(Boolean bool)
+com.amazon.client.metrics.clickstream.ECommerceInfo	method	public ECommerceInfo(String str, Map<String, String> map)
+com.amazon.client.metrics.clickstream.ECommerceInfo	method	public List<DataPoint> getDataPoints()
+com.amazon.client.metrics.clickstream.EventBasedUsageInfo	method	private EventBasedUsageInfo()
+com.amazon.client.metrics.clickstream.EventBasedUsageInfo	method	public List<DataPoint> getDataPoints()
+com.amazon.client.metrics.clickstream.EventBasedUsageInfo$EventBasedUsageInfoBuilder	method	private EventBasedUsageInfoBuilder()
+com.amazon.client.metrics.clickstream.EventBasedUsageInfo$EventBasedUsageInfoBuilder	method	public EventBasedUsageInfo build()
+com.amazon.client.metrics.clickstream.EventBasedUsageInfo$EventBasedUsageInfoBuilder	method	public EventBasedUsageInfoBuilder withAction(ACTION action)
+com.amazon.client.metrics.clickstream.EventBasedUsageInfo$EventBasedUsageInfoBuilder	method	public EventBasedUsageInfoBuilder withKeys(Map<String, String> map)
+com.amazon.client.metrics.clickstream.EventBasedUsageInfo$EventBasedUsageInfoBuilder	method	public EventBasedUsageInfoBuilder withPrefix(String str)
+com.amazon.client.metrics.clickstream.EventBasedUsageInfo$EventBasedUsageInfoBuilder	method	public EventBasedUsageInfoBuilder withSuffix(String str)
+com.amazon.client.metrics.clickstream.EventBasedUsageInfo$EventBasedUsageInfoBuilder	method	public EventBasedUsageInfoBuilder withType(String str)
+com.amazon.client.metrics.clickstream.UsageInfo	method	public ASINData getASINData()
+com.amazon.client.metrics.clickstream.UsageInfo	method	public List<DataPoint> getDataPoints()
+com.amazon.client.metrics.clickstream.UsageInfo	method	public String getHitType()
+com.amazon.client.metrics.clickstream.UsageInfo	method	public String getPageAction()
+com.amazon.client.metrics.clickstream.UsageInfo	method	public String getPageAssemblyType()
+com.amazon.client.metrics.clickstream.UsageInfo	method	public String getPageType()
+com.amazon.client.metrics.clickstream.UsageInfo	method	public String getPageTypeID()
+com.amazon.client.metrics.clickstream.UsageInfo	method	public String getSiteVariant()
+com.amazon.client.metrics.clickstream.UsageInfo	method	public String getSubPageType()
+com.amazon.client.metrics.clickstream.UsageInfo	method	public String getTabID()
+com.amazon.client.metrics.clickstream.UsageInfo	method	public String getTeamName()
+com.amazon.client.metrics.clickstream.UsageInfo	method	public UsageInfo setASINData(String str, Long l)
+com.amazon.client.metrics.clickstream.UsageInfo	method	public UsageInfo setIsCustomerHit(boolean z)
+com.amazon.client.metrics.clickstream.UsageInfo	method	public UsageInfo setIsPrimeCustomer(boolean z)
+com.amazon.client.metrics.clickstream.UsageInfo	method	public UsageInfo setPageAction(String str)
+com.amazon.client.metrics.clickstream.UsageInfo	method	public UsageInfo setPageAssemblyType(String str)
+com.amazon.client.metrics.clickstream.UsageInfo	method	public UsageInfo setPageTypeID(String str)
+com.amazon.client.metrics.clickstream.UsageInfo	method	public UsageInfo setSubPageType(String str)
+com.amazon.client.metrics.clickstream.UsageInfo	method	public UsageInfo setTabID(String str)
+com.amazon.client.metrics.clickstream.UsageInfo	method	public UsageInfo(String str, String str2, String str3, String str4)
+com.amazon.client.metrics.clickstream.UsageInfo	method	public boolean isCustomerHit()
+com.amazon.client.metrics.clickstream.UsageInfo	method	public boolean isPrimeCustomer()
+com.amazon.client.metrics.clickstream.WeblabInfo	method	public List<DataPoint> getDataPoints()
+com.amazon.client.metrics.clickstream.WeblabInfo	method	public WeblabInfo(String str, String str2)
+com.amazon.dcp.common.resources.R	method	private R()
+com.amazon.dcp.common.resources.R$drawable	field	public static final int ic_download_amazon_active;
+com.amazon.dcp.common.resources.R$drawable	field	public static final int ic_download_amazon_dark;
+com.amazon.dcp.common.resources.R$drawable	field	public static final int ic_download_amazon_light;
+com.amazon.dcp.common.resources.R$drawable	field	public static final int ic_settings_amazon_active;
+com.amazon.dcp.common.resources.R$drawable	field	public static final int ic_settings_amazon_dark;
+com.amazon.dcp.common.resources.R$drawable	field	public static final int ic_settings_amazon_light;
+com.amazon.dcp.common.resources.R$drawable	field	public static final int icon;
+com.amazon.dcp.common.resources.R$drawable	method	private drawable()
+com.amazon.device.sync.AbstractSyncableDataset	method	protected AbstractSyncableDataset(SyncableDataStore syncableDataStore)
+com.amazon.device.sync.AbstractSyncableDataset	method	protected abstract Future<Boolean> doDownload();
+com.amazon.device.sync.AbstractSyncableDataset	method	protected abstract Future<Boolean> doSynchronize();
+com.amazon.device.sync.AbstractSyncableDataset	method	protected abstract Future<Boolean> doUpload();
+com.amazon.device.sync.AbstractSyncableDataset	method	protected abstract Set<Conflict<E>> doGetConflicts();
+com.amazon.device.sync.AbstractSyncableDataset	method	protected abstract boolean doHasConflicts();
+com.amazon.device.sync.AbstractSyncableDataset	method	protected abstract void doClose();
+com.amazon.device.sync.AbstractSyncableDataset	method	protected abstract void doFetch();
+com.amazon.device.sync.AbstractSyncableDataset	method	protected abstract void doFlush();
+com.amazon.device.sync.AbstractSyncableDataset	method	protected abstract void doReset();
+com.amazon.device.sync.AbstractSyncableDataset	method	protected void checkNotClosed()
+com.amazon.device.sync.AbstractSyncableDataset	method	public Future<Boolean> download()
+com.amazon.device.sync.AbstractSyncableDataset	method	public Future<Boolean> synchronize()
+com.amazon.device.sync.AbstractSyncableDataset	method	public Future<Boolean> upload()
+com.amazon.device.sync.AbstractSyncableDataset	method	public Set<Conflict<E>> getConflicts()
+com.amazon.device.sync.AbstractSyncableDataset	method	public String getAccountId()
+com.amazon.device.sync.AbstractSyncableDataset	method	public String getNamespace()
+com.amazon.device.sync.AbstractSyncableDataset	method	public boolean hasConflicts()
+com.amazon.device.sync.AbstractSyncableDataset	method	public boolean isClosed()
+com.amazon.device.sync.AbstractSyncableDataset	method	public void close()
+com.amazon.device.sync.AbstractSyncableDataset	method	public void fetch() throws SyncableDeletedException
+com.amazon.device.sync.AbstractSyncableDataset	method	public void flush() throws SyncableDeletedException
+com.amazon.device.sync.AbstractSyncableDataset	method	public void reset() throws SyncableDeletedException
+com.amazon.device.sync.BackgroundSyncer	method	public BackgroundSyncer()
+com.amazon.device.sync.BackgroundSyncer	method	public void onReceive(Context context, Intent intent)
+com.amazon.device.sync.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.device.sync.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.device.sync.BuildConfig	field	public static final String FLAVOR;
+com.amazon.device.sync.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.device.sync.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.device.sync.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.device.sync.Change	method	private Change()
+com.amazon.device.sync.Change	method	public T getCurrent()
+com.amazon.device.sync.Change	method	public T getPrevious()
+com.amazon.device.sync.Change	method	public Type getType()
+com.amazon.device.sync.Change	method	public boolean equals(Object obj)
+com.amazon.device.sync.Change	method	public int hashCode()
+com.amazon.device.sync.Conflict	method	private Conflict()
+com.amazon.device.sync.Conflict	method	public T getCloud()
+com.amazon.device.sync.Conflict	method	public T getLocal()
+com.amazon.device.sync.Conflict	method	public boolean equals(Object obj)
+com.amazon.device.sync.Conflict	method	public boolean isCloudDeleted()
+com.amazon.device.sync.Conflict	method	public boolean isLocalDeleted()
+com.amazon.device.sync.Conflict	method	public int hashCode()
+com.amazon.device.sync.Notifications	method	private Notifications()
+com.amazon.device.sync.Notifications	method	public static Subscription subscribeToNamespace(String str, SyncableDatasetListener<SyncableDatasetInfo> syncableDatasetListener)
+com.amazon.device.sync.Notifications	method	public static Subscription subscribeToSyncableStringMap(String str, String str2, SyncableDatasetListener<Map.Entry<String, String>> syncableDatasetListener)
+com.amazon.device.sync.Notifications	method	public static void clear()
+com.amazon.device.sync.R$drawable	field	public static final int ic_download_amazon_active;
+com.amazon.device.sync.R$drawable	field	public static final int ic_download_amazon_dark;
+com.amazon.device.sync.R$drawable	field	public static final int ic_download_amazon_light;
+com.amazon.device.sync.R$drawable	field	public static final int ic_settings_amazon_active;
+com.amazon.device.sync.R$drawable	field	public static final int ic_settings_amazon_dark;
+com.amazon.device.sync.R$drawable	field	public static final int ic_settings_amazon_light;
+com.amazon.device.sync.R$drawable	field	public static final int icon;
+com.amazon.device.sync.R$id	field	public static final int accountEntry;
+com.amazon.device.sync.R$id	field	public static final int accountText;
+com.amazon.device.sync.R$id	field	public static final int accountsList;
+com.amazon.device.sync.R$id	field	public static final int actionsList;
+com.amazon.device.sync.R$id	field	public static final int addButton;
+com.amazon.device.sync.R$id	field	public static final int addDatasetButton;
+com.amazon.device.sync.R$id	field	public static final int addNamespace;
+com.amazon.device.sync.R$id	field	public static final int addRecordButton;
+com.amazon.device.sync.R$id	field	public static final int clearRecordListButton;
+com.amazon.device.sync.R$id	field	public static final int createButton;
+com.amazon.device.sync.R$id	field	public static final int dataCreationStatusLabel;
+com.amazon.device.sync.R$id	field	public static final int dataCreationStatusText;
+com.amazon.device.sync.R$id	field	public static final int dataCreationTitle;
+com.amazon.device.sync.R$id	field	public static final int datasetEntryText;
+com.amazon.device.sync.R$id	field	public static final int datasetName;
+com.amazon.device.sync.R$id	field	public static final int datasetNameTextView;
+com.amazon.device.sync.R$id	field	public static final int datasets;
+com.amazon.device.sync.R$id	field	public static final int datasetsList;
+com.amazon.device.sync.R$id	field	public static final int datasetsStatusText;
+com.amazon.device.sync.R$id	field	public static final int datasetsStatusTextLabel;
+com.amazon.device.sync.R$id	field	public static final int enterNamespaceLabelId;
+com.amazon.device.sync.R$id	field	public static final int invalidInputText;
+com.amazon.device.sync.R$id	field	public static final int invalidNamespaceLabelId;
+com.amazon.device.sync.R$id	field	public static final int keyLabel;
+com.amazon.device.sync.R$id	field	public static final int namespaceEntry;
+com.amazon.device.sync.R$id	field	public static final int namespaceText;
+com.amazon.device.sync.R$id	field	public static final int namespacesList;
+com.amazon.device.sync.R$id	field	public static final int newRecordList;
+com.amazon.device.sync.R$id	field	public static final int newRecordListLabel;
+com.amazon.device.sync.R$id	field	public static final int recordEntryText;
+com.amazon.device.sync.R$id	field	public static final int recordKey;
+com.amazon.device.sync.R$id	field	public static final int recordList;
+com.amazon.device.sync.R$id	field	public static final int recordValue;
+com.amazon.device.sync.R$id	field	public static final int singleDatasetStatusText;
+com.amazon.device.sync.R$id	field	public static final int singleDatasetStatusTextLabel;
+com.amazon.device.sync.R$id	field	public static final int submitButton;
+com.amazon.device.sync.R$id	field	public static final int syncButton;
+com.amazon.device.sync.R$id	field	public static final int syncDatasetButton;
+com.amazon.device.sync.R$id	field	public static final int valueLabel;
+com.amazon.device.sync.R$layout	field	public static final int account_entry;
+com.amazon.device.sync.R$layout	field	public static final int action_dialog;
+com.amazon.device.sync.R$layout	field	public static final int dataset_adder;
+com.amazon.device.sync.R$layout	field	public static final int dataset_entry;
+com.amazon.device.sync.R$layout	field	public static final int dataset_view;
+com.amazon.device.sync.R$layout	field	public static final int datasetslist_view;
+com.amazon.device.sync.R$layout	field	public static final int main;
+com.amazon.device.sync.R$layout	field	public static final int namespace_dialog;
+com.amazon.device.sync.R$layout	field	public static final int namespace_entry;
+com.amazon.device.sync.R$layout	field	public static final int namespaces_list;
+com.amazon.device.sync.R$layout	field	public static final int record_adder;
+com.amazon.device.sync.R$layout	field	public static final int recordlist_entry;
+com.amazon.device.sync.R$string	field	public static final int accounts;
+com.amazon.device.sync.R$string	field	public static final int add_dataset;
+com.amazon.device.sync.R$string	field	public static final int add_namespaces;
+com.amazon.device.sync.R$string	field	public static final int add_record;
+com.amazon.device.sync.R$string	field	public static final int add_record_button_text;
+com.amazon.device.sync.R$string	field	public static final int back;
+com.amazon.device.sync.R$string	field	public static final int choose_dataset_action;
+com.amazon.device.sync.R$string	field	public static final int clear_records;
+com.amazon.device.sync.R$string	field	public static final int create;
+com.amazon.device.sync.R$string	field	public static final int create_dataset;
+com.amazon.device.sync.R$string	field	public static final int data_creation_status_label;
+com.amazon.device.sync.R$string	field	public static final int dataset_name;
+com.amazon.device.sync.R$string	field	public static final int datasets;
+com.amazon.device.sync.R$string	field	public static final int enter_namespace_text;
+com.amazon.device.sync.R$string	field	public static final int invalid_input_text;
+com.amazon.device.sync.R$string	field	public static final int invalid_namespace_text;
+com.amazon.device.sync.R$string	field	public static final int load_storage;
+com.amazon.device.sync.R$string	field	public static final int namespaces;
+com.amazon.device.sync.R$string	field	public static final int record_key;
+com.amazon.device.sync.R$string	field	public static final int record_list_label;
+com.amazon.device.sync.R$string	field	public static final int record_value;
+com.amazon.device.sync.R$string	field	public static final int submit;
+com.amazon.device.sync.R$string	field	public static final int sync_all_datasets;
+com.amazon.device.sync.R$string	field	public static final int sync_dataset;
+com.amazon.device.sync.R$string	field	public static final int title_activity_main;
+com.amazon.device.sync.R$xml	field	public static final int dcp_class_configuration;
+com.amazon.device.sync.SyncApplication	field	private static final SyncInit SYNC_INIT;
+com.amazon.device.sync.SyncApplication	method	public void onCreate()
+com.amazon.device.sync.SyncInit	method	public SyncInit()
+com.amazon.device.sync.SyncInit	method	public void onCreate(Application application)
+com.amazon.device.sync.SyncableDataDirectory	method	private SyncableDataDirectory()
+com.amazon.device.sync.SyncableDataDirectory	method	protected Future<Boolean> doDownload()
+com.amazon.device.sync.SyncableDataDirectory	method	protected Future<Boolean> doSynchronize()
+com.amazon.device.sync.SyncableDataDirectory	method	protected Future<Boolean> doUpload()
+com.amazon.device.sync.SyncableDataDirectory	method	protected Set<Conflict<SyncableDatasetInfo>> doGetConflicts()
+com.amazon.device.sync.SyncableDataDirectory	method	protected boolean doHasConflicts()
+com.amazon.device.sync.SyncableDataDirectory	method	protected void doClose()
+com.amazon.device.sync.SyncableDataDirectory	method	protected void doFetch()
+com.amazon.device.sync.SyncableDataDirectory	method	protected void doFlush()
+com.amazon.device.sync.SyncableDataDirectory	method	protected void doReset()
+com.amazon.device.sync.SyncableDataDirectory	method	public DatasetType getType()
+com.amazon.device.sync.SyncableDataDirectory	method	public Iterator<SyncableDatasetInfo> iterator()
+com.amazon.device.sync.SyncableDataDirectory	method	public String getName()
+com.amazon.device.sync.SyncableDataDirectory	method	public boolean contains(String str)
+com.amazon.device.sync.SyncableDataDirectory	method	public boolean containsAll(Collection<? extends String> collection)
+com.amazon.device.sync.SyncableDataDirectory	method	public boolean isEmpty()
+com.amazon.device.sync.SyncableDataStore	field	public static final int MAX_NAMESPACE_LENGTH;
+com.amazon.device.sync.SyncableDataStore	method	private SyncableDataStore()
+com.amazon.device.sync.SyncableDataStore	method	public Future<Boolean> download()
+com.amazon.device.sync.SyncableDataStore	method	public Future<Boolean> download(DatasetType datasetType, String str)
+com.amazon.device.sync.SyncableDataStore	method	public Future<Boolean> synchronize()
+com.amazon.device.sync.SyncableDataStore	method	public Future<Boolean> synchronize(DatasetType datasetType, String str)
+com.amazon.device.sync.SyncableDataStore	method	public Future<Boolean> upload()
+com.amazon.device.sync.SyncableDataStore	method	public Future<Boolean> upload(DatasetType datasetType, String str)
+com.amazon.device.sync.SyncableDataStore	method	public String getAccountId()
+com.amazon.device.sync.SyncableDataStore	method	public String getNamespace()
+com.amazon.device.sync.SyncableDataStore	method	public Subscription subscribeToDirectory(SyncableDatasetListener<SyncableDatasetInfo> syncableDatasetListener)
+com.amazon.device.sync.SyncableDataStore	method	public Subscription subscribeToSyncableStringMap(String str, SyncableDatasetListener<Map.Entry<String, String>> syncableDatasetListener)
+com.amazon.device.sync.SyncableDataStore	method	public final SyncableDataDirectory openDirectory()
+com.amazon.device.sync.SyncableDataStore	method	public final SyncableStringMap openOrCreateStringMap(String str)
+com.amazon.device.sync.SyncableDataStore	method	public static SyncableDataStore getInstance(Context context, String str)
+com.amazon.device.sync.SyncableDataStore	method	public static SyncableDataStore getInstance(Context context, String str, String str2)
+com.amazon.device.sync.SyncableDataStore	method	public static void clearLocalStorage(Context context) throws IOException
+com.amazon.device.sync.SyncableDataStore	method	public static void clearLocalStorage(Context context, String str) throws IOException
+com.amazon.device.sync.SyncableDataStore	method	public void deleteMap(String str)
+com.amazon.device.sync.SyncableDataStore	method	public void deleteMaps(Set<String> set)
+com.amazon.device.sync.SyncableDataset	field	public static final int MAX_NAME_LENGTH;
+com.amazon.device.sync.SyncableDatasetInfo	method	private SyncableDatasetInfo()
+com.amazon.device.sync.SyncableDatasetInfo	method	public DatasetType getType()
+com.amazon.device.sync.SyncableDatasetInfo	method	public String getName()
+com.amazon.device.sync.SyncableDatasetInfo	method	public String getNamespace()
+com.amazon.device.sync.SyncableDatasetInfo	method	public String toString()
+com.amazon.device.sync.SyncableDatasetInfo	method	public boolean equals(Object obj)
+com.amazon.device.sync.SyncableDatasetInfo	method	public int hashCode()
+com.amazon.device.sync.SyncableDeletedException	method	public SyncableDeletedException(String str)
+com.amazon.device.sync.SyncableStringMap	field	public static final int MAX_KEY_LENGTH;
+com.amazon.device.sync.SyncableStringMap	field	public static final int MAX_VALUE_LENGTH;
+com.amazon.device.sync.SyncableStringMap	method	private SyncableStringMap()
+com.amazon.device.sync.SyncableStringMap	method	protected Future<Boolean> doDownload()
+com.amazon.device.sync.SyncableStringMap	method	protected Future<Boolean> doSynchronize()
+com.amazon.device.sync.SyncableStringMap	method	protected Future<Boolean> doUpload()
+com.amazon.device.sync.SyncableStringMap	method	protected Set<Conflict<Map.Entry<String, String>>> doGetConflicts()
+com.amazon.device.sync.SyncableStringMap	method	protected boolean doHasConflicts()
+com.amazon.device.sync.SyncableStringMap	method	protected void doClose()
+com.amazon.device.sync.SyncableStringMap	method	protected void doFetch()
+com.amazon.device.sync.SyncableStringMap	method	protected void doFlush()
+com.amazon.device.sync.SyncableStringMap	method	protected void doReset()
+com.amazon.device.sync.SyncableStringMap	method	public Collection<String> values()
+com.amazon.device.sync.SyncableStringMap	method	public DatasetType getType()
+com.amazon.device.sync.SyncableStringMap	method	public Set<Map.Entry<String, String>> entrySet()
+com.amazon.device.sync.SyncableStringMap	method	public Set<String> keySet()
+com.amazon.device.sync.SyncableStringMap	method	public String get(Object obj)
+com.amazon.device.sync.SyncableStringMap	method	public String getName()
+com.amazon.device.sync.SyncableStringMap	method	public String put(String str, String str2)
+com.amazon.device.sync.SyncableStringMap	method	public String putIfAbsent(String str, String str2)
+com.amazon.device.sync.SyncableStringMap	method	public String remove(Object obj)
+com.amazon.device.sync.SyncableStringMap	method	public String replace(String str, String str2)
+com.amazon.device.sync.SyncableStringMap	method	public boolean containsEntry(Map.Entry<?, ?> entry)
+com.amazon.device.sync.SyncableStringMap	method	public boolean containsKey(Object obj)
+com.amazon.device.sync.SyncableStringMap	method	public boolean containsValue(Object obj)
+com.amazon.device.sync.SyncableStringMap	method	public boolean equals(Object obj)
+com.amazon.device.sync.SyncableStringMap	method	public boolean isEmpty()
+com.amazon.device.sync.SyncableStringMap	method	public boolean remove(Object obj, Object obj2)
+com.amazon.device.sync.SyncableStringMap	method	public boolean replace(String str, String str2, String str3)
+com.amazon.device.sync.SyncableStringMap	method	public int hashCode()
+com.amazon.device.sync.SyncableStringMap	method	public int size()
+com.amazon.device.sync.SyncableStringMap	method	public void clear()
+com.amazon.device.sync.SyncableStringMap	method	public void putAll(Map<? extends String, ? extends String> map)
+com.amazon.device.sync.dx.AccountDeregisteredReceiver	method	public void onReceive(Context context, Intent intent)
+com.amazon.device.sync.dx.AccountDeregisteredReceiverService	method	protected void onHandleIntent(Intent intent)
+com.amazon.device.sync.dx.AccountDeregisteredReceiverService	method	public AccountDeregisteredReceiverService()
+com.amazon.device.sync.dx.AccountsActivity	field	private ListView mAccountsList;
+com.amazon.device.sync.dx.AccountsActivity	field	public static final String NO_ACTIVE_ACCOUNT;
+com.amazon.device.sync.dx.AccountsActivity	method	private void setUpAccountsList()
+com.amazon.device.sync.dx.AccountsActivity	method	public void launchNamespacesView(String str)
+com.amazon.device.sync.dx.AccountsActivity	method	public void onCreate(Bundle bundle)
+com.amazon.device.sync.dx.AccountsActivity	method	public void onResume()
+com.amazon.device.sync.dx.AccountsActivity	method	public void populateAccountsList()
+com.amazon.device.sync.dx.DatasetActivity	field	private ArrayAdapter<Map.Entry<String, String>> mRecordsAdapter;
+com.amazon.device.sync.dx.DatasetActivity	field	private ListView mRecordListView;
+com.amazon.device.sync.dx.DatasetActivity	field	private String mAccount;
+com.amazon.device.sync.dx.DatasetActivity	field	private String mDatasetName;
+com.amazon.device.sync.dx.DatasetActivity	field	private String mNamespace;
+com.amazon.device.sync.dx.DatasetActivity	field	private Subscription mDatasetSubscription;
+com.amazon.device.sync.dx.DatasetActivity	field	private Subscription mNamespaceSubscription;
+com.amazon.device.sync.dx.DatasetActivity	field	private SyncableDataStore mSyncableDatastore;
+com.amazon.device.sync.dx.DatasetActivity	field	private TextView mDatasetNameView;
+com.amazon.device.sync.dx.DatasetActivity	field	private TextView mStatusView;
+com.amazon.device.sync.dx.DatasetActivity	field	private final ExecutorService mExecutorService;
+com.amazon.device.sync.dx.DatasetActivity	field	private static final String DELETE_RECORD;
+com.amazon.device.sync.dx.DatasetActivity	field	private static final String MODIFY_RECORD;
+com.amazon.device.sync.dx.DatasetActivity	field	private static final String[] RECORD_ACTIONS;
+com.amazon.device.sync.dx.DatasetActivity	field	static final String EXTRA_DATASET_NAME_KEY;
+com.amazon.device.sync.dx.DatasetActivity	method	private Intent createBasicRecordAdderIntent()
+com.amazon.device.sync.dx.DatasetActivity	method	private void initializeUI()
+com.amazon.device.sync.dx.DatasetActivity	method	private void setDatasetName()
+com.amazon.device.sync.dx.DatasetActivity	method	private void setUpAddRecordButton()
+com.amazon.device.sync.dx.DatasetActivity	method	private void setUpRecordList()
+com.amazon.device.sync.dx.DatasetActivity	method	private void setUpSubscription()
+com.amazon.device.sync.dx.DatasetActivity	method	public void deleteRecord(String str)
+com.amazon.device.sync.dx.DatasetActivity	method	public void fetchDatasets()
+com.amazon.device.sync.dx.DatasetActivity	method	public void launchRecordAdderActivity()
+com.amazon.device.sync.dx.DatasetActivity	method	public void launchRecordAdderActivity(String str)
+com.amazon.device.sync.dx.DatasetActivity	method	public void onCreate(Bundle bundle)
+com.amazon.device.sync.dx.DatasetActivity	method	public void onDestroy()
+com.amazon.device.sync.dx.DatasetActivity	method	public void onResume()
+com.amazon.device.sync.dx.DatasetActivity	method	public void showOptions(final String str)
+com.amazon.device.sync.dx.DatasetActivity	method	public void syncDataset(View view)
+com.amazon.device.sync.dx.DatasetActivity$MapAsyncTask	field	private String mName;
+com.amazon.device.sync.dx.DatasetActivity$MapAsyncTask	method	abstract void doUpdate(SyncableStringMap syncableStringMap, String[] strArr);
+com.amazon.device.sync.dx.DatasetActivity$MapAsyncTask	method	private List<Map.Entry<String, String>> getEntries(SyncableStringMap syncableStringMap)
+com.amazon.device.sync.dx.DatasetActivity$MapAsyncTask	method	protected MapAsyncTask(String str)
+com.amazon.device.sync.dx.DatasetActivity$MapAsyncTask	method	protected void onPreExecute()
+com.amazon.device.sync.dx.DatasetActivity$MapAsyncTask	method	public List<Map.Entry<String, String>> doInBackground(String... strArr) throws Throwable
+com.amazon.device.sync.dx.DatasetActivity$MapAsyncTask	method	public void onPostExecute(List<Map.Entry<String, String>> list)
+com.amazon.device.sync.dx.DatasetAdderActivity	field	private Button mDoneButton;
+com.amazon.device.sync.dx.DatasetAdderActivity	field	private EditText mDatasetNameText;
+com.amazon.device.sync.dx.DatasetAdderActivity	field	private String mAccount;
+com.amazon.device.sync.dx.DatasetAdderActivity	field	private String mNamespace;
+com.amazon.device.sync.dx.DatasetAdderActivity	field	private TextView mInvalidDatasetNameText;
+com.amazon.device.sync.dx.DatasetAdderActivity	method	private void initializeUI()
+com.amazon.device.sync.dx.DatasetAdderActivity	method	private void setDataCreationTitle()
+com.amazon.device.sync.dx.DatasetAdderActivity	method	private void setUpCreateDatasetButton()
+com.amazon.device.sync.dx.DatasetAdderActivity	method	public void clearInput()
+com.amazon.device.sync.dx.DatasetAdderActivity	method	public void createDataset()
+com.amazon.device.sync.dx.DatasetAdderActivity	method	public void onCreate(Bundle bundle)
+com.amazon.device.sync.dx.DatasetsActivity	field	private ArrayAdapter<String> mDatasetsAdapter;
+com.amazon.device.sync.dx.DatasetsActivity	field	private Button mAddButton;
+com.amazon.device.sync.dx.DatasetsActivity	field	private ListView mDatasetsListView;
+com.amazon.device.sync.dx.DatasetsActivity	field	private String mAccount;
+com.amazon.device.sync.dx.DatasetsActivity	field	private String mNamespace;
+com.amazon.device.sync.dx.DatasetsActivity	field	private Subscription mSubscription;
+com.amazon.device.sync.dx.DatasetsActivity	field	private SyncableDataStore mDataStore;
+com.amazon.device.sync.dx.DatasetsActivity	field	private TextView mStatusView;
+com.amazon.device.sync.dx.DatasetsActivity	field	private final ExecutorService mExecutorService;
+com.amazon.device.sync.dx.DatasetsActivity	field	private static final String DELETE_DATASET;
+com.amazon.device.sync.dx.DatasetsActivity	field	private static final String VIEW_RECORDS;
+com.amazon.device.sync.dx.DatasetsActivity	field	private static final String[] DATASET_ACTIONS;
+com.amazon.device.sync.dx.DatasetsActivity	field	static final String EXTRA_ACCOUNT_KEY;
+com.amazon.device.sync.dx.DatasetsActivity	field	static final String EXTRA_NAMESPACE_KEY;
+com.amazon.device.sync.dx.DatasetsActivity	method	private void initializeUI()
+com.amazon.device.sync.dx.DatasetsActivity	method	private void setUpAddDatasetButton()
+com.amazon.device.sync.dx.DatasetsActivity	method	private void setUpDatasetList()
+com.amazon.device.sync.dx.DatasetsActivity	method	private void setUpDatasetTitle()
+com.amazon.device.sync.dx.DatasetsActivity	method	private void setUpSubscription()
+com.amazon.device.sync.dx.DatasetsActivity	method	public void deleteDataset(String str)
+com.amazon.device.sync.dx.DatasetsActivity	method	public void fetchDatasets()
+com.amazon.device.sync.dx.DatasetsActivity	method	public void launchDatasetAdderActivity()
+com.amazon.device.sync.dx.DatasetsActivity	method	public void launchDatasetView(String str)
+com.amazon.device.sync.dx.DatasetsActivity	method	public void onCreate(Bundle bundle)
+com.amazon.device.sync.dx.DatasetsActivity	method	public void onDestroy()
+com.amazon.device.sync.dx.DatasetsActivity	method	public void onResume()
+com.amazon.device.sync.dx.DatasetsActivity	method	public void showOptions(final String str)
+com.amazon.device.sync.dx.DatasetsActivity	method	public void sync(View view)
+com.amazon.device.sync.dx.DatasetsActivity$DatasetAsyncTask	field	private String mName;
+com.amazon.device.sync.dx.DatasetsActivity$DatasetAsyncTask	method	abstract void doUpdate(SyncableDataDirectory syncableDataDirectory, String[] strArr);
+com.amazon.device.sync.dx.DatasetsActivity$DatasetAsyncTask	method	protected DatasetAsyncTask(String str)
+com.amazon.device.sync.dx.DatasetsActivity$DatasetAsyncTask	method	protected void onPreExecute()
+com.amazon.device.sync.dx.DatasetsActivity$DatasetAsyncTask	method	public List<String> doInBackground(String... strArr)
+com.amazon.device.sync.dx.DatasetsActivity$DatasetAsyncTask	method	public void onPostExecute(List<String> list)
+com.amazon.device.sync.dx.NamespaceDialogFragment	field	private String mAccount;
+com.amazon.device.sync.dx.NamespaceDialogFragment	field	private static final String NEGATIVE_BUTTON_TEXT;
+com.amazon.device.sync.dx.NamespaceDialogFragment	field	private static final String POSTIVE_BUTTON_TEXT;
+com.amazon.device.sync.dx.NamespaceDialogFragment	method	public Dialog onCreateDialog(Bundle bundle)
+com.amazon.device.sync.dx.NamespaceDialogFragment	method	public void launchDatasetsView(String str, String str2)
+com.amazon.device.sync.dx.NamespaceDialogFragment	method	public void setAccount(String str)
+com.amazon.device.sync.dx.NamespacesActivity	field	private ListView mNamespacesList;
+com.amazon.device.sync.dx.NamespacesActivity	field	private String mAccount;
+com.amazon.device.sync.dx.NamespacesActivity	method	private void setUpNamespacesList()
+com.amazon.device.sync.dx.NamespacesActivity	method	public void launchDatasetsView(String str, String str2)
+com.amazon.device.sync.dx.NamespacesActivity	method	public void onCreate(Bundle bundle)
+com.amazon.device.sync.dx.NamespacesActivity	method	public void onResume()
+com.amazon.device.sync.dx.NamespacesActivity	method	public void showNamespaceDialog(View view)
+com.amazon.device.sync.dx.RecordAdderActivity	field	private Button mCreateButton;
+com.amazon.device.sync.dx.RecordAdderActivity	field	private EditText mKeyText;
+com.amazon.device.sync.dx.RecordAdderActivity	field	private EditText mValueText;
+com.amazon.device.sync.dx.RecordAdderActivity	field	private Map<String, String> mNewRecords;
+com.amazon.device.sync.dx.RecordAdderActivity	field	private String mAccount;
+com.amazon.device.sync.dx.RecordAdderActivity	field	private String mDatasetName;
+com.amazon.device.sync.dx.RecordAdderActivity	field	private String mNamespace;
+com.amazon.device.sync.dx.RecordAdderActivity	field	private String mProvidedRecordKey;
+com.amazon.device.sync.dx.RecordAdderActivity	field	private TextView mInvalidNameText;
+com.amazon.device.sync.dx.RecordAdderActivity	field	private TextView mRecordList;
+com.amazon.device.sync.dx.RecordAdderActivity	field	private TextView mStatusView;
+com.amazon.device.sync.dx.RecordAdderActivity	field	private TextView mTitleView;
+com.amazon.device.sync.dx.RecordAdderActivity	field	private static final String TITLE_PREFIX;
+com.amazon.device.sync.dx.RecordAdderActivity	field	static final String EXTRA_RECORD_KEY;
+com.amazon.device.sync.dx.RecordAdderActivity	method	private void fillRecordKeyEditBox()
+com.amazon.device.sync.dx.RecordAdderActivity	method	private void getIntentExtra()
+com.amazon.device.sync.dx.RecordAdderActivity	method	private void initializeUI()
+com.amazon.device.sync.dx.RecordAdderActivity	method	private void setDataCreationTitle()
+com.amazon.device.sync.dx.RecordAdderActivity	method	private void setReferenceToUI()
+com.amazon.device.sync.dx.RecordAdderActivity	method	private void setUpAddRecordButton()
+com.amazon.device.sync.dx.RecordAdderActivity	method	private void setUpClearRecordListButton()
+com.amazon.device.sync.dx.RecordAdderActivity	method	private void setUpSubmitButton()
+com.amazon.device.sync.dx.RecordAdderActivity	method	protected void createRecordsOnServer()
+com.amazon.device.sync.dx.RecordAdderActivity	method	public void clearInput()
+com.amazon.device.sync.dx.RecordAdderActivity	method	public void clearRecordList()
+com.amazon.device.sync.dx.RecordAdderActivity	method	public void displayResult(boolean z, String str)
+com.amazon.device.sync.dx.RecordAdderActivity	method	public void onCreate(Bundle bundle)
+com.amazon.device.sync.dx.RecordAdderActivity	method	public void updateRecordList()
+com.amazon.device.sync.failures.AccessDeniedException	method	public AccessDeniedException(String str, String str2, String str3, String str4, WhispersyncClientException.SyncDirection syncDirection)
+com.amazon.device.sync.failures.AuthenticationFailedException	method	public AuthenticationFailedException(String str, String str2, String str3, String str4, WhispersyncClientException.SyncDirection syncDirection)
+com.amazon.device.sync.failures.LocalStoreException	method	public LocalStoreException(String str, String str2, WhispersyncClientException.SyncDirection syncDirection)
+com.amazon.device.sync.failures.WhispersyncClientException	field	protected SyncDirection mSyncDirection;
+com.amazon.device.sync.failures.WhispersyncClientException	method	protected WhispersyncClientException(String str, String str2, SyncDirection syncDirection)
+com.amazon.device.sync.failures.WhispersyncClientException	method	public String getDatasetName()
+com.amazon.device.sync.failures.WhispersyncClientException	method	public String getDescription()
+com.amazon.device.sync.failures.WhispersyncClientException	method	public SyncDirection getSyncDirection()
+com.amazon.device.sync.failures.WhispersyncClientException	method	public void setDatasetName(String str)
+com.amazon.device.sync.failures.WhispersyncClientException	method	public void setDescription(String str)
+com.amazon.device.sync.failures.WhispersyncClientException	method	public void setSyncDirection(SyncDirection syncDirection)
+com.amazon.device.sync.failures.WhispersyncServerException	method	protected WhispersyncServerException(String str, String str2, String str3, String str4, WhispersyncClientException.SyncDirection syncDirection)
+com.amazon.device.sync.failures.WhispersyncServerException	method	public String getLastAmazonRequestId()
+com.amazon.device.sync.failures.WhispersyncServerException	method	public String getLastReqServerTimestamp()
+com.amazon.device.sync.failures.WhispersyncServerException	method	public String toString()
+com.amazon.identity.auth.device.api.ADPCorpusSigningAuthenticationMethod	field	public static final String KEY_ADP_AUTH_SIGNATURE;
+com.amazon.identity.auth.device.api.ADPCorpusSigningAuthenticationMethod	field	public static final String KEY_ADP_AUTH_TOKEN;
+com.amazon.identity.auth.device.api.ADPCorpusSigningAuthenticationMethod	field	public static final String KEY_ERROR_CODE;
+com.amazon.identity.auth.device.api.ADPCorpusSigningAuthenticationMethod	field	public static final String KEY_ERROR_MESSAGE;
+com.amazon.identity.auth.device.api.ADPCorpusSigningAuthenticationMethod$SignCorpusError	field	public static final int INVALID_ARGUMENT;
+com.amazon.identity.auth.device.api.ADPCorpusSigningAuthenticationMethod$SignCorpusError	field	public static final int IPC_ERROR;
+com.amazon.identity.auth.device.api.ADPCorpusSigningAuthenticationMethod$SignCorpusError	field	public static final int NO_CREDENTIALS;
+com.amazon.identity.auth.device.api.ADPCorpusSigningAuthenticationMethod$SignCorpusError	field	public static final int UNRECOGNIZED;
+com.amazon.identity.auth.device.api.ADPCorpusSigningAuthenticationMethod$SignCorpusError	method	private SignCorpusError()
+com.amazon.identity.auth.device.api.ADPCorpusSigningAuthenticationMethod$SignCorpusOption	field	public static final String USE_FALL_BACK_CREDENTIALS;
+com.amazon.identity.auth.device.api.ADPCorpusSigningAuthenticationMethod$SignCorpusOption	method	private SignCorpusOption()
+com.amazon.identity.auth.device.api.AccountChangeEvent	method	private AccountChangeEvent()
+com.amazon.identity.auth.device.api.AccountChangeEvent	method	public String getCurrentAccount()
+com.amazon.identity.auth.device.api.AccountChangeEvent	method	public String getPreviousAccount()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	private AuthenticatedURLConnection()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public Certificate[] getLocalCertificates()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public Certificate[] getServerCertificates() throws SSLPeerUnverifiedException
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public HostnameVerifier getHostnameVerifier()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public InputStream getErrorStream()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public InputStream getInputStream() throws IOException
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public Map<String, List<String>> getHeaderFields()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public Map<String, List<String>> getRequestProperties()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public Object getContent() throws IOException
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public Object getContent(Class[] clsArr) throws IOException
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public OutputStream getOutputStream() throws IOException
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public Permission getPermission() throws IOException
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public Principal getLocalPrincipal()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public Principal getPeerPrincipal() throws SSLPeerUnverifiedException
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public SSLSocketFactory getSSLSocketFactory()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public String getCipherSuite()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public String getContentEncoding()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public String getContentType()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public String getHeaderField(String str)
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public String getHeaderField(int i)
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public String getHeaderFieldKey(int i)
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public String getRequestMethod()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public String getRequestProperty(String str)
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public String getResponseMessage() throws IOException
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public String toString()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public URL getURL()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public boolean getAllowUserInteraction()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public boolean getDefaultUseCaches()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public boolean getDoInput()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public boolean getDoOutput()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public boolean getInstanceFollowRedirects()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public boolean getUseCaches()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public boolean usingProxy()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public int getConnectTimeout()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public int getContentLength()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public int getHeaderFieldInt(String str, int i)
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public int getReadTimeout()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public int getResponseCode() throws IOException
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public long getDate()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public long getExpiration()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public long getHeaderFieldDate(String str, long j)
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public long getIfModifiedSince()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public long getLastModified()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public static HttpURLConnection openConnection(HttpURLConnection httpURLConnection, AuthenticationMethod authenticationMethod) throws IOException
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public static HttpURLConnection openConnection(URL url, AuthenticationMethod authenticationMethod) throws IOException
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public void addRequestProperty(String str, String str2)
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public void connect() throws IOException
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public void disconnect()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public void setAllowUserInteraction(boolean z)
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public void setChunkedStreamingMode(int i)
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public void setConnectTimeout(int i)
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public void setDefaultUseCaches(boolean z)
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public void setDoInput(boolean z)
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public void setDoOutput(boolean z)
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public void setFixedLengthStreamingMode(int i)
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public void setHostnameVerifier(HostnameVerifier hostnameVerifier)
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public void setIfModifiedSince(long j)
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public void setInstanceFollowRedirects(boolean z)
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public void setReadTimeout(int i)
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public void setRequestMethod(String str) throws ProtocolException
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public void setRequestProperty(String str, String str2)
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public void setSSLSocketFactory(SSLSocketFactory sSLSocketFactory)
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection	method	public void setUseCaches(boolean z)
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection$AccountNeedsRecoveryException	method	public AccountNeedsRecoveryException(String str, Bundle bundle)
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection$AccountNeedsRecoveryException	method	public final Bundle getAccountRecoverContextBundle()
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection$AuthenticationFailureIOException	method	public AuthenticationFailureIOException(String str)
+com.amazon.identity.auth.device.api.AuthenticatedURLConnection$NoCredentialsException	method	public NoCredentialsException(String str)
+com.amazon.identity.auth.device.api.AuthenticationMethod	field	public static final String KEY_AUTH_HEADERS;
+com.amazon.identity.auth.device.api.AuthenticationMethod	method	private AuthenticationMethod()
+com.amazon.identity.auth.device.api.AuthenticationMethod	method	public MAPFuture<Bundle> getAuthenticationHeadersForRequest(Uri uri, String str, Map map, byte[] bArr, Callback callback)
+com.amazon.identity.auth.device.api.AuthenticationMethod$GetAuthenticationHeadersForRequestError	field	public static final String KEY_ERROR_CODE;
+com.amazon.identity.auth.device.api.AuthenticationMethod$GetAuthenticationHeadersForRequestError	field	public static final String KEY_ERROR_MESSAGE;
+com.amazon.identity.auth.device.api.AuthenticationMethod$GetAuthenticationHeadersForRequestError	field	public static final int INVALID_ARGUMENT;
+com.amazon.identity.auth.device.api.AuthenticationMethod$GetAuthenticationHeadersForRequestError	field	public static final int IPC_ERROR;
+com.amazon.identity.auth.device.api.AuthenticationMethod$GetAuthenticationHeadersForRequestError	field	public static final int NOT_SUPPORTED;
+com.amazon.identity.auth.device.api.AuthenticationMethod$GetAuthenticationHeadersForRequestError	field	public static final int NO_CREDENTIALS;
+com.amazon.identity.auth.device.api.AuthenticationMethod$GetAuthenticationHeadersForRequestError	field	public static final int PACKAGE_NOT_WHITE_LIST;
+com.amazon.identity.auth.device.api.AuthenticationMethod$GetAuthenticationHeadersForRequestError	field	public static final int UNRECOGNIZED;
+com.amazon.identity.auth.device.api.AuthenticationMethod$GetAuthenticationHeadersForRequestError	method	private GetAuthenticationHeadersForRequestError()
+com.amazon.identity.auth.device.api.AuthenticationMethodFactory	method	public AuthenticationMethod newAuthenticationMethod(AuthenticationType authenticationType)
+com.amazon.identity.auth.device.api.AuthenticationMethodFactory	method	public AuthenticationMethod newAuthenticationMethod(String str)
+com.amazon.identity.auth.device.api.AuthenticationMethodFactory	method	public AuthenticationMethodFactory(Context context)
+com.amazon.identity.auth.device.api.AuthenticationMethodFactory	method	public AuthenticationMethodFactory(Context context, String str)
+com.amazon.identity.auth.device.api.AuthenticationMethodFactory	method	public void setPackageName(String str)
+com.amazon.identity.auth.device.api.AuthenticationType	method	public String getValue()
+com.amazon.identity.auth.device.api.AuthenticationType	method	public static AuthenticationType parse(String str)
+com.amazon.identity.auth.device.api.CookieKeys	field	public static final String KEY_COOKIES;
+com.amazon.identity.auth.device.api.CookieKeys	field	public static final String KEY_RESPONSE_URL;
+com.amazon.identity.auth.device.api.CookieKeys	method	private CookieKeys()
+com.amazon.identity.auth.device.api.CookieKeys$Options	field	public static final String KEY_FORCE_REFRESH;
+com.amazon.identity.auth.device.api.CookieKeys$Options	field	public static final String KEY_SIGN_IN_URL;
+com.amazon.identity.auth.device.api.CookieKeys$Options	method	private Options()
+com.amazon.identity.auth.device.api.CustomerAttributeKeys	field	public static final String KEY_ACCOUNT_POOL;
+com.amazon.identity.auth.device.api.CustomerAttributeKeys	field	public static final String KEY_COR;
+com.amazon.identity.auth.device.api.CustomerAttributeKeys	field	public static final String KEY_DEVICE_EMAIL;
+com.amazon.identity.auth.device.api.CustomerAttributeKeys	field	public static final String KEY_DEVICE_NAME;
+com.amazon.identity.auth.device.api.CustomerAttributeKeys	field	public static final String KEY_DEVICE_TYPE;
+com.amazon.identity.auth.device.api.CustomerAttributeKeys	field	public static final String KEY_DSN;
+com.amazon.identity.auth.device.api.CustomerAttributeKeys	field	public static final String KEY_EXTRA_TOKENS_KEY_PREFIX;
+com.amazon.identity.auth.device.api.CustomerAttributeKeys	field	public static final String KEY_FIRST_NAME;
+com.amazon.identity.auth.device.api.CustomerAttributeKeys	field	public static final String KEY_NAME;
+com.amazon.identity.auth.device.api.CustomerAttributeKeys	field	public static final String KEY_PFM;
+com.amazon.identity.auth.device.api.CustomerAttributeKeys	field	public static final String KEY_XFSN;
+com.amazon.identity.auth.device.api.CustomerAttributeKeys	field	public static final String KEY_XMAIN_AND_XACB_COOKIES;
+com.amazon.identity.auth.device.api.CustomerAttributeKeys	method	private CustomerAttributeKeys()
+com.amazon.identity.auth.device.api.CustomerAttributeKeys	method	public static String getCustomizedKeyForPackage(String str, String str2)
+com.amazon.identity.auth.device.api.CustomerAttributeKeys	method	public static String getDeviceEmailKeyForPackage(String str)
+com.amazon.identity.auth.device.api.CustomerAttributeKeys	method	public static String getDeviceNameKeyForPackage(String str)
+com.amazon.identity.auth.device.api.CustomerAttributeKeys	method	public static String getDeviceTypeKeyForPackage(String str)
+com.amazon.identity.auth.device.api.CustomerAttributeKeys	method	public static String getDsnKeyForPackage(String str)
+com.amazon.identity.auth.device.api.CustomerAttributeKeys	method	public static String getUserFirstNameForPackage(String str)
+com.amazon.identity.auth.device.api.CustomerAttributeKeys	method	public static String getUserNameKeyForPackage(String str)
+com.amazon.identity.auth.device.api.CustomerAttributeStore	field	public static final String AMAZON_ACCOUNT_PROPERTY_CHANGED_INTENT_ACTION;
+com.amazon.identity.auth.device.api.CustomerAttributeStore	field	public static final String COR_PFM_CHANGED_INTENT_ACTION;
+com.amazon.identity.auth.device.api.CustomerAttributeStore	field	public static final String KEY_DEFAULT_VALUE;
+com.amazon.identity.auth.device.api.CustomerAttributeStore	field	public static final String KEY_DEVICE_EMAIL;
+com.amazon.identity.auth.device.api.CustomerAttributeStore	field	public static final String KEY_DEVICE_NAME;
+com.amazon.identity.auth.device.api.CustomerAttributeStore	field	public static final String KEY_DIRECTED_ID;
+com.amazon.identity.auth.device.api.CustomerAttributeStore	field	public static final String KEY_ERROR_CODE;
+com.amazon.identity.auth.device.api.CustomerAttributeStore	field	public static final String KEY_ERROR_MESSAGE;
+com.amazon.identity.auth.device.api.CustomerAttributeStore	field	public static final String KEY_NEW_DEVICE_NAME;
+com.amazon.identity.auth.device.api.CustomerAttributeStore	field	public static final String KEY_VALUE;
+com.amazon.identity.auth.device.api.CustomerAttributeStore	field	public static final int ERROR_CODE_ACCOUNT_NOT_REGISTERED;
+com.amazon.identity.auth.device.api.CustomerAttributeStore	field	public static final int ERROR_CODE_GENERIC_INTERNAL_ERROR;
+com.amazon.identity.auth.device.api.CustomerAttributeStore	field	public static final int ERROR_CODE_KEY_NOT_FOUND;
+com.amazon.identity.auth.device.api.CustomerAttributeStore	field	public static final int ERROR_CODE_UNABLE_TO_GET_ATTRIBUTE_ERROR;
+com.amazon.identity.auth.device.api.CustomerAttributeStore	field	public static final int ERROR_CODE_UNABLE_TO_SET_ATTRIBUTE_ERROR;
+com.amazon.identity.auth.device.api.CustomerAttributeStore	method	private CustomerAttributeStore()
+com.amazon.identity.auth.device.api.CustomerAttributeStore	method	public Bundle peekAttribute(String str, String str2)
+com.amazon.identity.auth.device.api.CustomerAttributeStore	method	public MAPFuture<Bundle> getAttribute(String str, String str2, Callback callback)
+com.amazon.identity.auth.device.api.CustomerAttributeStore	method	public MAPFuture<Bundle> getAttribute(String str, String str2, Callback callback, Bundle bundle, EnumSet<GetAttributeOptions> enumSet)
+com.amazon.identity.auth.device.api.CustomerAttributeStore	method	public MAPFuture<Bundle> getAttribute(String str, String str2, Callback callback, EnumSet<GetAttributeOptions> enumSet)
+com.amazon.identity.auth.device.api.CustomerAttributeStore	method	public MAPFuture<Bundle> renameDevice(String str, String str2, Bundle bundle, Callback callback)
+com.amazon.identity.auth.device.api.CustomerAttributeStore	method	public MAPFuture<Bundle> setAttribute(String str, String str2, String str3, Callback callback)
+com.amazon.identity.auth.device.api.CustomerAttributeStore	method	public static String getValueOrAttributeDefault(Bundle bundle)
+com.amazon.identity.auth.device.api.CustomerAttributeStore	method	public static synchronized CustomerAttributeStore getInstance(Context context)
+com.amazon.identity.auth.device.api.CustomerAttributeStore	method	public static void generateNewInstance(Context context)
+com.amazon.identity.auth.device.api.CustomerAttributeStore$RenameDeviceError	field	public static final int AUTHENTICATION_FAILED;
+com.amazon.identity.auth.device.api.CustomerAttributeStore$RenameDeviceError	field	public static final int INVALID_INPUT;
+com.amazon.identity.auth.device.api.CustomerAttributeStore$RenameDeviceError	field	public static final int NAME_ALREADY_USED;
+com.amazon.identity.auth.device.api.CustomerAttributeStore$RenameDeviceError	field	public static final int NETWORK_FAILURE;
+com.amazon.identity.auth.device.api.CustomerAttributeStore$RenameDeviceError	field	public static final int NO_AMAZON_ACCOUNT;
+com.amazon.identity.auth.device.api.CustomerAttributeStore$RenameDeviceError	field	public static final int PARSE_ERROR;
+com.amazon.identity.auth.device.api.CustomerAttributeStore$RenameDeviceError	field	public static final int UNRECOGNIZED;
+com.amazon.identity.auth.device.api.CustomerAttributeStore$RenameDeviceError	method	private RenameDeviceError()
+com.amazon.identity.auth.device.api.DefaultCallback	method	private DefaultCallback()
+com.amazon.identity.auth.device.api.DefaultCallback	method	public void onError(Bundle bundle)
+com.amazon.identity.auth.device.api.DefaultCallback	method	public void onSuccess(Bundle bundle)
+com.amazon.identity.auth.device.api.DeviceDataKeys	field	public static final String KEY_DEVICE_SERIAL_NUMBER;
+com.amazon.identity.auth.device.api.DeviceDataKeys	field	public static final String KEY_DEVICE_TYPE;
+com.amazon.identity.auth.device.api.DeviceDataKeys	field	public static final String KEY_KE_DEVICE;
+com.amazon.identity.auth.device.api.DeviceDataKeys	field	public static final String KEY_RE_DEVICE;
+com.amazon.identity.auth.device.api.DeviceDataKeys	method	private DeviceDataKeys()
+com.amazon.identity.auth.device.api.DeviceDataKeys	method	public static String getDeviceTypeKeyForPackage(String str)
+com.amazon.identity.auth.device.api.DeviceDataStore	method	private DeviceDataStore()
+com.amazon.identity.auth.device.api.DeviceDataStore	method	public String getValue(String str) throws DeviceDataStoreException
+com.amazon.identity.auth.device.api.DeviceDataStore	method	public static synchronized DeviceDataStore getInstance(Context context)
+com.amazon.identity.auth.device.api.DeviceDataStore	method	public static void generateNewInstance(Context context)
+com.amazon.identity.auth.device.api.DeviceDataStoreException	method	public DeviceDataStoreException(String str)
+com.amazon.identity.auth.device.api.LinkCodeErrorCodes	field	public static final int ACCOUNT_NOT_REGISTERED;
+com.amazon.identity.auth.device.api.LinkCodeErrorCodes	field	public static final int INTERNAL_ERROR;
+com.amazon.identity.auth.device.api.LinkCodeErrorCodes	field	public static final int MISSING_VALUE;
+com.amazon.identity.auth.device.api.LinkCodeErrorCodes	field	public static final int SERVER_ERROR;
+com.amazon.identity.auth.device.api.LinkCodeErrorCodes	field	public static final int UNRECOGNIZED_RESPONSE;
+com.amazon.identity.auth.device.api.LinkCodeErrorCodes	method	private LinkCodeErrorCodes()
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String ACCOUNT_ADDED_ON_DEVICE_INTENT_ACTION;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String ACCOUNT_CHANGED_ON_DEVICE_INTENT_ACTION;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String ACCOUNT_FOR_KEY_HAS_CHANGED_INTENT_ACTION;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String ACCOUNT_FOR_PACKAGE_HAS_CHANGED_INTENT_ACTION;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String ACCOUNT_REMOVED_ON_DEVICE_INTENT_ACTION;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_3P_CALLBACK_QUERY_PARAM;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_3P_LOGIN_URL_STRING;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_ACCESS_TOKEN;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_ACCOUNT_MISSING_ATTRIBUTES;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_ACCOUNT_RECOVERY_BY_USING_NEW_ACCOUNT;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_ACCOUNT_RECOVER_CONTEXT_BUNDLE;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_ADDITIONAL_RETURN_TO_URL_PARAMETERS;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_ADDITIONAL_SIGNIN_DOMAINS;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_ADD_ACCOUNT_AMAZON_DOMAIN;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_ADP_TOKEN;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_ALLOW_ADDING_MULTIPLE_ACCOUNT;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_AMAZON_ACCOUNT_LOGIN_NAME;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_AMAZON_ACCOUNT_PASSWORD;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_AMAZON_DOMAIN;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_AP_ASSOC_HANDLE;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_AP_PAGEID;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_AT_MAIN;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_AUTHENTICATION_CHALLENGE;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_AUTH_DATA_ADDITIONAL_INFO;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_AUTH_TOKEN;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_AUTH_TOKEN_CONTEXT;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_CLAIM_TYPE;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_DEVICE_NAME;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_DIRECTED_ID;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_DIRECTED_ID_DELEGATEE;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_DIRECTED_ID_POST_ACCOUNT_CHANGE;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_DISABLE_GLOBAL_SIGNIN;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_DISABLE_REGISTER_WITHUI_PRE_POPULATION;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_DISABLE_USERNAME_AUTO_SUGGESTION;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_DMS_GET_CREDENTIALS_URL;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_ENSURE_ACCOUNT_STATE_ATTRIBUTES;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_ERROR_CODE;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_ERROR_CODE_WEBVIEW_SSL_ERROR;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_ERROR_MESSAGE;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_EXTRA_DIRECTED_ID;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_EXTRA_KEY;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_EXTRA_PROFILES_ACCOUNT_ADDED_OR_REMOVED_BELONG_TO;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_GET_LINK_CODE_WITH_LENGTH;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_INTENT;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_IS_CALLBACK_FROM_3P_PARAM;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_IS_NEW_ACCOUNT;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_LINK_CODE;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_LINK_CODE_DOMAIN;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_LINK_CODE_POLLING_INTERVAL;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_LINK_CODE_TIME_TO_LIVE;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_MARKETPLACE_BUNDLE;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_MARKETPLACE_DOMAIN;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_OVERRIDE_RETURN_TO_DOMAIN;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_PRE_AUTHORIZED_LINK_CODE;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_PRIVATE_KEY;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_PROFILE_MAPPING;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_REGISTRATION_COOKIE_DOMAIN;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_REGISTRATION_DOMAIN;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_RESULT_CODE;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_RESUME_AUTHENTICATION_URL;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_SIGN_IN_ENDPOINT;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_SSO_ACCOUNTS_LIST;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_SSO_ACCOUNT_CUSTOMER_NAME;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_SSO_ACCOUNT_DIRECTED_ID;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_SSO_ACCOUNT_LOGIN;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_SSO_BOOTSTRAPPED_FROM_DEVICE_SERIAL;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_SSO_BOOTSTRAPPED_FROM_DEVICE_TYPE;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_SSO_CODE;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String KEY_SSO_CODE_TIME_TO_LIVE;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String PRIMARY_AMAZON_ACCOUNT_ADDED_INTENT_ACTION;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String PRIMARY_AMAZON_ACCOUNT_REMOVED_INTENT_ACTION;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String SECONDARY_AMAZON_ACCOUNT_ADDED_INTENT_ACTION;
+com.amazon.identity.auth.device.api.MAPAccountManager	field	public static final String SECONDARY_AMAZON_ACCOUNT_REMOVED_INTENT_ACTION;
+com.amazon.identity.auth.device.api.MAPAccountManager	method	public MAPAccountManager(Context context)
+com.amazon.identity.auth.device.api.MAPAccountManager	method	public MAPFuture<Bundle> authenticateAccount(Activity activity, SigninOption signinOption, Bundle bundle, Bundle bundle2, Callback callback)
+com.amazon.identity.auth.device.api.MAPAccountManager	method	public MAPFuture<Bundle> authenticateAccountWithUI(Activity activity, SigninOption signinOption, Bundle bundle, Callback callback)
+com.amazon.identity.auth.device.api.MAPAccountManager	method	public MAPFuture<Bundle> authorizeLinkCode(Bundle bundle, Callback callback)
+com.amazon.identity.auth.device.api.MAPAccountManager	method	public MAPFuture<Bundle> bootStrapSSO(Callback callback)
+com.amazon.identity.auth.device.api.MAPAccountManager	method	public MAPFuture<Bundle> deregisterAccount(String str, Callback callback)
+com.amazon.identity.auth.device.api.MAPAccountManager	method	public MAPFuture<Bundle> deregisterDevice(Callback callback)
+com.amazon.identity.auth.device.api.MAPAccountManager	method	public MAPFuture<Bundle> ensureAccountState(Activity activity, String str, Bundle bundle, Callback callback)
+com.amazon.identity.auth.device.api.MAPAccountManager	method	public MAPFuture<Bundle> generateLinkCode(Bundle bundle, Callback callback)
+com.amazon.identity.auth.device.api.MAPAccountManager	method	public MAPFuture<Bundle> generatePreAuthorizedLinkCode(Bundle bundle, Callback callback)
+com.amazon.identity.auth.device.api.MAPAccountManager	method	public MAPFuture<Bundle> recoverAccount(Context context, Bundle bundle, Bundle bundle2, Callback callback)
+com.amazon.identity.auth.device.api.MAPAccountManager	method	public MAPFuture<Bundle> registerAccount(Activity activity, Bundle bundle, Bundle bundle2, Callback callback)
+com.amazon.identity.auth.device.api.MAPAccountManager	method	public MAPFuture<Bundle> registerAccount(RegistrationType registrationType, Bundle bundle, Callback callback)
+com.amazon.identity.auth.device.api.MAPAccountManager	method	public MAPFuture<Bundle> registerAccountWithUI(Activity activity, SigninOption signinOption, Bundle bundle, Callback callback)
+com.amazon.identity.auth.device.api.MAPAccountManager	method	public Set<String> getAccounts()
+com.amazon.identity.auth.device.api.MAPAccountManager	method	public String generateForgotPasswordUrl(Bundle bundle)
+com.amazon.identity.auth.device.api.MAPAccountManager	method	public String getAccount()
+com.amazon.identity.auth.device.api.MAPAccountManager	method	public String getPrimaryAccount()
+com.amazon.identity.auth.device.api.MAPAccountManager	method	public boolean isAccountRegistered(String str)
+com.amazon.identity.auth.device.api.MAPAccountManager	method	public boolean isDeviceRegistered()
+com.amazon.identity.auth.device.api.MAPAccountManager	method	public void deregisterAccountChangeObserver(MAPAccountChangeObserver mAPAccountChangeObserver)
+com.amazon.identity.auth.device.api.MAPAccountManager	method	public void registerAccountChangeObserver(MAPAccountChangeObserver mAPAccountChangeObserver)
+com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalActivityUIOptions	field	public static final String KEY_ABOVE_LOCKSCREEN;
+com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalActivityUIOptions	field	public static final String KEY_INVERT_SPINNER;
+com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalActivityUIOptions	field	public static final String KEY_IS_FULLSCREEN;
+com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalActivityUIOptions	field	public static final String KEY_PROGRESSBAR_BACKGROUND_RESOURCE;
+com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalActivityUIOptions	field	public static final String KEY_PROGRESSBAR_FADE;
+com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalActivityUIOptions	field	public static final String KEY_PROGRESSBAR_POSITION;
+com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalActivityUIOptions	field	public static final String KEY_PROGRESSBAR_PRIMARY_COLOR;
+com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalActivityUIOptions	field	public static final String KEY_PROGRESSBAR_RESOURCE;
+com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalActivityUIOptions	field	public static final String KEY_PROGRESSBAR_SECONDARY_COLOR;
+com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalActivityUIOptions	field	public static final String KEY_PROGRESSBAR_STATE;
+com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalActivityUIOptions	field	public static final String KEY_PROGRESSBAR_STRETCH;
+com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalActivityUIOptions	field	public static final String KEY_REQUESTED_ORIENTATION;
+com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalActivityUIOptions	field	public static final String KEY_SPLASH_SCREEN_RESOURCE;
+com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalActivityUIOptions	field	public static final String KEY_SPLASH_SCREEN_SCALE_TYPE;
+com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalActivityUIOptions	field	public static final String KEY_SYSTEM_UI_VISIBILITY;
+com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalActivityUIOptions	field	public static final String KEY_WINDOW_FLAGS;
+com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalActivityUIOptions	method	private AuthPortalActivityUIOptions()
+com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalActivityUIOptions$ProgressBarState	method	public String toString()
+com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalActivityUIOptions$ScreenPosition	method	public String toString()
+com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalOptions	field	public static final String KEY_ASSOCIATION_HANDLE;
+com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalOptions	field	public static final String KEY_CLIENT_CONTEXT;
+com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalOptions	field	public static final String KEY_DOMAIN;
+com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalOptions	field	public static final String KEY_PAGEID;
+com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalOptions	field	public static final String KEY_REQUEST_PARAMETERS;
+com.amazon.identity.auth.device.api.MAPAccountManager$AuthPortalOptions	method	private AuthPortalOptions()
+com.amazon.identity.auth.device.api.MAPAccountManager$BootstrapError	method	public String getName()
+com.amazon.identity.auth.device.api.MAPAccountManager$BootstrapError	method	public int value()
+com.amazon.identity.auth.device.api.MAPAccountManager$BootstrapError	method	public static BootstrapError fromValue(int i)
+com.amazon.identity.auth.device.api.MAPAccountManager$BootstrapError	method	public static BootstrapError fromValue(int i, BootstrapError bootstrapError)
+com.amazon.identity.auth.device.api.MAPAccountManager$RegistrationError	method	public String getName()
+com.amazon.identity.auth.device.api.MAPAccountManager$RegistrationError	method	public int value()
+com.amazon.identity.auth.device.api.MAPAccountManager$RegistrationError	method	public static RegistrationError fromValue(int i)
+com.amazon.identity.auth.device.api.MAPAccountManager$RegistrationError	method	public static RegistrationError fromValue(int i, RegistrationError registrationError)
+com.amazon.identity.auth.device.api.MAPAndroidWebViewClient	method	public MAPAndroidWebViewClient(Activity activity)
+com.amazon.identity.auth.device.api.MAPAndroidWebViewClient	method	public MAPAndroidWebViewClient(MAPAndroidWebViewHelper mAPAndroidWebViewHelper)
+com.amazon.identity.auth.device.api.MAPAndroidWebViewClient	method	public boolean shouldOverrideUrlLoading(WebView webView, String str)
+com.amazon.identity.auth.device.api.MAPAndroidWebViewClient	method	public void onPageStarted(WebView webView, String str, Bitmap bitmap)
+com.amazon.identity.auth.device.api.MAPAndroidWebViewClient	method	public void onReceivedSslError(WebView webView, SslErrorHandler sslErrorHandler, SslError sslError)
+com.amazon.identity.auth.device.api.MAPAndroidWebViewHelper	field	public static final String ON_REGISTRATION_SUCCESS;
+com.amazon.identity.auth.device.api.MAPAndroidWebViewHelper	field	public static final String ON_UNABLE_TO_GET_COOKIES;
+com.amazon.identity.auth.device.api.MAPAndroidWebViewHelper	method	public Bundle getOptions()
+com.amazon.identity.auth.device.api.MAPAndroidWebViewHelper	method	public MAPAndroidWebViewHelper(Activity activity)
+com.amazon.identity.auth.device.api.MAPAndroidWebViewHelper	method	public MAPAndroidWebViewHelper(Context context)
+com.amazon.identity.auth.device.api.MAPAndroidWebViewHelper	method	public String getAccount()
+com.amazon.identity.auth.device.api.MAPAndroidWebViewHelper	method	public boolean skipCookieRefreshPostRegistration()
+com.amazon.identity.auth.device.api.MAPAndroidWebViewHelper	method	public final boolean handleAuthentication(WebView webView, String str)
+com.amazon.identity.auth.device.api.MAPAndroidWebViewHelper	method	public final boolean handleAuthentication(WebView webView, String str, Activity activity)
+com.amazon.identity.auth.device.api.MAPAndroidWebViewHelper	method	public final boolean handleAuthentication(WebView webView, String str, Activity activity, MAPAndroidWebViewNavigator mAPAndroidWebViewNavigator)
+com.amazon.identity.auth.device.api.MAPAndroidWebViewHelper	method	public static final boolean isInterceptableUrl(String str)
+com.amazon.identity.auth.device.api.MAPAndroidWebViewHelper	method	public void onEvent(String str, Bundle bundle)
+com.amazon.identity.auth.device.api.MAPBroadcastReceiver	method	public MAPBroadcastReceiver()
+com.amazon.identity.auth.device.api.MAPBroadcastReceiver	method	public final void onReceive(Context context, Intent intent)
+com.amazon.identity.auth.device.api.MAPBroadcastReceiver	method	public static Intent constructBackwardsCompatibleIntent(Context context, Intent intent)
+com.amazon.identity.auth.device.api.MAPCallbackErrorException	method	public Bundle getErrorBundle()
+com.amazon.identity.auth.device.api.MAPCallbackErrorException	method	public MAPCallbackErrorException(Bundle bundle)
+com.amazon.identity.auth.device.api.MAPInformationProvider	field	public static final String TOKEN_PROVIDER_AUTHORITY_PREFIX;
+com.amazon.identity.auth.device.api.MAPInformationProvider	method	public MAPInformationProvider()
+com.amazon.identity.auth.device.api.MAPInformationProvider	method	public String getDsnOverrideForChildDeviceType()
+com.amazon.identity.auth.device.api.MAPInformationProvider	method	public String getOverrideChildDeviceType()
+com.amazon.identity.auth.device.api.MAPInformationProvider	method	public boolean onCreate()
+com.amazon.identity.auth.device.api.MAPInformationProvider	method	public final Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2)
+com.amazon.identity.auth.device.api.MAPInformationProvider	method	public final String getType(Uri uri)
+com.amazon.identity.auth.device.api.MAPInformationProvider	method	public final Uri insert(Uri uri, ContentValues contentValues)
+com.amazon.identity.auth.device.api.MAPInformationProvider	method	public final int delete(Uri uri, String str, String[] strArr)
+com.amazon.identity.auth.device.api.MAPInformationProvider	method	public final int update(Uri uri, ContentValues contentValues, String str, String[] strArr)
+com.amazon.identity.auth.device.api.MAPInit	method	private MAPInit()
+com.amazon.identity.auth.device.api.MAPInit	method	public static synchronized MAPInit getInstance(Context context)
+com.amazon.identity.auth.device.api.MAPInit	method	public synchronized void initialize()
+com.amazon.identity.auth.device.api.MAPWebViewEventHelper	field	public static final String AUTHENTICATION_EVENT;
+com.amazon.identity.auth.device.api.MAPWebViewEventHelper	field	public static final String AUTHENTICATION_ONLY_EVENT;
+com.amazon.identity.auth.device.api.MAPWebViewEventHelper	field	public static final String ERROR_EVENT;
+com.amazon.identity.auth.device.api.MAPWebViewEventHelper	field	public static final String ERROR_EVENT_VALUE;
+com.amazon.identity.auth.device.api.MAPWebViewEventHelper	field	public static final String KEY_ERRORS;
+com.amazon.identity.auth.device.api.MAPWebViewEventHelper	field	public static final String KEY_EVENT_TYPE;
+com.amazon.identity.auth.device.api.MAPWebViewEventHelper	method	public MAPWebViewEventHelper(Bundle bundle)
+com.amazon.identity.auth.device.api.MAPWebViewEventHelper	method	public boolean isAuthenticationEvent()
+com.amazon.identity.auth.device.api.MAPWebViewEventHelper	method	public boolean isErrorEvent()
+com.amazon.identity.auth.device.api.MultipleAccountManager	method	public Intent getIntentToRemoveAccountMapping(AccountMappingType accountMappingType)
+com.amazon.identity.auth.device.api.MultipleAccountManager	method	public MultipleAccountManager(Context context)
+com.amazon.identity.auth.device.api.MultipleAccountManager	method	public String getAccountForMapping(AccountMappingType... accountMappingTypeArr)
+com.amazon.identity.auth.device.api.MultipleAccountManager	method	public String getAccountMappingOwner(AccountMappingType accountMappingType)
+com.amazon.identity.auth.device.api.MultipleAccountManager	method	public boolean doesAccountHaveMapping(String str, AccountMappingType accountMappingType)
+com.amazon.identity.auth.device.api.MultipleAccountManager	method	public boolean removeAccountMappings(String str, AccountMappingType... accountMappingTypeArr)
+com.amazon.identity.auth.device.api.MultipleAccountManager	method	public boolean setAccountMappings(String str, AccountMappingType... accountMappingTypeArr)
+com.amazon.identity.auth.device.api.MultipleAccountManager$AccountMappingType	method	private AccountMappingType()
+com.amazon.identity.auth.device.api.MultipleAccountManager$AccountMappingType	method	public boolean equals(Object obj)
+com.amazon.identity.auth.device.api.MultipleAccountManager$AccountMappingType	method	public int hashCode()
+com.amazon.identity.auth.device.api.MultipleAccountManager$CustomKeyMappingType	method	public CustomKeyMappingType(String str)
+com.amazon.identity.auth.device.api.MultipleAccountManager$PackageMappingType	method	public PackageMappingType(String str)
+com.amazon.identity.auth.device.api.MultipleAccountManager$PackageMappingType	method	public static PackageMappingType createCurrentPackageMapping(Context context)
+com.amazon.identity.auth.device.api.MultipleAccountManager$PrimaryUserMappingType	method	public PrimaryUserMappingType()
+com.amazon.identity.auth.device.api.MultipleAccountManager$PrimaryUserMappingType	method	public static PrimaryUserMappingType createPrimaryMappingForProfile(int i)
+com.amazon.identity.auth.device.api.MultipleAccountManager$SessionPackageMappingAlreadySetException	method	public SessionPackageMappingAlreadySetException(String str)
+com.amazon.identity.auth.device.api.MultipleAccountManager$SessionPackageMappingAlreadySetException	method	public String getOwner()
+com.amazon.identity.auth.device.api.MultipleAccountManager$SessionPackageMappingType	method	private SessionPackageMappingType()
+com.amazon.identity.auth.device.api.MultipleAccountManager$SessionPackageMappingType	method	public Set<String> getSessionPackages()
+com.amazon.identity.auth.device.api.MultipleAccountManager$SessionPackageMappingType	method	public String getCallingPackage()
+com.amazon.identity.auth.device.api.MultipleAccountManager$SessionPackageMappingType	method	public String getRemoveActivityClassName()
+com.amazon.identity.auth.device.api.MultipleAccountManager$SessionPackageMappingType	method	public static SessionPackageMappingType createNewSessionPackageMapping(Context context, Set<String> set, String str)
+com.amazon.identity.auth.device.api.MultipleAccountManager$SessionPackageMappingType	method	public static SessionPackageMappingType createSessionPackageMappingInstance(Context context)
+com.amazon.identity.auth.device.api.MultipleAccountManager$SessionPackageMappingType	method	public static boolean isSupportedOnThisPlatform(Context context)
+com.amazon.identity.auth.device.api.MultipleAccountManager$SessionUserMappingType	method	public SessionUserMappingType()
+com.amazon.identity.auth.device.api.TokenKeys	field	public static final String KEY_ACCESS_TOKEN;
+com.amazon.identity.auth.device.api.TokenKeys	field	public static final String KEY_ATZ_ACCESS_TOKEN;
+com.amazon.identity.auth.device.api.TokenKeys	field	public static final String KEY_LWA_APPLICATION_ID;
+com.amazon.identity.auth.device.api.TokenKeys	field	public static final String KEY_LWA_CLIENT_ID;
+com.amazon.identity.auth.device.api.TokenKeys	field	public static final String KEY_XFSN;
+com.amazon.identity.auth.device.api.TokenKeys	method	private TokenKeys()
+com.amazon.identity.auth.device.api.TokenKeys	method	public static String getAccessTokenKeyForPackage(String str)
+com.amazon.identity.auth.device.api.TokenKeys	method	public static String getAdpTokenKeyForPackage(String str)
+com.amazon.identity.auth.device.api.TokenKeys	method	public static String getAtzTokenKeyForPackage(String str)
+com.amazon.identity.auth.device.api.TokenKeys	method	public static String getPrivateKeyKeyForPackage(String str)
+com.amazon.identity.auth.device.api.TokenKeys$Options	field	public static final String KEY_FORCE_REFRESH_DMS_TO_OAUTH;
+com.amazon.identity.auth.device.api.TokenKeys$Options	field	public static final String KEY_FORCE_REFRESH_OAUTH;
+com.amazon.identity.auth.device.api.TokenKeys$Options	field	public static final String KEY_OAUTH_TTL_MS_LONG;
+com.amazon.identity.auth.device.api.TokenKeys$Options	method	private Options()
+com.amazon.identity.auth.device.api.TokenManagement	field	public static final String KEY_ACCOUNT_RECOVER_CONTEXT_BUNDLE;
+com.amazon.identity.auth.device.api.TokenManagement	field	public static final String KEY_ERROR_CODE;
+com.amazon.identity.auth.device.api.TokenManagement	field	public static final String KEY_ERROR_MESSAGE;
+com.amazon.identity.auth.device.api.TokenManagement	field	public static final String VALUE_KEY;
+com.amazon.identity.auth.device.api.TokenManagement	field	public static final int ERROR_INVALID_PARAMETER;
+com.amazon.identity.auth.device.api.TokenManagement	method	public MAPFuture<Bundle> getCookies(String str, String str2, Bundle bundle, Callback callback)
+com.amazon.identity.auth.device.api.TokenManagement	method	public MAPFuture<Bundle> getToken(String str, String str2, Bundle bundle, Callback callback)
+com.amazon.identity.auth.device.api.TokenManagement	method	public MAPFuture<Bundle> peekCookies(String str, String str2, Callback callback)
+com.amazon.identity.auth.device.api.TokenManagement	method	public String getValue(String str, String str2, Bundle bundle, long j) throws ExecutionException, MAPCallbackErrorException, InterruptedException, TimeoutException
+com.amazon.identity.auth.device.api.TokenManagement	method	public TokenManagement(Context context)

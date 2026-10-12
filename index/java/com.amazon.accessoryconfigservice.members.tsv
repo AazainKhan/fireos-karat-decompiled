@@ -1,0 +1,32 @@
+class	kind	declaration
+com.amazon.accessoryconfigservice.AmazonAccessoryConfigService	field	private AmazonAccessoryConfigImpl mBinder;
+com.amazon.accessoryconfigservice.AmazonAccessoryConfigService	field	private static final String TAG;
+com.amazon.accessoryconfigservice.AmazonAccessoryConfigService	field	private static final boolean DEBUG;
+com.amazon.accessoryconfigservice.AmazonAccessoryConfigService	method	private String loadAccessoryConfigJSONString()
+com.amazon.accessoryconfigservice.AmazonAccessoryConfigService	method	public AmazonAccessoryConfigService()
+com.amazon.accessoryconfigservice.AmazonAccessoryConfigService	method	public IBinder onBind(Intent intent)
+com.amazon.accessoryconfigservice.AmazonAccessoryConfigService	method	public void onCreate()
+com.amazon.accessoryconfigservice.AmazonAccessoryConfigService	method	public void onDestroy()
+com.amazon.accessoryconfigservice.Manifest$permission	field	public static final String ACCESS;
+com.amazon.accessoryconfigservice.R$raw	field	public static final int amazon_accessory_config;
+com.amazon.server.accessoryconfig.AmazonAccessoryConfigImpl	field	private ArrayList<AmazonBluetoothGamepad> mAmazonBluetoothGamepadList;
+com.amazon.server.accessoryconfig.AmazonAccessoryConfigImpl	field	private ArrayList<AmazonBluetoothRemote> mAmazonBluetoothRemoteList;
+com.amazon.server.accessoryconfig.AmazonAccessoryConfigImpl	field	private Context mContext;
+com.amazon.server.accessoryconfig.AmazonAccessoryConfigImpl	field	private List<AccessoryBase> mAccessoryList;
+com.amazon.server.accessoryconfig.AmazonAccessoryConfigImpl	field	private static final String ACCESSORY_CONFIG_PERM;
+com.amazon.server.accessoryconfig.AmazonAccessoryConfigImpl	field	private static final String TAG;
+com.amazon.server.accessoryconfig.AmazonAccessoryConfigImpl	field	private static final boolean DEBUG;
+com.amazon.server.accessoryconfig.AmazonAccessoryConfigImpl	method	private AccessoryBase getAmazonAccessory(int i, int i2)
+com.amazon.server.accessoryconfig.AmazonAccessoryConfigImpl	method	private BluetoothAccessoryBase createFilteredAccessory(BluetoothAccessoryBase bluetoothAccessoryBase, List<String> list)
+com.amazon.server.accessoryconfig.AmazonAccessoryConfigImpl	method	private boolean readAccessoryConfig(String str)
+com.amazon.server.accessoryconfig.AmazonAccessoryConfigImpl	method	public AccessoryBase getAmazonAccessoryByAddress(String str)
+com.amazon.server.accessoryconfig.AmazonAccessoryConfigImpl	method	public AccessoryFeatureBase getFeatureAlexaByVidPid(int i, int i2)
+com.amazon.server.accessoryconfig.AmazonAccessoryConfigImpl	method	public AmazonAccessoryConfigImpl(Context context, String str)
+com.amazon.server.accessoryconfig.AmazonAccessoryConfigImpl	method	public BluetoothAccessoryBase getBluetoothAccessoryByVidPid(int i, int i2)
+com.amazon.server.accessoryconfig.AmazonAccessoryConfigImpl	method	public List<AccessoryBase> getAccessoryList()
+com.amazon.server.accessoryconfig.AmazonAccessoryConfigImpl	method	public List<BluetoothAccessoryBase> getBluetoothAccessoryList()
+com.amazon.server.accessoryconfig.AmazonAccessoryConfigImpl	method	public List<BluetoothAccessoryBase> getBluetoothAccessoryListByFeatures(List<String> list)
+com.amazon.server.accessoryconfig.AmazonAccessoryConfigImpl$AccessoryConfigTag	field	private static final String BLUETOOTH;
+com.amazon.server.accessoryconfig.AmazonAccessoryConfigImpl$AccessoryConfigTag	field	private static final String GAMEPAD;
+com.amazon.server.accessoryconfig.AmazonAccessoryConfigImpl$AccessoryConfigTag	field	private static final String REMOTE;
+com.amazon.server.accessoryconfig.AmazonAccessoryConfigImpl$AccessoryConfigTag	method	private AccessoryConfigTag()

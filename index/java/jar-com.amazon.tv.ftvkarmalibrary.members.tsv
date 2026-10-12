@@ -1,0 +1,82 @@
+class	kind	declaration
+com.amazon.tv.karma.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.tv.karma.BuildConfig	field	public static final String LIBRARY_PACKAGE_NAME;
+com.amazon.tv.karma.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.tv.karma.Contract	field	private static final String TAG;
+com.amazon.tv.karma.Contract	field	private static final String TTL_IN_SECONDS;
+com.amazon.tv.karma.Contract	field	public static final String BROADCAST_ACTION;
+com.amazon.tv.karma.Contract	field	public static final String EXPIRATION_IN_MILLIS_GLOBAL_SETTINGS_KEY;
+com.amazon.tv.karma.Contract	field	public static final String MB_ATTRIBUTES_CHANGED_LIST_EXTRA;
+com.amazon.tv.karma.Contract	field	public static final String ROUTINGINFO_CHANGED_PERMISSION;
+com.amazon.tv.karma.Contract	field	public static final String ROUTING_INFO_CHANGED_ALEXA_EXPERIENCE_PATH;
+com.amazon.tv.karma.Contract	field	public static final String ROUTING_INFO_CHANGED_AUTHORITY;
+com.amazon.tv.karma.Contract	field	public static final String ROUTING_INFO_CHANGED_EXPERIENCE_PATH;
+com.amazon.tv.karma.Contract	field	public static final String ROUTING_INFO_CHANGED_GEO_BASED_EXPERIENCE_PATH;
+com.amazon.tv.karma.Contract	field	public static final String ROUTING_INFO_CHANGED_LIVE_SERVICES_PATH;
+com.amazon.tv.karma.Contract	field	public static final String ROUTING_INFO_CHANGED_MEDIA_BROWSE_PATH;
+com.amazon.tv.karma.Contract	field	public static final String ROUTING_INFO_CHANGED_SCHEME;
+com.amazon.tv.karma.Contract	field	public static final String TTL_GLOBAL_SETTINGS_KEY;
+com.amazon.tv.karma.Contract	field	static final String BROADCAST_ACTION_ROUTING_INFO_EXPIRED;
+com.amazon.tv.karma.Contract	field	static final String ROUTINGINFO_EXPIRED_PERMISSION;
+com.amazon.tv.karma.Contract	method	public static String addPrefix(String key)
+com.amazon.tv.karma.Contract$AlexaExperience	field	private final String mAlexaExperience;
+com.amazon.tv.karma.Contract$AlexaExperience	method	public String toString()
+com.amazon.tv.karma.Contract$Attribute	field	private final String mAttribute;
+com.amazon.tv.karma.Contract$Attribute	method	public String getGlobalSettingsKey()
+com.amazon.tv.karma.Contract$Attribute	method	public String toString()
+com.amazon.tv.karma.Contract$Experience	field	private final String mExperience;
+com.amazon.tv.karma.Contract$Experience	method	public String toString()
+com.amazon.tv.karma.DozerExperience	field	private static final HashSet<String> mFullExperienceCountries;
+com.amazon.tv.karma.DozerExperience	field	private static final String DSN_V_2_FIRST_CHAR;
+com.amazon.tv.karma.DozerExperience	field	private static final String TAG;
+com.amazon.tv.karma.DozerExperience	field	private static final String TANK_MODEL;
+com.amazon.tv.karma.DozerExperience	field	private static final String TANK_NON_ROW_DEVICE_CODE;
+com.amazon.tv.karma.DozerExperience	field	private static final int DEVICE_CODE_END_INDEX_PLUS_ONE;
+com.amazon.tv.karma.DozerExperience	field	private static final int DEVICE_CODE_LENGTH;
+com.amazon.tv.karma.DozerExperience	field	private static final int DEVICE_CODE_START_IDX;
+com.amazon.tv.karma.DozerExperience	method	private static String getDeviceCode(String dsn)
+com.amazon.tv.karma.DozerExperience	method	public boolean isDozer()
+com.amazon.tv.karma.DozerExperience	method	public boolean isFullExperienceCor(String cor)
+com.amazon.tv.karma.FTVRoutingUtils	field	private static final String TAG;
+com.amazon.tv.karma.FTVRoutingUtils	field	static final String ROUTING_PACKAGE;
+com.amazon.tv.karma.FTVRoutingUtils	method	static boolean isRoutingServiceEnabled(Context context)
+com.amazon.tv.karma.GlobalSettingsReader	field	private ContentResolver mContentResolver;
+com.amazon.tv.karma.GlobalSettingsReader	field	private static final String TAG;
+com.amazon.tv.karma.GlobalSettingsReader	method	public GlobalSettingsReader(ContentResolver contentResolver)
+com.amazon.tv.karma.GlobalSettingsReader	method	public String getString(String key)
+com.amazon.tv.karma.GlobalSettingsReader	method	public long getLong(String key, long defaultValue)
+com.amazon.tv.karma.Karma	field	private ValidateTtlTask mValidateTtlTask;
+com.amazon.tv.karma.Karma	field	private final DozerExperience mDozerExperience;
+com.amazon.tv.karma.Karma	field	private final GlobalSettingsReader mGlobalSettingsReader;
+com.amazon.tv.karma.Karma	field	private final ITimeProvider mTimeProvider;
+com.amazon.tv.karma.Karma	field	private final ValidateTtlTaskFactory mValidateTtlTaskFactory;
+com.amazon.tv.karma.Karma	field	private final WeakReference<Context> mContextRef;
+com.amazon.tv.karma.Karma	field	private final boolean mRoutingServiceEnabled;
+com.amazon.tv.karma.Karma	field	private static final String TAG;
+com.amazon.tv.karma.Karma	field	private static volatile Karma sInstance;
+com.amazon.tv.karma.Karma	field	private volatile boolean mRoutingInfoExpiredBroadcastSent;
+com.amazon.tv.karma.Karma	method	private Contract.Experience getExperienceFromSettings(Contract.Attribute attribute) throws UnsupportedExperienceException
+com.amazon.tv.karma.Karma	method	private Contract.Experience getExperienceInternal(String cor, Contract.Attribute attribute) throws UnsupportedExperienceException
+com.amazon.tv.karma.Karma	method	private boolean startNewValidateTtlTask()
+com.amazon.tv.karma.Karma	method	public Contract.AlexaExperience getAlexaExperience() throws UnsupportedAlexaExperienceException, RoutingAppException
+com.amazon.tv.karma.Karma	method	public Contract.Experience getExperience() throws UnsupportedExperienceException
+com.amazon.tv.karma.Karma	method	public Contract.Experience getExperience(String cor) throws UnsupportedExperienceException
+com.amazon.tv.karma.Karma	method	public Contract.Experience getGeoBasedExperience(String cor) throws UnsupportedExperienceException
+com.amazon.tv.karma.Karma	method	public String get(Contract.Attribute attribute)
+com.amazon.tv.karma.Karma	method	public String get(String key)
+com.amazon.tv.karma.Karma	method	public boolean isTtlExpired()
+com.amazon.tv.karma.Karma	method	public long getTtl()
+com.amazon.tv.karma.Karma	method	public static Karma getInstance(Context context)
+com.amazon.tv.karma.Karma$ValidateTtlTask	field	private final Karma mKarma;
+com.amazon.tv.karma.Karma$ValidateTtlTask	method	public Void doInBackground(Void... voids)
+com.amazon.tv.karma.R	method	private R()
+com.amazon.tv.karma.RoutingAppException	method	public RoutingAppException(String message)
+com.amazon.tv.karma.RoutingInfoChangedBroadcast	field	private static final String TAG;
+com.amazon.tv.karma.RoutingInfoChangedBroadcast	method	public Intent getBroadcastIntent(Contract.Attribute attribute)
+com.amazon.tv.karma.RoutingInfoChangedBroadcast	method	public Intent getBroadcastIntentForAlexaExperienceChanges()
+com.amazon.tv.karma.RoutingInfoChangedBroadcast	method	public Intent getBroadcastIntentForExperienceChanges()
+com.amazon.tv.karma.RoutingInfoChangedBroadcast	method	public Intent getBroadcastIntentForLiveServicesChanges()
+com.amazon.tv.karma.RoutingInfoChangedBroadcast	method	public Intent getBroadcastIntentForMediaBrowseChanges(List<Contract.Attribute> attributeList)
+com.amazon.tv.karma.SystemTimeProvider	method	public long currentTimeMillis()
+com.amazon.tv.karma.UnsupportedAlexaExperienceException	method	public UnsupportedAlexaExperienceException(String message)
+com.amazon.tv.karma.UnsupportedExperienceException	method	public UnsupportedExperienceException(String message)

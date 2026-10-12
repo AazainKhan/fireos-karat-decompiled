@@ -1,0 +1,161 @@
+class	kind	declaration
+com.android.tools.r8.GeneratedOutlineSupport	method	public static Locale outline0(String str, String str2, VoiceLocaleMap.AnonymousClass1 anonymousClass1, Locale locale, String str3)
+com.ivona.orchestrator.AfterOOBECleanUpService	field	private ILangPackageManager langPackageManager;
+com.ivona.orchestrator.AfterOOBECleanUpService	field	private static final List<LangPackageContract.PackageStatus> INSTALLED_STATUSES;
+com.ivona.orchestrator.AfterOOBECleanUpService	field	private static final List<LangPackageContract.PackageType> TTS_PACKAGE_TYPES;
+com.ivona.orchestrator.AfterOOBECleanUpService	method	private List<ILangPackage> getPackagesForSingleLanguage(String str)
+com.ivona.orchestrator.AfterOOBECleanUpService	method	private List<ILangPackage> queryTTSpackages(ILangPackageManager.Query query)
+com.ivona.orchestrator.AfterOOBECleanUpService	method	public boolean onStartJob(JobParameters jobParameters)
+com.ivona.orchestrator.AfterOOBECleanUpService	method	public boolean onStopJob(JobParameters jobParameters)
+com.ivona.orchestrator.AfterOOBECleanUpService$AfterOOBECleanUpEventReceiver	method	public void onReceive(Context context, Intent intent)
+com.ivona.orchestrator.DefaultVoicesBroadcastReceiver	method	public void onReceive(Context context, Intent intent)
+com.ivona.orchestrator.ExtensionDownloadJobService	field	private ILangPackageManager packageManager;
+com.ivona.orchestrator.ExtensionDownloadJobService	field	private MetricsManager metricsManager;
+com.ivona.orchestrator.ExtensionDownloadJobService	method	public boolean onStartJob(JobParameters jobParameters)
+com.ivona.orchestrator.ExtensionDownloadJobService	method	public boolean onStopJob(JobParameters jobParameters)
+com.ivona.orchestrator.ExtensionDownloadJobService	method	public static void scheduleJob(Context context, Locale locale)
+com.ivona.orchestrator.ExtensionDownloadJobService	method	public void onCreate()
+com.ivona.orchestrator.ExtensionRemovalJobService	field	private ILangPackageManager packageManager;
+com.ivona.orchestrator.ExtensionRemovalJobService	field	private MetricsManager metricsManager;
+com.ivona.orchestrator.ExtensionRemovalJobService	method	public boolean onStartJob(JobParameters jobParameters)
+com.ivona.orchestrator.ExtensionRemovalJobService	method	public boolean onStopJob(JobParameters jobParameters)
+com.ivona.orchestrator.ExtensionRemovalJobService	method	public void onCreate()
+com.ivona.orchestrator.ExtensionRemovalJobService$ExtensionRemovalJobReceiver	method	public void onReceive(Context context, Intent intent)
+com.ivona.orchestrator.GetBestVoiceForDownloadJobService	field	private ILangPackageManager packageManager;
+com.ivona.orchestrator.GetBestVoiceForDownloadJobService	field	private MetricsManager metricsManager;
+com.ivona.orchestrator.GetBestVoiceForDownloadJobService	field	private VoiceLocaleMap voiceLocaleMap;
+com.ivona.orchestrator.GetBestVoiceForDownloadJobService	method	public boolean onStartJob(final JobParameters jobParameters)
+com.ivona.orchestrator.GetBestVoiceForDownloadJobService	method	public boolean onStopJob(JobParameters jobParameters)
+com.ivona.orchestrator.GetBestVoiceForDownloadJobService	method	public static void scheduleJob(Context context, Locale locale)
+com.ivona.orchestrator.GetBestVoiceForDownloadJobService	method	public void onCreate()
+com.ivona.orchestrator.GetBestVoiceForDownloadJobService$GetBestVoiceForDownloadReceiver	method	public void onReceive(Context context, Intent intent)
+com.ivona.orchestrator.GetBestVoiceForDownloadService	field	private ILangPackageManager packageManager;
+com.ivona.orchestrator.GetBestVoiceForDownloadService	field	private MetricsManager metricsManager;
+com.ivona.orchestrator.GetBestVoiceForDownloadService	field	private VoiceLocaleMap voiceLocaleMap;
+com.ivona.orchestrator.GetBestVoiceForDownloadService	method	private List<Locale> filterVoicesForAvailability(List<Locale> list)
+com.ivona.orchestrator.GetBestVoiceForDownloadService	method	private List<Locale> getBestVoicesForLocale(Locale locale)
+com.ivona.orchestrator.GetBestVoiceForDownloadService	method	private boolean isVoiceAvailable(Locale locale)
+com.ivona.orchestrator.GetBestVoiceForDownloadService	method	protected void onHandleIntent(Intent intent)
+com.ivona.orchestrator.GetBestVoiceForDownloadService	method	public GetBestVoiceForDownloadService()
+com.ivona.orchestrator.GetBestVoiceForDownloadService	method	public void onCreate()
+com.ivona.orchestrator.GetBestVoiceForLocaleService	field	private ILangPackageManager packageManager;
+com.ivona.orchestrator.GetBestVoiceForLocaleService	field	private MetricsManager metricsManager;
+com.ivona.orchestrator.GetBestVoiceForLocaleService	field	private VoiceLocaleMap voiceLocaleMap;
+com.ivona.orchestrator.GetBestVoiceForLocaleService	method	private void requestVoiceDownload(int i, ILangPackage iLangPackage, boolean z, Locale locale, boolean z2)
+com.ivona.orchestrator.GetBestVoiceForLocaleService	method	protected void onHandleIntent(Intent intent)
+com.ivona.orchestrator.GetBestVoiceForLocaleService	method	public GetBestVoiceForLocaleService()
+com.ivona.orchestrator.GetBestVoiceForLocaleService	method	public void onCreate()
+com.ivona.orchestrator.GetBestVoiceForLocaleService$AnonymousClass1	method	public void execute(LangPackageContract.PackageEvent packageEvent)
+com.ivona.orchestrator.GetBestVoiceForLocaleService$VoiceSearchFallbackResult	field	private final Locale locale;
+com.ivona.orchestrator.GetBestVoiceForLocaleService$VoiceSearchFallbackResult	field	private final String engine;
+com.ivona.orchestrator.GetBestVoiceForLocaleService$VoiceSearchFallbackResult	field	private final boolean fallback;
+com.ivona.orchestrator.InstallVoiceExtensionReceiver	method	public void onReceive(Context context, Intent intent)
+com.ivona.orchestrator.R$bool	field	public static final int retainVoiceForLocale;
+com.ivona.orchestrator.R$dimen	field	public static final int activity_horizontal_margin;
+com.ivona.orchestrator.R$dimen	field	public static final int activity_vertical_margin;
+com.ivona.orchestrator.R$id	field	public static final int ttsTextView;
+com.ivona.orchestrator.R$layout	field	public static final int activity_tts_tester;
+com.ivona.orchestrator.R$string	field	public static final int app_name;
+com.ivona.orchestrator.R$string	field	public static final int title_tts_tester_activity;
+com.ivona.orchestrator.RequestDownloadLangPackageListener	field	private final BroadCastCallbackHelper callback;
+com.ivona.orchestrator.RequestDownloadLangPackageListener	field	private final ILangPackageManager packageManager;
+com.ivona.orchestrator.RequestDownloadLangPackageListener	field	private final Locale voice;
+com.ivona.orchestrator.RequestDownloadLangPackageListener	field	private final MetricsManager metricsManager;
+com.ivona.orchestrator.RequestDownloadLangPackageListener	field	private final boolean reportDownloadFailure;
+com.ivona.orchestrator.RequestDownloadLangPackageListener	field	private final boolean trackProgress;
+com.ivona.orchestrator.RequestDownloadLangPackageListener	field	private final int cssVoicePackageId;
+com.ivona.orchestrator.RequestDownloadLangPackageListener	method	public RequestDownloadLangPackageListener(ILangPackageManager iLangPackageManager, int i, boolean z, boolean z2, Locale locale, BroadCastCallbackHelper broadCastCallbackHelper, MetricsManager metricsManager)
+com.ivona.orchestrator.RequestDownloadLangPackageListener	method	public void onEvent(int i, LangPackageContract.PackageEvent packageEvent)
+com.ivona.orchestrator.RequestDownloadLangPackageListener	method	public void onProgressChanged(int i, LangPackageContract.PackageEvent packageEvent, long j, long j2)
+com.ivona.orchestrator.TtsTester	field	private List<Voice> availableVoices;
+com.ivona.orchestrator.TtsTester	field	private TextToSpeech tts;
+com.ivona.orchestrator.TtsTester	field	private TextView ttsTextView;
+com.ivona.orchestrator.TtsTester	method	private void appendTextAndScroll(String str)
+com.ivona.orchestrator.TtsTester	method	protected void displayUtteranceProgress(int i, int i2)
+com.ivona.orchestrator.TtsTester	method	protected void onCreate(Bundle bundle)
+com.ivona.orchestrator.TtsTester	method	protected void onDestroy()
+com.ivona.orchestrator.TtsTester	method	protected void onPause()
+com.ivona.orchestrator.TtsTester	method	protected void ttsSynthesize()
+com.ivona.orchestrator.TtsTester$AnonymousClass3	method	public void run()
+com.ivona.orchestrator.TtsTesterReceiver	method	public void onReceive(Context context, Intent intent)
+com.ivona.orchestrator.TtsVoiceWhitelistReceiver	method	public static void sendGetDefaultVoicesBroadcast(Context context, HashSet<Locale> hashSet, String str)
+com.ivona.orchestrator.TtsVoiceWhitelistReceiver	method	public void onReceive(Context context, Intent intent)
+com.ivona.orchestrator.UpdateVoicesKeptAfterFactoryResetJobService	field	private ContentProviderClient providerClient;
+com.ivona.orchestrator.UpdateVoicesKeptAfterFactoryResetJobService	field	private ILangPackageManager packageManager;
+com.ivona.orchestrator.UpdateVoicesKeptAfterFactoryResetJobService	field	private MetricsManager metricsManager;
+com.ivona.orchestrator.UpdateVoicesKeptAfterFactoryResetJobService	field	private String providerAuthority;
+com.ivona.orchestrator.UpdateVoicesKeptAfterFactoryResetJobService	method	private Uri buildVoicesUri()
+com.ivona.orchestrator.UpdateVoicesKeptAfterFactoryResetJobService	method	private boolean addVoiceEntriesToKeep(String str)
+com.ivona.orchestrator.UpdateVoicesKeptAfterFactoryResetJobService	method	private boolean deletePreviousEntries()
+com.ivona.orchestrator.UpdateVoicesKeptAfterFactoryResetJobService	method	private void closeFRDAClient()
+com.ivona.orchestrator.UpdateVoicesKeptAfterFactoryResetJobService	method	private void initFRDAClient()
+com.ivona.orchestrator.UpdateVoicesKeptAfterFactoryResetJobService	method	public boolean onStartJob(JobParameters jobParameters)
+com.ivona.orchestrator.UpdateVoicesKeptAfterFactoryResetJobService	method	public boolean onStopJob(JobParameters jobParameters)
+com.ivona.orchestrator.UpdateVoicesKeptAfterFactoryResetJobService	method	public static void scheduleJob(Context context, Locale locale)
+com.ivona.orchestrator.UpdateVoicesKeptAfterFactoryResetJobService	method	public void onCreate()
+com.ivona.orchestrator.UpdateVoicesKeptAfterFactoryResetJobService	method	public void onDestroy()
+com.ivona.orchestrator.VoiceLocaleMap	field	private ILangPackageManager packageManager;
+com.ivona.orchestrator.VoiceLocaleMap	field	private static final Locale AT_GERMAN;
+com.ivona.orchestrator.VoiceLocaleMap	field	private static final Locale HINDI;
+com.ivona.orchestrator.VoiceLocaleMap	field	private static final Locale NZ_ENGLISH;
+com.ivona.orchestrator.VoiceLocaleMap	method	private List<Locale> filterVoicesForAvailability(List<Locale> list)
+com.ivona.orchestrator.VoiceLocaleMap	method	private VoiceLocaleMap(Context context)
+com.ivona.orchestrator.VoiceLocaleMap	method	private boolean isVoiceInstalled(Locale locale)
+com.ivona.orchestrator.VoiceLocaleMap	method	public List<Locale> get(Locale locale)
+com.ivona.orchestrator.VoiceLocaleMap	method	public List<Locale> getBestVoicesForLocale(Locale locale)
+com.ivona.orchestrator.VoiceLocaleMap	method	public Locale getFallBackLocale(Locale locale)
+com.ivona.orchestrator.VoiceLocaleMap	method	public boolean containsValue(Locale locale)
+com.ivona.orchestrator.VoiceLocaleMap	method	public boolean isVoiceAvailable(Locale locale)
+com.ivona.orchestrator.VoiceLocaleMap	method	public static Set<Locale> getSupportedLocales()
+com.ivona.orchestrator.VoiceLocaleMap	method	public static VoiceLocaleMap getInstance(Context context)
+com.ivona.orchestrator.metrics.AvailableMetrics	field	public final String name;
+com.ivona.orchestrator.metrics.AvailableMetrics	method	public String getComposedName(String str)
+com.ivona.orchestrator.metrics.MetricsManagerFactory	method	public static MetricsManager buildMetricsManager(Context context, String str)
+com.ivona.orchestrator.metrics.TtsOrchestratorMetricsManager	field	private final Context context;
+com.ivona.orchestrator.metrics.TtsOrchestratorMetricsManager	field	private final String componentName;
+com.ivona.orchestrator.metrics.TtsOrchestratorMetricsManager	method	public MetricEvent createMetricEvent()
+com.ivona.orchestrator.metrics.TtsOrchestratorMetricsManager	method	public void createAndRecordCounterMetric(String str)
+com.ivona.orchestrator.metrics.TtsOrchestratorMetricsManager	method	public void record(MetricEvent metricEvent)
+com.ivona.orchestrator.metrics.TtsOrchestratorMetricsManager$MetricsHandler	method	public void sendMessage(Context context, MetricEvent metricEvent)
+com.ivona.orchestrator.metrics.TtsOrchestratorMetricsManager$MetricsHandler$MetricData	field	private final Context mContext;
+com.ivona.orchestrator.metrics.TtsOrchestratorMetricsManager$MetricsHandler$MetricData	field	private final MetricEvent mMetricEvent;
+com.ivona.orchestrator.serial.BooleanSerialHelper	method	protected Set<String> getAllowedClassNames()
+com.ivona.orchestrator.serial.DeserializeHelper	method	private static boolean validExtra(Intent intent, String str)
+com.ivona.orchestrator.serial.DeserializeHelper	method	public static Boolean deserializeBoolean(Intent intent, String str, boolean z)
+com.ivona.orchestrator.serial.DeserializeHelper	method	public static HashMap<Locale, Locale> deserializeLocaleMap(Intent intent, String str)
+com.ivona.orchestrator.serial.DeserializeHelper	method	public static Integer deserializeInteger(Intent intent, String str, int i)
+com.ivona.orchestrator.serial.DeserializeHelper	method	public static Locale deserializeLocale(Intent intent, String str)
+com.ivona.orchestrator.serial.DeserializeHelper	method	public static String deserializeString(Intent intent, String str)
+com.ivona.orchestrator.serial.HashMapLocaleSerialHelper	method	private void validateContents(HashMap<Locale, Locale> map)
+com.ivona.orchestrator.serial.HashMapLocaleSerialHelper	method	protected HashMap<Locale, Locale> deserialize(Object obj, HashMap<Locale, Locale> map)
+com.ivona.orchestrator.serial.HashMapLocaleSerialHelper	method	protected Set<String> getAllowedClassNames()
+com.ivona.orchestrator.serial.IntegerSerialHelper	method	protected Set<String> getAllowedClassNames()
+com.ivona.orchestrator.serial.LocaleSerialHelper	method	protected Locale deserialize(Object obj, Locale locale)
+com.ivona.orchestrator.serial.LocaleSerialHelper	method	protected Set<String> getAllowedClassNames()
+com.ivona.orchestrator.serial.SerializeHelper	field	protected final String TAG;
+com.ivona.orchestrator.serial.SerializeHelper	method	protected Object internalDeserialize(byte[] bArr) throws ClassNotFoundException, IOException
+com.ivona.orchestrator.serial.SerializeHelper	method	protected SerializeHelper(String str)
+com.ivona.orchestrator.serial.SerializeHelper	method	protected abstract Set<String> getAllowedClassNames();
+com.ivona.orchestrator.serial.SerializeHelper	method	static byte[] serialize(Object obj) throws IOException
+com.ivona.orchestrator.serial.SerializeHelper$LookAheadInputStream	field	private StringBuilder notAllowedClasses;
+com.ivona.orchestrator.serial.SerializeHelper$LookAheadInputStream	field	private boolean classResolved;
+com.ivona.orchestrator.serial.SerializeHelper$LookAheadInputStream	field	private int matchedResolved;
+com.ivona.orchestrator.serial.SerializeHelper$LookAheadInputStream	method	protected Class<?> resolveClass(ObjectStreamClass objectStreamClass) throws IOException, ClassNotFoundException
+com.ivona.orchestrator.serial.StringSerialHelper	method	protected Set<String> getAllowedClassNames()
+com.ivona.orchestrator.utils.DefaultVoicesUtils	method	public static String getFileName(Locale locale)
+com.ivona.orchestrator.utils.DefaultVoicesUtils	method	public static String getSetLanguageStatus(int i)
+com.ivona.orchestrator.utils.DefaultVoicesUtils	method	public static String getSpeakStatus(int i)
+com.ivona.orchestrator.utils.ListBasedMultiMap	field	private HashMap<K, List<V>> innerMap;
+com.ivona.orchestrator.utils.ListBasedMultiMap	method	public List<V> get(K k)
+com.ivona.orchestrator.utils.ListBasedMultiMap	method	public Set<K> keySet()
+com.ivona.orchestrator.utils.ListBasedMultiMap	method	public boolean containsKey(Object obj)
+com.ivona.orchestrator.utils.ListBasedMultiMap	method	public boolean containsValue(Object obj)
+com.ivona.orchestrator.utils.ListBasedMultiMap	method	public void put(K k, V v)
+com.ivona.orchestrator.utils.ListBasedMultiMap	method	public void putAll(K k, List<V> list)
+com.ivona.orchestrator.utils.LocaleUtils	field	private static Map<String, String> iso3ToIso2Country;
+com.ivona.orchestrator.utils.LocaleUtils	field	private static Map<String, String> iso3ToIso2Language;
+com.ivona.orchestrator.utils.LocaleUtils	method	public static Locale convertLocaleToISO2(Locale locale)
+com.ivona.orchestrator.utils.LocaleUtils	method	public static String getISO2CountryFromISO3(String str)
+com.ivona.orchestrator.utils.LocaleUtils	method	public static String getISO2LanguageFromISO3(String str)
+com.ivona.orchestrator.utils.LoganUtils	field	private static final Uri LOGAN_PREFS_PROVIDER_URI;
+com.ivona.orchestrator.utils.LoganUtils	method	public static boolean isLoganEnabled(Context context)

@@ -1,0 +1,513 @@
+kind	class	extends	implements
+class	com.amazon.ceviche.AsapEventTracker		
+class	com.amazon.ceviche.AsapEventTracker_Factory		Factory<AsapEventTracker>
+class	com.amazon.ceviche.BuildConfig		
+class	com.amazon.ceviche.Ceviche		
+class	com.amazon.ceviche.Ceviche_Factory		Factory<Ceviche>
+class	com.amazon.ceviche.ContextModule		
+class	com.amazon.ceviche.ContextModule_ProvideApplicationFactory		Factory<Application>
+class	com.amazon.ceviche.ContextModule_ProvideContextFactory		Factory<Context>
+class	com.amazon.ceviche.DaggerDeps	Deps	
+class	com.amazon.ceviche.DaggerDeps$Builder		
+class	com.amazon.ceviche.DaggerLoggingDeps	LoggingDeps	
+class	com.amazon.ceviche.DaggerLoggingDeps$Builder		
+class	com.amazon.ceviche.DebugOnEventTrackedHook		OnEventTrackedHook
+class	com.amazon.ceviche.Deps		
+class	com.amazon.ceviche.Event		
+class	com.amazon.ceviche.EventBatch		
+class	com.amazon.ceviche.EventBatch_Factory		Factory<EventBatch>
+class	com.amazon.ceviche.EventFactory		
+class	com.amazon.ceviche.EventFactory$UuidIdGenerator		IdGenerator
+class	com.amazon.ceviche.EventFactoryWithHooks		
+class	com.amazon.ceviche.EventFactoryWithHooks_Factory		Factory<EventFactoryWithHooks>
+class	com.amazon.ceviche.EventFactory_Factory		Factory<EventFactory>
+class	com.amazon.ceviche.EventNameDenylist		
+class	com.amazon.ceviche.EventNameDenylist_Factory		Factory<EventNameDenylist>
+class	com.amazon.ceviche.EventNames		
+class	com.amazon.ceviche.EventProcessingModule		
+class	com.amazon.ceviche.EventProcessingModule_ProvideAmazonMinervaFactory		Factory<AmazonMinerva>
+class	com.amazon.ceviche.EventProcessingModule_ProvideAmazonProfileManagerFactory		Factory<AmazonProfileManager>
+class	com.amazon.ceviche.EventProcessingModule_ProvideAsapEventTrackerExecutorServiceFactory		Factory<ExecutorService>
+class	com.amazon.ceviche.EventProcessingModule_ProvideClassicCevicheEventProcessorFactory		Factory<EventProcessor>
+class	com.amazon.ceviche.EventProcessingModule_ProvideConnectivityManagerFactory		Factory<ConnectivityManager>
+class	com.amazon.ceviche.EventProcessingModule_ProvideEventProcessorsFactory		Factory<List<EventProcessor>>
+class	com.amazon.ceviche.EventProcessingModule_ProvideEventTransporterFactory		Factory<EventTransporter>
+class	com.amazon.ceviche.EventProcessingModule_ProvideGuardForHttpBatchTransporterFactory		Factory<Guard>
+class	com.amazon.ceviche.EventProcessingModule_ProvideInitialDelayMillisecondsFactory		Factory<Long>
+class	com.amazon.ceviche.EventProcessingModule_ProvideIsUserBuildFactory		Factory<Boolean>
+class	com.amazon.ceviche.EventProcessingModule_ProvideMaxDelayMillisecondsFactory		Factory<Long>
+class	com.amazon.ceviche.EventProcessingModule_ProvideMaxRetriesFactory		Factory<Long>
+class	com.amazon.ceviche.EventProcessingModule_ProvideNativeCevicheEventProcessorFactory		Factory<EventProcessor>
+class	com.amazon.ceviche.EventProcessingModule_ProvideOkHttpClientFactory		Factory<OkHttpClient>
+class	com.amazon.ceviche.EventProcessingModule_ProvideRetryForBatchHttpClientFactory		Factory<Retry>
+class	com.amazon.ceviche.EventProcessingModule_ProvidesEventBundlerFactory		Factory<EventBundler>
+class	com.amazon.ceviche.EventProcessingModule_ProvidesThreadPoolExecutorFactory		Factory<ScheduledThreadPoolExecutor>
+class	com.amazon.ceviche.EventProps		
+class	com.amazon.ceviche.EventTracker		
+class	com.amazon.ceviche.EventTracker_Factory		Factory<EventTracker>
+class	com.amazon.ceviche.Flags		
+class	com.amazon.ceviche.HooksModule		
+class	com.amazon.ceviche.HooksModule_ProvideOnEventTrackedHooksFactory		Factory<Set<OnEventTrackedHook>>
+class	com.amazon.ceviche.KeyValidator	Props.KeyValidator	
+class	com.amazon.ceviche.LoggingDeps		
+class	com.amazon.ceviche.LoggingModule		
+class	com.amazon.ceviche.LoggingModule_ProvideLoggerFactory		Factory<Logger>
+class	com.amazon.ceviche.MetricRecorder		
+class	com.amazon.ceviche.MetricRecorder_Factory		Factory<MetricRecorder>
+class	com.amazon.ceviche.MinervaEventProcessor		
+class	com.amazon.ceviche.MinervaEventProcessor_Factory		Factory<MinervaEventProcessor>
+class	com.amazon.ceviche.MiscModule		
+class	com.amazon.ceviche.MiscModule_ProvideBinderUtilsFactory		Factory<BinderUtils>
+class	com.amazon.ceviche.MiscModule_ProvideContentResolverFactory		Factory<ContentResolver>
+class	com.amazon.ceviche.MiscModule_ProvideMetricsFactory		Factory<Metrics>
+class	com.amazon.ceviche.MiscModule_ProvideSettingsFactory		Factory<Settings>
+class	com.amazon.ceviche.Props		
+class	com.amazon.ceviche.Props$KeyValidator		
+class	com.amazon.ceviche.RolloutEnabler		OnInitializationListener
+class	com.amazon.ceviche.RolloutEnabler_Factory		Factory<RolloutEnabler>
+class	com.amazon.ceviche.TransportInfo		
+class	com.amazon.ceviche.TransportInfo$TransportMechanism		
+class	com.amazon.ceviche.TransportMechanismProps		
+class	com.amazon.ceviche.UpdateEventNameDenylist		OnConfigurationUpdated
+class	com.amazon.ceviche.UpdateEventNameDenylist_Factory		Factory<UpdateEventNameDenylist>
+class	com.amazon.ceviche.ads.AdEventPropsNames		
+class	com.amazon.ceviche.ads.AttachFlagsToEvent		OnEventTrackedHook
+class	com.amazon.ceviche.ads.TrackAds		
+class	com.amazon.ceviche.ads.events.BaseAdEvent		
+class	com.amazon.ceviche.ads.events.BaseScreenItemEvent		
+class	com.amazon.ceviche.ads.events.CheckedAdEvent	BaseAdEvent	
+class	com.amazon.ceviche.ads.events.ClickAdEvent	BaseAdEvent	
+class	com.amazon.ceviche.ads.events.ImpressionAdEvent	BaseAdEvent	
+class	com.amazon.ceviche.ads.events.MiniDetailAdEvent	BaseAdEvent	
+class	com.amazon.ceviche.ads.events.ScreenItemClickEvent	BaseScreenItemEvent	
+class	com.amazon.ceviche.ads.events.ScreenItemSelectionEvent	BaseScreenItemEvent	
+class	com.amazon.ceviche.ads.events.ScreenVisibilityEvent		
+class	com.amazon.ceviche.ads.events.SelectionAdEvent	BaseAdEvent	
+class	com.amazon.ceviche.ads.events.UserInteractionAdEvent	BaseAdEvent	
+class	com.amazon.ceviche.ads.events.VideoErrorAdEvent	BaseAdEvent	
+class	com.amazon.ceviche.ads.events.VideoStateAdEvent	BaseAdEvent	
+class	com.amazon.ceviche.ads.events.ViewabilityAdEvent	BaseAdEvent	
+class	com.amazon.ceviche.ads.events.metadata.BaseVisibilityChangeMetadata		
+class	com.amazon.ceviche.ads.events.metadata.ItemVisibilityChangeMetadata	BaseVisibilityChangeMetadata	
+class	com.amazon.ceviche.ads.events.metadata.ListVisibilityChangeMetadata	BaseVisibilityChangeMetadata	
+class	com.amazon.ceviche.ads.events.metadata.ScreenVisibilityChangeMetadata	BaseVisibilityChangeMetadata	
+class	com.amazon.ceviche.asap.AsapUncaughtExceptionHandler		Thread.UncaughtExceptionHandler
+class	com.amazon.ceviche.asap.database.AsapEventDatabase	SQLiteOpenHelper	
+class	com.amazon.ceviche.asap.database.AsapEventDatabase_Factory		Factory<AsapEventDatabase>
+class	com.amazon.ceviche.asap.database.AsapEventTable		
+class	com.amazon.ceviche.asap.retry.AsapRetryInitializationException	RuntimeException	
+class	com.amazon.ceviche.asap.retry.AsapRetryModule		
+class	com.amazon.ceviche.asap.retry.AsapRetryModule_ProvideAsapRetryEventsStoreFactory		Factory<AsapRetryEventsStore>
+class	com.amazon.ceviche.asap.retry.AsapRetryModule_ProvideAsapRetryHandlerFactory		Factory<AsapRetryHandler>
+class	com.amazon.ceviche.asap.retry.AsapRetryModule_ProvideAsapRetrySchedulerExecutorServiceFactory		Factory<ExecutorService>
+class	com.amazon.ceviche.asap.retry.AsapRetryModule_ProvideJobSchedulerFactory		Factory<JobScheduler>
+class	com.amazon.ceviche.asap.retry.eventstore.sqlite.AsapRetryBatchIterator		Iterator<List<EventEntity>>
+class	com.amazon.ceviche.asap.retry.eventstore.sqlite.AsapRetryTable	AsapEventTable	
+class	com.amazon.ceviche.asap.retry.eventstore.sqlite.AsapRetryTable_Factory		Factory<AsapRetryTable>
+class	com.amazon.ceviche.asap.retry.eventstore.sqlite.SqliteEventStore		AsapRetryEventsStore
+class	com.amazon.ceviche.asap.retry.eventstore.sqlite.SqliteEventStore$ActiveBatch		
+class	com.amazon.ceviche.asap.retry.eventstore.sqlite.SqliteEventStore_Factory		Factory<SqliteEventStore>
+class	com.amazon.ceviche.asap.retry.handlers.PersistentAsapRetryHandler		AsapRetryHandler
+class	com.amazon.ceviche.asap.retry.handlers.PersistentAsapRetryHandler$TransportBatchResult		
+class	com.amazon.ceviche.asap.retry.handlers.PersistentAsapRetryHandler_Factory		Factory<PersistentAsapRetryHandler>
+class	com.amazon.ceviche.asap.retry.scheduler.AsapRetryJobRunnable		Runnable
+class	com.amazon.ceviche.asap.retry.scheduler.AsapRetryJobRunnable_MembersInjector		MembersInjector<AsapRetryJobRunnable>
+class	com.amazon.ceviche.asap.retry.scheduler.AsapRetryJobService	JobService	
+class	com.amazon.ceviche.asap.retry.scheduler.AsapRetryJobService_MembersInjector		MembersInjector<AsapRetryJobService>
+class	com.amazon.ceviche.asap.retry.scheduler.AsapRetryLifecycleListener		OnFirstTrackAsapEventListener,OnInitializationListener,OnRetryAsapEventListener
+class	com.amazon.ceviche.asap.retry.scheduler.AsapRetryLifecycleListener_Factory		Factory<AsapRetryLifecycleListener>
+class	com.amazon.ceviche.asap.retry.scheduler.AsapRetryScheduler		
+class	com.amazon.ceviche.asap.retry.scheduler.AsapRetryScheduler_Factory		Factory<AsapRetryScheduler>
+class	com.amazon.ceviche.autotrack.AppForegroundBackgroundTracker		AppForegroundBackgroundListener
+class	com.amazon.ceviche.autotrack.AppForegroundBackgroundTracker_Factory		Factory<AppForegroundBackgroundTracker>
+class	com.amazon.ceviche.autotrack.CevicheContextEvent		ContextEvent
+class	com.amazon.ceviche.autotrack.CevicheContextEvent_Factory		Factory<CevicheContextEvent>
+class	com.amazon.ceviche.autotrack.ContextTracker		OnFirstTrackEventListener
+class	com.amazon.ceviche.autotrack.ContextTrackerModule		
+class	com.amazon.ceviche.autotrack.ContextTrackerModule_ProvideContextEventsFactory		Factory<Set<ContextEvent>>
+class	com.amazon.ceviche.autotrack.ContextTrackerModule_ProvideExecutorForContextTrackerFactory		Factory<ScheduledExecutorService>
+class	com.amazon.ceviche.autotrack.ContextTracker_Factory		Factory<ContextTracker>
+class	com.amazon.ceviche.autotrack.LoggingAppForegroundBackgroundListener		AppForegroundBackgroundListener
+class	com.amazon.ceviche.cache.CacheManager		
+class	com.amazon.ceviche.cache.CacheManager$CacheEntry		
+class	com.amazon.ceviche.cache.CacheManager_Factory		Factory<CacheManager>
+class	com.amazon.ceviche.com.amazon.cloud9.android.knobs.Knobs		
+class	com.amazon.ceviche.com.amazon.neo.service.api.BinderInternal		
+class	com.amazon.ceviche.com.amazon.neo.service.api.BinderUtils		
+class	com.amazon.ceviche.com.amazon.neo.service.api.BinderUtils$Builder		
+class	com.amazon.ceviche.com.amazon.neo.service.api.Bundle		Parcelable
+class	com.amazon.ceviche.com.amazon.neo.service.api.PackageManagerUtils		
+class	com.amazon.ceviche.com.amazon.neo.service.api.ServiceCallback		
+class	com.amazon.ceviche.com.amazon.p11.spy.guard.Clock		
+class	com.amazon.ceviche.com.amazon.p11.spy.guard.ExponentialGuardBackoffStrategy		GuardBackoffStrategy
+class	com.amazon.ceviche.com.amazon.p11.spy.guard.Guard		
+class	com.amazon.ceviche.com.amazon.p11.spy.guard.PrefsGuardStorage		GuardStorage
+class	com.amazon.ceviche.com.amazon.p11.spy.logging.AndroidLogger		Logger
+class	com.amazon.ceviche.com.amazon.p11.spy.logging.AndroidLoggerFactory		LoggerFactory
+class	com.amazon.ceviche.com.amazon.p11.spy.logging.Logg		
+class	com.amazon.ceviche.com.amazon.p11.spy.logging.Logg$Initializer		
+class	com.amazon.ceviche.com.amazon.p11.spy.metrics.M		
+class	com.amazon.ceviche.com.amazon.p11.spy.metrics.M$Initializer		
+class	com.amazon.ceviche.com.amazon.p11.spy.metrics.Metrics		
+class	com.amazon.ceviche.com.amazon.p11.spy.metrics.NoOpMetricsReporter		MetricsReporter
+class	com.amazon.ceviche.com.amazon.p11.spy.metrics.NoOpMetricsReporterFactory		MetricsReporterFactory
+class	com.amazon.ceviche.com.amazon.p11.spy.nuts.and.bolts.BackgroundThreadFactory		ThreadFactory
+class	com.amazon.ceviche.com.amazon.p11.spy.nuts.and.bolts.BoundedQueue		
+class	com.amazon.ceviche.com.amazon.p11.spy.nuts.and.bolts.ByteStream	ByteArrayOutputStream	
+class	com.amazon.ceviche.com.amazon.p11.spy.nuts.and.bolts.CountingOutputStream	OutputStream	
+class	com.amazon.ceviche.com.amazon.p11.spy.nuts.and.bolts.Exceptions		
+class	com.amazon.ceviche.com.amazon.p11.spy.nuts.and.bolts.FixedBlockingPool		
+class	com.amazon.ceviche.com.amazon.p11.spy.nuts.and.bolts.JsonArrayToStringSet		
+class	com.amazon.ceviche.com.amazon.p11.spy.nuts.and.bolts.Objects		
+class	com.amazon.ceviche.com.amazon.p11.spy.nuts.and.bolts.Pre		
+class	com.amazon.ceviche.com.amazon.p11.spy.nuts.and.bolts.StringToStringSet		
+class	com.amazon.ceviche.com.amazon.p11.spy.preferences.Prefs		
+class	com.amazon.ceviche.com.amazon.p11.spy.retries.ExponentialBackoffStrategy		BackoffStrategy
+class	com.amazon.ceviche.com.amazon.p11.spy.retries.ExponentialBackoffStrategyFactory		BackoffStrategyFactory
+class	com.amazon.ceviche.com.amazon.p11.spy.retries.ExponentialBackoffStrategyFactory_Factory		Factory<ExponentialBackoffStrategyFactory>
+class	com.amazon.ceviche.com.amazon.p11.spy.retries.HttpResponseCodeRetryResultStrategy		RetryResultStrategy<Integer>
+class	com.amazon.ceviche.com.amazon.p11.spy.retries.HttpResponseCodeRetryResultStrategyFactory		RetryResultStrategyFactory
+class	com.amazon.ceviche.com.amazon.p11.spy.retries.HttpResponseCodeRetryResultStrategyFactory_Factory		Factory<HttpResponseCodeRetryResultStrategyFactory>
+class	com.amazon.ceviche.com.amazon.p11.spy.retries.HttpRetryExceptionStrategyFactory	RetryExceptionStrategyFactory	
+class	com.amazon.ceviche.com.amazon.p11.spy.retries.HttpRetryExceptionStrategyFactory_Factory		Factory<HttpRetryExceptionStrategyFactory>
+class	com.amazon.ceviche.com.amazon.p11.spy.retries.MaxRetriesReachedException	RuntimeException	
+class	com.amazon.ceviche.com.amazon.p11.spy.retries.NonRetryableException	RuntimeException	
+class	com.amazon.ceviche.com.amazon.p11.spy.retries.Retry		
+class	com.amazon.ceviche.com.amazon.p11.spy.retries.RetryExceptionStrategy		
+class	com.amazon.ceviche.com.amazon.p11.spy.retries.RetryExceptionStrategyFactory		
+class	com.amazon.ceviche.com.amazon.p11.spy.retries.Sleeper		
+class	com.amazon.ceviche.com.amazon.p11.spy.settings.Settings		
+class	com.amazon.ceviche.configuration.Configuration		
+class	com.amazon.ceviche.configuration.ConfigurationModule		
+class	com.amazon.ceviche.configuration.ConfigurationModule_ProvideExecutorForConfigurationUpdaterFactory		Factory<ScheduledExecutorService>
+class	com.amazon.ceviche.configuration.ConfigurationModule_ProvideOnConfigurationUpdatedListenersFactory		Factory<Set<OnConfigurationUpdated>>
+class	com.amazon.ceviche.configuration.ConfigurationUpdateHandler	Handler	
+class	com.amazon.ceviche.configuration.Configuration_Factory		Factory<Configuration>
+class	com.amazon.ceviche.configuration.KnobConfiguration		
+class	com.amazon.ceviche.configuration.KnobConfiguration_Factory		Factory<KnobConfiguration>
+class	com.amazon.ceviche.configuration.SushiEndpointConfiguration		
+class	com.amazon.ceviche.configuration.SushiEndpointConfiguration_Factory		Factory<SushiEndpointConfiguration>
+class	com.amazon.ceviche.configuration.SyncConfiguration		ServiceConnection,OnFirstTrackEventListener
+class	com.amazon.ceviche.configuration.SyncConfiguration_Factory		Factory<SyncConfiguration>
+class	com.amazon.ceviche.dagger.internal.DoubleCheck		Provider<T>
+class	com.amazon.ceviche.dagger.internal.Preconditions		
+class	com.amazon.ceviche.event.BuildConfig		
+class	com.amazon.ceviche.event.serializer.BuildConfig		
+class	com.amazon.ceviche.eventserializer.EventSerializer		
+class	com.amazon.ceviche.eventserializer.EventSerializer_Factory		Factory<EventSerializer>
+class	com.amazon.ceviche.eventserializer.EventToContentValues		
+class	com.amazon.ceviche.eventserializer.SerializedEvent		
+class	com.amazon.ceviche.eventserializer.SerializedEvent$SerializedEventBuilder		
+class	com.amazon.ceviche.exceptions.InvalidTransportInfo	IllegalArgumentException	
+class	com.amazon.ceviche.exceptions.TransportMechanismNotFound	InvalidTransportInfo	
+class	com.amazon.ceviche.lifecycle.ActivityLifecycleMonitor		Application.ActivityLifecycleCallbacks
+class	com.amazon.ceviche.lifecycle.ActivityLifecycleMonitor_Factory		Factory<ActivityLifecycleMonitor>
+class	com.amazon.ceviche.lifecycle.AppForegroundBackgroundListenerModule		
+class	com.amazon.ceviche.lifecycle.AppForegroundBackgroundListenerModule_ProvideAppLifecycleListenersFactory		Factory<Set<AppForegroundBackgroundListener>>
+class	com.amazon.ceviche.lifecycle.CevicheLifecycleManager		
+class	com.amazon.ceviche.lifecycle.CevicheLifecycleManager_Factory		Factory<CevicheLifecycleManager>
+class	com.amazon.ceviche.lifecycle.CevicheLifecycleModule		
+class	com.amazon.ceviche.lifecycle.CevicheLifecycleModule_ProvideExecutorForCevicheLifecycleManagerFactory		Factory<ExecutorService>
+class	com.amazon.ceviche.lifecycle.CevicheLifecycleModule_ProvideOnInitializationListenersFactory		Factory<Set<OnInitializationListener>>
+class	com.amazon.ceviche.lifecycle.CevicheLifecycleModule_ProvideOnRetryAsapEventListenerFactory		Factory<Set<OnRetryAsapEventListener>>
+class	com.amazon.ceviche.lifecycle.CevicheLifecycleModule_ProvideOnTrackAsapEventListenersFactory		Factory<Set<OnFirstTrackAsapEventListener>>
+class	com.amazon.ceviche.lifecycle.CevicheLifecycleModule_ProvideOnTrackEventListenersFactory		Factory<Set<OnFirstTrackEventListener>>
+class	com.amazon.ceviche.lifecycle.OnFirstTrackAsapEvent		
+class	com.amazon.ceviche.lifecycle.OnFirstTrackAsapEvent$Initializer		
+class	com.amazon.ceviche.lifecycle.OnFirstTrackAsapEvent_Factory		Factory<OnFirstTrackAsapEvent>
+class	com.amazon.ceviche.lifecycle.OnFirstTrackEvent		
+class	com.amazon.ceviche.lifecycle.OnFirstTrackEvent$Initializer		
+class	com.amazon.ceviche.lifecycle.OnFirstTrackEvent_Factory		Factory<OnFirstTrackEvent>
+class	com.amazon.ceviche.lifecycle.RegisterActivityLifecycleMonitor		OnInitializationListener
+class	com.amazon.ceviche.lifecycle.RegisterActivityLifecycleMonitor_Factory		Factory<RegisterActivityLifecycleMonitor>
+class	com.amazon.ceviche.metadata.ActiveProfileInfo		
+class	com.amazon.ceviche.metadata.ActiveProfileInfo_Factory		Factory<ActiveProfileInfo>
+class	com.amazon.ceviche.metadata.AppMetadata		
+class	com.amazon.ceviche.metadata.AppMetadata$UnknownApplicationInfo	ApplicationInfo	
+class	com.amazon.ceviche.metadata.AppMetadata$UnknownPackageInfo	PackageInfo	
+class	com.amazon.ceviche.metadata.AppMetadata_Factory		Factory<AppMetadata>
+class	com.amazon.ceviche.metadata.BuildConfig		
+class	com.amazon.ceviche.metadata.CevicheMetadata		
+class	com.amazon.ceviche.metadata.CevicheMetadata_Factory		Factory<CevicheMetadata>
+class	com.amazon.ceviche.metadata.CustomerMetadata		
+class	com.amazon.ceviche.metadata.CustomerMetadata_Factory		Factory<CustomerMetadata>
+class	com.amazon.ceviche.metadata.CustomerStore		
+class	com.amazon.ceviche.metadata.CustomerStore_Factory		Factory<CustomerStore>
+class	com.amazon.ceviche.metadata.DeviceMetadata		
+class	com.amazon.ceviche.metadata.DeviceMetadata_Factory		Factory<DeviceMetadata>
+class	com.amazon.ceviche.metadata.EventMetadataKeys		
+class	com.amazon.ceviche.metadata.InetNetworkInterfaceProvider		NetworkInterfaceProvider
+class	com.amazon.ceviche.metadata.InetNetworkInterfaceProvider_Factory		Factory<InetNetworkInterfaceProvider>
+class	com.amazon.ceviche.metadata.InterestBasedAdsSetting		
+class	com.amazon.ceviche.metadata.InterestBasedAdsSetting_Factory		Factory<InterestBasedAdsSetting>
+class	com.amazon.ceviche.metadata.MetadataModule		
+class	com.amazon.ceviche.metadata.MetadataModule_ProvideCustomerAttributeStoreFactory		Factory<CustomerAttributeStore>
+class	com.amazon.ceviche.metadata.MetadataModule_ProvideMapAccountManagerFactory		Factory<MAPAccountManager>
+class	com.amazon.ceviche.metadata.MetadataModule_ProvidePackageManagerFactory		Factory<PackageManager>
+class	com.amazon.ceviche.metadata.MetadataModule_ProvidePackageNameFactory		Factory<String>
+class	com.amazon.ceviche.metadata.ProfileInfoCallback		ActiveProfileEventCallback
+class	com.amazon.ceviche.metadata.ProfileInfoCallback_Factory		Factory<ProfileInfoCallback>
+class	com.amazon.ceviche.metadata.SysProperties		
+class	com.amazon.ceviche.metadata.SysProperties_Factory		Factory<SysProperties>
+class	com.amazon.ceviche.metadata.TruncatedIpAddressProvider		
+class	com.amazon.ceviche.metadata.TruncatedIpAddressProvider_Factory		Factory<TruncatedIpAddressProvider>
+class	com.amazon.ceviche.metrics.BuildConfig		
+class	com.amazon.ceviche.metrics.DaggerMetricsDeps	MetricsDeps	
+class	com.amazon.ceviche.metrics.DaggerMetricsDeps$Builder		
+class	com.amazon.ceviche.metrics.DelegatingMetricsReporter		MetricsReporter
+class	com.amazon.ceviche.metrics.DelegatingMetricsReporter_Factory		Factory<DelegatingMetricsReporter>
+class	com.amazon.ceviche.metrics.LoggingMetricsReporter		MetricsReporter
+class	com.amazon.ceviche.metrics.LoggingMetricsReporter_Factory		Factory<LoggingMetricsReporter>
+class	com.amazon.ceviche.metrics.MetricsDenyList		
+class	com.amazon.ceviche.metrics.MetricsDenyList_Factory		Factory<MetricsDenyList>
+class	com.amazon.ceviche.metrics.MetricsDeps		
+class	com.amazon.ceviche.metrics.MetricsInitializer		
+class	com.amazon.ceviche.metrics.MetricsModule		
+class	com.amazon.ceviche.metrics.MetricsModule_ProvideAmazonMinervaFactory		Factory<AmazonMinerva>
+class	com.amazon.ceviche.metrics.MetricsModule_ProvideContextFactory		Factory<Context>
+class	com.amazon.ceviche.metrics.MetricsModule_ProvideMetricsReporterDelegateFactory		Factory<MetricsReporter>
+class	com.amazon.ceviche.metrics.MetricsModule_ProvideMinervaMetricsReporterFactory		Factory<MetricsReporter>
+class	com.amazon.ceviche.metrics.MetricsModule_ProvideMinervaMetricsUtilFactory		Factory<MinervaMetricsUtil>
+class	com.amazon.ceviche.metrics.MetricsModule_ProvidePrefsFactory		Factory<Prefs>
+class	com.amazon.ceviche.metrics.MetricsRateLimiter		
+class	com.amazon.ceviche.metrics.MetricsRateLimiter_Factory		Factory<MetricsRateLimiter>
+class	com.amazon.ceviche.metrics.NoOperationMetricsReporter		MetricsReporter
+class	com.amazon.ceviche.metrics.UpdateMetricsLists		OnConfigurationUpdated
+class	com.amazon.ceviche.metrics.UpdateMetricsLists_Factory		Factory<UpdateMetricsLists>
+class	com.amazon.ceviche.metrics.minerva.MinervaMetricsReporter		MetricsReporter
+class	com.amazon.ceviche.metrics.minerva.MinervaMetricsReporter_Factory		Factory<MinervaMetricsReporter>
+class	com.amazon.ceviche.metrics.minerva.MinervaMetricsUtil		
+class	com.amazon.ceviche.minerva.CevicheSchemaHelper		
+class	com.amazon.ceviche.minerva.CevicheSchemaHelper$SchemaInfo		
+class	com.amazon.ceviche.minerva.CevicheSchemaHelper_Factory		Factory<CevicheSchemaHelper>
+class	com.amazon.ceviche.minerva.EventMetadata		
+class	com.amazon.ceviche.minerva.EventMetadata$EventMetadataBuilder		
+class	com.amazon.ceviche.minerva.LauncherInfoProvider		
+class	com.amazon.ceviche.minerva.LauncherInfoProvider_Factory		Factory<LauncherInfoProvider>
+class	com.amazon.ceviche.minerva.MinervaSchemaConfig		
+class	com.amazon.ceviche.minerva.MinervaSchemaMapper		
+class	com.amazon.ceviche.minerva.MinervaSchemaMapper_Factory		Factory<MinervaSchemaMapper>
+class	com.amazon.ceviche.minerva.ProfileInfoProvider		
+class	com.amazon.ceviche.minerva.ProfileInfoProvider_Factory		Factory<ProfileInfoProvider>
+class	com.amazon.ceviche.model.EventEntity		
+class	com.amazon.ceviche.model.EventEntity$EventEntityBuilder		
+class	com.amazon.ceviche.okhttp3.Address		
+class	com.amazon.ceviche.okhttp3.Cache		Closeable,Flushable
+class	com.amazon.ceviche.okhttp3.CacheControl		
+class	com.amazon.ceviche.okhttp3.CacheControl$Builder		
+class	com.amazon.ceviche.okhttp3.CertificatePinner		
+class	com.amazon.ceviche.okhttp3.CertificatePinner$Builder		
+class	com.amazon.ceviche.okhttp3.CertificatePinner$Pin		
+class	com.amazon.ceviche.okhttp3.CipherSuite		
+class	com.amazon.ceviche.okhttp3.ConnectionPool		
+class	com.amazon.ceviche.okhttp3.ConnectionSpec		
+class	com.amazon.ceviche.okhttp3.ConnectionSpec$Builder		
+class	com.amazon.ceviche.okhttp3.Cookie		
+class	com.amazon.ceviche.okhttp3.Dispatcher		
+class	com.amazon.ceviche.okhttp3.EventListener		
+class	com.amazon.ceviche.okhttp3.Handshake		
+class	com.amazon.ceviche.okhttp3.Headers		
+class	com.amazon.ceviche.okhttp3.Headers$Builder		
+class	com.amazon.ceviche.okhttp3.HttpUrl		
+class	com.amazon.ceviche.okhttp3.HttpUrl$Builder		
+class	com.amazon.ceviche.okhttp3.MediaType		
+class	com.amazon.ceviche.okhttp3.OkHttpClient		Cloneable
+class	com.amazon.ceviche.okhttp3.OkHttpClient$Builder		
+class	com.amazon.ceviche.okhttp3.RealCall		Call
+class	com.amazon.ceviche.okhttp3.RealCall$AsyncCall	NamedRunnable	
+class	com.amazon.ceviche.okhttp3.Request		
+class	com.amazon.ceviche.okhttp3.Request$Builder		
+class	com.amazon.ceviche.okhttp3.RequestBody		
+class	com.amazon.ceviche.okhttp3.Response		Closeable
+class	com.amazon.ceviche.okhttp3.Response$Builder		
+class	com.amazon.ceviche.okhttp3.ResponseBody		Closeable
+class	com.amazon.ceviche.okhttp3.Route		
+class	com.amazon.ceviche.okhttp3.internal.Internal		
+class	com.amazon.ceviche.okhttp3.internal.NamedRunnable		Runnable
+class	com.amazon.ceviche.okhttp3.internal.Util		
+class	com.amazon.ceviche.okhttp3.internal.Version		
+class	com.amazon.ceviche.okhttp3.internal.cache.CacheInterceptor		Interceptor
+class	com.amazon.ceviche.okhttp3.internal.cache.CacheStrategy		
+class	com.amazon.ceviche.okhttp3.internal.cache.CacheStrategy$Factory		
+class	com.amazon.ceviche.okhttp3.internal.cache.DiskLruCache		Closeable,Flushable
+class	com.amazon.ceviche.okhttp3.internal.cache.DiskLruCache$Editor		
+class	com.amazon.ceviche.okhttp3.internal.cache.DiskLruCache$Entry		
+class	com.amazon.ceviche.okhttp3.internal.connection.ConnectInterceptor		Interceptor
+class	com.amazon.ceviche.okhttp3.internal.connection.ConnectionSpecSelector		
+class	com.amazon.ceviche.okhttp3.internal.connection.RealConnection	Http2Connection.Listener	Connection
+class	com.amazon.ceviche.okhttp3.internal.connection.RouteDatabase		
+class	com.amazon.ceviche.okhttp3.internal.connection.RouteException	RuntimeException	
+class	com.amazon.ceviche.okhttp3.internal.connection.RouteSelector		
+class	com.amazon.ceviche.okhttp3.internal.connection.RouteSelector$Selection		
+class	com.amazon.ceviche.okhttp3.internal.connection.StreamAllocation		
+class	com.amazon.ceviche.okhttp3.internal.connection.StreamAllocation$StreamAllocationReference	WeakReference<StreamAllocation>	
+class	com.amazon.ceviche.okhttp3.internal.http.BridgeInterceptor		Interceptor
+class	com.amazon.ceviche.okhttp3.internal.http.CallServerInterceptor		Interceptor
+class	com.amazon.ceviche.okhttp3.internal.http.CallServerInterceptor$CountingSink	ForwardingSink	
+class	com.amazon.ceviche.okhttp3.internal.http.HttpDate		
+class	com.amazon.ceviche.okhttp3.internal.http.HttpHeaders		
+class	com.amazon.ceviche.okhttp3.internal.http.HttpMethod		
+class	com.amazon.ceviche.okhttp3.internal.http.RealInterceptorChain		Interceptor.Chain
+class	com.amazon.ceviche.okhttp3.internal.http.RealResponseBody	ResponseBody	
+class	com.amazon.ceviche.okhttp3.internal.http.RequestLine		
+class	com.amazon.ceviche.okhttp3.internal.http.RetryAndFollowUpInterceptor		Interceptor
+class	com.amazon.ceviche.okhttp3.internal.http.StatusLine		
+class	com.amazon.ceviche.okhttp3.internal.http1.Http1Codec		HttpCodec
+class	com.amazon.ceviche.okhttp3.internal.http1.Http1Codec$AbstractSource		Source
+class	com.amazon.ceviche.okhttp3.internal.http1.Http1Codec$ChunkedSink		Sink
+class	com.amazon.ceviche.okhttp3.internal.http1.Http1Codec$ChunkedSource	AbstractSource	
+class	com.amazon.ceviche.okhttp3.internal.http1.Http1Codec$FixedLengthSink		Sink
+class	com.amazon.ceviche.okhttp3.internal.http1.Http1Codec$FixedLengthSource	AbstractSource	
+class	com.amazon.ceviche.okhttp3.internal.http1.Http1Codec$UnknownLengthSource	AbstractSource	
+class	com.amazon.ceviche.okhttp3.internal.http2.ConnectionShutdownException	IOException	
+class	com.amazon.ceviche.okhttp3.internal.http2.Header		
+class	com.amazon.ceviche.okhttp3.internal.http2.Hpack		
+class	com.amazon.ceviche.okhttp3.internal.http2.Hpack$Reader		
+class	com.amazon.ceviche.okhttp3.internal.http2.Hpack$Writer		
+class	com.amazon.ceviche.okhttp3.internal.http2.Http2		
+class	com.amazon.ceviche.okhttp3.internal.http2.Http2Codec		HttpCodec
+class	com.amazon.ceviche.okhttp3.internal.http2.Http2Codec$StreamFinishingSource	ForwardingSource	
+class	com.amazon.ceviche.okhttp3.internal.http2.Http2Connection		Closeable
+class	com.amazon.ceviche.okhttp3.internal.http2.Http2Connection$Builder		
+class	com.amazon.ceviche.okhttp3.internal.http2.Http2Connection$Listener		
+class	com.amazon.ceviche.okhttp3.internal.http2.Http2Connection$PingRunnable	NamedRunnable	
+class	com.amazon.ceviche.okhttp3.internal.http2.Http2Connection$ReaderRunnable	NamedRunnable	Http2Reader.Handler
+class	com.amazon.ceviche.okhttp3.internal.http2.Http2Reader		Closeable
+class	com.amazon.ceviche.okhttp3.internal.http2.Http2Reader$ContinuationSource		Source
+class	com.amazon.ceviche.okhttp3.internal.http2.Http2Stream		
+class	com.amazon.ceviche.okhttp3.internal.http2.Http2Stream$FramingSink		Sink
+class	com.amazon.ceviche.okhttp3.internal.http2.Http2Stream$FramingSource		Source
+class	com.amazon.ceviche.okhttp3.internal.http2.Http2Stream$StreamTimeout	AsyncTimeout	
+class	com.amazon.ceviche.okhttp3.internal.http2.Http2Writer		Closeable
+class	com.amazon.ceviche.okhttp3.internal.http2.Huffman		
+class	com.amazon.ceviche.okhttp3.internal.http2.Huffman$Node		
+class	com.amazon.ceviche.okhttp3.internal.http2.Settings		
+class	com.amazon.ceviche.okhttp3.internal.http2.StreamResetException	IOException	
+class	com.amazon.ceviche.okhttp3.internal.platform.AndroidPlatform	Platform	
+class	com.amazon.ceviche.okhttp3.internal.platform.AndroidPlatform$AndroidCertificateChainCleaner	CertificateChainCleaner	
+class	com.amazon.ceviche.okhttp3.internal.platform.AndroidPlatform$AndroidTrustRootIndex		TrustRootIndex
+class	com.amazon.ceviche.okhttp3.internal.platform.AndroidPlatform$CloseGuard		
+class	com.amazon.ceviche.okhttp3.internal.platform.ConscryptPlatform	Platform	
+class	com.amazon.ceviche.okhttp3.internal.platform.Jdk9Platform	Platform	
+class	com.amazon.ceviche.okhttp3.internal.platform.JdkWithJettyBootPlatform	Platform	
+class	com.amazon.ceviche.okhttp3.internal.platform.JdkWithJettyBootPlatform$JettyNegoProvider		InvocationHandler
+class	com.amazon.ceviche.okhttp3.internal.platform.OptionalMethod		
+class	com.amazon.ceviche.okhttp3.internal.platform.Platform		
+class	com.amazon.ceviche.okhttp3.internal.publicsuffix.PublicSuffixDatabase		
+class	com.amazon.ceviche.okhttp3.internal.tls.BasicCertificateChainCleaner	CertificateChainCleaner	
+class	com.amazon.ceviche.okhttp3.internal.tls.BasicTrustRootIndex		TrustRootIndex
+class	com.amazon.ceviche.okhttp3.internal.tls.CertificateChainCleaner		
+class	com.amazon.ceviche.okhttp3.internal.tls.OkHostnameVerifier		HostnameVerifier
+class	com.amazon.ceviche.okio.AsyncTimeout	Timeout	
+class	com.amazon.ceviche.okio.AsyncTimeout$Watchdog	Thread	
+class	com.amazon.ceviche.okio.Base64		
+class	com.amazon.ceviche.okio.Buffer		Cloneable,ByteChannel,BufferedSink,BufferedSource
+class	com.amazon.ceviche.okio.ByteString		Serializable,Comparable<ByteString>
+class	com.amazon.ceviche.okio.ForwardingSink		Sink
+class	com.amazon.ceviche.okio.ForwardingSource		Source
+class	com.amazon.ceviche.okio.ForwardingTimeout	Timeout	
+class	com.amazon.ceviche.okio.GzipSource		Source
+class	com.amazon.ceviche.okio.InflaterSource		Source
+class	com.amazon.ceviche.okio.Okio		
+class	com.amazon.ceviche.okio.RealBufferedSink		BufferedSink
+class	com.amazon.ceviche.okio.RealBufferedSource		BufferedSource
+class	com.amazon.ceviche.okio.Segment		
+class	com.amazon.ceviche.okio.SegmentPool		
+class	com.amazon.ceviche.okio.SegmentedByteString	ByteString	
+class	com.amazon.ceviche.okio.Timeout		
+class	com.amazon.ceviche.okio.Util		
+class	com.amazon.ceviche.preferences.PreferencesModule		
+class	com.amazon.ceviche.preferences.PreferencesModule_ProvidePrefsFactory		Factory<Prefs>
+class	com.amazon.ceviche.preferences.PreferencesModule_ProvideSharedPreferencesFactory		Factory<SharedPreferences>
+class	com.amazon.ceviche.processing.EventBundle		
+class	com.amazon.ceviche.processing.EventProcessor		
+class	com.amazon.ceviche.processing.EventProcessorRunnable		Runnable
+class	com.amazon.ceviche.processing.HttpTransporter		
+class	com.amazon.ceviche.processing.HttpTransporter_Factory		Factory<HttpTransporter>
+class	com.amazon.ceviche.processing.classic.ClassicEventDispatcher		EventDispatcher
+class	com.amazon.ceviche.processing.classic.ClassicEventDispatcher_Factory		Factory<ClassicEventDispatcher>
+class	com.amazon.ceviche.processing.classic.ClassicEventProcessorConfiguration		EventProcessorConfiguration
+class	com.amazon.ceviche.processing.classic.ClassicEventProcessorConfiguration_Factory		Factory<ClassicEventProcessorConfiguration>
+class	com.amazon.ceviche.processing.general.BasicEventBundler		EventBundler
+class	com.amazon.ceviche.processing.general.BasicEventBundler_Factory		Factory<BasicEventBundler>
+class	com.amazon.ceviche.processing.general.EventProcessorInMemoryQueue		EventProcessorQueue
+class	com.amazon.ceviche.processing.neo.NativeEventDispatcher		EventDispatcher
+class	com.amazon.ceviche.processing.neo.NativeEventDispatcher_Factory		Factory<NativeEventDispatcher>
+class	com.amazon.ceviche.processing.neo.NativeEventProcessorConfiguration		EventProcessorConfiguration
+class	com.amazon.ceviche.processing.neo.NativeEventProcessorConfiguration_Factory		Factory<NativeEventProcessorConfiguration>
+class	com.amazon.ceviche.processing.neo.NativeServiceCallback	ServiceCallback	
+class	com.amazon.ceviche.processing.sushi.SourceGroupNotProvided	InvalidTransportInfo	
+class	com.amazon.ceviche.processing.sushi.SushiEventTransporter		EventTransporter
+class	com.amazon.ceviche.processing.sushi.SushiEventTransporter_Factory		Factory<SushiEventTransporter>
+class	com.amazon.ceviche.sdk.hooks.BuildConfig		
+class	com.amazon.ceviche.sdk.hooks.ads.BuildConfig		
+class	com.amazon.ceviche.time.BuildConfig		
+class	com.amazon.ceviche.time.Clock		
+class	com.amazon.ceviche.time.Clock_Factory		Factory<Clock>
+class	com.amazon.ceviche.tracer.AdEventTracer		
+class	com.amazon.ceviche.tracer.BuildConfig		
+class	com.amazon.ceviche.tracer.EventTracer		
+class	com.amazon.ceviche.tracer.EventTracer$TraceData		
+class	com.amazon.ceviche.tracer.EventTracer$TraceData$TraceDataBuilder		
+class	com.amazon.ceviche.tracer.EventTracer_Factory		Factory<EventTracer>
+enum	com.amazon.ceviche.TrackResult		
+enum	com.amazon.ceviche.minerva.CevicheSchemaHelper$SchemaType		
+enum	com.amazon.ceviche.okhttp3.Protocol		
+enum	com.amazon.ceviche.okhttp3.TlsVersion		
+enum	com.amazon.ceviche.okhttp3.internal.http2.ErrorCode		
+enum	com.amazon.ceviche.processing.EventTransporter$EventTransporterResult		
+enum	com.amazon.ceviche.processing.HttpTransporter$TransportResult		
+interface	com.amazon.ceviche.EventFactory$IdGenerator		
+interface	com.amazon.ceviche.asap.retry.eventstore.AsapRetryEventsStore		
+interface	com.amazon.ceviche.asap.retry.handlers.AsapRetryHandler		
+interface	com.amazon.ceviche.autotrack.ContextEvent		
+interface	com.amazon.ceviche.com.amazon.p11.spy.guard.GuardBackoffStrategy		
+interface	com.amazon.ceviche.com.amazon.p11.spy.guard.GuardStorage		
+interface	com.amazon.ceviche.com.amazon.p11.spy.logging.Logger		
+interface	com.amazon.ceviche.com.amazon.p11.spy.logging.LoggerFactory		
+interface	com.amazon.ceviche.com.amazon.p11.spy.metrics.MetricsReporter		
+interface	com.amazon.ceviche.com.amazon.p11.spy.metrics.MetricsReporterFactory		
+interface	com.amazon.ceviche.com.amazon.p11.spy.retries.BackoffStrategy		
+interface	com.amazon.ceviche.com.amazon.p11.spy.retries.BackoffStrategyFactory		
+interface	com.amazon.ceviche.com.amazon.p11.spy.retries.OnRetryDone		
+interface	com.amazon.ceviche.com.amazon.p11.spy.retries.RetryResultStrategy		
+interface	com.amazon.ceviche.com.amazon.p11.spy.retries.RetryResultStrategyFactory		
+interface	com.amazon.ceviche.configuration.OnConfigurationUpdated		
+interface	com.amazon.ceviche.dagger.MembersInjector		
+interface	com.amazon.ceviche.dagger.internal.Factory	Provider<T>	
+interface	com.amazon.ceviche.javax.inject.Provider		
+interface	com.amazon.ceviche.lifecycle.AppForegroundBackgroundListener		
+interface	com.amazon.ceviche.lifecycle.OnFirstTrackAsapEventListener		
+interface	com.amazon.ceviche.lifecycle.OnFirstTrackEventListener		
+interface	com.amazon.ceviche.lifecycle.OnInitializationListener		
+interface	com.amazon.ceviche.lifecycle.OnRetryAsapEventListener		
+interface	com.amazon.ceviche.metadata.NetworkInterfaceProvider		
+interface	com.amazon.ceviche.okhttp3.Authenticator		
+interface	com.amazon.ceviche.okhttp3.Call	Cloneable	
+interface	com.amazon.ceviche.okhttp3.Callback		
+interface	com.amazon.ceviche.okhttp3.Connection		
+interface	com.amazon.ceviche.okhttp3.CookieJar		
+interface	com.amazon.ceviche.okhttp3.Dns		
+interface	com.amazon.ceviche.okhttp3.EventListener$Factory		
+interface	com.amazon.ceviche.okhttp3.Interceptor		
+interface	com.amazon.ceviche.okhttp3.Interceptor$Chain		
+interface	com.amazon.ceviche.okhttp3.internal.cache.CacheRequest		
+interface	com.amazon.ceviche.okhttp3.internal.cache.InternalCache		
+interface	com.amazon.ceviche.okhttp3.internal.http.HttpCodec		
+interface	com.amazon.ceviche.okhttp3.internal.http.UnrepeatableRequestBody		
+interface	com.amazon.ceviche.okhttp3.internal.http2.Http2Reader$Handler		
+interface	com.amazon.ceviche.okhttp3.internal.http2.PushObserver		
+interface	com.amazon.ceviche.okhttp3.internal.io.FileSystem		
+interface	com.amazon.ceviche.okhttp3.internal.tls.TrustRootIndex		
+interface	com.amazon.ceviche.okio.BufferedSink	WritableByteChannel, Sink	
+interface	com.amazon.ceviche.okio.BufferedSource	ReadableByteChannel, Source	
+interface	com.amazon.ceviche.okio.Sink	Closeable, Flushable	
+interface	com.amazon.ceviche.okio.Source	Closeable	
+interface	com.amazon.ceviche.processing.EventBundler		
+interface	com.amazon.ceviche.processing.EventDispatcher		
+interface	com.amazon.ceviche.processing.EventDispatcherCallback		
+interface	com.amazon.ceviche.processing.EventProcessorConfiguration		
+interface	com.amazon.ceviche.processing.EventProcessorQueue		
+interface	com.amazon.ceviche.processing.EventProcessorRunnableCallback		
+interface	com.amazon.ceviche.processing.EventTransporter		
+interface	com.amazon.ceviche.sdk.hooks.OnEventTrackedHook		

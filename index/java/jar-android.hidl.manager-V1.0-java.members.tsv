@@ -1,0 +1,163 @@
+class	kind	declaration
+android.hidl.base.V1_0.DebugInfo	field	public int arch;
+android.hidl.base.V1_0.DebugInfo	field	public int pid;
+android.hidl.base.V1_0.DebugInfo	field	public long ptr;
+android.hidl.base.V1_0.DebugInfo	method	public final String toString()
+android.hidl.base.V1_0.DebugInfo	method	public final boolean equals(Object obj)
+android.hidl.base.V1_0.DebugInfo	method	public final int hashCode()
+android.hidl.base.V1_0.DebugInfo	method	public final void readEmbeddedFromParcel(HwParcel hwParcel, HwBlob hwBlob, long j)
+android.hidl.base.V1_0.DebugInfo	method	public final void readFromParcel(HwParcel hwParcel)
+android.hidl.base.V1_0.DebugInfo	method	public final void writeEmbeddedToBlob(HwBlob hwBlob, long j)
+android.hidl.base.V1_0.DebugInfo	method	public final void writeToParcel(HwParcel hwParcel)
+android.hidl.base.V1_0.DebugInfo	method	public static final ArrayList<DebugInfo> readVectorFromParcel(HwParcel hwParcel)
+android.hidl.base.V1_0.DebugInfo	method	public static final void writeVectorToParcel(HwParcel hwParcel, ArrayList<DebugInfo> arrayList)
+android.hidl.base.V1_0.DebugInfo$Architecture	field	public static final int IS_32BIT;
+android.hidl.base.V1_0.DebugInfo$Architecture	field	public static final int IS_64BIT;
+android.hidl.base.V1_0.DebugInfo$Architecture	field	public static final int UNKNOWN;
+android.hidl.base.V1_0.DebugInfo$Architecture	method	public static final String dumpBitfield(int i)
+android.hidl.base.V1_0.DebugInfo$Architecture	method	public static final String toString(int i)
+android.hidl.base.V1_0.IBase	field	public static final String kInterfaceName;
+android.hidl.base.V1_0.IBase	method	static IBase asInterface(IHwBinder iHwBinder)
+android.hidl.base.V1_0.IBase	method	static IBase castFrom(IHwInterface iHwInterface)
+android.hidl.base.V1_0.IBase	method	static IBase getService() throws RemoteException
+android.hidl.base.V1_0.IBase	method	static IBase getService(String str) throws RemoteException
+android.hidl.base.V1_0.IBase	method	static IBase getService(String str, boolean z) throws RemoteException
+android.hidl.base.V1_0.IBase	method	static IBase getService(boolean z) throws RemoteException
+android.hidl.base.V1_0.IBase$Proxy	field	private IHwBinder mRemote;
+android.hidl.base.V1_0.IBase$Proxy	method	public ArrayList<String> interfaceChain() throws RemoteException
+android.hidl.base.V1_0.IBase$Proxy	method	public ArrayList<byte[]> getHashChain() throws RemoteException
+android.hidl.base.V1_0.IBase$Proxy	method	public DebugInfo getDebugInfo() throws RemoteException
+android.hidl.base.V1_0.IBase$Proxy	method	public IHwBinder asBinder()
+android.hidl.base.V1_0.IBase$Proxy	method	public Proxy(IHwBinder iHwBinder)
+android.hidl.base.V1_0.IBase$Proxy	method	public String interfaceDescriptor() throws RemoteException
+android.hidl.base.V1_0.IBase$Proxy	method	public String toString()
+android.hidl.base.V1_0.IBase$Proxy	method	public boolean linkToDeath(IHwBinder.DeathRecipient deathRecipient, long j) throws RemoteException
+android.hidl.base.V1_0.IBase$Proxy	method	public boolean unlinkToDeath(IHwBinder.DeathRecipient deathRecipient) throws RemoteException
+android.hidl.base.V1_0.IBase$Proxy	method	public final boolean equals(Object obj)
+android.hidl.base.V1_0.IBase$Proxy	method	public final int hashCode()
+android.hidl.base.V1_0.IBase$Proxy	method	public void debug(NativeHandle nativeHandle, ArrayList<String> arrayList) throws RemoteException
+android.hidl.base.V1_0.IBase$Proxy	method	public void notifySyspropsChanged() throws RemoteException
+android.hidl.base.V1_0.IBase$Proxy	method	public void ping() throws RemoteException
+android.hidl.base.V1_0.IBase$Proxy	method	public void setHALInstrumentation() throws RemoteException
+android.hidl.base.V1_0.IBase$Stub	method	public IHwBinder asBinder()
+android.hidl.base.V1_0.IBase$Stub	method	public IHwInterface queryLocalInterface(String str)
+android.hidl.base.V1_0.IBase$Stub	method	public String toString()
+android.hidl.base.V1_0.IBase$Stub	method	public final ArrayList<String> interfaceChain()
+android.hidl.base.V1_0.IBase$Stub	method	public final ArrayList<byte[]> getHashChain()
+android.hidl.base.V1_0.IBase$Stub	method	public final DebugInfo getDebugInfo()
+android.hidl.base.V1_0.IBase$Stub	method	public final String interfaceDescriptor()
+android.hidl.base.V1_0.IBase$Stub	method	public final boolean linkToDeath(IHwBinder.DeathRecipient deathRecipient, long j)
+android.hidl.base.V1_0.IBase$Stub	method	public final boolean unlinkToDeath(IHwBinder.DeathRecipient deathRecipient)
+android.hidl.base.V1_0.IBase$Stub	method	public final void notifySyspropsChanged()
+android.hidl.base.V1_0.IBase$Stub	method	public final void ping()
+android.hidl.base.V1_0.IBase$Stub	method	public final void setHALInstrumentation()
+android.hidl.base.V1_0.IBase$Stub	method	public void debug(NativeHandle nativeHandle, ArrayList<String> arrayList)
+android.hidl.base.V1_0.IBase$Stub	method	public void onTransact(int i, HwParcel hwParcel, HwParcel hwParcel2, int i2) throws RemoteException
+android.hidl.base.V1_0.IBase$Stub	method	public void registerAsService(String str) throws RemoteException
+android.hidl.manager.V1_0.IServiceManager	field	public static final String kInterfaceName;
+android.hidl.manager.V1_0.IServiceManager	method	static IServiceManager asInterface(IHwBinder iHwBinder)
+android.hidl.manager.V1_0.IServiceManager	method	static IServiceManager castFrom(IHwInterface iHwInterface)
+android.hidl.manager.V1_0.IServiceManager	method	static IServiceManager getService() throws RemoteException
+android.hidl.manager.V1_0.IServiceManager	method	static IServiceManager getService(String str) throws RemoteException
+android.hidl.manager.V1_0.IServiceManager	method	static IServiceManager getService(String str, boolean z) throws RemoteException
+android.hidl.manager.V1_0.IServiceManager	method	static IServiceManager getService(boolean z) throws RemoteException
+android.hidl.manager.V1_0.IServiceManager$InstanceDebugInfo	field	public ArrayList<Integer> clientPids;
+android.hidl.manager.V1_0.IServiceManager$InstanceDebugInfo	field	public String instanceName;
+android.hidl.manager.V1_0.IServiceManager$InstanceDebugInfo	field	public String interfaceName;
+android.hidl.manager.V1_0.IServiceManager$InstanceDebugInfo	field	public int arch;
+android.hidl.manager.V1_0.IServiceManager$InstanceDebugInfo	field	public int pid;
+android.hidl.manager.V1_0.IServiceManager$InstanceDebugInfo	method	public final String toString()
+android.hidl.manager.V1_0.IServiceManager$InstanceDebugInfo	method	public final boolean equals(Object obj)
+android.hidl.manager.V1_0.IServiceManager$InstanceDebugInfo	method	public final int hashCode()
+android.hidl.manager.V1_0.IServiceManager$InstanceDebugInfo	method	public final void readEmbeddedFromParcel(HwParcel hwParcel, HwBlob hwBlob, long j)
+android.hidl.manager.V1_0.IServiceManager$InstanceDebugInfo	method	public final void readFromParcel(HwParcel hwParcel)
+android.hidl.manager.V1_0.IServiceManager$InstanceDebugInfo	method	public final void writeEmbeddedToBlob(HwBlob hwBlob, long j)
+android.hidl.manager.V1_0.IServiceManager$InstanceDebugInfo	method	public final void writeToParcel(HwParcel hwParcel)
+android.hidl.manager.V1_0.IServiceManager$InstanceDebugInfo	method	public static final ArrayList<InstanceDebugInfo> readVectorFromParcel(HwParcel hwParcel)
+android.hidl.manager.V1_0.IServiceManager$InstanceDebugInfo	method	public static final void writeVectorToParcel(HwParcel hwParcel, ArrayList<InstanceDebugInfo> arrayList)
+android.hidl.manager.V1_0.IServiceManager$PidConstant	field	public static final int NO_PID;
+android.hidl.manager.V1_0.IServiceManager$PidConstant	method	public static final String dumpBitfield(int i)
+android.hidl.manager.V1_0.IServiceManager$PidConstant	method	public static final String toString(int i)
+android.hidl.manager.V1_0.IServiceManager$Proxy	field	private IHwBinder mRemote;
+android.hidl.manager.V1_0.IServiceManager$Proxy	method	public ArrayList<InstanceDebugInfo> debugDump() throws RemoteException
+android.hidl.manager.V1_0.IServiceManager$Proxy	method	public ArrayList<String> interfaceChain() throws RemoteException
+android.hidl.manager.V1_0.IServiceManager$Proxy	method	public ArrayList<String> list() throws RemoteException
+android.hidl.manager.V1_0.IServiceManager$Proxy	method	public ArrayList<String> listByInterface(String str) throws RemoteException
+android.hidl.manager.V1_0.IServiceManager$Proxy	method	public ArrayList<byte[]> getHashChain() throws RemoteException
+android.hidl.manager.V1_0.IServiceManager$Proxy	method	public DebugInfo getDebugInfo() throws RemoteException
+android.hidl.manager.V1_0.IServiceManager$Proxy	method	public IBase get(String str, String str2) throws RemoteException
+android.hidl.manager.V1_0.IServiceManager$Proxy	method	public IHwBinder asBinder()
+android.hidl.manager.V1_0.IServiceManager$Proxy	method	public Proxy(IHwBinder iHwBinder)
+android.hidl.manager.V1_0.IServiceManager$Proxy	method	public String interfaceDescriptor() throws RemoteException
+android.hidl.manager.V1_0.IServiceManager$Proxy	method	public String toString()
+android.hidl.manager.V1_0.IServiceManager$Proxy	method	public boolean add(String str, IBase iBase) throws RemoteException
+android.hidl.manager.V1_0.IServiceManager$Proxy	method	public boolean linkToDeath(IHwBinder.DeathRecipient deathRecipient, long j) throws RemoteException
+android.hidl.manager.V1_0.IServiceManager$Proxy	method	public boolean registerForNotifications(String str, String str2, IServiceNotification iServiceNotification) throws RemoteException
+android.hidl.manager.V1_0.IServiceManager$Proxy	method	public boolean unlinkToDeath(IHwBinder.DeathRecipient deathRecipient) throws RemoteException
+android.hidl.manager.V1_0.IServiceManager$Proxy	method	public byte getTransport(String str, String str2) throws RemoteException
+android.hidl.manager.V1_0.IServiceManager$Proxy	method	public final boolean equals(Object obj)
+android.hidl.manager.V1_0.IServiceManager$Proxy	method	public final int hashCode()
+android.hidl.manager.V1_0.IServiceManager$Proxy	method	public void debug(NativeHandle nativeHandle, ArrayList<String> arrayList) throws RemoteException
+android.hidl.manager.V1_0.IServiceManager$Proxy	method	public void notifySyspropsChanged() throws RemoteException
+android.hidl.manager.V1_0.IServiceManager$Proxy	method	public void ping() throws RemoteException
+android.hidl.manager.V1_0.IServiceManager$Proxy	method	public void registerPassthroughClient(String str, String str2) throws RemoteException
+android.hidl.manager.V1_0.IServiceManager$Proxy	method	public void setHALInstrumentation() throws RemoteException
+android.hidl.manager.V1_0.IServiceManager$Stub	method	public IHwBinder asBinder()
+android.hidl.manager.V1_0.IServiceManager$Stub	method	public IHwInterface queryLocalInterface(String str)
+android.hidl.manager.V1_0.IServiceManager$Stub	method	public String toString()
+android.hidl.manager.V1_0.IServiceManager$Stub	method	public final ArrayList<String> interfaceChain()
+android.hidl.manager.V1_0.IServiceManager$Stub	method	public final ArrayList<byte[]> getHashChain()
+android.hidl.manager.V1_0.IServiceManager$Stub	method	public final DebugInfo getDebugInfo()
+android.hidl.manager.V1_0.IServiceManager$Stub	method	public final String interfaceDescriptor()
+android.hidl.manager.V1_0.IServiceManager$Stub	method	public final boolean linkToDeath(IHwBinder.DeathRecipient deathRecipient, long j)
+android.hidl.manager.V1_0.IServiceManager$Stub	method	public final boolean unlinkToDeath(IHwBinder.DeathRecipient deathRecipient)
+android.hidl.manager.V1_0.IServiceManager$Stub	method	public final void notifySyspropsChanged()
+android.hidl.manager.V1_0.IServiceManager$Stub	method	public final void ping()
+android.hidl.manager.V1_0.IServiceManager$Stub	method	public final void setHALInstrumentation()
+android.hidl.manager.V1_0.IServiceManager$Stub	method	public void debug(NativeHandle nativeHandle, ArrayList<String> arrayList)
+android.hidl.manager.V1_0.IServiceManager$Stub	method	public void onTransact(int i, HwParcel hwParcel, HwParcel hwParcel2, int i2) throws RemoteException
+android.hidl.manager.V1_0.IServiceManager$Stub	method	public void registerAsService(String str) throws RemoteException
+android.hidl.manager.V1_0.IServiceManager$Transport	field	public static final byte EMPTY;
+android.hidl.manager.V1_0.IServiceManager$Transport	field	public static final byte HWBINDER;
+android.hidl.manager.V1_0.IServiceManager$Transport	field	public static final byte PASSTHROUGH;
+android.hidl.manager.V1_0.IServiceManager$Transport	method	public static final String dumpBitfield(byte b)
+android.hidl.manager.V1_0.IServiceManager$Transport	method	public static final String toString(byte b)
+android.hidl.manager.V1_0.IServiceNotification	field	public static final String kInterfaceName;
+android.hidl.manager.V1_0.IServiceNotification	method	static IServiceNotification asInterface(IHwBinder iHwBinder)
+android.hidl.manager.V1_0.IServiceNotification	method	static IServiceNotification castFrom(IHwInterface iHwInterface)
+android.hidl.manager.V1_0.IServiceNotification	method	static IServiceNotification getService() throws RemoteException
+android.hidl.manager.V1_0.IServiceNotification	method	static IServiceNotification getService(String str) throws RemoteException
+android.hidl.manager.V1_0.IServiceNotification	method	static IServiceNotification getService(String str, boolean z) throws RemoteException
+android.hidl.manager.V1_0.IServiceNotification	method	static IServiceNotification getService(boolean z) throws RemoteException
+android.hidl.manager.V1_0.IServiceNotification$Proxy	field	private IHwBinder mRemote;
+android.hidl.manager.V1_0.IServiceNotification$Proxy	method	public ArrayList<String> interfaceChain() throws RemoteException
+android.hidl.manager.V1_0.IServiceNotification$Proxy	method	public ArrayList<byte[]> getHashChain() throws RemoteException
+android.hidl.manager.V1_0.IServiceNotification$Proxy	method	public DebugInfo getDebugInfo() throws RemoteException
+android.hidl.manager.V1_0.IServiceNotification$Proxy	method	public IHwBinder asBinder()
+android.hidl.manager.V1_0.IServiceNotification$Proxy	method	public Proxy(IHwBinder iHwBinder)
+android.hidl.manager.V1_0.IServiceNotification$Proxy	method	public String interfaceDescriptor() throws RemoteException
+android.hidl.manager.V1_0.IServiceNotification$Proxy	method	public String toString()
+android.hidl.manager.V1_0.IServiceNotification$Proxy	method	public boolean linkToDeath(IHwBinder.DeathRecipient deathRecipient, long j) throws RemoteException
+android.hidl.manager.V1_0.IServiceNotification$Proxy	method	public boolean unlinkToDeath(IHwBinder.DeathRecipient deathRecipient) throws RemoteException
+android.hidl.manager.V1_0.IServiceNotification$Proxy	method	public final boolean equals(Object obj)
+android.hidl.manager.V1_0.IServiceNotification$Proxy	method	public final int hashCode()
+android.hidl.manager.V1_0.IServiceNotification$Proxy	method	public void debug(NativeHandle nativeHandle, ArrayList<String> arrayList) throws RemoteException
+android.hidl.manager.V1_0.IServiceNotification$Proxy	method	public void notifySyspropsChanged() throws RemoteException
+android.hidl.manager.V1_0.IServiceNotification$Proxy	method	public void onRegistration(String str, String str2, boolean z) throws RemoteException
+android.hidl.manager.V1_0.IServiceNotification$Proxy	method	public void ping() throws RemoteException
+android.hidl.manager.V1_0.IServiceNotification$Proxy	method	public void setHALInstrumentation() throws RemoteException
+android.hidl.manager.V1_0.IServiceNotification$Stub	method	public IHwBinder asBinder()
+android.hidl.manager.V1_0.IServiceNotification$Stub	method	public IHwInterface queryLocalInterface(String str)
+android.hidl.manager.V1_0.IServiceNotification$Stub	method	public String toString()
+android.hidl.manager.V1_0.IServiceNotification$Stub	method	public final ArrayList<String> interfaceChain()
+android.hidl.manager.V1_0.IServiceNotification$Stub	method	public final ArrayList<byte[]> getHashChain()
+android.hidl.manager.V1_0.IServiceNotification$Stub	method	public final DebugInfo getDebugInfo()
+android.hidl.manager.V1_0.IServiceNotification$Stub	method	public final String interfaceDescriptor()
+android.hidl.manager.V1_0.IServiceNotification$Stub	method	public final boolean linkToDeath(IHwBinder.DeathRecipient deathRecipient, long j)
+android.hidl.manager.V1_0.IServiceNotification$Stub	method	public final boolean unlinkToDeath(IHwBinder.DeathRecipient deathRecipient)
+android.hidl.manager.V1_0.IServiceNotification$Stub	method	public final void notifySyspropsChanged()
+android.hidl.manager.V1_0.IServiceNotification$Stub	method	public final void ping()
+android.hidl.manager.V1_0.IServiceNotification$Stub	method	public final void setHALInstrumentation()
+android.hidl.manager.V1_0.IServiceNotification$Stub	method	public void debug(NativeHandle nativeHandle, ArrayList<String> arrayList)
+android.hidl.manager.V1_0.IServiceNotification$Stub	method	public void onTransact(int i, HwParcel hwParcel, HwParcel hwParcel2, int i2) throws RemoteException
+android.hidl.manager.V1_0.IServiceNotification$Stub	method	public void registerAsService(String str) throws RemoteException

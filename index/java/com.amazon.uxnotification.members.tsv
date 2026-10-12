@@ -1,0 +1,635 @@
+class	kind	declaration
+com.amazon.connectivitymanager.ConnectivityManager	field	private AtomicBoolean mServiceConnected;
+com.amazon.connectivitymanager.ConnectivityManager	field	private ConnectivityEventCallbackImpl mConnectivityEventCallback;
+com.amazon.connectivitymanager.ConnectivityManager	field	private Context mContext;
+com.amazon.connectivitymanager.ConnectivityManager	field	private IControllerManager mService;
+com.amazon.connectivitymanager.ConnectivityManager	field	private RemoteServiceStatusCallback mCallback;
+com.amazon.connectivitymanager.ConnectivityManager	field	private ScanEventCallbackImpl mScanEventCallback;
+com.amazon.connectivitymanager.ConnectivityManager	field	private StreamingEventCallbackImpl mStreamingEventCallback;
+com.amazon.connectivitymanager.ConnectivityManager	field	private static final String CONNECTIVITY_SERVICE_ACTION;
+com.amazon.connectivitymanager.ConnectivityManager	field	private static final String SERVICE_CLASSNAME;
+com.amazon.connectivitymanager.ConnectivityManager	field	private static final String SERVICE_PACKAGE;
+com.amazon.connectivitymanager.ConnectivityManager	field	private static final String TAG;
+com.amazon.connectivitymanager.ConnectivityManager	field	private static final boolean DEBUG;
+com.amazon.connectivitymanager.ConnectivityManager	field	public static final Pattern MAC_ADDRESS_PATTERN;
+com.amazon.connectivitymanager.ConnectivityManager	field	public static final String MAC_ADDRESS_REGEX;
+com.amazon.connectivitymanager.ConnectivityManager	method	public ConnectivityManager(Context context, RemoteServiceStatusCallback remoteServiceStatusCallback)
+com.amazon.connectivitymanager.ConnectivityManager	method	public List<RemoteDevice> getConnectedDeviceList(int i, int[] iArr)
+com.amazon.connectivitymanager.ConnectivityManager	method	public List<RemoteDevice> getPairedDeviceList(int i, int[] iArr)
+com.amazon.connectivitymanager.ConnectivityManager	method	public RemoteDevice getRemoteDevice(String str)
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean checkAndStartDfu(RemoteDevice remoteDevice)
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean connectDevice(RemoteDevice remoteDevice, String str)
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean connectToAnyDevice(int i, int[] iArr)
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean disconnectDevice(RemoteDevice remoteDevice, String str)
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean enterPairingMode(int i, int[] iArr)
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean exitPairingMode()
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean getConnectedDeviceListAsync(int i, int[] iArr)
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean isBluetoothAdapterEnabled()
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean isDeviceDiscoverable()
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean isDeviceInPairingState()
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean isDeviceStreaming()
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean isDeviceStreaming(RemoteDevice remoteDevice)
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean isServiceConnected()
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean pairDevice(RemoteDevice remoteDevice)
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean registerConnectivityEventCallback(ConnectivityEventCallback connectivityEventCallback)
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean registerConnectivityEventCallback(IConnectivityEventCallback iConnectivityEventCallback)
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean registerMediaPlayingEventCallback(StreamingEventCallback streamingEventCallback)
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean remoteWipe()
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean sendMediaControl(int i)
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean setBacklightBrightness(RemoteDevice remoteDevice, int i)
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean startDiscovery(int i, int[] iArr)
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean startScan(int i, int[] iArr, ScanEventCallback scanEventCallback)
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean stopDiscovery()
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean stopScan()
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean unPairDevice(RemoteDevice remoteDevice)
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean unregisterConnectivityEventCallback()
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean unregisterConnectivityEventCallback(IConnectivityEventCallback iConnectivityEventCallback)
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean unregisterMediaPlayingEventCallback()
+com.amazon.connectivitymanager.ConnectivityManager	method	public boolean updateRemoteFirmware(RemoteDevice remoteDevice)
+com.amazon.connectivitymanager.ConnectivityManager	method	public int getLegacyType(String str)
+com.amazon.connectivitymanager.ConnectivityManager	method	public int getMediaStreamingState(RemoteDevice remoteDevice)
+com.amazon.connectivitymanager.ConnectivityManager	method	public int getVolume()
+com.amazon.connectivitymanager.ConnectivityManager	method	public static String maskMACAddress(String str)
+com.amazon.connectivitymanager.ConnectivityManager	method	public static String replaceMACAddress(String str)
+com.amazon.connectivitymanager.ConnectivityManager	method	public static boolean matchCategory(List<Integer> list, List<Integer> list2)
+com.amazon.connectivitymanager.ConnectivityManager	method	public static boolean matchCategory(List<Integer> list, int i)
+com.amazon.connectivitymanager.ConnectivityManager	method	public static boolean matchCategory(int[] iArr, List<Integer> list)
+com.amazon.connectivitymanager.ConnectivityManager	method	public static boolean matchCategory(int[] iArr, int i)
+com.amazon.connectivitymanager.ConnectivityManager	method	public void cleanup()
+com.amazon.connectivitymanager.ConnectivityManager	method	public void initiateDeviceApplication(int i)
+com.amazon.connectivitymanager.ConnectivityManager	method	public void mute()
+com.amazon.connectivitymanager.ConnectivityManager	method	public void setVolume(int i)
+com.amazon.connectivitymanager.ConnectivityManager	method	public void unmute()
+com.amazon.connectivitymanager.ConnectivityManager$BatteryLevel	field	public static final int LOW;
+com.amazon.connectivitymanager.ConnectivityManager$BatteryLevel	field	public static final int OK;
+com.amazon.connectivitymanager.ConnectivityManager$BatteryLevel	field	public static final int REMOTE_BATTERY_LOW_LEVEL_THRESHOLD;
+com.amazon.connectivitymanager.ConnectivityManager$BatteryLevel	field	public static final int UNKNOWN;
+com.amazon.connectivitymanager.ConnectivityManager$ConnectionState	field	public static final int CONNECTED;
+com.amazon.connectivitymanager.ConnectivityManager$ConnectionState	field	public static final int CONNECTING;
+com.amazon.connectivitymanager.ConnectivityManager$ConnectionState	field	public static final int DISCONNECTED;
+com.amazon.connectivitymanager.ConnectivityManager$ConnectionState	field	public static final int DISCONNECTING;
+com.amazon.connectivitymanager.ConnectivityManager$ConnectionState	field	public static final int UNDEFINED;
+com.amazon.connectivitymanager.ConnectivityManager$ConnectivityEventCallbackImpl	field	private ConnectivityEventCallback mCallback;
+com.amazon.connectivitymanager.ConnectivityManager$ConnectivityEventCallbackImpl	method	private ConnectivityEventCallbackImpl()
+com.amazon.connectivitymanager.ConnectivityManager$ConnectivityEventCallbackImpl	method	public void onBatteryLevelChange(RemoteDevice remoteDevice, int i)
+com.amazon.connectivitymanager.ConnectivityManager$ConnectivityEventCallbackImpl	method	public void onConnectStateChanged(RemoteDevice remoteDevice, int i)
+com.amazon.connectivitymanager.ConnectivityManager$ConnectivityEventCallbackImpl	method	public void onConnectedDevicesList(int[] iArr, List<RemoteDevice> list)
+com.amazon.connectivitymanager.ConnectivityManager$ConnectivityEventCallbackImpl	method	public void onDeviceAdded(RemoteDevice remoteDevice)
+com.amazon.connectivitymanager.ConnectivityManager$ConnectivityEventCallbackImpl	method	public void onDeviceDeleted(RemoteDevice remoteDevice)
+com.amazon.connectivitymanager.ConnectivityManager$ConnectivityEventCallbackImpl	method	public void onHeadphonePlugged(RemoteDevice remoteDevice, boolean z)
+com.amazon.connectivitymanager.ConnectivityManager$ConnectivityEventCallbackImpl	method	public void onPairStateChanged(RemoteDevice remoteDevice, int i)
+com.amazon.connectivitymanager.ConnectivityManager$ConnectivityEventCallbackImpl	method	public void onRemoteUpdateStarted(RemoteDevice remoteDevice, boolean z)
+com.amazon.connectivitymanager.ConnectivityManager$ConnectivityEventCallbackImpl	method	public void onRemoteWipeComplete()
+com.amazon.connectivitymanager.ConnectivityManager$ConnectivityEventCallbackImpl	method	public void onScanComplete(int[] iArr, List<RemoteDevice> list)
+com.amazon.connectivitymanager.ConnectivityManager$ConnectivityEventCallbackImpl	method	public void onVersionUpdated(RemoteDevice remoteDevice, int i)
+com.amazon.connectivitymanager.ConnectivityManager$ConnectivityEventCallbackImpl	method	public void setCallback(ConnectivityEventCallback connectivityEventCallback)
+com.amazon.connectivitymanager.ConnectivityManager$GameControllerType	field	public static final int NEFARIO;
+com.amazon.connectivitymanager.ConnectivityManager$GameControllerType	field	public static final int NOT_DEFINED;
+com.amazon.connectivitymanager.ConnectivityManager$GameControllerType	field	public static final int THUNDER;
+com.amazon.connectivitymanager.ConnectivityManager$MediaControlType	field	public static final int NEXT;
+com.amazon.connectivitymanager.ConnectivityManager$MediaControlType	field	public static final int PAUSE;
+com.amazon.connectivitymanager.ConnectivityManager$MediaControlType	field	public static final int PLAY;
+com.amazon.connectivitymanager.ConnectivityManager$MediaControlType	field	public static final int PREVIOUS;
+com.amazon.connectivitymanager.ConnectivityManager$MediaStreamingState	field	public static final int PAUSED;
+com.amazon.connectivitymanager.ConnectivityManager$MediaStreamingState	field	public static final int PLAYING;
+com.amazon.connectivitymanager.ConnectivityManager$PairingState	field	public static final int PAIRED;
+com.amazon.connectivitymanager.ConnectivityManager$PairingState	field	public static final int PAIRING;
+com.amazon.connectivitymanager.ConnectivityManager$PairingState	field	public static final int UNDEFINED;
+com.amazon.connectivitymanager.ConnectivityManager$PairingState	field	public static final int UNPAIRED;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceCategory	field	public static final int ACRA;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceCategory	field	public static final int AUDIO_IN;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceCategory	field	public static final int AUDIO_IN_OUT;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceCategory	field	public static final int AUDIO_OUT;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceCategory	field	public static final int AUTO_PAIR;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceCategory	field	public static final int BACKLIGHTING_CONTROL;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceCategory	field	public static final int CUSTOMIZABLE_BUTTONS;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceCategory	field	public static final int EARCON;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceCategory	field	public static final int ECHO_REMOTE;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceCategory	field	public static final int GAMEPAD;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceCategory	field	public static final int HANDS_FREE;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceCategory	field	public static final int HEARING_AID;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceCategory	field	public static final int IR_BLAST;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceCategory	field	public static final int KEYBOARD;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceCategory	field	public static final int LANGUAGE_UPDATE;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceCategory	field	public static final int LE_AUDIO_AURACAST;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceCategory	field	public static final int LE_AUDIO_HEARING_AID;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceCategory	field	public static final int LE_AUDIO_UNICAST;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceCategory	field	public static final int MOBILES;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceCategory	field	public static final int NO_TRANSPORT_BUTTON;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceCategory	field	public static final int POBLE_CAPABLE;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceCategory	field	public static final int POINTING;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceCategory	field	public static final int RECHARGEABLE_BATTERY;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceCategory	field	public static final int RINGABLE_DEVICE;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceCategory	field	public static final int STAR_BUTTONS;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceCategory	field	public static final int TV_REMOTE;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceCategory	field	public static final int UNKNOWN;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceCategory	field	public static final int VIRTUAL;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceStreamingState	field	public static final int ACTIVE;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceStreamingState	field	public static final int INACTIVE;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceStreamingState	field	public static final int PAUSED;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceType	field	public static final int ALL;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceType	field	public static final int BLE;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceType	field	public static final int BT;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceType	field	public static final int NET;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceType	field	public static final int UNKNOWN;
+com.amazon.connectivitymanager.ConnectivityManager$RemoteDeviceType	field	public static final int WIFI;
+com.amazon.connectivitymanager.ConnectivityManager$ScanEventCallbackImpl	field	private ScanEventCallback mCallback;
+com.amazon.connectivitymanager.ConnectivityManager$ScanEventCallbackImpl	method	private ScanEventCallbackImpl()
+com.amazon.connectivitymanager.ConnectivityManager$ScanEventCallbackImpl	method	public void onDeviceAdded(RemoteDevice remoteDevice)
+com.amazon.connectivitymanager.ConnectivityManager$ScanEventCallbackImpl	method	public void onDeviceDeleted(RemoteDevice remoteDevice)
+com.amazon.connectivitymanager.ConnectivityManager$ScanEventCallbackImpl	method	public void onScanFailed(int i)
+com.amazon.connectivitymanager.ConnectivityManager$ScanEventCallbackImpl	method	public void setCallback(ScanEventCallback scanEventCallback)
+com.amazon.connectivitymanager.ConnectivityManager$StreamingEventCallbackImpl	field	private StreamingEventCallback mCallback;
+com.amazon.connectivitymanager.ConnectivityManager$StreamingEventCallbackImpl	method	private StreamingEventCallbackImpl()
+com.amazon.connectivitymanager.ConnectivityManager$StreamingEventCallbackImpl	method	public void onStreamingStateUpdate(RemoteDevice remoteDevice, int i)
+com.amazon.connectivitymanager.ConnectivityManager$StreamingEventCallbackImpl	method	public void setCallback(StreamingEventCallback streamingEventCallback)
+com.amazon.connectivitymanager.IConnectivityEventCallback$Default	method	public IBinder asBinder()
+com.amazon.connectivitymanager.IConnectivityEventCallback$Default	method	public void onBatteryLevelChange(RemoteDevice remoteDevice, int i) throws RemoteException
+com.amazon.connectivitymanager.IConnectivityEventCallback$Default	method	public void onConnectStateChanged(RemoteDevice remoteDevice, int i) throws RemoteException
+com.amazon.connectivitymanager.IConnectivityEventCallback$Default	method	public void onConnectedDevicesList(int[] iArr, List<RemoteDevice> list) throws RemoteException
+com.amazon.connectivitymanager.IConnectivityEventCallback$Default	method	public void onDeviceAdded(RemoteDevice remoteDevice) throws RemoteException
+com.amazon.connectivitymanager.IConnectivityEventCallback$Default	method	public void onDeviceDeleted(RemoteDevice remoteDevice) throws RemoteException
+com.amazon.connectivitymanager.IConnectivityEventCallback$Default	method	public void onHeadphonePlugged(RemoteDevice remoteDevice, boolean z) throws RemoteException
+com.amazon.connectivitymanager.IConnectivityEventCallback$Default	method	public void onPairStateChanged(RemoteDevice remoteDevice, int i) throws RemoteException
+com.amazon.connectivitymanager.IConnectivityEventCallback$Default	method	public void onRemoteUpdateStarted(RemoteDevice remoteDevice, boolean z) throws RemoteException
+com.amazon.connectivitymanager.IConnectivityEventCallback$Default	method	public void onRemoteWipeComplete() throws RemoteException
+com.amazon.connectivitymanager.IConnectivityEventCallback$Default	method	public void onScanComplete(int[] iArr, List<RemoteDevice> list) throws RemoteException
+com.amazon.connectivitymanager.IConnectivityEventCallback$Default	method	public void onVersionUpdated(RemoteDevice remoteDevice, int i) throws RemoteException
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub	field	private static final String DESCRIPTOR;
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub	field	static final int TRANSACTION_onBatteryLevelChange;
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub	field	static final int TRANSACTION_onConnectStateChanged;
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub	field	static final int TRANSACTION_onConnectedDevicesList;
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub	field	static final int TRANSACTION_onDeviceAdded;
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub	field	static final int TRANSACTION_onDeviceDeleted;
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub	field	static final int TRANSACTION_onHeadphonePlugged;
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub	field	static final int TRANSACTION_onPairStateChanged;
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub	field	static final int TRANSACTION_onRemoteUpdateStarted;
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub	field	static final int TRANSACTION_onRemoteWipeComplete;
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub	field	static final int TRANSACTION_onScanComplete;
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub	field	static final int TRANSACTION_onVersionUpdated;
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub	method	public IBinder asBinder()
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub	method	public Stub()
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub	method	public static IConnectivityEventCallback asInterface(IBinder iBinder)
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub	method	public static IConnectivityEventCallback getDefaultImpl()
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub	method	public static boolean setDefaultImpl(IConnectivityEventCallback iConnectivityEventCallback)
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub$Proxy	field	public static IConnectivityEventCallback sDefaultImpl;
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub$Proxy	method	public void onBatteryLevelChange(RemoteDevice remoteDevice, int i) throws RemoteException
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub$Proxy	method	public void onConnectStateChanged(RemoteDevice remoteDevice, int i) throws RemoteException
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub$Proxy	method	public void onConnectedDevicesList(int[] iArr, List<RemoteDevice> list) throws RemoteException
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub$Proxy	method	public void onDeviceAdded(RemoteDevice remoteDevice) throws RemoteException
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub$Proxy	method	public void onDeviceDeleted(RemoteDevice remoteDevice) throws RemoteException
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub$Proxy	method	public void onHeadphonePlugged(RemoteDevice remoteDevice, boolean z) throws RemoteException
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub$Proxy	method	public void onPairStateChanged(RemoteDevice remoteDevice, int i) throws RemoteException
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub$Proxy	method	public void onRemoteUpdateStarted(RemoteDevice remoteDevice, boolean z) throws RemoteException
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub$Proxy	method	public void onRemoteWipeComplete() throws RemoteException
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub$Proxy	method	public void onScanComplete(int[] iArr, List<RemoteDevice> list) throws RemoteException
+com.amazon.connectivitymanager.IConnectivityEventCallback$Stub$Proxy	method	public void onVersionUpdated(RemoteDevice remoteDevice, int i) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public IBinder asBinder()
+com.amazon.connectivitymanager.IControllerManager$Default	method	public List<RemoteDevice> getConnectedDeviceList(int i, int[] iArr) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public List<RemoteDevice> getPairedDeviceList(int i, int[] iArr) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public RemoteDevice getRemoteDevice(String str) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public boolean checkAndStartDfu(RemoteDevice remoteDevice) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public boolean connectDevice(RemoteDevice remoteDevice, String str) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public boolean connectToAnyDevice(int i, int[] iArr) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public boolean disconnectDevice(RemoteDevice remoteDevice, String str) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public boolean enterPairingMode(int i, int[] iArr) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public boolean exitPairingMode() throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public boolean getConnectedDeviceListAsync(int i, int[] iArr) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public boolean isBluetoothAdapterEnabled() throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public boolean isDeviceDiscoverable() throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public boolean isDeviceInPairingState() throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public boolean isDeviceStreaming(RemoteDevice remoteDevice) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public boolean isStreaming() throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public boolean pairDevice(RemoteDevice remoteDevice) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public boolean registerEventCallback(IConnectivityEventCallback iConnectivityEventCallback) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public boolean registerMediaStreamingEventCallback(IStreamingEventCallback iStreamingEventCallback) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public boolean remoteWipe() throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public boolean sendMediaCommand(int i) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public boolean setBacklightBrightness(RemoteDevice remoteDevice, int i) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public boolean startDiscovery(int i, int[] iArr) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public boolean startScan(int i, int[] iArr, IScanEventCallback iScanEventCallback) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public boolean stopDiscovery() throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public boolean stopScan(IScanEventCallback iScanEventCallback) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public boolean unPairDevice(RemoteDevice remoteDevice) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public boolean unregisterEventCallback(IConnectivityEventCallback iConnectivityEventCallback) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public boolean unregisterMediaStreamingEventCallback(IStreamingEventCallback iStreamingEventCallback) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public boolean updateDeviceFirmware(RemoteDevice remoteDevice) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public int getLegacyDeviceType(String str) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public int getMediaStreamingState(RemoteDevice remoteDevice) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Default	method	public void initiateDeviceApplication(int i) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub	field	private static final String DESCRIPTOR;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_checkAndStartDfu;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_connectDevice;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_connectToAnyDevice;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_disconnectDevice;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_enterPairingMode;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_exitPairingMode;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_getConnectedDeviceList;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_getConnectedDeviceListAsync;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_getLegacyDeviceType;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_getMediaStreamingState;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_getPairedDeviceList;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_getRemoteDevice;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_initiateDeviceApplication;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_isBluetoothAdapterEnabled;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_isDeviceDiscoverable;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_isDeviceInPairingState;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_isDeviceStreaming;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_isStreaming;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_pairDevice;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_registerEventCallback;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_registerMediaStreamingEventCallback;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_remoteWipe;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_sendMediaCommand;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_setBacklightBrightness;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_startDiscovery;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_startScan;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_stopDiscovery;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_stopScan;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_unPairDevice;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_unregisterEventCallback;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_unregisterMediaStreamingEventCallback;
+com.amazon.connectivitymanager.IControllerManager$Stub	field	static final int TRANSACTION_updateDeviceFirmware;
+com.amazon.connectivitymanager.IControllerManager$Stub	method	public IBinder asBinder()
+com.amazon.connectivitymanager.IControllerManager$Stub	method	public Stub()
+com.amazon.connectivitymanager.IControllerManager$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub	method	public static IControllerManager asInterface(IBinder iBinder)
+com.amazon.connectivitymanager.IControllerManager$Stub	method	public static IControllerManager getDefaultImpl()
+com.amazon.connectivitymanager.IControllerManager$Stub	method	public static boolean setDefaultImpl(IControllerManager iControllerManager)
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	field	public static IControllerManager sDefaultImpl;
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public List<RemoteDevice> getConnectedDeviceList(int i, int[] iArr) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public List<RemoteDevice> getPairedDeviceList(int i, int[] iArr) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public RemoteDevice getRemoteDevice(String str) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean checkAndStartDfu(RemoteDevice remoteDevice) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean connectDevice(RemoteDevice remoteDevice, String str) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean connectToAnyDevice(int i, int[] iArr) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean disconnectDevice(RemoteDevice remoteDevice, String str) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean enterPairingMode(int i, int[] iArr) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean exitPairingMode() throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean getConnectedDeviceListAsync(int i, int[] iArr) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean isBluetoothAdapterEnabled() throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean isDeviceDiscoverable() throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean isDeviceInPairingState() throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean isDeviceStreaming(RemoteDevice remoteDevice) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean isStreaming() throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean pairDevice(RemoteDevice remoteDevice) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean registerEventCallback(IConnectivityEventCallback iConnectivityEventCallback) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean registerMediaStreamingEventCallback(IStreamingEventCallback iStreamingEventCallback) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean remoteWipe() throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean sendMediaCommand(int i) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean setBacklightBrightness(RemoteDevice remoteDevice, int i) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean startDiscovery(int i, int[] iArr) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean startScan(int i, int[] iArr, IScanEventCallback iScanEventCallback) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean stopDiscovery() throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean stopScan(IScanEventCallback iScanEventCallback) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean unPairDevice(RemoteDevice remoteDevice) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean unregisterEventCallback(IConnectivityEventCallback iConnectivityEventCallback) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean unregisterMediaStreamingEventCallback(IStreamingEventCallback iStreamingEventCallback) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public boolean updateDeviceFirmware(RemoteDevice remoteDevice) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public int getLegacyDeviceType(String str) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public int getMediaStreamingState(RemoteDevice remoteDevice) throws RemoteException
+com.amazon.connectivitymanager.IControllerManager$Stub$Proxy	method	public void initiateDeviceApplication(int i) throws RemoteException
+com.amazon.connectivitymanager.IScanEventCallback$Default	method	public IBinder asBinder()
+com.amazon.connectivitymanager.IScanEventCallback$Default	method	public void onDeviceAdded(RemoteDevice remoteDevice) throws RemoteException
+com.amazon.connectivitymanager.IScanEventCallback$Default	method	public void onDeviceDeleted(RemoteDevice remoteDevice) throws RemoteException
+com.amazon.connectivitymanager.IScanEventCallback$Default	method	public void onScanFailed(int i) throws RemoteException
+com.amazon.connectivitymanager.IScanEventCallback$Stub	field	private static final String DESCRIPTOR;
+com.amazon.connectivitymanager.IScanEventCallback$Stub	field	static final int TRANSACTION_onDeviceAdded;
+com.amazon.connectivitymanager.IScanEventCallback$Stub	field	static final int TRANSACTION_onDeviceDeleted;
+com.amazon.connectivitymanager.IScanEventCallback$Stub	field	static final int TRANSACTION_onScanFailed;
+com.amazon.connectivitymanager.IScanEventCallback$Stub	method	public IBinder asBinder()
+com.amazon.connectivitymanager.IScanEventCallback$Stub	method	public Stub()
+com.amazon.connectivitymanager.IScanEventCallback$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.connectivitymanager.IScanEventCallback$Stub	method	public static IScanEventCallback asInterface(IBinder iBinder)
+com.amazon.connectivitymanager.IScanEventCallback$Stub	method	public static IScanEventCallback getDefaultImpl()
+com.amazon.connectivitymanager.IScanEventCallback$Stub	method	public static boolean setDefaultImpl(IScanEventCallback iScanEventCallback)
+com.amazon.connectivitymanager.IScanEventCallback$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.connectivitymanager.IScanEventCallback$Stub$Proxy	field	public static IScanEventCallback sDefaultImpl;
+com.amazon.connectivitymanager.IScanEventCallback$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.connectivitymanager.IScanEventCallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.connectivitymanager.IScanEventCallback$Stub$Proxy	method	public void onDeviceAdded(RemoteDevice remoteDevice) throws RemoteException
+com.amazon.connectivitymanager.IScanEventCallback$Stub$Proxy	method	public void onDeviceDeleted(RemoteDevice remoteDevice) throws RemoteException
+com.amazon.connectivitymanager.IScanEventCallback$Stub$Proxy	method	public void onScanFailed(int i) throws RemoteException
+com.amazon.connectivitymanager.IStreamingEventCallback$Default	method	public IBinder asBinder()
+com.amazon.connectivitymanager.IStreamingEventCallback$Default	method	public void onStreamingStateUpdate(RemoteDevice remoteDevice, int i) throws RemoteException
+com.amazon.connectivitymanager.IStreamingEventCallback$Stub	field	private static final String DESCRIPTOR;
+com.amazon.connectivitymanager.IStreamingEventCallback$Stub	field	static final int TRANSACTION_onStreamingStateUpdate;
+com.amazon.connectivitymanager.IStreamingEventCallback$Stub	method	public IBinder asBinder()
+com.amazon.connectivitymanager.IStreamingEventCallback$Stub	method	public Stub()
+com.amazon.connectivitymanager.IStreamingEventCallback$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.connectivitymanager.IStreamingEventCallback$Stub	method	public static IStreamingEventCallback asInterface(IBinder iBinder)
+com.amazon.connectivitymanager.IStreamingEventCallback$Stub	method	public static IStreamingEventCallback getDefaultImpl()
+com.amazon.connectivitymanager.IStreamingEventCallback$Stub	method	public static boolean setDefaultImpl(IStreamingEventCallback iStreamingEventCallback)
+com.amazon.connectivitymanager.IStreamingEventCallback$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.connectivitymanager.IStreamingEventCallback$Stub$Proxy	field	public static IStreamingEventCallback sDefaultImpl;
+com.amazon.connectivitymanager.IStreamingEventCallback$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.connectivitymanager.IStreamingEventCallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.connectivitymanager.IStreamingEventCallback$Stub$Proxy	method	public void onStreamingStateUpdate(RemoteDevice remoteDevice, int i) throws RemoteException
+com.amazon.connectivitymanager.RemoteDevice	field	private String mAddress;
+com.amazon.connectivitymanager.RemoteDevice	field	private String[] mPeerDevicesAddress;
+com.amazon.connectivitymanager.RemoteDevice	field	private boolean mHeadphonesSupported;
+com.amazon.connectivitymanager.RemoteDevice	field	private boolean mIsSubDevice;
+com.amazon.connectivitymanager.RemoteDevice	field	private boolean mVoiceEnabled;
+com.amazon.connectivitymanager.RemoteDevice	field	private int mCsisGroupId;
+com.amazon.connectivitymanager.RemoteDevice	field	private int mGameControllerType;
+com.amazon.connectivitymanager.RemoteDevice	field	private int mInvalidBattery;
+com.amazon.connectivitymanager.RemoteDevice	field	private int mType;
+com.amazon.connectivitymanager.RemoteDevice	field	private long mGroupId;
+com.amazon.connectivitymanager.RemoteDevice	field	protected String mDSN;
+com.amazon.connectivitymanager.RemoteDevice	field	protected String mInputDescriptor;
+com.amazon.connectivitymanager.RemoteDevice	field	protected String mName;
+com.amazon.connectivitymanager.RemoteDevice	field	protected String mVersion;
+com.amazon.connectivitymanager.RemoteDevice	field	protected boolean mHeadPhoneConnected;
+com.amazon.connectivitymanager.RemoteDevice	field	protected boolean mUpdatable;
+com.amazon.connectivitymanager.RemoteDevice	field	protected int mBatteryLevel;
+com.amazon.connectivitymanager.RemoteDevice	field	protected int mConnectionState;
+com.amazon.connectivitymanager.RemoteDevice	field	protected int mPairedState;
+com.amazon.connectivitymanager.RemoteDevice	field	protected int[] mCategory;
+com.amazon.connectivitymanager.RemoteDevice	method	public RemoteDevice(Parcel parcel)
+com.amazon.connectivitymanager.RemoteDevice	method	public RemoteDevice(RemoteDevice remoteDevice)
+com.amazon.connectivitymanager.RemoteDevice	method	public RemoteDevice(String str, String str2, int i, int i2, String str3, int[] iArr, String str4, int i3, int i4, boolean z, boolean z2, boolean z3, String str5, int i5, boolean z4)
+com.amazon.connectivitymanager.RemoteDevice	method	public RemoteDevice(String str, String str2, int i, int i2, String str3, int[] iArr, String str4, int i3, int i4, boolean z, boolean z2, boolean z3, String str5, int i5, boolean z4, long j, String[] strArr)
+com.amazon.connectivitymanager.RemoteDevice	method	public RemoteDevice(String str, String str2, int i, int i2, String str3, int[] iArr, String str4, int i3, int i4, int i5, boolean z, boolean z2, boolean z3, String str5, int i6, boolean z4, long j, String[] strArr)
+com.amazon.connectivitymanager.RemoteDevice	method	public RemoteDevice(String str, String str2, int i, int i2, String str3, int[] iArr, String str4, int i3, int i4, int i5, boolean z, boolean z2, boolean z3, String str5, int i6, boolean z4, long j, String[] strArr, boolean z5, int i7)
+com.amazon.connectivitymanager.RemoteDevice	method	public String getAddress()
+com.amazon.connectivitymanager.RemoteDevice	method	public String getDSN()
+com.amazon.connectivitymanager.RemoteDevice	method	public String getInputDescriptor()
+com.amazon.connectivitymanager.RemoteDevice	method	public String getName()
+com.amazon.connectivitymanager.RemoteDevice	method	public String getVersion()
+com.amazon.connectivitymanager.RemoteDevice	method	public String toString()
+com.amazon.connectivitymanager.RemoteDevice	method	public String[] getPeerDevicesAddress()
+com.amazon.connectivitymanager.RemoteDevice	method	public boolean isHeadphoneConnected()
+com.amazon.connectivitymanager.RemoteDevice	method	public boolean isHeadphoneSupported()
+com.amazon.connectivitymanager.RemoteDevice	method	public boolean isSubDevice()
+com.amazon.connectivitymanager.RemoteDevice	method	public boolean isUpdatable()
+com.amazon.connectivitymanager.RemoteDevice	method	public boolean isVoiceEnabled()
+com.amazon.connectivitymanager.RemoteDevice	method	public int describeContents()
+com.amazon.connectivitymanager.RemoteDevice	method	public int getBatteryLevel()
+com.amazon.connectivitymanager.RemoteDevice	method	public int getClassifiedBatteryLevel()
+com.amazon.connectivitymanager.RemoteDevice	method	public int getConnectionState()
+com.amazon.connectivitymanager.RemoteDevice	method	public int getCsisGroupId()
+com.amazon.connectivitymanager.RemoteDevice	method	public int getGameControllerType()
+com.amazon.connectivitymanager.RemoteDevice	method	public int getInvalidBatteryLvl()
+com.amazon.connectivitymanager.RemoteDevice	method	public int getPairedState()
+com.amazon.connectivitymanager.RemoteDevice	method	public int getType()
+com.amazon.connectivitymanager.RemoteDevice	method	public int[] getCategory()
+com.amazon.connectivitymanager.RemoteDevice	method	public long getGroupId()
+com.amazon.connectivitymanager.RemoteDevice	method	public void resetBattery()
+com.amazon.connectivitymanager.RemoteDevice	method	public void setCsisGroupId(int i)
+com.amazon.connectivitymanager.RemoteDevice	method	public void setGroupId(long j)
+com.amazon.connectivitymanager.RemoteDevice	method	public void setPeerDevicesAddress(String[] strArr)
+com.amazon.connectivitymanager.RemoteDevice	method	public void setSubDevice(boolean z)
+com.amazon.connectivitymanager.RemoteDevice	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.device.notification.AmazonNotification	field	public static final String CATEGORY_FIRE_TV_NOTIFICATION;
+com.amazon.device.notification.AmazonNotification	field	public static final String CATEGORY_SUPPRESSED;
+com.amazon.device.notification.AmazonNotification	field	public static final String EXTRA_ACTION_BUTTON_TITLE;
+com.amazon.device.notification.AmazonNotification	field	public static final String EXTRA_PACKAGE_NAME;
+com.amazon.device.notification.AmazonNotification	field	public static final String EXTRA_TYPE;
+com.amazon.device.notification.AmazonNotification	field	public static final int TYPE_INFO;
+com.amazon.device.notification.AmazonNotification	field	public static final int TYPE_MEDIA_INFO;
+com.amazon.device.notification.AmazonNotification	field	public static final int TYPE_QUEUED;
+com.amazon.device.notification.AmazonNotification	field	public static final int TYPE_SYSTEM_INFO;
+com.amazon.uxcontroller.HostDeviceInfo	field	private final DeviceType mDeviceType;
+com.amazon.uxcontroller.HostDeviceInfo	field	private static final HostDeviceInfo sInstance;
+com.amazon.uxcontroller.HostDeviceInfo	method	private HostDeviceInfo()
+com.amazon.uxcontroller.HostDeviceInfo	method	public DeviceType getDeviceType()
+com.amazon.uxcontroller.HostDeviceInfo	method	public boolean hasExternalStorage()
+com.amazon.uxcontroller.HostDeviceInfo	method	public boolean hasOpticalAudio()
+com.amazon.uxcontroller.HostDeviceInfo	method	public boolean isLowMemory()
+com.amazon.uxcontroller.HostDeviceInfo	method	public boolean isLowPerformance()
+com.amazon.uxcontroller.HostDeviceInfo	method	public boolean isStick()
+com.amazon.uxcontroller.HostDeviceInfo	method	public boolean supportsEthernet()
+com.amazon.uxcontroller.HostDeviceInfo	method	public int getPairingTimeout()
+com.amazon.uxcontroller.HostDeviceInfo	method	public static HostDeviceInfo getInstance()
+com.amazon.uxcontroller.HostDeviceInfo$DeviceType	field	private static final Map<String, DeviceType> DEVICE_TYPE_MAP;
+com.amazon.uxcontroller.HostDeviceInfo$DeviceType	method	public static DeviceType getDeviceTypeForDevice(String str)
+com.amazon.uxcontroller.UXControllerManager	field	private Context mContext;
+com.amazon.uxcontroller.UXControllerManager	field	private ScreenUXHandler mUXHandler;
+com.amazon.uxcontroller.UXControllerManager	field	private UXStatusCallback mCallback;
+com.amazon.uxcontroller.UXControllerManager	field	private static final String ACTION_NOTIFICATION;
+com.amazon.uxcontroller.UXControllerManager	field	private static final String PAIRING_VALUE;
+com.amazon.uxcontroller.UXControllerManager	field	private static final String TAG;
+com.amazon.uxcontroller.UXControllerManager	field	private static final String UX_CONTROLLER_SERVICE_CLASS;
+com.amazon.uxcontroller.UXControllerManager	field	private static final String UX_CONTROLLER_SERVICE_PACKAGE;
+com.amazon.uxcontroller.UXControllerManager	field	public static final String CONTROLLER_NOTIFICATION_KEY;
+com.amazon.uxcontroller.UXControllerManager	field	public static final String DEVICE_CATEGORIES_KEY;
+com.amazon.uxcontroller.UXControllerManager	field	public static final String DEVICE_NAME_KEY;
+com.amazon.uxcontroller.UXControllerManager	field	public static final String HEADPHONES_COUNT;
+com.amazon.uxcontroller.UXControllerManager	field	public static final String UX_EVENT_TYPE_KEY;
+com.amazon.uxcontroller.UXControllerManager	field	public static final int DEFAULT_EVENT_TYPE;
+com.amazon.uxcontroller.UXControllerManager	method	public UXControllerManager(Context context, UXStatusCallback uXStatusCallback)
+com.amazon.uxcontroller.UXControllerManager	method	public void cleanup()
+com.amazon.uxcontroller.UXControllerManager	method	public void handleEvent(BaseEvent baseEvent)
+com.amazon.uxcontroller.UXControllerManager$Events	field	public static final int BATTERY_FULL;
+com.amazon.uxcontroller.UXControllerManager$Events	field	public static final int CHARGING_STARTED;
+com.amazon.uxcontroller.UXControllerManager$Events	field	public static final int CONNECTION_FAILURE;
+com.amazon.uxcontroller.UXControllerManager$Events	field	public static final int CONNECTION_SUCCESS;
+com.amazon.uxcontroller.UXControllerManager$Events	field	public static final int CONTROLLER_CONNECTED;
+com.amazon.uxcontroller.UXControllerManager$Events	field	public static final int CONTROLLER_DISCONNECTED;
+com.amazon.uxcontroller.UXControllerManager$Events	field	public static final int DEVICE_FOUND;
+com.amazon.uxcontroller.UXControllerManager$Events	field	public static final int DFU_COMPLETED;
+com.amazon.uxcontroller.UXControllerManager$Events	field	public static final int DFU_LOW_BATTERY;
+com.amazon.uxcontroller.UXControllerManager$Events	field	public static final int DFU_START;
+com.amazon.uxcontroller.UXControllerManager$Events	field	public static final int DISCONNECT_FAILURE;
+com.amazon.uxcontroller.UXControllerManager$Events	field	public static final int DISCONNECT_SUCCESS;
+com.amazon.uxcontroller.UXControllerManager$Events	field	public static final int DISCOVERY_STARTED;
+com.amazon.uxcontroller.UXControllerManager$Events	field	public static final int DISCOVERY_STOPPED;
+com.amazon.uxcontroller.UXControllerManager$Events	field	public static final int HEADPHONE_NOT_SUPPORTED;
+com.amazon.uxcontroller.UXControllerManager$Events	field	public static final int HEADPHONE_PLUGGED;
+com.amazon.uxcontroller.UXControllerManager$Events	field	public static final int HEADPHONE_UNPLUGGED;
+com.amazon.uxcontroller.UXControllerManager$Events	field	public static final int LOST_REMOTE_CANCELLED;
+com.amazon.uxcontroller.UXControllerManager$Events	field	public static final int LOW_BATTERY;
+com.amazon.uxcontroller.UXControllerManager$Events	field	public static final int PAIRING_FAILURE;
+com.amazon.uxcontroller.UXControllerManager$Events	field	public static final int PAIRING_REQUEST;
+com.amazon.uxcontroller.UXControllerManager$Events	field	public static final int PAIRING_SUCCESS;
+com.amazon.uxcontroller.UXControllerManager$Events	field	public static final int PRIVACY_MODE_OFF;
+com.amazon.uxcontroller.UXControllerManager$Events	field	public static final int PRIVACY_MODE_ON;
+com.amazon.uxcontroller.UXControllerManager$Events	field	public static final int RECHARGEABLE_REMOTE_BATTERY_LOW;
+com.amazon.uxcontroller.UXControllerManager$Events	field	public static final int REMOTE_CONNECTED;
+com.amazon.uxcontroller.UXControllerManager$Events	method	public Events()
+com.amazon.uxcontroller.eventmodels.BatteryFullEvent	field	private int mEventType;
+com.amazon.uxcontroller.eventmodels.BatteryFullEvent	method	public BatteryFullEvent(int i)
+com.amazon.uxcontroller.eventmodels.BatteryFullEvent	method	public int getEventType()
+com.amazon.uxcontroller.eventmodels.ConnectivityEvent	field	private String mName;
+com.amazon.uxcontroller.eventmodels.ConnectivityEvent	field	private boolean mControllerNotiication;
+com.amazon.uxcontroller.eventmodels.ConnectivityEvent	field	private int mEventType;
+com.amazon.uxcontroller.eventmodels.ConnectivityEvent	field	private int[] mDeviceCategory;
+com.amazon.uxcontroller.eventmodels.ConnectivityEvent	method	public ConnectivityEvent(int i, String str, int[] iArr)
+com.amazon.uxcontroller.eventmodels.ConnectivityEvent	method	public ConnectivityEvent(int i, String str, int[] iArr, boolean z)
+com.amazon.uxcontroller.eventmodels.ConnectivityEvent	method	public String getName()
+com.amazon.uxcontroller.eventmodels.ConnectivityEvent	method	public boolean isControllerNotification()
+com.amazon.uxcontroller.eventmodels.ConnectivityEvent	method	public int getEventType()
+com.amazon.uxcontroller.eventmodels.ConnectivityEvent	method	public int[] getDeviceCategory()
+com.amazon.uxcontroller.eventmodels.HeadphonePluggedEvent	field	private int mEventType;
+com.amazon.uxcontroller.eventmodels.HeadphonePluggedEvent	field	private int mHeadPhonesCount;
+com.amazon.uxcontroller.eventmodels.HeadphonePluggedEvent	method	public HeadphonePluggedEvent(int i, int i2)
+com.amazon.uxcontroller.eventmodels.HeadphonePluggedEvent	method	public int getEventType()
+com.amazon.uxcontroller.eventmodels.HeadphonePluggedEvent	method	public int getHeadPhonesCount()
+com.amazon.uxcontroller.eventmodels.LostRemoteEvent	field	private int mEventType;
+com.amazon.uxcontroller.eventmodels.LostRemoteEvent	method	public LostRemoteEvent(int i)
+com.amazon.uxcontroller.eventmodels.LostRemoteEvent	method	public int getEventType()
+com.amazon.uxcontroller.eventmodels.LowBatteryEvent	field	private int mEventType;
+com.amazon.uxcontroller.eventmodels.LowBatteryEvent	method	public LowBatteryEvent(int i)
+com.amazon.uxcontroller.eventmodels.LowBatteryEvent	method	public int getEventType()
+com.amazon.uxcontroller.eventmodels.PairingRequestEvent	field	private String mDeviceAaddress;
+com.amazon.uxcontroller.eventmodels.PairingRequestEvent	field	private String mDeviceName;
+com.amazon.uxcontroller.eventmodels.PairingRequestEvent	field	private boolean mPairingSecured;
+com.amazon.uxcontroller.eventmodels.PairingRequestEvent	field	private int mEventType;
+com.amazon.uxcontroller.eventmodels.PairingRequestEvent	field	private int mPairingKey;
+com.amazon.uxcontroller.eventmodels.PairingRequestEvent	field	private int mPairingType;
+com.amazon.uxcontroller.eventmodels.PairingRequestEvent	method	public PairingRequestEvent(int i, String str, String str2, int i2, int i3, boolean z)
+com.amazon.uxcontroller.eventmodels.PairingRequestEvent	method	public String getDeviceAddress()
+com.amazon.uxcontroller.eventmodels.PairingRequestEvent	method	public String getDeviceName()
+com.amazon.uxcontroller.eventmodels.PairingRequestEvent	method	public boolean isPairingSecured()
+com.amazon.uxcontroller.eventmodels.PairingRequestEvent	method	public int getEventType()
+com.amazon.uxcontroller.eventmodels.PairingRequestEvent	method	public int getPairingKey()
+com.amazon.uxcontroller.eventmodels.PairingRequestEvent	method	public int getPairingType()
+com.amazon.uxcontroller.eventmodels.PrivacyModeEvent	field	private final int mEventType;
+com.amazon.uxcontroller.eventmodels.PrivacyModeEvent	method	public PrivacyModeEvent(int i)
+com.amazon.uxcontroller.eventmodels.PrivacyModeEvent	method	public int getEventType()
+com.amazon.uxcontroller.eventmodels.RechargeableBatteryChargingEvent	field	private final int mEventType;
+com.amazon.uxcontroller.eventmodels.RechargeableBatteryChargingEvent	method	public RechargeableBatteryChargingEvent(int i)
+com.amazon.uxcontroller.eventmodels.RechargeableBatteryChargingEvent	method	public int getEventType()
+com.amazon.uxcontroller.eventmodels.RemoteDiscoveryEvent	field	private int mEventType;
+com.amazon.uxcontroller.eventmodels.RemoteDiscoveryEvent	method	public RemoteDiscoveryEvent(int i)
+com.amazon.uxcontroller.eventmodels.RemoteDiscoveryEvent	method	public int getEventType()
+com.amazon.uxcontroller.handlers.ScreenUXHandler	method	public void handleEvent(Context context, BaseEvent baseEvent, UXStatusCallback uXStatusCallback)
+com.amazon.uxnotification.Manifest$permission	field	public static final String UX_NOTIFICATION;
+com.amazon.uxnotification.NotificationHelper	field	private static final String NOTIFICATION_CHANNEL_ID;
+com.amazon.uxnotification.NotificationHelper	field	private static final String NOTIFICATION_CHANNEL_NAME;
+com.amazon.uxnotification.NotificationHelper	field	private static final int NOTIFICATION_ID;
+com.amazon.uxnotification.NotificationHelper	field	private static final long NOTIFICATION_DURATION;
+com.amazon.uxnotification.NotificationHelper	method	public static void showNotification(Context context, int i, String str, String str2)
+com.amazon.uxnotification.NotificationHelper	method	public static void showNotification(Context context, int i, String str, String str2, boolean z)
+com.amazon.uxnotification.NotificationService	field	private static final String ACTION_NOTIFICATION;
+com.amazon.uxnotification.NotificationService	field	private static final String TAG;
+com.amazon.uxnotification.NotificationService	field	private static final boolean DEBUG;
+com.amazon.uxnotification.NotificationService	field	private static final int CONTROLLER_CONNECTED;
+com.amazon.uxnotification.NotificationService	field	private static final int CONTROLLER_DISCONNECTED;
+com.amazon.uxnotification.NotificationService	field	private static final int DEFAULT_EVENT_TYPE;
+com.amazon.uxnotification.NotificationService	field	private static final int DEVICE_CONNECTED;
+com.amazon.uxnotification.NotificationService	field	private static final int DEVICE_DISCONNECTED;
+com.amazon.uxnotification.NotificationService	method	protected void onHandleIntent(Intent intent)
+com.amazon.uxnotification.NotificationService	method	public NotificationService()
+com.amazon.uxnotification.R$drawable	field	public static final int ic_bt_headphones_a2dp_connect;
+com.amazon.uxnotification.R$drawable	field	public static final int ic_bt_headphones_a2dp_connect_error;
+com.amazon.uxnotification.R$drawable	field	public static final int ic_bt_headphones_a2dp_disconnect;
+com.amazon.uxnotification.R$drawable	field	public static final int ic_bt_headphones_generic_connect;
+com.amazon.uxnotification.R$drawable	field	public static final int ic_bt_headphones_generic_connect_error;
+com.amazon.uxnotification.R$drawable	field	public static final int ic_bt_headphones_generic_disconnect;
+com.amazon.uxnotification.R$drawable	field	public static final int ic_bt_headset_hfp_connect;
+com.amazon.uxnotification.R$drawable	field	public static final int ic_bt_headset_hfp_connect_error;
+com.amazon.uxnotification.R$drawable	field	public static final int ic_bt_headset_hfp_disconnect;
+com.amazon.uxnotification.R$drawable	field	public static final int ic_bt_keyboard_hid_connect;
+com.amazon.uxnotification.R$drawable	field	public static final int ic_bt_keyboard_hid_connect_error;
+com.amazon.uxnotification.R$drawable	field	public static final int ic_bt_keyboard_hid_disconnect;
+com.amazon.uxnotification.R$drawable	field	public static final int ic_bt_logo_connect;
+com.amazon.uxnotification.R$drawable	field	public static final int ic_bt_logo_connect_error;
+com.amazon.uxnotification.R$drawable	field	public static final int ic_bt_logo_disconnect;
+com.amazon.uxnotification.R$drawable	field	public static final int ic_bt_pointing_hid_connect;
+com.amazon.uxnotification.R$drawable	field	public static final int ic_bt_pointing_hid_connect_error;
+com.amazon.uxnotification.R$drawable	field	public static final int ic_bt_pointing_hid_disconnect;
+com.amazon.uxnotification.R$drawable	field	public static final int ic_gilfoyle_hf_full_battery;
+com.amazon.uxnotification.R$drawable	field	public static final int ic_hurley;
+com.amazon.uxnotification.R$drawable	field	public static final int ic_launcher;
+com.amazon.uxnotification.R$drawable	field	public static final int ic_low_battery;
+com.amazon.uxnotification.R$drawable	field	public static final int ic_mic_active;
+com.amazon.uxnotification.R$drawable	field	public static final int ic_mic_inactive;
+com.amazon.uxnotification.R$drawable	field	public static final int ic_rechargeable_in_charging;
+com.amazon.uxnotification.R$drawable	field	public static final int ic_rechargeable_low_battery;
+com.amazon.uxnotification.R$drawable	field	public static final int ic_thunder;
+com.amazon.uxnotification.R$id	field	public static final int alphanumeric_pin;
+com.amazon.uxnotification.R$id	field	public static final int message;
+com.amazon.uxnotification.R$id	field	public static final int message_below_pin;
+com.amazon.uxnotification.R$id	field	public static final int pin_values_hint;
+com.amazon.uxnotification.R$id	field	public static final int text;
+com.amazon.uxnotification.R$layout	field	public static final int bluetooth_pin_confirm;
+com.amazon.uxnotification.R$layout	field	public static final int bluetooth_pin_entry;
+com.amazon.uxnotification.R$string	field	public static final int app_name;
+com.amazon.uxnotification.R$string	field	public static final int battery_full_message;
+com.amazon.uxnotification.R$string	field	public static final int battery_full_title;
+com.amazon.uxnotification.R$string	field	public static final int bluetooth_confirm_passkey_msg;
+com.amazon.uxnotification.R$string	field	public static final int bluetooth_display_passkey_pin_msg;
+com.amazon.uxnotification.R$string	field	public static final int bluetooth_enable_alphanumeric_pin;
+com.amazon.uxnotification.R$string	field	public static final int bluetooth_enter_passkey_msg;
+com.amazon.uxnotification.R$string	field	public static final int bluetooth_enter_passkey_other_device;
+com.amazon.uxnotification.R$string	field	public static final int bluetooth_enter_pin_msg;
+com.amazon.uxnotification.R$string	field	public static final int bluetooth_enter_pin_msg_hs;
+com.amazon.uxnotification.R$string	field	public static final int bluetooth_enter_pin_other_device;
+com.amazon.uxnotification.R$string	field	public static final int bluetooth_incoming_pairing_msg;
+com.amazon.uxnotification.R$string	field	public static final int bluetooth_pairing_accept;
+com.amazon.uxnotification.R$string	field	public static final int bluetooth_pairing_decline;
+com.amazon.uxnotification.R$string	field	public static final int bluetooth_pairing_request;
+com.amazon.uxnotification.R$string	field	public static final int bluetooth_pin_values_hint;
+com.amazon.uxnotification.R$string	field	public static final int button_do_not_show;
+com.amazon.uxnotification.R$string	field	public static final int charging_started_message;
+com.amazon.uxnotification.R$string	field	public static final int charging_started_title;
+com.amazon.uxnotification.R$string	field	public static final int controller_connected;
+com.amazon.uxnotification.R$string	field	public static final int controller_connected_title;
+com.amazon.uxnotification.R$string	field	public static final int controller_disconnected;
+com.amazon.uxnotification.R$string	field	public static final int controller_disconnected_title;
+com.amazon.uxnotification.R$string	field	public static final int device_connected;
+com.amazon.uxnotification.R$string	field	public static final int device_connected_title;
+com.amazon.uxnotification.R$string	field	public static final int device_connection_failed;
+com.amazon.uxnotification.R$string	field	public static final int device_connection_failed_title;
+com.amazon.uxnotification.R$string	field	public static final int device_disconnected;
+com.amazon.uxnotification.R$string	field	public static final int device_disconnected_title;
+com.amazon.uxnotification.R$string	field	public static final int discovery_started_message;
+com.amazon.uxnotification.R$string	field	public static final int discovery_started_title;
+com.amazon.uxnotification.R$string	field	public static final int discovery_stopped_message;
+com.amazon.uxnotification.R$string	field	public static final int discovery_stopped_title;
+com.amazon.uxnotification.R$string	field	public static final int headset_connected;
+com.amazon.uxnotification.R$string	field	public static final int headset_connected_title;
+com.amazon.uxnotification.R$string	field	public static final int headset_disconnected;
+com.amazon.uxnotification.R$string	field	public static final int headset_disconnected_title;
+com.amazon.uxnotification.R$string	field	public static final int host_name_fire_tv;
+com.amazon.uxnotification.R$string	field	public static final int host_name_fire_tv_stick;
+com.amazon.uxnotification.R$string	field	public static final int lost_remote_cancelled_message;
+com.amazon.uxnotification.R$string	field	public static final int lost_remote_cancelled_title;
+com.amazon.uxnotification.R$string	field	public static final int low_battery_level_toast_subtext;
+com.amazon.uxnotification.R$string	field	public static final int low_battery_level_toast_title;
+com.amazon.uxnotification.R$string	field	public static final int low_battery_rechargeable_toast_subtext;
+com.amazon.uxnotification.R$string	field	public static final int low_battery_rechargeable_toast_title;
+com.amazon.uxnotification.R$string	field	public static final int new_remote_failure_message;
+com.amazon.uxnotification.R$string	field	public static final int new_remote_failure_title;
+com.amazon.uxnotification.R$string	field	public static final int new_remote_found_message;
+com.amazon.uxnotification.R$string	field	public static final int new_remote_found_title;
+com.amazon.uxnotification.R$string	field	public static final int new_remote_message;
+com.amazon.uxnotification.R$string	field	public static final int new_remote_title;
+com.amazon.uxnotification.R$string	field	public static final int privacy_mode_off_message;
+com.amazon.uxnotification.R$string	field	public static final int privacy_mode_off_title;
+com.amazon.uxnotification.R$string	field	public static final int privacy_mode_on_message;
+com.amazon.uxnotification.R$string	field	public static final int privacy_mode_on_title;
+com.amazon.uxnotification.R$string	field	public static final int remote_hurley;
+com.amazon.uxnotification.R$string	field	public static final int remote_thunder;
+com.amazon.uxnotification.R$string	field	public static final int wifi_headphone_warning_label;
+com.amazon.uxnotification.R$string	field	public static final int wifi_headphone_warning_message;
+com.amazon.uxnotification.R$string	field	public static final int wifi_headphones_connected_label;
+com.amazon.uxnotification.R$string	field	public static final int wifi_headphones_connected_message;
+com.amazon.uxnotification.R$string	field	public static final int wifi_headphones_disconnected_label;
+com.amazon.uxnotification.R$string	field	public static final int wifi_multiple_headphones_connected_label;
+com.amazon.uxnotification.R$string	field	public static final int wifi_multiple_headphones_connected_message;
+com.amazon.uxnotification.R$string	field	public static final int wifi_performance_warning_label;
+com.amazon.uxnotification.R$string	field	public static final int wifi_performance_warning_message;
+com.amazon.uxnotification.R$string	field	public static final int wifi_performance_warning_message_no_ethernet;
+com.amazon.uxnotification.R$style	field	public static final int AppBaseTheme;
+com.amazon.uxnotification.R$style	field	public static final int AppTheme;
+com.amazon.uxnotification.Utility	method	public static String withHostName(Context context, String str)
+com.amazon.uxnotification.Utility	method	public static int connectErrorIconForType(int[] iArr)
+com.amazon.uxnotification.Utility	method	public static int connectIconForType(int[] iArr)
+com.amazon.uxnotification.Utility	method	public static int deviceIconForType(int[] iArr)
+com.amazon.uxnotification.Utility	method	public static int deviceStringForType(int[] iArr)
+com.amazon.uxnotification.Utility	method	public static int disconnectIconForType(int[] iArr)
+com.amazon.uxnotification.Utility	method	public static int getAmazonDeviceName(int[] iArr)
+com.amazon.uxnotification.Utility	method	public static int getHeadPhonePluggedIcon(int i)
+com.amazon.uxnotification.Utility	method	public static int getHeadPhonePluggedMessage(int i)
+com.amazon.uxnotification.Utility	method	public static int getHeadPhonePluggedTitle(int i)
+com.amazon.uxnotification.Utility	method	public static int getMessage(int i)
+com.amazon.uxnotification.Utility	method	public static int getTitle(int i)

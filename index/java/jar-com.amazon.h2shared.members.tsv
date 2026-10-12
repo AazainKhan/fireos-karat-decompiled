@@ -1,0 +1,849 @@
+class	kind	declaration
+com.amazon.alta.h2shared.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.alta.h2shared.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.alta.h2shared.BuildConfig	field	public static final String FLAVOR;
+com.amazon.alta.h2shared.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.alta.h2shared.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.alta.h2shared.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.alta.h2shared.LazyObject	field	private T mObj;
+com.amazon.alta.h2shared.LazyObject	method	private synchronized void initialize()
+com.amazon.alta.h2shared.LazyObject	method	protected abstract T create();
+com.amazon.alta.h2shared.LazyObject	method	public T get()
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	private static final String DESCRIPTOR;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	static final int TRANSACTION_addAndroidAccount;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	static final int TRANSACTION_addCloudAdultToDevice;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	static final int TRANSACTION_addCloudUserToDevice;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	static final int TRANSACTION_addUser;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	static final int TRANSACTION_addUserWithMergePreview;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	static final int TRANSACTION_addWarmUser;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	static final int TRANSACTION_downloadAvatars;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	static final int TRANSACTION_getHouseholdAgreements;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	static final int TRANSACTION_getHouseholdVpcStatus;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	static final int TRANSACTION_getPeekResult;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	static final int TRANSACTION_getSharedBenefits;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	static final int TRANSACTION_getUserByAmazonId;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	static final int TRANSACTION_getUserByAndroidId;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	static final int TRANSACTION_getUsers;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	static final int TRANSACTION_getUsersBlocking;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	static final int TRANSACTION_getVpcStatus;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	static final int TRANSACTION_leaveHousehold;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	static final int TRANSACTION_peekHousehold;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	static final int TRANSACTION_registerPendingUser;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	static final int TRANSACTION_registerPendingUserWithToken;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	static final int TRANSACTION_registerUserWithExistingAndroidId;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	static final int TRANSACTION_removeAndroidAccount;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	static final int TRANSACTION_removeSharedBenefits;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	static final int TRANSACTION_removeUserFromDevice;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	static final int TRANSACTION_removeUserFromHousehold;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	static final int TRANSACTION_setAgreementStatus;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	static final int TRANSACTION_setSharingBenefits;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	static final int TRANSACTION_syncHouseholdFromCloud;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	static final int TRANSACTION_syncSharedBenefits;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	field	static final int TRANSACTION_updateUser;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	method	public IBinder asBinder()
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	method	public Stub()
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub	method	public static IH2ClientService asInterface(IBinder obj)
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public void addAndroidAccount(String agentId, AmazonUser user, IUserIPCCallback callback) throws RemoteException
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public void addCloudAdultToDevice(String agentId, String userId, String token, IUserIPCCallback callback) throws RemoteException
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public void addCloudUserToDevice(String agentId, String userId, IUserIPCCallback callback) throws RemoteException
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public void addUser(String agentId, UserMetadata userData, IUserIPCCallback callback) throws RemoteException
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public void addUserWithMergePreview(String directedId, String token, UserState state, HouseholdRole role, IGetUsersIPCCallback callback) throws RemoteException
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public void addWarmUser(String agentId, String directedId, String token, IUserIPCCallback callback) throws RemoteException
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public void downloadAvatars(IUserIPCCallback callback) throws RemoteException
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public void getHouseholdAgreements(IGetHouseholdAgreementsIPCCallback callback) throws RemoteException
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public void getHouseholdVpcStatus(String directedId, String clientId, IHouseholdVpcStatusIPCCallback callback) throws RemoteException
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public void getPeekResult(UserState state, HouseholdRole role, IGetUsersIPCCallback callback) throws RemoteException
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public void getSharedBenefits(IGetSharedBenefitsIPCCallback callback) throws RemoteException
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public void getUserByAmazonId(String amazonId, IUserIPCCallback callback) throws RemoteException
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public void getUserByAndroidId(int androidId, IUserIPCCallback callback) throws RemoteException
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public void getUsers(UserState state, HouseholdRole role, IGetUsersIPCCallback callback) throws RemoteException
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public void getUsersBlocking(UserState state, HouseholdRole role, IGetUsersBlockingIPCCallback callback) throws RemoteException
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public void getVpcStatus(String directedId, String clientId, boolean checkAbleToSetVpc, IVpcStatusIPCCallback callback) throws RemoteException
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public void leaveHousehold(IUserIPCCallback callback) throws RemoteException
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public void peekHousehold(String agentId, String directedId, String token, IUserIPCCallback callback) throws RemoteException
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public void registerPendingUser(String userId, String email, String password, IUserIPCCallback callback) throws RemoteException
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public void registerPendingUserWithToken(String userId, String token, TokenType tokenType, IUserIPCCallback callback) throws RemoteException
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public void registerUserWithExistingAndroidId(String agentId, AmazonUser user, String password, IUserIPCCallback callback) throws RemoteException
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public void removeAndroidAccount(String agentId, AmazonUser user, IUserIPCCallback callback) throws RemoteException
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public void removeSharedBenefits(String agentId, List<Beneficiary> beneficiaries, IStatusIPCCallback callback) throws RemoteException
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public void removeUserFromDevice(String userId, boolean keepData, IUserIPCCallback callback) throws RemoteException
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public void removeUserFromHousehold(String agentId, String userId, IUserIPCCallback callback) throws RemoteException
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public void setAgreementStatus(Map householdAgreements, IStatusIPCCallback callback) throws RemoteException
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public void setSharingBenefits(String agentId, List<Beneficiary> beneficiaries, IStatusIPCCallback callback) throws RemoteException
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public void syncHouseholdFromCloud(String agentId, IStatusIPCCallback callback) throws RemoteException
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public void syncSharedBenefits(String agentId, IStatusIPCCallback callback) throws RemoteException
+com.amazon.alta.h2shared.aidl.IH2ClientService$Stub$Proxy	method	public void updateUser(String agentId, AmazonUser user, IUserIPCCallback callback) throws RemoteException
+com.amazon.alta.h2shared.aidl.genericaidl.IStatusIPCCallback$Stub	field	private static final String DESCRIPTOR;
+com.amazon.alta.h2shared.aidl.genericaidl.IStatusIPCCallback$Stub	field	static final int TRANSACTION_onResult;
+com.amazon.alta.h2shared.aidl.genericaidl.IStatusIPCCallback$Stub	method	public IBinder asBinder()
+com.amazon.alta.h2shared.aidl.genericaidl.IStatusIPCCallback$Stub	method	public Stub()
+com.amazon.alta.h2shared.aidl.genericaidl.IStatusIPCCallback$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.amazon.alta.h2shared.aidl.genericaidl.IStatusIPCCallback$Stub	method	public static IStatusIPCCallback asInterface(IBinder obj)
+com.amazon.alta.h2shared.aidl.genericaidl.IStatusIPCCallback$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.alta.h2shared.aidl.genericaidl.IStatusIPCCallback$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.alta.h2shared.aidl.genericaidl.IStatusIPCCallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.alta.h2shared.aidl.genericaidl.IStatusIPCCallback$Stub$Proxy	method	public void onResult(H2Response ipcResponse) throws RemoteException
+com.amazon.alta.h2shared.aidl.genericaidl.IStringIPCCallback$Stub	field	private static final String DESCRIPTOR;
+com.amazon.alta.h2shared.aidl.genericaidl.IStringIPCCallback$Stub	field	static final int TRANSACTION_onResult;
+com.amazon.alta.h2shared.aidl.genericaidl.IStringIPCCallback$Stub	method	public IBinder asBinder()
+com.amazon.alta.h2shared.aidl.genericaidl.IStringIPCCallback$Stub	method	public Stub()
+com.amazon.alta.h2shared.aidl.genericaidl.IStringIPCCallback$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.amazon.alta.h2shared.aidl.genericaidl.IStringIPCCallback$Stub	method	public static IStringIPCCallback asInterface(IBinder obj)
+com.amazon.alta.h2shared.aidl.genericaidl.IStringIPCCallback$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.alta.h2shared.aidl.genericaidl.IStringIPCCallback$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.alta.h2shared.aidl.genericaidl.IStringIPCCallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.alta.h2shared.aidl.genericaidl.IStringIPCCallback$Stub$Proxy	method	public void onResult(StringResponse ipcResponse) throws RemoteException
+com.amazon.alta.h2shared.aidl.genericaidl.StringResponse	field	private String mString;
+com.amazon.alta.h2shared.aidl.genericaidl.StringResponse	method	private StringResponse(Parcel parcel)
+com.amazon.alta.h2shared.aidl.genericaidl.StringResponse	method	public String getString()
+com.amazon.alta.h2shared.aidl.genericaidl.StringResponse	method	public StringResponse()
+com.amazon.alta.h2shared.aidl.genericaidl.StringResponse	method	public StringResponse(String string)
+com.amazon.alta.h2shared.aidl.genericaidl.StringResponse	method	public void setString(String string)
+com.amazon.alta.h2shared.aidl.genericaidl.StringResponse	method	public void writeToParcel(Parcel parcel, int flags)
+com.amazon.alta.h2shared.aidl.gethouseholdagreements.GetHouseholdAgreementsResponse	field	private Map<String, Boolean> mHouseholdAgreementsMap;
+com.amazon.alta.h2shared.aidl.gethouseholdagreements.GetHouseholdAgreementsResponse	method	public GetHouseholdAgreementsResponse()
+com.amazon.alta.h2shared.aidl.gethouseholdagreements.GetHouseholdAgreementsResponse	method	public GetHouseholdAgreementsResponse(Map<String, Boolean> sharingBitsMap)
+com.amazon.alta.h2shared.aidl.gethouseholdagreements.GetHouseholdAgreementsResponse	method	public GetHouseholdAgreementsResponse(Parcel parcel)
+com.amazon.alta.h2shared.aidl.gethouseholdagreements.GetHouseholdAgreementsResponse	method	public Map<String, Boolean> getHouseholdAgreementsMap()
+com.amazon.alta.h2shared.aidl.gethouseholdagreements.GetHouseholdAgreementsResponse	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.alta.h2shared.aidl.gethouseholdagreements.IGetHouseholdAgreementsIPCCallback$Stub	field	private static final String DESCRIPTOR;
+com.amazon.alta.h2shared.aidl.gethouseholdagreements.IGetHouseholdAgreementsIPCCallback$Stub	field	static final int TRANSACTION_onResult;
+com.amazon.alta.h2shared.aidl.gethouseholdagreements.IGetHouseholdAgreementsIPCCallback$Stub	method	public IBinder asBinder()
+com.amazon.alta.h2shared.aidl.gethouseholdagreements.IGetHouseholdAgreementsIPCCallback$Stub	method	public Stub()
+com.amazon.alta.h2shared.aidl.gethouseholdagreements.IGetHouseholdAgreementsIPCCallback$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.amazon.alta.h2shared.aidl.gethouseholdagreements.IGetHouseholdAgreementsIPCCallback$Stub	method	public static IGetHouseholdAgreementsIPCCallback asInterface(IBinder obj)
+com.amazon.alta.h2shared.aidl.gethouseholdagreements.IGetHouseholdAgreementsIPCCallback$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.alta.h2shared.aidl.gethouseholdagreements.IGetHouseholdAgreementsIPCCallback$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.alta.h2shared.aidl.gethouseholdagreements.IGetHouseholdAgreementsIPCCallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.alta.h2shared.aidl.gethouseholdagreements.IGetHouseholdAgreementsIPCCallback$Stub$Proxy	method	public void onResult(GetHouseholdAgreementsResponse ipcResponse) throws RemoteException
+com.amazon.alta.h2shared.aidl.getsharedbenefits.GetSharedBenefitsResponse	field	private List<Beneficiary> mBeneficiaries;
+com.amazon.alta.h2shared.aidl.getsharedbenefits.GetSharedBenefitsResponse	method	private GetSharedBenefitsResponse(Parcel parcel)
+com.amazon.alta.h2shared.aidl.getsharedbenefits.GetSharedBenefitsResponse	method	public GetSharedBenefitsResponse()
+com.amazon.alta.h2shared.aidl.getsharedbenefits.GetSharedBenefitsResponse	method	public GetSharedBenefitsResponse(List<Beneficiary> beneficiaries)
+com.amazon.alta.h2shared.aidl.getsharedbenefits.GetSharedBenefitsResponse	method	public List<Beneficiary> getSharedBeneficiaries()
+com.amazon.alta.h2shared.aidl.getsharedbenefits.GetSharedBenefitsResponse	method	public void setBeneficiaries(List<Beneficiary> beneficiaries)
+com.amazon.alta.h2shared.aidl.getsharedbenefits.GetSharedBenefitsResponse	method	public void writeToParcel(Parcel parcel, int flags)
+com.amazon.alta.h2shared.aidl.getsharedbenefits.IGetSharedBenefitsIPCCallback$Stub	field	private static final String DESCRIPTOR;
+com.amazon.alta.h2shared.aidl.getsharedbenefits.IGetSharedBenefitsIPCCallback$Stub	field	static final int TRANSACTION_onResult;
+com.amazon.alta.h2shared.aidl.getsharedbenefits.IGetSharedBenefitsIPCCallback$Stub	method	public IBinder asBinder()
+com.amazon.alta.h2shared.aidl.getsharedbenefits.IGetSharedBenefitsIPCCallback$Stub	method	public Stub()
+com.amazon.alta.h2shared.aidl.getsharedbenefits.IGetSharedBenefitsIPCCallback$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.amazon.alta.h2shared.aidl.getsharedbenefits.IGetSharedBenefitsIPCCallback$Stub	method	public static IGetSharedBenefitsIPCCallback asInterface(IBinder obj)
+com.amazon.alta.h2shared.aidl.getsharedbenefits.IGetSharedBenefitsIPCCallback$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.alta.h2shared.aidl.getsharedbenefits.IGetSharedBenefitsIPCCallback$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.alta.h2shared.aidl.getsharedbenefits.IGetSharedBenefitsIPCCallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.alta.h2shared.aidl.getsharedbenefits.IGetSharedBenefitsIPCCallback$Stub$Proxy	method	public void onResult(GetSharedBenefitsResponse ipcResponse) throws RemoteException
+com.amazon.alta.h2shared.aidl.getuser.IUserIPCCallback$Stub	field	private static final String DESCRIPTOR;
+com.amazon.alta.h2shared.aidl.getuser.IUserIPCCallback$Stub	field	static final int TRANSACTION_onResult;
+com.amazon.alta.h2shared.aidl.getuser.IUserIPCCallback$Stub	method	public IBinder asBinder()
+com.amazon.alta.h2shared.aidl.getuser.IUserIPCCallback$Stub	method	public Stub()
+com.amazon.alta.h2shared.aidl.getuser.IUserIPCCallback$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.amazon.alta.h2shared.aidl.getuser.IUserIPCCallback$Stub	method	public static IUserIPCCallback asInterface(IBinder obj)
+com.amazon.alta.h2shared.aidl.getuser.IUserIPCCallback$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.alta.h2shared.aidl.getuser.IUserIPCCallback$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.alta.h2shared.aidl.getuser.IUserIPCCallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.alta.h2shared.aidl.getuser.IUserIPCCallback$Stub$Proxy	method	public void onResult(UserResponse ipcResponse) throws RemoteException
+com.amazon.alta.h2shared.aidl.getuser.UserResponse	field	private AmazonUser mUser;
+com.amazon.alta.h2shared.aidl.getuser.UserResponse	method	private UserResponse(Parcel parcel)
+com.amazon.alta.h2shared.aidl.getuser.UserResponse	method	protected UserResponse()
+com.amazon.alta.h2shared.aidl.getuser.UserResponse	method	protected UserResponse(AmazonUser user, boolean success, String message)
+com.amazon.alta.h2shared.aidl.getuser.UserResponse	method	protected UserResponse(AmazonUser user, boolean success, String message, HouseholdError error)
+com.amazon.alta.h2shared.aidl.getuser.UserResponse	method	public AmazonUser getUser()
+com.amazon.alta.h2shared.aidl.getuser.UserResponse	method	public static UserResponse failure(String message)
+com.amazon.alta.h2shared.aidl.getuser.UserResponse	method	public static UserResponse failure(String message, HouseholdError error)
+com.amazon.alta.h2shared.aidl.getuser.UserResponse	method	public static UserResponse failure(String tag, String message)
+com.amazon.alta.h2shared.aidl.getuser.UserResponse	method	public static UserResponse failure(String tag, String message, HouseholdError error)
+com.amazon.alta.h2shared.aidl.getuser.UserResponse	method	public static UserResponse success(AmazonUser user)
+com.amazon.alta.h2shared.aidl.getuser.UserResponse	method	public void setFailed(String message)
+com.amazon.alta.h2shared.aidl.getuser.UserResponse	method	public void setFailed(String message, HouseholdError error)
+com.amazon.alta.h2shared.aidl.getuser.UserResponse	method	public void setUser(AmazonUser user)
+com.amazon.alta.h2shared.aidl.getuser.UserResponse	method	public void writeToParcel(Parcel parcel, int flags)
+com.amazon.alta.h2shared.aidl.getusers.AbstractGetUsersResponse	field	private List<AmazonUser> mHouseholdMembers;
+com.amazon.alta.h2shared.aidl.getusers.AbstractGetUsersResponse	method	public AbstractGetUsersResponse()
+com.amazon.alta.h2shared.aidl.getusers.AbstractGetUsersResponse	method	public AbstractGetUsersResponse(Parcel parcel)
+com.amazon.alta.h2shared.aidl.getusers.AbstractGetUsersResponse	method	public List<AmazonUser> getHouseholdMembers()
+com.amazon.alta.h2shared.aidl.getusers.AbstractGetUsersResponse	method	public void setHouseholdMembers(List<AmazonUser> members)
+com.amazon.alta.h2shared.aidl.getusers.AbstractGetUsersResponse	method	public void writeToParcel(Parcel parcel, int flags)
+com.amazon.alta.h2shared.aidl.getusers.GetUsersBlockingResponse	field	private boolean mIsDirty;
+com.amazon.alta.h2shared.aidl.getusers.GetUsersBlockingResponse	method	private GetUsersBlockingResponse(Parcel parcel)
+com.amazon.alta.h2shared.aidl.getusers.GetUsersBlockingResponse	method	public GetUsersBlockingResponse()
+com.amazon.alta.h2shared.aidl.getusers.GetUsersBlockingResponse	method	public GetUsersBlockingResponse(List<AmazonUser> users, boolean isDirty)
+com.amazon.alta.h2shared.aidl.getusers.GetUsersBlockingResponse	method	public boolean getIsDirty()
+com.amazon.alta.h2shared.aidl.getusers.GetUsersBlockingResponse	method	public void setIsDirty(boolean isDirty)
+com.amazon.alta.h2shared.aidl.getusers.GetUsersBlockingResponse	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.alta.h2shared.aidl.getusers.GetUsersResponse	method	private GetUsersResponse(Parcel parcel)
+com.amazon.alta.h2shared.aidl.getusers.GetUsersResponse	method	public GetUsersResponse()
+com.amazon.alta.h2shared.aidl.getusers.GetUsersResponse	method	public GetUsersResponse(List<AmazonUser> users)
+com.amazon.alta.h2shared.aidl.getusers.GetUsersResponse	method	public void writeToParcel(Parcel parcel, int flags)
+com.amazon.alta.h2shared.aidl.getusers.IGetUsersBlockingIPCCallback$Stub	field	private static final String DESCRIPTOR;
+com.amazon.alta.h2shared.aidl.getusers.IGetUsersBlockingIPCCallback$Stub	field	static final int TRANSACTION_onResult;
+com.amazon.alta.h2shared.aidl.getusers.IGetUsersBlockingIPCCallback$Stub	method	public IBinder asBinder()
+com.amazon.alta.h2shared.aidl.getusers.IGetUsersBlockingIPCCallback$Stub	method	public Stub()
+com.amazon.alta.h2shared.aidl.getusers.IGetUsersBlockingIPCCallback$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.amazon.alta.h2shared.aidl.getusers.IGetUsersBlockingIPCCallback$Stub	method	public static IGetUsersBlockingIPCCallback asInterface(IBinder obj)
+com.amazon.alta.h2shared.aidl.getusers.IGetUsersBlockingIPCCallback$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.alta.h2shared.aidl.getusers.IGetUsersBlockingIPCCallback$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.alta.h2shared.aidl.getusers.IGetUsersBlockingIPCCallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.alta.h2shared.aidl.getusers.IGetUsersBlockingIPCCallback$Stub$Proxy	method	public void onResult(GetUsersBlockingResponse ipcResponse) throws RemoteException
+com.amazon.alta.h2shared.aidl.getusers.IGetUsersIPCCallback$Stub	field	private static final String DESCRIPTOR;
+com.amazon.alta.h2shared.aidl.getusers.IGetUsersIPCCallback$Stub	field	static final int TRANSACTION_onResult;
+com.amazon.alta.h2shared.aidl.getusers.IGetUsersIPCCallback$Stub	method	public IBinder asBinder()
+com.amazon.alta.h2shared.aidl.getusers.IGetUsersIPCCallback$Stub	method	public Stub()
+com.amazon.alta.h2shared.aidl.getusers.IGetUsersIPCCallback$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.amazon.alta.h2shared.aidl.getusers.IGetUsersIPCCallback$Stub	method	public static IGetUsersIPCCallback asInterface(IBinder obj)
+com.amazon.alta.h2shared.aidl.getusers.IGetUsersIPCCallback$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.alta.h2shared.aidl.getusers.IGetUsersIPCCallback$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.alta.h2shared.aidl.getusers.IGetUsersIPCCallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.alta.h2shared.aidl.getusers.IGetUsersIPCCallback$Stub$Proxy	method	public void onResult(GetUsersResponse ipcResponse) throws RemoteException
+com.amazon.alta.h2shared.aidl.getvpc.HouseholdVpcStatusResponse	field	private List<HouseholdMemberVpcStatus> mHouseholdMembers;
+com.amazon.alta.h2shared.aidl.getvpc.HouseholdVpcStatusResponse	field	private boolean mAbleToSetVpc;
+com.amazon.alta.h2shared.aidl.getvpc.HouseholdVpcStatusResponse	field	private static final int FALSE;
+com.amazon.alta.h2shared.aidl.getvpc.HouseholdVpcStatusResponse	field	private static final int TRUE;
+com.amazon.alta.h2shared.aidl.getvpc.HouseholdVpcStatusResponse	method	private HouseholdVpcStatusResponse(Parcel parcel)
+com.amazon.alta.h2shared.aidl.getvpc.HouseholdVpcStatusResponse	method	private HouseholdVpcStatusResponse(String message, HouseholdError error)
+com.amazon.alta.h2shared.aidl.getvpc.HouseholdVpcStatusResponse	method	private HouseholdVpcStatusResponse(boolean ableToSetVpc, List<HouseholdMemberVpcStatus> householdMembers)
+com.amazon.alta.h2shared.aidl.getvpc.HouseholdVpcStatusResponse	method	private HouseholdVpcStatusResponse(boolean ableToSetVpc, List<HouseholdMemberVpcStatus> householdMembers, boolean success, String message, HouseholdError error)
+com.amazon.alta.h2shared.aidl.getvpc.HouseholdVpcStatusResponse	method	public List<HouseholdMemberVpcStatus> getHouseholdMemberVpcStatusList()
+com.amazon.alta.h2shared.aidl.getvpc.HouseholdVpcStatusResponse	method	public boolean equals(Object obj)
+com.amazon.alta.h2shared.aidl.getvpc.HouseholdVpcStatusResponse	method	public boolean isAbleToSetVpc()
+com.amazon.alta.h2shared.aidl.getvpc.HouseholdVpcStatusResponse	method	public int hashCode()
+com.amazon.alta.h2shared.aidl.getvpc.HouseholdVpcStatusResponse	method	public static HouseholdVpcStatusResponse failure(String message)
+com.amazon.alta.h2shared.aidl.getvpc.HouseholdVpcStatusResponse	method	public static HouseholdVpcStatusResponse failure(String message, HouseholdError error)
+com.amazon.alta.h2shared.aidl.getvpc.HouseholdVpcStatusResponse	method	public static HouseholdVpcStatusResponse failure(String tag, String message)
+com.amazon.alta.h2shared.aidl.getvpc.HouseholdVpcStatusResponse	method	public static HouseholdVpcStatusResponse failure(String tag, String message, HouseholdError error)
+com.amazon.alta.h2shared.aidl.getvpc.HouseholdVpcStatusResponse	method	public static HouseholdVpcStatusResponse success(boolean ableToSetVpc, List<HouseholdMemberVpcStatus> householdMembers)
+com.amazon.alta.h2shared.aidl.getvpc.HouseholdVpcStatusResponse	method	public void setFailed(String message)
+com.amazon.alta.h2shared.aidl.getvpc.HouseholdVpcStatusResponse	method	public void setFailed(String message, HouseholdError error)
+com.amazon.alta.h2shared.aidl.getvpc.HouseholdVpcStatusResponse	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.alta.h2shared.aidl.getvpc.IHouseholdVpcStatusIPCCallback$Stub	field	private static final String DESCRIPTOR;
+com.amazon.alta.h2shared.aidl.getvpc.IHouseholdVpcStatusIPCCallback$Stub	field	static final int TRANSACTION_onResult;
+com.amazon.alta.h2shared.aidl.getvpc.IHouseholdVpcStatusIPCCallback$Stub	method	public IBinder asBinder()
+com.amazon.alta.h2shared.aidl.getvpc.IHouseholdVpcStatusIPCCallback$Stub	method	public Stub()
+com.amazon.alta.h2shared.aidl.getvpc.IHouseholdVpcStatusIPCCallback$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.amazon.alta.h2shared.aidl.getvpc.IHouseholdVpcStatusIPCCallback$Stub	method	public static IHouseholdVpcStatusIPCCallback asInterface(IBinder obj)
+com.amazon.alta.h2shared.aidl.getvpc.IHouseholdVpcStatusIPCCallback$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.alta.h2shared.aidl.getvpc.IHouseholdVpcStatusIPCCallback$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.alta.h2shared.aidl.getvpc.IHouseholdVpcStatusIPCCallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.alta.h2shared.aidl.getvpc.IHouseholdVpcStatusIPCCallback$Stub$Proxy	method	public void onResult(HouseholdVpcStatusResponse vpcResponse) throws RemoteException
+com.amazon.alta.h2shared.aidl.getvpc.IVpcStatusIPCCallback$Stub	field	private static final String DESCRIPTOR;
+com.amazon.alta.h2shared.aidl.getvpc.IVpcStatusIPCCallback$Stub	field	static final int TRANSACTION_onResult;
+com.amazon.alta.h2shared.aidl.getvpc.IVpcStatusIPCCallback$Stub	method	public IBinder asBinder()
+com.amazon.alta.h2shared.aidl.getvpc.IVpcStatusIPCCallback$Stub	method	public Stub()
+com.amazon.alta.h2shared.aidl.getvpc.IVpcStatusIPCCallback$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.amazon.alta.h2shared.aidl.getvpc.IVpcStatusIPCCallback$Stub	method	public static IVpcStatusIPCCallback asInterface(IBinder obj)
+com.amazon.alta.h2shared.aidl.getvpc.IVpcStatusIPCCallback$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.alta.h2shared.aidl.getvpc.IVpcStatusIPCCallback$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.alta.h2shared.aidl.getvpc.IVpcStatusIPCCallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.alta.h2shared.aidl.getvpc.IVpcStatusIPCCallback$Stub$Proxy	method	public void onResult(VpcStatusResponse vpcResponse) throws RemoteException
+com.amazon.alta.h2shared.aidl.getvpc.VpcStatusResponse	field	private Boolean mAbleToSetVpc;
+com.amazon.alta.h2shared.aidl.getvpc.VpcStatusResponse	field	private String mCustomerDirectedId;
+com.amazon.alta.h2shared.aidl.getvpc.VpcStatusResponse	field	private String mNextStepUrl;
+com.amazon.alta.h2shared.aidl.getvpc.VpcStatusResponse	field	private VpcStatus mVpcStatus;
+com.amazon.alta.h2shared.aidl.getvpc.VpcStatusResponse	field	private static final int FALSE;
+com.amazon.alta.h2shared.aidl.getvpc.VpcStatusResponse	field	private static final int NULL;
+com.amazon.alta.h2shared.aidl.getvpc.VpcStatusResponse	field	private static final int TRUE;
+com.amazon.alta.h2shared.aidl.getvpc.VpcStatusResponse	method	private VpcStatusResponse(Parcel parcel)
+com.amazon.alta.h2shared.aidl.getvpc.VpcStatusResponse	method	private VpcStatusResponse(String directedId, VpcStatus status, Boolean ableToSetVpc, String nextStepUrl)
+com.amazon.alta.h2shared.aidl.getvpc.VpcStatusResponse	method	private VpcStatusResponse(String directedId, VpcStatus status, Boolean ableToSetVpc, String nextStepUrl, boolean success, String message, HouseholdError error)
+com.amazon.alta.h2shared.aidl.getvpc.VpcStatusResponse	method	private VpcStatusResponse(String message, HouseholdError error)
+com.amazon.alta.h2shared.aidl.getvpc.VpcStatusResponse	method	public Boolean isAbleToSetVpc()
+com.amazon.alta.h2shared.aidl.getvpc.VpcStatusResponse	method	public String getCustomerDirectedId()
+com.amazon.alta.h2shared.aidl.getvpc.VpcStatusResponse	method	public String getNextStepUrl()
+com.amazon.alta.h2shared.aidl.getvpc.VpcStatusResponse	method	public VpcStatus getVpcStatus()
+com.amazon.alta.h2shared.aidl.getvpc.VpcStatusResponse	method	public boolean equals(Object obj)
+com.amazon.alta.h2shared.aidl.getvpc.VpcStatusResponse	method	public int hashCode()
+com.amazon.alta.h2shared.aidl.getvpc.VpcStatusResponse	method	public static VpcStatusResponse failure(String message)
+com.amazon.alta.h2shared.aidl.getvpc.VpcStatusResponse	method	public static VpcStatusResponse failure(String message, HouseholdError error)
+com.amazon.alta.h2shared.aidl.getvpc.VpcStatusResponse	method	public static VpcStatusResponse failure(String tag, String message)
+com.amazon.alta.h2shared.aidl.getvpc.VpcStatusResponse	method	public static VpcStatusResponse failure(String tag, String message, HouseholdError error)
+com.amazon.alta.h2shared.aidl.getvpc.VpcStatusResponse	method	public static VpcStatusResponse success(String directedId, VpcStatus status, Boolean ableToSetVpc, String nextStepUrl)
+com.amazon.alta.h2shared.aidl.getvpc.VpcStatusResponse	method	public void setFailed(String message)
+com.amazon.alta.h2shared.aidl.getvpc.VpcStatusResponse	method	public void setFailed(String message, HouseholdError error)
+com.amazon.alta.h2shared.aidl.getvpc.VpcStatusResponse	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.alta.h2shared.backport.java.util.Optional	field	private T mValue;
+com.amazon.alta.h2shared.backport.java.util.Optional	field	private boolean mPresent;
+com.amazon.alta.h2shared.backport.java.util.Optional	method	protected Optional()
+com.amazon.alta.h2shared.backport.java.util.Optional	method	protected Optional(T value)
+com.amazon.alta.h2shared.backport.java.util.Optional	method	public <U> Optional<U> flatMap(Function<? super T, Optional<U>> function)
+com.amazon.alta.h2shared.backport.java.util.Optional	method	public <U> Optional<U> map(Function<? super T, ? extends U> function)
+com.amazon.alta.h2shared.backport.java.util.Optional	method	public <X extends Throwable> T orElseThrow(Supplier<? extends X> exceptionSupplier) throws Throwable
+com.amazon.alta.h2shared.backport.java.util.Optional	method	public Optional<T> filter(Predicate<? super T> predicate)
+com.amazon.alta.h2shared.backport.java.util.Optional	method	public String toString()
+com.amazon.alta.h2shared.backport.java.util.Optional	method	public T get()
+com.amazon.alta.h2shared.backport.java.util.Optional	method	public T orElse(final T other)
+com.amazon.alta.h2shared.backport.java.util.Optional	method	public T orElseGet(Supplier<? extends T> other)
+com.amazon.alta.h2shared.backport.java.util.Optional	method	public T orNull()
+com.amazon.alta.h2shared.backport.java.util.Optional	method	public boolean equals(Object obj)
+com.amazon.alta.h2shared.backport.java.util.Optional	method	public boolean isPresent()
+com.amazon.alta.h2shared.backport.java.util.Optional	method	public int hashCode()
+com.amazon.alta.h2shared.backport.java.util.Optional	method	public static <T> Optional<T> empty()
+com.amazon.alta.h2shared.backport.java.util.Optional	method	public static <T> Optional<T> of(T value)
+com.amazon.alta.h2shared.backport.java.util.Optional	method	public static <T> Optional<T> ofNullable(T value)
+com.amazon.alta.h2shared.backport.java.util.Optional	method	public void ifPresent(Consumer<? super T> consumer)
+com.amazon.alta.h2shared.helpers.AndroidUserHelper	field	private final AmazonActivityManager mActivityManager;
+com.amazon.alta.h2shared.helpers.AndroidUserHelper	field	private final AmazonUserManager mUserManager;
+com.amazon.alta.h2shared.helpers.AndroidUserHelper	field	private final Context mAppContext;
+com.amazon.alta.h2shared.helpers.AndroidUserHelper	field	private static final String TAG;
+com.amazon.alta.h2shared.helpers.AndroidUserHelper	field	private static final int FLAG_ADMIN;
+com.amazon.alta.h2shared.helpers.AndroidUserHelper	field	private static final int FLAG_PRIMARY;
+com.amazon.alta.h2shared.helpers.AndroidUserHelper	field	public static final int ANDROID_PER_USER_RANGE;
+com.amazon.alta.h2shared.helpers.AndroidUserHelper	field	public static final int SWITCH_USER_NO_LOCKSCREEN;
+com.amazon.alta.h2shared.helpers.AndroidUserHelper	field	public static final int SWITCH_USER_SHOW_LOCKSCREEN;
+com.amazon.alta.h2shared.helpers.AndroidUserHelper	method	private AndroidUserInfo convertFromAmazonUserInfo(AmazonUserInfo amazonUserInfo)
+com.amazon.alta.h2shared.helpers.AndroidUserHelper	method	public AndroidUserHelper(Context context)
+com.amazon.alta.h2shared.helpers.AndroidUserHelper	method	public AndroidUserInfo addAndroidUser(UserMetadata userData)
+com.amazon.alta.h2shared.helpers.AndroidUserHelper	method	public AndroidUserInfo getActiveUser()
+com.amazon.alta.h2shared.helpers.AndroidUserHelper	method	public AndroidUserInfo getAndroidUser(Integer androidId)
+com.amazon.alta.h2shared.helpers.AndroidUserHelper	method	public Integer getActiveUserId()
+com.amazon.alta.h2shared.helpers.AndroidUserHelper	method	public List<AndroidUserInfo> getAndroidUsers()
+com.amazon.alta.h2shared.helpers.AndroidUserHelper	method	public List<Integer> getAndroidIds()
+com.amazon.alta.h2shared.helpers.AndroidUserHelper	method	public String getSecureString(ContentResolver resolver, String key, int user)
+com.amazon.alta.h2shared.helpers.AndroidUserHelper	method	public int getProcessUserId()
+com.amazon.alta.h2shared.helpers.AndroidUserHelper	method	public void removeAndroidUser(Integer androidId)
+com.amazon.alta.h2shared.helpers.AndroidUserHelper	method	public void resetSortedAndroidIds()
+com.amazon.alta.h2shared.helpers.AndroidUserHelper	method	public void sendBroadcastAsUser(Intent intent, int androidId)
+com.amazon.alta.h2shared.helpers.AndroidUserHelper	method	public void setSecureString(ContentResolver resolver, String key, String value, int user)
+com.amazon.alta.h2shared.helpers.AndroidUserHelper	method	public void setSortedAndroidIds(List<Integer> androidIds)
+com.amazon.alta.h2shared.helpers.AndroidUserHelper	method	public void setUserIcon(Integer androidId, String iconPath)
+com.amazon.alta.h2shared.helpers.AndroidUserHelper	method	public void setUserName(Integer androidId, String name)
+com.amazon.alta.h2shared.helpers.AndroidUserHelper	method	public void switchUser(Integer num, boolean z)
+com.amazon.alta.h2shared.helpers.AndroidUserHelper$AndroidUserInfo	field	private Integer mAndroidId;
+com.amazon.alta.h2shared.helpers.AndroidUserHelper$AndroidUserInfo	field	private String mIconPath;
+com.amazon.alta.h2shared.helpers.AndroidUserHelper$AndroidUserInfo	field	private String mName;
+com.amazon.alta.h2shared.helpers.AndroidUserHelper$AndroidUserInfo	field	private UserHandle mUserHandle;
+com.amazon.alta.h2shared.helpers.AndroidUserHelper$AndroidUserInfo	field	private int mFlags;
+com.amazon.alta.h2shared.helpers.AndroidUserHelper$AndroidUserInfo	method	public AndroidUserInfo()
+com.amazon.alta.h2shared.helpers.AndroidUserHelper$AndroidUserInfo	method	public Integer getAndroidId()
+com.amazon.alta.h2shared.helpers.AndroidUserHelper$AndroidUserInfo	method	public String getIconPath()
+com.amazon.alta.h2shared.helpers.AndroidUserHelper$AndroidUserInfo	method	public String getName()
+com.amazon.alta.h2shared.helpers.AndroidUserHelper$AndroidUserInfo	method	public String toString()
+com.amazon.alta.h2shared.helpers.AndroidUserHelper$AndroidUserInfo	method	public UserHandle getUserHandle()
+com.amazon.alta.h2shared.helpers.AndroidUserHelper$AndroidUserInfo	method	public boolean isAdmin()
+com.amazon.alta.h2shared.helpers.ConfigHelper	field	private final AndroidUserHelper mAndroidUserHelper;
+com.amazon.alta.h2shared.helpers.ConfigHelper	field	private final ContentResolver mContentResolver;
+com.amazon.alta.h2shared.helpers.ConfigHelper	field	private final boolean mDebuggable;
+com.amazon.alta.h2shared.helpers.ConfigHelper	field	private static final String EMPTY_STRING;
+com.amazon.alta.h2shared.helpers.ConfigHelper	field	private static final String SAFEMODE_OFF;
+com.amazon.alta.h2shared.helpers.ConfigHelper	field	private static final String SAFEMODE_ON;
+com.amazon.alta.h2shared.helpers.ConfigHelper	field	private static final String TAG;
+com.amazon.alta.h2shared.helpers.ConfigHelper	method	public ConfigHelper(Context context, AndroidUserHelper androidUserHelper)
+com.amazon.alta.h2shared.helpers.ConfigHelper	method	public HouseholdRole getHouseholdRole(int androidId)
+com.amazon.alta.h2shared.helpers.ConfigHelper	method	public ServiceEndpoint getServiceEndpoint()
+com.amazon.alta.h2shared.helpers.ConfigHelper	method	public String getGlobalSetting(SettingsKey key)
+com.amazon.alta.h2shared.helpers.ConfigHelper	method	public String getHouseholdId()
+com.amazon.alta.h2shared.helpers.ConfigHelper	method	public String getSecureSetting(SettingsKey key)
+com.amazon.alta.h2shared.helpers.ConfigHelper	method	public String getSecureSetting(SettingsKey key, int androidId)
+com.amazon.alta.h2shared.helpers.ConfigHelper	method	public UserExperience getExperienceForUser(int androidId)
+com.amazon.alta.h2shared.helpers.ConfigHelper	method	public UserState getUserState(int androidId)
+com.amazon.alta.h2shared.helpers.ConfigHelper	method	public boolean getKFTStateForUser(int androidId)
+com.amazon.alta.h2shared.helpers.ConfigHelper	method	public int getLastKnownUserId()
+com.amazon.alta.h2shared.helpers.ConfigHelper	method	public void setExperienceForUser(int androidId, UserExperience experience)
+com.amazon.alta.h2shared.helpers.ConfigHelper	method	public void setGlobalSetting(SettingsKey key, String value)
+com.amazon.alta.h2shared.helpers.ConfigHelper	method	public void setHouseholdId(String householdId)
+com.amazon.alta.h2shared.helpers.ConfigHelper	method	public void setHouseholdRole(int androidId, HouseholdRole role)
+com.amazon.alta.h2shared.helpers.ConfigHelper	method	public void setKFTStateForUser(int androidId, boolean enabled)
+com.amazon.alta.h2shared.helpers.ConfigHelper	method	public void setLastKnownUserId(int userId)
+com.amazon.alta.h2shared.helpers.ConfigHelper	method	public void setSecureSetting(SettingsKey key, String value)
+com.amazon.alta.h2shared.helpers.ConfigHelper	method	public void setSecureSetting(SettingsKey key, String value, int androidId)
+com.amazon.alta.h2shared.helpers.ConfigHelper	method	public void setServiceEndpoint(ServiceEndpoint endpoint)
+com.amazon.alta.h2shared.helpers.ConfigHelper	method	public void setUserState(int androidId, UserState state)
+com.amazon.alta.h2shared.helpers.ImageDownloader	field	private ThreadPoolExecutor mExecutor;
+com.amazon.alta.h2shared.helpers.ImageDownloader	field	private final BlockingQueue<Runnable> mQueue;
+com.amazon.alta.h2shared.helpers.ImageDownloader	field	private final int mThreadPoolSize;
+com.amazon.alta.h2shared.helpers.ImageDownloader	field	private static final String TAG;
+com.amazon.alta.h2shared.helpers.ImageDownloader	field	private static final String TMP_FILE_SUFFIX;
+com.amazon.alta.h2shared.helpers.ImageDownloader	field	private static final String UA_NAME;
+com.amazon.alta.h2shared.helpers.ImageDownloader	field	private static final String UA_STRING;
+com.amazon.alta.h2shared.helpers.ImageDownloader	field	private static final String UA_VERSION;
+com.amazon.alta.h2shared.helpers.ImageDownloader	field	private static final int BUFF_SIZE;
+com.amazon.alta.h2shared.helpers.ImageDownloader	field	private static final int DEFAULT_POOL_SIZE;
+com.amazon.alta.h2shared.helpers.ImageDownloader	field	private static final int KEEP_ALIVE_TIME;
+com.amazon.alta.h2shared.helpers.ImageDownloader	method	private boolean isValidURL(String url)
+com.amazon.alta.h2shared.helpers.ImageDownloader	method	private void initializeExecutor()
+com.amazon.alta.h2shared.helpers.ImageDownloader	method	public ImageDownloader(Context context)
+com.amazon.alta.h2shared.helpers.ImageDownloader	method	public ImageDownloader(Context context, int threadPoolSize)
+com.amazon.alta.h2shared.helpers.ImageDownloader	method	public boolean fetchImage(ImageMetadata imageMetadata, Context appContext) throws Exception
+com.amazon.alta.h2shared.helpers.ImageDownloader	method	public boolean writeImageMetadataToFile(InputStream inputStream, OutputStream outputStream, ImageMetadata imageMetadata, File tmpFile, FileUtilities fileUtilities) throws Exception
+com.amazon.alta.h2shared.helpers.ImageDownloader	method	public synchronized void downloadImage(ImageMetadata imageMetadata, IImageDownloadCallback callback, boolean forceOverwrite, Context context)
+com.amazon.alta.h2shared.helpers.ImageDownloader	method	public synchronized void stop()
+com.amazon.alta.h2shared.helpers.ImageDownloader	method	public void beginBlockingDownload(ImageMetadata imageMetadata, IImageDownloadCallback callback, Context appContext)
+com.amazon.alta.h2shared.helpers.ImageDownloader$ImageDownloaderRunnable	field	private final Context mAppContext;
+com.amazon.alta.h2shared.helpers.ImageDownloader$ImageDownloaderRunnable	field	private final IImageDownloadCallback mCallback;
+com.amazon.alta.h2shared.helpers.ImageDownloader$ImageDownloaderRunnable	field	private final ImageMetadata mImageMetadata;
+com.amazon.alta.h2shared.helpers.ImageDownloader$ImageDownloaderRunnable	method	public ImageDownloaderRunnable(ImageMetadata imageMetadata, IImageDownloadCallback callback, Context context)
+com.amazon.alta.h2shared.helpers.ImageDownloader$ImageDownloaderRunnable	method	public void run()
+com.amazon.alta.h2shared.helpers.ImageDownloader$RejectedHandler	method	private RejectedHandler()
+com.amazon.alta.h2shared.helpers.ImageDownloader$RejectedHandler	method	public void rejectedExecution(Runnable arg0, ThreadPoolExecutor arg1)
+com.amazon.alta.h2shared.helpers.MAPHelper	field	private final CustomerAttributeStore mCustomerAttributeStore;
+com.amazon.alta.h2shared.helpers.MAPHelper	field	private final MAPAccountManager mMAPAccountManager;
+com.amazon.alta.h2shared.helpers.MAPHelper	field	private final MultipleAccountManager mMultipleAccountManager;
+com.amazon.alta.h2shared.helpers.MAPHelper	field	private static final String TAG;
+com.amazon.alta.h2shared.helpers.MAPHelper	field	private static final TimeUnit MAP_TIMEOUT_UNIT;
+com.amazon.alta.h2shared.helpers.MAPHelper	field	private static final long MAP_REGISTRATION_TIMEOUT;
+com.amazon.alta.h2shared.helpers.MAPHelper	method	private Integer getMAPErrorCode(MAPCallbackErrorException mcee)
+com.amazon.alta.h2shared.helpers.MAPHelper	method	private String registerAccount(AmazonUser user, RegistrationType regType, Bundle extraData) throws TimeoutException
+com.amazon.alta.h2shared.helpers.MAPHelper	method	public MAPHelper(MAPAccountManager mapAccountManager, MultipleAccountManager multipleAccountManager, CustomerAttributeStore customerAttributeStore)
+com.amazon.alta.h2shared.helpers.MAPHelper	method	public Set<String> getAccounts()
+com.amazon.alta.h2shared.helpers.MAPHelper	method	public String getAccount()
+com.amazon.alta.h2shared.helpers.MAPHelper	method	public String getAndroidAccountMapping(Integer androidId)
+com.amazon.alta.h2shared.helpers.MAPHelper	method	public String getCountryOfResidence()
+com.amazon.alta.h2shared.helpers.MAPHelper	method	public String getDeviceType()
+com.amazon.alta.h2shared.helpers.MAPHelper	method	public String getMarketplaceId()
+com.amazon.alta.h2shared.helpers.MAPHelper	method	public String getName(String directedId)
+com.amazon.alta.h2shared.helpers.MAPHelper	method	public String registerAccountWithToken(AmazonUser user, String token, TokenType tokenType) throws TimeoutException
+com.amazon.alta.h2shared.helpers.MAPHelper	method	public String registerDelegatedAccount(String agentId, AmazonUser user) throws TimeoutException
+com.amazon.alta.h2shared.helpers.MAPHelper	method	public boolean deregisterAccount(String directedId)
+com.amazon.alta.h2shared.helpers.MAPHelper	method	public boolean isAccountRegistered(String directedId)
+com.amazon.alta.h2shared.helpers.MAPHelper	method	public void ensureDeviceRegistration(Activity activity, DefaultCallback callback)
+com.amazon.alta.h2shared.helpers.MAPHelper$MAPAttribute	field	private final String mAttributeKey;
+com.amazon.alta.h2shared.helpers.MAPHelper$MAPAttribute	method	public String getPackageKey(String packageName)
+com.amazon.alta.h2shared.helpers.UserHelper	field	private final AndroidUserHelper mAndroidUserHelper;
+com.amazon.alta.h2shared.helpers.UserHelper	field	private final ConfigHelper mConfigHelper;
+com.amazon.alta.h2shared.helpers.UserHelper	field	private final MAPHelper mMAPHelper;
+com.amazon.alta.h2shared.helpers.UserHelper	field	private static final String TAG;
+com.amazon.alta.h2shared.helpers.UserHelper	field	public static final String USER_ZERO_DEFAULT_NAME;
+com.amazon.alta.h2shared.helpers.UserHelper	field	public static final boolean HIDE_LOCKSCREEN;
+com.amazon.alta.h2shared.helpers.UserHelper	field	public static final boolean SHOW_LOCKSCREEN;
+com.amazon.alta.h2shared.helpers.UserHelper	field	public static final int ALL_USERS_HANDLE;
+com.amazon.alta.h2shared.helpers.UserHelper	field	public static final int CURRENT_USER_HANDLE;
+com.amazon.alta.h2shared.helpers.UserHelper	field	public static final int USER_ZERO_ANDROID_ID;
+com.amazon.alta.h2shared.helpers.UserHelper	method	public AndroidUserHelper.AndroidUserInfo getAndroidUserInfo(Integer androidId)
+com.amazon.alta.h2shared.helpers.UserHelper	method	public Integer createAndroidUser(AmazonUser user)
+com.amazon.alta.h2shared.helpers.UserHelper	method	public Integer getAndroidUser()
+com.amazon.alta.h2shared.helpers.UserHelper	method	public Integer getAndroidUser(String userId)
+com.amazon.alta.h2shared.helpers.UserHelper	method	public Integer getProcessUser()
+com.amazon.alta.h2shared.helpers.UserHelper	method	public List<Integer> getAndroidUsers()
+com.amazon.alta.h2shared.helpers.UserHelper	method	public Set<String> getMAPAccounts()
+com.amazon.alta.h2shared.helpers.UserHelper	method	public String getDefaultUser(String userId)
+com.amazon.alta.h2shared.helpers.UserHelper	method	public String getMAPAccount()
+com.amazon.alta.h2shared.helpers.UserHelper	method	public String getMAPAccount(int androidId)
+com.amazon.alta.h2shared.helpers.UserHelper	method	public String getMAPCountryOfResidence()
+com.amazon.alta.h2shared.helpers.UserHelper	method	public String getMAPDeviceType()
+com.amazon.alta.h2shared.helpers.UserHelper	method	public String getMAPMarketplaceId()
+com.amazon.alta.h2shared.helpers.UserHelper	method	public String getMAPName(String directedId)
+com.amazon.alta.h2shared.helpers.UserHelper	method	public String registerMAPAccountWithToken(AmazonUser user, String token, TokenType tokenType) throws TimeoutException
+com.amazon.alta.h2shared.helpers.UserHelper	method	public String registerMAPDelegatedAccount(AmazonUser user) throws TimeoutException
+com.amazon.alta.h2shared.helpers.UserHelper	method	public UserHelper(MAPHelper mapHelper, AndroidUserHelper androidUserHelper, ConfigHelper configHelper)
+com.amazon.alta.h2shared.helpers.UserHelper	method	public boolean deregisterMAPAccount(String directedId)
+com.amazon.alta.h2shared.helpers.UserHelper	method	public boolean isMAPAccountRegistered(String directedId)
+com.amazon.alta.h2shared.helpers.UserHelper	method	public boolean switchUser(Integer androidId, boolean lockNow)
+com.amazon.alta.h2shared.helpers.UserHelper	method	public void removeAndroidUser(Integer androidId)
+com.amazon.alta.h2shared.helpers.UserHelper	method	public void sendBroadcastAsUser(Intent intent, int androidId)
+com.amazon.alta.h2shared.helpers.UserHelper	method	public void setAndroidUserIcon(Integer androidId, String iconPath)
+com.amazon.alta.h2shared.helpers.UserHelper	method	public void setAndroidUserName(Integer androidId, String name)
+com.amazon.alta.h2shared.helpers.UserHelper	method	public void setSortedAndroidIds(List<Integer> androidIds)
+com.amazon.alta.h2shared.images.ImageMetadata	field	private File mFile;
+com.amazon.alta.h2shared.images.ImageMetadata	field	private boolean mLocalFileExists;
+com.amazon.alta.h2shared.images.ImageMetadata	field	private final String mLocalUri;
+com.amazon.alta.h2shared.images.ImageMetadata	field	private final String mRemoteUri;
+com.amazon.alta.h2shared.images.ImageMetadata	field	private int mHeight;
+com.amazon.alta.h2shared.images.ImageMetadata	field	private int mWidth;
+com.amazon.alta.h2shared.images.ImageMetadata	field	private static final String TAG;
+com.amazon.alta.h2shared.images.ImageMetadata	method	public File getLocalFile()
+com.amazon.alta.h2shared.images.ImageMetadata	method	public ImageMetadata(String remoteUri, String localUri)
+com.amazon.alta.h2shared.images.ImageMetadata	method	public String getLocalPath()
+com.amazon.alta.h2shared.images.ImageMetadata	method	public String getRemoteUri()
+com.amazon.alta.h2shared.images.ImageMetadata	method	public String toString()
+com.amazon.alta.h2shared.images.ImageMetadata	method	public boolean localFileExists()
+com.amazon.alta.h2shared.images.ImageMetadata	method	public int getHeight()
+com.amazon.alta.h2shared.images.ImageMetadata	method	public int getWidth()
+com.amazon.alta.h2shared.images.ImageMetadata	method	public void loadFile()
+com.amazon.alta.h2shared.models.AmazonUser	field	private Integer mAndroidId;
+com.amazon.alta.h2shared.models.AmazonUser	field	private String mDirectedId;
+com.amazon.alta.h2shared.models.AmazonUser	field	private String mPendingId;
+com.amazon.alta.h2shared.models.AmazonUser	field	private UserHandle mUserHandle;
+com.amazon.alta.h2shared.models.AmazonUser	field	private UserState mState;
+com.amazon.alta.h2shared.models.AmazonUser	field	private static final Collator COLLATOR;
+com.amazon.alta.h2shared.models.AmazonUser	field	private static final Integer ZERO;
+com.amazon.alta.h2shared.models.AmazonUser	field	private static final String TAG;
+com.amazon.alta.h2shared.models.AmazonUser	method	protected AmazonUser(Parcel parcel)
+com.amazon.alta.h2shared.models.AmazonUser	method	public AmazonUser deepClone()
+com.amazon.alta.h2shared.models.AmazonUser	method	public AmazonUser(UserState state, HouseholdRole role, UserExperience userExperience, String directedId, String pendingId, Integer androidId, String name, String emailAddress, String iconRemoteLocation, String iconPath, Gender gender, Birthdate birthdate)
+com.amazon.alta.h2shared.models.AmazonUser	method	public AmazonUser(UserState state, String directedId, String pendingId, Integer androidId, UserMetadata userData)
+com.amazon.alta.h2shared.models.AmazonUser	method	public Integer getAndroidId()
+com.amazon.alta.h2shared.models.AmazonUser	method	public String getDirectedId()
+com.amazon.alta.h2shared.models.AmazonUser	method	public String getPendingId()
+com.amazon.alta.h2shared.models.AmazonUser	method	public String toString()
+com.amazon.alta.h2shared.models.AmazonUser	method	public UserHandle getUserHandle(Context context)
+com.amazon.alta.h2shared.models.AmazonUser	method	public UserMetadata getUserMetadata()
+com.amazon.alta.h2shared.models.AmazonUser	method	public UserState getState()
+com.amazon.alta.h2shared.models.AmazonUser	method	public boolean equals(Object obj)
+com.amazon.alta.h2shared.models.AmazonUser	method	public int compareTo(AmazonUser other)
+com.amazon.alta.h2shared.models.AmazonUser	method	public int hashCode()
+com.amazon.alta.h2shared.models.AmazonUser	method	public static AmazonUser copy(AmazonUser copyUser)
+com.amazon.alta.h2shared.models.AmazonUser	method	public static String getRelevantId(AmazonUser user)
+com.amazon.alta.h2shared.models.AmazonUser	method	public void setAndroidId(Integer androidId)
+com.amazon.alta.h2shared.models.AmazonUser	method	public void setDirectedId(String directedId)
+com.amazon.alta.h2shared.models.AmazonUser	method	public void setPendingId(String pendingId)
+com.amazon.alta.h2shared.models.AmazonUser	method	public void setState(UserState state)
+com.amazon.alta.h2shared.models.AmazonUser	method	public void setUserMetadata(UserMetadata userMetadata)
+com.amazon.alta.h2shared.models.AmazonUser	method	public void writeToParcel(Parcel parcel, int flags)
+com.amazon.alta.h2shared.models.Beneficiary	field	private final JSONObject mBenefitMap;
+com.amazon.alta.h2shared.models.Beneficiary	field	private final String mDirectedId;
+com.amazon.alta.h2shared.models.Beneficiary	field	private static final String KEY_APP;
+com.amazon.alta.h2shared.models.Beneficiary	field	private static final String KEY_EBOOK;
+com.amazon.alta.h2shared.models.Beneficiary	field	private static final String KEY_MUSIC;
+com.amazon.alta.h2shared.models.Beneficiary	field	private static final String KEY_VIDEO;
+com.amazon.alta.h2shared.models.Beneficiary	field	private static final String TAG;
+com.amazon.alta.h2shared.models.Beneficiary	method	private int countMapKeys()
+com.amazon.alta.h2shared.models.Beneficiary	method	protected Beneficiary(Parcel parcel)
+com.amazon.alta.h2shared.models.Beneficiary	method	public Beneficiary deepClone()
+com.amazon.alta.h2shared.models.Beneficiary	method	public Beneficiary(String directedId)
+com.amazon.alta.h2shared.models.Beneficiary	method	public Beneficiary(String directedId, JSONObject benefitMap)
+com.amazon.alta.h2shared.models.Beneficiary	method	public JSONObject getBenefitMap()
+com.amazon.alta.h2shared.models.Beneficiary	method	public String getDirectedId()
+com.amazon.alta.h2shared.models.Beneficiary	method	public int describeContents()
+com.amazon.alta.h2shared.models.Beneficiary	method	public void shareApps(String... appAsins) throws JSONException
+com.amazon.alta.h2shared.models.Beneficiary	method	public void shareEBooks(String... ebookAsins) throws JSONException
+com.amazon.alta.h2shared.models.Beneficiary	method	public void shareMusics(String... musicAsins) throws JSONException
+com.amazon.alta.h2shared.models.Beneficiary	method	public void shareVideos(String... videoAsins) throws JSONException
+com.amazon.alta.h2shared.models.Beneficiary	method	public void writeToParcel(Parcel parcel, int flags)
+com.amazon.alta.h2shared.models.Birthdate	field	private int mDayOfMonth;
+com.amazon.alta.h2shared.models.Birthdate	field	private int mMonth;
+com.amazon.alta.h2shared.models.Birthdate	field	private int mYear;
+com.amazon.alta.h2shared.models.Birthdate	field	private static final String DELIMITER;
+com.amazon.alta.h2shared.models.Birthdate	field	private static final int EQUAL;
+com.amazon.alta.h2shared.models.Birthdate	field	private static final int GREATER;
+com.amazon.alta.h2shared.models.Birthdate	field	private static final int LESS;
+com.amazon.alta.h2shared.models.Birthdate	field	public static final int UNSET_VALUE;
+com.amazon.alta.h2shared.models.Birthdate	method	private void setDate(int year, int month, int day)
+com.amazon.alta.h2shared.models.Birthdate	method	public Birthdate(Parcel parcel)
+com.amazon.alta.h2shared.models.Birthdate	method	public Birthdate(String joinedDateString)
+com.amazon.alta.h2shared.models.Birthdate	method	public Birthdate(int year, int month, int day)
+com.amazon.alta.h2shared.models.Birthdate	method	public Calendar getCalendar()
+com.amazon.alta.h2shared.models.Birthdate	method	public String toString()
+com.amazon.alta.h2shared.models.Birthdate	method	public boolean equals(Object obj)
+com.amazon.alta.h2shared.models.Birthdate	method	public int compareTo(Birthdate rhs)
+com.amazon.alta.h2shared.models.Birthdate	method	public int describeContents()
+com.amazon.alta.h2shared.models.Birthdate	method	public int getAgeInYears()
+com.amazon.alta.h2shared.models.Birthdate	method	public int getDayOfMonth()
+com.amazon.alta.h2shared.models.Birthdate	method	public int getMonth()
+com.amazon.alta.h2shared.models.Birthdate	method	public int getYear()
+com.amazon.alta.h2shared.models.Birthdate	method	public int hashCode()
+com.amazon.alta.h2shared.models.Birthdate	method	public void writeToParcel(Parcel parcel, int flags)
+com.amazon.alta.h2shared.models.Gender	method	public int describeContents()
+com.amazon.alta.h2shared.models.Gender	method	public void writeToParcel(Parcel parcel, int flags)
+com.amazon.alta.h2shared.models.H2Intents	field	public static final String AMAZON_ID_EXTRA;
+com.amazon.alta.h2shared.models.H2Intents	field	public static final String CANCEL_MESSAGE_EXTRA;
+com.amazon.alta.h2shared.models.H2Intents	field	public static final String COR_PFM_HAS_CHANGED_ACTION;
+com.amazon.alta.h2shared.models.H2Intents	field	public static final String DCP_HOUSEHOLD_UPDATE_ACTION;
+com.amazon.alta.h2shared.models.H2Intents	field	public static final String EDIT_USER_ACTION;
+com.amazon.alta.h2shared.models.H2Intents	field	public static final String FOR_CHILD_EXTRA;
+com.amazon.alta.h2shared.models.H2Intents	field	public static final String FULL_SERVICE_NAME;
+com.amazon.alta.h2shared.models.H2Intents	field	public static final String HOUSEHOLD_AGREEMENTS_SYNCED_ACTION;
+com.amazon.alta.h2shared.models.H2Intents	field	public static final String HOUSEHOLD_MODIFIED_ACTION;
+com.amazon.alta.h2shared.models.H2Intents	field	public static final String ICON_DOWNLOADED_ACTION;
+com.amazon.alta.h2shared.models.H2Intents	field	public static final String MODIFICATIONS_EXTRA;
+com.amazon.alta.h2shared.models.H2Intents	field	public static final String PACKAGE_NAME;
+com.amazon.alta.h2shared.models.H2Intents	field	public static final String PARENTAL_CONTROLS_ACTION;
+com.amazon.alta.h2shared.models.H2Intents	field	public static final String PARENTAL_CONTROLS_PACKAGE_NAME;
+com.amazon.alta.h2shared.models.H2Intents	field	public static final String PARENTAL_CONTROLS_SHOW_PARENTAL_EXTRA;
+com.amazon.alta.h2shared.models.H2Intents	field	public static final String POLICY_PROFILES_CHANGED_ACTION;
+com.amazon.alta.h2shared.models.H2Intents	field	public static final String POLICY_PROFILES_ENFORCE_ACTION;
+com.amazon.alta.h2shared.models.H2Intents	field	public static final String REGISTER_USER_ACTION;
+com.amazon.alta.h2shared.models.H2Intents	field	public static final String REMOVE_USER_ACTION;
+com.amazon.alta.h2shared.models.H2Intents	field	public static final String SELECT_USER_EXPERIENCE_EXTRA;
+com.amazon.alta.h2shared.models.H2Intents	field	public static final String SERVICE_NAME;
+com.amazon.alta.h2shared.models.H2Intents	field	public static final String SYNC_HOUSEHOLD_ACTION;
+com.amazon.alta.h2shared.models.H2Intents	field	public static final String USER_EXPERIENCE_ACTION;
+com.amazon.alta.h2shared.models.H2Intents	field	public static final String USER_EXTRA;
+com.amazon.alta.h2shared.models.H2Intents	field	public static final String USER_SETTINGS_ACTION;
+com.amazon.alta.h2shared.models.H2Intents	field	public static final String WARM_SEAT_EXTRA;
+com.amazon.alta.h2shared.models.H2Intents	field	public static final int MAX_ADULTS_IN_HOUSEHOLD;
+com.amazon.alta.h2shared.models.H2Intents	field	public static final int MAX_CHILDREN_IN_HOUSEHOLD;
+com.amazon.alta.h2shared.models.H2Intents	method	private H2Intents()
+com.amazon.alta.h2shared.models.H2Intents	method	public static void sendIconDownloadedBroadcast(Context context, String amazonId)
+com.amazon.alta.h2shared.models.H2Response	field	private HouseholdError mErrorCode;
+com.amazon.alta.h2shared.models.H2Response	field	private String mMessage;
+com.amazon.alta.h2shared.models.H2Response	field	private boolean mSuccess;
+com.amazon.alta.h2shared.models.H2Response	field	private static final String TAG;
+com.amazon.alta.h2shared.models.H2Response	method	protected H2Response()
+com.amazon.alta.h2shared.models.H2Response	method	protected H2Response(Parcel parcel)
+com.amazon.alta.h2shared.models.H2Response	method	protected H2Response(boolean success, String message)
+com.amazon.alta.h2shared.models.H2Response	method	protected H2Response(boolean success, String message, HouseholdError error)
+com.amazon.alta.h2shared.models.H2Response	method	public HouseholdError getErrorCode()
+com.amazon.alta.h2shared.models.H2Response	method	public String getMessage()
+com.amazon.alta.h2shared.models.H2Response	method	public String toString()
+com.amazon.alta.h2shared.models.H2Response	method	public boolean equals(Object obj)
+com.amazon.alta.h2shared.models.H2Response	method	public boolean succeeded()
+com.amazon.alta.h2shared.models.H2Response	method	public int describeContents()
+com.amazon.alta.h2shared.models.H2Response	method	public int hashCode()
+com.amazon.alta.h2shared.models.H2Response	method	public static H2Response failure(String message)
+com.amazon.alta.h2shared.models.H2Response	method	public static H2Response failure(String message, HouseholdError error)
+com.amazon.alta.h2shared.models.H2Response	method	public static H2Response failure(String tag, String message)
+com.amazon.alta.h2shared.models.H2Response	method	public static H2Response failure(String tag, String message, HouseholdError error)
+com.amazon.alta.h2shared.models.H2Response	method	public static H2Response success()
+com.amazon.alta.h2shared.models.H2Response	method	public void setFailed(String message)
+com.amazon.alta.h2shared.models.H2Response	method	public void setFailed(String message, HouseholdError error)
+com.amazon.alta.h2shared.models.H2Response	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.alta.h2shared.models.HouseholdError	field	private final String mCode;
+com.amazon.alta.h2shared.models.HouseholdError	field	private static final String TAG;
+com.amazon.alta.h2shared.models.HouseholdError	method	public String getCode()
+com.amazon.alta.h2shared.models.HouseholdError	method	public int describeContents()
+com.amazon.alta.h2shared.models.HouseholdError	method	public static HouseholdError fromCode(String code)
+com.amazon.alta.h2shared.models.HouseholdError	method	public void writeToParcel(Parcel parcel, int flags)
+com.amazon.alta.h2shared.models.HouseholdMemberVpcStatus	field	private final String mDirectedId;
+com.amazon.alta.h2shared.models.HouseholdMemberVpcStatus	field	private final String mProfileType;
+com.amazon.alta.h2shared.models.HouseholdMemberVpcStatus	field	private final VpcStatus mVpcStatus;
+com.amazon.alta.h2shared.models.HouseholdMemberVpcStatus	field	private final boolean mIsDelegatedAccount;
+com.amazon.alta.h2shared.models.HouseholdMemberVpcStatus	field	private static final String TAG;
+com.amazon.alta.h2shared.models.HouseholdMemberVpcStatus	method	private HouseholdMemberVpcStatus(Parcel parcel)
+com.amazon.alta.h2shared.models.HouseholdMemberVpcStatus	method	public HouseholdMemberVpcStatus(String directedId, String profileType, boolean isDelegatedAccount, VpcStatus vpcStatus)
+com.amazon.alta.h2shared.models.HouseholdMemberVpcStatus	method	public String getDirectedId()
+com.amazon.alta.h2shared.models.HouseholdMemberVpcStatus	method	public String getProfileType()
+com.amazon.alta.h2shared.models.HouseholdMemberVpcStatus	method	public VpcStatus getVpcStatus()
+com.amazon.alta.h2shared.models.HouseholdMemberVpcStatus	method	public boolean equals(Object obj)
+com.amazon.alta.h2shared.models.HouseholdMemberVpcStatus	method	public boolean getIsDelegatedAccount()
+com.amazon.alta.h2shared.models.HouseholdMemberVpcStatus	method	public int describeContents()
+com.amazon.alta.h2shared.models.HouseholdMemberVpcStatus	method	public int hashCode()
+com.amazon.alta.h2shared.models.HouseholdMemberVpcStatus	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.alta.h2shared.models.HouseholdRole	field	private boolean mAdult;
+com.amazon.alta.h2shared.models.HouseholdRole	field	private static final String TAG;
+com.amazon.alta.h2shared.models.HouseholdRole	method	public boolean isAdult()
+com.amazon.alta.h2shared.models.HouseholdRole	method	public int describeContents()
+com.amazon.alta.h2shared.models.HouseholdRole	method	public void writeToParcel(Parcel parcel, int flags)
+com.amazon.alta.h2shared.models.ServiceEndpoint	field	private ServiceMarketplace mMarketplace;
+com.amazon.alta.h2shared.models.ServiceEndpoint	field	private ServiceStage mStage;
+com.amazon.alta.h2shared.models.ServiceEndpoint	field	private final String mBaseUrl;
+com.amazon.alta.h2shared.models.ServiceEndpoint	field	private final String mDomain;
+com.amazon.alta.h2shared.models.ServiceEndpoint	field	private static final String SEPARATOR;
+com.amazon.alta.h2shared.models.ServiceEndpoint	method	private String createBaseUrl(String protocol, String subdomain, String domain, String port)
+com.amazon.alta.h2shared.models.ServiceEndpoint	method	public ServiceMarketplace getMarketplace()
+com.amazon.alta.h2shared.models.ServiceEndpoint	method	public ServiceStage getStage()
+com.amazon.alta.h2shared.models.ServiceEndpoint	method	public String getDomain()
+com.amazon.alta.h2shared.models.ServiceEndpoint	method	public URL getEndpointURL(String apiMethod) throws MalformedURLException
+com.amazon.alta.h2shared.models.ServiceEndpoint	method	public URL getEndpointURL(String versionSegment, String apiMethod) throws MalformedURLException
+com.amazon.alta.h2shared.models.ServiceEndpoint	method	public int describeContents()
+com.amazon.alta.h2shared.models.ServiceEndpoint	method	public static ServiceEndpoint defaultEndpoint()
+com.amazon.alta.h2shared.models.ServiceEndpoint	method	public static ServiceEndpoint getEndpoint(ServiceStage stage, ServiceMarketplace market)
+com.amazon.alta.h2shared.models.ServiceEndpoint	method	public void writeToParcel(Parcel parcel, int flags)
+com.amazon.alta.h2shared.models.ServiceMarketplace	field	private final List<String> mPFMs;
+com.amazon.alta.h2shared.models.ServiceMarketplace	method	public List<String> getPFMs()
+com.amazon.alta.h2shared.models.ServiceMarketplace	method	public static ServiceMarketplace getMarketplace(String marketplaceID)
+com.amazon.alta.h2shared.models.SettingsKey	field	private boolean mPrefixed;
+com.amazon.alta.h2shared.models.SettingsKey	field	private static final String KEY_PREFIX;
+com.amazon.alta.h2shared.models.SettingsKey	method	public String toString()
+com.amazon.alta.h2shared.models.SettingsKey	method	public int describeContents()
+com.amazon.alta.h2shared.models.SettingsKey	method	public void writeToParcel(Parcel parcel, int flags)
+com.amazon.alta.h2shared.models.TokenType	method	public int describeContents()
+com.amazon.alta.h2shared.models.TokenType	method	public void writeToParcel(Parcel parcel, int flags)
+com.amazon.alta.h2shared.models.UserExperience	method	public boolean isSafemodeExperience()
+com.amazon.alta.h2shared.models.UserExperience	method	public int describeContents()
+com.amazon.alta.h2shared.models.UserExperience	method	public void writeToParcel(Parcel parcel, int flags)
+com.amazon.alta.h2shared.models.UserMetadata	field	private Birthdate mBirthdate;
+com.amazon.alta.h2shared.models.UserMetadata	field	private Gender mGender;
+com.amazon.alta.h2shared.models.UserMetadata	field	private HouseholdRole mRole;
+com.amazon.alta.h2shared.models.UserMetadata	field	private String mEmail;
+com.amazon.alta.h2shared.models.UserMetadata	field	private String mIconPath;
+com.amazon.alta.h2shared.models.UserMetadata	field	private String mIconUrl;
+com.amazon.alta.h2shared.models.UserMetadata	field	private String mName;
+com.amazon.alta.h2shared.models.UserMetadata	field	private UserExperience mUserExperience;
+com.amazon.alta.h2shared.models.UserMetadata	field	private static final String TAG;
+com.amazon.alta.h2shared.models.UserMetadata	method	protected UserMetadata(Parcel parcel)
+com.amazon.alta.h2shared.models.UserMetadata	method	public Birthdate getBirthdate()
+com.amazon.alta.h2shared.models.UserMetadata	method	public Gender getGender()
+com.amazon.alta.h2shared.models.UserMetadata	method	public HouseholdRole getRole()
+com.amazon.alta.h2shared.models.UserMetadata	method	public String getEmail()
+com.amazon.alta.h2shared.models.UserMetadata	method	public String getIconPath()
+com.amazon.alta.h2shared.models.UserMetadata	method	public String getIconRemoteLocation()
+com.amazon.alta.h2shared.models.UserMetadata	method	public String getName()
+com.amazon.alta.h2shared.models.UserMetadata	method	public Uri getIconPathContentUri()
+com.amazon.alta.h2shared.models.UserMetadata	method	public UserExperience getUserExperience()
+com.amazon.alta.h2shared.models.UserMetadata	method	public UserMetadata copy()
+com.amazon.alta.h2shared.models.UserMetadata	method	public UserMetadata(HouseholdRole role, UserExperience userExperience, String name, String emailAddress, String iconUrl, String iconPath, Gender gender, Birthdate birthdate)
+com.amazon.alta.h2shared.models.UserMetadata	method	public boolean equals(Object obj)
+com.amazon.alta.h2shared.models.UserMetadata	method	public int cloudHashCode()
+com.amazon.alta.h2shared.models.UserMetadata	method	public int describeContents()
+com.amazon.alta.h2shared.models.UserMetadata	method	public int hashCode()
+com.amazon.alta.h2shared.models.UserMetadata	method	public void setBirthdate(Birthdate birthdate)
+com.amazon.alta.h2shared.models.UserMetadata	method	public void setEmail(String email)
+com.amazon.alta.h2shared.models.UserMetadata	method	public void setGender(Gender gender)
+com.amazon.alta.h2shared.models.UserMetadata	method	public void setIconPath(String iconPath)
+com.amazon.alta.h2shared.models.UserMetadata	method	public void setIconRemoteLocation(String iconUrl)
+com.amazon.alta.h2shared.models.UserMetadata	method	public void setName(String name)
+com.amazon.alta.h2shared.models.UserMetadata	method	public void setRole(HouseholdRole role)
+com.amazon.alta.h2shared.models.UserMetadata	method	public void setUserExperience(UserExperience userExperience)
+com.amazon.alta.h2shared.models.UserMetadata	method	public void setUserMetadata(UserMetadata userMetadata)
+com.amazon.alta.h2shared.models.UserMetadata	method	public void writeToParcel(Parcel parcel, int flags)
+com.amazon.alta.h2shared.models.UserState	method	public int describeContents()
+com.amazon.alta.h2shared.models.UserState	method	public void writeToParcel(Parcel parcel, int flags)
+com.amazon.alta.h2shared.models.VpcGrantStatus	method	public int describeContents()
+com.amazon.alta.h2shared.models.VpcGrantStatus	method	public void writeToParcel(Parcel parcel, int flags)
+com.amazon.alta.h2shared.models.VpcStatus	field	private final Date mLastUpdatedDate;
+com.amazon.alta.h2shared.models.VpcStatus	field	private final VpcGrantStatus mVpcGrantStatus;
+com.amazon.alta.h2shared.models.VpcStatus	field	private static final int HAS_BEEN_UPDATED;
+com.amazon.alta.h2shared.models.VpcStatus	field	private static final int HAS_NOT_BEEN_UPDATED;
+com.amazon.alta.h2shared.models.VpcStatus	method	private VpcStatus(Parcel parcel)
+com.amazon.alta.h2shared.models.VpcStatus	method	public Date getLastUpdatedDate()
+com.amazon.alta.h2shared.models.VpcStatus	method	public VpcGrantStatus getStatus()
+com.amazon.alta.h2shared.models.VpcStatus	method	public VpcStatus(VpcGrantStatus vpcGrantStatus, Date lastUpdatedDate)
+com.amazon.alta.h2shared.models.VpcStatus	method	public boolean equals(Object obj)
+com.amazon.alta.h2shared.models.VpcStatus	method	public int describeContents()
+com.amazon.alta.h2shared.models.VpcStatus	method	public int hashCode()
+com.amazon.alta.h2shared.models.VpcStatus	method	public void writeToParcel(Parcel parcel, int flags)
+com.amazon.alta.h2shared.utils.AvatarSortOrderUtils	field	private static final String TAG;
+com.amazon.alta.h2shared.utils.AvatarSortOrderUtils	field	public static final int SORT_ORDER_LENGTH;
+com.amazon.alta.h2shared.utils.AvatarSortOrderUtils	method	private static String getIconInStorePath(String storePath, String avatarName)
+com.amazon.alta.h2shared.utils.AvatarSortOrderUtils	method	public static String addSortOrder(String avatarUri, int sortOrder)
+com.amazon.alta.h2shared.utils.AvatarSortOrderUtils	method	public static String findIconStorePath(String iconRemoteLocation, Context context)
+com.amazon.alta.h2shared.utils.AvatarSortOrderUtils	method	public static String removeSortOrder(String sortOrderAvatarUri)
+com.amazon.alta.h2shared.utils.AvatarSortOrderUtils	method	public static boolean hasSortOrder(String avatarUri)
+com.amazon.alta.h2shared.utils.AvatarSortOrderUtils	method	public static int getSortOrder(String sortOrderAvatarUri)
+com.amazon.alta.h2shared.utils.BuildUtils	field	private static final String TAG;
+com.amazon.alta.h2shared.utils.BuildUtils	method	private BuildUtils()
+com.amazon.alta.h2shared.utils.BuildUtils	method	private static PackageInfo getPackageInfo(Context appContext)
+com.amazon.alta.h2shared.utils.BuildUtils	method	public static String getUserAgent(Context context)
+com.amazon.alta.h2shared.utils.BuildUtils	method	public static boolean isDebuggable(Context context)
+com.amazon.alta.h2shared.utils.FileUtilities	field	private Context mCurrentContext;
+com.amazon.alta.h2shared.utils.FileUtilities	field	private Context mPackageContext;
+com.amazon.alta.h2shared.utils.FileUtilities	field	private static boolean mIsShareDirectorySet;
+com.amazon.alta.h2shared.utils.FileUtilities	field	private static final String DEFAULT_ICON_FILE_NAME;
+com.amazon.alta.h2shared.utils.FileUtilities	field	private static final String DIRECTORY_MATCH;
+com.amazon.alta.h2shared.utils.FileUtilities	field	private static final String FORWARD_SLASH;
+com.amazon.alta.h2shared.utils.FileUtilities	field	private static final String FORWARD_SLASH_HTML;
+com.amazon.alta.h2shared.utils.FileUtilities	field	private static final String H2SETTINGS_PACKAGE_NAME;
+com.amazon.alta.h2shared.utils.FileUtilities	field	private static final String INSUFFICIENT_PERMISSIONS_EX_STRING;
+com.amazon.alta.h2shared.utils.FileUtilities	field	private static final String PACKAGE_NOT_FOUND_STRING;
+com.amazon.alta.h2shared.utils.FileUtilities	field	private static final String PLACEHOLDER_FILE_NAME;
+com.amazon.alta.h2shared.utils.FileUtilities	field	private static final String PLACEHOLDER_URL;
+com.amazon.alta.h2shared.utils.FileUtilities	field	private static final String PRIMARY_USER_DIR;
+com.amazon.alta.h2shared.utils.FileUtilities	field	private static final String TAG;
+com.amazon.alta.h2shared.utils.FileUtilities	field	private static final String USER_FILE_NAME;
+com.amazon.alta.h2shared.utils.FileUtilities	field	private static final boolean CAN_EXECUTE;
+com.amazon.alta.h2shared.utils.FileUtilities	field	private static final boolean CAN_READ;
+com.amazon.alta.h2shared.utils.FileUtilities	field	private static final boolean CAN_WRITE;
+com.amazon.alta.h2shared.utils.FileUtilities	field	private static final int AVATAR_MAX_WIDTH;
+com.amazon.alta.h2shared.utils.FileUtilities	field	private static final int DIRECTORY_MATCH_INDEX;
+com.amazon.alta.h2shared.utils.FileUtilities	field	public static final String H2CS_AUTHORITY;
+com.amazon.alta.h2shared.utils.FileUtilities	field	public static final String H2CS_ICONS_IN_DIRECTORY_METHOD;
+com.amazon.alta.h2shared.utils.FileUtilities	method	private boolean copyBitmapToFile(Bitmap bitmap, String destination)
+com.amazon.alta.h2shared.utils.FileUtilities	method	public File getAppDirectory(String packageName, AppDirectory appDirectory)
+com.amazon.alta.h2shared.utils.FileUtilities	method	public FileUtilities(Context appContext)
+com.amazon.alta.h2shared.utils.FileUtilities	method	public String copyNormalizedIcon(String fileIdentifier, Bitmap originalBitmap, int maxWidth)
+com.amazon.alta.h2shared.utils.FileUtilities	method	public String copyNormalizedIcon(String fileIdentifier, String filePath, int maxWidth)
+com.amazon.alta.h2shared.utils.FileUtilities	method	public String escapeURL(String uri)
+com.amazon.alta.h2shared.utils.FileUtilities	method	public String getAdultIconStorePath(String uriIdentifier)
+com.amazon.alta.h2shared.utils.FileUtilities	method	public String getChildIconStorePath(String uriIdentifier)
+com.amazon.alta.h2shared.utils.FileUtilities	method	public String getDefaultIconPath()
+com.amazon.alta.h2shared.utils.FileUtilities	method	public String getDefaultIconPath(int defaultIconNumber)
+com.amazon.alta.h2shared.utils.FileUtilities	method	public String getIconPath(String fileIdentifier)
+com.amazon.alta.h2shared.utils.FileUtilities	method	public String getPlaceholderIconPath()
+com.amazon.alta.h2shared.utils.FileUtilities	method	public String getPlaceholderIconUrl()
+com.amazon.alta.h2shared.utils.FileUtilities	method	public String storeBitmapAndGetLocalPath(Bitmap bitmap)
+com.amazon.alta.h2shared.utils.FileUtilities	method	public String unEscapeURL(String escapedURI)
+com.amazon.alta.h2shared.utils.FileUtilities	method	public Uri getAdultIconStoreContentUri(String uriIdentifier)
+com.amazon.alta.h2shared.utils.FileUtilities	method	public Uri getAppDirectoryContentURI(String packageName, AppDirectory appDirectory)
+com.amazon.alta.h2shared.utils.FileUtilities	method	public Uri getChildIconStoreContentUri(String uriIdentifier)
+com.amazon.alta.h2shared.utils.FileUtilities	method	public Uri getDefaultIconContentUri()
+com.amazon.alta.h2shared.utils.FileUtilities	method	public Uri getDefaultIconContentUri(int defaultIconNumber)
+com.amazon.alta.h2shared.utils.FileUtilities	method	public Uri getIconContentUri(String fileIdentifier)
+com.amazon.alta.h2shared.utils.FileUtilities	method	public Uri getPlaceholderIconContentUri()
+com.amazon.alta.h2shared.utils.FileUtilities	method	public boolean copyFile(File source, File destination)
+com.amazon.alta.h2shared.utils.FileUtilities	method	public boolean copyFile(String source, String destination)
+com.amazon.alta.h2shared.utils.FileUtilities	method	public boolean copyResourceToFile(Context appContext, int resourceId, File file)
+com.amazon.alta.h2shared.utils.FileUtilities	method	public boolean fileExists(String fileName)
+com.amazon.alta.h2shared.utils.FileUtilities	method	public boolean isSubDirectory(File baseFile, File childFile)
+com.amazon.alta.h2shared.utils.FileUtilities	method	public boolean writeBitmap(Bitmap bitmap, String destinationPath)
+com.amazon.alta.h2shared.utils.FileUtilities	method	public static Uri getContentURIforPath(String iconPath)
+com.amazon.alta.h2shared.utils.FileUtilities	method	public synchronized boolean migrateOldFilesIfNecessary()
+com.amazon.alta.h2shared.utils.FileUtilities	method	public void deleteFolderContents(String filePath)
+com.amazon.alta.h2shared.utils.FileUtilities	method	public void shareFileOrDirectory(String path)
+com.amazon.alta.h2shared.utils.FileUtilities$AppDirectory	field	private final String mDirectoryName;
+com.amazon.alta.h2shared.utils.FileUtilities$AppDirectory	method	public String getDirectoryName()
+com.amazon.alta.h2shared.utils.FileUtilities$IconBundleKey	field	private final String mKey;
+com.amazon.alta.h2shared.utils.FileUtilities$IconBundleKey	method	public String getKey()
+com.amazon.alta.h2shared.utils.FileUtils	field	private static final String DEPRECATED_CALL_ERROR_MESSAGE;
+com.amazon.alta.h2shared.utils.FileUtils	field	private static final String DEPRECATED_CALL_WARNING_MESSAGE;
+com.amazon.alta.h2shared.utils.FileUtils	field	private static final String INSUFFICIENT_PERMISSIONS_EX_STRING;
+com.amazon.alta.h2shared.utils.FileUtils	field	private static final String INTERNAL_PACKAGE_LOCATION_PATH;
+com.amazon.alta.h2shared.utils.FileUtils	field	private static final String SECURED_PACKAGE_LOCATION_PATH;
+com.amazon.alta.h2shared.utils.FileUtils	field	private static final String TAG;
+com.amazon.alta.h2shared.utils.FileUtils	field	private static final boolean CAN_EXECUTE;
+com.amazon.alta.h2shared.utils.FileUtils	field	private static final boolean CAN_READ;
+com.amazon.alta.h2shared.utils.FileUtils	field	private static final boolean CAN_WRITE;
+com.amazon.alta.h2shared.utils.FileUtils	method	public static File getAppDirectory(String packageName, FileUtilities.AppDirectory appDirectory)
+com.amazon.alta.h2shared.utils.FileUtils	method	public static String copyNormalizedIcon(String fileIdentifier, String filePath, int maxWidth)
+com.amazon.alta.h2shared.utils.FileUtils	method	public static String escapeURL(String uri)
+com.amazon.alta.h2shared.utils.FileUtils	method	public static String getAdultIconStorePath(String uriIdentifier)
+com.amazon.alta.h2shared.utils.FileUtils	method	public static String getChildIconStorePath(String uriIdentifier)
+com.amazon.alta.h2shared.utils.FileUtils	method	public static String getDefaultIconPath()
+com.amazon.alta.h2shared.utils.FileUtils	method	public static String getDefaultIconPath(int defaultIconNumber)
+com.amazon.alta.h2shared.utils.FileUtils	method	public static String getIconPath(String fileIdentifier)
+com.amazon.alta.h2shared.utils.FileUtils	method	public static String getPlaceholderIconPath()
+com.amazon.alta.h2shared.utils.FileUtils	method	public static String getPlaceholderIconUrl()
+com.amazon.alta.h2shared.utils.FileUtils	method	public static String unEscapeURL(String escapedURI)
+com.amazon.alta.h2shared.utils.FileUtils	method	public static boolean copyFile(File source, File destination)
+com.amazon.alta.h2shared.utils.FileUtils	method	public static boolean copyFile(String source, String destination)
+com.amazon.alta.h2shared.utils.FileUtils	method	public static boolean copyResourceToFile(Context appContext, int resourceId, File file)
+com.amazon.alta.h2shared.utils.FileUtils	method	public static boolean isSubDirectory(File baseFile, File childFile)
+com.amazon.alta.h2shared.utils.FileUtils	method	public static boolean writeBitmap(Bitmap bitmap, String destinationPath)
+com.amazon.alta.h2shared.utils.FileUtils	method	public static void deleteFolderContents(String filePath)
+com.amazon.alta.h2shared.utils.FileUtils	method	public static void shareFileOrDirectory(String path)
+com.amazon.alta.h2shared.utils.JSONUtils	field	private static final String ACCESS_TOKEN_KEY;
+com.amazon.alta.h2shared.utils.JSONUtils	field	private static final String BENEFIT_LIST;
+com.amazon.alta.h2shared.utils.JSONUtils	field	private static final String BENEFIT_MAP;
+com.amazon.alta.h2shared.utils.JSONUtils	field	private static final String CUSTOMER_DIRECTED_ID;
+com.amazon.alta.h2shared.utils.JSONUtils	field	private static final String DATE_OF_BIRTH_DAY_KEY;
+com.amazon.alta.h2shared.utils.JSONUtils	field	private static final String DATE_OF_BIRTH_KEY;
+com.amazon.alta.h2shared.utils.JSONUtils	field	private static final String DATE_OF_BIRTH_MONTH_KEY;
+com.amazon.alta.h2shared.utils.JSONUtils	field	private static final String DATE_OF_BIRTH_YEAR_KEY;
+com.amazon.alta.h2shared.utils.JSONUtils	field	private static final String DIRECTED_ID_KEY;
+com.amazon.alta.h2shared.utils.JSONUtils	field	private static final String FIRST_NAME_KEY;
+com.amazon.alta.h2shared.utils.JSONUtils	field	private static final String GENDER_FEMALE_VALUE;
+com.amazon.alta.h2shared.utils.JSONUtils	field	private static final String GENDER_KEY;
+com.amazon.alta.h2shared.utils.JSONUtils	field	private static final String GENDER_MALE_VALUE;
+com.amazon.alta.h2shared.utils.JSONUtils	field	private static final String HOUSEHOLD_ID_KEY;
+com.amazon.alta.h2shared.utils.JSONUtils	field	private static final String HOUSEHOLD_ROLE_KEY;
+com.amazon.alta.h2shared.utils.JSONUtils	field	private static final String ICON_URL_KEY;
+com.amazon.alta.h2shared.utils.JSONUtils	field	private static final String PENDING_ID_KEY;
+com.amazon.alta.h2shared.utils.JSONUtils	field	private static final String TAG;
+com.amazon.alta.h2shared.utils.JSONUtils	field	private static final String USER_EXPERIENCE_KEY;
+com.amazon.alta.h2shared.utils.JSONUtils	method	private JSONUtils()
+com.amazon.alta.h2shared.utils.JSONUtils	method	private static boolean userIsValid(AmazonUser user)
+com.amazon.alta.h2shared.utils.JSONUtils	method	public static ArrayList<String> stringListFromJSONArray(JSONArray jsonArray)
+com.amazon.alta.h2shared.utils.JSONUtils	method	public static JSONArray buildBeneficiaryArrayForRemoveSharedBenefits(List<Beneficiary> beneficiaries)
+com.amazon.alta.h2shared.utils.JSONUtils	method	public static JSONArray buildBeneficiaryArrayForSetSharingBenefits(List<Beneficiary> beneficiaries)
+com.amazon.alta.h2shared.utils.JSONUtils	method	public static JSONArray buildUsersArray(List<AmazonUser> amazonUsers, String householdId)
+com.amazon.alta.h2shared.utils.JSONUtils	method	public static JSONArray buildUsersArrayWithAuthToken(List<AmazonUser> amazonUsers, String householdId, String token)
+com.amazon.alta.h2shared.utils.JSONUtils	method	public static JSONObject buildBeneficiaryObjectForRemoveSharedBenefits(Beneficiary beneficiary)
+com.amazon.alta.h2shared.utils.JSONUtils	method	public static JSONObject buildBeneficiaryObjectForSetSharingBenefits(Beneficiary beneficiary)
+com.amazon.alta.h2shared.utils.JSONUtils	method	public static JSONObject buildDateOfBirthBlob(Birthdate birthdate)
+com.amazon.alta.h2shared.utils.JSONUtils	method	public static JSONObject buildUserObject(AmazonUser user, String householdId)
+com.amazon.alta.h2shared.utils.JSONUtils	method	public static JSONObject parseJSONObject(String str) throws JSONException
+com.amazon.alta.h2shared.utils.JSONUtils	method	public static String getJSONValue(JSONObject jsonObject, String key) throws JSONException
+com.amazon.alta.h2shared.utils.JSONUtils	method	public static boolean isNotEmpty(JSONArray jsonArray)
+com.amazon.alta.h2shared.utils.JSONUtils	method	public static boolean isNullOrEmpty(JSONArray jsonArray)
+com.amazon.alta.h2shared.utils.NetworkUtils	field	private static final String TAG;
+com.amazon.alta.h2shared.utils.NetworkUtils	method	private NetworkUtils()
+com.amazon.alta.h2shared.utils.NetworkUtils	method	private static NetworkInfo getNetworkInfo(Context context)
+com.amazon.alta.h2shared.utils.NetworkUtils	method	public static boolean expectBodyForHTTPStatusCode(int httpStatusCode)
+com.amazon.alta.h2shared.utils.NetworkUtils	method	public static boolean isConnected(Context context)
+com.amazon.alta.h2shared.utils.NotifyFuture	field	private V mResult;
+com.amazon.alta.h2shared.utils.NotifyFuture	field	private static final String TAG;
+com.amazon.alta.h2shared.utils.NotifyFuture	method	public synchronized V get()
+com.amazon.alta.h2shared.utils.NotifyFuture	method	public synchronized void notify(V result)
+com.amazon.alta.h2shared.utils.Utils	field	private static final String ALLOWED_CHARACTERS;
+com.amazon.alta.h2shared.utils.Utils	field	private static final String CARRIAGE_RETURN;
+com.amazon.alta.h2shared.utils.Utils	field	private static final float IMAGE_ROUNDING_PERCENTAGE;
+com.amazon.alta.h2shared.utils.Utils	method	private Utils()
+com.amazon.alta.h2shared.utils.Utils	method	public static <ObjectType> ObjectType deepClone(IDeepCloneable<ObjectType> object)
+com.amazon.alta.h2shared.utils.Utils	method	public static Bitmap getRoundedBitmap(Bitmap bitmap)
+com.amazon.alta.h2shared.utils.Utils	method	public static Bitmap getScaledBitmap(Bitmap bitmap, int maxWidth, int maxHeight)
+com.amazon.alta.h2shared.utils.Utils	method	public static Bitmap getSquareCroppedBitmap(Bitmap bitmap)
+com.amazon.alta.h2shared.utils.Utils	method	public static String convertInputStreamToString(BufferedInputStream is) throws IOException
+com.amazon.alta.h2shared.utils.Utils	method	public static String getFileExtension(String fileNameOrFullPath)
+com.amazon.alta.h2shared.utils.Utils	method	public static String getRandomString(int sizeOfRandomString)
+com.amazon.alta.h2shared.utils.Utils	method	public static String getTag(Class<?> clazz)
+com.amazon.alta.h2shared.utils.Utils	method	public static String join(Collection<String> list, String delimiter)
+com.amazon.alta.h2shared.utils.Utils	method	public static boolean isFOS8OrGreater()
+com.amazon.alta.h2shared.utils.Utils	method	public static boolean isNotEmpty(Collection<?> input)
+com.amazon.alta.h2shared.utils.Utils	method	public static boolean isNotEmpty(String input)
+com.amazon.alta.h2shared.utils.Utils	method	public static boolean isNullOrEmpty(Collection<?> input)
+com.amazon.alta.h2shared.utils.Utils	method	public static boolean isNullOrEmpty(String input)
+com.amazon.alta.h2shared.utils.Utils	method	public static boolean isValidForCharacterSet(Charset charset, String string)
+com.amazon.alta.h2shared.utils.Utils	method	public static boolean isValidForCharacterSets(Set<Charset> charsets, String string)
+com.amazon.alta.h2shared.utils.Utils	method	public static boolean stringsEqual(String firstString, String secondString)

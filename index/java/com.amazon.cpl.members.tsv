@@ -1,0 +1,152 @@
+class	kind	declaration
+com.amazon.cpl.BroadcastManager	field	private static final String CAPTIVE_PORTAL_LAUNCHER_ACTIVITY;
+com.amazon.cpl.BroadcastManager	field	private static final String CAPTIVE_PORTAL_LAUNCHER_COMPONENT;
+com.amazon.cpl.BroadcastManager	field	private static final String TAG;
+com.amazon.cpl.BroadcastManager	method	public void onReceive(Context context, Intent intent)
+com.amazon.cpl.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.cpl.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.cpl.BuildConfig	field	public static final String FLAVOR;
+com.amazon.cpl.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.cpl.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.cpl.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.cpl.MainActivity	field	private AbsoluteLayout.LayoutParams mCursorParams;
+com.amazon.cpl.MainActivity	field	private CaptivePortal mCaptivePortal;
+com.amazon.cpl.MainActivity	field	private ImageView mCursor;
+com.amazon.cpl.MainActivity	field	private MetricsClient mMetricClient;
+com.amazon.cpl.MainActivity	field	private Network mNetwork;
+com.amazon.cpl.MainActivity	field	private ProgressBar mProgress;
+com.amazon.cpl.MainActivity	field	private Result mResult;
+com.amazon.cpl.MainActivity	field	private String mProbeFallbackUrl;
+com.amazon.cpl.MainActivity	field	private String mProbeUrl;
+com.amazon.cpl.MainActivity	field	private String mUrl;
+com.amazon.cpl.MainActivity	field	private String mUserAgent;
+com.amazon.cpl.MainActivity	field	private WebView mWebView;
+com.amazon.cpl.MainActivity	field	private boolean mCaptivePortalStateReported;
+com.amazon.cpl.MainActivity	field	private boolean mDebugBuild;
+com.amazon.cpl.MainActivity	field	private boolean mInMouseMode;
+com.amazon.cpl.MainActivity	field	private boolean mIsFos6_OrAbove;
+com.amazon.cpl.MainActivity	field	private boolean mWifiConnected;
+com.amazon.cpl.MainActivity	field	private int mMouseMovement;
+com.amazon.cpl.MainActivity	field	private int mWebViewHeight;
+com.amazon.cpl.MainActivity	field	private int mWebViewWidth;
+com.amazon.cpl.MainActivity	field	private int mXPosition;
+com.amazon.cpl.MainActivity	field	private int mYPosition;
+com.amazon.cpl.MainActivity	field	private static boolean sFactoryInit;
+com.amazon.cpl.MainActivity	field	private static final String CAPTIVE_PORTAL_AUTHENTICATED;
+com.amazon.cpl.MainActivity	field	private static final String CAPTIVE_PORTAL_DISMISSED_INTENT;
+com.amazon.cpl.MainActivity	field	private static final String CAPTIVE_PORTAL_FALLBACK_URL;
+com.amazon.cpl.MainActivity	field	private static final String CAPTIVE_PORTAL_HTTP_URL;
+com.amazon.cpl.MainActivity	field	private static final String CUSTOM_USER_AGENT;
+com.amazon.cpl.MainActivity	field	private static final String DEFAULT_AMAZON_PROBE_URL;
+com.amazon.cpl.MainActivity	field	private static final String DEFAULT_AMAZON_PROBE_URL_BACKUP;
+com.amazon.cpl.MainActivity	field	private static final String EXTRA_CAPTIVE_PORTAL_USER_AGENT;
+com.amazon.cpl.MainActivity	field	private static final String FOCUS_JAVASCRIPT;
+com.amazon.cpl.MainActivity	field	private static final String TAG;
+com.amazon.cpl.MainActivity	field	private static final int CAPTIVE_PORTAL_SOCKET_TIMEOUT_MS;
+com.amazon.cpl.MainActivity	field	private static final int MOUSE_HEIGHT;
+com.amazon.cpl.MainActivity	field	private static final int MOUSE_IN_BOUNDS_MIN;
+com.amazon.cpl.MainActivity	field	private static final int MOUSE_MOVEMENT_MAX;
+com.amazon.cpl.MainActivity	field	private static final int MOUSE_MOVEMENT_START;
+com.amazon.cpl.MainActivity	field	private static final int MOUSE_SCROLL_CHANGE;
+com.amazon.cpl.MainActivity	field	private static final int MOUSE_SCROLL_MIN;
+com.amazon.cpl.MainActivity	field	private static final int MOUSE_WIDTH;
+com.amazon.cpl.MainActivity	method	private static void deleteDir(File dir)
+com.amazon.cpl.MainActivity	method	private void changeNavigationMode()
+com.amazon.cpl.MainActivity	method	private void initLayout()
+com.amazon.cpl.MainActivity	method	private void initMouse()
+com.amazon.cpl.MainActivity	method	private void initTitle()
+com.amazon.cpl.MainActivity	method	private void initWebView()
+com.amazon.cpl.MainActivity	method	private void initializeProbeUrls(Context context)
+com.amazon.cpl.MainActivity	method	private void moveMouse(int keyCode)
+com.amazon.cpl.MainActivity	method	private void openCaptivePortalUrl(String mUrl)
+com.amazon.cpl.MainActivity	method	private void performClick()
+com.amazon.cpl.MainActivity	method	private void saveWebArchive()
+com.amazon.cpl.MainActivity	method	private void scrollHorizontally(int change)
+com.amazon.cpl.MainActivity	method	private void scrollVertically(int change)
+com.amazon.cpl.MainActivity	method	protected void afterTestingForCaptivePortal(int httpResponseCode, boolean isFirstAttempt)
+com.amazon.cpl.MainActivity	method	protected void onCreate(Bundle savedInstanceState)
+com.amazon.cpl.MainActivity	method	protected void onDestroy()
+com.amazon.cpl.MainActivity	method	protected void onPause()
+com.amazon.cpl.MainActivity	method	protected void onResume()
+com.amazon.cpl.MainActivity	method	protected void onStop()
+com.amazon.cpl.MainActivity	method	protected void testForCaptivePortal(final boolean isFirstAttempt)
+com.amazon.cpl.MainActivity	method	public MainActivity()
+com.amazon.cpl.MainActivity	method	public boolean onCreateOptionsMenu(Menu menu)
+com.amazon.cpl.MainActivity	method	public boolean onKeyDown(int keyCode, KeyEvent event)
+com.amazon.cpl.MainActivity	method	public boolean onKeyUp(int keyCode, KeyEvent event)
+com.amazon.cpl.MainActivity	method	public boolean onOptionsItemSelected(MenuItem item)
+com.amazon.cpl.MainActivity	method	public boolean onPrepareOptionsMenu(Menu menu)
+com.amazon.cpl.MainActivity	method	public static AlertDialog showDialog(Context context, int title, String message, int postiveButtonText, DialogInterface.OnClickListener positiveButtonListener, int negativeButtontText, DialogInterface.OnClickListener negativeButtonListener)
+com.amazon.cpl.MainActivity	method	public static boolean isDeviceInactive(Context context)
+com.amazon.cpl.MainActivity	method	public void done(Result result)
+com.amazon.cpl.MainActivity	method	public void onBackPressed()
+com.amazon.cpl.MetricsClient	field	private final MetricsFactory mMetricsFactory;
+com.amazon.cpl.MetricsClient	field	private static final String CONNECTION_EVENT;
+com.amazon.cpl.MetricsClient	field	private static final String PROGRAM_NAME;
+com.amazon.cpl.MetricsClient	field	private static final String SOURCE_NAME;
+com.amazon.cpl.MetricsClient	field	private static final String TAG;
+com.amazon.cpl.MetricsClient	field	private static final String URL;
+com.amazon.cpl.MetricsClient	method	public MetricsClient(Context context)
+com.amazon.cpl.MetricsClient	method	public void recordMetricsForCPResult(String url, boolean connected)
+com.amazon.cpl.MetricsClient	method	public void recordMetricsForConnection(String url)
+com.amazon.cpl.R$attr	field	public static final int style;
+com.amazon.cpl.R$dimen	field	public static final int activity_horizontal_margin;
+com.amazon.cpl.R$dimen	field	public static final int activity_vertical_margin;
+com.amazon.cpl.R$drawable	field	public static final int cursor;
+com.amazon.cpl.R$drawable	field	public static final int hurley_hint_back;
+com.amazon.cpl.R$drawable	field	public static final int hurley_hint_ff;
+com.amazon.cpl.R$drawable	field	public static final int hurley_hint_menu;
+com.amazon.cpl.R$drawable	field	public static final int hurley_hint_play_pause;
+com.amazon.cpl.R$drawable	field	public static final int hurley_hint_rewind;
+com.amazon.cpl.R$drawable	field	public static final int ic_launcher;
+com.amazon.cpl.R$drawable	field	public static final int progress_bar;
+com.amazon.cpl.R$drawable	field	public static final int progress_bar_horizontal_bg;
+com.amazon.cpl.R$drawable	field	public static final int progress_bar_horizontal_fill;
+com.amazon.cpl.R$drawable	field	public static final int progress_bar_horizontal_invisible;
+com.amazon.cpl.R$drawable	field	public static final int progress_bar_invisible;
+com.amazon.cpl.R$id	field	public static final int directions;
+com.amazon.cpl.R$id	field	public static final int information_area;
+com.amazon.cpl.R$id	field	public static final int menu_description;
+com.amazon.cpl.R$id	field	public static final int progress_bar;
+com.amazon.cpl.R$id	field	public static final int remote_prompts;
+com.amazon.cpl.R$id	field	public static final int save_web_archive;
+com.amazon.cpl.R$id	field	public static final int title;
+com.amazon.cpl.R$id	field	public static final int title_bar;
+com.amazon.cpl.R$id	field	public static final int turn_off_mouse;
+com.amazon.cpl.R$id	field	public static final int turn_on_mouse;
+com.amazon.cpl.R$id	field	public static final int url;
+com.amazon.cpl.R$id	field	public static final int webview;
+com.amazon.cpl.R$layout	field	public static final int activity_main;
+com.amazon.cpl.R$menu	field	public static final int main;
+com.amazon.cpl.R$string	field	public static final int app_name;
+com.amazon.cpl.R$string	field	public static final int back_description;
+com.amazon.cpl.R$string	field	public static final int close_description;
+com.amazon.cpl.R$string	field	public static final int cursor_mode_description;
+com.amazon.cpl.R$string	field	public static final int default_title;
+com.amazon.cpl.R$string	field	public static final int default_url;
+com.amazon.cpl.R$string	field	public static final int directional_instructions;
+com.amazon.cpl.R$string	field	public static final int forward_description;
+com.amazon.cpl.R$string	field	public static final int join_title;
+com.amazon.cpl.R$string	field	public static final int menu_description;
+com.amazon.cpl.R$string	field	public static final int mouse_instructions;
+com.amazon.cpl.R$string	field	public static final int reload_description;
+com.amazon.cpl.R$string	field	public static final int retry_and_exit_toast;
+com.amazon.cpl.R$string	field	public static final int save_web_archive;
+com.amazon.cpl.R$string	field	public static final int ssl_dialog_line1;
+com.amazon.cpl.R$string	field	public static final int ssl_dialog_line3;
+com.amazon.cpl.R$string	field	public static final int ssl_dialog_negative;
+com.amazon.cpl.R$string	field	public static final int ssl_dialog_positive;
+com.amazon.cpl.R$string	field	public static final int ssl_dialog_title;
+com.amazon.cpl.R$string	field	public static final int ssl_error_certificate_expired;
+com.amazon.cpl.R$string	field	public static final int ssl_error_certificate_not_yet_valid;
+com.amazon.cpl.R$string	field	public static final int ssl_error_hostname_mismatch;
+com.amazon.cpl.R$string	field	public static final int ssl_error_untrusted_authority;
+com.amazon.cpl.R$string	field	public static final int turn_off_cursor;
+com.amazon.cpl.R$string	field	public static final int web_archive_toast;
+com.amazon.cpl.R$string	field	public static final int wired_network;
+com.amazon.cpl.R$style	field	public static final int ButtonImage;
+com.amazon.cpl.R$style	field	public static final int ButtonPrompt;
+com.amazon.cpl.R$style	field	public static final int CaptivePortalDialog;
+com.amazon.cpl.R$style	field	public static final int Title;
+com.amazon.cpl.R$styleable	field	public static final int HelveticaTextView_style;
+com.amazon.cpl.R$styleable	field	public static final int[] HelveticaTextView;

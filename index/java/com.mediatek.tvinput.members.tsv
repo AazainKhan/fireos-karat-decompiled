@@ -1,0 +1,120 @@
+class	kind	declaration
+com.mediatek.tvinput.ARCInputService	field	private static final String TAG;
+com.mediatek.tvinput.ARCInputService	field	private static final boolean DEBUG;
+com.mediatek.tvinput.ARCInputService	method	public AbstractExternalInputServiceBase.AbstractTisSession onCreateSessionImpl(String str)
+com.mediatek.tvinput.ARCInputService	method	public TvInputInfo onCreateTvInputInfo(Context context, ResolveInfo resolveInfo, HdmiDeviceInfo hdmiDeviceInfo, String str)
+com.mediatek.tvinput.ARCInputService	method	public TvInputInfo onCreateTvInputInfo(Context context, ResolveInfo resolveInfo, TvInputHardwareInfo tvInputHardwareInfo)
+com.mediatek.tvinput.ARCInputService	method	public void onCreate()
+com.mediatek.tvinput.ARCInputService	method	public void onDestroy()
+com.mediatek.tvinput.ARCInputService$MtkHdmiHardwareInputSessionImpl	method	protected MtkHdmiHardwareInputSessionImpl(Context context, String str, int i)
+com.mediatek.tvinput.ARCInputService$MtkHdmiHardwareInputSessionImpl	method	public boolean onTune(Uri uri)
+com.mediatek.tvinput.ARCInputService$MtkHdmiHardwareInputSessionImpl	method	public boolean onTune(Uri uri, Bundle bundle)
+com.mediatek.tvinput.ARCInputService$MtkHdmiHardwareInputSessionImpl	method	public void onRelease()
+com.mediatek.tvinput.ARCInputServiceSetup	field	protected static final String TAG;
+com.mediatek.tvinput.ARCInputServiceSetup	method	public void onCreate(Bundle bundle)
+com.mediatek.tvinput.R$string	field	public static final int app_name;
+com.mediatek.tvinput.R$string	field	public static final int hdmi_input_name2;
+com.mediatek.tvinput.R$string	field	public static final int hdmi_input_name3;
+com.mediatek.tvinput.R$string	field	public static final int hdmi_input_name4;
+com.mediatek.tvinput.R$string	field	public static final int hdmi_input_name;
+com.mediatek.tvinput.R$string	field	public static final int msg_no_setup_activity;
+com.mediatek.tvinput.R$style	field	public static final int Transparent;
+com.mediatek.tvinput.R$xml	field	public static final int arc_inputservice;
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase	field	private TvInputInfo mTvInputInfo;
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase	field	private TvInputManager mManager;
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase	field	private int mSessionIndex;
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase	field	private static final boolean DEBUG;
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase	field	protected ContentResolver mContentResolver;
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase	field	protected ResolveInfo mResolveInfo;
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase	field	protected String TAG;
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase	field	public Map<Integer, Integer> deviceIdMapSourceId;
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase	field	public TvInputManager.Hardware mHardware;
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase	field	public TvStreamConfig[] mConfigs;
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase	field	public final Map<String, TvInputInfo> mInputMap;
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase	field	public final SparseArray<String> mHardwareInputIdMap;
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase	method	protected TvInputManager.Hardware doAcquireTvInputHardware(int i, TvInputManager.HardwareCallback hardwareCallback, TvInputInfo tvInputInfo)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase	method	protected void doReleaseTvInputHardware(int i, TvInputManager.Hardware hardware)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase	method	protected void initService(Context context)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase	method	public String onHardwareRemoved(TvInputHardwareInfo tvInputHardwareInfo)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase	method	public String onHardwareRemovedImpl(TvInputHardwareInfo tvInputHardwareInfo)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase	method	public TvInputInfo onHardwareAdded(TvInputHardwareInfo tvInputHardwareInfo)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase	method	public TvInputInfo onHardwareAddedImpl(TvInputHardwareInfo tvInputHardwareInfo)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase	method	public TvInputService.Session onCreateSession(String str)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase	method	public abstract AbstractTisSession onCreateSessionImpl(String str);
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase	method	public abstract TvInputInfo onCreateTvInputInfo(Context context, ResolveInfo resolveInfo, HdmiDeviceInfo hdmiDeviceInfo, String str);
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase	method	public abstract TvInputInfo onCreateTvInputInfo(Context context, ResolveInfo resolveInfo, TvInputHardwareInfo tvInputHardwareInfo);
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase	method	public void onCreate()
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase	method	public void onDestroy()
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	field	protected String TAG;
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	field	protected int mHardwareDeviceId;
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	field	protected int mIndex;
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	field	protected volatile int mPath;
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	field	public TvInputInfo mInfo;
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	field	public final Object mHardwareLock;
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	field	public volatile Surface mLastHardwareSurface;
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	protected boolean doSetSurfaceToHardware(TvInputManager.Hardware hardware, Surface surface, TvStreamConfig tvStreamConfig)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public AbstractTisSession(Context context, String str, int i)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public View onCreateOverlayView()
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public boolean onGenericMotionEvent(MotionEvent motionEvent)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public boolean onKeyDown(int i, KeyEvent keyEvent)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public boolean onKeyLongPress(int i, KeyEvent keyEvent)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public boolean onKeyMultiple(int i, int i2, KeyEvent keyEvent)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public boolean onKeyUp(int i, KeyEvent keyEvent)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public boolean onSelectTrack(int i, String str)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public boolean onSetSurface(Surface surface)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public boolean onTouchEvent(MotionEvent motionEvent)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public boolean onTrackballEvent(MotionEvent motionEvent)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public boolean onTune(Uri uri)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public boolean onTune(Uri uri, Bundle bundle)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public long onTimeShiftGetCurrentPosition()
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public long onTimeShiftGetStartPosition()
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public void layoutSurface(int i, int i2, int i3, int i4)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public void notifyChannelRetuned(Uri uri)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public void notifyContentAllowed()
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public void notifyContentBlocked(TvContentRating tvContentRating)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public void notifyTimeShiftStatusChanged(int i)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public void notifyTrackSelected(int i, String str)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public void notifyTracksChanged(List<TvTrackInfo> list)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public void notifyVideoAvailable()
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public void notifyVideoUnavailable(int i)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public void onAppPrivateCommand(String str, Bundle bundle)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public void onOverlayViewSizeChanged(int i, int i2)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public void onRelease()
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public void onSetCaptionEnabled(boolean z)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public void onSetStreamVolume(float f)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public void onSurfaceChanged(int i, int i2, int i3)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public void onTimeShiftPause()
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public void onTimeShiftPlay(Uri uri)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public void onTimeShiftResume()
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public void onTimeShiftSeekTo(long j)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public void onTimeShiftSetPlaybackParams(PlaybackParams playbackParams)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public void onUnblockContent(TvContentRating tvContentRating)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public void setIndex(int i)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$AbstractTisSession	method	public void setOverlayViewEnabled(boolean z)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$ArcHardwareInputSessionImpl	method	protected ArcHardwareInputSessionImpl(Context context, String str, int i)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$ArcHardwareInputSessionImpl	method	public boolean onTune(Uri uri, Bundle bundle)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$ExecuteCommandHandler	field	private ContentResolver mContentResolver;
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$ExecuteCommandHandler	method	public void handleMessage(Message message)
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$SessionState	field	public final int SESSION_STATUS_NONE;
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$SessionState	field	public final int SESSION_STATUS_STREAM_CLOSE;
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$SessionState	field	public final int SESSION_STATUS_STREAM_OPEN;
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$SessionState	field	public final int SESSION_STATUS_SURFACE_RELEASE;
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$SessionState	field	public final int SESSION_STATUS_SURFACE_SET;
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$SessionState	field	public int mSessionStatus;
+com.mediatek.tvinputservice.AbstractExternalInputServiceBase$SessionState	method	public SessionState(TvInputService.Session session)
+com.mediatek.tvinputservice.TvInputConst	field	private static final Map<Integer, String> inputDescription;
+com.mediatek.tvinputservice.TvInputConst	field	public static boolean DEBUG;
+com.mediatek.tvinputservice.TvInputConst	field	public static int InputInvalid;
+com.mediatek.tvinputservice.TvInputConst	field	public static int InputMain;
+com.mediatek.tvinputservice.TvInputConst	field	public static int InputMax;
+com.mediatek.tvinputservice.TvInputConst	field	public static int InputSub;
+com.mediatek.tvinputservice.TvInputConst	field	public static int TV_INPUT_TYPE_COMPONENT;
+com.mediatek.tvinputservice.TvInputConst	field	public static int TV_INPUT_TYPE_COMPOSITE;
+com.mediatek.tvinputservice.TvInputConst	field	public static int TV_INPUT_TYPE_DVI;
+com.mediatek.tvinputservice.TvInputConst	field	public static int TV_INPUT_TYPE_HDMI;
+com.mediatek.tvinputservice.TvInputConst	field	public static int TV_INPUT_TYPE_OTHER_HARDWARE;
+com.mediatek.tvinputservice.TvInputConst	field	public static int TV_INPUT_TYPE_SCART;
+com.mediatek.tvinputservice.TvInputConst	field	public static int TV_INPUT_TYPE_SVIDEO;
+com.mediatek.tvinputservice.TvInputConst	field	public static int TV_INPUT_TYPE_TUNER;
+com.mediatek.tvinputservice.TvInputConst	field	public static int TV_INPUT_TYPE_VGA;
+com.mediatek.tvinputservice.TvInputConst	method	public static String getInputName(int i)

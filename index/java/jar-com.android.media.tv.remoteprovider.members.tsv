@@ -1,0 +1,29 @@
+class	kind	declaration
+com.android.media.tv.remoteprovider.TvRemoteProvider	field	private ITvRemoteServiceInput mRemoteServiceInput;
+com.android.media.tv.remoteprovider.TvRemoteProvider	field	private final Context mContext;
+com.android.media.tv.remoteprovider.TvRemoteProvider	field	private final LinkedList<Runnable> mOpenBridgeRunnables;
+com.android.media.tv.remoteprovider.TvRemoteProvider	field	private final ProviderStub mStub;
+com.android.media.tv.remoteprovider.TvRemoteProvider	field	private static final String TAG;
+com.android.media.tv.remoteprovider.TvRemoteProvider	field	private static final boolean DEBUG_KEYS;
+com.android.media.tv.remoteprovider.TvRemoteProvider	field	public static final String SERVICE_INTERFACE;
+com.android.media.tv.remoteprovider.TvRemoteProvider	method	public IBinder getBinder()
+com.android.media.tv.remoteprovider.TvRemoteProvider	method	public TvRemoteProvider(Context context)
+com.android.media.tv.remoteprovider.TvRemoteProvider	method	public final Context getContext()
+com.android.media.tv.remoteprovider.TvRemoteProvider	method	public void clearInputBridge(IBinder iBinder) throws RuntimeException
+com.android.media.tv.remoteprovider.TvRemoteProvider	method	public void closeInputBridge(IBinder iBinder) throws RuntimeException
+com.android.media.tv.remoteprovider.TvRemoteProvider	method	public void onInputBridgeConnected(IBinder iBinder)
+com.android.media.tv.remoteprovider.TvRemoteProvider	method	public void openGamepadBridge(IBinder iBinder, String str) throws RuntimeException
+com.android.media.tv.remoteprovider.TvRemoteProvider	method	public void openRemoteInputBridge(IBinder iBinder, String str, final int i, final int i2, final int i3) throws RuntimeException
+com.android.media.tv.remoteprovider.TvRemoteProvider	method	public void sendGamepadAxisValue(IBinder iBinder, int i, float f) throws RuntimeException
+com.android.media.tv.remoteprovider.TvRemoteProvider	method	public void sendGamepadKeyDown(IBinder iBinder, int i) throws RuntimeException
+com.android.media.tv.remoteprovider.TvRemoteProvider	method	public void sendGamepadKeyUp(IBinder iBinder, int i) throws RuntimeException
+com.android.media.tv.remoteprovider.TvRemoteProvider	method	public void sendKeyDown(IBinder iBinder, int i) throws RuntimeException
+com.android.media.tv.remoteprovider.TvRemoteProvider	method	public void sendKeyUp(IBinder iBinder, int i) throws RuntimeException
+com.android.media.tv.remoteprovider.TvRemoteProvider	method	public void sendPointerDown(IBinder iBinder, int i, int i2, int i3) throws RuntimeException
+com.android.media.tv.remoteprovider.TvRemoteProvider	method	public void sendPointerSync(IBinder iBinder) throws RuntimeException
+com.android.media.tv.remoteprovider.TvRemoteProvider	method	public void sendPointerUp(IBinder iBinder, int i) throws RuntimeException
+com.android.media.tv.remoteprovider.TvRemoteProvider	method	public void sendTimestamp(IBinder iBinder, long j) throws RuntimeException
+com.android.media.tv.remoteprovider.TvRemoteProvider	method	public void setRemoteServiceInputSink(ITvRemoteServiceInput iTvRemoteServiceInput)
+com.android.media.tv.remoteprovider.TvRemoteProvider$ProviderStub	method	private ProviderStub()
+com.android.media.tv.remoteprovider.TvRemoteProvider$ProviderStub	method	public void onInputBridgeConnected(IBinder iBinder)
+com.android.media.tv.remoteprovider.TvRemoteProvider$ProviderStub	method	public void setRemoteServiceInputSink(ITvRemoteServiceInput iTvRemoteServiceInput)

@@ -1,0 +1,204 @@
+class	kind	declaration
+com.android.musicfx.ActivityMusic	field	private CompoundButton mToggleSwitch;
+com.android.musicfx.ActivityMusic	field	private Context mContext;
+com.android.musicfx.ActivityMusic	field	private Formatter mFormatter;
+com.android.musicfx.ActivityMusic	field	private String mCallingPackageName;
+com.android.musicfx.ActivityMusic	field	private StringBuilder mFormatBuilder;
+com.android.musicfx.ActivityMusic	field	private String[] mEQPresetNames;
+com.android.musicfx.ActivityMusic	field	private boolean mBassBoostSupported;
+com.android.musicfx.ActivityMusic	field	private boolean mEqualizerSupported;
+com.android.musicfx.ActivityMusic	field	private boolean mIsHeadsetOn;
+com.android.musicfx.ActivityMusic	field	private boolean mPresetReverbSupported;
+com.android.musicfx.ActivityMusic	field	private boolean mVirtualizerIsHeadphoneOnly;
+com.android.musicfx.ActivityMusic	field	private boolean mVirtualizerSupported;
+com.android.musicfx.ActivityMusic	field	private final SeekBar[] mEqualizerSeekBar;
+com.android.musicfx.ActivityMusic	field	private int mAudioSession;
+com.android.musicfx.ActivityMusic	field	private int mEQPreset;
+com.android.musicfx.ActivityMusic	field	private int mEQPresetPrevious;
+com.android.musicfx.ActivityMusic	field	private int mEQPresetUserPos;
+com.android.musicfx.ActivityMusic	field	private int mEqualizerMinBandLevel;
+com.android.musicfx.ActivityMusic	field	private int mNumberEqualizerBands;
+com.android.musicfx.ActivityMusic	field	private int mPRPreset;
+com.android.musicfx.ActivityMusic	field	private int mPRPresetPrevious;
+com.android.musicfx.ActivityMusic	field	private static final String[] PRESETREVERBPRESETSTRINGS;
+com.android.musicfx.ActivityMusic	field	private static final int[][] EQViewElementIds;
+com.android.musicfx.ActivityMusic	method	private String format(String str, Object... objArr)
+com.android.musicfx.ActivityMusic	method	private static boolean isVirtualizerTransauralSupported() throws Throwable
+com.android.musicfx.ActivityMusic	method	private void equalizerBandUpdate(int i, int i2)
+com.android.musicfx.ActivityMusic	method	private void equalizerBandsInit(View view)
+com.android.musicfx.ActivityMusic	method	private void equalizerSpinnerInit(Spinner spinner)
+com.android.musicfx.ActivityMusic	method	private void equalizerUpdateDisplay()
+com.android.musicfx.ActivityMusic	method	private void reverbSpinnerInit(Spinner spinner)
+com.android.musicfx.ActivityMusic	method	private void updateUI()
+com.android.musicfx.ActivityMusic	method	protected void onPause()
+com.android.musicfx.ActivityMusic	method	protected void onResume()
+com.android.musicfx.ActivityMusic	method	public void equalizerSetPreset(int i)
+com.android.musicfx.ActivityMusic	method	public void onCreate(Bundle bundle) throws Throwable
+com.android.musicfx.ActivityMusic	method	public void onProgressChanged(SeekBar seekBar, int i, boolean z)
+com.android.musicfx.ActivityMusic	method	public void onStartTrackingTouch(SeekBar seekBar)
+com.android.musicfx.ActivityMusic	method	public void onStopTrackingTouch(SeekBar seekBar)
+com.android.musicfx.ActivityMusic	method	public void presetReverbSetPreset(int i)
+com.android.musicfx.ActivityMusic	method	public void setEnabledAllChildren(ViewGroup viewGroup, boolean z)
+com.android.musicfx.ActivityMusic	method	public void showHeadsetMsg()
+com.android.musicfx.ActivityMusic	method	public void updateUIHeadset()
+com.android.musicfx.Compatibility	field	private static final boolean LOG;
+com.android.musicfx.Compatibility	method	public static void log(String str)
+com.android.musicfx.Compatibility$Receiver	method	public void onReceive(Context context, Intent intent)
+com.android.musicfx.Compatibility$Redirector	method	public void onCreate(Bundle bundle)
+com.android.musicfx.Compatibility$Service	method	private void pickDefaultControlPanel(String str)
+com.android.musicfx.Compatibility$Service	method	private void setDefault(String str, String str2)
+com.android.musicfx.Compatibility$Service	method	private void setupReceivers(List<ResolveInfo> list, String str)
+com.android.musicfx.Compatibility$Service	method	protected void onHandleIntent(Intent intent)
+com.android.musicfx.Compatibility$Service	method	public Service()
+com.android.musicfx.Compatibility$Service	method	public static final ResolveInfo searchControlPanel(Context context, String str)
+com.android.musicfx.ControlPanelEffect	field	private static String[] mEQPresetNames;
+com.android.musicfx.ControlPanelEffect	field	private static boolean mIsEQInitialized;
+com.android.musicfx.ControlPanelEffect	field	private static final ConcurrentHashMap<Integer, BassBoost> mBassBoostInstances;
+com.android.musicfx.ControlPanelEffect	field	private static final ConcurrentHashMap<Integer, Equalizer> mEQInstances;
+com.android.musicfx.ControlPanelEffect	field	private static final ConcurrentHashMap<Integer, PresetReverb> mPresetReverbInstances;
+com.android.musicfx.ControlPanelEffect	field	private static final ConcurrentHashMap<Integer, Virtualizer> mVirtualizerInstances;
+com.android.musicfx.ControlPanelEffect	field	private static final ConcurrentHashMap<String, Integer> mPackageSessions;
+com.android.musicfx.ControlPanelEffect	field	private static final Object mEQInitLock;
+com.android.musicfx.ControlPanelEffect	field	private static final int[] EQUALIZER_CENTER_FREQ_DEFAULT;
+com.android.musicfx.ControlPanelEffect	field	private static final short[] EQUALIZER_BAND_LEVEL_RANGE_DEFAULT;
+com.android.musicfx.ControlPanelEffect	field	private static final short[] EQUALIZER_PRESET_CIEXTREME_BAND_LEVEL;
+com.android.musicfx.ControlPanelEffect	field	private static final short[] EQUALIZER_PRESET_USER_BAND_LEVEL_DEFAULT;
+com.android.musicfx.ControlPanelEffect	field	private static int[] mEQCenterFreq;
+com.android.musicfx.ControlPanelEffect	field	private static short mEQNumBands;
+com.android.musicfx.ControlPanelEffect	field	private static short mEQNumPresets;
+com.android.musicfx.ControlPanelEffect	field	private static short[] mEQBandLevelRange;
+com.android.musicfx.ControlPanelEffect	field	private static short[][] mEQPresetOpenSLESBandLevel;
+com.android.musicfx.ControlPanelEffect	method	private static BassBoost getBassBoostEffect(int i)
+com.android.musicfx.ControlPanelEffect	method	private static BassBoost getBassBoostEffectNoCreate(int i)
+com.android.musicfx.ControlPanelEffect	method	private static Equalizer getEqualizerEffect(int i)
+com.android.musicfx.ControlPanelEffect	method	private static Equalizer getEqualizerEffectNoCreate(int i)
+com.android.musicfx.ControlPanelEffect	method	private static Virtualizer getVirtualizerEffect(int i)
+com.android.musicfx.ControlPanelEffect	method	private static Virtualizer getVirtualizerEffectNoCreate(int i)
+com.android.musicfx.ControlPanelEffect	method	public static Boolean getParameterBoolean(Context context, String str, int i, Key key)
+com.android.musicfx.ControlPanelEffect	method	public static ControlMode getControlMode(int i)
+com.android.musicfx.ControlPanelEffect	method	public static String getParameterString(Context context, String str, int i, Key key, int i2)
+com.android.musicfx.ControlPanelEffect	method	public static String getParameterString(Context context, String str, int i, String str2)
+com.android.musicfx.ControlPanelEffect	method	public static int getParameterInt(Context context, String str, int i, Key key)
+com.android.musicfx.ControlPanelEffect	method	public static int getParameterInt(Context context, String str, int i, String str2)
+com.android.musicfx.ControlPanelEffect	method	public static int[] getParameterIntArray(Context context, String str, int i, Key key)
+com.android.musicfx.ControlPanelEffect	method	public static void closeSession(Context context, String str, int i)
+com.android.musicfx.ControlPanelEffect	method	public static void initEffectsPreferences(Context context, String str, int i) throws Throwable
+com.android.musicfx.ControlPanelEffect	method	public static void openSession(Context context, String str, int i)
+com.android.musicfx.ControlPanelEffect	method	public static void setParameterBoolean(Context context, String str, int i, Key key, boolean z)
+com.android.musicfx.ControlPanelEffect	method	public static void setParameterInt(Context context, String str, int i, Key key, int i2)
+com.android.musicfx.ControlPanelEffect	method	public static void setParameterInt(Context context, String str, int i, Key key, int i2, int i3)
+com.android.musicfx.ControlPanelPicker	method	public void onClick(DialogInterface dialogInterface, int i)
+com.android.musicfx.ControlPanelPicker	method	public void onCreate(Bundle bundle)
+com.android.musicfx.ControlPanelPicker	method	public void onPrepareListView(ListView listView)
+com.android.musicfx.ControlPanelReceiver	method	public void onReceive(Context context, Intent intent)
+com.android.musicfx.R$dimen	field	public static final int action_bar_switch_padding;
+com.android.musicfx.R$dimen	field	public static final int eq_slider_height;
+com.android.musicfx.R$dimen	field	public static final int eq_slider_margin;
+com.android.musicfx.R$drawable	field	public static final int icon;
+com.android.musicfx.R$id	field	public static final int EQBand0SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand0TextView;
+com.android.musicfx.R$id	field	public static final int EQBand10SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand10TextView;
+com.android.musicfx.R$id	field	public static final int EQBand11SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand11TextView;
+com.android.musicfx.R$id	field	public static final int EQBand12SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand12TextView;
+com.android.musicfx.R$id	field	public static final int EQBand13SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand13TextView;
+com.android.musicfx.R$id	field	public static final int EQBand14SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand14TextView;
+com.android.musicfx.R$id	field	public static final int EQBand15SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand15TextView;
+com.android.musicfx.R$id	field	public static final int EQBand16SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand16TextView;
+com.android.musicfx.R$id	field	public static final int EQBand17SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand17TextView;
+com.android.musicfx.R$id	field	public static final int EQBand18SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand18TextView;
+com.android.musicfx.R$id	field	public static final int EQBand19SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand19TextView;
+com.android.musicfx.R$id	field	public static final int EQBand1SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand1TextView;
+com.android.musicfx.R$id	field	public static final int EQBand20SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand20TextView;
+com.android.musicfx.R$id	field	public static final int EQBand21SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand21TextView;
+com.android.musicfx.R$id	field	public static final int EQBand22SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand22TextView;
+com.android.musicfx.R$id	field	public static final int EQBand23SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand23TextView;
+com.android.musicfx.R$id	field	public static final int EQBand24SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand24TextView;
+com.android.musicfx.R$id	field	public static final int EQBand25SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand25TextView;
+com.android.musicfx.R$id	field	public static final int EQBand26SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand26TextView;
+com.android.musicfx.R$id	field	public static final int EQBand27SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand27TextView;
+com.android.musicfx.R$id	field	public static final int EQBand28SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand28TextView;
+com.android.musicfx.R$id	field	public static final int EQBand29SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand29TextView;
+com.android.musicfx.R$id	field	public static final int EQBand2SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand2TextView;
+com.android.musicfx.R$id	field	public static final int EQBand30SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand30TextView;
+com.android.musicfx.R$id	field	public static final int EQBand31SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand31TextView;
+com.android.musicfx.R$id	field	public static final int EQBand3SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand3TextView;
+com.android.musicfx.R$id	field	public static final int EQBand4SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand4TextView;
+com.android.musicfx.R$id	field	public static final int EQBand5SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand5TextView;
+com.android.musicfx.R$id	field	public static final int EQBand6SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand6TextView;
+com.android.musicfx.R$id	field	public static final int EQBand7SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand7TextView;
+com.android.musicfx.R$id	field	public static final int EQBand8SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand8TextView;
+com.android.musicfx.R$id	field	public static final int EQBand9SeekBar;
+com.android.musicfx.R$id	field	public static final int EQBand9TextView;
+com.android.musicfx.R$id	field	public static final int bBLayout;
+com.android.musicfx.R$id	field	public static final int bBStrengthSeekBar;
+com.android.musicfx.R$id	field	public static final int bBStrengthText;
+com.android.musicfx.R$id	field	public static final int centerLevelText;
+com.android.musicfx.R$id	field	public static final int contentSoundEffects;
+com.android.musicfx.R$id	field	public static final int eqSpinner;
+com.android.musicfx.R$id	field	public static final int eqcontainer;
+com.android.musicfx.R$id	field	public static final int maxLevelText;
+com.android.musicfx.R$id	field	public static final int minLevelText;
+com.android.musicfx.R$id	field	public static final int noEffectsTextView;
+com.android.musicfx.R$id	field	public static final int prSpinner;
+com.android.musicfx.R$id	field	public static final int vILayout;
+com.android.musicfx.R$id	field	public static final int vIStrengthSeekBar;
+com.android.musicfx.R$id	field	public static final int vIStrengthText;
+com.android.musicfx.R$id	field	public static final int vIStrengthToggle;
+com.android.musicfx.R$layout	field	public static final int music_eq;
+com.android.musicfx.R$layout	field	public static final int music_main;
+com.android.musicfx.R$string	field	public static final int app_name;
+com.android.musicfx.R$string	field	public static final int bass_boost_strength;
+com.android.musicfx.R$string	field	public static final int ci_extreme;
+com.android.musicfx.R$string	field	public static final int classical;
+com.android.musicfx.R$string	field	public static final int dance;
+com.android.musicfx.R$string	field	public static final int eq_dialog_title;
+com.android.musicfx.R$string	field	public static final int flat;
+com.android.musicfx.R$string	field	public static final int folk;
+com.android.musicfx.R$string	field	public static final int headset_plug;
+com.android.musicfx.R$string	field	public static final int heavy_metal;
+com.android.musicfx.R$string	field	public static final int hip_hop;
+com.android.musicfx.R$string	field	public static final int jazz;
+com.android.musicfx.R$string	field	public static final int no_effects;
+com.android.musicfx.R$string	field	public static final int normal;
+com.android.musicfx.R$string	field	public static final int picker_title;
+com.android.musicfx.R$string	field	public static final int pop;
+com.android.musicfx.R$string	field	public static final int rock;
+com.android.musicfx.R$string	field	public static final int setup;
+com.android.musicfx.R$string	field	public static final int user;
+com.android.musicfx.R$string	field	public static final int virtualizer_strength;
+com.android.musicfx.SeekBarRotator	method	protected void onLayout(boolean z, int i, int i2, int i3, int i4)
+com.android.musicfx.SeekBarRotator	method	protected void onMeasure(int i, int i2)
+com.android.musicfx.SeekBarRotator	method	public SeekBarRotator(Context context)
+com.android.musicfx.SeekBarRotator	method	public SeekBarRotator(Context context, AttributeSet attributeSet)
+com.android.musicfx.SeekBarRotator	method	public SeekBarRotator(Context context, AttributeSet attributeSet, int i)
+com.android.musicfx.SeekBarRotator	method	public SeekBarRotator(Context context, AttributeSet attributeSet, int i, int i2)

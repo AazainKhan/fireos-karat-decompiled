@@ -1,0 +1,218 @@
+class	kind	declaration
+com.amazon.device.attestation.token.IGetTokenCallback	field	public static final String DESCRIPTOR;
+com.amazon.device.attestation.token.IGetTokenCallback$Default	method	public IBinder asBinder()
+com.amazon.device.attestation.token.IGetTokenCallback$Default	method	public void onFail(String requestId, String errMsg) throws RemoteException
+com.amazon.device.attestation.token.IGetTokenCallback$Default	method	public void onSuccess(String requestId, String tokenString) throws RemoteException
+com.amazon.device.attestation.token.IGetTokenCallback$Stub	field	static final int TRANSACTION_onFail;
+com.amazon.device.attestation.token.IGetTokenCallback$Stub	field	static final int TRANSACTION_onSuccess;
+com.amazon.device.attestation.token.IGetTokenCallback$Stub	method	public IBinder asBinder()
+com.amazon.device.attestation.token.IGetTokenCallback$Stub	method	public Stub()
+com.amazon.device.attestation.token.IGetTokenCallback$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+com.amazon.device.attestation.token.IGetTokenCallback$Stub	method	public static IGetTokenCallback asInterface(IBinder obj)
+com.amazon.device.attestation.token.IGetTokenCallback$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.device.attestation.token.IGetTokenCallback$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.device.attestation.token.IGetTokenCallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.device.attestation.token.IGetTokenCallback$Stub$Proxy	method	public void onFail(String requestId, String errMsg) throws RemoteException
+com.amazon.device.attestation.token.IGetTokenCallback$Stub$Proxy	method	public void onSuccess(String requestId, String tokenString) throws RemoteException
+com.amazon.privacypass.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.privacypass.BuildConfig	field	public static final String LIBRARY_PACKAGE_NAME;
+com.amazon.privacypass.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.privacypass.PrivacyPass	field	private final ChallengeResponseProcessor challengeResponseProcessor;
+com.amazon.privacypass.PrivacyPass	field	private final OriginClient originClient;
+com.amazon.privacypass.PrivacyPass	field	private static final String EMTPY_STRING;
+com.amazon.privacypass.PrivacyPass	field	private static volatile PrivacyPass instance;
+com.amazon.privacypass.PrivacyPass	method	private List<String> sampleOrigins(VerificationContext verificationContext)
+com.amazon.privacypass.PrivacyPass	method	private PrivacyPass(Context applicationContext)
+com.amazon.privacypass.PrivacyPass	method	private boolean isInternalClient(String version)
+com.amazon.privacypass.PrivacyPass	method	public static PrivacyPass getInstance(Context context)
+com.amazon.privacypass.PrivacyPass	method	public void attest(VerificationContext verificationContext, AttestAPICallback callback, String version)
+com.amazon.privacypass.VerificationContext	field	private final List<String> originURLs;
+com.amazon.privacypass.VerificationContext	method	public List<String> getOriginURLs()
+com.amazon.privacypass.VerificationContext	method	public VerificationContext(List<String> originURLs)
+com.amazon.privacypass.com.amazon.neo.service.api.BinderInternal	method	public IBinder getGlobalContextObject()
+com.amazon.privacypass.com.amazon.neo.service.api.BinderUtils	field	private BinderInternal binderInternal;
+com.amazon.privacypass.com.amazon.neo.service.api.BinderUtils	field	protected static final int FOS8_BINDER_SYSTEM_HEADER;
+com.amazon.privacypass.com.amazon.neo.service.api.BinderUtils	method	private static int bPackChars(char c1, char c2, char c3, char c4)
+com.amazon.privacypass.com.amazon.neo.service.api.BinderUtils	method	protected IBinder getServiceBinder(String serviceName)
+com.amazon.privacypass.com.amazon.neo.service.api.BinderUtils	method	protected void getServiceByHandle(final String serviceName, final ServiceCallback serviceCallback, IBinder nscBinder)
+com.amazon.privacypass.com.amazon.neo.service.api.BinderUtils	method	public BinderUtils()
+com.amazon.privacypass.com.amazon.neo.service.api.BinderUtils	method	public BinderUtils(BinderInternal binderInternal)
+com.amazon.privacypass.com.amazon.neo.service.api.BinderUtils	method	public IBinder getPublicServiceCoordinator()
+com.amazon.privacypass.com.amazon.neo.service.api.BinderUtils	method	public IBinder getServiceCoordinator()
+com.amazon.privacypass.com.amazon.neo.service.api.BinderUtils	method	public boolean releasePrivilegedService(IBinder handle)
+com.amazon.privacypass.com.amazon.neo.service.api.BinderUtils	method	public void getPrivilegedService(String serviceName, ServiceCallback serviceCallback)
+com.amazon.privacypass.com.amazon.neo.service.api.BinderUtils	method	public void getPublicService(String serviceName, ServiceCallback serviceCallback)
+com.amazon.privacypass.com.amazon.neo.service.api.BinderUtils$Builder	field	private BinderInternal binderInternal;
+com.amazon.privacypass.com.amazon.neo.service.api.BinderUtils$Builder	method	public BinderUtils build()
+com.amazon.privacypass.com.amazon.neo.service.api.ServiceCallback	field	protected ArrayList<IBinder> mPendingRequests;
+com.amazon.privacypass.com.amazon.neo.service.api.ServiceCallback	field	protected IBinder mToken;
+com.amazon.privacypass.com.amazon.neo.service.api.ServiceCallback	method	public abstract void onServiceConnected(String str, IBinder iBinder);
+com.amazon.privacypass.com.amazon.neo.service.api.ServiceCallback	method	public abstract void onServiceFailed(String str, String str2);
+com.amazon.privacypass.http.HttpClient	field	private final ThreadPoolExecutor executorService;
+com.amazon.privacypass.http.HttpClient	field	private final int callTimeoutMs;
+com.amazon.privacypass.http.HttpClient	field	private static final String HTTP_GET;
+com.amazon.privacypass.http.HttpClient	field	private static final String HTTP_POST;
+com.amazon.privacypass.http.HttpClient	field	private static final int CORE_POOL_SIZE;
+com.amazon.privacypass.http.HttpClient	field	private static final int THREAD_POOL_QUEUE_SIZE;
+com.amazon.privacypass.http.HttpClient	field	private static final long THREAD_POOL_KEEP_ALIVE_SECONDS;
+com.amazon.privacypass.http.HttpClient	method	public HttpClient(int maxPoolSize, int callTimeoutMs)
+com.amazon.privacypass.http.HttpClient	method	public void callGetAsync(String url, Map<String, String> headers, String requestBody, HttpCallback callback, String metricPrefix, RequestContext requestContext)
+com.amazon.privacypass.http.HttpClient	method	public void executeAsync(final HttpRequest request, final HttpCallback callback)
+com.amazon.privacypass.http.HttpRequest	field	private final Map<String, String> headers;
+com.amazon.privacypass.http.HttpRequest	field	private final String body;
+com.amazon.privacypass.http.HttpRequest	field	private final String method;
+com.amazon.privacypass.http.HttpRequest	field	private final String url;
+com.amazon.privacypass.http.HttpRequest	method	private HttpRequest(Builder builder)
+com.amazon.privacypass.http.HttpRequest	method	public Map<String, String> getHeaders()
+com.amazon.privacypass.http.HttpRequest	method	public String getBody()
+com.amazon.privacypass.http.HttpRequest	method	public String getMethod()
+com.amazon.privacypass.http.HttpRequest	method	public String getUrl()
+com.amazon.privacypass.http.HttpRequest$Builder	field	private String body;
+com.amazon.privacypass.http.HttpRequest$Builder	field	private String method;
+com.amazon.privacypass.http.HttpRequest$Builder	field	private String url;
+com.amazon.privacypass.http.HttpRequest$Builder	field	private final Map<String, String> headers;
+com.amazon.privacypass.http.HttpRequest$Builder	method	public Builder addHeader(String key, String value)
+com.amazon.privacypass.http.HttpRequest$Builder	method	public Builder body(String body)
+com.amazon.privacypass.http.HttpRequest$Builder	method	public Builder method(String method)
+com.amazon.privacypass.http.HttpRequest$Builder	method	public Builder url(String url)
+com.amazon.privacypass.http.HttpRequest$Builder	method	public HttpRequest build()
+com.amazon.privacypass.http.HttpResponse	field	private Map<String, String> headers;
+com.amazon.privacypass.http.HttpResponse	field	private int code;
+com.amazon.privacypass.http.HttpResponse	method	private HttpResponse(Builder builder)
+com.amazon.privacypass.http.HttpResponse	method	public Map<String, String> getHeaders()
+com.amazon.privacypass.http.HttpResponse	method	public String getHeader(String header)
+com.amazon.privacypass.http.HttpResponse	method	public String toString()
+com.amazon.privacypass.http.HttpResponse	method	public boolean isSuccessful()
+com.amazon.privacypass.http.HttpResponse	method	public int getCode()
+com.amazon.privacypass.http.HttpResponse	method	public void setCode(int code)
+com.amazon.privacypass.http.HttpResponse	method	public void setHeaders(Map<String, String> headers)
+com.amazon.privacypass.http.HttpResponse$Builder	field	private Map<String, String> headers;
+com.amazon.privacypass.http.HttpResponse$Builder	field	private int code;
+com.amazon.privacypass.http.HttpResponse$Builder	method	public Builder code(int code)
+com.amazon.privacypass.http.HttpResponse$Builder	method	public Builder headers(Map<String, String> headers)
+com.amazon.privacypass.http.HttpResponse$Builder	method	public HttpResponse build()
+com.amazon.privacypass.internal.BinderResourceManager	field	private ScheduledFuture<?> scheduledFuture;
+com.amazon.privacypass.internal.BinderResourceManager	field	private final BinderUtils binderUtils;
+com.amazon.privacypass.internal.BinderResourceManager	field	private final Map<IBinder, Set<RequestContext>> binderCache;
+com.amazon.privacypass.internal.BinderResourceManager	field	private final Object binderCacheLock;
+com.amazon.privacypass.internal.BinderResourceManager	field	private final Object checkerLock;
+com.amazon.privacypass.internal.BinderResourceManager	field	private final ScheduledExecutorService scheduler;
+com.amazon.privacypass.internal.BinderResourceManager	field	private static final String TAG;
+com.amazon.privacypass.internal.BinderResourceManager	field	private static final long CHECKER_DELAY;
+com.amazon.privacypass.internal.BinderResourceManager	field	private static final long CHECKER_INITIAL_DELAY;
+com.amazon.privacypass.internal.BinderResourceManager	field	private static final long PPS_TIMEOUT_MS;
+com.amazon.privacypass.internal.BinderResourceManager	field	private static volatile BinderResourceManager instance;
+com.amazon.privacypass.internal.BinderResourceManager	method	private BinderResourceManager()
+com.amazon.privacypass.internal.BinderResourceManager	method	private void setLinkToDeath(final IBinder binder, final RequestContext requestContext)
+com.amazon.privacypass.internal.BinderResourceManager	method	private void startChecker()
+com.amazon.privacypass.internal.BinderResourceManager	method	private void stopChecker()
+com.amazon.privacypass.internal.BinderResourceManager	method	public static BinderResourceManager getInstance()
+com.amazon.privacypass.internal.BinderResourceManager	method	public void put(RequestContext requestContext, IBinder binder)
+com.amazon.privacypass.internal.BinderResourceManager	method	public void release(RequestContext requestContext, IBinder binder)
+com.amazon.privacypass.internal.BinderResourceManager	method	public void restartChecker()
+com.amazon.privacypass.internal.RequestContext	field	private final Map<String, Object> metrics;
+com.amazon.privacypass.internal.RequestContext	field	private final String originUrl;
+com.amazon.privacypass.internal.RequestContext	field	private final String requestId;
+com.amazon.privacypass.internal.RequestContext	field	private final boolean isInternalClientInvocation;
+com.amazon.privacypass.internal.RequestContext	field	private long originRequestStartTime;
+com.amazon.privacypass.internal.RequestContext	field	private long ppsRequestStartTime;
+com.amazon.privacypass.internal.RequestContext	field	private static final int MAX_METRIC_VALUE_LENGTH;
+com.amazon.privacypass.internal.RequestContext	method	public Map<String, Object> getMetrics()
+com.amazon.privacypass.internal.RequestContext	method	public RequestContext(String requestId, String originUrl, boolean isInternalClientInvocation)
+com.amazon.privacypass.internal.RequestContext	method	public String getOriginUrl()
+com.amazon.privacypass.internal.RequestContext	method	public String getRequestId()
+com.amazon.privacypass.internal.RequestContext	method	public String toString()
+com.amazon.privacypass.internal.RequestContext	method	public boolean isInternalClientInvocation()
+com.amazon.privacypass.internal.RequestContext	method	public long getOriginRequestStartTime()
+com.amazon.privacypass.internal.RequestContext	method	public long getPpsRequestStartTime()
+com.amazon.privacypass.internal.RequestContext	method	public void addMetric(String metricName, Object metricValue)
+com.amazon.privacypass.internal.RequestContext	method	public void setOriginRequestStartTime(long originRequestStartTime)
+com.amazon.privacypass.internal.RequestContext	method	public void setPpsRequestStartTime(long ppsRequestStartTime)
+com.amazon.privacypass.logging.InternalLoggingUtil	method	public static void log(RequestContext requestContext)
+com.amazon.privacypass.logging.LoggingConstants	field	public static final String BINDER_DIED_ERROR_MSG;
+com.amazon.privacypass.logging.LoggingConstants	field	public static final String BINDER_DIED_SUCCESS;
+com.amazon.privacypass.logging.LoggingConstants	field	public static final String CALL_COUNT;
+com.amazon.privacypass.logging.LoggingConstants	field	public static final String CHALLENGE_MISSING;
+com.amazon.privacypass.logging.LoggingConstants	field	public static final String ERROR_MSG;
+com.amazon.privacypass.logging.LoggingConstants	field	public static final String FAILED_TOKEN_REQUEST;
+com.amazon.privacypass.logging.LoggingConstants	field	public static final String LATENCY;
+com.amazon.privacypass.logging.LoggingConstants	field	public static final String LINK_TO_DEATH_EXCEPTION;
+com.amazon.privacypass.logging.LoggingConstants	field	public static final String METRICS;
+com.amazon.privacypass.logging.LoggingConstants	field	public static final String METRIC_DELIMITER;
+com.amazon.privacypass.logging.LoggingConstants	field	public static final String ORIGIN_CHALLENGE_REQUEST;
+com.amazon.privacypass.logging.LoggingConstants	field	public static final String ORIGIN_CHALLENGE_RES;
+com.amazon.privacypass.logging.LoggingConstants	field	public static final String ORIGIN_REDEMPTION_REQUEST;
+com.amazon.privacypass.logging.LoggingConstants	field	public static final String PPS_CONNECTION_FAILED;
+com.amazon.privacypass.logging.LoggingConstants	field	public static final String PPS_REQUEST_ERROR;
+com.amazon.privacypass.logging.LoggingConstants	field	public static final String PPS_REQUEST_EXCEPTION;
+com.amazon.privacypass.logging.LoggingConstants	field	public static final String PPS_REQUEST_TIMEOUT;
+com.amazon.privacypass.logging.LoggingConstants	field	public static final String PPS_SERVICE;
+com.amazon.privacypass.logging.LoggingConstants	field	public static final String PPS_TOKEN;
+com.amazon.privacypass.logging.LoggingConstants	field	public static final String REQUEST_ID;
+com.amazon.privacypass.logging.LoggingConstants	field	public static final String SUCCESS;
+com.amazon.privacypass.logging.LoggingConstants	field	public static final String TIMESTAMP;
+com.amazon.privacypass.logging.LoggingConstants	field	public static final String VERBOSE_ERROR_MSG;
+com.amazon.privacypass.logging.LoggingConstants	field	public static final String WWW_AUTHENTICATE_HEADER_MISSING;
+com.amazon.privacypass.logging.TungstenCallback	field	private static final String TAG;
+com.amazon.privacypass.logging.TungstenCallback	method	public void onFailure(Exception e)
+com.amazon.privacypass.logging.TungstenCallback	method	public void onResponse(HttpResponse response)
+com.amazon.privacypass.logging.TungstenLoggingModule	field	private HttpClient client;
+com.amazon.privacypass.logging.TungstenLoggingModule	field	private static final String TAG;
+com.amazon.privacypass.logging.TungstenLoggingModule	field	private static volatile TungstenLoggingModule instance;
+com.amazon.privacypass.logging.TungstenLoggingModule	field	public static final String PPSDK_LOG_TENANT;
+com.amazon.privacypass.logging.TungstenLoggingModule	field	public static final String tungstenEndpoint;
+com.amazon.privacypass.logging.TungstenLoggingModule	field	static final int MAX_CONNECTIONS;
+com.amazon.privacypass.logging.TungstenLoggingModule	field	static final int TIMEOUT_MS;
+com.amazon.privacypass.logging.TungstenLoggingModule	method	private TungstenLoggingModule()
+com.amazon.privacypass.logging.TungstenLoggingModule	method	public static TungstenLoggingModule getInstance()
+com.amazon.privacypass.logging.TungstenLoggingModule	method	public void emitMetric(RequestContext requestContext)
+com.amazon.privacypass.origin.ChallengeResponseProcessor	field	private final BinderUtils binderUtils;
+com.amazon.privacypass.origin.ChallengeResponseProcessor	field	private final ITokenResponseProcessor tokenResponseProcessor;
+com.amazon.privacypass.origin.ChallengeResponseProcessor	field	private final String appId;
+com.amazon.privacypass.origin.ChallengeResponseProcessor	field	private static final String HTTP_HEADER_AUTHENTICATE;
+com.amazon.privacypass.origin.ChallengeResponseProcessor	field	private static final String PRIVACY_PASS_SERVICE_NAME;
+com.amazon.privacypass.origin.ChallengeResponseProcessor	field	private static final String TAG;
+com.amazon.privacypass.origin.ChallengeResponseProcessor	field	private static final int HTTP_SC_OK;
+com.amazon.privacypass.origin.ChallengeResponseProcessor	field	private static final int HTTP_SC_UNAUTHORIZED;
+com.amazon.privacypass.origin.ChallengeResponseProcessor	method	private void invokePrivacyPassService(RequestContext requestContext, ServiceCallback serviceCallback)
+com.amazon.privacypass.origin.ChallengeResponseProcessor	method	public ChallengeResponseProcessor(String appId, BinderUtils binderUtils, ITokenResponseProcessor tokenResponseProcessor)
+com.amazon.privacypass.origin.ChallengeResponseProcessor	method	public void processFailure(RequestContext requestContext, Exception e)
+com.amazon.privacypass.origin.ChallengeResponseProcessor	method	public void processSuccess(RequestContext requestContext, HttpResponse response)
+com.amazon.privacypass.origin.OriginCallback	field	private final IOriginResponseProcessor responseProcessor;
+com.amazon.privacypass.origin.OriginCallback	field	private final RequestContext requestContext;
+com.amazon.privacypass.origin.OriginCallback	field	private final String metricPrefix;
+com.amazon.privacypass.origin.OriginCallback	method	public OriginCallback(RequestContext requestContext, IOriginResponseProcessor responseProcessor, String metricPrefix)
+com.amazon.privacypass.origin.OriginCallback	method	public void onFailure(Exception e)
+com.amazon.privacypass.origin.OriginCallback	method	public void onResponse(HttpResponse response)
+com.amazon.privacypass.origin.OriginClient	field	private final HttpClient httpClient;
+com.amazon.privacypass.origin.OriginClient	field	static final int CALL_TIMEOUT_MS;
+com.amazon.privacypass.origin.OriginClient	field	static final int MAX_CONNECTIONS;
+com.amazon.privacypass.origin.OriginClient	method	public <T> void call(RequestContext requestContext, Map<String, String> headers, OriginCallback callback, String metricPrefix)
+com.amazon.privacypass.origin.RedemptionResponseProcessor	field	private static final String TAG;
+com.amazon.privacypass.origin.RedemptionResponseProcessor	method	public void processFailure(RequestContext requestContext, Exception e)
+com.amazon.privacypass.origin.RedemptionResponseProcessor	method	public void processSuccess(RequestContext requestContext, HttpResponse response)
+com.amazon.privacypass.pps.GetTokenCallback	field	private final IBinder ppsBinder;
+com.amazon.privacypass.pps.GetTokenCallback	field	private final ITokenResponseProcessor responseProcessor;
+com.amazon.privacypass.pps.GetTokenCallback	field	private final RequestContext requestContext;
+com.amazon.privacypass.pps.GetTokenCallback	field	private static final String TAG;
+com.amazon.privacypass.pps.GetTokenCallback	method	private void releaseBinder(RequestContext requestContext, IBinder binder)
+com.amazon.privacypass.pps.GetTokenCallback	method	public GetTokenCallback(IBinder ppsBinder, RequestContext requestContext, ITokenResponseProcessor responseProcessor)
+com.amazon.privacypass.pps.GetTokenCallback	method	public void onFail(String requestId, String errorMsg)
+com.amazon.privacypass.pps.GetTokenCallback	method	public void onSuccess(String requestId, String tokenString)
+com.amazon.privacypass.pps.PrivacyPassServiceCallback	field	private final ITokenResponseProcessor tokenResponseProcessor;
+com.amazon.privacypass.pps.PrivacyPassServiceCallback	field	private final RequestContext requestContext;
+com.amazon.privacypass.pps.PrivacyPassServiceCallback	field	private final String EMPTY_STRING;
+com.amazon.privacypass.pps.PrivacyPassServiceCallback	field	private final String appId;
+com.amazon.privacypass.pps.PrivacyPassServiceCallback	field	private final String challenge;
+com.amazon.privacypass.pps.PrivacyPassServiceCallback	field	private static final String TAG;
+com.amazon.privacypass.pps.PrivacyPassServiceCallback	method	private void releaseBinder(RequestContext requestContext, IBinder binder)
+com.amazon.privacypass.pps.PrivacyPassServiceCallback	method	public PrivacyPassServiceCallback(RequestContext requestContext, String appId, String challenge, ITokenResponseProcessor tokenResponseProcessor)
+com.amazon.privacypass.pps.PrivacyPassServiceCallback	method	public void onServiceConnected(String name, IBinder binder)
+com.amazon.privacypass.pps.PrivacyPassServiceCallback	method	public void onServiceFailed(String name, String errMessage)
+com.amazon.privacypass.pps.TokenResponseProcessor	field	private final OriginClient originClient;
+com.amazon.privacypass.pps.TokenResponseProcessor	field	private final RedemptionResponseProcessor redemptionResponseProcessor;
+com.amazon.privacypass.pps.TokenResponseProcessor	method	public TokenResponseProcessor(OriginClient originClient)
+com.amazon.privacypass.pps.TokenResponseProcessor	method	public void processSuccess(RequestContext requestContext, String token)
+com.amazon.privacypass.validation.VersionValidator	field	private static final Set<String> SUPPORTED_VERSIONS;
+com.amazon.privacypass.validation.VersionValidator	field	private static final String TAG;
+com.amazon.privacypass.validation.VersionValidator	method	public static void validateVersion(String version)

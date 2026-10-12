@@ -1,0 +1,67 @@
+class	kind	declaration
+com.amazon.device.details.DeviceDetails	field	private final DeviceDetailsDAO mDeviceDetailsDAO;
+com.amazon.device.details.DeviceDetails	field	private static volatile DeviceDetails sDeviceDetails;
+com.amazon.device.details.DeviceDetails	method	private DeviceDetails(DeviceDetailsDAO deviceDetailsDAO)
+com.amazon.device.details.DeviceDetails	method	private static void initializeReceivers(Context appContext)
+com.amazon.device.details.DeviceDetails	method	public Map<String, String> getProperties(String domain, List<String> propertyNames)
+com.amazon.device.details.DeviceDetails	method	public static DeviceDetails getInstance(Context context)
+com.amazon.device.details.DeviceDetails	method	public void invalidate()
+com.amazon.device.details.DeviceDetailsDAO	field	private final ContentResolver mContentResolver;
+com.amazon.device.details.DeviceDetailsDAO	field	private final SimpleCache mSimpleCache;
+com.amazon.device.details.DeviceDetailsDAO	field	private static final String TAG;
+com.amazon.device.details.DeviceDetailsDAO	method	private Map<String, String> getMapFromJsonString(String jsonString) throws JSONException
+com.amazon.device.details.DeviceDetailsDAO	method	private String queryString(Uri uri)
+com.amazon.device.details.DeviceDetailsDAO	method	private boolean moveToFirst(Cursor cursor)
+com.amazon.device.details.cache.SimpleCache	field	private final Map<String, Object> mCache;
+com.amazon.device.details.cache.SimpleCache	method	private SimpleCache(Map<String, Object> cacheMap)
+com.amazon.device.details.cache.SimpleCache	method	public String getString(String key)
+com.amazon.device.details.cache.SimpleCache	method	public static SimpleCache createCache()
+com.amazon.device.details.cache.SimpleCache	method	public void invalidate()
+com.amazon.device.details.cache.SimpleCache	method	public void put(String key, Object obj)
+com.amazon.device.details.cache.SimpleCache	method	public void putAll(Map<String, String> keyValues)
+com.amazon.device.details.lib.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.device.details.lib.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.device.details.lib.BuildConfig	field	public static final String FLAVOR;
+com.amazon.device.details.lib.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.device.details.lib.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.device.details.lib.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.device.details.listener.PropertyUpdateListener	field	private static final String TAG;
+com.amazon.device.details.listener.PropertyUpdateListener	method	public static void initializeReceiver(Context appContext)
+com.amazon.device.details.listener.PropertyUpdateListener	method	public void onReceive(final Context context, Intent intent)
+com.amazon.device.details.utils.Constants	field	public static final String PROPERTY_UPDATE_INTENT_ACTION;
+com.amazon.device.details.utils.Constants	field	public static final String PROPERTY_UPDATE_INTENT_PERMISSION;
+com.amazon.device.details.utils.Constants	field	public static final String TAG_PREFIX;
+com.amazon.device.details.utils.Constants	method	private Constants()
+com.amazon.device.details.utils.DeviceDetailsUriContract	field	private static final String AUTHORITY;
+com.amazon.device.details.utils.DeviceDetailsUriContract	field	private static final String DOMAIN;
+com.amazon.device.details.utils.DeviceDetailsUriContract	field	private static final String PROPERTIES;
+com.amazon.device.details.utils.DeviceDetailsUriContract	field	private static final String SCHEME_CONTENT;
+com.amazon.device.details.utils.DeviceDetailsUriContract	field	private static final Uri GET_PROPERTIES_PATH;
+com.amazon.device.details.utils.DeviceDetailsUriContract	method	private DeviceDetailsUriContract()
+com.amazon.device.details.utils.DeviceDetailsUriContract	method	private static String buildUriString(String key)
+com.amazon.device.details.utils.DeviceDetailsUriContract	method	public static Uri getPropertiesUri(String domain, String propertiesAsString)
+com.amazon.device.details.utils.SLog	field	private static int sLogLevel;
+com.amazon.device.details.utils.SLog	field	public static final int ASSERT;
+com.amazon.device.details.utils.SLog	field	public static final int DEBUG;
+com.amazon.device.details.utils.SLog	field	public static final int ERROR;
+com.amazon.device.details.utils.SLog	field	public static final int INFO;
+com.amazon.device.details.utils.SLog	field	public static final int NOLOGGING;
+com.amazon.device.details.utils.SLog	field	public static final int VERBOSE;
+com.amazon.device.details.utils.SLog	field	public static final int WARN;
+com.amazon.device.details.utils.SLog	method	private SLog()
+com.amazon.device.details.utils.SLog	method	private static boolean isLoggable(String tag, int logLevel)
+com.amazon.device.details.utils.SLog	method	public static String getStackTraceString(Exception e)
+com.amazon.device.details.utils.SLog	method	public static int getLogLevel()
+com.amazon.device.details.utils.SLog	method	public static void d(String tag, String message)
+com.amazon.device.details.utils.SLog	method	public static void d(String tag, String message, Throwable throwable)
+com.amazon.device.details.utils.SLog	method	public static void e(String tag, String message)
+com.amazon.device.details.utils.SLog	method	public static void e(String tag, String message, Throwable throwable)
+com.amazon.device.details.utils.SLog	method	public static void i(String tag, String message)
+com.amazon.device.details.utils.SLog	method	public static void i(String tag, String message, Throwable throwable)
+com.amazon.device.details.utils.SLog	method	public static void setLogLevel(int logLevel)
+com.amazon.device.details.utils.SLog	method	public static void v(String tag, String message)
+com.amazon.device.details.utils.SLog	method	public static void v(String tag, String message, Throwable throwable)
+com.amazon.device.details.utils.SLog	method	public static void w(String tag, String message)
+com.amazon.device.details.utils.SLog	method	public static void w(String tag, String message, Throwable throwable)
+com.amazon.device.details.utils.SLog	method	public static void wtf(String tag, String message)
+com.amazon.device.details.utils.SLog	method	public static void wtf(String tag, String message, Throwable throwable)

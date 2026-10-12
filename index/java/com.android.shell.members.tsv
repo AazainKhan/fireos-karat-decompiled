@@ -1,0 +1,389 @@
+class	kind	declaration
+com.android.shell.BugreportPrefs	method	static int getWarningState(Context context, int i)
+com.android.shell.BugreportPrefs	method	static void setWarningState(Context context, int i)
+com.android.shell.BugreportProgressService	field	private BugreportManager mBugreportManager;
+com.android.shell.BugreportProgressService	field	private Context mContext;
+com.android.shell.BugreportProgressService	field	private File mBugreportsDir;
+com.android.shell.BugreportProgressService	field	private Handler mMainThreadHandler;
+com.android.shell.BugreportProgressService	field	private Intent startSelfIntent;
+com.android.shell.BugreportProgressService	field	private ScreenshotHandler mScreenshotHandler;
+com.android.shell.BugreportProgressService	field	private ServiceHandler mServiceHandler;
+com.android.shell.BugreportProgressService	field	private boolean mIsTv;
+com.android.shell.BugreportProgressService	field	private boolean mIsWatch;
+com.android.shell.BugreportProgressService	field	private boolean mTakingScreenshot;
+com.android.shell.BugreportProgressService	field	private final BugreportInfoDialog mInfoDialog;
+com.android.shell.BugreportProgressService	field	private final Object mLock;
+com.android.shell.BugreportProgressService	field	private final SparseArray<BugreportInfo> mBugreportInfos;
+com.android.shell.BugreportProgressService	field	private int mForegroundId;
+com.android.shell.BugreportProgressService	field	private static final Bundle sNotificationBundle;
+com.android.shell.BugreportProgressService	field	private static final String SHORT_EXTRA_ORIGINAL_INTENT;
+com.android.shell.BugreportProgressService	method	private BugreportInfo getInfoLocked(int i)
+com.android.shell.BugreportProgressService	method	private String getBugreportBaseName(int i)
+com.android.shell.BugreportProgressService	method	private static Intent buildSendIntent(Context context, BugreportInfo bugreportInfo)
+com.android.shell.BugreportProgressService	method	private static Intent buildWarningIntent(Context context, Intent intent)
+com.android.shell.BugreportProgressService	method	private static Notification.Builder newBaseNotification(Context context)
+com.android.shell.BugreportProgressService	method	private static PendingIntent newCancelIntent(Context context, BugreportInfo bugreportInfo)
+com.android.shell.BugreportProgressService	method	private static String generateFileHash(String str)
+com.android.shell.BugreportProgressService	method	private static boolean isDefaultScreenshotRequired(int i, boolean z)
+com.android.shell.BugreportProgressService	method	private static boolean takeScreenshot(Context context, String str)
+com.android.shell.BugreportProgressService	method	private static void addEntry(ZipOutputStream zipOutputStream, String str, InputStream inputStream) throws IOException
+com.android.shell.BugreportProgressService	method	private static void addEntry(ZipOutputStream zipOutputStream, String str, String str2) throws IOException
+com.android.shell.BugreportProgressService	method	private static void addEntry(ZipOutputStream zipOutputStream, String str, long j, InputStream inputStream) throws IOException
+com.android.shell.BugreportProgressService	method	private static void addExtra(StringBuilder sb, Intent intent, String str)
+com.android.shell.BugreportProgressService	method	private void addDetailsToZipFile(BugreportInfo bugreportInfo)
+com.android.shell.BugreportProgressService	method	private void addDetailsToZipFileLocked(BugreportInfo bugreportInfo)
+com.android.shell.BugreportProgressService	method	private void collapseNotificationBar()
+com.android.shell.BugreportProgressService	method	private void sendBugreportBeingUpdatedNotification(Context context, int i)
+com.android.shell.BugreportProgressService	method	private void sendForegroundabledNotification(int i, Notification notification)
+com.android.shell.BugreportProgressService	method	private void sendZippedBugreportNotification(final BugreportInfo bugreportInfo, final boolean z)
+com.android.shell.BugreportProgressService	method	private void setTakingScreenshot(boolean z)
+com.android.shell.BugreportProgressService	method	private void stopForegroundWhenDoneLocked(int i)
+com.android.shell.BugreportProgressService	method	private void stopSelfWhenDoneLocked()
+com.android.shell.BugreportProgressService	method	private void triggerLocalNotification(Context context, BugreportInfo bugreportInfo)
+com.android.shell.BugreportProgressService	method	private void updateProgress(BugreportInfo bugreportInfo)
+com.android.shell.BugreportProgressService	method	protected void dump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr)
+com.android.shell.BugreportProgressService	method	public IBinder onBind(Intent intent)
+com.android.shell.BugreportProgressService	method	public int onStartCommand(Intent intent, int i, int i2)
+com.android.shell.BugreportProgressService	method	public static Looper newLooper(String str)
+com.android.shell.BugreportProgressService	method	public static ParcelFileDescriptor getFd(File file)
+com.android.shell.BugreportProgressService	method	public static String getFileName(BugreportInfo bugreportInfo, String str)
+com.android.shell.BugreportProgressService	method	public static String getScreenshotForIntent(BugreportInfo bugreportInfo)
+com.android.shell.BugreportProgressService	method	public static void createReadWriteFile(File file)
+com.android.shell.BugreportProgressService	method	public static void sendRemoteBugreportFinishedBroadcast(Context context, String str, File file)
+com.android.shell.BugreportProgressService	method	public static void zipBugreport(BugreportInfo bugreportInfo)
+com.android.shell.BugreportProgressService	method	public void cancel(int i)
+com.android.shell.BugreportProgressService	method	public void checkProgressUpdatedLocked(BugreportInfo bugreportInfo, int i)
+com.android.shell.BugreportProgressService	method	public void handleScreenshotRequest(Message message)
+com.android.shell.BugreportProgressService	method	public void handleScreenshotResponse(Message message)
+com.android.shell.BugreportProgressService	method	public void launchBugreportInfoDialog(int i)
+com.android.shell.BugreportProgressService	method	public void onBugreportFinished(BugreportInfo bugreportInfo)
+com.android.shell.BugreportProgressService	method	public void onCreate()
+com.android.shell.BugreportProgressService	method	public void onDestroy()
+com.android.shell.BugreportProgressService	method	public void sendBugreportNotification(BugreportInfo bugreportInfo, boolean z)
+com.android.shell.BugreportProgressService	method	public void shareBugreport(int i, BugreportInfo bugreportInfo)
+com.android.shell.BugreportProgressService	method	public void startBugreportAPI(Intent intent)
+com.android.shell.BugreportProgressService	method	public void stopProgressLocked(int i)
+com.android.shell.BugreportProgressService	method	public void takeScreenshot(int i)
+com.android.shell.BugreportProgressService	method	public void takeScreenshot(int i, int i2)
+com.android.shell.BugreportProgressService	method	public void updateBugreportInfo(int i, String str, String str2, String str3)
+com.android.shell.BugreportProgressService	method	static Pair<UserHandle, Account> findSendToAccount(Context context, String str)
+com.android.shell.BugreportProgressService	method	static String dumpIntent(Intent intent)
+com.android.shell.BugreportProgressService	method	static Uri getUri(Context context, File file)
+com.android.shell.BugreportProgressService	method	static boolean isTv(Context context)
+com.android.shell.BugreportProgressService	method	static boolean isValid(char c)
+com.android.shell.BugreportProgressService	method	static void cleanupOldFiles(final int i, final long j, final File file)
+com.android.shell.BugreportProgressService	method	static void sendShareIntent(Context context, Intent intent)
+com.android.shell.BugreportProgressService$BugreportCallbackImpl	field	private final BugreportInfo mInfo;
+com.android.shell.BugreportProgressService$BugreportCallbackImpl	method	private void sendBugreportFinishedBroadcastLocked()
+com.android.shell.BugreportProgressService$BugreportCallbackImpl	method	public void onError(int i)
+com.android.shell.BugreportProgressService$BugreportCallbackImpl	method	public void onFinished()
+com.android.shell.BugreportProgressService$BugreportCallbackImpl	method	public void onProgress(float f)
+com.android.shell.BugreportProgressService$BugreportCallbackImpl	method	public void trackInfoWithIdLocked()
+com.android.shell.BugreportProgressService$BugreportInfo	field	final AtomicBoolean finished;
+com.android.shell.BugreportProgressService$BugreportInfo	field	final AtomicInteger lastProgress;
+com.android.shell.BugreportProgressService$BugreportInfo	field	final AtomicInteger progress;
+com.android.shell.BugreportProgressService$BugreportInfo	field	final AtomicLong lastUpdate;
+com.android.shell.BugreportProgressService$BugreportInfo	field	final int type;
+com.android.shell.BugreportProgressService$BugreportInfo	field	private String description;
+com.android.shell.BugreportProgressService$BugreportInfo	field	private String name;
+com.android.shell.BugreportProgressService$BugreportInfo	field	private String title;
+com.android.shell.BugreportProgressService$BugreportInfo	field	private final Context context;
+com.android.shell.BugreportProgressService$BugreportInfo	field	private final Object mLock;
+com.android.shell.BugreportProgressService$BugreportInfo	field	private final String baseName;
+com.android.shell.BugreportProgressService$BugreportInfo	field	private final String initialName;
+com.android.shell.BugreportProgressService$BugreportInfo	field	private final String shareDescription;
+com.android.shell.BugreportProgressService$BugreportInfo	field	private final String shareTitle;
+com.android.shell.BugreportProgressService$BugreportInfo	method	private File readFile(Parcel parcel)
+com.android.shell.BugreportProgressService$BugreportInfo	method	private void writeFile(Parcel parcel, File file)
+com.android.shell.BugreportProgressService$BugreportInfo	method	protected BugreportInfo(Parcel parcel)
+com.android.shell.BugreportProgressService$BugreportInfo	method	public String toString()
+com.android.shell.BugreportProgressService$BugreportInfo	method	public int describeContents()
+com.android.shell.BugreportProgressService$BugreportInfo	method	public void deleteBugreportFile()
+com.android.shell.BugreportProgressService$BugreportInfo	method	public void deleteEmptyFiles()
+com.android.shell.BugreportProgressService$BugreportInfo	method	public void deleteScreenshots()
+com.android.shell.BugreportProgressService$BugreportInfo	method	public void writeToParcel(Parcel parcel, int i)
+com.android.shell.BugreportProgressService$BugreportInfoDialog	field	private AlertDialog mDialog;
+com.android.shell.BugreportProgressService$BugreportInfoDialog	field	private Button mOkButton;
+com.android.shell.BugreportProgressService$BugreportInfoDialog	field	private EditText mInfoDescription;
+com.android.shell.BugreportProgressService$BugreportInfoDialog	field	private EditText mInfoName;
+com.android.shell.BugreportProgressService$BugreportInfoDialog	field	private EditText mInfoTitle;
+com.android.shell.BugreportProgressService$BugreportInfoDialog	field	private int mId;
+com.android.shell.BugreportProgressService$BugreportInfoDialog	method	private BugreportInfoDialog()
+com.android.shell.BugreportProgressService$BugreportInfoDialog	method	public void sanitizeName(String str)
+com.android.shell.BugreportProgressService$ScreenshotHandler	method	public ScreenshotHandler(String str)
+com.android.shell.BugreportProgressService$ScreenshotHandler	method	public void handleMessage(Message message)
+com.android.shell.BugreportProgressService$ServiceHandler	method	public ServiceHandler(String str)
+com.android.shell.BugreportProgressService$ServiceHandler	method	public void handleMessage(Message message)
+com.android.shell.BugreportRequestedReceiver	method	public void onReceive(Context context, Intent intent)
+com.android.shell.BugreportStorageProvider	field	private File mRoot;
+com.android.shell.BugreportStorageProvider	field	private static final String[] DEFAULT_DOCUMENT_PROJECTION;
+com.android.shell.BugreportStorageProvider	field	private static final String[] DEFAULT_ROOT_PROJECTION;
+com.android.shell.BugreportStorageProvider	method	private static String[] resolveDocumentProjection(String[] strArr)
+com.android.shell.BugreportStorageProvider	method	private static String[] resolveRootProjection(String[] strArr)
+com.android.shell.BugreportStorageProvider	method	private void includeDefaultDocument(MatrixCursor matrixCursor)
+com.android.shell.BugreportStorageProvider	method	protected File getFileForDocId(String str, boolean z) throws FileNotFoundException
+com.android.shell.BugreportStorageProvider	method	protected MatrixCursor.RowBuilder includeFile(MatrixCursor matrixCursor, String str, File file) throws FileNotFoundException
+com.android.shell.BugreportStorageProvider	method	protected String getDocIdForFile(File file)
+com.android.shell.BugreportStorageProvider	method	protected Uri buildNotificationUri(String str)
+com.android.shell.BugreportStorageProvider	method	public Cursor queryChildDocuments(String str, String[] strArr, String str2) throws FileNotFoundException
+com.android.shell.BugreportStorageProvider	method	public Cursor queryDocument(String str, String[] strArr) throws FileNotFoundException
+com.android.shell.BugreportStorageProvider	method	public Cursor queryRoots(String[] strArr) throws FileNotFoundException
+com.android.shell.BugreportStorageProvider	method	public ParcelFileDescriptor openDocument(String str, String str2, CancellationSignal cancellationSignal) throws FileNotFoundException
+com.android.shell.BugreportStorageProvider	method	public boolean onCreate()
+com.android.shell.BugreportWarningActivity	field	private CheckBox mConfirmRepeat;
+com.android.shell.BugreportWarningActivity	field	private Intent mSendIntent;
+com.android.shell.BugreportWarningActivity	method	public void onClick(DialogInterface dialogInterface, int i)
+com.android.shell.BugreportWarningActivity	method	public void onCreate(Bundle bundle)
+com.android.shell.HeapDumpActivity	field	private AlertDialog mDialog;
+com.android.shell.HeapDumpActivity	field	private Uri mDumpUri;
+com.android.shell.HeapDumpActivity	field	private boolean mHandled;
+com.android.shell.HeapDumpActivity	method	protected void onCreate(Bundle bundle)
+com.android.shell.HeapDumpActivity	method	protected void onDestroy()
+com.android.shell.HeapDumpActivity	method	protected void onStop()
+com.android.shell.HeapDumpProvider	field	private File mRoot;
+com.android.shell.HeapDumpProvider	field	private static final Object sLock;
+com.android.shell.HeapDumpProvider	method	private String sanitizePath(String str)
+com.android.shell.HeapDumpProvider	method	public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2)
+com.android.shell.HeapDumpProvider	method	public ParcelFileDescriptor openFile(Uri uri, String str) throws FileNotFoundException
+com.android.shell.HeapDumpProvider	method	public String getType(Uri uri)
+com.android.shell.HeapDumpProvider	method	public Uri insert(Uri uri, ContentValues contentValues)
+com.android.shell.HeapDumpProvider	method	public boolean onCreate()
+com.android.shell.HeapDumpProvider	method	public int delete(Uri uri, String str, String[] strArr)
+com.android.shell.HeapDumpProvider	method	public int update(Uri uri, ContentValues contentValues, String str, String[] strArr)
+com.android.shell.HeapDumpProvider	method	static Uri makeUri(String str)
+com.android.shell.HeapDumpReceiver	method	private void cleanupOldFiles(final Context context)
+com.android.shell.HeapDumpReceiver	method	private void deleteHeapDump(final Context context, final String str)
+com.android.shell.HeapDumpReceiver	method	private void showDumpNotification(Context context, Intent intent)
+com.android.shell.HeapDumpReceiver	method	public void onReceive(Context context, Intent intent)
+com.android.shell.R$anim	field	public static final int fragment_close_enter;
+com.android.shell.R$anim	field	public static final int fragment_close_exit;
+com.android.shell.R$anim	field	public static final int fragment_fade_enter;
+com.android.shell.R$anim	field	public static final int fragment_fade_exit;
+com.android.shell.R$anim	field	public static final int fragment_fast_out_extra_slow_in;
+com.android.shell.R$anim	field	public static final int fragment_open_enter;
+com.android.shell.R$anim	field	public static final int fragment_open_exit;
+com.android.shell.R$attr	field	public static final int alpha;
+com.android.shell.R$attr	field	public static final int coordinatorLayoutStyle;
+com.android.shell.R$attr	field	public static final int drawerLayoutStyle;
+com.android.shell.R$attr	field	public static final int elevation;
+com.android.shell.R$attr	field	public static final int font;
+com.android.shell.R$attr	field	public static final int fontProviderAuthority;
+com.android.shell.R$attr	field	public static final int fontProviderCerts;
+com.android.shell.R$attr	field	public static final int fontProviderFetchStrategy;
+com.android.shell.R$attr	field	public static final int fontProviderFetchTimeout;
+com.android.shell.R$attr	field	public static final int fontProviderPackage;
+com.android.shell.R$attr	field	public static final int fontProviderQuery;
+com.android.shell.R$attr	field	public static final int fontStyle;
+com.android.shell.R$attr	field	public static final int fontVariationSettings;
+com.android.shell.R$attr	field	public static final int fontWeight;
+com.android.shell.R$attr	field	public static final int keylines;
+com.android.shell.R$attr	field	public static final int layout_anchor;
+com.android.shell.R$attr	field	public static final int layout_anchorGravity;
+com.android.shell.R$attr	field	public static final int layout_behavior;
+com.android.shell.R$attr	field	public static final int layout_dodgeInsetEdges;
+com.android.shell.R$attr	field	public static final int layout_insetEdge;
+com.android.shell.R$attr	field	public static final int layout_keyline;
+com.android.shell.R$attr	field	public static final int statusBarBackground;
+com.android.shell.R$attr	field	public static final int swipeRefreshLayoutProgressSpinnerBackgroundColor;
+com.android.shell.R$attr	field	public static final int ttcIndex;
+com.android.shell.R$color	field	public static final int androidx_core_ripple_material_light;
+com.android.shell.R$color	field	public static final int androidx_core_secondary_text_default_material_light;
+com.android.shell.R$color	field	public static final int notification_action_color_filter;
+com.android.shell.R$color	field	public static final int notification_icon_bg_color;
+com.android.shell.R$color	field	public static final int notification_material_background_media_default_color;
+com.android.shell.R$color	field	public static final int primary_text_default_material_dark;
+com.android.shell.R$color	field	public static final int secondary_text_default_material_dark;
+com.android.shell.R$dimen	field	public static final int compat_button_inset_horizontal_material;
+com.android.shell.R$dimen	field	public static final int compat_button_inset_vertical_material;
+com.android.shell.R$dimen	field	public static final int compat_button_padding_horizontal_material;
+com.android.shell.R$dimen	field	public static final int compat_button_padding_vertical_material;
+com.android.shell.R$dimen	field	public static final int compat_control_corner_material;
+com.android.shell.R$dimen	field	public static final int compat_notification_large_icon_max_height;
+com.android.shell.R$dimen	field	public static final int compat_notification_large_icon_max_width;
+com.android.shell.R$dimen	field	public static final int def_drawer_elevation;
+com.android.shell.R$dimen	field	public static final int notification_action_icon_size;
+com.android.shell.R$dimen	field	public static final int notification_action_text_size;
+com.android.shell.R$dimen	field	public static final int notification_big_circle_margin;
+com.android.shell.R$dimen	field	public static final int notification_content_margin_start;
+com.android.shell.R$dimen	field	public static final int notification_large_icon_height;
+com.android.shell.R$dimen	field	public static final int notification_large_icon_width;
+com.android.shell.R$dimen	field	public static final int notification_main_column_padding_top;
+com.android.shell.R$dimen	field	public static final int notification_media_narrow_margin;
+com.android.shell.R$dimen	field	public static final int notification_right_icon_size;
+com.android.shell.R$dimen	field	public static final int notification_right_side_padding_top;
+com.android.shell.R$dimen	field	public static final int notification_small_icon_background_padding;
+com.android.shell.R$dimen	field	public static final int notification_small_icon_size_as_large;
+com.android.shell.R$dimen	field	public static final int notification_subtext_size;
+com.android.shell.R$dimen	field	public static final int notification_top_pad;
+com.android.shell.R$dimen	field	public static final int notification_top_pad_large_text;
+com.android.shell.R$drawable	field	public static final int ic_bug_report_black_24dp;
+com.android.shell.R$drawable	field	public static final int notification_action_background;
+com.android.shell.R$drawable	field	public static final int notification_bg;
+com.android.shell.R$drawable	field	public static final int notification_bg_low;
+com.android.shell.R$drawable	field	public static final int notification_bg_low_normal;
+com.android.shell.R$drawable	field	public static final int notification_bg_low_pressed;
+com.android.shell.R$drawable	field	public static final int notification_bg_normal;
+com.android.shell.R$drawable	field	public static final int notification_bg_normal_pressed;
+com.android.shell.R$drawable	field	public static final int notification_icon_background;
+com.android.shell.R$drawable	field	public static final int notification_template_icon_bg;
+com.android.shell.R$drawable	field	public static final int notification_template_icon_low_bg;
+com.android.shell.R$drawable	field	public static final int notification_tile_bg;
+com.android.shell.R$drawable	field	public static final int notify_panel_notification_icon_bg;
+com.android.shell.R$id	field	public static final int accessibility_action_clickable_span;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_0;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_10;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_11;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_12;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_13;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_14;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_15;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_16;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_17;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_18;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_19;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_1;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_20;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_21;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_22;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_23;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_24;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_25;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_26;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_27;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_28;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_29;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_2;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_30;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_31;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_3;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_4;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_5;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_6;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_7;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_8;
+com.android.shell.R$id	field	public static final int accessibility_custom_action_9;
+com.android.shell.R$id	field	public static final int action0;
+com.android.shell.R$id	field	public static final int action_container;
+com.android.shell.R$id	field	public static final int action_divider;
+com.android.shell.R$id	field	public static final int action_image;
+com.android.shell.R$id	field	public static final int action_text;
+com.android.shell.R$id	field	public static final int actions;
+com.android.shell.R$id	field	public static final int all;
+com.android.shell.R$id	field	public static final int async;
+com.android.shell.R$id	field	public static final int blocking;
+com.android.shell.R$id	field	public static final int bottom;
+com.android.shell.R$id	field	public static final int cancel_action;
+com.android.shell.R$id	field	public static final int center;
+com.android.shell.R$id	field	public static final int center_horizontal;
+com.android.shell.R$id	field	public static final int center_vertical;
+com.android.shell.R$id	field	public static final int chronometer;
+com.android.shell.R$id	field	public static final int clip_horizontal;
+com.android.shell.R$id	field	public static final int clip_vertical;
+com.android.shell.R$id	field	public static final int description;
+com.android.shell.R$id	field	public static final int dialog_button;
+com.android.shell.R$id	field	public static final int end;
+com.android.shell.R$id	field	public static final int end_padder;
+com.android.shell.R$id	field	public static final int fill;
+com.android.shell.R$id	field	public static final int fill_horizontal;
+com.android.shell.R$id	field	public static final int fill_vertical;
+com.android.shell.R$id	field	public static final int forever;
+com.android.shell.R$id	field	public static final int fragment_container_view_tag;
+com.android.shell.R$id	field	public static final int icon;
+com.android.shell.R$id	field	public static final int icon_group;
+com.android.shell.R$id	field	public static final int info;
+com.android.shell.R$id	field	public static final int italic;
+com.android.shell.R$id	field	public static final int left;
+com.android.shell.R$id	field	public static final int line1;
+com.android.shell.R$id	field	public static final int line3;
+com.android.shell.R$id	field	public static final int media_actions;
+com.android.shell.R$id	field	public static final int media_controller_compat_view_tag;
+com.android.shell.R$id	field	public static final int name;
+com.android.shell.R$id	field	public static final int none;
+com.android.shell.R$id	field	public static final int normal;
+com.android.shell.R$id	field	public static final int notification_background;
+com.android.shell.R$id	field	public static final int notification_main_column;
+com.android.shell.R$id	field	public static final int notification_main_column_container;
+com.android.shell.R$id	field	public static final int right;
+com.android.shell.R$id	field	public static final int right_icon;
+com.android.shell.R$id	field	public static final int right_side;
+com.android.shell.R$id	field	public static final int special_effects_controller_view_tag;
+com.android.shell.R$id	field	public static final int start;
+com.android.shell.R$id	field	public static final int status_bar_latest_event_content;
+com.android.shell.R$id	field	public static final int tag_accessibility_actions;
+com.android.shell.R$id	field	public static final int tag_accessibility_clickable_spans;
+com.android.shell.R$id	field	public static final int tag_accessibility_heading;
+com.android.shell.R$id	field	public static final int tag_accessibility_pane_title;
+com.android.shell.R$id	field	public static final int tag_screen_reader_focusable;
+com.android.shell.R$id	field	public static final int tag_state_description;
+com.android.shell.R$id	field	public static final int tag_transition_group;
+com.android.shell.R$id	field	public static final int tag_unhandled_key_event_manager;
+com.android.shell.R$id	field	public static final int tag_unhandled_key_listeners;
+com.android.shell.R$id	field	public static final int text2;
+com.android.shell.R$id	field	public static final int text;
+com.android.shell.R$id	field	public static final int time;
+com.android.shell.R$id	field	public static final int title;
+com.android.shell.R$id	field	public static final int top;
+com.android.shell.R$id	field	public static final int view_tree_lifecycle_owner;
+com.android.shell.R$id	field	public static final int view_tree_saved_state_registry_owner;
+com.android.shell.R$id	field	public static final int view_tree_view_model_store_owner;
+com.android.shell.R$id	field	public static final int visible_removing_fragment_view_tag;
+com.android.shell.R$integer	field	public static final int cancel_button_image_alpha;
+com.android.shell.R$integer	field	public static final int status_bar_notification_info_maxnum;
+com.android.shell.R$layout	field	public static final int confirm_repeat;
+com.android.shell.R$layout	field	public static final int custom_dialog;
+com.android.shell.R$layout	field	public static final int dialog_bugreport_info;
+com.android.shell.R$layout	field	public static final int notification_action;
+com.android.shell.R$layout	field	public static final int notification_action_tombstone;
+com.android.shell.R$layout	field	public static final int notification_media_action;
+com.android.shell.R$layout	field	public static final int notification_media_cancel_action;
+com.android.shell.R$layout	field	public static final int notification_template_big_media;
+com.android.shell.R$layout	field	public static final int notification_template_big_media_custom;
+com.android.shell.R$layout	field	public static final int notification_template_big_media_narrow;
+com.android.shell.R$layout	field	public static final int notification_template_big_media_narrow_custom;
+com.android.shell.R$layout	field	public static final int notification_template_custom_big;
+com.android.shell.R$layout	field	public static final int notification_template_icon_group;
+com.android.shell.R$layout	field	public static final int notification_template_lines_media;
+com.android.shell.R$layout	field	public static final int notification_template_media;
+com.android.shell.R$layout	field	public static final int notification_template_media_custom;
+com.android.shell.R$layout	field	public static final int notification_template_part_chronometer;
+com.android.shell.R$layout	field	public static final int notification_template_part_time;
+com.android.shell.R$string	field	public static final int app_label;
+com.android.shell.R$string	field	public static final int bugreport_add_details_to_zip_failed;
+com.android.shell.R$string	field	public static final int bugreport_confirm;
+com.android.shell.R$string	field	public static final int bugreport_confirm_dont_repeat;
+com.android.shell.R$string	field	public static final int bugreport_finished_pending_screenshot_text;
+com.android.shell.R$string	field	public static final int bugreport_finished_text;
+com.android.shell.R$string	field	public static final int bugreport_finished_title;
+com.android.shell.R$string	field	public static final int bugreport_in_progress_title;
+com.android.shell.R$string	field	public static final int bugreport_info_action;
+com.android.shell.R$string	field	public static final int bugreport_info_description;
+com.android.shell.R$string	field	public static final int bugreport_info_dialog_title;
+com.android.shell.R$string	field	public static final int bugreport_info_name;
+com.android.shell.R$string	field	public static final int bugreport_info_title;
+com.android.shell.R$string	field	public static final int bugreport_intent_chooser_title;
+com.android.shell.R$string	field	public static final int bugreport_notification_channel;
+com.android.shell.R$string	field	public static final int bugreport_screenshot_action;
+com.android.shell.R$string	field	public static final int bugreport_screenshot_failed;
+com.android.shell.R$string	field	public static final int bugreport_screenshot_taken;
+com.android.shell.R$string	field	public static final int bugreport_storage_title;
+com.android.shell.R$string	field	public static final int bugreport_unnamed;
+com.android.shell.R$string	field	public static final int bugreport_unreadable_text;
+com.android.shell.R$string	field	public static final int bugreport_updating_title;
+com.android.shell.R$string	field	public static final int bugreport_updating_wait;
+com.android.shell.R$string	field	public static final int save;
+com.android.shell.R$string	field	public static final int status_bar_notification_info_overflow;
+com.android.shell.R$style	field	public static final int TextAppearance_Compat_Notification;
+com.android.shell.R$style	field	public static final int TextAppearance_Compat_Notification_Info;
+com.android.shell.R$style	field	public static final int TextAppearance_Compat_Notification_Info_Media;
+com.android.shell.R$style	field	public static final int TextAppearance_Compat_Notification_Line2;
+com.android.shell.R$style	field	public static final int TextAppearance_Compat_Notification_Line2_Media;
+com.android.shell.R$style	field	public static final int TextAppearance_Compat_Notification_Media;
+com.android.shell.R$style	field	public static final int TextAppearance_Compat_Notification_Time;
+com.android.shell.R$style	field	public static final int TextAppearance_Compat_Notification_Time_Media;
+com.android.shell.R$style	field	public static final int TextAppearance_Compat_Notification_Title;
+com.android.shell.R$style	field	public static final int TextAppearance_Compat_Notification_Title_Media;
+com.android.shell.R$style	field	public static final int Widget_Compat_NotificationActionContainer;
+com.android.shell.R$style	field	public static final int Widget_Compat_NotificationActionText;
+com.android.shell.R$style	field	public static final int Widget_Support_CoordinatorLayout;
+com.android.shell.R$xml	field	public static final int file_provider_paths;
+com.android.shell.Screenshooter	method	static Bitmap takeScreenshot()

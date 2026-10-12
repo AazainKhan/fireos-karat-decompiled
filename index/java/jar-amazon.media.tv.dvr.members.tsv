@@ -1,0 +1,738 @@
+class	kind	declaration
+amazon.media.tv.AmazonTvContract	field	public static final String AUTHORITY;
+amazon.media.tv.AmazonTvContract	field	public static final String PARAM_INPUT;
+amazon.media.tv.AmazonTvContract	field	public static final String PATH_RECORDED_PROGRAM;
+amazon.media.tv.AmazonTvContract	field	public static final String PATH_RECORDING_RULE;
+amazon.media.tv.AmazonTvContract	field	public static final String PATH_SCHEDULED_RECORDING;
+amazon.media.tv.AmazonTvContract	method	private AmazonTvContract()
+amazon.media.tv.AmazonTvContract	method	private static boolean isFireTvUri(Uri uri)
+amazon.media.tv.AmazonTvContract	method	private static boolean isTwoSegmentUriStartingWith(Uri uri, String pathSegment)
+amazon.media.tv.AmazonTvContract	method	public static Uri buildFireTvRecordedProgramUri(long recordedProgramId)
+amazon.media.tv.AmazonTvContract	method	public static Uri buildFireTvRecordedProgramUriForInput(String inputId)
+amazon.media.tv.AmazonTvContract	method	public static Uri buildRecordedProgramUriForInput(String inputId)
+amazon.media.tv.AmazonTvContract	method	public static Uri buildRecordingRuleUri(long recordingRuleId)
+amazon.media.tv.AmazonTvContract	method	public static Uri buildRecordingRulesUriForInput(String inputId)
+amazon.media.tv.AmazonTvContract	method	public static Uri buildScheduledRecordingUri(long scheduledRecordingId)
+amazon.media.tv.AmazonTvContract	method	public static Uri buildScheduledRecordingsUriForInput(String inputId)
+amazon.media.tv.AmazonTvContract	method	public static boolean isFireTvRecordedProgramUri(Uri recordedProgramUri)
+amazon.media.tv.AmazonTvContract	method	public static boolean isRecordingRuleUri(Uri recordingRuleUri)
+amazon.media.tv.AmazonTvContract	method	public static boolean isScheduledRecordingUri(Uri scheduledRecordingUri)
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String COLUMN_AUTOMATIC_DELETE;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String COLUMN_AUTOMATIC_DELETE_AFTER_UTC_MILLIS;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String COLUMN_BROWSABLE;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String COLUMN_CLOSED_CAPTIONING;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String COLUMN_END_PADDING_TIME_MILLIS;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String COLUMN_EPG_END_TIME_UTC_MILLIS;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String COLUMN_EPG_START_TIME_UTC_MILLIS;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String COLUMN_EXTERNAL_DISK_AVAILABLE;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String COLUMN_EXTERNAL_DISK_UUID;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String COLUMN_INPUT_ID;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String COLUMN_INTERNAL_PROVIDER_CHANNEL_ID;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String COLUMN_INTERNAL_PROVIDER_ID;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String COLUMN_PLAYBACK_DEEP_LINK_URI;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String COLUMN_POOR_QUALITY;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String COLUMN_PROGRAM_ID;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String COLUMN_RECORDING_END_TIME_UTC_MILLIS;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String COLUMN_RECORDING_RULE_ID;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String COLUMN_RECORDING_START_TIME_UTC_MILLIS;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String COLUMN_RECORDING_STATUS;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String COLUMN_RELEASE_YEAR;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String COLUMN_SHOW_ID;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String COLUMN_SOFT_REMOVED;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String COLUMN_START_PADDING_TIME_MILLIS;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String COLUMN_VERSION;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String COLUMN_VIDEO_QUALITY;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String COLUMN_WATCH_PROGRESS_MILLIS;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String CONTENT_ITEM_TYPE;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String CONTENT_TYPE;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String HD_RECORDING;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String RECORDING_STATUS_COMPLETED;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String RECORDING_STATUS_STARTED;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String RECORDING_STATUS_STOPPED;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final String SD_RECORDING;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	field	public static final Uri CONTENT_URI;
+amazon.media.tv.AmazonTvContract$RecordedPrograms	method	private RecordedPrograms()
+amazon.media.tv.AmazonTvContract$RecordingRule	field	public static final String COLUMN_AUTOMATIC_DELETION_STRATEGY;
+amazon.media.tv.AmazonTvContract$RecordingRule	field	public static final String COLUMN_AUTOMATIC_DELETION_STRATEGY_LIMIT;
+amazon.media.tv.AmazonTvContract$RecordingRule	field	public static final String COLUMN_END_PADDING_TIME_MILLIS;
+amazon.media.tv.AmazonTvContract$RecordingRule	field	public static final String COLUMN_FILTERS;
+amazon.media.tv.AmazonTvContract$RecordingRule	field	public static final String COLUMN_FILTER_CHANNEL_ID;
+amazon.media.tv.AmazonTvContract$RecordingRule	field	public static final String COLUMN_FILTER_END_TIME_UTC_MILLIS;
+amazon.media.tv.AmazonTvContract$RecordingRule	field	public static final String COLUMN_FILTER_INTERNAL_PROVIDER_CHANNEL_ID;
+amazon.media.tv.AmazonTvContract$RecordingRule	field	public static final String COLUMN_FILTER_NEW_EPISODES_ONLY;
+amazon.media.tv.AmazonTvContract$RecordingRule	field	public static final String COLUMN_FILTER_PROGRAM_GENRE;
+amazon.media.tv.AmazonTvContract$RecordingRule	field	public static final String COLUMN_FILTER_PROGRAM_ID;
+amazon.media.tv.AmazonTvContract$RecordingRule	field	public static final String COLUMN_FILTER_PROGRAM_TITLE;
+amazon.media.tv.AmazonTvContract$RecordingRule	field	public static final String COLUMN_FILTER_PROGRAM_TYPE;
+amazon.media.tv.AmazonTvContract$RecordingRule	field	public static final String COLUMN_FILTER_SEASON_ID;
+amazon.media.tv.AmazonTvContract$RecordingRule	field	public static final String COLUMN_FILTER_SHOW_ID;
+amazon.media.tv.AmazonTvContract$RecordingRule	field	public static final String COLUMN_FILTER_START_TIME_UTC_MILLIS;
+amazon.media.tv.AmazonTvContract$RecordingRule	field	public static final String COLUMN_FILTER_VIDEO_QUALITY;
+amazon.media.tv.AmazonTvContract$RecordingRule	field	public static final String COLUMN_INPUT_ID;
+amazon.media.tv.AmazonTvContract$RecordingRule	field	public static final String COLUMN_RECORDING_OPTIONS;
+amazon.media.tv.AmazonTvContract$RecordingRule	field	public static final String COLUMN_RECORDING_RULE_ID;
+amazon.media.tv.AmazonTvContract$RecordingRule	field	public static final String COLUMN_RECORDING_RULE_PRIORITY;
+amazon.media.tv.AmazonTvContract$RecordingRule	field	public static final String COLUMN_START_PADDING_TIME_MILLIS;
+amazon.media.tv.AmazonTvContract$RecordingRule	field	public static final String COLUMN_TITLE;
+amazon.media.tv.AmazonTvContract$RecordingRule	field	public static final String COLUMN_VERSION;
+amazon.media.tv.AmazonTvContract$RecordingRule	field	public static final String CONTENT_ITEM_TYPE;
+amazon.media.tv.AmazonTvContract$RecordingRule	field	public static final String CONTENT_TYPE;
+amazon.media.tv.AmazonTvContract$RecordingRule	field	public static final Uri CONTENT_URI;
+amazon.media.tv.AmazonTvContract$RecordingRule	method	private RecordingRule()
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_AUTOMATIC_DELETE;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_AUTOMATIC_DELETE_AFTER_UTC_MILLIS;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_CHANNEL_ID;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_CLOSED_CAPTIONING;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_END_PADDING_TIME_MILLIS;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_END_TIME_UTC_MILLIS;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_EPISODE_DISPLAY_NUMBER;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_EPISODE_NUMBER;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_EPISODE_TITLE;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_INPUT_ID;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_INTERNAL_PROIVDER_FLAG3;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_INTERNAL_PROVIDER_DATA;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_INTERNAL_PROVIDER_FLAG1;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_INTERNAL_PROVIDER_FLAG2;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_INTERNAL_PROVIDER_FLAG3;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_INTERNAL_PROVIDER_FLAG4;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_LONG_DESCRIPTION;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_PROGRAM_ID;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_RECORDING_OPTIONS;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_RECORDING_RULE_ID;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_RECORDING_STATUS;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_RELEASE_YEAR;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_SCHEDULED_RECORDING_ID;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_SEASON_DISPLAY_NUMBER;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_SEASON_NUMBER;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_SEASON_TITLE;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_SHORT_DESCRIPTION;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_SHOW_ID;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_START_PADDING_TIME_MILLIS;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_START_TIME_UTC_MILLIS;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_TITLE;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String COLUMN_VERSION;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String CONTENT_ITEM_TYPE;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String CONTENT_TYPE;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String RECORDING_STATUS_CANCELED;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String RECORDING_STATUS_FAILED;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String RECORDING_STATUS_FINISHED;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String RECORDING_STATUS_NOT_STARTED;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String RECORDING_STATUS_STARTED;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final String RECORDING_STATUS_STOPPED;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	field	public static final Uri CONTENT_URI;
+amazon.media.tv.AmazonTvContract$ScheduledRecording	method	private ScheduledRecording()
+amazon.media.tv.AmazonTvInputInfo	field	private final ComponentName mRecordingServiceInfo;
+amazon.media.tv.AmazonTvInputInfo	field	private final TvInputInfo mTvInputInfo;
+amazon.media.tv.AmazonTvInputInfo	field	private final boolean mCanManageRecordingRules;
+amazon.media.tv.AmazonTvInputInfo	method	public ComponentName getRecordingServiceInfo()
+amazon.media.tv.AmazonTvInputInfo	method	public String toString()
+amazon.media.tv.AmazonTvInputInfo	method	public TvInputInfo getTvInputInfo()
+amazon.media.tv.AmazonTvInputInfo	method	public boolean canManageRecordingRules()
+amazon.media.tv.AmazonTvInputInfo	method	public boolean equals(Object other)
+amazon.media.tv.AmazonTvInputInfo	method	public int hashCode()
+amazon.media.tv.AmazonTvInputManager	field	private final TvInputManager mTvInputManager;
+amazon.media.tv.AmazonTvInputManager	method	private AmazonTvInputInfo getTvInputInfo(TvInputInfo tvInputInfo)
+amazon.media.tv.AmazonTvInputManager	method	public AmazonTvInputInfo getTvInputInfo(String tvInputId)
+amazon.media.tv.AmazonTvInputManager	method	public AmazonTvInputManager(TvInputManager tvInputManager)
+amazon.media.tv.AmazonTvInputManager	method	public List<AmazonTvInputInfo> getTvInputList()
+amazon.media.tv.StatusCodes	field	public static final int BAD_REQUEST;
+amazon.media.tv.StatusCodes	field	public static final int CONFLICT;
+amazon.media.tv.StatusCodes	field	public static final int CREATED;
+amazon.media.tv.StatusCodes	field	public static final int FORBIDDEN;
+amazon.media.tv.StatusCodes	field	public static final int GONE;
+amazon.media.tv.StatusCodes	field	public static final int INSUFFICIENT_STORAGE;
+amazon.media.tv.StatusCodes	field	public static final int INTERNAL_SERVER_ERROR;
+amazon.media.tv.StatusCodes	field	public static final int NOT_IMPLEMENTED;
+amazon.media.tv.StatusCodes	field	public static final int NO_NETWORK;
+amazon.media.tv.StatusCodes	field	public static final int OK;
+amazon.media.tv.StatusCodes	field	public static final int RECORDING_CONFLICT;
+amazon.media.tv.StatusCodes	field	public static final int RULE_ALREADY_EXISTS;
+amazon.media.tv.StatusCodes	field	public static final int SERVICE_UNAVAILABLE;
+amazon.media.tv.StatusCodes	field	static final int NONE;
+amazon.media.tv.StatusCodes	method	private StatusCodes()
+amazon.media.tv.TvInputResponse	field	private final String mMessage;
+amazon.media.tv.TvInputResponse	field	private final TvRecordingConflict mRecordingConflict;
+amazon.media.tv.TvInputResponse	field	private final int mStatusCode;
+amazon.media.tv.TvInputResponse	method	protected TvInputResponse(Parcel source)
+amazon.media.tv.TvInputResponse	method	public String getMessage()
+amazon.media.tv.TvInputResponse	method	public String toString()
+amazon.media.tv.TvInputResponse	method	public TvInputResponse(int statusCode, TvRecordingConflict recordingConflict)
+amazon.media.tv.TvInputResponse	method	public TvRecordingConflict getRecordingConflict()
+amazon.media.tv.TvInputResponse	method	public boolean equals(Object other)
+amazon.media.tv.TvInputResponse	method	public int describeContents()
+amazon.media.tv.TvInputResponse	method	public int getStatusCode()
+amazon.media.tv.TvInputResponse	method	public int hashCode()
+amazon.media.tv.TvInputResponse	method	public void writeToParcel(Parcel destination, int flags)
+amazon.media.tv.TvInputResponse$Builder	field	private String mMessage;
+amazon.media.tv.TvInputResponse$Builder	field	private TvRecordingConflict mRecordingConflict;
+amazon.media.tv.TvInputResponse$Builder	field	private int mStatusCode;
+amazon.media.tv.TvInputResponse$Builder	method	public Builder message(String message)
+amazon.media.tv.TvInputResponse$Builder	method	public Builder recordingConflict(TvRecordingConflict recordingConflict)
+amazon.media.tv.TvInputResponse$Builder	method	public Builder statusCode(int statusCode)
+amazon.media.tv.TvInputResponse$Builder	method	public TvInputResponse build()
+amazon.media.tv.dvr.BuildConfig	field	public static final String APPLICATION_ID;
+amazon.media.tv.dvr.BuildConfig	field	public static final String BUILD_TYPE;
+amazon.media.tv.dvr.BuildConfig	field	public static final String FLAVOR;
+amazon.media.tv.dvr.BuildConfig	field	public static final String VERSION_NAME;
+amazon.media.tv.dvr.BuildConfig	field	public static final boolean DEBUG;
+amazon.media.tv.dvr.BuildConfig	field	public static final int VERSION_CODE;
+amazon.media.tv.dvr.ITvRecordingCallback$Stub	field	private static final String DESCRIPTOR;
+amazon.media.tv.dvr.ITvRecordingCallback$Stub	field	static final int TRANSACTION_onResult;
+amazon.media.tv.dvr.ITvRecordingCallback$Stub	method	public IBinder asBinder()
+amazon.media.tv.dvr.ITvRecordingCallback$Stub	method	public Stub()
+amazon.media.tv.dvr.ITvRecordingCallback$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+amazon.media.tv.dvr.ITvRecordingCallback$Stub	method	public static ITvRecordingCallback asInterface(IBinder obj)
+amazon.media.tv.dvr.ITvRecordingCallback$Stub$Proxy	field	private IBinder mRemote;
+amazon.media.tv.dvr.ITvRecordingCallback$Stub$Proxy	method	public IBinder asBinder()
+amazon.media.tv.dvr.ITvRecordingCallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+amazon.media.tv.dvr.ITvRecordingCallback$Stub$Proxy	method	public void onResult(TvInputResponse tvInputResponse) throws RemoteException
+amazon.media.tv.dvr.ITvRecordingService$Stub	field	private static final String DESCRIPTOR;
+amazon.media.tv.dvr.ITvRecordingService$Stub	field	static final int TRANSACTION_executeRecordedProgramRequest;
+amazon.media.tv.dvr.ITvRecordingService$Stub	field	static final int TRANSACTION_executeRecordingConflictResolutionRequest;
+amazon.media.tv.dvr.ITvRecordingService$Stub	field	static final int TRANSACTION_executeRecordingRuleRequest;
+amazon.media.tv.dvr.ITvRecordingService$Stub	field	static final int TRANSACTION_executeScheduledRecordingRequest;
+amazon.media.tv.dvr.ITvRecordingService$Stub	method	public IBinder asBinder()
+amazon.media.tv.dvr.ITvRecordingService$Stub	method	public Stub()
+amazon.media.tv.dvr.ITvRecordingService$Stub	method	public boolean onTransact(int code, Parcel data, Parcel reply, int flags) throws RemoteException
+amazon.media.tv.dvr.ITvRecordingService$Stub	method	public static ITvRecordingService asInterface(IBinder obj)
+amazon.media.tv.dvr.ITvRecordingService$Stub$Proxy	field	private IBinder mRemote;
+amazon.media.tv.dvr.ITvRecordingService$Stub$Proxy	method	public IBinder asBinder()
+amazon.media.tv.dvr.ITvRecordingService$Stub$Proxy	method	public String getInterfaceDescriptor()
+amazon.media.tv.dvr.ITvRecordingService$Stub$Proxy	method	public void executeRecordedProgramRequest(TvRecordedProgramRequest tvRecordedProgramRequest, ITvRecordingCallback tvRecordingCallback) throws RemoteException
+amazon.media.tv.dvr.ITvRecordingService$Stub$Proxy	method	public void executeRecordingConflictResolutionRequest(TvRecordingConflictResolutionRequest tvRecordingConflictResolutionRequest, ITvRecordingCallback tvRecordingCallback) throws RemoteException
+amazon.media.tv.dvr.ITvRecordingService$Stub$Proxy	method	public void executeRecordingRuleRequest(TvRecordingRuleRequest tvRecordingRuleRequest, ITvRecordingCallback tvRecordingCallback) throws RemoteException
+amazon.media.tv.dvr.ITvRecordingService$Stub$Proxy	method	public void executeScheduledRecordingRequest(TvScheduledRecordingRequest tvScheduledRecordingRequest, ITvRecordingCallback tvRecordingCallback) throws RemoteException
+amazon.media.tv.dvr.TvRecordingBinder	field	private ITvRecordingCallback mTvRecordingCallback;
+amazon.media.tv.dvr.TvRecordingBinder	field	private final Handler mMainHandler;
+amazon.media.tv.dvr.TvRecordingBinder	field	private final TvRecordingService mTvRecordingService;
+amazon.media.tv.dvr.TvRecordingBinder	field	private static final String TAG;
+amazon.media.tv.dvr.TvRecordingBinder	method	public void executeRecordedProgramRequest(final TvRecordedProgramRequest tvRecordedProgramRequest, ITvRecordingCallback tvRecordingCallback) throws RemoteException
+amazon.media.tv.dvr.TvRecordingBinder	method	public void executeRecordingConflictResolutionRequest(final TvRecordingConflictResolutionRequest tvRecordingConflictResolutionRequest, ITvRecordingCallback tvRecordingCallback) throws RemoteException
+amazon.media.tv.dvr.TvRecordingBinder	method	public void executeRecordingRuleRequest(final TvRecordingRuleRequest tvRecordingRuleRequest, ITvRecordingCallback tvRecordingCallback) throws RemoteException
+amazon.media.tv.dvr.TvRecordingBinder	method	public void executeScheduledRecordingRequest(final TvScheduledRecordingRequest tvScheduledRecordingRequest, ITvRecordingCallback tvRecordingCallback) throws RemoteException
+amazon.media.tv.dvr.TvRecordingService	field	private TvRecordingBinder mTvRecordingBinder;
+amazon.media.tv.dvr.TvRecordingService	field	public static final String CAPABILITY_META_DATA;
+amazon.media.tv.dvr.TvRecordingService	field	public static final String SERVICE_META_DATA;
+amazon.media.tv.dvr.TvRecordingService	method	protected void notifyRequestExecuted(TvInputResponse tvInputResponse)
+amazon.media.tv.dvr.TvRecordingService	method	public IBinder onBind(Intent intent)
+amazon.media.tv.dvr.TvRecordingService	method	public abstract void onExecuteRequest(TvRecordedProgramRequest tvRecordedProgramRequest);
+amazon.media.tv.dvr.TvRecordingService	method	public abstract void onExecuteRequest(TvRecordingConflictResolutionRequest tvRecordingConflictResolutionRequest);
+amazon.media.tv.dvr.TvRecordingService	method	public abstract void onExecuteRequest(TvRecordingRuleRequest tvRecordingRuleRequest);
+amazon.media.tv.dvr.TvRecordingService	method	public abstract void onExecuteRequest(TvScheduledRecordingRequest tvScheduledRecordingRequest);
+amazon.media.tv.dvr.TvRecordingService	method	public boolean onUnbind(Intent intent)
+amazon.media.tv.dvr.capability.TvRecordingCapability	method	public EnumSet<TvPersonFilter.Role> getSupportedPersonRoles()
+amazon.media.tv.dvr.capability.TvRecordingCapability	method	public EnumSet<TvProgramFilter.Type> getSupportedProgramTypes()
+amazon.media.tv.dvr.capability.TvRecordingCapability	method	public EnumSet<TvRecordingFilterCapability> getSupportedRuleFilters()
+amazon.media.tv.dvr.capability.TvRecordingCapability	method	public EnumSet<TvRecordingOptionsCapability> getSupportedRecordingOptions()
+amazon.media.tv.dvr.capability.TvRecordingCapability	method	public EnumSet<TvVideoQuality> getSupportedVideoQualities()
+amazon.media.tv.dvr.capability.TvRecordingCapability	method	public TvRecordingCapability(boolean supportsSoftRemoveRecording, EnumSet<TvRecordingFilterCapability> supportedRuleFilters, EnumSet<TvRecordingOptionsCapability> supportedRecordingOptions, EnumSet<TvPersonFilter.Role> supportedPersonRoles, EnumSet<TvProgramFilter.Type> supportedProgramTypes, EnumSet<TvVideoQuality> supportedVideoQualities, boolean hasLimitedStorage)
+amazon.media.tv.dvr.capability.TvRecordingCapability	method	public boolean hasLimitedStorage()
+amazon.media.tv.dvr.capability.TvRecordingCapability	method	public boolean supportsSoftRemoveRecording()
+amazon.media.tv.dvr.capability.TvRecordingCapabilityLoader	method	public TvRecordingCapability getTvRecordingCapability()
+amazon.media.tv.dvr.capability.TvRecordingCapabilityLoader	method	public TvRecordingCapability load()
+amazon.media.tv.dvr.capability.TvRecordingCapabilityLoader	method	public TvRecordingCapabilityLoader(TvInputInfo tvInputInfo)
+amazon.media.tv.dvr.capability.TvRecordingCapabilityLoader	method	public boolean isLoaded()
+amazon.media.tv.dvr.parser.InvalidJsonException	field	private static final long serialVersionUID;
+amazon.media.tv.dvr.parser.InvalidJsonException	method	public InvalidJsonException()
+amazon.media.tv.dvr.parser.InvalidJsonException	method	public InvalidJsonException(String message)
+amazon.media.tv.dvr.parser.InvalidJsonException	method	public InvalidJsonException(String message, Throwable cause)
+amazon.media.tv.dvr.parser.InvalidJsonException	method	public InvalidJsonException(Throwable cause)
+amazon.media.tv.dvr.parser.TvProgramFilterParser	field	static final String JSON_KEY_END_TIME;
+amazon.media.tv.dvr.parser.TvProgramFilterParser	field	static final String JSON_KEY_GENRE;
+amazon.media.tv.dvr.parser.TvProgramFilterParser	field	static final String JSON_KEY_PROGRAM_ID;
+amazon.media.tv.dvr.parser.TvProgramFilterParser	field	static final String JSON_KEY_START_TIME;
+amazon.media.tv.dvr.parser.TvProgramFilterParser	field	static final String JSON_KEY_TITLE;
+amazon.media.tv.dvr.parser.TvProgramFilterParser	field	static final String JSON_KEY_TYPE;
+amazon.media.tv.dvr.parser.TvRecordedProgramDataParser	field	static final String JSON_KEY_AMAZON_CHANNEL_ID;
+amazon.media.tv.dvr.parser.TvRecordedProgramDataParser	field	static final String JSON_KEY_DATA_FORMAT_VERSION;
+amazon.media.tv.dvr.parser.TvRecordedProgramDataParser	field	static final String JSON_KEY_DATA_VERSION;
+amazon.media.tv.dvr.parser.TvRecordedProgramDataParser	field	static final String JSON_KEY_INTERNAL_PROVIDER_DATA;
+amazon.media.tv.dvr.parser.TvRecordedProgramDataParser	field	static final String JSON_KEY_PROGRAM_ID;
+amazon.media.tv.dvr.parser.TvRecordedProgramDataParser	field	static final String JSON_KEY_RECORDING_END_TIME;
+amazon.media.tv.dvr.parser.TvRecordedProgramDataParser	field	static final String JSON_KEY_RECORDING_OPTIONS;
+amazon.media.tv.dvr.parser.TvRecordedProgramDataParser	field	static final String JSON_KEY_RECORDING_RULE_ID;
+amazon.media.tv.dvr.parser.TvRecordedProgramDataParser	field	static final String JSON_KEY_RECORDING_START_TIME;
+amazon.media.tv.dvr.parser.TvRecordedProgramDataParser	field	static final String JSON_KEY_SHOW_ID;
+amazon.media.tv.dvr.parser.TvRecordedProgramDataParser	field	static final int DATA_FORMAT_VERSION;
+amazon.media.tv.dvr.parser.TvRecordedProgramDataParser	method	public String from(TvRecordedProgramData tvRecordedProgramData)
+amazon.media.tv.dvr.parser.TvRecordedProgramDataParser	method	public TvRecordedProgramData from(String tvRecordedProgramDataJson)
+amazon.media.tv.dvr.parser.TvRecordedProgramOptionsParser	field	static final String JSON_KEY_AUTOMATIC_DELETE;
+amazon.media.tv.dvr.parser.TvRecordedProgramOptionsParser	field	static final String JSON_KEY_AUTOMATIC_DELETE_AFTER;
+amazon.media.tv.dvr.parser.TvRecordedProgramOptionsParser	method	public String from(TvRecordedProgramOptions tvRecordedProgramOptions)
+amazon.media.tv.dvr.parser.TvRecordedProgramOptionsParser	method	public TvRecordedProgramOptions from(String tvRecordedProgramOptionsJson)
+amazon.media.tv.dvr.parser.TvRecordingCapabilityParser	method	public String from(TvRecordingCapability tvRecordingCapability)
+amazon.media.tv.dvr.parser.TvRecordingCapabilityParser	method	public TvRecordingCapability from(String tvRecordingCapabilityJson)
+amazon.media.tv.dvr.parser.TvRecordingRuleFilterParser	field	static final String JSON_KEY_CHANNEL;
+amazon.media.tv.dvr.parser.TvRecordingRuleFilterParser	field	static final String JSON_KEY_NEW_EPISODES;
+amazon.media.tv.dvr.parser.TvRecordingRuleFilterParser	field	static final String JSON_KEY_PROGRAM;
+amazon.media.tv.dvr.parser.TvRecordingRuleFilterParser	field	static final String JSON_KEY_VERSION;
+amazon.media.tv.dvr.parser.TvRecordingRuleFilterParser	field	static final String JSON_KEY_VIDEO_QUALITY;
+amazon.media.tv.dvr.parser.TvRecordingRuleFilterParser	field	static final int DATA_FORMAT_VERSION;
+amazon.media.tv.dvr.parser.TvRecordingRuleFilterParser	method	public String from(TvRecordingRuleFilter tvRecordingRuleFilter)
+amazon.media.tv.dvr.parser.TvRecordingRuleFilterParser	method	public TvRecordingRuleFilter from(String tvRecordingRuleFilterJson)
+amazon.media.tv.dvr.parser.TvRecordingRuleOptionsParser	field	static final String JSON_KEY_AUTOMATIC_DELETION_STRATEGY;
+amazon.media.tv.dvr.parser.TvRecordingRuleOptionsParser	field	static final String JSON_KEY_AUTOMATIC_DELETION_STRATEGY_LIMIT;
+amazon.media.tv.dvr.parser.TvRecordingRuleOptionsParser	field	static final String JSON_KEY_DATA_FORMAT_VERSION;
+amazon.media.tv.dvr.parser.TvRecordingRuleOptionsParser	field	static final String JSON_KEY_END_PADDING_TIME;
+amazon.media.tv.dvr.parser.TvRecordingRuleOptionsParser	field	static final String JSON_KEY_START_PADDING_TIME;
+amazon.media.tv.dvr.parser.TvRecordingRuleOptionsParser	field	static final int DATA_FORMAT_VERSION;
+amazon.media.tv.dvr.parser.TvRecordingRuleOptionsParser	method	public String from(TvRecordingRuleOptions tvRecordingRuleOptions)
+amazon.media.tv.dvr.parser.TvRecordingRuleOptionsParser	method	public TvRecordingRuleOptions from(String tvRecordingRuleOptionsJson)
+amazon.media.tv.dvr.parser.TvScheduledRecordingOptionsParser	field	static final String JSON_KEY_AUTOMATIC_DELETE;
+amazon.media.tv.dvr.parser.TvScheduledRecordingOptionsParser	field	static final String JSON_KEY_AUTOMATIC_DELETE_AFTER;
+amazon.media.tv.dvr.parser.TvScheduledRecordingOptionsParser	field	static final String JSON_KEY_DATA_FORMAT_VERSION;
+amazon.media.tv.dvr.parser.TvScheduledRecordingOptionsParser	field	static final String JSON_KEY_END_PADDING_TIME;
+amazon.media.tv.dvr.parser.TvScheduledRecordingOptionsParser	field	static final String JSON_KEY_START_PADDING_TIME;
+amazon.media.tv.dvr.parser.TvScheduledRecordingOptionsParser	field	static final int DATA_FORMAT_VERSION;
+amazon.media.tv.dvr.parser.TvScheduledRecordingOptionsParser	method	public String from(TvScheduledRecordingOptions tvScheduledRecordingOptions)
+amazon.media.tv.dvr.parser.TvScheduledRecordingOptionsParser	method	public TvScheduledRecordingOptions from(String tvScheduledRecordingOptionsJson)
+amazon.media.tv.dvr.recorded.TvRecordedProgram	field	private final String mVersion;
+amazon.media.tv.dvr.recorded.TvRecordedProgram	field	private final TvRecordedProgramOptions mTvRecordedProgramOptions;
+amazon.media.tv.dvr.recorded.TvRecordedProgram	field	private final Uri mRecordedProgramUri;
+amazon.media.tv.dvr.recorded.TvRecordedProgram	field	public static final String INVALID_VERSION;
+amazon.media.tv.dvr.recorded.TvRecordedProgram	method	protected TvRecordedProgram(Parcel source)
+amazon.media.tv.dvr.recorded.TvRecordedProgram	method	public String getVersion()
+amazon.media.tv.dvr.recorded.TvRecordedProgram	method	public String toString()
+amazon.media.tv.dvr.recorded.TvRecordedProgram	method	public TvRecordedProgram(Uri recordedProgramUri, String version, TvRecordedProgramOptions tvRecordedProgramOptions)
+amazon.media.tv.dvr.recorded.TvRecordedProgram	method	public TvRecordedProgramOptions getTvRecordedProgramOptions()
+amazon.media.tv.dvr.recorded.TvRecordedProgram	method	public Uri getUri()
+amazon.media.tv.dvr.recorded.TvRecordedProgram	method	public boolean equals(Object other)
+amazon.media.tv.dvr.recorded.TvRecordedProgram	method	public int describeContents()
+amazon.media.tv.dvr.recorded.TvRecordedProgram	method	public int hashCode()
+amazon.media.tv.dvr.recorded.TvRecordedProgram	method	public void writeToParcel(Parcel destination, int flags)
+amazon.media.tv.dvr.recorded.TvRecordedProgram$Builder	field	private String mVersion;
+amazon.media.tv.dvr.recorded.TvRecordedProgram$Builder	field	private TvRecordedProgramOptions mTvRecordedProgramOptions;
+amazon.media.tv.dvr.recorded.TvRecordedProgram$Builder	field	private Uri mRecordedProgramUri;
+amazon.media.tv.dvr.recorded.TvRecordedProgram$Builder	method	public Builder options(TvRecordedProgramOptions tvRecordedProgramOptions)
+amazon.media.tv.dvr.recorded.TvRecordedProgram$Builder	method	public Builder uri(Uri recordedProgramUri)
+amazon.media.tv.dvr.recorded.TvRecordedProgram$Builder	method	public Builder version(String version)
+amazon.media.tv.dvr.recorded.TvRecordedProgram$Builder	method	public TvRecordedProgram build()
+amazon.media.tv.dvr.recorded.TvRecordedProgramClient	field	private AmazonTvInputInfo mAmazonTvInputInfo;
+amazon.media.tv.dvr.recorded.TvRecordedProgramClient	field	private Callback mClientCallback;
+amazon.media.tv.dvr.recorded.TvRecordedProgramClient	field	private Context mContext;
+amazon.media.tv.dvr.recorded.TvRecordedProgramClient	field	private Handler mCallbackHandler;
+amazon.media.tv.dvr.recorded.TvRecordedProgramClient	field	private ITvRecordingService mTvRecordingService;
+amazon.media.tv.dvr.recorded.TvRecordedProgramClient	field	private final ServiceConnection mServiceConnection;
+amazon.media.tv.dvr.recorded.TvRecordedProgramClient	field	private final TvInputCallback mTvInputClientCallback;
+amazon.media.tv.dvr.recorded.TvRecordedProgramClient	field	private static final String TAG;
+amazon.media.tv.dvr.recorded.TvRecordedProgramClient	method	public TvRecordedProgramClient(Context context, AmazonTvInputInfo amazonTvInputInfo, Callback clientCallback, Handler handler)
+amazon.media.tv.dvr.recorded.TvRecordedProgramClient	method	public TvRecordedProgramClient(Context context, AmazonTvInputInfo amazonTvInputInfo, TvInputCallback clientCallback, Handler handler)
+amazon.media.tv.dvr.recorded.TvRecordedProgramClient	method	public boolean connect()
+amazon.media.tv.dvr.recorded.TvRecordedProgramClient	method	public boolean executeRequest(TvRecordedProgramRequest tvRecordedProgramRequest)
+amazon.media.tv.dvr.recorded.TvRecordedProgramClient	method	public void disconnect()
+amazon.media.tv.dvr.recorded.TvRecordedProgramClient$TvInputCallback	method	public void onConnected()
+amazon.media.tv.dvr.recorded.TvRecordedProgramClient$TvInputCallback	method	public void onDisconnected()
+amazon.media.tv.dvr.recorded.TvRecordedProgramClient$TvInputCallback	method	public void onResult(String tvInputId, TvRecordedProgramRequest tvRecordedProgramRequest, TvInputResponse tvInputResponse)
+amazon.media.tv.dvr.recorded.TvRecordedProgramClient$TvInputCallback	method	public void onResult(TvRecordedProgramRequest tvRecordedProgramRequest, TvInputResponse tvInputResponse)
+amazon.media.tv.dvr.recorded.TvRecordedProgramClient$TvRecordingServiceCallback	field	private final TvRecordedProgramRequest mTvRecordedProgramRequest;
+amazon.media.tv.dvr.recorded.TvRecordedProgramClient$TvRecordingServiceCallback	method	public void onResult(final TvInputResponse tvInputResponse)
+amazon.media.tv.dvr.recorded.TvRecordedProgramClient$TvRecordingServiceConnection	method	private TvRecordingServiceConnection()
+amazon.media.tv.dvr.recorded.TvRecordedProgramClient$TvRecordingServiceConnection	method	public void onServiceConnected(ComponentName componentName, IBinder iBinder)
+amazon.media.tv.dvr.recorded.TvRecordedProgramClient$TvRecordingServiceConnection	method	public void onServiceDisconnected(ComponentName componentName)
+amazon.media.tv.dvr.recorded.TvRecordedProgramData	field	private final String mAmazonChannelId;
+amazon.media.tv.dvr.recorded.TvRecordedProgramData	field	private final String mInternalProviderData;
+amazon.media.tv.dvr.recorded.TvRecordedProgramData	field	private final String mProgramId;
+amazon.media.tv.dvr.recorded.TvRecordedProgramData	field	private final String mRecordingRuleId;
+amazon.media.tv.dvr.recorded.TvRecordedProgramData	field	private final String mShowId;
+amazon.media.tv.dvr.recorded.TvRecordedProgramData	field	private final String mVersion;
+amazon.media.tv.dvr.recorded.TvRecordedProgramData	field	private final TvRecordedProgramOptions mTvRecordedProgramOptions;
+amazon.media.tv.dvr.recorded.TvRecordedProgramData	field	private final long mRecordingEndTime;
+amazon.media.tv.dvr.recorded.TvRecordedProgramData	field	private final long mRecordingStartTime;
+amazon.media.tv.dvr.recorded.TvRecordedProgramData	field	public static final long INVALID_RECORDING_TIME;
+amazon.media.tv.dvr.recorded.TvRecordedProgramData	method	public String getAmazonChannelId()
+amazon.media.tv.dvr.recorded.TvRecordedProgramData	method	public String getInternalProviderData()
+amazon.media.tv.dvr.recorded.TvRecordedProgramData	method	public String getProgramId()
+amazon.media.tv.dvr.recorded.TvRecordedProgramData	method	public String getRecordingRuleId()
+amazon.media.tv.dvr.recorded.TvRecordedProgramData	method	public String getShowId()
+amazon.media.tv.dvr.recorded.TvRecordedProgramData	method	public String getVersion()
+amazon.media.tv.dvr.recorded.TvRecordedProgramData	method	public String toString()
+amazon.media.tv.dvr.recorded.TvRecordedProgramData	method	public TvRecordedProgramData(String version, String amazonChannelId, long recordingStartTime, long recordingEndTime, String recordingRuleId, String programId, String showId, TvRecordedProgramOptions tvRecordedProgramOptions, String internalProviderData)
+amazon.media.tv.dvr.recorded.TvRecordedProgramData	method	public TvRecordedProgramOptions getTvRecordedProgramOptions()
+amazon.media.tv.dvr.recorded.TvRecordedProgramData	method	public boolean equals(Object other)
+amazon.media.tv.dvr.recorded.TvRecordedProgramData	method	public int hashCode()
+amazon.media.tv.dvr.recorded.TvRecordedProgramData	method	public long getRecordingEndTime()
+amazon.media.tv.dvr.recorded.TvRecordedProgramData	method	public long getRecordingStartTime()
+amazon.media.tv.dvr.recorded.TvRecordedProgramData$Builder	field	private String mAmazonChannelId;
+amazon.media.tv.dvr.recorded.TvRecordedProgramData$Builder	field	private String mInternalProviderData;
+amazon.media.tv.dvr.recorded.TvRecordedProgramData$Builder	field	private String mProgramId;
+amazon.media.tv.dvr.recorded.TvRecordedProgramData$Builder	field	private String mRecordingruleId;
+amazon.media.tv.dvr.recorded.TvRecordedProgramData$Builder	field	private String mShowId;
+amazon.media.tv.dvr.recorded.TvRecordedProgramData$Builder	field	private String mVersion;
+amazon.media.tv.dvr.recorded.TvRecordedProgramData$Builder	field	private TvRecordedProgramOptions mTvRecordedProgramOptions;
+amazon.media.tv.dvr.recorded.TvRecordedProgramData$Builder	field	private long mRecordingEndTime;
+amazon.media.tv.dvr.recorded.TvRecordedProgramData$Builder	field	private long mRecordingStartTime;
+amazon.media.tv.dvr.recorded.TvRecordedProgramData$Builder	method	public Builder amazonChannelId(String amazonChannelId)
+amazon.media.tv.dvr.recorded.TvRecordedProgramData$Builder	method	public Builder internalProviderData(String internalProviderData)
+amazon.media.tv.dvr.recorded.TvRecordedProgramData$Builder	method	public Builder options(TvRecordedProgramOptions tvRecordedProgramOptions)
+amazon.media.tv.dvr.recorded.TvRecordedProgramData$Builder	method	public Builder programId(String programId)
+amazon.media.tv.dvr.recorded.TvRecordedProgramData$Builder	method	public Builder recordingRuleId(String recordingRuleId)
+amazon.media.tv.dvr.recorded.TvRecordedProgramData$Builder	method	public Builder recordingTime(long startTime, long endTime)
+amazon.media.tv.dvr.recorded.TvRecordedProgramData$Builder	method	public Builder showId(String showId)
+amazon.media.tv.dvr.recorded.TvRecordedProgramData$Builder	method	public Builder version(String version)
+amazon.media.tv.dvr.recorded.TvRecordedProgramData$Builder	method	public TvRecordedProgramData build()
+amazon.media.tv.dvr.recorded.TvRecordedProgramOptions	field	private final boolean mIsAutomaticDeleteEnabled;
+amazon.media.tv.dvr.recorded.TvRecordedProgramOptions	field	private final long mAutomaticDeleteAfter;
+amazon.media.tv.dvr.recorded.TvRecordedProgramOptions	field	public static final long AUTOMATIC_DELETE_ANY_TIME;
+amazon.media.tv.dvr.recorded.TvRecordedProgramOptions	method	protected TvRecordedProgramOptions(Parcel source)
+amazon.media.tv.dvr.recorded.TvRecordedProgramOptions	method	public String toString()
+amazon.media.tv.dvr.recorded.TvRecordedProgramOptions	method	public TvRecordedProgramOptions(boolean isAutomaticDeleteEnabled, long automaticDeleteAfter)
+amazon.media.tv.dvr.recorded.TvRecordedProgramOptions	method	public boolean equals(Object other)
+amazon.media.tv.dvr.recorded.TvRecordedProgramOptions	method	public boolean isAutomaticDelete()
+amazon.media.tv.dvr.recorded.TvRecordedProgramOptions	method	public int describeContents()
+amazon.media.tv.dvr.recorded.TvRecordedProgramOptions	method	public int hashCode()
+amazon.media.tv.dvr.recorded.TvRecordedProgramOptions	method	public long getAutomaticDeleteAfter()
+amazon.media.tv.dvr.recorded.TvRecordedProgramOptions	method	public void writeToParcel(Parcel destination, int flags)
+amazon.media.tv.dvr.recorded.TvRecordedProgramOptions$Builder	field	private boolean mIsAutomaticDeleteEnabled;
+amazon.media.tv.dvr.recorded.TvRecordedProgramOptions$Builder	field	private long mAutomaticDeleteAfter;
+amazon.media.tv.dvr.recorded.TvRecordedProgramOptions$Builder	method	public Builder automaticDelete(boolean isAutomaticDelete)
+amazon.media.tv.dvr.recorded.TvRecordedProgramOptions$Builder	method	public Builder automaticDeleteAfter(long automaticDeleteAfter)
+amazon.media.tv.dvr.recorded.TvRecordedProgramOptions$Builder	method	public TvRecordedProgramOptions build()
+amazon.media.tv.dvr.recorded.TvRecordedProgramRequest	field	private final List<Uri> mTvRecordedProgramUris;
+amazon.media.tv.dvr.recorded.TvRecordedProgramRequest	field	private final Operation mOperation;
+amazon.media.tv.dvr.recorded.TvRecordedProgramRequest	field	private final TvRecordedProgram mTvRecordedProgram;
+amazon.media.tv.dvr.recorded.TvRecordedProgramRequest	method	protected TvRecordedProgramRequest(Parcel source)
+amazon.media.tv.dvr.recorded.TvRecordedProgramRequest	method	public List<Uri> getTvRecordedProgramUris()
+amazon.media.tv.dvr.recorded.TvRecordedProgramRequest	method	public Operation getOperation()
+amazon.media.tv.dvr.recorded.TvRecordedProgramRequest	method	public String toString()
+amazon.media.tv.dvr.recorded.TvRecordedProgramRequest	method	public TvRecordedProgram getTvRecordedProgram()
+amazon.media.tv.dvr.recorded.TvRecordedProgramRequest	method	public TvRecordedProgramRequest(Operation operation, TvRecordedProgram tvRecordedProgram)
+amazon.media.tv.dvr.recorded.TvRecordedProgramRequest	method	public boolean equals(Object other)
+amazon.media.tv.dvr.recorded.TvRecordedProgramRequest	method	public int describeContents()
+amazon.media.tv.dvr.recorded.TvRecordedProgramRequest	method	public int hashCode()
+amazon.media.tv.dvr.recorded.TvRecordedProgramRequest	method	public void writeToParcel(Parcel destination, int flags)
+amazon.media.tv.dvr.recorded.TvRecordedProgramRequest$Builder	field	private List<Uri> mTvRecordedProgramUris;
+amazon.media.tv.dvr.recorded.TvRecordedProgramRequest$Builder	field	private Operation mOperation;
+amazon.media.tv.dvr.recorded.TvRecordedProgramRequest$Builder	field	private TvRecordedProgram mTvRecordedProgram;
+amazon.media.tv.dvr.recorded.TvRecordedProgramRequest$Builder	method	public Builder operation(Operation operation)
+amazon.media.tv.dvr.recorded.TvRecordedProgramRequest$Builder	method	public Builder program(TvRecordedProgram tvRecordedProgram)
+amazon.media.tv.dvr.recorded.TvRecordedProgramRequest$Builder	method	public Builder programUris(List<Uri> tvRecordedProgramUris)
+amazon.media.tv.dvr.recorded.TvRecordedProgramRequest$Builder	method	public TvRecordedProgramRequest build()
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflict	field	private final List<ConflictResolutionGroup> mConflictGroups;
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflict	field	private final List<PlaybackConflictResolutionGroup> mResolutionGroups;
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflict	field	private final TvRecordingRuleRequest mRuleRequest;
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflict	field	public static final Parcelable.Creator<TvRecordingConflict> CREATOR;
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflict	method	protected TvRecordingConflict(Parcel source)
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflict	method	public List<ConflictResolutionGroup> getConflictGroups()
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflict	method	public List<PlaybackConflictResolutionGroup> getResolutionGroups()
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflict	method	public String toString()
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflict	method	public TvRecordingRuleRequest getRuleRequest()
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflict	method	public boolean equals(Object other)
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflict	method	public int describeContents()
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflict	method	public int hashCode()
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflict	method	public void writeToParcel(Parcel destination, int flags)
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflict$Builder	field	private List<ConflictResolutionGroup> mConflictGroups;
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflict$Builder	field	private List<PlaybackConflictResolutionGroup> mResolutionGroups;
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflict$Builder	field	private TvRecordingRuleRequest mRuleRequest;
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflict$Builder	method	public Builder conflictGroups(List<ConflictResolutionGroup> conflictGroups)
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflict$Builder	method	public Builder resolutionGroups(List<PlaybackConflictResolutionGroup> resolutionGroups)
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflict$Builder	method	public Builder ruleRequest(TvRecordingRuleRequest tvRecordingRuleRequest)
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflict$Builder	method	public TvRecordingConflict build()
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflict$RecordingConflictCreator	method	private RecordingConflictCreator()
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflict$RecordingConflictCreator	method	public TvRecordingConflict createFromParcel(Parcel source)
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflict$RecordingConflictCreator	method	public TvRecordingConflict[] newArray(int size)
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflictResolutionRequest	field	private final String mResolutionId;
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflictResolutionRequest	field	public static final Parcelable.Creator<TvRecordingConflictResolutionRequest> CREATOR;
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflictResolutionRequest	method	protected TvRecordingConflictResolutionRequest(Parcel source)
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflictResolutionRequest	method	public String getResolutionId()
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflictResolutionRequest	method	public String toString()
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflictResolutionRequest	method	public TvRecordingConflictResolutionRequest(String resolutionId)
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflictResolutionRequest	method	public boolean equals(Object other)
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflictResolutionRequest	method	public int describeContents()
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflictResolutionRequest	method	public int hashCode()
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflictResolutionRequest	method	public void writeToParcel(Parcel source, int flags)
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflictResolutionRequest$Builder	field	private String mResolutionId;
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflictResolutionRequest$Builder	method	public Builder resolutionId(String resolutionId)
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflictResolutionRequest$Builder	method	public TvRecordingConflictResolutionRequest build()
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflictResolutionRequest$TvRecordingConflictResolutionRequestCreator	method	private TvRecordingConflictResolutionRequestCreator()
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflictResolutionRequest$TvRecordingConflictResolutionRequestCreator	method	public TvRecordingConflictResolutionRequest createFromParcel(Parcel source)
+amazon.media.tv.dvr.recordingconflict.TvRecordingConflictResolutionRequest$TvRecordingConflictResolutionRequestCreator	method	public TvRecordingConflictResolutionRequest[] newArray(int size)
+amazon.media.tv.dvr.rule.TvRecordingRule	field	private final String mRuleVersion;
+amazon.media.tv.dvr.rule.TvRecordingRule	field	private final TvRecordingRuleFilter mTvRecordingRuleFilter;
+amazon.media.tv.dvr.rule.TvRecordingRule	field	private final TvRecordingRuleOptions mTvRecordingRuleOptions;
+amazon.media.tv.dvr.rule.TvRecordingRule	field	private final Uri mRecordingRuleUri;
+amazon.media.tv.dvr.rule.TvRecordingRule	field	public static final String INVALID_VERSION;
+amazon.media.tv.dvr.rule.TvRecordingRule	method	protected TvRecordingRule(Parcel source)
+amazon.media.tv.dvr.rule.TvRecordingRule	method	public String getVersion()
+amazon.media.tv.dvr.rule.TvRecordingRule	method	public String toString()
+amazon.media.tv.dvr.rule.TvRecordingRule	method	public TvRecordingRule(Uri recordingRuleUri, String version, TvRecordingRuleFilter tvRecordingRuleFilter, TvRecordingRuleOptions tvRecordingRuleOptions)
+amazon.media.tv.dvr.rule.TvRecordingRule	method	public TvRecordingRuleFilter getTvRecordingRuleFilter()
+amazon.media.tv.dvr.rule.TvRecordingRule	method	public TvRecordingRuleOptions getTvRecordingRuleOptions()
+amazon.media.tv.dvr.rule.TvRecordingRule	method	public Uri getUri()
+amazon.media.tv.dvr.rule.TvRecordingRule	method	public boolean equals(Object other)
+amazon.media.tv.dvr.rule.TvRecordingRule	method	public int describeContents()
+amazon.media.tv.dvr.rule.TvRecordingRule	method	public int hashCode()
+amazon.media.tv.dvr.rule.TvRecordingRule	method	public void writeToParcel(Parcel destination, int flags)
+amazon.media.tv.dvr.rule.TvRecordingRule$Builder	field	private String mRuleVersion;
+amazon.media.tv.dvr.rule.TvRecordingRule$Builder	field	private TvRecordingRuleFilter mTvRecordingRuleFilter;
+amazon.media.tv.dvr.rule.TvRecordingRule$Builder	field	private TvRecordingRuleOptions mTvRecordingRuleOptions;
+amazon.media.tv.dvr.rule.TvRecordingRule$Builder	field	private Uri mRecordingRuleUri;
+amazon.media.tv.dvr.rule.TvRecordingRule$Builder	method	public Builder filter(TvRecordingRuleFilter tvRecordingRuleFilter)
+amazon.media.tv.dvr.rule.TvRecordingRule$Builder	method	public Builder options(TvRecordingRuleOptions tvRecordingRuleOptions)
+amazon.media.tv.dvr.rule.TvRecordingRule$Builder	method	public Builder uri(Uri recordingRuleUri)
+amazon.media.tv.dvr.rule.TvRecordingRule$Builder	method	public Builder version(String version)
+amazon.media.tv.dvr.rule.TvRecordingRule$Builder	method	public TvRecordingRule build()
+amazon.media.tv.dvr.rule.TvRecordingRuleClient	field	private ITvRecordingService mTvRecordingService;
+amazon.media.tv.dvr.rule.TvRecordingRuleClient	field	private final AmazonTvInputInfo mAmazonTvInputInfo;
+amazon.media.tv.dvr.rule.TvRecordingRuleClient	field	private final Callback mClientCallback;
+amazon.media.tv.dvr.rule.TvRecordingRuleClient	field	private final Context mContext;
+amazon.media.tv.dvr.rule.TvRecordingRuleClient	field	private final Handler mCallbackHandler;
+amazon.media.tv.dvr.rule.TvRecordingRuleClient	field	private final ServiceConnection mServiceConnection;
+amazon.media.tv.dvr.rule.TvRecordingRuleClient	field	private final TvInputCallback mTvInputClientCallback;
+amazon.media.tv.dvr.rule.TvRecordingRuleClient	field	private static final String TAG;
+amazon.media.tv.dvr.rule.TvRecordingRuleClient	method	public TvRecordingRuleClient(Context context, AmazonTvInputInfo amazonTvInputInfo, Callback clientCallback, Handler callbackHandler)
+amazon.media.tv.dvr.rule.TvRecordingRuleClient	method	public TvRecordingRuleClient(Context context, AmazonTvInputInfo amazonTvInputInfo, TvInputCallback clientCallback, Handler callbackHandler)
+amazon.media.tv.dvr.rule.TvRecordingRuleClient	method	public boolean connect()
+amazon.media.tv.dvr.rule.TvRecordingRuleClient	method	public boolean executeRequest(TvRecordingConflictResolutionRequest recordingConflictResolutionRequest)
+amazon.media.tv.dvr.rule.TvRecordingRuleClient	method	public boolean executeRequest(TvRecordingRuleRequest tvRecordingRuleRequest)
+amazon.media.tv.dvr.rule.TvRecordingRuleClient	method	public void disconnect()
+amazon.media.tv.dvr.rule.TvRecordingRuleClient$TvInputCallback	method	public void onConnected()
+amazon.media.tv.dvr.rule.TvRecordingRuleClient$TvInputCallback	method	public void onDisconnected()
+amazon.media.tv.dvr.rule.TvRecordingRuleClient$TvInputCallback	method	public void onResult(String tvInputId, TvRecordingRuleRequest tvRecordingRuleRequest, TvInputResponse tvInputResponse)
+amazon.media.tv.dvr.rule.TvRecordingRuleClient$TvInputCallback	method	public void onResult(TvRecordingRuleRequest tvRecordingRuleRequest, TvInputResponse tvInputResponse)
+amazon.media.tv.dvr.rule.TvRecordingRuleClient$TvRecordingServiceCallback	field	private final TvRecordingRuleRequest mTvRecordingRuleRequest;
+amazon.media.tv.dvr.rule.TvRecordingRuleClient$TvRecordingServiceCallback	method	public void onResult(final TvInputResponse tvInputResponse)
+amazon.media.tv.dvr.rule.TvRecordingRuleClient$TvRecordingServiceConnection	method	private TvRecordingServiceConnection()
+amazon.media.tv.dvr.rule.TvRecordingRuleClient$TvRecordingServiceConnection	method	public void onServiceConnected(ComponentName componentName, IBinder iBinder)
+amazon.media.tv.dvr.rule.TvRecordingRuleClient$TvRecordingServiceConnection	method	public void onServiceDisconnected(ComponentName componentName)
+amazon.media.tv.dvr.rule.TvRecordingRuleOptions	field	private final AutomaticDeletionStrategy mAutomaticDeletionStrategy;
+amazon.media.tv.dvr.rule.TvRecordingRuleOptions	field	private final int mAutomaticDeletionStrategyLimit;
+amazon.media.tv.dvr.rule.TvRecordingRuleOptions	field	private final long mEndPaddingTime;
+amazon.media.tv.dvr.rule.TvRecordingRuleOptions	field	private final long mStartPaddingTime;
+amazon.media.tv.dvr.rule.TvRecordingRuleOptions	method	protected TvRecordingRuleOptions(Parcel source)
+amazon.media.tv.dvr.rule.TvRecordingRuleOptions	method	public AutomaticDeletionStrategy getAutomaticDeletionStrategy()
+amazon.media.tv.dvr.rule.TvRecordingRuleOptions	method	public String toString()
+amazon.media.tv.dvr.rule.TvRecordingRuleOptions	method	public TvRecordingRuleOptions(long startPaddingTime, long endPaddingTime, AutomaticDeletionStrategy automaticDeletionStrategy, int automaticDeletionStrategyLimit)
+amazon.media.tv.dvr.rule.TvRecordingRuleOptions	method	public boolean equals(Object other)
+amazon.media.tv.dvr.rule.TvRecordingRuleOptions	method	public int describeContents()
+amazon.media.tv.dvr.rule.TvRecordingRuleOptions	method	public int getAutomaticDeletionStrategyLimit()
+amazon.media.tv.dvr.rule.TvRecordingRuleOptions	method	public int hashCode()
+amazon.media.tv.dvr.rule.TvRecordingRuleOptions	method	public long getEndPaddingTime()
+amazon.media.tv.dvr.rule.TvRecordingRuleOptions	method	public long getStartPaddingTime()
+amazon.media.tv.dvr.rule.TvRecordingRuleOptions	method	public void writeToParcel(Parcel destination, int flags)
+amazon.media.tv.dvr.rule.TvRecordingRuleOptions$Builder	field	private AutomaticDeletionStrategy mAutomaticDeletionStrategy;
+amazon.media.tv.dvr.rule.TvRecordingRuleOptions$Builder	field	private int mAutomaticDeletionStrategyLimit;
+amazon.media.tv.dvr.rule.TvRecordingRuleOptions$Builder	field	private long mEndPaddingTime;
+amazon.media.tv.dvr.rule.TvRecordingRuleOptions$Builder	field	private long mStartPaddingTime;
+amazon.media.tv.dvr.rule.TvRecordingRuleOptions$Builder	method	public Builder automaticDeletion(AutomaticDeletionStrategy automaticDeletionStrategy)
+amazon.media.tv.dvr.rule.TvRecordingRuleOptions$Builder	method	public Builder automaticDeletionLimit(int automaticDeletionLimit)
+amazon.media.tv.dvr.rule.TvRecordingRuleOptions$Builder	method	public Builder padding(long startPadding, long endPadding)
+amazon.media.tv.dvr.rule.TvRecordingRuleOptions$Builder	method	public TvRecordingRuleOptions build()
+amazon.media.tv.dvr.rule.TvRecordingRuleRequest	field	private final ConflictResolutionGroup mConflictGroup;
+amazon.media.tv.dvr.rule.TvRecordingRuleRequest	field	private final List<TvRecordingRule> mTvRecordingRuleList;
+amazon.media.tv.dvr.rule.TvRecordingRuleRequest	field	private final Operation mOperation;
+amazon.media.tv.dvr.rule.TvRecordingRuleRequest	field	private final String mOutOfBandData;
+amazon.media.tv.dvr.rule.TvRecordingRuleRequest	field	private final TvRecordingRule mTvRecordingRule;
+amazon.media.tv.dvr.rule.TvRecordingRuleRequest	method	protected TvRecordingRuleRequest(Parcel source)
+amazon.media.tv.dvr.rule.TvRecordingRuleRequest	method	public ConflictResolutionGroup getConflictResolution()
+amazon.media.tv.dvr.rule.TvRecordingRuleRequest	method	public List<TvRecordingRule> getRuleList()
+amazon.media.tv.dvr.rule.TvRecordingRuleRequest	method	public Operation getOperation()
+amazon.media.tv.dvr.rule.TvRecordingRuleRequest	method	public String getOutOfBandData()
+amazon.media.tv.dvr.rule.TvRecordingRuleRequest	method	public String toString()
+amazon.media.tv.dvr.rule.TvRecordingRuleRequest	method	public TvRecordingRule getRule()
+amazon.media.tv.dvr.rule.TvRecordingRuleRequest	method	public TvRecordingRuleRequest(List<TvRecordingRule> tvRecordingRuleList)
+amazon.media.tv.dvr.rule.TvRecordingRuleRequest	method	public TvRecordingRuleRequest(Operation operation, TvRecordingRule tvRecordingRule)
+amazon.media.tv.dvr.rule.TvRecordingRuleRequest	method	public boolean equals(Object other)
+amazon.media.tv.dvr.rule.TvRecordingRuleRequest	method	public int describeContents()
+amazon.media.tv.dvr.rule.TvRecordingRuleRequest	method	public int hashCode()
+amazon.media.tv.dvr.rule.TvRecordingRuleRequest	method	public void writeToParcel(Parcel source, int flags)
+amazon.media.tv.dvr.rule.TvRecordingRuleRequest$Builder	field	private ConflictResolutionGroup mConflictGroup;
+amazon.media.tv.dvr.rule.TvRecordingRuleRequest$Builder	field	private List<TvRecordingRule> mTvRecordingRuleList;
+amazon.media.tv.dvr.rule.TvRecordingRuleRequest$Builder	field	private Operation mOperation;
+amazon.media.tv.dvr.rule.TvRecordingRuleRequest$Builder	field	private String mOutOfBandData;
+amazon.media.tv.dvr.rule.TvRecordingRuleRequest$Builder	field	private TvRecordingRule mTvRecordingRule;
+amazon.media.tv.dvr.rule.TvRecordingRuleRequest$Builder	method	public Builder conflictResolution(ConflictResolutionGroup conflictGroup)
+amazon.media.tv.dvr.rule.TvRecordingRuleRequest$Builder	method	public Builder operation(Operation operation)
+amazon.media.tv.dvr.rule.TvRecordingRuleRequest$Builder	method	public Builder outOfBandData(String outOfBandData)
+amazon.media.tv.dvr.rule.TvRecordingRuleRequest$Builder	method	public Builder rule(TvRecordingRule tvRecordingRule)
+amazon.media.tv.dvr.rule.TvRecordingRuleRequest$Builder	method	public Builder ruleList(List<TvRecordingRule> tvRecordingRuleList)
+amazon.media.tv.dvr.rule.TvRecordingRuleRequest$Builder	method	public TvRecordingRuleRequest build()
+amazon.media.tv.dvr.rule.filter.TvPersonFilter	field	private final Role mPersonRole;
+amazon.media.tv.dvr.rule.filter.TvPersonFilter	field	private final String mPersonName;
+amazon.media.tv.dvr.rule.filter.TvPersonFilter	method	protected TvPersonFilter(Parcel source)
+amazon.media.tv.dvr.rule.filter.TvPersonFilter	method	public Role getRole()
+amazon.media.tv.dvr.rule.filter.TvPersonFilter	method	public String getName()
+amazon.media.tv.dvr.rule.filter.TvPersonFilter	method	public String toString()
+amazon.media.tv.dvr.rule.filter.TvPersonFilter	method	public TvPersonFilter(String name, Role role)
+amazon.media.tv.dvr.rule.filter.TvPersonFilter	method	public boolean equals(Object other)
+amazon.media.tv.dvr.rule.filter.TvPersonFilter	method	public int describeContents()
+amazon.media.tv.dvr.rule.filter.TvPersonFilter	method	public int hashCode()
+amazon.media.tv.dvr.rule.filter.TvPersonFilter	method	public void writeToParcel(Parcel destination, int flags)
+amazon.media.tv.dvr.rule.filter.TvPersonFilter$Builder	field	private Role mPersonRole;
+amazon.media.tv.dvr.rule.filter.TvPersonFilter$Builder	field	private String mPersonName;
+amazon.media.tv.dvr.rule.filter.TvPersonFilter$Builder	method	public Builder name(String name)
+amazon.media.tv.dvr.rule.filter.TvPersonFilter$Builder	method	public Builder role(Role role)
+amazon.media.tv.dvr.rule.filter.TvPersonFilter$Builder	method	public TvPersonFilter build()
+amazon.media.tv.dvr.rule.filter.TvProgramFilter	field	private final String mProgramGenre;
+amazon.media.tv.dvr.rule.filter.TvProgramFilter	field	private final String mProgramId;
+amazon.media.tv.dvr.rule.filter.TvProgramFilter	field	private final String mProgramTitle;
+amazon.media.tv.dvr.rule.filter.TvProgramFilter	field	private final String mSeasonId;
+amazon.media.tv.dvr.rule.filter.TvProgramFilter	field	private final String mShowId;
+amazon.media.tv.dvr.rule.filter.TvProgramFilter	field	private final Type mProgramType;
+amazon.media.tv.dvr.rule.filter.TvProgramFilter	field	private final long mEndTime;
+amazon.media.tv.dvr.rule.filter.TvProgramFilter	field	private final long mStartTime;
+amazon.media.tv.dvr.rule.filter.TvProgramFilter	field	public static final long NO_PROGRAM_TIME_FILTER;
+amazon.media.tv.dvr.rule.filter.TvProgramFilter	method	protected TvProgramFilter(Parcel source)
+amazon.media.tv.dvr.rule.filter.TvProgramFilter	method	public String getGenre()
+amazon.media.tv.dvr.rule.filter.TvProgramFilter	method	public String getId()
+amazon.media.tv.dvr.rule.filter.TvProgramFilter	method	public String getProgramId()
+amazon.media.tv.dvr.rule.filter.TvProgramFilter	method	public String getSeasonId()
+amazon.media.tv.dvr.rule.filter.TvProgramFilter	method	public String getShowId()
+amazon.media.tv.dvr.rule.filter.TvProgramFilter	method	public String getTitle()
+amazon.media.tv.dvr.rule.filter.TvProgramFilter	method	public String toString()
+amazon.media.tv.dvr.rule.filter.TvProgramFilter	method	public TvProgramFilter(String id, long startTime, long endTime, String title, Type type, String genre)
+amazon.media.tv.dvr.rule.filter.TvProgramFilter	method	public Type getType()
+amazon.media.tv.dvr.rule.filter.TvProgramFilter	method	public boolean equals(Object other)
+amazon.media.tv.dvr.rule.filter.TvProgramFilter	method	public int describeContents()
+amazon.media.tv.dvr.rule.filter.TvProgramFilter	method	public int hashCode()
+amazon.media.tv.dvr.rule.filter.TvProgramFilter	method	public long getEndTime()
+amazon.media.tv.dvr.rule.filter.TvProgramFilter	method	public long getStartTime()
+amazon.media.tv.dvr.rule.filter.TvProgramFilter	method	public void writeToParcel(Parcel destination, int flags)
+amazon.media.tv.dvr.rule.filter.TvProgramFilter$Builder	field	private String mProgramGenre;
+amazon.media.tv.dvr.rule.filter.TvProgramFilter$Builder	field	private String mProgramId;
+amazon.media.tv.dvr.rule.filter.TvProgramFilter$Builder	field	private String mProgramTitle;
+amazon.media.tv.dvr.rule.filter.TvProgramFilter$Builder	field	private String mSeasonId;
+amazon.media.tv.dvr.rule.filter.TvProgramFilter$Builder	field	private String mShowId;
+amazon.media.tv.dvr.rule.filter.TvProgramFilter$Builder	field	private Type mProgramType;
+amazon.media.tv.dvr.rule.filter.TvProgramFilter$Builder	field	private long mEndTime;
+amazon.media.tv.dvr.rule.filter.TvProgramFilter$Builder	field	private long mStartTime;
+amazon.media.tv.dvr.rule.filter.TvProgramFilter$Builder	method	public Builder genre(String genre)
+amazon.media.tv.dvr.rule.filter.TvProgramFilter$Builder	method	public Builder id(String id)
+amazon.media.tv.dvr.rule.filter.TvProgramFilter$Builder	method	public Builder programId(String id)
+amazon.media.tv.dvr.rule.filter.TvProgramFilter$Builder	method	public Builder seasonId(String seasonId)
+amazon.media.tv.dvr.rule.filter.TvProgramFilter$Builder	method	public Builder showId(String showId)
+amazon.media.tv.dvr.rule.filter.TvProgramFilter$Builder	method	public Builder time(long startTime, long endTime)
+amazon.media.tv.dvr.rule.filter.TvProgramFilter$Builder	method	public Builder title(String title)
+amazon.media.tv.dvr.rule.filter.TvProgramFilter$Builder	method	public Builder type(Type type)
+amazon.media.tv.dvr.rule.filter.TvProgramFilter$Builder	method	public TvProgramFilter build()
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter	field	private final Boolean mNewEpisodesOnly;
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter	field	private final LinkedHashSet<TvVideoQuality> mVideoQualities;
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter	field	private final TvPersonFilter mTvPersonFilter;
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter	field	private final TvProgramFilter mTvProgramFilter;
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter	field	private final TvSportsProgramFilter mTvSportsProgramFilter;
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter	field	private final Uri mChannelUri;
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter	field	public static final EnumSet<TvVideoQuality> NO_VIDEO_QUALITY_FILTER;
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter	field	public static final Uri NO_CHANNEL_FILTER;
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter	method	protected TvRecordingRuleFilter(Parcel source)
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter	method	public Boolean isNewEpisodesOnly()
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter	method	public EnumSet<TvVideoQuality> getTvVideoQualities()
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter	method	public Set<TvVideoQuality> getVideoQualities()
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter	method	public String toString()
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter	method	public TvPersonFilter getTvPerson()
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter	method	public TvProgramFilter getTvProgram()
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter	method	public TvRecordingRuleFilter(TvProgramFilter tvProgramFilter, TvPersonFilter tvPersonFilter, TvSportsProgramFilter tvSportsProgramFilter, Uri channelUri, EnumSet<TvVideoQuality> tvVideoQualities, boolean newEpisodesOnly)
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter	method	public TvSportsProgramFilter getTvSportsProgram()
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter	method	public Uri getChannelUri()
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter	method	public boolean equals(Object other)
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter	method	public boolean newEpisodesOnly()
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter	method	public int describeContents()
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter	method	public int hashCode()
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter	method	public void writeToParcel(Parcel destination, int flags)
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter$Builder	field	private Boolean mNewEpisodesOnly;
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter$Builder	field	private LinkedHashSet<TvVideoQuality> mVideoQualities;
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter$Builder	field	private TvPersonFilter mTvPersonFilter;
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter$Builder	field	private TvProgramFilter mTvProgramFilter;
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter$Builder	field	private TvSportsProgramFilter mTvSportsProgramFilter;
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter$Builder	field	private Uri mChannelUri;
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter$Builder	method	public Builder channel(Uri channelUri)
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter$Builder	method	public Builder newEpisodesOnly(boolean newEpisodeOnly)
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter$Builder	method	public Builder person(TvPersonFilter tvPersonFilter)
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter$Builder	method	public Builder program(TvProgramFilter tvProgramFilter)
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter$Builder	method	public Builder sports(TvSportsProgramFilter tvSportsProgramFilter)
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter$Builder	method	public Builder videoQuality(EnumSet<TvVideoQuality> videoQualities)
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter$Builder	method	public Builder videoQuality(LinkedHashSet<TvVideoQuality> videoQualities)
+amazon.media.tv.dvr.rule.filter.TvRecordingRuleFilter$Builder	method	public TvRecordingRuleFilter build()
+amazon.media.tv.dvr.rule.filter.TvSportsProgramFilter	field	private final String mLeagueName;
+amazon.media.tv.dvr.rule.filter.TvSportsProgramFilter	field	private final String mTeamName;
+amazon.media.tv.dvr.rule.filter.TvSportsProgramFilter	method	protected TvSportsProgramFilter(Parcel source)
+amazon.media.tv.dvr.rule.filter.TvSportsProgramFilter	method	public String getLeagueName()
+amazon.media.tv.dvr.rule.filter.TvSportsProgramFilter	method	public String getTeamName()
+amazon.media.tv.dvr.rule.filter.TvSportsProgramFilter	method	public String toString()
+amazon.media.tv.dvr.rule.filter.TvSportsProgramFilter	method	public TvSportsProgramFilter(String teamName, String leagueName)
+amazon.media.tv.dvr.rule.filter.TvSportsProgramFilter	method	public boolean equals(Object other)
+amazon.media.tv.dvr.rule.filter.TvSportsProgramFilter	method	public int describeContents()
+amazon.media.tv.dvr.rule.filter.TvSportsProgramFilter	method	public int hashCode()
+amazon.media.tv.dvr.rule.filter.TvSportsProgramFilter	method	public void writeToParcel(Parcel destination, int flags)
+amazon.media.tv.dvr.rule.filter.TvSportsProgramFilter$Builder	field	private String mLeagueName;
+amazon.media.tv.dvr.rule.filter.TvSportsProgramFilter$Builder	field	private String mTeamName;
+amazon.media.tv.dvr.rule.filter.TvSportsProgramFilter$Builder	method	public Builder leagueName(String leagueName)
+amazon.media.tv.dvr.rule.filter.TvSportsProgramFilter$Builder	method	public Builder teamName(String teamName)
+amazon.media.tv.dvr.rule.filter.TvSportsProgramFilter$Builder	method	public TvSportsProgramFilter build()
+amazon.media.tv.dvr.scheduled.TvScheduledRecording	field	private final Uri mScheduledRecordingUri;
+amazon.media.tv.dvr.scheduled.TvScheduledRecording	field	public static final String INVALID_VERSION;
+amazon.media.tv.dvr.scheduled.TvScheduledRecording	method	protected TvScheduledRecording(Parcel source)
+amazon.media.tv.dvr.scheduled.TvScheduledRecording	method	public String getVersion()
+amazon.media.tv.dvr.scheduled.TvScheduledRecording	method	public String toString()
+amazon.media.tv.dvr.scheduled.TvScheduledRecording	method	public TvScheduledRecording(Uri scheduledRecordingUri, String version, TvScheduledRecordingOptions tvScheduledRecordingOptions)
+amazon.media.tv.dvr.scheduled.TvScheduledRecording	method	public TvScheduledRecordingOptions getTvScheduledRecordingOptions()
+amazon.media.tv.dvr.scheduled.TvScheduledRecording	method	public Uri getUri()
+amazon.media.tv.dvr.scheduled.TvScheduledRecording	method	public boolean equals(Object other)
+amazon.media.tv.dvr.scheduled.TvScheduledRecording	method	public int describeContents()
+amazon.media.tv.dvr.scheduled.TvScheduledRecording	method	public int hashCode()
+amazon.media.tv.dvr.scheduled.TvScheduledRecording	method	public void writeToParcel(Parcel destination, int flags)
+amazon.media.tv.dvr.scheduled.TvScheduledRecording$Builder	field	private Uri mScheduledRecordingUri;
+amazon.media.tv.dvr.scheduled.TvScheduledRecording$Builder	method	public Builder options(TvScheduledRecordingOptions tvScheduledRecordingOptions)
+amazon.media.tv.dvr.scheduled.TvScheduledRecording$Builder	method	public Builder uri(Uri scheduledRecordingUri)
+amazon.media.tv.dvr.scheduled.TvScheduledRecording$Builder	method	public Builder version(String version)
+amazon.media.tv.dvr.scheduled.TvScheduledRecording$Builder	method	public TvScheduledRecording build()
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingClient	field	private ITvRecordingService mTvRecordingService;
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingClient	field	private final AmazonTvInputInfo mAmazonTvInputInfo;
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingClient	field	private final Callback mClientCallback;
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingClient	field	private final Context mContext;
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingClient	field	private final Handler mCallbackHandler;
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingClient	field	private final ServiceConnection mServiceConnection;
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingClient	field	private final TvInputCallback mTvInputClientCallback;
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingClient	field	private static final String TAG;
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingClient	method	public TvScheduledRecordingClient(Context context, AmazonTvInputInfo amazonTvInputInfo, Callback clientCallback, Handler handler)
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingClient	method	public TvScheduledRecordingClient(Context context, AmazonTvInputInfo amazonTvInputInfo, TvInputCallback clientCallback, Handler handler)
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingClient	method	public boolean connect()
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingClient	method	public boolean executeRequest(TvScheduledRecordingRequest tvScheduledRecordingRequest)
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingClient	method	public void disconnect()
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingClient$TvInputCallback	method	public void onConnected()
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingClient$TvInputCallback	method	public void onDisconnected()
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingClient$TvInputCallback	method	public void onResult(String tvInputId, TvScheduledRecordingRequest tvScheduledRecordingRequest, TvInputResponse tvInputResponse)
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingClient$TvInputCallback	method	public void onResult(TvScheduledRecordingRequest tvScheduledRecordingRequest, TvInputResponse tvInputResponse)
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingClient$TvRecordingServiceCallback	field	private final TvScheduledRecordingRequest mTvScheduledRecordingRequest;
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingClient$TvRecordingServiceCallback	method	public void onResult(final TvInputResponse tvInputResponse)
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingClient$TvRecordingServiceConnection	method	private TvRecordingServiceConnection()
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingClient$TvRecordingServiceConnection	method	public void onServiceConnected(ComponentName componentName, IBinder iBinder)
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingClient$TvRecordingServiceConnection	method	public void onServiceDisconnected(ComponentName componentName)
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingOptions	field	private final boolean mIsAutomaticDeleteEnabled;
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingOptions	field	private final long mAutomaticDeleteAfter;
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingOptions	field	private final long mEndPaddingTime;
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingOptions	field	private final long mStartPaddingTime;
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingOptions	field	public static final long AUTOMATIC_DELETE_ANY_TIME;
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingOptions	method	protected TvScheduledRecordingOptions(Parcel source)
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingOptions	method	public String toString()
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingOptions	method	public TvScheduledRecordingOptions(long startPaddingTime, long endPaddingTime, boolean isAutomaticDeleteEnabled, long automaticDeleteAfter)
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingOptions	method	public boolean equals(Object other)
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingOptions	method	public boolean isAutomaticDelete()
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingOptions	method	public int describeContents()
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingOptions	method	public int hashCode()
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingOptions	method	public long getAutomaticDeleteAfter()
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingOptions	method	public long getEndPaddingTime()
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingOptions	method	public long getStartPaddingTime()
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingOptions	method	public void writeToParcel(Parcel destination, int flags)
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingOptions$Builder	field	private boolean mIsAutomaticDeleteEnabled;
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingOptions$Builder	field	private long mAutomaticDeleteAfter;
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingOptions$Builder	field	private long mEndPaddingTime;
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingOptions$Builder	field	private long mStartPaddingTime;
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingOptions$Builder	method	public Builder automaticDelete(boolean isAutomaticDelete)
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingOptions$Builder	method	public Builder automaticDeleteAfter(long automaticDeleteAfter)
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingOptions$Builder	method	public Builder padding(long startPadding, long endPadding)
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingOptions$Builder	method	public TvScheduledRecordingOptions build()
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingRequest	field	private final Operation mOperation;
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingRequest	field	private final TvScheduledRecording mTvScheduledRecording;
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingRequest	method	protected TvScheduledRecordingRequest(Parcel source)
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingRequest	method	public Operation getOperation()
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingRequest	method	public String toString()
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingRequest	method	public TvScheduledRecording getScheduledRecording()
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingRequest	method	public TvScheduledRecordingRequest(Operation operation, TvScheduledRecording tvScheduledRecording)
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingRequest	method	public boolean equals(Object other)
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingRequest	method	public int describeContents()
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingRequest	method	public int hashCode()
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingRequest	method	public void writeToParcel(Parcel source, int flags)
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingRequest$Builder	field	private Operation mOperation;
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingRequest$Builder	field	private TvScheduledRecording mTvScheduledRecording;
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingRequest$Builder	method	public Builder operation(Operation operation)
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingRequest$Builder	method	public Builder recording(TvScheduledRecording tvScheduledRecording)
+amazon.media.tv.dvr.scheduled.TvScheduledRecordingRequest$Builder	method	public TvScheduledRecordingRequest build()

@@ -1,0 +1,108 @@
+class	kind	declaration
+com.android.location.provider.ActivityChangedEvent	field	private final List<ActivityRecognitionEvent> mActivityRecognitionEvents;
+com.android.location.provider.ActivityChangedEvent	method	public ActivityChangedEvent(List<ActivityRecognitionEvent> list)
+com.android.location.provider.ActivityChangedEvent	method	public Iterable<ActivityRecognitionEvent> getActivityRecognitionEvents()
+com.android.location.provider.ActivityChangedEvent	method	public String toString()
+com.android.location.provider.ActivityRecognitionEvent	field	private final String mActivity;
+com.android.location.provider.ActivityRecognitionEvent	field	private final int mEventType;
+com.android.location.provider.ActivityRecognitionEvent	field	private final long mTimestampNs;
+com.android.location.provider.ActivityRecognitionEvent	method	public ActivityRecognitionEvent(String str, int i, long j)
+com.android.location.provider.ActivityRecognitionEvent	method	public String getActivity()
+com.android.location.provider.ActivityRecognitionEvent	method	public String toString()
+com.android.location.provider.ActivityRecognitionEvent	method	public int getEventType()
+com.android.location.provider.ActivityRecognitionEvent	method	public long getTimestampNs()
+com.android.location.provider.ActivityRecognitionProvider	field	private final HashSet<Sink> mSinkSet;
+com.android.location.provider.ActivityRecognitionProvider	field	private final IActivityRecognitionHardware mService;
+com.android.location.provider.ActivityRecognitionProvider	field	public static final String ACTIVITY_IN_VEHICLE;
+com.android.location.provider.ActivityRecognitionProvider	field	public static final String ACTIVITY_ON_BICYCLE;
+com.android.location.provider.ActivityRecognitionProvider	field	public static final String ACTIVITY_RUNNING;
+com.android.location.provider.ActivityRecognitionProvider	field	public static final String ACTIVITY_STILL;
+com.android.location.provider.ActivityRecognitionProvider	field	public static final String ACTIVITY_TILTING;
+com.android.location.provider.ActivityRecognitionProvider	field	public static final String ACTIVITY_WALKING;
+com.android.location.provider.ActivityRecognitionProvider	field	public static final int EVENT_TYPE_ENTER;
+com.android.location.provider.ActivityRecognitionProvider	field	public static final int EVENT_TYPE_EXIT;
+com.android.location.provider.ActivityRecognitionProvider	field	public static final int EVENT_TYPE_FLUSH_COMPLETE;
+com.android.location.provider.ActivityRecognitionProvider	method	public ActivityRecognitionProvider(IActivityRecognitionHardware iActivityRecognitionHardware) throws RemoteException
+com.android.location.provider.ActivityRecognitionProvider	method	public String[] getSupportedActivities() throws RemoteException
+com.android.location.provider.ActivityRecognitionProvider	method	public boolean disableActivityEvent(String str, int i) throws RemoteException
+com.android.location.provider.ActivityRecognitionProvider	method	public boolean enableActivityEvent(String str, int i, long j) throws RemoteException
+com.android.location.provider.ActivityRecognitionProvider	method	public boolean flush() throws RemoteException
+com.android.location.provider.ActivityRecognitionProvider	method	public boolean isActivitySupported(String str) throws RemoteException
+com.android.location.provider.ActivityRecognitionProvider	method	public void registerSink(Sink sink)
+com.android.location.provider.ActivityRecognitionProvider	method	public void unregisterSink(Sink sink)
+com.android.location.provider.ActivityRecognitionProvider$SinkTransport	method	private SinkTransport()
+com.android.location.provider.ActivityRecognitionProvider$SinkTransport	method	public void onActivityChanged(android.hardware.location.ActivityChangedEvent activityChangedEvent)
+com.android.location.provider.ActivityRecognitionProviderClient	field	private static final String TAG;
+com.android.location.provider.ActivityRecognitionProviderClient	method	protected ActivityRecognitionProviderClient()
+com.android.location.provider.ActivityRecognitionProviderClient	method	public IBinder getBinder()
+com.android.location.provider.ActivityRecognitionProviderClient	method	public abstract void onProviderChanged(boolean z, ActivityRecognitionProvider activityRecognitionProvider);
+com.android.location.provider.ActivityRecognitionProviderWatcher	field	private ActivityRecognitionProvider mActivityRecognitionProvider;
+com.android.location.provider.ActivityRecognitionProviderWatcher	field	private static ActivityRecognitionProviderWatcher sWatcher;
+com.android.location.provider.ActivityRecognitionProviderWatcher	field	private static final Object sWatcherLock;
+com.android.location.provider.ActivityRecognitionProviderWatcher	field	private static final String TAG;
+com.android.location.provider.ActivityRecognitionProviderWatcher	method	private ActivityRecognitionProviderWatcher()
+com.android.location.provider.ActivityRecognitionProviderWatcher	method	public ActivityRecognitionProvider getActivityRecognitionProvider()
+com.android.location.provider.ActivityRecognitionProviderWatcher	method	public IBinder getBinder()
+com.android.location.provider.ActivityRecognitionProviderWatcher	method	public static ActivityRecognitionProviderWatcher getInstance()
+com.android.location.provider.FusedProvider	method	public IBinder getBinder()
+com.android.location.provider.GeocodeProvider	method	public IBinder getBinder()
+com.android.location.provider.GeocodeProvider	method	public abstract String onGetFromLocation(double d, double d2, int i, GeocoderParams geocoderParams, List<Address> list);
+com.android.location.provider.GeocodeProvider	method	public abstract String onGetFromLocationName(String str, double d, double d2, double d3, double d4, int i, GeocoderParams geocoderParams, List<Address> list);
+com.android.location.provider.GeofenceProvider	field	private GeofenceHardware mGeofenceHardware;
+com.android.location.provider.GeofenceProvider	method	public IBinder getBinder()
+com.android.location.provider.GeofenceProvider	method	public abstract void onGeofenceHardwareChange(GeofenceHardware geofenceHardware);
+com.android.location.provider.LocationProviderBase	field	private final ArrayList<String> mAdditionalProviderPackages;
+com.android.location.provider.LocationProviderBase	field	private final IBinder mBinder;
+com.android.location.provider.LocationProviderBase	field	private final String mTag;
+com.android.location.provider.LocationProviderBase	field	private volatile ILocationProviderManager mManager;
+com.android.location.provider.LocationProviderBase	field	private volatile ProviderProperties mProperties;
+com.android.location.provider.LocationProviderBase	field	private volatile boolean mAllowed;
+com.android.location.provider.LocationProviderBase	field	protected final ILocationManager mLocationManager;
+com.android.location.provider.LocationProviderBase	field	public static final String EXTRA_NO_GPS_LOCATION;
+com.android.location.provider.LocationProviderBase	field	public static final String FUSED_PROVIDER;
+com.android.location.provider.LocationProviderBase	method	protected abstract void onSetRequest(ProviderRequestUnbundled providerRequestUnbundled, WorkSource workSource);
+com.android.location.provider.LocationProviderBase	method	protected boolean onSendExtraCommand(String str, Bundle bundle)
+com.android.location.provider.LocationProviderBase	method	protected int onGetStatus(Bundle bundle)
+com.android.location.provider.LocationProviderBase	method	protected long onGetStatusUpdateTime()
+com.android.location.provider.LocationProviderBase	method	protected void onDisable()
+com.android.location.provider.LocationProviderBase	method	protected void onDump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr)
+com.android.location.provider.LocationProviderBase	method	protected void onEnable()
+com.android.location.provider.LocationProviderBase	method	protected void onInit()
+com.android.location.provider.LocationProviderBase	method	public IBinder getBinder()
+com.android.location.provider.LocationProviderBase	method	public LocationProviderBase(String str, ProviderPropertiesUnbundled providerPropertiesUnbundled)
+com.android.location.provider.LocationProviderBase	method	public boolean isAllowed()
+com.android.location.provider.LocationProviderBase	method	public boolean isEnabled()
+com.android.location.provider.LocationProviderBase	method	public void reportLocation(Location location)
+com.android.location.provider.LocationProviderBase	method	public void setAdditionalProviderPackages(List<String> list)
+com.android.location.provider.LocationProviderBase	method	public void setAllowed(boolean z)
+com.android.location.provider.LocationProviderBase	method	public void setEnabled(boolean z)
+com.android.location.provider.LocationProviderBase	method	public void setProperties(ProviderPropertiesUnbundled providerPropertiesUnbundled)
+com.android.location.provider.LocationProviderBase$Service	method	private Service()
+com.android.location.provider.LocationProviderBase$Service	method	public void sendExtraCommand(String str, Bundle bundle)
+com.android.location.provider.LocationProviderBase$Service	method	public void setLocationProviderManager(ILocationProviderManager iLocationProviderManager)
+com.android.location.provider.LocationProviderBase$Service	method	public void setRequest(ProviderRequest providerRequest, WorkSource workSource)
+com.android.location.provider.LocationRequestUnbundled	field	private final LocationRequest delegate;
+com.android.location.provider.LocationRequestUnbundled	field	public static final int ACCURACY_BLOCK;
+com.android.location.provider.LocationRequestUnbundled	field	public static final int ACCURACY_CITY;
+com.android.location.provider.LocationRequestUnbundled	field	public static final int ACCURACY_FINE;
+com.android.location.provider.LocationRequestUnbundled	field	public static final int POWER_HIGH;
+com.android.location.provider.LocationRequestUnbundled	field	public static final int POWER_LOW;
+com.android.location.provider.LocationRequestUnbundled	field	public static final int POWER_NONE;
+com.android.location.provider.LocationRequestUnbundled	method	public String toString()
+com.android.location.provider.LocationRequestUnbundled	method	public boolean isLocationSettingsIgnored()
+com.android.location.provider.LocationRequestUnbundled	method	public float getSmallestDisplacement()
+com.android.location.provider.LocationRequestUnbundled	method	public int getQuality()
+com.android.location.provider.LocationRequestUnbundled	method	public long getFastestInterval()
+com.android.location.provider.LocationRequestUnbundled	method	public long getInterval()
+com.android.location.provider.ProviderPropertiesUnbundled	field	private final ProviderProperties mProperties;
+com.android.location.provider.ProviderPropertiesUnbundled	method	private ProviderPropertiesUnbundled(ProviderProperties providerProperties)
+com.android.location.provider.ProviderPropertiesUnbundled	method	public ProviderProperties getProviderProperties()
+com.android.location.provider.ProviderPropertiesUnbundled	method	public String toString()
+com.android.location.provider.ProviderPropertiesUnbundled	method	public static ProviderPropertiesUnbundled create(boolean z, boolean z2, boolean z3, boolean z4, boolean z5, boolean z6, boolean z7, int i, int i2)
+com.android.location.provider.ProviderRequestUnbundled	field	private final ProviderRequest mRequest;
+com.android.location.provider.ProviderRequestUnbundled	method	public List<LocationRequestUnbundled> getLocationRequests()
+com.android.location.provider.ProviderRequestUnbundled	method	public ProviderRequestUnbundled(ProviderRequest providerRequest)
+com.android.location.provider.ProviderRequestUnbundled	method	public String toString()
+com.android.location.provider.ProviderRequestUnbundled	method	public boolean getReportLocation()
+com.android.location.provider.ProviderRequestUnbundled	method	public boolean isLocationSettingsIgnored()
+com.android.location.provider.ProviderRequestUnbundled	method	public long getInterval()

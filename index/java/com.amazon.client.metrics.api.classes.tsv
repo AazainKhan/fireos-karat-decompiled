@@ -1,0 +1,48 @@
+kind	class	extends	implements
+class	com.amazon.client.metrics.AbstractMetricsFactoryImpl	BaseMetricsFactoryImpl	
+class	com.amazon.client.metrics.AndroidMetricsFactoryImpl	AbstractMetricsFactoryImpl	
+class	com.amazon.client.metrics.BaseMetricsFactoryImpl		MetricsFactory
+class	com.amazon.client.metrics.BasicEngagementMetricEvent	EngagementMetricEvent	
+class	com.amazon.client.metrics.ConcurrentMetricEvent		MetricEvent
+class	com.amazon.client.metrics.DataPoint		
+class	com.amazon.client.metrics.DataPointEnvelope		Parcelable
+class	com.amazon.client.metrics.EngagementMetricEvent		MetricEvent
+class	com.amazon.client.metrics.IMetricsService$Stub	Binder	IMetricsService
+class	com.amazon.client.metrics.IMetricsService$Stub$Proxy		IMetricsService
+class	com.amazon.client.metrics.LoggerMetricsFactoryImpl	BaseMetricsFactoryImpl	
+class	com.amazon.client.metrics.MetricsException	Exception	
+class	com.amazon.client.metrics.MetricsServiceConnection		ServiceConnection,Constants
+class	com.amazon.client.metrics.MetricsServiceWrapper		IMetricsService,Constants
+class	com.amazon.client.metrics.NullClickStreamMetricEvent	NullMetricEvent	ClickStreamMetricsEvent
+class	com.amazon.client.metrics.NullMetricEvent		MetricEvent
+class	com.amazon.client.metrics.NullMetricsFactory		MetricsFactory
+class	com.amazon.client.metrics.PeriodicMetricReporterImpl		PeriodicMetricReporter
+class	com.amazon.client.metrics.api.BuildConfig		
+class	com.amazon.client.metrics.clickstream.ASINData		
+class	com.amazon.client.metrics.clickstream.ECommerceInfo		ClickStreamInfo
+class	com.amazon.client.metrics.clickstream.EventBasedUsageInfo		ClickStreamInfo
+class	com.amazon.client.metrics.clickstream.EventBasedUsageInfo$EventBasedUsageInfoBuilder		
+class	com.amazon.client.metrics.clickstream.ImpressionTrackingData		ClickStreamInfo
+class	com.amazon.client.metrics.clickstream.UsageInfo		ClickStreamInfo
+class	com.amazon.client.metrics.clickstream.WeblabInfo		ClickStreamInfo
+class	com.amazon.client.metrics.clickstream.internal.ClickStreamHelper		
+class	com.amazon.client.metrics.internal.MLogUtils		
+class	com.amazon.client.metrics.internal.ThreadName		
+class	com.amazon.client.metrics.stubbing.DCMStubbing		
+class	com.dp.utils.DeviceUpTimeSource		SystemTime.TimeSource
+class	com.dp.utils.SystemTime		
+enum	com.amazon.client.metrics.Channel		
+enum	com.amazon.client.metrics.DataPointType		
+enum	com.amazon.client.metrics.MetricEventType		
+enum	com.amazon.client.metrics.Priority		
+enum	com.amazon.client.metrics.clickstream.EventBasedUsageInfo$ACTION		
+enum	com.amazon.client.metrics.clickstream.internal.ClickStreamData		
+interface	com.amazon.client.metrics.ClickStreamMetricsEvent	GenericClickStreamMetricEvent	
+interface	com.amazon.client.metrics.Constants		
+interface	com.amazon.client.metrics.IMetricsService	IInterface	
+interface	com.amazon.client.metrics.MetricEvent		
+interface	com.amazon.client.metrics.MetricsFactory		
+interface	com.amazon.client.metrics.PeriodicMetricReporter		
+interface	com.amazon.client.metrics.clickstream.ClickStreamInfo		
+interface	com.amazon.client.metrics.clickstream.GenericClickStreamMetricEvent	MetricEvent	
+interface	com.dp.utils.SystemTime$TimeSource		

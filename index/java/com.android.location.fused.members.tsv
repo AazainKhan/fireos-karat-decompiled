@@ -1,0 +1,27 @@
+class	kind	declaration
+com.android.location.fused.FusedLocationProvider	field	private Location mFusedLocation;
+com.android.location.fused.FusedLocationProvider	field	private Location mGpsLocation;
+com.android.location.fused.FusedLocationProvider	field	private Location mNetworkLocation;
+com.android.location.fused.FusedLocationProvider	field	private ProviderRequestUnbundled mRequest;
+com.android.location.fused.FusedLocationProvider	field	private WorkSource mWorkSource;
+com.android.location.fused.FusedLocationProvider	field	private final BroadcastReceiver mUserChangeReceiver;
+com.android.location.fused.FusedLocationProvider	field	private final Context mContext;
+com.android.location.fused.FusedLocationProvider	field	private final LocationListener mGpsListener;
+com.android.location.fused.FusedLocationProvider	field	private final LocationListener mNetworkListener;
+com.android.location.fused.FusedLocationProvider	field	private final LocationManager mLocationManager;
+com.android.location.fused.FusedLocationProvider	field	private final Object mLock;
+com.android.location.fused.FusedLocationProvider	field	private long mGpsInterval;
+com.android.location.fused.FusedLocationProvider	field	private long mNetworkInterval;
+com.android.location.fused.FusedLocationProvider	field	private static final ProviderPropertiesUnbundled PROPERTIES;
+com.android.location.fused.FusedLocationProvider	method	private static Location chooseBestLocation(Location location, Location location2)
+com.android.location.fused.FusedLocationProvider	method	private void resetProviderRequestLocked(String str, long j, long j2, LocationListener locationListener)
+com.android.location.fused.FusedLocationProvider	method	private void updateRequirementsLocked()
+com.android.location.fused.FusedLocationProvider	method	public FusedLocationProvider(Context context)
+com.android.location.fused.FusedLocationProvider	method	public void onSetRequest(ProviderRequestUnbundled providerRequestUnbundled, WorkSource workSource)
+com.android.location.fused.FusedLocationProvider	method	public void onUserChanged()
+com.android.location.fused.FusedLocationProvider	method	public void reportBestLocationLocked()
+com.android.location.fused.FusedLocationService	field	private FusedLocationProvider mProvider;
+com.android.location.fused.FusedLocationService	method	protected void dump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr)
+com.android.location.fused.FusedLocationService	method	public IBinder onBind(Intent intent)
+com.android.location.fused.FusedLocationService	method	public void onDestroy()
+com.android.location.fused.R$string	field	public static final int app_label;

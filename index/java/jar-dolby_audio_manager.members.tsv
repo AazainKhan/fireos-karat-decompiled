@@ -1,0 +1,68 @@
+class	kind	declaration
+com.dolby.audio.DolbyAudioManager	field	private AudioManager mAudioManager;
+com.dolby.audio.DolbyAudioManager	field	private static boolean dialogueEnhancerState;
+com.dolby.audio.DolbyAudioManager	field	private static boolean volumeLevelerState;
+com.dolby.audio.DolbyAudioManager	field	private static final String DAP_AC4_DIALOGUE_ENHANCER_STRENGTH;
+com.dolby.audio.DolbyAudioManager	field	private static final String DAP_DIALOGUE_ENHANCER;
+com.dolby.audio.DolbyAudioManager	field	private static final String DAP_DIALOGUE_ENHANCER_STRENGTH;
+com.dolby.audio.DolbyAudioManager	field	private static final String DAP_VOLUME_LEVELER;
+com.dolby.audio.DolbyAudioManager	field	private static final String DAP_VOLUME_LEVELER_STRENGTH;
+com.dolby.audio.DolbyAudioManager	field	private static final String DELIMITER_KEY_VALUE;
+com.dolby.audio.DolbyAudioManager	field	private static final String DELIMITER_KEY_VALUE_PAIRS;
+com.dolby.audio.DolbyAudioManager	field	private static final String HDMI_OUTPUT_CHANNEL_MODE;
+com.dolby.audio.DolbyAudioManager	field	private static final String HDMI_OUTPUT_ENCODING;
+com.dolby.audio.DolbyAudioManager	field	private static final String SUPPORTED;
+com.dolby.audio.DolbyAudioManager	field	private static final String TAG;
+com.dolby.audio.DolbyAudioManager	field	private static int DEFAULT_STRENGTH_AC4_DIALOGUE_ENHANCER;
+com.dolby.audio.DolbyAudioManager	field	private static int DEFAULT_STRENGTH_DIALOGUE_ENHANCER;
+com.dolby.audio.DolbyAudioManager	field	private static int DEFAULT_STRENGTH_VOLUME_LEVELER;
+com.dolby.audio.DolbyAudioManager	field	private static int DIALOGUE_ENHANCER_OFF;
+com.dolby.audio.DolbyAudioManager	field	private static int DIALOGUE_ENHANCER_ON;
+com.dolby.audio.DolbyAudioManager	field	private static int VOLUME_LEVELER_OFF;
+com.dolby.audio.DolbyAudioManager	field	private static int VOLUME_LEVELER_ON;
+com.dolby.audio.DolbyAudioManager	field	public static final int ERROR;
+com.dolby.audio.DolbyAudioManager	field	public static final int OUTPUT_CHANNEL_MODE_5POINT1;
+com.dolby.audio.DolbyAudioManager	field	public static final int OUTPUT_CHANNEL_MODE_AUTO;
+com.dolby.audio.DolbyAudioManager	field	public static final int OUTPUT_ENCODING_AC3;
+com.dolby.audio.DolbyAudioManager	field	public static final int OUTPUT_ENCODING_AUTO;
+com.dolby.audio.DolbyAudioManager	field	public static final int OUTPUT_ENCODING_E_AC3;
+com.dolby.audio.DolbyAudioManager	field	public static final int OUTPUT_ENCODING_PCM_16BIT;
+com.dolby.audio.DolbyAudioManager	field	public static final int SUCCESS;
+com.dolby.audio.DolbyAudioManager	method	private String getKey(String str)
+com.dolby.audio.DolbyAudioManager	method	private String getKeyValueDeOn(String str, int i, String str2, int i2, String str3, int i3)
+com.dolby.audio.DolbyAudioManager	method	private String getKeyValuePair(String str, String str2)
+com.dolby.audio.DolbyAudioManager	method	private String getKeyValuePair(String str, boolean z)
+com.dolby.audio.DolbyAudioManager	method	private String getKeyValuePair(String str, int i)
+com.dolby.audio.DolbyAudioManager	method	private String getKeyValueVlDeOff(String str, int i)
+com.dolby.audio.DolbyAudioManager	method	private String getKeyValueVlOn(String str, int i, String str2, int i2)
+com.dolby.audio.DolbyAudioManager	method	private boolean getBooleanParameter(String str)
+com.dolby.audio.DolbyAudioManager	method	private boolean isFeatureSupported(String str)
+com.dolby.audio.DolbyAudioManager	method	private boolean isFeatureWithValueSupported(String str, int i)
+com.dolby.audio.DolbyAudioManager	method	private boolean isOutputEncodingSupported(int i)
+com.dolby.audio.DolbyAudioManager	method	private int getIntParameter(String str)
+com.dolby.audio.DolbyAudioManager	method	public DolbyAudioManager(Context context)
+com.dolby.audio.DolbyAudioManager	method	public List<Integer> getSupportedHdmiOutputChannelModes()
+com.dolby.audio.DolbyAudioManager	method	public List<Integer> getSupportedHdmiOutputEncodings()
+com.dolby.audio.DolbyAudioManager	method	public boolean isDialogueEnhancerOn()
+com.dolby.audio.DolbyAudioManager	method	public boolean isHeadphoneVirtualizerOn()
+com.dolby.audio.DolbyAudioManager	method	public boolean isOutputChannelModeSupported(int i)
+com.dolby.audio.DolbyAudioManager	method	public boolean isVolumeLevelerOn()
+com.dolby.audio.DolbyAudioManager	method	public int getHdmiOutputChannelMode()
+com.dolby.audio.DolbyAudioManager	method	public int getHdmiOutputEncoding()
+com.dolby.audio.DolbyAudioManager	method	public int setDialogueEnhancerOn(boolean z)
+com.dolby.audio.DolbyAudioManager	method	public int setHdmiOutputChannelMode(int i)
+com.dolby.audio.DolbyAudioManager	method	public int setHdmiOutputEncoding(int i)
+com.dolby.audio.DolbyAudioManager	method	public int setHeadphoneVirtualizerOn(boolean z)
+com.dolby.audio.DolbyAudioManager	method	public int setVolumeLevelerOn(boolean z)
+com.dolby.audio.DolbyAudioParameter	field	private final LinkedHashMap<String, String> mParameters;
+com.dolby.audio.DolbyAudioParameter	field	private static final String DELIMITER_KEY_VALUE;
+com.dolby.audio.DolbyAudioParameter	field	private static final String DELIMITER_KEY_VALUE_PAIRS;
+com.dolby.audio.DolbyAudioParameter	field	private static final String TAG;
+com.dolby.audio.DolbyAudioParameter	method	public String get(String str)
+com.dolby.audio.DolbyAudioParameter	method	public String toString()
+com.dolby.audio.DolbyAudioParameter	method	public boolean containsKey(String str)
+com.dolby.audio.DolbyAudioParameter	method	public boolean containsValueFor(String str)
+com.dolby.audio.DolbyAudioParameter	method	public int getInt(String str)
+com.dolby.audio.DolbyAudioParameter	method	public void add(String str, String str2)
+com.dolby.audio.DolbyAudioParameter	method	public void add(String str, int i)
+com.dolby.audio.DolbyAudioParameter	method	public void remove(String str)

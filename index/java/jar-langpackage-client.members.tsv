@@ -1,0 +1,308 @@
+class	kind	declaration
+com.amazon.providers.langpackage.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.providers.langpackage.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.providers.langpackage.BuildConfig	field	public static final String FLAVOR;
+com.amazon.providers.langpackage.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.providers.langpackage.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.providers.langpackage.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.providers.langpackage.client.ILangPackageManager$Query	field	private LangPackageContract.PackageStatus status;
+com.amazon.providers.langpackage.client.ILangPackageManager$Query	field	private LangPackageContract.PackageType type;
+com.amazon.providers.langpackage.client.ILangPackageManager$Query	field	private LangPackageContract.Source languageSource;
+com.amazon.providers.langpackage.client.ILangPackageManager$Query	field	private String language;
+com.amazon.providers.langpackage.client.ILangPackageManager$Query	field	private String name;
+com.amazon.providers.langpackage.client.ILangPackageManager$Query	method	public LangPackageContract.PackageStatus getFilterByStatus()
+com.amazon.providers.langpackage.client.ILangPackageManager$Query	method	public LangPackageContract.PackageType getFilterByType()
+com.amazon.providers.langpackage.client.ILangPackageManager$Query	method	public LangPackageContract.Source getFilterByLanguageStatus()
+com.amazon.providers.langpackage.client.ILangPackageManager$Query	method	public Query setFilterByLanguage(String l, LangPackageContract.Source s)
+com.amazon.providers.langpackage.client.ILangPackageManager$Query	method	public Query setFilterByName(String n)
+com.amazon.providers.langpackage.client.ILangPackageManager$Query	method	public Query setFilterByStatus(LangPackageContract.PackageStatus s)
+com.amazon.providers.langpackage.client.ILangPackageManager$Query	method	public Query setFilterByType(LangPackageContract.PackageType t)
+com.amazon.providers.langpackage.client.ILangPackageManager$Query	method	public String getFilterByLanguage()
+com.amazon.providers.langpackage.client.ILangPackageManager$Query	method	public String getFilterByName()
+com.amazon.providers.langpackage.client.LangPackageContract$ConfigurationProperties	field	private final String value;
+com.amazon.providers.langpackage.client.LangPackageContract$ConfigurationProperties	method	public String toString()
+com.amazon.providers.langpackage.client.LangPackageContract$ConfigurationProperties	method	public static ConfigurationProperties fromString(String value)
+com.amazon.providers.langpackage.client.LangPackageContract$PackageEvent	field	private final int value;
+com.amazon.providers.langpackage.client.LangPackageContract$PackageEvent	method	public final int toInt()
+com.amazon.providers.langpackage.client.LangPackageContract$PackageEvent	method	public static PackageEvent fromInt(int value)
+com.amazon.providers.langpackage.client.LangPackageContract$PackageStatus	field	private final int value;
+com.amazon.providers.langpackage.client.LangPackageContract$PackageStatus	method	public int toInt()
+com.amazon.providers.langpackage.client.LangPackageContract$PackageStatus	method	public static PackageStatus fromInt(int value)
+com.amazon.providers.langpackage.client.LangPackageContract$PackageType	field	private final int value;
+com.amazon.providers.langpackage.client.LangPackageContract$PackageType	method	public int toInt()
+com.amazon.providers.langpackage.client.LangPackageContract$PackageType	method	public static PackageType fromInt(int value)
+com.amazon.providers.langpackage.client.LangPackageContract$PropertyType	field	private final int value;
+com.amazon.providers.langpackage.client.LangPackageContract$PropertyType	method	public int toInt()
+com.amazon.providers.langpackage.client.LangPackageContract$PropertyType	method	public static PropertyType fromInt(int value)
+com.amazon.providers.langpackage.client.LangPackageContract$ReasonCodes	field	private final int value;
+com.amazon.providers.langpackage.client.LangPackageContract$ReasonCodes	method	public final int toInt()
+com.amazon.providers.langpackage.client.LangPackageContract$ReasonCodes	method	public static ReasonCodes fromInt(int value)
+com.amazon.providers.langpackage.client.LangPackageContract$Source	field	private final int value;
+com.amazon.providers.langpackage.client.LangPackageContract$Source	method	public int toInt()
+com.amazon.providers.langpackage.client.LangPackageContract$Source	method	public static Source fromInt(int value)
+com.amazon.providers.langpackage.client.LangPackageContract$StorageProvider	field	private final String value;
+com.amazon.providers.langpackage.client.LangPackageContract$StorageProvider	method	public String toString()
+com.amazon.providers.langpackage.client.LangPackageContract$StorageProvider	method	public static StorageProvider fromString(String value)
+com.amazon.providers.langpackage.client.LangPackageManagerProvider	method	public static ILangPackageManager getPackageManager(Context ctx)
+com.amazon.providers.langpackage.client.LangPackageManagerProvider	method	public static void cancelManifestDownloadClock(Context ctx)
+com.amazon.providers.langpackage.client.LangPackageManagerProvider	method	public static void initializeManifestDownloadClock(Context ctx)
+com.amazon.providers.langpackage.client.ProviderUnavailableException	method	public ProviderUnavailableException()
+com.amazon.providers.langpackage.core.CoreUtils	field	private static final String TAG;
+com.amazon.providers.langpackage.core.CoreUtils	field	private static final boolean DEBUG;
+com.amazon.providers.langpackage.core.CoreUtils	method	public static String getApplicationPackage(Context ctx)
+com.amazon.providers.langpackage.core.CoreUtils	method	public static String truncateLang(String tag)
+com.amazon.providers.langpackage.core.CoreUtils	method	public static void cancelManifestDownloadClock(Context ctx)
+com.amazon.providers.langpackage.core.CoreUtils	method	public static void initializeManifestDownloadClock(Context ctx)
+com.amazon.providers.langpackage.core.LangPackage	field	private ContentValues valuesToUpdate;
+com.amazon.providers.langpackage.core.LangPackage	field	private LangPackageContract.PackageEvent lastEvent;
+com.amazon.providers.langpackage.core.LangPackage	field	private LangPackageContract.PackageStatus packageStatus;
+com.amazon.providers.langpackage.core.LangPackage	field	private LangPackageContract.PackageType type;
+com.amazon.providers.langpackage.core.LangPackage	field	private LangPackageContract.ReasonCodes failureReason;
+com.amazon.providers.langpackage.core.LangPackage	field	private LangPackageContract.StorageProvider storageProvider;
+com.amazon.providers.langpackage.core.LangPackage	field	private List<ILangPackageBundle> availableBundles;
+com.amazon.providers.langpackage.core.LangPackage	field	private List<ILangPackageBundle> installedBundles;
+com.amazon.providers.langpackage.core.LangPackage	field	private List<String> availableLanguages;
+com.amazon.providers.langpackage.core.LangPackage	field	private List<String> installedLanguages;
+com.amazon.providers.langpackage.core.LangPackage	field	private String bucketName;
+com.amazon.providers.langpackage.core.LangPackage	field	private String currentVersion;
+com.amazon.providers.langpackage.core.LangPackage	field	private String displayName;
+com.amazon.providers.langpackage.core.LangPackage	field	private String installLocation;
+com.amazon.providers.langpackage.core.LangPackage	field	private String installLocationWithVersion;
+com.amazon.providers.langpackage.core.LangPackage	field	private String installedVersion;
+com.amazon.providers.langpackage.core.LangPackage	field	private String legacyLanguage;
+com.amazon.providers.langpackage.core.LangPackage	field	private String name;
+com.amazon.providers.langpackage.core.LangPackage	field	private String sourceUrl;
+com.amazon.providers.langpackage.core.LangPackage	field	private boolean autoUpdate;
+com.amazon.providers.langpackage.core.LangPackage	field	private boolean isAvailable;
+com.amazon.providers.langpackage.core.LangPackage	field	private int id;
+com.amazon.providers.langpackage.core.LangPackage	field	private long downloadID;
+com.amazon.providers.langpackage.core.LangPackage	field	private long size;
+com.amazon.providers.langpackage.core.LangPackage	field	private static final String TAG;
+com.amazon.providers.langpackage.core.LangPackage	field	private static final boolean DEBUG;
+com.amazon.providers.langpackage.core.LangPackage	field	private static final int INDEX_AUTO_UPDATE;
+com.amazon.providers.langpackage.core.LangPackage	field	private static final int INDEX_AVAILABLE;
+com.amazon.providers.langpackage.core.LangPackage	field	private static final int INDEX_BUCKET_NAME;
+com.amazon.providers.langpackage.core.LangPackage	field	private static final int INDEX_CURRENT_VERSION;
+com.amazon.providers.langpackage.core.LangPackage	field	private static final int INDEX_DISPLAY_NAME;
+com.amazon.providers.langpackage.core.LangPackage	field	private static final int INDEX_DOWNLOAD_ID;
+com.amazon.providers.langpackage.core.LangPackage	field	private static final int INDEX_FAILURE_REASON;
+com.amazon.providers.langpackage.core.LangPackage	field	private static final int INDEX_ID;
+com.amazon.providers.langpackage.core.LangPackage	field	private static final int INDEX_INSTALLED_VERSION;
+com.amazon.providers.langpackage.core.LangPackage	field	private static final int INDEX_INSTALL_LOCATION;
+com.amazon.providers.langpackage.core.LangPackage	field	private static final int INDEX_INSTALL_LOCATION_WITH_VERSION;
+com.amazon.providers.langpackage.core.LangPackage	field	private static final int INDEX_LANGUAGE;
+com.amazon.providers.langpackage.core.LangPackage	field	private static final int INDEX_LAST_EVENT;
+com.amazon.providers.langpackage.core.LangPackage	field	private static final int INDEX_NAME;
+com.amazon.providers.langpackage.core.LangPackage	field	private static final int INDEX_SIZE;
+com.amazon.providers.langpackage.core.LangPackage	field	private static final int INDEX_SOURCE_URL;
+com.amazon.providers.langpackage.core.LangPackage	field	private static final int INDEX_STATUS;
+com.amazon.providers.langpackage.core.LangPackage	field	private static final int INDEX_STORAGE_PROVIDER;
+com.amazon.providers.langpackage.core.LangPackage	field	private static final int INDEX_TYPE;
+com.amazon.providers.langpackage.core.LangPackage	field	static final String AKAMAI_SOURCE_URL_PREFIX;
+com.amazon.providers.langpackage.core.LangPackage	field	static final String HTTPS_PROTOCOL;
+com.amazon.providers.langpackage.core.LangPackage	field	static final String ORDERBY;
+com.amazon.providers.langpackage.core.LangPackage	field	static final String S3_PARTIAL_HOST_NAME;
+com.amazon.providers.langpackage.core.LangPackage	field	static final String S3_SOURCE_URL_PREFIX;
+com.amazon.providers.langpackage.core.LangPackage	field	static final String[] PROJECTION;
+com.amazon.providers.langpackage.core.LangPackage	method	private ContentValues getValuesToUpdate()
+com.amazon.providers.langpackage.core.LangPackage	method	private LangPackage(Context context)
+com.amazon.providers.langpackage.core.LangPackage	method	private List<ILangPackageBundle> getBundlesList(LangPackageContract.Source source)
+com.amazon.providers.langpackage.core.LangPackage	method	private List<ILangPackageBundle> tryLoadBundles(LangPackageContract.Source source) throws ProviderUnavailableException
+com.amazon.providers.langpackage.core.LangPackage	method	private List<String> getLanguagesList(LangPackageContract.Source source)
+com.amazon.providers.langpackage.core.LangPackage	method	private List<String> tryLoadLanguages(LangPackageContract.Source source) throws ProviderUnavailableException
+com.amazon.providers.langpackage.core.LangPackage	method	private void loadFromCursor(Cursor cursor)
+com.amazon.providers.langpackage.core.LangPackage	method	private void setBundlesList(LangPackageContract.Source source, List<ILangPackageBundle> list)
+com.amazon.providers.langpackage.core.LangPackage	method	private void setLanguagesList(LangPackageContract.Source source, List<String> list)
+com.amazon.providers.langpackage.core.LangPackage	method	public LangPackageContract.PackageEvent getLastEvent()
+com.amazon.providers.langpackage.core.LangPackage	method	public LangPackageContract.PackageStatus getStatus()
+com.amazon.providers.langpackage.core.LangPackage	method	public LangPackageContract.PackageType getType()
+com.amazon.providers.langpackage.core.LangPackage	method	public LangPackageContract.ReasonCodes getFailureReason()
+com.amazon.providers.langpackage.core.LangPackage	method	public LangPackageContract.StorageProvider getStorageProvider()
+com.amazon.providers.langpackage.core.LangPackage	method	public List<ILangPackageBundle> getBundles(LangPackageContract.Source source)
+com.amazon.providers.langpackage.core.LangPackage	method	public List<String> getLanguages(LangPackageContract.Source source)
+com.amazon.providers.langpackage.core.LangPackage	method	public String getAvailableVersion()
+com.amazon.providers.langpackage.core.LangPackage	method	public String getBucketName()
+com.amazon.providers.langpackage.core.LangPackage	method	public String getDisplayName()
+com.amazon.providers.langpackage.core.LangPackage	method	public String getFullSourceUrl()
+com.amazon.providers.langpackage.core.LangPackage	method	public String getInstallLocation()
+com.amazon.providers.langpackage.core.LangPackage	method	public String getInstallLocationWithVersion()
+com.amazon.providers.langpackage.core.LangPackage	method	public String getInstalledVersion()
+com.amazon.providers.langpackage.core.LangPackage	method	public String getLegacyLanguage()
+com.amazon.providers.langpackage.core.LangPackage	method	public String getName()
+com.amazon.providers.langpackage.core.LangPackage	method	public String getSourceUrl()
+com.amazon.providers.langpackage.core.LangPackage	method	public boolean isAutoUpdate()
+com.amazon.providers.langpackage.core.LangPackage	method	public boolean isAvailable()
+com.amazon.providers.langpackage.core.LangPackage	method	public boolean isTtsVoice()
+com.amazon.providers.langpackage.core.LangPackage	method	public int getID()
+com.amazon.providers.langpackage.core.LangPackage	method	public long getDownloadID()
+com.amazon.providers.langpackage.core.LangPackage	method	public long getSize()
+com.amazon.providers.langpackage.core.LangPackage	method	public void cancelDownload()
+com.amazon.providers.langpackage.core.LangPackage	method	public void pauseDownload()
+com.amazon.providers.langpackage.core.LangPackage	method	public void remove()
+com.amazon.providers.langpackage.core.LangPackage	method	public void requestDownload(boolean trackProgress)
+com.amazon.providers.langpackage.core.LangPackage	method	public void requestDownload(boolean trackProgress, boolean uiVisible)
+com.amazon.providers.langpackage.core.LangPackage	method	public void requestInstall(boolean trackProgress)
+com.amazon.providers.langpackage.core.LangPackage	method	public void resumeDownload()
+com.amazon.providers.langpackage.core.LangPackage	method	public void setAvailable(boolean value)
+com.amazon.providers.langpackage.core.LangPackage	method	public void setDownloadID(long value)
+com.amazon.providers.langpackage.core.LangPackage	method	public void setFailureReason(LangPackageContract.ReasonCodes value)
+com.amazon.providers.langpackage.core.LangPackage	method	public void setInstallLocation(String value)
+com.amazon.providers.langpackage.core.LangPackage	method	public void setInstallLocationWithVersion(String value)
+com.amazon.providers.langpackage.core.LangPackage	method	public void setInstalledVersion(String value)
+com.amazon.providers.langpackage.core.LangPackage	method	public void setStatus(LangPackageContract.PackageStatus value)
+com.amazon.providers.langpackage.core.LangPackage	method	public void update()
+com.amazon.providers.langpackage.core.LangPackage	method	static ILangPackage createFromRecord(Context context, Cursor cursor)
+com.amazon.providers.langpackage.core.LangPackageBundle	field	private ArrayList<String> fileNames;
+com.amazon.providers.langpackage.core.LangPackageBundle	field	private ILangPackage parent;
+com.amazon.providers.langpackage.core.LangPackageBundle	field	private ILangPackagePropertyList properties;
+com.amazon.providers.langpackage.core.LangPackageBundle	field	private String path;
+com.amazon.providers.langpackage.core.LangPackageBundle	field	private int id;
+com.amazon.providers.langpackage.core.LangPackageBundle	field	private static final String TAG;
+com.amazon.providers.langpackage.core.LangPackageBundle	field	private static final boolean DEBUG;
+com.amazon.providers.langpackage.core.LangPackageBundle	field	private static final int INDEX_ID;
+com.amazon.providers.langpackage.core.LangPackageBundle	field	private static final int INDEX_PATH;
+com.amazon.providers.langpackage.core.LangPackageBundle	field	static final String[] PROJECTION;
+com.amazon.providers.langpackage.core.LangPackageBundle	method	private ILangPackagePropertyList tryLoadProperties() throws ProviderUnavailableException
+com.amazon.providers.langpackage.core.LangPackageBundle	method	private LangPackageBundle(Context context, ILangPackage prnt, Cursor cursor)
+com.amazon.providers.langpackage.core.LangPackageBundle	method	private List<String> tryLoadFiles() throws ProviderUnavailableException
+com.amazon.providers.langpackage.core.LangPackageBundle	method	public ILangPackagePropertyList getProperties()
+com.amazon.providers.langpackage.core.LangPackageBundle	method	public List<String> getFileNames()
+com.amazon.providers.langpackage.core.LangPackageBundle	method	public String getAbsolutePath()
+com.amazon.providers.langpackage.core.LangPackageBundle	method	public String getPath()
+com.amazon.providers.langpackage.core.LangPackageBundle	method	public int getID()
+com.amazon.providers.langpackage.core.LangPackageBundle	method	static ILangPackageBundle createFromParameters(Context context, int id, String path, ArrayList<String> fileNames, ILangPackagePropertyList properties, ILangPackage parent)
+com.amazon.providers.langpackage.core.LangPackageBundle	method	static ILangPackageBundle createFromRecord(Context context, Cursor cursor, ContentResolver resolver, ILangPackage parent)
+com.amazon.providers.langpackage.core.LangPackageConstants	field	private static final int COMMAND_BASE;
+com.amazon.providers.langpackage.core.LangPackageConstants	field	public static final String ACTION_CONTENT_SERVICE_COMMAND;
+com.amazon.providers.langpackage.core.LangPackageConstants	field	public static final String ACTION_CONTENT_SUPPORT_INSTALLED;
+com.amazon.providers.langpackage.core.LangPackageConstants	field	public static final String ACTION_CONTENT_SUPPORT_INSTALL_FAILED;
+com.amazon.providers.langpackage.core.LangPackageConstants	field	public static final String ACTION_CONTENT_SUPPORT_ON_EVENT;
+com.amazon.providers.langpackage.core.LangPackageConstants	field	public static final String ACTION_CONTENT_SUPPORT_REMOVED;
+com.amazon.providers.langpackage.core.LangPackageConstants	field	public static final String ACTION_CONTENT_SUPPORT_WHITELIST;
+com.amazon.providers.langpackage.core.LangPackageConstants	field	public static final String AUTHORITY;
+com.amazon.providers.langpackage.core.LangPackageConstants	field	public static final String EXTRA_CSP_EVENT;
+com.amazon.providers.langpackage.core.LangPackageConstants	field	public static final String EXTRA_CSP_ID;
+com.amazon.providers.langpackage.core.LangPackageConstants	field	public static final String EXTRA_CSP_LANGUAGE;
+com.amazon.providers.langpackage.core.LangPackageConstants	field	public static final String EXTRA_CSP_NAME;
+com.amazon.providers.langpackage.core.LangPackageConstants	field	public static final String EXTRA_CSP_PATH;
+com.amazon.providers.langpackage.core.LangPackageConstants	field	public static final String EXTRA_CSP_TYPE;
+com.amazon.providers.langpackage.core.LangPackageConstants	field	public static final String EXTRA_DISPLAY_LANGUAGE;
+com.amazon.providers.langpackage.core.LangPackageConstants	field	public static final String EXTRA_DISPLAY_NAME;
+com.amazon.providers.langpackage.core.LangPackageConstants	field	public static final String EXTRA_DOWNLOAD_UIVISIBLE;
+com.amazon.providers.langpackage.core.LangPackageConstants	field	public static final String EXTRA_FAILURE_REASON;
+com.amazon.providers.langpackage.core.LangPackageConstants	field	public static final String EXTRA_INSTALLPATH;
+com.amazon.providers.langpackage.core.LangPackageConstants	field	public static final String EXTRA_PACKAGE_TYPE;
+com.amazon.providers.langpackage.core.LangPackageConstants	field	public static final String EXTRA_SHORT_FORM;
+com.amazon.providers.langpackage.core.LangPackageConstants	field	public static final String METHOD_GET_DISPLAY_NAME;
+com.amazon.providers.langpackage.core.LangPackageConstants	field	public static final String METHOD_GET_INSTALLPATH;
+com.amazon.providers.langpackage.core.LangPackageConstants	field	public static final int CANCEL_DOWNLOAD;
+com.amazon.providers.langpackage.core.LangPackageConstants	field	public static final int PAUSE_DOWNLOAD;
+com.amazon.providers.langpackage.core.LangPackageConstants	field	public static final int REQUEST_DELETE;
+com.amazon.providers.langpackage.core.LangPackageConstants	field	public static final int REQUEST_DOWNLOAD;
+com.amazon.providers.langpackage.core.LangPackageConstants	field	public static final int REQUEST_INSTALLATION;
+com.amazon.providers.langpackage.core.LangPackageConstants	field	public static final int REQUEST_MANIFEST_DOWNLOAD;
+com.amazon.providers.langpackage.core.LangPackageConstants	field	public static final int RESUME_DOWNLOAD;
+com.amazon.providers.langpackage.core.LangPackageConstants$Bundles	field	public static final String ID;
+com.amazon.providers.langpackage.core.LangPackageConstants$Bundles	field	public static final String PACKAGE_ID;
+com.amazon.providers.langpackage.core.LangPackageConstants$Bundles	field	public static final String PATH;
+com.amazon.providers.langpackage.core.LangPackageConstants$Bundles	field	public static final String SOURCE;
+com.amazon.providers.langpackage.core.LangPackageConstants$Bundles	field	public static final String TABLE_NAME;
+com.amazon.providers.langpackage.core.LangPackageConstants$Bundles	field	public static final Uri URI;
+com.amazon.providers.langpackage.core.LangPackageConstants$Files	field	public static final String BUNDLE_ID;
+com.amazon.providers.langpackage.core.LangPackageConstants$Files	field	public static final String ID;
+com.amazon.providers.langpackage.core.LangPackageConstants$Files	field	public static final String NAME;
+com.amazon.providers.langpackage.core.LangPackageConstants$Files	field	public static final String TABLE_NAME;
+com.amazon.providers.langpackage.core.LangPackageConstants$Files	field	public static final Uri URI;
+com.amazon.providers.langpackage.core.LangPackageConstants$Languages	field	public static final String LANGUAGE;
+com.amazon.providers.langpackage.core.LangPackageConstants$Languages	field	public static final String PACKAGE_ID;
+com.amazon.providers.langpackage.core.LangPackageConstants$Languages	field	public static final String SOURCE;
+com.amazon.providers.langpackage.core.LangPackageConstants$Languages	field	public static final String TABLE_NAME;
+com.amazon.providers.langpackage.core.LangPackageConstants$Languages	field	public static final Uri URI;
+com.amazon.providers.langpackage.core.LangPackageConstants$Packages	field	public static final String AUTO_UPDATE;
+com.amazon.providers.langpackage.core.LangPackageConstants$Packages	field	public static final String AVAILABLE;
+com.amazon.providers.langpackage.core.LangPackageConstants$Packages	field	public static final String BUCKET_NAME;
+com.amazon.providers.langpackage.core.LangPackageConstants$Packages	field	public static final String CURRENT_VERSION;
+com.amazon.providers.langpackage.core.LangPackageConstants$Packages	field	public static final String DISPLAY_NAME;
+com.amazon.providers.langpackage.core.LangPackageConstants$Packages	field	public static final String DOWNLOAD_ID;
+com.amazon.providers.langpackage.core.LangPackageConstants$Packages	field	public static final String FAILURE_REASON;
+com.amazon.providers.langpackage.core.LangPackageConstants$Packages	field	public static final String ID;
+com.amazon.providers.langpackage.core.LangPackageConstants$Packages	field	public static final String INSTALLED_VERSION;
+com.amazon.providers.langpackage.core.LangPackageConstants$Packages	field	public static final String INSTALL_LOCATION;
+com.amazon.providers.langpackage.core.LangPackageConstants$Packages	field	public static final String INSTALL_LOCATION_WITH_VERSION;
+com.amazon.providers.langpackage.core.LangPackageConstants$Packages	field	public static final String LANGUAGE;
+com.amazon.providers.langpackage.core.LangPackageConstants$Packages	field	public static final String LAST_EVENT;
+com.amazon.providers.langpackage.core.LangPackageConstants$Packages	field	public static final String NAME;
+com.amazon.providers.langpackage.core.LangPackageConstants$Packages	field	public static final String SIZE;
+com.amazon.providers.langpackage.core.LangPackageConstants$Packages	field	public static final String SOURCE_URL;
+com.amazon.providers.langpackage.core.LangPackageConstants$Packages	field	public static final String STATUS;
+com.amazon.providers.langpackage.core.LangPackageConstants$Packages	field	public static final String STORAGE_PROVIDER;
+com.amazon.providers.langpackage.core.LangPackageConstants$Packages	field	public static final String TABLE_NAME;
+com.amazon.providers.langpackage.core.LangPackageConstants$Packages	field	public static final String TYPE;
+com.amazon.providers.langpackage.core.LangPackageConstants$Packages	field	public static final String URI_BYLANGUAGE;
+com.amazon.providers.langpackage.core.LangPackageConstants$Packages	field	public static final String URI_NAME;
+com.amazon.providers.langpackage.core.LangPackageConstants$Packages	field	public static final String USE_COUNT;
+com.amazon.providers.langpackage.core.LangPackageConstants$Packages	field	public static final Uri URI;
+com.amazon.providers.langpackage.core.LangPackageConstants$Properties	field	public static final String BUNDLE_ID;
+com.amazon.providers.langpackage.core.LangPackageConstants$Properties	field	public static final String ID;
+com.amazon.providers.langpackage.core.LangPackageConstants$Properties	field	public static final String NAME;
+com.amazon.providers.langpackage.core.LangPackageConstants$Properties	field	public static final String TABLE_NAME;
+com.amazon.providers.langpackage.core.LangPackageConstants$Properties	field	public static final String TYPE;
+com.amazon.providers.langpackage.core.LangPackageConstants$Properties	field	public static final String VALUE;
+com.amazon.providers.langpackage.core.LangPackageConstants$Properties	field	public static final Uri URI;
+com.amazon.providers.langpackage.core.LangPackageConstants$Settings	field	public static final String NAME;
+com.amazon.providers.langpackage.core.LangPackageConstants$Settings	field	public static final String TABLE_NAME;
+com.amazon.providers.langpackage.core.LangPackageConstants$Settings	field	public static final String VALUE;
+com.amazon.providers.langpackage.core.LangPackageConstants$Settings	field	public static final Uri URI;
+com.amazon.providers.langpackage.core.LangPackageConstants$Version	field	public static final String TABLE_NAME;
+com.amazon.providers.langpackage.core.LangPackageConstants$Version	field	public static final String VERSION;
+com.amazon.providers.langpackage.core.LangPackageConstants$Version	field	public static final Uri URI;
+com.amazon.providers.langpackage.core.LangPackageManager	field	private ILangPackageListener broadcastListener;
+com.amazon.providers.langpackage.core.LangPackageManager	field	private static final String TAG;
+com.amazon.providers.langpackage.core.LangPackageManager	field	private static final boolean DEBUG;
+com.amazon.providers.langpackage.core.LangPackageManager	method	public ILangPackage getPackage(int id)
+com.amazon.providers.langpackage.core.LangPackageManager	method	public LangPackageManager(Context context)
+com.amazon.providers.langpackage.core.LangPackageManager	method	public List<ILangPackage> getPackages(ILangPackageManager.Query q) throws Throwable
+com.amazon.providers.langpackage.core.LangPackageManager	method	public String getConfiguration(LangPackageContract.ConfigurationProperties property)
+com.amazon.providers.langpackage.core.LangPackageManager	method	public boolean setConfiguration(LangPackageContract.ConfigurationProperties property, String value)
+com.amazon.providers.langpackage.core.LangPackageManager	method	public long getManifestVersion()
+com.amazon.providers.langpackage.core.LangPackageManager	method	public static LangPackage getPackageFromDB(Context cxt, SQLiteDatabase db, int id)
+com.amazon.providers.langpackage.core.LangPackageManager	method	public void registerListener(ILangPackageListener listener)
+com.amazon.providers.langpackage.core.LangPackageManager	method	public void requestManifestDownload()
+com.amazon.providers.langpackage.core.LangPackageManager	method	public void unregisterListener()
+com.amazon.providers.langpackage.core.LangPackageObject	field	private final Context context;
+com.amazon.providers.langpackage.core.LangPackageObject	field	private final String applicationPackageName;
+com.amazon.providers.langpackage.core.LangPackageObject	field	private static String[] installationPathes;
+com.amazon.providers.langpackage.core.LangPackageObject	field	private static final String BROADCAST_RECEIVER_CLASS_NAME;
+com.amazon.providers.langpackage.core.LangPackageObject	field	private static final String TAG;
+com.amazon.providers.langpackage.core.LangPackageObject	field	private static final boolean DEBUG;
+com.amazon.providers.langpackage.core.LangPackageObject	field	private static final int DUMMY_VALUE;
+com.amazon.providers.langpackage.core.LangPackageObject	field	public static final String ACTION_COMMAND_SENT;
+com.amazon.providers.langpackage.core.LangPackageObject	method	private static synchronized void retrieveInstallationPath(ContentResolver resolver, int typeIndex)
+com.amazon.providers.langpackage.core.LangPackageObject	method	protected LangPackageObject(Context context)
+com.amazon.providers.langpackage.core.LangPackageObject	method	protected static String getInstallationPath(ContentResolver resolver, LangPackageContract.PackageType type)
+com.amazon.providers.langpackage.core.LangPackageObject	method	protected void sendMessage(int command, int id, Bundle extras) throws RuntimeException
+com.amazon.providers.langpackage.core.LangPackageObject	method	public ContentResolver getResolver()
+com.amazon.providers.langpackage.core.LangPackageObject	method	public Context getContext()
+com.amazon.providers.langpackage.core.PropertyList	field	private final HashMap<String, Property> properties;
+com.amazon.providers.langpackage.core.PropertyList	field	private static final String TAG;
+com.amazon.providers.langpackage.core.PropertyList	field	private static final boolean DEBUG;
+com.amazon.providers.langpackage.core.PropertyList	field	private static final int INDEX_NAME;
+com.amazon.providers.langpackage.core.PropertyList	field	private static final int INDEX_TYPE;
+com.amazon.providers.langpackage.core.PropertyList	field	private static final int INDEX_VALUE;
+com.amazon.providers.langpackage.core.PropertyList	field	static final String[] PROJECTION;
+com.amazon.providers.langpackage.core.PropertyList	method	private PropertyList(Context context)
+com.amazon.providers.langpackage.core.PropertyList	method	private void loadFromCursor(Cursor cursor)
+com.amazon.providers.langpackage.core.PropertyList	method	public ILangPackagePropertyList getList(String name)
+com.amazon.providers.langpackage.core.PropertyList	method	public Object getObject(String name)
+com.amazon.providers.langpackage.core.PropertyList	method	public Set<String> getNames()
+com.amazon.providers.langpackage.core.PropertyList	method	public String getString(String name)
+com.amazon.providers.langpackage.core.PropertyList	method	public boolean contains(String name)
+com.amazon.providers.langpackage.core.PropertyList	method	static ILangPackagePropertyList createFromRecord(Context context, Cursor cursor)
+com.amazon.providers.langpackage.core.PropertyList$Property	field	private final LangPackageContract.PropertyType type;
+com.amazon.providers.langpackage.core.PropertyList$Property	field	private final Object value;
+com.amazon.providers.langpackage.core.PropertyList$Property	field	private final String name;
+com.amazon.providers.langpackage.core.PropertyList$Property	method	public LangPackageContract.PropertyType getType()
+com.amazon.providers.langpackage.core.PropertyList$Property	method	public Object getValue()
+com.amazon.providers.langpackage.core.PropertyList$Property	method	public Property(String name, int type, String value)
+com.amazon.providers.langpackage.core.PropertyList$Property	method	public String getName()
+com.amazon.providers.langpackage.core.PropertyList$Property	method	public String toString()

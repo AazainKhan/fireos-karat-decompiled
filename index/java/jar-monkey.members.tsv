@@ -1,0 +1,527 @@
+class	kind	declaration
+com.android.commands.monkey.Logger	field	private static final String TAG;
+com.android.commands.monkey.Logger	field	public static boolean logcat;
+com.android.commands.monkey.Logger	field	public static boolean stdout;
+com.android.commands.monkey.Logger	method	public abstract void println(String str);
+com.android.commands.monkey.Logger	method	public static void error(String str, Throwable th)
+com.android.commands.monkey.Monkey	field	private ArrayList<ComponentName> mMainApps;
+com.android.commands.monkey.Monkey	field	private ArrayList<String> mMainCategories;
+com.android.commands.monkey.Monkey	field	private ArrayList<String> mScriptFileNames;
+com.android.commands.monkey.Monkey	field	private HashSet<Long> mTombstones;
+com.android.commands.monkey.Monkey	field	private IActivityManager mAm;
+com.android.commands.monkey.Monkey	field	private IPackageManager mPm;
+com.android.commands.monkey.Monkey	field	private IWindowManager mWm;
+com.android.commands.monkey.Monkey	field	private MonkeyNetworkMonitor mNetworkMonitor;
+com.android.commands.monkey.Monkey	field	private String mCurArgData;
+com.android.commands.monkey.Monkey	field	private String mMatchDescription;
+com.android.commands.monkey.Monkey	field	private String mPkgBlacklistFile;
+com.android.commands.monkey.Monkey	field	private String mPkgWhitelistFile;
+com.android.commands.monkey.Monkey	field	private String mReportProcessName;
+com.android.commands.monkey.Monkey	field	private String mSetupFileName;
+com.android.commands.monkey.Monkey	field	private String[] mArgs;
+com.android.commands.monkey.Monkey	field	private boolean mAbort;
+com.android.commands.monkey.Monkey	field	private boolean mCountEvents;
+com.android.commands.monkey.Monkey	field	private boolean mGenerateHprof;
+com.android.commands.monkey.Monkey	field	private boolean mGetPeriodicBugreport;
+com.android.commands.monkey.Monkey	field	private boolean mIgnoreCrashes;
+com.android.commands.monkey.Monkey	field	private boolean mIgnoreNativeCrashes;
+com.android.commands.monkey.Monkey	field	private boolean mIgnoreSecurityExceptions;
+com.android.commands.monkey.Monkey	field	private boolean mIgnoreTimeouts;
+com.android.commands.monkey.Monkey	field	private boolean mKillProcessAfterError;
+com.android.commands.monkey.Monkey	field	private boolean mMonitorNativeCrashes;
+com.android.commands.monkey.Monkey	field	private boolean mPermissionTargetSystem;
+com.android.commands.monkey.Monkey	field	private boolean mRequestAnrBugreport;
+com.android.commands.monkey.Monkey	field	private boolean mRequestAnrTraces;
+com.android.commands.monkey.Monkey	field	private boolean mRequestAppCrashBugreport;
+com.android.commands.monkey.Monkey	field	private boolean mRequestBugreport;
+com.android.commands.monkey.Monkey	field	private boolean mRequestDumpsysMemInfo;
+com.android.commands.monkey.Monkey	field	private boolean mRequestPeriodicBugreport;
+com.android.commands.monkey.Monkey	field	private boolean mRequestProcRank;
+com.android.commands.monkey.Monkey	field	private boolean mRequestWatchdogBugreport;
+com.android.commands.monkey.Monkey	field	private boolean mSendNoEvents;
+com.android.commands.monkey.Monkey	field	private boolean mWatchdogWaiting;
+com.android.commands.monkey.Monkey	field	private int mNextArg;
+com.android.commands.monkey.Monkey	field	private int mServerPort;
+com.android.commands.monkey.Monkey	field	private int mVerbose;
+com.android.commands.monkey.Monkey	field	private long mBugreportFrequency;
+com.android.commands.monkey.Monkey	field	private static final File TOMBSTONES_PATH;
+com.android.commands.monkey.Monkey	field	private static final String TOMBSTONE_PREFIX;
+com.android.commands.monkey.Monkey	field	private static final int DEBUG_ALLOW_ANY_RESTARTS;
+com.android.commands.monkey.Monkey	field	private static final int DEBUG_ALLOW_ANY_STARTS;
+com.android.commands.monkey.Monkey	field	private static int NUM_READ_TOMBSTONE_RETRIES;
+com.android.commands.monkey.Monkey	field	public static Intent currentIntent;
+com.android.commands.monkey.Monkey	field	public static String currentPackage;
+com.android.commands.monkey.Monkey	method	private String nextArg()
+com.android.commands.monkey.Monkey	method	private String nextOption()
+com.android.commands.monkey.Monkey	method	private String nextOptionData()
+com.android.commands.monkey.Monkey	method	private boolean checkInternalConfiguration()
+com.android.commands.monkey.Monkey	method	private boolean checkNativeCrashes()
+com.android.commands.monkey.Monkey	method	private boolean getMainApps()
+com.android.commands.monkey.Monkey	method	private boolean getSystemInterfaces()
+com.android.commands.monkey.Monkey	method	private boolean loadPackageLists()
+com.android.commands.monkey.Monkey	method	private boolean processOptions()
+com.android.commands.monkey.Monkey	method	private int run(String[] strArr)
+com.android.commands.monkey.Monkey	method	private int runMonkeyCycles()
+com.android.commands.monkey.Monkey	method	private long nextOptionLong(String str)
+com.android.commands.monkey.Monkey	method	private static boolean loadPackageListFromFile(String str, Set<String> set) throws Throwable
+com.android.commands.monkey.Monkey	method	private void commandLineReport(String str, String str2)
+com.android.commands.monkey.Monkey	method	private void getBugreport(String str)
+com.android.commands.monkey.Monkey	method	private void reportAnrTraces()
+com.android.commands.monkey.Monkey	method	private void reportDumpsysMemInfo()
+com.android.commands.monkey.Monkey	method	private void reportProcRank()
+com.android.commands.monkey.Monkey	method	private void showUsage()
+com.android.commands.monkey.Monkey	method	private void signalPersistentProcesses()
+com.android.commands.monkey.Monkey	method	private void waitForTombstoneToBeWritten(Path path)
+com.android.commands.monkey.Monkey	method	private void writeScriptLog(int i)
+com.android.commands.monkey.Monkey	method	public static void main(String[] strArr)
+com.android.commands.monkey.Monkey$ActivityController	method	private ActivityController()
+com.android.commands.monkey.Monkey$ActivityController	method	private boolean isActivityStartingAllowed(Intent intent, String str)
+com.android.commands.monkey.Monkey$ActivityController	method	public boolean activityResuming(String str)
+com.android.commands.monkey.Monkey$ActivityController	method	public boolean activityStarting(Intent intent, String str)
+com.android.commands.monkey.Monkey$ActivityController	method	public boolean appCrashed(String str, int i, String str2, String str3, long j, String str4)
+com.android.commands.monkey.Monkey$ActivityController	method	public int appEarlyNotResponding(String str, int i, String str2)
+com.android.commands.monkey.Monkey$ActivityController	method	public int appNotResponding(String str, int i, String str2)
+com.android.commands.monkey.Monkey$ActivityController	method	public int systemNotResponding(String str)
+com.android.commands.monkey.MonkeyActivityEvent	field	private ComponentName mApp;
+com.android.commands.monkey.MonkeyActivityEvent	method	private Intent getEvent()
+com.android.commands.monkey.MonkeyActivityEvent	method	private static String getPackageName()
+com.android.commands.monkey.MonkeyActivityEvent	method	public MonkeyActivityEvent(ComponentName componentName)
+com.android.commands.monkey.MonkeyActivityEvent	method	public MonkeyActivityEvent(ComponentName componentName, long j)
+com.android.commands.monkey.MonkeyActivityEvent	method	public int injectEvent(IWindowManager iWindowManager, IActivityManager iActivityManager, int i)
+com.android.commands.monkey.MonkeyCommandEvent	field	private String mCmd;
+com.android.commands.monkey.MonkeyCommandEvent	method	public MonkeyCommandEvent(String str)
+com.android.commands.monkey.MonkeyCommandEvent	method	public int injectEvent(IWindowManager iWindowManager, IActivityManager iActivityManager, int i)
+com.android.commands.monkey.MonkeyEvent	field	protected int eventType;
+com.android.commands.monkey.MonkeyEvent	field	public static final int EVENT_TYPE_ACTIVITY;
+com.android.commands.monkey.MonkeyEvent	field	public static final int EVENT_TYPE_FLIP;
+com.android.commands.monkey.MonkeyEvent	field	public static final int EVENT_TYPE_KEY;
+com.android.commands.monkey.MonkeyEvent	field	public static final int EVENT_TYPE_NOOP;
+com.android.commands.monkey.MonkeyEvent	field	public static final int EVENT_TYPE_PERMISSION;
+com.android.commands.monkey.MonkeyEvent	field	public static final int EVENT_TYPE_ROTATION;
+com.android.commands.monkey.MonkeyEvent	field	public static final int EVENT_TYPE_THROTTLE;
+com.android.commands.monkey.MonkeyEvent	field	public static final int EVENT_TYPE_TOUCH;
+com.android.commands.monkey.MonkeyEvent	field	public static final int EVENT_TYPE_TRACKBALL;
+com.android.commands.monkey.MonkeyEvent	field	public static final int INJECT_ERROR_REMOTE_EXCEPTION;
+com.android.commands.monkey.MonkeyEvent	field	public static final int INJECT_ERROR_SECURITY_EXCEPTION;
+com.android.commands.monkey.MonkeyEvent	field	public static final int INJECT_FAIL;
+com.android.commands.monkey.MonkeyEvent	field	public static final int INJECT_SUCCESS;
+com.android.commands.monkey.MonkeyEvent	method	public MonkeyEvent(int i)
+com.android.commands.monkey.MonkeyEvent	method	public abstract int injectEvent(IWindowManager iWindowManager, IActivityManager iActivityManager, int i);
+com.android.commands.monkey.MonkeyEvent	method	public boolean isThrottlable()
+com.android.commands.monkey.MonkeyEvent	method	public int getEventType()
+com.android.commands.monkey.MonkeyEventQueue	field	private Random mRandom;
+com.android.commands.monkey.MonkeyEventQueue	field	private boolean mRandomizeThrottle;
+com.android.commands.monkey.MonkeyEventQueue	field	private long mThrottle;
+com.android.commands.monkey.MonkeyEventQueue	method	public MonkeyEventQueue(Random random, long j, boolean z)
+com.android.commands.monkey.MonkeyEventQueue	method	public void addLast(MonkeyEvent monkeyEvent)
+com.android.commands.monkey.MonkeyFlipEvent	field	private final boolean mKeyboardOpen;
+com.android.commands.monkey.MonkeyFlipEvent	field	private static final byte[] FLIP_0;
+com.android.commands.monkey.MonkeyFlipEvent	field	private static final byte[] FLIP_1;
+com.android.commands.monkey.MonkeyFlipEvent	method	public MonkeyFlipEvent(boolean z)
+com.android.commands.monkey.MonkeyFlipEvent	method	public int injectEvent(IWindowManager iWindowManager, IActivityManager iActivityManager, int i)
+com.android.commands.monkey.MonkeyGetAppFrameRateEvent	field	private String GET_APP_FRAMERATE_TMPL;
+com.android.commands.monkey.MonkeyGetAppFrameRateEvent	field	private String mStatus;
+com.android.commands.monkey.MonkeyGetAppFrameRateEvent	field	private static String sActivityName;
+com.android.commands.monkey.MonkeyGetAppFrameRateEvent	field	private static String sTestCaseName;
+com.android.commands.monkey.MonkeyGetAppFrameRateEvent	field	private static final Pattern NO_OF_FRAMES_PATTERN;
+com.android.commands.monkey.MonkeyGetAppFrameRateEvent	field	private static final String LOG_FILE;
+com.android.commands.monkey.MonkeyGetAppFrameRateEvent	field	private static final String TAG;
+com.android.commands.monkey.MonkeyGetAppFrameRateEvent	field	private static float sDuration;
+com.android.commands.monkey.MonkeyGetAppFrameRateEvent	field	private static int sEndFrameNo;
+com.android.commands.monkey.MonkeyGetAppFrameRateEvent	field	private static int sStartFrameNo;
+com.android.commands.monkey.MonkeyGetAppFrameRateEvent	field	private static long sEndTime;
+com.android.commands.monkey.MonkeyGetAppFrameRateEvent	field	private static long sStartTime;
+com.android.commands.monkey.MonkeyGetAppFrameRateEvent	method	private String getNumberOfFrames(BufferedReader bufferedReader) throws IOException
+com.android.commands.monkey.MonkeyGetAppFrameRateEvent	method	private float getAverageFrameRate(int i, float f)
+com.android.commands.monkey.MonkeyGetAppFrameRateEvent	method	private void writeAverageFrameRate() throws Throwable
+com.android.commands.monkey.MonkeyGetAppFrameRateEvent	method	public MonkeyGetAppFrameRateEvent(String str)
+com.android.commands.monkey.MonkeyGetAppFrameRateEvent	method	public MonkeyGetAppFrameRateEvent(String str, String str2)
+com.android.commands.monkey.MonkeyGetAppFrameRateEvent	method	public MonkeyGetAppFrameRateEvent(String str, String str2, String str3)
+com.android.commands.monkey.MonkeyGetAppFrameRateEvent	method	public int injectEvent(IWindowManager iWindowManager, IActivityManager iActivityManager, int i) throws Throwable
+com.android.commands.monkey.MonkeyGetFrameRateEvent	field	private String GET_FRAMERATE_CMD;
+com.android.commands.monkey.MonkeyGetFrameRateEvent	field	private String mStatus;
+com.android.commands.monkey.MonkeyGetFrameRateEvent	field	private static String mTestCaseName;
+com.android.commands.monkey.MonkeyGetFrameRateEvent	field	private static final Pattern NO_OF_FRAMES_PATTERN;
+com.android.commands.monkey.MonkeyGetFrameRateEvent	field	private static final String LOG_FILE;
+com.android.commands.monkey.MonkeyGetFrameRateEvent	field	private static final String TAG;
+com.android.commands.monkey.MonkeyGetFrameRateEvent	field	private static float mDuration;
+com.android.commands.monkey.MonkeyGetFrameRateEvent	field	private static int mEndFrameNo;
+com.android.commands.monkey.MonkeyGetFrameRateEvent	field	private static int mStartFrameNo;
+com.android.commands.monkey.MonkeyGetFrameRateEvent	field	private static long mEndTime;
+com.android.commands.monkey.MonkeyGetFrameRateEvent	field	private static long mStartTime;
+com.android.commands.monkey.MonkeyGetFrameRateEvent	method	private String getNumberOfFrames(String str)
+com.android.commands.monkey.MonkeyGetFrameRateEvent	method	private float getAverageFrameRate(int i, float f)
+com.android.commands.monkey.MonkeyGetFrameRateEvent	method	private void writeAverageFrameRate() throws Throwable
+com.android.commands.monkey.MonkeyGetFrameRateEvent	method	public MonkeyGetFrameRateEvent(String str)
+com.android.commands.monkey.MonkeyGetFrameRateEvent	method	public MonkeyGetFrameRateEvent(String str, String str2)
+com.android.commands.monkey.MonkeyGetFrameRateEvent	method	public int injectEvent(IWindowManager iWindowManager, IActivityManager iActivityManager, int i) throws Throwable
+com.android.commands.monkey.MonkeyInstrumentationEvent	method	public MonkeyInstrumentationEvent(String str, String str2)
+com.android.commands.monkey.MonkeyInstrumentationEvent	method	public int injectEvent(IWindowManager iWindowManager, IActivityManager iActivityManager, int i)
+com.android.commands.monkey.MonkeyKeyEvent	field	private KeyEvent mKeyEvent;
+com.android.commands.monkey.MonkeyKeyEvent	field	private int mAction;
+com.android.commands.monkey.MonkeyKeyEvent	field	private int mDeviceId;
+com.android.commands.monkey.MonkeyKeyEvent	field	private int mKeyCode;
+com.android.commands.monkey.MonkeyKeyEvent	field	private int mMetaState;
+com.android.commands.monkey.MonkeyKeyEvent	field	private int mRepeatCount;
+com.android.commands.monkey.MonkeyKeyEvent	field	private int mScanCode;
+com.android.commands.monkey.MonkeyKeyEvent	field	private long mDownTime;
+com.android.commands.monkey.MonkeyKeyEvent	field	private long mEventTime;
+com.android.commands.monkey.MonkeyKeyEvent	method	public MonkeyKeyEvent(KeyEvent keyEvent)
+com.android.commands.monkey.MonkeyKeyEvent	method	public MonkeyKeyEvent(int i, int i2)
+com.android.commands.monkey.MonkeyKeyEvent	method	public MonkeyKeyEvent(long j, long j2, int i, int i2, int i3, int i4, int i5, int i6)
+com.android.commands.monkey.MonkeyKeyEvent	method	public boolean isThrottlable()
+com.android.commands.monkey.MonkeyKeyEvent	method	public int getAction()
+com.android.commands.monkey.MonkeyKeyEvent	method	public int getKeyCode()
+com.android.commands.monkey.MonkeyKeyEvent	method	public int injectEvent(IWindowManager iWindowManager, IActivityManager iActivityManager, int i)
+com.android.commands.monkey.MonkeyKeyEvent	method	public long getDownTime()
+com.android.commands.monkey.MonkeyKeyEvent	method	public long getEventTime()
+com.android.commands.monkey.MonkeyKeyEvent	method	public void setDownTime(long j)
+com.android.commands.monkey.MonkeyKeyEvent	method	public void setEventTime(long j)
+com.android.commands.monkey.MonkeyMotionEvent	field	private SparseArray<MotionEvent.PointerCoords> mPointers;
+com.android.commands.monkey.MonkeyMotionEvent	field	private boolean mIntermediateNote;
+com.android.commands.monkey.MonkeyMotionEvent	field	private float mXPrecision;
+com.android.commands.monkey.MonkeyMotionEvent	field	private float mYPrecision;
+com.android.commands.monkey.MonkeyMotionEvent	field	private int mAction;
+com.android.commands.monkey.MonkeyMotionEvent	field	private int mDeviceId;
+com.android.commands.monkey.MonkeyMotionEvent	field	private int mEdgeFlags;
+com.android.commands.monkey.MonkeyMotionEvent	field	private int mFlags;
+com.android.commands.monkey.MonkeyMotionEvent	field	private int mMetaState;
+com.android.commands.monkey.MonkeyMotionEvent	field	private int mSource;
+com.android.commands.monkey.MonkeyMotionEvent	field	private long mDownTime;
+com.android.commands.monkey.MonkeyMotionEvent	field	private long mEventTime;
+com.android.commands.monkey.MonkeyMotionEvent	method	private MotionEvent getEvent()
+com.android.commands.monkey.MonkeyMotionEvent	method	protected MonkeyMotionEvent(int i, int i2, int i3)
+com.android.commands.monkey.MonkeyMotionEvent	method	protected abstract String getTypeLabel();
+com.android.commands.monkey.MonkeyMotionEvent	method	public MonkeyMotionEvent addPointer(int i, float f, float f2)
+com.android.commands.monkey.MonkeyMotionEvent	method	public MonkeyMotionEvent addPointer(int i, float f, float f2, float f3, float f4)
+com.android.commands.monkey.MonkeyMotionEvent	method	public MonkeyMotionEvent setDeviceId(int i)
+com.android.commands.monkey.MonkeyMotionEvent	method	public MonkeyMotionEvent setDownTime(long j)
+com.android.commands.monkey.MonkeyMotionEvent	method	public MonkeyMotionEvent setEdgeFlags(int i)
+com.android.commands.monkey.MonkeyMotionEvent	method	public MonkeyMotionEvent setEventTime(long j)
+com.android.commands.monkey.MonkeyMotionEvent	method	public MonkeyMotionEvent setIntermediateNote(boolean z)
+com.android.commands.monkey.MonkeyMotionEvent	method	public MonkeyMotionEvent setMetaState(int i)
+com.android.commands.monkey.MonkeyMotionEvent	method	public MonkeyMotionEvent setPrecision(float f, float f2)
+com.android.commands.monkey.MonkeyMotionEvent	method	public boolean getIntermediateNote()
+com.android.commands.monkey.MonkeyMotionEvent	method	public boolean isThrottlable()
+com.android.commands.monkey.MonkeyMotionEvent	method	public int getAction()
+com.android.commands.monkey.MonkeyMotionEvent	method	public int injectEvent(IWindowManager iWindowManager, IActivityManager iActivityManager, int i)
+com.android.commands.monkey.MonkeyMotionEvent	method	public long getDownTime()
+com.android.commands.monkey.MonkeyMotionEvent	method	public long getEventTime()
+com.android.commands.monkey.MonkeyNetworkMonitor	field	private final IntentFilter filter;
+com.android.commands.monkey.MonkeyNetworkMonitor	field	private int mLastNetworkType;
+com.android.commands.monkey.MonkeyNetworkMonitor	field	private long mCollectionStartTime;
+com.android.commands.monkey.MonkeyNetworkMonitor	field	private long mElapsedTime;
+com.android.commands.monkey.MonkeyNetworkMonitor	field	private long mEventTime;
+com.android.commands.monkey.MonkeyNetworkMonitor	field	private long mMobileElapsedTime;
+com.android.commands.monkey.MonkeyNetworkMonitor	field	private long mWifiElapsedTime;
+com.android.commands.monkey.MonkeyNetworkMonitor	field	private static final boolean LDEBUG;
+com.android.commands.monkey.MonkeyNetworkMonitor	method	private void updateNetworkStats()
+com.android.commands.monkey.MonkeyNetworkMonitor	method	public void dump()
+com.android.commands.monkey.MonkeyNetworkMonitor	method	public void performReceive(Intent intent, int i, String str, Bundle bundle, boolean z, boolean z2, int i2) throws RemoteException
+com.android.commands.monkey.MonkeyNetworkMonitor	method	public void register(IActivityManager iActivityManager) throws RemoteException
+com.android.commands.monkey.MonkeyNetworkMonitor	method	public void start()
+com.android.commands.monkey.MonkeyNetworkMonitor	method	public void stop()
+com.android.commands.monkey.MonkeyNetworkMonitor	method	public void unregister(IActivityManager iActivityManager) throws RemoteException
+com.android.commands.monkey.MonkeyNoopEvent	method	public MonkeyNoopEvent()
+com.android.commands.monkey.MonkeyNoopEvent	method	public int injectEvent(IWindowManager iWindowManager, IActivityManager iActivityManager, int i)
+com.android.commands.monkey.MonkeyPermissionEvent	field	private PermissionInfo mPermissionInfo;
+com.android.commands.monkey.MonkeyPermissionEvent	field	private String mPkg;
+com.android.commands.monkey.MonkeyPermissionEvent	method	public MonkeyPermissionEvent(String str, PermissionInfo permissionInfo)
+com.android.commands.monkey.MonkeyPermissionEvent	method	public int injectEvent(IWindowManager iWindowManager, IActivityManager iActivityManager, int i)
+com.android.commands.monkey.MonkeyPermissionUtil	field	private IPackageManager mPm;
+com.android.commands.monkey.MonkeyPermissionUtil	field	private List<String> mTargetedPackages;
+com.android.commands.monkey.MonkeyPermissionUtil	field	private Map<String, List<PermissionInfo>> mPermissionMap;
+com.android.commands.monkey.MonkeyPermissionUtil	field	private boolean mTargetSystemPackages;
+com.android.commands.monkey.MonkeyPermissionUtil	field	private final IPermissionManager mPermManager;
+com.android.commands.monkey.MonkeyPermissionUtil	field	private static final String PERMISSION_GROUP_PREFIX;
+com.android.commands.monkey.MonkeyPermissionUtil	field	private static final String PERMISSION_PREFIX;
+com.android.commands.monkey.MonkeyPermissionUtil	field	private static final String[] MODERN_PERMISSION_GROUPS;
+com.android.commands.monkey.MonkeyPermissionUtil	method	private boolean shouldTargetPackage(PackageInfo packageInfo)
+com.android.commands.monkey.MonkeyPermissionUtil	method	private boolean shouldTargetPermission(String str, PermissionInfo permissionInfo) throws RemoteException
+com.android.commands.monkey.MonkeyPermissionUtil	method	private static boolean isModernPermissionGroup(String str)
+com.android.commands.monkey.MonkeyPermissionUtil	method	public MonkeyPermissionEvent generateRandomPermissionEvent(Random random)
+com.android.commands.monkey.MonkeyPermissionUtil	method	public boolean populatePermissionsMapping()
+com.android.commands.monkey.MonkeyPermissionUtil	method	public void dump()
+com.android.commands.monkey.MonkeyPermissionUtil	method	public void setTargetSystemPackages(boolean z)
+com.android.commands.monkey.MonkeyPowerEvent	field	private String mPowerLogTag;
+com.android.commands.monkey.MonkeyPowerEvent	field	private String mTestResult;
+com.android.commands.monkey.MonkeyPowerEvent	field	private static ArrayList<ContentValues> mLogEvents;
+com.android.commands.monkey.MonkeyPowerEvent	field	private static final String LOG_FILE;
+com.android.commands.monkey.MonkeyPowerEvent	field	private static final String TAG;
+com.android.commands.monkey.MonkeyPowerEvent	field	private static final String TEST_DELAY_STARTED;
+com.android.commands.monkey.MonkeyPowerEvent	field	private static final String TEST_ENDED;
+com.android.commands.monkey.MonkeyPowerEvent	field	private static final String TEST_IDLE_ENDED;
+com.android.commands.monkey.MonkeyPowerEvent	field	private static final String TEST_SEQ_BEGIN;
+com.android.commands.monkey.MonkeyPowerEvent	field	private static final String TEST_STARTED;
+com.android.commands.monkey.MonkeyPowerEvent	field	private static final long USB_DELAY_TIME;
+com.android.commands.monkey.MonkeyPowerEvent	field	private static long mTestStartTime;
+com.android.commands.monkey.MonkeyPowerEvent	method	private void bufferLogEvent(String str, String str2)
+com.android.commands.monkey.MonkeyPowerEvent	method	private void writeLogEvents() throws Throwable
+com.android.commands.monkey.MonkeyPowerEvent	method	public MonkeyPowerEvent()
+com.android.commands.monkey.MonkeyPowerEvent	method	public MonkeyPowerEvent(String str)
+com.android.commands.monkey.MonkeyPowerEvent	method	public MonkeyPowerEvent(String str, String str2)
+com.android.commands.monkey.MonkeyPowerEvent	method	public int injectEvent(IWindowManager iWindowManager, IActivityManager iActivityManager, int i) throws Throwable
+com.android.commands.monkey.MonkeyRotationEvent	field	private final boolean mPersist;
+com.android.commands.monkey.MonkeyRotationEvent	field	private final int mRotationDegree;
+com.android.commands.monkey.MonkeyRotationEvent	method	public MonkeyRotationEvent(int i, boolean z)
+com.android.commands.monkey.MonkeyRotationEvent	method	public int injectEvent(IWindowManager iWindowManager, IActivityManager iActivityManager, int i)
+com.android.commands.monkey.MonkeySourceNetwork	field	private BufferedReader input;
+com.android.commands.monkey.MonkeySourceNetwork	field	private PrintWriter output;
+com.android.commands.monkey.MonkeySourceNetwork	field	private ServerSocket serverSocket;
+com.android.commands.monkey.MonkeySourceNetwork	field	private Socket clientSocket;
+com.android.commands.monkey.MonkeySourceNetwork	field	private boolean started;
+com.android.commands.monkey.MonkeySourceNetwork	field	private final CommandQueueImpl commandQueue;
+com.android.commands.monkey.MonkeySourceNetwork	field	private static DeferredReturn deferredReturn;
+com.android.commands.monkey.MonkeySourceNetwork	field	private static final Map<String, MonkeyCommand> COMMAND_MAP;
+com.android.commands.monkey.MonkeySourceNetwork	field	private static final String DONE;
+com.android.commands.monkey.MonkeySourceNetwork	field	private static final String ERROR_STR;
+com.android.commands.monkey.MonkeySourceNetwork	field	private static final String OK_STR;
+com.android.commands.monkey.MonkeySourceNetwork	field	private static final String QUIT;
+com.android.commands.monkey.MonkeySourceNetwork	field	private static final String TAG;
+com.android.commands.monkey.MonkeySourceNetwork	field	public static final MonkeyCommandReturn EARG;
+com.android.commands.monkey.MonkeySourceNetwork	field	public static final MonkeyCommandReturn ERROR;
+com.android.commands.monkey.MonkeySourceNetwork	field	public static final MonkeyCommandReturn OK;
+com.android.commands.monkey.MonkeySourceNetwork	field	public static final int MONKEY_NETWORK_VERSION;
+com.android.commands.monkey.MonkeySourceNetwork	method	private static List<String> commandLineSplit(String str)
+com.android.commands.monkey.MonkeySourceNetwork	method	private static String replaceQuotedChars(String str)
+com.android.commands.monkey.MonkeySourceNetwork	method	private void handleReturn(MonkeyCommandReturn monkeyCommandReturn)
+com.android.commands.monkey.MonkeySourceNetwork	method	private void returnError()
+com.android.commands.monkey.MonkeySourceNetwork	method	private void returnError(String str)
+com.android.commands.monkey.MonkeySourceNetwork	method	private void returnOk()
+com.android.commands.monkey.MonkeySourceNetwork	method	private void returnOk(String str)
+com.android.commands.monkey.MonkeySourceNetwork	method	private void startServer() throws IOException
+com.android.commands.monkey.MonkeySourceNetwork	method	private void stopServer() throws IOException
+com.android.commands.monkey.MonkeySourceNetwork	method	private void translateCommand(String str)
+com.android.commands.monkey.MonkeySourceNetwork	method	public MonkeyEvent getNextEvent()
+com.android.commands.monkey.MonkeySourceNetwork	method	public MonkeySourceNetwork(int i) throws IOException
+com.android.commands.monkey.MonkeySourceNetwork	method	public boolean validate()
+com.android.commands.monkey.MonkeySourceNetwork	method	public static final boolean wake()
+com.android.commands.monkey.MonkeySourceNetwork	method	public static int getKeyCode(String str)
+com.android.commands.monkey.MonkeySourceNetwork	method	public void setVerbose(int i)
+com.android.commands.monkey.MonkeySourceNetwork$CommandQueueImpl	field	private final Queue<MonkeyEvent> queuedEvents;
+com.android.commands.monkey.MonkeySourceNetwork$CommandQueueImpl	method	private CommandQueueImpl()
+com.android.commands.monkey.MonkeySourceNetwork$CommandQueueImpl	method	public MonkeyEvent getNextQueuedEvent()
+com.android.commands.monkey.MonkeySourceNetwork$CommandQueueImpl	method	public void enqueueEvent(MonkeyEvent monkeyEvent)
+com.android.commands.monkey.MonkeySourceNetwork$DeferReturnCommand	method	private DeferReturnCommand()
+com.android.commands.monkey.MonkeySourceNetwork$DeferReturnCommand	method	public MonkeyCommandReturn translateCommand(List<String> list, CommandQueue commandQueue)
+com.android.commands.monkey.MonkeySourceNetwork$DeferredReturn	field	private MonkeyCommandReturn deferredReturn;
+com.android.commands.monkey.MonkeySourceNetwork$DeferredReturn	field	private int event;
+com.android.commands.monkey.MonkeySourceNetwork$DeferredReturn	field	private long timeout;
+com.android.commands.monkey.MonkeySourceNetwork$DeferredReturn	field	public static final int ON_WINDOW_STATE_CHANGE;
+com.android.commands.monkey.MonkeySourceNetwork$DeferredReturn	method	public DeferredReturn(int i, MonkeyCommandReturn monkeyCommandReturn, long j)
+com.android.commands.monkey.MonkeySourceNetwork$DeferredReturn	method	public MonkeyCommandReturn waitForEvent()
+com.android.commands.monkey.MonkeySourceNetwork$FlipCommand	method	private FlipCommand()
+com.android.commands.monkey.MonkeySourceNetwork$FlipCommand	method	public MonkeyCommandReturn translateCommand(List<String> list, CommandQueue commandQueue)
+com.android.commands.monkey.MonkeySourceNetwork$KeyCommand	method	private KeyCommand()
+com.android.commands.monkey.MonkeySourceNetwork$KeyCommand	method	public MonkeyCommandReturn translateCommand(List<String> list, CommandQueue commandQueue)
+com.android.commands.monkey.MonkeySourceNetwork$MonkeyCommandReturn	field	private final String message;
+com.android.commands.monkey.MonkeySourceNetwork$MonkeyCommandReturn	field	private final boolean success;
+com.android.commands.monkey.MonkeySourceNetwork$MonkeyCommandReturn	method	public MonkeyCommandReturn(boolean z)
+com.android.commands.monkey.MonkeySourceNetwork$MonkeyCommandReturn	method	public MonkeyCommandReturn(boolean z, String str)
+com.android.commands.monkey.MonkeySourceNetwork$PressCommand	method	private PressCommand()
+com.android.commands.monkey.MonkeySourceNetwork$PressCommand	method	public MonkeyCommandReturn translateCommand(List<String> list, CommandQueue commandQueue)
+com.android.commands.monkey.MonkeySourceNetwork$SleepCommand	method	private SleepCommand()
+com.android.commands.monkey.MonkeySourceNetwork$SleepCommand	method	public MonkeyCommandReturn translateCommand(List<String> list, CommandQueue commandQueue)
+com.android.commands.monkey.MonkeySourceNetwork$TapCommand	method	private TapCommand()
+com.android.commands.monkey.MonkeySourceNetwork$TapCommand	method	public MonkeyCommandReturn translateCommand(List<String> list, CommandQueue commandQueue)
+com.android.commands.monkey.MonkeySourceNetwork$TouchCommand	method	private TouchCommand()
+com.android.commands.monkey.MonkeySourceNetwork$TouchCommand	method	public MonkeyCommandReturn translateCommand(List<String> list, CommandQueue commandQueue)
+com.android.commands.monkey.MonkeySourceNetwork$TrackballCommand	method	private TrackballCommand()
+com.android.commands.monkey.MonkeySourceNetwork$TrackballCommand	method	public MonkeyCommandReturn translateCommand(List<String> list, CommandQueue commandQueue)
+com.android.commands.monkey.MonkeySourceNetwork$TypeCommand	method	private TypeCommand()
+com.android.commands.monkey.MonkeySourceNetwork$TypeCommand	method	public MonkeyCommandReturn translateCommand(List<String> list, CommandQueue commandQueue)
+com.android.commands.monkey.MonkeySourceNetwork$WakeCommand	method	private WakeCommand()
+com.android.commands.monkey.MonkeySourceNetwork$WakeCommand	method	public MonkeyCommandReturn translateCommand(List<String> list, CommandQueue commandQueue)
+com.android.commands.monkey.MonkeySourceNetworkVars	field	private static final Map<String, VarGetter> VAR_MAP;
+com.android.commands.monkey.MonkeySourceNetworkVars$GetVarCommand	method	public MonkeySourceNetwork.MonkeyCommandReturn translateCommand(List<String> list, MonkeySourceNetwork.CommandQueue commandQueue)
+com.android.commands.monkey.MonkeySourceNetworkVars$ListVarCommand	method	public MonkeySourceNetwork.MonkeyCommandReturn translateCommand(List<String> list, MonkeySourceNetwork.CommandQueue commandQueue)
+com.android.commands.monkey.MonkeySourceNetworkVars$StaticVarGetter	field	private final String value;
+com.android.commands.monkey.MonkeySourceNetworkVars$StaticVarGetter	method	public StaticVarGetter(String str)
+com.android.commands.monkey.MonkeySourceNetworkVars$StaticVarGetter	method	public String get()
+com.android.commands.monkey.MonkeySourceNetworkViews	field	private static IPackageManager sPm;
+com.android.commands.monkey.MonkeySourceNetworkViews	field	private static Map<String, Class<?>> sClassMap;
+com.android.commands.monkey.MonkeySourceNetworkViews	field	private static final HandlerThread sHandlerThread;
+com.android.commands.monkey.MonkeySourceNetworkViews	field	private static final Map<String, ViewIntrospectionCommand> COMMAND_MAP;
+com.android.commands.monkey.MonkeySourceNetworkViews	field	private static final String CLASS_NOT_FOUND;
+com.android.commands.monkey.MonkeySourceNetworkViews	field	private static final String HANDLER_THREAD_NAME;
+com.android.commands.monkey.MonkeySourceNetworkViews	field	private static final String NO_ACCESSIBILITY_EVENT;
+com.android.commands.monkey.MonkeySourceNetworkViews	field	private static final String NO_CONNECTION;
+com.android.commands.monkey.MonkeySourceNetworkViews	field	private static final String NO_NODE;
+com.android.commands.monkey.MonkeySourceNetworkViews	field	private static final String REMOTE_ERROR;
+com.android.commands.monkey.MonkeySourceNetworkViews	field	protected static UiAutomation sUiTestAutomationBridge;
+com.android.commands.monkey.MonkeySourceNetworkViews	method	public static AccessibilityNodeInfo getNodeByAccessibilityIds(String str, String str2)
+com.android.commands.monkey.MonkeySourceNetworkViews	method	public static AccessibilityNodeInfo getNodeByViewId(String str) throws MonkeyViewException
+com.android.commands.monkey.MonkeySourceNetworkViews	method	public static Class<?> getIdClass(String str, String str2) throws ClassNotFoundException
+com.android.commands.monkey.MonkeySourceNetworkViews	method	public static void setup()
+com.android.commands.monkey.MonkeySourceNetworkViews	method	public static void teardown()
+com.android.commands.monkey.MonkeySourceNetworkViews$GetAccessibilityIds	method	public MonkeySourceNetwork.MonkeyCommandReturn query(AccessibilityNodeInfo accessibilityNodeInfo, List<String> list)
+com.android.commands.monkey.MonkeySourceNetworkViews$GetChecked	method	public MonkeySourceNetwork.MonkeyCommandReturn query(AccessibilityNodeInfo accessibilityNodeInfo, List<String> list)
+com.android.commands.monkey.MonkeySourceNetworkViews$GetChildren	method	public MonkeySourceNetwork.MonkeyCommandReturn query(AccessibilityNodeInfo accessibilityNodeInfo, List<String> list)
+com.android.commands.monkey.MonkeySourceNetworkViews$GetClass	method	public MonkeySourceNetwork.MonkeyCommandReturn query(AccessibilityNodeInfo accessibilityNodeInfo, List<String> list)
+com.android.commands.monkey.MonkeySourceNetworkViews$GetEnabled	method	public MonkeySourceNetwork.MonkeyCommandReturn query(AccessibilityNodeInfo accessibilityNodeInfo, List<String> list)
+com.android.commands.monkey.MonkeySourceNetworkViews$GetFocused	method	public MonkeySourceNetwork.MonkeyCommandReturn query(AccessibilityNodeInfo accessibilityNodeInfo, List<String> list)
+com.android.commands.monkey.MonkeySourceNetworkViews$GetLocation	method	public MonkeySourceNetwork.MonkeyCommandReturn query(AccessibilityNodeInfo accessibilityNodeInfo, List<String> list)
+com.android.commands.monkey.MonkeySourceNetworkViews$GetParent	method	public MonkeySourceNetwork.MonkeyCommandReturn query(AccessibilityNodeInfo accessibilityNodeInfo, List<String> list)
+com.android.commands.monkey.MonkeySourceNetworkViews$GetRootViewCommand	method	public MonkeySourceNetwork.MonkeyCommandReturn translateCommand(List<String> list, MonkeySourceNetwork.CommandQueue commandQueue)
+com.android.commands.monkey.MonkeySourceNetworkViews$GetSelected	method	public MonkeySourceNetwork.MonkeyCommandReturn query(AccessibilityNodeInfo accessibilityNodeInfo, List<String> list)
+com.android.commands.monkey.MonkeySourceNetworkViews$GetText	method	public MonkeySourceNetwork.MonkeyCommandReturn query(AccessibilityNodeInfo accessibilityNodeInfo, List<String> list)
+com.android.commands.monkey.MonkeySourceNetworkViews$GetViewsWithTextCommand	method	public MonkeySourceNetwork.MonkeyCommandReturn translateCommand(List<String> list, MonkeySourceNetwork.CommandQueue commandQueue)
+com.android.commands.monkey.MonkeySourceNetworkViews$ListViewsCommand	method	public MonkeySourceNetwork.MonkeyCommandReturn translateCommand(List<String> list, MonkeySourceNetwork.CommandQueue commandQueue)
+com.android.commands.monkey.MonkeySourceNetworkViews$QueryViewCommand	method	public MonkeySourceNetwork.MonkeyCommandReturn translateCommand(List<String> list, MonkeySourceNetwork.CommandQueue commandQueue)
+com.android.commands.monkey.MonkeySourceNetworkViews$SetFocused	method	public MonkeySourceNetwork.MonkeyCommandReturn query(AccessibilityNodeInfo accessibilityNodeInfo, List<String> list)
+com.android.commands.monkey.MonkeySourceNetworkViews$SetSelected	method	public MonkeySourceNetwork.MonkeyCommandReturn query(AccessibilityNodeInfo accessibilityNodeInfo, List<String> list)
+com.android.commands.monkey.MonkeySourceRandom	field	private List<ComponentName> mMainApps;
+com.android.commands.monkey.MonkeySourceRandom	field	private MonkeyEventQueue mQ;
+com.android.commands.monkey.MonkeySourceRandom	field	private MonkeyPermissionUtil mPermissionUtil;
+com.android.commands.monkey.MonkeySourceRandom	field	private Random mRandom;
+com.android.commands.monkey.MonkeySourceRandom	field	private boolean mKeyboardOpen;
+com.android.commands.monkey.MonkeySourceRandom	field	private float[] mFactors;
+com.android.commands.monkey.MonkeySourceRandom	field	private int mEventCount;
+com.android.commands.monkey.MonkeySourceRandom	field	private int mVerbose;
+com.android.commands.monkey.MonkeySourceRandom	field	private long mThrottle;
+com.android.commands.monkey.MonkeySourceRandom	field	private static final boolean[] PHYSICAL_KEY_EXISTS;
+com.android.commands.monkey.MonkeySourceRandom	field	private static final int GESTURE_DRAG;
+com.android.commands.monkey.MonkeySourceRandom	field	private static final int GESTURE_PINCH_OR_ZOOM;
+com.android.commands.monkey.MonkeySourceRandom	field	private static final int GESTURE_TAP;
+com.android.commands.monkey.MonkeySourceRandom	field	private static final int[] MAJOR_NAV_KEYS;
+com.android.commands.monkey.MonkeySourceRandom	field	private static final int[] NAV_KEYS;
+com.android.commands.monkey.MonkeySourceRandom	field	private static final int[] SCREEN_ROTATION_DEGREES;
+com.android.commands.monkey.MonkeySourceRandom	field	private static final int[] SYS_KEYS;
+com.android.commands.monkey.MonkeySourceRandom	field	public static final int FACTORZ_COUNT;
+com.android.commands.monkey.MonkeySourceRandom	field	public static final int FACTOR_ANYTHING;
+com.android.commands.monkey.MonkeySourceRandom	field	public static final int FACTOR_APPSWITCH;
+com.android.commands.monkey.MonkeySourceRandom	field	public static final int FACTOR_FLIP;
+com.android.commands.monkey.MonkeySourceRandom	field	public static final int FACTOR_MAJORNAV;
+com.android.commands.monkey.MonkeySourceRandom	field	public static final int FACTOR_MOTION;
+com.android.commands.monkey.MonkeySourceRandom	field	public static final int FACTOR_NAV;
+com.android.commands.monkey.MonkeySourceRandom	field	public static final int FACTOR_PERMISSION;
+com.android.commands.monkey.MonkeySourceRandom	field	public static final int FACTOR_PINCHZOOM;
+com.android.commands.monkey.MonkeySourceRandom	field	public static final int FACTOR_ROTATION;
+com.android.commands.monkey.MonkeySourceRandom	field	public static final int FACTOR_SYSOPS;
+com.android.commands.monkey.MonkeySourceRandom	field	public static final int FACTOR_TOUCH;
+com.android.commands.monkey.MonkeySourceRandom	field	public static final int FACTOR_TRACKBALL;
+com.android.commands.monkey.MonkeySourceRandom	method	private PointF randomPoint(Random random, Display display)
+com.android.commands.monkey.MonkeySourceRandom	method	private PointF randomVector(Random random)
+com.android.commands.monkey.MonkeySourceRandom	method	private boolean adjustEventFactors()
+com.android.commands.monkey.MonkeySourceRandom	method	private boolean validateKeys()
+com.android.commands.monkey.MonkeySourceRandom	method	private static boolean validateKeyCategory(String str, int[] iArr, float f)
+com.android.commands.monkey.MonkeySourceRandom	method	private void generateEvents()
+com.android.commands.monkey.MonkeySourceRandom	method	private void generatePointerEvent(Random random, int i)
+com.android.commands.monkey.MonkeySourceRandom	method	private void generateRotationEvent(Random random)
+com.android.commands.monkey.MonkeySourceRandom	method	private void generateTrackballEvent(Random random)
+com.android.commands.monkey.MonkeySourceRandom	method	private void randomWalk(Random random, Display display, PointF pointF, PointF pointF2)
+com.android.commands.monkey.MonkeySourceRandom	method	public MonkeyEvent getNextEvent()
+com.android.commands.monkey.MonkeySourceRandom	method	public MonkeySourceRandom(Random random, List<ComponentName> list, long j, boolean z, boolean z2)
+com.android.commands.monkey.MonkeySourceRandom	method	public boolean validate()
+com.android.commands.monkey.MonkeySourceRandom	method	public static String getKeyName(int i)
+com.android.commands.monkey.MonkeySourceRandom	method	public static int getKeyCode(String str)
+com.android.commands.monkey.MonkeySourceRandom	method	public void generateActivity()
+com.android.commands.monkey.MonkeySourceRandom	method	public void setFactors(float[] fArr)
+com.android.commands.monkey.MonkeySourceRandom	method	public void setFactors(int i, float f)
+com.android.commands.monkey.MonkeySourceRandom	method	public void setVerbose(int i)
+com.android.commands.monkey.MonkeySourceRandomScript	field	private ArrayList<MonkeySourceScript> mScriptSources;
+com.android.commands.monkey.MonkeySourceRandomScript	field	private MonkeySourceScript mCurrentSource;
+com.android.commands.monkey.MonkeySourceRandomScript	field	private MonkeySourceScript mSetupSource;
+com.android.commands.monkey.MonkeySourceRandomScript	field	private Random mRandom;
+com.android.commands.monkey.MonkeySourceRandomScript	field	private boolean mRandomizeScript;
+com.android.commands.monkey.MonkeySourceRandomScript	field	private int mScriptCount;
+com.android.commands.monkey.MonkeySourceRandomScript	field	private int mVerbose;
+com.android.commands.monkey.MonkeySourceRandomScript	method	public MonkeyEvent getNextEvent()
+com.android.commands.monkey.MonkeySourceRandomScript	method	public MonkeySourceRandomScript(ArrayList<String> arrayList, long j, boolean z, Random random, long j2, long j3, boolean z2)
+com.android.commands.monkey.MonkeySourceRandomScript	method	public MonkeySourceRandomScript(String str, ArrayList<String> arrayList, long j, boolean z, Random random, long j2, long j3, boolean z2)
+com.android.commands.monkey.MonkeySourceRandomScript	method	public boolean validate()
+com.android.commands.monkey.MonkeySourceRandomScript	method	public void setVerbose(int i)
+com.android.commands.monkey.MonkeySourceScript	field	private MonkeyEventQueue mQ;
+com.android.commands.monkey.MonkeySourceScript	field	private String mScriptFileName;
+com.android.commands.monkey.MonkeySourceScript	field	private boolean mFileOpened;
+com.android.commands.monkey.MonkeySourceScript	field	private boolean mReadScriptLineByLine;
+com.android.commands.monkey.MonkeySourceScript	field	private double mSpeed;
+com.android.commands.monkey.MonkeySourceScript	field	private float[] mLastX;
+com.android.commands.monkey.MonkeySourceScript	field	private float[] mLastY;
+com.android.commands.monkey.MonkeySourceScript	field	private int mEventCountInScript;
+com.android.commands.monkey.MonkeySourceScript	field	private int mVerbose;
+com.android.commands.monkey.MonkeySourceScript	field	private long mDeviceSleepTime;
+com.android.commands.monkey.MonkeySourceScript	field	private long mLastExportDownTimeKey;
+com.android.commands.monkey.MonkeySourceScript	field	private long mLastExportDownTimeMotion;
+com.android.commands.monkey.MonkeySourceScript	field	private long mLastExportEventTime;
+com.android.commands.monkey.MonkeySourceScript	field	private long mLastRecordedDownTimeKey;
+com.android.commands.monkey.MonkeySourceScript	field	private long mLastRecordedDownTimeMotion;
+com.android.commands.monkey.MonkeySourceScript	field	private long mLastRecordedEventTime;
+com.android.commands.monkey.MonkeySourceScript	field	private long mMonkeyStartTime;
+com.android.commands.monkey.MonkeySourceScript	field	private long mProfileWaitTime;
+com.android.commands.monkey.MonkeySourceScript	field	private long mScriptStartTime;
+com.android.commands.monkey.MonkeySourceScript	field	private static final String EVENT_KEYWORD_ACTIVITY;
+com.android.commands.monkey.MonkeySourceScript	field	private static final String EVENT_KEYWORD_DEVICE_WAKEUP;
+com.android.commands.monkey.MonkeySourceScript	field	private static final String EVENT_KEYWORD_DRAG;
+com.android.commands.monkey.MonkeySourceScript	field	private static final String EVENT_KEYWORD_END_APP_FRAMERATE_CAPTURE;
+com.android.commands.monkey.MonkeySourceScript	field	private static final String EVENT_KEYWORD_END_FRAMERATE_CAPTURE;
+com.android.commands.monkey.MonkeySourceScript	field	private static final String EVENT_KEYWORD_FLIP;
+com.android.commands.monkey.MonkeySourceScript	field	private static final String EVENT_KEYWORD_INPUT_STRING;
+com.android.commands.monkey.MonkeySourceScript	field	private static final String EVENT_KEYWORD_INSTRUMENTATION;
+com.android.commands.monkey.MonkeySourceScript	field	private static final String EVENT_KEYWORD_KEY;
+com.android.commands.monkey.MonkeySourceScript	field	private static final String EVENT_KEYWORD_KEYPRESS;
+com.android.commands.monkey.MonkeySourceScript	field	private static final String EVENT_KEYWORD_LONGPRESS;
+com.android.commands.monkey.MonkeySourceScript	field	private static final String EVENT_KEYWORD_PINCH_ZOOM;
+com.android.commands.monkey.MonkeySourceScript	field	private static final String EVENT_KEYWORD_POINTER;
+com.android.commands.monkey.MonkeySourceScript	field	private static final String EVENT_KEYWORD_POWERLOG;
+com.android.commands.monkey.MonkeySourceScript	field	private static final String EVENT_KEYWORD_PRESSANDHOLD;
+com.android.commands.monkey.MonkeySourceScript	field	private static final String EVENT_KEYWORD_PROFILE_WAIT;
+com.android.commands.monkey.MonkeySourceScript	field	private static final String EVENT_KEYWORD_ROTATION;
+com.android.commands.monkey.MonkeySourceScript	field	private static final String EVENT_KEYWORD_RUNCMD;
+com.android.commands.monkey.MonkeySourceScript	field	private static final String EVENT_KEYWORD_START_APP_FRAMERATE_CAPTURE;
+com.android.commands.monkey.MonkeySourceScript	field	private static final String EVENT_KEYWORD_START_FRAMERATE_CAPTURE;
+com.android.commands.monkey.MonkeySourceScript	field	private static final String EVENT_KEYWORD_TAP;
+com.android.commands.monkey.MonkeySourceScript	field	private static final String EVENT_KEYWORD_TRACKBALL;
+com.android.commands.monkey.MonkeySourceScript	field	private static final String EVENT_KEYWORD_WAIT;
+com.android.commands.monkey.MonkeySourceScript	field	private static final String EVENT_KEYWORD_WRITEPOWERLOG;
+com.android.commands.monkey.MonkeySourceScript	field	private static final String HEADER_COUNT;
+com.android.commands.monkey.MonkeySourceScript	field	private static final String HEADER_LINE_BY_LINE;
+com.android.commands.monkey.MonkeySourceScript	field	private static final String HEADER_SPEED;
+com.android.commands.monkey.MonkeySourceScript	field	private static final String STARTING_DATA_LINE;
+com.android.commands.monkey.MonkeySourceScript	field	private static final boolean THIS_DEBUG;
+com.android.commands.monkey.MonkeySourceScript	field	private static final int MAX_ONE_TIME_READS;
+com.android.commands.monkey.MonkeySourceScript	field	private static final long SLEEP_COMPENSATE_DIFF;
+com.android.commands.monkey.MonkeySourceScript	field	private static int LONGPRESS_WAIT_TIME;
+com.android.commands.monkey.MonkeySourceScript	method	private boolean readHeader() throws IOException
+com.android.commands.monkey.MonkeySourceScript	method	private int readLines() throws IOException
+com.android.commands.monkey.MonkeySourceScript	method	private int readOneLine() throws IOException
+com.android.commands.monkey.MonkeySourceScript	method	private void adjustKeyEventTime(MonkeyKeyEvent monkeyKeyEvent)
+com.android.commands.monkey.MonkeySourceScript	method	private void adjustMotionEventTime(MonkeyMotionEvent monkeyMotionEvent)
+com.android.commands.monkey.MonkeySourceScript	method	private void closeFile() throws IOException
+com.android.commands.monkey.MonkeySourceScript	method	private void handleEvent(String str, String[] strArr)
+com.android.commands.monkey.MonkeySourceScript	method	private void needSleep(long j)
+com.android.commands.monkey.MonkeySourceScript	method	private void processLine(String str)
+com.android.commands.monkey.MonkeySourceScript	method	private void readNextBatch() throws IOException
+com.android.commands.monkey.MonkeySourceScript	method	private void resetValue()
+com.android.commands.monkey.MonkeySourceScript	method	public MonkeyEvent getNextEvent()
+com.android.commands.monkey.MonkeySourceScript	method	public MonkeySourceScript(Random random, String str, long j, boolean z, long j2, long j3)
+com.android.commands.monkey.MonkeySourceScript	method	public boolean validate()
+com.android.commands.monkey.MonkeySourceScript	method	public void setVerbose(int i)
+com.android.commands.monkey.MonkeyThrottleEvent	field	private long mThrottle;
+com.android.commands.monkey.MonkeyThrottleEvent	method	public MonkeyThrottleEvent(long j)
+com.android.commands.monkey.MonkeyThrottleEvent	method	public int injectEvent(IWindowManager iWindowManager, IActivityManager iActivityManager, int i)
+com.android.commands.monkey.MonkeyTouchEvent	method	protected String getTypeLabel()
+com.android.commands.monkey.MonkeyTouchEvent	method	public MonkeyTouchEvent(int i)
+com.android.commands.monkey.MonkeyTrackballEvent	method	protected String getTypeLabel()
+com.android.commands.monkey.MonkeyTrackballEvent	method	public MonkeyTrackballEvent(int i)
+com.android.commands.monkey.MonkeyUtils	field	private static PackageFilter sFilter;
+com.android.commands.monkey.MonkeyUtils	field	private static final Date DATE;
+com.android.commands.monkey.MonkeyUtils	field	private static final SimpleDateFormat DATE_FORMATTER;
+com.android.commands.monkey.MonkeyUtils	method	private MonkeyUtils()
+com.android.commands.monkey.MonkeyUtils	method	public static PackageFilter getPackageFilter()
+com.android.commands.monkey.MonkeyUtils	method	public static synchronized String toCalendarTime(long j)
+com.android.commands.monkey.MonkeyUtils$PackageFilter	field	private Set<String> mInvalidPackages;
+com.android.commands.monkey.MonkeyUtils$PackageFilter	field	private Set<String> mValidPackages;
+com.android.commands.monkey.MonkeyUtils$PackageFilter	method	private PackageFilter()
+com.android.commands.monkey.MonkeyUtils$PackageFilter	method	public boolean checkEnteringPackage(String str)
+com.android.commands.monkey.MonkeyUtils$PackageFilter	method	public boolean hasValidPackages()
+com.android.commands.monkey.MonkeyUtils$PackageFilter	method	public boolean isPackageInvalid(String str)
+com.android.commands.monkey.MonkeyUtils$PackageFilter	method	public boolean isPackageValid(String str)
+com.android.commands.monkey.MonkeyUtils$PackageFilter	method	public void addInvalidPackages(Set<String> set)
+com.android.commands.monkey.MonkeyUtils$PackageFilter	method	public void addValidPackages(Set<String> set)
+com.android.commands.monkey.MonkeyUtils$PackageFilter	method	public void dump()
+com.android.commands.monkey.MonkeyViewException	method	public MonkeyViewException()
+com.android.commands.monkey.MonkeyViewException	method	public MonkeyViewException(String str)
+com.android.commands.monkey.MonkeyWaitEvent	field	private long mWaitTime;
+com.android.commands.monkey.MonkeyWaitEvent	method	public MonkeyWaitEvent(long j)
+com.android.commands.monkey.MonkeyWaitEvent	method	public int injectEvent(IWindowManager iWindowManager, IActivityManager iActivityManager, int i)

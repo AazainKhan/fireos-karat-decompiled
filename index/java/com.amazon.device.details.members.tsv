@@ -1,0 +1,529 @@
+class	kind	declaration
+android.arch.core.BuildConfig	field	public static final String APPLICATION_ID;
+android.arch.core.BuildConfig	field	public static final String BUILD_TYPE;
+android.arch.core.BuildConfig	field	public static final String FLAVOR;
+android.arch.core.BuildConfig	field	public static final String VERSION_NAME;
+android.arch.core.BuildConfig	field	public static final boolean DEBUG;
+android.arch.core.BuildConfig	field	public static final int VERSION_CODE;
+android.arch.core.executor.ArchTaskExecutor	field	private TaskExecutor mDefaultTaskExecutor;
+android.arch.core.executor.ArchTaskExecutor	field	private TaskExecutor mDelegate;
+android.arch.core.executor.ArchTaskExecutor	field	private static volatile ArchTaskExecutor sInstance;
+android.arch.core.executor.ArchTaskExecutor	method	private ArchTaskExecutor()
+android.arch.core.executor.ArchTaskExecutor	method	public boolean isMainThread()
+android.arch.core.executor.ArchTaskExecutor	method	public static ArchTaskExecutor getInstance()
+android.arch.core.executor.ArchTaskExecutor	method	public static Executor getIOThreadExecutor()
+android.arch.core.executor.ArchTaskExecutor	method	public static Executor getMainThreadExecutor()
+android.arch.core.executor.ArchTaskExecutor	method	public void executeOnDiskIO(Runnable runnable)
+android.arch.core.executor.ArchTaskExecutor	method	public void postToMainThread(Runnable runnable)
+android.arch.core.executor.ArchTaskExecutor	method	public void setDelegate(@Nullable TaskExecutor taskExecutor)
+android.arch.core.executor.DefaultTaskExecutor	field	private ExecutorService mDiskIO;
+android.arch.core.executor.DefaultTaskExecutor	field	private final Object mLock;
+android.arch.core.executor.DefaultTaskExecutor	field	private volatile Handler mMainHandler;
+android.arch.core.executor.DefaultTaskExecutor	method	public boolean isMainThread()
+android.arch.core.executor.DefaultTaskExecutor	method	public void executeOnDiskIO(Runnable runnable)
+android.arch.core.executor.DefaultTaskExecutor	method	public void postToMainThread(Runnable runnable)
+android.arch.core.executor.TaskExecutor	method	public abstract boolean isMainThread();
+android.arch.core.executor.TaskExecutor	method	public abstract void executeOnDiskIO(@NonNull Runnable runnable);
+android.arch.core.executor.TaskExecutor	method	public abstract void postToMainThread(@NonNull Runnable runnable);
+android.arch.core.executor.TaskExecutor	method	public void executeOnMainThread(@NonNull Runnable runnable)
+android.arch.core.internal.FastSafeIterableMap	field	private HashMap<K, SafeIterableMap.Entry<K, V>> mHashMap;
+android.arch.core.internal.FastSafeIterableMap	method	protected SafeIterableMap.Entry<K, V> get(K k)
+android.arch.core.internal.FastSafeIterableMap	method	public Map.Entry<K, V> ceil(K k)
+android.arch.core.internal.FastSafeIterableMap	method	public V putIfAbsent(@NonNull K key, @NonNull V v)
+android.arch.core.internal.FastSafeIterableMap	method	public V remove(@NonNull K k)
+android.arch.core.internal.FastSafeIterableMap	method	public boolean contains(K key)
+android.arch.core.internal.SafeIterableMap	field	private Entry<K, V> mEnd;
+android.arch.core.internal.SafeIterableMap	field	private Entry<K, V> mStart;
+android.arch.core.internal.SafeIterableMap	field	private WeakHashMap<SupportRemove<K, V>, Boolean> mIterators;
+android.arch.core.internal.SafeIterableMap	field	private int mSize;
+android.arch.core.internal.SafeIterableMap	method	protected Entry<K, V> get(K k)
+android.arch.core.internal.SafeIterableMap	method	protected Entry<K, V> put(@NonNull K key, @NonNull V v)
+android.arch.core.internal.SafeIterableMap	method	public Iterator<Map.Entry<K, V>> descendingIterator()
+android.arch.core.internal.SafeIterableMap	method	public Iterator<Map.Entry<K, V>> iterator()
+android.arch.core.internal.SafeIterableMap	method	public Map.Entry<K, V> eldest()
+android.arch.core.internal.SafeIterableMap	method	public Map.Entry<K, V> newest()
+android.arch.core.internal.SafeIterableMap	method	public SafeIterableMap<K, V>.IteratorWithAdditions iteratorWithAdditions()
+android.arch.core.internal.SafeIterableMap	method	public String toString()
+android.arch.core.internal.SafeIterableMap	method	public V putIfAbsent(@NonNull K key, @NonNull V v)
+android.arch.core.internal.SafeIterableMap	method	public V remove(@NonNull K key)
+android.arch.core.internal.SafeIterableMap	method	public boolean equals(Object obj)
+android.arch.core.internal.SafeIterableMap	method	public int size()
+android.arch.core.internal.SafeIterableMap$Entry	field	final K mKey;
+android.arch.core.internal.SafeIterableMap$Entry	field	final V mValue;
+android.arch.core.internal.SafeIterableMap$Entry	method	public K getKey()
+android.arch.core.internal.SafeIterableMap$Entry	method	public String toString()
+android.arch.core.internal.SafeIterableMap$Entry	method	public V getValue()
+android.arch.core.internal.SafeIterableMap$Entry	method	public V setValue(V value)
+android.arch.core.internal.SafeIterableMap$Entry	method	public boolean equals(Object obj)
+android.arch.core.internal.SafeIterableMap$IteratorWithAdditions	field	private Entry<K, V> mCurrent;
+android.arch.core.internal.SafeIterableMap$IteratorWithAdditions	field	private boolean mBeforeStart;
+android.arch.core.internal.SafeIterableMap$IteratorWithAdditions	method	private IteratorWithAdditions()
+android.arch.core.internal.SafeIterableMap$IteratorWithAdditions	method	public Map.Entry<K, V> next()
+android.arch.core.internal.SafeIterableMap$IteratorWithAdditions	method	public boolean hasNext()
+android.arch.core.internal.SafeIterableMap$IteratorWithAdditions	method	public void supportRemove(@NonNull Entry<K, V> entry)
+android.arch.core.internal.SafeIterableMap$ListIterator	method	abstract Entry<K, V> backward(Entry<K, V> entry);
+android.arch.core.internal.SafeIterableMap$ListIterator	method	abstract Entry<K, V> forward(Entry<K, V> entry);
+android.arch.core.internal.SafeIterableMap$ListIterator	method	private Entry<K, V> nextNode()
+android.arch.core.internal.SafeIterableMap$ListIterator	method	public Map.Entry<K, V> next()
+android.arch.core.internal.SafeIterableMap$ListIterator	method	public boolean hasNext()
+android.arch.core.internal.SafeIterableMap$ListIterator	method	public void supportRemove(@NonNull Entry<K, V> entry)
+android.arch.lifecycle.AndroidViewModel	field	private Application mApplication;
+android.arch.lifecycle.AndroidViewModel	method	public <T extends Application> T getApplication()
+android.arch.lifecycle.AndroidViewModel	method	public AndroidViewModel(@NonNull Application application)
+android.arch.lifecycle.BuildConfig	field	public static final String APPLICATION_ID;
+android.arch.lifecycle.BuildConfig	field	public static final String BUILD_TYPE;
+android.arch.lifecycle.BuildConfig	field	public static final String FLAVOR;
+android.arch.lifecycle.BuildConfig	field	public static final String VERSION_NAME;
+android.arch.lifecycle.BuildConfig	field	public static final boolean DEBUG;
+android.arch.lifecycle.BuildConfig	field	public static final int VERSION_CODE;
+android.arch.lifecycle.ClassesInfoCache	field	private final Map<Class, Boolean> mHasLifecycleMethods;
+android.arch.lifecycle.ClassesInfoCache	field	private final Map<Class, CallbackInfo> mCallbackMap;
+android.arch.lifecycle.ClassesInfoCache	field	private static final int CALL_TYPE_NO_ARG;
+android.arch.lifecycle.ClassesInfoCache	field	private static final int CALL_TYPE_PROVIDER;
+android.arch.lifecycle.ClassesInfoCache	field	private static final int CALL_TYPE_PROVIDER_WITH_EVENT;
+android.arch.lifecycle.ClassesInfoCache	field	static ClassesInfoCache sInstance;
+android.arch.lifecycle.ClassesInfoCache	method	private CallbackInfo createInfo(Class klass, @Nullable Method[] declaredMethods)
+android.arch.lifecycle.ClassesInfoCache	method	private Method[] getDeclaredMethods(Class klass)
+android.arch.lifecycle.ClassesInfoCache	method	private void verifyAndPutHandler(Map<MethodReference, Lifecycle.Event> handlers, MethodReference newHandler, Lifecycle.Event newEvent, Class klass)
+android.arch.lifecycle.ClassesInfoCache$CallbackInfo	field	final Map<Lifecycle.Event, List<MethodReference>> mEventToHandlers;
+android.arch.lifecycle.ClassesInfoCache$CallbackInfo	field	final Map<MethodReference, Lifecycle.Event> mHandlerToEvent;
+android.arch.lifecycle.ClassesInfoCache$CallbackInfo	method	private static void invokeMethodsForEvent(List<MethodReference> handlers, LifecycleOwner source, Lifecycle.Event event, Object mWrapped)
+android.arch.lifecycle.ClassesInfoCache$MethodReference	field	final Method mMethod;
+android.arch.lifecycle.ClassesInfoCache$MethodReference	field	final int mCallType;
+android.arch.lifecycle.ClassesInfoCache$MethodReference	method	public boolean equals(Object o)
+android.arch.lifecycle.ClassesInfoCache$MethodReference	method	public int hashCode()
+android.arch.lifecycle.CompositeGeneratedAdaptersObserver	field	private final GeneratedAdapter[] mGeneratedAdapters;
+android.arch.lifecycle.CompositeGeneratedAdaptersObserver	method	public void onStateChanged(LifecycleOwner source, Lifecycle.Event event)
+android.arch.lifecycle.FullLifecycleObserverAdapter	field	private final FullLifecycleObserver mObserver;
+android.arch.lifecycle.FullLifecycleObserverAdapter	method	public void onStateChanged(LifecycleOwner source, Lifecycle.Event event)
+android.arch.lifecycle.Lifecycle	method	public abstract State getCurrentState();
+android.arch.lifecycle.Lifecycle	method	public abstract void addObserver(@NonNull LifecycleObserver lifecycleObserver);
+android.arch.lifecycle.Lifecycle	method	public abstract void removeObserver(@NonNull LifecycleObserver lifecycleObserver);
+android.arch.lifecycle.Lifecycle$State	method	public boolean isAtLeast(@NonNull State state)
+android.arch.lifecycle.LifecycleRegistry	field	private ArrayList<Lifecycle.State> mParentStates;
+android.arch.lifecycle.LifecycleRegistry	field	private FastSafeIterableMap<LifecycleObserver, ObserverWithState> mObserverMap;
+android.arch.lifecycle.LifecycleRegistry	field	private Lifecycle.State mState;
+android.arch.lifecycle.LifecycleRegistry	field	private boolean mHandlingEvent;
+android.arch.lifecycle.LifecycleRegistry	field	private boolean mNewEventOccurred;
+android.arch.lifecycle.LifecycleRegistry	field	private final WeakReference<LifecycleOwner> mLifecycleOwner;
+android.arch.lifecycle.LifecycleRegistry	field	private int mAddingObserverCounter;
+android.arch.lifecycle.LifecycleRegistry	field	private static final String LOG_TAG;
+android.arch.lifecycle.LifecycleRegistry	method	private Lifecycle.State calculateTargetState(LifecycleObserver observer)
+android.arch.lifecycle.LifecycleRegistry	method	private boolean isSynced()
+android.arch.lifecycle.LifecycleRegistry	method	private static Lifecycle.Event downEvent(Lifecycle.State state)
+android.arch.lifecycle.LifecycleRegistry	method	private static Lifecycle.Event upEvent(Lifecycle.State state)
+android.arch.lifecycle.LifecycleRegistry	method	private void backwardPass(LifecycleOwner lifecycleOwner)
+android.arch.lifecycle.LifecycleRegistry	method	private void forwardPass(LifecycleOwner lifecycleOwner)
+android.arch.lifecycle.LifecycleRegistry	method	private void moveToState(Lifecycle.State next)
+android.arch.lifecycle.LifecycleRegistry	method	private void popParentState()
+android.arch.lifecycle.LifecycleRegistry	method	private void pushParentState(Lifecycle.State state)
+android.arch.lifecycle.LifecycleRegistry	method	private void sync()
+android.arch.lifecycle.LifecycleRegistry	method	public Lifecycle.State getCurrentState()
+android.arch.lifecycle.LifecycleRegistry	method	public LifecycleRegistry(@NonNull LifecycleOwner provider)
+android.arch.lifecycle.LifecycleRegistry	method	public int getObserverCount()
+android.arch.lifecycle.LifecycleRegistry	method	public void addObserver(@NonNull LifecycleObserver observer)
+android.arch.lifecycle.LifecycleRegistry	method	public void handleLifecycleEvent(@NonNull Lifecycle.Event event)
+android.arch.lifecycle.LifecycleRegistry	method	public void markState(@NonNull Lifecycle.State state)
+android.arch.lifecycle.LifecycleRegistry	method	public void removeObserver(@NonNull LifecycleObserver observer)
+android.arch.lifecycle.LifecycleRegistry	method	static Lifecycle.State getStateAfter(Lifecycle.Event event)
+android.arch.lifecycle.LifecycleRegistry	method	static Lifecycle.State min(@NonNull Lifecycle.State state1, @Nullable Lifecycle.State state2)
+android.arch.lifecycle.Lifecycling	field	private static Map<Class, Integer> sCallbackCache;
+android.arch.lifecycle.Lifecycling	field	private static Map<Class, List<Constructor<? extends GeneratedAdapter>>> sClassToAdapters;
+android.arch.lifecycle.Lifecycling	field	private static final int GENERATED_CALLBACK;
+android.arch.lifecycle.Lifecycling	field	private static final int REFLECTIVE_CALLBACK;
+android.arch.lifecycle.Lifecycling	method	private static Constructor<? extends GeneratedAdapter> generatedConstructor(Class<?> klass)
+android.arch.lifecycle.Lifecycling	method	private static GeneratedAdapter createGeneratedAdapter(Constructor<? extends GeneratedAdapter> constructor, Object object)
+android.arch.lifecycle.Lifecycling	method	private static boolean isLifecycleParent(Class<?> klass)
+android.arch.lifecycle.Lifecycling	method	private static int getObserverConstructorType(Class<?> klass)
+android.arch.lifecycle.Lifecycling	method	private static int resolveObserverCallbackType(Class<?> klass)
+android.arch.lifecycle.Lifecycling	method	public static String getAdapterName(String className)
+android.arch.lifecycle.Lifecycling	method	static GenericLifecycleObserver getCallback(Object object)
+android.arch.lifecycle.LiveData	field	private SafeIterableMap<Observer<T>, LiveData<T>.ObserverWrapper> mObservers;
+android.arch.lifecycle.LiveData	field	private boolean mDispatchInvalidated;
+android.arch.lifecycle.LiveData	field	private boolean mDispatchingValue;
+android.arch.lifecycle.LiveData	field	private final Object mDataLock;
+android.arch.lifecycle.LiveData	field	private int mActiveCount;
+android.arch.lifecycle.LiveData	field	private int mVersion;
+android.arch.lifecycle.LiveData	field	private static final Object NOT_SET;
+android.arch.lifecycle.LiveData	field	private volatile Object mData;
+android.arch.lifecycle.LiveData	field	private volatile Object mPendingData;
+android.arch.lifecycle.LiveData	field	static final int START_VERSION;
+android.arch.lifecycle.LiveData	method	private static void assertMainThread(String methodName)
+android.arch.lifecycle.LiveData	method	private void considerNotify(LiveData<T>.ObserverWrapper observerWrapper)
+android.arch.lifecycle.LiveData	method	protected void onActive()
+android.arch.lifecycle.LiveData	method	protected void onInactive()
+android.arch.lifecycle.LiveData	method	protected void postValue(T value)
+android.arch.lifecycle.LiveData	method	protected void setValue(T value)
+android.arch.lifecycle.LiveData	method	public T getValue()
+android.arch.lifecycle.LiveData	method	public boolean hasActiveObservers()
+android.arch.lifecycle.LiveData	method	public boolean hasObservers()
+android.arch.lifecycle.LiveData	method	public void dispatchingValue(@Nullable LiveData<T>.ObserverWrapper initiator)
+android.arch.lifecycle.LiveData	method	public void observe(@NonNull LifecycleOwner owner, @NonNull Observer<T> observer)
+android.arch.lifecycle.LiveData	method	public void observeForever(@NonNull Observer<T> observer)
+android.arch.lifecycle.LiveData	method	public void removeObserver(@NonNull Observer<T> observer)
+android.arch.lifecycle.LiveData	method	public void removeObservers(@NonNull LifecycleOwner owner)
+android.arch.lifecycle.LiveData$LifecycleBoundObserver	field	final LifecycleOwner mOwner;
+android.arch.lifecycle.LiveData$LifecycleBoundObserver	method	public void onStateChanged(LifecycleOwner source, Lifecycle.Event event)
+android.arch.lifecycle.LiveData$ObserverWrapper	field	final Observer<T> mObserver;
+android.arch.lifecycle.LiveData$ObserverWrapper	method	abstract boolean shouldBeActive();
+android.arch.lifecycle.MethodCallsLogger	field	private Map<String, Integer> mCalledMethods;
+android.arch.lifecycle.MethodCallsLogger	method	public boolean approveCall(String name, int type)
+android.arch.lifecycle.MutableLiveData	method	public void postValue(T value)
+android.arch.lifecycle.MutableLiveData	method	public void setValue(T value)
+android.arch.lifecycle.ReflectiveGenericLifecycleObserver	field	private final ClassesInfoCache.CallbackInfo mInfo;
+android.arch.lifecycle.ReflectiveGenericLifecycleObserver	field	private final Object mWrapped;
+android.arch.lifecycle.ReflectiveGenericLifecycleObserver	method	public void onStateChanged(LifecycleOwner source, Lifecycle.Event event)
+android.arch.lifecycle.ReportFragment	field	private ActivityInitializationListener mProcessListener;
+android.arch.lifecycle.ReportFragment	field	private static final String REPORT_FRAGMENT_TAG;
+android.arch.lifecycle.ReportFragment	method	private void dispatch(Lifecycle.Event event)
+android.arch.lifecycle.ReportFragment	method	private void dispatchCreate(ActivityInitializationListener listener)
+android.arch.lifecycle.ReportFragment	method	private void dispatchResume(ActivityInitializationListener listener)
+android.arch.lifecycle.ReportFragment	method	private void dispatchStart(ActivityInitializationListener listener)
+android.arch.lifecycle.ReportFragment	method	public static void injectIfNeededIn(Activity activity)
+android.arch.lifecycle.ReportFragment	method	public void onActivityCreated(Bundle savedInstanceState)
+android.arch.lifecycle.ReportFragment	method	public void onDestroy()
+android.arch.lifecycle.ReportFragment	method	public void onPause()
+android.arch.lifecycle.ReportFragment	method	public void onResume()
+android.arch.lifecycle.ReportFragment	method	public void onStart()
+android.arch.lifecycle.ReportFragment	method	public void onStop()
+android.arch.lifecycle.ReportFragment	method	static ReportFragment get(Activity activity)
+android.arch.lifecycle.SingleGeneratedAdapterObserver	field	private final GeneratedAdapter mGeneratedAdapter;
+android.arch.lifecycle.SingleGeneratedAdapterObserver	method	public void onStateChanged(LifecycleOwner source, Lifecycle.Event event)
+android.arch.lifecycle.ViewModel	method	protected void onCleared()
+android.arch.lifecycle.ViewModelProvider	field	private final Factory mFactory;
+android.arch.lifecycle.ViewModelProvider	field	private final ViewModelStore mViewModelStore;
+android.arch.lifecycle.ViewModelProvider	field	private static final String DEFAULT_KEY;
+android.arch.lifecycle.ViewModelProvider	method	public <T extends ViewModel> T get(@NonNull Class<T> cls)
+android.arch.lifecycle.ViewModelProvider	method	public <T extends ViewModel> T get(@NonNull String str, @NonNull Class<T> cls)
+android.arch.lifecycle.ViewModelProvider	method	public ViewModelProvider(@NonNull ViewModelStore store, @NonNull Factory factory)
+android.arch.lifecycle.ViewModelProvider	method	public ViewModelProvider(@NonNull ViewModelStoreOwner owner, @NonNull Factory factory)
+android.arch.lifecycle.ViewModelProvider$AndroidViewModelFactory	field	private Application mApplication;
+android.arch.lifecycle.ViewModelProvider$AndroidViewModelFactory	field	private static AndroidViewModelFactory sInstance;
+android.arch.lifecycle.ViewModelProvider$AndroidViewModelFactory	method	public <T extends ViewModel> T create(@NonNull Class<T> cls)
+android.arch.lifecycle.ViewModelProvider$AndroidViewModelFactory	method	public AndroidViewModelFactory(@NonNull Application application)
+android.arch.lifecycle.ViewModelProvider$AndroidViewModelFactory	method	public static AndroidViewModelFactory getInstance(@NonNull Application application)
+android.arch.lifecycle.ViewModelProvider$NewInstanceFactory	method	public <T extends ViewModel> T create(@NonNull Class<T> modelClass)
+android.arch.lifecycle.ViewModelStore	field	private final HashMap<String, ViewModel> mMap;
+android.arch.lifecycle.ViewModelStore	method	final ViewModel get(String key)
+android.arch.lifecycle.ViewModelStore	method	final void put(String key, ViewModel viewModel)
+android.arch.lifecycle.ViewModelStore	method	public final void clear()
+android.arch.lifecycle.livedata.core.BuildConfig	field	public static final String APPLICATION_ID;
+android.arch.lifecycle.livedata.core.BuildConfig	field	public static final String BUILD_TYPE;
+android.arch.lifecycle.livedata.core.BuildConfig	field	public static final String FLAVOR;
+android.arch.lifecycle.livedata.core.BuildConfig	field	public static final String VERSION_NAME;
+android.arch.lifecycle.livedata.core.BuildConfig	field	public static final boolean DEBUG;
+android.arch.lifecycle.livedata.core.BuildConfig	field	public static final int VERSION_CODE;
+android.arch.lifecycle.viewmodel.BuildConfig	field	public static final String APPLICATION_ID;
+android.arch.lifecycle.viewmodel.BuildConfig	field	public static final String BUILD_TYPE;
+android.arch.lifecycle.viewmodel.BuildConfig	field	public static final String FLAVOR;
+android.arch.lifecycle.viewmodel.BuildConfig	field	public static final String VERSION_NAME;
+android.arch.lifecycle.viewmodel.BuildConfig	field	public static final boolean DEBUG;
+android.arch.lifecycle.viewmodel.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.device.details.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.device.details.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.device.details.BuildConfig	field	public static final String FLAVOR;
+com.amazon.device.details.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.device.details.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.device.details.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.device.details.DeviceDetailsContentProvider	field	private static final String AUTHORITY;
+com.amazon.device.details.DeviceDetailsContentProvider	field	private static final String TAG;
+com.amazon.device.details.DeviceDetailsContentProvider	field	private static final UriMatcher URI_MATCHER;
+com.amazon.device.details.DeviceDetailsContentProvider	field	private static final int GET_PROPERTIES;
+com.amazon.device.details.DeviceDetailsContentProvider	method	private int getMatchingId(Uri uri)
+com.amazon.device.details.DeviceDetailsContentProvider	method	public Cursor query(@NonNull Uri uri, String[] strings, String s, String[] strings1, String s1)
+com.amazon.device.details.DeviceDetailsContentProvider	method	public String getType(Uri uri)
+com.amazon.device.details.DeviceDetailsContentProvider	method	public Uri insert(Uri uri, ContentValues contentValues)
+com.amazon.device.details.DeviceDetailsContentProvider	method	public boolean onCreate()
+com.amazon.device.details.DeviceDetailsContentProvider	method	public int delete(Uri uri, String s, String[] strings)
+com.amazon.device.details.DeviceDetailsContentProvider	method	public int update(Uri uri, ContentValues contentValues, String s, String[] strings)
+com.amazon.device.details.DeviceDetailsFactory	field	private final Context mContext;
+com.amazon.device.details.DeviceDetailsFactory	field	private final DeviceDetailsHandler mDeviceDetailsHandler;
+com.amazon.device.details.DeviceDetailsFactory	field	private final NaatyamHelper mNaatyamHelper;
+com.amazon.device.details.DeviceDetailsFactory	field	private final SharedPreferenceDAO mSharedPreferenceDAO;
+com.amazon.device.details.DeviceDetailsFactory	field	private static volatile DeviceDetailsFactory sDeviceDetailsFactory;
+com.amazon.device.details.DeviceDetailsFactory	field	public static final String TAG;
+com.amazon.device.details.DeviceDetailsFactory	method	private DeviceDetailsFactory(@NonNull Context context, @NonNull NaatyamHelper naatyamHelper, @NonNull SharedPreferenceDAO sharedPreferenceDAO, @NonNull DeviceDetailsHandler deviceDetailsHandler)
+com.amazon.device.details.DeviceDetailsFactory	method	private static DeviceDetailsFactory createInstance(@NonNull Context context)
+com.amazon.device.details.DeviceDetailsFactory	method	public Context getContext()
+com.amazon.device.details.DeviceDetailsFactory	method	public DeviceDetailsFactoryBuilder toBuilder()
+com.amazon.device.details.DeviceDetailsFactory	method	public DeviceDetailsHandler getDeviceDetailsHandler()
+com.amazon.device.details.DeviceDetailsFactory	method	public NaatyamHelper getNaatyamHelper()
+com.amazon.device.details.DeviceDetailsFactory	method	public SharedPreferenceDAO getSharedPreferenceDAO()
+com.amazon.device.details.DeviceDetailsFactory	method	public String toString()
+com.amazon.device.details.DeviceDetailsFactory	method	public boolean equals(Object o)
+com.amazon.device.details.DeviceDetailsFactory	method	public int hashCode()
+com.amazon.device.details.DeviceDetailsFactory	method	public static DeviceDetailsFactoryBuilder builder()
+com.amazon.device.details.DeviceDetailsFactory	method	public static synchronized DeviceDetailsFactory getInstance(@NonNull Context context)
+com.amazon.device.details.DeviceDetailsFactory$DeviceDetailsFactoryBuilder	field	private Context context;
+com.amazon.device.details.DeviceDetailsFactory$DeviceDetailsFactoryBuilder	field	private DeviceDetailsHandler deviceDetailsHandler;
+com.amazon.device.details.DeviceDetailsFactory$DeviceDetailsFactoryBuilder	field	private NaatyamHelper naatyamHelper;
+com.amazon.device.details.DeviceDetailsFactory$DeviceDetailsFactoryBuilder	field	private SharedPreferenceDAO sharedPreferenceDAO;
+com.amazon.device.details.DeviceDetailsFactory$DeviceDetailsFactoryBuilder	method	public DeviceDetailsFactory build()
+com.amazon.device.details.DeviceDetailsFactory$DeviceDetailsFactoryBuilder	method	public DeviceDetailsFactoryBuilder context(Context context)
+com.amazon.device.details.DeviceDetailsFactory$DeviceDetailsFactoryBuilder	method	public DeviceDetailsFactoryBuilder deviceDetailsHandler(DeviceDetailsHandler deviceDetailsHandler)
+com.amazon.device.details.DeviceDetailsFactory$DeviceDetailsFactoryBuilder	method	public DeviceDetailsFactoryBuilder naatyamHelper(NaatyamHelper naatyamHelper)
+com.amazon.device.details.DeviceDetailsFactory$DeviceDetailsFactoryBuilder	method	public DeviceDetailsFactoryBuilder sharedPreferenceDAO(SharedPreferenceDAO sharedPreferenceDAO)
+com.amazon.device.details.DeviceDetailsFactory$DeviceDetailsFactoryBuilder	method	public String toString()
+com.amazon.device.details.DeviceDetailsHandler	field	private final Context mContext;
+com.amazon.device.details.DeviceDetailsHandler	field	private static final String TAG;
+com.amazon.device.details.DeviceDetailsHandler	method	private List<String> getRemainingPropertiesAndUpdateMap(@NonNull Map<String, String> keyValues, @NonNull List<String> domainProperties, @NonNull Map<String, String> domainPropToPropMap, @NonNull Map<String, String> propertiesMap)
+com.amazon.device.details.DeviceDetailsHandler	method	private Map<String, String> getDomainPropToPropMap(@NonNull String domain, @NonNull List<String> propertyNames)
+com.amazon.device.details.DeviceDetailsHandler	method	private Map<String, String> getPropertiesFromSystemAndUpdateMap(@NonNull List<String> domainPropertyKeys, @NonNull Map<String, String> domainPropToPropMap, @NonNull Map<String, String> resultantPropertyMap)
+com.amazon.device.details.DeviceDetailsHandler	method	private String getSystemProperties(@NonNull String domain, @NonNull NaatyamHelper naatyamHelper, @NonNull SharedPreferenceDAO sharedPreferenceDAO, @NonNull List<String> propertyNames)
+com.amazon.device.details.DeviceDetailsHandler	method	public DeviceDetailsHandler(@NonNull Context context)
+com.amazon.device.details.DeviceDetailsHandler	method	public String getProperties(@NonNull Uri uri)
+com.amazon.device.details.R$attr	field	public static final int coordinatorLayoutStyle;
+com.amazon.device.details.R$attr	field	public static final int font;
+com.amazon.device.details.R$attr	field	public static final int fontProviderAuthority;
+com.amazon.device.details.R$attr	field	public static final int fontProviderCerts;
+com.amazon.device.details.R$attr	field	public static final int fontProviderFetchStrategy;
+com.amazon.device.details.R$attr	field	public static final int fontProviderFetchTimeout;
+com.amazon.device.details.R$attr	field	public static final int fontProviderPackage;
+com.amazon.device.details.R$attr	field	public static final int fontProviderQuery;
+com.amazon.device.details.R$attr	field	public static final int fontStyle;
+com.amazon.device.details.R$attr	field	public static final int fontWeight;
+com.amazon.device.details.R$attr	field	public static final int keylines;
+com.amazon.device.details.R$attr	field	public static final int layout_anchor;
+com.amazon.device.details.R$attr	field	public static final int layout_anchorGravity;
+com.amazon.device.details.R$attr	field	public static final int layout_behavior;
+com.amazon.device.details.R$attr	field	public static final int layout_dodgeInsetEdges;
+com.amazon.device.details.R$attr	field	public static final int layout_insetEdge;
+com.amazon.device.details.R$attr	field	public static final int layout_keyline;
+com.amazon.device.details.R$attr	field	public static final int statusBarBackground;
+com.amazon.device.details.R$bool	field	public static final int abc_action_bar_embed_tabs;
+com.amazon.device.details.R$color	field	public static final int notification_action_color_filter;
+com.amazon.device.details.R$color	field	public static final int notification_icon_bg_color;
+com.amazon.device.details.R$color	field	public static final int notification_material_background_media_default_color;
+com.amazon.device.details.R$color	field	public static final int primary_text_default_material_dark;
+com.amazon.device.details.R$color	field	public static final int ripple_material_light;
+com.amazon.device.details.R$color	field	public static final int secondary_text_default_material_dark;
+com.amazon.device.details.R$color	field	public static final int secondary_text_default_material_light;
+com.amazon.device.details.R$dimen	field	public static final int compat_button_inset_horizontal_material;
+com.amazon.device.details.R$dimen	field	public static final int compat_button_inset_vertical_material;
+com.amazon.device.details.R$dimen	field	public static final int compat_button_padding_horizontal_material;
+com.amazon.device.details.R$dimen	field	public static final int compat_button_padding_vertical_material;
+com.amazon.device.details.R$dimen	field	public static final int compat_control_corner_material;
+com.amazon.device.details.R$dimen	field	public static final int notification_action_icon_size;
+com.amazon.device.details.R$dimen	field	public static final int notification_action_text_size;
+com.amazon.device.details.R$dimen	field	public static final int notification_big_circle_margin;
+com.amazon.device.details.R$dimen	field	public static final int notification_content_margin_start;
+com.amazon.device.details.R$dimen	field	public static final int notification_large_icon_height;
+com.amazon.device.details.R$dimen	field	public static final int notification_large_icon_width;
+com.amazon.device.details.R$dimen	field	public static final int notification_main_column_padding_top;
+com.amazon.device.details.R$dimen	field	public static final int notification_media_narrow_margin;
+com.amazon.device.details.R$dimen	field	public static final int notification_right_icon_size;
+com.amazon.device.details.R$dimen	field	public static final int notification_right_side_padding_top;
+com.amazon.device.details.R$dimen	field	public static final int notification_small_icon_background_padding;
+com.amazon.device.details.R$dimen	field	public static final int notification_small_icon_size_as_large;
+com.amazon.device.details.R$dimen	field	public static final int notification_subtext_size;
+com.amazon.device.details.R$dimen	field	public static final int notification_top_pad;
+com.amazon.device.details.R$dimen	field	public static final int notification_top_pad_large_text;
+com.amazon.device.details.R$drawable	field	public static final int ic_launcher;
+com.amazon.device.details.R$drawable	field	public static final int notification_action_background;
+com.amazon.device.details.R$drawable	field	public static final int notification_bg;
+com.amazon.device.details.R$drawable	field	public static final int notification_bg_low;
+com.amazon.device.details.R$drawable	field	public static final int notification_bg_low_normal;
+com.amazon.device.details.R$drawable	field	public static final int notification_bg_low_pressed;
+com.amazon.device.details.R$drawable	field	public static final int notification_bg_normal;
+com.amazon.device.details.R$drawable	field	public static final int notification_bg_normal_pressed;
+com.amazon.device.details.R$drawable	field	public static final int notification_icon_background;
+com.amazon.device.details.R$drawable	field	public static final int notification_template_icon_bg;
+com.amazon.device.details.R$drawable	field	public static final int notification_template_icon_low_bg;
+com.amazon.device.details.R$drawable	field	public static final int notification_tile_bg;
+com.amazon.device.details.R$drawable	field	public static final int notify_panel_notification_icon_bg;
+com.amazon.device.details.R$id	field	public static final int action0;
+com.amazon.device.details.R$id	field	public static final int action_container;
+com.amazon.device.details.R$id	field	public static final int action_divider;
+com.amazon.device.details.R$id	field	public static final int action_image;
+com.amazon.device.details.R$id	field	public static final int action_text;
+com.amazon.device.details.R$id	field	public static final int actions;
+com.amazon.device.details.R$id	field	public static final int all;
+com.amazon.device.details.R$id	field	public static final int async;
+com.amazon.device.details.R$id	field	public static final int blocking;
+com.amazon.device.details.R$id	field	public static final int bottom;
+com.amazon.device.details.R$id	field	public static final int cancel_action;
+com.amazon.device.details.R$id	field	public static final int center;
+com.amazon.device.details.R$id	field	public static final int center_horizontal;
+com.amazon.device.details.R$id	field	public static final int center_vertical;
+com.amazon.device.details.R$id	field	public static final int chronometer;
+com.amazon.device.details.R$id	field	public static final int clip_horizontal;
+com.amazon.device.details.R$id	field	public static final int clip_vertical;
+com.amazon.device.details.R$id	field	public static final int end;
+com.amazon.device.details.R$id	field	public static final int end_padder;
+com.amazon.device.details.R$id	field	public static final int fill;
+com.amazon.device.details.R$id	field	public static final int fill_horizontal;
+com.amazon.device.details.R$id	field	public static final int fill_vertical;
+com.amazon.device.details.R$id	field	public static final int forever;
+com.amazon.device.details.R$id	field	public static final int icon;
+com.amazon.device.details.R$id	field	public static final int icon_group;
+com.amazon.device.details.R$id	field	public static final int info;
+com.amazon.device.details.R$id	field	public static final int italic;
+com.amazon.device.details.R$id	field	public static final int left;
+com.amazon.device.details.R$id	field	public static final int line1;
+com.amazon.device.details.R$id	field	public static final int line3;
+com.amazon.device.details.R$id	field	public static final int media_actions;
+com.amazon.device.details.R$id	field	public static final int none;
+com.amazon.device.details.R$id	field	public static final int normal;
+com.amazon.device.details.R$id	field	public static final int notification_background;
+com.amazon.device.details.R$id	field	public static final int notification_main_column;
+com.amazon.device.details.R$id	field	public static final int notification_main_column_container;
+com.amazon.device.details.R$id	field	public static final int right;
+com.amazon.device.details.R$id	field	public static final int right_icon;
+com.amazon.device.details.R$id	field	public static final int right_side;
+com.amazon.device.details.R$id	field	public static final int start;
+com.amazon.device.details.R$id	field	public static final int status_bar_latest_event_content;
+com.amazon.device.details.R$id	field	public static final int tag_transition_group;
+com.amazon.device.details.R$id	field	public static final int text2;
+com.amazon.device.details.R$id	field	public static final int text;
+com.amazon.device.details.R$id	field	public static final int time;
+com.amazon.device.details.R$id	field	public static final int title;
+com.amazon.device.details.R$id	field	public static final int top;
+com.amazon.device.details.R$integer	field	public static final int cancel_button_image_alpha;
+com.amazon.device.details.R$integer	field	public static final int status_bar_notification_info_maxnum;
+com.amazon.device.details.R$layout	field	public static final int notification_action;
+com.amazon.device.details.R$layout	field	public static final int notification_action_tombstone;
+com.amazon.device.details.R$layout	field	public static final int notification_media_action;
+com.amazon.device.details.R$layout	field	public static final int notification_media_cancel_action;
+com.amazon.device.details.R$layout	field	public static final int notification_template_big_media;
+com.amazon.device.details.R$layout	field	public static final int notification_template_big_media_custom;
+com.amazon.device.details.R$layout	field	public static final int notification_template_big_media_narrow;
+com.amazon.device.details.R$layout	field	public static final int notification_template_big_media_narrow_custom;
+com.amazon.device.details.R$layout	field	public static final int notification_template_custom_big;
+com.amazon.device.details.R$layout	field	public static final int notification_template_icon_group;
+com.amazon.device.details.R$layout	field	public static final int notification_template_lines_media;
+com.amazon.device.details.R$layout	field	public static final int notification_template_media;
+com.amazon.device.details.R$layout	field	public static final int notification_template_media_custom;
+com.amazon.device.details.R$layout	field	public static final int notification_template_part_chronometer;
+com.amazon.device.details.R$layout	field	public static final int notification_template_part_time;
+com.amazon.device.details.R$string	field	public static final int cache_updation;
+com.amazon.device.details.R$string	field	public static final int status_bar_notification_info_overflow;
+com.amazon.device.details.R$style	field	public static final int TextAppearance_Compat_Notification;
+com.amazon.device.details.R$style	field	public static final int TextAppearance_Compat_Notification_Info;
+com.amazon.device.details.R$style	field	public static final int TextAppearance_Compat_Notification_Info_Media;
+com.amazon.device.details.R$style	field	public static final int TextAppearance_Compat_Notification_Line2;
+com.amazon.device.details.R$style	field	public static final int TextAppearance_Compat_Notification_Line2_Media;
+com.amazon.device.details.R$style	field	public static final int TextAppearance_Compat_Notification_Media;
+com.amazon.device.details.R$style	field	public static final int TextAppearance_Compat_Notification_Time;
+com.amazon.device.details.R$style	field	public static final int TextAppearance_Compat_Notification_Time_Media;
+com.amazon.device.details.R$style	field	public static final int TextAppearance_Compat_Notification_Title;
+com.amazon.device.details.R$style	field	public static final int TextAppearance_Compat_Notification_Title_Media;
+com.amazon.device.details.R$style	field	public static final int Widget_Compat_NotificationActionContainer;
+com.amazon.device.details.R$style	field	public static final int Widget_Compat_NotificationActionText;
+com.amazon.device.details.R$style	field	public static final int Widget_Support_CoordinatorLayout;
+com.amazon.device.details.R$styleable	field	public static final int CoordinatorLayout_Layout_android_layout_gravity;
+com.amazon.device.details.R$styleable	field	public static final int CoordinatorLayout_Layout_layout_anchor;
+com.amazon.device.details.R$styleable	field	public static final int CoordinatorLayout_Layout_layout_anchorGravity;
+com.amazon.device.details.R$styleable	field	public static final int CoordinatorLayout_Layout_layout_behavior;
+com.amazon.device.details.R$styleable	field	public static final int CoordinatorLayout_Layout_layout_dodgeInsetEdges;
+com.amazon.device.details.R$styleable	field	public static final int CoordinatorLayout_Layout_layout_insetEdge;
+com.amazon.device.details.R$styleable	field	public static final int CoordinatorLayout_Layout_layout_keyline;
+com.amazon.device.details.R$styleable	field	public static final int CoordinatorLayout_keylines;
+com.amazon.device.details.R$styleable	field	public static final int CoordinatorLayout_statusBarBackground;
+com.amazon.device.details.R$styleable	field	public static final int FontFamilyFont_android_font;
+com.amazon.device.details.R$styleable	field	public static final int FontFamilyFont_android_fontStyle;
+com.amazon.device.details.R$styleable	field	public static final int FontFamilyFont_android_fontWeight;
+com.amazon.device.details.R$styleable	field	public static final int FontFamilyFont_font;
+com.amazon.device.details.R$styleable	field	public static final int FontFamilyFont_fontStyle;
+com.amazon.device.details.R$styleable	field	public static final int FontFamilyFont_fontWeight;
+com.amazon.device.details.R$styleable	field	public static final int FontFamily_fontProviderAuthority;
+com.amazon.device.details.R$styleable	field	public static final int FontFamily_fontProviderCerts;
+com.amazon.device.details.R$styleable	field	public static final int FontFamily_fontProviderFetchStrategy;
+com.amazon.device.details.R$styleable	field	public static final int FontFamily_fontProviderFetchTimeout;
+com.amazon.device.details.R$styleable	field	public static final int FontFamily_fontProviderPackage;
+com.amazon.device.details.R$styleable	field	public static final int FontFamily_fontProviderQuery;
+com.amazon.device.details.R$styleable	field	public static final int[] CoordinatorLayout;
+com.amazon.device.details.R$styleable	field	public static final int[] CoordinatorLayout_Layout;
+com.amazon.device.details.R$styleable	field	public static final int[] FontFamily;
+com.amazon.device.details.R$styleable	field	public static final int[] FontFamilyFont;
+com.amazon.device.details.common.domain.ValidDomains	field	private static final List<String> DOMAIN_LIST;
+com.amazon.device.details.common.domain.ValidDomains	method	public static boolean contains(String domain)
+com.amazon.device.details.common.utils.Constants	field	static final String OEM_MODEL_DEFAULT_VALUE;
+com.amazon.device.details.common.utils.Constants	field	static final String OEM_MODEL_PROPERTY;
+com.amazon.device.details.common.utils.Constants	field	static final String PROPERTY_DEFAULT_VALUE;
+com.amazon.device.details.common.utils.Constants	field	static final String TAG_PREFIX;
+com.amazon.device.details.common.utils.Constants	method	private Constants()
+com.amazon.device.details.common.utils.SLog	field	private static int sLogLevel;
+com.amazon.device.details.common.utils.SLog	field	public static final int ASSERT;
+com.amazon.device.details.common.utils.SLog	field	public static final int DEBUG;
+com.amazon.device.details.common.utils.SLog	field	public static final int ERROR;
+com.amazon.device.details.common.utils.SLog	field	public static final int INFO;
+com.amazon.device.details.common.utils.SLog	field	public static final int NOLOGGING;
+com.amazon.device.details.common.utils.SLog	field	public static final int VERBOSE;
+com.amazon.device.details.common.utils.SLog	field	public static final int WARN;
+com.amazon.device.details.common.utils.SLog	method	private SLog()
+com.amazon.device.details.common.utils.SLog	method	private static boolean isLoggable(String tag, int logLevel)
+com.amazon.device.details.common.utils.SLog	method	public static String getStackTraceString(Exception e)
+com.amazon.device.details.common.utils.SLog	method	public static int getLogLevel()
+com.amazon.device.details.common.utils.SLog	method	public static void d(String tag, String message)
+com.amazon.device.details.common.utils.SLog	method	public static void d(String tag, String message, Throwable throwable)
+com.amazon.device.details.common.utils.SLog	method	public static void e(String tag, String message)
+com.amazon.device.details.common.utils.SLog	method	public static void e(String tag, String message, Throwable throwable)
+com.amazon.device.details.common.utils.SLog	method	public static void i(String tag, String message)
+com.amazon.device.details.common.utils.SLog	method	public static void i(String tag, String message, Throwable throwable)
+com.amazon.device.details.common.utils.SLog	method	public static void setLogLevel(int logLevel)
+com.amazon.device.details.common.utils.SLog	method	public static void v(String tag, String message)
+com.amazon.device.details.common.utils.SLog	method	public static void v(String tag, String message, Throwable throwable)
+com.amazon.device.details.common.utils.SLog	method	public static void w(String tag, String message)
+com.amazon.device.details.common.utils.SLog	method	public static void w(String tag, String message, Throwable throwable)
+com.amazon.device.details.common.utils.SLog	method	public static void wtf(String tag, String message)
+com.amazon.device.details.common.utils.SLog	method	public static void wtf(String tag, String message, Throwable throwable)
+com.amazon.device.details.common.utils.SystemPropertyUtils	field	private static final Class SYSTEM_PROPERTIES_CLASS;
+com.amazon.device.details.common.utils.SystemPropertyUtils	field	private static final Class[] GET_PARAM_TYPES;
+com.amazon.device.details.common.utils.SystemPropertyUtils	field	private static final Method GETTER;
+com.amazon.device.details.common.utils.SystemPropertyUtils	field	private static final String TAG;
+com.amazon.device.details.common.utils.SystemPropertyUtils	method	private SystemPropertyUtils()
+com.amazon.device.details.common.utils.SystemPropertyUtils	method	private static Class getHiddenClass(@NonNull String hiddenClassName)
+com.amazon.device.details.common.utils.SystemPropertyUtils	method	private static Method getHiddenMethod(@Nullable Class classToFindFrom, @NonNull String hiddenMethodName, Class[] paramTypes)
+com.amazon.device.details.common.utils.SystemPropertyUtils	method	public static String get(@NonNull String key)
+com.amazon.device.details.common.utils.SystemPropertyUtils	method	static String getDefaultValue(String attribute)
+com.amazon.device.details.commons.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.device.details.commons.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.device.details.commons.BuildConfig	field	public static final String FLAVOR;
+com.amazon.device.details.commons.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.device.details.commons.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.device.details.commons.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.device.details.helper.NaatyamHelper	field	private Naatyam mNaatyam;
+com.amazon.device.details.helper.NaatyamHelper	field	private final boolean naatyamAvailable;
+com.amazon.device.details.helper.NaatyamHelper	field	private static final String FEATURE_NAATYAM_LIBRARY;
+com.amazon.device.details.helper.NaatyamHelper	field	private static final String TAG;
+com.amazon.device.details.helper.NaatyamHelper	method	private boolean isNaatyamAvailable(@NonNull Context context)
+com.amazon.device.details.helper.NaatyamHelper	method	public Map<String, String> getPolicy()
+com.amazon.device.details.helper.NaatyamHelper	method	public NaatyamHelper(@NonNull Context context)
+com.amazon.device.details.helper.SharedPreferenceDAO	field	private final SharedPreferences mSharedPreferences;
+com.amazon.device.details.helper.SharedPreferenceDAO	field	private static final String TAG;
+com.amazon.device.details.helper.SharedPreferenceDAO	method	private String getDataCachedKey(@NonNull String tempPropCacheKey)
+com.amazon.device.details.helper.SharedPreferenceDAO	method	private void invalidatePolicyValues(@NonNull SharedPreferences.Editor editor, @NonNull String tempPropCacheKey)
+com.amazon.device.details.helper.SharedPreferenceDAO	method	private void putPropertiesInEditor(Map<String, String> propertyValues, SharedPreferences.Editor editor)
+com.amazon.device.details.helper.SharedPreferenceDAO	method	private void putTempPropertiesInEditor(Map<String, String> propertyValues, SharedPreferences.Editor editor, String tempPropCacheKey)
+com.amazon.device.details.helper.SharedPreferenceDAO	method	public Map<String, String> getValues(List<String> keys)
+com.amazon.device.details.helper.SharedPreferenceDAO	method	public SharedPreferenceDAO(@NonNull SharedPreferences sharedPreferences)
+com.amazon.device.details.helper.SharedPreferenceDAO	method	public boolean isDataCached(@NonNull String tempPropCacheKey)
+com.amazon.device.details.helper.SharedPreferenceDAO	method	public void putValues(Map<String, String> permanentProps)
+com.amazon.device.details.helper.SharedPreferenceDAO	method	public void putValues(Map<String, String> permanentProps, Map<String, String> temporaryProps, String tempPropCacheKey)
+com.amazon.device.details.listener.BootCompleteListener	field	private static final String TAG;
+com.amazon.device.details.listener.BootCompleteListener	method	public void onReceive(@NonNull Context context, @NonNull Intent intent)
+com.amazon.device.details.listener.PropertyUpdateListener	method	public void onReceive(@NonNull Context context, @NonNull Intent intent)
+com.amazon.device.details.service.CacheUpdationService	field	private static final String CHANNEL_ID;
+com.amazon.device.details.service.CacheUpdationService	field	private static final String TAG;
+com.amazon.device.details.service.CacheUpdationService	method	private void sendPropertyUpdateGlobalBroadcast(Context appContext)
+com.amazon.device.details.service.CacheUpdationService	method	private void startForeground(@NonNull Context appContext, @NonNull NotificationManager notificationManager)
+com.amazon.device.details.service.CacheUpdationService	method	private void stopForeground()
+com.amazon.device.details.service.CacheUpdationService	method	protected void onHandleWork(@NonNull Intent intent)
+com.amazon.device.details.service.CacheUpdationService	method	public static void enqueueWork(@NonNull Context context, @NonNull Intent work)
+com.amazon.device.details.utils.Constants	field	public static final String BOOT_COMPLETED_INTENT_ACTION;
+com.amazon.device.details.utils.Constants	field	public static final String DOMAIN;
+com.amazon.device.details.utils.Constants	field	public static final String FEATURE_NAATYAM_LIBRARY;
+com.amazon.device.details.utils.Constants	field	public static final String IS_DATA_CACHED;
+com.amazon.device.details.utils.Constants	field	public static final String NAATYAM_PROPERTY_CACHE;
+com.amazon.device.details.utils.Constants	field	public static final String POLICY_UPDATE_INTENT_ACTION;
+com.amazon.device.details.utils.Constants	field	public static final String PROPERTIES;
+com.amazon.device.details.utils.Constants	field	public static final String PROPERTY_UPDATE_INTENT_ACTION;
+com.amazon.device.details.utils.Constants	field	public static final String SHOULD_FORCE_UPDATE_CACHE;
+com.amazon.device.details.utils.Constants	field	public static final String TAG_PREFIX;
+com.amazon.device.details.utils.Constants	method	private Constants()
+com.amazon.device.details.utils.JobConstants	field	public static final int CACHE_UPDATION_JOB_ID;
+com.amazon.device.details.utils.JobConstants	method	private JobConstants()
+com.amazon.device.details.utils.NotificationConstants	field	public static final int CACHE_UPDATION_NOTIFICATION_ID;
+com.amazon.device.details.utils.NotificationConstants	method	private NotificationConstants()
+com.amazon.device.details.utils.PathConstants	field	public static final String GET_PROPERTIES_PATH;
+com.amazon.device.details.utils.PathConstants	method	private PathConstants()

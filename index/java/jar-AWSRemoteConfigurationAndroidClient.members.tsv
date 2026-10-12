@@ -1,0 +1,233 @@
+class	kind	declaration
+com.amazonaws.mobileconnectors.remoteconfiguration.Attributes	field	public static final String PREDEFINED_ATTRIBUTE_PREFIX;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private ArcusThrottler mThrottler;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private final Attributes mAttributes;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private final ConfigurationDb mConfigurationDb;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private final RemoteConfigurationFetcher mRemoteConfigurationFetcher;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private final SharedPreferences mSharedPreferences;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private final String mAppConfigId;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private int mLastSuccessfulSyncAttributeHash;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private static final String DEFAULT_ENDPOINT;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private static final String KEY_SHARED_PREF_LOCAL_CONFIG_INSTANCE_ID;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private static final String REMOTE_CONFIG_SHARED_PREF_FILE_SUFFIX;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private static final String TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	private RemoteConfigurationManager(Builder builder)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	private String getOrGenerateLocalConfigurationInstanceId()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	private String getPreferencesFileNameForAppConfig()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	private void setLocalConfigurationInstanceId(String localConfigurationInstanceId)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	private void syncOnNewThread(final ConfigurationSyncCallback syncCallback)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public Attributes openAttributes()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public Configuration openConfiguration()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public static Builder forAppId(Context context, String appConfigId)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public static Builder forAppId(Context context, String appConfigId, boolean customContext)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public static RemoteConfigurationManager getInstance(String appConfigId)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public static void verifyAppConfigId(String appConfigId)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public synchronized void syncOnCurrentThread(ConfigurationSyncCallback syncCallback)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public void overwriteConfiguration(JSONObject configurationJson)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public void setRampingKey(String rampingKey)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public void sync(ConfigurationSyncCallback syncCallback)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	field	private JSONObject mDefaultConfiguration;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	field	private boolean mCustomContext;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	field	private final Context mContext;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	field	private final String mAppConfigId;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	field	private static final ConcurrentHashMap<String, RemoteConfigurationManager> mManagers;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	method	private void ensureBuilderReady()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	method	public Builder withDefaultConfiguration(JSONObject defaultConfiguration)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	method	public Builder(Context context, String appConfigId)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	method	public Builder(Context context, String appConfigId, boolean customContext)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	method	public RemoteConfigurationManager createOrGet()
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.ConfigurationNotFoundException	field	private static final long serialVersionUID;
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.ConfigurationNotFoundException	method	public ConfigurationNotFoundException(String detailMessage)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.ConfigurationNotFoundException	method	public ConfigurationNotFoundException(String detailMessage, Throwable throwable)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.MalformedAppConfigIdException	method	public MalformedAppConfigIdException(String detailMessage)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.MalformedAppConfigIdException	method	public MalformedAppConfigIdException(String detailMessage, Throwable throwable)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.NetworkException	field	private static final long serialVersionUID;
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.NetworkException	method	public NetworkException(String detailMessage)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.NetworkException	method	public NetworkException(String detailMessage, Throwable throwable)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.RemoteConfigurationException	field	private static final long serialVersionUID;
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.RemoteConfigurationException	method	public RemoteConfigurationException(String detailMessage)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.RemoteConfigurationException	method	public RemoteConfigurationException(String detailMessage, Throwable throwable)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private int mCause;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private int mSyncAttempts;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private long mNextSyncAttemptTime;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private static final long DEFAULT_SYNC_JITTER_IN_MS;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private static final long DEFAULT_TIME_BETWEEN_SYNCS_IN_MS;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private static final long MAX_EXP_BACKOFF_WINDOW_SIZE_IN_MS;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private static final long ONE_SECOND_MS;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	public static final int CAUSE_FAILED_SYNC;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	public static final int CAUSE_NONE;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	public static final int CAUSE_SUCCESSFUL_SYNC;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	public static final int CAUSE_THROTTLED_SYNC;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	private long getCurrentWindowSizeInMS()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	private long getJitterInMS()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	private long getRandomTimeInsideCurrentWindowInMS()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public boolean isSyncAllowedRightNow()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public int getCause()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public long getTimeToNextSyncInMS()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public void updateSyncTimeAfterFailure()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public void updateSyncTimeAfterSuccess()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public void updateSyncTimeAfterThrottle(long retryAfterInMS)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	field	private final String account;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	field	private final String id;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	field	private final String region;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	field	private final String type;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	field	private final String vendor;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public Arn(String vendor, String region, String account, String type, String id)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public String getAccount()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public String getId()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public String getRegion()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public String getType()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public String getVendor()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public String toArn()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public static Arn fromArn(String arnS)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private final ConcurrentMap<String, Object> mCustomAttributes;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private final Integer mPackageVersion;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private final String mPackageName;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final String KEY_APP_IDENTIFIER;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final String KEY_COUNTRY;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final String KEY_LANGUAGE;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final String KEY_PLATFORM;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final String PLATFORM_ANDROID;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final String PLATFORM_FIRE_OS;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final String TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final int MAX_ALLOWED_CUSTOM_ATTRIBUTES;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	public static final String KEY_APP_VERSION;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	private AttributesImpl(String packageName, Integer packageVersion, Map<String, Object> customAttributes)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	private Object getStandardAttribute(String attrKey)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	private static final boolean nullSafeEquals(Object left, Object right)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	private static final int nullSafeHash(Object obj)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	private synchronized <T> T getObjectPrivate(String attrKey, Class<T> type)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	private void addStandardAttributesTo(Map<String, Object> map)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected Integer getPackageVersionCode()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected Integer getPackageVersionCode(Context context)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected String getCountry()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected String getLanguage()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected String getPackageName()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected String getPlatform()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public AttributesImpl(Context context)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public Boolean getBoolean(String attrKey)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public Double getDouble(String attrKey)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public Integer getInt(String attrKey)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public Long getLong(String attrKey)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public String getString(String attrKey)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public boolean equals(Object o)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public int hashCode()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public synchronized AttributesImpl m0clone()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public synchronized Map<String, Object> getAllAttributes()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public synchronized Object remove(String attrKey)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public synchronized void addAttributePrivate(String attrKey, Object attrValue)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public void addAttribute(String attrKey, Boolean attrValue)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public void addAttribute(String attrKey, Double attrValue)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public void addAttribute(String attrKey, Integer attrValue)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public void addAttribute(String attrKey, Long attrValue)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public void addAttribute(String attrKey, String attrValue)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private AtomicInteger openCounter;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private DBHelper dbHelper;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private SQLiteDatabase mDatabase;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final Map<String, ConfigurationDb> instanceMap;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final String DB_NAME;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final String SQL_CREATE_CONFIGURATION_TABLE;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final String TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final String[] PROJECTION_CONFIGURATION;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final String[] PROJECTION_REMOTE_CONFIGURATION;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final int COL_ENTITY_TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final int COL_ORIGIN;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final int COL_TIMESTAMP;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final int COL_VALUE;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final int DATABASE_VERSION;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private Configuration configurationFromCursor(Cursor cursor)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private ContentValues getContentValues(String configuration, Integer origin, Long timestamp, String eTag)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private RemoteConfiguration remoteConfigurationFromCursor(Cursor cursor, String appConfigurationId)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private boolean hasConfiguration(SQLiteDatabase db)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private synchronized SQLiteDatabase openDatabase()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private synchronized void closeDatabase()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private synchronized void saveConfiguration(String json, int origin, Long timestamp, String etag)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private void saveConfigurationPrivate(SQLiteDatabase db, String configuration, int origin, Long timestamp, String eTag)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public static ConfigurationDb getOrCreateInstance(Context context, String appConfigId)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public synchronized Configuration readConfiguration() throws ConfigurationNotFoundException
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public synchronized RemoteConfiguration readRemoteConfiguration(String appConfigurationId)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public void saveConfiguration(RemoteConfiguration remoteConfiguration)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	synchronized void deleteConfiguration()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$ConfigurationTable	field	private static final String COLUMN_ENTITY_TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$ConfigurationTable	field	private static final String COLUMN_JSON;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$ConfigurationTable	field	private static final String COLUMN_ORIGIN;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$ConfigurationTable	field	private static final String COLUMN_TIMESTAMP;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$ConfigurationTable	field	private static final String TABLE_NAME;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$ConfigurationTable	method	private ConfigurationTable()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	field	private final File mDbFile;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	private DBHelper(Context context, String appConfigId)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	private void setupDb(SQLiteDatabase db)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public File getDbFile()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public static String getDbFileNameFor(String appConfigId)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public void onCreate(SQLiteDatabase db)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public void onDowngrade(SQLiteDatabase db, int oldVersion, int newVersion)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public void onOpen(SQLiteDatabase db)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	field	private final Date timestamp;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	field	private final String json;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	method	public ConfigurationImpl(String json)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	method	public ConfigurationImpl(String json, Date timestamp)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	method	public Date getTimestamp()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	method	public JSONObject getAsJsonObject()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	method	public String getAsJsonString()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.DowngradeException	method	public DowngradeException()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.DowngradeException	method	public DowngradeException(String error)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.DowngradeException	method	public DowngradeException(String message, Throwable cause)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.DowngradeException	method	public DowngradeException(Throwable cause)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.Checks	method	public static void checkArgument(boolean expression, String message)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.Checks	method	public static void checkNotNull(Object o, String message)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper	field	private static final String TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper	field	private static final char[] HEX_ARRAY;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper	method	private LocalConfigInstanceIdGenerationHelper()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper	method	private static String convertBytesToHexString(byte[] bytesArray)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper	method	public static String generateLocalConfigInstanceId(String input)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfiguration	field	public static final int ORIGIN_DEFAULT;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfiguration	field	public static final int ORIGIN_OVERWRITTEN;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfiguration	field	public static final int ORIGIN_SYNCED;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	field	private final Configuration mConfiguration;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	field	private final String mAppConfigurationId;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	field	private final String mEntityTag;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	field	private final boolean mUpdate;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	field	private final int mOrigin;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public Configuration getConfiguration()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public RemoteConfigurationImpl(Configuration configuration, String appConfigurationId, int origin, String entityTag, boolean update)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public String getAppConfigurationId()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public String getEntityTag()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public boolean isUpdate()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public int getOrigin()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private final Context mContext;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private final URL mEndpoint;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final Pattern ARCUS_CLIENT_VERSION_PATTERN;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String CHARSET_NAME_UTF8;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String GZIP_ENCODING;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String HEADER_ACCEPT_ENCODING;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String HEADER_AMZ_TARGET;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String HEADER_CONTENT_ENCODING;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String HEADER_CONTENT_TYPE;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String HEADER_USER_AGENT;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String QUERY_CONFIGURATION_TARGET;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String REQUEST_KEY_APP_CONFIG_ID;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String REQUEST_KEY_CLIENT_ATTRIBUTES;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String REQUEST_KEY_LAST_SEEN_ENTITY_TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String REQUEST_KEY_LOCAL_CONFIG_INSTANCE_ID;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String RESPONSE_KEY_CONFIGURATION;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String RESPONSE_KEY_ENTITY_TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String RESPONSE_KEY_UPDATED;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String USER_AGENT_PREFIX;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String XAMZ_JSON_CONTENT_TYPE;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final int DEFAULT_CONNECT_TIMEOUT;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final int DEFAULT_READ_TIMEOUT;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final int HTTP_OK_STATUS_CODE;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private JSONObject readResponse(HttpURLConnection connection) throws IOException
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private RemoteConfiguration buildRemoteConfiguration(String appConfigId, JSONObject serviceResponse)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private String getArcusUserAgent()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private boolean isNetworkAvailable()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private byte[] buildRequestBody(String appConfigId, Attributes attributes, String entityTag, String localConfigurationInstanceId)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private void configureConnection(HttpURLConnection connection)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private void setHeaders(HttpURLConnection connection)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private void writeRequest(HttpURLConnection connection, byte[] body) throws IOException
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	public AndroidRemoteConfigurationFetcher(Context context, URL endpoint)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	public RemoteConfiguration fetch(String appConfigId, Attributes attributes, String entityTag, String localConfigurationInstanceId)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.RequestThrottledException	method	public RequestThrottledException(String message)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.RequestThrottledException	method	public RequestThrottledException(String message, Throwable cause)

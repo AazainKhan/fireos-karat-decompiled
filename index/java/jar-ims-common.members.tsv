@@ -1,0 +1,1271 @@
+class	kind	declaration
+com.android.ims.FeatureConnection	field	private final IImsServiceFeatureCallback mListenerBinder;
+com.android.ims.FeatureConnection	field	protected Context mContext;
+com.android.ims.FeatureConnection	field	protected IBinder mBinder;
+com.android.ims.FeatureConnection	field	protected IFeatureUpdate mStatusCallback;
+com.android.ims.FeatureConnection	field	protected IImsRegistration mRegistrationBinder;
+com.android.ims.FeatureConnection	field	protected Integer mFeatureStateCached;
+com.android.ims.FeatureConnection	field	protected final Object mLock;
+com.android.ims.FeatureConnection	field	protected final int mSlotId;
+com.android.ims.FeatureConnection	field	protected static boolean sImsSupportedOnDevice;
+com.android.ims.FeatureConnection	field	protected static final String TAG;
+com.android.ims.FeatureConnection	field	protected volatile boolean mIsAvailable;
+com.android.ims.FeatureConnection	field	public Executor mExecutor;
+com.android.ims.FeatureConnection	method	protected TelephonyManager getTelephonyManager()
+com.android.ims.FeatureConnection	method	protected abstract IImsRegistration getRegistrationBinder();
+com.android.ims.FeatureConnection	method	protected abstract Integer retrieveFeatureState();
+com.android.ims.FeatureConnection	method	protected abstract void handleImsFeatureCreatedCallback(int i, int i2);
+com.android.ims.FeatureConnection	method	protected abstract void handleImsFeatureRemovedCallback(int i, int i2);
+com.android.ims.FeatureConnection	method	protected abstract void handleImsStatusChangedCallback(int i, int i2, int i3);
+com.android.ims.FeatureConnection	method	protected void onRemovedOrDied()
+com.android.ims.FeatureConnection	method	public FeatureConnection(Context context, int i)
+com.android.ims.FeatureConnection	method	public IImsRegistration getRegistration()
+com.android.ims.FeatureConnection	method	public IImsServiceFeatureCallback getListener()
+com.android.ims.FeatureConnection	method	public boolean isBinderAlive()
+com.android.ims.FeatureConnection	method	public boolean isBinderReady()
+com.android.ims.FeatureConnection	method	public int getFeatureState()
+com.android.ims.FeatureConnection	method	public int getRegistrationTech() throws RemoteException
+com.android.ims.FeatureConnection	method	public void checkServiceIsReady() throws RemoteException
+com.android.ims.FeatureConnection	method	public void setBinder(IBinder iBinder)
+com.android.ims.FeatureConnection	method	public void setStatusCallback(IFeatureUpdate iFeatureUpdate)
+com.android.ims.FeatureConnection$AnonymousClass1	method	public void imsFeatureCreated(final int i, final int i2)
+com.android.ims.FeatureConnection$AnonymousClass1	method	public void imsFeatureRemoved(final int i, final int i2)
+com.android.ims.FeatureConnection$AnonymousClass1	method	public void imsStatusChanged(final int i, final int i2, final int i3)
+com.android.ims.FeatureConnector	field	private final Runnable mGetServiceRunnable;
+com.android.ims.FeatureConnector	field	private static final String TAG;
+com.android.ims.FeatureConnector	field	private static final boolean DBG;
+com.android.ims.FeatureConnector	field	private static final int CEILING_SERVICE_RETRY_COUNT;
+com.android.ims.FeatureConnector	field	private static final int IMS_RETRY_STARTING_TIMEOUT_MS;
+com.android.ims.FeatureConnector	field	protected final Context mContext;
+com.android.ims.FeatureConnector	field	protected final Executor mExecutor;
+com.android.ims.FeatureConnector	field	protected final Object mLock;
+com.android.ims.FeatureConnector	field	protected final String mLogPrefix;
+com.android.ims.FeatureConnector	field	protected final int mPhoneId;
+com.android.ims.FeatureConnector	field	protected int mRetryCount;
+com.android.ims.FeatureConnector	field	public FeatureConnection.IFeatureUpdate mNotifyStatusChangedCallback;
+com.android.ims.FeatureConnector	field	public Listener<T> mListener;
+com.android.ims.FeatureConnector	field	public RetryTimeout mRetryTimeout;
+com.android.ims.FeatureConnector	field	public T mManager;
+com.android.ims.FeatureConnector	method	private boolean isSupported()
+com.android.ims.FeatureConnector	method	private final void log(String str)
+com.android.ims.FeatureConnector	method	protected void notifyNotReady()
+com.android.ims.FeatureConnector	method	public FeatureConnector(Context context, int i, Listener<T> listener, Executor executor, Looper looper)
+com.android.ims.FeatureConnector	method	public FeatureConnector(Context context, int i, Listener<T> listener, Executor executor, String str)
+com.android.ims.FeatureConnector	method	public FeatureConnector(Context context, int i, Listener<T> listener, String str)
+com.android.ims.FeatureConnector	method	public final void logw(String str)
+com.android.ims.FeatureConnector	method	public void connect()
+com.android.ims.FeatureConnector	method	public void createImsService() throws ImsException
+com.android.ims.FeatureConnector	method	public void disconnect()
+com.android.ims.FeatureConnector	method	public void notifyReady() throws ImsException
+com.android.ims.FeatureConnector	method	public void retryGetImsService()
+com.android.ims.FeatureConnector$AnonymousClass1	method	public void notifyStateChanged()
+com.android.ims.FeatureConnector$AnonymousClass1	method	public void notifyUnavailable()
+com.android.ims.ImsCall	field	private Context mContext;
+com.android.ims.ImsCall	field	private ImsCall mMergeHost;
+com.android.ims.ImsCall	field	private ImsCall mMergePeer;
+com.android.ims.ImsCall	field	private ImsCallProfile mCallProfile;
+com.android.ims.ImsCall	field	private ImsCallProfile mProposedCallProfile;
+com.android.ims.ImsCall	field	private ImsCallSession mSession;
+com.android.ims.ImsCall	field	private ImsCallSession mTransientConferenceSession;
+com.android.ims.ImsCall	field	private ImsCallSessionListenerProxy mImsCallSessionListenerProxy;
+com.android.ims.ImsCall	field	private ImsReasonInfo mLastReasonInfo;
+com.android.ims.ImsCall	field	private ImsReasonInfo mSessionEndDuringMergeReasonInfo;
+com.android.ims.ImsCall	field	private ImsStreamMediaSession mMediaSession;
+com.android.ims.ImsCall	field	private List<ConferenceParticipant> mConferenceParticipants;
+com.android.ims.ImsCall	field	private Listener mListener;
+com.android.ims.ImsCall	field	private Object mLockObj;
+com.android.ims.ImsCall	field	private boolean mAnswerWithRtt;
+com.android.ims.ImsCall	field	private boolean mCallSessionMergePending;
+com.android.ims.ImsCall	field	private boolean mHold;
+com.android.ims.ImsCall	field	private boolean mInCall;
+com.android.ims.ImsCall	field	private boolean mIsConferenceHost;
+com.android.ims.ImsCall	field	private boolean mIsMerged;
+com.android.ims.ImsCall	field	private boolean mMergeRequestedByConference;
+com.android.ims.ImsCall	field	private boolean mMute;
+com.android.ims.ImsCall	field	private boolean mSessionEndDuringMerge;
+com.android.ims.ImsCall	field	private boolean mTerminationRequestPending;
+com.android.ims.ImsCall	field	private boolean mWasVideoCall;
+com.android.ims.ImsCall	field	private int mOverrideReason;
+com.android.ims.ImsCall	field	private int mUpdateRequest;
+com.android.ims.ImsCall	field	private static final AtomicInteger sUniqueIdGenerator;
+com.android.ims.ImsCall	field	private static final String TAG;
+com.android.ims.ImsCall	field	private static final boolean CONF_DBG;
+com.android.ims.ImsCall	field	private static final boolean DBG;
+com.android.ims.ImsCall	field	private static final boolean FORCE_DEBUG;
+com.android.ims.ImsCall	field	private static final boolean VDBG;
+com.android.ims.ImsCall	field	private static final int UPDATE_EXTEND_TO_CONFERENCE;
+com.android.ims.ImsCall	field	private static final int UPDATE_HOLD;
+com.android.ims.ImsCall	field	private static final int UPDATE_HOLD_MERGE;
+com.android.ims.ImsCall	field	private static final int UPDATE_MERGE;
+com.android.ims.ImsCall	field	private static final int UPDATE_NONE;
+com.android.ims.ImsCall	field	private static final int UPDATE_RESUME;
+com.android.ims.ImsCall	field	private static final int UPDATE_UNSPECIFIED;
+com.android.ims.ImsCall	field	public final int uniqueId;
+com.android.ims.ImsCall	field	public static final int USSD_MODE_NOTIFY;
+com.android.ims.ImsCall	field	public static final int USSD_MODE_REQUEST;
+com.android.ims.ImsCall	method	private ImsCallSession.Listener createCallSessionListener()
+com.android.ims.ImsCall	method	private ImsStreamMediaProfile createHoldMediaProfile()
+com.android.ims.ImsCall	method	private ImsStreamMediaProfile createResumeMediaProfile()
+com.android.ims.ImsCall	method	private String appendImsCallInfoToString(String str)
+com.android.ims.ImsCall	method	private String updateRequestToString(int i)
+com.android.ims.ImsCall	method	private boolean isMergePeer()
+com.android.ims.ImsCall	method	private boolean isMerging()
+com.android.ims.ImsCall	method	private boolean isUpdatePending(ImsCall imsCall)
+com.android.ims.ImsCall	method	private boolean shouldProcessConferenceResult()
+com.android.ims.ImsCall	method	private static void updateCallProfile(ImsCall imsCall)
+com.android.ims.ImsCall	method	private void clear(ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsCall	method	private void clearMergeInfo()
+com.android.ims.ImsCall	method	private void clearSessionTerminationFlags()
+com.android.ims.ImsCall	method	private void enforceConversationMode()
+com.android.ims.ImsCall	method	private void logd(String str)
+com.android.ims.ImsCall	method	private void logv(String str)
+com.android.ims.ImsCall	method	private void markCallAsMerged(boolean z)
+com.android.ims.ImsCall	method	private void merge() throws ImsException
+com.android.ims.ImsCall	method	private void notifyConferenceSessionTerminated(ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsCall	method	private void notifyConferenceStateUpdated(ImsConferenceState imsConferenceState)
+com.android.ims.ImsCall	method	private void notifySessionTerminatedDuringMerge()
+com.android.ims.ImsCall	method	private void setMergePeer(ImsCall imsCall)
+com.android.ims.ImsCall	method	private void setTransientSessionAsPrimary(ImsCallSession imsCallSession)
+com.android.ims.ImsCall	method	private void throwImsException(Throwable th, int i) throws ImsException
+com.android.ims.ImsCall	method	private void trackVideoStateHistory(ImsCallProfile imsCallProfile)
+com.android.ims.ImsCall	method	private void updateCallProfile()
+com.android.ims.ImsCall	method	public ImsCall createNewCall(ImsCallSession imsCallSession, ImsCallProfile imsCallProfile)
+com.android.ims.ImsCall	method	public ImsCall(Context context, ImsCallProfile imsCallProfile)
+com.android.ims.ImsCall	method	public ImsCallProfile getCallProfile()
+com.android.ims.ImsCall	method	public ImsCallProfile getLocalCallProfile() throws ImsException
+com.android.ims.ImsCall	method	public ImsCallProfile getProposedCallProfile()
+com.android.ims.ImsCall	method	public ImsCallProfile getRemoteCallProfile() throws ImsException
+com.android.ims.ImsCall	method	public ImsCallSession getCallSession()
+com.android.ims.ImsCall	method	public ImsCallSession getSession()
+com.android.ims.ImsCall	method	public ImsCallSessionListenerProxy getImsCallSessionListenerProxy()
+com.android.ims.ImsCall	method	public ImsReasonInfo getLastReasonInfo()
+com.android.ims.ImsCall	method	public ImsStreamMediaSession getMediaSession()
+com.android.ims.ImsCall	method	public List<ConferenceParticipant> getConferenceParticipants()
+com.android.ims.ImsCall	method	public Listener getListener()
+com.android.ims.ImsCall	method	public String getCallExtra(String str) throws ImsException
+com.android.ims.ImsCall	method	public String toString()
+com.android.ims.ImsCall	method	public boolean checkIfRemoteUserIsSame(String str)
+com.android.ims.ImsCall	method	public boolean equalsTo(ICall iCall)
+com.android.ims.ImsCall	method	public boolean hasPendingUpdate()
+com.android.ims.ImsCall	method	public boolean isCallSessionMergePending()
+com.android.ims.ImsCall	method	public boolean isConferenceHost()
+com.android.ims.ImsCall	method	public boolean isInCall()
+com.android.ims.ImsCall	method	public boolean isMergeHost()
+com.android.ims.ImsCall	method	public boolean isMergeRequestedByConf()
+com.android.ims.ImsCall	method	public boolean isMerged()
+com.android.ims.ImsCall	method	public boolean isMultiparty()
+com.android.ims.ImsCall	method	public boolean isMuted()
+com.android.ims.ImsCall	method	public boolean isOnHold()
+com.android.ims.ImsCall	method	public boolean isPendingHold()
+com.android.ims.ImsCall	method	public boolean isTransientConferenceSession(ImsCallSession imsCallSession)
+com.android.ims.ImsCall	method	public boolean isVideoCall()
+com.android.ims.ImsCall	method	public boolean isWifiCall()
+com.android.ims.ImsCall	method	public boolean wasVideoCall()
+com.android.ims.ImsCall	method	public int getNetworkType()
+com.android.ims.ImsCall	method	public int getState()
+com.android.ims.ImsCall	method	public static List<ConferenceParticipant> parseConferenceState(ImsConferenceState imsConferenceState)
+com.android.ims.ImsCall	method	public static boolean isSessionAlive(ImsCallSession imsCallSession)
+com.android.ims.ImsCall	method	public void accept(int i) throws ImsException
+com.android.ims.ImsCall	method	public void accept(int i, ImsStreamMediaProfile imsStreamMediaProfile) throws ImsException
+com.android.ims.ImsCall	method	public void attachSession(ImsCallSession imsCallSession) throws ImsException
+com.android.ims.ImsCall	method	public void close()
+com.android.ims.ImsCall	method	public void conferenceStateUpdated(ImsConferenceState imsConferenceState)
+com.android.ims.ImsCall	method	public void consultativeTransfer(ImsCall imsCall) throws ImsException
+com.android.ims.ImsCall	method	public void deflect(String str) throws ImsException
+com.android.ims.ImsCall	method	public void extendToConference(String[] strArr) throws ImsException
+com.android.ims.ImsCall	method	public void hold() throws ImsException
+com.android.ims.ImsCall	method	public void inviteParticipants(String[] strArr) throws ImsException
+com.android.ims.ImsCall	method	public void loge(String str)
+com.android.ims.ImsCall	method	public void loge(String str, Throwable th)
+com.android.ims.ImsCall	method	public void logi(String str)
+com.android.ims.ImsCall	method	public void merge(ImsCall imsCall) throws ImsException
+com.android.ims.ImsCall	method	public void mergeInternal()
+com.android.ims.ImsCall	method	public void processCallTerminated(ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsCall	method	public void processMergeComplete()
+com.android.ims.ImsCall	method	public void processMergeFailed(ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsCall	method	public void reject(int i) throws ImsException
+com.android.ims.ImsCall	method	public void removeParticipants(String[] strArr) throws ImsException
+com.android.ims.ImsCall	method	public void resetIsMergeRequestedByConf(boolean z)
+com.android.ims.ImsCall	method	public void resume() throws ImsException
+com.android.ims.ImsCall	method	public void sendDtmf(char c, Message message)
+com.android.ims.ImsCall	method	public void sendRttMessage(String str)
+com.android.ims.ImsCall	method	public void sendRttModifyRequest(boolean z)
+com.android.ims.ImsCall	method	public void sendRttModifyResponse(boolean z)
+com.android.ims.ImsCall	method	public void sendUssd(String str) throws ImsException
+com.android.ims.ImsCall	method	public void setAnswerWithRtt()
+com.android.ims.ImsCall	method	public void setCallProfile(ImsCallProfile imsCallProfile)
+com.android.ims.ImsCall	method	public void setCallSessionMergePending(boolean z)
+com.android.ims.ImsCall	method	public void setIsMerged(boolean z)
+com.android.ims.ImsCall	method	public void setListener(Listener listener)
+com.android.ims.ImsCall	method	public void setListener(Listener listener, boolean z)
+com.android.ims.ImsCall	method	public void setMergeHost(ImsCall imsCall)
+com.android.ims.ImsCall	method	public void setMute(boolean z) throws ImsException
+com.android.ims.ImsCall	method	public void start(ImsCallSession imsCallSession, String str) throws ImsException
+com.android.ims.ImsCall	method	public void start(ImsCallSession imsCallSession, String[] strArr) throws ImsException
+com.android.ims.ImsCall	method	public void startDtmf(char c)
+com.android.ims.ImsCall	method	public void stopDtmf()
+com.android.ims.ImsCall	method	public void terminate(int i)
+com.android.ims.ImsCall	method	public void terminate(int i, int i2)
+com.android.ims.ImsCall	method	public void transfer(String str, boolean z) throws ImsException
+com.android.ims.ImsCall	method	public void update(int i, ImsStreamMediaProfile imsStreamMediaProfile) throws ImsException
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public ImsCallSessionListenerProxy()
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callQualityChanged(CallQuality callQuality)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionConferenceExtendFailed(ImsCallSession imsCallSession, ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionConferenceExtendReceived(ImsCallSession imsCallSession, ImsCallSession imsCallSession2, ImsCallProfile imsCallProfile)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionConferenceExtended(ImsCallSession imsCallSession, ImsCallSession imsCallSession2, ImsCallProfile imsCallProfile)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionConferenceStateUpdated(ImsCallSession imsCallSession, ImsConferenceState imsConferenceState)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionHandover(ImsCallSession imsCallSession, int i, int i2, ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionHandoverFailed(ImsCallSession imsCallSession, int i, int i2, ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionHeld(ImsCallSession imsCallSession, ImsCallProfile imsCallProfile)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionHoldFailed(ImsCallSession imsCallSession, ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionHoldReceived(ImsCallSession imsCallSession, ImsCallProfile imsCallProfile)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionInviteParticipantsRequestDelivered(ImsCallSession imsCallSession)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionInviteParticipantsRequestFailed(ImsCallSession imsCallSession, ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionMergeComplete(ImsCallSession imsCallSession)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionMergeFailed(ImsCallSession imsCallSession, ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionMergeStarted(ImsCallSession imsCallSession, ImsCallSession imsCallSession2, ImsCallProfile imsCallProfile)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionMultipartyStateChanged(ImsCallSession imsCallSession, boolean z)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionProgressing(ImsCallSession imsCallSession, ImsStreamMediaProfile imsStreamMediaProfile)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionRemoveParticipantsRequestDelivered(ImsCallSession imsCallSession)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionRemoveParticipantsRequestFailed(ImsCallSession imsCallSession, ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionResumeFailed(ImsCallSession imsCallSession, ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionResumeReceived(ImsCallSession imsCallSession, ImsCallProfile imsCallProfile)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionResumed(ImsCallSession imsCallSession, ImsCallProfile imsCallProfile)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionRttAudioIndicatorChanged(ImsStreamMediaProfile imsStreamMediaProfile)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionRttMessageReceived(String str)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionRttModifyRequestReceived(ImsCallSession imsCallSession, ImsCallProfile imsCallProfile)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionRttModifyResponseReceived(int i)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionStartFailed(ImsCallSession imsCallSession, ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionStarted(ImsCallSession imsCallSession, ImsCallProfile imsCallProfile)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionSuppServiceReceived(ImsCallSession imsCallSession, ImsSuppServiceNotification imsSuppServiceNotification)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionTerminated(ImsCallSession imsCallSession, ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionTransferFailed(ImsCallSession imsCallSession, ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionTransferred(ImsCallSession imsCallSession)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionTtyModeReceived(ImsCallSession imsCallSession, int i)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionUpdateFailed(ImsCallSession imsCallSession, ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionUpdateReceived(ImsCallSession imsCallSession, ImsCallProfile imsCallProfile)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionUpdated(ImsCallSession imsCallSession, ImsCallProfile imsCallProfile)
+com.android.ims.ImsCall$ImsCallSessionListenerProxy	method	public void callSessionUssdMessageReceived(ImsCallSession imsCallSession, int i, String str)
+com.android.ims.ImsCall$Listener	method	public void onCallConferenceExtendFailed(ImsCall imsCall, ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsCall$Listener	method	public void onCallConferenceExtendReceived(ImsCall imsCall, ImsCall imsCall2)
+com.android.ims.ImsCall$Listener	method	public void onCallConferenceExtended(ImsCall imsCall, ImsCall imsCall2)
+com.android.ims.ImsCall$Listener	method	public void onCallConferenceStateUpdated(ImsCall imsCall, ImsConferenceState imsConferenceState)
+com.android.ims.ImsCall$Listener	method	public void onCallError(ImsCall imsCall, ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsCall$Listener	method	public void onCallHandover(ImsCall imsCall, int i, int i2, ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsCall$Listener	method	public void onCallHandoverFailed(ImsCall imsCall, int i, int i2, ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsCall$Listener	method	public void onCallHeld(ImsCall imsCall)
+com.android.ims.ImsCall$Listener	method	public void onCallHoldFailed(ImsCall imsCall, ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsCall$Listener	method	public void onCallHoldReceived(ImsCall imsCall)
+com.android.ims.ImsCall$Listener	method	public void onCallInviteParticipantsRequestDelivered(ImsCall imsCall)
+com.android.ims.ImsCall$Listener	method	public void onCallInviteParticipantsRequestFailed(ImsCall imsCall, ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsCall$Listener	method	public void onCallMergeFailed(ImsCall imsCall, ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsCall$Listener	method	public void onCallMerged(ImsCall imsCall, ImsCall imsCall2, boolean z)
+com.android.ims.ImsCall$Listener	method	public void onCallProgressing(ImsCall imsCall)
+com.android.ims.ImsCall$Listener	method	public void onCallQualityChanged(ImsCall imsCall, CallQuality callQuality)
+com.android.ims.ImsCall$Listener	method	public void onCallRemoveParticipantsRequestDelivered(ImsCall imsCall)
+com.android.ims.ImsCall$Listener	method	public void onCallRemoveParticipantsRequestFailed(ImsCall imsCall, ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsCall$Listener	method	public void onCallResumeFailed(ImsCall imsCall, ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsCall$Listener	method	public void onCallResumeReceived(ImsCall imsCall)
+com.android.ims.ImsCall$Listener	method	public void onCallResumed(ImsCall imsCall)
+com.android.ims.ImsCall$Listener	method	public void onCallSessionTransferFailed(ImsCall imsCall, ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsCall$Listener	method	public void onCallSessionTransferred(ImsCall imsCall)
+com.android.ims.ImsCall$Listener	method	public void onCallSessionTtyModeReceived(ImsCall imsCall, int i)
+com.android.ims.ImsCall$Listener	method	public void onCallStartFailed(ImsCall imsCall, ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsCall$Listener	method	public void onCallStarted(ImsCall imsCall)
+com.android.ims.ImsCall$Listener	method	public void onCallStateChanged(ImsCall imsCall)
+com.android.ims.ImsCall$Listener	method	public void onCallStateChanged(ImsCall imsCall, int i)
+com.android.ims.ImsCall$Listener	method	public void onCallSuppServiceReceived(ImsCall imsCall, ImsSuppServiceNotification imsSuppServiceNotification)
+com.android.ims.ImsCall$Listener	method	public void onCallTerminated(ImsCall imsCall, ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsCall$Listener	method	public void onCallUpdateFailed(ImsCall imsCall, ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsCall$Listener	method	public void onCallUpdateReceived(ImsCall imsCall)
+com.android.ims.ImsCall$Listener	method	public void onCallUpdated(ImsCall imsCall)
+com.android.ims.ImsCall$Listener	method	public void onCallUssdMessageReceived(ImsCall imsCall, int i, String str)
+com.android.ims.ImsCall$Listener	method	public void onConferenceParticipantsStateChanged(ImsCall imsCall, List<ConferenceParticipant> list)
+com.android.ims.ImsCall$Listener	method	public void onMultipartyStateChanged(ImsCall imsCall, boolean z)
+com.android.ims.ImsCall$Listener	method	public void onRttAudioIndicatorChanged(ImsCall imsCall, ImsStreamMediaProfile imsStreamMediaProfile)
+com.android.ims.ImsCall$Listener	method	public void onRttMessageReceived(ImsCall imsCall, String str)
+com.android.ims.ImsCall$Listener	method	public void onRttModifyRequestReceived(ImsCall imsCall)
+com.android.ims.ImsCall$Listener	method	public void onRttModifyResponseReceived(ImsCall imsCall, int i)
+com.android.ims.ImsCallbackAdapterManager	field	private final Context mContext;
+com.android.ims.ImsCallbackAdapterManager	field	private final Object mLock;
+com.android.ims.ImsCallbackAdapterManager	field	private final RemoteCallbackList<T> mRemoteCallbacks;
+com.android.ims.ImsCallbackAdapterManager	field	private final SparseArray<Set<T>> mCallbackSubscriptionMap;
+com.android.ims.ImsCallbackAdapterManager	field	private final int mSlotId;
+com.android.ims.ImsCallbackAdapterManager	field	private static final String TAG;
+com.android.ims.ImsCallbackAdapterManager	field	public SubscriptionManager.OnSubscriptionsChangedListener mSubChangedListener;
+com.android.ims.ImsCallbackAdapterManager	method	private void clearCallbacksForAllSubscriptions()
+com.android.ims.ImsCallbackAdapterManager	method	private void linkCallbackToSubscription(T t, int i)
+com.android.ims.ImsCallbackAdapterManager	method	private void registerForSubscriptionsChanged()
+com.android.ims.ImsCallbackAdapterManager	method	private void unlinkCallbackFromSubscription(T t, int i)
+com.android.ims.ImsCallbackAdapterManager	method	private void unregisterForSubscriptionsChanged()
+com.android.ims.ImsCallbackAdapterManager	method	public ImsCallbackAdapterManager(Context context, Object obj, int i)
+com.android.ims.ImsCallbackAdapterManager	method	public abstract void registerCallback(T t);
+com.android.ims.ImsCallbackAdapterManager	method	public abstract void unregisterCallback(T t);
+com.android.ims.ImsCallbackAdapterManager	method	public final void addCallback(T t)
+com.android.ims.ImsCallbackAdapterManager	method	public final void close()
+com.android.ims.ImsCallbackAdapterManager	method	public final void removeCallback(T t)
+com.android.ims.ImsCallbackAdapterManager	method	public void addCallbackForSubscription(T t, int i)
+com.android.ims.ImsCallbackAdapterManager	method	public void removeCallbackForSubscription(T t, int i)
+com.android.ims.ImsCallbackAdapterManager	method	public void removeCallbacksForSubscription(int i)
+com.android.ims.ImsConnectionStateListener	method	public final void onRegistered(int i)
+com.android.ims.ImsConnectionStateListener	method	public final void onRegistering(int i)
+com.android.ims.ImsConnectionStateListener	method	public final void onTechnologyChangeFailed(int i, ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsConnectionStateListener	method	public final void onUnregistered(ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsConnectionStateListener	method	public void onFeatureCapabilityChanged(int i, int[] iArr, int[] iArr2)
+com.android.ims.ImsConnectionStateListener	method	public void onFeatureCapabilityChangedAdapter(int i, MmTelFeature.MmTelCapabilities mmTelCapabilities)
+com.android.ims.ImsConnectionStateListener	method	public void onImsConnected(int i)
+com.android.ims.ImsConnectionStateListener	method	public void onImsDisconnected(ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsConnectionStateListener	method	public void onImsProgressing(int i)
+com.android.ims.ImsConnectionStateListener	method	public void onImsResumed()
+com.android.ims.ImsConnectionStateListener	method	public void onImsSuspended()
+com.android.ims.ImsConnectionStateListener	method	public void onRegistrationChangeFailed(int i, ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsConnectionStateListener	method	public void onSubscriberAssociatedUriChanged(Uri[] uriArr)
+com.android.ims.ImsConnectionStateListener	method	public void onVoiceMessageCountChanged(int i)
+com.android.ims.ImsConnectionStateListener	method	public void registrationAssociatedUriChanged(Uri[] uriArr)
+com.android.ims.ImsEcbm	field	private final IImsEcbm miEcbm;
+com.android.ims.ImsEcbm	field	private static final String TAG;
+com.android.ims.ImsEcbm	field	private static final boolean DBG;
+com.android.ims.ImsEcbm	method	public ImsEcbm(IImsEcbm iImsEcbm)
+com.android.ims.ImsEcbm	method	public boolean isBinderAlive()
+com.android.ims.ImsEcbm	method	public void exitEmergencyCallbackMode() throws ImsException
+com.android.ims.ImsEcbm	method	public void setEcbmStateListener(ImsEcbmStateListener imsEcbmStateListener) throws ImsException
+com.android.ims.ImsEcbm$ImsEcbmListenerProxy	field	private ImsEcbmStateListener mListener;
+com.android.ims.ImsEcbm$ImsEcbmListenerProxy	method	public ImsEcbmListenerProxy(ImsEcbmStateListener imsEcbmStateListener)
+com.android.ims.ImsEcbm$ImsEcbmListenerProxy	method	public void enteredECBM()
+com.android.ims.ImsEcbm$ImsEcbmListenerProxy	method	public void exitedECBM()
+com.android.ims.ImsEcbmStateListener	method	public void onECBMEntered()
+com.android.ims.ImsEcbmStateListener	method	public void onECBMExited()
+com.android.ims.ImsExternalCallStateListener	method	public void onImsExternalCallStateUpdate(List<ImsExternalCallState> list)
+com.android.ims.ImsManager	field	private CarrierConfigManager mConfigManager;
+com.android.ims.ImsManager	field	private ConcurrentLinkedDeque<ImsReasonInfo> mRecentDisconnectReasons;
+com.android.ims.ImsManager	field	private Context mContext;
+com.android.ims.ImsManager	field	private ImsConfigListener mImsConfigListener;
+com.android.ims.ImsManager	field	private ImsEcbm mEcbm;
+com.android.ims.ImsManager	field	private ImsMultiEndpoint mMultiEndpoint;
+com.android.ims.ImsManager	field	private ImsUt mUt;
+com.android.ims.ImsManager	field	private MmTelFeatureConnection mMmTelFeatureConnection;
+com.android.ims.ImsManager	field	private Set<FeatureConnection.IFeatureUpdate> mStatusCallbacks;
+com.android.ims.ImsManager	field	private boolean mConfigUpdated;
+com.android.ims.ImsManager	field	private int mPhoneId;
+com.android.ims.ImsManager	field	private static HashMap<Integer, ImsManager> sImsManagerInstances;
+com.android.ims.ImsManager	field	private static final String TAG;
+com.android.ims.ImsManager	field	private static final boolean DBG;
+com.android.ims.ImsManager	field	private static final int MAX_RECENT_DISCONNECT_REASONS;
+com.android.ims.ImsManager	field	private static final int RESPONSE_WAIT_TIME_MS;
+com.android.ims.ImsManager	field	private static final int SUBINFO_PROPERTY_FALSE;
+com.android.ims.ImsManager	field	private static final int SUB_PROPERTY_NOT_INITIALIZED;
+com.android.ims.ImsManager	field	private static final int SYSTEM_PROPERTY_NOT_SET;
+com.android.ims.ImsManager	field	public ExecutorFactory mExecutorFactory;
+com.android.ims.ImsManager	field	public static final String ACTION_IMS_INCOMING_CALL;
+com.android.ims.ImsManager	field	public static final String ACTION_IMS_REGISTRATION_ERROR;
+com.android.ims.ImsManager	field	public static final String ACTION_IMS_SERVICE_DOWN;
+com.android.ims.ImsManager	field	public static final String ACTION_IMS_SERVICE_UP;
+com.android.ims.ImsManager	field	public static final String EXTRA_CALL_ID;
+com.android.ims.ImsManager	field	public static final String EXTRA_IS_UNKNOWN_CALL;
+com.android.ims.ImsManager	field	public static final String EXTRA_PHONE_ID;
+com.android.ims.ImsManager	field	public static final String EXTRA_SERVICE_ID;
+com.android.ims.ImsManager	field	public static final String EXTRA_USSD;
+com.android.ims.ImsManager	field	public static final String FALSE;
+com.android.ims.ImsManager	field	public static final String PROPERTY_DBG_ALLOW_IMS_OFF_OVERRIDE;
+com.android.ims.ImsManager	field	public static final String PROPERTY_DBG_VOLTE_AVAIL_OVERRIDE;
+com.android.ims.ImsManager	field	public static final String PROPERTY_DBG_VT_AVAIL_OVERRIDE;
+com.android.ims.ImsManager	field	public static final String PROPERTY_DBG_WFC_AVAIL_OVERRIDE;
+com.android.ims.ImsManager	field	public static final String TRUE;
+com.android.ims.ImsManager	field	public static final int INCOMING_CALL_RESULT_CODE;
+com.android.ims.ImsManager	field	public static final int PROPERTY_DBG_ALLOW_IMS_OFF_OVERRIDE_DEFAULT;
+com.android.ims.ImsManager	field	public static final int PROPERTY_DBG_VOLTE_AVAIL_OVERRIDE_DEFAULT;
+com.android.ims.ImsManager	field	public static final int PROPERTY_DBG_VT_AVAIL_OVERRIDE_DEFAULT;
+com.android.ims.ImsManager	field	public static final int PROPERTY_DBG_WFC_AVAIL_OVERRIDE_DEFAULT;
+com.android.ims.ImsManager	method	private Executor getThreadExecutor()
+com.android.ims.ImsManager	method	private ImsCallSession createCallSession(ImsCallProfile imsCallProfile) throws ImsException
+com.android.ims.ImsManager	method	private ImsReasonInfo makeACopy(ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsManager	method	private boolean getBooleanCarrierConfig(String str)
+com.android.ims.ImsManager	method	private boolean getProvisionedBool(ImsConfig imsConfig, int i) throws ImsException
+com.android.ims.ImsManager	method	private boolean getProvisionedBoolNoException(int i)
+com.android.ims.ImsManager	method	private boolean isActiveSubscriptionPresent()
+com.android.ims.ImsManager	method	private boolean isDataEnabled()
+com.android.ims.ImsManager	method	private boolean isEabProvisioned()
+com.android.ims.ImsManager	method	private boolean isGbaValid()
+com.android.ims.ImsManager	method	private boolean isImsNeeded(CapabilityChangeRequest capabilityChangeRequest)
+com.android.ims.ImsManager	method	private boolean isImsTurnOffAllowed()
+com.android.ims.ImsManager	method	private boolean isSubIdValid(int i)
+com.android.ims.ImsManager	method	private boolean isTurnOffImsAllowedByPlatform()
+com.android.ims.ImsManager	method	private boolean isVolteProvisioned()
+com.android.ims.ImsManager	method	private boolean isVtProvisioned()
+com.android.ims.ImsManager	method	private boolean isWfcProvisioned()
+com.android.ims.ImsManager	method	private boolean setProvisionedBoolNoException(int i, int i2)
+com.android.ims.ImsManager	method	private int getIntCarrierConfig(String str)
+com.android.ims.ImsManager	method	private int getSettingFromSubscriptionManager(String str, String str2)
+com.android.ims.ImsManager	method	private int getSubId()
+com.android.ims.ImsManager	method	private static String booleanToPropertyString(boolean z)
+com.android.ims.ImsManager	method	private static boolean isTurnOffImsAllowedByPlatform(Context context)
+com.android.ims.ImsManager	method	private void addToRecentDisconnectReasons(ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsManager	method	private void checkAndThrowExceptionIfServiceUnavailable() throws ImsException
+com.android.ims.ImsManager	method	private void createImsService()
+com.android.ims.ImsManager	method	private void log(String str)
+com.android.ims.ImsManager	method	private void loge(String str)
+com.android.ims.ImsManager	method	private void loge(String str, Throwable th)
+com.android.ims.ImsManager	method	private void logi(String str)
+com.android.ims.ImsManager	method	private void logw(String str)
+com.android.ims.ImsManager	method	private void setAdvanced4GMode(boolean z) throws ImsException
+com.android.ims.ImsManager	method	private void setLteFeatureValues(boolean z)
+com.android.ims.ImsManager	method	private void setProvisionedBool(ImsConfig imsConfig, int i, int i2) throws ImsException
+com.android.ims.ImsManager	method	private void setRttConfig(final boolean z)
+com.android.ims.ImsManager	method	private void setWfcModeInternal(final int i)
+com.android.ims.ImsManager	method	private void setWfcRoamingSettingInternal(boolean z)
+com.android.ims.ImsManager	method	private void turnOffIms() throws ImsException
+com.android.ims.ImsManager	method	private void turnOnIms() throws ImsException
+com.android.ims.ImsManager	method	private void updateImsCarrierConfigs(PersistableBundle persistableBundle) throws ImsException
+com.android.ims.ImsManager	method	private void updateUtFeatureValue(CapabilityChangeRequest capabilityChangeRequest)
+com.android.ims.ImsManager	method	private void updateVideoCallFeatureValue(CapabilityChangeRequest capabilityChangeRequest)
+com.android.ims.ImsManager	method	private void updateVolteFeatureValue(CapabilityChangeRequest capabilityChangeRequest)
+com.android.ims.ImsManager	method	private void updateWfcFeatureAndProvisionedValues(CapabilityChangeRequest capabilityChangeRequest)
+com.android.ims.ImsManager	method	public ArrayList<ImsReasonInfo> getRecentImsDisconnectReasons()
+com.android.ims.ImsManager	method	public ImsCall makeCall(ImsCallProfile imsCallProfile, String[] strArr, ImsCall.Listener listener) throws ImsException
+com.android.ims.ImsManager	method	public ImsCall takeCall(IImsCallSession iImsCallSession, ImsCall.Listener listener) throws ImsException
+com.android.ims.ImsManager	method	public ImsCallProfile createCallProfile(int i, int i2) throws ImsException
+com.android.ims.ImsManager	method	public ImsConfig getConfigInterface() throws ImsException
+com.android.ims.ImsManager	method	public ImsEcbm getEcbmInterface() throws ImsException
+com.android.ims.ImsManager	method	public ImsManager(Context context, int i)
+com.android.ims.ImsManager	method	public ImsMultiEndpoint getMultiEndpointInterface() throws ImsException
+com.android.ims.ImsManager	method	public ImsUtInterface getSupplementaryServiceConfiguration() throws ImsException
+com.android.ims.ImsManager	method	public String getSmsFormat() throws ImsException
+com.android.ims.ImsManager	method	public boolean isEabProvisionedOnDevice()
+com.android.ims.ImsManager	method	public boolean isEnhanced4gLteModeSettingEnabledByUser()
+com.android.ims.ImsManager	method	public boolean isNonTtyOrTtyOnVolteEnabled()
+com.android.ims.ImsManager	method	public boolean isServiceAvailable()
+com.android.ims.ImsManager	method	public boolean isServiceReady()
+com.android.ims.ImsManager	method	public boolean isSuppServicesOverUtEnabledByPlatform()
+com.android.ims.ImsManager	method	public boolean isTtyOnVoLteCapable()
+com.android.ims.ImsManager	method	public boolean isVolteEnabledByPlatform()
+com.android.ims.ImsManager	method	public boolean isVolteProvisionedOnDevice()
+com.android.ims.ImsManager	method	public boolean isVtEnabledByPlatform()
+com.android.ims.ImsManager	method	public boolean isVtEnabledByUser()
+com.android.ims.ImsManager	method	public boolean isVtProvisionedOnDevice()
+com.android.ims.ImsManager	method	public boolean isWfcEnabledByPlatform()
+com.android.ims.ImsManager	method	public boolean isWfcEnabledByUser()
+com.android.ims.ImsManager	method	public boolean isWfcProvisionedOnDevice()
+com.android.ims.ImsManager	method	public boolean isWfcRoamingEnabledByUser()
+com.android.ims.ImsManager	method	public boolean queryMmTelCapability(final int i, final int i2) throws ImsException
+com.android.ims.ImsManager	method	public boolean queryMmTelCapabilityStatus(int i, int i2) throws ImsException
+com.android.ims.ImsManager	method	public boolean updateRttConfigValue()
+com.android.ims.ImsManager	method	public int getImsServiceState() throws ImsException
+com.android.ims.ImsManager	method	public int getRegistrationTech()
+com.android.ims.ImsManager	method	public int getWfcMode()
+com.android.ims.ImsManager	method	public int getWfcMode(boolean z)
+com.android.ims.ImsManager	method	public int shouldProcessCall(boolean z, String[] strArr) throws ImsException
+com.android.ims.ImsManager	method	public static ImsManager getInstance(Context context, int i)
+com.android.ims.ImsManager	method	public static boolean isEnhanced4gLteModeSettingEnabledByUser(Context context)
+com.android.ims.ImsManager	method	public static boolean isImsSupportedOnDevice(Context context)
+com.android.ims.ImsManager	method	public static boolean isNonTtyOrTtyOnVolteEnabled(Context context)
+com.android.ims.ImsManager	method	public static boolean isVolteEnabledByPlatform(Context context)
+com.android.ims.ImsManager	method	public static boolean isVolteProvisionedOnDevice(Context context)
+com.android.ims.ImsManager	method	public static boolean isVtEnabledByPlatform(Context context)
+com.android.ims.ImsManager	method	public static boolean isVtEnabledByUser(Context context)
+com.android.ims.ImsManager	method	public static boolean isVtProvisionedOnDevice(Context context)
+com.android.ims.ImsManager	method	public static boolean isWfcEnabledByPlatform(Context context)
+com.android.ims.ImsManager	method	public static boolean isWfcEnabledByUser(Context context)
+com.android.ims.ImsManager	method	public static boolean isWfcProvisionedOnDevice(Context context)
+com.android.ims.ImsManager	method	public static boolean isWfcRoamingEnabledByUser(Context context)
+com.android.ims.ImsManager	method	public static int getWfcMode(Context context)
+com.android.ims.ImsManager	method	public static int getWfcMode(Context context, boolean z)
+com.android.ims.ImsManager	method	public static void factoryReset(Context context)
+com.android.ims.ImsManager	method	public static void setEnhanced4gLteModeSetting(Context context, boolean z)
+com.android.ims.ImsManager	method	public static void setVtSetting(Context context, boolean z)
+com.android.ims.ImsManager	method	public static void setWfcMode(Context context, int i)
+com.android.ims.ImsManager	method	public static void setWfcMode(Context context, int i, boolean z)
+com.android.ims.ImsManager	method	public static void setWfcRoamingSetting(Context context, boolean z)
+com.android.ims.ImsManager	method	public static void setWfcSetting(Context context, boolean z)
+com.android.ims.ImsManager	method	public static void updateImsServiceConfig(Context context, int i, boolean z)
+com.android.ims.ImsManager	method	public void acknowledgeSms(int i, int i2, int i3) throws ImsException
+com.android.ims.ImsManager	method	public void acknowledgeSmsReport(int i, int i2, int i3) throws ImsException
+com.android.ims.ImsManager	method	public void addCapabilitiesCallback(ImsMmTelManager.CapabilityCallback capabilityCallback) throws ImsException
+com.android.ims.ImsManager	method	public void addCapabilitiesCallbackForSubscription(IImsCapabilityCallback iImsCapabilityCallback, int i) throws RemoteException
+com.android.ims.ImsManager	method	public void addNotifyStatusChangedCallbackIfAvailable(FeatureConnection.IFeatureUpdate iFeatureUpdate) throws ImsException
+com.android.ims.ImsManager	method	public void addProvisioningCallbackForSubscription(IImsConfigCallback iImsConfigCallback, int i)
+com.android.ims.ImsManager	method	public void addRegistrationCallback(RegistrationManager.RegistrationCallback registrationCallback) throws ImsException
+com.android.ims.ImsManager	method	public void addRegistrationCallbackForSubscription(IImsRegistrationCallback iImsRegistrationCallback, int i) throws RemoteException
+com.android.ims.ImsManager	method	public void addRegistrationListener(final ImsConnectionStateListener imsConnectionStateListener) throws ImsException
+com.android.ims.ImsManager	method	public void addRegistrationListener(int i, ImsConnectionStateListener imsConnectionStateListener) throws ImsException
+com.android.ims.ImsManager	method	public void changeMmTelCapability(CapabilityChangeRequest capabilityChangeRequest) throws ImsException
+com.android.ims.ImsManager	method	public void changeMmTelCapability(int i, int i2, boolean z) throws ImsException
+com.android.ims.ImsManager	method	public void close()
+com.android.ims.ImsManager	method	public void connectIfServiceIsAvailable()
+com.android.ims.ImsManager	method	public void dump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr)
+com.android.ims.ImsManager	method	public void factoryReset()
+com.android.ims.ImsManager	method	public void getImsServiceState(final Consumer<Integer> consumer)
+com.android.ims.ImsManager	method	public void getRegistrationTech(final Consumer<Integer> consumer)
+com.android.ims.ImsManager	method	public void isSupported(final int i, final int i2, final Consumer<Boolean> consumer)
+com.android.ims.ImsManager	method	public void onSmsReady() throws ImsException
+com.android.ims.ImsManager	method	public void open(MmTelFeature.Listener listener) throws ImsException
+com.android.ims.ImsManager	method	public void removeCapabilitiesCallback(ImsMmTelManager.CapabilityCallback capabilityCallback) throws ImsException
+com.android.ims.ImsManager	method	public void removeCapabilitiesCallbackForSubscription(IImsCapabilityCallback iImsCapabilityCallback, int i)
+com.android.ims.ImsManager	method	public void removeNotifyStatusChangedCallback(FeatureConnection.IFeatureUpdate iFeatureUpdate)
+com.android.ims.ImsManager	method	public void removeProvisioningCallbackForSubscription(IImsConfigCallback iImsConfigCallback, int i)
+com.android.ims.ImsManager	method	public void removeRegistrationCallbackForSubscription(IImsRegistrationCallback iImsRegistrationCallback, int i)
+com.android.ims.ImsManager	method	public void removeRegistrationListener(ImsConnectionStateListener imsConnectionStateListener) throws ImsException
+com.android.ims.ImsManager	method	public void removeRegistrationListener(RegistrationManager.RegistrationCallback registrationCallback)
+com.android.ims.ImsManager	method	public void sendSms(int i, int i2, String str, String str2, boolean z, byte[] bArr) throws ImsException
+com.android.ims.ImsManager	method	public void setConfigListener(ImsConfigListener imsConfigListener)
+com.android.ims.ImsManager	method	public void setEabProvisioned(boolean z)
+com.android.ims.ImsManager	method	public void setEnhanced4gLteModeSetting(boolean z)
+com.android.ims.ImsManager	method	public void setRttEnabled(boolean z)
+com.android.ims.ImsManager	method	public void setSmsListener(IImsSmsListener iImsSmsListener) throws ImsException
+com.android.ims.ImsManager	method	public void setTtyMode(int i) throws ImsException
+com.android.ims.ImsManager	method	public void setUiTTYMode(Context context, int i, Message message) throws ImsException
+com.android.ims.ImsManager	method	public void setVolteProvisioned(boolean z)
+com.android.ims.ImsManager	method	public void setVtProvisioned(boolean z)
+com.android.ims.ImsManager	method	public void setVtSetting(boolean z)
+com.android.ims.ImsManager	method	public void setWfcMode(int i)
+com.android.ims.ImsManager	method	public void setWfcMode(int i, boolean z)
+com.android.ims.ImsManager	method	public void setWfcNonPersistent(boolean z, int i)
+com.android.ims.ImsManager	method	public void setWfcProvisioned(boolean z)
+com.android.ims.ImsManager	method	public void setWfcRoamingSetting(boolean z)
+com.android.ims.ImsManager	method	public void setWfcSetting(boolean z)
+com.android.ims.ImsManager	method	public void updateImsServiceConfig(boolean z)
+com.android.ims.ImsManager$ImsExecutorFactory	field	private final Handler mHandler;
+com.android.ims.ImsManager$ImsExecutorFactory	field	private final HandlerThread mThreadHandler;
+com.android.ims.ImsManager$ImsExecutorFactory	method	public ImsExecutorFactory()
+com.android.ims.ImsManager$ImsExecutorFactory	method	public void destroy()
+com.android.ims.ImsManager$ImsExecutorFactory	method	public void executeRunnable(Runnable runnable)
+com.android.ims.ImsMultiEndpoint	field	private final IImsMultiEndpoint mImsMultiendpoint;
+com.android.ims.ImsMultiEndpoint	field	private static final String TAG;
+com.android.ims.ImsMultiEndpoint	field	private static final boolean DBG;
+com.android.ims.ImsMultiEndpoint	method	public ImsMultiEndpoint(IImsMultiEndpoint iImsMultiEndpoint)
+com.android.ims.ImsMultiEndpoint	method	public boolean isBinderAlive()
+com.android.ims.ImsMultiEndpoint	method	public void setExternalCallStateListener(ImsExternalCallStateListener imsExternalCallStateListener) throws ImsException
+com.android.ims.ImsMultiEndpoint$ImsExternalCallStateListenerProxy	field	private ImsExternalCallStateListener mListener;
+com.android.ims.ImsMultiEndpoint$ImsExternalCallStateListenerProxy	method	public ImsExternalCallStateListenerProxy(ImsExternalCallStateListener imsExternalCallStateListener)
+com.android.ims.ImsMultiEndpoint$ImsExternalCallStateListenerProxy	method	public void onImsExternalCallStateUpdate(List<ImsExternalCallState> list)
+com.android.ims.ImsServiceClass	field	public static final int MMTEL;
+com.android.ims.ImsServiceClass	field	public static final int RCS;
+com.android.ims.ImsUt	field	private HashMap<Integer, Message> mPendingCmds;
+com.android.ims.ImsUt	field	private Object mLockObj;
+com.android.ims.ImsUt	field	private Registrant mSsIndicationRegistrant;
+com.android.ims.ImsUt	field	private final IImsUt miUt;
+com.android.ims.ImsUt	field	private static final String TAG;
+com.android.ims.ImsUt	field	private static final boolean DBG;
+com.android.ims.ImsUt	field	private static final int SERVICE_CLASS_NONE;
+com.android.ims.ImsUt	field	private static final int SERVICE_CLASS_VOICE;
+com.android.ims.ImsUt	field	public static final String CATEGORY_CB;
+com.android.ims.ImsUt	field	public static final String CATEGORY_CDIV;
+com.android.ims.ImsUt	field	public static final String CATEGORY_CONF;
+com.android.ims.ImsUt	field	public static final String CATEGORY_CW;
+com.android.ims.ImsUt	field	public static final String CATEGORY_OIP;
+com.android.ims.ImsUt	field	public static final String CATEGORY_OIR;
+com.android.ims.ImsUt	field	public static final String CATEGORY_TIP;
+com.android.ims.ImsUt	field	public static final String CATEGORY_TIR;
+com.android.ims.ImsUt	field	public static final String KEY_ACTION;
+com.android.ims.ImsUt	field	public static final String KEY_CATEGORY;
+com.android.ims.ImsUt	method	private void log(String str)
+com.android.ims.ImsUt	method	private void loge(String str)
+com.android.ims.ImsUt	method	private void loge(String str, Throwable th)
+com.android.ims.ImsUt	method	public ImsUt(IImsUt iImsUt)
+com.android.ims.ImsUt	method	public boolean isBinderAlive()
+com.android.ims.ImsUt	method	public void close()
+com.android.ims.ImsUt	method	public void queryCLIP(Message message)
+com.android.ims.ImsUt	method	public void queryCLIR(Message message)
+com.android.ims.ImsUt	method	public void queryCOLP(Message message)
+com.android.ims.ImsUt	method	public void queryCOLR(Message message)
+com.android.ims.ImsUt	method	public void queryCallBarring(int i, Message message)
+com.android.ims.ImsUt	method	public void queryCallBarring(int i, Message message, int i2)
+com.android.ims.ImsUt	method	public void queryCallForward(int i, String str, Message message)
+com.android.ims.ImsUt	method	public void queryCallWaiting(Message message)
+com.android.ims.ImsUt	method	public void registerForSuppServiceIndication(Handler handler, int i, Object obj)
+com.android.ims.ImsUt	method	public void sendFailureReport(Message message, ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsUt	method	public void sendSuccessReport(Message message)
+com.android.ims.ImsUt	method	public void sendSuccessReport(Message message, Object obj)
+com.android.ims.ImsUt	method	public void transact(Bundle bundle, Message message)
+com.android.ims.ImsUt	method	public void unregisterForSuppServiceIndication(Handler handler)
+com.android.ims.ImsUt	method	public void updateCLIP(boolean z, Message message)
+com.android.ims.ImsUt	method	public void updateCLIR(int i, Message message)
+com.android.ims.ImsUt	method	public void updateCOLP(boolean z, Message message)
+com.android.ims.ImsUt	method	public void updateCOLR(int i, Message message)
+com.android.ims.ImsUt	method	public void updateCallBarring(int i, int i2, Message message, String[] strArr)
+com.android.ims.ImsUt	method	public void updateCallBarring(int i, int i2, Message message, String[] strArr, int i3)
+com.android.ims.ImsUt	method	public void updateCallBarring(int i, int i2, Message message, String[] strArr, int i3, String str)
+com.android.ims.ImsUt	method	public void updateCallForward(int i, int i2, String str, int i3, int i4, Message message)
+com.android.ims.ImsUt	method	public void updateCallWaiting(boolean z, int i, Message message)
+com.android.ims.ImsUt$IImsUtListenerProxy	method	public IImsUtListenerProxy()
+com.android.ims.ImsUt$IImsUtListenerProxy	method	public void lineIdentificationSupplementaryServiceResponse(int i, ImsSsInfo imsSsInfo)
+com.android.ims.ImsUt$IImsUtListenerProxy	method	public void onSupplementaryServiceIndication(ImsSsData imsSsData)
+com.android.ims.ImsUt$IImsUtListenerProxy	method	public void utConfigurationCallBarringQueried(IImsUt iImsUt, int i, ImsSsInfo[] imsSsInfoArr)
+com.android.ims.ImsUt$IImsUtListenerProxy	method	public void utConfigurationCallForwardQueried(IImsUt iImsUt, int i, ImsCallForwardInfo[] imsCallForwardInfoArr)
+com.android.ims.ImsUt$IImsUtListenerProxy	method	public void utConfigurationCallWaitingQueried(IImsUt iImsUt, int i, ImsSsInfo[] imsSsInfoArr)
+com.android.ims.ImsUt$IImsUtListenerProxy	method	public void utConfigurationQueried(IImsUt iImsUt, int i, Bundle bundle)
+com.android.ims.ImsUt$IImsUtListenerProxy	method	public void utConfigurationQueryFailed(IImsUt iImsUt, int i, ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsUt$IImsUtListenerProxy	method	public void utConfigurationUpdateFailed(IImsUt iImsUt, int i, ImsReasonInfo imsReasonInfo)
+com.android.ims.ImsUt$IImsUtListenerProxy	method	public void utConfigurationUpdated(IImsUt iImsUt, int i)
+com.android.ims.MmTelFeatureConnection	field	private IImsConfig mConfigBinder;
+com.android.ims.MmTelFeatureConnection	field	private boolean mSupportsEmergencyCalling;
+com.android.ims.MmTelFeatureConnection	field	private final CapabilityCallbackManager mCapabilityCallbackManager;
+com.android.ims.MmTelFeatureConnection	field	private final ImsRegistrationCallbackAdapter mRegistrationCallbackManager;
+com.android.ims.MmTelFeatureConnection	field	private final ProvisioningCallbackManager mProvisioningCallbackManager;
+com.android.ims.MmTelFeatureConnection	field	protected static final String TAG;
+com.android.ims.MmTelFeatureConnection	method	private IImsConfig getConfig()
+com.android.ims.MmTelFeatureConnection	method	private void removeImsFeatureCallback()
+com.android.ims.MmTelFeatureConnection	method	protected IImsRegistration getRegistrationBinder()
+com.android.ims.MmTelFeatureConnection	method	protected Integer retrieveFeatureState()
+com.android.ims.MmTelFeatureConnection	method	protected void handleImsFeatureCreatedCallback(int i, int i2)
+com.android.ims.MmTelFeatureConnection	method	protected void handleImsFeatureRemovedCallback(int i, int i2)
+com.android.ims.MmTelFeatureConnection	method	protected void handleImsStatusChangedCallback(int i, int i2, int i3)
+com.android.ims.MmTelFeatureConnection	method	protected void onRemovedOrDied()
+com.android.ims.MmTelFeatureConnection	method	public IImsCallSession createCallSession(ImsCallProfile imsCallProfile) throws RemoteException
+com.android.ims.MmTelFeatureConnection	method	public IImsConfig getConfigInterface()
+com.android.ims.MmTelFeatureConnection	method	public IImsEcbm getEcbmInterface() throws RemoteException
+com.android.ims.MmTelFeatureConnection	method	public IImsMmTelFeature getServiceInterface(IBinder iBinder)
+com.android.ims.MmTelFeatureConnection	method	public IImsMultiEndpoint getMultiEndpointInterface() throws RemoteException
+com.android.ims.MmTelFeatureConnection	method	public IImsUt getUtInterface() throws RemoteException
+com.android.ims.MmTelFeatureConnection	method	public ImsCallProfile createCallProfile(int i, int i2) throws RemoteException
+com.android.ims.MmTelFeatureConnection	method	public MmTelFeature.MmTelCapabilities queryCapabilityStatus() throws RemoteException
+com.android.ims.MmTelFeatureConnection	method	public MmTelFeatureConnection(Context context, int i)
+com.android.ims.MmTelFeatureConnection	method	public String getSmsFormat() throws RemoteException
+com.android.ims.MmTelFeatureConnection	method	public boolean isEmergencyMmTelAvailable()
+com.android.ims.MmTelFeatureConnection	method	public int shouldProcessCall(boolean z, String[] strArr) throws RemoteException
+com.android.ims.MmTelFeatureConnection	method	public static MmTelFeatureConnection create(Context context, int i)
+com.android.ims.MmTelFeatureConnection	method	public void acknowledgeSms(int i, int i2, int i3) throws RemoteException
+com.android.ims.MmTelFeatureConnection	method	public void acknowledgeSmsReport(int i, int i2, int i3) throws RemoteException
+com.android.ims.MmTelFeatureConnection	method	public void addCapabilityCallback(IImsCapabilityCallback iImsCapabilityCallback)
+com.android.ims.MmTelFeatureConnection	method	public void addCapabilityCallbackForSubscription(IImsCapabilityCallback iImsCapabilityCallback, int i)
+com.android.ims.MmTelFeatureConnection	method	public void addProvisioningCallbackForSubscription(IImsConfigCallback iImsConfigCallback, int i)
+com.android.ims.MmTelFeatureConnection	method	public void addRegistrationCallback(IImsRegistrationCallback iImsRegistrationCallback)
+com.android.ims.MmTelFeatureConnection	method	public void addRegistrationCallbackForSubscription(IImsRegistrationCallback iImsRegistrationCallback, int i)
+com.android.ims.MmTelFeatureConnection	method	public void changeEnabledCapabilities(CapabilityChangeRequest capabilityChangeRequest, IImsCapabilityCallback iImsCapabilityCallback) throws RemoteException
+com.android.ims.MmTelFeatureConnection	method	public void closeConnection()
+com.android.ims.MmTelFeatureConnection	method	public void onSmsReady() throws RemoteException
+com.android.ims.MmTelFeatureConnection	method	public void openConnection(MmTelFeature.Listener listener) throws RemoteException
+com.android.ims.MmTelFeatureConnection	method	public void queryEnabledCapabilities(int i, int i2, IImsCapabilityCallback iImsCapabilityCallback) throws RemoteException
+com.android.ims.MmTelFeatureConnection	method	public void removeCapabilityCallback(IImsCapabilityCallback iImsCapabilityCallback)
+com.android.ims.MmTelFeatureConnection	method	public void removeCapabilityCallbackForSubscription(IImsCapabilityCallback iImsCapabilityCallback, int i)
+com.android.ims.MmTelFeatureConnection	method	public void removeProvisioningCallbackForSubscription(IImsConfigCallback iImsConfigCallback, int i)
+com.android.ims.MmTelFeatureConnection	method	public void removeRegistrationCallback(IImsRegistrationCallback iImsRegistrationCallback)
+com.android.ims.MmTelFeatureConnection	method	public void removeRegistrationCallbackForSubscription(IImsRegistrationCallback iImsRegistrationCallback, int i)
+com.android.ims.MmTelFeatureConnection	method	public void sendSms(int i, int i2, String str, String str2, boolean z, byte[] bArr) throws RemoteException
+com.android.ims.MmTelFeatureConnection	method	public void setSmsListener(IImsSmsListener iImsSmsListener) throws RemoteException
+com.android.ims.MmTelFeatureConnection	method	public void setUiTTYMode(int i, Message message) throws RemoteException
+com.android.ims.MmTelFeatureConnection$CapabilityCallbackManager	method	public CapabilityCallbackManager(Context context, Object obj)
+com.android.ims.MmTelFeatureConnection$CapabilityCallbackManager	method	public void registerCallback(IImsCapabilityCallback iImsCapabilityCallback)
+com.android.ims.MmTelFeatureConnection$CapabilityCallbackManager	method	public void unregisterCallback(IImsCapabilityCallback iImsCapabilityCallback)
+com.android.ims.MmTelFeatureConnection$ImsRegistrationCallbackAdapter	method	public ImsRegistrationCallbackAdapter(Context context, Object obj)
+com.android.ims.MmTelFeatureConnection$ImsRegistrationCallbackAdapter	method	public void registerCallback(IImsRegistrationCallback iImsRegistrationCallback)
+com.android.ims.MmTelFeatureConnection$ImsRegistrationCallbackAdapter	method	public void unregisterCallback(IImsRegistrationCallback iImsRegistrationCallback)
+com.android.ims.MmTelFeatureConnection$ProvisioningCallbackManager	method	public ProvisioningCallbackManager(Context context, Object obj)
+com.android.ims.MmTelFeatureConnection$ProvisioningCallbackManager	method	public void registerCallback(IImsConfigCallback iImsConfigCallback)
+com.android.ims.MmTelFeatureConnection$ProvisioningCallbackManager	method	public void unregisterCallback(IImsConfigCallback iImsConfigCallback)
+com.android.ims.Preconditions	method	private static boolean contains(String[] strArr, String str)
+com.android.ims.Preconditions	method	public static <C extends Collection<T>, T> C checkCollectionElementsNotNull(C c, String str)
+com.android.ims.Preconditions	method	public static <T extends CharSequence> T checkStringNotEmpty(T t)
+com.android.ims.Preconditions	method	public static <T extends CharSequence> T checkStringNotEmpty(T t, Object obj)
+com.android.ims.Preconditions	method	public static <T extends CharSequence> T checkStringNotEmpty(T t, String str, Object... objArr)
+com.android.ims.Preconditions	method	public static <T> Collection<T> checkCollectionNotEmpty(Collection<T> collection, String str)
+com.android.ims.Preconditions	method	public static <T> T checkNotNull(T t)
+com.android.ims.Preconditions	method	public static <T> T checkNotNull(T t, Object obj)
+com.android.ims.Preconditions	method	public static <T> T checkNotNull(T t, String str, Object... objArr)
+com.android.ims.Preconditions	method	public static <T> T[] checkArrayElementsNotNull(T[] tArr, String str)
+com.android.ims.Preconditions	method	public static String checkArgumentIsSupported(String[] strArr, String str)
+com.android.ims.Preconditions	method	public static byte[] checkByteArrayNotEmpty(byte[] bArr, String str)
+com.android.ims.Preconditions	method	public static float checkArgumentFinite(float f, String str)
+com.android.ims.Preconditions	method	public static float checkArgumentInRange(float f, float f2, float f3, String str)
+com.android.ims.Preconditions	method	public static float checkArgumentNonNegative(float f, String str)
+com.android.ims.Preconditions	method	public static float checkArgumentPositive(float f, String str)
+com.android.ims.Preconditions	method	public static float[] checkArrayElementsInRange(float[] fArr, float f, float f2, String str)
+com.android.ims.Preconditions	method	public static int checkArgumentInRange(int i, int i2, int i3, String str)
+com.android.ims.Preconditions	method	public static int checkArgumentNonnegative(int i)
+com.android.ims.Preconditions	method	public static int checkArgumentNonnegative(int i, String str)
+com.android.ims.Preconditions	method	public static int checkArgumentPositive(int i, String str)
+com.android.ims.Preconditions	method	public static int checkFlagsArgument(int i, int i2)
+com.android.ims.Preconditions	method	public static int[] checkArrayElementsInRange(int[] iArr, int i, int i2, String str)
+com.android.ims.Preconditions	method	public static long checkArgumentInRange(long j, long j2, long j3, String str)
+com.android.ims.Preconditions	method	public static long checkArgumentNonnegative(long j)
+com.android.ims.Preconditions	method	public static long checkArgumentNonnegative(long j, String str)
+com.android.ims.Preconditions	method	public static void checkArgument(boolean z)
+com.android.ims.Preconditions	method	public static void checkArgument(boolean z, Object obj)
+com.android.ims.Preconditions	method	public static void checkArgument(boolean z, String str, Object... objArr)
+com.android.ims.Preconditions	method	public static void checkState(boolean z)
+com.android.ims.Preconditions	method	public static void checkState(boolean z, String str)
+com.android.ims.Preconditions	method	public static void checkState(boolean z, String str, Object... objArr)
+com.android.ims.RcsFeatureConnection	field	private static final String TAG;
+com.android.ims.RcsFeatureConnection	field	public AvailabilityCallbackManager mAvailabilityCallbackManager;
+com.android.ims.RcsFeatureConnection	field	public RegistrationCallbackManager mRegistrationCallbackManager;
+com.android.ims.RcsFeatureConnection	method	private RcsFeatureConnection(Context context, int i, FeatureConnection.IFeatureUpdate iFeatureUpdate)
+com.android.ims.RcsFeatureConnection	method	private boolean isUpdateForThisFeatureAndSlot(int i, int i2)
+com.android.ims.RcsFeatureConnection	method	private void log(String str)
+com.android.ims.RcsFeatureConnection	method	private void removeImsFeatureCallback()
+com.android.ims.RcsFeatureConnection	method	protected IImsRegistration getRegistrationBinder()
+com.android.ims.RcsFeatureConnection	method	protected void onRemovedOrDied()
+com.android.ims.RcsFeatureConnection	method	public IImsRcsFeature getServiceInterface(IBinder iBinder)
+com.android.ims.RcsFeatureConnection	method	public Integer retrieveFeatureState()
+com.android.ims.RcsFeatureConnection	method	public int queryCapabilityStatus() throws RemoteException
+com.android.ims.RcsFeatureConnection	method	public static RcsFeatureConnection create(Context context, int i, FeatureConnection.IFeatureUpdate iFeatureUpdate)
+com.android.ims.RcsFeatureConnection	method	public void addCallback(IImsRegistrationCallback iImsRegistrationCallback)
+com.android.ims.RcsFeatureConnection	method	public void addCallbackForSubscription(int i, IImsCapabilityCallback iImsCapabilityCallback)
+com.android.ims.RcsFeatureConnection	method	public void addCallbackForSubscription(int i, IImsRegistrationCallback iImsRegistrationCallback)
+com.android.ims.RcsFeatureConnection	method	public void addCapabilityCallback(IImsCapabilityCallback iImsCapabilityCallback) throws RemoteException
+com.android.ims.RcsFeatureConnection	method	public void changeEnabledCapabilities(CapabilityChangeRequest capabilityChangeRequest, IImsCapabilityCallback iImsCapabilityCallback) throws RemoteException
+com.android.ims.RcsFeatureConnection	method	public void close()
+com.android.ims.RcsFeatureConnection	method	public void handleImsFeatureCreatedCallback(int i, int i2)
+com.android.ims.RcsFeatureConnection	method	public void handleImsFeatureRemovedCallback(int i, int i2)
+com.android.ims.RcsFeatureConnection	method	public void handleImsStatusChangedCallback(int i, int i2, int i3)
+com.android.ims.RcsFeatureConnection	method	public void loge(String str)
+com.android.ims.RcsFeatureConnection	method	public void logi(String str)
+com.android.ims.RcsFeatureConnection	method	public void queryCapabilityConfiguration(int i, int i2, IImsCapabilityCallback iImsCapabilityCallback) throws RemoteException
+com.android.ims.RcsFeatureConnection	method	public void removeCallback(IImsRegistrationCallback iImsRegistrationCallback)
+com.android.ims.RcsFeatureConnection	method	public void removeCallbackForSubscription(int i, IImsCapabilityCallback iImsCapabilityCallback)
+com.android.ims.RcsFeatureConnection	method	public void removeCallbackForSubscription(int i, IImsRegistrationCallback iImsRegistrationCallback)
+com.android.ims.RcsFeatureConnection	method	public void removeCapabilityCallback(IImsCapabilityCallback iImsCapabilityCallback) throws RemoteException
+com.android.ims.RcsFeatureConnection	method	public void removeRcsFeatureListener()
+com.android.ims.RcsFeatureConnection	method	public void setRcsFeatureListener(IRcsFeatureListener iRcsFeatureListener) throws RemoteException
+com.android.ims.RcsFeatureConnection$AvailabilityCallbackManager	method	public void registerCallback(IImsCapabilityCallback iImsCapabilityCallback)
+com.android.ims.RcsFeatureConnection$AvailabilityCallbackManager	method	public void unregisterCallback(IImsCapabilityCallback iImsCapabilityCallback)
+com.android.ims.RcsFeatureConnection$RegistrationCallbackManager	method	public RegistrationCallbackManager(Context context)
+com.android.ims.RcsFeatureConnection$RegistrationCallbackManager	method	public void registerCallback(IImsRegistrationCallback iImsRegistrationCallback)
+com.android.ims.RcsFeatureConnection$RegistrationCallbackManager	method	public void unregisterCallback(IImsRegistrationCallback iImsRegistrationCallback)
+com.android.ims.RcsFeatureManager	field	private final Context mContext;
+com.android.ims.RcsFeatureManager	field	private final IRcsFeatureListener mRcsFeatureCallbackAdapter;
+com.android.ims.RcsFeatureManager	field	private final Set<RcsFeatureCallbacks> mRcsFeatureCallbacks;
+com.android.ims.RcsFeatureManager	field	private final int mSlotId;
+com.android.ims.RcsFeatureManager	field	private static boolean DBG;
+com.android.ims.RcsFeatureManager	field	private static final String TAG;
+com.android.ims.RcsFeatureManager	field	private static final int CAPABILITY_OPTIONS;
+com.android.ims.RcsFeatureManager	field	private static final int CAPABILITY_PRESENCE;
+com.android.ims.RcsFeatureManager	field	public RcsFeatureConnection mRcsFeatureConnection;
+com.android.ims.RcsFeatureManager	field	public final Set<FeatureConnection.IFeatureUpdate> mStatusCallbacks;
+com.android.ims.RcsFeatureManager	method	private boolean isOptionsSupported()
+com.android.ims.RcsFeatureManager	method	private boolean isPresenceSupported()
+com.android.ims.RcsFeatureManager	method	private static <T> T awaitResult(CountDownLatch countDownLatch, AtomicReference<T> atomicReference)
+com.android.ims.RcsFeatureManager	method	private static boolean isCapabilityTypeSupported(Context context, int i, int i2)
+com.android.ims.RcsFeatureManager	method	private void createImsService()
+com.android.ims.RcsFeatureManager	method	private void disableAllRcsUceCapabilities() throws ImsException
+com.android.ims.RcsFeatureManager	method	private void loge(String str)
+com.android.ims.RcsFeatureManager	method	private void loge(String str, Throwable th)
+com.android.ims.RcsFeatureManager	method	private void sendCapabilityChangeRequest(CapabilityChangeRequest capabilityChangeRequest) throws ImsException
+com.android.ims.RcsFeatureManager	method	public RcsFeatureManager(Context context, int i)
+com.android.ims.RcsFeatureManager	method	public boolean isAvailable(int i) throws ImsException
+com.android.ims.RcsFeatureManager	method	public boolean isCapable(final int i, final int i2) throws ImsException
+com.android.ims.RcsFeatureManager	method	public int getImsServiceState() throws ImsException
+com.android.ims.RcsFeatureManager	method	public static void setSubscriptionManager(SubscriptionManagerProxy subscriptionManagerProxy)
+com.android.ims.RcsFeatureManager	method	public void addFeatureListenerCallback(RcsFeatureCallbacks rcsFeatureCallbacks)
+com.android.ims.RcsFeatureManager	method	public void addNotifyStatusChangedCallbackIfAvailable(FeatureConnection.IFeatureUpdate iFeatureUpdate) throws ImsException
+com.android.ims.RcsFeatureManager	method	public void addRcsUceCapability(CapabilityChangeRequest capabilityChangeRequest, int i)
+com.android.ims.RcsFeatureManager	method	public void getImsRegistrationTech(Consumer<Integer> consumer)
+com.android.ims.RcsFeatureManager	method	public void log(String str)
+com.android.ims.RcsFeatureManager	method	public void logi(String str)
+com.android.ims.RcsFeatureManager	method	public void openConnection() throws ImsException
+com.android.ims.RcsFeatureManager	method	public void registerImsRegistrationCallback(IImsRegistrationCallback iImsRegistrationCallback) throws ImsException
+com.android.ims.RcsFeatureManager	method	public void registerImsRegistrationCallback(int i, IImsRegistrationCallback iImsRegistrationCallback) throws ImsException
+com.android.ims.RcsFeatureManager	method	public void registerRcsAvailabilityCallback(int i, IImsCapabilityCallback iImsCapabilityCallback) throws ImsException
+com.android.ims.RcsFeatureManager	method	public void releaseConnection()
+com.android.ims.RcsFeatureManager	method	public void removeFeatureListenerCallback(RcsFeatureCallbacks rcsFeatureCallbacks)
+com.android.ims.RcsFeatureManager	method	public void removeNotifyStatusChangedCallback(FeatureConnection.IFeatureUpdate iFeatureUpdate)
+com.android.ims.RcsFeatureManager	method	public void unregisterImsRegistrationCallback(IImsRegistrationCallback iImsRegistrationCallback)
+com.android.ims.RcsFeatureManager	method	public void unregisterImsRegistrationCallback(int i, IImsRegistrationCallback iImsRegistrationCallback)
+com.android.ims.RcsFeatureManager	method	public void unregisterRcsAvailabilityCallback(int i, IImsCapabilityCallback iImsCapabilityCallback)
+com.android.ims.RcsFeatureManager	method	public void updateCapabilities() throws ImsException
+com.android.ims.RcsFeatureManager$AnonymousClass1	method	public void onCapabilityRequestResponseOptions(final int i, final String str, final RcsContactUceCapability rcsContactUceCapability, final int i2)
+com.android.ims.RcsFeatureManager$AnonymousClass1	method	public void onCapabilityRequestResponsePresence(final List<RcsContactUceCapability> list, final int i)
+com.android.ims.RcsFeatureManager$AnonymousClass1	method	public void onCommandUpdate(final int i, final int i2)
+com.android.ims.RcsFeatureManager$AnonymousClass1	method	public void onNetworkResponse(final int i, final String str, final int i2)
+com.android.ims.RcsFeatureManager$AnonymousClass1	method	public void onNotifyUpdateCapabilities(final int i)
+com.android.ims.RcsFeatureManager$AnonymousClass1	method	public void onRemoteCapabilityRequest(final Uri uri, final RcsContactUceCapability rcsContactUceCapability, final int i)
+com.android.ims.RcsFeatureManager$AnonymousClass1	method	public void onUnpublish()
+com.android.ims.RcsFeatureManager$RcsFeatureCallbacks	method	public void onCapabilityRequestResponseOptions(int i, String str, RcsContactUceCapability rcsContactUceCapability, int i2)
+com.android.ims.RcsFeatureManager$RcsFeatureCallbacks	method	public void onCapabilityRequestResponsePresence(List<RcsContactUceCapability> list, int i)
+com.android.ims.RcsFeatureManager$RcsFeatureCallbacks	method	public void onCommandUpdate(int i, int i2)
+com.android.ims.RcsFeatureManager$RcsFeatureCallbacks	method	public void onNetworkResponse(int i, String str, int i2)
+com.android.ims.RcsFeatureManager$RcsFeatureCallbacks	method	public void onNotifyUpdateCapabilities(int i)
+com.android.ims.RcsFeatureManager$RcsFeatureCallbacks	method	public void onRemoteCapabilityRequest(Uri uri, RcsContactUceCapability rcsContactUceCapability, int i)
+com.android.ims.RcsFeatureManager$RcsFeatureCallbacks	method	public void onUnpublish()
+com.android.ims.RcsPresenceInfo	field	private Bundle mServiceInfo;
+com.android.ims.RcsPresenceInfo	field	private static final String CONTACT_NUMBER;
+com.android.ims.RcsPresenceInfo	field	public static final String VOLTE_STATUS;
+com.android.ims.RcsPresenceInfo	method	private Bundle getBundle()
+com.android.ims.RcsPresenceInfo	method	private String getServiceInfo(int i, String str, String str2)
+com.android.ims.RcsPresenceInfo	method	private Uri getServiceInfo(int i, String str, Uri uri)
+com.android.ims.RcsPresenceInfo	method	private int getServiceInfo(int i, String str, int i2)
+com.android.ims.RcsPresenceInfo	method	private long getServiceInfo(int i, String str, long j)
+com.android.ims.RcsPresenceInfo	method	private void set(int i, int i2, String str, long j)
+com.android.ims.RcsPresenceInfo	method	public RcsPresenceInfo()
+com.android.ims.RcsPresenceInfo	method	public RcsPresenceInfo(Parcel parcel)
+com.android.ims.RcsPresenceInfo	method	public RcsPresenceInfo(String str, int i, int i2, String str2, long j, int i3, String str3, long j2)
+com.android.ims.RcsPresenceInfo	method	public String getContactNumber()
+com.android.ims.RcsPresenceInfo	method	public String getServiceContact(int i)
+com.android.ims.RcsPresenceInfo	method	public String toString()
+com.android.ims.RcsPresenceInfo	method	public int describeContents()
+com.android.ims.RcsPresenceInfo	method	public int getServiceState(int i)
+com.android.ims.RcsPresenceInfo	method	public int getVolteStatus()
+com.android.ims.RcsPresenceInfo	method	public long getTimeStamp(int i)
+com.android.ims.RcsPresenceInfo	method	public void writeToParcel(Parcel parcel, int i)
+com.android.ims.RcsPresenceInfo$ServiceInfoKey	field	public static final String SERVICE_CONTACT;
+com.android.ims.RcsPresenceInfo$ServiceInfoKey	field	public static final String SERVICE_TYPE;
+com.android.ims.RcsPresenceInfo$ServiceInfoKey	field	public static final String STATE;
+com.android.ims.RcsPresenceInfo$ServiceInfoKey	field	public static final String TIMESTAMP;
+com.android.ims.RcsPresenceInfo$ServiceState	field	public static final int OFFLINE;
+com.android.ims.RcsPresenceInfo$ServiceState	field	public static final int ONLINE;
+com.android.ims.RcsPresenceInfo$ServiceState	field	public static final int UNKNOWN;
+com.android.ims.RcsPresenceInfo$ServiceType	field	public static final int VOLTE_CALL;
+com.android.ims.RcsPresenceInfo$ServiceType	field	public static final int VT_CALL;
+com.android.ims.RcsPresenceInfo$VolteStatus	field	public static final int VOLTE_DISABLED;
+com.android.ims.RcsPresenceInfo$VolteStatus	field	public static final int VOLTE_ENABLED;
+com.android.ims.RcsPresenceInfo$VolteStatus	field	public static final int VOLTE_UNKNOWN;
+com.android.ims.Registrant	method	public Handler getHandler()
+com.android.ims.Registrant	method	public Message messageForRegistrant()
+com.android.ims.Registrant	method	public Registrant(Handler handler, int i, Object obj)
+com.android.ims.Registrant	method	public void clear()
+com.android.ims.Registrant	method	public void notifyException(Throwable th)
+com.android.ims.Registrant	method	public void notifyRegistrant()
+com.android.ims.Registrant	method	public void notifyRegistrant(AsyncResult asyncResult)
+com.android.ims.Registrant	method	public void notifyResult(Object obj)
+com.android.ims.RegistrantList	method	private synchronized void internalNotifyRegistrants(Object obj, Throwable th)
+com.android.ims.RegistrantList	method	public synchronized Object get(int i)
+com.android.ims.RegistrantList	method	public synchronized int size()
+com.android.ims.RegistrantList	method	public synchronized void add(Handler handler, int i, Object obj)
+com.android.ims.RegistrantList	method	public synchronized void add(Registrant registrant)
+com.android.ims.RegistrantList	method	public synchronized void addUnique(Handler handler, int i, Object obj)
+com.android.ims.RegistrantList	method	public synchronized void remove(Handler handler)
+com.android.ims.RegistrantList	method	public synchronized void removeAll()
+com.android.ims.RegistrantList	method	public synchronized void removeCleared()
+com.android.ims.RegistrantList	method	public void notifyException(Throwable th)
+com.android.ims.RegistrantList	method	public void notifyRegistrants()
+com.android.ims.RegistrantList	method	public void notifyRegistrants(AsyncResult asyncResult)
+com.android.ims.RegistrantList	method	public void notifyResult(Object obj)
+com.android.ims.ResultCode	field	public static final int ERROR_SERVICE_NOT_AVAILABLE;
+com.android.ims.ResultCode	field	public static final int ERROR_SERVICE_NOT_ENABLED;
+com.android.ims.ResultCode	field	public static final int ERROR_SERVICE_NOT_PUBLISHED;
+com.android.ims.ResultCode	field	public static final int PUBLISH_GENERIC_FAILURE;
+com.android.ims.ResultCode	field	public static final int PUBLISH_NOT_AUTHORIZED_FOR_PRESENCE;
+com.android.ims.ResultCode	field	public static final int PUBLISH_NOT_PROVISIONED;
+com.android.ims.ResultCode	field	public static final int SUBSCRIBER_ERROR_CODE_END;
+com.android.ims.ResultCode	field	public static final int SUBSCRIBER_ERROR_CODE_START;
+com.android.ims.ResultCode	field	public static final int SUBSCRIBE_ALREADY_IN_QUEUE;
+com.android.ims.ResultCode	field	public static final int SUBSCRIBE_FETCH_ERROR;
+com.android.ims.ResultCode	field	public static final int SUBSCRIBE_FORBIDDEN;
+com.android.ims.ResultCode	field	public static final int SUBSCRIBE_GENERIC;
+com.android.ims.ResultCode	field	public static final int SUBSCRIBE_GENIRIC_FAILURE;
+com.android.ims.ResultCode	field	public static final int SUBSCRIBE_INSUFFICIENT_MEMORY;
+com.android.ims.ResultCode	field	public static final int SUBSCRIBE_INVALID_PARAM;
+com.android.ims.ResultCode	field	public static final int SUBSCRIBE_LOST_NETWORK;
+com.android.ims.ResultCode	field	public static final int SUBSCRIBE_NOT_AUTHORIZED_FOR_PRESENCE;
+com.android.ims.ResultCode	field	public static final int SUBSCRIBE_NOT_FOUND;
+com.android.ims.ResultCode	field	public static final int SUBSCRIBE_NOT_REGISTERED;
+com.android.ims.ResultCode	field	public static final int SUBSCRIBE_NOT_SUPPORTED;
+com.android.ims.ResultCode	field	public static final int SUBSCRIBE_REQUEST_TIMEOUT;
+com.android.ims.ResultCode	field	public static final int SUBSCRIBE_TEMPORARY_ERROR;
+com.android.ims.ResultCode	field	public static final int SUBSCRIBE_TOO_FREQUENTLY;
+com.android.ims.ResultCode	field	public static final int SUBSCRIBE_TOO_LARGE;
+com.android.ims.ResultCode	field	public static final int SUCCESS;
+com.android.ims.SomeArgs	field	private SomeArgs mNext;
+com.android.ims.SomeArgs	field	private boolean mInPool;
+com.android.ims.SomeArgs	field	private static Object sPoolLock;
+com.android.ims.SomeArgs	field	private static SomeArgs sPool;
+com.android.ims.SomeArgs	field	private static final int MAX_POOL_SIZE;
+com.android.ims.SomeArgs	field	private static int sPoolSize;
+com.android.ims.SomeArgs	field	public Object arg1;
+com.android.ims.SomeArgs	field	public Object arg2;
+com.android.ims.SomeArgs	field	public Object arg3;
+com.android.ims.SomeArgs	field	public Object arg4;
+com.android.ims.SomeArgs	field	public Object arg5;
+com.android.ims.SomeArgs	field	public Object arg6;
+com.android.ims.SomeArgs	field	public Object arg7;
+com.android.ims.SomeArgs	field	public Object arg8;
+com.android.ims.SomeArgs	field	public Object arg9;
+com.android.ims.SomeArgs	field	public int argi1;
+com.android.ims.SomeArgs	field	public int argi2;
+com.android.ims.SomeArgs	field	public int argi3;
+com.android.ims.SomeArgs	field	public int argi4;
+com.android.ims.SomeArgs	field	public int argi5;
+com.android.ims.SomeArgs	field	public int argi6;
+com.android.ims.SomeArgs	field	static final int WAIT_FINISHED;
+com.android.ims.SomeArgs	field	static final int WAIT_NONE;
+com.android.ims.SomeArgs	field	static final int WAIT_WAITING;
+com.android.ims.SomeArgs	method	private SomeArgs()
+com.android.ims.SomeArgs	method	private void clear()
+com.android.ims.SomeArgs	method	public static SomeArgs obtain()
+com.android.ims.SomeArgs	method	public void complete()
+com.android.ims.SomeArgs	method	public void recycle()
+com.android.ims.internal.ConferenceParticipant	field	private final String mDisplayName;
+com.android.ims.internal.ConferenceParticipant	field	private final Uri mEndpoint;
+com.android.ims.internal.ConferenceParticipant	field	private final Uri mHandle;
+com.android.ims.internal.ConferenceParticipant	field	private final int mState;
+com.android.ims.internal.ConferenceParticipant	field	private int mCallDirection;
+com.android.ims.internal.ConferenceParticipant	field	private long mConnectElapsedTime;
+com.android.ims.internal.ConferenceParticipant	field	private long mConnectTime;
+com.android.ims.internal.ConferenceParticipant	field	private static final String ANONYMOUS_INVALID_HOST;
+com.android.ims.internal.ConferenceParticipant	field	private static final String TAG;
+com.android.ims.internal.ConferenceParticipant	method	public ConferenceParticipant(Uri uri, String str, Uri uri2, int i, int i2)
+com.android.ims.internal.ConferenceParticipant	method	public String getDisplayName()
+com.android.ims.internal.ConferenceParticipant	method	public String toString()
+com.android.ims.internal.ConferenceParticipant	method	public Uri getEndpoint()
+com.android.ims.internal.ConferenceParticipant	method	public Uri getHandle()
+com.android.ims.internal.ConferenceParticipant	method	public int describeContents()
+com.android.ims.internal.ConferenceParticipant	method	public int getCallDirection()
+com.android.ims.internal.ConferenceParticipant	method	public int getParticipantPresentation()
+com.android.ims.internal.ConferenceParticipant	method	public int getState()
+com.android.ims.internal.ConferenceParticipant	method	public long getConnectElapsedTime()
+com.android.ims.internal.ConferenceParticipant	method	public long getConnectTime()
+com.android.ims.internal.ConferenceParticipant	method	public static Uri getParticipantAddress(Uri uri, String str)
+com.android.ims.internal.ConferenceParticipant	method	public void setCallDirection(int i)
+com.android.ims.internal.ConferenceParticipant	method	public void setConnectElapsedTime(long j)
+com.android.ims.internal.ConferenceParticipant	method	public void setConnectTime(long j)
+com.android.ims.internal.ConferenceParticipant	method	public void writeToParcel(Parcel parcel, int i)
+com.android.ims.internal.ContactNumberUtils	field	private Context mContext;
+com.android.ims.internal.ContactNumberUtils	field	private int NUMBER_LENGTH_MAX;
+com.android.ims.internal.ContactNumberUtils	field	private int NUMBER_LENGTH_NORMAL;
+com.android.ims.internal.ContactNumberUtils	field	private int NUMBER_LENGTH_NO_AREA_CODE;
+com.android.ims.internal.ContactNumberUtils	field	private static ArrayList<String> sExcludes;
+com.android.ims.internal.ContactNumberUtils	field	private static ContactNumberUtils sInstance;
+com.android.ims.internal.ContactNumberUtils	field	private static final String TAG;
+com.android.ims.internal.ContactNumberUtils	field	private static final boolean DEBUG;
+com.android.ims.internal.ContactNumberUtils	field	public static int NUMBER_EMERGENCY;
+com.android.ims.internal.ContactNumberUtils	field	public static int NUMBER_FREE_PHONE;
+com.android.ims.internal.ContactNumberUtils	field	public static int NUMBER_INVALID;
+com.android.ims.internal.ContactNumberUtils	field	public static int NUMBER_PRELOADED_ENTRY;
+com.android.ims.internal.ContactNumberUtils	field	public static int NUMBER_SHORT_CODE;
+com.android.ims.internal.ContactNumberUtils	field	public static int NUMBER_VALID;
+com.android.ims.internal.ContactNumberUtils	method	private ContactNumberUtils()
+com.android.ims.internal.ContactNumberUtils	method	private String addAreaCode(String str)
+com.android.ims.internal.ContactNumberUtils	method	private boolean isInExcludedList(String str)
+com.android.ims.internal.ContactNumberUtils	method	public String format(String str)
+com.android.ims.internal.ContactNumberUtils	method	public String[] format(List<String> list)
+com.android.ims.internal.ContactNumberUtils	method	public String[] format(String[] strArr)
+com.android.ims.internal.ContactNumberUtils	method	public int validate(List<String> list)
+com.android.ims.internal.ContactNumberUtils	method	public int validate(String str)
+com.android.ims.internal.ContactNumberUtils	method	public int validate(String[] strArr)
+com.android.ims.internal.ContactNumberUtils	method	public static ContactNumberUtils getDefault()
+com.android.ims.internal.ContactNumberUtils	method	public void setContext(Context context)
+com.android.ims.internal.ImsStreamMediaSession	field	private Listener mListener;
+com.android.ims.internal.ImsStreamMediaSession	field	private static final String TAG;
+com.android.ims.internal.ImsStreamMediaSession	method	public void setListener(Listener listener)
+com.android.ims.internal.ImsVideoCallProviderWrapper	field	private IBinder.DeathRecipient mDeathRecipient;
+com.android.ims.internal.ImsVideoCallProviderWrapper	field	private RegistrantList mDataUsageUpdateRegistrants;
+com.android.ims.internal.ImsVideoCallProviderWrapper	field	private VideoPauseTracker mVideoPauseTracker;
+com.android.ims.internal.ImsVideoCallProviderWrapper	field	private boolean mIsVideoEnabled;
+com.android.ims.internal.ImsVideoCallProviderWrapper	field	private boolean mUseVideoPauseWorkaround;
+com.android.ims.internal.ImsVideoCallProviderWrapper	field	private final Handler mHandler;
+com.android.ims.internal.ImsVideoCallProviderWrapper	field	private final IImsVideoCallProvider mVideoCallProvider;
+com.android.ims.internal.ImsVideoCallProviderWrapper	field	private final ImsVideoCallCallback mBinder;
+com.android.ims.internal.ImsVideoCallProviderWrapper	field	private final Set<ImsVideoProviderWrapperCallback> mCallbacks;
+com.android.ims.internal.ImsVideoCallProviderWrapper	field	private int mCurrentVideoState;
+com.android.ims.internal.ImsVideoCallProviderWrapper	field	private static final String LOG_TAG;
+com.android.ims.internal.ImsVideoCallProviderWrapper	field	private static final int MSG_CHANGE_CALL_DATA_USAGE;
+com.android.ims.internal.ImsVideoCallProviderWrapper	field	private static final int MSG_CHANGE_CAMERA_CAPABILITIES;
+com.android.ims.internal.ImsVideoCallProviderWrapper	field	private static final int MSG_CHANGE_PEER_DIMENSIONS;
+com.android.ims.internal.ImsVideoCallProviderWrapper	field	private static final int MSG_CHANGE_VIDEO_QUALITY;
+com.android.ims.internal.ImsVideoCallProviderWrapper	field	private static final int MSG_HANDLE_CALL_SESSION_EVENT;
+com.android.ims.internal.ImsVideoCallProviderWrapper	field	private static final int MSG_RECEIVE_SESSION_MODIFY_REQUEST;
+com.android.ims.internal.ImsVideoCallProviderWrapper	field	private static final int MSG_RECEIVE_SESSION_MODIFY_RESPONSE;
+com.android.ims.internal.ImsVideoCallProviderWrapper	method	public ImsVideoCallProviderWrapper(IImsVideoCallProvider iImsVideoCallProvider) throws RemoteException
+com.android.ims.internal.ImsVideoCallProviderWrapper	method	public ImsVideoCallProviderWrapper(IImsVideoCallProvider iImsVideoCallProvider, VideoPauseTracker videoPauseTracker) throws RemoteException
+com.android.ims.internal.ImsVideoCallProviderWrapper	method	public VideoProfile maybeFilterPauseResume(VideoProfile videoProfile, VideoProfile videoProfile2, int i)
+com.android.ims.internal.ImsVideoCallProviderWrapper	method	public boolean wasVideoPausedFromSource(int i)
+com.android.ims.internal.ImsVideoCallProviderWrapper	method	public static boolean isPauseRequest(int i, int i2)
+com.android.ims.internal.ImsVideoCallProviderWrapper	method	public static boolean isResumeRequest(int i, int i2)
+com.android.ims.internal.ImsVideoCallProviderWrapper	method	public static boolean isTurnOffCameraRequest(int i, int i2)
+com.android.ims.internal.ImsVideoCallProviderWrapper	method	public static boolean isTurnOnCameraRequest(int i, int i2)
+com.android.ims.internal.ImsVideoCallProviderWrapper	method	public void addImsVideoProviderCallback(ImsVideoProviderWrapperCallback imsVideoProviderWrapperCallback)
+com.android.ims.internal.ImsVideoCallProviderWrapper	method	public void onRequestCameraCapabilities()
+com.android.ims.internal.ImsVideoCallProviderWrapper	method	public void onRequestConnectionDataUsage()
+com.android.ims.internal.ImsVideoCallProviderWrapper	method	public void onSendSessionModifyRequest(VideoProfile videoProfile, VideoProfile videoProfile2)
+com.android.ims.internal.ImsVideoCallProviderWrapper	method	public void onSendSessionModifyResponse(VideoProfile videoProfile)
+com.android.ims.internal.ImsVideoCallProviderWrapper	method	public void onSetCamera(String str)
+com.android.ims.internal.ImsVideoCallProviderWrapper	method	public void onSetDeviceOrientation(int i)
+com.android.ims.internal.ImsVideoCallProviderWrapper	method	public void onSetDisplaySurface(Surface surface)
+com.android.ims.internal.ImsVideoCallProviderWrapper	method	public void onSetPauseImage(Uri uri)
+com.android.ims.internal.ImsVideoCallProviderWrapper	method	public void onSetPreviewSurface(Surface surface)
+com.android.ims.internal.ImsVideoCallProviderWrapper	method	public void onSetZoom(float f)
+com.android.ims.internal.ImsVideoCallProviderWrapper	method	public void onVideoStateChanged(int i)
+com.android.ims.internal.ImsVideoCallProviderWrapper	method	public void pauseVideo(int i, int i2)
+com.android.ims.internal.ImsVideoCallProviderWrapper	method	public void registerForDataUsageUpdate(Handler handler, int i, Object obj)
+com.android.ims.internal.ImsVideoCallProviderWrapper	method	public void removeImsVideoProviderCallback(ImsVideoProviderWrapperCallback imsVideoProviderWrapperCallback)
+com.android.ims.internal.ImsVideoCallProviderWrapper	method	public void resumeVideo(int i, int i2)
+com.android.ims.internal.ImsVideoCallProviderWrapper	method	public void setIsVideoEnabled(boolean z)
+com.android.ims.internal.ImsVideoCallProviderWrapper	method	public void setUseVideoPauseWorkaround(boolean z)
+com.android.ims.internal.ImsVideoCallProviderWrapper	method	public void tearDown()
+com.android.ims.internal.ImsVideoCallProviderWrapper	method	public void unregisterForDataUsageUpdate(Handler handler)
+com.android.ims.internal.ImsVideoCallProviderWrapper$ImsVideoCallCallback	method	private ImsVideoCallCallback()
+com.android.ims.internal.ImsVideoCallProviderWrapper$ImsVideoCallCallback	method	public void changeCallDataUsage(long j)
+com.android.ims.internal.ImsVideoCallProviderWrapper$ImsVideoCallCallback	method	public void changeCameraCapabilities(VideoProfile.CameraCapabilities cameraCapabilities)
+com.android.ims.internal.ImsVideoCallProviderWrapper$ImsVideoCallCallback	method	public void changePeerDimensions(int i, int i2)
+com.android.ims.internal.ImsVideoCallProviderWrapper$ImsVideoCallCallback	method	public void changeVideoQuality(int i)
+com.android.ims.internal.ImsVideoCallProviderWrapper$ImsVideoCallCallback	method	public void handleCallSessionEvent(int i)
+com.android.ims.internal.ImsVideoCallProviderWrapper$ImsVideoCallCallback	method	public void receiveSessionModifyRequest(VideoProfile videoProfile)
+com.android.ims.internal.ImsVideoCallProviderWrapper$ImsVideoCallCallback	method	public void receiveSessionModifyResponse(int i, VideoProfile videoProfile, VideoProfile videoProfile2)
+com.android.ims.internal.Logger	field	private String mClassName;
+com.android.ims.internal.Logger	field	private static String TAG;
+com.android.ims.internal.Logger	field	private static boolean DEBUG;
+com.android.ims.internal.Logger	field	private static boolean ERROR;
+com.android.ims.internal.Logger	field	private static boolean INFO;
+com.android.ims.internal.Logger	field	private static boolean VERBOSE;
+com.android.ims.internal.Logger	field	private static boolean WARN;
+com.android.ims.internal.Logger	field	private static boolean mRcsTestMode;
+com.android.ims.internal.Logger	method	private Logger(String str, String str2)
+com.android.ims.internal.Logger	method	private boolean isActivated()
+com.android.ims.internal.Logger	method	private static boolean isLoggable(int i)
+com.android.ims.internal.Logger	method	public static String hidePhoneNumberPii(String str)
+com.android.ims.internal.Logger	method	public static synchronized Logger getLogger(String str)
+com.android.ims.internal.Logger	method	public static synchronized Logger getLogger(String str, String str2)
+com.android.ims.internal.Logger	method	public static void setRcsTestMode(boolean z)
+com.android.ims.internal.Logger	method	public void debug(String str)
+com.android.ims.internal.Logger	method	public void debug(String str, Throwable th)
+com.android.ims.internal.Logger	method	public void error(String str)
+com.android.ims.internal.Logger	method	public void error(String str, Throwable th)
+com.android.ims.internal.Logger	method	public void info(String str)
+com.android.ims.internal.Logger	method	public void print(String str)
+com.android.ims.internal.Logger	method	public void print(String str, Throwable th)
+com.android.ims.internal.Logger	method	public void verbose(String str)
+com.android.ims.internal.Logger	method	public void warn(String str)
+com.android.ims.internal.VideoPauseTracker	field	private Object mPauseRequestsLock;
+com.android.ims.internal.VideoPauseTracker	field	private Set<Integer> mPauseRequests;
+com.android.ims.internal.VideoPauseTracker	field	private static final String LOG_TAG;
+com.android.ims.internal.VideoPauseTracker	field	private static final String SOURCE_DATA_ENABLED_STR;
+com.android.ims.internal.VideoPauseTracker	field	private static final String SOURCE_INCALL_STR;
+com.android.ims.internal.VideoPauseTracker	field	public static final int SOURCE_DATA_ENABLED;
+com.android.ims.internal.VideoPauseTracker	field	public static final int SOURCE_INCALL;
+com.android.ims.internal.VideoPauseTracker	method	private String sourceToString(int i)
+com.android.ims.internal.VideoPauseTracker	method	private String sourcesToString(Collection<Integer> collection)
+com.android.ims.internal.VideoPauseTracker	method	public boolean isPaused()
+com.android.ims.internal.VideoPauseTracker	method	public boolean shouldPauseVideoFor(int i)
+com.android.ims.internal.VideoPauseTracker	method	public boolean shouldResumeVideoFor(int i)
+com.android.ims.internal.VideoPauseTracker	method	public boolean wasVideoPausedFromSource(int i)
+com.android.ims.internal.VideoPauseTracker	method	public void clearPauseRequests()
+com.android.service.ims.RcsSettingUtils	field	private static Logger logger;
+com.android.service.ims.RcsSettingUtils	field	private static final int DEFAULT_AVAILABILITY_CACHE_EXPIRATION_SEC;
+com.android.service.ims.RcsSettingUtils	field	private static final int DEFAULT_CAPABILITY_POLL_LIST_SUB_EXPIRATION_SEC;
+com.android.service.ims.RcsSettingUtils	field	private static final int DEFAULT_NUM_ENTRIES_IN_RCL;
+com.android.service.ims.RcsSettingUtils	field	private static final int DEFAULT_PUBLISH_THROTTLE_MS;
+com.android.service.ims.RcsSettingUtils	field	private static final int TIMEOUT_GET_CONFIGURATION_MS;
+com.android.service.ims.RcsSettingUtils	method	public static boolean getCapabilityDiscoveryEnabled(int i)
+com.android.service.ims.RcsSettingUtils	method	public static boolean hasUserEnabledContactDiscovery(Context context, int i)
+com.android.service.ims.RcsSettingUtils	method	public static boolean isAdvancedCallingEnabledByUser(int i)
+com.android.service.ims.RcsSettingUtils	method	public static boolean isEabProvisioned(Context context, int i)
+com.android.service.ims.RcsSettingUtils	method	public static boolean isLvcProvisioned(int i)
+com.android.service.ims.RcsSettingUtils	method	public static boolean isVoLteProvisioned(int i)
+com.android.service.ims.RcsSettingUtils	method	public static boolean isVoLteSupported(int i)
+com.android.service.ims.RcsSettingUtils	method	public static boolean isVoWiFiSupported(int i)
+com.android.service.ims.RcsSettingUtils	method	public static boolean isVowifiProvisioned(int i)
+com.android.service.ims.RcsSettingUtils	method	public static boolean isVtEnabledByUser(int i)
+com.android.service.ims.RcsSettingUtils	method	public static boolean isVtSupported(int i)
+com.android.service.ims.RcsSettingUtils	method	public static boolean isWfcEnabledByUser(int i)
+com.android.service.ims.RcsSettingUtils	method	public static int getAvailabilityCacheExpiration(int i)
+com.android.service.ims.RcsSettingUtils	method	public static int getCapabPollListSubExp(int i)
+com.android.service.ims.RcsSettingUtils	method	public static int getDefaultSubscriptionId(Context context)
+com.android.service.ims.RcsSettingUtils	method	public static int getMaxNumbersInRCL(int i)
+com.android.service.ims.RcsSettingUtils	method	public static int getPublishThrottle(int i)
+com.android.service.ims.RcsSettingUtils	method	public static int getSIPT1Timer(int i)
+com.android.service.ims.Task	field	private Logger logger;
+com.android.service.ims.Task	field	public ContactCapabilityResponse mListener;
+com.android.service.ims.Task	field	public String mSipReasonPhrase;
+com.android.service.ims.Task	field	public int mCmdId;
+com.android.service.ims.Task	field	public int mCmdStatus;
+com.android.service.ims.Task	field	public int mSipRequestId;
+com.android.service.ims.Task	field	public int mSipResponseCode;
+com.android.service.ims.Task	field	public int mTaskId;
+com.android.service.ims.Task	method	public String toString()
+com.android.service.ims.Task	method	public Task(int i, int i2, ContactCapabilityResponse contactCapabilityResponse)
+com.android.service.ims.TaskManager	field	private Logger logger;
+com.android.service.ims.TaskManager	field	private Map<String, Task> mTaskMap;
+com.android.service.ims.TaskManager	field	private final Object mSyncObj;
+com.android.service.ims.TaskManager	field	private int mTaskId;
+com.android.service.ims.TaskManager	field	private static MessageHandler sMsgHandler;
+com.android.service.ims.TaskManager	field	private static TaskManager sTaskManager;
+com.android.service.ims.TaskManager	field	private static final int TASK_MANAGER_ON_TERMINATED;
+com.android.service.ims.TaskManager	field	private static final int TASK_MANAGER_ON_TIMEOUT;
+com.android.service.ims.TaskManager	field	public static final int TASK_TYPE_GET_AVAILABILITY;
+com.android.service.ims.TaskManager	field	public static final int TASK_TYPE_GET_CAPABILITY;
+com.android.service.ims.TaskManager	field	public static final int TASK_TYPE_PUBLISH;
+com.android.service.ims.TaskManager	method	private synchronized void putTaskInternal(int i, Task task)
+com.android.service.ims.TaskManager	method	public PresenceAvailabilityTask getAvailabilityTaskByContact(String str)
+com.android.service.ims.TaskManager	method	public Task getTask(int i)
+com.android.service.ims.TaskManager	method	public Task getTaskByRequestId(int i)
+com.android.service.ims.TaskManager	method	public Task getTaskForSingleContactQuery(String str)
+com.android.service.ims.TaskManager	method	public TaskManager()
+com.android.service.ims.TaskManager	method	public int addAvailabilityTask(String str, ContactCapabilityResponse contactCapabilityResponse)
+com.android.service.ims.TaskManager	method	public int addCapabilityTask(Context context, String[] strArr, ContactCapabilityResponse contactCapabilityResponse, long j)
+com.android.service.ims.TaskManager	method	public int addPublishTask(String str)
+com.android.service.ims.TaskManager	method	public static synchronized TaskManager getDefault()
+com.android.service.ims.TaskManager	method	public synchronized int generateTaskId()
+com.android.service.ims.TaskManager	method	public void clearTimeoutAvailabilityTask(long j)
+com.android.service.ims.TaskManager	method	public void onTerminated(String str)
+com.android.service.ims.TaskManager	method	public void onTerminated(int i, String str)
+com.android.service.ims.TaskManager	method	public void onTimeout(int i)
+com.android.service.ims.TaskManager	method	public void putTask(int i, Task task)
+com.android.service.ims.TaskManager	method	public void removeTask(int i)
+com.android.service.ims.TaskManager$MessageData	field	public PresenceCapabilityTask mTask;
+com.android.service.ims.TaskManager$MessageData	field	public String mReason;
+com.android.service.ims.TaskManager$MessageData	method	public MessageData()
+com.android.service.ims.TaskManager$MessageHandler	method	public void handleMessage(Message message)
+com.android.service.ims.presence.PresenceAvailabilityTask	field	private Logger logger;
+com.android.service.ims.presence.PresenceAvailabilityTask	field	private long mCreateTimestamp;
+com.android.service.ims.presence.PresenceAvailabilityTask	field	private long mNotifyTimeStamp;
+com.android.service.ims.presence.PresenceAvailabilityTask	method	public PresenceAvailabilityTask(int i, int i2, ContactCapabilityResponse contactCapabilityResponse, String[] strArr)
+com.android.service.ims.presence.PresenceAvailabilityTask	method	public String toString()
+com.android.service.ims.presence.PresenceAvailabilityTask	method	public long getCreateTimestamp()
+com.android.service.ims.presence.PresenceAvailabilityTask	method	public long getNotifyTimestamp()
+com.android.service.ims.presence.PresenceAvailabilityTask	method	public void updateNotifyTimestamp()
+com.android.service.ims.presence.PresenceBase	field	private static Logger logger;
+com.android.service.ims.presence.PresenceBase	field	protected Context mContext;
+com.android.service.ims.presence.PresenceBase	field	public static final int PUBLISH_STATE_200_OK;
+com.android.service.ims.presence.PresenceBase	field	public static final int PUBLISH_STATE_NOT_PUBLISHED;
+com.android.service.ims.presence.PresenceBase	field	public static final int PUBLISH_STATE_OTHER_ERROR;
+com.android.service.ims.presence.PresenceBase	field	public static final int PUBLISH_STATE_RCS_PROVISION_ERROR;
+com.android.service.ims.presence.PresenceBase	field	public static final int PUBLISH_STATE_REQUEST_TIMEOUT;
+com.android.service.ims.presence.PresenceBase	field	public static final int PUBLISH_STATE_VOLTE_PROVISION_ERROR;
+com.android.service.ims.presence.PresenceBase	method	protected boolean isInConfigList(int i, String str, String[] strArr)
+com.android.service.ims.presence.PresenceBase	method	protected void handleCallback(Task task, int i, boolean z)
+com.android.service.ims.presence.PresenceBase	method	protected void notifyDm()
+com.android.service.ims.presence.PresenceBase	method	public PresenceBase(Context context)
+com.android.service.ims.presence.PresenceBase	method	public void onCommandStatusUpdated(int i, int i2, int i3)
+com.android.service.ims.presence.PresenceCapabilityTask	field	private Context mContext;
+com.android.service.ims.presence.PresenceCapabilityTask	field	private Logger logger;
+com.android.service.ims.presence.PresenceCapabilityTask	field	private long mCreatedTimeStamp;
+com.android.service.ims.presence.PresenceCapabilityTask	field	private long mTimeout;
+com.android.service.ims.presence.PresenceCapabilityTask	field	public boolean mWaitingForNotify;
+com.android.service.ims.presence.PresenceCapabilityTask	field	public int mResultCode;
+com.android.service.ims.presence.PresenceCapabilityTask	field	public static final String ACTION_TASK_TIMEOUT_ALARM;
+com.android.service.ims.presence.PresenceCapabilityTask	field	static AlarmManager sAlarmManager;
+com.android.service.ims.presence.PresenceCapabilityTask	method	private void startTimer()
+com.android.service.ims.presence.PresenceCapabilityTask	method	public PresenceCapabilityTask(Context context, int i, int i2, ContactCapabilityResponse contactCapabilityResponse, String[] strArr, long j)
+com.android.service.ims.presence.PresenceCapabilityTask	method	public String toString()
+com.android.service.ims.presence.PresenceCapabilityTask	method	public boolean isWaitingForNotify()
+com.android.service.ims.presence.PresenceCapabilityTask	method	public void cancelTimer()
+com.android.service.ims.presence.PresenceCapabilityTask	method	public void onTerminated(String str)
+com.android.service.ims.presence.PresenceCapabilityTask	method	public void onTimeout()
+com.android.service.ims.presence.PresenceCapabilityTask	method	public void setWaitingForNotify(boolean z)
+com.android.service.ims.presence.PresencePublication	field	private AlarmManager mAlarmManager;
+com.android.service.ims.presence.PresencePublication	field	private Handler mMsgHandler;
+com.android.service.ims.presence.PresencePublication	field	private Logger logger;
+com.android.service.ims.presence.PresencePublication	field	private PendingIntent mRetryAlarmIntent;
+com.android.service.ims.presence.PresencePublication	field	private PresencePublisher mPresencePublisher;
+com.android.service.ims.presence.PresencePublication	field	private PresenceSubscriber mSubscriber;
+com.android.service.ims.presence.PresencePublication	field	private boolean mDataEnabled;
+com.android.service.ims.presence.PresencePublication	field	private boolean mDonotRetryUntilPowerCycle;
+com.android.service.ims.presence.PresencePublication	field	private boolean mGotTriggerFromStack;
+com.android.service.ims.presence.PresencePublication	field	private boolean mHasCachedTrigger;
+com.android.service.ims.presence.PresencePublication	field	private boolean mImsRegistered;
+com.android.service.ims.presence.PresencePublication	field	private boolean mSimLoaded;
+com.android.service.ims.presence.PresencePublication	field	private boolean mVtEnabled;
+com.android.service.ims.presence.PresencePublication	field	private final Object mSyncObj;
+com.android.service.ims.presence.PresencePublication	field	private final String[] mConfigRcsProvisionErrorOnPublishResponse;
+com.android.service.ims.presence.PresencePublication	field	private final String[] mConfigVolteProvisionErrorOnPublishResponse;
+com.android.service.ims.presence.PresencePublication	field	private int mAssociatedSubscription;
+com.android.service.ims.presence.PresencePublication	field	private int mPreferredTtyMode;
+com.android.service.ims.presence.PresencePublication	field	private static PresencePublication sPresencePublication;
+com.android.service.ims.presence.PresencePublication	field	private static final String DOMAIN_SEPARATOR;
+com.android.service.ims.presence.PresencePublication	field	private static final String SIP_SCHEME;
+com.android.service.ims.presence.PresencePublication	field	private static final String TEL_SCHEME;
+com.android.service.ims.presence.PresencePublication	field	private static final int MESSAGE_DEFAULT_SUBSCRIPTION_CHANGED;
+com.android.service.ims.presence.PresencePublication	field	private static final int MESSAGE_RCS_PUBLISH_REQUEST;
+com.android.service.ims.presence.PresencePublication	field	private static final int TIMEOUT_CHECK_SUBSCRIPTION_READY_MS;
+com.android.service.ims.presence.PresencePublication	field	public static final String ACTION_RETRY_PUBLISH_ALARM;
+com.android.service.ims.presence.PresencePublication	field	public static final int UCE_PRES_PUBLISH_TRIGGER_ETAG_EXPIRED;
+com.android.service.ims.presence.PresencePublication	field	public static final int UCE_PRES_PUBLISH_TRIGGER_MOVE_TO_2G;
+com.android.service.ims.presence.PresencePublication	field	public static final int UCE_PRES_PUBLISH_TRIGGER_MOVE_TO_3G;
+com.android.service.ims.presence.PresencePublication	field	public static final int UCE_PRES_PUBLISH_TRIGGER_MOVE_TO_EHRPD;
+com.android.service.ims.presence.PresencePublication	field	public static final int UCE_PRES_PUBLISH_TRIGGER_MOVE_TO_HSPAPLUS;
+com.android.service.ims.presence.PresencePublication	field	public static final int UCE_PRES_PUBLISH_TRIGGER_MOVE_TO_IWLAN;
+com.android.service.ims.presence.PresencePublication	field	public static final int UCE_PRES_PUBLISH_TRIGGER_MOVE_TO_LTE_VOPS_DISABLED;
+com.android.service.ims.presence.PresencePublication	field	public static final int UCE_PRES_PUBLISH_TRIGGER_MOVE_TO_LTE_VOPS_ENABLED;
+com.android.service.ims.presence.PresencePublication	field	public static final int UCE_PRES_PUBLISH_TRIGGER_MOVE_TO_WLAN;
+com.android.service.ims.presence.PresencePublication	field	public static final int UCE_PRES_PUBLISH_TRIGGER_UNKNOWN;
+com.android.service.ims.presence.PresencePublication	field	volatile PublishRequest mPendingRequest;
+com.android.service.ims.presence.PresencePublication	field	volatile PublishRequest mPublishedRequest;
+com.android.service.ims.presence.PresencePublication	field	volatile PublishRequest mPublishingRequest;
+com.android.service.ims.presence.PresencePublication	method	private String getNumberFromUri(Uri uri)
+com.android.service.ims.presence.PresencePublication	method	private Uri getUriForPublication()
+com.android.service.ims.presence.PresencePublication	method	private boolean isOnIWLAN()
+com.android.service.ims.presence.PresencePublication	method	private boolean isOnLTE()
+com.android.service.ims.presence.PresencePublication	method	private boolean isPublishedOrPublishing()
+com.android.service.ims.presence.PresencePublication	method	private boolean isSimLoaded()
+com.android.service.ims.presence.PresencePublication	method	private static boolean isTtyEnabled(int i)
+com.android.service.ims.presence.PresencePublication	method	private void requestLocalPublish(int i)
+com.android.service.ims.presence.PresencePublication	method	private void requestPublication(PublishRequest publishRequest)
+com.android.service.ims.presence.PresencePublication	method	private void reset()
+com.android.service.ims.presence.PresencePublication	method	private void scheduleRetryPublish(long j)
+com.android.service.ims.presence.PresencePublication	method	public PresencePublication(PresencePublisher presencePublisher, Context context, String[] strArr, String[] strArr2)
+com.android.service.ims.presence.PresencePublication	method	public boolean isDataEnabled()
+com.android.service.ims.presence.PresencePublication	method	public boolean isIPVideoSupported(boolean z, boolean z2)
+com.android.service.ims.presence.PresencePublication	method	public boolean isIPVoiceSupported(boolean z, boolean z2)
+com.android.service.ims.presence.PresencePublication	method	public boolean isTtyOn()
+com.android.service.ims.presence.PresencePublication	method	public int getPublishState()
+com.android.service.ims.presence.PresencePublication	method	public static PresencePublication getPresencePublication()
+com.android.service.ims.presence.PresencePublication	method	public void doPublish(PublishRequest publishRequest)
+com.android.service.ims.presence.PresencePublication	method	public void handleAssociatedSubscriptionChanged(int i)
+com.android.service.ims.presence.PresencePublication	method	public void handleProvisioningChanged()
+com.android.service.ims.presence.PresencePublication	method	public void onAirplaneModeChanged(boolean z)
+com.android.service.ims.presence.PresencePublication	method	public void onCommandStatusUpdated(int i, int i2, int i3)
+com.android.service.ims.presence.PresencePublication	method	public void onFeatureCapabilityChanged(final int i, final MmTelFeature.MmTelCapabilities mmTelCapabilities)
+com.android.service.ims.presence.PresencePublication	method	public void onImsConnected()
+com.android.service.ims.presence.PresencePublication	method	public void onImsDisconnected()
+com.android.service.ims.presence.PresencePublication	method	public void onMobileDataChanged(boolean z)
+com.android.service.ims.presence.PresencePublication	method	public void onSipResponse(int i, int i2, String str)
+com.android.service.ims.presence.PresencePublication	method	public void onStackAvailable()
+com.android.service.ims.presence.PresencePublication	method	public void onStackPublishRequested(int i)
+com.android.service.ims.presence.PresencePublication	method	public void onTtyPreferredModeChanged(int i)
+com.android.service.ims.presence.PresencePublication	method	public void onVtEnabled(boolean z)
+com.android.service.ims.presence.PresencePublication	method	public void removePresencePublisher()
+com.android.service.ims.presence.PresencePublication	method	public void requestPublishIfSubscriptionReady()
+com.android.service.ims.presence.PresencePublication	method	public void retryPublish()
+com.android.service.ims.presence.PresencePublication	method	public void setPublishState(int i)
+com.android.service.ims.presence.PresencePublication	method	public void setSubscriber(PresenceSubscriber presenceSubscriber)
+com.android.service.ims.presence.PresencePublication	method	public void updatePresencePublisher(PresencePublisher presencePublisher)
+com.android.service.ims.presence.PresencePublication$PublishRequest	field	private boolean mForceToNetwork;
+com.android.service.ims.presence.PresencePublication$PublishRequest	field	private boolean mVolteCapable;
+com.android.service.ims.presence.PresencePublication$PublishRequest	field	private boolean mVtCapable;
+com.android.service.ims.presence.PresencePublication$PublishRequest	field	private long mCurrentTime;
+com.android.service.ims.presence.PresencePublication$PublishRequest	method	public String toString()
+com.android.service.ims.presence.PresencePublication$PublishRequest	method	public boolean getForceToNetwork()
+com.android.service.ims.presence.PresencePublication$PublishRequest	method	public boolean getVolteCapable()
+com.android.service.ims.presence.PresencePublication$PublishRequest	method	public boolean getVtCapable()
+com.android.service.ims.presence.PresencePublication$PublishRequest	method	public boolean hasSamePublishContent(PublishRequest publishRequest)
+com.android.service.ims.presence.PresencePublication$PublishRequest	method	public long getTimestamp()
+com.android.service.ims.presence.PresencePublication$PublishRequest	method	public void refreshPublishContent()
+com.android.service.ims.presence.PresencePublication$PublishRequest	method	public void setForceToNetwork(boolean z)
+com.android.service.ims.presence.PresencePublication$PublishRequest	method	public void setTimestamp(long j)
+com.android.service.ims.presence.PresencePublication$PublishRequest	method	public void setVolteCapable(boolean z)
+com.android.service.ims.presence.PresencePublication$PublishRequest	method	public void setVtCapable(boolean z)
+com.android.service.ims.presence.PresencePublication$PublishType	field	public static final int PRES_PUBLISH_TRIGGER_CACHED_TRIGGER;
+com.android.service.ims.presence.PresencePublication$PublishType	field	public static final int PRES_PUBLISH_TRIGGER_DATA_CHANGED;
+com.android.service.ims.presence.PresencePublication$PublishType	field	public static final int PRES_PUBLISH_TRIGGER_DEFAULT_SUB_CHANGED;
+com.android.service.ims.presence.PresencePublication$PublishType	field	public static final int PRES_PUBLISH_TRIGGER_FEATURE_AVAILABILITY_CHANGED;
+com.android.service.ims.presence.PresencePublication$PublishType	field	public static final int PRES_PUBLISH_TRIGGER_RETRY;
+com.android.service.ims.presence.PresencePublication$PublishType	field	public static final int PRES_PUBLISH_TRIGGER_TTY_ENABLE_STATUS;
+com.android.service.ims.presence.PresencePublication$PublishType	field	public static final int PRES_PUBLISH_TRIGGER_VTCALL_CHANGED;
+com.android.service.ims.presence.PresencePublication$PublishType	method	public PublishType()
+com.android.service.ims.presence.PresencePublishTask	field	private int mRetryCount;
+com.android.service.ims.presence.PresencePublishTask	field	private long mCreateTimestamp;
+com.android.service.ims.presence.PresencePublishTask	method	public PresencePublishTask(int i, int i2, ContactCapabilityResponse contactCapabilityResponse, String[] strArr)
+com.android.service.ims.presence.PresencePublishTask	method	public String toString()
+com.android.service.ims.presence.PresencePublishTask	method	public int getRetryCount()
+com.android.service.ims.presence.PresencePublishTask	method	public long getCreateTimestamp()
+com.android.service.ims.presence.PresencePublishTask	method	public void setRetryCount(int i)
+com.android.service.ims.presence.PresenceSubscriber	field	private Logger logger;
+com.android.service.ims.presence.PresenceSubscriber	field	private String mAvailabilityRetryNumber;
+com.android.service.ims.presence.PresenceSubscriber	field	private SubscribePublisher mSubscriber;
+com.android.service.ims.presence.PresenceSubscriber	field	private final Object mSubscriberLock;
+com.android.service.ims.presence.PresenceSubscriber	field	private final String[] mConfigRcsProvisionErrorOnSubscribeResponse;
+com.android.service.ims.presence.PresenceSubscriber	field	private final String[] mConfigVolteProvisionErrorOnSubscribeResponse;
+com.android.service.ims.presence.PresenceSubscriber	field	private int mAssociatedSubscription;
+com.android.service.ims.presence.PresenceSubscriber	method	private String numberToTelString(String str)
+com.android.service.ims.presence.PresenceSubscriber	method	private String numberToUriString(String str)
+com.android.service.ims.presence.PresenceSubscriber	method	private int translateResponse403(String str)
+com.android.service.ims.presence.PresenceSubscriber	method	private int translateResponseCode(int i, String str)
+com.android.service.ims.presence.PresenceSubscriber	method	private void handleCapabilityUpdate(Task task, List<RcsContactUceCapability> list, boolean z)
+com.android.service.ims.presence.PresenceSubscriber	method	private void updateAvailabilityToUnknown(Task task)
+com.android.service.ims.presence.PresenceSubscriber	method	public PresenceSubscriber(SubscribePublisher subscribePublisher, Context context, String[] strArr, String[] strArr2)
+com.android.service.ims.presence.PresenceSubscriber	method	public int requestAvailability(String str, ContactCapabilityResponse contactCapabilityResponse, boolean z)
+com.android.service.ims.presence.PresenceSubscriber	method	public int requestCapability(List<String> list, ContactCapabilityResponse contactCapabilityResponse)
+com.android.service.ims.presence.PresenceSubscriber	method	public void handleAssociatedSubscriptionChanged(int i)
+com.android.service.ims.presence.PresenceSubscriber	method	public void onCommandStatusUpdated(int i, int i2, int i3)
+com.android.service.ims.presence.PresenceSubscriber	method	public void onSipResponse(int i, int i2, String str)
+com.android.service.ims.presence.PresenceSubscriber	method	public void removePresenceSubscriber()
+com.android.service.ims.presence.PresenceSubscriber	method	public void retryToGetAvailability()
+com.android.service.ims.presence.PresenceSubscriber	method	public void updatePresence(RcsContactUceCapability rcsContactUceCapability)
+com.android.service.ims.presence.PresenceSubscriber	method	public void updatePresenceSubscriber(SubscribePublisher subscribePublisher)
+com.android.service.ims.presence.PresenceSubscriber	method	public void updatePresences(int i, List<RcsContactUceCapability> list, boolean z, String str)
+com.android.service.ims.presence.PresenceTask	field	public String[] mContacts;
+com.android.service.ims.presence.PresenceTask	method	public PresenceTask(int i, int i2, ContactCapabilityResponse contactCapabilityResponse, String[] strArr)
+com.android.service.ims.presence.PresenceTask	method	public String toString()
+com.android.service.ims.presence.PresenceUtils	field	private static final String TEL_SCHEME;
+com.android.service.ims.presence.PresenceUtils	field	public static final String LOG_TAG_PREFIX;
+com.android.service.ims.presence.PresenceUtils	method	public static String getNumber(Uri uri)
+com.android.service.ims.presence.PresenceUtils	method	public static String toContactString(String[] strArr)
+com.android.service.ims.presence.PresenceUtils	method	public static Uri convertContactNumber(String str)

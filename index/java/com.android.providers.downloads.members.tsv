@@ -1,0 +1,735 @@
+class	kind	declaration
+com.android.providers.downloads.AmazonDownloadNotifier	field	private NotificationUpdateThread notificationUpdate;
+com.android.providers.downloads.AmazonDownloadNotifier	field	private String downloadsSummary;
+com.android.providers.downloads.AmazonDownloadNotifier	field	private final NotificationManager mNotifManager;
+com.android.providers.downloads.AmazonDownloadNotifier	field	private int errorDownloads;
+com.android.providers.downloads.AmazonDownloadNotifier	field	private int inprogressDownloads;
+com.android.providers.downloads.AmazonDownloadNotifier	field	private int pausedDownloads;
+com.android.providers.downloads.AmazonDownloadNotifier	field	private int queuedDownloads;
+com.android.providers.downloads.AmazonDownloadNotifier	field	private long singleDownloadId;
+com.android.providers.downloads.AmazonDownloadNotifier	field	private static final ComponentName downloadListComp;
+com.android.providers.downloads.AmazonDownloadNotifier	method	private Notification.Builder createNotificationTemplate(DownloadInfo downloadInfo)
+com.android.providers.downloads.AmazonDownloadNotifier	method	private String buildPercentageLabel(Context context, long j, long j2)
+com.android.providers.downloads.AmazonDownloadNotifier	method	private String getSummary()
+com.android.providers.downloads.AmazonDownloadNotifier	method	private boolean isCompleteAndVisible(DownloadInfo downloadInfo)
+com.android.providers.downloads.AmazonDownloadNotifier	method	private boolean isErrorCase(DownloadInfo downloadInfo)
+com.android.providers.downloads.AmazonDownloadNotifier	method	private boolean notificationDisabledByApp(DownloadInfo downloadInfo)
+com.android.providers.downloads.AmazonDownloadNotifier	method	private void createErrorDownloadNotification(Notification.Builder builder, DownloadInfo downloadInfo)
+com.android.providers.downloads.AmazonDownloadNotifier	method	private void createGroupDownloadNotification(Notification.Builder builder, DownloadInfo downloadInfo)
+com.android.providers.downloads.AmazonDownloadNotifier	method	private void createSingleDownloadNotification(Notification.Builder builder, DownloadInfo downloadInfo)
+com.android.providers.downloads.AmazonDownloadNotifier	method	private void filterDownloads(LongSparseArray<DownloadInfo> longSparseArray)
+com.android.providers.downloads.AmazonDownloadNotifier	method	private void postDownloadNotification(boolean z, DownloadInfo downloadInfo)
+com.android.providers.downloads.AmazonDownloadNotifier	method	private void updateActiveNotification(LongSparseArray<DownloadInfo> longSparseArray)
+com.android.providers.downloads.AmazonDownloadNotifier	method	private void updateCompletedNotification(LongSparseArray<DownloadInfo> longSparseArray)
+com.android.providers.downloads.AmazonDownloadNotifier	method	private void updateNotification(LongSparseArray<DownloadInfo> longSparseArray)
+com.android.providers.downloads.AmazonDownloadNotifier$NotificationUpdateThread	field	public boolean mHandlerInited;
+com.android.providers.downloads.AmazonDownloadNotifier$NotificationUpdateThread	field	public boolean mQuit;
+com.android.providers.downloads.AmazonDownloadNotifier$NotificationUpdateThread	method	public void run()
+com.android.providers.downloads.AppCallbackManager	field	private Context mContext;
+com.android.providers.downloads.AppCallbackManager	field	private LongSparseArray<ArrayList<Integer>> mProgressObserverUidsByDid;
+com.android.providers.downloads.AppCallbackManager	field	private SparseArray<DownloadObserver> mObserversByUid;
+com.android.providers.downloads.AppCallbackManager	field	private String TAG;
+com.android.providers.downloads.AppCallbackManager	field	private static AppCallbackManager sInstance;
+com.android.providers.downloads.AppCallbackManager	field	private static final Object mObserverMapLock;
+com.android.providers.downloads.AppCallbackManager	method	private AppCallbackManager(Context context)
+com.android.providers.downloads.AppCallbackManager	method	private ArrayList<DownloadObserver> getAllWatchObservers(int i, long j, boolean z)
+com.android.providers.downloads.AppCallbackManager	method	private boolean connectToAppWithCallback(String str, final boolean z, final IConnectCallback iConnectCallback)
+com.android.providers.downloads.AppCallbackManager	method	public IADMCallback connectToAppWithCallback(DownloadInfo downloadInfo, boolean z, IConnectCallback iConnectCallback) throws ConnectionFailureException
+com.android.providers.downloads.AppCallbackManager	method	public static AppCallbackManager getInstance(Context context)
+com.android.providers.downloads.AppCallbackManager	method	public void dump(IndentingPrintWriter indentingPrintWriter)
+com.android.providers.downloads.AppCallbackManager	method	public void notifyApp(String str, Intent intent)
+com.android.providers.downloads.AppCallbackManager	method	public void notifyAppOrThrow(String str, Intent intent) throws ConnectionFailureException
+com.android.providers.downloads.AppCallbackManager	method	public void onBinderDied(int i)
+com.android.providers.downloads.AppCallbackManager	method	public void registerDownloadObserver(IDownloadObserverInternal iDownloadObserverInternal, boolean z, long j)
+com.android.providers.downloads.AppCallbackManager	method	public void reportHeaders(long j, String str, String str2, HashMap<String, String> map) throws ConnectionFailureException
+com.android.providers.downloads.AppCallbackManager	method	public void reportProgress(long j, String str, int i, long j2, long j3, long j4, String str2)
+com.android.providers.downloads.AppCallbackManager	method	public void reportStatus(long j, String str, int i, int i2, long j2, boolean z, String str2, String str3, DownloadInfo downloadInfo)
+com.android.providers.downloads.AppCallbackManager	method	public void unregisterDownloadObserver(IDownloadObserverInternal iDownloadObserverInternal, long j)
+com.android.providers.downloads.AppCallbackManager$ConnectionFailureException	field	private static final long serialVersionUID;
+com.android.providers.downloads.AppCallbackManager$ConnectionFailureException	method	public ConnectionFailureException()
+com.android.providers.downloads.AppCallbackManager$DownloadObserver	field	private IDownloadObserverInternal mObs;
+com.android.providers.downloads.AppCallbackManager$DownloadObserver	field	private boolean mShouldReportProgress;
+com.android.providers.downloads.AppCallbackManager$DownloadObserver	method	public DownloadObserver(IDownloadObserverInternal iDownloadObserverInternal, boolean z, int i)
+com.android.providers.downloads.AppCallbackManager$DownloadObserver	method	public IDownloadObserverInternal getObserver()
+com.android.providers.downloads.AppCallbackManager$DownloadObserver	method	public boolean shouldReportProgress()
+com.android.providers.downloads.AppCallbackManager$DownloadObserver	method	public void binderDied()
+com.android.providers.downloads.AuthManager	field	private AuthenticationMethodFactory mAuthFactory;
+com.android.providers.downloads.AuthManager	field	private static final AuthManager sInstance;
+com.android.providers.downloads.AuthManager	field	private static final String TAG;
+com.android.providers.downloads.AuthManager	method	private AuthManager()
+com.android.providers.downloads.AuthManager	method	private synchronized void init(Context context)
+com.android.providers.downloads.AuthManager	method	static synchronized AuthManager getInstance()
+com.android.providers.downloads.AuthManager	method	synchronized void resetAuthFactory()
+com.android.providers.downloads.Constants	field	public static final Set<String> PRIVATE_CONTENTVALUE_SET;
+com.android.providers.downloads.Constants	field	public static final String DEFAULT_USER_AGENT;
+com.android.providers.downloads.Constants	field	public static final String[] PRIVATE_CONTENTVALUE_ARRAY;
+com.android.providers.downloads.Constants	field	public static final boolean LOGV;
+com.android.providers.downloads.Constants	field	public static final boolean LOGVV;
+com.android.providers.downloads.Constants	field	public static final int MAX_NUM_FAILED;
+com.android.providers.downloads.Constants	field	static final boolean OTA_METERED_DOWNLOAD_ENABLED;
+com.android.providers.downloads.Constants	field	static final int MAX_CONCURRENT_DOWNLOADS;
+com.android.providers.downloads.DownloadDrmHelper	method	public static String getOriginalMimeType(Context context, File file, String str)
+com.android.providers.downloads.DownloadDrmHelper	method	public static String modifyDrmFwLockFileExtension(String str)
+com.android.providers.downloads.DownloadDrmHelper	method	public static boolean isDrmConvertNeeded(String str)
+com.android.providers.downloads.DownloadHandler	field	private Context mContext;
+com.android.providers.downloads.DownloadHandler	field	private DownloadPolicyManager mPolicyManager;
+com.android.providers.downloads.DownloadHandler	field	private DownloadReceiver mReceiver;
+com.android.providers.downloads.DownloadHandler	field	private boolean mIsDeviceCharging;
+com.android.providers.downloads.DownloadHandler	field	private boolean mIsNetworkMetered;
+com.android.providers.downloads.DownloadHandler	field	private final HashMap<Integer, PriorityQueue<DownloadInfo>> mPendingDownloadsInUid;
+com.android.providers.downloads.DownloadHandler	field	private final HashMap<Integer, Set<Long>> mScheduledDownloadsInUid;
+com.android.providers.downloads.DownloadHandler	field	private final LongSparseArray<DownloadInfo> mDownloads;
+com.android.providers.downloads.DownloadHandler	field	private final LongSparseArray<DownloadInfo> mParents;
+com.android.providers.downloads.DownloadHandler	field	private final Set<Long> requireChargingIds;
+com.android.providers.downloads.DownloadHandler	field	private final Set<Long> requireNetworkUnmeteredIds;
+com.android.providers.downloads.DownloadHandler	field	private static DownloadHandler sInstance;
+com.android.providers.downloads.DownloadHandler	field	private static final String TAG;
+com.android.providers.downloads.DownloadHandler	method	private DownloadHandler()
+com.android.providers.downloads.DownloadHandler	method	private synchronized int getScheduledCnt(int i)
+com.android.providers.downloads.DownloadHandler	method	private synchronized long getScheduledGroupID(int i)
+com.android.providers.downloads.DownloadHandler	method	private synchronized void checkAndPauseInvisibleDownloads(Context context)
+com.android.providers.downloads.DownloadHandler	method	private synchronized void manageDownloadsForUid(Context context, int i, PriorityQueue<DownloadInfo> priorityQueue)
+com.android.providers.downloads.DownloadHandler	method	private synchronized void removeUnscheduledDownloads()
+com.android.providers.downloads.DownloadHandler	method	private void init(Context context)
+com.android.providers.downloads.DownloadHandler	method	private void scheduledJobLocked(Context context, DownloadInfo downloadInfo)
+com.android.providers.downloads.DownloadHandler	method	public static synchronized DownloadHandler replaceInstanceForTesting(Context context)
+com.android.providers.downloads.DownloadHandler	method	public synchronized boolean hasHigherPriorityVisibleDownloads(DownloadInfo downloadInfo)
+com.android.providers.downloads.DownloadHandler	method	public synchronized boolean isScheduled(long j)
+com.android.providers.downloads.DownloadHandler	method	public synchronized void manageDownloads(Context context)
+com.android.providers.downloads.DownloadHandler	method	public synchronized void maybeRescheduleJob(Long l)
+com.android.providers.downloads.DownloadHandler	method	public synchronized void onBatteryStatusChanged(boolean z)
+com.android.providers.downloads.DownloadHandler	method	public synchronized void onNetworkTypeChanged(boolean z)
+com.android.providers.downloads.DownloadHandler	method	public synchronized void removeParentAndChildren(long j)
+com.android.providers.downloads.DownloadHandler	method	public void scheduleManageDownloads()
+com.android.providers.downloads.DownloadHandler	method	static synchronized DownloadHandler getInstance(Context context)
+com.android.providers.downloads.DownloadHandler	method	synchronized DownloadInfo getCachedInfo(long j)
+com.android.providers.downloads.DownloadHandler	method	synchronized DownloadInfo getParent(long j)
+com.android.providers.downloads.DownloadHandler	method	synchronized LongSparseArray<DownloadInfo> getAllDownloads()
+com.android.providers.downloads.DownloadHandler	method	synchronized String getDumpInfo()
+com.android.providers.downloads.DownloadHandler	method	synchronized void addParent(DownloadInfo downloadInfo)
+com.android.providers.downloads.DownloadHandler	method	synchronized void addPendingDownload(DownloadInfo downloadInfo)
+com.android.providers.downloads.DownloadHandler	method	synchronized void addScheduledDownload(DownloadInfo downloadInfo)
+com.android.providers.downloads.DownloadHandler	method	synchronized void enqueueDownload(Context context, DownloadInfo downloadInfo)
+com.android.providers.downloads.DownloadHandler	method	synchronized void enqueueDownload(Context context, long j)
+com.android.providers.downloads.DownloadHandler	method	synchronized void jobFinishedAndTryScheduleOther(Context context, long j, boolean z)
+com.android.providers.downloads.DownloadHandler	method	synchronized void removeParent(long j)
+com.android.providers.downloads.DownloadHandler	method	synchronized void removeScheduledDownload(long j)
+com.android.providers.downloads.DownloadIdleService	method	private void cleanStaleInCache()
+com.android.providers.downloads.DownloadIdleService	method	public boolean onStartJob(JobParameters jobParameters)
+com.android.providers.downloads.DownloadIdleService	method	public boolean onStopJob(JobParameters jobParameters)
+com.android.providers.downloads.DownloadIdleService	method	public static void scheduleIdlePass(Context context)
+com.android.providers.downloads.DownloadIdleService	method	public void cleanOrphans()
+com.android.providers.downloads.DownloadIdleService	method	public void cleanStale()
+com.android.providers.downloads.DownloadIdleService$IdleRunnable	field	private JobParameters mParams;
+com.android.providers.downloads.DownloadIdleService$IdleRunnable	method	public IdleRunnable(JobParameters jobParameters)
+com.android.providers.downloads.DownloadIdleService$IdleRunnable	method	public void run()
+com.android.providers.downloads.DownloadIdleService$OrphanQuery	field	public static final String[] PROJECTION;
+com.android.providers.downloads.DownloadIdleService$StaleQuery	field	public static final String[] PROJECTION;
+com.android.providers.downloads.DownloadInfo	field	private List<Pair<String, String>> mAddedHeaders;
+com.android.providers.downloads.DownloadInfo	field	private List<Pair<String, String>> mRequestHeaders;
+com.android.providers.downloads.DownloadInfo	field	private final AppCallbackManager mAppCbMgr;
+com.android.providers.downloads.DownloadInfo	field	private final Context mContext;
+com.android.providers.downloads.DownloadInfo	field	private final DownloadHandler mDownloadHandler;
+com.android.providers.downloads.DownloadInfo	field	private final SystemFacade mSystemFacade;
+com.android.providers.downloads.DownloadInfo	field	public DownloadInfo mGroupParent;
+com.android.providers.downloads.DownloadInfo	field	public HashMap<Long, DownloadInfo> mGroupChildren;
+com.android.providers.downloads.DownloadInfo	field	public MetricsRecorder.MetricsObject mMetrics;
+com.android.providers.downloads.DownloadInfo	field	public String mAppId;
+com.android.providers.downloads.DownloadInfo	field	public String mClass;
+com.android.providers.downloads.DownloadInfo	field	public String mCookies;
+com.android.providers.downloads.DownloadInfo	field	public String mDescription;
+com.android.providers.downloads.DownloadInfo	field	public String mETag;
+com.android.providers.downloads.DownloadInfo	field	public String mExtras;
+com.android.providers.downloads.DownloadInfo	field	public String mFileName;
+com.android.providers.downloads.DownloadInfo	field	public String mFileUri;
+com.android.providers.downloads.DownloadInfo	field	public String mHeadersToNotify;
+com.android.providers.downloads.DownloadInfo	field	public String mHint;
+com.android.providers.downloads.DownloadInfo	field	public String mMd5HexString;
+com.android.providers.downloads.DownloadInfo	field	public String mMediaProviderUri;
+com.android.providers.downloads.DownloadInfo	field	public String mMediaStoreUri;
+com.android.providers.downloads.DownloadInfo	field	public String mMimeType;
+com.android.providers.downloads.DownloadInfo	field	public String mPackage;
+com.android.providers.downloads.DownloadInfo	field	public String mReferer;
+com.android.providers.downloads.DownloadInfo	field	public String mTitle;
+com.android.providers.downloads.DownloadInfo	field	public String mUri;
+com.android.providers.downloads.DownloadInfo	field	public String mUserAgent;
+com.android.providers.downloads.DownloadInfo	field	public boolean batteryConstraintSatisfied;
+com.android.providers.downloads.DownloadInfo	field	public boolean mAllowMetered;
+com.android.providers.downloads.DownloadInfo	field	public boolean mAllowRoaming;
+com.android.providers.downloads.DownloadInfo	field	public boolean mDeleted;
+com.android.providers.downloads.DownloadInfo	field	public boolean mIsPublicApi;
+com.android.providers.downloads.DownloadInfo	field	public boolean mIsVisibleInDownloadsUi;
+com.android.providers.downloads.DownloadInfo	field	public boolean mNoIntegrity;
+com.android.providers.downloads.DownloadInfo	field	public boolean mReportCompletion;
+com.android.providers.downloads.DownloadInfo	field	public boolean networkConstraintSatisfied;
+com.android.providers.downloads.DownloadInfo	field	public int mAllowedNetworkTypes;
+com.android.providers.downloads.DownloadInfo	field	public int mBypassRecommendedSizeLimit;
+com.android.providers.downloads.DownloadInfo	field	public int mControl;
+com.android.providers.downloads.DownloadInfo	field	public int mDestination;
+com.android.providers.downloads.DownloadInfo	field	public int mFlags;
+com.android.providers.downloads.DownloadInfo	field	public int mMediaScanned;
+com.android.providers.downloads.DownloadInfo	field	public int mNumFailed;
+com.android.providers.downloads.DownloadInfo	field	public int mRetryAfter;
+com.android.providers.downloads.DownloadInfo	field	public int mStatus;
+com.android.providers.downloads.DownloadInfo	field	public int mUid;
+com.android.providers.downloads.DownloadInfo	field	public int mVisibility;
+com.android.providers.downloads.DownloadInfo	field	public long mCurrentBytes;
+com.android.providers.downloads.DownloadInfo	field	public long mEditableLastChecked;
+com.android.providers.downloads.DownloadInfo	field	public long mGroupId;
+com.android.providers.downloads.DownloadInfo	field	public long mId;
+com.android.providers.downloads.DownloadInfo	field	public long mLastMod;
+com.android.providers.downloads.DownloadInfo	field	public long mRequestFlags;
+com.android.providers.downloads.DownloadInfo	field	public long mSpeed;
+com.android.providers.downloads.DownloadInfo	field	public long mSpeedSampleBytes;
+com.android.providers.downloads.DownloadInfo	field	public long mSpeedSampleStart;
+com.android.providers.downloads.DownloadInfo	field	public long mTotalBytes;
+com.android.providers.downloads.DownloadInfo	method	private long fuzzDelay(long j)
+com.android.providers.downloads.DownloadInfo	method	private void childErrorLocked(int i)
+com.android.providers.downloads.DownloadInfo	method	private void childRunningLocked()
+com.android.providers.downloads.DownloadInfo	method	private void childSuccessLocked()
+com.android.providers.downloads.DownloadInfo	method	private void childWarnLocked(int i)
+com.android.providers.downloads.DownloadInfo	method	private void reportStatus(int i)
+com.android.providers.downloads.DownloadInfo	method	private void updateStatus(int i)
+com.android.providers.downloads.DownloadInfo	method	public Collection<Pair<String, String>> getAddedHeaders()
+com.android.providers.downloads.DownloadInfo	method	public Collection<Pair<String, String>> getHeaders()
+com.android.providers.downloads.DownloadInfo	method	public DownloadInfo(Context context)
+com.android.providers.downloads.DownloadInfo	method	public HashSet<String> getHeadersToNotify()
+com.android.providers.downloads.DownloadInfo	method	public String getUserAgent()
+com.android.providers.downloads.DownloadInfo	method	public String toString()
+com.android.providers.downloads.DownloadInfo	method	public Uri getAllDownloadsUri()
+com.android.providers.downloads.DownloadInfo	method	public Uri getMyDownloadsUri()
+com.android.providers.downloads.DownloadInfo	method	public boolean hasFlag(long j)
+com.android.providers.downloads.DownloadInfo	method	public boolean isChildInConcurrentGroup()
+com.android.providers.downloads.DownloadInfo	method	public boolean isConcurrentGroup()
+com.android.providers.downloads.DownloadInfo	method	public boolean isFinalCallbackSent()
+com.android.providers.downloads.DownloadInfo	method	public boolean isGroupChild()
+com.android.providers.downloads.DownloadInfo	method	public boolean isGroupParent()
+com.android.providers.downloads.DownloadInfo	method	public boolean isMeteredAllowed(long j)
+com.android.providers.downloads.DownloadInfo	method	public boolean isReadyToSchedule()
+com.android.providers.downloads.DownloadInfo	method	public boolean isRoamingAllowed()
+com.android.providers.downloads.DownloadInfo	method	public boolean isUserInitiatedDownload()
+com.android.providers.downloads.DownloadInfo	method	public boolean isVisible()
+com.android.providers.downloads.DownloadInfo	method	public boolean linkParent(Context context)
+com.android.providers.downloads.DownloadInfo	method	public boolean requireDeviceCharging()
+com.android.providers.downloads.DownloadInfo	method	public boolean requireDeviceIdle()
+com.android.providers.downloads.DownloadInfo	method	public boolean syncFromDatabase(Context context)
+com.android.providers.downloads.DownloadInfo	method	public int compareTo(DownloadInfo downloadInfo)
+com.android.providers.downloads.DownloadInfo	method	public int getRequiredNetworkType(long j)
+com.android.providers.downloads.DownloadInfo	method	public int queryDownloadControl()
+com.android.providers.downloads.DownloadInfo	method	public int queryDownloadInt(String str, int i)
+com.android.providers.downloads.DownloadInfo	method	public int queryDownloadStatus()
+com.android.providers.downloads.DownloadInfo	method	public int queryMultiThreadAllowResume()
+com.android.providers.downloads.DownloadInfo	method	public long getMinimumLatency()
+com.android.providers.downloads.DownloadInfo	method	public static DownloadInfo queryDownloadInfo(Context context, long j)
+com.android.providers.downloads.DownloadInfo	method	public void addChild(DownloadInfo downloadInfo)
+com.android.providers.downloads.DownloadInfo	method	public void childStatusChanged(Context context, int i)
+com.android.providers.downloads.DownloadInfo	method	public void deleteAllChildrenFromDB(Context context)
+com.android.providers.downloads.DownloadInfo	method	public void deleteSelfFromDatabase(Context context)
+com.android.providers.downloads.DownloadInfo	method	public void dump(IndentingPrintWriter indentingPrintWriter)
+com.android.providers.downloads.DownloadInfo	method	public void resetFinalCallbackSent()
+com.android.providers.downloads.DownloadInfo	method	public void sendIntentIfRequested()
+com.android.providers.downloads.DownloadInfo	method	public void setAddedHeaders(List<Pair<String, String>> list)
+com.android.providers.downloads.DownloadInfo	method	public void setFinalCallbackSent()
+com.android.providers.downloads.DownloadInfo	method	public void updateCurrentBytesWithDelta(long j)
+com.android.providers.downloads.DownloadInfo	method	public void updateSpeed()
+com.android.providers.downloads.DownloadInfo	method	public void updateTotalBytes(long j)
+com.android.providers.downloads.DownloadInfo$Reader	field	private ContentResolver mResolver;
+com.android.providers.downloads.DownloadInfo$Reader	field	private Cursor mCursor;
+com.android.providers.downloads.DownloadInfo$Reader	method	private Integer getInt(String str)
+com.android.providers.downloads.DownloadInfo$Reader	method	private Long getLong(String str)
+com.android.providers.downloads.DownloadInfo$Reader	method	private Long getLongOrDefault(String str, long j)
+com.android.providers.downloads.DownloadInfo$Reader	method	private String getString(String str)
+com.android.providers.downloads.DownloadInfo$Reader	method	private byte[] getBlob(String str)
+com.android.providers.downloads.DownloadInfo$Reader	method	private void addHeader(DownloadInfo downloadInfo, String str, String str2)
+com.android.providers.downloads.DownloadInfo$Reader	method	public Long getId()
+com.android.providers.downloads.DownloadInfo$Reader	method	public Reader(ContentResolver contentResolver, Cursor cursor)
+com.android.providers.downloads.DownloadInfo$Reader	method	public void readRequestHeaders(DownloadInfo downloadInfo)
+com.android.providers.downloads.DownloadInfo$Reader	method	public void updateFromDatabase(DownloadInfo downloadInfo)
+com.android.providers.downloads.DownloadJobService	field	private SparseArray<DownloadThread> mActiveThreads;
+com.android.providers.downloads.DownloadJobService	method	public boolean onStartJob(JobParameters jobParameters)
+com.android.providers.downloads.DownloadJobService	method	public boolean onStopJob(JobParameters jobParameters)
+com.android.providers.downloads.DownloadJobService	method	public void jobFinishedInternal(JobParameters jobParameters, boolean z)
+com.android.providers.downloads.DownloadJobService	method	public void onCreate()
+com.android.providers.downloads.DownloadJobService	method	public void onDestroy()
+com.android.providers.downloads.DownloadMonitorService	method	public boolean onStartJob(JobParameters jobParameters)
+com.android.providers.downloads.DownloadMonitorService	method	public boolean onStopJob(JobParameters jobParameters)
+com.android.providers.downloads.DownloadMonitorService	method	public static void scheduleMonitorPass(Context context)
+com.android.providers.downloads.DownloadMonitorService$MonitorRunnable	field	private JobParameters mParams;
+com.android.providers.downloads.DownloadMonitorService$MonitorRunnable	method	public MonitorRunnable(JobParameters jobParameters)
+com.android.providers.downloads.DownloadMonitorService$MonitorRunnable	method	public void run()
+com.android.providers.downloads.DownloadPolicyManager	field	private final int mMaxDefaultConcurrentDownloads;
+com.android.providers.downloads.DownloadPolicyManager	field	private int mMaxConcurrentDownloadsInGroup;
+com.android.providers.downloads.DownloadPolicyManager	field	private static final DownloadPolicyManager sInstance;
+com.android.providers.downloads.DownloadPolicyManager	method	static synchronized DownloadPolicyManager getInstance()
+com.android.providers.downloads.DownloadProvider	field	private SQLiteOpenHelper mOpenHelper;
+com.android.providers.downloads.DownloadProvider	field	private static final Map<String, String> sDownloadsMap;
+com.android.providers.downloads.DownloadProvider	field	private static final Map<String, String> sHeadersMap;
+com.android.providers.downloads.DownloadProvider	field	private static final Map<String, String> sThreadsMap;
+com.android.providers.downloads.DownloadProvider	field	private static final UriMatcher sURIMatcher;
+com.android.providers.downloads.DownloadProvider	field	private static final Uri[] BASE_URIS;
+com.android.providers.downloads.DownloadProvider	method	private Cursor queryCleared(Uri uri, String[] strArr, String str, String[] strArr2, String str2)
+com.android.providers.downloads.DownloadProvider	method	private Cursor queryThreadInfo(SQLiteDatabase sQLiteDatabase, Uri uri)
+com.android.providers.downloads.DownloadProvider	method	private SQLiteQueryBuilder getQueryBuilder(Uri uri, int i)
+com.android.providers.downloads.DownloadProvider	method	private String getDownloadIdFromUri(Uri uri)
+com.android.providers.downloads.DownloadProvider	method	private Uri getMediaStoreUri(ContentProviderClient contentProviderClient, String str)
+com.android.providers.downloads.DownloadProvider	method	private Uri insertThreadInfo(SQLiteDatabase sQLiteDatabase, Uri uri, ContentValues contentValues)
+com.android.providers.downloads.DownloadProvider	method	private int deleteThreadInfo(SQLiteDatabase sQLiteDatabase, Uri uri)
+com.android.providers.downloads.DownloadProvider	method	private int getCallingPackageTargetSdkVersion()
+com.android.providers.downloads.DownloadProvider	method	private int updateThreadInfo(SQLiteDatabase sQLiteDatabase, Uri uri, ContentValues contentValues)
+com.android.providers.downloads.DownloadProvider	method	private static Uri getFileUri(String str)
+com.android.providers.downloads.DownloadProvider	method	private static final long copyLong(String str, ContentValues contentValues, ContentValues contentValues2)
+com.android.providers.downloads.DownloadProvider	method	private static final void copyBoolean(String str, ContentValues contentValues, ContentValues contentValues2)
+com.android.providers.downloads.DownloadProvider	method	private static final void copyInteger(String str, ContentValues contentValues, ContentValues contentValues2)
+com.android.providers.downloads.DownloadProvider	method	private static final void copyString(String str, ContentValues contentValues, ContentValues contentValues2)
+com.android.providers.downloads.DownloadProvider	method	private static final void copyStringWithDefault(String str, ContentValues contentValues, ContentValues contentValues2, String str2)
+com.android.providers.downloads.DownloadProvider	method	private static void addMapping(Map<String, String> map, String str)
+com.android.providers.downloads.DownloadProvider	method	private static void addMapping(Map<String, String> map, String str, String str2)
+com.android.providers.downloads.DownloadProvider	method	private static void appendWhereExpression(StringBuilder sb, String str)
+com.android.providers.downloads.DownloadProvider	method	private void checkDownloadedFilePath(ContentValues contentValues)
+com.android.providers.downloads.DownloadProvider	method	private void checkFileUriDestination(ContentValues contentValues, int i, int i2)
+com.android.providers.downloads.DownloadProvider	method	private void checkInsertPermissions(ContentValues contentValues)
+com.android.providers.downloads.DownloadProvider	method	private void enforceAllowedValues(ContentValues contentValues, String str, Object... objArr)
+com.android.providers.downloads.DownloadProvider	method	private void ensureDefaultColumns(ContentValues contentValues)
+com.android.providers.downloads.DownloadProvider	method	private void grantAllDownloadsPermission(String str, long j)
+com.android.providers.downloads.DownloadProvider	method	private void insertRequestHeaders(SQLiteDatabase sQLiteDatabase, long j, ContentValues contentValues)
+com.android.providers.downloads.DownloadProvider	method	private void logContentValuesAndUri(Uri uri, ContentValues contentValues)
+com.android.providers.downloads.DownloadProvider	method	private void logVerboseOpenFileInfo(Uri uri, String str)
+com.android.providers.downloads.DownloadProvider	method	private void logVerboseQueryInfo(String[] strArr, String str, String[] strArr2, String str2, SQLiteDatabase sQLiteDatabase)
+com.android.providers.downloads.DownloadProvider	method	private void notifyContentChanged(Uri uri, int i)
+com.android.providers.downloads.DownloadProvider	method	public Bundle call(String str, String str2, Bundle bundle)
+com.android.providers.downloads.DownloadProvider	method	public ContentProviderResult[] applyBatch(ArrayList<ContentProviderOperation> arrayList) throws OperationApplicationException
+com.android.providers.downloads.DownloadProvider	method	public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2)
+com.android.providers.downloads.DownloadProvider	method	public ParcelFileDescriptor openFile(final Uri uri, String str) throws FileNotFoundException
+com.android.providers.downloads.DownloadProvider	method	public String getType(Uri uri)
+com.android.providers.downloads.DownloadProvider	method	public Uri insert(Uri uri, ContentValues contentValues)
+com.android.providers.downloads.DownloadProvider	method	public boolean onCreate()
+com.android.providers.downloads.DownloadProvider	method	public int delete(Uri uri, String str, String[] strArr)
+com.android.providers.downloads.DownloadProvider	method	public int update(Uri uri, ContentValues contentValues, String str, String[] strArr) throws Throwable
+com.android.providers.downloads.DownloadProvider	method	public void dump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr)
+com.android.providers.downloads.DownloadProvider	method	public void revokeAllDownloadsPermission(long j)
+com.android.providers.downloads.DownloadProvider$DatabaseHelper	method	private boolean columnExists(String str, SQLiteDatabase sQLiteDatabase, String str2)
+com.android.providers.downloads.DownloadProvider$DatabaseHelper	method	private void addColumn(SQLiteDatabase sQLiteDatabase, String str, String str2, String str3)
+com.android.providers.downloads.DownloadProvider$DatabaseHelper	method	private void addTriggerAndIndex(SQLiteDatabase sQLiteDatabase)
+com.android.providers.downloads.DownloadProvider$DatabaseHelper	method	private void addUpdateRequestFlagsTrigger(SQLiteDatabase sQLiteDatabase)
+com.android.providers.downloads.DownloadProvider$DatabaseHelper	method	private void addWanBypassGroupTrigger(SQLiteDatabase sQLiteDatabase)
+com.android.providers.downloads.DownloadProvider$DatabaseHelper	method	private void canonicalizeDataPaths(SQLiteDatabase sQLiteDatabase)
+com.android.providers.downloads.DownloadProvider$DatabaseHelper	method	private void createDownloadsTable(SQLiteDatabase sQLiteDatabase)
+com.android.providers.downloads.DownloadProvider$DatabaseHelper	method	private void createHeadersTable(SQLiteDatabase sQLiteDatabase)
+com.android.providers.downloads.DownloadProvider$DatabaseHelper	method	private void createMultiThreadInfoTable(SQLiteDatabase sQLiteDatabase)
+com.android.providers.downloads.DownloadProvider$DatabaseHelper	method	private void createRequestCountTable(SQLiteDatabase sQLiteDatabase)
+com.android.providers.downloads.DownloadProvider$DatabaseHelper	method	private void fillNullValues(SQLiteDatabase sQLiteDatabase)
+com.android.providers.downloads.DownloadProvider$DatabaseHelper	method	private void fillNullValuesForColumn(SQLiteDatabase sQLiteDatabase, ContentValues contentValues)
+com.android.providers.downloads.DownloadProvider$DatabaseHelper	method	private void fixQueuedTime(SQLiteDatabase sQLiteDatabase)
+com.android.providers.downloads.DownloadProvider$DatabaseHelper	method	private void fixRequestCountTable(SQLiteDatabase sQLiteDatabase)
+com.android.providers.downloads.DownloadProvider$DatabaseHelper	method	private void makeCacheDownloadsInvisible(SQLiteDatabase sQLiteDatabase)
+com.android.providers.downloads.DownloadProvider$DatabaseHelper	method	private void nullifyMediaStoreUris(SQLiteDatabase sQLiteDatabase)
+com.android.providers.downloads.DownloadProvider$DatabaseHelper	method	private void updateMediaStoreUrisFromFilesToDownloads(SQLiteDatabase sQLiteDatabase)
+com.android.providers.downloads.DownloadProvider$DatabaseHelper	method	private void upgradeTo(SQLiteDatabase sQLiteDatabase, int i)
+com.android.providers.downloads.DownloadProvider$DatabaseHelper	method	public DatabaseHelper(Context context)
+com.android.providers.downloads.DownloadProvider$DatabaseHelper	method	public void onCreate(SQLiteDatabase sQLiteDatabase)
+com.android.providers.downloads.DownloadProvider$DatabaseHelper	method	public void onDowngrade(SQLiteDatabase sQLiteDatabase, int i, int i2)
+com.android.providers.downloads.DownloadProvider$DatabaseHelper	method	public void onUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i2)
+com.android.providers.downloads.DownloadReceiver	field	private static final MultithreadConfigHelper mConfigHelper;
+com.android.providers.downloads.DownloadReceiver	method	private void deleteAllDownloads(Context context, Intent intent)
+com.android.providers.downloads.DownloadReceiver	method	private void handleBootCompleted(Context context)
+com.android.providers.downloads.DownloadReceiver	method	private void handleNotificationBroadcast(Context context, Intent intent)
+com.android.providers.downloads.DownloadReceiver	method	private void handleRemovedUidEntries(Context context)
+com.android.providers.downloads.DownloadReceiver	method	private void handleUidRemoved(Context context, Intent intent)
+com.android.providers.downloads.DownloadReceiver	method	private void hideNotification(Context context, long j)
+com.android.providers.downloads.DownloadReceiver	method	private void openDownload(Context context, long j)
+com.android.providers.downloads.DownloadReceiver	method	private void sendNotificationClickedIntent(Context context, long[] jArr)
+com.android.providers.downloads.DownloadReceiver	method	public void onReceive(final Context context, final Intent intent)
+com.android.providers.downloads.DownloadService	field	private AppCallbackManager mAppCallbackManager;
+com.android.providers.downloads.DownloadService	field	private DownloadReceiver mReceiver;
+com.android.providers.downloads.DownloadService	field	private static final String TAG;
+com.android.providers.downloads.DownloadService	method	protected void dump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr)
+com.android.providers.downloads.DownloadService	method	public IBinder onBind(Intent intent)
+com.android.providers.downloads.DownloadService	method	public void onCreate()
+com.android.providers.downloads.DownloadService	method	public void onDestroy()
+com.android.providers.downloads.DownloadStorageProvider	field	private DownloadManager mDm;
+com.android.providers.downloads.DownloadStorageProvider	field	private static final String[] DEFAULT_DOCUMENT_PROJECTION;
+com.android.providers.downloads.DownloadStorageProvider	field	private static final String[] DEFAULT_ROOT_PROJECTION;
+com.android.providers.downloads.DownloadStorageProvider	method	private Cursor queryForSingleItem(Uri uri, String[] strArr, String str, String[] strArr2, CancellationSignal cancellationSignal) throws FileNotFoundException
+com.android.providers.downloads.DownloadStorageProvider	method	private File getFileForMediaStoreDownload(String str)
+com.android.providers.downloads.DownloadStorageProvider	method	private Pair<String, String> getRelativePathAndDisplayNameForDownload(long j)
+com.android.providers.downloads.DownloadStorageProvider	method	private Pair<String, String[]> buildSearchSelection(Bundle bundle, Set<String> set, String str)
+com.android.providers.downloads.DownloadStorageProvider	method	private String getMimeType(Cursor cursor)
+com.android.providers.downloads.DownloadStorageProvider	method	private static String[] resolveRootProjection(String[] strArr)
+com.android.providers.downloads.DownloadStorageProvider	method	private static boolean isMediaMimeType(String str)
+com.android.providers.downloads.DownloadStorageProvider	method	private void copyNotificationUri(MatrixCursor matrixCursor, Cursor cursor)
+com.android.providers.downloads.DownloadStorageProvider	method	private void includeDefaultDocument(MatrixCursor matrixCursor)
+com.android.providers.downloads.DownloadStorageProvider	method	private void includeDownload(MatrixCursor matrixCursor, String str, String str2, String str3, long j, String str4, long j2, int i, boolean z)
+com.android.providers.downloads.DownloadStorageProvider	method	private void includeDownloadFromCursor(MatrixCursor matrixCursor, Cursor cursor, Set<String> set, Bundle bundle)
+com.android.providers.downloads.DownloadStorageProvider	method	private void includeDownloadFromMediaStore(MatrixCursor matrixCursor, Cursor cursor, Set<String> set, boolean z)
+com.android.providers.downloads.DownloadStorageProvider	method	private void includeDownloadsFromMediaStore(MatrixCursor matrixCursor, Bundle bundle, Set<String> set, ArrayList<Uri> arrayList, String str, int i, boolean z)
+com.android.providers.downloads.DownloadStorageProvider	method	private void includeFileFromSharedStorage(MatrixCursor matrixCursor, File file) throws FileNotFoundException
+com.android.providers.downloads.DownloadStorageProvider	method	private void includeFilesFromSharedStorage(DownloadsCursor downloadsCursor, Set<String> set, String str) throws FileNotFoundException
+com.android.providers.downloads.DownloadStorageProvider	method	private void includeSearchFilesFromSharedStorage(DownloadsCursor downloadsCursor, String[] strArr, Set<String> set, Bundle bundle) throws FileNotFoundException
+com.android.providers.downloads.DownloadStorageProvider	method	private void renameMediaStoreDownload(String str, String str2)
+com.android.providers.downloads.DownloadStorageProvider	method	protected Cursor queryChildDocuments(String str, String[] strArr, String str2, boolean z) throws Throwable
+com.android.providers.downloads.DownloadStorageProvider	method	protected File getFileForDocId(String str, boolean z) throws Throwable
+com.android.providers.downloads.DownloadStorageProvider	method	protected String getDocIdForFile(File file) throws FileNotFoundException
+com.android.providers.downloads.DownloadStorageProvider	method	protected Uri buildNotificationUri(String str)
+com.android.providers.downloads.DownloadStorageProvider	method	public Cursor queryDocument(String str, String[] strArr) throws Throwable
+com.android.providers.downloads.DownloadStorageProvider	method	public Cursor queryRecentDocuments(String str, String[] strArr, Bundle bundle, CancellationSignal cancellationSignal) throws Throwable
+com.android.providers.downloads.DownloadStorageProvider	method	public Cursor queryRoots(String[] strArr) throws FileNotFoundException
+com.android.providers.downloads.DownloadStorageProvider	method	public Cursor querySearchDocuments(String str, String[] strArr, Bundle bundle) throws Throwable
+com.android.providers.downloads.DownloadStorageProvider	method	public DocumentsContract.Path findDocumentPath(String str, String str2) throws FileNotFoundException
+com.android.providers.downloads.DownloadStorageProvider	method	public ParcelFileDescriptor openDocument(String str, String str2, CancellationSignal cancellationSignal) throws FileNotFoundException
+com.android.providers.downloads.DownloadStorageProvider	method	public String createDocument(String str, String str2, String str3) throws FileNotFoundException
+com.android.providers.downloads.DownloadStorageProvider	method	public String getDocumentType(String str) throws FileNotFoundException
+com.android.providers.downloads.DownloadStorageProvider	method	public String renameDocument(String str, String str2) throws FileNotFoundException
+com.android.providers.downloads.DownloadStorageProvider	method	public boolean onCreate()
+com.android.providers.downloads.DownloadStorageProvider	method	public static File getPublicDownloadsDirectory()
+com.android.providers.downloads.DownloadStorageProvider	method	public static String[] resolveDocumentProjection(String[] strArr)
+com.android.providers.downloads.DownloadStorageProvider	method	public void deleteDocument(String str) throws FileNotFoundException
+com.android.providers.downloads.DownloadStorageProvider	method	static void onDownloadProviderDelete(Context context, long j)
+com.android.providers.downloads.DownloadStorageProvider	method	static void onMediaProviderDownloadsDelete(Context context, long[] jArr, String[] strArr)
+com.android.providers.downloads.DownloadStorageProvider	method	static void revokeAllMediaStoreUriPermissions(Context context)
+com.android.providers.downloads.DownloadStorageProvider$ContentChangedRelay	field	private final ContentResolver mResolver;
+com.android.providers.downloads.DownloadStorageProvider$ContentChangedRelay	method	public ContentChangedRelay(ContentResolver contentResolver, List<File> list)
+com.android.providers.downloads.DownloadStorageProvider$ContentChangedRelay	method	public void onEvent(int i, String str)
+com.android.providers.downloads.DownloadStorageProvider$ContentChangedRelay	method	public void startWatching()
+com.android.providers.downloads.DownloadStorageProvider$ContentChangedRelay	method	public void stopWatching()
+com.android.providers.downloads.DownloadStorageProvider$DownloadsCursor	field	private final ContentResolver mResolver;
+com.android.providers.downloads.DownloadStorageProvider$DownloadsCursor	field	private static ContentChangedRelay mFileWatcher;
+com.android.providers.downloads.DownloadStorageProvider$DownloadsCursor	field	private static final Object mLock;
+com.android.providers.downloads.DownloadStorageProvider$DownloadsCursor	field	private static int mOpenCursorCount;
+com.android.providers.downloads.DownloadStorageProvider$DownloadsCursor	method	public void close()
+com.android.providers.downloads.DownloadThread	field	private ExecutorService mExecutor;
+com.android.providers.downloads.DownloadThread	field	private IADMCallback mBinderToApp;
+com.android.providers.downloads.DownloadThread	field	private Network mNetwork;
+com.android.providers.downloads.DownloadThread	field	private OnDemandRequestUpdate mOnDemandReqUpdate;
+com.android.providers.downloads.DownloadThread	field	private SSLContext mAppContext;
+com.android.providers.downloads.DownloadThread	field	private boolean mIgnoreBlocked;
+com.android.providers.downloads.DownloadThread	field	private boolean mIsMulti;
+com.android.providers.downloads.DownloadThread	field	private boolean mMadeProgress;
+com.android.providers.downloads.DownloadThread	field	private final AppCallbackManager mAppCbMgr;
+com.android.providers.downloads.DownloadThread	field	private final Context mContext;
+com.android.providers.downloads.DownloadThread	field	private final DownloadInfo mInfo;
+com.android.providers.downloads.DownloadThread	field	private final DownloadInfo mParent;
+com.android.providers.downloads.DownloadThread	field	private final DownloadJobService mJobService;
+com.android.providers.downloads.DownloadThread	field	private final JobParameters mParams;
+com.android.providers.downloads.DownloadThread	field	private final MultithreadConfigHelper mConfigHelper;
+com.android.providers.downloads.DownloadThread	field	private final NetworkPolicyManager mNetworkPolicy;
+com.android.providers.downloads.DownloadThread	field	private final StorageManager mStorage;
+com.android.providers.downloads.DownloadThread	field	private final SystemFacade mSystemFacade;
+com.android.providers.downloads.DownloadThread	field	private final long mId;
+com.android.providers.downloads.DownloadThread	field	private int mNetworkType;
+com.android.providers.downloads.DownloadThread	field	private long mLastUpdateBytes;
+com.android.providers.downloads.DownloadThread	field	private long mLastUpdateTime;
+com.android.providers.downloads.DownloadThread	field	private volatile boolean mPolicyDirty;
+com.android.providers.downloads.DownloadThread	field	private volatile boolean mShutdownRequested;
+com.android.providers.downloads.DownloadThread	field	protected final DownloadInfoDelta mInfoDelta;
+com.android.providers.downloads.DownloadThread	field	public String domain;
+com.android.providers.downloads.DownloadThread	field	public byte httperrors;
+com.android.providers.downloads.DownloadThread	method	private boolean updateRequestWithNewUrl(DownloadInfoDelta downloadInfoDelta) throws Throwable
+com.android.providers.downloads.DownloadThread	method	private static long getHeaderFieldLong(URLConnection uRLConnection, String str, long j)
+com.android.providers.downloads.DownloadThread	method	private void addRequestHeaders(HttpURLConnection httpURLConnection, boolean z)
+com.android.providers.downloads.DownloadThread	method	private void checkConnectivity() throws StopRequestException
+com.android.providers.downloads.DownloadThread	method	private void clearThreadInfos()
+com.android.providers.downloads.DownloadThread	method	private void executeDownload() throws Throwable
+com.android.providers.downloads.DownloadThread	method	private void finalizeDestination()
+com.android.providers.downloads.DownloadThread	method	private void logError(String str, Throwable th)
+com.android.providers.downloads.DownloadThread	method	private void logInfo(String str)
+com.android.providers.downloads.DownloadThread	method	private void logWarning(String str)
+com.android.providers.downloads.DownloadThread	method	private void parseOkHeaders(HttpURLConnection httpURLConnection) throws StopRequestException
+com.android.providers.downloads.DownloadThread	method	private void parseUnavailableHeaders(HttpURLConnection httpURLConnection)
+com.android.providers.downloads.DownloadThread	method	private void reportHeader(HttpURLConnection httpURLConnection) throws StopRequestException
+com.android.providers.downloads.DownloadThread	method	private void transferData(InputStream inputStream, OutputStream outputStream, FileDescriptor fileDescriptor) throws StopRequestException
+com.android.providers.downloads.DownloadThread	method	private void updateProgress(FileDescriptor fileDescriptor) throws IOException, StopRequestException
+com.android.providers.downloads.DownloadThread	method	private void updateThreadsProgress()
+com.android.providers.downloads.DownloadThread	method	protected void transferData(HttpURLConnection httpURLConnection) throws Throwable
+com.android.providers.downloads.DownloadThread	method	protected void transferDataInThreads() throws StopRequestException
+com.android.providers.downloads.DownloadThread	method	protected void writeDataToFile(ThreadInfo threadInfo) throws StopRequestException
+com.android.providers.downloads.DownloadThread	method	public DownloadThread(DownloadJobService downloadJobService, JobParameters jobParameters, DownloadInfo downloadInfo)
+com.android.providers.downloads.DownloadThread	method	public ThreadInfo getThreadInfo(int i, long j, long j2) throws StopRequestException
+com.android.providers.downloads.DownloadThread	method	public static boolean isStatusRetryable(int i)
+com.android.providers.downloads.DownloadThread	method	public void requestShutdown()
+com.android.providers.downloads.DownloadThread	method	public void run()
+com.android.providers.downloads.DownloadThread$DownloadInfoDelta	field	public String mCurrSessionUri;
+com.android.providers.downloads.DownloadThread$DownloadInfoDelta	field	public String mETag;
+com.android.providers.downloads.DownloadThread$DownloadInfoDelta	field	public String mErrorMsg;
+com.android.providers.downloads.DownloadThread$DownloadInfoDelta	field	public String mFileName;
+com.android.providers.downloads.DownloadThread$DownloadInfoDelta	field	public String mFileUri;
+com.android.providers.downloads.DownloadThread$DownloadInfoDelta	field	public String mMimeType;
+com.android.providers.downloads.DownloadThread$DownloadInfoDelta	field	public String mNewFinalUri;
+com.android.providers.downloads.DownloadThread$DownloadInfoDelta	field	public String mUri;
+com.android.providers.downloads.DownloadThread$DownloadInfoDelta	field	public int mNumFailed;
+com.android.providers.downloads.DownloadThread$DownloadInfoDelta	field	public int mRetryAfter;
+com.android.providers.downloads.DownloadThread$DownloadInfoDelta	field	public int mStatus;
+com.android.providers.downloads.DownloadThread$DownloadInfoDelta	field	public long mCurrentBytes;
+com.android.providers.downloads.DownloadThread$DownloadInfoDelta	field	public long mTotalBytes;
+com.android.providers.downloads.DownloadThread$DownloadInfoDelta	method	private ContentValues buildContentValues()
+com.android.providers.downloads.DownloadThread$DownloadInfoDelta	method	public DownloadInfoDelta(DownloadInfo downloadInfo)
+com.android.providers.downloads.DownloadThread$DownloadInfoDelta	method	public String getUri()
+com.android.providers.downloads.DownloadThread$DownloadInfoDelta	method	public void writeToDatabase()
+com.android.providers.downloads.DownloadThread$DownloadInfoDelta	method	public void writeToDatabaseOrThrow() throws StopRequestException
+com.android.providers.downloads.DownloadThread$ThreadInfo	field	public ByteBuffer byteBuffer;
+com.android.providers.downloads.DownloadThread$ThreadInfo	field	public FileChannel channel;
+com.android.providers.downloads.DownloadThread$ThreadInfo	field	public HttpURLConnection conn;
+com.android.providers.downloads.DownloadThread$ThreadInfo	field	public InputStream in;
+com.android.providers.downloads.DownloadThread$ThreadInfo	field	public RandomAccessFile out;
+com.android.providers.downloads.DownloadThread$ThreadInfo	field	public final Uri uri;
+com.android.providers.downloads.DownloadThread$ThreadInfo	field	public final int id;
+com.android.providers.downloads.DownloadThread$ThreadInfo	field	public final long end;
+com.android.providers.downloads.DownloadThread$ThreadInfo	field	public final long start;
+com.android.providers.downloads.DownloadThread$ThreadInfo	field	public long finished;
+com.android.providers.downloads.DownloadThread$ThreadInfo	method	public Integer call() throws InterruptedException, StopRequestException
+com.android.providers.downloads.DownloadThread$ThreadInfo	method	public String toString()
+com.android.providers.downloads.DownloadThread$ThreadInfo	method	public ThreadInfo(int i, long j, long j2, long j3, Uri uri)
+com.android.providers.downloads.DownloadThread$ThreadInfo	method	public void clean()
+com.android.providers.downloads.DownloadThread$ThreadInfo	method	public void createInputStream(HttpURLConnection httpURLConnection) throws StopRequestException
+com.android.providers.downloads.DownloadThread$ThreadInfo	method	public void createOutputStream(RandomAccessFile randomAccessFile) throws StopRequestException
+com.android.providers.downloads.Helpers	field	private static AmazonDownloadNotifier sNotifier;
+com.android.providers.downloads.Helpers	field	private static Handler sAsyncHandler;
+com.android.providers.downloads.Helpers	field	private static Handler sCriticalAsyncHandler;
+com.android.providers.downloads.Helpers	field	private static HandlerThread sAsyncHandlerThread;
+com.android.providers.downloads.Helpers	field	private static HandlerThread sCriticalAsyncHandlerThread;
+com.android.providers.downloads.Helpers	field	private static SystemFacade sSystemFacade;
+com.android.providers.downloads.Helpers	field	private static final File mOTAPacakageDir;
+com.android.providers.downloads.Helpers	field	private static final Object sUniqueLock;
+com.android.providers.downloads.Helpers	field	private static final Pattern CONTENT_DISPOSITION_PATTERN;
+com.android.providers.downloads.Helpers	field	private static final Pattern PATTERN_ANDROID_DIRS;
+com.android.providers.downloads.Helpers	field	private static final Pattern PATTERN_PUBLIC_DIRS;
+com.android.providers.downloads.Helpers	field	private static final Pattern PATTERN_RELATIVE_PATH;
+com.android.providers.downloads.Helpers	field	private static final Pattern PATTERN_VOLUME_NAME;
+com.android.providers.downloads.Helpers	field	public static Random sRandom;
+com.android.providers.downloads.Helpers	field	public static final boolean IS_USER_BUILD;
+com.android.providers.downloads.Helpers	method	private static File getDestinationDirectory(Context context, int i, boolean z) throws IOException
+com.android.providers.downloads.Helpers	method	private static String chooseExtensionFromFilename(String str, int i, String str2, int i2)
+com.android.providers.downloads.Helpers	method	private static String chooseExtensionFromMimeType(String str, boolean z)
+com.android.providers.downloads.Helpers	method	private static String chooseFilename(String str, String str2, String str3, String str4)
+com.android.providers.downloads.Helpers	method	private static String generateAvailableFilenameLocked(File[] fileArr, String str, String str2) throws IOException
+com.android.providers.downloads.Helpers	method	private static String normalizeUuid(String str)
+com.android.providers.downloads.Helpers	method	private static String parseContentDisposition(String str)
+com.android.providers.downloads.Helpers	method	private static boolean containsCanonical(File file, File file2) throws IOException
+com.android.providers.downloads.Helpers	method	private static boolean containsCanonical(File[] fileArr, File file) throws IOException
+com.android.providers.downloads.Helpers	method	private static boolean isFilenameAvailableLocked(File[] fileArr, String str)
+com.android.providers.downloads.Helpers	method	public static File getRunningDestinationDirectory(Context context, int i) throws IOException
+com.android.providers.downloads.Helpers	method	public static File getSuccessDestinationDirectory(Context context, int i) throws IOException
+com.android.providers.downloads.Helpers	method	public static String buildQueryWithIds(ArrayList<Long> arrayList)
+com.android.providers.downloads.Helpers	method	public static String extractDisplayName(String str)
+com.android.providers.downloads.Helpers	method	public static String extractRelativePath(String str)
+com.android.providers.downloads.Helpers	method	public static String extractVolumeName(String str)
+com.android.providers.downloads.Helpers	method	public static String getMD5HexString(String str) throws SecurityException, FileNotFoundException
+com.android.providers.downloads.Helpers	method	public static String getPackageForUid(Context context, int i)
+com.android.providers.downloads.Helpers	method	public static String getString(Cursor cursor, String str)
+com.android.providers.downloads.Helpers	method	public static Uri convertToMediaStoreDownloadsUri(Uri uri)
+com.android.providers.downloads.Helpers	method	public static Uri triggerMediaScan(ContentProviderClient contentProviderClient, File file)
+com.android.providers.downloads.Helpers	method	public static boolean isFileInExternalAndroidDirs(String str)
+com.android.providers.downloads.Helpers	method	public static boolean isFilenameValidInKnownPublicDir(String str)
+com.android.providers.downloads.Helpers	method	public static boolean scheduleJob(Context context, DownloadInfo downloadInfo)
+com.android.providers.downloads.Helpers	method	public static final Uri getContentUriForPath(Context context, String str)
+com.android.providers.downloads.Helpers	method	public static int getInt(Cursor cursor, String str)
+com.android.providers.downloads.Helpers	method	public static synchronized AmazonDownloadNotifier getDownloadNotifier(Context context)
+com.android.providers.downloads.Helpers	method	public static synchronized Handler getAsyncHandler()
+com.android.providers.downloads.Helpers	method	public static synchronized Handler getCriticalAsyncHandler()
+com.android.providers.downloads.Helpers	method	public static synchronized SystemFacade getSystemFacade(Context context)
+com.android.providers.downloads.Helpers	method	public static synchronized void setSystemFacade(SystemFacade systemFacade)
+com.android.providers.downloads.Helpers	method	public static void handleRemovedUidEntries(Context context, ContentProvider contentProvider, int i)
+com.android.providers.downloads.Helpers	method	public static void onBatteryStatusChanged(final Context context, final boolean z)
+com.android.providers.downloads.Helpers	method	public static void onNetworkTypeChanged(final Context context, final boolean z)
+com.android.providers.downloads.Helpers	method	public static void registerNetworkCallback(final Context context)
+com.android.providers.downloads.Helpers	method	static DownloadInfo getCachedDownloadInfo(Context context, long j)
+com.android.providers.downloads.Helpers	method	static String generateSaveFile(Context context, String str, String str2, String str3, String str4, String str5, int i) throws IOException
+com.android.providers.downloads.Helpers	method	static boolean isAdmDropboxPossbile(int i, int i2, String str)
+com.android.providers.downloads.Helpers	method	static boolean isAppstoreApkDropboxPossible(int i, int i2, String str)
+com.android.providers.downloads.Helpers	method	static boolean isFilenameValid(Context context, File file)
+com.android.providers.downloads.Helpers	method	static boolean isFilenameValid(Context context, File file, boolean z)
+com.android.providers.downloads.Helpers	method	static boolean isFilenameValidInExternal(Context context, File file)
+com.android.providers.downloads.Helpers	method	static boolean isFilenameValidInExternalObbDir(File file)
+com.android.providers.downloads.Helpers	method	static boolean isFilenameValidInExternalPackage(Context context, File file, String str)
+com.android.providers.downloads.Helpers	method	static boolean isFilenameValidInPublicDownloadsDir(File file)
+com.android.providers.downloads.Helpers	method	static boolean isInAdmDropbox(File file)
+com.android.providers.downloads.Helpers	method	static boolean isInAdmDropbox(String str)
+com.android.providers.downloads.Helpers	method	static boolean isInAppstoreApkDropbox(File file)
+com.android.providers.downloads.Helpers	method	static boolean isInAppstoreApkDropbox(String str)
+com.android.providers.downloads.Helpers	method	static boolean isInOtaPackageStorage(File file)
+com.android.providers.downloads.Helpers	method	static boolean isInOtaPackageStorage(String str)
+com.android.providers.downloads.Helpers	method	static void reportProgress(Context context, DownloadInfo downloadInfo, long j, long j2)
+com.android.providers.downloads.Helpers	method	static void reportStatus(Context context, DownloadInfo downloadInfo, int i)
+com.android.providers.downloads.MediaScanTriggerJob	field	private volatile boolean mJobStopped;
+com.android.providers.downloads.MediaScanTriggerJob	method	public boolean onStartJob(final JobParameters jobParameters)
+com.android.providers.downloads.MediaScanTriggerJob	method	public boolean onStopJob(JobParameters jobParameters)
+com.android.providers.downloads.MediaScanTriggerJob	method	public static void schedule(Context context)
+com.android.providers.downloads.MediaStoreDownloadsHelper	method	public static String getDocIdForMediaStoreDownload(long j, boolean z)
+com.android.providers.downloads.MediaStoreDownloadsHelper	method	public static String getMediaStoreIdString(String str)
+com.android.providers.downloads.MediaStoreDownloadsHelper	method	public static Uri getMediaStoreUri(String str)
+com.android.providers.downloads.MediaStoreDownloadsHelper	method	public static boolean isMediaStoreDownload(String str)
+com.android.providers.downloads.MediaStoreDownloadsHelper	method	public static boolean isMediaStoreDownloadDir(String str)
+com.android.providers.downloads.MediaStoreDownloadsHelper	method	public static long getMediaStoreId(String str)
+com.android.providers.downloads.MetricsRecorder	field	private MetricsObject blackhole;
+com.android.providers.downloads.MetricsRecorder	field	private static AmazonMinerva minervaClient;
+com.android.providers.downloads.MetricsRecorder	field	private static final boolean LOGV;
+com.android.providers.downloads.MetricsRecorder	field	public static MetricsRecorder recorder;
+com.android.providers.downloads.MetricsRecorder	field	static final String METADATA;
+com.android.providers.downloads.MetricsRecorder	method	public MetricsObject loadFromDb(long j, byte[] bArr)
+com.android.providers.downloads.MetricsRecorder	method	public byte[] normalizeForDb(MetricsObject metricsObject)
+com.android.providers.downloads.MetricsRecorder	method	public static void logADMArcusKdm(String str)
+com.android.providers.downloads.MetricsRecorder	method	public static void logDownloadResult(String str, int i, DownloadInfo downloadInfo)
+com.android.providers.downloads.MetricsRecorder	method	public static void logDownloadResultKdm(String str, int i, DownloadInfo downloadInfo)
+com.android.providers.downloads.MetricsRecorder	method	public static void logDownloadResultMinerva(String str, int i, DownloadInfo downloadInfo)
+com.android.providers.downloads.MetricsRecorder	method	public static void logEnqueuedDownload(String str, DownloadInfo downloadInfo)
+com.android.providers.downloads.MetricsRecorder	method	public static void logEnqueuedDownloadKdm(String str, DownloadInfo downloadInfo)
+com.android.providers.downloads.MetricsRecorder	method	public static void logEnqueuedDownloadMinerva(String str, DownloadInfo downloadInfo)
+com.android.providers.downloads.MetricsRecorder	method	static int getTranslatedTotalTime(long j)
+com.android.providers.downloads.MetricsRecorder	method	static void addCommonMetricsKdm(KdmEvent kdmEvent, String str, DownloadInfo downloadInfo)
+com.android.providers.downloads.MetricsRecorder	method	static void addCommonMetricsMinerva(MetricEvent metricEvent, String str, DownloadInfo downloadInfo)
+com.android.providers.downloads.MetricsRecorder	method	static void addMinervaPredefined(MetricEvent metricEvent)
+com.android.providers.downloads.MetricsRecorder	method	static void logMetricsEvent(KdmEvent kdmEvent)
+com.android.providers.downloads.MetricsRecorder$MetricsObject	field	public boolean empty;
+com.android.providers.downloads.MetricsRecorder$MetricsObject	field	public boolean isDirty;
+com.android.providers.downloads.MetricsRecorder$MetricsObject	method	public Bundle toBundle(DownloadInfo downloadInfo)
+com.android.providers.downloads.MetricsRecorder$MetricsObject	method	public void denormalize(DataInputStream dataInputStream) throws IOException
+com.android.providers.downloads.MetricsRecorder$MetricsObject	method	public void normalize(DataOutputStream dataOutputStream) throws IOException
+com.android.providers.downloads.MetricsRecorder$MetricsObject	method	public void resetTotalRunningTime()
+com.android.providers.downloads.MetricsRecorder$MetricsObject	method	public void setInitValue(Long l, int i, int i2, byte b)
+com.android.providers.downloads.MetricsRecorder$MetricsObject	method	public void updateD(byte b, byte b2, long j, long j2, String str, long j3)
+com.android.providers.downloads.MetricsRecorder$MetricsObject$DbStore	field	public Long enqueueTimeMilliSec;
+com.android.providers.downloads.MetricsRecorder$MetricsObject$DbStore	field	public byte httpErrors;
+com.android.providers.downloads.MetricsRecorder$MetricsObject$DbStore	field	public byte isMeteredNetwork;
+com.android.providers.downloads.MetricsRecorder$MetricsObject$DbStore	field	public byte totalAttempts;
+com.android.providers.downloads.MetricsRecorder$MetricsObject$DbStore	field	public int appStandbyBucket;
+com.android.providers.downloads.MetricsRecorder$MetricsObject$DbStore	field	public int hectoBytesInMobile;
+com.android.providers.downloads.MetricsRecorder$MetricsObject$DbStore	field	public int runningTimeSec;
+com.android.providers.downloads.MetricsRecorder$MetricsObject$DbStore	field	public int uidImportance;
+com.android.providers.downloads.MetricsRecorder$MetricsObject$MemStore	field	public String domainName;
+com.android.providers.downloads.MetricsRecorder$MetricsObject$MemStore	field	public long mSpeed;
+com.android.providers.downloads.MultithreadConfigHelper	field	private boolean mIsSmallSizeAllowed;
+com.android.providers.downloads.MultithreadConfigHelper	field	private boolean mMultithreadAllEnabled;
+com.android.providers.downloads.MultithreadConfigHelper	field	private boolean mMultithreadDebug;
+com.android.providers.downloads.MultithreadConfigHelper	field	private boolean mMultithreadEnabled;
+com.android.providers.downloads.MultithreadConfigHelper	field	private int mMultithreadBufferSize;
+com.android.providers.downloads.MultithreadConfigHelper	field	private int mMultithreadThreadNum;
+com.android.providers.downloads.MultithreadConfigHelper	field	private int mMultithreadThreadPrior;
+com.android.providers.downloads.MultithreadConfigHelper	field	private static final MultithreadConfigHelper mInstance;
+com.android.providers.downloads.MultithreadConfigHelper	method	private String transformConfigString(String str)
+com.android.providers.downloads.MultithreadConfigHelper	method	private void tryLoadADMRemoteConfigAndReportMetrics()
+com.android.providers.downloads.MultithreadConfigHelper	method	public boolean getMultithreadAllEnabled()
+com.android.providers.downloads.MultithreadConfigHelper	method	public boolean getMultithreadEnabled()
+com.android.providers.downloads.MultithreadConfigHelper	method	public boolean isSmallSizeAllowed()
+com.android.providers.downloads.MultithreadConfigHelper	method	public int getMultithreadBufferSize()
+com.android.providers.downloads.MultithreadConfigHelper	method	public int getMultithreadThreadNum()
+com.android.providers.downloads.MultithreadConfigHelper	method	public int getMultithreadThreadPrior()
+com.android.providers.downloads.MultithreadConfigHelper	method	public void loadRemoteConfig(Context context)
+com.android.providers.downloads.MultithreadConfigHelper	method	public void registerReceiver(BroadcastReceiver broadcastReceiver, Context context)
+com.android.providers.downloads.MultithreadConfigHelper	method	public void setRemoteConfig(Context context, Intent intent)
+com.android.providers.downloads.MultithreadConfigHelper	method	static synchronized MultithreadConfigHelper getInstance()
+com.android.providers.downloads.MultithreadConfigHelper	method	synchronized ArcusFwkManager configManager(Context context)
+com.android.providers.downloads.OpenHelper	method	private static File getCursorFile(Cursor cursor, String str)
+com.android.providers.downloads.OpenHelper	method	private static Intent buildViewIntent(Context context, long j)
+com.android.providers.downloads.OpenHelper	method	private static String getCursorString(Cursor cursor, String str)
+com.android.providers.downloads.OpenHelper	method	private static Uri getCursorUri(Cursor cursor, String str)
+com.android.providers.downloads.OpenHelper	method	private static Uri getRefererUri(Context context, long j)
+com.android.providers.downloads.OpenHelper	method	private static int getOriginatingUid(Context context, long j)
+com.android.providers.downloads.OpenHelper	method	public static boolean startViewIntent(Context context, Intent intent)
+com.android.providers.downloads.OpenHelper	method	public static boolean startViewIntent(Context context, long j, int i)
+com.android.providers.downloads.R$mipmap	field	public static final int ic_launcher_download;
+com.android.providers.downloads.R$plurals	field	public static final int notif_summary_active;
+com.android.providers.downloads.R$plurals	field	public static final int notif_summary_waiting;
+com.android.providers.downloads.R$string	field	public static final int all_downloads_text;
+com.android.providers.downloads.R$string	field	public static final int app_label;
+com.android.providers.downloads.R$string	field	public static final int button_cancel_download;
+com.android.providers.downloads.R$string	field	public static final int button_queue_for_wifi;
+com.android.providers.downloads.R$string	field	public static final int button_start_now;
+com.android.providers.downloads.R$string	field	public static final int cancel_button;
+com.android.providers.downloads.R$string	field	public static final int completed;
+com.android.providers.downloads.R$string	field	public static final int download_complete_text;
+com.android.providers.downloads.R$string	field	public static final int download_error;
+com.android.providers.downloads.R$string	field	public static final int download_failed_restart_text;
+com.android.providers.downloads.R$string	field	public static final int download_failed_text;
+com.android.providers.downloads.R$string	field	public static final int download_flag_waiting_for_wan;
+com.android.providers.downloads.R$string	field	public static final int download_flag_waiting_for_wifi;
+com.android.providers.downloads.R$string	field	public static final int download_low_storage_error;
+com.android.providers.downloads.R$string	field	public static final int download_no_application_title;
+com.android.providers.downloads.R$string	field	public static final int download_paused_at_text;
+com.android.providers.downloads.R$string	field	public static final int download_paused_text;
+com.android.providers.downloads.R$string	field	public static final int download_percent;
+com.android.providers.downloads.R$string	field	public static final int download_queue_text;
+com.android.providers.downloads.R$string	field	public static final int download_queued;
+com.android.providers.downloads.R$string	field	public static final int download_queued_text;
+com.android.providers.downloads.R$string	field	public static final int download_remaining;
+com.android.providers.downloads.R$string	field	public static final int download_running;
+com.android.providers.downloads.R$string	field	public static final int download_running_percent;
+com.android.providers.downloads.R$string	field	public static final int download_storage_settings;
+com.android.providers.downloads.R$string	field	public static final int download_unknown_title;
+com.android.providers.downloads.R$string	field	public static final int download_waiting_for_network;
+com.android.providers.downloads.R$string	field	public static final int download_waiting_for_wifi;
+com.android.providers.downloads.R$string	field	public static final int download_waiting_to_retry;
+com.android.providers.downloads.R$string	field	public static final int downloading;
+com.android.providers.downloads.R$string	field	public static final int downloading_text;
+com.android.providers.downloads.R$string	field	public static final int failed;
+com.android.providers.downloads.R$string	field	public static final int notification_download_complete;
+com.android.providers.downloads.R$string	field	public static final int notification_download_failed;
+com.android.providers.downloads.R$string	field	public static final int notification_filename_extras;
+com.android.providers.downloads.R$string	field	public static final int notification_filename_separator;
+com.android.providers.downloads.R$string	field	public static final int notification_need_wifi_for_size;
+com.android.providers.downloads.R$string	field	public static final int notification_paused_in_background;
+com.android.providers.downloads.R$string	field	public static final int pause_button;
+com.android.providers.downloads.R$string	field	public static final int paused;
+com.android.providers.downloads.R$string	field	public static final int permdesc_accessAllDownloads;
+com.android.providers.downloads.R$string	field	public static final int permdesc_downloadAuthRequest;
+com.android.providers.downloads.R$string	field	public static final int permdesc_downloadCacheNonPurgeable;
+com.android.providers.downloads.R$string	field	public static final int permdesc_downloadCallbackSvc;
+com.android.providers.downloads.R$string	field	public static final int permdesc_downloadClientConnect;
+com.android.providers.downloads.R$string	field	public static final int permdesc_downloadCompletedIntent;
+com.android.providers.downloads.R$string	field	public static final int permdesc_downloadManager;
+com.android.providers.downloads.R$string	field	public static final int permdesc_downloadManagerAdvanced;
+com.android.providers.downloads.R$string	field	public static final int permdesc_downloadWithoutNotification;
+com.android.providers.downloads.R$string	field	public static final int permlab_accessAllDownloads;
+com.android.providers.downloads.R$string	field	public static final int permlab_downloadAuthRequest;
+com.android.providers.downloads.R$string	field	public static final int permlab_downloadCacheNonPurgeable;
+com.android.providers.downloads.R$string	field	public static final int permlab_downloadCallbackSvc;
+com.android.providers.downloads.R$string	field	public static final int permlab_downloadClientConnect;
+com.android.providers.downloads.R$string	field	public static final int permlab_downloadCompletedIntent;
+com.android.providers.downloads.R$string	field	public static final int permlab_downloadManager;
+com.android.providers.downloads.R$string	field	public static final int permlab_downloadManagerAdvanced;
+com.android.providers.downloads.R$string	field	public static final int permlab_downloadWithoutNotification;
+com.android.providers.downloads.R$string	field	public static final int queued;
+com.android.providers.downloads.R$string	field	public static final int resume_button;
+com.android.providers.downloads.R$string	field	public static final int root_downloads;
+com.android.providers.downloads.R$string	field	public static final int storage_description;
+com.android.providers.downloads.R$string	field	public static final int view_all_downloads;
+com.android.providers.downloads.R$string	field	public static final int wifi_recommended_body;
+com.android.providers.downloads.R$string	field	public static final int wifi_recommended_title;
+com.android.providers.downloads.R$string	field	public static final int wifi_required_body;
+com.android.providers.downloads.R$string	field	public static final int wifi_required_title;
+com.android.providers.downloads.R$style	field	public static final int Theme_Translucent;
+com.android.providers.downloads.RawDocumentsHelper	method	public static String getAbsoluteFilePath(String str)
+com.android.providers.downloads.RawDocumentsHelper	method	public static String getDocIdForFile(File file)
+com.android.providers.downloads.RawDocumentsHelper	method	public static boolean isRawDocId(String str)
+com.android.providers.downloads.RealSystemFacade	field	private Context mContext;
+com.android.providers.downloads.RealSystemFacade	method	public Network getNetwork(JobParameters jobParameters)
+com.android.providers.downloads.RealSystemFacade	method	public NetworkCapabilities getNetworkCapabilities(Network network)
+com.android.providers.downloads.RealSystemFacade	method	public NetworkInfo getNetworkInfo(Network network, int i, boolean z)
+com.android.providers.downloads.RealSystemFacade	method	public RealSystemFacade(Context context)
+com.android.providers.downloads.RealSystemFacade	method	public SSLContext getSSLContextForPackage(Context context, String str) throws GeneralSecurityException
+com.android.providers.downloads.RealSystemFacade	method	public boolean isActiveNetworkMetered()
+com.android.providers.downloads.RealSystemFacade	method	public boolean isCleartextTrafficPermitted(String str, String str2)
+com.android.providers.downloads.RealSystemFacade	method	public boolean isDeviceCharging()
+com.android.providers.downloads.RealSystemFacade	method	public boolean userOwnsPackage(int i, String str) throws PackageManager.NameNotFoundException
+com.android.providers.downloads.RealSystemFacade	method	public byte checkIfActiveNetworkMeteredForUid(int i)
+com.android.providers.downloads.RealSystemFacade	method	public int getAppStandByForPackage(String str)
+com.android.providers.downloads.RealSystemFacade	method	public int getUidImportance(int i)
+com.android.providers.downloads.RealSystemFacade	method	public long currentTimeMillis()
+com.android.providers.downloads.RealSystemFacade	method	public long getMaxBytesOverMobile()
+com.android.providers.downloads.RealSystemFacade	method	public long getRecommendedMaxBytesOverMobile()
+com.android.providers.downloads.RealSystemFacade	method	public void sendBroadcast(Intent intent)
+com.android.providers.downloads.RealSystemFacade	method	public void sendBroadcast(Intent intent, String str, Bundle bundle)
+com.android.providers.downloads.StateLog	field	private static StateLog sInstance;
+com.android.providers.downloads.StateLog	method	private void init(Context context)
+com.android.providers.downloads.StateLog	method	static synchronized StateLog getInstance(Context context)
+com.android.providers.downloads.StopRequestException	field	private final int mFinalStatus;
+com.android.providers.downloads.StopRequestException	method	public StopRequestException(int i, String str)
+com.android.providers.downloads.StopRequestException	method	public StopRequestException(int i, String str, Throwable th)
+com.android.providers.downloads.StopRequestException	method	public StopRequestException(int i, Throwable th)
+com.android.providers.downloads.StopRequestException	method	public int getFinalStatus()
+com.android.providers.downloads.StopRequestException	method	public static StopRequestException throwUnhandledHttpError(int i, String str) throws StopRequestException
+com.android.providers.downloads.StorageUtils	method	public static void switchPermissionsIfNeeded(String str, int i) throws StopRequestException
+com.android.providers.downloads.StorageUtils	method	static List<ConcreteFile> listFilesRecursive(File file, String str, int i)
+com.android.providers.downloads.StorageUtils$ConcreteFile	field	public final File file;
+com.android.providers.downloads.StorageUtils$ConcreteFile	field	public final StructStat stat;
+com.android.providers.downloads.StorageUtils$ConcreteFile	method	public ConcreteFile(File file) throws ErrnoException
+com.android.providers.downloads.StorageUtils$ConcreteFile	method	public boolean equals(Object obj)
+com.android.providers.downloads.StorageUtils$ConcreteFile	method	public int hashCode()

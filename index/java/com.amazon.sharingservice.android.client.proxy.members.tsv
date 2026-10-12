@@ -1,0 +1,599 @@
+class	kind	declaration
+com.amazon.sharingservice.android.client.core.lib.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.sharingservice.android.client.core.lib.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.sharingservice.android.client.core.lib.BuildConfig	field	public static final String FLAVOR;
+com.amazon.sharingservice.android.client.core.lib.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.sharingservice.android.client.core.lib.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.sharingservice.android.client.core.lib.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.sharingservice.android.client.core.lib.R	method	private R()
+com.amazon.sharingservice.android.client.core.lib.R$string	field	public static final int app_name;
+com.amazon.sharingservice.android.client.core.lib.R$string	method	private string()
+com.amazon.sharingservice.android.client.core.lib.R$style	field	public static final int AppBaseTheme;
+com.amazon.sharingservice.android.client.core.lib.R$style	field	public static final int AppTheme;
+com.amazon.sharingservice.android.client.core.lib.R$style	method	private style()
+com.amazon.sharingservice.android.client.core.lib.aidl.ISharingServiceAndroidProxy$Stub	field	private static final String DESCRIPTOR;
+com.amazon.sharingservice.android.client.core.lib.aidl.ISharingServiceAndroidProxy$Stub	field	static final int TRANSACTION_checkDeviceEnabledForSharing;
+com.amazon.sharingservice.android.client.core.lib.aidl.ISharingServiceAndroidProxy$Stub	field	static final int TRANSACTION_checkPaymentInstrumentsEligibleForVideoSharing;
+com.amazon.sharingservice.android.client.core.lib.aidl.ISharingServiceAndroidProxy$Stub	field	static final int TRANSACTION_getActivePaymentInstrumentsForHousehold;
+com.amazon.sharingservice.android.client.core.lib.aidl.ISharingServiceAndroidProxy$Stub	field	static final int TRANSACTION_getContentCountsForCustomer;
+com.amazon.sharingservice.android.client.core.lib.aidl.ISharingServiceAndroidProxy$Stub	field	static final int TRANSACTION_getDevicesForCustomer;
+com.amazon.sharingservice.android.client.core.lib.aidl.ISharingServiceAndroidProxy$Stub	field	static final int TRANSACTION_getSharingMaps;
+com.amazon.sharingservice.android.client.core.lib.aidl.ISharingServiceAndroidProxy$Stub	field	static final int TRANSACTION_setDevicesToDisplaySharedContent;
+com.amazon.sharingservice.android.client.core.lib.aidl.ISharingServiceAndroidProxy$Stub	field	static final int TRANSACTION_setGatedResources;
+com.amazon.sharingservice.android.client.core.lib.aidl.ISharingServiceAndroidProxy$Stub	field	static final int TRANSACTION_setOneClickPaymentInstrumentForHousehold;
+com.amazon.sharingservice.android.client.core.lib.aidl.ISharingServiceAndroidProxy$Stub	field	static final int TRANSACTION_setSharingMaps;
+com.amazon.sharingservice.android.client.core.lib.aidl.ISharingServiceAndroidProxy$Stub	field	static final int TRANSACTION_sharePaymentInstrument;
+com.amazon.sharingservice.android.client.core.lib.aidl.ISharingServiceAndroidProxy$Stub	method	public IBinder asBinder()
+com.amazon.sharingservice.android.client.core.lib.aidl.ISharingServiceAndroidProxy$Stub	method	public Stub()
+com.amazon.sharingservice.android.client.core.lib.aidl.ISharingServiceAndroidProxy$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.ISharingServiceAndroidProxy$Stub	method	public static ISharingServiceAndroidProxy asInterface(IBinder iBinder)
+com.amazon.sharingservice.android.client.core.lib.aidl.ISharingServiceAndroidProxy$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.sharingservice.android.client.core.lib.aidl.ISharingServiceAndroidProxy$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.sharingservice.android.client.core.lib.aidl.ISharingServiceAndroidProxy$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.sharingservice.android.client.core.lib.aidl.ISharingServiceAndroidProxy$Stub$Proxy	method	public void checkDeviceEnabledForSharing(ICheckDeviceEnabledForSharingCallback iCheckDeviceEnabledForSharingCallback) throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.ISharingServiceAndroidProxy$Stub$Proxy	method	public void checkPaymentInstrumentsEligibleForVideoSharing(String str, ICheckPaymentInstrumentsEligibleForVideoSharingCallback iCheckPaymentInstrumentsEligibleForVideoSharingCallback) throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.ISharingServiceAndroidProxy$Stub$Proxy	method	public void getActivePaymentInstrumentsForHousehold(String str, IGetActivePaymentInstrumentsCallback iGetActivePaymentInstrumentsCallback) throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.ISharingServiceAndroidProxy$Stub$Proxy	method	public void getContentCountsForCustomer(String str, IGetContentCountsCallback iGetContentCountsCallback) throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.ISharingServiceAndroidProxy$Stub$Proxy	method	public void getDevicesForCustomer(String str, IGetDevicesForCustomerCallback iGetDevicesForCustomerCallback) throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.ISharingServiceAndroidProxy$Stub$Proxy	method	public void getSharingMaps(String str, IGetSharingMapsCallback iGetSharingMapsCallback) throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.ISharingServiceAndroidProxy$Stub$Proxy	method	public void setDevicesToDisplaySharedContent(String str, List<Device> list, ICallback iCallback) throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.ISharingServiceAndroidProxy$Stub$Proxy	method	public void setGatedResources(String str, String str2, List<ResourcesGatingMap> list, ICallback iCallback) throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.ISharingServiceAndroidProxy$Stub$Proxy	method	public void setOneClickPaymentInstrumentForHousehold(String str, String str2, ISetOneClickPaymentInstrumentForHouseholdCallback iSetOneClickPaymentInstrumentForHouseholdCallback) throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.ISharingServiceAndroidProxy$Stub$Proxy	method	public void setSharingMaps(String str, List<SharingMap> list, ICallback iCallback) throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.ISharingServiceAndroidProxy$Stub$Proxy	method	public void sharePaymentInstrument(String str, String str2, String str3, PaymentInstrument paymentInstrument, ICallback iCallback) throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICallback$Stub	field	private static final String DESCRIPTOR;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICallback$Stub	field	static final int TRANSACTION_onResult;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICallback$Stub	field	static final int TRANSACTION_onTimeOut;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICallback$Stub	method	public IBinder asBinder()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICallback$Stub	method	public Stub()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICallback$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICallback$Stub	method	public static ICallback asInterface(IBinder iBinder)
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICallback$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICallback$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICallback$Stub$Proxy	method	public void onResult(Response response) throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICallback$Stub$Proxy	method	public void onTimeOut() throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICheckDeviceEnabledForSharingCallback$Stub	field	private static final String DESCRIPTOR;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICheckDeviceEnabledForSharingCallback$Stub	field	static final int TRANSACTION_onResult;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICheckDeviceEnabledForSharingCallback$Stub	field	static final int TRANSACTION_onTimeOut;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICheckDeviceEnabledForSharingCallback$Stub	method	public IBinder asBinder()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICheckDeviceEnabledForSharingCallback$Stub	method	public Stub()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICheckDeviceEnabledForSharingCallback$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICheckDeviceEnabledForSharingCallback$Stub	method	public static ICheckDeviceEnabledForSharingCallback asInterface(IBinder iBinder)
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICheckDeviceEnabledForSharingCallback$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICheckDeviceEnabledForSharingCallback$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICheckDeviceEnabledForSharingCallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICheckDeviceEnabledForSharingCallback$Stub$Proxy	method	public void onResult(CheckDeviceEnabledForSharingResponse checkDeviceEnabledForSharingResponse) throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICheckDeviceEnabledForSharingCallback$Stub$Proxy	method	public void onTimeOut() throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICheckPaymentInstrumentsEligibleForVideoSharingCallback$Stub	field	private static final String DESCRIPTOR;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICheckPaymentInstrumentsEligibleForVideoSharingCallback$Stub	field	static final int TRANSACTION_onResult;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICheckPaymentInstrumentsEligibleForVideoSharingCallback$Stub	field	static final int TRANSACTION_onTimeOut;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICheckPaymentInstrumentsEligibleForVideoSharingCallback$Stub	method	public IBinder asBinder()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICheckPaymentInstrumentsEligibleForVideoSharingCallback$Stub	method	public Stub()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICheckPaymentInstrumentsEligibleForVideoSharingCallback$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICheckPaymentInstrumentsEligibleForVideoSharingCallback$Stub	method	public static ICheckPaymentInstrumentsEligibleForVideoSharingCallback asInterface(IBinder iBinder)
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICheckPaymentInstrumentsEligibleForVideoSharingCallback$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICheckPaymentInstrumentsEligibleForVideoSharingCallback$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICheckPaymentInstrumentsEligibleForVideoSharingCallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICheckPaymentInstrumentsEligibleForVideoSharingCallback$Stub$Proxy	method	public void onResult(CheckPaymentInstrumentsEligibleForVideoSharingResponse checkPaymentInstrumentsEligibleForVideoSharingResponse) throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ICheckPaymentInstrumentsEligibleForVideoSharingCallback$Stub$Proxy	method	public void onTimeOut() throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetActivePaymentInstrumentsCallback$Stub	field	private static final String DESCRIPTOR;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetActivePaymentInstrumentsCallback$Stub	field	static final int TRANSACTION_onResult;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetActivePaymentInstrumentsCallback$Stub	field	static final int TRANSACTION_onTimeOut;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetActivePaymentInstrumentsCallback$Stub	method	public IBinder asBinder()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetActivePaymentInstrumentsCallback$Stub	method	public Stub()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetActivePaymentInstrumentsCallback$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetActivePaymentInstrumentsCallback$Stub	method	public static IGetActivePaymentInstrumentsCallback asInterface(IBinder iBinder)
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetActivePaymentInstrumentsCallback$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetActivePaymentInstrumentsCallback$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetActivePaymentInstrumentsCallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetActivePaymentInstrumentsCallback$Stub$Proxy	method	public void onResult(GetActivePaymentInstrumentsResponse getActivePaymentInstrumentsResponse) throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetActivePaymentInstrumentsCallback$Stub$Proxy	method	public void onTimeOut() throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetContentCountsCallback$Stub	field	private static final String DESCRIPTOR;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetContentCountsCallback$Stub	field	static final int TRANSACTION_onResult;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetContentCountsCallback$Stub	field	static final int TRANSACTION_onTimeOut;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetContentCountsCallback$Stub	method	public IBinder asBinder()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetContentCountsCallback$Stub	method	public Stub()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetContentCountsCallback$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetContentCountsCallback$Stub	method	public static IGetContentCountsCallback asInterface(IBinder iBinder)
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetContentCountsCallback$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetContentCountsCallback$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetContentCountsCallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetContentCountsCallback$Stub$Proxy	method	public void onResult(GetContentCountsResponse getContentCountsResponse) throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetContentCountsCallback$Stub$Proxy	method	public void onTimeOut() throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetDevicesForCustomerCallback$Stub	field	private static final String DESCRIPTOR;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetDevicesForCustomerCallback$Stub	field	static final int TRANSACTION_onResult;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetDevicesForCustomerCallback$Stub	field	static final int TRANSACTION_onTimeOut;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetDevicesForCustomerCallback$Stub	method	public IBinder asBinder()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetDevicesForCustomerCallback$Stub	method	public Stub()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetDevicesForCustomerCallback$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetDevicesForCustomerCallback$Stub	method	public static IGetDevicesForCustomerCallback asInterface(IBinder iBinder)
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetDevicesForCustomerCallback$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetDevicesForCustomerCallback$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetDevicesForCustomerCallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetDevicesForCustomerCallback$Stub$Proxy	method	public void onResult(GetDevicesForCustomerResponse getDevicesForCustomerResponse) throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetDevicesForCustomerCallback$Stub$Proxy	method	public void onTimeOut() throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetSharingMapsCallback$Stub	field	private static final String DESCRIPTOR;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetSharingMapsCallback$Stub	field	static final int TRANSACTION_onResult;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetSharingMapsCallback$Stub	field	static final int TRANSACTION_onTimeOut;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetSharingMapsCallback$Stub	method	public IBinder asBinder()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetSharingMapsCallback$Stub	method	public Stub()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetSharingMapsCallback$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetSharingMapsCallback$Stub	method	public static IGetSharingMapsCallback asInterface(IBinder iBinder)
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetSharingMapsCallback$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetSharingMapsCallback$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetSharingMapsCallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetSharingMapsCallback$Stub$Proxy	method	public void onResult(GetSharingMapsResponse getSharingMapsResponse) throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.IGetSharingMapsCallback$Stub$Proxy	method	public void onTimeOut() throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ISetOneClickPaymentInstrumentForHouseholdCallback$Stub	field	private static final String DESCRIPTOR;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ISetOneClickPaymentInstrumentForHouseholdCallback$Stub	field	static final int TRANSACTION_onResult;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ISetOneClickPaymentInstrumentForHouseholdCallback$Stub	field	static final int TRANSACTION_onTimeOut;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ISetOneClickPaymentInstrumentForHouseholdCallback$Stub	method	public IBinder asBinder()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ISetOneClickPaymentInstrumentForHouseholdCallback$Stub	method	public Stub()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ISetOneClickPaymentInstrumentForHouseholdCallback$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ISetOneClickPaymentInstrumentForHouseholdCallback$Stub	method	public static ISetOneClickPaymentInstrumentForHouseholdCallback asInterface(IBinder iBinder)
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ISetOneClickPaymentInstrumentForHouseholdCallback$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ISetOneClickPaymentInstrumentForHouseholdCallback$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ISetOneClickPaymentInstrumentForHouseholdCallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ISetOneClickPaymentInstrumentForHouseholdCallback$Stub$Proxy	method	public void onResult(SetOneClickPaymentInstrumentForHouseholdResponse setOneClickPaymentInstrumentForHouseholdResponse) throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.callback.ISetOneClickPaymentInstrumentForHouseholdCallback$Stub$Proxy	method	public void onTimeOut() throws RemoteException
+com.amazon.sharingservice.android.client.core.lib.aidl.response.CheckDeviceEnabledForSharingResponse	field	private boolean mIsDeviceEnabledForSharing;
+com.amazon.sharingservice.android.client.core.lib.aidl.response.CheckDeviceEnabledForSharingResponse	method	public CheckDeviceEnabledForSharingResponse()
+com.amazon.sharingservice.android.client.core.lib.aidl.response.CheckDeviceEnabledForSharingResponse	method	public CheckDeviceEnabledForSharingResponse(Parcel parcel)
+com.amazon.sharingservice.android.client.core.lib.aidl.response.CheckDeviceEnabledForSharingResponse	method	public boolean isDeviceEnabledForSharing()
+com.amazon.sharingservice.android.client.core.lib.aidl.response.CheckDeviceEnabledForSharingResponse	method	public void setDeviceEnabledForSharing(boolean z)
+com.amazon.sharingservice.android.client.core.lib.aidl.response.CheckDeviceEnabledForSharingResponse	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.sharingservice.android.client.core.lib.aidl.response.CheckPaymentInstrumentsEligibleForVideoSharingResponse	field	private List<PaymentInstrumentCopyAction> mPaymentInstrumentCopyActionList;
+com.amazon.sharingservice.android.client.core.lib.aidl.response.CheckPaymentInstrumentsEligibleForVideoSharingResponse	field	private VideoSharingCreditCardCheckReturnCode mReturnCode;
+com.amazon.sharingservice.android.client.core.lib.aidl.response.CheckPaymentInstrumentsEligibleForVideoSharingResponse	method	public CheckPaymentInstrumentsEligibleForVideoSharingResponse()
+com.amazon.sharingservice.android.client.core.lib.aidl.response.CheckPaymentInstrumentsEligibleForVideoSharingResponse	method	public CheckPaymentInstrumentsEligibleForVideoSharingResponse(Parcel parcel)
+com.amazon.sharingservice.android.client.core.lib.aidl.response.CheckPaymentInstrumentsEligibleForVideoSharingResponse	method	public List<PaymentInstrumentCopyAction> getPaymentInstrumentCopyActionList()
+com.amazon.sharingservice.android.client.core.lib.aidl.response.CheckPaymentInstrumentsEligibleForVideoSharingResponse	method	public VideoSharingCreditCardCheckReturnCode getReturnCode()
+com.amazon.sharingservice.android.client.core.lib.aidl.response.CheckPaymentInstrumentsEligibleForVideoSharingResponse	method	public void setPaymentInstrumentCopyActionList(List<PaymentInstrumentCopyAction> list)
+com.amazon.sharingservice.android.client.core.lib.aidl.response.CheckPaymentInstrumentsEligibleForVideoSharingResponse	method	public void setReturnCode(VideoSharingCreditCardCheckReturnCode videoSharingCreditCardCheckReturnCode)
+com.amazon.sharingservice.android.client.core.lib.aidl.response.CheckPaymentInstrumentsEligibleForVideoSharingResponse	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.sharingservice.android.client.core.lib.aidl.response.GetActivePaymentInstrumentsResponse	field	private List<PaymentInstrument> mPaymentInstruments;
+com.amazon.sharingservice.android.client.core.lib.aidl.response.GetActivePaymentInstrumentsResponse	field	private String mOwnerDirectedId;
+com.amazon.sharingservice.android.client.core.lib.aidl.response.GetActivePaymentInstrumentsResponse	method	public GetActivePaymentInstrumentsResponse()
+com.amazon.sharingservice.android.client.core.lib.aidl.response.GetActivePaymentInstrumentsResponse	method	public GetActivePaymentInstrumentsResponse(Parcel parcel)
+com.amazon.sharingservice.android.client.core.lib.aidl.response.GetActivePaymentInstrumentsResponse	method	public List<PaymentInstrument> getPaymentInstruments()
+com.amazon.sharingservice.android.client.core.lib.aidl.response.GetActivePaymentInstrumentsResponse	method	public String getOwnerDirectedId()
+com.amazon.sharingservice.android.client.core.lib.aidl.response.GetActivePaymentInstrumentsResponse	method	public void setPaymentInstruments(List<PaymentInstrument> list)
+com.amazon.sharingservice.android.client.core.lib.aidl.response.GetActivePaymentInstrumentsResponse	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.sharingservice.android.client.core.lib.aidl.response.GetContentCountsResponse	field	private Map<ContentType, Integer> mContentCounts;
+com.amazon.sharingservice.android.client.core.lib.aidl.response.GetContentCountsResponse	method	public GetContentCountsResponse()
+com.amazon.sharingservice.android.client.core.lib.aidl.response.GetContentCountsResponse	method	public GetContentCountsResponse(Parcel parcel)
+com.amazon.sharingservice.android.client.core.lib.aidl.response.GetContentCountsResponse	method	public Map<ContentType, Integer> getContentCounts()
+com.amazon.sharingservice.android.client.core.lib.aidl.response.GetContentCountsResponse	method	public void setContenCounts(Map<ContentType, Integer> map)
+com.amazon.sharingservice.android.client.core.lib.aidl.response.GetContentCountsResponse	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.sharingservice.android.client.core.lib.aidl.response.GetDevicesForCustomerResponse	field	private List<Device> mDevices;
+com.amazon.sharingservice.android.client.core.lib.aidl.response.GetDevicesForCustomerResponse	field	private static final String TAG;
+com.amazon.sharingservice.android.client.core.lib.aidl.response.GetDevicesForCustomerResponse	method	public GetDevicesForCustomerResponse()
+com.amazon.sharingservice.android.client.core.lib.aidl.response.GetDevicesForCustomerResponse	method	public GetDevicesForCustomerResponse(Parcel parcel)
+com.amazon.sharingservice.android.client.core.lib.aidl.response.GetDevicesForCustomerResponse	method	public List<Device> getDevices()
+com.amazon.sharingservice.android.client.core.lib.aidl.response.GetDevicesForCustomerResponse	method	public void setDevices(List<Device> list)
+com.amazon.sharingservice.android.client.core.lib.aidl.response.GetDevicesForCustomerResponse	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.sharingservice.android.client.core.lib.aidl.response.GetSharingMapsResponse	field	private List<SharingMap> mSharingMaps;
+com.amazon.sharingservice.android.client.core.lib.aidl.response.GetSharingMapsResponse	method	public GetSharingMapsResponse()
+com.amazon.sharingservice.android.client.core.lib.aidl.response.GetSharingMapsResponse	method	public GetSharingMapsResponse(Parcel parcel)
+com.amazon.sharingservice.android.client.core.lib.aidl.response.GetSharingMapsResponse	method	public List<SharingMap> getSharingMaps()
+com.amazon.sharingservice.android.client.core.lib.aidl.response.GetSharingMapsResponse	method	public void setSharingMaps(List<SharingMap> list)
+com.amazon.sharingservice.android.client.core.lib.aidl.response.GetSharingMapsResponse	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.sharingservice.android.client.core.lib.aidl.response.Response	field	private static final String KEY_ERROR_CODE;
+com.amazon.sharingservice.android.client.core.lib.aidl.response.Response	field	private static final String TAG;
+com.amazon.sharingservice.android.client.core.lib.aidl.response.Response	field	protected ErrorCode mErrorCode;
+com.amazon.sharingservice.android.client.core.lib.aidl.response.Response	field	protected String mErrorMessage;
+com.amazon.sharingservice.android.client.core.lib.aidl.response.Response	field	protected boolean mIsSucceeded;
+com.amazon.sharingservice.android.client.core.lib.aidl.response.Response	method	public ErrorCode getErrorCode()
+com.amazon.sharingservice.android.client.core.lib.aidl.response.Response	method	public Response()
+com.amazon.sharingservice.android.client.core.lib.aidl.response.Response	method	public Response(Parcel parcel)
+com.amazon.sharingservice.android.client.core.lib.aidl.response.Response	method	public String getErrorMessage()
+com.amazon.sharingservice.android.client.core.lib.aidl.response.Response	method	public boolean isSucceeded()
+com.amazon.sharingservice.android.client.core.lib.aidl.response.Response	method	public int describeContents()
+com.amazon.sharingservice.android.client.core.lib.aidl.response.Response	method	public void setFailed(ErrorCode errorCode, String str)
+com.amazon.sharingservice.android.client.core.lib.aidl.response.Response	method	public void setStatusFromJSONResponse(int i, JSONObject jSONObject)
+com.amazon.sharingservice.android.client.core.lib.aidl.response.Response	method	public void setSucceeded()
+com.amazon.sharingservice.android.client.core.lib.aidl.response.Response	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.sharingservice.android.client.core.lib.aidl.response.SetOneClickPaymentInstrumentForHouseholdResponse	field	private SetOneClickPaymentInstrumentReturnCode mReturnCode;
+com.amazon.sharingservice.android.client.core.lib.aidl.response.SetOneClickPaymentInstrumentForHouseholdResponse	method	public SetOneClickPaymentInstrumentForHouseholdResponse()
+com.amazon.sharingservice.android.client.core.lib.aidl.response.SetOneClickPaymentInstrumentForHouseholdResponse	method	public SetOneClickPaymentInstrumentForHouseholdResponse(Parcel parcel)
+com.amazon.sharingservice.android.client.core.lib.aidl.response.SetOneClickPaymentInstrumentForHouseholdResponse	method	public SetOneClickPaymentInstrumentReturnCode getReturnCode()
+com.amazon.sharingservice.android.client.core.lib.aidl.response.SetOneClickPaymentInstrumentForHouseholdResponse	method	public void setReturnCode(SetOneClickPaymentInstrumentReturnCode setOneClickPaymentInstrumentReturnCode)
+com.amazon.sharingservice.android.client.core.lib.aidl.response.SetOneClickPaymentInstrumentForHouseholdResponse	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.sharingservice.android.client.core.lib.config.SharingServiceHttpStatus	field	public static final int BAD_REQUEST;
+com.amazon.sharingservice.android.client.core.lib.config.SharingServiceHttpStatus	field	public static final int FAILURE;
+com.amazon.sharingservice.android.client.core.lib.config.SharingServiceHttpStatus	field	public static final int OK;
+com.amazon.sharingservice.android.client.core.lib.config.SharingServiceHttpStatus	field	public static final int UNAUTHORIZED;
+com.amazon.sharingservice.android.client.core.lib.config.SharingServiceHttpStatus	method	public static boolean isSucceeded(int i)
+com.amazon.sharingservice.android.client.core.lib.model.ContentType	field	private String mContentTypeKey;
+com.amazon.sharingservice.android.client.core.lib.model.ContentType	field	private static final String TAG;
+com.amazon.sharingservice.android.client.core.lib.model.ContentType	method	public String toString()
+com.amazon.sharingservice.android.client.core.lib.model.ContentType	method	public static ContentType getContentType(String str)
+com.amazon.sharingservice.android.client.core.lib.model.Device	field	private String mDeviceId;
+com.amazon.sharingservice.android.client.core.lib.model.Device	field	private String mDeviceName;
+com.amazon.sharingservice.android.client.core.lib.model.Device	field	private boolean mDisplaysSharedContent;
+com.amazon.sharingservice.android.client.core.lib.model.Device	method	public Device()
+com.amazon.sharingservice.android.client.core.lib.model.Device	method	public Device(Parcel parcel)
+com.amazon.sharingservice.android.client.core.lib.model.Device	method	public Device(String str, String str2)
+com.amazon.sharingservice.android.client.core.lib.model.Device	method	public String getDeviceId()
+com.amazon.sharingservice.android.client.core.lib.model.Device	method	public String getDeviceName()
+com.amazon.sharingservice.android.client.core.lib.model.Device	method	public boolean displaysSharedContent()
+com.amazon.sharingservice.android.client.core.lib.model.Device	method	public int describeContents()
+com.amazon.sharingservice.android.client.core.lib.model.Device	method	public int hashCode()
+com.amazon.sharingservice.android.client.core.lib.model.Device	method	public void setDeviceId(String str)
+com.amazon.sharingservice.android.client.core.lib.model.Device	method	public void setDeviceName(String str)
+com.amazon.sharingservice.android.client.core.lib.model.Device	method	public void setDisplaySharedContent(boolean z)
+com.amazon.sharingservice.android.client.core.lib.model.Device	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.sharingservice.android.client.core.lib.model.ErrorCode	field	private String mStringErrorCode;
+com.amazon.sharingservice.android.client.core.lib.model.ErrorCode	method	public String getStringErrorCode()
+com.amazon.sharingservice.android.client.core.lib.model.ErrorCode	method	public static ErrorCode fromString(String str)
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrument	field	private String mExpirationMonth;
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrument	field	private String mExpirationYear;
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrument	field	private String mId;
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrument	field	private String mInstrumentType;
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrument	field	private String mLastFourDigits;
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrument	field	private String mOwnerDirectedId;
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrument	method	public PaymentInstrument()
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrument	method	public PaymentInstrument(Parcel parcel)
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrument	method	public PaymentInstrument(String str, String str2, String str3, String str4, String str5, String str6)
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrument	method	public String getExpirationMonth()
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrument	method	public String getExpirationYear()
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrument	method	public String getId()
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrument	method	public String getLastFourDigits()
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrument	method	public String getOwnerDirectedId()
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrument	method	public String getType()
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrument	method	public int describeContents()
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrument	method	public void setExpirationMonth(String str)
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrument	method	public void setExpirationYear(String str)
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrument	method	public void setId(String str)
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrument	method	public void setLastFourDigits(String str)
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrument	method	public void setOwnerDirectedId(String str)
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrument	method	public void setType(String str)
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrument	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrumentCopyAction	field	private PaymentInstrument mPaymentInstrument;
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrumentCopyAction	field	private String mOwnerDirectedId;
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrumentCopyAction	field	private String mReceiverDirectedId;
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrumentCopyAction	method	public PaymentInstrument getPaymentInstrument()
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrumentCopyAction	method	public PaymentInstrumentCopyAction()
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrumentCopyAction	method	public PaymentInstrumentCopyAction(Parcel parcel)
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrumentCopyAction	method	public PaymentInstrumentCopyAction(String str, String str2, PaymentInstrument paymentInstrument)
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrumentCopyAction	method	public String getOwnerDirectedId()
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrumentCopyAction	method	public String getReceiverDirectedId()
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrumentCopyAction	method	public int describeContents()
+com.amazon.sharingservice.android.client.core.lib.model.PaymentInstrumentCopyAction	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.sharingservice.android.client.core.lib.model.ResourcesGatingMap	field	private List<SharableResource> mBlackListedResources;
+com.amazon.sharingservice.android.client.core.lib.model.ResourcesGatingMap	field	private List<SharableResource> mWhiteListedResources;
+com.amazon.sharingservice.android.client.core.lib.model.ResourcesGatingMap	field	private String mReceiverDirectedId;
+com.amazon.sharingservice.android.client.core.lib.model.ResourcesGatingMap	method	public List<SharableResource> getBlackListedResources()
+com.amazon.sharingservice.android.client.core.lib.model.ResourcesGatingMap	method	public List<SharableResource> getWhiteListedResources()
+com.amazon.sharingservice.android.client.core.lib.model.ResourcesGatingMap	method	public ResourcesGatingMap()
+com.amazon.sharingservice.android.client.core.lib.model.ResourcesGatingMap	method	public ResourcesGatingMap(Parcel parcel)
+com.amazon.sharingservice.android.client.core.lib.model.ResourcesGatingMap	method	public ResourcesGatingMap(String str, List<SharableResource> list, List<SharableResource> list2)
+com.amazon.sharingservice.android.client.core.lib.model.ResourcesGatingMap	method	public String getReceiverDirectedId()
+com.amazon.sharingservice.android.client.core.lib.model.ResourcesGatingMap	method	public int describeContents()
+com.amazon.sharingservice.android.client.core.lib.model.ResourcesGatingMap	method	public void setBlackListedResources(List<SharableResource> list)
+com.amazon.sharingservice.android.client.core.lib.model.ResourcesGatingMap	method	public void setReceiverDirectedId(String str)
+com.amazon.sharingservice.android.client.core.lib.model.ResourcesGatingMap	method	public void setWhiteListedResources(List<SharableResource> list)
+com.amazon.sharingservice.android.client.core.lib.model.ResourcesGatingMap	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.sharingservice.android.client.core.lib.model.SetOneClickPaymentInstrumentReturnCode	method	public static final SetOneClickPaymentInstrumentReturnCode fromStringReturnCode(String str)
+com.amazon.sharingservice.android.client.core.lib.model.SharableResource	field	private String mResourceCatalog;
+com.amazon.sharingservice.android.client.core.lib.model.SharableResource	field	private String mResourceId;
+com.amazon.sharingservice.android.client.core.lib.model.SharableResource	field	private String mResourceType;
+com.amazon.sharingservice.android.client.core.lib.model.SharableResource	method	public SharableResource()
+com.amazon.sharingservice.android.client.core.lib.model.SharableResource	method	public SharableResource(Parcel parcel)
+com.amazon.sharingservice.android.client.core.lib.model.SharableResource	method	public SharableResource(String str, String str2, String str3)
+com.amazon.sharingservice.android.client.core.lib.model.SharableResource	method	public String getResourceCatalog()
+com.amazon.sharingservice.android.client.core.lib.model.SharableResource	method	public String getResourceId()
+com.amazon.sharingservice.android.client.core.lib.model.SharableResource	method	public String getResourceType()
+com.amazon.sharingservice.android.client.core.lib.model.SharableResource	method	public int describeContents()
+com.amazon.sharingservice.android.client.core.lib.model.SharableResource	method	public void setResourceCatalog(String str)
+com.amazon.sharingservice.android.client.core.lib.model.SharableResource	method	public void setResourceId(String str)
+com.amazon.sharingservice.android.client.core.lib.model.SharableResource	method	public void setResourceType(String str)
+com.amazon.sharingservice.android.client.core.lib.model.SharableResource	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.sharingservice.android.client.core.lib.model.SharingIntents	field	public static final String ACTION_CONTENT_SHARING_CHANGED;
+com.amazon.sharingservice.android.client.core.lib.model.SharingIntents	field	public static final String ACTION_WALLET_SHARING_CHANGED;
+com.amazon.sharingservice.android.client.core.lib.model.SharingMap	field	private Map<ContentType, SharingStatus> mContentSharingMap;
+com.amazon.sharingservice.android.client.core.lib.model.SharingMap	field	private String mContributorId;
+com.amazon.sharingservice.android.client.core.lib.model.SharingMap	field	private String mReceiverId;
+com.amazon.sharingservice.android.client.core.lib.model.SharingMap	method	public Map<ContentType, SharingStatus> getContentSharingMap()
+com.amazon.sharingservice.android.client.core.lib.model.SharingMap	method	public SharingMap deepClone()
+com.amazon.sharingservice.android.client.core.lib.model.SharingMap	method	public SharingMap()
+com.amazon.sharingservice.android.client.core.lib.model.SharingMap	method	public SharingMap(Parcel parcel)
+com.amazon.sharingservice.android.client.core.lib.model.SharingMap	method	public SharingMap(String str, String str2, Map<ContentType, SharingStatus> map)
+com.amazon.sharingservice.android.client.core.lib.model.SharingMap	method	public String getContributorId()
+com.amazon.sharingservice.android.client.core.lib.model.SharingMap	method	public String getReceiverId()
+com.amazon.sharingservice.android.client.core.lib.model.SharingMap	method	public int describeContents()
+com.amazon.sharingservice.android.client.core.lib.model.SharingMap	method	public void setContentSharingMap(Map<ContentType, SharingStatus> map)
+com.amazon.sharingservice.android.client.core.lib.model.SharingMap	method	public void setContributorId(String str)
+com.amazon.sharingservice.android.client.core.lib.model.SharingMap	method	public void setReceiverId(String str)
+com.amazon.sharingservice.android.client.core.lib.model.SharingMap	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.sharingservice.android.client.core.lib.model.SharingStatus	field	private String mStringValue;
+com.amazon.sharingservice.android.client.core.lib.model.SharingStatus	method	public String toString()
+com.amazon.sharingservice.android.client.core.lib.model.SharingStatus	method	public static SharingStatus fromString(String str)
+com.amazon.sharingservice.android.client.core.lib.model.VideoSharingCreditCardCheckReturnCode	method	public static final VideoSharingCreditCardCheckReturnCode fromStringReturnCode(String str)
+com.amazon.sharingservice.android.client.core.lib.util.NetworkUtil	method	public static boolean connectedToNetwork(Context context)
+com.amazon.sharingservice.android.client.core.lib.util.TextUtil	field	private static final String TAG;
+com.amazon.sharingservice.android.client.core.lib.util.TextUtil	method	public static String convertStreamToString(InputStream inputStream)
+com.amazon.sharingservice.android.client.proxy.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.sharingservice.android.client.proxy.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.sharingservice.android.client.proxy.BuildConfig	field	public static final String FLAVOR;
+com.amazon.sharingservice.android.client.proxy.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.sharingservice.android.client.proxy.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.sharingservice.android.client.proxy.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.sharingservice.android.client.proxy.Manifest$permission	field	public static final String ALLOW_SENDING_CONTENT_SHARING_UPDATES;
+com.amazon.sharingservice.android.client.proxy.Manifest$permission	field	public static final String BINDING;
+com.amazon.sharingservice.android.client.proxy.R$bool	field	public static final int debugMode;
+com.amazon.sharingservice.android.client.proxy.R$string	field	public static final int app_name;
+com.amazon.sharingservice.android.client.proxy.R$style	field	public static final int AppBaseTheme;
+com.amazon.sharingservice.android.client.proxy.R$style	field	public static final int AppTheme;
+com.amazon.sharingservice.android.client.proxy.account.AccountManager	field	private static ActivityManager sActivityManager;
+com.amazon.sharingservice.android.client.proxy.account.AccountManager	field	private static MultipleAccountManager sAccountManager;
+com.amazon.sharingservice.android.client.proxy.account.AccountManager	field	private static final String GET_CURRENT_USER_METHOD_NAME;
+com.amazon.sharingservice.android.client.proxy.account.AccountManager	method	private AccountManager()
+com.amazon.sharingservice.android.client.proxy.account.AccountManager	method	public String getAccount()
+com.amazon.sharingservice.android.client.proxy.account.AccountManager	method	public static AccountManager getInstance()
+com.amazon.sharingservice.android.client.proxy.account.AccountManager$LazyObjectHolder	field	private static final AccountManager INSTANCE;
+com.amazon.sharingservice.android.client.proxy.account.AccountManager$LazyObjectHolder	method	private LazyObjectHolder()
+com.amazon.sharingservice.android.client.proxy.account.LocalizationConfig	field	public static final String PFM_DE;
+com.amazon.sharingservice.android.client.proxy.account.LocalizationConfig	field	public static final String PFM_UK;
+com.amazon.sharingservice.android.client.proxy.account.LocalizationConfig	field	public static final String PFM_US;
+com.amazon.sharingservice.android.client.proxy.account.LocalizationManager	field	private final CustomerAttributeStore mCustomerAttributeStore;
+com.amazon.sharingservice.android.client.proxy.account.LocalizationManager	field	private final MAPAccountManager mAccountManager;
+com.amazon.sharingservice.android.client.proxy.account.LocalizationManager	method	private LocalizationManager()
+com.amazon.sharingservice.android.client.proxy.account.LocalizationManager	method	public String getCountryOfResidence()
+com.amazon.sharingservice.android.client.proxy.account.LocalizationManager	method	public String getPreferredMarket()
+com.amazon.sharingservice.android.client.proxy.account.LocalizationManager	method	public static LocalizationManager getInstance()
+com.amazon.sharingservice.android.client.proxy.account.LocalizationManager$LazyObjectHolder	field	private static final LocalizationManager INSTANCE;
+com.amazon.sharingservice.android.client.proxy.account.LocalizationManager$LazyObjectHolder	method	private LazyObjectHolder()
+com.amazon.sharingservice.android.client.proxy.cache.CacheManager	field	private final DatabaseCacheHelper mDatabaseCacheHelper;
+com.amazon.sharingservice.android.client.proxy.cache.CacheManager	field	private final MemoryCacheHelper mMemoryCacheHelper;
+com.amazon.sharingservice.android.client.proxy.cache.CacheManager	field	private final MetricsHelper mMetricsHelper;
+com.amazon.sharingservice.android.client.proxy.cache.CacheManager	method	private CacheManager()
+com.amazon.sharingservice.android.client.proxy.cache.CacheManager	method	public Boolean getCachedDeviceSharingStatus(String str)
+com.amazon.sharingservice.android.client.proxy.cache.CacheManager	method	public static synchronized CacheManager getInstance()
+com.amazon.sharingservice.android.client.proxy.cache.CacheManager	method	public synchronized void cacheDeviceSharingStatus(String str, CheckDeviceEnabledForSharingResponse checkDeviceEnabledForSharingResponse)
+com.amazon.sharingservice.android.client.proxy.cache.CacheManager	method	public synchronized void clearCache()
+com.amazon.sharingservice.android.client.proxy.cache.CacheManager$LazyObjectHolder	field	private static final CacheManager INSTANCE;
+com.amazon.sharingservice.android.client.proxy.cache.CacheManager$LazyObjectHolder	method	private LazyObjectHolder()
+com.amazon.sharingservice.android.client.proxy.cache.DatabaseCacheHelper	field	private static final String DATABASE_NAME;
+com.amazon.sharingservice.android.client.proxy.cache.DatabaseCacheHelper	field	private static final int DATABASE_VERSION;
+com.amazon.sharingservice.android.client.proxy.cache.DatabaseCacheHelper	method	private DatabaseCacheHelper()
+com.amazon.sharingservice.android.client.proxy.cache.DatabaseCacheHelper	method	public Map<String, Boolean> getCachedMapOfDeviceSharingStatus()
+com.amazon.sharingservice.android.client.proxy.cache.DatabaseCacheHelper	method	public static synchronized DatabaseCacheHelper getInstance()
+com.amazon.sharingservice.android.client.proxy.cache.DatabaseCacheHelper	method	public synchronized void cacheDeviceSharingStatus(String str, boolean z)
+com.amazon.sharingservice.android.client.proxy.cache.DatabaseCacheHelper	method	public void clearCache()
+com.amazon.sharingservice.android.client.proxy.cache.DatabaseCacheHelper	method	public void onCreate(SQLiteDatabase sQLiteDatabase)
+com.amazon.sharingservice.android.client.proxy.cache.DatabaseCacheHelper	method	public void onUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i2)
+com.amazon.sharingservice.android.client.proxy.cache.DatabaseCacheHelper$LazyObjectHolder	field	private static final DatabaseCacheHelper INSTANCE;
+com.amazon.sharingservice.android.client.proxy.cache.DatabaseCacheHelper$LazyObjectHolder	method	private LazyObjectHolder()
+com.amazon.sharingservice.android.client.proxy.cache.MemoryCacheHelper	field	private static Map<String, Boolean> sDeviceSharingStatusMap;
+com.amazon.sharingservice.android.client.proxy.cache.MemoryCacheHelper	field	private static MemoryCacheHelper sMemoryCacheHelperInstance;
+com.amazon.sharingservice.android.client.proxy.cache.MemoryCacheHelper	field	private static ReentrantLock mReadWriteLock;
+com.amazon.sharingservice.android.client.proxy.cache.MemoryCacheHelper	method	private MemoryCacheHelper()
+com.amazon.sharingservice.android.client.proxy.cache.MemoryCacheHelper	method	public Map<String, Boolean> getCachedMapOfDeviceSharingStatus()
+com.amazon.sharingservice.android.client.proxy.cache.MemoryCacheHelper	method	public static synchronized MemoryCacheHelper getInstance()
+com.amazon.sharingservice.android.client.proxy.cache.MemoryCacheHelper	method	public synchronized void cacheDeviceSharingStatus(String str, boolean z)
+com.amazon.sharingservice.android.client.proxy.cache.MemoryCacheHelper	method	public void clearCache()
+com.amazon.sharingservice.android.client.proxy.communication.DeviceSharingUpdatesReceiver	method	public void onReceive(Context context, Intent intent)
+com.amazon.sharingservice.android.client.proxy.communication.HouseholdAgreementsChangeListener	method	public void onReceive(Context context, Intent intent)
+com.amazon.sharingservice.android.client.proxy.communication.MessageBroadcaster	field	private static final String ACTION_SYNC;
+com.amazon.sharingservice.android.client.proxy.communication.MessageBroadcaster	method	private MessageBroadcaster()
+com.amazon.sharingservice.android.client.proxy.communication.MessageBroadcaster	method	public static MessageBroadcaster getInstance()
+com.amazon.sharingservice.android.client.proxy.communication.MessageBroadcaster	method	public void broadcastContentSyncRequired()
+com.amazon.sharingservice.android.client.proxy.communication.MessageBroadcaster	method	public void broadcastDeviceSharingUpdated()
+com.amazon.sharingservice.android.client.proxy.communication.MessageBroadcaster$LazyObjectHolder	field	private static final MessageBroadcaster INSTANCE;
+com.amazon.sharingservice.android.client.proxy.communication.MessageBroadcaster$LazyObjectHolder	method	private LazyObjectHolder()
+com.amazon.sharingservice.android.client.proxy.config.ConnectionConfig	field	public static final String ACCEPT_TYPE;
+com.amazon.sharingservice.android.client.proxy.config.ConnectionConfig	field	public static final String APPLICATION_JSON;
+com.amazon.sharingservice.android.client.proxy.config.ConnectionConfig	field	public static final String CONTENT_TYPE;
+com.amazon.sharingservice.android.client.proxy.config.ConnectionConfig	field	public static final String POST_METHOD;
+com.amazon.sharingservice.android.client.proxy.config.ConnectionConfig	field	public static final String USER_AGENT;
+com.amazon.sharingservice.android.client.proxy.config.ConnectionConfig	field	public static final int CONNECTION_TIME_OUT;
+com.amazon.sharingservice.android.client.proxy.config.ConnectionConfig	field	public static final int READ_TIME_OUT;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_BLACK_LISTED_RESOURCES;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_CONTENT_SHARING_MAP;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_CONTENT_TYPE_TO_COUNT_MAP;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_CUSTOMER_DIRECTED_ID;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_CUSTOMER_PAYMENT_INSTRUMENT_DETAILS;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_DEVICES;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_DEVICE_ID;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_DEVICE_NAME;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_DISPLAYS_SHARED_CONTENT;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_ERROR_CODE;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_EXPIRATION_MONTH;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_EXPIRATION_YEAR;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_HOUSEHOLD_ID;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_IS_SHARING_ENABLED;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_OWNER_DIRECTED_ID;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_PAYMENT_INSTRUMENT;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_PAYMENT_INSTRUMENT_COPY_ACTION_LIST;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_PAYMENT_INSTRUMENT_DETAILS;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_PAYMENT_INSTRUMENT_ID;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_PAYMENT_INSTRUMENT_LAST_FOUR_DIGITS;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_PAYMENT_INSTRUMENT_TYPE;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_RECEIVER_DIRECTED_ID;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_REQUESTER_DEVICE_ID;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_RESOURCES_GATING_MAPS;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_RESOURCE_CATALOG;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_RESOURCE_ID;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_RESOURCE_TYPE;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_SET_ONE_CLICK_PAYMENT_INSTRUMENT_RETURN_CODE;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_SHARED_PAYMENT_INSTRUMENT_DETAILS_LIST;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_SHARING_MAPS_LIST;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_SHARING_STATUS;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_VIDEO_SHARING_CHECK_RETURN_CODE;
+com.amazon.sharingservice.android.client.proxy.config.ServiceJSONKeyConfig	field	public static final String KEY_WHITE_LISTED_RESOURCES;
+com.amazon.sharingservice.android.client.proxy.core.ClientProxyApplication	field	private static Context sApplicationContext;
+com.amazon.sharingservice.android.client.proxy.core.ClientProxyApplication	field	private static SharingServiceController sController;
+com.amazon.sharingservice.android.client.proxy.core.ClientProxyApplication	method	private static void initController()
+com.amazon.sharingservice.android.client.proxy.core.ClientProxyApplication	method	public static Context getStaticApplicationContext()
+com.amazon.sharingservice.android.client.proxy.core.ClientProxyApplication	method	public static SharingServiceController getController()
+com.amazon.sharingservice.android.client.proxy.core.ClientProxyApplication	method	public void onCreate()
+com.amazon.sharingservice.android.client.proxy.core.ClientProxyService	field	private SharingServiceController mController;
+com.amazon.sharingservice.android.client.proxy.core.ClientProxyService	method	public IBinder onBind(Intent intent)
+com.amazon.sharingservice.android.client.proxy.core.ClientProxyService	method	public void onCreate()
+com.amazon.sharingservice.android.client.proxy.core.SharingServiceController	field	private static AtomicLong sRunningTaskCount;
+com.amazon.sharingservice.android.client.proxy.core.SharingServiceController	field	private static CacheManager sCacheManager;
+com.amazon.sharingservice.android.client.proxy.core.SharingServiceController	field	private static ExecutorService sExecutorService;
+com.amazon.sharingservice.android.client.proxy.core.SharingServiceController	field	private static MessageBroadcaster sMessageBroadcaster;
+com.amazon.sharingservice.android.client.proxy.core.SharingServiceController	field	private static MetricsHelper sMetricsHelper;
+com.amazon.sharingservice.android.client.proxy.core.SharingServiceController	field	private static SharingServicePortal sPortal;
+com.amazon.sharingservice.android.client.proxy.core.SharingServiceController	field	public static SharingServiceController sSharingServiceControllerInstance;
+com.amazon.sharingservice.android.client.proxy.core.SharingServiceController	method	private SharingServiceController(SharingServicePortal sharingServicePortal, CacheManager cacheManager, MetricsHelper metricsHelper, MessageBroadcaster messageBroadcaster)
+com.amazon.sharingservice.android.client.proxy.core.SharingServiceController	method	private void executeInSpawn(final Runnable runnable)
+com.amazon.sharingservice.android.client.proxy.core.SharingServiceController	method	public static synchronized SharingServiceController getInstance(SharingServicePortal sharingServicePortal, CacheManager cacheManager, MetricsHelper metricsHelper, MessageBroadcaster messageBroadcaster)
+com.amazon.sharingservice.android.client.proxy.core.SharingServiceController	method	public synchronized void setDevicesToDisplaySharedContentWithAsyncCall(final String str, final List<Device> list, final ICallback iCallback)
+com.amazon.sharingservice.android.client.proxy.core.SharingServiceController	method	public synchronized void setGatedResourcesWithAsyncCall(final String str, final String str2, final List<ResourcesGatingMap> list, final ICallback iCallback)
+com.amazon.sharingservice.android.client.proxy.core.SharingServiceController	method	public synchronized void setSharingMapsWithAsyncCall(final String str, final List<SharingMap> list, final ICallback iCallback)
+com.amazon.sharingservice.android.client.proxy.core.SharingServiceController	method	public synchronized void sharePaymentInstrumentWithAsyncCall(final String str, final String str2, final String str3, final PaymentInstrument paymentInstrument, final ICallback iCallback)
+com.amazon.sharingservice.android.client.proxy.core.SharingServiceController	method	public synchronized void updateDeviceSharingStatusCacheFromCloud(final int i)
+com.amazon.sharingservice.android.client.proxy.core.SharingServiceController	method	public void broadcastDeviceSharingUpdates()
+com.amazon.sharingservice.android.client.proxy.core.SharingServiceController	method	public void checkDeviceEnabledForSharingWithAsyncCall(final ICheckDeviceEnabledForSharingCallback iCheckDeviceEnabledForSharingCallback)
+com.amazon.sharingservice.android.client.proxy.core.SharingServiceController	method	public void checkPaymentInstrumentsEligibleForVideoSharing(final String str, final ICheckPaymentInstrumentsEligibleForVideoSharingCallback iCheckPaymentInstrumentsEligibleForVideoSharingCallback)
+com.amazon.sharingservice.android.client.proxy.core.SharingServiceController	method	public void getActivePaymentInstrumentsForHouseholdWithAsyncCall(final String str, final IGetActivePaymentInstrumentsCallback iGetActivePaymentInstrumentsCallback)
+com.amazon.sharingservice.android.client.proxy.core.SharingServiceController	method	public void getContentCountsForCustomerWithAsyncCall(final String str, final IGetContentCountsCallback iGetContentCountsCallback)
+com.amazon.sharingservice.android.client.proxy.core.SharingServiceController	method	public void getDevicesForCustomerWithAsyncCall(final String str, final IGetDevicesForCustomerCallback iGetDevicesForCustomerCallback)
+com.amazon.sharingservice.android.client.proxy.core.SharingServiceController	method	public void getSharingMapsWithAsyncCall(final String str, final IGetSharingMapsCallback iGetSharingMapsCallback)
+com.amazon.sharingservice.android.client.proxy.core.SharingServiceController	method	public void setOneClickPaymentInstrumentForHousehold(final String str, final String str2, final ISetOneClickPaymentInstrumentForHouseholdCallback iSetOneClickPaymentInstrumentForHouseholdCallback)
+com.amazon.sharingservice.android.client.proxy.core.SharingServiceController	method	public void updateDeviceSharingStatusCacheFromPresetValue(String str, CheckDeviceEnabledForSharingResponse checkDeviceEnabledForSharingResponse)
+com.amazon.sharingservice.android.client.proxy.definition.Operation	field	private String mApi;
+com.amazon.sharingservice.android.client.proxy.definition.Operation	field	private boolean mIsServiceOperation;
+com.amazon.sharingservice.android.client.proxy.definition.Operation	method	public URL getURL() throws PFMNotSupportedException
+com.amazon.sharingservice.android.client.proxy.definition.TableConfigDeviceSharingStatus	field	public static final String COL_DEVICE_SHARING_STATUS;
+com.amazon.sharingservice.android.client.proxy.definition.TableConfigDeviceSharingStatus	field	public static final String COL_PRIMARY_KEY;
+com.amazon.sharingservice.android.client.proxy.definition.TableConfigDeviceSharingStatus	field	public static final String CREATE_TABLE_QUERY;
+com.amazon.sharingservice.android.client.proxy.definition.TableConfigDeviceSharingStatus	field	public static final String DELETE_QUERY;
+com.amazon.sharingservice.android.client.proxy.definition.TableConfigDeviceSharingStatus	field	public static final String DROP_TABLE_QUERY;
+com.amazon.sharingservice.android.client.proxy.definition.TableConfigDeviceSharingStatus	field	public static final String SELECT_QUERY;
+com.amazon.sharingservice.android.client.proxy.definition.TableConfigDeviceSharingStatus	field	public static final String TABLE_SHARING_STATUS;
+com.amazon.sharingservice.android.client.proxy.exception.InvalidInputException	method	public InvalidInputException()
+com.amazon.sharingservice.android.client.proxy.exception.InvalidInputException	method	public InvalidInputException(String str)
+com.amazon.sharingservice.android.client.proxy.exception.NetworkException	method	public NetworkException()
+com.amazon.sharingservice.android.client.proxy.exception.NetworkException	method	public NetworkException(String str)
+com.amazon.sharingservice.android.client.proxy.exception.NetworkException	method	public NetworkException(String str, Throwable th)
+com.amazon.sharingservice.android.client.proxy.exception.PFMNotSupportedException	method	public PFMNotSupportedException()
+com.amazon.sharingservice.android.client.proxy.exception.PFMNotSupportedException	method	public PFMNotSupportedException(String str)
+com.amazon.sharingservice.android.client.proxy.exception.ProhibitedOperationException	method	public ProhibitedOperationException()
+com.amazon.sharingservice.android.client.proxy.exception.ProhibitedOperationException	method	public ProhibitedOperationException(String str)
+com.amazon.sharingservice.android.client.proxy.metrics.Events	field	public static final String CACHE_MISS;
+com.amazon.sharingservice.android.client.proxy.metrics.Events	field	public static final String CHECK_DEVICE_ENABLED_FOR_SHARING;
+com.amazon.sharingservice.android.client.proxy.metrics.Events	field	public static final String CHECK_PAYMENT_INSTRUMENTS_ELIGIBLE_FOR_VIDEO_SHARING;
+com.amazon.sharingservice.android.client.proxy.metrics.Events	field	public static final String CLIENT_REMOTE_EXCEPTION;
+com.amazon.sharingservice.android.client.proxy.metrics.Events	field	public static final String FAILED_CHECK_DEVICE_ENABLED_FOR_SHARING;
+com.amazon.sharingservice.android.client.proxy.metrics.Events	field	public static final String FAILED_CHECK_PAYMENT_INSTRUMENTS_ELIGIBLE_FOR_VIDEO_SHARING;
+com.amazon.sharingservice.android.client.proxy.metrics.Events	field	public static final String FAILED_OPERATION;
+com.amazon.sharingservice.android.client.proxy.metrics.Events	field	public static final String FAILED_SET_ONE_CLICK_PAYMENT_INSTRUMENT_FOR_HOUSEHOLD;
+com.amazon.sharingservice.android.client.proxy.metrics.Events	field	public static final String FAIL_GET_ACTIVE_PAYMENT_INSTRUMENTS_FOR_HOUSEHOLD;
+com.amazon.sharingservice.android.client.proxy.metrics.Events	field	public static final String FAIL_GET_CONTENT_COUNTS_FOR_CUSTOMER;
+com.amazon.sharingservice.android.client.proxy.metrics.Events	field	public static final String FAIL_GET_DEVICES_FOR_CUSTOMER;
+com.amazon.sharingservice.android.client.proxy.metrics.Events	field	public static final String FAIL_GET_SHARING_MAPS;
+com.amazon.sharingservice.android.client.proxy.metrics.Events	field	public static final String FAIL_SET_DEVICES_TO_DISPLAY_SHARED_CONTENT;
+com.amazon.sharingservice.android.client.proxy.metrics.Events	field	public static final String FAIL_SET_GATED_RESOURCES;
+com.amazon.sharingservice.android.client.proxy.metrics.Events	field	public static final String FAIL_SET_SHARING_MAPS;
+com.amazon.sharingservice.android.client.proxy.metrics.Events	field	public static final String FAIL_SHARE_PAYMENT_INSTRUMENT;
+com.amazon.sharingservice.android.client.proxy.metrics.Events	field	public static final String GET_ACTIVE_PAYMENT_INSTRUMENTS_FOR_HOUSEHOLD;
+com.amazon.sharingservice.android.client.proxy.metrics.Events	field	public static final String GET_CONTENT_COUNTS_FOR_CUSTOMER;
+com.amazon.sharingservice.android.client.proxy.metrics.Events	field	public static final String GET_DEVICES_FOR_CUSTOMER;
+com.amazon.sharingservice.android.client.proxy.metrics.Events	field	public static final String GET_SHARING_MAPS;
+com.amazon.sharingservice.android.client.proxy.metrics.Events	field	public static final String SET_DEVICES_TO_DISPLAY_SHARED_CONTENT;
+com.amazon.sharingservice.android.client.proxy.metrics.Events	field	public static final String SET_GATED_RESOURCES;
+com.amazon.sharingservice.android.client.proxy.metrics.Events	field	public static final String SET_ONE_CLICK_PAYMENT_INSTRUMENT_FOR_HOUSEHOLD;
+com.amazon.sharingservice.android.client.proxy.metrics.Events	field	public static final String SET_SHARING_MAPS;
+com.amazon.sharingservice.android.client.proxy.metrics.Events	field	public static final String SHARE_PAYMENT_INSTRUMENT;
+com.amazon.sharingservice.android.client.proxy.metrics.MetricsHelper	field	private static Map<String, Long> mEventStartTimeMap;
+com.amazon.sharingservice.android.client.proxy.metrics.MetricsHelper	field	private static MetricsFactory mMetricsFactory;
+com.amazon.sharingservice.android.client.proxy.metrics.MetricsHelper	field	private static final String APP_NAME;
+com.amazon.sharingservice.android.client.proxy.metrics.MetricsHelper	method	private MetricsHelper()
+com.amazon.sharingservice.android.client.proxy.metrics.MetricsHelper	method	private void recordTimer(String str, double d)
+com.amazon.sharingservice.android.client.proxy.metrics.MetricsHelper	method	public static MetricsHelper getInstance()
+com.amazon.sharingservice.android.client.proxy.metrics.MetricsHelper	method	public void recordOccurrence(String str)
+com.amazon.sharingservice.android.client.proxy.metrics.MetricsHelper	method	public void startEventAndRecordTimeStamp(String str)
+com.amazon.sharingservice.android.client.proxy.metrics.MetricsHelper	method	public void stopEventAndRecordTimerMetrics(String str)
+com.amazon.sharingservice.android.client.proxy.metrics.MetricsHelper$LazyObjectHolder	field	private static final MetricsHelper INSTANCE;
+com.amazon.sharingservice.android.client.proxy.metrics.MetricsHelper$LazyObjectHolder	method	private LazyObjectHolder()
+com.amazon.sharingservice.android.client.proxy.metrics.MetricsHelper$MetricEvents	field	public static final MetricEvent GENERIC_EVENT;
+com.amazon.sharingservice.android.client.proxy.model.ServiceRequest	field	private JSONObject mJSONRequest;
+com.amazon.sharingservice.android.client.proxy.model.ServiceRequest	field	private Operation mOperation;
+com.amazon.sharingservice.android.client.proxy.model.ServiceRequest	method	public JSONObject getJsonRequest()
+com.amazon.sharingservice.android.client.proxy.model.ServiceRequest	method	public Operation getOperation()
+com.amazon.sharingservice.android.client.proxy.model.ServiceRequest	method	public ServiceRequest(Operation operation, JSONObject jSONObject)
+com.amazon.sharingservice.android.client.proxy.model.ServiceResponse	field	private JSONObject mJSONResponse;
+com.amazon.sharingservice.android.client.proxy.model.ServiceResponse	field	private int mHttpStatus;
+com.amazon.sharingservice.android.client.proxy.model.ServiceResponse	method	public JSONObject getJSONResponse()
+com.amazon.sharingservice.android.client.proxy.model.ServiceResponse	method	public ServiceResponse(int i, JSONObject jSONObject)
+com.amazon.sharingservice.android.client.proxy.model.ServiceResponse	method	public int getHttpStatus()
+com.amazon.sharingservice.android.client.proxy.model.ServiceResponse	method	public void setHttpStatus(int i)
+com.amazon.sharingservice.android.client.proxy.model.ServiceResponse	method	public void setJSONResponse(JSONObject jSONObject)
+com.amazon.sharingservice.android.client.proxy.service.ServiceCallGuard	field	private Class<T> mResponseClassType;
+com.amazon.sharingservice.android.client.proxy.service.ServiceCallGuard	method	private ServiceCallGuard(Class<T> cls)
+com.amazon.sharingservice.android.client.proxy.service.ServiceCallGuard	method	private T createExceptionResponse(ErrorCode errorCode, String str, Operation operation)
+com.amazon.sharingservice.android.client.proxy.service.ServiceCallGuard	method	public T executeServiceCall(Callable<T> callable, Operation operation)
+com.amazon.sharingservice.android.client.proxy.service.ServiceCallGuard	method	public static <T> ServiceCallGuard createServiceCallGuardByResponseType(Class<T> cls)
+com.amazon.sharingservice.android.client.proxy.service.ServiceCallHelper	method	private HttpURLConnection getSharingServiceConnection(Operation operation) throws PFMNotSupportedException, NetworkException, IOException
+com.amazon.sharingservice.android.client.proxy.service.ServiceCallHelper	method	private String getDeviceType()
+com.amazon.sharingservice.android.client.proxy.service.ServiceCallHelper	method	private String getUserAgent(Context context)
+com.amazon.sharingservice.android.client.proxy.service.ServiceCallHelper	method	private void sendRequest(byte[] bArr, HttpURLConnection httpURLConnection) throws Throwable
+com.amazon.sharingservice.android.client.proxy.service.ServiceCallHelper	method	public ServiceResponse callService(ServiceRequest serviceRequest) throws Throwable
+com.amazon.sharingservice.android.client.proxy.service.SharingServiceEndpoint	field	private static final String EU_PROD;
+com.amazon.sharingservice.android.client.proxy.service.SharingServiceEndpoint	field	private static final String NA_PROD;
+com.amazon.sharingservice.android.client.proxy.service.SharingServiceEndpoint	method	public static String fetchEndpoint() throws PFMNotSupportedException
+com.amazon.sharingservice.android.client.proxy.service.SharingServicePortal	field	private ServiceCallHelper mServiceCallHelper;
+com.amazon.sharingservice.android.client.proxy.service.SharingServicePortal	method	public CheckDeviceEnabledForSharingResponse checkDeviceEnabledForSharing(final String str)
+com.amazon.sharingservice.android.client.proxy.service.SharingServicePortal	method	public CheckPaymentInstrumentsEligibleForVideoSharingResponse checkPaymentInstrumentsEligibleForVideoSharing(final String str)
+com.amazon.sharingservice.android.client.proxy.service.SharingServicePortal	method	public GetActivePaymentInstrumentsResponse getActivePaymentInstrumentsForHousehold(final String str)
+com.amazon.sharingservice.android.client.proxy.service.SharingServicePortal	method	public GetContentCountsResponse getContentCounts(final String str)
+com.amazon.sharingservice.android.client.proxy.service.SharingServicePortal	method	public GetDevicesForCustomerResponse getDevicesForCustomer(final String str)
+com.amazon.sharingservice.android.client.proxy.service.SharingServicePortal	method	public GetSharingMapsResponse getSharingMaps(final String str)
+com.amazon.sharingservice.android.client.proxy.service.SharingServicePortal	method	public Response setDevicesToDisplaySharedContent(final String str, final List<Device> list)
+com.amazon.sharingservice.android.client.proxy.service.SharingServicePortal	method	public Response setGatedResources(final String str, final String str2, final List<ResourcesGatingMap> list)
+com.amazon.sharingservice.android.client.proxy.service.SharingServicePortal	method	public Response setSharingMaps(final String str, final List<SharingMap> list)
+com.amazon.sharingservice.android.client.proxy.service.SharingServicePortal	method	public Response sharePaymentInstrument(final String str, final String str2, final String str3, final PaymentInstrument paymentInstrument)
+com.amazon.sharingservice.android.client.proxy.service.SharingServicePortal	method	public SetOneClickPaymentInstrumentForHouseholdResponse setOneClickPaymentInstrumentForHousehold(final String str, final String str2)
+com.amazon.sharingservice.android.client.proxy.service.SharingServicePortal	method	public SharingServicePortal(ServiceCallHelper serviceCallHelper)
+com.amazon.sharingservice.android.client.proxy.service.SharingServicePortal	method	public void refreshDeviceSharingStatus(JSONObject jSONObject, int i, String str)
+com.amazon.sharingservice.android.client.proxy.util.Logger	field	private static final String APP_NAME_HEADER;
+com.amazon.sharingservice.android.client.proxy.util.Logger	field	private static final String CLIENT_REQUEST;
+com.amazon.sharingservice.android.client.proxy.util.Logger	field	private static final String OPERATION_HEADER;
+com.amazon.sharingservice.android.client.proxy.util.Logger	field	private static final String RESPONSE;
+com.amazon.sharingservice.android.client.proxy.util.Logger	field	private static final String RESPONSE_ERROR_CODE;
+com.amazon.sharingservice.android.client.proxy.util.Logger	field	private static final String RESPONSE_ERROR_MESSAGE;
+com.amazon.sharingservice.android.client.proxy.util.Logger	field	private static final String RESPONSE_STATUS;
+com.amazon.sharingservice.android.client.proxy.util.Logger	field	private static final String SEPARATOR;
+com.amazon.sharingservice.android.client.proxy.util.Logger	field	private static final String SERVICE_RESPONSE;
+com.amazon.sharingservice.android.client.proxy.util.Logger	field	private static final String SERVICE_STATUS;
+com.amazon.sharingservice.android.client.proxy.util.Logger	method	private static void logD(String str)
+com.amazon.sharingservice.android.client.proxy.util.Logger	method	private static void logE(String str)
+com.amazon.sharingservice.android.client.proxy.util.Logger	method	private static void logI(String str)
+com.amazon.sharingservice.android.client.proxy.util.Logger	method	private static void logW(String str)
+com.amazon.sharingservice.android.client.proxy.util.Logger	method	public static void logClientRequest(Operation operation, String str)
+com.amazon.sharingservice.android.client.proxy.util.Logger	method	public static void logGenericDebug(Operation operation, String str)
+com.amazon.sharingservice.android.client.proxy.util.Logger	method	public static void logGenericError(Operation operation, String str)
+com.amazon.sharingservice.android.client.proxy.util.Logger	method	public static void logGenericError(Operation operation, String str, Exception exc)
+com.amazon.sharingservice.android.client.proxy.util.Logger	method	public static void logGenericInfo(Operation operation, String str)
+com.amazon.sharingservice.android.client.proxy.util.Logger	method	public static void logGenericWarning(Operation operation, String str)
+com.amazon.sharingservice.android.client.proxy.util.Logger	method	public static void logResponse(Operation operation, Response response)
+com.amazon.sharingservice.android.client.proxy.util.Logger	method	public static void logServiceResponse(Operation operation, String str)
+com.amazon.sharingservice.android.client.proxy.util.Logger	method	public static void logServiceStatus(Operation operation, int i)
+com.amazon.sharingservice.android.client.proxy.util.ServiceRequestFactory	method	private static JSONObject createJSONBenefitMapFromJavaMap(Map<ContentType, SharingStatus> map)
+com.amazon.sharingservice.android.client.proxy.util.ServiceRequestFactory	method	public static JSONObject createCheckDeviceEnabledForSharingRequest(String str) throws InvalidInputException
+com.amazon.sharingservice.android.client.proxy.util.ServiceRequestFactory	method	public static JSONObject createCheckPaymentInstrumentsEligibleForVideoSharingRequest(String str) throws InvalidInputException
+com.amazon.sharingservice.android.client.proxy.util.ServiceRequestFactory	method	public static JSONObject createGetActivePaymentInstrumentsRequest(String str) throws InvalidInputException
+com.amazon.sharingservice.android.client.proxy.util.ServiceRequestFactory	method	public static JSONObject createGetContentCountsRequest(String str) throws InvalidInputException
+com.amazon.sharingservice.android.client.proxy.util.ServiceRequestFactory	method	public static JSONObject createGetDevicesForCustomerRequest(String str) throws InvalidInputException
+com.amazon.sharingservice.android.client.proxy.util.ServiceRequestFactory	method	public static JSONObject createGetSharingMapsRequest(String str) throws InvalidInputException
+com.amazon.sharingservice.android.client.proxy.util.ServiceRequestFactory	method	public static JSONObject createSetDevicesToDisplaySharedContentRequest(String str, List<Device> list) throws InvalidInputException
+com.amazon.sharingservice.android.client.proxy.util.ServiceRequestFactory	method	public static JSONObject createSetGatedResourcesRequest(String str, String str2, List<ResourcesGatingMap> list) throws InvalidInputException
+com.amazon.sharingservice.android.client.proxy.util.ServiceRequestFactory	method	public static JSONObject createSetOneClickPaymentInstrumentForHouseholdRequest(String str, String str2) throws InvalidInputException
+com.amazon.sharingservice.android.client.proxy.util.ServiceRequestFactory	method	public static JSONObject createSetSharingMapsRequest(String str, List<SharingMap> list) throws InvalidInputException
+com.amazon.sharingservice.android.client.proxy.util.ServiceRequestFactory	method	public static JSONObject createSharePaymentInstrumentRequest(String str, String str2, String str3, PaymentInstrument paymentInstrument) throws InvalidInputException
+com.amazon.sharingservice.android.client.proxy.util.ServiceResponseParser	method	public static List<Device> parseDevicesFromJSON(JSONObject jSONObject)
+com.amazon.sharingservice.android.client.proxy.util.ServiceResponseParser	method	public static List<PaymentInstrument> parsePaymentInstrumentsFromJSON(JSONObject jSONObject)
+com.amazon.sharingservice.android.client.proxy.util.ServiceResponseParser	method	public static List<PaymentInstrumentCopyAction> parsePaymentInstrumentCopyActionListFromJSON(JSONObject jSONObject)
+com.amazon.sharingservice.android.client.proxy.util.ServiceResponseParser	method	public static List<SharingMap> parseSharingMapsFromJSON(JSONObject jSONObject)
+com.amazon.sharingservice.android.client.proxy.util.ServiceResponseParser	method	public static Map<ContentType, Integer> parseContentCountsFromJSON(JSONObject jSONObject)
+com.amazon.sharingservice.android.client.proxy.util.ServiceResponseParser	method	public static PaymentInstrument parsePaymentInstrumentFromJSON(String str, JSONObject jSONObject)
+com.amazon.sharingservice.android.client.proxy.util.ServiceResponseParser	method	public static PaymentInstrumentCopyAction parsePaymentInstrumentCopyActionFromJSON(JSONObject jSONObject)
+com.amazon.sharingservice.android.client.proxy.util.ServiceResponseParser	method	public static SetOneClickPaymentInstrumentReturnCode parseSetOneClickPaymentInstrumentReturnCodeFromJSON(JSONObject jSONObject)
+com.amazon.sharingservice.android.client.proxy.util.ServiceResponseParser	method	public static VideoSharingCreditCardCheckReturnCode parseVideoSharingCheckReturnCodeFromJSON(JSONObject jSONObject)
+com.amazon.sharingservice.android.client.proxy.util.ServiceResponseParser	method	public static boolean parseDeviceSharingStatusFromJSON(JSONObject jSONObject)
+com.amazon.sharingservice.android.client.proxy.util.StringUtils	method	public static final String getString(int i)

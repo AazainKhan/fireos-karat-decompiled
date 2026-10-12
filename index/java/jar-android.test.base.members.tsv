@@ -1,0 +1,175 @@
+class	kind	declaration
+android.test.AndroidTestCase	field	private Context mTestContext;
+android.test.AndroidTestCase	field	protected Context mContext;
+android.test.AndroidTestCase	method	protected void scrubClass(Class<?> cls) throws IllegalAccessException
+android.test.AndroidTestCase	method	protected void setUp() throws Exception
+android.test.AndroidTestCase	method	protected void tearDown() throws Exception
+android.test.AndroidTestCase	method	public Context getContext()
+android.test.AndroidTestCase	method	public Context getTestContext()
+android.test.AndroidTestCase	method	public void assertActivityRequiresPermission(String str, String str2, String str3)
+android.test.AndroidTestCase	method	public void assertReadingContentUriRequiresPermission(Uri uri, String str)
+android.test.AndroidTestCase	method	public void assertWritingContentUriRequiresPermission(Uri uri, String str)
+android.test.AndroidTestCase	method	public void setContext(Context context)
+android.test.AndroidTestCase	method	public void setTestContext(Context context)
+android.test.AndroidTestCase	method	public void testAndroidTestCaseSetupProperly()
+android.test.InstrumentationTestCase	field	private Instrumentation mInstrumentation;
+android.test.InstrumentationTestCase	method	private void runMethod(Method method, int i) throws Throwable
+android.test.InstrumentationTestCase	method	protected void runTest() throws Throwable
+android.test.InstrumentationTestCase	method	protected void tearDown() throws Exception
+android.test.InstrumentationTestCase	method	public Instrumentation getInstrumentation()
+android.test.InstrumentationTestCase	method	public final <T extends Activity> T launchActivity(String str, Class<T> cls, Bundle bundle)
+android.test.InstrumentationTestCase	method	public final <T extends Activity> T launchActivityWithIntent(String str, Class<T> cls, Intent intent)
+android.test.InstrumentationTestCase	method	public void injectInsrumentation(Instrumentation instrumentation)
+android.test.InstrumentationTestCase	method	public void injectInstrumentation(Instrumentation instrumentation)
+android.test.InstrumentationTestCase	method	public void runMethod(Method method, int i, boolean z) throws Throwable
+android.test.InstrumentationTestCase	method	public void runTestOnUiThread(final Runnable runnable) throws Throwable
+android.test.InstrumentationTestCase	method	public void sendKeys(String str)
+android.test.InstrumentationTestCase	method	public void sendKeys(int... iArr)
+android.test.InstrumentationTestCase	method	public void sendRepeatedKeys(int... iArr)
+android.test.InstrumentationTestSuite	field	private final Instrumentation mInstrumentation;
+android.test.InstrumentationTestSuite	method	public InstrumentationTestSuite(Class cls, Instrumentation instrumentation)
+android.test.InstrumentationTestSuite	method	public InstrumentationTestSuite(Instrumentation instrumentation)
+android.test.InstrumentationTestSuite	method	public InstrumentationTestSuite(String str, Instrumentation instrumentation)
+android.test.InstrumentationTestSuite	method	public void addTestSuite(Class cls)
+android.test.InstrumentationTestSuite	method	public void runTest(Test test, TestResult testResult)
+junit.framework.Assert	method	protected Assert()
+junit.framework.Assert	method	public static String format(String str, Object obj, Object obj2)
+junit.framework.Assert	method	public static void assertEquals(Object obj, Object obj2)
+junit.framework.Assert	method	public static void assertEquals(String str, Object obj, Object obj2)
+junit.framework.Assert	method	public static void assertEquals(String str, String str2)
+junit.framework.Assert	method	public static void assertEquals(String str, String str2, String str3)
+junit.framework.Assert	method	public static void assertEquals(String str, boolean z, boolean z2)
+junit.framework.Assert	method	public static void assertEquals(String str, byte b, byte b2)
+junit.framework.Assert	method	public static void assertEquals(String str, char c, char c2)
+junit.framework.Assert	method	public static void assertEquals(String str, double d, double d2, double d3)
+junit.framework.Assert	method	public static void assertEquals(String str, float f, float f2, float f3)
+junit.framework.Assert	method	public static void assertEquals(String str, int i, int i2)
+junit.framework.Assert	method	public static void assertEquals(String str, long j, long j2)
+junit.framework.Assert	method	public static void assertEquals(String str, short s, short s2)
+junit.framework.Assert	method	public static void assertEquals(boolean z, boolean z2)
+junit.framework.Assert	method	public static void assertEquals(byte b, byte b2)
+junit.framework.Assert	method	public static void assertEquals(char c, char c2)
+junit.framework.Assert	method	public static void assertEquals(double d, double d2, double d3)
+junit.framework.Assert	method	public static void assertEquals(float f, float f2, float f3)
+junit.framework.Assert	method	public static void assertEquals(int i, int i2)
+junit.framework.Assert	method	public static void assertEquals(long j, long j2)
+junit.framework.Assert	method	public static void assertEquals(short s, short s2)
+junit.framework.Assert	method	public static void assertFalse(String str, boolean z)
+junit.framework.Assert	method	public static void assertFalse(boolean z)
+junit.framework.Assert	method	public static void assertNotNull(Object obj)
+junit.framework.Assert	method	public static void assertNotNull(String str, Object obj)
+junit.framework.Assert	method	public static void assertNotSame(Object obj, Object obj2)
+junit.framework.Assert	method	public static void assertNotSame(String str, Object obj, Object obj2)
+junit.framework.Assert	method	public static void assertNull(Object obj)
+junit.framework.Assert	method	public static void assertNull(String str, Object obj)
+junit.framework.Assert	method	public static void assertSame(Object obj, Object obj2)
+junit.framework.Assert	method	public static void assertSame(String str, Object obj, Object obj2)
+junit.framework.Assert	method	public static void assertTrue(String str, boolean z)
+junit.framework.Assert	method	public static void assertTrue(boolean z)
+junit.framework.Assert	method	public static void fail()
+junit.framework.Assert	method	public static void fail(String str)
+junit.framework.Assert	method	public static void failNotEquals(String str, Object obj, Object obj2)
+junit.framework.Assert	method	public static void failNotSame(String str, Object obj, Object obj2)
+junit.framework.Assert	method	public static void failSame(String str)
+junit.framework.AssertionFailedError	field	private static final long serialVersionUID;
+junit.framework.AssertionFailedError	method	private static String defaultString(String str)
+junit.framework.AssertionFailedError	method	public AssertionFailedError()
+junit.framework.AssertionFailedError	method	public AssertionFailedError(String str)
+junit.framework.ComparisonCompactor	field	private String fActual;
+junit.framework.ComparisonCompactor	field	private String fExpected;
+junit.framework.ComparisonCompactor	field	private int fContextLength;
+junit.framework.ComparisonCompactor	field	private int fPrefix;
+junit.framework.ComparisonCompactor	field	private int fSuffix;
+junit.framework.ComparisonCompactor	field	private static final String DELTA_END;
+junit.framework.ComparisonCompactor	field	private static final String DELTA_START;
+junit.framework.ComparisonCompactor	field	private static final String ELLIPSIS;
+junit.framework.ComparisonCompactor	method	private String compactString(String str)
+junit.framework.ComparisonCompactor	method	private String computeCommonPrefix()
+junit.framework.ComparisonCompactor	method	private String computeCommonSuffix()
+junit.framework.ComparisonCompactor	method	private boolean areStringsEqual()
+junit.framework.ComparisonCompactor	method	private static String format(String str, Object obj, Object obj2)
+junit.framework.ComparisonCompactor	method	private void findCommonPrefix()
+junit.framework.ComparisonCompactor	method	private void findCommonSuffix()
+junit.framework.ComparisonCompactor	method	public ComparisonCompactor(int i, String str, String str2)
+junit.framework.ComparisonCompactor	method	public String compact(String str)
+junit.framework.ComparisonFailure	field	private String fActual;
+junit.framework.ComparisonFailure	field	private String fExpected;
+junit.framework.ComparisonFailure	field	private static final int MAX_CONTEXT_LENGTH;
+junit.framework.ComparisonFailure	field	private static final long serialVersionUID;
+junit.framework.ComparisonFailure	method	public ComparisonFailure(String str, String str2, String str3)
+junit.framework.ComparisonFailure	method	public String getActual()
+junit.framework.ComparisonFailure	method	public String getExpected()
+junit.framework.ComparisonFailure	method	public String getMessage()
+junit.framework.TestCase	field	private String fName;
+junit.framework.TestCase	method	protected TestResult createResult()
+junit.framework.TestCase	method	protected void runTest() throws Throwable
+junit.framework.TestCase	method	protected void setUp() throws Exception
+junit.framework.TestCase	method	protected void tearDown() throws Exception
+junit.framework.TestCase	method	public String getName()
+junit.framework.TestCase	method	public String toString()
+junit.framework.TestCase	method	public TestCase()
+junit.framework.TestCase	method	public TestCase(String str)
+junit.framework.TestCase	method	public TestResult run()
+junit.framework.TestCase	method	public int countTestCases()
+junit.framework.TestCase	method	public void run(TestResult testResult)
+junit.framework.TestCase	method	public void runBare() throws Throwable
+junit.framework.TestCase	method	public void setName(String str)
+junit.framework.TestFailure	field	protected Test fFailedTest;
+junit.framework.TestFailure	field	protected Throwable fThrownException;
+junit.framework.TestFailure	method	public String exceptionMessage()
+junit.framework.TestFailure	method	public String toString()
+junit.framework.TestFailure	method	public String trace()
+junit.framework.TestFailure	method	public Test failedTest()
+junit.framework.TestFailure	method	public TestFailure(Test test, Throwable th)
+junit.framework.TestFailure	method	public Throwable thrownException()
+junit.framework.TestFailure	method	public boolean isFailure()
+junit.framework.TestResult	field	private boolean fStop;
+junit.framework.TestResult	field	protected Vector<TestFailure> fErrors;
+junit.framework.TestResult	field	protected Vector<TestFailure> fFailures;
+junit.framework.TestResult	field	protected Vector<TestListener> fListeners;
+junit.framework.TestResult	field	protected int fRunTests;
+junit.framework.TestResult	method	private synchronized List<TestListener> cloneListeners()
+junit.framework.TestResult	method	protected void run(final TestCase testCase)
+junit.framework.TestResult	method	public synchronized Enumeration<TestFailure> errors()
+junit.framework.TestResult	method	public synchronized Enumeration<TestFailure> failures()
+junit.framework.TestResult	method	public synchronized boolean shouldStop()
+junit.framework.TestResult	method	public synchronized boolean wasSuccessful()
+junit.framework.TestResult	method	public synchronized int errorCount()
+junit.framework.TestResult	method	public synchronized int failureCount()
+junit.framework.TestResult	method	public synchronized int runCount()
+junit.framework.TestResult	method	public synchronized void addError(Test test, Throwable th)
+junit.framework.TestResult	method	public synchronized void addFailure(Test test, AssertionFailedError assertionFailedError)
+junit.framework.TestResult	method	public synchronized void addListener(TestListener testListener)
+junit.framework.TestResult	method	public synchronized void removeListener(TestListener testListener)
+junit.framework.TestResult	method	public synchronized void stop()
+junit.framework.TestResult	method	public void endTest(Test test)
+junit.framework.TestResult	method	public void runProtected(Test test, Protectable protectable)
+junit.framework.TestResult	method	public void startTest(Test test)
+junit.framework.TestSuite	field	private String fName;
+junit.framework.TestSuite	field	private Vector<Test> fTests;
+junit.framework.TestSuite	method	private Test testCaseForClass(Class<?> cls)
+junit.framework.TestSuite	method	private boolean isPublicTestMethod(Method method)
+junit.framework.TestSuite	method	private boolean isTestMethod(Method method)
+junit.framework.TestSuite	method	private static String exceptionToString(Throwable th)
+junit.framework.TestSuite	method	private void addTestMethod(Method method, List<String> list, Class<?> cls)
+junit.framework.TestSuite	method	private void addTestsFromTestCase(Class<?> cls)
+junit.framework.TestSuite	method	public Enumeration<Test> tests()
+junit.framework.TestSuite	method	public String getName()
+junit.framework.TestSuite	method	public String toString()
+junit.framework.TestSuite	method	public Test testAt(int i)
+junit.framework.TestSuite	method	public TestSuite()
+junit.framework.TestSuite	method	public TestSuite(Class<? extends TestCase> cls, String str)
+junit.framework.TestSuite	method	public TestSuite(Class<? extends TestCase>[] clsArr, String str)
+junit.framework.TestSuite	method	public TestSuite(Class<?> cls)
+junit.framework.TestSuite	method	public TestSuite(Class<?>... clsArr)
+junit.framework.TestSuite	method	public TestSuite(String str)
+junit.framework.TestSuite	method	public int countTestCases()
+junit.framework.TestSuite	method	public int testCount()
+junit.framework.TestSuite	method	public static Constructor<?> getTestConstructor(Class<?> cls) throws NoSuchMethodException
+junit.framework.TestSuite	method	public static Test createTest(Class<?> cls, String str)
+junit.framework.TestSuite	method	public static Test warning(final String str)
+junit.framework.TestSuite	method	public void addTest(Test test)
+junit.framework.TestSuite	method	public void addTestSuite(Class<? extends TestCase> cls)
+junit.framework.TestSuite	method	public void run(TestResult testResult)
+junit.framework.TestSuite	method	public void runTest(Test test, TestResult testResult)
+junit.framework.TestSuite	method	public void setName(String str)

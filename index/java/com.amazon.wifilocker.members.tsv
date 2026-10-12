@@ -1,0 +1,835 @@
+class	kind	declaration
+com.amazon.CoralAndroidClient.GsonAdapters.ByteBufferToBase64TypeAdapter	method	private static ByteBuffer a(JsonElement jsonElement)
+com.amazon.CoralAndroidClient.a.a	method	public static boolean a(Object obj, Object obj2)
+com.amazon.CoralAndroidClient.b.a	field	private static final long serialVersionUID;
+com.amazon.CoralAndroidClient.b.a	method	public a()
+com.amazon.CoralAndroidClient.b.a	method	public a(String str)
+com.amazon.CoralAndroidClient.b.a	method	public a(String str, Throwable th)
+com.amazon.CoralAndroidClient.b.a	method	public a(Throwable th)
+com.amazon.CoralAndroidClient.b.b	field	private static final long serialVersionUID;
+com.amazon.CoralAndroidClient.b.b	method	public b()
+com.amazon.CoralAndroidClient.b.b	method	public b(String str)
+com.amazon.CoralAndroidClient.b.b	method	public b(String str, Throwable th)
+com.amazon.credentiallocker.AuthenticationFailedException	field	private static final long serialVersionUID;
+com.amazon.credentiallocker.AuthenticationFailedException	method	public AuthenticationFailedException()
+com.amazon.credentiallocker.AuthenticationFailedException	method	public AuthenticationFailedException(String str)
+com.amazon.credentiallocker.AuthenticationFailedException	method	public AuthenticationFailedException(String str, Throwable th)
+com.amazon.credentiallocker.AuthenticationFailedException	method	public AuthenticationFailedException(Throwable th)
+com.amazon.credentiallocker.AuthenticationFailedException	method	public String getMessage()
+com.amazon.credentiallocker.CertificateAuthority	field	private String id;
+com.amazon.credentiallocker.CertificateAuthority	field	private String providerName;
+com.amazon.credentiallocker.CertificateAuthority	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.CertificateAuthority	method	public String getId()
+com.amazon.credentiallocker.CertificateAuthority	method	public String getProviderName()
+com.amazon.credentiallocker.CertificateAuthority	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.CertificateAuthority	method	public int hashCode()
+com.amazon.credentiallocker.CertificateAuthority	method	public void setId(String str)
+com.amazon.credentiallocker.CertificateAuthority	method	public void setProviderName(String str)
+com.amazon.credentiallocker.CredentialConfig	field	private Map<String, String> credentialContent;
+com.amazon.credentiallocker.CredentialConfig	field	private String credentialId;
+com.amazon.credentiallocker.CredentialConfig	field	private String oldCredentialId;
+com.amazon.credentiallocker.CredentialConfig	field	private long lastUpdatedDate;
+com.amazon.credentiallocker.CredentialConfig	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.CredentialConfig	method	public Map<String, String> getCredentialContent()
+com.amazon.credentiallocker.CredentialConfig	method	public String getCredentialId()
+com.amazon.credentiallocker.CredentialConfig	method	public String getOldCredentialId()
+com.amazon.credentiallocker.CredentialConfig	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.CredentialConfig	method	public int hashCode()
+com.amazon.credentiallocker.CredentialConfig	method	public long getLastUpdatedDate()
+com.amazon.credentiallocker.CredentialConfig	method	public void setCredentialContent(Map<String, String> map)
+com.amazon.credentiallocker.CredentialConfig	method	public void setCredentialId(String str)
+com.amazon.credentiallocker.CredentialConfig	method	public void setLastUpdatedDate(long j)
+com.amazon.credentiallocker.CredentialConfig	method	public void setOldCredentialId(String str)
+com.amazon.credentiallocker.CredentialConfiguration	field	private CertificateAuthority certificateAuthority;
+com.amazon.credentiallocker.CredentialConfiguration	field	private List<String> authenticationServerCertificates;
+com.amazon.credentiallocker.CredentialConfiguration	field	private String eapAuthenticationMethod;
+com.amazon.credentiallocker.CredentialConfiguration	field	private String privateSharedKey;
+com.amazon.credentiallocker.CredentialConfiguration	field	private WepKeyConfiguration wepKeyConfiguration;
+com.amazon.credentiallocker.CredentialConfiguration	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.CredentialConfiguration	method	public CertificateAuthority getCertificateAuthority()
+com.amazon.credentiallocker.CredentialConfiguration	method	public List<String> getAuthenticationServerCertificates()
+com.amazon.credentiallocker.CredentialConfiguration	method	public String getEapAuthenticationMethod()
+com.amazon.credentiallocker.CredentialConfiguration	method	public String getPrivateSharedKey()
+com.amazon.credentiallocker.CredentialConfiguration	method	public WepKeyConfiguration getWepKeyConfiguration()
+com.amazon.credentiallocker.CredentialConfiguration	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.CredentialConfiguration	method	public int hashCode()
+com.amazon.credentiallocker.CredentialConfiguration	method	public void setAuthenticationServerCertificates(List<String> list)
+com.amazon.credentiallocker.CredentialConfiguration	method	public void setCertificateAuthority(CertificateAuthority certificateAuthority)
+com.amazon.credentiallocker.CredentialConfiguration	method	public void setEapAuthenticationMethod(String str)
+com.amazon.credentiallocker.CredentialConfiguration	method	public void setPrivateSharedKey(String str)
+com.amazon.credentiallocker.CredentialConfiguration	method	public void setWepKeyConfiguration(WepKeyConfiguration wepKeyConfiguration)
+com.amazon.credentiallocker.CredentialLockerBaseRequest	field	private String clientManufacturer;
+com.amazon.credentiallocker.CredentialLockerBaseRequest	field	private String clientModel;
+com.amazon.credentiallocker.CredentialLockerBaseRequest	field	private String clientName;
+com.amazon.credentiallocker.CredentialLockerBaseRequest	field	private String clientOs;
+com.amazon.credentiallocker.CredentialLockerBaseRequest	field	private String clientOsVersion;
+com.amazon.credentiallocker.CredentialLockerBaseRequest	field	private String clientProduct;
+com.amazon.credentiallocker.CredentialLockerBaseRequest	field	private String clientVersion;
+com.amazon.credentiallocker.CredentialLockerBaseRequest	field	private String deviceManufacturer;
+com.amazon.credentiallocker.CredentialLockerBaseRequest	field	private String deviceName;
+com.amazon.credentiallocker.CredentialLockerBaseRequest	field	private String deviceVersion;
+com.amazon.credentiallocker.CredentialLockerBaseRequest	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.CredentialLockerBaseRequest	method	public String getClientManufacturer()
+com.amazon.credentiallocker.CredentialLockerBaseRequest	method	public String getClientModel()
+com.amazon.credentiallocker.CredentialLockerBaseRequest	method	public String getClientName()
+com.amazon.credentiallocker.CredentialLockerBaseRequest	method	public String getClientOs()
+com.amazon.credentiallocker.CredentialLockerBaseRequest	method	public String getClientOsVersion()
+com.amazon.credentiallocker.CredentialLockerBaseRequest	method	public String getClientProduct()
+com.amazon.credentiallocker.CredentialLockerBaseRequest	method	public String getClientVersion()
+com.amazon.credentiallocker.CredentialLockerBaseRequest	method	public String getDeviceManufacturer()
+com.amazon.credentiallocker.CredentialLockerBaseRequest	method	public String getDeviceName()
+com.amazon.credentiallocker.CredentialLockerBaseRequest	method	public String getDeviceVersion()
+com.amazon.credentiallocker.CredentialLockerBaseRequest	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.CredentialLockerBaseRequest	method	public int hashCode()
+com.amazon.credentiallocker.CredentialLockerBaseRequest	method	public void setClientManufacturer(String str)
+com.amazon.credentiallocker.CredentialLockerBaseRequest	method	public void setClientModel(String str)
+com.amazon.credentiallocker.CredentialLockerBaseRequest	method	public void setClientName(String str)
+com.amazon.credentiallocker.CredentialLockerBaseRequest	method	public void setClientOs(String str)
+com.amazon.credentiallocker.CredentialLockerBaseRequest	method	public void setClientOsVersion(String str)
+com.amazon.credentiallocker.CredentialLockerBaseRequest	method	public void setClientProduct(String str)
+com.amazon.credentiallocker.CredentialLockerBaseRequest	method	public void setClientVersion(String str)
+com.amazon.credentiallocker.CredentialLockerBaseRequest	method	public void setDeviceManufacturer(String str)
+com.amazon.credentiallocker.CredentialLockerBaseRequest	method	public void setDeviceName(String str)
+com.amazon.credentiallocker.CredentialLockerBaseRequest	method	public void setDeviceVersion(String str)
+com.amazon.credentiallocker.CredentialLockerConflictException	field	private static final long serialVersionUID;
+com.amazon.credentiallocker.CredentialLockerConflictException	method	public CredentialLockerConflictException()
+com.amazon.credentiallocker.CredentialLockerConflictException	method	public CredentialLockerConflictException(String str)
+com.amazon.credentiallocker.CredentialLockerConflictException	method	public CredentialLockerConflictException(String str, Throwable th)
+com.amazon.credentiallocker.CredentialLockerConflictException	method	public CredentialLockerConflictException(Throwable th)
+com.amazon.credentiallocker.CredentialLockerConflictException	method	public String getMessage()
+com.amazon.credentiallocker.CredentialType	field	private static final String[] values;
+com.amazon.credentiallocker.CredentialType	field	public static final String Thread;
+com.amazon.credentiallocker.CredentialType	field	public static final String Wifi;
+com.amazon.credentiallocker.CredentialType	method	private CredentialType()
+com.amazon.credentiallocker.CredentialType	method	public static String[] values()
+com.amazon.credentiallocker.CustomerRegion	field	private static final String[] values;
+com.amazon.credentiallocker.CustomerRegion	field	public static final String EU;
+com.amazon.credentiallocker.CustomerRegion	field	public static final String JP;
+com.amazon.credentiallocker.CustomerRegion	field	public static final String NA;
+com.amazon.credentiallocker.CustomerRegion	method	private CustomerRegion()
+com.amazon.credentiallocker.CustomerRegion	method	public static String[] values()
+com.amazon.credentiallocker.DeleteNetworksRequest	field	private String networkTypeFilter;
+com.amazon.credentiallocker.DeleteNetworksRequest	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.DeleteNetworksRequest	method	public String getNetworkTypeFilter()
+com.amazon.credentiallocker.DeleteNetworksRequest	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.DeleteNetworksRequest	method	public int hashCode()
+com.amazon.credentiallocker.DeleteNetworksRequest	method	public void setNetworkTypeFilter(String str)
+com.amazon.credentiallocker.DeleteWifiConfigurationsRequest	field	private String deviceId;
+com.amazon.credentiallocker.DeleteWifiConfigurationsRequest	field	private String deviceType;
+com.amazon.credentiallocker.DeleteWifiConfigurationsRequest	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.DeleteWifiConfigurationsRequest	method	public String getDeviceId()
+com.amazon.credentiallocker.DeleteWifiConfigurationsRequest	method	public String getDeviceType()
+com.amazon.credentiallocker.DeleteWifiConfigurationsRequest	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.DeleteWifiConfigurationsRequest	method	public int hashCode()
+com.amazon.credentiallocker.DeleteWifiConfigurationsRequest	method	public void setDeviceId(String str)
+com.amazon.credentiallocker.DeleteWifiConfigurationsRequest	method	public void setDeviceType(String str)
+com.amazon.credentiallocker.EapAuthenticationMethod	field	private static final String[] values;
+com.amazon.credentiallocker.EapAuthenticationMethod	field	public static final String EAP_TLS;
+com.amazon.credentiallocker.EapAuthenticationMethod	method	private EapAuthenticationMethod()
+com.amazon.credentiallocker.EapAuthenticationMethod	method	public static String[] values()
+com.amazon.credentiallocker.GetEndpointRequest	field	private String customerId;
+com.amazon.credentiallocker.GetEndpointRequest	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.GetEndpointRequest	method	public String getCustomerId()
+com.amazon.credentiallocker.GetEndpointRequest	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.GetEndpointRequest	method	public int hashCode()
+com.amazon.credentiallocker.GetEndpointRequest	method	public void setCustomerId(String str)
+com.amazon.credentiallocker.GetEndpointResponse	field	private String endpoint;
+com.amazon.credentiallocker.GetEndpointResponse	field	private String region;
+com.amazon.credentiallocker.GetEndpointResponse	field	private long refreshAfterSeconds;
+com.amazon.credentiallocker.GetEndpointResponse	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.GetEndpointResponse	method	public String getEndpoint()
+com.amazon.credentiallocker.GetEndpointResponse	method	public String getRegion()
+com.amazon.credentiallocker.GetEndpointResponse	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.GetEndpointResponse	method	public int hashCode()
+com.amazon.credentiallocker.GetEndpointResponse	method	public long getRefreshAfterSeconds()
+com.amazon.credentiallocker.GetEndpointResponse	method	public void setEndpoint(String str)
+com.amazon.credentiallocker.GetEndpointResponse	method	public void setRefreshAfterSeconds(long j)
+com.amazon.credentiallocker.GetEndpointResponse	method	public void setRegion(String str)
+com.amazon.credentiallocker.GetMatchingNetworksRequest	field	private List<NetworkScanResult> networkScanList;
+com.amazon.credentiallocker.GetMatchingNetworksRequest	field	private String deviceId;
+com.amazon.credentiallocker.GetMatchingNetworksRequest	field	private String deviceType;
+com.amazon.credentiallocker.GetMatchingNetworksRequest	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.GetMatchingNetworksRequest	method	public List<NetworkScanResult> getNetworkScanList()
+com.amazon.credentiallocker.GetMatchingNetworksRequest	method	public String getDeviceId()
+com.amazon.credentiallocker.GetMatchingNetworksRequest	method	public String getDeviceType()
+com.amazon.credentiallocker.GetMatchingNetworksRequest	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.GetMatchingNetworksRequest	method	public int hashCode()
+com.amazon.credentiallocker.GetMatchingNetworksRequest	method	public void setDeviceId(String str)
+com.amazon.credentiallocker.GetMatchingNetworksRequest	method	public void setDeviceType(String str)
+com.amazon.credentiallocker.GetMatchingNetworksRequest	method	public void setNetworkScanList(List<NetworkScanResult> list)
+com.amazon.credentiallocker.GetMatchingNetworksResponse	field	private List<Network> networks;
+com.amazon.credentiallocker.GetMatchingNetworksResponse	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.GetMatchingNetworksResponse	method	public List<Network> getNetworks()
+com.amazon.credentiallocker.GetMatchingNetworksResponse	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.GetMatchingNetworksResponse	method	public int hashCode()
+com.amazon.credentiallocker.GetMatchingNetworksResponse	method	public void setNetworks(List<Network> list)
+com.amazon.credentiallocker.GetNewWifiConfigurationRequest	field	private String deviceId;
+com.amazon.credentiallocker.GetNewWifiConfigurationRequest	field	private String deviceType;
+com.amazon.credentiallocker.GetNewWifiConfigurationRequest	field	private WifiNetworkInfo oldWifiNetworkInfo;
+com.amazon.credentiallocker.GetNewWifiConfigurationRequest	field	private boolean utf8Supported;
+com.amazon.credentiallocker.GetNewWifiConfigurationRequest	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.GetNewWifiConfigurationRequest	method	public String getDeviceId()
+com.amazon.credentiallocker.GetNewWifiConfigurationRequest	method	public String getDeviceType()
+com.amazon.credentiallocker.GetNewWifiConfigurationRequest	method	public WifiNetworkInfo getOldWifiNetworkInfo()
+com.amazon.credentiallocker.GetNewWifiConfigurationRequest	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.GetNewWifiConfigurationRequest	method	public boolean isUtf8Supported()
+com.amazon.credentiallocker.GetNewWifiConfigurationRequest	method	public int hashCode()
+com.amazon.credentiallocker.GetNewWifiConfigurationRequest	method	public void setDeviceId(String str)
+com.amazon.credentiallocker.GetNewWifiConfigurationRequest	method	public void setDeviceType(String str)
+com.amazon.credentiallocker.GetNewWifiConfigurationRequest	method	public void setOldWifiNetworkInfo(WifiNetworkInfo wifiNetworkInfo)
+com.amazon.credentiallocker.GetNewWifiConfigurationRequest	method	public void setUtf8Supported(boolean z)
+com.amazon.credentiallocker.GetNewWifiConfigurationResponse	field	private WifiConfiguration wifiConfiguration;
+com.amazon.credentiallocker.GetNewWifiConfigurationResponse	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.GetNewWifiConfigurationResponse	method	public WifiConfiguration getWifiConfiguration()
+com.amazon.credentiallocker.GetNewWifiConfigurationResponse	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.GetNewWifiConfigurationResponse	method	public int hashCode()
+com.amazon.credentiallocker.GetNewWifiConfigurationResponse	method	public void setWifiConfiguration(WifiConfiguration wifiConfiguration)
+com.amazon.credentiallocker.GetThreadNetworksRequest	field	private Integer maxResults;
+com.amazon.credentiallocker.GetThreadNetworksRequest	field	private String extendedPanId;
+com.amazon.credentiallocker.GetThreadNetworksRequest	field	private String networkName;
+com.amazon.credentiallocker.GetThreadNetworksRequest	field	private String nextToken;
+com.amazon.credentiallocker.GetThreadNetworksRequest	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.GetThreadNetworksRequest	method	public Integer getMaxResults()
+com.amazon.credentiallocker.GetThreadNetworksRequest	method	public String getExtendedPanId()
+com.amazon.credentiallocker.GetThreadNetworksRequest	method	public String getNetworkName()
+com.amazon.credentiallocker.GetThreadNetworksRequest	method	public String getNextToken()
+com.amazon.credentiallocker.GetThreadNetworksRequest	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.GetThreadNetworksRequest	method	public int hashCode()
+com.amazon.credentiallocker.GetThreadNetworksRequest	method	public void setExtendedPanId(String str)
+com.amazon.credentiallocker.GetThreadNetworksRequest	method	public void setMaxResults(Integer num)
+com.amazon.credentiallocker.GetThreadNetworksRequest	method	public void setNetworkName(String str)
+com.amazon.credentiallocker.GetThreadNetworksRequest	method	public void setNextToken(String str)
+com.amazon.credentiallocker.GetThreadNetworksResponse	field	private List<ThreadNetwork> threadNetworks;
+com.amazon.credentiallocker.GetThreadNetworksResponse	field	private String nextToken;
+com.amazon.credentiallocker.GetThreadNetworksResponse	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.GetThreadNetworksResponse	method	public List<ThreadNetwork> getThreadNetworks()
+com.amazon.credentiallocker.GetThreadNetworksResponse	method	public String getNextToken()
+com.amazon.credentiallocker.GetThreadNetworksResponse	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.GetThreadNetworksResponse	method	public int hashCode()
+com.amazon.credentiallocker.GetThreadNetworksResponse	method	public void setNextToken(String str)
+com.amazon.credentiallocker.GetThreadNetworksResponse	method	public void setThreadNetworks(List<ThreadNetwork> list)
+com.amazon.credentiallocker.GetUserMetadataResponse	field	private NetworkMetadata networkMetadata;
+com.amazon.credentiallocker.GetUserMetadataResponse	field	private int wifiCredentialCount;
+com.amazon.credentiallocker.GetUserMetadataResponse	field	private long mostRecentReplacedCredentialUtcMillis;
+com.amazon.credentiallocker.GetUserMetadataResponse	field	private long mostRecentUpdatedCredentialUtcMillis;
+com.amazon.credentiallocker.GetUserMetadataResponse	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.GetUserMetadataResponse	method	public NetworkMetadata getNetworkMetadata()
+com.amazon.credentiallocker.GetUserMetadataResponse	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.GetUserMetadataResponse	method	public int getWifiCredentialCount()
+com.amazon.credentiallocker.GetUserMetadataResponse	method	public int hashCode()
+com.amazon.credentiallocker.GetUserMetadataResponse	method	public long getMostRecentReplacedCredentialUtcMillis()
+com.amazon.credentiallocker.GetUserMetadataResponse	method	public long getMostRecentUpdatedCredentialUtcMillis()
+com.amazon.credentiallocker.GetUserMetadataResponse	method	public void setMostRecentReplacedCredentialUtcMillis(long j)
+com.amazon.credentiallocker.GetUserMetadataResponse	method	public void setMostRecentUpdatedCredentialUtcMillis(long j)
+com.amazon.credentiallocker.GetUserMetadataResponse	method	public void setNetworkMetadata(NetworkMetadata networkMetadata)
+com.amazon.credentiallocker.GetUserMetadataResponse	method	public void setWifiCredentialCount(int i)
+com.amazon.credentiallocker.GetWifiConfigurationsRequest	field	private String deviceId;
+com.amazon.credentiallocker.GetWifiConfigurationsRequest	field	private String deviceType;
+com.amazon.credentiallocker.GetWifiConfigurationsRequest	field	private boolean utf8Supported;
+com.amazon.credentiallocker.GetWifiConfigurationsRequest	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.GetWifiConfigurationsRequest	method	public String getDeviceId()
+com.amazon.credentiallocker.GetWifiConfigurationsRequest	method	public String getDeviceType()
+com.amazon.credentiallocker.GetWifiConfigurationsRequest	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.GetWifiConfigurationsRequest	method	public boolean isUtf8Supported()
+com.amazon.credentiallocker.GetWifiConfigurationsRequest	method	public int hashCode()
+com.amazon.credentiallocker.GetWifiConfigurationsRequest	method	public void setDeviceId(String str)
+com.amazon.credentiallocker.GetWifiConfigurationsRequest	method	public void setDeviceType(String str)
+com.amazon.credentiallocker.GetWifiConfigurationsRequest	method	public void setUtf8Supported(boolean z)
+com.amazon.credentiallocker.GetWifiConfigurationsResponse	field	private List<WifiConfiguration> wifiConfigurations;
+com.amazon.credentiallocker.GetWifiConfigurationsResponse	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.GetWifiConfigurationsResponse	method	public List<WifiConfiguration> getWifiConfigurations()
+com.amazon.credentiallocker.GetWifiConfigurationsResponse	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.GetWifiConfigurationsResponse	method	public int hashCode()
+com.amazon.credentiallocker.GetWifiConfigurationsResponse	method	public void setWifiConfigurations(List<WifiConfiguration> list)
+com.amazon.credentiallocker.GetWifiNetworksInfoResponse	field	private List<WifiNetworkInfo> wifiNetworksInfo;
+com.amazon.credentiallocker.GetWifiNetworksInfoResponse	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.GetWifiNetworksInfoResponse	method	public List<WifiNetworkInfo> getWifiNetworksInfo()
+com.amazon.credentiallocker.GetWifiNetworksInfoResponse	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.GetWifiNetworksInfoResponse	method	public int hashCode()
+com.amazon.credentiallocker.GetWifiNetworksInfoResponse	method	public void setWifiNetworksInfo(List<WifiNetworkInfo> list)
+com.amazon.credentiallocker.InvalidCustomerEndpointException	field	private static final long serialVersionUID;
+com.amazon.credentiallocker.InvalidCustomerEndpointException	method	public InvalidCustomerEndpointException()
+com.amazon.credentiallocker.InvalidCustomerEndpointException	method	public InvalidCustomerEndpointException(String str)
+com.amazon.credentiallocker.InvalidCustomerEndpointException	method	public InvalidCustomerEndpointException(String str, Throwable th)
+com.amazon.credentiallocker.InvalidCustomerEndpointException	method	public InvalidCustomerEndpointException(Throwable th)
+com.amazon.credentiallocker.InvalidCustomerEndpointException	method	public String getMessage()
+com.amazon.credentiallocker.InvalidParameterException	field	private static final long serialVersionUID;
+com.amazon.credentiallocker.InvalidParameterException	method	public InvalidParameterException()
+com.amazon.credentiallocker.InvalidParameterException	method	public InvalidParameterException(String str)
+com.amazon.credentiallocker.InvalidParameterException	method	public InvalidParameterException(String str, Throwable th)
+com.amazon.credentiallocker.InvalidParameterException	method	public InvalidParameterException(Throwable th)
+com.amazon.credentiallocker.InvalidParameterException	method	public String getMessage()
+com.amazon.credentiallocker.InvalidTokenException	field	private static final long serialVersionUID;
+com.amazon.credentiallocker.InvalidTokenException	method	public InvalidTokenException()
+com.amazon.credentiallocker.InvalidTokenException	method	public InvalidTokenException(String str)
+com.amazon.credentiallocker.InvalidTokenException	method	public InvalidTokenException(String str, Throwable th)
+com.amazon.credentiallocker.InvalidTokenException	method	public InvalidTokenException(Throwable th)
+com.amazon.credentiallocker.InvalidTokenException	method	public String getMessage()
+com.amazon.credentiallocker.KeyManagement	field	private static final String[] values;
+com.amazon.credentiallocker.KeyManagement	field	public static final String NONE;
+com.amazon.credentiallocker.KeyManagement	field	public static final String WPA2_EAP;
+com.amazon.credentiallocker.KeyManagement	field	public static final String WPAPSK;
+com.amazon.credentiallocker.KeyManagement	method	private KeyManagement()
+com.amazon.credentiallocker.KeyManagement	method	public static String[] values()
+com.amazon.credentiallocker.Network	field	private ThreadNetwork threadNetwork;
+com.amazon.credentiallocker.Network	field	private WifiConfigurationNetwork wifiNetwork;
+com.amazon.credentiallocker.Network	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.Network	method	public ThreadNetwork getThreadNetwork()
+com.amazon.credentiallocker.Network	method	public WifiConfigurationNetwork getWifiNetwork()
+com.amazon.credentiallocker.Network	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.Network	method	public int hashCode()
+com.amazon.credentiallocker.Network	method	public void setThreadNetwork(ThreadNetwork threadNetwork)
+com.amazon.credentiallocker.Network	method	public void setWifiNetwork(WifiConfigurationNetwork wifiConfigurationNetwork)
+com.amazon.credentiallocker.NetworkMetadata	field	private ThreadNetworkMetadata thread;
+com.amazon.credentiallocker.NetworkMetadata	field	private WifiNetworkMetadata wifi;
+com.amazon.credentiallocker.NetworkMetadata	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.NetworkMetadata	method	public ThreadNetworkMetadata getThread()
+com.amazon.credentiallocker.NetworkMetadata	method	public WifiNetworkMetadata getWifi()
+com.amazon.credentiallocker.NetworkMetadata	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.NetworkMetadata	method	public int hashCode()
+com.amazon.credentiallocker.NetworkMetadata	method	public void setThread(ThreadNetworkMetadata threadNetworkMetadata)
+com.amazon.credentiallocker.NetworkMetadata	method	public void setWifi(WifiNetworkMetadata wifiNetworkMetadata)
+com.amazon.credentiallocker.NetworkScanResult	field	private ThreadNetworkScanResult threadNetworkScanResult;
+com.amazon.credentiallocker.NetworkScanResult	field	private WifiNetworkScanResult wifiNetworkScanResult;
+com.amazon.credentiallocker.NetworkScanResult	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.NetworkScanResult	method	public ThreadNetworkScanResult getThreadNetworkScanResult()
+com.amazon.credentiallocker.NetworkScanResult	method	public WifiNetworkScanResult getWifiNetworkScanResult()
+com.amazon.credentiallocker.NetworkScanResult	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.NetworkScanResult	method	public int hashCode()
+com.amazon.credentiallocker.NetworkScanResult	method	public void setThreadNetworkScanResult(ThreadNetworkScanResult threadNetworkScanResult)
+com.amazon.credentiallocker.NetworkScanResult	method	public void setWifiNetworkScanResult(WifiNetworkScanResult wifiNetworkScanResult)
+com.amazon.credentiallocker.NetworkTag	field	private static final String[] values;
+com.amazon.credentiallocker.NetworkTag	field	public static final String Internal;
+com.amazon.credentiallocker.NetworkTag	field	public static final String Pseudo;
+com.amazon.credentiallocker.NetworkTag	field	public static final String Public;
+com.amazon.credentiallocker.NetworkTag	method	private NetworkTag()
+com.amazon.credentiallocker.NetworkTag	method	public static String[] values()
+com.amazon.credentiallocker.ProviderName	field	private static final String[] values;
+com.amazon.credentiallocker.ProviderName	field	public static final String ALEXA_ENTERPRISE;
+com.amazon.credentiallocker.ProviderName	method	private ProviderName()
+com.amazon.credentiallocker.ProviderName	method	public static String[] values()
+com.amazon.credentiallocker.SaveNetworkRequest	field	private Network network;
+com.amazon.credentiallocker.SaveNetworkRequest	field	private String deviceId;
+com.amazon.credentiallocker.SaveNetworkRequest	field	private String deviceType;
+com.amazon.credentiallocker.SaveNetworkRequest	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.SaveNetworkRequest	method	public Network getNetwork()
+com.amazon.credentiallocker.SaveNetworkRequest	method	public String getDeviceId()
+com.amazon.credentiallocker.SaveNetworkRequest	method	public String getDeviceType()
+com.amazon.credentiallocker.SaveNetworkRequest	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.SaveNetworkRequest	method	public int hashCode()
+com.amazon.credentiallocker.SaveNetworkRequest	method	public void setDeviceId(String str)
+com.amazon.credentiallocker.SaveNetworkRequest	method	public void setDeviceType(String str)
+com.amazon.credentiallocker.SaveNetworkRequest	method	public void setNetwork(Network network)
+com.amazon.credentiallocker.SaveThreadNetworkRequest	field	private String deviceType;
+com.amazon.credentiallocker.SaveThreadNetworkRequest	field	private ThreadNetwork threadNetwork;
+com.amazon.credentiallocker.SaveThreadNetworkRequest	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.SaveThreadNetworkRequest	method	public String getDeviceType()
+com.amazon.credentiallocker.SaveThreadNetworkRequest	method	public ThreadNetwork getThreadNetwork()
+com.amazon.credentiallocker.SaveThreadNetworkRequest	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.SaveThreadNetworkRequest	method	public int hashCode()
+com.amazon.credentiallocker.SaveThreadNetworkRequest	method	public void setDeviceType(String str)
+com.amazon.credentiallocker.SaveThreadNetworkRequest	method	public void setThreadNetwork(ThreadNetwork threadNetwork)
+com.amazon.credentiallocker.SaveWifiConfigurationsRequest	field	private List<WifiConfiguration> wifiConfigurations;
+com.amazon.credentiallocker.SaveWifiConfigurationsRequest	field	private String deviceId;
+com.amazon.credentiallocker.SaveWifiConfigurationsRequest	field	private String deviceType;
+com.amazon.credentiallocker.SaveWifiConfigurationsRequest	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.SaveWifiConfigurationsRequest	method	public List<WifiConfiguration> getWifiConfigurations()
+com.amazon.credentiallocker.SaveWifiConfigurationsRequest	method	public String getDeviceId()
+com.amazon.credentiallocker.SaveWifiConfigurationsRequest	method	public String getDeviceType()
+com.amazon.credentiallocker.SaveWifiConfigurationsRequest	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.SaveWifiConfigurationsRequest	method	public int hashCode()
+com.amazon.credentiallocker.SaveWifiConfigurationsRequest	method	public void setDeviceId(String str)
+com.amazon.credentiallocker.SaveWifiConfigurationsRequest	method	public void setDeviceType(String str)
+com.amazon.credentiallocker.SaveWifiConfigurationsRequest	method	public void setWifiConfigurations(List<WifiConfiguration> list)
+com.amazon.credentiallocker.ThreadNetwork	field	private Integer channelMask;
+com.amazon.credentiallocker.ThreadNetwork	field	private Integer channelNumber;
+com.amazon.credentiallocker.ThreadNetwork	field	private Integer channelPage;
+com.amazon.credentiallocker.ThreadNetwork	field	private List<String> tags;
+com.amazon.credentiallocker.ThreadNetwork	field	private String commissionerCredential;
+com.amazon.credentiallocker.ThreadNetwork	field	private String extendedPanId;
+com.amazon.credentiallocker.ThreadNetwork	field	private String meshLocalPrefix;
+com.amazon.credentiallocker.ThreadNetwork	field	private String networkKey;
+com.amazon.credentiallocker.ThreadNetwork	field	private String networkName;
+com.amazon.credentiallocker.ThreadNetwork	field	private String panId;
+com.amazon.credentiallocker.ThreadNetwork	field	private String party;
+com.amazon.credentiallocker.ThreadNetwork	field	private String pskc;
+com.amazon.credentiallocker.ThreadNetwork	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.ThreadNetwork	method	public Integer getChannelMask()
+com.amazon.credentiallocker.ThreadNetwork	method	public Integer getChannelNumber()
+com.amazon.credentiallocker.ThreadNetwork	method	public Integer getChannelPage()
+com.amazon.credentiallocker.ThreadNetwork	method	public List<String> getTags()
+com.amazon.credentiallocker.ThreadNetwork	method	public String getCommissionerCredential()
+com.amazon.credentiallocker.ThreadNetwork	method	public String getExtendedPanId()
+com.amazon.credentiallocker.ThreadNetwork	method	public String getMeshLocalPrefix()
+com.amazon.credentiallocker.ThreadNetwork	method	public String getNetworkKey()
+com.amazon.credentiallocker.ThreadNetwork	method	public String getNetworkName()
+com.amazon.credentiallocker.ThreadNetwork	method	public String getPanId()
+com.amazon.credentiallocker.ThreadNetwork	method	public String getParty()
+com.amazon.credentiallocker.ThreadNetwork	method	public String getPskc()
+com.amazon.credentiallocker.ThreadNetwork	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.ThreadNetwork	method	public int hashCode()
+com.amazon.credentiallocker.ThreadNetwork	method	public void setChannelMask(Integer num)
+com.amazon.credentiallocker.ThreadNetwork	method	public void setChannelNumber(Integer num)
+com.amazon.credentiallocker.ThreadNetwork	method	public void setChannelPage(Integer num)
+com.amazon.credentiallocker.ThreadNetwork	method	public void setCommissionerCredential(String str)
+com.amazon.credentiallocker.ThreadNetwork	method	public void setExtendedPanId(String str)
+com.amazon.credentiallocker.ThreadNetwork	method	public void setMeshLocalPrefix(String str)
+com.amazon.credentiallocker.ThreadNetwork	method	public void setNetworkKey(String str)
+com.amazon.credentiallocker.ThreadNetwork	method	public void setNetworkName(String str)
+com.amazon.credentiallocker.ThreadNetwork	method	public void setPanId(String str)
+com.amazon.credentiallocker.ThreadNetwork	method	public void setParty(String str)
+com.amazon.credentiallocker.ThreadNetwork	method	public void setPskc(String str)
+com.amazon.credentiallocker.ThreadNetwork	method	public void setTags(List<String> list)
+com.amazon.credentiallocker.ThreadNetworkAlreadyExistsException	field	private static final long serialVersionUID;
+com.amazon.credentiallocker.ThreadNetworkAlreadyExistsException	method	public String getMessage()
+com.amazon.credentiallocker.ThreadNetworkAlreadyExistsException	method	public ThreadNetworkAlreadyExistsException()
+com.amazon.credentiallocker.ThreadNetworkAlreadyExistsException	method	public ThreadNetworkAlreadyExistsException(String str)
+com.amazon.credentiallocker.ThreadNetworkAlreadyExistsException	method	public ThreadNetworkAlreadyExistsException(String str, Throwable th)
+com.amazon.credentiallocker.ThreadNetworkAlreadyExistsException	method	public ThreadNetworkAlreadyExistsException(Throwable th)
+com.amazon.credentiallocker.ThreadNetworkIdentifier	field	private String extendedPanId;
+com.amazon.credentiallocker.ThreadNetworkIdentifier	field	private String networkName;
+com.amazon.credentiallocker.ThreadNetworkIdentifier	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.ThreadNetworkIdentifier	method	public String getExtendedPanId()
+com.amazon.credentiallocker.ThreadNetworkIdentifier	method	public String getNetworkName()
+com.amazon.credentiallocker.ThreadNetworkIdentifier	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.ThreadNetworkIdentifier	method	public int hashCode()
+com.amazon.credentiallocker.ThreadNetworkIdentifier	method	public void setExtendedPanId(String str)
+com.amazon.credentiallocker.ThreadNetworkIdentifier	method	public void setNetworkName(String str)
+com.amazon.credentiallocker.ThreadNetworkMetadata	field	private int credentialCount;
+com.amazon.credentiallocker.ThreadNetworkMetadata	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.ThreadNetworkMetadata	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.ThreadNetworkMetadata	method	public int getCredentialCount()
+com.amazon.credentiallocker.ThreadNetworkMetadata	method	public int hashCode()
+com.amazon.credentiallocker.ThreadNetworkMetadata	method	public void setCredentialCount(int i)
+com.amazon.credentiallocker.ThreadNetworkScanResult	field	private Long lqi;
+com.amazon.credentiallocker.ThreadNetworkScanResult	field	private Long rssi;
+com.amazon.credentiallocker.ThreadNetworkScanResult	field	private String extendedPanId;
+com.amazon.credentiallocker.ThreadNetworkScanResult	field	private String networkName;
+com.amazon.credentiallocker.ThreadNetworkScanResult	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.ThreadNetworkScanResult	method	public Long getLqi()
+com.amazon.credentiallocker.ThreadNetworkScanResult	method	public Long getRssi()
+com.amazon.credentiallocker.ThreadNetworkScanResult	method	public String getExtendedPanId()
+com.amazon.credentiallocker.ThreadNetworkScanResult	method	public String getNetworkName()
+com.amazon.credentiallocker.ThreadNetworkScanResult	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.ThreadNetworkScanResult	method	public int hashCode()
+com.amazon.credentiallocker.ThreadNetworkScanResult	method	public void setExtendedPanId(String str)
+com.amazon.credentiallocker.ThreadNetworkScanResult	method	public void setLqi(Long l)
+com.amazon.credentiallocker.ThreadNetworkScanResult	method	public void setNetworkName(String str)
+com.amazon.credentiallocker.ThreadNetworkScanResult	method	public void setRssi(Long l)
+com.amazon.credentiallocker.ThreadParty	field	private static final String[] values;
+com.amazon.credentiallocker.ThreadParty	field	public static final String First;
+com.amazon.credentiallocker.ThreadParty	field	public static final String Second;
+com.amazon.credentiallocker.ThreadParty	field	public static final String Third;
+com.amazon.credentiallocker.ThreadParty	method	private ThreadParty()
+com.amazon.credentiallocker.ThreadParty	method	public static String[] values()
+com.amazon.credentiallocker.UpdateWifiConfigurationsRequest	field	private List<UpdatedWifiConfiguration> wifiConfigurations;
+com.amazon.credentiallocker.UpdateWifiConfigurationsRequest	field	private String deviceId;
+com.amazon.credentiallocker.UpdateWifiConfigurationsRequest	field	private String deviceType;
+com.amazon.credentiallocker.UpdateWifiConfigurationsRequest	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.UpdateWifiConfigurationsRequest	method	public List<UpdatedWifiConfiguration> getWifiConfigurations()
+com.amazon.credentiallocker.UpdateWifiConfigurationsRequest	method	public String getDeviceId()
+com.amazon.credentiallocker.UpdateWifiConfigurationsRequest	method	public String getDeviceType()
+com.amazon.credentiallocker.UpdateWifiConfigurationsRequest	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.UpdateWifiConfigurationsRequest	method	public int hashCode()
+com.amazon.credentiallocker.UpdateWifiConfigurationsRequest	method	public void setDeviceId(String str)
+com.amazon.credentiallocker.UpdateWifiConfigurationsRequest	method	public void setDeviceType(String str)
+com.amazon.credentiallocker.UpdateWifiConfigurationsRequest	method	public void setWifiConfigurations(List<UpdatedWifiConfiguration> list)
+com.amazon.credentiallocker.UpdatedWifiConfiguration	field	private WifiNetwork oldWifiNetwork;
+com.amazon.credentiallocker.UpdatedWifiConfiguration	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.UpdatedWifiConfiguration	method	public WifiNetwork getOldWifiNetwork()
+com.amazon.credentiallocker.UpdatedWifiConfiguration	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.UpdatedWifiConfiguration	method	public int hashCode()
+com.amazon.credentiallocker.UpdatedWifiConfiguration	method	public void setOldWifiNetwork(WifiNetwork wifiNetwork)
+com.amazon.credentiallocker.WepKeyConfiguration	field	private List<String> wepKeyList;
+com.amazon.credentiallocker.WepKeyConfiguration	field	private int keyIndex;
+com.amazon.credentiallocker.WepKeyConfiguration	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.WepKeyConfiguration	method	public List<String> getWepKeyList()
+com.amazon.credentiallocker.WepKeyConfiguration	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.WepKeyConfiguration	method	public int getKeyIndex()
+com.amazon.credentiallocker.WepKeyConfiguration	method	public int hashCode()
+com.amazon.credentiallocker.WepKeyConfiguration	method	public void setKeyIndex(int i)
+com.amazon.credentiallocker.WepKeyConfiguration	method	public void setWepKeyList(List<String> list)
+com.amazon.credentiallocker.WifiConfiguration	field	private CredentialConfiguration credentialConfiguration;
+com.amazon.credentiallocker.WifiConfiguration	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.WifiConfiguration	method	public CredentialConfiguration getCredentialConfiguration()
+com.amazon.credentiallocker.WifiConfiguration	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.WifiConfiguration	method	public int hashCode()
+com.amazon.credentiallocker.WifiConfiguration	method	public void setCredentialConfiguration(CredentialConfiguration credentialConfiguration)
+com.amazon.credentiallocker.WifiConfigurationNetwork	field	private CredentialConfiguration credentialConfiguration;
+com.amazon.credentiallocker.WifiConfigurationNetwork	field	private List<String> tags;
+com.amazon.credentiallocker.WifiConfigurationNetwork	field	private String bssid;
+com.amazon.credentiallocker.WifiConfigurationNetwork	field	private String securityType;
+com.amazon.credentiallocker.WifiConfigurationNetwork	field	private String ssid;
+com.amazon.credentiallocker.WifiConfigurationNetwork	field	private String wpaPskType;
+com.amazon.credentiallocker.WifiConfigurationNetwork	field	private int frequency;
+com.amazon.credentiallocker.WifiConfigurationNetwork	field	private int priority;
+com.amazon.credentiallocker.WifiConfigurationNetwork	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.WifiConfigurationNetwork	method	public CredentialConfiguration getCredentialConfiguration()
+com.amazon.credentiallocker.WifiConfigurationNetwork	method	public List<String> getTags()
+com.amazon.credentiallocker.WifiConfigurationNetwork	method	public String getBssid()
+com.amazon.credentiallocker.WifiConfigurationNetwork	method	public String getSecurityType()
+com.amazon.credentiallocker.WifiConfigurationNetwork	method	public String getSsid()
+com.amazon.credentiallocker.WifiConfigurationNetwork	method	public String getWpaPskType()
+com.amazon.credentiallocker.WifiConfigurationNetwork	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.WifiConfigurationNetwork	method	public int getFrequency()
+com.amazon.credentiallocker.WifiConfigurationNetwork	method	public int getPriority()
+com.amazon.credentiallocker.WifiConfigurationNetwork	method	public int hashCode()
+com.amazon.credentiallocker.WifiConfigurationNetwork	method	public void setBssid(String str)
+com.amazon.credentiallocker.WifiConfigurationNetwork	method	public void setCredentialConfiguration(CredentialConfiguration credentialConfiguration)
+com.amazon.credentiallocker.WifiConfigurationNetwork	method	public void setFrequency(int i)
+com.amazon.credentiallocker.WifiConfigurationNetwork	method	public void setPriority(int i)
+com.amazon.credentiallocker.WifiConfigurationNetwork	method	public void setSecurityType(String str)
+com.amazon.credentiallocker.WifiConfigurationNetwork	method	public void setSsid(String str)
+com.amazon.credentiallocker.WifiConfigurationNetwork	method	public void setTags(List<String> list)
+com.amazon.credentiallocker.WifiConfigurationNetwork	method	public void setWpaPskType(String str)
+com.amazon.credentiallocker.WifiNetwork	field	private String bssid;
+com.amazon.credentiallocker.WifiNetwork	field	private String keyManagement;
+com.amazon.credentiallocker.WifiNetwork	field	private String ssid;
+com.amazon.credentiallocker.WifiNetwork	field	private String wpaPskType;
+com.amazon.credentiallocker.WifiNetwork	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.WifiNetwork	method	public String getBssid()
+com.amazon.credentiallocker.WifiNetwork	method	public String getKeyManagement()
+com.amazon.credentiallocker.WifiNetwork	method	public String getSsid()
+com.amazon.credentiallocker.WifiNetwork	method	public String getWpaPskType()
+com.amazon.credentiallocker.WifiNetwork	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.WifiNetwork	method	public int hashCode()
+com.amazon.credentiallocker.WifiNetwork	method	public void setBssid(String str)
+com.amazon.credentiallocker.WifiNetwork	method	public void setKeyManagement(String str)
+com.amazon.credentiallocker.WifiNetwork	method	public void setSsid(String str)
+com.amazon.credentiallocker.WifiNetwork	method	public void setWpaPskType(String str)
+com.amazon.credentiallocker.WifiNetworkExtended	field	private int frequency;
+com.amazon.credentiallocker.WifiNetworkExtended	field	private int priority;
+com.amazon.credentiallocker.WifiNetworkExtended	field	private long lastConnectedDateUtcMillis;
+com.amazon.credentiallocker.WifiNetworkExtended	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.WifiNetworkExtended	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.WifiNetworkExtended	method	public int getFrequency()
+com.amazon.credentiallocker.WifiNetworkExtended	method	public int getPriority()
+com.amazon.credentiallocker.WifiNetworkExtended	method	public int hashCode()
+com.amazon.credentiallocker.WifiNetworkExtended	method	public long getLastConnectedDateUtcMillis()
+com.amazon.credentiallocker.WifiNetworkExtended	method	public void setFrequency(int i)
+com.amazon.credentiallocker.WifiNetworkExtended	method	public void setLastConnectedDateUtcMillis(long j)
+com.amazon.credentiallocker.WifiNetworkExtended	method	public void setPriority(int i)
+com.amazon.credentiallocker.WifiNetworkInfo	field	private long lastUpdatedDateUtcMillis;
+com.amazon.credentiallocker.WifiNetworkInfo	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.WifiNetworkInfo	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.WifiNetworkInfo	method	public int hashCode()
+com.amazon.credentiallocker.WifiNetworkInfo	method	public long getLastUpdatedDateUtcMillis()
+com.amazon.credentiallocker.WifiNetworkInfo	method	public void setLastUpdatedDateUtcMillis(long j)
+com.amazon.credentiallocker.WifiNetworkMetadata	field	private int wifiCredentialCount;
+com.amazon.credentiallocker.WifiNetworkMetadata	field	private long mostRecentReplacedCredentialUtcMillis;
+com.amazon.credentiallocker.WifiNetworkMetadata	field	private long mostRecentUpdatedCredentialUtcMillis;
+com.amazon.credentiallocker.WifiNetworkMetadata	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.WifiNetworkMetadata	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.WifiNetworkMetadata	method	public int getWifiCredentialCount()
+com.amazon.credentiallocker.WifiNetworkMetadata	method	public int hashCode()
+com.amazon.credentiallocker.WifiNetworkMetadata	method	public long getMostRecentReplacedCredentialUtcMillis()
+com.amazon.credentiallocker.WifiNetworkMetadata	method	public long getMostRecentUpdatedCredentialUtcMillis()
+com.amazon.credentiallocker.WifiNetworkMetadata	method	public void setMostRecentReplacedCredentialUtcMillis(long j)
+com.amazon.credentiallocker.WifiNetworkMetadata	method	public void setMostRecentUpdatedCredentialUtcMillis(long j)
+com.amazon.credentiallocker.WifiNetworkMetadata	method	public void setWifiCredentialCount(int i)
+com.amazon.credentiallocker.WifiNetworkScanResult	field	private Long rssi;
+com.amazon.credentiallocker.WifiNetworkScanResult	field	private String bssid;
+com.amazon.credentiallocker.WifiNetworkScanResult	field	private String securityType;
+com.amazon.credentiallocker.WifiNetworkScanResult	field	private String ssid;
+com.amazon.credentiallocker.WifiNetworkScanResult	field	private String wpaPskType;
+com.amazon.credentiallocker.WifiNetworkScanResult	field	private static final int classNameHashCode;
+com.amazon.credentiallocker.WifiNetworkScanResult	method	public Long getRssi()
+com.amazon.credentiallocker.WifiNetworkScanResult	method	public String getBssid()
+com.amazon.credentiallocker.WifiNetworkScanResult	method	public String getSecurityType()
+com.amazon.credentiallocker.WifiNetworkScanResult	method	public String getSsid()
+com.amazon.credentiallocker.WifiNetworkScanResult	method	public String getWpaPskType()
+com.amazon.credentiallocker.WifiNetworkScanResult	method	public boolean equals(Object obj)
+com.amazon.credentiallocker.WifiNetworkScanResult	method	public int hashCode()
+com.amazon.credentiallocker.WifiNetworkScanResult	method	public void setBssid(String str)
+com.amazon.credentiallocker.WifiNetworkScanResult	method	public void setRssi(Long l)
+com.amazon.credentiallocker.WifiNetworkScanResult	method	public void setSecurityType(String str)
+com.amazon.credentiallocker.WifiNetworkScanResult	method	public void setSsid(String str)
+com.amazon.credentiallocker.WifiNetworkScanResult	method	public void setWpaPskType(String str)
+com.amazon.credentiallocker.WifiSecurityType	field	private static final String[] values;
+com.amazon.credentiallocker.WifiSecurityType	field	public static final String OPEN;
+com.amazon.credentiallocker.WifiSecurityType	field	public static final String WEP;
+com.amazon.credentiallocker.WifiSecurityType	field	public static final String WPA2_EAP;
+com.amazon.credentiallocker.WifiSecurityType	field	public static final String WPAPSK;
+com.amazon.credentiallocker.WifiSecurityType	method	private WifiSecurityType()
+com.amazon.credentiallocker.WifiSecurityType	method	public static String[] values()
+com.amazon.credentiallocker.WpaPskType	field	private static final String[] values;
+com.amazon.credentiallocker.WpaPskType	field	public static final String WPA2;
+com.amazon.credentiallocker.WpaPskType	field	public static final String WPA3_ONLY;
+com.amazon.credentiallocker.WpaPskType	field	public static final String WPA3_TRANSITION;
+com.amazon.credentiallocker.WpaPskType	method	private WpaPskType()
+com.amazon.credentiallocker.WpaPskType	method	public static String[] values()
+com.amazon.wifilocker.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.wifilocker.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.wifilocker.BuildConfig	field	public static final String FLAVOR;
+com.amazon.wifilocker.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.wifilocker.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.wifilocker.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.wifilocker.Manifest$permission	field	public static final String DELETE_CREDENTIALS;
+com.amazon.wifilocker.Manifest$permission	field	public static final String RECEIVE_DELETE_CREDENTIALS_STATUS;
+com.amazon.wifilocker.R$string	field	public static final int app_name;
+com.amazon.wifilocker.WiFiLockerApplication	field	protected c mObjectGraph;
+com.amazon.wifilocker.WiFiLockerApplication	method	public void inject(Object obj)
+com.amazon.wifilocker.WiFiLockerApplication	method	public void onCreate()
+com.amazon.wifilocker.credentiallocker.Constants	field	public static final String CLIENT_MANUFACTURER;
+com.amazon.wifilocker.credentiallocker.Constants	field	public static final String CLIENT_MANUFACTURER_HEADER;
+com.amazon.wifilocker.credentiallocker.Constants	field	public static final String CLIENT_MODEL;
+com.amazon.wifilocker.credentiallocker.Constants	field	public static final String CLIENT_MODEL_HEADER;
+com.amazon.wifilocker.credentiallocker.Constants	field	public static final String CLIENT_NAME_HEADER;
+com.amazon.wifilocker.credentiallocker.Constants	field	public static final String CLIENT_NAME_METRIC;
+com.amazon.wifilocker.credentiallocker.Constants	field	public static final String CLIENT_OS;
+com.amazon.wifilocker.credentiallocker.Constants	field	public static final String CLIENT_OS_HEADER;
+com.amazon.wifilocker.credentiallocker.Constants	field	public static final String CLIENT_OS_METRIC;
+com.amazon.wifilocker.credentiallocker.Constants	field	public static final String CLIENT_OS_VERSION;
+com.amazon.wifilocker.credentiallocker.Constants	field	public static final String CLIENT_OS_VERSION_HEADER;
+com.amazon.wifilocker.credentiallocker.Constants	field	public static final String CLIENT_PRODUCT;
+com.amazon.wifilocker.credentiallocker.Constants	field	public static final String CLIENT_PRODUCT_HEADER;
+com.amazon.wifilocker.credentiallocker.Constants	field	public static final String CLIENT_VERSION;
+com.amazon.wifilocker.credentiallocker.Constants	field	public static final String CLIENT_VERSION_HEADER;
+com.amazon.wifilocker.credentiallocker.Constants	field	public static final String CRED_LOCKER_ENABLED_FLAG;
+com.amazon.wifilocker.credentiallocker.Constants	field	public static final String LEGACY_OPT_OUT_METRIC;
+com.amazon.wifilocker.credentiallocker.Constants	field	public static final String METRICS_PROGRAM;
+com.amazon.wifilocker.credentiallocker.Constants	field	public static final String METRICS_PROGRAM_GROUP_ID;
+com.amazon.wifilocker.credentiallocker.Constants	field	public static final String OPT_OUT_METRIC;
+com.amazon.wifilocker.credentiallocker.Constants	field	public static final String SCHEDULE_IMMEDIATELY;
+com.amazon.wifilocker.credentiallocker.Constants	field	public static final String SHARED_PREF_WIFI_NETWORK;
+com.amazon.wifilocker.credentiallocker.Constants	field	public static final String STATE_TRUE;
+com.amazon.wifilocker.credentiallocker.Constants	field	public static final int OPT_IN;
+com.amazon.wifilocker.credentiallocker.Constants	field	public static final int OPT_OUT;
+com.amazon.wifilocker.credentiallocker.Constants	method	private Constants()
+com.amazon.wifilocker.credentiallocker.CredentialLockerHelper	field	private Context mContext;
+com.amazon.wifilocker.credentiallocker.CredentialLockerHelper	field	private CredentialLockerServiceRestfulClient mClient;
+com.amazon.wifilocker.credentiallocker.CredentialLockerHelper	field	private static final String TAG;
+com.amazon.wifilocker.credentiallocker.CredentialLockerHelper	method	public CredentialLockerHelper(Context context, CredentialLockerServiceRestfulClient credentialLockerServiceRestfulClient)
+com.amazon.wifilocker.credentiallocker.CredentialLockerHelper	method	public String getAccessToken(MetricEvent metricEvent, String str)
+com.amazon.wifilocker.credentiallocker.CredentialLockerHelper	method	public String getAccessTokenForAccount(String str, final MetricEvent metricEvent)
+com.amazon.wifilocker.credentiallocker.CredentialLockerHelper	method	public String getEndpoint(String str)
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	field	private Context mContext;
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	field	private CredLockerServiceMetricsFactory mCredLockerMetricsFactory;
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	field	private HttpClient mHttpClient;
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	field	private WifiFormatValidator mWifiValidator;
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	field	private static final String ACCEPT_HEADER_NAME;
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	field	private static final String ACCESS_TOKEN_HEADER_NAME;
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	field	private static final String CREDENTIAL_LOCKER_GETENDPOINT_PATH;
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	field	private static final String CREDENTIAL_LOCKER_HOST;
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	field	private static final String CREDENTIAL_LOCKER_PATH;
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	field	private static final String CREDENTIAL_LOCKER_PROTOCOL;
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	field	private static final String DELETE_WIFI_SCHEMA_ID;
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	field	private static final String GET_WIFI_SCHEMA_ID;
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	field	private static final String JSON_UTF8_CONTENT_TYPE;
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	field	private static final String SAVE_WIFI_SCHEMA_ID;
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	field	private static final String TAG;
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	field	private static final int TIMEOUT_MS;
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	method	private List<WifiConfiguration> buildWifiConfigurationList(GetWifiConfigurationsResponse getWifiConfigurationsResponse)
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	method	private SaveWifiConfigurationsRequest buildSaveWifiConfigurationRequest(List<WifiConfiguration> list, String str, String str2, MetricEvent metricEvent)
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	method	private String executeHttpRequest(String str, String str2, String str3, String str4, String str5, HttpVerb httpVerb, HttpEntity httpEntity, String str6, String str7)
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	method	private String getEndpointStringFromCloud(String str)
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	method	private String getWpaPskType(WifiConfiguration wifiConfiguration)
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	method	private void processErrorStatusCode(int i) throws CredentialLockerRequestException, CredentialLockerServiceException
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	method	public CredentialLockerServiceRestfulClient(WifiFormatValidator wifiFormatValidator, CredLockerServiceMetricsFactory credLockerServiceMetricsFactory, Context context)
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	method	public GetEndpointResponse getEndpointFromCloud(String str)
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	method	public List<WifiConfiguration> getWifiConfigurationsFromCloud(String str, String str2, String str3, String str4)
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	method	public String getWifiCredentialsFromCloud(String str, String str2, String str3, String str4)
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	method	public WifiConfiguration getAndroidWifiConfiguration(com.amazon.credentiallocker.WifiConfiguration wifiConfiguration)
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	method	public com.amazon.credentiallocker.WifiConfiguration getCoralWifiConfiguration(WifiConfiguration wifiConfiguration, MetricEvent metricEvent)
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	method	public void deleteWifiCredentialsFromCloud(String str, String str2, String str3, String str4)
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	method	public void saveWifiCredentialsToCloud(List<WifiConfiguration> list, String str, String str2, String str3, String str4, MetricEvent metricEvent)
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	method	public void saveWifiCredentialsToCloud(String str, String str2, String str3) throws CredentialLockerRequestException
+com.amazon.wifilocker.credentiallocker.CredentialLockerServiceRestfulClient	method	public void setHeaders(HttpUriRequest httpUriRequest)
+com.amazon.wifilocker.credentiallocker.HttpRequestFactory	method	public HttpUriRequest newHttpRequest(HttpVerb httpVerb, Uri uri, HttpEntity httpEntity)
+com.amazon.wifilocker.credentiallocker.WifiFormatValidator	field	private static final String ASCII_REGEX;
+com.amazon.wifilocker.credentiallocker.WifiFormatValidator	field	private static final String HEX_REGEX;
+com.amazon.wifilocker.credentiallocker.WifiFormatValidator	field	private static final String MAC_REGEX;
+com.amazon.wifilocker.credentiallocker.WifiFormatValidator	field	private static final int PSK_HEX_LENGTH;
+com.amazon.wifilocker.credentiallocker.WifiFormatValidator	field	private static final int PSK_MAX_ASCII_LENGTH;
+com.amazon.wifilocker.credentiallocker.WifiFormatValidator	field	private static final int PSK_MIN_ASCII_LENGTH;
+com.amazon.wifilocker.credentiallocker.WifiFormatValidator	field	private static final int SSID_MAX_ASCII_LENGTH;
+com.amazon.wifilocker.credentiallocker.WifiFormatValidator	field	private static final int SSID_MIN_ASCII_LENGTH;
+com.amazon.wifilocker.credentiallocker.WifiFormatValidator	method	private boolean isAsciiString(String str)
+com.amazon.wifilocker.credentiallocker.WifiFormatValidator	method	private boolean isHexString(String str)
+com.amazon.wifilocker.credentiallocker.WifiFormatValidator	method	public boolean isValidMACAddress(String str)
+com.amazon.wifilocker.credentiallocker.WifiFormatValidator	method	public boolean isValidPSK(String str)
+com.amazon.wifilocker.credentiallocker.WifiFormatValidator	method	public boolean isValidSsid(String str)
+com.amazon.wifilocker.credentiallocker.WifiFormatValidator	method	public boolean isValidWepKey(String str)
+com.amazon.wifilocker.credentiallocker.constants.ServiceParameters	field	public static final String DELETE_CREDENTIALS_ACTION;
+com.amazon.wifilocker.credentiallocker.constants.ServiceParameters	field	public static final String INTENT_PARAM_WIFI_NETWORK_ID;
+com.amazon.wifilocker.credentiallocker.constants.ServiceParameters	field	public static final String JOB_PARAMS_WIFI_ACCOUNT;
+com.amazon.wifilocker.credentiallocker.constants.ServiceParameters	field	public static final String JOB_PARAMS_WIFI_LOCKER_SETTING;
+com.amazon.wifilocker.credentiallocker.constants.ServiceParameters	field	public static final String JOB_PARAMS_WIFI_NETWORK_LIST;
+com.amazon.wifilocker.credentiallocker.constants.ServiceParameters	field	public static final String OPT_OUT_ACTION;
+com.amazon.wifilocker.credentiallocker.constants.ServiceParameters	field	public static final String SCHEDULE_IMMEDIATELY;
+com.amazon.wifilocker.credentiallocker.constants.ServiceParameters	field	public static final String UPLOAD_CREDENTIALS_ACTION;
+com.amazon.wifilocker.credentiallocker.constants.ServiceParameters	field	public static final int PRIMARY_USER_ID;
+com.amazon.wifilocker.credentiallocker.constants.ServiceParameters	field	public static final int UPLOAD_ALL_NETWORKS;
+com.amazon.wifilocker.credentiallocker.constants.ServiceParameters	field	public static final long UPLOAD_JOB_PERIOD_MILLIS;
+com.amazon.wifilocker.credentiallocker.exception.CredentialLockerRequestException	method	public CredentialLockerRequestException()
+com.amazon.wifilocker.credentiallocker.exception.CredentialLockerRequestException	method	public CredentialLockerRequestException(String str)
+com.amazon.wifilocker.credentiallocker.exception.CredentialLockerRequestException	method	public CredentialLockerRequestException(String str, Throwable th)
+com.amazon.wifilocker.credentiallocker.exception.CredentialLockerRequestException	method	public CredentialLockerRequestException(Throwable th)
+com.amazon.wifilocker.credentiallocker.exception.CredentialLockerServiceException	method	public CredentialLockerServiceException()
+com.amazon.wifilocker.credentiallocker.exception.CredentialLockerServiceException	method	public CredentialLockerServiceException(String str)
+com.amazon.wifilocker.credentiallocker.exception.CredentialLockerServiceException	method	public CredentialLockerServiceException(String str, Throwable th)
+com.amazon.wifilocker.credentiallocker.exception.CredentialLockerServiceException	method	public CredentialLockerServiceException(Throwable th)
+com.amazon.wifilocker.credentiallocker.metrics.CredLockerServiceMetrics	field	private AmazonMinerva mMinervaClient;
+com.amazon.wifilocker.credentiallocker.metrics.CredLockerServiceMetrics	field	private MetricEvent mMinervaEvent;
+com.amazon.wifilocker.credentiallocker.metrics.CredLockerServiceMetrics	field	private String mMetricsName;
+com.amazon.wifilocker.credentiallocker.metrics.CredLockerServiceMetrics	field	private String mSchemaId;
+com.amazon.wifilocker.credentiallocker.metrics.CredLockerServiceMetrics	field	private long startTime;
+com.amazon.wifilocker.credentiallocker.metrics.CredLockerServiceMetrics	field	private static final String EXCEPTION_METRICS;
+com.amazon.wifilocker.credentiallocker.metrics.CredLockerServiceMetrics	field	private static final String LATENCY_METRIC;
+com.amazon.wifilocker.credentiallocker.metrics.CredLockerServiceMetrics	field	private static final String PROGRAM_NAME;
+com.amazon.wifilocker.credentiallocker.metrics.CredLockerServiceMetrics	field	private static final String SUCCESS_METRIC;
+com.amazon.wifilocker.credentiallocker.metrics.CredLockerServiceMetrics	method	private void startMinervaTimer()
+com.amazon.wifilocker.credentiallocker.metrics.CredLockerServiceMetrics	method	private void stopMinervaTimer(String str)
+com.amazon.wifilocker.credentiallocker.metrics.CredLockerServiceMetrics	method	public CredLockerServiceMetrics(String str, String str2, AmazonMinerva amazonMinerva)
+com.amazon.wifilocker.credentiallocker.metrics.CredLockerServiceMetrics	method	public void startProfiling()
+com.amazon.wifilocker.credentiallocker.metrics.CredLockerServiceMetrics	method	public void stopProfiling(boolean z, String str)
+com.amazon.wifilocker.credentiallocker.metrics.CredLockerServiceMetricsFactory	field	private AmazonMinerva mMinervaClient;
+com.amazon.wifilocker.credentiallocker.metrics.CredLockerServiceMetricsFactory	method	public CredLockerServiceMetrics createCredServiceMetrics(String str, String str2)
+com.amazon.wifilocker.credentiallocker.metrics.CredLockerServiceMetricsFactory	method	public CredLockerServiceMetricsFactory(AmazonMinerva amazonMinerva)
+com.amazon.wifilocker.credentiallocker.metrics.MinervaMetricEventFactory	field	private MetricEvent metricEvent;
+com.amazon.wifilocker.credentiallocker.metrics.MinervaMetricEventFactory	method	public MetricEvent getMetricEvent()
+com.amazon.wifilocker.credentiallocker.metrics.MinervaMetricEventFactory	method	public MinervaMetricEventFactory(Context context)
+com.amazon.wifilocker.credentiallocker.metrics.MinervaMetricEventFactory	method	public void setMetricEvent(String str, String str2)
+com.amazon.wifilocker.receivers.DeleteCredentialsReceiver	field	private static final String METRIC_SCHEMA_ID;
+com.amazon.wifilocker.receivers.DeleteCredentialsReceiver	field	private static final String METRIC_SOURCE;
+com.amazon.wifilocker.receivers.DeleteCredentialsReceiver	field	public static final String TAG;
+com.amazon.wifilocker.receivers.DeleteCredentialsReceiver	method	public void onReceive(final Context context, final Intent intent)
+com.amazon.wifilocker.receivers.InitialUploadReceiver	field	private static final String METRIC_SCHEMA_ID;
+com.amazon.wifilocker.receivers.InitialUploadReceiver	field	private static final String METRIC_SOURCE;
+com.amazon.wifilocker.receivers.InitialUploadReceiver	field	public static final String TAG;
+com.amazon.wifilocker.receivers.InitialUploadReceiver	method	public void onReceive(final Context context, final Intent intent)
+com.amazon.wifilocker.receivers.OptOutReceiver	field	public static final String TAG;
+com.amazon.wifilocker.receivers.OptOutReceiver	method	public void onReceive(final Context context, final Intent intent)
+com.amazon.wifilocker.receivers.WifiChangeReceiver	field	private static final String METRIC_SCHEMA_ID;
+com.amazon.wifilocker.receivers.WifiChangeReceiver	field	private static final String METRIC_SOURCE;
+com.amazon.wifilocker.receivers.WifiChangeReceiver	field	public static final String TAG;
+com.amazon.wifilocker.receivers.WifiChangeReceiver	method	public void onReceive(final Context context, final Intent intent)
+com.amazon.wifilocker.services.DeleteCredentialsService	field	private static final String DELETE_FAILURE_ACTION;
+com.amazon.wifilocker.services.DeleteCredentialsService	field	private static final String RECEIVE_DELETE_STATUS_PERMISSION;
+com.amazon.wifilocker.services.DeleteCredentialsService	field	private static final String TAG;
+com.amazon.wifilocker.services.DeleteCredentialsService	method	protected String getMetricsName()
+com.amazon.wifilocker.services.DeleteCredentialsService	method	protected String getMetricsSchemaId()
+com.amazon.wifilocker.services.DeleteCredentialsService	method	protected String getTag()
+com.amazon.wifilocker.services.DeleteCredentialsService	method	protected boolean doInBackground(JobParameters jobParameters, AmazonMinerva amazonMinerva, MetricEvent metricEvent) throws Throwable
+com.amazon.wifilocker.services.DeleteCredentialsService	method	protected int deleteCredentialsFromTheCloud(int i, CredentialLockerServiceRestfulClient credentialLockerServiceRestfulClient, String str, String str2)
+com.amazon.wifilocker.services.DeleteCredentialsService	method	protected void removeSharedPrefs()
+com.amazon.wifilocker.services.DeleteCredentialsService	method	protected void sendStatusBroadcast(String str)
+com.amazon.wifilocker.services.DeleteCredentialsService	method	protected void validateTokenAndEndpoint(String str, String str2, MetricEvent metricEvent)
+com.amazon.wifilocker.services.SaveCredentialsService	field	private static final String TAG;
+com.amazon.wifilocker.services.SaveCredentialsService	method	private WifiConfiguration getWifiConfiguration(int i, MetricEvent metricEvent)
+com.amazon.wifilocker.services.SaveCredentialsService	method	private void updateWifiConfigurationHash(List<WifiConfiguration> list, String str)
+com.amazon.wifilocker.services.SaveCredentialsService	method	protected String getMetricsName()
+com.amazon.wifilocker.services.SaveCredentialsService	method	protected String getMetricsSchemaId()
+com.amazon.wifilocker.services.SaveCredentialsService	method	protected String getTag()
+com.amazon.wifilocker.services.SaveCredentialsService	method	protected boolean compareWifiConfiguration(WifiConfiguration wifiConfiguration, String str, MetricEvent metricEvent)
+com.amazon.wifilocker.services.SaveCredentialsService	method	protected boolean doInBackground(JobParameters jobParameters, AmazonMinerva amazonMinerva, MetricEvent metricEvent)
+com.amazon.wifilocker.services.SaveCredentialsService	method	protected boolean uploadCredentials(ArrayList<WifiConfiguration> arrayList, String str, int i, boolean z, int i2, AmazonMinerva amazonMinerva, MetricEvent metricEvent)
+com.amazon.wifilocker.services.SaveCredentialsService	method	protected static String notNull(String str)
+com.amazon.wifilocker.services.ThreadedJobService	field	private static final String TAG;
+com.amazon.wifilocker.services.ThreadedJobService	method	protected abstract String getMetricsName();
+com.amazon.wifilocker.services.ThreadedJobService	method	protected abstract String getMetricsSchemaId();
+com.amazon.wifilocker.services.ThreadedJobService	method	protected abstract String getTag();
+com.amazon.wifilocker.services.ThreadedJobService	method	protected abstract boolean doInBackground(JobParameters jobParameters, AmazonMinerva amazonMinerva, MetricEvent metricEvent);
+com.amazon.wifilocker.services.ThreadedJobService	method	public boolean onStartJob(final JobParameters jobParameters)
+com.amazon.wifilocker.services.ThreadedJobService	method	public boolean onStopJob(JobParameters jobParameters)
+com.amazon.wifilocker.services.UploadAllCredentialsService	field	private static final String TAG;
+com.amazon.wifilocker.services.UploadAllCredentialsService	method	protected String getTag()
+com.amazon.wifilocker.services.UploadAllCredentialsService	method	protected boolean doInBackground(JobParameters jobParameters, AmazonMinerva amazonMinerva, MetricEvent metricEvent)
+com.amazon.wifilocker.util.CredentialUtil	field	private static final String TAG;
+com.amazon.wifilocker.util.CredentialUtil	field	public static final String OPT_OUT_SCHEMA_ID;
+com.amazon.wifilocker.util.CredentialUtil	field	public static final String OPT_OUT_SOURCE;
+com.amazon.wifilocker.util.CredentialUtil	field	public static final String WIFI_KEYMGMT_NONE;
+com.amazon.wifilocker.util.CredentialUtil	field	public static final String WIFI_KEYMGMT_WPAPSK;
+com.amazon.wifilocker.util.CredentialUtil	field	public static final String WIFI_WEP_PASS_DELIMITER;
+com.amazon.wifilocker.util.CredentialUtil	method	private List<WifiConfiguration> callGetPrivilegedConfiguredNetworks(WifiManager wifiManager)
+com.amazon.wifilocker.util.CredentialUtil	method	private void setAllowedKeyManagement(WifiConfiguration wifiConfiguration, WifiManager wifiManager)
+com.amazon.wifilocker.util.CredentialUtil	method	public CredentialUtil(Context context)
+com.amazon.wifilocker.util.CredentialUtil	method	public Integer getProfileIdFromDirectedId(String str, Context context, MetricEvent metricEvent) throws UnsupportedOperationException
+com.amazon.wifilocker.util.CredentialUtil	method	public List<WifiConfiguration> getAllWifiNetworkInfo(Context context)
+com.amazon.wifilocker.util.CredentialUtil	method	public String convertByteArrayToHexString(byte[] bArr)
+com.amazon.wifilocker.util.CredentialUtil	method	public String getDeviceSerialNumber()
+com.amazon.wifilocker.util.CredentialUtil	method	public String getDeviceType()
+com.amazon.wifilocker.util.CredentialUtil	method	public String getDirectedIdFromProfileId(int i, Context context)
+com.amazon.wifilocker.util.CredentialUtil	method	public String getKeyManagement(WifiConfiguration wifiConfiguration)
+com.amazon.wifilocker.util.CredentialUtil	method	public String getSerializedPassword(WifiConfiguration wifiConfiguration)
+com.amazon.wifilocker.util.CredentialUtil	method	public String getSerializedWifiId(WifiConfiguration wifiConfiguration, String str)
+com.amazon.wifilocker.util.CredentialUtil	method	public String hashString(String str, String str2)
+com.amazon.wifilocker.util.CredentialUtil	method	public WifiConfiguration getCurrentWifiNetworkInfo(Context context)
+com.amazon.wifilocker.util.CredentialUtil	method	public WifiConfiguration getWifiNetworkInfoByNetworkID(int i, Context context, MetricEvent metricEvent)
+com.amazon.wifilocker.util.CredentialUtil	method	public boolean isDeviceOnline(Context context)
+com.amazon.wifilocker.util.CredentialUtil	method	public static String sha256Hash(String str)
+com.amazon.wifilocker.util.CredentialUtil	method	public void emitLegacyOptOutMetric(Context context, int i)
+com.amazon.wifilocker.util.CredentialUtil	method	public void emitOptOutMetric(Context context, int i, int i2)
+com.amazon.wifilocker.util.JobSchedulerUtil	field	private static final String TAG;
+com.amazon.wifilocker.util.JobSchedulerUtil	field	private static int DELETE_JOB;
+com.amazon.wifilocker.util.JobSchedulerUtil	field	private static int OOBE_UPLOAD_JOB;
+com.amazon.wifilocker.util.JobSchedulerUtil	field	private static int SAVE_JOB;
+com.amazon.wifilocker.util.JobSchedulerUtil	method	public Integer getProfileIdFromAccountPool(Context context, String str, MAPAccountManager mAPAccountManager, CredentialUtil credentialUtil, MetricEvent metricEvent)
+com.amazon.wifilocker.util.JobSchedulerUtil	method	public JobSchedulerUtil(Context context)
+com.amazon.wifilocker.util.JobSchedulerUtil	method	public String getForegroudAccountId(Context context, CredentialUtil credentialUtil, MetricEvent metricEvent)
+com.amazon.wifilocker.util.JobSchedulerUtil	method	public boolean isWiFiLockerEnabledForProfile(int i, MetricEvent metricEvent)
+com.amazon.wifilocker.util.JobSchedulerUtil	method	public static ArrayList<String> getNetworkListForNewJob(JobInfo jobInfo, String str, JobScheduler jobScheduler)
+com.amazon.wifilocker.util.JobSchedulerUtil	method	public static ArrayList<String> getNetworkListFromJobParams(PersistableBundle persistableBundle)
+com.amazon.wifilocker.util.JobSchedulerUtil	method	public static JobInfo saveJobWithAccountAlreadyExists(JobScheduler jobScheduler, String str, int i)
+com.amazon.wifilocker.util.JobSchedulerUtil	method	public static List<JobInfo> getExistingIndividualSaveJobsList(JobScheduler jobScheduler, String str)
+com.amazon.wifilocker.util.JobSchedulerUtil	method	public static PersistableBundle packageAccountInfo(String str)
+com.amazon.wifilocker.util.JobSchedulerUtil	method	public static PersistableBundle packageWifiConfiguration(String str, String str2, boolean z)
+com.amazon.wifilocker.util.JobSchedulerUtil	method	public static String getAccountId(JobParameters jobParameters)
+com.amazon.wifilocker.util.JobSchedulerUtil	method	public static boolean jobAlreadyExists(JobScheduler jobScheduler, int i)
+com.amazon.wifilocker.util.JobSchedulerUtil	method	public static int getNextJobId(JobScheduler jobScheduler)
+com.amazon.wifilocker.util.JobSchedulerUtil	method	public static void cancelJobService(int i, Context context)
+com.amazon.wifilocker.util.JobSchedulerUtil	method	public void scheduleDeleteWifiJob(Context context, boolean z, String str)
+com.amazon.wifilocker.util.JobSchedulerUtil	method	public void scheduleInitialUploadJob(Context context, boolean z, String str, int i)
+com.amazon.wifilocker.util.JobSchedulerUtil	method	public void scheduleSaveWifiJob(Context context, boolean z, int i, String str, boolean z2)
+com.amazon.wifilocker.util.LogUtilities	field	private static final String DOT_APPENDED_DOMAIN_NAME;
+com.amazon.wifilocker.util.LogUtilities	field	public static final String DOMAIN_NAME;
+com.amazon.wifilocker.util.LogUtilities	method	private LogUtilities()
+com.amazon.wifilocker.util.LogUtilities	method	public static String getTag(Class<?> cls)
+com.amazon.wifilocker.util.MultipleProfileUtil	field	private AmazonUserManager mAmazonUserManager;
+com.amazon.wifilocker.util.MultipleProfileUtil	field	private Context mAppContext;
+com.amazon.wifilocker.util.MultipleProfileUtil	field	private String TAG;
+com.amazon.wifilocker.util.MultipleProfileUtil	field	private static final String COUNTER_GET_FOREGROUND_PROFILE_ID_FAILED;
+com.amazon.wifilocker.util.MultipleProfileUtil	field	private static final String COUNTER_GET_PROFILE_IDS_FAILED;
+com.amazon.wifilocker.util.MultipleProfileUtil	field	private static final String COUNTER_GET_STRING_FOR_PROFILE_FAILED;
+com.amazon.wifilocker.util.MultipleProfileUtil	method	public MultipleProfileUtil(Context context)
+com.amazon.wifilocker.util.MultipleProfileUtil	method	public String getStringForProfile(String str, int i, MetricEvent metricEvent) throws UnsupportedOperationException
+com.amazon.wifilocker.util.MultipleProfileUtil	method	public int getForegroundProfileId(MetricEvent metricEvent) throws UnsupportedOperationException
+com.amazon.wifilocker.util.MultipleProfileUtil	method	public int[] getProfileIds(MetricEvent metricEvent) throws UnsupportedOperationException
+com.amazon.wifilocker.util.ProvideCredentialUtilProvidesAdapter	field	private final WiFilockerApplicationModule module;
+com.amazon.wifilocker.util.ProvideCredentialUtilProvidesAdapter	method	public ProvideCredentialUtilProvidesAdapter(WiFilockerApplicationModule wiFilockerApplicationModule)
+com.amazon.wifilocker.util.ProvideCredentialUtilProvidesAdapter	method	public final CredentialUtil get()
+com.amazon.wifilocker.util.ProvideExecutorServiceProvidesAdapter	field	private final WiFilockerApplicationModule module;
+com.amazon.wifilocker.util.ProvideExecutorServiceProvidesAdapter	method	public ProvideExecutorServiceProvidesAdapter(WiFilockerApplicationModule wiFilockerApplicationModule)
+com.amazon.wifilocker.util.ProvideExecutorServiceProvidesAdapter	method	public final ExecutorService get()
+com.amazon.wifilocker.util.ProvideJobSchedulerUtilProvidesAdapter	field	private final WiFilockerApplicationModule module;
+com.amazon.wifilocker.util.ProvideJobSchedulerUtilProvidesAdapter	method	public ProvideJobSchedulerUtilProvidesAdapter(WiFilockerApplicationModule wiFilockerApplicationModule)
+com.amazon.wifilocker.util.ProvideJobSchedulerUtilProvidesAdapter	method	public final JobSchedulerUtil get()
+com.amazon.wifilocker.util.ProvideMultipleProfileUtilProvidesAdapter	field	private final WiFilockerApplicationModule module;
+com.amazon.wifilocker.util.ProvideMultipleProfileUtilProvidesAdapter	method	public ProvideMultipleProfileUtilProvidesAdapter(WiFilockerApplicationModule wiFilockerApplicationModule)
+com.amazon.wifilocker.util.ProvideMultipleProfileUtilProvidesAdapter	method	public final MultipleProfileUtil get()
+com.amazon.wifilocker.util.ProvidesMinervaEventProvidesAdapter	field	private final WiFilockerApplicationModule module;
+com.amazon.wifilocker.util.ProvidesMinervaEventProvidesAdapter	method	public ProvidesMinervaEventProvidesAdapter(WiFilockerApplicationModule wiFilockerApplicationModule)
+com.amazon.wifilocker.util.ProvidesMinervaEventProvidesAdapter	method	public final MinervaMetricEventFactory get()
+com.amazon.wifilocker.util.UnsupportedOperationException	method	public UnsupportedOperationException(Throwable th)
+com.amazon.wifilocker.util.WiFilockerApplicationModule	field	private final Context mWiFilockerApplication;
+com.amazon.wifilocker.util.WiFilockerApplicationModule	method	public WiFilockerApplicationModule(WiFiLockerApplication wiFiLockerApplication)
+org.a.a.a	field	private static final byte[] b;
+org.a.a.a	field	private static final byte[] c;
+org.a.a.a	field	private static final byte[] d;
+org.a.a.a	field	private static final byte[] e;
+org.a.a.a	field	private static final byte[] f;
+org.a.a.a	field	private static final byte[] g;
+org.a.a.a	method	private a()
+org.a.a.a	method	private static String a(byte[] bArr, int i)
+org.a.a.a	method	private static byte[] a(byte[] bArr, int i, int i2, byte[] bArr2, int i3)
+org.a.a.a	method	private static byte[] b(String str) throws Throwable
+org.a.a.a	method	private static byte[] b(byte[] bArr, int i) throws IOException
+org.a.a.a	method	public static String a(byte[] bArr)
+org.a.a.a	method	public static byte[] a(String str)
+org.mockito.internal.creation.bytebuddy.MockMethodDispatcher	field	private static final ConcurrentMap<String, MockMethodDispatcher> INSTANCE;
+org.mockito.internal.creation.bytebuddy.MockMethodDispatcher	method	public abstract Callable<?> handle(Object obj, Method method, Object[] objArr) throws Throwable;
+org.mockito.internal.creation.bytebuddy.MockMethodDispatcher	method	public abstract boolean isMock(Object obj);
+org.mockito.internal.creation.bytebuddy.MockMethodDispatcher	method	public abstract boolean isMocked(Object obj);
+org.mockito.internal.creation.bytebuddy.MockMethodDispatcher	method	public abstract boolean isOverridden(Object obj, Method method);
+org.mockito.internal.creation.bytebuddy.MockMethodDispatcher	method	public static MockMethodDispatcher get(String str, Object obj)
+org.mockito.internal.creation.bytebuddy.MockMethodDispatcher	method	public static void set(String str, MockMethodDispatcher mockMethodDispatcher)

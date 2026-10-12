@@ -1,0 +1,1677 @@
+class	kind	declaration
+com.amazon.android.crash.CrashCountHeader	method	private CrashCountHeader()
+com.amazon.android.crash.CrashCountHeader	method	public int getAggregateCount()
+com.amazon.android.crash.CrashCountHeader	method	public int getVersionNumber()
+com.amazon.android.crash.CrashCountHeader	method	public long getTimeStamp()
+com.amazon.android.crash.CrashCountMetadata	method	private CrashCountMetadata()
+com.amazon.android.crash.CrashCountMetadata	method	public String getAppName()
+com.amazon.android.crash.CrashCountMetadata	method	public String getAppVersion()
+com.amazon.android.crash.CrashCountMetadata	method	public String getCrashDescriptor()
+com.amazon.android.crash.CrashCountMetadata	method	public String getCrashType()
+com.amazon.android.crash.CrashCountMetadata	method	public String getOsBuildNumber()
+com.amazon.android.crash.CrashCountMetadata	method	public String getStackTrace()
+com.amazon.android.crash.CrashCountMetadata	method	public int getTotalCount()
+com.amazon.android.crash.CrashReporterManager	method	private CrashReporterManager()
+com.amazon.android.crash.CrashReporterManager	method	public CrashCountHeader getCrashHeader()
+com.amazon.android.crash.CrashReporterManager	method	public List<CrashCountMetadata> getCrashMetadata()
+com.amazon.android.crash.CrashReporterManager	method	public boolean deleteCrashes()
+com.amazon.device.crashmanager.AllowlistAppArtifact	field	private static final String TAG;
+com.amazon.device.crashmanager.AllowlistAppArtifact	method	public AllowlistAppArtifact(String str, InputStream inputStream, long j)
+com.amazon.device.crashmanager.AllowlistAppArtifact	method	public boolean shouldUploadArtifact()
+com.amazon.device.crashmanager.Artifact	field	private String mCrashDescriptor;
+com.amazon.device.crashmanager.Artifact	field	private String mCrashType;
+com.amazon.device.crashmanager.Artifact	field	private final InputStream mInputStream;
+com.amazon.device.crashmanager.Artifact	field	private final Map<String, String> mMetadataMap;
+com.amazon.device.crashmanager.Artifact	field	private final String mTag;
+com.amazon.device.crashmanager.Artifact	field	private final long mCreationTimeUTCMillis;
+com.amazon.device.crashmanager.Artifact	field	private int mCrashCount;
+com.amazon.device.crashmanager.Artifact	method	public Artifact(String str, FileInputStream fileInputStream, long j, String str2)
+com.amazon.device.crashmanager.Artifact	method	public Artifact(String str, InputStream inputStream, long j)
+com.amazon.device.crashmanager.Artifact	method	public Artifact(String str, InputStream inputStream, long j, String str2)
+com.amazon.device.crashmanager.Artifact	method	public InputStream getInputStream()
+com.amazon.device.crashmanager.Artifact	method	public Map<String, String> getMetadataMap()
+com.amazon.device.crashmanager.Artifact	method	public String getCrashDescriptor()
+com.amazon.device.crashmanager.Artifact	method	public String getCrashType()
+com.amazon.device.crashmanager.Artifact	method	public String getTag()
+com.amazon.device.crashmanager.Artifact	method	public boolean shouldUploadArtifact()
+com.amazon.device.crashmanager.Artifact	method	public int getCrashCount()
+com.amazon.device.crashmanager.Artifact	method	public long getCreationTimeUTCMillis()
+com.amazon.device.crashmanager.Artifact	method	public void addMetadata(String str, String str2)
+com.amazon.device.crashmanager.Artifact	method	public void close() throws IOException
+com.amazon.device.crashmanager.Artifact	method	public void removeMetadata(String str)
+com.amazon.device.crashmanager.Artifact	method	public void setCrashCount(int i)
+com.amazon.device.crashmanager.Artifact	method	public void setCrashDescriptor(String str)
+com.amazon.device.crashmanager.Artifact	method	public void setCrashType(String str)
+com.amazon.device.crashmanager.ArtifactOffloader	field	private final List<ArtifactSource> mArtifactSources;
+com.amazon.device.crashmanager.ArtifactOffloader	field	private final MediaScannerHelper mMediaScannerHelper;
+com.amazon.device.crashmanager.ArtifactOffloader	field	private final SimpleDateFormat DATE_FORMAT;
+com.amazon.device.crashmanager.ArtifactOffloader	field	private final StatusNotifier mStatusNotifier;
+com.amazon.device.crashmanager.ArtifactOffloader	field	private final String mDeviceSerialNumber;
+com.amazon.device.crashmanager.ArtifactOffloader	field	private static final File LOGS_DIR;
+com.amazon.device.crashmanager.ArtifactOffloader	field	private static final File TEMP_LOGS_DIR;
+com.amazon.device.crashmanager.ArtifactOffloader	field	private static final String LOG_FILE_PREFIX;
+com.amazon.device.crashmanager.ArtifactOffloader	field	private static final String LOG_FILE_SUFFIX;
+com.amazon.device.crashmanager.ArtifactOffloader	field	private static final String TAG;
+com.amazon.device.crashmanager.ArtifactOffloader	method	private File createTempFile()
+com.amazon.device.crashmanager.ArtifactOffloader	method	private ZipOutputStream getZipStream(File file) throws IOException
+com.amazon.device.crashmanager.ArtifactOffloader	method	private boolean renameFile(File file)
+com.amazon.device.crashmanager.ArtifactOffloader	method	public ArtifactOffloader(List<ArtifactSource> list, StatusNotifier statusNotifier, MediaScannerHelper mediaScannerHelper, String str)
+com.amazon.device.crashmanager.ArtifactOffloader	method	public String generateOffloadFileName(String str, long j)
+com.amazon.device.crashmanager.ArtifactOffloader	method	public int offloadArtifacts(int i, MetricUtil metricUtil) throws Throwable
+com.amazon.device.crashmanager.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.device.crashmanager.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.device.crashmanager.BuildConfig	field	public static final String FLAVOR;
+com.amazon.device.crashmanager.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.device.crashmanager.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.device.crashmanager.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.device.crashmanager.CrashArtifactGenerator	field	protected final DropBoxManager mDropBoxManager;
+com.amazon.device.crashmanager.CrashArtifactGenerator	field	protected final MetricUtil mMetricUtil;
+com.amazon.device.crashmanager.CrashArtifactGenerator	field	public static final String CRASH_COUNT_TAG;
+com.amazon.device.crashmanager.CrashArtifactGenerator	field	public static final String TAG;
+com.amazon.device.crashmanager.CrashArtifactGenerator	method	public Artifact generateCrashArtifact(CrashCountEntry crashCountEntry, long j) throws IOException
+com.amazon.device.crashmanager.CrashArtifactGenerator	method	public Artifact generateCrashArtifact(CrashFileEntry crashFileEntry, long j)
+com.amazon.device.crashmanager.CrashArtifactGenerator	method	public CrashArtifactGenerator(DropBoxManager dropBoxManager, MetricUtil metricUtil)
+com.amazon.device.crashmanager.CrashCountFileGenerator	field	public static final String TAG;
+com.amazon.device.crashmanager.CrashCountFileGenerator	method	private static StringBuilder getCrashCountHeaders(CrashCountEntry crashCountEntry)
+com.amazon.device.crashmanager.CrashCountFileGenerator	method	private static boolean isValidCrashCountEntry(CrashCountEntry crashCountEntry)
+com.amazon.device.crashmanager.CrashCountFileGenerator	method	private static void addKeyValuePair(StringBuilder sb, String str, String str2)
+com.amazon.device.crashmanager.CrashCountFileGenerator	method	public InputStream generateCrashFile(CrashCountEntry crashCountEntry)
+com.amazon.device.crashmanager.CrashJobService	field	private AmazonMinerva mMinervaClient;
+com.amazon.device.crashmanager.CrashJobService	field	private AmazonPackageLookup mAmazonPackageLookup;
+com.amazon.device.crashmanager.CrashJobService	field	private AsyncTask<Void, Void, Void> mCrashOffloadAsyncTask;
+com.amazon.device.crashmanager.CrashJobService	field	private DeviceInfoUtil mDeviceInfoUtil;
+com.amazon.device.crashmanager.CrashJobService	field	private DeviceProfileHelper mDeviceProfileHelper;
+com.amazon.device.crashmanager.CrashJobService	field	private Domain mDomain;
+com.amazon.device.crashmanager.CrashJobService	field	private JobScheduler mJobScheduler;
+com.amazon.device.crashmanager.CrashJobService	field	private NetworkManager mNetworkManager;
+com.amazon.device.crashmanager.CrashJobService	field	private PackageManager mAndroidPackageManager;
+com.amazon.device.crashmanager.CrashJobService	field	private SettingsStore mSettingsStore;
+com.amazon.device.crashmanager.CrashJobService	field	private StatusNotifier mStatusNotifier;
+com.amazon.device.crashmanager.CrashJobService	field	private final CrashManagerConfigurationUtil crashManagerConfigurationUtil;
+com.amazon.device.crashmanager.CrashJobService	field	private static final Set<String> DROPBOX_TAGS;
+com.amazon.device.crashmanager.CrashJobService	field	private static final String AQUILA_DEVICE_PLATFORM_NAME;
+com.amazon.device.crashmanager.CrashJobService	field	private static final String AQUILA_SYSTEM_FEATURE_FLAG;
+com.amazon.device.crashmanager.CrashJobService	field	private static final String BUILD_TYPE_KEY;
+com.amazon.device.crashmanager.CrashJobService	field	private static final String CRASH_REPORTER_MANAGER_NULL;
+com.amazon.device.crashmanager.CrashJobService	field	private static final String CREATE_EXTRA_DEVICE_INFO;
+com.amazon.device.crashmanager.CrashJobService	field	private static final String DET_ENDPOINT_CONTRACT_VERSION_KEY;
+com.amazon.device.crashmanager.CrashJobService	field	private static final String DEVICE_GROUP;
+com.amazon.device.crashmanager.CrashJobService	field	private static final String DROPBOX_MANAGER_NULL;
+com.amazon.device.crashmanager.CrashJobService	field	private static final String FIREOS_DEVICE_PLATFORM_NAME;
+com.amazon.device.crashmanager.CrashJobService	field	private static final String OFFLOAD_CRASH_ASYNC;
+com.amazon.device.crashmanager.CrashJobService	field	private static final String OFFLOAD_REQUEST_COUNT;
+com.amazon.device.crashmanager.CrashJobService	field	private static final String OFFLOAD_RESULT;
+com.amazon.device.crashmanager.CrashJobService	field	private static final String ONSTART_COMMAND;
+com.amazon.device.crashmanager.CrashJobService	field	private static final String ON_START_JOB;
+com.amazon.device.crashmanager.CrashJobService	field	private static final String PERIODIC_UPLOAD_TAG_PREFIX;
+com.amazon.device.crashmanager.CrashJobService	field	private static final String TAG;
+com.amazon.device.crashmanager.CrashJobService	field	private static final String UNKNOWN_JOB_ERROR_MESSAGE;
+com.amazon.device.crashmanager.CrashJobService	field	private static final String UPLOAD_CRASH_ASYNC;
+com.amazon.device.crashmanager.CrashJobService	field	private static final String USER_OPT_OUT_MESSAGE;
+com.amazon.device.crashmanager.CrashJobService	field	private static final int DET_ENDPOINT_CONTRACT_VERSION;
+com.amazon.device.crashmanager.CrashJobService	field	private static final int MAX_JITTER_MINS;
+com.amazon.device.crashmanager.CrashJobService	field	private static final int MIN_INITIAL_BACKOFF_TIME_MINS;
+com.amazon.device.crashmanager.CrashJobService	field	private static final int NOTIFICATION_ID;
+com.amazon.device.crashmanager.CrashJobService	field	public AsyncTask<Void, Void, Void> mCrashUploadAsyncTask;
+com.amazon.device.crashmanager.CrashJobService	field	public Context mContext;
+com.amazon.device.crashmanager.CrashJobService	field	public static final String CRASH_DESCRIPTOR_SHARED_PREF;
+com.amazon.device.crashmanager.CrashJobService	field	public static final String CRASH_UPLOAD_DET_TIMEOUT_KEY;
+com.amazon.device.crashmanager.CrashJobService	field	public static final String STORAGE_SHARED_PREF;
+com.amazon.device.crashmanager.CrashJobService	field	public static final String UPLOAD_CRASH_ARCUS_KEY;
+com.amazon.device.crashmanager.CrashJobService	field	public static final String UPLOAD_STATE_SHARED_PREF;
+com.amazon.device.crashmanager.CrashJobService	field	public static final boolean DEFAULT_SHOULD_UPLOAD_ARCUS_CRASH;
+com.amazon.device.crashmanager.CrashJobService	field	public static final int ARCUS_PERIODIC_SYNC_JOB;
+com.amazon.device.crashmanager.CrashJobService	field	public static final int BOOTUP_UPLOAD_CRASH_JOB;
+com.amazon.device.crashmanager.CrashJobService	field	public static final int CRASH_OFFLOAD_JOB;
+com.amazon.device.crashmanager.CrashJobService	field	public static final int DEFAULT_CRASH_UPLOAD_DET_TIMEOUT;
+com.amazon.device.crashmanager.CrashJobService	field	public static final int PERIODIC_UPLOAD_CRASH_JOB;
+com.amazon.device.crashmanager.CrashJobService	field	public static final int SPECTATOR_UPLOAD_CRASH_JOB;
+com.amazon.device.crashmanager.CrashJobService	method	private Pattern getAppAllowListPattern(List<String> list)
+com.amazon.device.crashmanager.CrashJobService	method	private void offloadCrashesAsync()
+com.amazon.device.crashmanager.CrashJobService	method	private void updateEndPointFromArcus()
+com.amazon.device.crashmanager.CrashJobService	method	protected boolean isReportUsageEnabled(Context context)
+com.amazon.device.crashmanager.CrashJobService	method	public ArtifactOffloader createArtifactOffloader()
+com.amazon.device.crashmanager.CrashJobService	method	public CrashUploader createCrashUploader(String str, MetricUtil metricUtil, CrashUploadStateUtil crashUploadStateUtil) throws Exception
+com.amazon.device.crashmanager.CrashJobService	method	public boolean canUploadCrashes(boolean z, MetricUtil metricUtil, MetricEvent metricEvent)
+com.amazon.device.crashmanager.CrashJobService	method	public boolean onStartJob(JobParameters jobParameters)
+com.amazon.device.crashmanager.CrashJobService	method	public boolean onStopJob(JobParameters jobParameters)
+com.amazon.device.crashmanager.CrashJobService	method	public int onStartCommand(Intent intent, int i, int i2)
+com.amazon.device.crashmanager.CrashJobService	method	public void handleResponse(CrashUploadStatistics.CrashUploadStatus crashUploadStatus, JobParameters jobParameters)
+com.amazon.device.crashmanager.CrashJobService	method	public void onCreate()
+com.amazon.device.crashmanager.CrashJobService	method	public void scheduleRetry(JobParameters jobParameters)
+com.amazon.device.crashmanager.CrashJobService	method	public void uploadCrashesAsync(final String str, final JobParameters jobParameters, String str2, final String str3)
+com.amazon.device.crashmanager.CrashJobService$ArcusAsyncTask	method	public Void doInBackground(Void... voidArr)
+com.amazon.device.crashmanager.CrashJobService$ArcusAsyncTask	method	public void onPostExecute(Void r3)
+com.amazon.device.crashmanager.CrashManagerActions	field	public static final String ACTION_OFFLOAD_CRASHES;
+com.amazon.device.crashmanager.CrashManagerActions	field	public static final String ACTION_OFFLOAD_LOGS;
+com.amazon.device.crashmanager.CrashManagerActions	field	public static final String ACTION_UNIFIED_SEARCH_EASTER_EGG;
+com.amazon.device.crashmanager.CrashManagerActions	field	public static final String ACTION_UPLOAD_CRASHES;
+com.amazon.device.crashmanager.CrashManagerActions	field	public static final String ACTION_UPLOAD_CRASHES_PULL;
+com.amazon.device.crashmanager.CrashManagerActions	field	public static final String ACTION_UPLOAD_CRASHES_TIMED;
+com.amazon.device.crashmanager.CrashManagerActions	field	public static final String ACTION_UPLOAD_CRASHES_UPLOAD_REASON_KEY;
+com.amazon.device.crashmanager.CrashManagerActions	field	public static final String ACTION_UPLOAD_CRASH_ARTIFACTS_BOOTUP;
+com.amazon.device.crashmanager.CrashManagerActions	field	public static final String ACTION_UPLOAD_STATUS;
+com.amazon.device.crashmanager.CrashManagerActions	field	public static final String ANR;
+com.amazon.device.crashmanager.CrashManagerActions	field	public static final String ARTIFACT_OFFLOAD;
+com.amazon.device.crashmanager.CrashManagerActions	field	public static final String ARTIFACT_UPLOAD;
+com.amazon.device.crashmanager.CrashManagerActions	field	public static final String BUILD_MAP;
+com.amazon.device.crashmanager.CrashManagerActions	field	public static final String JAVA_CRASH;
+com.amazon.device.crashmanager.CrashManagerActions	field	public static final String NATIVE_CRASH;
+com.amazon.device.crashmanager.CrashManagerActions	field	public static final String PIN_FAILURE;
+com.amazon.device.crashmanager.CrashManagerActions	field	public static final String STRICT_MODE_VIOLATION;
+com.amazon.device.crashmanager.CrashManagerApplication	field	private static final String TAG;
+com.amazon.device.crashmanager.CrashManagerApplication	field	public static final String APP_CONFIGURATION_ID;
+com.amazon.device.crashmanager.CrashManagerApplication	field	public static final String DEFAULT_CONFIGURATION_FILE_ENCODING;
+com.amazon.device.crashmanager.CrashManagerApplication	field	public static final String DEFAULT_CONFIGURATION_FILE_NAME;
+com.amazon.device.crashmanager.CrashManagerApplication	method	public static RemoteConfigurationManager initAndGetConfiguration(Context context)
+com.amazon.device.crashmanager.CrashManagerApplication	method	public void onCreate()
+com.amazon.device.crashmanager.CrashManagerBroadcastReceiver	field	private static final String ON_RECEIVE;
+com.amazon.device.crashmanager.CrashManagerBroadcastReceiver	field	private static final String TAG;
+com.amazon.device.crashmanager.CrashManagerBroadcastReceiver	field	private static final String UPLOAD_CRASHES;
+com.amazon.device.crashmanager.CrashManagerBroadcastReceiver	field	private static final String UPLOAD_TAG;
+com.amazon.device.crashmanager.CrashManagerBroadcastReceiver	field	static final String USAGE_METRICS_UPLOAD_ENABLED;
+com.amazon.device.crashmanager.CrashManagerBroadcastReceiver	method	private String getUploadTag(Intent intent)
+com.amazon.device.crashmanager.CrashManagerBroadcastReceiver	method	private boolean isUploadLogsMessage(Intent intent)
+com.amazon.device.crashmanager.CrashManagerBroadcastReceiver	method	private void offloadCrashes(Context context)
+com.amazon.device.crashmanager.CrashManagerBroadcastReceiver	method	private void uploadCrashesBootup(Context context)
+com.amazon.device.crashmanager.CrashManagerBroadcastReceiver	method	private void uploadCrashesOnPull(Context context, String str)
+com.amazon.device.crashmanager.CrashManagerBroadcastReceiver	method	public void onReceive(Context context, Intent intent)
+com.amazon.device.crashmanager.CrashManagerConfigurationSyncCallback	field	private final JobSchedulerUtil jobSchedulerUtil;
+com.amazon.device.crashmanager.CrashManagerConfigurationSyncCallback	field	private static final String TAG;
+com.amazon.device.crashmanager.CrashManagerConfigurationSyncCallback	method	private boolean isValid(long j)
+com.amazon.device.crashmanager.CrashManagerConfigurationSyncCallback	method	private void updateArcusSyncPeriod(long j)
+com.amazon.device.crashmanager.CrashManagerConfigurationSyncCallback	method	private void updateCrashUploadPeriod(long j)
+com.amazon.device.crashmanager.CrashManagerConfigurationSyncCallback	method	public CrashManagerConfigurationSyncCallback(JobSchedulerUtil jobSchedulerUtil)
+com.amazon.device.crashmanager.CrashManagerConfigurationSyncCallback	method	public void onConfigurationModified(Configuration configuration)
+com.amazon.device.crashmanager.CrashManagerConfigurationSyncCallback	method	public void onConfigurationUnmodified(Configuration configuration)
+com.amazon.device.crashmanager.CrashManagerConfigurationSyncCallback	method	public void onFailure(Exception exc)
+com.amazon.device.crashmanager.CrashManagerConfigurationSyncCallback	method	public void onThrottle(long j)
+com.amazon.device.crashmanager.CrashManagerDebugActivity	field	private BroadcastReceiver mBroadcastReceiver;
+com.amazon.device.crashmanager.CrashManagerDebugActivity	field	private TextView mUploadStatusTextView;
+com.amazon.device.crashmanager.CrashManagerDebugActivity	field	private TextView mUploadTagTextView;
+com.amazon.device.crashmanager.CrashManagerDebugActivity	field	private static final String ON_CLICK;
+com.amazon.device.crashmanager.CrashManagerDebugActivity	field	private static final String ON_CREATE;
+com.amazon.device.crashmanager.CrashManagerDebugActivity	field	private static final String ON_RECEIVE;
+com.amazon.device.crashmanager.CrashManagerDebugActivity	field	private static final String TAG;
+com.amazon.device.crashmanager.CrashManagerDebugActivity	method	protected void onCreate(Bundle bundle)
+com.amazon.device.crashmanager.CrashManagerDebugActivity	method	protected void onDestroy()
+com.amazon.device.crashmanager.CrashManagerDebugActivity	method	public void setTextForUploadStatus(String str)
+com.amazon.device.crashmanager.CrashManagerDebugActivity	method	public void setTextForUploadTag(String str)
+com.amazon.device.crashmanager.CrashManagerDebugActivity$CrashManagerDebugBroadcastReceiver	field	private final CrashManagerDebugActivity mCrashManagerDebugActivity;
+com.amazon.device.crashmanager.CrashManagerDebugActivity$CrashManagerDebugBroadcastReceiver	method	public void onReceive(Context context, Intent intent)
+com.amazon.device.crashmanager.CrashManagerPermissions	field	public static final String USE_CRASH_MANAGER;
+com.amazon.device.crashmanager.CrashManagerS2DMReceiver	field	private static final String TAG;
+com.amazon.device.crashmanager.CrashManagerS2DMReceiver	method	public void onReceive(Context context, Intent intent)
+com.amazon.device.crashmanager.CrashManagerSystemReceiver	field	private static final String TAG;
+com.amazon.device.crashmanager.CrashManagerSystemReceiver	method	public void onReceive(Context context, Intent intent)
+com.amazon.device.crashmanager.CrashManagerUnifiedSearchReceiver	field	private static final String TAG;
+com.amazon.device.crashmanager.CrashManagerUnifiedSearchReceiver	method	private boolean isSemiColonDm(Intent intent)
+com.amazon.device.crashmanager.CrashManagerUnifiedSearchReceiver	method	private boolean isUnifiedSearchEasterEggAndMatches(Intent intent, String str)
+com.amazon.device.crashmanager.CrashManagerUnifiedSearchReceiver	method	public void onReceive(Context context, Intent intent)
+com.amazon.device.crashmanager.CrashReporterManagerWrapper	field	private Context mContext;
+com.amazon.device.crashmanager.CrashReporterManagerWrapper	field	public static final String TAG;
+com.amazon.device.crashmanager.CrashReporterManagerWrapper	method	public CrashCountHeader getCrashHeader()
+com.amazon.device.crashmanager.CrashReporterManagerWrapper	method	public List<CrashCountMetadata> getCrashMetadata()
+com.amazon.device.crashmanager.CrashReporterManagerWrapper	method	public boolean deleteCrashes()
+com.amazon.device.crashmanager.CrashUploadController	field	private ComponentName mComponentName;
+com.amazon.device.crashmanager.CrashUploadController	field	private Context mContext;
+com.amazon.device.crashmanager.CrashUploadController	field	private CrashManagerConfigurationUtil mCrashManagerConfigurationUtil;
+com.amazon.device.crashmanager.CrashUploadController	field	private JobScheduler mCrashJobScheduler;
+com.amazon.device.crashmanager.CrashUploadController	field	private JobSchedulerUtil mJobSchedulerUtil;
+com.amazon.device.crashmanager.CrashUploadController	field	private static CrashUploadController crashUploadController;
+com.amazon.device.crashmanager.CrashUploadController	field	private static final String ACTION_KEY;
+com.amazon.device.crashmanager.CrashUploadController	field	private static final String HANDLE_REQUEST;
+com.amazon.device.crashmanager.CrashUploadController	field	private static final String SETUP_CRASH_UPLOAD_JOB;
+com.amazon.device.crashmanager.CrashUploadController	field	private static final String SETUP_OFFLOAD_CRASHES;
+com.amazon.device.crashmanager.CrashUploadController	field	private static final String TAG;
+com.amazon.device.crashmanager.CrashUploadController	field	public static final String ARCUS_PERIODIC_SYNC_INTERVAL;
+com.amazon.device.crashmanager.CrashUploadController	field	public static final String CRASH_UPLOAD_REPEAT_INTERVAL;
+com.amazon.device.crashmanager.CrashUploadController	field	public static final long DEFAULT_ARCUS_PERIODIC_SYNC_INTERVAL;
+com.amazon.device.crashmanager.CrashUploadController	field	public static final long DEFAULT_CRASH_UPLOAD_REPEAT_INTERVAL;
+com.amazon.device.crashmanager.CrashUploadController	field	public static final long DEFAULT_JOB_SCHEDULER_OVERRIDE_INTERVAL;
+com.amazon.device.crashmanager.CrashUploadController	method	private CrashUploadController(Context context)
+com.amazon.device.crashmanager.CrashUploadController	method	private String getUploadTag(Intent intent)
+com.amazon.device.crashmanager.CrashUploadController	method	private void setUpCrashUploadJob(int i, String str)
+com.amazon.device.crashmanager.CrashUploadController	method	private void setUpPeriodicCrashUploadJob()
+com.amazon.device.crashmanager.CrashUploadController	method	private void setupCrashOffloadJob()
+com.amazon.device.crashmanager.CrashUploadController	method	protected void setUpPeriodicArcusSyncJob(JobSchedulerUtil jobSchedulerUtil)
+com.amazon.device.crashmanager.CrashUploadController	method	public static CrashUploadController getCrashControllerInstance(Context context)
+com.amazon.device.crashmanager.CrashUploadController	method	public void handleRequest(Intent intent)
+com.amazon.device.crashmanager.CrashUploader	field	private Context mContext;
+com.amazon.device.crashmanager.CrashUploader	field	private final CrashDedupeHelper mCrashDedupeHelper;
+com.amazon.device.crashmanager.CrashUploader	field	private final List<ArtifactProcessor> mArtifactProcessors;
+com.amazon.device.crashmanager.CrashUploader	field	private final List<ArtifactSource> mArtifactSources;
+com.amazon.device.crashmanager.CrashUploader	field	private final StorageUtil mStorageUtil;
+com.amazon.device.crashmanager.CrashUploader	field	private static final String TAG;
+com.amazon.device.crashmanager.CrashUploader	field	private static final int MAX_RETRIES;
+com.amazon.device.crashmanager.CrashUploader	field	protected final CrashTimestampUtil mCrashTimestampUtil;
+com.amazon.device.crashmanager.CrashUploader	field	protected final CrashUploadStateUtil crashUploadStateUtil;
+com.amazon.device.crashmanager.CrashUploader	field	protected final DropBoxManager mDropBoxManager;
+com.amazon.device.crashmanager.CrashUploader	field	protected final MetricUtil metricUtil;
+com.amazon.device.crashmanager.CrashUploader	method	private ArtifactProcessor chooseArtifactProcessor(Artifact artifact)
+com.amazon.device.crashmanager.CrashUploader	method	private ArtifactUploadStatus attemptUpload(CrashUploadDetail crashUploadDetail, InputStream inputStream) throws Throwable
+com.amazon.device.crashmanager.CrashUploader	method	private ArtifactUploadStatus attemptUploadWithRetry(CrashUploadDetail crashUploadDetail, InputStream inputStream) throws Throwable
+com.amazon.device.crashmanager.CrashUploader	method	private CrashUploadStatistics processUploadResult(ArtifactUploadStatus artifactUploadStatus, String str, UploadStatsCounter uploadStatsCounter)
+com.amazon.device.crashmanager.CrashUploader	method	private CrashUploadStatistics uploadArtifacts(CrashUploadEntry crashUploadEntry, CrashUploadDetail crashUploadDetail, CrashUploadStateUtil crashUploadStateUtil)
+com.amazon.device.crashmanager.CrashUploader	method	private CrashUploadStatistics uploadCrashEntries(CrashArtifactGenerator crashArtifactGenerator, CrashUploadDetail crashUploadDetail, UploadStatsCounter uploadStatsCounter, CrashFileEntry crashFileEntry) throws Exception
+com.amazon.device.crashmanager.CrashUploader	method	private CrashUploadStatistics uploadCrashFiles(CrashFileEntryMap crashFileEntryMap, CrashUploadDetail crashUploadDetail, UploadStatsCounter uploadStatsCounter) throws Exception
+com.amazon.device.crashmanager.CrashUploader	method	private CrashUploadStatistics uploadDanglingEntries(List<CrashCountEntry> list, CrashUploadDetail crashUploadDetail, UploadStatsCounter uploadStatsCounter) throws Exception
+com.amazon.device.crashmanager.CrashUploader	method	private CrashUploadStatistics uploadDiagnosticArtifactSources(CrashUploadDetail crashUploadDetail, UploadStatsCounter uploadStatsCounter) throws Exception
+com.amazon.device.crashmanager.CrashUploader	method	private InputStream processArtifact(Artifact artifact) throws Exception
+com.amazon.device.crashmanager.CrashUploader	method	private boolean isConnectionRefusedError(Exception exc)
+com.amazon.device.crashmanager.CrashUploader	method	private void updateCrashDetails(CrashUploadDetail crashUploadDetail, Artifact artifact, long j)
+com.amazon.device.crashmanager.CrashUploader	method	public CrashUploadStatistics uploadCrashes(CrashUploadDetail crashUploadDetail)
+com.amazon.device.crashmanager.CrashUploader	method	public CrashUploader(List<ArtifactSource> list, List<ArtifactProcessor> list2, StorageUtil storageUtil, CrashDedupeHelper crashDedupeHelper, DropBoxManager dropBoxManager, CrashTimestampUtil crashTimestampUtil, CrashUploadStateUtil crashUploadStateUtil, MetricUtil metricUtil, Context context)
+com.amazon.device.crashmanager.FirstPartyStatusNotifier	method	public FirstPartyStatusNotifier(Context context, int i, boolean z)
+com.amazon.device.crashmanager.FirstPartyStatusNotifier	method	public String getBroadcastAction()
+com.amazon.device.crashmanager.FirstPartyStatusNotifier	method	public String getBroadcastActionForUploadTag()
+com.amazon.device.crashmanager.FirstPartyStatusNotifier	method	public String getOffloadBroadcastAction()
+com.amazon.device.crashmanager.Manifest$permission	field	public static final String USE_CRASH_MANAGER;
+com.amazon.device.crashmanager.R$drawable	field	public static final int icon;
+com.amazon.device.crashmanager.R$id	field	public static final int uploadCrashStatusTextView;
+com.amazon.device.crashmanager.R$id	field	public static final int uploadCrashes;
+com.amazon.device.crashmanager.R$id	field	public static final int uploadCrashesButton;
+com.amazon.device.crashmanager.R$id	field	public static final int uploadTagTextView;
+com.amazon.device.crashmanager.R$layout	field	public static final int activity_main;
+com.amazon.device.crashmanager.R$string	field	public static final int app_name;
+com.amazon.device.crashmanager.R$string	field	public static final int permdesc_useCrashManager;
+com.amazon.device.crashmanager.R$string	field	public static final int permlab_useCrashManager;
+com.amazon.device.crashmanager.R$string	field	public static final int press_me;
+com.amazon.device.crashmanager.R$string	field	public static final int send_crashes;
+com.amazon.device.crashmanager.R$string	field	public static final int upload_tag;
+com.amazon.device.crashmanager.R$xml	field	public static final int sub_authenticator;
+com.amazon.device.crashmanager.constants.CrashHeaderConstants	field	public static final String KEY_APP_NAME;
+com.amazon.device.crashmanager.constants.CrashHeaderConstants	field	public static final String KEY_APP_VERSION;
+com.amazon.device.crashmanager.constants.CrashHeaderConstants	field	public static final String KEY_CRASH_DESC;
+com.amazon.device.crashmanager.constants.CrashHeaderConstants	field	public static final String KEY_CRASH_DUPLICATE_HEADER;
+com.amazon.device.crashmanager.constants.CrashHeaderConstants	field	public static final String KEY_OS_BUILD_NUMBER;
+com.amazon.device.crashmanager.constants.CrashHeaderConstants	field	public static final String KEY_VALUE_DELIMITER;
+com.amazon.device.crashmanager.constants.CrashHeaderConstants	field	public static final String NEW_LINE;
+com.amazon.device.crashmanager.constants.UploadConstants	field	public static final String AQUILA_SYSTEM_FEATURE_FLAG;
+com.amazon.device.crashmanager.constants.UploadConstants	field	public static final String KEY_CONTENT_FORMAT;
+com.amazon.device.crashmanager.constants.UploadConstants	field	public static final String KEY_CONTENT_TYPE;
+com.amazon.device.crashmanager.constants.UploadConstants	field	public static final String KEY_DEVICE_FIRMWARE;
+com.amazon.device.crashmanager.constants.UploadConstants	field	public static final String KEY_DEVICE_TYPE;
+com.amazon.device.crashmanager.constants.UploadConstants	field	public static final String KEY_DSN;
+com.amazon.device.crashmanager.constants.UploadConstants	field	public static final String KEY_EMULATOR;
+com.amazon.device.crashmanager.constants.UploadConstants	field	public static final String KEY_HTTP_CONTENT_TYPE;
+com.amazon.device.crashmanager.constants.UploadConstants	field	public static final String KEY_HTTP_ENCODING;
+com.amazon.device.crashmanager.constants.UploadConstants	field	public static final String KEY_UPLOAD_TAG;
+com.amazon.device.crashmanager.constants.UploadConstants	field	public static final String VALUE_AQUILA_EMULATOR_NAME;
+com.amazon.device.crashmanager.constants.UploadConstants	field	public static final String VALUE_CONTENT_FORMAT_HEADER;
+com.amazon.device.crashmanager.constants.UploadConstants	field	public static final String VALUE_CONTENT_FORMAT_VERSION;
+com.amazon.device.crashmanager.constants.UploadConstants	field	public static final String VALUE_CONTENT_TYPE_VERSION;
+com.amazon.device.crashmanager.constants.UploadConstants	field	public static final String VALUE_FOS_CONTENT_TYPE;
+com.amazon.device.crashmanager.constants.UploadConstants	field	public static final String VALUE_HTTP_CONTENT_TYPE;
+com.amazon.device.crashmanager.constants.UploadConstants	field	public static final String VALUE_HTTP_ENCODING;
+com.amazon.device.crashmanager.constants.UploadConstants	field	public static final String VALUE_VERSION_SEPARATOR;
+com.amazon.device.crashmanager.dedupe.CrashDedupeHelper	field	private final CrashCountManager mCrashCountManager;
+com.amazon.device.crashmanager.dedupe.CrashDedupeHelper	field	private final List<ArtifactProcessor> mArtifactProcessors;
+com.amazon.device.crashmanager.dedupe.CrashDedupeHelper	field	private final List<ArtifactSource> mArtifactSources;
+com.amazon.device.crashmanager.dedupe.CrashDedupeHelper	field	private final MetricUtil mMetricUtil;
+com.amazon.device.crashmanager.dedupe.CrashDedupeHelper	field	private final StorageUtil mStorageUtil;
+com.amazon.device.crashmanager.dedupe.CrashDedupeHelper	field	private static final String TAG;
+com.amazon.device.crashmanager.dedupe.CrashDedupeHelper	method	private CrashFileEntryMap getCrashFileEntryMap(CrashUploadStateUtil crashUploadStateUtil) throws Exception
+com.amazon.device.crashmanager.dedupe.CrashDedupeHelper	method	private CrashFileEntryMap getDropboxDedupeMap(ArtifactSource artifactSource)
+com.amazon.device.crashmanager.dedupe.CrashDedupeHelper	method	private List<CrashCountEntry> getCrashCountDedupeMap(CrashFileEntryMap crashFileEntryMap)
+com.amazon.device.crashmanager.dedupe.CrashDedupeHelper	method	private List<CrashCountEntry> getDanglingEntries(CrashFileEntryMap crashFileEntryMap, CrashUploadStateUtil crashUploadStateUtil) throws Exception
+com.amazon.device.crashmanager.dedupe.CrashDedupeHelper	method	private boolean isDanglingEntriesInStorage(CrashUploadStateUtil crashUploadStateUtil)
+com.amazon.device.crashmanager.dedupe.CrashDedupeHelper	method	private boolean isDedupeMapInStorage(CrashUploadStateUtil crashUploadStateUtil)
+com.amazon.device.crashmanager.dedupe.CrashDedupeHelper	method	public CrashDedupeHelper(List<ArtifactSource> list, List<ArtifactProcessor> list2, CrashCountManager crashCountManager, StorageUtil storageUtil, MetricUtil metricUtil)
+com.amazon.device.crashmanager.dedupe.CrashDedupeHelper	method	public CrashUploadEntry buildDedupeMap(CrashUploadStateUtil crashUploadStateUtil) throws Exception
+com.amazon.device.crashmanager.dedupe.CrashDedupeHelper	method	public void acknowledgeReadComplete()
+com.amazon.device.crashmanager.dedupe.DropboxDedupeGenerator	field	private final ArtifactSource mArtifactSource;
+com.amazon.device.crashmanager.dedupe.DropboxDedupeGenerator	field	private final CrashFileEntryMap mCrashFileEntryMap;
+com.amazon.device.crashmanager.dedupe.DropboxDedupeGenerator	field	private final List<ArtifactProcessor> mArtifactProcessors;
+com.amazon.device.crashmanager.dedupe.DropboxDedupeGenerator	field	private final MetricUtil mMetricUtil;
+com.amazon.device.crashmanager.dedupe.DropboxDedupeGenerator	field	private final StorageUtil mStorageUtil;
+com.amazon.device.crashmanager.dedupe.DropboxDedupeGenerator	field	public static final String TAG;
+com.amazon.device.crashmanager.dedupe.DropboxDedupeGenerator	method	private ArtifactProcessor chooseArtifactProcessor(Artifact artifact)
+com.amazon.device.crashmanager.dedupe.DropboxDedupeGenerator	method	private InputStream processArtifact(Artifact artifact, String str) throws Exception
+com.amazon.device.crashmanager.dedupe.DropboxDedupeGenerator	method	private void persistDedupeCounters(CrashFileEntryMap crashFileEntryMap)
+com.amazon.device.crashmanager.dedupe.DropboxDedupeGenerator	method	public CrashFileEntryMap generateDedupeMap()
+com.amazon.device.crashmanager.dedupe.DropboxDedupeGenerator	method	public DropboxDedupeGenerator(ArtifactSource artifactSource, StorageUtil storageUtil, List<ArtifactProcessor> list, MetricUtil metricUtil)
+com.amazon.device.crashmanager.library.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.device.crashmanager.library.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.device.crashmanager.library.BuildConfig	field	public static final String FLAVOR;
+com.amazon.device.crashmanager.library.BuildConfig	field	public static final String LIBRARY_PACKAGE_NAME;
+com.amazon.device.crashmanager.library.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.device.crashmanager.library.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.device.crashmanager.library.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.device.crashmanager.library.R	method	private R()
+com.amazon.device.crashmanager.metrics.MetricCounter	field	private final Map<String, MutableInteger> counter;
+com.amazon.device.crashmanager.metrics.MetricCounter	field	private int totalValue;
+com.amazon.device.crashmanager.metrics.MetricCounter	field	public static final String TAG;
+com.amazon.device.crashmanager.metrics.MetricCounter	method	public Map<String, MutableInteger> getCounter()
+com.amazon.device.crashmanager.metrics.MetricCounter	method	public int getTotalValue()
+com.amazon.device.crashmanager.metrics.MetricCounter	method	public void addCounter(String str, int i)
+com.amazon.device.crashmanager.metrics.MetricUtil	field	private final AmazonMinerva mAmazonMinerva;
+com.amazon.device.crashmanager.metrics.MetricUtil	field	private static final String ARTIFACT_STATUS_METRIC_SCHEMA;
+com.amazon.device.crashmanager.metrics.MetricUtil	field	private static final String CRASH_REQUEST_METRIC_SCHEMA;
+com.amazon.device.crashmanager.metrics.MetricUtil	field	private static final String CRASH_UPLOAD_METRIC_SCHEMA;
+com.amazon.device.crashmanager.metrics.MetricUtil	field	private static final String METRIC_GROUP_ID;
+com.amazon.device.crashmanager.metrics.MetricUtil	field	private static final String METRIC_GROUP_NAME;
+com.amazon.device.crashmanager.metrics.MetricUtil	field	private static final String USAGE_STATUS_METRIC_SCHEMA;
+com.amazon.device.crashmanager.metrics.MetricUtil	method	private MetricEvent getMetricEvent(String str)
+com.amazon.device.crashmanager.metrics.MetricUtil	method	public MetricEvent getArtifactStatusMetricEvent()
+com.amazon.device.crashmanager.metrics.MetricUtil	method	public MetricEvent getCrashRequestMetricEvent()
+com.amazon.device.crashmanager.metrics.MetricUtil	method	public MetricEvent getCrashUploadMetricEvent()
+com.amazon.device.crashmanager.metrics.MetricUtil	method	public MetricEvent getUsageStatusMetricEvent()
+com.amazon.device.crashmanager.metrics.MetricUtil	method	public MetricUtil(AmazonMinerva amazonMinerva)
+com.amazon.device.crashmanager.metrics.MetricUtil	method	public void addLong(MetricEvent metricEvent, String str, long j)
+com.amazon.device.crashmanager.metrics.MetricUtil	method	public void addString(MetricEvent metricEvent, String str, String str2)
+com.amazon.device.crashmanager.metrics.MetricUtil	method	public void recordMetric(MetricEvent metricEvent)
+com.amazon.device.crashmanager.metrics.MetricUtil	method	public void shutdown()
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String BYTES_PER_SECOND_UPLOAD;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String COUNTER_ARTIFACTS_FAILED;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String COUNTER_ARTIFACTS_NOT_UPLOADED;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String COUNTER_ARTIFACTS_READ;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String COUNTER_ARTIFACTS_SKIPPED;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String COUNTER_ARTIFACTS_UPLOADED;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String COUNTER_ARTIFACT_UPLOADED_SUCCESS;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String COUNTER_CRASH_SIZE;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String COUNTER_DET_END_POINT;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String COUNTER_DROPBOX_FILE_IO_EXCEPTION;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String COUNTER_EMPTY_PINCRASH;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String COUNTER_KMSG_FILE_NOT_FOUND_EXCEPTION;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String COUNTER_NO_NETWORK;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String COUNTER_OFFLOAD_CRASHES;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String COUNTER_UPLOAD_ATTEMPT;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String COUNTER_UPLOAD_CONNECTION_REFUSED_ERROR;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String COUNTER_UPLOAD_FAILED;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String COUNTER_UPLOAD_MANUAL;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String COUNTER_UPLOAD_PERIODIC;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String COUNTER_UPLOAD_SOCKET_TIMEOUT_EXCEPTION;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String COUNTER_UPLOAD_SPECTATOR;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String COUNTER_UPLOAD_TIMEOUT_EXCEPTION;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String COUNTER_UPLOAD_UNKNOWN_EXCEPTION;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String COUNTER_UPLOAD_UNKNOWN_HOST_EXCEPTION;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String DAILY_ACTIVE_UPLOADS;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String DailyActiveUploads;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String MONTHLY_ACTIVE_UPLOADS;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String MonthlyActiveUploads;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String PROGRAM_NAME;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String SOURCE_NAME_OFFLOAD_CRASH;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String SOURCE_NAME_UPLOAD_CRASH;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String STRING_DROPBOX_FILE_IO_EXCEPTION;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String STRING_UPLOAD_CRASH_DESCRIPTOR;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String STRING_UPLOAD_EXCEPTIONS;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String STRING_UPLOAD_NO_USABLE_CONNECTION_EXCEPTION;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String STRING_UPLOAD_TIMEOUT_EXCEPTION;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String STRING_UPLOAD_UNKNOWN_EXCEPTION;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String TIMER_BUILD_COUNTER_TIME;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String TIMER_INDIVIDUAL_CRASH_FILE_UPLOAD;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String TIMER_UPLOAD_TIME;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String WEEKLY_ACTIVE_UPLOADS;
+com.amazon.device.crashmanager.metrics.MetricsConstants	field	public static final String WeeklyActiveUploads;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String APP_1P;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String APP_3P;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String APP_TYPE;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String ARTIFACT_COUNT;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String ARTIFACT_OP;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String CONSTANT;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String COUNTER_NO_NETWORK;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String CRASH_COUNT_UPDATE;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String CRASH_FILE_LOCATION;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String CRASH_SIZE;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String CRASH_TYPE;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String CRASH_UPLOADER_DEDUPE_FAILURE;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String CRASH_UPLOAD_REQUEST_COUNT;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String CRS;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String DANGLING_ENTRY_COUNT;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String DANGLING_ENTRY_LOCATION;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String DECREASE;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String DROPBOX;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String DailyActiveUploads;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String EMPTY_PIN_CRASH_FAILURE;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String EXCEPTION_COUNT;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String EXCEPTION_TYPE;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String FAILED;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String FAILURE;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String GENERATE_CRASH_ARTIFACT;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String INCREASE;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String MANUAL_UPLOAD;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String MonthlyActiveUploads;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String NOT_UPLOADED;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String NO_CRASHES_TO_UPLOAD;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String PARTIAL_SUCCESS;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String PERIODIC_UPLOAD;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String READ;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String SERVER_ERROR;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String SKIPPED;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String SPECTATOR_UPLOAD;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String STORAGE;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String SUCCESS;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String UPLOADED;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String UPLOAD_CRASH_BYTES_PER_SEC;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String UPLOAD_CRASH_COUNT;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String UPLOAD_CRASH_TIME;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String UPLOAD_ENDPOINT;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String UPLOAD_FAILED_COUNT;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String UPLOAD_RESULT;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String UPLOAD_TYPE;
+com.amazon.device.crashmanager.metrics.MinervaMetricsConstant	field	public static final String WeeklyActiveUploads;
+com.amazon.device.crashmanager.metrics.MutableInteger	field	private int val;
+com.amazon.device.crashmanager.metrics.MutableInteger	method	public MutableInteger(int i)
+com.amazon.device.crashmanager.metrics.MutableInteger	method	public String toString()
+com.amazon.device.crashmanager.metrics.MutableInteger	method	public int get()
+com.amazon.device.crashmanager.metrics.MutableInteger	method	public void set(int i)
+com.amazon.device.crashmanager.model.CrashCountEntry	field	public String appName;
+com.amazon.device.crashmanager.model.CrashCountEntry	field	public String appVersion;
+com.amazon.device.crashmanager.model.CrashCountEntry	field	public String osBuildNumber;
+com.amazon.device.crashmanager.model.CrashCountEntry	field	public String stackTrace;
+com.amazon.device.crashmanager.model.CrashCountEntry	method	protected boolean canEqual(Object obj)
+com.amazon.device.crashmanager.model.CrashCountEntry	method	public CrashCountEntry(String str, String str2)
+com.amazon.device.crashmanager.model.CrashCountEntry	method	public String getAppName()
+com.amazon.device.crashmanager.model.CrashCountEntry	method	public String getAppVersion()
+com.amazon.device.crashmanager.model.CrashCountEntry	method	public String getOsBuildNumber()
+com.amazon.device.crashmanager.model.CrashCountEntry	method	public String getStackTrace()
+com.amazon.device.crashmanager.model.CrashCountEntry	method	public String toString()
+com.amazon.device.crashmanager.model.CrashCountEntry	method	public boolean equals(Object obj)
+com.amazon.device.crashmanager.model.CrashCountEntry	method	public int hashCode()
+com.amazon.device.crashmanager.model.CrashCountEntry	method	public void setAppName(String str)
+com.amazon.device.crashmanager.model.CrashCountEntry	method	public void setAppVersion(String str)
+com.amazon.device.crashmanager.model.CrashCountEntry	method	public void setOsBuildNumber(String str)
+com.amazon.device.crashmanager.model.CrashCountEntry	method	public void setStackTrace(String str)
+com.amazon.device.crashmanager.model.CrashEntry	field	private String crashDescriptor;
+com.amazon.device.crashmanager.model.CrashEntry	field	private String crashType;
+com.amazon.device.crashmanager.model.CrashEntry	field	private int crashCount;
+com.amazon.device.crashmanager.model.CrashEntry	field	public static final String CRASH_IDENTIFIER_SEPARATOR;
+com.amazon.device.crashmanager.model.CrashEntry	method	protected boolean canEqual(Object obj)
+com.amazon.device.crashmanager.model.CrashEntry	method	public CrashEntry()
+com.amazon.device.crashmanager.model.CrashEntry	method	public CrashEntry(String str, String str2)
+com.amazon.device.crashmanager.model.CrashEntry	method	public CrashEntry(String str, String str2, int i)
+com.amazon.device.crashmanager.model.CrashEntry	method	public String getCrashDescriptor()
+com.amazon.device.crashmanager.model.CrashEntry	method	public String getCrashIdentifier()
+com.amazon.device.crashmanager.model.CrashEntry	method	public String getCrashType()
+com.amazon.device.crashmanager.model.CrashEntry	method	public String toString()
+com.amazon.device.crashmanager.model.CrashEntry	method	public boolean equals(Object obj)
+com.amazon.device.crashmanager.model.CrashEntry	method	public int getCrashCount()
+com.amazon.device.crashmanager.model.CrashEntry	method	public int hashCode()
+com.amazon.device.crashmanager.model.CrashEntry	method	public static String getCrashIdentifier(String str, String str2)
+com.amazon.device.crashmanager.model.CrashEntry	method	public void setCrashCount(int i)
+com.amazon.device.crashmanager.model.CrashEntry	method	public void setCrashDescriptor(String str)
+com.amazon.device.crashmanager.model.CrashEntry	method	public void setCrashIdentifier(String str)
+com.amazon.device.crashmanager.model.CrashEntry	method	public void setCrashType(String str)
+com.amazon.device.crashmanager.model.CrashFileEntry	field	private List<Long> fileTimestamps;
+com.amazon.device.crashmanager.model.CrashFileEntry	method	protected boolean canEqual(Object obj)
+com.amazon.device.crashmanager.model.CrashFileEntry	method	public CrashFileEntry(String str)
+com.amazon.device.crashmanager.model.CrashFileEntry	method	public CrashFileEntry(String str, String str2, List<Long> list)
+com.amazon.device.crashmanager.model.CrashFileEntry	method	public List<Long> getFileTimestamps()
+com.amazon.device.crashmanager.model.CrashFileEntry	method	public String toString()
+com.amazon.device.crashmanager.model.CrashFileEntry	method	public boolean equals(Object obj)
+com.amazon.device.crashmanager.model.CrashFileEntry	method	public int hashCode()
+com.amazon.device.crashmanager.model.CrashFileEntry	method	public void setFileTimestamps(List<Long> list)
+com.amazon.device.crashmanager.model.CrashUploadCheckpoint	field	private final int mPriority;
+com.amazon.device.crashmanager.model.CrashUploadCheckpoint	method	public int getPriority()
+com.amazon.device.crashmanager.model.CrashUploadDetail	field	private Domain domain;
+com.amazon.device.crashmanager.model.CrashUploadDetail	field	private String crashType;
+com.amazon.device.crashmanager.model.CrashUploadDetail	field	private String deviceSerialNumber;
+com.amazon.device.crashmanager.model.CrashUploadDetail	field	private String deviceType;
+com.amazon.device.crashmanager.model.CrashUploadDetail	field	private String s3Key;
+com.amazon.device.crashmanager.model.CrashUploadDetail	field	private String uploadTag;
+com.amazon.device.crashmanager.model.CrashUploadDetail	field	private long crashUploadTime;
+com.amazon.device.crashmanager.model.CrashUploadDetail	field	private long uploadSize;
+com.amazon.device.crashmanager.model.CrashUploadDetail	method	protected boolean canEqual(Object obj)
+com.amazon.device.crashmanager.model.CrashUploadDetail	method	public Domain getDomain()
+com.amazon.device.crashmanager.model.CrashUploadDetail	method	public String getCrashType()
+com.amazon.device.crashmanager.model.CrashUploadDetail	method	public String getDeviceSerialNumber()
+com.amazon.device.crashmanager.model.CrashUploadDetail	method	public String getDeviceType()
+com.amazon.device.crashmanager.model.CrashUploadDetail	method	public String getS3Key()
+com.amazon.device.crashmanager.model.CrashUploadDetail	method	public String getUploadTag()
+com.amazon.device.crashmanager.model.CrashUploadDetail	method	public String toString()
+com.amazon.device.crashmanager.model.CrashUploadDetail	method	public boolean equals(Object obj)
+com.amazon.device.crashmanager.model.CrashUploadDetail	method	public int hashCode()
+com.amazon.device.crashmanager.model.CrashUploadDetail	method	public long getCrashUploadTime()
+com.amazon.device.crashmanager.model.CrashUploadDetail	method	public long getUploadSize()
+com.amazon.device.crashmanager.model.CrashUploadDetail	method	public void setCrashType(String str)
+com.amazon.device.crashmanager.model.CrashUploadDetail	method	public void setCrashUploadTime(long j)
+com.amazon.device.crashmanager.model.CrashUploadDetail	method	public void setDeviceSerialNumber(String str)
+com.amazon.device.crashmanager.model.CrashUploadDetail	method	public void setDeviceType(String str)
+com.amazon.device.crashmanager.model.CrashUploadDetail	method	public void setDomain(Domain domain)
+com.amazon.device.crashmanager.model.CrashUploadDetail	method	public void setS3Key(String str)
+com.amazon.device.crashmanager.model.CrashUploadDetail	method	public void setUploadSize(long j)
+com.amazon.device.crashmanager.model.CrashUploadDetail	method	public void setUploadTag(String str)
+com.amazon.device.crashmanager.model.CrashUploadEntry	method	protected boolean canEqual(Object obj)
+com.amazon.device.crashmanager.model.CrashUploadEntry	method	public CrashFileEntryMap getCrashFileEntryMap()
+com.amazon.device.crashmanager.model.CrashUploadEntry	method	public CrashUploadEntry(CrashFileEntryMap crashFileEntryMap, List<CrashCountEntry> list)
+com.amazon.device.crashmanager.model.CrashUploadEntry	method	public List<CrashCountEntry> getCrashDanglingEntries()
+com.amazon.device.crashmanager.model.CrashUploadEntry	method	public String toString()
+com.amazon.device.crashmanager.model.CrashUploadEntry	method	public boolean equals(Object obj)
+com.amazon.device.crashmanager.model.CrashUploadEntry	method	public int hashCode()
+com.amazon.device.crashmanager.model.CrashUploadEntry	method	public void setCrashDanglingEntries(List<CrashCountEntry> list)
+com.amazon.device.crashmanager.model.CrashUploadEntry	method	public void setCrashFileEntryMap(CrashFileEntryMap crashFileEntryMap)
+com.amazon.device.crashmanager.model.CrashUploadStatistics	field	private final CrashUploadStatus crashUploadStatus;
+com.amazon.device.crashmanager.model.CrashUploadStatistics	field	private final UploadStatsCounter uploadStatsCounter;
+com.amazon.device.crashmanager.model.CrashUploadStatistics	method	public CrashUploadStatistics(CrashUploadStatus crashUploadStatus)
+com.amazon.device.crashmanager.model.CrashUploadStatistics	method	public CrashUploadStatistics(CrashUploadStatus crashUploadStatus, UploadStatsCounter uploadStatsCounter)
+com.amazon.device.crashmanager.model.CrashUploadStatistics	method	public CrashUploadStatus getCrashUploadStatus()
+com.amazon.device.crashmanager.model.CrashUploadStatistics	method	public MetricCounter getFailedCounter()
+com.amazon.device.crashmanager.model.CrashUploadStatistics	method	public MetricCounter getSkippedCounter()
+com.amazon.device.crashmanager.model.CrashUploadStatistics	method	public MetricCounter getUploadCounter()
+com.amazon.device.crashmanager.model.CrashUploadStatistics	method	public UploadStatsCounter getUploadStatsCounter()
+com.amazon.device.crashmanager.model.CrashUploadStatistics	method	public int getNumArtifactsFailed()
+com.amazon.device.crashmanager.model.CrashUploadStatistics	method	public int getNumArtifactsSkipped()
+com.amazon.device.crashmanager.model.CrashUploadStatistics	method	public int getNumArtifactsUploaded()
+com.amazon.device.crashmanager.model.UploadStatsCounter	field	private final MetricCounter failedCounter;
+com.amazon.device.crashmanager.model.UploadStatsCounter	field	private final MetricCounter skippedCounter;
+com.amazon.device.crashmanager.model.UploadStatsCounter	field	private final MetricCounter uploadCounter;
+com.amazon.device.crashmanager.model.UploadStatsCounter	method	public MetricCounter getFailedCounter()
+com.amazon.device.crashmanager.model.UploadStatsCounter	method	public MetricCounter getSkippedCounter()
+com.amazon.device.crashmanager.model.UploadStatsCounter	method	public MetricCounter getUploadCounter()
+com.amazon.device.crashmanager.model.UploadStatsCounter	method	public UploadStatsCounter()
+com.amazon.device.crashmanager.model.UploadStatsCounter	method	public UploadStatsCounter(MetricCounter metricCounter, MetricCounter metricCounter2, MetricCounter metricCounter3)
+com.amazon.device.crashmanager.processor.AbstractDetArtifactProcessor	field	private static final String TAG;
+com.amazon.device.crashmanager.processor.AbstractDetArtifactProcessor	field	protected final DetUtil mDetUtil;
+com.amazon.device.crashmanager.processor.AbstractDetArtifactProcessor	field	protected final DetUtil.HeaderProcessor mDefaultHeaderProcessor;
+com.amazon.device.crashmanager.processor.AbstractDetArtifactProcessor	field	protected final DetUtil.HeaderWriter mHeaderWriter;
+com.amazon.device.crashmanager.processor.AbstractDetArtifactProcessor	field	protected final Map<String, String> mExtraInfo;
+com.amazon.device.crashmanager.processor.AbstractDetArtifactProcessor	field	protected final String mDeviceType;
+com.amazon.device.crashmanager.processor.AbstractDetArtifactProcessor	field	protected final char[] mBuffer;
+com.amazon.device.crashmanager.processor.AbstractDetArtifactProcessor	field	protected static final int ARTIFACT_BUFFER_SIZE;
+com.amazon.device.crashmanager.processor.AbstractDetArtifactProcessor	method	private void crashDuplicateHeader(Artifact artifact, Writer writer, DetUtil.HeaderProcessor headerProcessor) throws Exception
+com.amazon.device.crashmanager.processor.AbstractDetArtifactProcessor	method	protected abstract void addSpecificHeaders(Artifact artifact, BufferedReader bufferedReader, Writer writer, String str) throws Exception;
+com.amazon.device.crashmanager.processor.AbstractDetArtifactProcessor	method	protected void addHeaders(Artifact artifact, BufferedReader bufferedReader, Writer writer) throws Exception
+com.amazon.device.crashmanager.processor.AbstractDetArtifactProcessor	method	protected void addHeaders(Artifact artifact, BufferedReader bufferedReader, Writer writer, String str) throws Exception
+com.amazon.device.crashmanager.processor.AbstractDetArtifactProcessor	method	public AbstractDetArtifactProcessor(DetUtil detUtil, String str, Map<String, String> map)
+com.amazon.device.crashmanager.processor.AbstractDetArtifactProcessor	method	public InputStream processArtifact(Artifact artifact) throws Exception
+com.amazon.device.crashmanager.processor.AbstractDetArtifactProcessor	method	public InputStream processArtifact(Artifact artifact, String str) throws Exception
+com.amazon.device.crashmanager.processor.AbstractDetArtifactProcessor	method	public abstract boolean canProcessTag(String str);
+com.amazon.device.crashmanager.processor.AnrArtifactProcessor	field	private final DetUtil.HeaderProcessor mAnrHeaderProcessor;
+com.amazon.device.crashmanager.processor.AnrArtifactProcessor	field	private final MetricUtil mMetricUtil;
+com.amazon.device.crashmanager.processor.AnrArtifactProcessor	field	private final MetricsHeaderProcessor mMetricsHeaderProcessor;
+com.amazon.device.crashmanager.processor.AnrArtifactProcessor	field	private final StorageUtil mStorageUtil;
+com.amazon.device.crashmanager.processor.AnrArtifactProcessor	field	private static final String REGEX_STACK_TRACE_DATA;
+com.amazon.device.crashmanager.processor.AnrArtifactProcessor	field	public static final Pattern REGEX_STACK_TRACE_PATTERN;
+com.amazon.device.crashmanager.processor.AnrArtifactProcessor	field	public static final Set<String> ANR_ARTIFACT_TAGS;
+com.amazon.device.crashmanager.processor.AnrArtifactProcessor	field	public static final int MIN_NUM_LINES_TO_BE_READ;
+com.amazon.device.crashmanager.processor.AnrArtifactProcessor	method	protected void addSpecificHeaders(Artifact artifact, BufferedReader bufferedReader, Writer writer, String str) throws Exception
+com.amazon.device.crashmanager.processor.AnrArtifactProcessor	method	public AnrArtifactProcessor(DetUtil detUtil, String str, Map<String, String> map, MetricsHeaderProcessorFactory metricsHeaderProcessorFactory, StorageUtil storageUtil, MetricUtil metricUtil)
+com.amazon.device.crashmanager.processor.AnrArtifactProcessor	method	public boolean canProcessTag(String str)
+com.amazon.device.crashmanager.processor.CrashCountArtifactProcessor	field	private final DetUtil.HeaderProcessor mCrashCountHeaderProcessor;
+com.amazon.device.crashmanager.processor.CrashCountArtifactProcessor	field	private final StorageUtil mStorageUtil;
+com.amazon.device.crashmanager.processor.CrashCountArtifactProcessor	field	public static final String TAG;
+com.amazon.device.crashmanager.processor.CrashCountArtifactProcessor	method	protected void addSpecificHeaders(Artifact artifact, BufferedReader bufferedReader, Writer writer, String str) throws Exception
+com.amazon.device.crashmanager.processor.CrashCountArtifactProcessor	method	public CrashCountArtifactProcessor(DetUtil detUtil, String str, Map<String, String> map, StorageUtil storageUtil)
+com.amazon.device.crashmanager.processor.CrashCountArtifactProcessor	method	public boolean canProcessTag(String str)
+com.amazon.device.crashmanager.processor.DefaultArtifactProcessor	method	protected void addSpecificHeaders(Artifact artifact, BufferedReader bufferedReader, Writer writer, String str) throws Exception
+com.amazon.device.crashmanager.processor.DefaultArtifactProcessor	method	public DefaultArtifactProcessor(DetUtil detUtil, String str, Map<String, String> map)
+com.amazon.device.crashmanager.processor.DefaultArtifactProcessor	method	public boolean canProcessTag(String str)
+com.amazon.device.crashmanager.processor.DefaultArtifactProcessorFactory	field	private final DetUtil mDetUtil;
+com.amazon.device.crashmanager.processor.DefaultArtifactProcessorFactory	field	private final Map<String, String> mExtraInfo;
+com.amazon.device.crashmanager.processor.DefaultArtifactProcessorFactory	field	private final MetricUtil mMetricUtil;
+com.amazon.device.crashmanager.processor.DefaultArtifactProcessorFactory	field	private final MetricsHeaderProcessorFactory metricsFactory;
+com.amazon.device.crashmanager.processor.DefaultArtifactProcessorFactory	field	private final StorageUtil mStorageUtil;
+com.amazon.device.crashmanager.processor.DefaultArtifactProcessorFactory	field	private final String mDeviceType;
+com.amazon.device.crashmanager.processor.DefaultArtifactProcessorFactory	method	public DefaultArtifactProcessorFactory(DetUtil detUtil, String str, Map<String, String> map, MetricsHeaderProcessorFactory metricsHeaderProcessorFactory, StorageUtil storageUtil, MetricUtil metricUtil)
+com.amazon.device.crashmanager.processor.DefaultArtifactProcessorFactory	method	public List<ArtifactProcessor> constructArtifactProcessors()
+com.amazon.device.crashmanager.processor.DiagnosticArtifactProcessor	field	private final DetUtil.HeaderProcessor mDiagnosticHeaderProcessor;
+com.amazon.device.crashmanager.processor.DiagnosticArtifactProcessor	field	public static final Set<String> DIAGNOSTIC_ARTIFACT_TAGS;
+com.amazon.device.crashmanager.processor.DiagnosticArtifactProcessor	method	protected void addSpecificHeaders(Artifact artifact, BufferedReader bufferedReader, Writer writer, String str) throws Exception
+com.amazon.device.crashmanager.processor.DiagnosticArtifactProcessor	method	public DiagnosticArtifactProcessor(DetUtil detUtil, String str, Map<String, String> map)
+com.amazon.device.crashmanager.processor.DiagnosticArtifactProcessor	method	public boolean canProcessTag(String str)
+com.amazon.device.crashmanager.processor.ExtractJavaVersionHeaderProcessor	field	private final DetUtil.HeaderProcessor mNextProcessor;
+com.amazon.device.crashmanager.processor.ExtractJavaVersionHeaderProcessor	field	private static final Pattern JAVA_APP_VERSION_REGEX;
+com.amazon.device.crashmanager.processor.ExtractJavaVersionHeaderProcessor	method	public ExtractJavaVersionHeaderProcessor(DetUtil.HeaderProcessor headerProcessor)
+com.amazon.device.crashmanager.processor.ExtractJavaVersionHeaderProcessor	method	public void process(String str, String str2, Writer writer) throws Exception
+com.amazon.device.crashmanager.processor.JavaCrashArtifactProcessor	field	private final DetUtil.HeaderProcessor mJavaHeaderProcessor;
+com.amazon.device.crashmanager.processor.JavaCrashArtifactProcessor	field	private final MetricsHeaderProcessor mMetricsHeaderProcessor;
+com.amazon.device.crashmanager.processor.JavaCrashArtifactProcessor	field	private final StorageUtil mStorageUtil;
+com.amazon.device.crashmanager.processor.JavaCrashArtifactProcessor	field	public static final Pattern REGEX_STACK_TRACE_PATTERN;
+com.amazon.device.crashmanager.processor.JavaCrashArtifactProcessor	field	public static final Set<String> JAVA_CRASH_ARTIFACT_ALLOWLIST_TAGS;
+com.amazon.device.crashmanager.processor.JavaCrashArtifactProcessor	field	public static final Set<String> JAVA_CRASH_ARTIFACT_TAGS;
+com.amazon.device.crashmanager.processor.JavaCrashArtifactProcessor	field	public static final Set<String> JAVA_STACK_TRACE_TAGS;
+com.amazon.device.crashmanager.processor.JavaCrashArtifactProcessor	field	public static final String REGEX_STACK_TRACE_DATA;
+com.amazon.device.crashmanager.processor.JavaCrashArtifactProcessor	field	public static final int MAX_LINES_TO_CHECK_FOR_NATIVE_CRASH;
+com.amazon.device.crashmanager.processor.JavaCrashArtifactProcessor	method	protected void addSpecificHeaders(Artifact artifact, BufferedReader bufferedReader, Writer writer, String str) throws Exception
+com.amazon.device.crashmanager.processor.JavaCrashArtifactProcessor	method	public JavaCrashArtifactProcessor(DetUtil detUtil, String str, Map<String, String> map, MetricsHeaderProcessorFactory metricsHeaderProcessorFactory, StorageUtil storageUtil)
+com.amazon.device.crashmanager.processor.JavaCrashArtifactProcessor	method	public boolean canProcessTag(String str)
+com.amazon.device.crashmanager.processor.MetricsHeaderProcessor	field	private String mAction;
+com.amazon.device.crashmanager.processor.MetricsHeaderProcessor	field	private String mProcessName;
+com.amazon.device.crashmanager.processor.MetricsHeaderProcessor	field	private String mTag;
+com.amazon.device.crashmanager.processor.MetricsHeaderProcessor	field	private final AmazonPackageLookup mAmazonPackageLookup;
+com.amazon.device.crashmanager.processor.MetricsHeaderProcessor	field	private final DetUtil.HeaderProcessor mNextProcessor;
+com.amazon.device.crashmanager.processor.MetricsHeaderProcessor	field	private static final String TAG;
+com.amazon.device.crashmanager.processor.MetricsHeaderProcessor	method	public MetricsHeaderProcessor(DetUtil.HeaderProcessor headerProcessor, AmazonPackageLookup amazonPackageLookup)
+com.amazon.device.crashmanager.processor.MetricsHeaderProcessor	method	public String getProcessName()
+com.amazon.device.crashmanager.processor.MetricsHeaderProcessor	method	public void process(String str, String str2, Writer writer) throws Exception
+com.amazon.device.crashmanager.processor.MetricsHeaderProcessor	method	public void setAction(String str)
+com.amazon.device.crashmanager.processor.MetricsHeaderProcessor	method	public void setProcessTag(String str)
+com.amazon.device.crashmanager.processor.MetricsHeaderProcessorFactory	field	private AmazonPackageLookup mAmazonPackageLookup;
+com.amazon.device.crashmanager.processor.MetricsHeaderProcessorFactory	method	public MetricsHeaderProcessor construct(DetUtil.HeaderProcessor headerProcessor)
+com.amazon.device.crashmanager.processor.MetricsHeaderProcessorFactory	method	public MetricsHeaderProcessorFactory(AmazonPackageLookup amazonPackageLookup)
+com.amazon.device.crashmanager.processor.NativeCrashArtifactProcessor	field	private final DetUtil.HeaderProcessor mNativeHeaderProcessor;
+com.amazon.device.crashmanager.processor.NativeCrashArtifactProcessor	field	private final MetricsHeaderProcessor mMetricsHeaderProcessor;
+com.amazon.device.crashmanager.processor.NativeCrashArtifactProcessor	field	private final StorageUtil mStorageUtil;
+com.amazon.device.crashmanager.processor.NativeCrashArtifactProcessor	field	public static final Pattern NATIVE_APP_NAME_REGEX;
+com.amazon.device.crashmanager.processor.NativeCrashArtifactProcessor	field	public static final Pattern STACKFRAME_IDENTIFIER;
+com.amazon.device.crashmanager.processor.NativeCrashArtifactProcessor	field	public static final Set<String> NATIVE_CRASH_ARTIFACT_TAGS;
+com.amazon.device.crashmanager.processor.NativeCrashArtifactProcessor	method	protected void addSpecificHeaders(Artifact artifact, BufferedReader bufferedReader, Writer writer, String str) throws Exception
+com.amazon.device.crashmanager.processor.NativeCrashArtifactProcessor	method	public NativeCrashArtifactProcessor(DetUtil detUtil, String str, Map<String, String> map, MetricsHeaderProcessorFactory metricsHeaderProcessorFactory, StorageUtil storageUtil)
+com.amazon.device.crashmanager.processor.NativeCrashArtifactProcessor	method	public boolean canProcessTag(String str)
+com.amazon.device.crashmanager.processor.PinFailuresArtifactProcessor	field	private final DetUtil.HeaderProcessor mCertificatePinFailureHeaderProcessor;
+com.amazon.device.crashmanager.processor.PinFailuresArtifactProcessor	field	private final MetricUtil mMetricUtil;
+com.amazon.device.crashmanager.processor.PinFailuresArtifactProcessor	field	private final StorageUtil mStorageUtil;
+com.amazon.device.crashmanager.processor.PinFailuresArtifactProcessor	field	public static final Set<String> PIN_FAILURE_ARTIFACT_TAGS;
+com.amazon.device.crashmanager.processor.PinFailuresArtifactProcessor	method	protected void addSpecificHeaders(Artifact artifact, BufferedReader bufferedReader, Writer writer, String str) throws Exception
+com.amazon.device.crashmanager.processor.PinFailuresArtifactProcessor	method	public PinFailuresArtifactProcessor(DetUtil detUtil, String str, Map<String, String> map, StorageUtil storageUtil, MetricUtil metricUtil)
+com.amazon.device.crashmanager.processor.PinFailuresArtifactProcessor	method	public boolean canProcessTag(String str)
+com.amazon.device.crashmanager.processor.RamDumpArtifactProcessor	field	private final DetUtil.HeaderProcessor mRamDumpHeaderProcessor;
+com.amazon.device.crashmanager.processor.RamDumpArtifactProcessor	field	private static final Pattern RESET_CAUSE_REGEX;
+com.amazon.device.crashmanager.processor.RamDumpArtifactProcessor	field	private static final String TAG;
+com.amazon.device.crashmanager.processor.RamDumpArtifactProcessor	field	private static final int KMSG_LOG_MAX_FILE_SIZE;
+com.amazon.device.crashmanager.processor.RamDumpArtifactProcessor	field	private static final int OOM_MESSAGE_GROUP;
+com.amazon.device.crashmanager.processor.RamDumpArtifactProcessor	field	private static final int OOM_PROCESSNAME_GROUP;
+com.amazon.device.crashmanager.processor.RamDumpArtifactProcessor	method	protected void addSpecificHeaders(Artifact artifact, BufferedReader bufferedReader, Writer writer, String str) throws Exception
+com.amazon.device.crashmanager.processor.RamDumpArtifactProcessor	method	protected void extractResetCauseFromKmsgLog(BufferedReader bufferedReader, Writer writer, DetUtil.HeaderProcessor headerProcessor) throws Exception
+com.amazon.device.crashmanager.processor.RamDumpArtifactProcessor	method	public RamDumpArtifactProcessor(DetUtil detUtil, String str, Map<String, String> map)
+com.amazon.device.crashmanager.processor.RamDumpArtifactProcessor	method	public boolean canProcessTag(String str)
+com.amazon.device.crashmanager.processor.SmvArtifactProcessor	field	private final DetUtil.HeaderProcessor mSmvHeaderProcessor;
+com.amazon.device.crashmanager.processor.SmvArtifactProcessor	field	private final MetricsHeaderProcessor mMetricsHeaderProcessor;
+com.amazon.device.crashmanager.processor.SmvArtifactProcessor	field	private final StorageUtil mStorageUtil;
+com.amazon.device.crashmanager.processor.SmvArtifactProcessor	field	public static final Set<String> SMV_ARTIFACT_TAGS;
+com.amazon.device.crashmanager.processor.SmvArtifactProcessor	method	protected void addSpecificHeaders(Artifact artifact, BufferedReader bufferedReader, Writer writer, String str) throws Exception
+com.amazon.device.crashmanager.processor.SmvArtifactProcessor	method	public SmvArtifactProcessor(DetUtil detUtil, String str, Map<String, String> map, MetricsHeaderProcessorFactory metricsHeaderProcessorFactory, StorageUtil storageUtil)
+com.amazon.device.crashmanager.processor.SmvArtifactProcessor	method	public boolean canProcessTag(String str)
+com.amazon.device.crashmanager.source.AllowlistAppArtifactSource	field	private static Map<String, Pattern> mAllowlistedAppPatternPerTag;
+com.amazon.device.crashmanager.source.AllowlistAppArtifactSource	method	public AllowlistAppArtifactSource(DropBoxManager dropBoxManager, CrashTimestampUtil crashTimestampUtil, Map<String, Pattern> map)
+com.amazon.device.crashmanager.source.AllowlistAppArtifactSource	method	public Artifact getNextArtifact(String str, MetricUtil metricUtil)
+com.amazon.device.crashmanager.source.AllowlistAppArtifactSource	method	public static Pattern getAllowListedAppPatternsForTag(String str)
+com.amazon.device.crashmanager.source.CrashCountManager	field	public static final String TAG;
+com.amazon.device.crashmanager.source.CrashCountManager	method	private void addCrashCountMetadata(CrashCountMetadata crashCountMetadata)
+com.amazon.device.crashmanager.source.CrashCountManager	method	public CrashCountManager(CrashReporterManagerWrapper crashReporterManagerWrapper)
+com.amazon.device.crashmanager.source.CrashCountManager	method	public CrashCountMetadata getCrashCountMetadata()
+com.amazon.device.crashmanager.source.CrashCountManager	method	public void acknowledgeCrashCountRead()
+com.amazon.device.crashmanager.source.CrashCountMetadata	field	public List<CrashCountEntry> crashEntries;
+com.amazon.device.crashmanager.source.CrashCountMetadata	field	public String buildTags;
+com.amazon.device.crashmanager.source.CrashCountMetadata	field	public String buildType;
+com.amazon.device.crashmanager.source.CrashCountMetadata	field	public String countryOfResidence;
+com.amazon.device.crashmanager.source.CrashCountMetadata	field	public String deviceGroup;
+com.amazon.device.crashmanager.source.CrashCountMetadata	field	public String deviceLanguage;
+com.amazon.device.crashmanager.source.CrashCountMetadata	field	public String devicePlatform;
+com.amazon.device.crashmanager.source.CrashCountMetadata	field	public String deviceType;
+com.amazon.device.crashmanager.source.CrashCountMetadata	field	public String encryptionState;
+com.amazon.device.crashmanager.source.CrashCountMetadata	field	public String marketplaceID;
+com.amazon.device.crashmanager.source.CrashCountMetadata	field	public String systemVersion;
+com.amazon.device.crashmanager.source.CrashCountMetadata	field	public int aggregateCount;
+com.amazon.device.crashmanager.source.CrashCountMetadata	field	public int versionNumber;
+com.amazon.device.crashmanager.source.CrashCountMetadata	field	public long timesStamp;
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	protected boolean canEqual(Object obj)
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public List<CrashCountEntry> getCrashEntries()
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public String getBuildTags()
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public String getBuildType()
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public String getCountryOfResidence()
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public String getDeviceGroup()
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public String getDeviceLanguage()
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public String getDevicePlatform()
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public String getDeviceType()
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public String getEncryptionState()
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public String getMarketplaceID()
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public String getSystemVersion()
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public String toString()
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public boolean equals(Object obj)
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public int getAggregateCount()
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public int getVersionNumber()
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public int hashCode()
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public long getTimesStamp()
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public void setAggregateCount(int i)
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public void setBuildTags(String str)
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public void setBuildType(String str)
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public void setCountryOfResidence(String str)
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public void setCrashEntries(List<CrashCountEntry> list)
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public void setDeviceGroup(String str)
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public void setDeviceLanguage(String str)
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public void setDevicePlatform(String str)
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public void setDeviceType(String str)
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public void setEncryptionState(String str)
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public void setMarketplaceID(String str)
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public void setSystemVersion(String str)
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public void setTimesStamp(long j)
+com.amazon.device.crashmanager.source.CrashCountMetadata	method	public void setVersionNumber(int i)
+com.amazon.device.crashmanager.source.DefaultNotBootupUploadArtifactSourceFactory	field	private final CrashReporterManagerWrapper mCrashReporterManager;
+com.amazon.device.crashmanager.source.DefaultNotBootupUploadArtifactSourceFactory	field	private final CrashTimestampUtil mCrashTimestampUtil;
+com.amazon.device.crashmanager.source.DefaultNotBootupUploadArtifactSourceFactory	field	private final DropBoxManager mDropBoxManager;
+com.amazon.device.crashmanager.source.DefaultNotBootupUploadArtifactSourceFactory	field	private final Map<String, Pattern> mAllowlistedAppPatternsPerTag;
+com.amazon.device.crashmanager.source.DefaultNotBootupUploadArtifactSourceFactory	field	private final Set<String> mDropBoxTags;
+com.amazon.device.crashmanager.source.DefaultNotBootupUploadArtifactSourceFactory	field	private final SettingsStore mSettingsStore;
+com.amazon.device.crashmanager.source.DefaultNotBootupUploadArtifactSourceFactory	method	public DefaultNotBootupUploadArtifactSourceFactory(SettingsStore settingsStore, DropBoxManager dropBoxManager, CrashReporterManagerWrapper crashReporterManagerWrapper, Set<String> set, Map<String, Pattern> map)
+com.amazon.device.crashmanager.source.DefaultNotBootupUploadArtifactSourceFactory	method	public List<ArtifactSource> constructArtifactSources()
+com.amazon.device.crashmanager.source.DefaultNotBootupUploadArtifactSourceFactory	method	public List<ArtifactSource> getDedupeArtifactSources()
+com.amazon.device.crashmanager.source.DefaultNotBootupUploadArtifactSourceFactory	method	public List<ArtifactSource> getDiagnosticArtifactSources()
+com.amazon.device.crashmanager.source.DefaultOffloadArtifactSourceFactory	field	private final CrashTimestampUtil mCrashTimestampUtil;
+com.amazon.device.crashmanager.source.DefaultOffloadArtifactSourceFactory	field	private final DropBoxManager mDropBoxManager;
+com.amazon.device.crashmanager.source.DefaultOffloadArtifactSourceFactory	field	private final Set<String> mDropBoxTags;
+com.amazon.device.crashmanager.source.DefaultOffloadArtifactSourceFactory	method	public DefaultOffloadArtifactSourceFactory(SettingsStore settingsStore, DropBoxManager dropBoxManager, Set<String> set)
+com.amazon.device.crashmanager.source.DefaultOffloadArtifactSourceFactory	method	public List<ArtifactSource> constructArtifactSources()
+com.amazon.device.crashmanager.source.DropBoxArtifactSource	field	private final List<String> mTags;
+com.amazon.device.crashmanager.source.DropBoxArtifactSource	field	private int mCurrentTagIdx;
+com.amazon.device.crashmanager.source.DropBoxArtifactSource	field	protected final CrashTimestampUtil mCrashTimestampUtil;
+com.amazon.device.crashmanager.source.DropBoxArtifactSource	field	protected final DropBoxManager mDropBoxManager;
+com.amazon.device.crashmanager.source.DropBoxArtifactSource	field	public static final String TAG;
+com.amazon.device.crashmanager.source.DropBoxArtifactSource	method	public Artifact getNextArtifact(String str, MetricUtil metricUtil)
+com.amazon.device.crashmanager.source.DropBoxArtifactSource	method	public DropBoxArtifactSource(DropBoxManager dropBoxManager, CrashTimestampUtil crashTimestampUtil, Set<String> set)
+com.amazon.device.crashmanager.source.DropBoxArtifactSource	method	public void saveCurrentIndex()
+com.amazon.device.crashmanager.source.RamDumpArtifactSource	field	private final File[] mAvailableRamDumpDirectories;
+com.amazon.device.crashmanager.source.RamDumpArtifactSource	field	private final SettingsStore mSettingsStore;
+com.amazon.device.crashmanager.source.RamDumpArtifactSource	field	private long mLastRamDumpTimeIndex;
+com.amazon.device.crashmanager.source.RamDumpArtifactSource	field	private static final String RAMDUMP_PARTITION;
+com.amazon.device.crashmanager.source.RamDumpArtifactSource	field	private static final String TAG;
+com.amazon.device.crashmanager.source.RamDumpArtifactSource	field	private static final long DEFAULT_LAST_RAMDUMP_TIME_INDEX;
+com.amazon.device.crashmanager.source.RamDumpArtifactSource	field	public static final String KMSG_LOG_TAG;
+com.amazon.device.crashmanager.source.RamDumpArtifactSource	field	static final Set<String> RAMDUMP_FOLDER_NAMES;
+com.amazon.device.crashmanager.source.RamDumpArtifactSource	field	static final String KMSG_LOG_FILE;
+com.amazon.device.crashmanager.source.RamDumpArtifactSource	method	public Artifact getNextArtifact(String str, MetricUtil metricUtil)
+com.amazon.device.crashmanager.source.RamDumpArtifactSource	method	public RamDumpArtifactSource(SettingsStore settingsStore)
+com.amazon.device.crashmanager.source.RamDumpArtifactSource	method	public RamDumpArtifactSource(String str, SettingsStore settingsStore)
+com.amazon.device.crashmanager.source.RamDumpArtifactSource	method	public void saveCurrentIndex()
+com.amazon.device.crashmanager.source.RamDumpArtifactSource$LastModifiedFileComparator	method	private LastModifiedFileComparator()
+com.amazon.device.crashmanager.source.RamDumpArtifactSource$LastModifiedFileComparator	method	public int compare(File file, File file2)
+com.amazon.device.crashmanager.source.RamDumpArtifactSource$RamDumpDirectoryFilter	method	private RamDumpDirectoryFilter()
+com.amazon.device.crashmanager.source.RamDumpArtifactSource$RamDumpDirectoryFilter	method	public boolean accept(File file, String str)
+com.amazon.device.crashmanager.source.SharedPreferencesSettingsStore	method	public SharedPreferencesSettingsStore(SharedPreferences sharedPreferences)
+com.amazon.device.crashmanager.source.SharedPreferencesSettingsStore	method	public String getString(SettingsStore.SettingsKey settingsKey, String str)
+com.amazon.device.crashmanager.source.SharedPreferencesSettingsStore	method	public long getLong(SettingsStore.SettingsKey settingsKey, long j)
+com.amazon.device.crashmanager.source.SharedPreferencesSettingsStore	method	public void saveLong(SettingsStore.SettingsKey settingsKey, long j)
+com.amazon.device.crashmanager.source.SharedPreferencesSettingsStore	method	public void saveString(SettingsStore.SettingsKey settingsKey, String str)
+com.amazon.device.crashmanager.util.CrashManagerConfigurationUtil	field	private static final String ALLOWLIST_CONFIGURATION_KEY;
+com.amazon.device.crashmanager.util.CrashManagerConfigurationUtil	field	private static final String ARCUS_CONFIGURATION_KEY;
+com.amazon.device.crashmanager.util.CrashManagerConfigurationUtil	field	private static final String BETA_ENDPOINT_KEY;
+com.amazon.device.crashmanager.util.CrashManagerConfigurationUtil	field	private static final String DEFAULT_DET_BETA_URN;
+com.amazon.device.crashmanager.util.CrashManagerConfigurationUtil	field	private static final String DEFAULT_DET_PROD_URN;
+com.amazon.device.crashmanager.util.CrashManagerConfigurationUtil	field	private static final String DEFAULT_MINERVA_REGION;
+com.amazon.device.crashmanager.util.CrashManagerConfigurationUtil	field	private static final String MINERVA_REGION_KEY;
+com.amazon.device.crashmanager.util.CrashManagerConfigurationUtil	field	private static final String PROD_ENDPOINT_KEY;
+com.amazon.device.crashmanager.util.CrashManagerConfigurationUtil	field	private static final String SHOULD_UPLOAD_METRICS_KEY;
+com.amazon.device.crashmanager.util.CrashManagerConfigurationUtil	field	private static final String TAG;
+com.amazon.device.crashmanager.util.CrashManagerConfigurationUtil	method	private JSONObject getRemoteConfigurationJson()
+com.amazon.device.crashmanager.util.CrashManagerConfigurationUtil	method	private long getArcusConfigValue(JSONObject jSONObject, String str, long j)
+com.amazon.device.crashmanager.util.CrashManagerConfigurationUtil	method	private long getCrashConfigValue(JSONObject jSONObject, String str, long j)
+com.amazon.device.crashmanager.util.CrashManagerConfigurationUtil	method	private static Map<String, List<String>> getConfigurationMap(String str, JSONObject jSONObject)
+com.amazon.device.crashmanager.util.CrashManagerConfigurationUtil	method	private static long getConfigurationValue(String str, JSONObject jSONObject, String str2, long j)
+com.amazon.device.crashmanager.util.CrashManagerConfigurationUtil	method	public Map<String, List<String>> getAllowListedAppsPerCrashTypes()
+com.amazon.device.crashmanager.util.CrashManagerConfigurationUtil	method	public String getBetaEndPoint()
+com.amazon.device.crashmanager.util.CrashManagerConfigurationUtil	method	public String getMinervaRegion()
+com.amazon.device.crashmanager.util.CrashManagerConfigurationUtil	method	public String getProdEndPoint()
+com.amazon.device.crashmanager.util.CrashManagerConfigurationUtil	method	public boolean shouldRecordMinervaMetrics()
+com.amazon.device.crashmanager.util.CrashManagerConfigurationUtil	method	public boolean shouldUploadCrashes()
+com.amazon.device.crashmanager.util.CrashManagerConfigurationUtil	method	public int getUploadTimeout()
+com.amazon.device.crashmanager.util.CrashManagerConfigurationUtil	method	public long getCrashPeriod()
+com.amazon.device.crashmanager.util.CrashManagerConfigurationUtil	method	public long getSyncPeriod()
+com.amazon.device.crashmanager.util.CrashManagerConfigurationUtil	method	public static List<String> toList(JSONArray jSONArray) throws JSONException
+com.amazon.device.crashmanager.util.CrashManagerConfigurationUtil	method	public static Map<String, List<String>> toMap(JSONObject jSONObject) throws JSONException
+com.amazon.device.crashmanager.util.DeviceInfoUtil	field	private DeviceProfileHelper mDeviceProfileHelper;
+com.amazon.device.crashmanager.util.DeviceInfoUtil	field	private PackageManager mAndroidPackageManager;
+com.amazon.device.crashmanager.util.DeviceInfoUtil	field	private final Context mContext;
+com.amazon.device.crashmanager.util.DeviceInfoUtil	field	private final DeviceUtil mDeviceUtil;
+com.amazon.device.crashmanager.util.DeviceInfoUtil	field	private static final String AQUILA_DEVICE_PLATFORM_NAME;
+com.amazon.device.crashmanager.util.DeviceInfoUtil	field	private static final String AQUILA_SYSTEM_FEATURE_FLAG;
+com.amazon.device.crashmanager.util.DeviceInfoUtil	field	private static final String COUNTRY_OF_RESIDENCE;
+com.amazon.device.crashmanager.util.DeviceInfoUtil	field	private static final String DEVICE_GROUP;
+com.amazon.device.crashmanager.util.DeviceInfoUtil	field	private static final String DEVICE_LANGUAGE;
+com.amazon.device.crashmanager.util.DeviceInfoUtil	field	private static final String DEVICE_PLATFORM;
+com.amazon.device.crashmanager.util.DeviceInfoUtil	field	private static final String DEVICE_PROFILE;
+com.amazon.device.crashmanager.util.DeviceInfoUtil	field	private static final String ENCRYPTION_STATE;
+com.amazon.device.crashmanager.util.DeviceInfoUtil	field	private static final String ENCRYPTION_TYPE;
+com.amazon.device.crashmanager.util.DeviceInfoUtil	field	private static final String FIREOS_DEVICE_PLATFORM_NAME;
+com.amazon.device.crashmanager.util.DeviceInfoUtil	field	private static final String MARKETPLACE_ID;
+com.amazon.device.crashmanager.util.DeviceInfoUtil	field	private static final String TAG;
+com.amazon.device.crashmanager.util.DeviceInfoUtil	method	private String getDevicePlatform()
+com.amazon.device.crashmanager.util.DeviceInfoUtil	method	public DeviceInfoUtil(DeviceUtil deviceUtil, Context context)
+com.amazon.device.crashmanager.util.DeviceInfoUtil	method	public Map<String, String> createExtraDeviceInfo()
+com.amazon.device.crashmanager.util.DeviceInfoUtil	method	public String getDeviceSerialNumber()
+com.amazon.device.crashmanager.util.DeviceInfoUtil	method	public String getDeviceType()
+com.amazon.device.crashmanager.util.DeviceProfileHelper	field	private Naatyam mNaatyamClient;
+com.amazon.device.crashmanager.util.DeviceProfileHelper	field	private final Context mContext;
+com.amazon.device.crashmanager.util.DeviceProfileHelper	field	private static DeviceProfileHelper deviceProfileHelper;
+com.amazon.device.crashmanager.util.DeviceProfileHelper	field	private static boolean mIsNaatyamAvailable;
+com.amazon.device.crashmanager.util.DeviceProfileHelper	field	private static final String FEATURE_JACKSON;
+com.amazon.device.crashmanager.util.DeviceProfileHelper	field	private static final String FEATURE_NAATYAM_LIBRARY;
+com.amazon.device.crashmanager.util.DeviceProfileHelper	field	private static final String NAATYAM_CLIENT_DEFAULT_PROVISIONING_ID;
+com.amazon.device.crashmanager.util.DeviceProfileHelper	field	private static final String NAATYAM_CLIENT_NOT_FOUND;
+com.amazon.device.crashmanager.util.DeviceProfileHelper	field	private static final String TAG;
+com.amazon.device.crashmanager.util.DeviceProfileHelper	method	private DeviceProfileHelper(Context context)
+com.amazon.device.crashmanager.util.DeviceProfileHelper	method	private boolean isNaatyamAvailable()
+com.amazon.device.crashmanager.util.DeviceProfileHelper	method	public String getPartnerId()
+com.amazon.device.crashmanager.util.DeviceProfileHelper	method	public static synchronized DeviceProfileHelper getInstance(Context context)
+com.amazon.device.crashmanager.util.DirectBootHelper	method	private DirectBootHelper()
+com.amazon.device.crashmanager.util.DirectBootHelper	method	public static Context getStorageContext(Context context)
+com.amazon.device.crashmanager.util.DirectBootHelper	method	public static boolean supportsDirectBoot()
+com.amazon.device.crashmanager.util.FileUtils	method	private FileUtils()
+com.amazon.device.crashmanager.util.FileUtils	method	private static String readTextFile(AssetManager assetManager, String str, String str2) throws IOException
+com.amazon.device.crashmanager.util.FileUtils	method	public static JSONObject readJsonFile(AssetManager assetManager, String str, String str2) throws JSONException, IOException
+com.amazon.device.crashmanager.util.JobSchedulerUtil	field	private ComponentName mComponentName;
+com.amazon.device.crashmanager.util.JobSchedulerUtil	field	private JobScheduler mJobScheduler;
+com.amazon.device.crashmanager.util.JobSchedulerUtil	field	private static final String TAG;
+com.amazon.device.crashmanager.util.JobSchedulerUtil	method	private boolean isJobAlreadyScheduled(int i, long j)
+com.amazon.device.crashmanager.util.JobSchedulerUtil	method	private void cancelJob(int i)
+com.amazon.device.crashmanager.util.JobSchedulerUtil	method	public JobSchedulerUtil(Context context)
+com.amazon.device.crashmanager.util.JobSchedulerUtil	method	public int schedulePeriodicJob(int i, long j, PersistableBundle persistableBundle)
+com.amazon.device.crashmanager.util.MetricRecordUtil	field	private final Context mContext;
+com.amazon.device.crashmanager.util.MetricRecordUtil	field	private static final String DAILY_UPLOAD_KEY;
+com.amazon.device.crashmanager.util.MetricRecordUtil	field	private static final String MONTHLY_UPLOAD_KEY;
+com.amazon.device.crashmanager.util.MetricRecordUtil	field	private static final String WEEKLY_UPLOAD_KEY;
+com.amazon.device.crashmanager.util.MetricRecordUtil	method	private void emitMetricsForCounters(MetricUtil metricUtil, MetricCounter metricCounter, String str)
+com.amazon.device.crashmanager.util.MetricRecordUtil	method	private void emitStatusMetric(MetricUtil metricUtil, CrashUploadStatistics crashUploadStatistics, String str)
+com.amazon.device.crashmanager.util.MetricRecordUtil	method	public MetricRecordUtil(Context context)
+com.amazon.device.crashmanager.util.MetricRecordUtil	method	public void recordCrashUploadMetrics(CrashUploadStatistics crashUploadStatistics, String str, MetricUtil metricUtil)
+com.amazon.device.crashmanager.util.MetricRecordUtil	method	public void updateActiveUploadStats(MetricUtil metricUtil)
+com.amazon.device.crashmanager.util.RemoteConfigurationManagerUtils	method	private RemoteConfigurationManagerUtils()
+com.amazon.device.crashmanager.util.RemoteConfigurationManagerUtils	method	public static RemoteConfigurationManager createDecoratedConfigurationManager(Context context, String str, String str2, String str3) throws JSONException, IOException
+com.amazon.device.crashmanager.utils.AmazonPackageLookup	field	private final PackageManager mPackageManager;
+com.amazon.device.crashmanager.utils.AmazonPackageLookup	field	private final String mMyPackageName;
+com.amazon.device.crashmanager.utils.AmazonPackageLookup	field	private static final Map<String, String> PACKAGE_NAME_TO_FRIENDLY_NAME;
+com.amazon.device.crashmanager.utils.AmazonPackageLookup	field	private static final String TAG;
+com.amazon.device.crashmanager.utils.AmazonPackageLookup	field	public static final String SYSTEM_PACKAGE_PREFIX;
+com.amazon.device.crashmanager.utils.AmazonPackageLookup	field	public static final String THIRD_PARTY_NAME;
+com.amazon.device.crashmanager.utils.AmazonPackageLookup	field	static final Set<String> SYSTEM_PACKAGES;
+com.amazon.device.crashmanager.utils.AmazonPackageLookup	method	private String canonicalizePackageName(String str)
+com.amazon.device.crashmanager.utils.AmazonPackageLookup	method	private int getUidForPackage(String str) throws PackageManager.NameNotFoundException
+com.amazon.device.crashmanager.utils.AmazonPackageLookup	method	public AmazonPackageLookup(Context context)
+com.amazon.device.crashmanager.utils.AmazonPackageLookup	method	public String generateFriendlyName(String str)
+com.amazon.device.crashmanager.utils.AmazonPackageLookup	method	public String packageNameToAmazonFriendlyName(String str)
+com.amazon.device.crashmanager.utils.AmazonPackageLookup	method	public boolean isAmazonPackage(String str)
+com.amazon.device.crashmanager.utils.AmazonPackageLookup	method	public boolean isSystemPackage(String str)
+com.amazon.device.crashmanager.utils.AmazonPackageLookup	method	public boolean isTrustedPackage(String str)
+com.amazon.device.crashmanager.utils.Constants	field	public static final String CONTENT_FORMAT_VERSION;
+com.amazon.device.crashmanager.utils.Constants	field	public static final String CONTENT_TYPE_VERSION;
+com.amazon.device.crashmanager.utils.Constants	field	public static final String FOS_CONTENT_FORMAT_HEADER;
+com.amazon.device.crashmanager.utils.Constants	field	public static final String FOS_CONTENT_TYPE_HEADER;
+com.amazon.device.crashmanager.utils.Constants	field	public static final String VERSION_SEPARATOR;
+com.amazon.device.crashmanager.utils.CrashCountUtil	field	private static final String TAG;
+com.amazon.device.crashmanager.utils.CrashCountUtil	method	public static InputStream getCrashCountMetadataStream(CrashCountMetadata crashCountMetadata)
+com.amazon.device.crashmanager.utils.CrashDescriptorUtil	field	private static final String TAG;
+com.amazon.device.crashmanager.utils.CrashDescriptorUtil	field	static final int ARTIFACT_BUFFER_SIZE;
+com.amazon.device.crashmanager.utils.CrashDescriptorUtil	field	static final int MAX_NUMBER_OF_LINES_TO_SEARCH_FOR_PROCESS_NAME;
+com.amazon.device.crashmanager.utils.CrashDescriptorUtil	field	static final int MAX_NUMBER_OF_LINES_TO_SEARCH_FOR_STACK_TRACE;
+com.amazon.device.crashmanager.utils.CrashDescriptorUtil	method	private static StringBuilder extractStackTraceForANR(BufferedReader bufferedReader, MetricsHeaderProcessor metricsHeaderProcessor) throws Exception
+com.amazon.device.crashmanager.utils.CrashDescriptorUtil	method	private static StringBuilder extractStackTraceForJavaCrash(BufferedReader bufferedReader, String str) throws Exception
+com.amazon.device.crashmanager.utils.CrashDescriptorUtil	method	private static StringBuilder extractStackTraceForNativeCrash(BufferedReader bufferedReader, Writer writer, DetUtil.HeaderProcessor headerProcessor) throws Exception
+com.amazon.device.crashmanager.utils.CrashDescriptorUtil	method	private static StringBuilder extractStackTraceForPinFailures(BufferedReader bufferedReader, MetricUtil metricUtil) throws Exception
+com.amazon.device.crashmanager.utils.CrashDescriptorUtil	method	private static StringBuilder extractStackTraceForSMV(BufferedReader bufferedReader) throws Exception
+com.amazon.device.crashmanager.utils.CrashDescriptorUtil	method	public static BufferedReader fetchBodyFromReader(BufferedReader bufferedReader, char[] cArr) throws IOException
+com.amazon.device.crashmanager.utils.CrashDescriptorUtil	method	public static String calculateCrashDescriptor(StringBuilder sb) throws Exception
+com.amazon.device.crashmanager.utils.CrashDescriptorUtil	method	public static String calculateCrashDescriptorFromTrace(BufferedReader bufferedReader, Writer writer, DetUtil.HeaderProcessor headerProcessor, String str, String str2, char[] cArr, MetricsHeaderProcessor metricsHeaderProcessor, MetricUtil metricUtil) throws Exception
+com.amazon.device.crashmanager.utils.CrashDescriptorUtil	method	public static String extractProcessNameFromNativeCrash(BufferedReader bufferedReader) throws IOException
+com.amazon.device.crashmanager.utils.CrashFileEntryMap	field	private final Map<String, CrashFileEntry> crashFilesEntryMap;
+com.amazon.device.crashmanager.utils.CrashFileEntryMap	field	private final MetricCounter dedupeCounter;
+com.amazon.device.crashmanager.utils.CrashFileEntryMap	field	private final Set<String> crashIdentifiers;
+com.amazon.device.crashmanager.utils.CrashFileEntryMap	field	private static final String TAG;
+com.amazon.device.crashmanager.utils.CrashFileEntryMap	field	private static final int DEFAULT_SAMPLE_COUNT;
+com.amazon.device.crashmanager.utils.CrashFileEntryMap	method	public CrashFileEntry getEntry(String str)
+com.amazon.device.crashmanager.utils.CrashFileEntryMap	method	public CrashFileEntryMap putAll(CrashFileEntryMap crashFileEntryMap)
+com.amazon.device.crashmanager.utils.CrashFileEntryMap	method	public List<String> getCrashIdentifiers()
+com.amazon.device.crashmanager.utils.CrashFileEntryMap	method	public Map<String, CrashFileEntry> getAllEntries()
+com.amazon.device.crashmanager.utils.CrashFileEntryMap	method	public Map<String, MutableInteger> getDedupeCounter()
+com.amazon.device.crashmanager.utils.CrashFileEntryMap	method	public boolean updateDedupeCount(String str, int i, MetricUtil metricUtil)
+com.amazon.device.crashmanager.utils.CrashFileEntryMap	method	public void addFileTimestamp(String str, long j)
+com.amazon.device.crashmanager.utils.CrashFileEntryMap	method	public void putEntry(String str, CrashFileEntry crashFileEntry)
+com.amazon.device.crashmanager.utils.CrashTimestampUtil	field	private final JSONObject mLatestUploadTimestampsJson;
+com.amazon.device.crashmanager.utils.CrashTimestampUtil	field	private final SettingsStore mSettingsStore;
+com.amazon.device.crashmanager.utils.CrashTimestampUtil	field	private static CrashTimestampUtil sCrashTimestampUtil;
+com.amazon.device.crashmanager.utils.CrashTimestampUtil	field	private static final SettingsStore.SettingsKey KEY_LATEST_UPLOAD_TIMESTAMPS_JSON;
+com.amazon.device.crashmanager.utils.CrashTimestampUtil	field	private static final String DEFAULT_TIMESTAMP_JSON_STRING;
+com.amazon.device.crashmanager.utils.CrashTimestampUtil	field	private static final String TAG;
+com.amazon.device.crashmanager.utils.CrashTimestampUtil	field	private static final long DEFAULT_LAST_GLOBAL_DROPBOX_TIME_INDEX;
+com.amazon.device.crashmanager.utils.CrashTimestampUtil	method	private CrashTimestampUtil(SettingsStore settingsStore)
+com.amazon.device.crashmanager.utils.CrashTimestampUtil	method	private JSONObject getSavedTimestampJson(SettingsStore.SettingsKey settingsKey, String str)
+com.amazon.device.crashmanager.utils.CrashTimestampUtil	method	public long getLastTimestamp(String str)
+com.amazon.device.crashmanager.utils.CrashTimestampUtil	method	public static synchronized CrashTimestampUtil getInstance(SettingsStore settingsStore)
+com.amazon.device.crashmanager.utils.CrashTimestampUtil	method	public void saveCurrentIndex()
+com.amazon.device.crashmanager.utils.CrashTimestampUtil	method	public void updateLastTimestamp(String str, long j)
+com.amazon.device.crashmanager.utils.CrashUploadStateUtil	field	private Boolean isOngoingUpload;
+com.amazon.device.crashmanager.utils.CrashUploadStateUtil	field	private Boolean isUploadPending;
+com.amazon.device.crashmanager.utils.CrashUploadStateUtil	field	private Integer retryCounter;
+com.amazon.device.crashmanager.utils.CrashUploadStateUtil	field	private String currentUploadTag;
+com.amazon.device.crashmanager.utils.CrashUploadStateUtil	field	private final SharedPreferences mSharedPreferences;
+com.amazon.device.crashmanager.utils.CrashUploadStateUtil	field	private static final String KEY_CURRENT_UPLOAD_TAG;
+com.amazon.device.crashmanager.utils.CrashUploadStateUtil	field	private static final String KEY_RETRY_COUNTER;
+com.amazon.device.crashmanager.utils.CrashUploadStateUtil	field	private static final String KEY_STATE;
+com.amazon.device.crashmanager.utils.CrashUploadStateUtil	field	private static final String KEY_UPLOAD_CURRENT;
+com.amazon.device.crashmanager.utils.CrashUploadStateUtil	field	private static final String KEY_UPLOAD_PENDING;
+com.amazon.device.crashmanager.utils.CrashUploadStateUtil	field	private static final String TAG;
+com.amazon.device.crashmanager.utils.CrashUploadStateUtil	field	private static final int MAX_RETRY;
+com.amazon.device.crashmanager.utils.CrashUploadStateUtil	field	protected static final String FALLBACK_CURRENT_PREFIX;
+com.amazon.device.crashmanager.utils.CrashUploadStateUtil	method	public CrashUploadStateUtil(SharedPreferences sharedPreferences)
+com.amazon.device.crashmanager.utils.CrashUploadStateUtil	method	public String getCheckPoint()
+com.amazon.device.crashmanager.utils.CrashUploadStateUtil	method	public String getCurrentUploadTag()
+com.amazon.device.crashmanager.utils.CrashUploadStateUtil	method	public boolean hasCompletedCheckpoint(CrashUploadCheckpoint crashUploadCheckpoint)
+com.amazon.device.crashmanager.utils.CrashUploadStateUtil	method	public boolean incrementRetryCounter()
+com.amazon.device.crashmanager.utils.CrashUploadStateUtil	method	public boolean isUploadOngoing()
+com.amazon.device.crashmanager.utils.CrashUploadStateUtil	method	public boolean isUploadPending()
+com.amazon.device.crashmanager.utils.CrashUploadStateUtil	method	public int getRetryCount()
+com.amazon.device.crashmanager.utils.CrashUploadStateUtil	method	public void clearAll()
+com.amazon.device.crashmanager.utils.CrashUploadStateUtil	method	public void resetCurrentUpload()
+com.amazon.device.crashmanager.utils.CrashUploadStateUtil	method	public void resetPendingUpload()
+com.amazon.device.crashmanager.utils.CrashUploadStateUtil	method	public void resetRetryCount()
+com.amazon.device.crashmanager.utils.CrashUploadStateUtil	method	public void saveCheckpoint(CrashUploadCheckpoint crashUploadCheckpoint)
+com.amazon.device.crashmanager.utils.CrashUploadStateUtil	method	public void setCurrentUploadTag(String str)
+com.amazon.device.crashmanager.utils.CrashUploadStateUtil	method	public void setUploadCurrent(boolean z)
+com.amazon.device.crashmanager.utils.CrashUploadStateUtil	method	public void setUploadPending(boolean z)
+com.amazon.device.crashmanager.utils.CrashUploadUtil	field	private Context mContext;
+com.amazon.device.crashmanager.utils.CrashUploadUtil	field	private PackageManager mAndroidPackageManager;
+com.amazon.device.crashmanager.utils.CrashUploadUtil	field	private static final int BACK_OFF_MULTIPLIER;
+com.amazon.device.crashmanager.utils.CrashUploadUtil	field	private static final int HTTP_CONNECT_TIMEOUT;
+com.amazon.device.crashmanager.utils.CrashUploadUtil	field	private static final int HTTP_READ_TIMEOUT;
+com.amazon.device.crashmanager.utils.CrashUploadUtil	field	private static final long BACK_OFF_MS;
+com.amazon.device.crashmanager.utils.CrashUploadUtil	field	public static final String TAG;
+com.amazon.device.crashmanager.utils.CrashUploadUtil	method	private String getContentTypeHeader()
+com.amazon.device.crashmanager.utils.CrashUploadUtil	method	private void addRequestHeaders(HttpURLConnection httpURLConnection, CrashUploadDetail crashUploadDetail)
+com.amazon.device.crashmanager.utils.CrashUploadUtil	method	private void setEmulatorHeader(HttpURLConnection httpURLConnection)
+com.amazon.device.crashmanager.utils.CrashUploadUtil	method	public ArtifactUploadStatus handleResponse(HttpURLConnection httpURLConnection) throws TimeoutException, IOException
+com.amazon.device.crashmanager.utils.CrashUploadUtil	method	public CrashUploadUtil(Context context)
+com.amazon.device.crashmanager.utils.CrashUploadUtil	method	public HttpURLConnection getHttpUrlConnection(CrashUploadDetail crashUploadDetail) throws IOException
+com.amazon.device.crashmanager.utils.CrashUploadUtil	method	public static boolean shouldAbortUpload(CrashUploadStatistics crashUploadStatistics)
+com.amazon.device.crashmanager.utils.CrashUploadUtil	method	public static void waitForBackoff(int i)
+com.amazon.device.crashmanager.utils.CrashUploadUtil	method	public void copyBytesToOutputStream(InputStream inputStream, OutputStream outputStream) throws IOException
+com.amazon.device.crashmanager.utils.ExtraDeviceInfoConstants	field	public static final String KEY_COUNTRY_OF_RESIDENCE;
+com.amazon.device.crashmanager.utils.ExtraDeviceInfoConstants	field	public static final String KEY_DEVICE_GROUP;
+com.amazon.device.crashmanager.utils.ExtraDeviceInfoConstants	field	public static final String KEY_DEVICE_LANGUAGE;
+com.amazon.device.crashmanager.utils.ExtraDeviceInfoConstants	field	public static final String KEY_DEVICE_PLATFORM;
+com.amazon.device.crashmanager.utils.ExtraDeviceInfoConstants	field	public static final String KEY_ENCRYPTION_STATE;
+com.amazon.device.crashmanager.utils.ExtraDeviceInfoConstants	field	public static final String KEY_MARKET_PLACE_ID;
+com.amazon.device.crashmanager.utils.SharedPreferencesStorageUtil	field	private final SharedPreferences mSharedPreferences;
+com.amazon.device.crashmanager.utils.SharedPreferencesStorageUtil	field	private static final String CRASH_COUNT_PREFIX;
+com.amazon.device.crashmanager.utils.SharedPreferencesStorageUtil	field	private static final String CRASH_FILE_PREFIX;
+com.amazon.device.crashmanager.utils.SharedPreferencesStorageUtil	field	private static final String KEY_CRASH_COUNT_IDENTIFIERS;
+com.amazon.device.crashmanager.utils.SharedPreferencesStorageUtil	field	private static final String KEY_CRASH_FILE_IDENTIFIERS;
+com.amazon.device.crashmanager.utils.SharedPreferencesStorageUtil	field	private static final String TAG;
+com.amazon.device.crashmanager.utils.SharedPreferencesStorageUtil	method	private void deleteEntry(String str, String... strArr)
+com.amazon.device.crashmanager.utils.SharedPreferencesStorageUtil	method	public CrashCountEntry getCrashCountEntry(String str)
+com.amazon.device.crashmanager.utils.SharedPreferencesStorageUtil	method	public CrashFileEntry getCrashFileEntry(String str)
+com.amazon.device.crashmanager.utils.SharedPreferencesStorageUtil	method	public SharedPreferencesStorageUtil(SharedPreferences sharedPreferences)
+com.amazon.device.crashmanager.utils.SharedPreferencesStorageUtil	method	public String[] getCrashCountsIdentifiers()
+com.amazon.device.crashmanager.utils.SharedPreferencesStorageUtil	method	public String[] getCrashFileIdentifiers()
+com.amazon.device.crashmanager.utils.SharedPreferencesStorageUtil	method	public void addCrashCountIdentifiers(List<String> list)
+com.amazon.device.crashmanager.utils.SharedPreferencesStorageUtil	method	public void addCrashFileIdentifiers(List<String> list)
+com.amazon.device.crashmanager.utils.SharedPreferencesStorageUtil	method	public void addCrashIdentifiers(String str, List<String> list)
+com.amazon.device.crashmanager.utils.SharedPreferencesStorageUtil	method	public void clearAll()
+com.amazon.device.crashmanager.utils.SharedPreferencesStorageUtil	method	public void deleteCrashCountEntry(String... strArr)
+com.amazon.device.crashmanager.utils.SharedPreferencesStorageUtil	method	public void deleteCrashCountIdentifierList()
+com.amazon.device.crashmanager.utils.SharedPreferencesStorageUtil	method	public void deleteCrashFileEntry(String... strArr)
+com.amazon.device.crashmanager.utils.SharedPreferencesStorageUtil	method	public void deleteCrashFileIdentifierList()
+com.amazon.device.crashmanager.utils.SharedPreferencesStorageUtil	method	public void saveCrashCountEntry(CrashCountEntry crashCountEntry)
+com.amazon.device.crashmanager.utils.SharedPreferencesStorageUtil	method	public void saveCrashFileEntry(CrashFileEntry crashFileEntry)
+com.amazon.device.det.utils.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.device.det.utils.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.device.det.utils.BuildConfig	field	public static final String FLAVOR;
+com.amazon.device.det.utils.BuildConfig	field	public static final String LIBRARY_PACKAGE_NAME;
+com.amazon.device.det.utils.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.device.det.utils.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.device.det.utils.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.device.det.utils.R	method	private R()
+com.amazon.device.utils.det.AbstractDeviceUtil	field	private String mRemoteIP;
+com.amazon.device.utils.det.AbstractDeviceUtil	field	private String mUserAgent;
+com.amazon.device.utils.det.AbstractDeviceUtil	field	private static String sCustomerID;
+com.amazon.device.utils.det.AbstractDeviceUtil	field	private static String sSessionID;
+com.amazon.device.utils.det.AbstractDeviceUtil	field	private static final String DEFAULT_CLICKSTREAM_CUSTOMER_ID;
+com.amazon.device.utils.det.AbstractDeviceUtil	field	private static final String DEFAULT_CLICKSTREAM_SESSION_ID;
+com.amazon.device.utils.det.AbstractDeviceUtil	field	private static final String SHARED_PREF_FILENAME;
+com.amazon.device.utils.det.AbstractDeviceUtil	field	private static final String TAG;
+com.amazon.device.utils.det.AbstractDeviceUtil	field	protected final SharedPreferences mSharedPrefs;
+com.amazon.device.utils.det.AbstractDeviceUtil	method	private static String getRandomDigitsUtil(int i, Random random)
+com.amazon.device.utils.det.AbstractDeviceUtil	method	private static synchronized void initializeCustomerID(SharedPreferences sharedPreferences)
+com.amazon.device.utils.det.AbstractDeviceUtil	method	private static synchronized void initializeSessionID(SharedPreferences sharedPreferences)
+com.amazon.device.utils.det.AbstractDeviceUtil	method	private void createRemoteIp()
+com.amazon.device.utils.det.AbstractDeviceUtil	method	private void createUserAgent()
+com.amazon.device.utils.det.AbstractDeviceUtil	method	public AbstractDeviceUtil(Context context)
+com.amazon.device.utils.det.AbstractDeviceUtil	method	public String fetchCustomerID()
+com.amazon.device.utils.det.AbstractDeviceUtil	method	public String fetchRemoteIP()
+com.amazon.device.utils.det.AbstractDeviceUtil	method	public String fetchSessionID()
+com.amazon.device.utils.det.AbstractDeviceUtil	method	public String fetchSoftwareVersion()
+com.amazon.device.utils.det.AbstractDeviceUtil	method	public String fetchUserAgent()
+com.amazon.device.utils.det.AbstractDeviceUtil	method	public String getRandomDigits(int i, SecureRandom secureRandom)
+com.amazon.device.utils.det.AbstractDeviceUtil	method	public void shutdown()
+com.amazon.device.utils.det.AbstractStatusNotifier	field	private Notification.Builder mNotificationBuilder;
+com.amazon.device.utils.det.AbstractStatusNotifier	field	private NotificationManager mNotificationManager;
+com.amazon.device.utils.det.AbstractStatusNotifier	field	private final Context mContext;
+com.amazon.device.utils.det.AbstractStatusNotifier	field	private final boolean mDisplayProgressBar;
+com.amazon.device.utils.det.AbstractStatusNotifier	field	private final int mNotificationId;
+com.amazon.device.utils.det.AbstractStatusNotifier	field	private int mNumFilesOffloaded;
+com.amazon.device.utils.det.AbstractStatusNotifier	field	private int mProgress;
+com.amazon.device.utils.det.AbstractStatusNotifier	field	private static final DPLogger log;
+com.amazon.device.utils.det.AbstractStatusNotifier	field	private static final int MAX_PROGRESS;
+com.amazon.device.utils.det.AbstractStatusNotifier	field	public static final String NOTIFICATION_CHANNEL_DESC;
+com.amazon.device.utils.det.AbstractStatusNotifier	field	public static final String NOTIFICATION_CHANNEL_ID;
+com.amazon.device.utils.det.AbstractStatusNotifier	field	public static final String NOTIFICATION_CHANNEL_NAME;
+com.amazon.device.utils.det.AbstractStatusNotifier	field	public static final String UPLOAD_STATUS_MESSAGE_KEY;
+com.amazon.device.utils.det.AbstractStatusNotifier	method	public AbstractStatusNotifier(Context context, int i, boolean z)
+com.amazon.device.utils.det.AbstractStatusNotifier	method	public abstract String getBroadcastAction();
+com.amazon.device.utils.det.AbstractStatusNotifier	method	public abstract String getBroadcastActionForUploadTag();
+com.amazon.device.utils.det.AbstractStatusNotifier	method	public abstract String getOffloadBroadcastAction();
+com.amazon.device.utils.det.AbstractStatusNotifier	method	public void broadcastOffloadStatus(CharSequence charSequence)
+com.amazon.device.utils.det.AbstractStatusNotifier	method	public void broadcastUploadStatus(CharSequence charSequence)
+com.amazon.device.utils.det.AbstractStatusNotifier	method	public void broadcastUploadTag(CharSequence charSequence)
+com.amazon.device.utils.det.AbstractStatusNotifier	method	public void fireNotification(final CharSequence charSequence, final int i)
+com.amazon.device.utils.det.AbstractStatusNotifier	method	public void updateFilesCount(int i)
+com.amazon.device.utils.det.AbstractStatusNotifier	method	public void updateProgress(int i)
+com.amazon.device.utils.det.AmazonDeviceUtil	field	private ThreadPoolExecutor mFetchDeviceCORThreadPool;
+com.amazon.device.utils.det.AmazonDeviceUtil	field	private ThreadPoolExecutor mFetchDevicePFMThreadPool;
+com.amazon.device.utils.det.AmazonDeviceUtil	field	private final Context mContext;
+com.amazon.device.utils.det.AmazonDeviceUtil	field	private final MAPAccountManager mMAPAccountManager;
+com.amazon.device.utils.det.AmazonDeviceUtil	field	private final MultipleAccountManager mMultipleAccountManager;
+com.amazon.device.utils.det.AmazonDeviceUtil	field	private static final DPLogger log;
+com.amazon.device.utils.det.AmazonDeviceUtil	field	private static final String ANONYMOUS_ID_SALT;
+com.amazon.device.utils.det.AmazonDeviceUtil	field	private static final String BAD_ANONYMOUS_ID;
+com.amazon.device.utils.det.AmazonDeviceUtil	field	private static final String DEFAULT_ANONYMOUS_ID_NAME;
+com.amazon.device.utils.det.AmazonDeviceUtil	field	private static final String DEFAULT_RSM_GROUP_NAME;
+com.amazon.device.utils.det.AmazonDeviceUtil	field	private static final String DEMO_MODE_FLAG_URI;
+com.amazon.device.utils.det.AmazonDeviceUtil	field	private static final String DEVICE_RSM_GROUP_NAME_KEY;
+com.amazon.device.utils.det.AmazonDeviceUtil	field	private static final String ENG_BUILD_TYPE;
+com.amazon.device.utils.det.AmazonDeviceUtil	field	private static final String KIDS_EDITION_DEVICE_KEY;
+com.amazon.device.utils.det.AmazonDeviceUtil	field	private static final String MULTIPLE_PROFILE_HELPER_CLASS_NAME;
+com.amazon.device.utils.det.AmazonDeviceUtil	field	private static final String THREAD_NAME_COUNTRY_OF_RESIDENCE_FETCHER;
+com.amazon.device.utils.det.AmazonDeviceUtil	field	private static final String THREAD_NAME_DEVICE_MODE_OBSERVER_REGISTRATION;
+com.amazon.device.utils.det.AmazonDeviceUtil	field	private static final String THREAD_NAME_PREFERRED_MARKETPLACE_FETCHER;
+com.amazon.device.utils.det.AmazonDeviceUtil	field	private static final String USERDEBUG_BUILD_TYPE;
+com.amazon.device.utils.det.AmazonDeviceUtil	field	private static final int MAX_FETCH_REQUESTS;
+com.amazon.device.utils.det.AmazonDeviceUtil	field	private static final int MAX_THREADS;
+com.amazon.device.utils.det.AmazonDeviceUtil	field	private static final int TIME_BEFORE_THREAD_SHUTDOWN;
+com.amazon.device.utils.det.AmazonDeviceUtil	field	protected DmlConfigDataProvider mDmlConfigDataProvider;
+com.amazon.device.utils.det.AmazonDeviceUtil	field	protected OTAGroupNameUtil mOTAGroupNameUtil;
+com.amazon.device.utils.det.AmazonDeviceUtil	field	protected String mCachedAnonymousDeviceSerialNumber;
+com.amazon.device.utils.det.AmazonDeviceUtil	field	protected String mCachedCountryOfResidence;
+com.amazon.device.utils.det.AmazonDeviceUtil	field	protected String mCachedDeviceMode;
+com.amazon.device.utils.det.AmazonDeviceUtil	field	protected String mCachedDeviceType;
+com.amazon.device.utils.det.AmazonDeviceUtil	field	protected String mCachedPreferredMarketPlace;
+com.amazon.device.utils.det.AmazonDeviceUtil	field	protected static final int DEFAULT_CUSTOMER_ATTRIBUTE_FETCH_TIMEOUT_MS;
+com.amazon.device.utils.det.AmazonDeviceUtil	method	private synchronized void initializeAnonymousDeviceSerialNumber()
+com.amazon.device.utils.det.AmazonDeviceUtil	method	private void initializeDeviceMode()
+com.amazon.device.utils.det.AmazonDeviceUtil	method	private void initializeDeviceType()
+com.amazon.device.utils.det.AmazonDeviceUtil	method	private void registerObserverForDeviceModeChanges()
+com.amazon.device.utils.det.AmazonDeviceUtil	method	protected AmazonDeviceUtil(Context context, DmlConfigDataProvider dmlConfigDataProvider, MAPAccountManager mAPAccountManager, MultipleAccountManager multipleAccountManager, OTAGroupNameUtil oTAGroupNameUtil)
+com.amazon.device.utils.det.AmazonDeviceUtil	method	protected Boolean fetchShouldUseRealDSN()
+com.amazon.device.utils.det.AmazonDeviceUtil	method	protected Future<String> initializeCountryOfResidenceAsync()
+com.amazon.device.utils.det.AmazonDeviceUtil	method	protected Future<String> initializePreferredMarketPlaceAsync()
+com.amazon.device.utils.det.AmazonDeviceUtil	method	protected String getCustomerAttribute(String str)
+com.amazon.device.utils.det.AmazonDeviceUtil	method	protected ThreadPoolExecutor getThreadPoolExecutor(String str)
+com.amazon.device.utils.det.AmazonDeviceUtil	method	protected boolean multipleProfilesSupported()
+com.amazon.device.utils.det.AmazonDeviceUtil	method	protected boolean useRealDeviceSerialNumber()
+com.amazon.device.utils.det.AmazonDeviceUtil	method	protected void initializeDeviceUtilsCache()
+com.amazon.device.utils.det.AmazonDeviceUtil	method	public AmazonDeviceUtil(Context context)
+com.amazon.device.utils.det.AmazonDeviceUtil	method	public AmazonDeviceUtil(Context context, DmlConfigDataProvider dmlConfigDataProvider)
+com.amazon.device.utils.det.AmazonDeviceUtil	method	public String fetchCountryOfResidence()
+com.amazon.device.utils.det.AmazonDeviceUtil	method	public String fetchDeviceLanguage()
+com.amazon.device.utils.det.AmazonDeviceUtil	method	public String fetchDeviceMode()
+com.amazon.device.utils.det.AmazonDeviceUtil	method	public String fetchDeviceSerialNumber()
+com.amazon.device.utils.det.AmazonDeviceUtil	method	public String fetchDeviceSerialNumberOrAnonymous()
+com.amazon.device.utils.det.AmazonDeviceUtil	method	public String fetchDeviceType()
+com.amazon.device.utils.det.AmazonDeviceUtil	method	public String fetchDirectedCustomerID()
+com.amazon.device.utils.det.AmazonDeviceUtil	method	public String fetchOSFileTag()
+com.amazon.device.utils.det.AmazonDeviceUtil	method	public String fetchOTAGroupName()
+com.amazon.device.utils.det.AmazonDeviceUtil	method	public String fetchPreferredMarketplace()
+com.amazon.device.utils.det.AmazonDeviceUtil	method	public String fetchRsmGroupName()
+com.amazon.device.utils.det.AmazonDeviceUtil	method	public String fetchStaticCredential()
+com.amazon.device.utils.det.AmazonDeviceUtil	method	public String fetchWANSupportedDeviceMode()
+com.amazon.device.utils.det.AmazonDeviceUtil	method	public boolean isDeviceSerialNumberAnonymous()
+com.amazon.device.utils.det.AmazonDeviceUtil	method	public static AmazonUserManager getAmazonUserManager(Context context)
+com.amazon.device.utils.det.AmazonDeviceUtil	method	public static boolean isMultipleProfileHelperAvailable()
+com.amazon.device.utils.det.AmazonDeviceUtil	method	public static boolean isMultipleProfilesSupported(Context context)
+com.amazon.device.utils.det.AmazonDeviceUtil	method	public void onChange(boolean z)
+com.amazon.device.utils.det.AmazonDeviceUtil	method	public void shutdown()
+com.amazon.device.utils.det.AmazonDeviceUtil	method	public void updateCountryOfResidenceAndPreferredMarketplace()
+com.amazon.device.utils.det.BackgroundThreadFactory	field	private final String mThreadName;
+com.amazon.device.utils.det.BackgroundThreadFactory	method	public BackgroundThreadFactory(String str)
+com.amazon.device.utils.det.BackgroundThreadFactory	method	public Thread newThread(Runnable runnable)
+com.amazon.device.utils.det.BlockingAmazonDeviceUtil	field	private final long mTimeoutMillis;
+com.amazon.device.utils.det.BlockingAmazonDeviceUtil	field	private static final DPLogger log;
+com.amazon.device.utils.det.BlockingAmazonDeviceUtil	method	private String initializeCountryOfResidence()
+com.amazon.device.utils.det.BlockingAmazonDeviceUtil	method	private String initializePreferredMarketPlace()
+com.amazon.device.utils.det.BlockingAmazonDeviceUtil	method	protected BlockingAmazonDeviceUtil(Context context, long j, DmlConfigDataProvider dmlConfigDataProvider, MAPAccountManager mAPAccountManager, MultipleAccountManager multipleAccountManager, OTAGroupNameUtil oTAGroupNameUtil)
+com.amazon.device.utils.det.BlockingAmazonDeviceUtil	method	public BlockingAmazonDeviceUtil(Context context)
+com.amazon.device.utils.det.BlockingAmazonDeviceUtil	method	public BlockingAmazonDeviceUtil(Context context, long j)
+com.amazon.device.utils.det.BlockingAmazonDeviceUtil	method	public String fetchCountryOfResidence()
+com.amazon.device.utils.det.BlockingAmazonDeviceUtil	method	public String fetchPreferredMarketplace()
+com.amazon.device.utils.det.BlockingAmazonDeviceUtil	method	public void updateCountryOfResidenceAndPreferredMarketplace()
+com.amazon.device.utils.det.DefaultDomainChooser	method	public Domain chooseDomain()
+com.amazon.device.utils.det.DetEndpointConfig	field	private static final Map<Domain, String> endPointMap;
+com.amazon.device.utils.det.DetEndpointConfig	method	public static String getServiceEndpoint(Domain domain)
+com.amazon.device.utils.det.DetEndpointConfig	method	public static void addEndPoint(Domain domain, String str)
+com.amazon.device.utils.det.DetUtil	field	private int mDetUploadTimeOut;
+com.amazon.device.utils.det.DetUtil	field	private static final Pattern HEADER_VALUE_REGEX;
+com.amazon.device.utils.det.DetUtil	field	private static final SimpleDateFormat sDetDateFormat;
+com.amazon.device.utils.det.DetUtil	field	private static final String TAG;
+com.amazon.device.utils.det.DetUtil	field	private static final String TRACE_HASH_CODE_HEADER_KEY;
+com.amazon.device.utils.det.DetUtil	method	protected String createDetMfbsHeader(Long l) throws Exception
+com.amazon.device.utils.det.DetUtil	method	public DetUtil()
+com.amazon.device.utils.det.DetUtil	method	public DetUtil(int i)
+com.amazon.device.utils.det.DetUtil	method	public String formatDate(long j)
+com.amazon.device.utils.det.DetUtil	method	public String processHeaders(BufferedReader bufferedReader, Writer writer, HeaderProcessor headerProcessor) throws Exception
+com.amazon.device.utils.det.DetUtil	method	public byte[] compressMessage(byte[] bArr) throws IOException
+com.amazon.device.utils.det.DetUtil	method	public void addEventsSectionHeader(Writer writer) throws Exception
+com.amazon.device.utils.det.DetUtil	method	public void addMetadataSectionHeader(HeaderProcessor headerProcessor, String str, Map<String, String> map, Writer writer) throws Exception
+com.amazon.device.utils.det.DetUtil$DefaultHeaderProcessor	field	private final HeaderProcessor mDefaultHeaderProcessor;
+com.amazon.device.utils.det.DetUtil$DefaultHeaderProcessor	field	private final Map<String, HeaderProcessor> mHeaderProcessors;
+com.amazon.device.utils.det.DetUtil$DefaultHeaderProcessor	method	public DefaultHeaderProcessor(Map<String, HeaderProcessor> map, HeaderProcessor headerProcessor)
+com.amazon.device.utils.det.DetUtil$DefaultHeaderProcessor	method	public void process(String str, String str2, Writer writer) throws Exception
+com.amazon.device.utils.det.DetUtil$HeaderWriter	field	private static final String HEADER_DELIMETER;
+com.amazon.device.utils.det.DetUtil$HeaderWriter	field	private static final String NEW_LINE;
+com.amazon.device.utils.det.DetUtil$HeaderWriter	method	public void process(String str, String str2, Writer writer) throws Exception
+com.amazon.device.utils.det.DetUtil$PlainBodyWriter	method	public void write(BufferedReader bufferedReader, Writer writer) throws Exception
+com.amazon.device.utils.det.DetUtil$ReplaceHeader	field	private HeaderProcessor mNextProcessor;
+com.amazon.device.utils.det.DetUtil$ReplaceHeader	field	private String mNewHeader;
+com.amazon.device.utils.det.DetUtil$ReplaceHeader	method	public ReplaceHeader(String str, HeaderProcessor headerProcessor)
+com.amazon.device.utils.det.DetUtil$ReplaceHeader	method	public void process(String str, String str2, Writer writer) throws Exception
+com.amazon.device.utils.det.DetUtil$ReplaceValue	field	private HeaderProcessor mNextProcessor;
+com.amazon.device.utils.det.DetUtil$ReplaceValue	field	private Map<String, String> mReplaceValueMap;
+com.amazon.device.utils.det.DetUtil$ReplaceValue	method	public ReplaceValue(Map<String, String> map, HeaderProcessor headerProcessor)
+com.amazon.device.utils.det.DetUtil$ReplaceValue	method	public void process(String str, String str2, Writer writer) throws Exception
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String ANDROID_BUILD_VERSION;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String ANDROID_VERSION;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String APP_LAUNCH_TIME;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String APP_LAUNCH_TIME_UTC;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String AVAILABLE_INTERNAL_MEMORY_SIZE;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String CONTENT_TYPE;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String CRASH_ID;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String CRASH_TIME;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String CRASH_TIME_UTC;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String CRASH_TYPE;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String DEVICE_BOARD;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String DEVICE_BRAND;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String DEVICE_DISPLAY;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String DEVICE_FINGER_PRINT;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String DEVICE_ID;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String DEVICE_MANUFACTURER;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String DEVICE_MODEL;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String DEVICE_PRODUCT;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String DEVICE_TAGS;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String DEVICE_TIME;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String DEVICE_TYPE;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String DEVICE_USER;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String LOGCAT_DUMP;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String MEMORYINFO_DALVIK_PRIVATEDIRTY;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String MEMORYINFO_DALVIK_PSS;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String MEMORYINFO_DALVIK_SHAREDDIRTY;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String MEMORYINFO_NATIVE_PRIVATEDIRTY;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String MEMORYINFO_NATIVE_PSS;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String MEMORYINFO_NATIVE_SHAREDDIRTY;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String MEMORYINFO_OTHER_PRIVATEDIRTY;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String MEMORYINFO_OTHER_PSS;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String MEMORYINFO_OTHER_SHAREDDIRTY;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String MEM_AVAIL;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String MEM_LOW_FLAG;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String MEM_LOW_THRESHOLD;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String NATIVE_HEAP_FREE_SIZE;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String NATIVE_HEAP_SIZE;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String OS_BUILD_NUMBER;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String PACKAGE_FILE_PATH;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String PACKAGE_NAME;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String PACKAGE_VERSION_CODE;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String PACKAGE_VERSION_NAME;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String PROCESS;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String STACK_TRACE;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String STACK_TRACE_EXTENDED;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String THREAD_ALLOC_COUNT;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String THREAD_ALLOC_SIZE;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String THREAD_DUMP;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String TIME_TO_CRASH;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String TOTAL_INTERNAL_MEMORY_SIZE;
+com.amazon.device.utils.det.DeviceDetailKeys	field	static final String VERSION;
+com.amazon.device.utils.det.DeviceDetailsCollector	method	private DeviceDetailsCollector()
+com.amazon.device.utils.det.DeviceDetailsCollector	method	private static long getAvailableMemorySizeInBytes(File file)
+com.amazon.device.utils.det.DeviceDetailsCollector	method	private static long getTotalMemorySizeInBytes(File file)
+com.amazon.device.utils.det.DeviceDetailsCollector	method	public static long getAvailableCacheMemorySizeInBytes()
+com.amazon.device.utils.det.DeviceDetailsCollector	method	public static long getAvailableInternalMemorySizeInBytes()
+com.amazon.device.utils.det.DeviceDetailsCollector	method	public static long getTotalCacheMemorySizeInBytes()
+com.amazon.device.utils.det.DeviceDetailsCollector	method	public static long getTotalInternalMemorySizeInBytes()
+com.amazon.device.utils.det.DeviceDetailsCollector	method	public static void collect(Context context, Map<String, String> map)
+com.amazon.device.utils.det.DeviceMode	field	private final String mName;
+com.amazon.device.utils.det.DeviceMode	method	public String getName()
+com.amazon.device.utils.det.DmlConfigDataProvider	field	public static final boolean DEFAULT_SHOULD_USE_REAL_DSN;
+com.amazon.device.utils.det.EncryptionStatusProvider	field	private static final String ENCRYPTION_STATE_PROPERTY_NAME;
+com.amazon.device.utils.det.EncryptionStatusProvider	field	private static final String ENCRYPTION_TYPE_PROPERTY_NAME;
+com.amazon.device.utils.det.EncryptionStatusProvider	method	public EncryptionStatus getEncryptionStatus()
+com.amazon.device.utils.det.EncryptionStatusProvider$EncryptionStatus	field	private final String mEncryptionState;
+com.amazon.device.utils.det.EncryptionStatusProvider$EncryptionStatus	field	private final String mEncryptionType;
+com.amazon.device.utils.det.EncryptionStatusProvider$EncryptionStatus	method	private boolean isNullOrEmpty(String str)
+com.amazon.device.utils.det.EncryptionStatusProvider$EncryptionStatus	method	public EncryptionStatus(String str, String str2)
+com.amazon.device.utils.det.EncryptionStatusProvider$EncryptionStatus	method	public String getEncryptionState()
+com.amazon.device.utils.det.EncryptionStatusProvider$EncryptionStatus	method	public String getEncryptionType()
+com.amazon.device.utils.det.EncryptionStatusProvider$EncryptionStatus	method	public boolean hasEncryptionState()
+com.amazon.device.utils.det.EncryptionStatusProvider$EncryptionStatus	method	public boolean hasEncryptionType()
+com.amazon.device.utils.det.GetProp	field	private static final DPLogger log;
+com.amazon.device.utils.det.GetProp	field	private static final String GETPROP_COMMAND;
+com.amazon.device.utils.det.GetProp	method	public String getPropertyByName(String str) throws Throwable
+com.amazon.device.utils.det.MediaScannerHelper	field	private final Context mContext;
+com.amazon.device.utils.det.MediaScannerHelper	method	public MediaScannerHelper(Context context)
+com.amazon.device.utils.det.MediaScannerHelper	method	public void scanDirectory(File file)
+com.amazon.device.utils.det.MfbsInputStream	field	private BufferedReader mBufferedReader;
+com.amazon.device.utils.det.MfbsInputStream	field	private ByteBuffer body;
+com.amazon.device.utils.det.MfbsInputStream	field	private ByteBuffer header;
+com.amazon.device.utils.det.MfbsInputStream	field	private OutputStream compressedByteStream;
+com.amazon.device.utils.det.MfbsInputStream	field	private UnsafeByteArrayOutputStream byteStream;
+com.amazon.device.utils.det.MfbsInputStream	field	private Writer logFileWriter;
+com.amazon.device.utils.det.MfbsInputStream	field	private static final String NEW_LINE;
+com.amazon.device.utils.det.MfbsInputStream	method	private MfbsInputStream() throws IOException
+com.amazon.device.utils.det.MfbsInputStream	method	private static ByteBuffer headerBuffer(int i, String str)
+com.amazon.device.utils.det.MfbsInputStream	method	public MfbsInputStream(BufferedReader bufferedReader) throws IOException
+com.amazon.device.utils.det.MfbsInputStream	method	public Writer getLogFileWriter()
+com.amazon.device.utils.det.MfbsInputStream	method	public int available()
+com.amazon.device.utils.det.MfbsInputStream	method	public int read()
+com.amazon.device.utils.det.MfbsInputStream	method	public int read(byte[] bArr, int i, int i2)
+com.amazon.device.utils.det.MfbsInputStream	method	public synchronized void reset() throws IOException
+com.amazon.device.utils.det.MfbsInputStream	method	public void pump() throws IOException
+com.amazon.device.utils.det.MfbsInputStream$UnsafeByteArrayOutputStream	method	private UnsafeByteArrayOutputStream()
+com.amazon.device.utils.det.NetworkBroadcastReceiver	field	private Context mContext;
+com.amazon.device.utils.det.NetworkBroadcastReceiver	field	private List<NetworkListener> mNetworkListenerList;
+com.amazon.device.utils.det.NetworkBroadcastReceiver	field	private boolean isRegistered;
+com.amazon.device.utils.det.NetworkBroadcastReceiver	method	private void tryRegister()
+com.amazon.device.utils.det.NetworkBroadcastReceiver	method	private void tryUnregister()
+com.amazon.device.utils.det.NetworkBroadcastReceiver	method	public NetworkBroadcastReceiver(Context context)
+com.amazon.device.utils.det.NetworkBroadcastReceiver	method	public synchronized void onReceive(Context context, Intent intent)
+com.amazon.device.utils.det.NetworkBroadcastReceiver	method	public synchronized void registerNetworkListener(NetworkListener networkListener)
+com.amazon.device.utils.det.NetworkBroadcastReceiver	method	public synchronized void unregisterNetworkListener(NetworkListener networkListener)
+com.amazon.device.utils.det.NetworkManager	field	private final ConnectivityManager mConnectivityManager;
+com.amazon.device.utils.det.NetworkManager	field	private final Context mContext;
+com.amazon.device.utils.det.NetworkManager	field	private final NetworkBroadcastReceiver mNetworkBroadcastReceiver;
+com.amazon.device.utils.det.NetworkManager	field	private final PowerManager mPowerManager;
+com.amazon.device.utils.det.NetworkManager	field	private final WifiManager mWifiManager;
+com.amazon.device.utils.det.NetworkManager	field	private static NetworkManager sNetworkManager;
+com.amazon.device.utils.det.NetworkManager	field	private static final List<Integer> TYPE_WAN_LIST;
+com.amazon.device.utils.det.NetworkManager	method	private NetworkManager(Context context)
+com.amazon.device.utils.det.NetworkManager	method	private boolean isConnectedToType(NetworkInfo networkInfo, Integer num)
+com.amazon.device.utils.det.NetworkManager	method	public PowerManager.WakeLock createWakeLock(String str)
+com.amazon.device.utils.det.NetworkManager	method	public WifiManager.WifiLock createWifiLock(String str)
+com.amazon.device.utils.det.NetworkManager	method	public boolean isConnected()
+com.amazon.device.utils.det.NetworkManager	method	public boolean isEthernetConnected()
+com.amazon.device.utils.det.NetworkManager	method	public boolean isWanConnected()
+com.amazon.device.utils.det.NetworkManager	method	public boolean isWifiConnected()
+com.amazon.device.utils.det.NetworkManager	method	public static synchronized NetworkManager instance(Context context)
+com.amazon.device.utils.det.NetworkManager	method	public static synchronized void reset()
+com.amazon.device.utils.det.NetworkManager	method	public void acquireWakeLock(PowerManager.WakeLock wakeLock)
+com.amazon.device.utils.det.NetworkManager	method	public void acquireWakeLock(PowerManager.WakeLock wakeLock, long j)
+com.amazon.device.utils.det.NetworkManager	method	public void acquireWifiLock(WifiManager.WifiLock wifiLock)
+com.amazon.device.utils.det.NetworkManager	method	public void registerNetworkListener(NetworkListener networkListener)
+com.amazon.device.utils.det.NetworkManager	method	public void releaseWakeLock(PowerManager.WakeLock wakeLock)
+com.amazon.device.utils.det.NetworkManager	method	public void releaseWifiLock(WifiManager.WifiLock wifiLock)
+com.amazon.device.utils.det.NetworkManager	method	public void unregisterNetworkListener(NetworkListener networkListener)
+com.amazon.device.utils.det.NullDeviceUtil	method	public String fetchCountryOfResidence()
+com.amazon.device.utils.det.NullDeviceUtil	method	public String fetchCustomerID()
+com.amazon.device.utils.det.NullDeviceUtil	method	public String fetchDeviceLanguage()
+com.amazon.device.utils.det.NullDeviceUtil	method	public String fetchDeviceMode()
+com.amazon.device.utils.det.NullDeviceUtil	method	public String fetchDeviceSerialNumber()
+com.amazon.device.utils.det.NullDeviceUtil	method	public String fetchDeviceSerialNumberOrAnonymous()
+com.amazon.device.utils.det.NullDeviceUtil	method	public String fetchDeviceType()
+com.amazon.device.utils.det.NullDeviceUtil	method	public String fetchOSFileTag()
+com.amazon.device.utils.det.NullDeviceUtil	method	public String fetchOTAGroupName()
+com.amazon.device.utils.det.NullDeviceUtil	method	public String fetchPreferredMarketplace()
+com.amazon.device.utils.det.NullDeviceUtil	method	public String fetchRemoteIP()
+com.amazon.device.utils.det.NullDeviceUtil	method	public String fetchRsmGroupName()
+com.amazon.device.utils.det.NullDeviceUtil	method	public String fetchSessionID()
+com.amazon.device.utils.det.NullDeviceUtil	method	public String fetchSoftwareVersion()
+com.amazon.device.utils.det.NullDeviceUtil	method	public String fetchStaticCredential()
+com.amazon.device.utils.det.NullDeviceUtil	method	public String fetchUserAgent()
+com.amazon.device.utils.det.NullDeviceUtil	method	public String fetchWANSupportedDeviceMode()
+com.amazon.device.utils.det.NullDeviceUtil	method	public String getRandomDigits(int i, SecureRandom secureRandom)
+com.amazon.device.utils.det.NullDeviceUtil	method	public boolean isDeviceSerialNumberAnonymous()
+com.amazon.device.utils.det.NullDeviceUtil	method	public void updateCountryOfResidenceAndPreferredMarketplace()
+com.amazon.device.utils.det.NullStatusNotifier	method	public void broadcastOffloadStatus(CharSequence charSequence)
+com.amazon.device.utils.det.NullStatusNotifier	method	public void broadcastUploadStatus(CharSequence charSequence)
+com.amazon.device.utils.det.NullStatusNotifier	method	public void broadcastUploadTag(CharSequence charSequence)
+com.amazon.device.utils.det.NullStatusNotifier	method	public void fireNotification(CharSequence charSequence, int i)
+com.amazon.device.utils.det.NullStatusNotifier	method	public void updateFilesCount(int i)
+com.amazon.device.utils.det.NullStatusNotifier	method	public void updateProgress(int i)
+com.amazon.device.utils.det.OTAGroupNameUtil	field	private static final DPLogger log;
+com.amazon.device.utils.det.OTAGroupNameUtil	field	private static final String PERMISSION_OTA_GROUP_UPDATED;
+com.amazon.device.utils.det.OTAGroupNameUtil	field	private static final String SHARED_PREF_KEY_LAST_OTA_GROUP_CHECK_TIME;
+com.amazon.device.utils.det.OTAGroupNameUtil	field	private static final long OTA_GROUP_IS_NULL_CACHE_TTL;
+com.amazon.device.utils.det.OTAGroupNameUtil	field	private static final long OTA_GROUP_NOT_NULL_CACHE_TTL;
+com.amazon.device.utils.det.OTAGroupNameUtil	field	protected SharedPreferences mSharedPrefs;
+com.amazon.device.utils.det.OTAGroupNameUtil	field	protected String mCachedOTAGroupName;
+com.amazon.device.utils.det.OTAGroupNameUtil	field	protected final Context mContext;
+com.amazon.device.utils.det.OTAGroupNameUtil	field	public static final String DEFAULT_OTA_GROUP_NAME;
+com.amazon.device.utils.det.OTAGroupNameUtil	method	protected OTAController openOTAController()
+com.amazon.device.utils.det.OTAGroupNameUtil	method	protected boolean isOTAGroupNameExpired()
+com.amazon.device.utils.det.OTAGroupNameUtil	method	protected boolean refreshOTAGroupName()
+com.amazon.device.utils.det.ThreadUtil	field	private static final String TAG;
+com.amazon.device.utils.det.ThreadUtil	field	public static final int BACKGROUND_THREAD_PRIORITY;
+com.amazon.device.utils.det.ThreadUtil	method	public static void setCurrentThreadPriorityToBackground()
+com.amazon.device.utils.det.ThreadUtil	method	public static void tryToBackgroundAllThreads()
+com.amazon.device.utils.det.ThreadUtil	method	public static void tryToBackgroundAllThreadsInParentThreadGroup()
+com.amazon.device.utils.det.library.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.device.utils.det.library.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.device.utils.det.library.BuildConfig	field	public static final String FLAVOR;
+com.amazon.device.utils.det.library.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.device.utils.det.library.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.device.utils.det.library.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.device.utils.det.library.R	method	private R()
+com.amazon.dp.logger.DPFormattedMessage	field	private Throwable mThrowable;
+com.amazon.dp.logger.DPFormattedMessage	field	private final String mFormattedString;
+com.amazon.dp.logger.DPFormattedMessage	method	public DPFormattedMessage(String str, String str2, Object... objArr)
+com.amazon.dp.logger.DPFormattedMessage	method	public String toString()
+com.amazon.dp.logger.DPFormattedMessage	method	public Throwable getThrowable()
+com.amazon.dp.logger.DPFormattedMessage	method	public static String toDPFormat(String str, String str2, Object... objArr)
+com.amazon.dp.logger.DPFormattedMessage	method	public void setThrowable(Throwable th)
+com.amazon.dp.logger.DPLogger	field	private static final String BUILD_TYPE;
+com.amazon.dp.logger.DPLogger	field	private static final String ENG;
+com.amazon.dp.logger.DPLogger	field	private static final boolean FORCE_ALL_LOGGING_ON;
+com.amazon.dp.logger.DPLogger	field	protected final String mName;
+com.amazon.dp.logger.DPLogger	field	protected static final int MAX_TAG_SIZE;
+com.amazon.dp.logger.DPLogger	method	private String ensureSafeName(String str)
+com.amazon.dp.logger.DPLogger	method	private static String removePackageName(String str)
+com.amazon.dp.logger.DPLogger	method	protected boolean isEnabled(DPLoggerBase.DPLevel dPLevel)
+com.amazon.dp.logger.DPLogger	method	protected void log(DPLoggerBase.DPLevel dPLevel, DPFormattedMessage dPFormattedMessage)
+com.amazon.dp.logger.DPLogger	method	public DPLogger()
+com.amazon.dp.logger.DPLogger	method	public DPLogger(Class<?> cls)
+com.amazon.dp.logger.DPLogger	method	public DPLogger(String str)
+com.amazon.dp.logger.DPLoggerBase	method	private void logIfEnabled(DPLevel dPLevel, DPFormattedMessage dPFormattedMessage)
+com.amazon.dp.logger.DPLoggerBase	method	private void logIfEnabled(DPLevel dPLevel, String str, String str2, Object... objArr)
+com.amazon.dp.logger.DPLoggerBase	method	protected abstract boolean isEnabled(DPLevel dPLevel);
+com.amazon.dp.logger.DPLoggerBase	method	protected abstract void log(DPLevel dPLevel, DPFormattedMessage dPFormattedMessage);
+com.amazon.dp.logger.DPLoggerBase	method	public boolean isDebugEnabled()
+com.amazon.dp.logger.DPLoggerBase	method	public boolean isErrorEnabled()
+com.amazon.dp.logger.DPLoggerBase	method	public boolean isFatalEnabled()
+com.amazon.dp.logger.DPLoggerBase	method	public boolean isInfoEnabled()
+com.amazon.dp.logger.DPLoggerBase	method	public boolean isTraceEnabled()
+com.amazon.dp.logger.DPLoggerBase	method	public boolean isVerboseEnabled()
+com.amazon.dp.logger.DPLoggerBase	method	public boolean isWarnEnabled()
+com.amazon.dp.logger.DPLoggerBase	method	public void debug(DPFormattedMessage dPFormattedMessage)
+com.amazon.dp.logger.DPLoggerBase	method	public void debug(String str, String str2, Object... objArr)
+com.amazon.dp.logger.DPLoggerBase	method	public void error(DPFormattedMessage dPFormattedMessage)
+com.amazon.dp.logger.DPLoggerBase	method	public void error(String str, String str2, Object... objArr)
+com.amazon.dp.logger.DPLoggerBase	method	public void fatal(DPFormattedMessage dPFormattedMessage)
+com.amazon.dp.logger.DPLoggerBase	method	public void fatal(String str, String str2, Object... objArr)
+com.amazon.dp.logger.DPLoggerBase	method	public void info(DPFormattedMessage dPFormattedMessage)
+com.amazon.dp.logger.DPLoggerBase	method	public void info(String str, String str2, Object... objArr)
+com.amazon.dp.logger.DPLoggerBase	method	public void trace(DPFormattedMessage dPFormattedMessage)
+com.amazon.dp.logger.DPLoggerBase	method	public void trace(String str, String str2, Object... objArr)
+com.amazon.dp.logger.DPLoggerBase	method	public void verbose(DPFormattedMessage dPFormattedMessage)
+com.amazon.dp.logger.DPLoggerBase	method	public void verbose(String str, String str2, Object... objArr)
+com.amazon.dp.logger.DPLoggerBase	method	public void warn(DPFormattedMessage dPFormattedMessage)
+com.amazon.dp.logger.DPLoggerBase	method	public void warn(String str, String str2, Object... objArr)
+com.amazonaws.mobileconnectors.remoteconfiguration.Attributes	field	public static final String PREDEFINED_ATTRIBUTE_PREFIX;
+com.amazonaws.mobileconnectors.remoteconfiguration.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazonaws.mobileconnectors.remoteconfiguration.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazonaws.mobileconnectors.remoteconfiguration.BuildConfig	field	public static final String FLAVOR;
+com.amazonaws.mobileconnectors.remoteconfiguration.BuildConfig	field	public static final String VERSION_NAME;
+com.amazonaws.mobileconnectors.remoteconfiguration.BuildConfig	field	public static final boolean DEBUG;
+com.amazonaws.mobileconnectors.remoteconfiguration.BuildConfig	field	public static final int VERSION_CODE;
+com.amazonaws.mobileconnectors.remoteconfiguration.R	method	private R()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private ArcusThrottler mThrottler;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private final Attributes mAttributes;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private final ConfigurationDb mConfigurationDb;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private final RemoteConfigurationFetcher mRemoteConfigurationFetcher;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private final SharedPreferences mSharedPreferences;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private final String mAppConfigId;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private int mLastSuccessfulSyncAttributeHash;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private static final String DEFAULT_ENDPOINT;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private static final String KEY_SHARED_PREF_LOCAL_CONFIG_INSTANCE_ID;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private static final String REMOTE_CONFIG_SHARED_PREF_FILE_SUFFIX;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private static final String TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	private RemoteConfigurationManager(Builder builder)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	private String getOrGenerateLocalConfigurationInstanceId()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	private String getPreferencesFileNameForAppConfig()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	private void setLocalConfigurationInstanceId(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	private void validateAndSyncOnNewThread(final ConfigurationSyncCallback configurationSyncCallback)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public Attributes openAttributes()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public Configuration openConfiguration()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public RemoteConfiguration getAndValidateConfiguration()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public static Builder forAppId(Context context, String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public static Builder forAppId(Context context, String str, boolean z)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public static RemoteConfigurationManager getInstance(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public static void verifyAppConfigId(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public synchronized void syncOnCurrentThread(RemoteConfiguration remoteConfiguration, ConfigurationSyncCallback configurationSyncCallback)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public void overwriteConfiguration(JSONObject jSONObject)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public void setRampingKey(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public void sync(ConfigurationSyncCallback configurationSyncCallback)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	field	private JSONObject mDefaultConfiguration;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	field	private boolean mCustomContext;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	field	private final Context mContext;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	field	private final String mAppConfigId;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	field	private static final ConcurrentHashMap<String, RemoteConfigurationManager> mManagers;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	method	private void ensureBuilderReady()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	method	public Builder withDefaultConfiguration(JSONObject jSONObject)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	method	public Builder(Context context, String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	method	public Builder(Context context, String str, boolean z)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	method	public RemoteConfigurationManager createOrGet()
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.BuildConfig	field	public static final String FLAVOR;
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.BuildConfig	field	public static final String VERSION_NAME;
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.BuildConfig	field	public static final boolean DEBUG;
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.BuildConfig	field	public static final int VERSION_CODE;
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.MapR5Wrapper	field	private String deviceType;
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.MapR5Wrapper	method	public MapR5Wrapper(Context context)
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.MapR5Wrapper	method	public String getDeviceType()
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.MapR5Wrapper	method	public boolean isMapR5Present()
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.R	method	private R()
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.ReflectionHelper	field	private static final String TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.ReflectionHelper	method	private <T extends Throwable> void checkNotNull(Object obj, Class<T> cls, String str, Object... objArr) throws Throwable
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.ReflectionHelper	method	private <T extends Throwable> void throwException(Class<T> cls, String str, Object... objArr) throws Throwable
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.ReflectionHelper	method	private <T> Method getHiddenMethodOrThrow(Class<T> cls, String str) throws Throwable
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.ReflectionHelper	method	private Object invoke(String str, Class<?> cls, Object obj, Class<?>[] clsArr, Object... objArr)
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.ReflectionHelper	method	public <T> Method getHiddenMethod(Class<T> cls, String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.ReflectionHelper	method	public <T> Object invokeHiddenMethod(Class<T> cls, String str, Object... objArr) throws IllegalAccessException, InvocationTargetException
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.ReflectionHelper	method	public <T> Object invokeHiddenMethodWithDefault(Class<T> cls, String str, String str2, Object obj)
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.ReflectionHelper	method	public <T> T createInstance(Class<T> cls)
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.ReflectionHelper	method	public <T> T createInstance(Class<T> cls, List<Class<?>> list, List<?> list2)
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.ReflectionHelper	method	public Class<?> getHiddenClass(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.ReflectionHelper	method	public Object getField(Object obj, String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.ReflectionHelper	method	public Object invoke(Method method, Object obj, Object... objArr) throws IllegalAccessException, InvocationTargetException
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.ReflectionHelper	method	public Object invoke(String str, Object obj)
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.ReflectionHelper	method	public Object invoke(String str, Object obj, Class<?>[] clsArr, Object... objArr)
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.ReflectionHelper	method	public Object invokeStatic(String str, String str2, Class<?>[] clsArr, Object... objArr)
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.RemoteConfigurationAndroidClientContextDecorator	field	private final MapR5Wrapper mMapR5Wrapper;
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.RemoteConfigurationAndroidClientContextDecorator	field	private final SystemPropertiesWrapper mSystemPropertiesWrapper;
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.RemoteConfigurationAndroidClientContextDecorator	field	private static final String TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.RemoteConfigurationAndroidClientContextDecorator	field	public static final String BUILD_NUMBER;
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.RemoteConfigurationAndroidClientContextDecorator	field	public static final String BUILD_TYPE;
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.RemoteConfigurationAndroidClientContextDecorator	field	public static final String DEVICE_CODE_NAME;
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.RemoteConfigurationAndroidClientContextDecorator	field	public static final String DEVICE_TYPE;
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.RemoteConfigurationAndroidClientContextDecorator	method	private boolean areMapR5AttributesAlreadySet(Attributes attributes)
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.RemoteConfigurationAndroidClientContextDecorator	method	private boolean areSystemAttributesAlreadySet(Attributes attributes)
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.RemoteConfigurationAndroidClientContextDecorator	method	private void setMapR5Attributes(Attributes attributes)
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.RemoteConfigurationAndroidClientContextDecorator	method	private void setSystemAttributes(Attributes attributes)
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.RemoteConfigurationAndroidClientContextDecorator	method	public RemoteConfigurationAndroidClientContextDecorator(Context context)
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.RemoteConfigurationAndroidClientContextDecorator	method	public RemoteConfigurationManager decorate(RemoteConfigurationManager remoteConfigurationManager)
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.SystemPropertiesWrapper	field	private final Class mSystemProperties;
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.SystemPropertiesWrapper	field	private final Long mVersionNumber;
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.SystemPropertiesWrapper	field	private final ReflectionHelper mReflectionHelper;
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.SystemPropertiesWrapper	field	private final String mBuildType;
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.SystemPropertiesWrapper	field	private final String mProductName;
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.SystemPropertiesWrapper	field	private static final String BUILD_TYPE;
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.SystemPropertiesWrapper	field	private static final String PRODUCT_NAME;
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.SystemPropertiesWrapper	field	private static final String VERSION_NUMBER;
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.SystemPropertiesWrapper	method	private Class getSystemProperties()
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.SystemPropertiesWrapper	method	private Long parseLongFromString(String str, Long l)
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.SystemPropertiesWrapper	method	private String getString(String str, String str2)
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.SystemPropertiesWrapper	method	public Long getVersionNumber()
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.SystemPropertiesWrapper	method	public String getBuildType()
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.SystemPropertiesWrapper	method	public String getProductName()
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.SystemPropertiesWrapper	method	public SystemPropertiesWrapper()
+com.amazonaws.mobileconnectors.remoteconfiguration.clientcontextdecorator.SystemPropertiesWrapper	method	public boolean isSystemPropertiesPresent()
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.ConfigurationNotFoundException	field	private static final long serialVersionUID;
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.ConfigurationNotFoundException	method	public ConfigurationNotFoundException(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.ConfigurationNotFoundException	method	public ConfigurationNotFoundException(String str, Throwable th)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.MalformedAppConfigIdException	method	public MalformedAppConfigIdException(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.MalformedAppConfigIdException	method	public MalformedAppConfigIdException(String str, Throwable th)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.NetworkException	field	private static final long serialVersionUID;
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.NetworkException	method	public NetworkException(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.NetworkException	method	public NetworkException(String str, Throwable th)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.RemoteConfigurationException	field	private static final long serialVersionUID;
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.RemoteConfigurationException	method	public RemoteConfigurationException(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.RemoteConfigurationException	method	public RemoteConfigurationException(String str, Throwable th)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private int mCause;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private int mSyncAttempts;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private long mNextSyncAttemptTime;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private static final long DEFAULT_SYNC_JITTER_IN_MS;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private static final long DEFAULT_TIME_BETWEEN_SYNCS_IN_MS;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private static final long MAX_EXP_BACKOFF_WINDOW_SIZE_IN_MS;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private static final long ONE_SECOND_MS;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	public static final int CAUSE_FAILED_SYNC;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	public static final int CAUSE_NONE;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	public static final int CAUSE_SUCCESSFUL_SYNC;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	public static final int CAUSE_THROTTLED_SYNC;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	private long getCurrentWindowSizeInMS()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	private long getJitterInMS()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	private long getRandomTimeInsideCurrentWindowInMS()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public boolean isSyncAllowedRightNow()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public int getCause()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public long getTimeToNextSyncInMS()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public void updateSyncTimeAfterFailure()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public void updateSyncTimeAfterSuccess()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public void updateSyncTimeAfterThrottle(long j)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	field	private final String account;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	field	private final String id;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	field	private final String region;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	field	private final String type;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	field	private final String vendor;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public Arn(String str, String str2, String str3, String str4, String str5)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public String getAccount()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public String getId()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public String getRegion()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public String getType()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public String getVendor()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public String toArn()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public static Arn fromArn(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private final ConcurrentMap<String, Object> mCustomAttributes;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private final Integer mPackageVersion;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private final String mPackageName;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final String KEY_APP_IDENTIFIER;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final String KEY_COUNTRY;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final String KEY_LANGUAGE;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final String KEY_PLATFORM;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final String PLATFORM_ANDROID;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final String PLATFORM_FIRE_OS;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final String TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final int MAX_ALLOWED_CUSTOM_ATTRIBUTES;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	public static final String KEY_APP_VERSION;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	private AttributesImpl(String str, Integer num, Map<String, Object> map)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	private Object getStandardAttribute(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	private static final boolean nullSafeEquals(Object obj, Object obj2)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	private static final int nullSafeHash(Object obj)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	private synchronized <T> T getObjectPrivate(String str, Class<T> cls)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	private void addStandardAttributesTo(Map<String, Object> map)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected Integer getPackageVersionCode()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected Integer getPackageVersionCode(Context context)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected String getCountry()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected String getLanguage()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected String getPackageName()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected String getPlatform()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public AttributesImpl(Context context)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public Boolean getBoolean(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public Double getDouble(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public Integer getInt(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public Long getLong(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public String getString(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public boolean equals(Object obj)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public int hashCode()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public synchronized AttributesImpl m0clone()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public synchronized Map<String, Object> getAllAttributes()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public synchronized Object remove(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public synchronized void addAttributePrivate(String str, Object obj)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public void addAttribute(String str, Boolean bool)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public void addAttribute(String str, Double d)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public void addAttribute(String str, Integer num)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public void addAttribute(String str, Long l)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public void addAttribute(String str, String str2)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private AtomicInteger openCounter;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private DBHelper dbHelper;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private SQLiteDatabase mDatabase;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final Map<String, ConfigurationDb> instanceMap;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final String DB_NAME;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final String SQL_CREATE_CONFIGURATION_TABLE;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final String TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final String[] PROJECTION_CONFIGURATION;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final String[] PROJECTION_REMOTE_CONFIGURATION;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final int COL_ENTITY_TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final int COL_ORIGIN;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final int COL_TIMESTAMP;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final int COL_VALUE;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final int DATABASE_VERSION;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private Configuration configurationFromCursor(Cursor cursor)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private ContentValues getContentValues(String str, Integer num, Long l, String str2)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private RemoteConfiguration remoteConfigurationFromCursor(Cursor cursor, String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private boolean hasConfiguration(SQLiteDatabase sQLiteDatabase)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private synchronized SQLiteDatabase openDatabase()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private synchronized void closeDatabase()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private synchronized void saveConfiguration(String str, int i, Long l, String str2)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private void saveConfigurationPrivate(SQLiteDatabase sQLiteDatabase, String str, int i, Long l, String str2)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public static ConfigurationDb getOrCreateInstance(Context context, String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public synchronized Configuration readConfiguration() throws ConfigurationNotFoundException
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public synchronized RemoteConfiguration readRemoteConfiguration(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public synchronized void deleteConfiguration()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public void saveConfiguration(RemoteConfiguration remoteConfiguration)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$ConfigurationTable	field	private static final String COLUMN_ENTITY_TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$ConfigurationTable	field	private static final String COLUMN_JSON;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$ConfigurationTable	field	private static final String COLUMN_ORIGIN;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$ConfigurationTable	field	private static final String COLUMN_TIMESTAMP;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$ConfigurationTable	field	private static final String TABLE_NAME;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$ConfigurationTable	method	private ConfigurationTable()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	field	private final File mDbFile;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	private DBHelper(Context context, String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	private void setupDb(SQLiteDatabase sQLiteDatabase)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public File getDbFile()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public static String getDbFileNameFor(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public void onCreate(SQLiteDatabase sQLiteDatabase)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public void onDowngrade(SQLiteDatabase sQLiteDatabase, int i, int i2)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public void onOpen(SQLiteDatabase sQLiteDatabase)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public void onUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i2)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	field	private final Date timestamp;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	field	private final String json;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	method	public ConfigurationImpl(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	method	public ConfigurationImpl(String str, Date date)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	method	public Date getTimestamp()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	method	public JSONObject getAsJsonObject()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	method	public String getAsJsonString()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.DowngradeException	method	public DowngradeException()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.DowngradeException	method	public DowngradeException(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.DowngradeException	method	public DowngradeException(String str, Throwable th)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.DowngradeException	method	public DowngradeException(Throwable th)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.Checks	method	public static void checkArgument(boolean z, String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.Checks	method	public static void checkNotNull(Object obj, String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper	field	private static final String TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper	field	private static final char[] HEX_ARRAY;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper	method	private LocalConfigInstanceIdGenerationHelper()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper	method	private static String convertBytesToHexString(byte[] bArr)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper	method	public static String generateLocalConfigInstanceId(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfiguration	field	public static final int ORIGIN_DEFAULT;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfiguration	field	public static final int ORIGIN_OVERWRITTEN;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfiguration	field	public static final int ORIGIN_SYNCED;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	field	private final Configuration mConfiguration;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	field	private final String mAppConfigurationId;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	field	private final String mEntityTag;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	field	private final boolean mUpdate;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	field	private final int mOrigin;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public Configuration getConfiguration()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public RemoteConfigurationImpl(Configuration configuration, String str, int i, String str2, boolean z)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public String getAppConfigurationId()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public String getEntityTag()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public boolean isUpdate()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public int getOrigin()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private final Context mContext;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private final URL mEndpoint;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final Pattern ARCUS_CLIENT_VERSION_PATTERN;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String CHARSET_NAME_UTF8;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String GZIP_ENCODING;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String HEADER_ACCEPT_ENCODING;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String HEADER_AMZ_TARGET;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String HEADER_CONTENT_ENCODING;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String HEADER_CONTENT_TYPE;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String HEADER_USER_AGENT;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String QUERY_CONFIGURATION_TARGET;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String REQUEST_KEY_APP_CONFIG_ID;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String REQUEST_KEY_CLIENT_ATTRIBUTES;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String REQUEST_KEY_LAST_SEEN_ENTITY_TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String REQUEST_KEY_LOCAL_CONFIG_INSTANCE_ID;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String RESPONSE_KEY_CONFIGURATION;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String RESPONSE_KEY_ENTITY_TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String RESPONSE_KEY_UPDATED;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String USER_AGENT_PREFIX;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String XAMZ_JSON_CONTENT_TYPE;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final int DEFAULT_CONNECT_TIMEOUT;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final int DEFAULT_READ_TIMEOUT;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final int HTTP_OK_STATUS_CODE;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private JSONObject readResponse(HttpURLConnection httpURLConnection) throws Throwable
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private RemoteConfiguration buildRemoteConfiguration(String str, JSONObject jSONObject)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private String getArcusUserAgent()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private boolean isNetworkAvailable()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private byte[] buildRequestBody(String str, Attributes attributes, String str2, String str3)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private void closeErrorStreamFromConnection(HttpURLConnection httpURLConnection)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private void configureConnection(HttpURLConnection httpURLConnection)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private void setHeaders(HttpURLConnection httpURLConnection)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private void writeRequest(HttpURLConnection httpURLConnection, byte[] bArr)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	public AndroidRemoteConfigurationFetcher(Context context, URL url)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	public RemoteConfiguration fetch(String str, Attributes attributes, String str2, String str3) throws Throwable
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.RequestThrottledException	method	public RequestThrottledException(String str)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.RequestThrottledException	method	public RequestThrottledException(String str, Throwable th)

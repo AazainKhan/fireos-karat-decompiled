@@ -1,0 +1,32 @@
+class	kind	declaration
+com.android.proxyhandler.ProxyServer	field	private ExecutorService threadExecutor;
+com.android.proxyhandler.ProxyServer	field	private IProxyPortListener mCallback;
+com.android.proxyhandler.ProxyServer	field	private ServerSocket serverSocket;
+com.android.proxyhandler.ProxyServer	field	private int mPort;
+com.android.proxyhandler.ProxyServer	field	public boolean mIsRunning;
+com.android.proxyhandler.ProxyServer	method	public synchronized void setCallback(IProxyPortListener iProxyPortListener)
+com.android.proxyhandler.ProxyServer	method	public synchronized void setPort(int i)
+com.android.proxyhandler.ProxyServer	method	public synchronized void startServer()
+com.android.proxyhandler.ProxyServer	method	public synchronized void stopServer()
+com.android.proxyhandler.ProxyServer	method	public void run()
+com.android.proxyhandler.ProxyServer$ProxyConnection	field	private Socket connection;
+com.android.proxyhandler.ProxyServer$ProxyConnection	method	private ProxyConnection(ProxyServer proxyServer, Socket socket)
+com.android.proxyhandler.ProxyServer$ProxyConnection	method	private String getAbsolutePathFromAbsoluteURI(URI uri)
+com.android.proxyhandler.ProxyServer$ProxyConnection	method	private String getLine(InputStream inputStream) throws IOException
+com.android.proxyhandler.ProxyServer$ProxyConnection	method	private boolean shouldRemoveHeaderLine(String str)
+com.android.proxyhandler.ProxyServer$ProxyConnection	method	private void filterAndForwardRequestHeaders(Socket socket, Socket socket2) throws IOException
+com.android.proxyhandler.ProxyServer$ProxyConnection	method	private void sendAugmentedRequestToHost(Socket socket, Socket socket2, String str, URI uri, String str2) throws IOException
+com.android.proxyhandler.ProxyServer$ProxyConnection	method	private void sendLine(Socket socket, String str) throws IOException
+com.android.proxyhandler.ProxyServer$ProxyConnection	method	private void sendRequestLineWithPath(Socket socket, String str, URI uri, String str2) throws IOException
+com.android.proxyhandler.ProxyServer$ProxyConnection	method	private void skipToRequestBody(Socket socket) throws IOException
+com.android.proxyhandler.ProxyServer$ProxyConnection	method	public void run()
+com.android.proxyhandler.ProxyService	field	private static ProxyServer server;
+com.android.proxyhandler.ProxyService	method	public IBinder onBind(Intent intent)
+com.android.proxyhandler.ProxyService	method	public void onCreate()
+com.android.proxyhandler.ProxyService	method	public void onDestroy()
+com.android.proxyhandler.R$string	field	public static final int app_label;
+com.android.proxyhandler.SocketConnect	field	private InputStream from;
+com.android.proxyhandler.SocketConnect	field	private OutputStream to;
+com.android.proxyhandler.SocketConnect	method	public SocketConnect(Socket socket, Socket socket2) throws IOException
+com.android.proxyhandler.SocketConnect	method	public static void connect(Socket socket, Socket socket2)
+com.android.proxyhandler.SocketConnect	method	public void run()

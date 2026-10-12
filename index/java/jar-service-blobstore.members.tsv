@@ -1,0 +1,324 @@
+class	kind	declaration
+com.android.server.blob.BlobAccessMode	field	private final ArraySet<PackageIdentifier> mWhitelistedPackages;
+com.android.server.blob.BlobAccessMode	field	private int mAccessType;
+com.android.server.blob.BlobAccessMode	field	public static final int ACCESS_TYPE_PRIVATE;
+com.android.server.blob.BlobAccessMode	field	public static final int ACCESS_TYPE_PUBLIC;
+com.android.server.blob.BlobAccessMode	field	public static final int ACCESS_TYPE_SAME_SIGNATURE;
+com.android.server.blob.BlobAccessMode	field	public static final int ACCESS_TYPE_WHITELIST;
+com.android.server.blob.BlobAccessMode	method	static BlobAccessMode createFromXml(XmlPullParser xmlPullParser) throws XmlPullParserException, IOException
+com.android.server.blob.BlobAccessMode$PackageIdentifier	field	public final String packageName;
+com.android.server.blob.BlobAccessMode$PackageIdentifier	field	public final byte[] certificate;
+com.android.server.blob.BlobAccessMode$PackageIdentifier	method	private PackageIdentifier(String str, byte[] bArr)
+com.android.server.blob.BlobAccessMode$PackageIdentifier	method	public String toString()
+com.android.server.blob.BlobAccessMode$PackageIdentifier	method	public boolean equals(Object obj)
+com.android.server.blob.BlobAccessMode$PackageIdentifier	method	public int hashCode()
+com.android.server.blob.BlobAccessMode$PackageIdentifier	method	public static PackageIdentifier create(String str, byte[] bArr)
+com.android.server.blob.BlobMetadata	field	private File mBlobFile;
+com.android.server.blob.BlobMetadata	field	private final ArrayMap<String, ArraySet<RevocableFileDescriptor>> mRevocableFds;
+com.android.server.blob.BlobMetadata	field	private final ArraySet<Committer> mCommitters;
+com.android.server.blob.BlobMetadata	field	private final ArraySet<Leasee> mLeasees;
+com.android.server.blob.BlobMetadata	field	private final BlobHandle mBlobHandle;
+com.android.server.blob.BlobMetadata	field	private final Context mContext;
+com.android.server.blob.BlobMetadata	field	private final Object mMetadataLock;
+com.android.server.blob.BlobMetadata	field	private final int mUserId;
+com.android.server.blob.BlobMetadata	field	private final long mBlobId;
+com.android.server.blob.BlobMetadata	method	private ParcelFileDescriptor createRevocableFd(FileDescriptor fileDescriptor, final String str) throws IOException
+com.android.server.blob.BlobMetadata	method	private boolean hasOtherLeasees(String str, int i)
+com.android.server.blob.BlobMetadata	method	private static <T extends Accessor> T getAccessor(ArraySet<T> arraySet, String str, int i)
+com.android.server.blob.BlobMetadata	method	private static <T extends Accessor> boolean isAnAccessor(ArraySet<T> arraySet, String str, int i)
+com.android.server.blob.BlobMetadata	method	private void revokeAllFds()
+com.android.server.blob.BlobMetadata	method	static BlobMetadata createFromXml(XmlPullParser xmlPullParser, int i, Context context) throws XmlPullParserException, IOException
+com.android.server.blob.BlobMetadata$Accessor	field	public final String packageName;
+com.android.server.blob.BlobMetadata$Accessor	field	public final int uid;
+com.android.server.blob.BlobMetadata$Accessor	method	public String toString()
+com.android.server.blob.BlobMetadata$Accessor	method	public boolean equals(Object obj)
+com.android.server.blob.BlobMetadata$Accessor	method	public boolean equals(String str, int i)
+com.android.server.blob.BlobMetadata$Accessor	method	public int hashCode()
+com.android.server.blob.BlobMetadata$Committer	field	public final BlobAccessMode blobAccessMode;
+com.android.server.blob.BlobMetadata$Committer	field	public final long commitTimeMs;
+com.android.server.blob.BlobMetadata$Committer	method	static Committer createFromXml(XmlPullParser xmlPullParser, int i) throws XmlPullParserException, IOException
+com.android.server.blob.BlobMetadata$Leasee	field	public final CharSequence description;
+com.android.server.blob.BlobMetadata$Leasee	field	public final String descriptionResEntryName;
+com.android.server.blob.BlobMetadata$Leasee	field	public final long expiryTimeMillis;
+com.android.server.blob.BlobMetadata$Leasee	method	private String getDescriptionToDump(Context context)
+com.android.server.blob.BlobMetadata$Leasee	method	private static String getDescription(Context context, String str, String str2, int i)
+com.android.server.blob.BlobMetadata$Leasee	method	private static String getDescription(Resources resources, int i)
+com.android.server.blob.BlobMetadata$Leasee	method	private static String getResourceEntryName(Resources resources, int i)
+com.android.server.blob.BlobMetadata$Leasee	method	static Leasee createFromXml(XmlPullParser xmlPullParser, int i) throws IOException
+com.android.server.blob.BlobStoreConfig	field	private static final String BLOBS_DIR_NAME;
+com.android.server.blob.BlobStoreConfig	field	private static final String BLOBS_INDEX_FILE_NAME;
+com.android.server.blob.BlobStoreConfig	field	private static final String ROOT_DIR_NAME;
+com.android.server.blob.BlobStoreConfig	field	private static final String SESSIONS_INDEX_FILE_NAME;
+com.android.server.blob.BlobStoreConfig	field	public static final String TAG;
+com.android.server.blob.BlobStoreConfig	field	public static final boolean LOGV;
+com.android.server.blob.BlobStoreConfig	field	public static final int IDLE_JOB_ID;
+com.android.server.blob.BlobStoreConfig	field	public static final int XML_VERSION_ADD_COMMIT_TIME;
+com.android.server.blob.BlobStoreConfig	field	public static final int XML_VERSION_ADD_DESC_RES_NAME;
+com.android.server.blob.BlobStoreConfig	field	public static final int XML_VERSION_ADD_SESSION_CREATION_TIME;
+com.android.server.blob.BlobStoreConfig	field	public static final int XML_VERSION_ADD_STRING_DESC;
+com.android.server.blob.BlobStoreConfig	field	public static final int XML_VERSION_CURRENT;
+com.android.server.blob.BlobStoreConfig	field	public static final int XML_VERSION_INIT;
+com.android.server.blob.BlobStoreConfig	field	public static final long INVALID_BLOB_ID;
+com.android.server.blob.BlobStoreConfig	field	public static final long INVALID_BLOB_SIZE;
+com.android.server.blob.BlobStoreConfig	method	private static File getBlobFile(File file, long j)
+com.android.server.blob.BlobStoreConfig	method	private static File getBlobsDir(File file)
+com.android.server.blob.BlobStoreConfig	method	private static boolean hasCommitCoolOffPeriodElapsed(long j)
+com.android.server.blob.BlobStoreConfig	method	public static CharSequence getTruncatedLeaseDescription(CharSequence charSequence)
+com.android.server.blob.BlobStoreConfig	method	public static File getBlobFile(long j)
+com.android.server.blob.BlobStoreConfig	method	public static File getBlobStoreRootDir()
+com.android.server.blob.BlobStoreConfig	method	public static File getBlobsDir()
+com.android.server.blob.BlobStoreConfig	method	public static File prepareBlobFile(long j)
+com.android.server.blob.BlobStoreConfig	method	public static File prepareBlobStoreRootDir()
+com.android.server.blob.BlobStoreConfig	method	public static File prepareBlobsDir()
+com.android.server.blob.BlobStoreConfig	method	public static File prepareBlobsIndexFile()
+com.android.server.blob.BlobStoreConfig	method	public static File prepareSessionIndexFile()
+com.android.server.blob.BlobStoreConfig	method	public static boolean hasLeaseWaitTimeElapsed(long j)
+com.android.server.blob.BlobStoreConfig	method	public static boolean hasSessionExpired(long j)
+com.android.server.blob.BlobStoreConfig	method	public static boolean shouldUseRevocableFdForReads()
+com.android.server.blob.BlobStoreConfig	method	public static int getMaxActiveSessions()
+com.android.server.blob.BlobStoreConfig	method	public static int getMaxCommittedBlobs()
+com.android.server.blob.BlobStoreConfig	method	public static int getMaxLeasedBlobs()
+com.android.server.blob.BlobStoreConfig	method	public static int getMaxPermittedPackages()
+com.android.server.blob.BlobStoreConfig	method	public static long getAdjustedCommitTimeMs(long j, long j2)
+com.android.server.blob.BlobStoreConfig	method	public static long getAppDataBytesLimit()
+com.android.server.blob.BlobStoreConfig	method	public static long getDeletionOnLastLeaseDelayMs()
+com.android.server.blob.BlobStoreConfig	method	public static long getIdleJobPeriodMs()
+com.android.server.blob.BlobStoreConfig	method	public static void dump(IndentingPrintWriter indentingPrintWriter, Context context)
+com.android.server.blob.BlobStoreConfig	method	public static void initialize(Context context)
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static boolean USE_REVOCABLE_FD_FOR_READS;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static final String KEY_COMMIT_COOL_OFF_DURATION_MS;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static final String KEY_DELETE_ON_LAST_LEASE_DELAY_MS;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static final String KEY_IDLE_JOB_PERIOD_MS;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static final String KEY_LEASE_ACQUISITION_WAIT_DURATION_MS;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static final String KEY_LEASE_DESC_CHAR_LIMIT;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static final String KEY_MAX_ACTIVE_SESSIONS;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static final String KEY_MAX_BLOB_ACCESS_PERMITTED_PACKAGES;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static final String KEY_MAX_COMMITTED_BLOBS;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static final String KEY_MAX_LEASED_BLOBS;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static final String KEY_SESSION_EXPIRY_TIMEOUT_MS;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static final String KEY_TOTAL_BYTES_PER_APP_LIMIT_FLOOR;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static final String KEY_TOTAL_BYTES_PER_APP_LIMIT_FRACTION;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static final String KEY_USE_REVOCABLE_FD_FOR_READS;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static final boolean DEFAULT_USE_REVOCABLE_FD_FOR_READS;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static final float DEFAULT_TOTAL_BYTES_PER_APP_LIMIT_FRACTION;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static final long DEFAULT_COMMIT_COOL_OFF_DURATION_MS;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static final long DEFAULT_DELETE_ON_LAST_LEASE_DELAY_MS;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static final long DEFAULT_IDLE_JOB_PERIOD_MS;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static final long DEFAULT_LEASE_ACQUISITION_WAIT_DURATION_MS;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static final long DEFAULT_SESSION_EXPIRY_TIMEOUT_MS;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static final long DEFAULT_TOTAL_BYTES_PER_APP_LIMIT_FLOOR;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static float TOTAL_BYTES_PER_APP_LIMIT_FRACTION;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static int DEFAULT_LEASE_DESC_CHAR_LIMIT;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static int DEFAULT_MAX_ACTIVE_SESSIONS;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static int DEFAULT_MAX_BLOB_ACCESS_PERMITTED_PACKAGES;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static int DEFAULT_MAX_COMMITTED_BLOBS;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static int DEFAULT_MAX_LEASED_BLOBS;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static int LEASE_DESC_CHAR_LIMIT;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static int MAX_ACTIVE_SESSIONS;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static int MAX_BLOB_ACCESS_PERMITTED_PACKAGES;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static int MAX_COMMITTED_BLOBS;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static int MAX_LEASED_BLOBS;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static long COMMIT_COOL_OFF_DURATION_MS;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static long DELETE_ON_LAST_LEASE_DELAY_MS;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static long IDLE_JOB_PERIOD_MS;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static long LEASE_ACQUISITION_WAIT_DURATION_MS;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static long SESSION_EXPIRY_TIMEOUT_MS;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	field	public static long TOTAL_BYTES_PER_APP_LIMIT_FLOOR;
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	method	public static void refresh(final DeviceConfig.Properties properties)
+com.android.server.blob.BlobStoreConfig$DeviceConfigProperties	method	static void dump(IndentingPrintWriter indentingPrintWriter, Context context)
+com.android.server.blob.BlobStoreIdleJobService	method	public boolean onStartJob(final JobParameters jobParameters)
+com.android.server.blob.BlobStoreIdleJobService	method	public boolean onStopJob(JobParameters jobParameters)
+com.android.server.blob.BlobStoreIdleJobService	method	static void schedule(Context context)
+com.android.server.blob.BlobStoreManagerInternal	method	public abstract void onIdleMaintenance();
+com.android.server.blob.BlobStoreManagerService	field	private PackageManagerInternal mPackageManagerInternal;
+com.android.server.blob.BlobStoreManagerService	field	private StatsManager mStatsManager;
+com.android.server.blob.BlobStoreManagerService	field	private StatsPullAtomCallbackImpl mStatsCallbackImpl;
+com.android.server.blob.BlobStoreManagerService	field	private final ArraySet<Long> mActiveBlobIds;
+com.android.server.blob.BlobStoreManagerService	field	private final ArraySet<Long> mKnownBlobIds;
+com.android.server.blob.BlobStoreManagerService	field	private final Context mContext;
+com.android.server.blob.BlobStoreManagerService	field	private final Handler mBackgroundHandler;
+com.android.server.blob.BlobStoreManagerService	field	private final Handler mHandler;
+com.android.server.blob.BlobStoreManagerService	field	private final Injector mInjector;
+com.android.server.blob.BlobStoreManagerService	field	private final Object mBlobsLock;
+com.android.server.blob.BlobStoreManagerService	field	private final Random mRandom;
+com.android.server.blob.BlobStoreManagerService	field	private final Runnable mSaveBlobsInfoRunnable;
+com.android.server.blob.BlobStoreManagerService	field	private final Runnable mSaveSessionsRunnable;
+com.android.server.blob.BlobStoreManagerService	field	private final SessionStateChangeListener mSessionStateChangeListener;
+com.android.server.blob.BlobStoreManagerService	field	private final SparseArray<ArrayMap<BlobHandle, BlobMetadata>> mBlobsMap;
+com.android.server.blob.BlobStoreManagerService	field	private final SparseArray<LongSparseArray<BlobStoreSession>> mSessions;
+com.android.server.blob.BlobStoreManagerService	field	private long mCurrentMaxSessionId;
+com.android.server.blob.BlobStoreManagerService	method	private ArrayMap<BlobHandle, BlobMetadata> getUserBlobsLocked(int i)
+com.android.server.blob.BlobStoreManagerService	method	private LongSparseArray<BlobStoreSession> getUserSessionsLocked(int i)
+com.android.server.blob.BlobStoreManagerService	method	private SparseArray<SparseArray<String>> getAllPackages()
+com.android.server.blob.BlobStoreManagerService	method	private int getCommittedBlobsCountLocked(final int i, final String str)
+com.android.server.blob.BlobStoreManagerService	method	private int getLeasedBlobsCountLocked(final int i, final String str)
+com.android.server.blob.BlobStoreManagerService	method	private int getPackageUid(String str, int i)
+com.android.server.blob.BlobStoreManagerService	method	private int getSessionsCountLocked(final int i, final String str)
+com.android.server.blob.BlobStoreManagerService	method	private long generateNextSessionIdLocked()
+com.android.server.blob.BlobStoreManagerService	method	private void addActiveBlobIdLocked(long j)
+com.android.server.blob.BlobStoreManagerService	method	private void addBlobForUserLocked(BlobMetadata blobMetadata, ArrayMap<BlobHandle, BlobMetadata> arrayMap)
+com.android.server.blob.BlobStoreManagerService	method	private void addBlobForUserLocked(BlobMetadata blobMetadata, int i)
+com.android.server.blob.BlobStoreManagerService	method	private void addSessionForUserLocked(BlobStoreSession blobStoreSession, int i)
+com.android.server.blob.BlobStoreManagerService	method	private void deleteBlobLocked(BlobMetadata blobMetadata)
+com.android.server.blob.BlobStoreManagerService	method	private void deleteSessionLocked(BlobStoreSession blobStoreSession)
+com.android.server.blob.BlobStoreManagerService	method	private void readBlobSessionsLocked(SparseArray<SparseArray<String>> sparseArray)
+com.android.server.blob.BlobStoreManagerService	method	private void readBlobsInfoLocked(SparseArray<SparseArray<String>> sparseArray)
+com.android.server.blob.BlobStoreManagerService	method	private void registerBlobStorePuller()
+com.android.server.blob.BlobStoreManagerService	method	private void registerReceivers()
+com.android.server.blob.BlobStoreManagerService	method	private void writeBlobSessionsAsync()
+com.android.server.blob.BlobStoreManagerService	method	private void writeBlobSessionsLocked() throws Exception
+com.android.server.blob.BlobStoreManagerService	method	private void writeBlobsInfoAsync()
+com.android.server.blob.BlobStoreManagerService	method	private void writeBlobsInfoLocked() throws Exception
+com.android.server.blob.BlobStoreManagerService	method	public BlobStoreManagerService(Context context)
+com.android.server.blob.BlobStoreManagerService	method	public BlobStoreSession openSessionInternal(long j, int i, String str)
+com.android.server.blob.BlobStoreManagerService	method	public LeaseInfo getLeaseInfoInternal(BlobHandle blobHandle, int i, String str)
+com.android.server.blob.BlobStoreManagerService	method	public List<BlobHandle> getLeasedBlobsInternal(final int i, final String str)
+com.android.server.blob.BlobStoreManagerService	method	public List<BlobInfo> queryBlobsForUserInternal(final int i)
+com.android.server.blob.BlobStoreManagerService	method	public ParcelFileDescriptor openBlobInternal(BlobHandle blobHandle, int i, String str) throws IOException
+com.android.server.blob.BlobStoreManagerService	method	public int pullBlobData(int i, List<StatsEvent> list)
+com.android.server.blob.BlobStoreManagerService	method	public long createSessionInternal(BlobHandle blobHandle, int i, String str)
+com.android.server.blob.BlobStoreManagerService	method	public long getRemainingLeaseQuotaBytesInternal(int i, String str)
+com.android.server.blob.BlobStoreManagerService	method	public static Handler initializeMessageHandler()
+com.android.server.blob.BlobStoreManagerService	method	public void abandonSessionInternal(long j, int i, String str)
+com.android.server.blob.BlobStoreManagerService	method	public void acquireLeaseInternal(BlobHandle blobHandle, int i, CharSequence charSequence, long j, int i2, String str)
+com.android.server.blob.BlobStoreManagerService	method	public void deleteBlobInternal(final long j, int i)
+com.android.server.blob.BlobStoreManagerService	method	public void dumpBlobsLocked(IndentingPrintWriter indentingPrintWriter, DumpArgs dumpArgs)
+com.android.server.blob.BlobStoreManagerService	method	public void dumpSessionsLocked(IndentingPrintWriter indentingPrintWriter, DumpArgs dumpArgs)
+com.android.server.blob.BlobStoreManagerService	method	public void forEachBlobInUser(Consumer<BlobMetadata> consumer, int i)
+com.android.server.blob.BlobStoreManagerService	method	public void forEachSessionInUser(Consumer<BlobStoreSession> consumer, int i)
+com.android.server.blob.BlobStoreManagerService	method	public void handleUserRemoved(int i)
+com.android.server.blob.BlobStoreManagerService	method	public void onBootPhase(int i)
+com.android.server.blob.BlobStoreManagerService	method	public void onStart()
+com.android.server.blob.BlobStoreManagerService	method	public void onStateChangedInternal(final BlobStoreSession blobStoreSession)
+com.android.server.blob.BlobStoreManagerService	method	public void releaseLeaseInternal(final BlobHandle blobHandle, int i, String str)
+com.android.server.blob.BlobStoreManagerService	method	public void verifyCallingPackage(int i, String str)
+com.android.server.blob.BlobStoreManagerService	method	public void writeBlobSessions()
+com.android.server.blob.BlobStoreManagerService	method	public void writeBlobsInfo()
+com.android.server.blob.BlobStoreManagerService$BlobStorageStatsAugmenter	method	private BlobStorageStatsAugmenter()
+com.android.server.blob.BlobStoreManagerService$BlobStorageStatsAugmenter	method	public void augmentStatsForPackage(PackageStats packageStats, final String str, int i, final boolean z)
+com.android.server.blob.BlobStoreManagerService$BlobStorageStatsAugmenter	method	public void augmentStatsForUid(PackageStats packageStats, final int i, final boolean z)
+com.android.server.blob.BlobStoreManagerService$DumpArgs	field	private boolean mDumpAll;
+com.android.server.blob.BlobStoreManagerService$DumpArgs	field	private boolean mDumpHelp;
+com.android.server.blob.BlobStoreManagerService$DumpArgs	field	private boolean mDumpUnredacted;
+com.android.server.blob.BlobStoreManagerService$DumpArgs	field	private final ArrayList<Integer> mDumpUids;
+com.android.server.blob.BlobStoreManagerService$DumpArgs	field	private final ArrayList<Integer> mDumpUserIds;
+com.android.server.blob.BlobStoreManagerService$DumpArgs	field	private final ArrayList<Long> mDumpBlobIds;
+com.android.server.blob.BlobStoreManagerService$DumpArgs	field	private final ArrayList<String> mDumpPackages;
+com.android.server.blob.BlobStoreManagerService$DumpArgs	field	private int mSelectedSectionFlags;
+com.android.server.blob.BlobStoreManagerService$DumpArgs	field	private static final int FLAG_DUMP_BLOBS;
+com.android.server.blob.BlobStoreManagerService$DumpArgs	field	private static final int FLAG_DUMP_CONFIG;
+com.android.server.blob.BlobStoreManagerService$DumpArgs	field	private static final int FLAG_DUMP_SESSIONS;
+com.android.server.blob.BlobStoreManagerService$DumpArgs	method	private DumpArgs()
+com.android.server.blob.BlobStoreManagerService$DumpArgs	method	private static String getStringArgRequired(String[] strArr, int i, String str)
+com.android.server.blob.BlobStoreManagerService$DumpArgs	method	private static int getIntArgRequired(String[] strArr, int i, String str)
+com.android.server.blob.BlobStoreManagerService$DumpArgs	method	private static long getLongArgRequired(String[] strArr, int i, String str)
+com.android.server.blob.BlobStoreManagerService$DumpArgs	method	private void printWithIndent(IndentingPrintWriter indentingPrintWriter, String str)
+com.android.server.blob.BlobStoreManagerService$DumpArgs	method	public boolean shouldDumpAllSections()
+com.android.server.blob.BlobStoreManagerService$DumpArgs	method	public boolean shouldDumpBlob(long j)
+com.android.server.blob.BlobStoreManagerService$DumpArgs	method	public boolean shouldDumpBlobs()
+com.android.server.blob.BlobStoreManagerService$DumpArgs	method	public boolean shouldDumpConfig()
+com.android.server.blob.BlobStoreManagerService$DumpArgs	method	public boolean shouldDumpFull()
+com.android.server.blob.BlobStoreManagerService$DumpArgs	method	public boolean shouldDumpHelp()
+com.android.server.blob.BlobStoreManagerService$DumpArgs	method	public boolean shouldDumpSession(String str, int i, long j)
+com.android.server.blob.BlobStoreManagerService$DumpArgs	method	public boolean shouldDumpSessions()
+com.android.server.blob.BlobStoreManagerService$DumpArgs	method	public boolean shouldDumpUser(int i)
+com.android.server.blob.BlobStoreManagerService$DumpArgs	method	public static DumpArgs parse(String[] strArr)
+com.android.server.blob.BlobStoreManagerService$DumpArgs	method	public void allowDumpBlobs()
+com.android.server.blob.BlobStoreManagerService$DumpArgs	method	public void allowDumpConfig()
+com.android.server.blob.BlobStoreManagerService$DumpArgs	method	public void allowDumpSessions()
+com.android.server.blob.BlobStoreManagerService$DumpArgs	method	public void dumpArgsUsage(IndentingPrintWriter indentingPrintWriter)
+com.android.server.blob.BlobStoreManagerService$Injector	method	public Handler getBackgroundHandler()
+com.android.server.blob.BlobStoreManagerService$Injector	method	public Handler initializeMessageHandler()
+com.android.server.blob.BlobStoreManagerService$LocalService	method	private LocalService()
+com.android.server.blob.BlobStoreManagerService$LocalService	method	public void onIdleMaintenance()
+com.android.server.blob.BlobStoreManagerService$PackageChangedReceiver	method	private PackageChangedReceiver()
+com.android.server.blob.BlobStoreManagerService$PackageChangedReceiver	method	public void onReceive(Context context, Intent intent)
+com.android.server.blob.BlobStoreManagerService$SessionStateChangeListener	method	public void onStateChanged(BlobStoreSession blobStoreSession)
+com.android.server.blob.BlobStoreManagerService$StatsPullAtomCallbackImpl	method	private StatsPullAtomCallbackImpl()
+com.android.server.blob.BlobStoreManagerService$StatsPullAtomCallbackImpl	method	public int onPullAtom(int i, List<StatsEvent> list)
+com.android.server.blob.BlobStoreManagerService$Stub	method	private Stub()
+com.android.server.blob.BlobStoreManagerService$Stub	method	public IBlobStoreSession openSession(long j, String str)
+com.android.server.blob.BlobStoreManagerService$Stub	method	public LeaseInfo getLeaseInfo(BlobHandle blobHandle, String str)
+com.android.server.blob.BlobStoreManagerService$Stub	method	public List<BlobHandle> getLeasedBlobs(String str)
+com.android.server.blob.BlobStoreManagerService$Stub	method	public List<BlobInfo> queryBlobsForUser(int i)
+com.android.server.blob.BlobStoreManagerService$Stub	method	public ParcelFileDescriptor openBlob(BlobHandle blobHandle, String str)
+com.android.server.blob.BlobStoreManagerService$Stub	method	public int handleShellCommand(ParcelFileDescriptor parcelFileDescriptor, ParcelFileDescriptor parcelFileDescriptor2, ParcelFileDescriptor parcelFileDescriptor3, String[] strArr)
+com.android.server.blob.BlobStoreManagerService$Stub	method	public long createSession(BlobHandle blobHandle, String str) throws ParcelableException
+com.android.server.blob.BlobStoreManagerService$Stub	method	public long getRemainingLeaseQuotaBytes(String str)
+com.android.server.blob.BlobStoreManagerService$Stub	method	public void abandonSession(long j, String str)
+com.android.server.blob.BlobStoreManagerService$Stub	method	public void acquireLease(BlobHandle blobHandle, int i, CharSequence charSequence, long j, String str) throws ParcelableException
+com.android.server.blob.BlobStoreManagerService$Stub	method	public void deleteBlob(long j)
+com.android.server.blob.BlobStoreManagerService$Stub	method	public void dump(FileDescriptor fileDescriptor, PrintWriter printWriter, String[] strArr)
+com.android.server.blob.BlobStoreManagerService$Stub	method	public void releaseLease(BlobHandle blobHandle, String str)
+com.android.server.blob.BlobStoreManagerService$Stub	method	public void waitForIdle(final RemoteCallback remoteCallback)
+com.android.server.blob.BlobStoreManagerService$UserActionReceiver	method	private UserActionReceiver()
+com.android.server.blob.BlobStoreManagerService$UserActionReceiver	method	public void onReceive(Context context, Intent intent)
+com.android.server.blob.BlobStoreManagerShellCommand	field	private final BlobStoreManagerService mService;
+com.android.server.blob.BlobStoreManagerShellCommand	method	private int parseOptions(PrintWriter printWriter, ParsedArgs parsedArgs)
+com.android.server.blob.BlobStoreManagerShellCommand	method	private int runClearAllBlobs(PrintWriter printWriter)
+com.android.server.blob.BlobStoreManagerShellCommand	method	private int runClearAllSessions(PrintWriter printWriter)
+com.android.server.blob.BlobStoreManagerShellCommand	method	private int runDeleteBlob(PrintWriter printWriter)
+com.android.server.blob.BlobStoreManagerShellCommand	method	private int runIdleMaintenance(PrintWriter printWriter)
+com.android.server.blob.BlobStoreManagerShellCommand	method	private int runQueryBlobExistence(PrintWriter printWriter)
+com.android.server.blob.BlobStoreManagerShellCommand	method	public int onCommand(String str)
+com.android.server.blob.BlobStoreManagerShellCommand	method	public void onHelp()
+com.android.server.blob.BlobStoreManagerShellCommand$ParsedArgs	field	public CharSequence label;
+com.android.server.blob.BlobStoreManagerShellCommand$ParsedArgs	field	public String algorithm;
+com.android.server.blob.BlobStoreManagerShellCommand$ParsedArgs	field	public String tag;
+com.android.server.blob.BlobStoreManagerShellCommand$ParsedArgs	field	public byte[] digest;
+com.android.server.blob.BlobStoreManagerShellCommand$ParsedArgs	field	public int userId;
+com.android.server.blob.BlobStoreManagerShellCommand$ParsedArgs	field	public long blobId;
+com.android.server.blob.BlobStoreManagerShellCommand$ParsedArgs	field	public long expiryTimeMillis;
+com.android.server.blob.BlobStoreManagerShellCommand$ParsedArgs	method	private ParsedArgs()
+com.android.server.blob.BlobStoreManagerShellCommand$ParsedArgs	method	public BlobHandle getBlobHandle()
+com.android.server.blob.BlobStoreSession	field	private File mSessionFile;
+com.android.server.blob.BlobStoreSession	field	private IBlobCommitCallback mBlobCommitCallback;
+com.android.server.blob.BlobStoreSession	field	private byte[] mDataDigest;
+com.android.server.blob.BlobStoreSession	field	private final ArrayList<RevocableFileDescriptor> mRevocableFds;
+com.android.server.blob.BlobStoreSession	field	private final BlobAccessMode mBlobAccessMode;
+com.android.server.blob.BlobStoreSession	field	private final BlobHandle mBlobHandle;
+com.android.server.blob.BlobStoreSession	field	private final BlobStoreManagerService.SessionStateChangeListener mListener;
+com.android.server.blob.BlobStoreSession	field	private final Context mContext;
+com.android.server.blob.BlobStoreSession	field	private final Object mSessionLock;
+com.android.server.blob.BlobStoreSession	field	private final String mOwnerPackageName;
+com.android.server.blob.BlobStoreSession	field	private final int mOwnerUid;
+com.android.server.blob.BlobStoreSession	field	private final long mCreationTimeMs;
+com.android.server.blob.BlobStoreSession	field	private final long mSessionId;
+com.android.server.blob.BlobStoreSession	field	private int mState;
+com.android.server.blob.BlobStoreSession	field	static final int STATE_ABANDONED;
+com.android.server.blob.BlobStoreSession	field	static final int STATE_CLOSED;
+com.android.server.blob.BlobStoreSession	field	static final int STATE_COMMITTED;
+com.android.server.blob.BlobStoreSession	field	static final int STATE_OPENED;
+com.android.server.blob.BlobStoreSession	field	static final int STATE_VERIFIED_INVALID;
+com.android.server.blob.BlobStoreSession	field	static final int STATE_VERIFIED_VALID;
+com.android.server.blob.BlobStoreSession	method	private BlobStoreSession(Context context, long j, BlobHandle blobHandle, int i, String str, long j2, BlobStoreManagerService.SessionStateChangeListener sessionStateChangeListener)
+com.android.server.blob.BlobStoreSession	method	private FileDescriptor openReadInternal() throws IOException
+com.android.server.blob.BlobStoreSession	method	private FileDescriptor openWriteInternal(long j, long j2) throws IOException
+com.android.server.blob.BlobStoreSession	method	private void assertCallerIsOwner()
+com.android.server.blob.BlobStoreSession	method	private void closeSession(int i, boolean z)
+com.android.server.blob.BlobStoreSession	method	private void revokeAllFds()
+com.android.server.blob.BlobStoreSession	method	private void trackRevocableFdLocked(final RevocableFileDescriptor revocableFileDescriptor)
+com.android.server.blob.BlobStoreSession	method	public BlobHandle getBlobHandle()
+com.android.server.blob.BlobStoreSession	method	public ParcelFileDescriptor openRead()
+com.android.server.blob.BlobStoreSession	method	public ParcelFileDescriptor openWrite(long j, long j2)
+com.android.server.blob.BlobStoreSession	method	public String getOwnerPackageName()
+com.android.server.blob.BlobStoreSession	method	public String toString()
+com.android.server.blob.BlobStoreSession	method	public boolean isPackageAccessAllowed(String str, byte[] bArr)
+com.android.server.blob.BlobStoreSession	method	public boolean isPublicAccessAllowed()
+com.android.server.blob.BlobStoreSession	method	public boolean isSameSignatureAccessAllowed()
+com.android.server.blob.BlobStoreSession	method	public int getOwnerUid()
+com.android.server.blob.BlobStoreSession	method	public long getSessionId()
+com.android.server.blob.BlobStoreSession	method	public long getSize()
+com.android.server.blob.BlobStoreSession	method	public void abandon()
+com.android.server.blob.BlobStoreSession	method	public void allowPackageAccess(String str, byte[] bArr)
+com.android.server.blob.BlobStoreSession	method	public void allowPublicAccess()
+com.android.server.blob.BlobStoreSession	method	public void allowSameSignatureAccess()
+com.android.server.blob.BlobStoreSession	method	public void close()
+com.android.server.blob.BlobStoreSession	method	public void commit(IBlobCommitCallback iBlobCommitCallback)
+com.android.server.blob.BlobStoreSession	method	static BlobStoreSession createFromXml(XmlPullParser xmlPullParser, int i, Context context, BlobStoreManagerService.SessionStateChangeListener sessionStateChangeListener) throws XmlPullParserException, IOException
+com.android.server.blob.BlobStoreSession	method	static String stateToString(int i)
+com.android.server.blob.BlobStoreUtils	field	private static final String DESC_RES_TYPE_STRING;
+com.android.server.blob.BlobStoreUtils	method	static Resources getPackageResources(Context context, String str, int i)
+com.android.server.blob.BlobStoreUtils	method	static String formatTime(long j)
+com.android.server.blob.BlobStoreUtils	method	static int getDescriptionResourceId(Context context, String str, String str2, int i)
+com.android.server.blob.BlobStoreUtils	method	static int getDescriptionResourceId(Resources resources, String str, String str2)

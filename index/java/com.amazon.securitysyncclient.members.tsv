@@ -1,0 +1,698 @@
+class	kind	declaration
+com.amazon.certsync.CRLSetData	field	private final Context mContext;
+com.amazon.certsync.CRLSetData	field	private final DeviceInfo mDeviceInfo;
+com.amazon.certsync.CRLSetData	field	private final SecuritySyncManager.Feature mFeature;
+com.amazon.certsync.CRLSetData	field	private final ServerInfo mServerInfo;
+com.amazon.certsync.CRLSetData	method	public CRLSetData(Context context, DeviceInfo deviceInfo, ServerInfo serverInfo, SecuritySyncManager.Feature feature)
+com.amazon.certsync.CRLSetData	method	public Context getContext()
+com.amazon.certsync.CRLSetData	method	public DeviceInfo getDeviceInfo()
+com.amazon.certsync.CRLSetData	method	public SecuritySyncManager.Feature getFeature()
+com.amazon.certsync.CRLSetData	method	public ServerInfo getServerInfo()
+com.amazon.certsync.CRLSetDeviceInfo	field	private Context context;
+com.amazon.certsync.CRLSetDeviceInfo	field	private String mSideLoadFileName;
+com.amazon.certsync.CRLSetDeviceInfo	field	private int mLastAvailableVersionInDevice;
+com.amazon.certsync.CRLSetDeviceInfo	field	private static final String TAG;
+com.amazon.certsync.CRLSetDeviceInfo	field	private static final int DEFAULT_FRAMEWORK_VERSION;
+com.amazon.certsync.CRLSetDeviceInfo	method	public CRLSetDeviceInfo(Context context)
+com.amazon.certsync.CRLSetDeviceInfo	method	public File getStorageLocation(Data data)
+com.amazon.certsync.CRLSetDeviceInfo	method	public FileFilter getFileFilter()
+com.amazon.certsync.CRLSetDeviceInfo	method	public String getAmazonFilePath(Data data)
+com.amazon.certsync.CRLSetDeviceInfo	method	public String getFinalFilePath(Data data)
+com.amazon.certsync.CRLSetDeviceInfo	method	public String getFrameworkIntent()
+com.amazon.certsync.CRLSetDeviceInfo	method	public String getInflatedFilePath(Data data)
+com.amazon.certsync.CRLSetDeviceInfo	method	public String getSdcardFileName(Data data)
+com.amazon.certsync.CRLSetDeviceInfo	method	public String getSideLoadFileName()
+com.amazon.certsync.CRLSetDeviceInfo	method	public boolean isFeatureEnabled()
+com.amazon.certsync.CRLSetDeviceInfo	method	public int getFrameworkVersion(Data data)
+com.amazon.certsync.CRLSetDeviceInfo	method	public int getLastAvailableVersionInDevice(Data data)
+com.amazon.certsync.CRLSetDeviceInfo	method	public int recalculateVersionInDevice(Data data)
+com.amazon.certsync.CRLSetDeviceInfo	method	public long getAlarmWakeUpTime()
+com.amazon.certsync.CRLSetDeviceInfo	method	public void setFrameworkVersion(Data data, int version)
+com.amazon.certsync.CRLSetDeviceInfo	method	public void setSideLoadFileName(String fileName)
+com.amazon.certsync.CRLSetServerInfo	field	private Context context;
+com.amazon.certsync.CRLSetServerInfo	field	private JSONObject jsonRemoteConfig;
+com.amazon.certsync.CRLSetServerInfo	field	private String mSignature;
+com.amazon.certsync.CRLSetServerInfo	field	private String mUrl;
+com.amazon.certsync.CRLSetServerInfo	field	private int mEndPointAPIVersion;
+com.amazon.certsync.CRLSetServerInfo	field	private int mLastAvailableVersionInServer;
+com.amazon.certsync.CRLSetServerInfo	field	private static final String HEADER_MAGIC;
+com.amazon.certsync.CRLSetServerInfo	field	private static final String TAG;
+com.amazon.certsync.CRLSetServerInfo	field	private static final int HEADER_TOTAL_LENGTH;
+com.amazon.certsync.CRLSetServerInfo	field	private static final int SIGNATURE_LENGTH;
+com.amazon.certsync.CRLSetServerInfo	field	public static final String HASH_ENCRYPTION_ALGORITHM;
+com.amazon.certsync.CRLSetServerInfo	method	private String getUrl()
+com.amazon.certsync.CRLSetServerInfo	method	public CRLSetServerInfo(Context context)
+com.amazon.certsync.CRLSetServerInfo	method	public String getEncrptionAlgorithm()
+com.amazon.certsync.CRLSetServerInfo	method	public String getLatestDownloadUrl()
+com.amazon.certsync.CRLSetServerInfo	method	public String getMagicString()
+com.amazon.certsync.CRLSetServerInfo	method	public String getSignature()
+com.amazon.certsync.CRLSetServerInfo	method	public String getUpdateUrl()
+com.amazon.certsync.CRLSetServerInfo	method	public int getEndPointAPIVersion()
+com.amazon.certsync.CRLSetServerInfo	method	public int getHeaderLength()
+com.amazon.certsync.CRLSetServerInfo	method	public int getLatestVersionInServer()
+com.amazon.certsync.CRLSetServerInfo	method	public int getSignatureLength()
+com.amazon.certsync.CRLSetServerInfo	method	public void setLatestVersionInServer(int version)
+com.amazon.certsync.CRLSetServerInfo	method	public void setSignature(String signature)
+com.amazon.certsync.CRLSetUpdateChecker	field	private static final String TAG;
+com.amazon.certsync.CRLSetUpdateChecker	field	private static final int UNABLE_TO_GET_SERVER_VERSION;
+com.amazon.certsync.CRLSetUpdateChecker	method	private boolean isDownloadNeeded(Data data)
+com.amazon.certsync.CRLSetUpdateChecker	method	private void cleanup(Data data)
+com.amazon.certsync.CRLSetUpdateChecker	method	public SecuritySyncManager.Action isSideloadNeeded(Data data)
+com.amazon.certsync.CRLSetUpdateChecker	method	public boolean isUpdateAvailable(Data data)
+com.amazon.certsync.CRLSetUpdateChecker	method	public static int getLatestVersionInServer(Data data)
+com.amazon.certsync.CertSyncConstants	field	public static final String AMAZON_CRL_FILEPATH_PREFIX;
+com.amazon.certsync.CertSyncConstants	field	public static final String CRLSET_DOWNLOAD_ID;
+com.amazon.certsync.CertSyncConstants	field	public static final String CRLSET_FRAMEWORK_VERSION;
+com.amazon.certsync.CertSyncConstants	field	public static final String CRLSET_INTENT_ACTION;
+com.amazon.certsync.CertSyncConstants	field	public static final String CRL_EXTENSION;
+com.amazon.certsync.CertSyncConstants	field	public static final String ENCRYPTION_ALGORITHM;
+com.amazon.certsync.CertSyncConstants	field	public static final String END_POINT_LATEST;
+com.amazon.certsync.CertSyncConstants	field	public static final String END_POINT_META_DATA;
+com.amazon.certsync.CertSyncConstants	field	public static final String EXTRA_CONTENT_PATH;
+com.amazon.certsync.CertSyncConstants	field	public static final String EXTRA_REQUIRED_HASH;
+com.amazon.certsync.CertSyncConstants	field	public static final String EXTRA_SIGNATURE;
+com.amazon.certsync.CertSyncConstants	field	public static final String EXTRA_VERSION;
+com.amazon.certsync.CertSyncConstants	field	public static final String INFLATE;
+com.amazon.certsync.CertSyncConstants	field	public static final String LAST_CRLSET_SYNC_TIME;
+com.amazon.certsync.CertSyncConstants	field	public static final String META_DATA_LATEST;
+com.amazon.certsync.CertSyncConstants	field	public static final String REMOTE_KEY_ALARM_TIME;
+com.amazon.certsync.CertSyncConstants	field	public static final String REMOTE_KEY_CRLSET_API_VERSION;
+com.amazon.certsync.CertSyncConstants	field	public static final String REMOTE_KEY_CRLSET_URL;
+com.amazon.certsync.CertSyncConstants	field	public static final String URL;
+com.amazon.certsync.CertSyncConstants	field	public static final String URL_SEPARATOR;
+com.amazon.certsync.CertSyncConstants	field	public static final int API_VERSION;
+com.amazon.certsync.CertSyncConstants	field	public static final long ALARM_TIME;
+com.amazon.certsync.task.CRLSetInflaterTask	field	public static final String TAG;
+com.amazon.certsync.task.CRLSetInflaterTask	method	public SecuritySyncTask.TaskResult execute(Data data) throws Throwable
+com.amazon.certsync.task.CRLSetSequenceValidatorTask	field	public static final String TAG;
+com.amazon.certsync.task.CRLSetSequenceValidatorTask	method	public SecuritySyncTask.TaskResult execute(Data data) throws Throwable
+com.amazon.certsync.task.CRLSetSignatureVerification	field	public static final String TAG;
+com.amazon.certsync.task.CRLSetSignatureVerification	method	private Uri getContentFromIntent(Intent i)
+com.amazon.certsync.task.CRLSetSignatureVerification	method	private void getAltContent(Context c, Intent i, String signature) throws Throwable
+com.amazon.certsync.task.CRLSetSignatureVerification	method	public SecuritySyncTask.TaskResult execute(Data data) throws Throwable
+com.amazon.commontask.BroadcasterTask	field	public static final String AUTHORITY;
+com.amazon.commontask.BroadcasterTask	field	public static final String TAG;
+com.amazon.commontask.BroadcasterTask	method	public SecuritySyncTask.TaskResult execute(Data data)
+com.amazon.commontask.CleanUpTask	field	public static final String TAG;
+com.amazon.commontask.CleanUpTask	method	public SecuritySyncTask.TaskResult execute(Data data)
+com.amazon.commontask.SecurityFilesDownload	field	private static final String TAG;
+com.amazon.commontask.SecurityFilesDownload	method	private boolean scheduleDownload(Data data)
+com.amazon.commontask.SecurityFilesDownload	method	public void downloadUrl(Data data)
+com.amazon.commontask.SecurityFilesSideload	field	private static final String TAG;
+com.amazon.commontask.SecurityFilesSideload	method	public boolean sideload(Data data) throws Throwable
+com.amazon.commontask.SecuritySyncTask	field	protected SecuritySyncTask nextTask;
+com.amazon.commontask.SecuritySyncTask	method	public TaskResult executeNextTask(Data data)
+com.amazon.commontask.SecuritySyncTask	method	public abstract TaskResult execute(Data data);
+com.amazon.commontask.SecuritySyncTask	method	public void setNextExecutor(SecuritySyncTask nextTask)
+com.amazon.commontask.ValidatorTask	field	public static final String TAG;
+com.amazon.commontask.ValidatorTask	method	public SecuritySyncTask.TaskResult execute(Data data) throws Throwable
+com.amazon.pins.PINSConstants	field	public static final String AMAZON_PINS_FILEPATH_PREFIX;
+com.amazon.pins.PINSConstants	field	public static final String END_POINT_LATEST;
+com.amazon.pins.PINSConstants	field	public static final String END_POINT_META_DATA;
+com.amazon.pins.PINSConstants	field	public static final String META_DATA_LATEST;
+com.amazon.pins.PINSConstants	field	public static final String PINS_DOWNLOAD_ID;
+com.amazon.pins.PINSConstants	field	public static final String PINS_EXTENSION;
+com.amazon.pins.PINSConstants	field	public static final String PINS_FRAMEWORK_VERSION;
+com.amazon.pins.PINSConstants	field	public static final String PINS_INTENT_ACTION;
+com.amazon.pins.PINSConstants	field	public static final String REMOTE_IS_CERT_PINNING_UPDATE_ENABLED;
+com.amazon.pins.PINSConstants	field	public static final String REMOTE_KEY_ALARM_TIME;
+com.amazon.pins.PINSConstants	field	public static final String REMOTE_KEY_PINS_API_VERSION;
+com.amazon.pins.PINSConstants	field	public static final String REMOTE_KEY_PINS_URL;
+com.amazon.pins.PINSConstants	field	public static final String URL;
+com.amazon.pins.PINSConstants	field	public static final String URL_SEPARATOR;
+com.amazon.pins.PINSConstants	field	public static final int API_VERSION;
+com.amazon.pins.PINSConstants	field	public static final long ALARM_TIME;
+com.amazon.pins.PINSData	field	private final Context mContext;
+com.amazon.pins.PINSData	field	private final DeviceInfo mDeviceInfo;
+com.amazon.pins.PINSData	field	private final SecuritySyncManager.Feature mFeature;
+com.amazon.pins.PINSData	field	private final ServerInfo mServerInfo;
+com.amazon.pins.PINSData	method	public Context getContext()
+com.amazon.pins.PINSData	method	public DeviceInfo getDeviceInfo()
+com.amazon.pins.PINSData	method	public PINSData(Context context, DeviceInfo deviceInfo, ServerInfo serverInfo, SecuritySyncManager.Feature feature)
+com.amazon.pins.PINSData	method	public SecuritySyncManager.Feature getFeature()
+com.amazon.pins.PINSData	method	public ServerInfo getServerInfo()
+com.amazon.pins.PINSDeviceInfo	field	private Context context;
+com.amazon.pins.PINSDeviceInfo	field	private JSONObject jsonRemoteConfig;
+com.amazon.pins.PINSDeviceInfo	field	private String mSideloadFileName;
+com.amazon.pins.PINSDeviceInfo	field	private int mLastAvailableVersionInDevice;
+com.amazon.pins.PINSDeviceInfo	field	private static final String TAG;
+com.amazon.pins.PINSDeviceInfo	field	private static final int ALARM_TIME;
+com.amazon.pins.PINSDeviceInfo	field	private static final int DEFAULT_FRAMEWORK_VERSION;
+com.amazon.pins.PINSDeviceInfo	method	public File getStorageLocation(Data data)
+com.amazon.pins.PINSDeviceInfo	method	public FileFilter getFileFilter()
+com.amazon.pins.PINSDeviceInfo	method	public PINSDeviceInfo(Context context)
+com.amazon.pins.PINSDeviceInfo	method	public String getAmazonFilePath(Data data)
+com.amazon.pins.PINSDeviceInfo	method	public String getFinalFilePath(Data data)
+com.amazon.pins.PINSDeviceInfo	method	public String getFrameworkIntent()
+com.amazon.pins.PINSDeviceInfo	method	public String getInflatedFilePath(Data data)
+com.amazon.pins.PINSDeviceInfo	method	public String getSdcardFileName(Data data)
+com.amazon.pins.PINSDeviceInfo	method	public String getSideLoadFileName()
+com.amazon.pins.PINSDeviceInfo	method	public boolean isFeatureEnabled()
+com.amazon.pins.PINSDeviceInfo	method	public int getFrameworkVersion(Data data)
+com.amazon.pins.PINSDeviceInfo	method	public int getLastAvailableVersionInDevice(Data data)
+com.amazon.pins.PINSDeviceInfo	method	public int recalculateVersionInDevice(Data data)
+com.amazon.pins.PINSDeviceInfo	method	public long getAlarmWakeUpTime()
+com.amazon.pins.PINSDeviceInfo	method	public void setFrameworkVersion(Data data, int version)
+com.amazon.pins.PINSDeviceInfo	method	public void setSideLoadFileName(String fileName)
+com.amazon.pins.PINSServerInfo	field	private Context context;
+com.amazon.pins.PINSServerInfo	field	private JSONObject jsonRemoteConfig;
+com.amazon.pins.PINSServerInfo	field	private String mSignature;
+com.amazon.pins.PINSServerInfo	field	private String mUrl;
+com.amazon.pins.PINSServerInfo	field	private int mEndPointAPIVersion;
+com.amazon.pins.PINSServerInfo	field	private int mLastAvailableVersionInServer;
+com.amazon.pins.PINSServerInfo	field	private static final String HEADER_MAGIC;
+com.amazon.pins.PINSServerInfo	field	private static final String TAG;
+com.amazon.pins.PINSServerInfo	field	private static final int HEADER_TOTAL_LENGTH;
+com.amazon.pins.PINSServerInfo	field	private static final int SIGNATURE_LENGTH;
+com.amazon.pins.PINSServerInfo	field	public static final String HASH_ENCRYPTION_ALGORITHM;
+com.amazon.pins.PINSServerInfo	method	private String getUrl()
+com.amazon.pins.PINSServerInfo	method	public PINSServerInfo(Context context)
+com.amazon.pins.PINSServerInfo	method	public String getEncrptionAlgorithm()
+com.amazon.pins.PINSServerInfo	method	public String getLatestDownloadUrl()
+com.amazon.pins.PINSServerInfo	method	public String getMagicString()
+com.amazon.pins.PINSServerInfo	method	public String getSignature()
+com.amazon.pins.PINSServerInfo	method	public String getUpdateUrl()
+com.amazon.pins.PINSServerInfo	method	public int getEndPointAPIVersion()
+com.amazon.pins.PINSServerInfo	method	public int getHeaderLength()
+com.amazon.pins.PINSServerInfo	method	public int getLatestVersionInServer()
+com.amazon.pins.PINSServerInfo	method	public int getSignatureLength()
+com.amazon.pins.PINSServerInfo	method	public void setLatestVersionInServer(int version)
+com.amazon.pins.PINSServerInfo	method	public void setSignature(String signature)
+com.amazon.pins.PINSUpdateChecker	field	private static final String TAG;
+com.amazon.pins.PINSUpdateChecker	field	private static final int UNABLE_TO_GET_SERVER_VERSION;
+com.amazon.pins.PINSUpdateChecker	method	private boolean isDownloadNeeded(Data data)
+com.amazon.pins.PINSUpdateChecker	method	private void cleanup(Data data)
+com.amazon.pins.PINSUpdateChecker	method	public SecuritySyncManager.Action isSideloadNeeded(Data data)
+com.amazon.pins.PINSUpdateChecker	method	public boolean isUpdateAvailable(Data data)
+com.amazon.pins.PINSUpdateChecker	method	public static int getLatestVersionInServer(Data data)
+com.amazon.pins.task.PinsSequenceValidator	field	private static final String TAG;
+com.amazon.pins.task.PinsSequenceValidator	field	private static final int NUM_OF_BYTES_FOR_INT;
+com.amazon.pins.task.PinsSequenceValidator	method	public SecuritySyncTask.TaskResult execute(Data data) throws Throwable
+com.amazon.remoteconfig.ConfigurationSyncReceiver	field	private static final String TAG;
+com.amazon.remoteconfig.ConfigurationSyncReceiver	field	public static final String ACTION_PERIODIC_SYNC;
+com.amazon.remoteconfig.ConfigurationSyncReceiver	field	public static final String ACTION_RETRY_SYNC;
+com.amazon.remoteconfig.ConfigurationSyncReceiver	method	private void requestSync(Context context, int retryAttempt)
+com.amazon.remoteconfig.ConfigurationSyncReceiver	method	public void onReceive(Context context, Intent intent)
+com.amazon.remoteconfig.ConfigurationSyncService	field	private boolean isJobExecuting;
+com.amazon.remoteconfig.ConfigurationSyncService	field	private static final String TAG;
+com.amazon.remoteconfig.ConfigurationSyncService	field	public static final String ACTION_SYNC_CONFIG;
+com.amazon.remoteconfig.ConfigurationSyncService	field	public static final String EXTRA_RETRY_ATTEMPT;
+com.amazon.remoteconfig.ConfigurationSyncService	field	public static final String PREF_LAST_SUCCESSFUL_SYNC;
+com.amazon.remoteconfig.ConfigurationSyncService	field	public static final String PREF_LAST_SYNC_ATTEMPT;
+com.amazon.remoteconfig.ConfigurationSyncService	method	private boolean isLastSuccessfulSyncCurrent(long syncRepeatInterval)
+com.amazon.remoteconfig.ConfigurationSyncService	method	private boolean isLastSyncAttemptRecent(long syncRetryInterval)
+com.amazon.remoteconfig.ConfigurationSyncService	method	private void startJobOnNewThread(final JobParameters jobParameters)
+com.amazon.remoteconfig.ConfigurationSyncService	method	protected void startRemoteConfigSync(JobParameters jobParameters)
+com.amazon.remoteconfig.ConfigurationSyncService	method	public boolean onStartJob(JobParameters jobParameters)
+com.amazon.remoteconfig.ConfigurationSyncService	method	public boolean onStopJob(JobParameters jobParameters)
+com.amazon.remoteconfig.ConfigurationSyncService	method	public static ComponentName getComponentName(Context context)
+com.amazon.remoteconfig.ConfigurationSyncService	method	public static void registerLastSyncTime(Context context, boolean successful)
+com.amazon.remoteconfig.ConfigurationSyncService	method	public static void scheduleSyncRetry(Context context, int currentAttemptNumber, int maxAttempts)
+com.amazon.remoteconfig.ConfigurationSyncService$SyncServiceConfigurationCallback	field	final CountDownLatch mLatch;
+com.amazon.remoteconfig.ConfigurationSyncService$SyncServiceConfigurationCallback	field	private final Context mContext;
+com.amazon.remoteconfig.ConfigurationSyncService$SyncServiceConfigurationCallback	field	private final int mAttemptNumber;
+com.amazon.remoteconfig.ConfigurationSyncService$SyncServiceConfigurationCallback	field	private final int mMaxAttempts;
+com.amazon.remoteconfig.ConfigurationSyncService$SyncServiceConfigurationCallback	field	private static final String TAG;
+com.amazon.remoteconfig.ConfigurationSyncService$SyncServiceConfigurationCallback	method	public SyncServiceConfigurationCallback(Context context, CountDownLatch latch, int attemptNumber, int maxAttempts)
+com.amazon.remoteconfig.ConfigurationSyncService$SyncServiceConfigurationCallback	method	public void onConfigurationModified(Configuration configuration)
+com.amazon.remoteconfig.ConfigurationSyncService$SyncServiceConfigurationCallback	method	public void onConfigurationUnmodified(Configuration configuration)
+com.amazon.remoteconfig.ConfigurationSyncService$SyncServiceConfigurationCallback	method	public void onFailure(Exception e)
+com.amazon.remoteconfig.ConfigurationSyncService$SyncServiceConfigurationCallback	method	public void onThrottle(long l)
+com.amazon.remoteconfig.PeriodicConfigSyncUtils	field	private static final String TAG;
+com.amazon.remoteconfig.PeriodicConfigSyncUtils	method	private PeriodicConfigSyncUtils()
+com.amazon.remoteconfig.PeriodicConfigSyncUtils	method	private static long getSyncFirstInterval()
+com.amazon.remoteconfig.PeriodicConfigSyncUtils	method	private static long getSyncRepeatInterval()
+com.amazon.remoteconfig.PeriodicConfigSyncUtils	method	private static long getSyncRetryTime(int retryNumber)
+com.amazon.remoteconfig.PeriodicConfigSyncUtils	method	private static synchronized boolean isPeriodicConfigSyncingScheduled(Context context)
+com.amazon.remoteconfig.PeriodicConfigSyncUtils	method	private static synchronized void cancelPeriodicConfigSyncing(Context context)
+com.amazon.remoteconfig.PeriodicConfigSyncUtils	method	private static synchronized void schedulePeriodicConfigSyncing(Context context, long firstTriggerTime, long repeatInterval)
+com.amazon.remoteconfig.PeriodicConfigSyncUtils	method	public static synchronized void initPeriodicConfigSyncing(Context context)
+com.amazon.remoteconfig.PeriodicConfigSyncUtils	method	public static synchronized void scheduleSyncRetry(Context context, int retryNumber)
+com.amazon.remoteconfig.PeriodicConfigSyncUtils	method	public static synchronized void updatePeriodicConfigSyncingSchedule(Context context)
+com.amazon.remoteconfig.RemoteConfigConstants	field	public static final String APP_CONFIGURATION_ID;
+com.amazon.remoteconfig.RemoteConfigConstants	field	public static final String DEFAULT_CONFIGURATION_FILE_NAME;
+com.amazon.remoteconfig.RemoteConfigConstants	field	public static final String KEY_FIRST_SYNC_INTERVAL_MILLIS;
+com.amazon.remoteconfig.RemoteConfigConstants	field	public static final String KEY_SYNC_MAX_DURATION_MILLIS;
+com.amazon.remoteconfig.RemoteConfigConstants	field	public static final String KEY_SYNC_REPEAT_INTERVAL_MILLIS;
+com.amazon.remoteconfig.RemoteConfigConstants	field	public static final String KEY_SYNC_RETRY_ATTEMPT_LIMIT;
+com.amazon.remoteconfig.RemoteConfigConstants	field	public static final String KEY_SYNC_RETRY_INTERVAL_MILLIS;
+com.amazon.remoteconfig.RemoteConfigConstants	field	public static final int DEFAULT_SYNC_RETRY_ATTEMPT_LIMIT;
+com.amazon.remoteconfig.RemoteConfigConstants	field	public static final long DEFAULT_FIRST_SYNC_INTERVAL_MILLIS;
+com.amazon.remoteconfig.RemoteConfigConstants	field	public static final long DEFAULT_SYNC_MAX_DURATION_MILLIS;
+com.amazon.remoteconfig.RemoteConfigConstants	field	public static final long DEFAULT_SYNC_REPEAT_INTERVAL_MILLIS;
+com.amazon.remoteconfig.RemoteConfigConstants	field	public static final long DEFAULT_SYNC_RETRY_INTERVAL_MILLIS;
+com.amazon.remoteconfig.RemoteConfigDataFetchHelper	field	private static JSONObject certSyncJsonConfig;
+com.amazon.remoteconfig.RemoteConfigDataFetchHelper	field	private static final String TAG;
+com.amazon.remoteconfig.RemoteConfigDataFetchHelper	method	public static JSONObject getCertSyncJsonRemoteConfig(@NonNull Context context) throws JSONException, IOException
+com.amazon.remoteconfig.RemoteConfigDataFetchHelper	method	public static JSONObject getRemoteConfigJson(@NonNull Context context, @NonNull String appConfigurationId, @NonNull String configFileName) throws JSONException, IOException
+com.amazon.remoteconfig.RemoteConfigFileUtils	method	private RemoteConfigFileUtils()
+com.amazon.remoteconfig.RemoteConfigFileUtils	method	public static JSONObject readJsonFile(AssetManager assetManager, @NonNull String filename) throws JSONException, IOException
+com.amazon.remoteconfig.RemoteConfigFileUtils	method	public static String readTextFile(AssetManager assetManager, @NonNull String filename) throws IOException
+com.amazon.remoteconfig.RemoteConfigurationManagerUtils	method	private RemoteConfigurationManagerUtils()
+com.amazon.remoteconfig.RemoteConfigurationManagerUtils	method	public static RemoteConfigurationManager getRemoteConfigurationManager(@NonNull Context context, @NonNull String appConfigurationId, @NonNull String defaultConfigurationFileName) throws JSONException, IOException
+com.amazon.securitysyncclient.BootCompleteReceiver	field	public static final String TAG;
+com.amazon.securitysyncclient.BootCompleteReceiver	method	public void onReceive(Context context, Intent intent)
+com.amazon.securitysyncclient.BuildConfig	field	public static final String APPLICATION_ID;
+com.amazon.securitysyncclient.BuildConfig	field	public static final String BUILD_TYPE;
+com.amazon.securitysyncclient.BuildConfig	field	public static final String FLAVOR;
+com.amazon.securitysyncclient.BuildConfig	field	public static final String VERSION_NAME;
+com.amazon.securitysyncclient.BuildConfig	field	public static final boolean DEBUG;
+com.amazon.securitysyncclient.BuildConfig	field	public static final int VERSION_CODE;
+com.amazon.securitysyncclient.R$drawable	field	public static final int ic_launcher;
+com.amazon.securitysyncclient.R$id	field	public static final int btnStart;
+com.amazon.securitysyncclient.R$id	field	public static final int btnStartService;
+com.amazon.securitysyncclient.R$id	field	public static final int txtMessage;
+com.amazon.securitysyncclient.R$layout	field	public static final int cert_sync_activity_layout;
+com.amazon.securitysyncclient.R$raw	field	public static final int crlsetflow;
+com.amazon.securitysyncclient.R$raw	field	public static final int pins;
+com.amazon.securitysyncclient.R$raw	field	public static final int pinsflow;
+com.amazon.securitysyncclient.R$raw	field	public static final int publickey1;
+com.amazon.securitysyncclient.R$raw	field	public static final int publickey;
+com.amazon.securitysyncclient.R$string	field	public static final int app_name;
+com.amazon.securitysyncclient.R$string	field	public static final int message;
+com.amazon.securitysyncclient.R$string	field	public static final int start_service_sync;
+com.amazon.securitysyncclient.R$string	field	public static final int start_sync;
+com.amazon.securitysyncclient.R$xml	field	public static final int file_paths;
+com.amazon.securitysyncclient.SecuritySyncApplication	field	private static final String TAG;
+com.amazon.securitysyncclient.SecuritySyncApplication	method	public void initializeRemoteConfigurationManager()
+com.amazon.securitysyncclient.SecuritySyncApplication	method	public void onCreate()
+com.amazon.securitysyncclient.SecuritySyncConstants	field	public static final String CRL;
+com.amazon.securitysyncclient.SecuritySyncConstants	field	public static final String EXTRA_VALUE_REQUIRED_HASH;
+com.amazon.securitysyncclient.SecuritySyncConstants	field	public static final String HEADER_SEQUENCE;
+com.amazon.securitysyncclient.SecuritySyncConstants	field	public static final String IS_SIDELOAD_ALARM_SET;
+com.amazon.securitysyncclient.SecuritySyncConstants	field	public static final String KEY_ALARM_TIME_SUFFIX;
+com.amazon.securitysyncclient.SecuritySyncConstants	field	public static final String LAST_SUCCESSFULL_SIDELOAD_VERSION;
+com.amazon.securitysyncclient.SecuritySyncConstants	field	public static final String PINS;
+com.amazon.securitysyncclient.SecuritySyncConstants	field	public static final String SCHEDULER_ACTION;
+com.amazon.securitysyncclient.SecuritySyncConstants	field	public static final String SECURITY_SYNC_VERSION;
+com.amazon.securitysyncclient.SecuritySyncConstants	field	public static final String URL_SEPARATOR;
+com.amazon.securitysyncclient.SecuritySyncConstants	field	public static final int HEADER_VERSION_LENGTH;
+com.amazon.securitysyncclient.SecuritySyncConstants	field	public static final int MSG_DISABLE_PINS;
+com.amazon.securitysyncclient.SecuritySyncConstants	field	public static final int MSG_DOWNLOAD_FINISHED;
+com.amazon.securitysyncclient.SecuritySyncConstants	field	public static final int MSG_IMMEDIATE_CRL_UPDATE_CHECK;
+com.amazon.securitysyncclient.SecuritySyncConstants	field	public static final int MSG_NO_ACTION;
+com.amazon.securitysyncclient.SecuritySyncConstants	field	public static final int MSG_PERIODIC_CRL_UPDATE_CHECK;
+com.amazon.securitysyncclient.SecuritySyncConstants	field	public static final int MSG_PINS_UPDATE_CHECK;
+com.amazon.securitysyncclient.SecuritySyncConstants	field	public static final int MSG_PUBLISH_RESULT;
+com.amazon.securitysyncclient.SecuritySyncConstants	field	public static final int MSG_SIDELOAD;
+com.amazon.securitysyncclient.SecuritySyncConstants	field	public static final int MSG_SYNC_REMOTE_CONFIG;
+com.amazon.securitysyncclient.SecuritySyncConstants	field	public static final int TASK_FAILED;
+com.amazon.securitysyncclient.SecuritySyncConstants	field	public static final int TASK_SUCCEEDED;
+com.amazon.securitysyncclient.SecuritySyncConstants	field	public static final long BACKOFF_TIME;
+com.amazon.securitysyncclient.SecuritySyncConstants	field	public static final long FLEX_WINDOW;
+com.amazon.securitysyncclient.SecuritySyncConstants	field	public static final long SIDELOAD_JOB_SCHEDULER_TIME;
+com.amazon.securitysyncclient.SecuritySyncDownloadCompleteReceiver	field	private static final String TAG;
+com.amazon.securitysyncclient.SecuritySyncDownloadCompleteReceiver	method	public void onReceive(Context context, Intent intent)
+com.amazon.securitysyncclient.SecuritySyncDownloadService	field	private boolean isJobExecuting;
+com.amazon.securitysyncclient.SecuritySyncDownloadService	field	public static final String TAG;
+com.amazon.securitysyncclient.SecuritySyncDownloadService	method	private String getSdcardFilePath(Context context, Data data)
+com.amazon.securitysyncclient.SecuritySyncDownloadService	method	private boolean processDownloadedFile(Context context, Data data) throws Throwable
+com.amazon.securitysyncclient.SecuritySyncDownloadService	method	private void onDownload(Context context, Data data, int status)
+com.amazon.securitysyncclient.SecuritySyncDownloadService	method	private void startJobOnNewThread(final JobParameters jobParameters)
+com.amazon.securitysyncclient.SecuritySyncDownloadService	method	public boolean onStartJob(JobParameters jobParameters)
+com.amazon.securitysyncclient.SecuritySyncDownloadService	method	public boolean onStopJob(JobParameters jobParameters)
+com.amazon.securitysyncclient.SecuritySyncDownloadService	method	public void onDownloadFinished(long downloadId)
+com.amazon.securitysyncclient.SecuritySyncDownloadService	method	static ComponentName getComponentName(Context context)
+com.amazon.securitysyncclient.SecuritySyncManager	field	private static final String TAG;
+com.amazon.securitysyncclient.SecuritySyncManager	method	private static void cleanUpFiles(Data data)
+com.amazon.securitysyncclient.SecuritySyncManager	method	static boolean startSyncTask(SecuritySyncTask startTask, Data data)
+com.amazon.securitysyncclient.SecuritySyncManager	method	static boolean syncSideloadedFiles(Data data)
+com.amazon.securitysyncclient.SecuritySyncManager	method	static void syncFile(Context context, Feature feature)
+com.amazon.securitysyncclient.SecuritySyncManager$Feature	field	private static final EnumSet<Feature> FEATURES_SET;
+com.amazon.securitysyncclient.SecuritySyncManager$Feature	method	public static Feature name(String feature)
+com.amazon.securitysyncclient.SecuritySyncManager$Feature	method	public static boolean contains(Feature feature)
+com.amazon.securitysyncclient.SecuritySyncService	field	private boolean isJobExecuting;
+com.amazon.securitysyncclient.SecuritySyncService	field	public static final String ACTION;
+com.amazon.securitysyncclient.SecuritySyncService	field	public static final String RESULT;
+com.amazon.securitysyncclient.SecuritySyncService	field	public static final String TAG;
+com.amazon.securitysyncclient.SecuritySyncService	method	private void startJobOnNewThread(final JobParameters jobParameters)
+com.amazon.securitysyncclient.SecuritySyncService	method	public boolean onStartJob(JobParameters jobParameters)
+com.amazon.securitysyncclient.SecuritySyncService	method	public boolean onStopJob(JobParameters jobParameters)
+com.amazon.securitysyncclient.SecuritySyncService	method	public static ComponentName getComponentName(Context context)
+com.amazon.securitysyncclient.SecuritySyncService	method	public void syncFile(int jobId)
+com.amazon.securitysyncclient.SideloadEventService	field	private boolean isJobExecuting;
+com.amazon.securitysyncclient.SideloadEventService	field	private int mAction;
+com.amazon.securitysyncclient.SideloadEventService	field	private static final String DISABLE_PINS_FILE;
+com.amazon.securitysyncclient.SideloadEventService	field	private static final String EMPTY_STRING;
+com.amazon.securitysyncclient.SideloadEventService	field	private static final String TAG;
+com.amazon.securitysyncclient.SideloadEventService	field	public static final String ACTION;
+com.amazon.securitysyncclient.SideloadEventService	method	private boolean sideloadFile(Data data)
+com.amazon.securitysyncclient.SideloadEventService	method	private void disablePins()
+com.amazon.securitysyncclient.SideloadEventService	method	private void sideloadFilesFromAsset()
+com.amazon.securitysyncclient.SideloadEventService	method	private void startJobOnNewThread(final JobParameters jobParameters)
+com.amazon.securitysyncclient.SideloadEventService	method	public boolean onStartJob(JobParameters jobParameters)
+com.amazon.securitysyncclient.SideloadEventService	method	public boolean onStopJob(JobParameters jobParameters)
+com.amazon.securitysyncclient.SideloadEventService	method	public static ComponentName getComponentName(Context context)
+com.amazon.securitysyncclient.SideloadEventService	method	public void enforce()
+com.amazon.securitysyncclient.factory.DataFactory	field	private static final String TAG;
+com.amazon.securitysyncclient.factory.DataFactory	method	public static Data getData(Context context, DeviceInfo deviceInfo, ServerInfo serverInfo, SecuritySyncManager.Feature feature)
+com.amazon.securitysyncclient.factory.DeviceInfoFactory	field	private static final String TAG;
+com.amazon.securitysyncclient.factory.DeviceInfoFactory	method	public static DeviceInfo getDeviceInfo(SecuritySyncManager.Feature feature, Context context)
+com.amazon.securitysyncclient.factory.DownloadFactory	field	private static final String TAG;
+com.amazon.securitysyncclient.factory.DownloadFactory	method	public static Download getDownload(SecuritySyncManager.Feature feature)
+com.amazon.securitysyncclient.factory.PublicKeyFactory	field	private static final String TAG;
+com.amazon.securitysyncclient.factory.PublicKeyFactory	method	private static PublicKey getPublicKey(Context context, int resId)
+com.amazon.securitysyncclient.factory.PublicKeyFactory	method	public static PublicKey getPublicKey(Context context, SecuritySyncManager.Feature feature)
+com.amazon.securitysyncclient.factory.ServerInfoFactory	field	private static final String TAG;
+com.amazon.securitysyncclient.factory.ServerInfoFactory	method	public static ServerInfo getServerInfo(SecuritySyncManager.Feature feature, Context context)
+com.amazon.securitysyncclient.factory.SideloadFactory	field	private static final String TAG;
+com.amazon.securitysyncclient.factory.SideloadFactory	method	public static Sideload getSideload(SecuritySyncManager.Feature feature)
+com.amazon.securitysyncclient.factory.SyncTaskFactory	field	private static final String TAG;
+com.amazon.securitysyncclient.factory.SyncTaskFactory	method	public static SecuritySyncTask getSyncTask(Context context, SecuritySyncManager.Feature feature)
+com.amazon.securitysyncclient.factory.UpdateCheckerFactory	field	private static final String TAG;
+com.amazon.securitysyncclient.factory.UpdateCheckerFactory	method	public static UpdateChecker getUpdateChecker(SecuritySyncManager.Feature feature)
+com.amazon.securitysyncclient.metrics.MetricNames	field	public static final String DOWNLOADED;
+com.amazon.securitysyncclient.metrics.MetricNames	field	public static final String DOWNLOAD_FAILED;
+com.amazon.securitysyncclient.metrics.MetricNames	field	public static final String SEQUENCE_VALIDATION_FAILED;
+com.amazon.securitysyncclient.metrics.MetricNames	field	public static final String SIDELOAD_FAILED;
+com.amazon.securitysyncclient.metrics.MetricNames	field	public static final String SIDELOAD_SUCCEEDED;
+com.amazon.securitysyncclient.metrics.MetricNames	field	public static final String SYNC_FAILED;
+com.amazon.securitysyncclient.metrics.MetricNames	field	public static final String SYNC_FINISHED;
+com.amazon.securitysyncclient.metrics.MetricNames	field	public static final String SYNC_TOTAL_TIME;
+com.amazon.securitysyncclient.metrics.MetricNames	field	public static final String VALIDATED;
+com.amazon.securitysyncclient.metrics.MetricNames	field	public static final String VALIDATION_FAILED;
+com.amazon.securitysyncclient.metrics.MetricsManager	field	private static final String DOMAIN;
+com.amazon.securitysyncclient.metrics.MetricsManager	field	private static final String SOURCE;
+com.amazon.securitysyncclient.metrics.MetricsManager	field	private static final String TAG;
+com.amazon.securitysyncclient.metrics.MetricsManager	method	private static MetricsFactory newMetricsFactory(Context context)
+com.amazon.securitysyncclient.metrics.MetricsManager	method	public static MetricEvent createMetricEvent(Context context)
+com.amazon.securitysyncclient.metrics.MetricsManager	method	public static MetricEvent createMetricEvent(Context context, String source)
+com.amazon.securitysyncclient.metrics.MetricsManager	method	public static void recordCounterMetric(Context context, String counterName)
+com.amazon.securitysyncclient.metrics.MetricsManager	method	public static void recordCounterMetric(Context context, String source, String counterName)
+com.amazon.securitysyncclient.metrics.MetricsManager	method	public static void recordMetric(Context context, MetricEvent metricEvent)
+com.amazon.securitysyncclient.metrics.MetricsManager	method	public static void recordTimeSpentMetric(Context context, String source, String timeSpentOn, long timeSpentInMillis)
+com.amazon.securitysyncclient.metrics.MetricsManager	method	public static void recordTimeSpentMetric(Context context, String timeSpentOn, long timeSpentInMillis)
+com.amazon.securitysyncclient.scheduler.ExpressoShotSchedulerService	field	private static final String TAG;
+com.amazon.securitysyncclient.scheduler.ExpressoShotSchedulerService	method	private void startTask()
+com.amazon.securitysyncclient.scheduler.ExpressoShotSchedulerService	method	public boolean onStartJob(JobParameters params)
+com.amazon.securitysyncclient.scheduler.ExpressoShotSchedulerService	method	public boolean onStopJob(JobParameters params)
+com.amazon.securitysyncclient.scheduler.Scheduler	field	private static final String TAG;
+com.amazon.securitysyncclient.scheduler.Scheduler	field	public static final int CRL;
+com.amazon.securitysyncclient.scheduler.Scheduler	field	public static final int SIDELOAD_JOB_ID;
+com.amazon.securitysyncclient.scheduler.Scheduler	method	public static void schedule(Context context, int action)
+com.amazon.securitysyncclient.scheduler.SecuritySyncSchedulerService	field	private static final String TAG;
+com.amazon.securitysyncclient.scheduler.SecuritySyncSchedulerService	method	private synchronized void startSyncTask(int jobId)
+com.amazon.securitysyncclient.scheduler.SecuritySyncSchedulerService	method	public boolean onStopJob(JobParameters params)
+com.amazon.securitysyncclient.scheduler.SecuritySyncSchedulerService	method	public static ComponentName getComponentName(Context context)
+com.amazon.securitysyncclient.scheduler.SecuritySyncSchedulerService	method	public synchronized boolean onStartJob(JobParameters jobParameters)
+com.amazon.securitysyncclient.scheduler.WatchDogForSyncService	field	private final Context mContext;
+com.amazon.securitysyncclient.scheduler.WatchDogForSyncService	field	private static final String PACKAGE_NAME;
+com.amazon.securitysyncclient.scheduler.WatchDogForSyncService	field	private static final String TAG;
+com.amazon.securitysyncclient.scheduler.WatchDogForSyncService	field	private static final int WATCHDOG_SLEEP_TIME;
+com.amazon.securitysyncclient.scheduler.WatchDogForSyncService	method	private boolean areSyncTasksDone()
+com.amazon.securitysyncclient.scheduler.WatchDogForSyncService	method	public WatchDogForSyncService(Context context)
+com.amazon.securitysyncclient.scheduler.WatchDogForSyncService	method	public void run()
+com.amazon.securitysyncclient.utils.DownloadUtils	field	private static final String TAG;
+com.amazon.securitysyncclient.utils.DownloadUtils	method	public static String downloadUrl(String urlString)
+com.amazon.securitysyncclient.utils.FileUtils	field	private static final String TAG;
+com.amazon.securitysyncclient.utils.FileUtils	method	public static synchronized boolean writeBytesToFile(String fileName, byte[] data) throws Throwable
+com.amazon.securitysyncclient.utils.FileUtils	method	public static synchronized byte[] readFileFromAsset(Context context, String fileName) throws Throwable
+com.amazon.securitysyncclient.utils.FileUtils	method	public static synchronized byte[] readFromFile(Context context, String path) throws Throwable
+com.amazon.securitysyncclient.utils.FileUtils	method	public static synchronized void deleteDirectory(File file)
+com.amazon.securitysyncclient.utils.FileUtils	method	public static synchronized void deleteFile(String path)
+com.amazon.securitysyncclient.utils.JobSchedulerUtil	field	private static final String TAG;
+com.amazon.securitysyncclient.utils.JobSchedulerUtil	method	public static void scheduleJob(Context context, JobInfo jobInfo)
+com.amazon.securitysyncclient.utils.JobSchedulerUtil	method	public static void updatePeriodicJobIfNeeded(Context context, int msgId)
+com.amazon.securitysyncclient.utils.LogUtils	field	private static final boolean DBG;
+com.amazon.securitysyncclient.utils.LogUtils	field	public static final String PROJECT_NAME;
+com.amazon.securitysyncclient.utils.LogUtils	field	public static final String SEPARATOR;
+com.amazon.securitysyncclient.utils.LogUtils	field	public static final String TAG;
+com.amazon.securitysyncclient.utils.LogUtils	method	public static String getTag(Class<?> c)
+com.amazon.securitysyncclient.utils.LogUtils	method	public static void logd(String tag, String msg)
+com.amazon.securitysyncclient.utils.LogUtils	method	public static void loge(String tag, String msg)
+com.amazon.securitysyncclient.utils.LogUtils	method	public static void loge(String tag, String msg, Throwable tr)
+com.amazon.securitysyncclient.utils.LogUtils	method	public static void logi(String tag, String msg)
+com.amazon.securitysyncclient.utils.LogUtils	method	public static void logv(String tag, String msg)
+com.amazon.securitysyncclient.utils.LogUtils	method	public static void logw(String tag, String msg)
+com.amazon.securitysyncclient.utils.SharedPrefUtil	field	private static String SECURITY_SYNC_CLIENT_KEY_STORE;
+com.amazon.securitysyncclient.utils.SharedPrefUtil	method	private static SharedPreferences getDeviceControlsKeyStore(Context context)
+com.amazon.securitysyncclient.utils.SharedPrefUtil	method	public static boolean getBoolean(Context context, String key, boolean def)
+com.amazon.securitysyncclient.utils.SharedPrefUtil	method	public static int getInt(Context context, String key, int def)
+com.amazon.securitysyncclient.utils.SharedPrefUtil	method	public static long getLong(Context context, String key, long def)
+com.amazon.securitysyncclient.utils.SharedPrefUtil	method	public static void putBoolean(Context context, String key, boolean value)
+com.amazon.securitysyncclient.utils.SharedPrefUtil	method	public static void putInt(Context context, String key, int value)
+com.amazon.securitysyncclient.utils.SharedPrefUtil	method	public static void putLong(Context context, String key, long value)
+com.amazon.securitysyncclient.utils.SyncTaskUtils	field	private static final String TAG;
+com.amazon.securitysyncclient.utils.SyncTaskUtils	method	public static SecuritySyncTask createTaskFlow(Context context, int resId)
+com.amazon.securitysyncclient.utils.SyncTaskUtils	method	public static boolean isMagicCharValid(byte[] buffer, Data data)
+com.amazon.securitysyncclient.utils.Utils	field	private static final String TAG;
+com.amazon.securitysyncclient.utils.Utils	method	public static String getApplicationVersion(Context context)
+com.amazon.securitysyncclient.utils.Utils	method	public static boolean isApplicationUpdated(Context context)
+com.amazon.securitysyncclient.utils.Utils	method	public static boolean isDeviceConnectedToNetwork(Context context)
+com.amazon.securitysyncclient.utils.Utils	method	public static boolean isDeviceConnectedToWAN(Context context)
+com.amazon.securitysyncclient.utils.Utils	method	public static boolean isDeviceConnectedToWifi(Context context)
+com.amazon.securitysyncclient.utils.Utils	method	public static boolean verifySignature(String encryptionAlgo, PublicKey publicKey, byte[] data, byte[] signature)
+com.amazon.securitysyncclient.utils.Utils	method	public static void updateApplicationVersion(Context context)
+com.amazon.securitysyncclient.xmlparser.NoOpEntityResolver	method	public InputSource resolveEntity(String publicId, String systemId)
+com.amazon.securitysyncclient.xmlparser.TaskFlowData	field	private SecuritySyncTask task;
+com.amazon.securitysyncclient.xmlparser.TaskFlowData	field	private String className;
+com.amazon.securitysyncclient.xmlparser.TaskFlowData	field	private String nextExecutor;
+com.amazon.securitysyncclient.xmlparser.TaskFlowData	field	private boolean start;
+com.amazon.securitysyncclient.xmlparser.TaskFlowData	method	public SecuritySyncTask getTask()
+com.amazon.securitysyncclient.xmlparser.TaskFlowData	method	public String getClassName()
+com.amazon.securitysyncclient.xmlparser.TaskFlowData	method	public String getNextExecutor()
+com.amazon.securitysyncclient.xmlparser.TaskFlowData	method	public boolean isStart()
+com.amazon.securitysyncclient.xmlparser.TaskFlowData	method	public void setClassName(String className)
+com.amazon.securitysyncclient.xmlparser.TaskFlowData	method	public void setNextExecutor(String nextExecutor)
+com.amazon.securitysyncclient.xmlparser.TaskFlowData	method	public void setStart(boolean start)
+com.amazon.securitysyncclient.xmlparser.TaskFlowData	method	public void setTask(SecuritySyncTask task)
+com.amazon.securitysyncclient.xmlparser.TaskParser	field	private static final String CLASS_NAME;
+com.amazon.securitysyncclient.xmlparser.TaskParser	field	private static final String NEXT_EXECUTOR;
+com.amazon.securitysyncclient.xmlparser.TaskParser	field	private static final String START;
+com.amazon.securitysyncclient.xmlparser.TaskParser	field	private static final String TRUE;
+com.amazon.securitysyncclient.xmlparser.TaskParser	field	public static final String TAG;
+com.amazon.securitysyncclient.xmlparser.TaskParser	method	public HashMap<String, TaskFlowData> parse(InputStream file)
+com.amazon.securitysyncclient.xmlparser.TaskParser	method	public String toString(HashMap<String, TaskFlowData> data)
+com.amazonaws.mobileconnectors.remoteconfiguration.Attributes	field	public static final String PREDEFINED_ATTRIBUTE_PREFIX;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private ArcusThrottler mThrottler;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private final Attributes mAttributes;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private final ConfigurationDb mConfigurationDb;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private final RemoteConfigurationFetcher mRemoteConfigurationFetcher;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private final SharedPreferences mSharedPreferences;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private final String mAppConfigId;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private int mLastSuccessfulSyncAttributeHash;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private static final String DEFAULT_ENDPOINT;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private static final String KEY_SHARED_PREF_LOCAL_CONFIG_INSTANCE_ID;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private static final String REMOTE_CONFIG_SHARED_PREF_FILE_SUFFIX;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	field	private static final String TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	private RemoteConfigurationManager(Builder builder)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	private String getOrGenerateLocalConfigurationInstanceId()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	private String getPreferencesFileNameForAppConfig()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	private void setLocalConfigurationInstanceId(String localConfigurationInstanceId)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	private void validateAndSyncOnNewThread(final ConfigurationSyncCallback syncCallback)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public Attributes openAttributes()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public Configuration openConfiguration()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public RemoteConfiguration getAndValidateConfiguration()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public static Builder forAppId(Context context, String appConfigId)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public static Builder forAppId(Context context, String appConfigId, boolean customContext)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public static RemoteConfigurationManager getInstance(String appConfigId)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public static void verifyAppConfigId(String appConfigId)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public synchronized void syncOnCurrentThread(RemoteConfiguration currentRemoteConfiguration, ConfigurationSyncCallback syncCallback)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public void overwriteConfiguration(JSONObject configurationJson)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public void setRampingKey(String rampingKey)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager	method	public void sync(ConfigurationSyncCallback syncCallback)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	field	private JSONObject mDefaultConfiguration;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	field	private boolean mCustomContext;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	field	private final Context mContext;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	field	private final String mAppConfigId;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	field	private static final ConcurrentHashMap<String, RemoteConfigurationManager> mManagers;
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	method	private void ensureBuilderReady()
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	method	public Builder withDefaultConfiguration(JSONObject defaultConfiguration)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	method	public Builder(Context context, String appConfigId)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	method	public Builder(Context context, String appConfigId, boolean customContext)
+com.amazonaws.mobileconnectors.remoteconfiguration.RemoteConfigurationManager$Builder	method	public RemoteConfigurationManager createOrGet()
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.ConfigurationNotFoundException	field	private static final long serialVersionUID;
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.ConfigurationNotFoundException	method	public ConfigurationNotFoundException(String detailMessage)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.ConfigurationNotFoundException	method	public ConfigurationNotFoundException(String detailMessage, Throwable throwable)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.MalformedAppConfigIdException	method	public MalformedAppConfigIdException(String detailMessage)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.MalformedAppConfigIdException	method	public MalformedAppConfigIdException(String detailMessage, Throwable throwable)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.NetworkException	field	private static final long serialVersionUID;
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.NetworkException	method	public NetworkException(String detailMessage)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.NetworkException	method	public NetworkException(String detailMessage, Throwable throwable)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.RemoteConfigurationException	field	private static final long serialVersionUID;
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.RemoteConfigurationException	method	public RemoteConfigurationException(String detailMessage)
+com.amazonaws.mobileconnectors.remoteconfiguration.exceptions.RemoteConfigurationException	method	public RemoteConfigurationException(String detailMessage, Throwable throwable)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private int mCause;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private int mSyncAttempts;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private long mNextSyncAttemptTime;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private static final long DEFAULT_SYNC_JITTER_IN_MS;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private static final long DEFAULT_TIME_BETWEEN_SYNCS_IN_MS;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private static final long MAX_EXP_BACKOFF_WINDOW_SIZE_IN_MS;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	private static final long ONE_SECOND_MS;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	public static final int CAUSE_FAILED_SYNC;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	public static final int CAUSE_NONE;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	public static final int CAUSE_SUCCESSFUL_SYNC;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	field	public static final int CAUSE_THROTTLED_SYNC;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	private long getCurrentWindowSizeInMS()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	private long getJitterInMS()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	private long getRandomTimeInsideCurrentWindowInMS()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public boolean isSyncAllowedRightNow()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public int getCause()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public long getTimeToNextSyncInMS()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public void updateSyncTimeAfterFailure()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public void updateSyncTimeAfterSuccess()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ArcusThrottler	method	public void updateSyncTimeAfterThrottle(long retryAfterInMS)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	field	private final String account;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	field	private final String id;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	field	private final String region;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	field	private final String type;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	field	private final String vendor;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public Arn(String vendor, String region, String account, String type, String id)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public String getAccount()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public String getId()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public String getRegion()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public String getType()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public String getVendor()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public String toArn()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.Arn	method	public static Arn fromArn(String arnS)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private final ConcurrentMap<String, Object> mCustomAttributes;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private final Integer mPackageVersion;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private final String mPackageName;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final String KEY_APP_IDENTIFIER;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final String KEY_COUNTRY;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final String KEY_LANGUAGE;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final String KEY_PLATFORM;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final String PLATFORM_ANDROID;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final String PLATFORM_FIRE_OS;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final String TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	private static final int MAX_ALLOWED_CUSTOM_ATTRIBUTES;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	field	public static final String KEY_APP_VERSION;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	private AttributesImpl(String packageName, Integer packageVersion, Map<String, Object> customAttributes)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	private Object getStandardAttribute(String attrKey)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	private static final boolean nullSafeEquals(Object left, Object right)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	private static final int nullSafeHash(Object obj)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	private synchronized <T> T getObjectPrivate(String attrKey, Class<T> type)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	private void addStandardAttributesTo(Map<String, Object> map)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected Integer getPackageVersionCode()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected Integer getPackageVersionCode(Context context)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected String getCountry()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected String getLanguage()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected String getPackageName()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	protected String getPlatform()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public AttributesImpl(Context context)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public Boolean getBoolean(String attrKey)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public Double getDouble(String attrKey)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public Integer getInt(String attrKey)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public Long getLong(String attrKey)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public String getString(String attrKey)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public boolean equals(Object o)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public int hashCode()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public synchronized AttributesImpl m4clone()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public synchronized Map<String, Object> getAllAttributes()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public synchronized Object remove(String attrKey)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public synchronized void addAttributePrivate(String attrKey, Object attrValue)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public void addAttribute(String attrKey, Boolean attrValue)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public void addAttribute(String attrKey, Double attrValue)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public void addAttribute(String attrKey, Integer attrValue)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public void addAttribute(String attrKey, Long attrValue)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.AttributesImpl	method	public void addAttribute(String attrKey, String attrValue)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private AtomicInteger openCounter;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private DBHelper dbHelper;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private SQLiteDatabase mDatabase;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final Map<String, ConfigurationDb> instanceMap;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final String DB_NAME;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final String SQL_CREATE_CONFIGURATION_TABLE;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final String TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final String[] PROJECTION_CONFIGURATION;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final String[] PROJECTION_REMOTE_CONFIGURATION;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final int COL_ENTITY_TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final int COL_ORIGIN;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final int COL_TIMESTAMP;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final int COL_VALUE;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	field	private static final int DATABASE_VERSION;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private Configuration configurationFromCursor(Cursor cursor)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private ContentValues getContentValues(String configuration, Integer origin, Long timestamp, String eTag)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private RemoteConfiguration remoteConfigurationFromCursor(Cursor cursor, String appConfigurationId)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private boolean hasConfiguration(SQLiteDatabase db)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private synchronized SQLiteDatabase openDatabase()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private synchronized void closeDatabase()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private synchronized void saveConfiguration(String json, int origin, Long timestamp, String etag)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	private void saveConfigurationPrivate(SQLiteDatabase db, String configuration, int origin, Long timestamp, String eTag)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public static ConfigurationDb getOrCreateInstance(Context context, String appConfigId)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public synchronized Configuration readConfiguration() throws ConfigurationNotFoundException
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public synchronized RemoteConfiguration readRemoteConfiguration(String appConfigurationId)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public synchronized void deleteConfiguration()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb	method	public void saveConfiguration(RemoteConfiguration remoteConfiguration)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$ConfigurationTable	field	private static final String COLUMN_ENTITY_TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$ConfigurationTable	field	private static final String COLUMN_JSON;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$ConfigurationTable	field	private static final String COLUMN_ORIGIN;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$ConfigurationTable	field	private static final String COLUMN_TIMESTAMP;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$ConfigurationTable	field	private static final String TABLE_NAME;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$ConfigurationTable	method	private ConfigurationTable()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	field	private final File mDbFile;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	private DBHelper(Context context, String appConfigId)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	private void setupDb(SQLiteDatabase db)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public File getDbFile()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public static String getDbFileNameFor(String appConfigId)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public void onCreate(SQLiteDatabase db)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public void onDowngrade(SQLiteDatabase db, int oldVersion, int newVersion)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public void onOpen(SQLiteDatabase db)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationDb$DBHelper	method	public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	field	private final Date timestamp;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	field	private final String json;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	method	public ConfigurationImpl(String json)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	method	public ConfigurationImpl(String json, Date timestamp)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	method	public Date getTimestamp()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	method	public JSONObject getAsJsonObject()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.ConfigurationImpl	method	public String getAsJsonString()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.DowngradeException	method	public DowngradeException()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.DowngradeException	method	public DowngradeException(String error)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.DowngradeException	method	public DowngradeException(String message, Throwable cause)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.DowngradeException	method	public DowngradeException(Throwable cause)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.Checks	method	public static void checkArgument(boolean expression, String message)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.Checks	method	public static void checkNotNull(Object o, String message)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper	field	private static final String TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper	field	private static final char[] HEX_ARRAY;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper	method	private LocalConfigInstanceIdGenerationHelper()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper	method	private static String convertBytesToHexString(byte[] bytesArray)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.gear.LocalConfigInstanceIdGenerationHelper	method	public static String generateLocalConfigInstanceId(String input)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfiguration	field	public static final int ORIGIN_DEFAULT;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfiguration	field	public static final int ORIGIN_OVERWRITTEN;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfiguration	field	public static final int ORIGIN_SYNCED;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	field	private final Configuration mConfiguration;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	field	private final String mAppConfigurationId;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	field	private final String mEntityTag;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	field	private final boolean mUpdate;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	field	private final int mOrigin;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public Configuration getConfiguration()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public RemoteConfigurationImpl(Configuration configuration, String appConfigurationId, int origin, String entityTag, boolean update)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public String getAppConfigurationId()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public String getEntityTag()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public boolean isUpdate()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.model.RemoteConfigurationImpl	method	public int getOrigin()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private final Context mContext;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private final URL mEndpoint;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final Pattern ARCUS_CLIENT_VERSION_PATTERN;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String CHARSET_NAME_UTF8;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String GZIP_ENCODING;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String HEADER_ACCEPT_ENCODING;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String HEADER_AMZ_TARGET;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String HEADER_CONTENT_ENCODING;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String HEADER_CONTENT_TYPE;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String HEADER_USER_AGENT;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String QUERY_CONFIGURATION_TARGET;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String REQUEST_KEY_APP_CONFIG_ID;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String REQUEST_KEY_CLIENT_ATTRIBUTES;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String REQUEST_KEY_LAST_SEEN_ENTITY_TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String REQUEST_KEY_LOCAL_CONFIG_INSTANCE_ID;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String RESPONSE_KEY_CONFIGURATION;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String RESPONSE_KEY_ENTITY_TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String RESPONSE_KEY_UPDATED;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String TAG;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String USER_AGENT_PREFIX;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final String XAMZ_JSON_CONTENT_TYPE;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final int DEFAULT_CONNECT_TIMEOUT;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final int DEFAULT_READ_TIMEOUT;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	field	private static final int HTTP_OK_STATUS_CODE;
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private JSONObject readResponse(HttpURLConnection connection) throws Throwable
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private RemoteConfiguration buildRemoteConfiguration(String appConfigId, JSONObject serviceResponse)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private String getArcusUserAgent()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private boolean isNetworkAvailable()
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private byte[] buildRequestBody(String appConfigId, Attributes attributes, String entityTag, String localConfigurationInstanceId)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private void configureConnection(HttpURLConnection connection)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private void setHeaders(HttpURLConnection connection)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	private void writeRequest(HttpURLConnection connection, byte[] body)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	public AndroidRemoteConfigurationFetcher(Context context, URL endpoint)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.AndroidRemoteConfigurationFetcher	method	public RemoteConfiguration fetch(String appConfigId, Attributes attributes, String entityTag, String localConfigurationInstanceId)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.RequestThrottledException	method	public RequestThrottledException(String message)
+com.amazonaws.mobileconnectors.remoteconfiguration.internal.net.RequestThrottledException	method	public RequestThrottledException(String message, Throwable cause)

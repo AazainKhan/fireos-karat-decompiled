@@ -1,0 +1,27 @@
+class	kind	declaration
+com.android.commands.dpm.Dpm	field	private ComponentName mComponent;
+com.android.commands.dpm.Dpm	field	private IDevicePolicyManager mDevicePolicyManager;
+com.android.commands.dpm.Dpm	field	private String mName;
+com.android.commands.dpm.Dpm	field	private int mUserId;
+com.android.commands.dpm.Dpm	field	private static final String COMMAND_CLEAR_FREEZE_PERIOD_RECORD;
+com.android.commands.dpm.Dpm	field	private static final String COMMAND_FORCE_NETWORK_LOGS;
+com.android.commands.dpm.Dpm	field	private static final String COMMAND_FORCE_SECURITY_LOGS;
+com.android.commands.dpm.Dpm	field	private static final String COMMAND_MARK_PO_ON_ORG_OWNED_DEVICE;
+com.android.commands.dpm.Dpm	field	private static final String COMMAND_REMOVE_ACTIVE_ADMIN;
+com.android.commands.dpm.Dpm	field	private static final String COMMAND_SET_ACTIVE_ADMIN;
+com.android.commands.dpm.Dpm	field	private static final String COMMAND_SET_DEVICE_OWNER;
+com.android.commands.dpm.Dpm	field	private static final String COMMAND_SET_PROFILE_OWNER;
+com.android.commands.dpm.Dpm	method	private ComponentName parseComponentName(String str)
+com.android.commands.dpm.Dpm	method	private int parseInt(String str)
+com.android.commands.dpm.Dpm	method	private void parseArgs(boolean z)
+com.android.commands.dpm.Dpm	method	private void runClearFreezePeriodRecord() throws RemoteException
+com.android.commands.dpm.Dpm	method	private void runForceNetworkLogs() throws InterruptedException, RemoteException
+com.android.commands.dpm.Dpm	method	private void runForceSecurityLogs() throws InterruptedException, RemoteException
+com.android.commands.dpm.Dpm	method	private void runMarkProfileOwnerOnOrganizationOwnedDevice() throws RemoteException
+com.android.commands.dpm.Dpm	method	private void runRemoveActiveAdmin() throws RemoteException
+com.android.commands.dpm.Dpm	method	private void runSetActiveAdmin() throws RemoteException
+com.android.commands.dpm.Dpm	method	private void runSetDeviceOwner() throws Exception
+com.android.commands.dpm.Dpm	method	private void runSetProfileOwner() throws Exception
+com.android.commands.dpm.Dpm	method	public static void main(String[] strArr)
+com.android.commands.dpm.Dpm	method	public void onRun() throws Exception
+com.android.commands.dpm.Dpm	method	public void onShowUsage(PrintStream printStream)

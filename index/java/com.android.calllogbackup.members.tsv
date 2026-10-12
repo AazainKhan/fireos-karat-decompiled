@@ -1,0 +1,26 @@
+class	kind	declaration
+com.android.calllogbackup.CallLogBackupAgent	field	private static final String[] CALL_LOG_PROJECTION;
+com.android.calllogbackup.CallLogBackupAgent	field	static final byte[] ZERO_BYTE_ARRAY;
+com.android.calllogbackup.CallLogBackupAgent	field	static final int VERSION;
+com.android.calllogbackup.CallLogBackupAgent	field	static final int VERSION_NO_PREVIOUS_STATE;
+com.android.calllogbackup.CallLogBackupAgent	method	private Call readCallFromCursor(Cursor cursor)
+com.android.calllogbackup.CallLogBackupAgent	method	private Integer readInteger(DataInputStream dataInputStream) throws IOException
+com.android.calllogbackup.CallLogBackupAgent	method	private Iterable<Call> getAllCallLogEntries()
+com.android.calllogbackup.CallLogBackupAgent	method	private OEMData getOEMDataForCall(Call call)
+com.android.calllogbackup.CallLogBackupAgent	method	private String readString(DataInputStream dataInputStream) throws IOException
+com.android.calllogbackup.CallLogBackupAgent	method	private void addCallToBackup(BackupDataOutput backupDataOutput, Call call)
+com.android.calllogbackup.CallLogBackupAgent	method	private void readOEMDataForCall(Call call, OEMData oEMData)
+com.android.calllogbackup.CallLogBackupAgent	method	private void removeCallFromBackup(BackupDataOutput backupDataOutput, int i)
+com.android.calllogbackup.CallLogBackupAgent	method	private void writeCallToProvider(Call call)
+com.android.calllogbackup.CallLogBackupAgent	method	private void writeInteger(DataOutputStream dataOutputStream, Integer num) throws IOException
+com.android.calllogbackup.CallLogBackupAgent	method	private void writeString(DataOutputStream dataOutputStream, String str) throws IOException
+com.android.calllogbackup.CallLogBackupAgent	method	public static boolean isDebug()
+com.android.calllogbackup.CallLogBackupAgent	method	public void onBackup(ParcelFileDescriptor parcelFileDescriptor, BackupDataOutput backupDataOutput, ParcelFileDescriptor parcelFileDescriptor2) throws IOException
+com.android.calllogbackup.CallLogBackupAgent	method	public void onRestore(BackupDataInput backupDataInput, int i, ParcelFileDescriptor parcelFileDescriptor) throws IOException
+com.android.calllogbackup.CallLogBackupAgent	method	static boolean shouldPreventBackup(Context context)
+com.android.calllogbackup.CallLogBackupAgent$Call	method	public String toString()
+com.android.calllogbackup.CallLogBackupAgent$OEMData	method	public OEMData(String str, byte[] bArr)
+com.android.calllogbackup.CallLogChangeReceiver	field	private static final boolean VDBG;
+com.android.calllogbackup.CallLogChangeReceiver	method	public void onReceive(Context context, Intent intent)
+com.android.calllogbackup.R$string	field	public static final int app_label;
+com.android.calllogbackup.R$string	field	public static final int sharedUserLabel;

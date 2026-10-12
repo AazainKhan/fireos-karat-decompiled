@@ -1,0 +1,1126 @@
+class	kind	declaration
+com.amazon.device.sale.api.card.BaseCard	field	private static final String TAG;
+com.amazon.device.sale.api.card.BaseCard	method	protected BaseCard()
+com.amazon.device.sale.api.card.BaseCard	method	protected BaseCard(CommonCardData commonCardData)
+com.amazon.device.sale.api.card.BaseCard	method	protected BaseCard(Parcel parcel)
+com.amazon.device.sale.api.card.BaseCard$BaseCardBuilder	method	public BaseCardBuilder()
+com.amazon.device.sale.api.card.BaseCard$BaseCardBuilder	method	public BaseCardBuilder(Context context)
+com.amazon.device.sale.api.card.BaseCard$BaseCardBuilder	method	public boolean isValid()
+com.amazon.device.sale.api.card.CommonCardData	field	private static final String TAG;
+com.amazon.device.sale.api.card.CommonCardData	field	private static final boolean DEBUG;
+com.amazon.device.sale.api.card.CommonCardData	field	protected Context mContext;
+com.amazon.device.sale.api.card.CommonCardData	field	protected Date mExpiration;
+com.amazon.device.sale.api.card.CommonCardData	field	protected List<String> mTagList;
+com.amazon.device.sale.api.card.CommonCardData	field	protected PendingIntent mContentIntent;
+com.amazon.device.sale.api.card.CommonCardData	field	protected PendingIntent mDeleteIntent;
+com.amazon.device.sale.api.card.CommonCardData	field	protected String mAppName;
+com.amazon.device.sale.api.card.CommonCardData	field	protected String mBadgeImageUrl;
+com.amazon.device.sale.api.card.CommonCardData	field	protected String mContentId;
+com.amazon.device.sale.api.card.CommonCardData	field	protected String mCookie;
+com.amazon.device.sale.api.card.CommonCardData	field	protected String mLongDescription;
+com.amazon.device.sale.api.card.CommonCardData	field	protected String mNotificationGroup;
+com.amazon.device.sale.api.card.CommonCardData	field	protected String mNotificationKey;
+com.amazon.device.sale.api.card.CommonCardData	field	protected String mNotificationTag;
+com.amazon.device.sale.api.card.CommonCardData	field	protected String mPackageName;
+com.amazon.device.sale.api.card.CommonCardData	field	protected String mPartnerDisplayString;
+com.amazon.device.sale.api.card.CommonCardData	field	protected String mSecondaryActionText;
+com.amazon.device.sale.api.card.CommonCardData	field	protected String mSubCategory;
+com.amazon.device.sale.api.card.CommonCardData	field	protected UUID mObjectId;
+com.amazon.device.sale.api.card.CommonCardData	field	protected int mFlagsValue;
+com.amazon.device.sale.api.card.CommonCardData	field	protected int mNotificationId;
+com.amazon.device.sale.api.card.CommonCardData	field	protected int mTTL;
+com.amazon.device.sale.api.card.CommonCardData	field	protected long mRowId;
+com.amazon.device.sale.api.card.CommonCardData	field	public static final String EXTRA_APPNAME;
+com.amazon.device.sale.api.card.CommonCardData	field	public static final String EXTRA_APP_DISPLAY_NAME;
+com.amazon.device.sale.api.card.CommonCardData	method	private String readOptionalString(Parcel parcel)
+com.amazon.device.sale.api.card.CommonCardData	method	private void writeOptionalString(Parcel parcel, String str)
+com.amazon.device.sale.api.card.CommonCardData	method	protected CommonCardData()
+com.amazon.device.sale.api.card.CommonCardData	method	protected CommonCardData(CommonCardData commonCardData)
+com.amazon.device.sale.api.card.CommonCardData	method	protected CommonCardData(Context context)
+com.amazon.device.sale.api.card.CommonCardData	method	public CommonCardData setAppName(String str)
+com.amazon.device.sale.api.card.CommonCardData	method	public CommonCardData setBadgeImageUrl(String str)
+com.amazon.device.sale.api.card.CommonCardData	method	public CommonCardData setContentId(String str)
+com.amazon.device.sale.api.card.CommonCardData	method	public CommonCardData setContentIntent(PendingIntent pendingIntent)
+com.amazon.device.sale.api.card.CommonCardData	method	public CommonCardData setContext(Context context)
+com.amazon.device.sale.api.card.CommonCardData	method	public CommonCardData setDeleteIntent(PendingIntent pendingIntent)
+com.amazon.device.sale.api.card.CommonCardData	method	public CommonCardData setExpiration(Date date)
+com.amazon.device.sale.api.card.CommonCardData	method	public CommonCardData setFlagsValue(int i)
+com.amazon.device.sale.api.card.CommonCardData	method	public CommonCardData setGroup(String str)
+com.amazon.device.sale.api.card.CommonCardData	method	public CommonCardData setLongDescription(String str)
+com.amazon.device.sale.api.card.CommonCardData	method	public CommonCardData setNotificationId(int i)
+com.amazon.device.sale.api.card.CommonCardData	method	public CommonCardData setNotificationKey(String str)
+com.amazon.device.sale.api.card.CommonCardData	method	public CommonCardData setNotificationTag(String str)
+com.amazon.device.sale.api.card.CommonCardData	method	public CommonCardData setObjectId(UUID uuid)
+com.amazon.device.sale.api.card.CommonCardData	method	public CommonCardData setPackageName(String str)
+com.amazon.device.sale.api.card.CommonCardData	method	public CommonCardData setPartnerDisplayString(String str)
+com.amazon.device.sale.api.card.CommonCardData	method	public CommonCardData setRowId(long j)
+com.amazon.device.sale.api.card.CommonCardData	method	public CommonCardData setSecondaryActionText(String str)
+com.amazon.device.sale.api.card.CommonCardData	method	public CommonCardData setSubCategory(String str)
+com.amazon.device.sale.api.card.CommonCardData	method	public CommonCardData setTTL(int i)
+com.amazon.device.sale.api.card.CommonCardData	method	public CommonCardData(Parcel parcel)
+com.amazon.device.sale.api.card.CommonCardData	method	public Context getContext()
+com.amazon.device.sale.api.card.CommonCardData	method	public Date getExpiration()
+com.amazon.device.sale.api.card.CommonCardData	method	public List<String> getTagList()
+com.amazon.device.sale.api.card.CommonCardData	method	public PendingIntent getContentIntent()
+com.amazon.device.sale.api.card.CommonCardData	method	public PendingIntent getDeleteIntent()
+com.amazon.device.sale.api.card.CommonCardData	method	public String getAppName()
+com.amazon.device.sale.api.card.CommonCardData	method	public String getBadgeImageUrl()
+com.amazon.device.sale.api.card.CommonCardData	method	public String getContentId()
+com.amazon.device.sale.api.card.CommonCardData	method	public String getGroup()
+com.amazon.device.sale.api.card.CommonCardData	method	public String getLongDescription()
+com.amazon.device.sale.api.card.CommonCardData	method	public String getNotificationKey()
+com.amazon.device.sale.api.card.CommonCardData	method	public String getNotificationTag()
+com.amazon.device.sale.api.card.CommonCardData	method	public String getPackageName()
+com.amazon.device.sale.api.card.CommonCardData	method	public String getPartnerDisplayString()
+com.amazon.device.sale.api.card.CommonCardData	method	public String getSecondaryActionText()
+com.amazon.device.sale.api.card.CommonCardData	method	public String getSubCategory()
+com.amazon.device.sale.api.card.CommonCardData	method	public String getTag(int i)
+com.amazon.device.sale.api.card.CommonCardData	method	public String getTagString()
+com.amazon.device.sale.api.card.CommonCardData	method	public String toString()
+com.amazon.device.sale.api.card.CommonCardData	method	public UUID getObjectId()
+com.amazon.device.sale.api.card.CommonCardData	method	public boolean equals(Object obj)
+com.amazon.device.sale.api.card.CommonCardData	method	public boolean isValid()
+com.amazon.device.sale.api.card.CommonCardData	method	public int describeContents()
+com.amazon.device.sale.api.card.CommonCardData	method	public int getFlagsValue()
+com.amazon.device.sale.api.card.CommonCardData	method	public int getNotificationId()
+com.amazon.device.sale.api.card.CommonCardData	method	public int getTTL()
+com.amazon.device.sale.api.card.CommonCardData	method	public int getTagCount()
+com.amazon.device.sale.api.card.CommonCardData	method	public long getRowId()
+com.amazon.device.sale.api.card.CommonCardData	method	public void appendTag(String str)
+com.amazon.device.sale.api.card.CommonCardData	method	public void assign(CommonCardData commonCardData)
+com.amazon.device.sale.api.card.CommonCardData	method	public void eraseTags()
+com.amazon.device.sale.api.card.CommonCardData	method	public void newObjectId()
+com.amazon.device.sale.api.card.CommonCardData	method	public void readFromParcel(Parcel parcel)
+com.amazon.device.sale.api.card.CommonCardData	method	public void setTagList(List<String> list)
+com.amazon.device.sale.api.card.CommonCardData	method	public void setTagString(String str)
+com.amazon.device.sale.api.card.CommonCardData	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.device.sale.api.card.NotificationCard	field	private Notification mNotification;
+com.amazon.device.sale.api.card.NotificationCard	field	private String mCategory;
+com.amazon.device.sale.api.card.NotificationCard	field	private String mText;
+com.amazon.device.sale.api.card.NotificationCard	field	private String mTitle;
+com.amazon.device.sale.api.card.NotificationCard	field	private Uri mLargeIcon;
+com.amazon.device.sale.api.card.NotificationCard	field	private int mNotificationType;
+com.amazon.device.sale.api.card.NotificationCard	field	private int mPriority;
+com.amazon.device.sale.api.card.NotificationCard	field	private int mStatus;
+com.amazon.device.sale.api.card.NotificationCard	field	private long mReceiveTime;
+com.amazon.device.sale.api.card.NotificationCard	field	private static final String TAG;
+com.amazon.device.sale.api.card.NotificationCard	field	protected Bitmap mCachedSmallIconBitmap;
+com.amazon.device.sale.api.card.NotificationCard	field	protected Uri mSmallIcon;
+com.amazon.device.sale.api.card.NotificationCard	field	public static final String EXTRA_NOTIFICATION_TYPE;
+com.amazon.device.sale.api.card.NotificationCard	field	public static final String EXTRA_SYSTEM_NOTIFICATION_FILTER;
+com.amazon.device.sale.api.card.NotificationCard	method	private NotificationCard(Parcel parcel)
+com.amazon.device.sale.api.card.NotificationCard	method	protected NotificationCard(CommonCardData commonCardData)
+com.amazon.device.sale.api.card.NotificationCard	method	public Notification getNotification()
+com.amazon.device.sale.api.card.NotificationCard	method	public String getCategory()
+com.amazon.device.sale.api.card.NotificationCard	method	public String getText()
+com.amazon.device.sale.api.card.NotificationCard	method	public String getTitle()
+com.amazon.device.sale.api.card.NotificationCard	method	public String toString()
+com.amazon.device.sale.api.card.NotificationCard	method	public Uri getLargeIcon()
+com.amazon.device.sale.api.card.NotificationCard	method	public Uri getSmallIcon()
+com.amazon.device.sale.api.card.NotificationCard	method	public boolean equals(Object obj)
+com.amazon.device.sale.api.card.NotificationCard	method	public final Bitmap getLargeIconBitmap()
+com.amazon.device.sale.api.card.NotificationCard	method	public final Bitmap getSmallIconBitmap()
+com.amazon.device.sale.api.card.NotificationCard	method	public int describeContents()
+com.amazon.device.sale.api.card.NotificationCard	method	public int getNotificationType()
+com.amazon.device.sale.api.card.NotificationCard	method	public int getPriority()
+com.amazon.device.sale.api.card.NotificationCard	method	public int getStatus()
+com.amazon.device.sale.api.card.NotificationCard	method	public long getReceiveTime()
+com.amazon.device.sale.api.card.NotificationCard	method	public static int indexOf(List<NotificationCard> list, String str, String str2)
+com.amazon.device.sale.api.card.NotificationCard	method	public static int indexOf(List<NotificationCard> list, String str, int i)
+com.amazon.device.sale.api.card.NotificationCard	method	public static int indexOf(List<NotificationCard> list, UUID uuid)
+com.amazon.device.sale.api.card.NotificationCard	method	public void readFromParcel(Parcel parcel)
+com.amazon.device.sale.api.card.NotificationCard	method	public void setLargeIcon(Uri uri)
+com.amazon.device.sale.api.card.NotificationCard	method	public void setSmallIcon(Uri uri)
+com.amazon.device.sale.api.card.NotificationCard	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.device.sale.api.card.NotificationCard$Builder	field	private Notification mNotification;
+com.amazon.device.sale.api.card.NotificationCard$Builder	field	private String mCategory;
+com.amazon.device.sale.api.card.NotificationCard$Builder	field	private String mText;
+com.amazon.device.sale.api.card.NotificationCard$Builder	field	private String mTitle;
+com.amazon.device.sale.api.card.NotificationCard$Builder	field	private Uri mLargeIcon;
+com.amazon.device.sale.api.card.NotificationCard$Builder	field	private int mNotificationType;
+com.amazon.device.sale.api.card.NotificationCard$Builder	field	private int mPriority;
+com.amazon.device.sale.api.card.NotificationCard$Builder	field	private int mStatus;
+com.amazon.device.sale.api.card.NotificationCard$Builder	field	private long mReceiveTime;
+com.amazon.device.sale.api.card.NotificationCard$Builder	field	protected Uri mSmallIcon;
+com.amazon.device.sale.api.card.NotificationCard$Builder	method	public Builder setCategory(String str)
+com.amazon.device.sale.api.card.NotificationCard$Builder	method	public Builder setLargeIcon(Uri uri)
+com.amazon.device.sale.api.card.NotificationCard$Builder	method	public Builder setNotification(Notification notification)
+com.amazon.device.sale.api.card.NotificationCard$Builder	method	public Builder setNotificationType(int i)
+com.amazon.device.sale.api.card.NotificationCard$Builder	method	public Builder setPriority(int i)
+com.amazon.device.sale.api.card.NotificationCard$Builder	method	public Builder setReceiveTime(long j)
+com.amazon.device.sale.api.card.NotificationCard$Builder	method	public Builder setSmallIcon(Uri uri)
+com.amazon.device.sale.api.card.NotificationCard$Builder	method	public Builder setStatus(int i)
+com.amazon.device.sale.api.card.NotificationCard$Builder	method	public Builder setText(String str)
+com.amazon.device.sale.api.card.NotificationCard$Builder	method	public Builder setTitle(String str)
+com.amazon.device.sale.api.card.NotificationCard$Builder	method	public Builder()
+com.amazon.device.sale.api.card.NotificationCard$Builder	method	public Builder(Context context)
+com.amazon.device.sale.api.card.NotificationCard$Builder	method	public Builder(NotificationCard notificationCard)
+com.amazon.device.sale.api.card.NotificationCard$Builder	method	public NotificationCard build()
+com.amazon.device.sale.api.card.NotificationCard$Builder	method	public boolean isValid()
+com.amazon.device.sale.api.constant.SaleConstants	field	public static final String BITMAP_KEY_DELIMITER;
+com.amazon.device.sale.api.constant.SaleConstants	field	public static final String CATEGORY_DELIMITER;
+com.amazon.device.sale.api.constant.SaleConstants	field	public static final String CATEGORY_NON_DISMISSIBLE_NOTIFICATION;
+com.amazon.device.sale.api.constant.SaleConstants	field	public static final String LARGE_ICON_IMAGE;
+com.amazon.device.sale.api.constant.SaleConstants	field	public static final String LOGCAT_LABEL;
+com.amazon.device.sale.api.constant.SaleConstants	field	public static final String NOTIFICATION_CUSTOM_APP_NAME;
+com.amazon.device.sale.api.constant.SaleConstants	field	public static final String SALE_CONTENT_INTENT;
+com.amazon.device.sale.api.constant.SaleConstants	field	public static final String SALE_DISMISS_INTENT;
+com.amazon.device.sale.api.constant.SaleConstants	field	public static final String SMALL_ICON_IMAGE;
+com.amazon.device.sale.api.constant.SaleConstants	field	public static final int MAX_IMAGE_SIZE;
+com.amazon.device.sale.api.constant.SaleConstants	field	public static final int NOTIFICATION_PACKAGE;
+com.amazon.device.sale.api.constant.SaleConstants	field	public static final int PARTNER_NAME_MAX_LENGTH;
+com.amazon.device.sale.api.constant.SaleConstants	field	public static final int RECOMMENDATION_PACKAGE;
+com.amazon.device.sale.api.constant.SaleConstants	field	public static final int SALE_OPERATION_ERROR;
+com.amazon.device.sale.api.constant.SaleConstants	field	public static final int SALE_OPERATION_FAILURE;
+com.amazon.device.sale.api.constant.SaleConstants	field	public static final int SALE_OPERATION_SUCCESS;
+com.amazon.device.sale.api.database.DbUtil	field	private static final String TAG;
+com.amazon.device.sale.api.database.DbUtil	field	private static final boolean DEBUG;
+com.amazon.device.sale.api.database.DbUtil	method	public static List<UUID> getObjectIdList(SQLiteDatabase sQLiteDatabase, String str)
+com.amazon.device.sale.api.database.DbUtil	method	public static String getStringOrNull(Cursor cursor, int i)
+com.amazon.device.sale.api.database.DbUtil	method	public static Uri getLargeIconUri(String str, String str2)
+com.amazon.device.sale.api.database.DbUtil	method	public static Uri getUriOrNull(Cursor cursor, int i)
+com.amazon.device.sale.api.database.DbUtil	method	public static boolean setExtras(Cursor cursor, Bundle bundle)
+com.amazon.device.sale.api.database.DbUtil	method	public static byte[] getBlobOrNull(Cursor cursor, int i)
+com.amazon.device.sale.api.database.NotificationKeyMap	field	private HashMap<String, String> mNotificationKeyMap;
+com.amazon.device.sale.api.database.NotificationKeyMap	field	private static final String TAG;
+com.amazon.device.sale.api.database.NotificationKeyMap	field	private static final boolean DEBUG;
+com.amazon.device.sale.api.database.NotificationKeyMap	method	public HashMap<String, String> getMap()
+com.amazon.device.sale.api.database.NotificationKeyMap	method	public String get(UUID uuid)
+com.amazon.device.sale.api.database.NotificationKeyMap	method	public String remove(UUID uuid)
+com.amazon.device.sale.api.database.NotificationKeyMap	method	public boolean isExisting(UUID uuid)
+com.amazon.device.sale.api.database.NotificationKeyMap	method	public int size()
+com.amazon.device.sale.api.database.NotificationKeyMap	method	public void clear()
+com.amazon.device.sale.api.database.NotificationKeyMap	method	public void set(UUID uuid, String str)
+com.amazon.device.sale.api.database.PendingIntentMap	field	private static final String INTERNAL_KEY_LIST;
+com.amazon.device.sale.api.database.PendingIntentMap	field	private static final String TAG;
+com.amazon.device.sale.api.database.PendingIntentMap	field	private static final boolean DEBUG;
+com.amazon.device.sale.api.database.PendingIntentMap	method	public HashMap<String, PendingIntent> getMap()
+com.amazon.device.sale.api.database.PendingIntentMap	method	public PendingIntent get(UUID uuid)
+com.amazon.device.sale.api.database.PendingIntentMap	method	public PendingIntent remove(UUID uuid)
+com.amazon.device.sale.api.database.PendingIntentMap	method	public boolean isValid(UUID uuid)
+com.amazon.device.sale.api.database.PendingIntentMap	method	public boolean iterate(IterateState iterateState)
+com.amazon.device.sale.api.database.PendingIntentMap	method	public int size()
+com.amazon.device.sale.api.database.PendingIntentMap	method	public void clear()
+com.amazon.device.sale.api.database.PendingIntentMap	method	public void fromBundle(Bundle bundle)
+com.amazon.device.sale.api.database.PendingIntentMap	method	public void set(UUID uuid, PendingIntent pendingIntent)
+com.amazon.device.sale.api.database.PendingIntentMap	method	public void toBundle(Bundle bundle)
+com.amazon.device.sale.api.database.PendingIntentMap$IterateState	method	public IterateState()
+com.amazon.device.sale.api.database.PendingIntentMap$IterateState	method	public PendingIntent getPendingIntent()
+com.amazon.device.sale.api.database.PendingIntentMap$IterateState	method	public UUID getObjectId()
+com.amazon.device.sale.api.database.PendingIntentMap$IterateState	method	public void rewind()
+com.amazon.device.sale.api.database.SaleContractBase	field	private static final Uri BASE_CONTENT_URI;
+com.amazon.device.sale.api.database.SaleContractBase	field	public static final String AUTHORITY;
+com.amazon.device.sale.api.database.SaleContractBase	field	public static final String URI_LRS_CONTENT;
+com.amazon.device.sale.api.database.SaleContractBase$Notification	field	public static final String COLUMN_APP_DISPLAY_NAME;
+com.amazon.device.sale.api.database.SaleContractBase$Notification	field	public static final String COLUMN_CONTENT_ID;
+com.amazon.device.sale.api.database.SaleContractBase$Notification	field	public static final String COLUMN_FLAGS_VALUE;
+com.amazon.device.sale.api.database.SaleContractBase$Notification	field	public static final String COLUMN_LARGE_ICON_URI;
+com.amazon.device.sale.api.database.SaleContractBase$Notification	field	public static final String COLUMN_NOTIFICATION_CATEGORY;
+com.amazon.device.sale.api.database.SaleContractBase$Notification	field	public static final String COLUMN_NOTIFICATION_ID;
+com.amazon.device.sale.api.database.SaleContractBase$Notification	field	public static final String COLUMN_NOTIFICATION_KEY;
+com.amazon.device.sale.api.database.SaleContractBase$Notification	field	public static final String COLUMN_NOTIFICATION_TAG;
+com.amazon.device.sale.api.database.SaleContractBase$Notification	field	public static final String COLUMN_NOTIFICATION_TYPE;
+com.amazon.device.sale.api.database.SaleContractBase$Notification	field	public static final String COLUMN_OBJECT_ID;
+com.amazon.device.sale.api.database.SaleContractBase$Notification	field	public static final String COLUMN_PACKAGE_NAME;
+com.amazon.device.sale.api.database.SaleContractBase$Notification	field	public static final String COLUMN_PRIMARY_ACTION_TEXT;
+com.amazon.device.sale.api.database.SaleContractBase$Notification	field	public static final String COLUMN_PRIORITY;
+com.amazon.device.sale.api.database.SaleContractBase$Notification	field	public static final String COLUMN_SMALL_ICON_URI;
+com.amazon.device.sale.api.database.SaleContractBase$Notification	field	public static final String COLUMN_TEXT;
+com.amazon.device.sale.api.database.SaleContractBase$Notification	field	public static final String COLUMN_TIMESTAMP;
+com.amazon.device.sale.api.database.SaleContractBase$Notification	field	public static final String COLUMN_TITLE;
+com.amazon.device.sale.api.database.SaleContractBase$Notification	field	public static final String CONTENT_ITEM_TYPE;
+com.amazon.device.sale.api.database.SaleContractBase$Notification	field	public static final String CONTENT_TYPE;
+com.amazon.device.sale.api.database.SaleContractBase$Notification	field	public static final String TABLE_PATH;
+com.amazon.device.sale.api.database.SaleContractBase$Notification	field	public static final String _ID;
+com.amazon.device.sale.api.database.SaleContractBase$Notification	field	public static final String[] PROJECTION_ALL;
+com.amazon.device.sale.api.database.SaleContractBase$Notification	field	public static final Uri CONTENT_URI;
+com.amazon.device.sale.api.database.SaleContractBase$Notification	method	public String toString()
+com.amazon.device.sale.api.database.SaleContractBase$Notification	method	public static String getColumnName(int i)
+com.amazon.device.sale.api.database.SaleContractBase$Notification	method	public static int getColumnCount()
+com.amazon.device.sale.api.database.SaleContractBase$NotificationBlockPackageList	field	public static final String COLUMN_NOTIFICATION_TYPE;
+com.amazon.device.sale.api.database.SaleContractBase$NotificationBlockPackageList	field	public static final String COLUMN_PACKAGE_NAME;
+com.amazon.device.sale.api.database.SaleContractBase$NotificationBlockPackageList	field	public static final String CONTENT_ITEM_TYPE;
+com.amazon.device.sale.api.database.SaleContractBase$NotificationBlockPackageList	field	public static final String CONTENT_TYPE;
+com.amazon.device.sale.api.database.SaleContractBase$NotificationBlockPackageList	field	public static final String NOTIFICATION_PACKAGE_DELETE_KEY;
+com.amazon.device.sale.api.database.SaleContractBase$NotificationBlockPackageList	field	public static final String NOTIFICATION_PACKAGE_INSERT_KEY;
+com.amazon.device.sale.api.database.SaleContractBase$NotificationBlockPackageList	field	public static final String NOTIFICATION_PACKAGE_QUERY_KEY;
+com.amazon.device.sale.api.database.SaleContractBase$NotificationBlockPackageList	field	public static final String TABLE_PATH;
+com.amazon.device.sale.api.database.SaleContractBase$NotificationBlockPackageList	field	public static final String[] PROJECTION_ALL;
+com.amazon.device.sale.api.database.SaleContractBase$NotificationBlockPackageList	field	public static final Uri CONTENT_URI;
+com.amazon.device.sale.api.database.SaleContractBase$NotificationBlockPackageList	method	public String toString()
+com.amazon.device.sale.api.database.SaleDatabase	field	private Context mContext;
+com.amazon.device.sale.api.database.SaleDatabase	field	private Handler mBlockedPackageHandler;
+com.amazon.device.sale.api.database.SaleDatabase	field	private Handler mNCHandler;
+com.amazon.device.sale.api.database.SaleDatabase	field	private Object mBlockedPackageRunnableLock;
+com.amazon.device.sale.api.database.SaleDatabase	field	private Object mNCNotifyRunnableLock;
+com.amazon.device.sale.api.database.SaleDatabase	field	private PendingIntentMap mContentIntentMap;
+com.amazon.device.sale.api.database.SaleDatabase	field	private PendingIntentMap mDismissIntentMap;
+com.amazon.device.sale.api.database.SaleDatabase	field	private Runnable mBlockedPackageNotifyRunnable;
+com.amazon.device.sale.api.database.SaleDatabase	field	private Runnable mNCNotifyRunnable;
+com.amazon.device.sale.api.database.SaleDatabase	field	private SQLiteDatabase mDB;
+com.amazon.device.sale.api.database.SaleDatabase	field	private static NotificationKeyMap sNotificationKeyMap;
+com.amazon.device.sale.api.database.SaleDatabase	field	private static SaleDatabase sInstance;
+com.amazon.device.sale.api.database.SaleDatabase	field	private static final String DATABASE_NAME;
+com.amazon.device.sale.api.database.SaleDatabase	field	private static final String TAG;
+com.amazon.device.sale.api.database.SaleDatabase	field	private static final boolean DEBUG;
+com.amazon.device.sale.api.database.SaleDatabase	field	private static final int DATABASE_VERSION;
+com.amazon.device.sale.api.database.SaleDatabase	method	private SaleDatabase(Context context)
+com.amazon.device.sale.api.database.SaleDatabase	method	private void callNotifyToBlockedPackageListenerWhenTimerFires()
+com.amazon.device.sale.api.database.SaleDatabase	method	private void callNotifyToNotificationCenterWhenTimerFires()
+com.amazon.device.sale.api.database.SaleDatabase	method	private void fireNotifyChange(Uri uri)
+com.amazon.device.sale.api.database.SaleDatabase	method	private void initBlockedPackageListenerNotifyChangeQueue()
+com.amazon.device.sale.api.database.SaleDatabase	method	private void initNotificationCenterNotifyChangeQueue()
+com.amazon.device.sale.api.database.SaleDatabase	method	public List<NotificationCard> notificationReadAll(String str, String[] strArr)
+com.amazon.device.sale.api.database.SaleDatabase	method	public List<String> getListOfBlockedNotficationPackage(int i)
+com.amazon.device.sale.api.database.SaleDatabase	method	public PendingIntent getContentIntent(UUID uuid)
+com.amazon.device.sale.api.database.SaleDatabase	method	public PendingIntent getDismissIntent(UUID uuid)
+com.amazon.device.sale.api.database.SaleDatabase	method	public PendingIntent removeContentIntent(UUID uuid)
+com.amazon.device.sale.api.database.SaleDatabase	method	public PendingIntent removeDismissIntent(UUID uuid)
+com.amazon.device.sale.api.database.SaleDatabase	method	public SQLiteDatabase getDatabase()
+com.amazon.device.sale.api.database.SaleDatabase	method	public String removeNotificationKey(UUID uuid)
+com.amazon.device.sale.api.database.SaleDatabase	method	public Uri getURIToNotifyChangeForNotification()
+com.amazon.device.sale.api.database.SaleDatabase	method	public boolean notificationDelete(String str, int i)
+com.amazon.device.sale.api.database.SaleDatabase	method	public boolean notificationDeleteAll()
+com.amazon.device.sale.api.database.SaleDatabase	method	public boolean notificationExists(NotificationCard notificationCard)
+com.amazon.device.sale.api.database.SaleDatabase	method	public boolean notificationPut(NotificationCard notificationCard)
+com.amazon.device.sale.api.database.SaleDatabase	method	public static synchronized SaleDatabase getInstance(Context context)
+com.amazon.device.sale.api.database.SaleDatabase	method	public void addBlockListPackage(String str)
+com.amazon.device.sale.api.database.SaleDatabase	method	public void addBlockedPackage(int i, String str)
+com.amazon.device.sale.api.database.SaleDatabase	method	public void clearDatabaseOnBoot()
+com.amazon.device.sale.api.database.SaleDatabase	method	public void clearPackageData(String str)
+com.amazon.device.sale.api.database.SaleDatabase	method	public void deleteBlockedPackage(int i, String[] strArr)
+com.amazon.device.sale.api.database.SaleDatabase	method	public void deleteNotificationBlockList()
+com.amazon.device.sale.api.database.SaleDatabase	method	public void deleteRecommendationMapEntries(UUID uuid)
+com.amazon.device.sale.api.database.SaleDatabase	method	public void dismiss(String str, String[] strArr)
+com.amazon.device.sale.api.database.SaleDatabase	method	public void handleNotificationCardChange()
+com.amazon.device.sale.api.database.SaleDatabase	method	public void onCreate(SQLiteDatabase sQLiteDatabase)
+com.amazon.device.sale.api.database.SaleDatabase	method	public void onUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i2)
+com.amazon.device.sale.api.database.SaleDatabase	method	public void saveContentIntent(UUID uuid, PendingIntent pendingIntent)
+com.amazon.device.sale.api.database.SaleDatabase	method	public void saveDismissIntent(UUID uuid, PendingIntent pendingIntent)
+com.amazon.device.sale.api.database.SaleDatabase	method	public void saveNotificationKey(UUID uuid, String str)
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_APP_BADGE_ICON;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_APP_DISPLAY_NAME;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_APP_TYPE;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_CLICKS;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_CONTENT_ID;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_COOKIE;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_DAY_OF_INSTALLATION;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_EXPIRATION;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_FLAGS_VALUE;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_LARGE_ICON_URI;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_LAUNCHER_ROW_JSON;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_LONG_DESCRIPTION;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_NOTIFICATION_GROUP;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_NOTIFICATION_ID;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_NOTIFICATION_KEY;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_NOTIFICATION_TAG;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_OBJECT_ID;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_PACKAGE_ID;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_PACKAGE_NAME;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_PACKAGE_STATUS;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_PARTNER_ID;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_PRIMARY_ACTION_TEXT;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_PRIORITY;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_PROMOTION_PRIORITY;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_RANK;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_RECOMMENDATION_LOCATION;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_REPUTATION;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_REVIEW_RATING;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_SECONDARY_ACTION_TEXT;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_SELECTIONS;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_SMALL_ICON_URI;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_SUB_CATEGORY;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_TEXT;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_TIME_STAMP;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_TITLE;
+com.amazon.device.sale.api.database.interfaces.CommonColumns	field	public static final String COLUMN_TTL;
+com.amazon.device.sale.api.database.providers.SaleProvider	field	private SaleProviderNotification mNotificationMgr;
+com.amazon.device.sale.api.database.providers.SaleProvider	field	private static final String ACCESS_SALE_PROVIDER_PERMISSION;
+com.amazon.device.sale.api.database.providers.SaleProvider	field	private static final String TAG;
+com.amazon.device.sale.api.database.providers.SaleProvider	field	private static final UriMatcher URI_MATCHER;
+com.amazon.device.sale.api.database.providers.SaleProvider	field	private static final boolean DEBUG;
+com.amazon.device.sale.api.database.providers.SaleProvider	field	public static final int NOTIFICATION_BLOCK_PACKAGE_LIST;
+com.amazon.device.sale.api.database.providers.SaleProvider	field	public static final int NOTIFICATION_BLOCK_PACKAGE_NAME;
+com.amazon.device.sale.api.database.providers.SaleProvider	field	public static final int NOTIFICATION_LIST;
+com.amazon.device.sale.api.database.providers.SaleProvider	method	private SaleProviderNotification getNotificationTableMgr()
+com.amazon.device.sale.api.database.providers.SaleProvider	method	private void checkSaleAccessPermission(String str)
+com.amazon.device.sale.api.database.providers.SaleProvider	method	public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2)
+com.amazon.device.sale.api.database.providers.SaleProvider	method	public String getType(Uri uri)
+com.amazon.device.sale.api.database.providers.SaleProvider	method	public Uri insert(Uri uri, ContentValues contentValues)
+com.amazon.device.sale.api.database.providers.SaleProvider	method	public boolean onCreate()
+com.amazon.device.sale.api.database.providers.SaleProvider	method	public int delete(Uri uri, String str, String[] strArr)
+com.amazon.device.sale.api.database.providers.SaleProvider	method	public int update(Uri uri, ContentValues contentValues, String str, String[] strArr)
+com.amazon.device.sale.api.database.providers.SaleProviderNotification	field	private Context mContext;
+com.amazon.device.sale.api.database.providers.SaleProviderNotification	field	private static final String TAG;
+com.amazon.device.sale.api.database.providers.SaleProviderNotification	field	private static final boolean DEBUG;
+com.amazon.device.sale.api.database.providers.SaleProviderNotification	method	private MatrixCursor createCursorFromBlockedPackage(long j)
+com.amazon.device.sale.api.database.providers.SaleProviderNotification	method	private MatrixCursor createCursorFromBlockedPackageList(String[] strArr, List<String> list)
+com.amazon.device.sale.api.database.providers.SaleProviderNotification	method	private MatrixCursor createCursorFromList(SaleDatabase saleDatabase, String[] strArr, List<NotificationCard> list)
+com.amazon.device.sale.api.database.providers.SaleProviderNotification	method	public Cursor query(SaleDatabase saleDatabase, int i, Uri uri, String[] strArr, String str, String[] strArr2, String str2)
+com.amazon.device.sale.api.database.providers.SaleProviderNotification	method	public SaleProviderNotification(Object obj, Context context)
+com.amazon.device.sale.api.database.providers.SaleProviderNotification	method	public boolean insert(SaleDatabase saleDatabase, ContentValues contentValues)
+com.amazon.device.sale.api.database.providers.SaleProviderNotification	method	public int delete(SaleDatabase saleDatabase, int i, String str, String[] strArr)
+com.amazon.device.sale.api.database.tables.TableBlockPackage	field	private static final String TAG;
+com.amazon.device.sale.api.database.tables.TableBlockPackage	field	public static final String COLUMN_BLOCK_PACKAGE_NAME;
+com.amazon.device.sale.api.database.tables.TableBlockPackage	field	public static final String COLUMN_NOTIFICATION_TYPE;
+com.amazon.device.sale.api.database.tables.TableBlockPackage	field	public static final String SQL_CREATE_TABLE;
+com.amazon.device.sale.api.database.tables.TableBlockPackage	field	public static final String SQL_DROP_TABLE;
+com.amazon.device.sale.api.database.tables.TableBlockPackage	field	public static final String TABLE_NAME;
+com.amazon.device.sale.api.database.tables.TableBlockPackage	field	public static final String[] SQL_CREATE_INDEXES;
+com.amazon.device.sale.api.database.tables.TableBlockPackage	method	private static void notifyBlockedPackageContentObserver()
+com.amazon.device.sale.api.database.tables.TableBlockPackage	method	public static List<String> getListOfBlockedPackage(SQLiteDatabase sQLiteDatabase, int i)
+com.amazon.device.sale.api.database.tables.TableBlockPackage	method	public static boolean delete(SQLiteDatabase sQLiteDatabase, int i, String str)
+com.amazon.device.sale.api.database.tables.TableBlockPackage	method	public static boolean deleteAll(SQLiteDatabase sQLiteDatabase, int i)
+com.amazon.device.sale.api.database.tables.TableBlockPackage	method	public static long addBlockedPackage(SQLiteDatabase sQLiteDatabase, int i, String str)
+com.amazon.device.sale.api.database.tables.TableBlockPackage	method	public static long getRowId(SQLiteDatabase sQLiteDatabase, String str, int i)
+com.amazon.device.sale.api.database.tables.TableNotification	field	private static final String TAG;
+com.amazon.device.sale.api.database.tables.TableNotification	method	static boolean clickCard(IStatusBarService iStatusBarService, String str)
+com.amazon.device.sale.api.database.tables.TableNotification	method	static boolean dismissCard(IStatusBarService iStatusBarService, TableNotificationBase.DismissCard dismissCard)
+com.amazon.device.sale.api.database.tables.TableNotificationBase	field	private static Context sContext;
+com.amazon.device.sale.api.database.tables.TableNotificationBase	field	private static final String TAG;
+com.amazon.device.sale.api.database.tables.TableNotificationBase	field	private static final boolean DEBUG;
+com.amazon.device.sale.api.database.tables.TableNotificationBase	field	public static final String COLUMN_LARGE_ICON_URI;
+com.amazon.device.sale.api.database.tables.TableNotificationBase	field	public static final String COLUMN_NOTIFICATION_CATEGORY;
+com.amazon.device.sale.api.database.tables.TableNotificationBase	field	public static final String COLUMN_NOTIFICATION_TYPE;
+com.amazon.device.sale.api.database.tables.TableNotificationBase	field	public static final String COLUMN_SMALL_ICON_URI;
+com.amazon.device.sale.api.database.tables.TableNotificationBase	field	public static final String COLUMN_STATUS;
+com.amazon.device.sale.api.database.tables.TableNotificationBase	field	public static final String COLUMN_TEXT;
+com.amazon.device.sale.api.database.tables.TableNotificationBase	field	public static final String COLUMN_TITLE;
+com.amazon.device.sale.api.database.tables.TableNotificationBase	field	public static final String SQL_CREATE_TABLE;
+com.amazon.device.sale.api.database.tables.TableNotificationBase	field	public static final String SQL_DROP_TABLE;
+com.amazon.device.sale.api.database.tables.TableNotificationBase	field	public static final String TABLE_NAME;
+com.amazon.device.sale.api.database.tables.TableNotificationBase	field	public static final String[] SQL_CREATE_INDEXES;
+com.amazon.device.sale.api.database.tables.TableNotificationBase	method	private static List<DismissCard> findCardList(Cursor cursor)
+com.amazon.device.sale.api.database.tables.TableNotificationBase	method	private static String excludeClause(SQLiteDatabase sQLiteDatabase, String str, String[] strArr)
+com.amazon.device.sale.api.database.tables.TableNotificationBase	method	private static boolean cancelCard(String str)
+com.amazon.device.sale.api.database.tables.TableNotificationBase	method	private static boolean clickCard(String str)
+com.amazon.device.sale.api.database.tables.TableNotificationBase	method	private static boolean dismissCard(IStatusBarService iStatusBarService, PackageManager packageManager, DismissCard dismissCard)
+com.amazon.device.sale.api.database.tables.TableNotificationBase	method	private static boolean dismissCardList(List<DismissCard> list)
+com.amazon.device.sale.api.database.tables.TableNotificationBase	method	private static boolean dismissSingleCard(DismissCard dismissCard)
+com.amazon.device.sale.api.database.tables.TableNotificationBase	method	private static boolean readAllColumnsFromCursor(SaleDatabase saleDatabase, SQLiteDatabase sQLiteDatabase, Cursor cursor, NotificationCard.Builder builder)
+com.amazon.device.sale.api.database.tables.TableNotificationBase	method	public static DismissCard findDismissCard(SQLiteDatabase sQLiteDatabase, String str)
+com.amazon.device.sale.api.database.tables.TableNotificationBase	method	public static List<DismissCard> findAllDismissCard(SQLiteDatabase sQLiteDatabase)
+com.amazon.device.sale.api.database.tables.TableNotificationBase	method	public static List<DismissCard> findDismissCardListByPackageName(SQLiteDatabase sQLiteDatabase, String str)
+com.amazon.device.sale.api.database.tables.TableNotificationBase	method	public static List<NotificationCard> readAll(SaleDatabase saleDatabase, SQLiteDatabase sQLiteDatabase, String str, String[] strArr)
+com.amazon.device.sale.api.database.tables.TableNotificationBase	method	public static List<String> getListOfBlockedPackages()
+com.amazon.device.sale.api.database.tables.TableNotificationBase	method	public static NotificationCard read(SaleDatabase saleDatabase, SQLiteDatabase sQLiteDatabase, int i, String str)
+com.amazon.device.sale.api.database.tables.TableNotificationBase	method	public static String findNotificationKey(SQLiteDatabase sQLiteDatabase, String str)
+com.amazon.device.sale.api.database.tables.TableNotificationBase	method	public static String findUUID(SQLiteDatabase sQLiteDatabase, int i, String str)
+com.amazon.device.sale.api.database.tables.TableNotificationBase	method	public static boolean delete(SaleDatabase saleDatabase, SQLiteDatabase sQLiteDatabase, String str, int i)
+com.amazon.device.sale.api.database.tables.TableNotificationBase	method	public static boolean delete(SaleDatabase saleDatabase, SQLiteDatabase sQLiteDatabase, UUID uuid)
+com.amazon.device.sale.api.database.tables.TableNotificationBase	method	public static boolean deleteAll(SaleDatabase saleDatabase, SQLiteDatabase sQLiteDatabase)
+com.amazon.device.sale.api.database.tables.TableNotificationBase	method	public static boolean deleteByPackage(SaleDatabase saleDatabase, SQLiteDatabase sQLiteDatabase, String str)
+com.amazon.device.sale.api.database.tables.TableNotificationBase	method	public static boolean exists(SaleDatabase saleDatabase, SQLiteDatabase sQLiteDatabase, String str, String str2)
+com.amazon.device.sale.api.database.tables.TableNotificationBase	method	public static boolean exists(SaleDatabase saleDatabase, SQLiteDatabase sQLiteDatabase, UUID uuid)
+com.amazon.device.sale.api.database.tables.TableNotificationBase	method	public static boolean write(SaleDatabase saleDatabase, SQLiteDatabase sQLiteDatabase, NotificationCard notificationCard)
+com.amazon.device.sale.api.database.tables.TableNotificationBase	method	public static int count(SQLiteDatabase sQLiteDatabase)
+com.amazon.device.sale.api.database.tables.TableNotificationBase	method	public static long findNotification(SQLiteDatabase sQLiteDatabase, int i, String str)
+com.amazon.device.sale.api.database.tables.TableNotificationBase	method	public static void dismiss(SaleDatabase saleDatabase, SQLiteDatabase sQLiteDatabase, String str, String[] strArr)
+com.amazon.device.sale.api.database.tables.TableNotificationBase	method	public static void setContext(Context context)
+com.amazon.device.sale.api.database.tables.TableNotificationBase	method	static String getSelectAllColumnsSQL()
+com.amazon.device.sale.api.database.tables.TableNotificationBase$DismissCard	field	private String mPkgName;
+com.amazon.device.sale.api.database.tables.TableNotificationBase$DismissCard	field	private String mTags;
+com.amazon.device.sale.api.database.tables.TableNotificationBase$DismissCard	field	private int mNotificationId;
+com.amazon.device.sale.api.database.tables.TableNotificationBase$DismissCard	method	public String getPkgName()
+com.amazon.device.sale.api.database.tables.TableNotificationBase$DismissCard	method	public String getTags()
+com.amazon.device.sale.api.database.tables.TableNotificationBase$DismissCard	method	public int getNotificationId()
+com.amazon.device.sale.api.database.tables.TableNotificationBase$DismissCard	method	public void setNotificationId(int i)
+com.amazon.device.sale.api.database.tables.TableNotificationBase$DismissCard	method	public void setPackageName(String str)
+com.amazon.device.sale.api.database.tables.TableNotificationBase$DismissCard	method	public void setTags(String str)
+com.amazon.device.sale.api.database.tables.TableNotificationBlockListPackage	field	public static final String COLUMN_PACKAGE_NAME;
+com.amazon.device.sale.api.database.tables.TableNotificationBlockListPackage	field	public static final String SQL_CREATE_TABLE;
+com.amazon.device.sale.api.database.tables.TableNotificationBlockListPackage	field	public static final String SQL_DROP_TABLE;
+com.amazon.device.sale.api.database.tables.TableNotificationBlockListPackage	field	public static final String TABLE_NAME;
+com.amazon.device.sale.api.database.tables.TableNotificationBlockListPackage	field	public static final String[] SQL_CREATE_INDEXES;
+com.amazon.device.sale.api.database.tables.TableNotificationBlockListPackage	method	public static List<String> getCompleteBlockList(SQLiteDatabase sQLiteDatabase)
+com.amazon.device.sale.api.database.tables.TableNotificationBlockListPackage	method	public static boolean delete(SQLiteDatabase sQLiteDatabase, String str)
+com.amazon.device.sale.api.database.tables.TableNotificationBlockListPackage	method	public static boolean deleteAllRow(SQLiteDatabase sQLiteDatabase)
+com.amazon.device.sale.api.database.tables.TableNotificationBlockListPackage	method	public static boolean isPkgExist(SQLiteDatabase sQLiteDatabase, String str)
+com.amazon.device.sale.api.database.tables.TableNotificationBlockListPackage	method	public static void setBlockList(SQLiteDatabase sQLiteDatabase, String str)
+com.amazon.device.sale.api.imageprocessing.ImageCache	field	private static Context sContext;
+com.amazon.device.sale.api.imageprocessing.ImageCache	field	private static ImageCache sImageCache;
+com.amazon.device.sale.api.imageprocessing.ImageCache	field	private static String sBasePath;
+com.amazon.device.sale.api.imageprocessing.ImageCache	field	private static final Bitmap.CompressFormat DEFAULT_COMPRESSION_FORMAT;
+com.amazon.device.sale.api.imageprocessing.ImageCache	field	private static final String CACHE_DIR_NAME;
+com.amazon.device.sale.api.imageprocessing.ImageCache	field	private static final String DEFAULT_BITMAP_FILENAME;
+com.amazon.device.sale.api.imageprocessing.ImageCache	field	private static final String DEFAULT_MIME_TYPE;
+com.amazon.device.sale.api.imageprocessing.ImageCache	field	private static final String TAG;
+com.amazon.device.sale.api.imageprocessing.ImageCache	field	private static final boolean DEBUG;
+com.amazon.device.sale.api.imageprocessing.ImageCache	field	private static final int DEFAULT_QUALITY;
+com.amazon.device.sale.api.imageprocessing.ImageCache	field	private static final int OBJECT_ID_LENGTH;
+com.amazon.device.sale.api.imageprocessing.ImageCache	field	private static int sMinimumImageFileUrlLength;
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	private ImageCache()
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	private static File createImageFilePath(UUID uuid, String str, boolean z)
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	private static String getBitmapKey(String str)
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	private static String output(InputStream inputStream) throws Throwable
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	private static long getCacheSizeInKiloBytes(String str)
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	private static void closeStream(Closeable closeable)
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	private void addToScanner(File file)
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	public Bitmap get(String str)
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	public Bitmap get(UUID uuid, String str) throws Throwable
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	public String add(UUID uuid, String str, Bitmap bitmap) throws Throwable
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	public String add(UUID uuid, String str, String str2, int i)
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	public boolean exists(String str)
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	public boolean exists(UUID uuid, String str)
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	public boolean remove(String str)
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	public boolean remove(UUID uuid, String str)
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	public static ImageCache getInstance()
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	public static List<String> getBitmapKeyList(UUID uuid)
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	public static List<String> getUrlList(UUID uuid)
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	public static List<UUID> getObjectIdList()
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	public static String extractBitmapKeyFromUrl(String str)
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	public static String getCachePath()
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	public static String getURL(UUID uuid, String str)
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	public static String makeBitmapUrl(UUID uuid, String str)
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	public static UUID extractObjectIdFromUrl(String str)
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	public static Uri getURI(UUID uuid, String str)
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	public static boolean isExternalStorageReadable()
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	public static boolean isExternalStorageWritable()
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	public static boolean isValidUrl(String str)
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	public static boolean removeAll(UUID uuid)
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	public static long getImageCacheSize(File file)
+com.amazon.device.sale.api.imageprocessing.ImageCache	method	public static void clearCache()
+com.amazon.device.sale.api.utils.Compare	field	private static final String TAG;
+com.amazon.device.sale.api.utils.Compare	method	private static boolean isEqual(MediaMetadata mediaMetadata, MediaMetadata mediaMetadata2, String str)
+com.amazon.device.sale.api.utils.Compare	method	public static boolean isSubset(MediaMetadata mediaMetadata, MediaMetadata mediaMetadata2)
+com.amazon.device.sale.api.utils.Compare	method	public static boolean smartCompare(Bitmap bitmap, Bitmap bitmap2)
+com.amazon.device.sale.api.utils.Compare	method	public static boolean smartCompare(Bundle bundle, Bundle bundle2)
+com.amazon.device.sale.api.utils.Compare	method	public static boolean smartCompare(Intent intent, Intent intent2)
+com.amazon.device.sale.api.utils.Compare	method	public static boolean smartCompare(MediaMetadata mediaMetadata, MediaMetadata mediaMetadata2)
+com.amazon.device.sale.api.utils.Compare	method	public static boolean smartCompare(Notification notification, Notification notification2)
+com.amazon.device.sale.api.utils.Compare	method	public static boolean smartCompare(PendingIntent pendingIntent, PendingIntent pendingIntent2, boolean z)
+com.amazon.device.sale.api.utils.Compare	method	public static boolean smartCompare(Rating rating, Rating rating2)
+com.amazon.device.sale.api.utils.Compare	method	public static boolean smartCompare(String str, String str2)
+com.amazon.device.sale.api.utils.Compare	method	public static boolean smartCompare(Uri uri, Uri uri2)
+com.amazon.device.sale.api.utils.Compare	method	public static boolean smartCompare(Uri uri, Uri uri2, boolean z)
+com.amazon.device.sale.api.utils.Json	field	private static final String JSON_KEY_CREATOR_PKG;
+com.amazon.device.sale.api.utils.Json	field	private static final String JSON_KEY_INTENT_URI;
+com.amazon.device.sale.api.utils.Json	field	private static final String MEDIAMETADATA_KEY_BITMAP;
+com.amazon.device.sale.api.utils.Json	field	private static final String MEDIAMETADATA_KEY_LONG;
+com.amazon.device.sale.api.utils.Json	field	private static final String MEDIAMETADATA_KEY_OBJECT_ID;
+com.amazon.device.sale.api.utils.Json	field	private static final String MEDIAMETADATA_KEY_RATING;
+com.amazon.device.sale.api.utils.Json	field	private static final String MEDIAMETADATA_KEY_TEXT;
+com.amazon.device.sale.api.utils.Json	field	private static final String RATING_KEY_HEART;
+com.amazon.device.sale.api.utils.Json	field	private static final String RATING_KEY_PERCENT;
+com.amazon.device.sale.api.utils.Json	field	private static final String RATING_KEY_STAR;
+com.amazon.device.sale.api.utils.Json	field	private static final String RATING_KEY_STYLE;
+com.amazon.device.sale.api.utils.Json	field	private static final String RATING_KEY_THUMB;
+com.amazon.device.sale.api.utils.Json	field	private static final String TAG;
+com.amazon.device.sale.api.utils.Json	method	public static Bundle jsonObjectToBundle(JSONObject jSONObject) throws JSONException
+com.amazon.device.sale.api.utils.Json	method	public static JSONObject bundleToJsonObject(Bundle bundle) throws JSONException
+com.amazon.device.sale.api.utils.Json	method	public static JSONObject ratingToJsonObject(Rating rating) throws JSONException
+com.amazon.device.sale.api.utils.Json	method	public static MediaMetadata jsonStringToMediaMetadata(Context context, String str)
+com.amazon.device.sale.api.utils.Json	method	public static PendingIntent jsonStringToPendingIntent(Context context, String str)
+com.amazon.device.sale.api.utils.Json	method	public static Rating jsonStringToRating(String str) throws JSONException
+com.amazon.device.sale.api.utils.Json	method	public static String mediaMetadataToJsonString(Context context, MediaMetadata mediaMetadata) throws Throwable
+com.amazon.device.sale.api.utils.Json	method	public static String pendingIntentToJsonString(PendingIntent pendingIntent)
+com.amazon.device.sale.api.utils.NotificationUtil	field	private static final String TAG;
+com.amazon.device.sale.api.utils.NotificationUtil	method	public static ArrayList<Integer> getNotificationIntArrayListExtra(Notification notification, String str)
+com.amazon.device.sale.api.utils.NotificationUtil	method	public static ArrayList<String> getNotificationArrayListExtra(Notification notification, String str)
+com.amazon.device.sale.api.utils.NotificationUtil	method	public static Bitmap getNotificationBitMapExtra(Notification notification, String str)
+com.amazon.device.sale.api.utils.NotificationUtil	method	public static PersistableBundle getNotificationPersistentBundleExtra(Notification notification, String str)
+com.amazon.device.sale.api.utils.NotificationUtil	method	public static String getNotificationStringExtra(Notification notification, String str)
+com.amazon.device.sale.api.utils.NotificationUtil	method	public static boolean isPersistentNotification(Notification notification)
+com.amazon.device.sale.api.utils.NotificationUtil	method	public static int getNotificationIntExtra(Notification notification, String str)
+com.amazon.device.sale.api.utils.NotificationUtil	method	public static long getNotificationLongExtra(Notification notification, String str)
+com.amazon.device.sale.api.utils.PackageManagerUtil	field	private static Context sContext;
+com.amazon.device.sale.api.utils.PackageManagerUtil	field	private static final String TAG;
+com.amazon.device.sale.api.utils.PackageManagerUtil	field	private static final boolean DEBUG;
+com.amazon.device.sale.api.utils.PackageManagerUtil	method	private static String getApplicationNameFromPackageName(String str)
+com.amazon.device.sale.api.utils.PackageManagerUtil	method	private static boolean checkCustomAppNamePermission(String str)
+com.amazon.device.sale.api.utils.PackageManagerUtil	method	public static Bitmap getBitmapFromPackage(String str, int i)
+com.amazon.device.sale.api.utils.PackageManagerUtil	method	public static Resources getResourcesFromPackage(String str)
+com.amazon.device.sale.api.utils.PackageManagerUtil	method	public static String getApplicationName(Notification notification, String str)
+com.amazon.device.sale.api.utils.PackageManagerUtil	method	public static boolean isPackageInstalled(Context context, String str)
+com.amazon.device.sale.api.utils.PackageManagerUtil	method	public static void setContext(Context context)
+com.amazon.device.sale.api.utils.TagMgr	method	public static List<String> cleanList(List<String> list)
+com.amazon.device.sale.api.utils.TagMgr	method	public static List<String> stringToList(String str)
+com.amazon.device.sale.api.utils.TagMgr	method	public static String cleanTag(String str)
+com.amazon.device.sale.api.utils.TagMgr	method	public static String listToString(List<String> list)
+com.amazon.device.sale.api.utils.TagMgr	method	public static boolean equals(List<String> list, List<String> list2)
+com.amazon.device.sale.api.utils.TagMgr	method	public static int addUnique(List<String> list, String str)
+com.amazon.device.sale.api.utils.TagMgr	method	public static int indexOf(List<String> list, String str)
+com.amazon.device.sale.api.utils.TimeUtil	field	private static final SimpleDateFormat ISO_FORMATTER;
+com.amazon.device.sale.api.utils.TimeUtil	field	private static final String TAG;
+com.amazon.device.sale.api.utils.TimeUtil	field	private static final TimeZone UTC;
+com.amazon.device.sale.api.utils.TimeUtil	method	public static Date utcNowToDate()
+com.amazon.device.sale.api.utils.TimeUtil	method	public static Date utcToDate(String str)
+com.amazon.device.sale.api.utils.TimeUtil	method	public static Date utcToLocalDate(Date date)
+com.amazon.device.sale.api.utils.TimeUtil	method	public static String millisecondsToDisplayTime(int i)
+com.amazon.device.sale.api.utils.TimeUtil	method	public static String utcNowToString()
+com.amazon.device.sale.api.utils.TimeUtil	method	public static String utcToLocalString(Date date)
+com.amazon.device.sale.api.utils.TimeUtil	method	public static String utcToString(Date date)
+com.amazon.device.sale.api.utils.TimeUtil	method	public static long getCurrentTime()
+com.amazon.device.sale.api.utils.Util	field	private static ArrayMap<String, Integer> sMediaMetadataType;
+com.amazon.device.sale.api.utils.Util	field	private static Context sContext;
+com.amazon.device.sale.api.utils.Util	field	private static final String TAG;
+com.amazon.device.sale.api.utils.Util	field	public static final int BASE_1000;
+com.amazon.device.sale.api.utils.Util	field	public static final int BASE_1024;
+com.amazon.device.sale.api.utils.Util	field	public static final int MEDIAMETADATA_TYPE_BITMAP;
+com.amazon.device.sale.api.utils.Util	field	public static final int MEDIAMETADATA_TYPE_INVALID;
+com.amazon.device.sale.api.utils.Util	field	public static final int MEDIAMETADATA_TYPE_LONG;
+com.amazon.device.sale.api.utils.Util	field	public static final int MEDIAMETADATA_TYPE_RATING;
+com.amazon.device.sale.api.utils.Util	field	public static final int MEDIAMETADATA_TYPE_TEXT;
+com.amazon.device.sale.api.utils.Util	method	private static int textWidth(String str)
+com.amazon.device.sale.api.utils.Util	method	public static Application getApplication()
+com.amazon.device.sale.api.utils.Util	method	public static Context getContext()
+com.amazon.device.sale.api.utils.Util	method	public static Intent getIntent(PendingIntent pendingIntent)
+com.amazon.device.sale.api.utils.Util	method	public static String getConcatenatedString(String... strArr)
+com.amazon.device.sale.api.utils.Util	method	public static String singleQuotedOrNull(String str)
+com.amazon.device.sale.api.utils.Util	method	public static String singleQuotedOrNull(Uri uri)
+com.amazon.device.sale.api.utils.Util	method	public static String smartEllipsis(String str, int i)
+com.amazon.device.sale.api.utils.Util	method	public static String toString(List<String> list)
+com.amazon.device.sale.api.utils.Util	method	public static String toString(String[] strArr)
+com.amazon.device.sale.api.utils.Util	method	public static boolean isSubclassOf(String str, Class cls)
+com.amazon.device.sale.api.utils.Util	method	public static boolean isValidString(String str)
+com.amazon.device.sale.api.utils.Util	method	public static int getMediaMetadataType(String str)
+com.amazon.device.sale.api.utils.Util	method	public static void setContext(Context context)
+com.amazon.media.notifications.AmazonNotificationManager	field	private IAmazonNotificationManager mBinder;
+com.amazon.media.notifications.AmazonNotificationManager	field	private NotificationPostedCallbackImpl mNotificationPostedCallbackImpl;
+com.amazon.media.notifications.AmazonNotificationManager	field	private ServiceConnection mConnection;
+com.amazon.media.notifications.AmazonNotificationManager	field	private ServiceStateListener mServiceStateListner;
+com.amazon.media.notifications.AmazonNotificationManager	field	private boolean mIsBound;
+com.amazon.media.notifications.AmazonNotificationManager	field	private static String sPackage;
+com.amazon.media.notifications.AmazonNotificationManager	field	private static final String BINDER_CLASS;
+com.amazon.media.notifications.AmazonNotificationManager	field	private static final String BINDER_PKG;
+com.amazon.media.notifications.AmazonNotificationManager	field	private static final String TAG;
+com.amazon.media.notifications.AmazonNotificationManager	field	private static final boolean DEBUG;
+com.amazon.media.notifications.AmazonNotificationManager	method	private synchronized void doBindService(Context context)
+com.amazon.media.notifications.AmazonNotificationManager	method	public AmazonNotificationManager(Context context, ServiceStateListener serviceStateListener)
+com.amazon.media.notifications.AmazonNotificationManager	method	public synchronized StatusBarNotification[] getNotifications()
+com.amazon.media.notifications.AmazonNotificationManager	method	public synchronized void registerNotificationPostedListener(NotificationPostedCallback notificationPostedCallback)
+com.amazon.media.notifications.AmazonNotificationManager	method	public synchronized void removeAllNotifications()
+com.amazon.media.notifications.AmazonNotificationManager	method	public synchronized void removeNotifications(String[] strArr)
+com.amazon.media.notifications.AmazonNotificationManager	method	public synchronized void unRegisterNotificationPostedListener(NotificationPostedCallback notificationPostedCallback)
+com.amazon.media.notifications.AmazonNotificationManager	method	public synchronized void unbindService(Context context)
+com.amazon.media.notifications.AmazonNotificationManager$NotificationPostedCallbackImpl	field	private NotificationPostedCallback mCallback;
+com.amazon.media.notifications.AmazonNotificationManager$NotificationPostedCallbackImpl	method	public void onNotificationPosted(StatusBarNotification statusBarNotification)
+com.amazon.media.notifications.AmazonNotificationManager$NotificationPostedCallbackImpl	method	public void onNotificationRemoved(StatusBarNotification statusBarNotification)
+com.amazon.media.notifications.AmazonNotificationManager$NotificationPostedCallbackImpl	method	public void setCallback(NotificationPostedCallback notificationPostedCallback)
+com.amazon.media.notifications.AmazonNotificationManager$SynchronousExecutor	method	private SynchronousExecutor()
+com.amazon.media.notifications.AmazonNotificationManager$SynchronousExecutor	method	public void execute(Runnable runnable)
+com.amazon.media.notifications.IAmazonNotificationManager$Default	method	public IBinder asBinder()
+com.amazon.media.notifications.IAmazonNotificationManager$Default	method	public StatusBarNotification[] getNotifications() throws RemoteException
+com.amazon.media.notifications.IAmazonNotificationManager$Default	method	public void registerNotificationPostedListener(INotificationPostedCallback iNotificationPostedCallback) throws RemoteException
+com.amazon.media.notifications.IAmazonNotificationManager$Default	method	public void removeAllNotifications() throws RemoteException
+com.amazon.media.notifications.IAmazonNotificationManager$Default	method	public void removeNotifications(String[] strArr) throws RemoteException
+com.amazon.media.notifications.IAmazonNotificationManager$Default	method	public void unRegisterNotificationPostedListener(INotificationPostedCallback iNotificationPostedCallback) throws RemoteException
+com.amazon.media.notifications.IAmazonNotificationManager$Stub	field	private static final String DESCRIPTOR;
+com.amazon.media.notifications.IAmazonNotificationManager$Stub	field	static final int TRANSACTION_getNotifications;
+com.amazon.media.notifications.IAmazonNotificationManager$Stub	field	static final int TRANSACTION_registerNotificationPostedListener;
+com.amazon.media.notifications.IAmazonNotificationManager$Stub	field	static final int TRANSACTION_removeAllNotifications;
+com.amazon.media.notifications.IAmazonNotificationManager$Stub	field	static final int TRANSACTION_removeNotifications;
+com.amazon.media.notifications.IAmazonNotificationManager$Stub	field	static final int TRANSACTION_unRegisterNotificationPostedListener;
+com.amazon.media.notifications.IAmazonNotificationManager$Stub	method	public IBinder asBinder()
+com.amazon.media.notifications.IAmazonNotificationManager$Stub	method	public Stub()
+com.amazon.media.notifications.IAmazonNotificationManager$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.media.notifications.IAmazonNotificationManager$Stub	method	public static IAmazonNotificationManager asInterface(IBinder iBinder)
+com.amazon.media.notifications.IAmazonNotificationManager$Stub	method	public static IAmazonNotificationManager getDefaultImpl()
+com.amazon.media.notifications.IAmazonNotificationManager$Stub	method	public static boolean setDefaultImpl(IAmazonNotificationManager iAmazonNotificationManager)
+com.amazon.media.notifications.IAmazonNotificationManager$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.media.notifications.IAmazonNotificationManager$Stub$Proxy	field	public static IAmazonNotificationManager sDefaultImpl;
+com.amazon.media.notifications.IAmazonNotificationManager$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.media.notifications.IAmazonNotificationManager$Stub$Proxy	method	public StatusBarNotification[] getNotifications() throws RemoteException
+com.amazon.media.notifications.IAmazonNotificationManager$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.media.notifications.IAmazonNotificationManager$Stub$Proxy	method	public void registerNotificationPostedListener(INotificationPostedCallback iNotificationPostedCallback) throws RemoteException
+com.amazon.media.notifications.IAmazonNotificationManager$Stub$Proxy	method	public void removeAllNotifications() throws RemoteException
+com.amazon.media.notifications.IAmazonNotificationManager$Stub$Proxy	method	public void removeNotifications(String[] strArr) throws RemoteException
+com.amazon.media.notifications.IAmazonNotificationManager$Stub$Proxy	method	public void unRegisterNotificationPostedListener(INotificationPostedCallback iNotificationPostedCallback) throws RemoteException
+com.amazon.media.notifications.INotificationPostedCallback$Default	method	public IBinder asBinder()
+com.amazon.media.notifications.INotificationPostedCallback$Default	method	public void onNotificationPosted(StatusBarNotification statusBarNotification) throws RemoteException
+com.amazon.media.notifications.INotificationPostedCallback$Default	method	public void onNotificationRemoved(StatusBarNotification statusBarNotification) throws RemoteException
+com.amazon.media.notifications.INotificationPostedCallback$Stub	field	private static final String DESCRIPTOR;
+com.amazon.media.notifications.INotificationPostedCallback$Stub	field	static final int TRANSACTION_onNotificationPosted;
+com.amazon.media.notifications.INotificationPostedCallback$Stub	field	static final int TRANSACTION_onNotificationRemoved;
+com.amazon.media.notifications.INotificationPostedCallback$Stub	method	public IBinder asBinder()
+com.amazon.media.notifications.INotificationPostedCallback$Stub	method	public Stub()
+com.amazon.media.notifications.INotificationPostedCallback$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.media.notifications.INotificationPostedCallback$Stub	method	public static INotificationPostedCallback asInterface(IBinder iBinder)
+com.amazon.media.notifications.INotificationPostedCallback$Stub	method	public static INotificationPostedCallback getDefaultImpl()
+com.amazon.media.notifications.INotificationPostedCallback$Stub	method	public static boolean setDefaultImpl(INotificationPostedCallback iNotificationPostedCallback)
+com.amazon.media.notifications.INotificationPostedCallback$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.media.notifications.INotificationPostedCallback$Stub$Proxy	field	public static INotificationPostedCallback sDefaultImpl;
+com.amazon.media.notifications.INotificationPostedCallback$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.media.notifications.INotificationPostedCallback$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.media.notifications.INotificationPostedCallback$Stub$Proxy	method	public void onNotificationPosted(StatusBarNotification statusBarNotification) throws RemoteException
+com.amazon.media.notifications.INotificationPostedCallback$Stub$Proxy	method	public void onNotificationRemoved(StatusBarNotification statusBarNotification) throws RemoteException
+com.amazon.media.recommendations.IRecommendation	field	public String backgroundImageUri;
+com.amazon.media.recommendations.IRecommendation	field	public String contentImageUri;
+com.amazon.media.recommendations.IRecommendation	field	public String contentUri;
+com.amazon.media.recommendations.IRecommendation	field	public String displayName;
+com.amazon.media.recommendations.IRecommendation	field	public String maturityRating;
+com.amazon.media.recommendations.IRecommendation	field	public String text;
+com.amazon.media.recommendations.IRecommendation	field	public String title;
+com.amazon.media.recommendations.IRecommendation	field	public boolean isCaptionAvailable;
+com.amazon.media.recommendations.IRecommendation	field	public char[] contentImage;
+com.amazon.media.recommendations.IRecommendation	field	public int category;
+com.amazon.media.recommendations.IRecommendation	field	public int customerAggregateRating;
+com.amazon.media.recommendations.IRecommendation	field	public int customerRatingCount;
+com.amazon.media.recommendations.IRecommendation	field	public int displayActionOption;
+com.amazon.media.recommendations.IRecommendation	field	public int releaseYear;
+com.amazon.media.recommendations.IRecommendation	field	public int runningTime;
+com.amazon.media.recommendations.IRecommendation	method	public int describeContents()
+com.amazon.media.recommendations.IRecommendation	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.media.recommendations.IRecommendationManager$Default	method	public IBinder asBinder()
+com.amazon.media.recommendations.IRecommendationManager$Default	method	public int[] addRecommendations(String str, List<IRecommendation> list) throws RemoteException
+com.amazon.media.recommendations.IRecommendationManager$Default	method	public void removeAllRecommendations(String str) throws RemoteException
+com.amazon.media.recommendations.IRecommendationManager$Default	method	public void removeRecommendations(String str, int[] iArr) throws RemoteException
+com.amazon.media.recommendations.IRecommendationManager$Stub	field	private static final String DESCRIPTOR;
+com.amazon.media.recommendations.IRecommendationManager$Stub	field	static final int TRANSACTION_addRecommendations;
+com.amazon.media.recommendations.IRecommendationManager$Stub	field	static final int TRANSACTION_removeAllRecommendations;
+com.amazon.media.recommendations.IRecommendationManager$Stub	field	static final int TRANSACTION_removeRecommendations;
+com.amazon.media.recommendations.IRecommendationManager$Stub	method	public IBinder asBinder()
+com.amazon.media.recommendations.IRecommendationManager$Stub	method	public Stub()
+com.amazon.media.recommendations.IRecommendationManager$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.media.recommendations.IRecommendationManager$Stub	method	public static IRecommendationManager asInterface(IBinder iBinder)
+com.amazon.media.recommendations.IRecommendationManager$Stub	method	public static IRecommendationManager getDefaultImpl()
+com.amazon.media.recommendations.IRecommendationManager$Stub	method	public static boolean setDefaultImpl(IRecommendationManager iRecommendationManager)
+com.amazon.media.recommendations.IRecommendationManager$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.media.recommendations.IRecommendationManager$Stub$Proxy	field	public static IRecommendationManager sDefaultImpl;
+com.amazon.media.recommendations.IRecommendationManager$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.media.recommendations.IRecommendationManager$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.media.recommendations.IRecommendationManager$Stub$Proxy	method	public int[] addRecommendations(String str, List<IRecommendation> list) throws RemoteException
+com.amazon.media.recommendations.IRecommendationManager$Stub$Proxy	method	public void removeAllRecommendations(String str) throws RemoteException
+com.amazon.media.recommendations.IRecommendationManager$Stub$Proxy	method	public void removeRecommendations(String str, int[] iArr) throws RemoteException
+com.amazon.media.recommendations.IRecommendationManagerExtender$Default	method	public IBinder asBinder()
+com.amazon.media.recommendations.IRecommendationManagerExtender$Default	method	public int[] addRecommendationsExtender(String str, List<IRecommendation> list) throws RemoteException
+com.amazon.media.recommendations.IRecommendationManagerExtender$Default	method	public void removeAllRecommendationsExtender(String str) throws RemoteException
+com.amazon.media.recommendations.IRecommendationManagerExtender$Default	method	public void removeRecommendationsExtender(String str, int[] iArr) throws RemoteException
+com.amazon.media.recommendations.IRecommendationManagerExtender$Stub	field	private static final String DESCRIPTOR;
+com.amazon.media.recommendations.IRecommendationManagerExtender$Stub	field	static final int TRANSACTION_addRecommendationsExtender;
+com.amazon.media.recommendations.IRecommendationManagerExtender$Stub	field	static final int TRANSACTION_removeAllRecommendationsExtender;
+com.amazon.media.recommendations.IRecommendationManagerExtender$Stub	field	static final int TRANSACTION_removeRecommendationsExtender;
+com.amazon.media.recommendations.IRecommendationManagerExtender$Stub	method	public IBinder asBinder()
+com.amazon.media.recommendations.IRecommendationManagerExtender$Stub	method	public Stub()
+com.amazon.media.recommendations.IRecommendationManagerExtender$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.media.recommendations.IRecommendationManagerExtender$Stub	method	public static IRecommendationManagerExtender asInterface(IBinder iBinder)
+com.amazon.media.recommendations.IRecommendationManagerExtender$Stub	method	public static IRecommendationManagerExtender getDefaultImpl()
+com.amazon.media.recommendations.IRecommendationManagerExtender$Stub	method	public static boolean setDefaultImpl(IRecommendationManagerExtender iRecommendationManagerExtender)
+com.amazon.media.recommendations.IRecommendationManagerExtender$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.media.recommendations.IRecommendationManagerExtender$Stub$Proxy	field	public static IRecommendationManagerExtender sDefaultImpl;
+com.amazon.media.recommendations.IRecommendationManagerExtender$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.media.recommendations.IRecommendationManagerExtender$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.media.recommendations.IRecommendationManagerExtender$Stub$Proxy	method	public int[] addRecommendationsExtender(String str, List<IRecommendation> list) throws RemoteException
+com.amazon.media.recommendations.IRecommendationManagerExtender$Stub$Proxy	method	public void removeAllRecommendationsExtender(String str) throws RemoteException
+com.amazon.media.recommendations.IRecommendationManagerExtender$Stub$Proxy	method	public void removeRecommendationsExtender(String str, int[] iArr) throws RemoteException
+com.amazon.media.recommendations.Recommendation	field	public Category category;
+com.amazon.media.recommendations.Recommendation	field	public DisplayAction displayActionOption;
+com.amazon.media.recommendations.Recommendation	field	public String backgroundImageUri;
+com.amazon.media.recommendations.Recommendation	field	public String contentImageUri;
+com.amazon.media.recommendations.Recommendation	field	public String contentUri;
+com.amazon.media.recommendations.Recommendation	field	public String displayName;
+com.amazon.media.recommendations.Recommendation	field	public String maturityRating;
+com.amazon.media.recommendations.Recommendation	field	public String text;
+com.amazon.media.recommendations.Recommendation	field	public String title;
+com.amazon.media.recommendations.Recommendation	field	public boolean isCaptionAvailable;
+com.amazon.media.recommendations.Recommendation	field	public char[] contentImage;
+com.amazon.media.recommendations.Recommendation	field	public int customerAggregateRating;
+com.amazon.media.recommendations.Recommendation	field	public int customerRatingCount;
+com.amazon.media.recommendations.Recommendation	field	public int releaseYear;
+com.amazon.media.recommendations.Recommendation	field	public int runningTime;
+com.amazon.media.recommendations.Recommendation$Category	field	private final int mValue;
+com.amazon.media.recommendations.Recommendation$Category	method	public int getValue()
+com.amazon.media.recommendations.Recommendation$Category	method	public static Category fromValue(int i)
+com.amazon.media.recommendations.Recommendation$DisplayAction	field	private final int mValue;
+com.amazon.media.recommendations.Recommendation$DisplayAction	method	public int getValue()
+com.amazon.media.recommendations.Recommendation$DisplayAction	method	public static DisplayAction fromValue(int i)
+com.amazon.media.recommendations.RecommendationConsumerService	field	private static FileObserver sImageCacheObserver;
+com.amazon.media.recommendations.RecommendationConsumerService	field	private static INativeServiceManager sNativeServiceManager;
+com.amazon.media.recommendations.RecommendationConsumerService	field	private static final Map<String, Integer> sActiveImagePaths;
+com.amazon.media.recommendations.RecommendationConsumerService	field	private static final RecommendationJni RECOMMENDATIONS_JNI;
+com.amazon.media.recommendations.RecommendationConsumerService	field	private static final String TAG;
+com.amazon.media.recommendations.RecommendationConsumerService	field	private static final boolean DEBUG;
+com.amazon.media.recommendations.RecommendationConsumerService	field	private static volatile RecommendationConsumerCallback sCallback;
+com.amazon.media.recommendations.RecommendationConsumerService	method	private IBinder getPendingIntentBinder(PendingIntent pendingIntent)
+com.amazon.media.recommendations.RecommendationConsumerService	method	private List<IRecommendationsResult> filterMissingImages(List<IRecommendationsResult> list, String str)
+com.amazon.media.recommendations.RecommendationConsumerService	method	private void assignPendingIntentToResults(List<IRecommendationsResult> list)
+com.amazon.media.recommendations.RecommendationConsumerService	method	private void startImageCacheMonitoring()
+com.amazon.media.recommendations.RecommendationConsumerService	method	private void stopImageCacheMonitoring()
+com.amazon.media.recommendations.RecommendationConsumerService	method	public IBinder onBind(Intent intent)
+com.amazon.media.recommendations.RecommendationConsumerService	method	public List<IRecommendationsResult> getRecommendationsInternal(String str)
+com.amazon.media.recommendations.RecommendationConsumerService	method	public static void setNativeServiceManager(INativeServiceManager iNativeServiceManager)
+com.amazon.media.recommendations.RecommendationConsumerService	method	public static void untrackImagePath(String str)
+com.amazon.media.recommendations.RecommendationConsumerService	method	public void addRecommendationsConfigInternal(List<IRecommendationConfig> list)
+com.amazon.media.recommendations.RecommendationConsumerService	method	public void onCreate()
+com.amazon.media.recommendations.RecommendationConsumerService	method	public void onDestroy()
+com.amazon.media.recommendations.RecommendationConsumerService	method	public void removeRecommendationsConfigInternal(List<String> list)
+com.amazon.media.recommendations.RecommendationConsumerService	method	public void setCallback(RecommendationConsumerCallback recommendationConsumerCallback)
+com.amazon.media.recommendations.RecommendationJni	field	private static RecommendationJni sInstance;
+com.amazon.media.recommendations.RecommendationJni	method	private RecommendationJni()
+com.amazon.media.recommendations.RecommendationJni	method	protected native IRecommendationConfig getRecommendationConfig(String str);
+com.amazon.media.recommendations.RecommendationJni	method	protected native List<IRecommendationsResult> getRecommendations(String str);
+com.amazon.media.recommendations.RecommendationJni	method	protected native void addRecommendationsConfig(List<IRecommendationConfig> list);
+com.amazon.media.recommendations.RecommendationJni	method	protected native void removeRecommendationsConfig(List<String> list);
+com.amazon.media.recommendations.RecommendationJni	method	public native List<IRecommendation> removeAllRecommendations(String str);
+com.amazon.media.recommendations.RecommendationJni	method	public native List<IRecommendation> removeRecommendations(String str, int[] iArr);
+com.amazon.media.recommendations.RecommendationJni	method	public native String[] getChangedRows();
+com.amazon.media.recommendations.RecommendationJni	method	public native int[] addRecommendations(String str, List<IRecommendation> list);
+com.amazon.media.recommendations.RecommendationJni	method	public static RecommendationJni getInstance()
+com.amazon.media.recommendations.RecommendationManager	field	private IRecommendationManager mBinder;
+com.amazon.media.recommendations.RecommendationManager	field	private ServiceStateListener mServiceStateListener;
+com.amazon.media.recommendations.RecommendationManager	field	private static String sPackage;
+com.amazon.media.recommendations.RecommendationManager	field	private static final String BINDER_CLASS;
+com.amazon.media.recommendations.RecommendationManager	field	private static final String BINDER_PKG;
+com.amazon.media.recommendations.RecommendationManager	field	private static final String TAG;
+com.amazon.media.recommendations.RecommendationManager	field	private static final boolean DEBUG;
+com.amazon.media.recommendations.RecommendationManager	method	private IRecommendation toIRecommendation(Recommendation recommendation)
+com.amazon.media.recommendations.RecommendationManager	method	private synchronized void doBindService(Context context)
+com.amazon.media.recommendations.RecommendationManager	method	public RecommendationManager(Context context, ServiceStateListener serviceStateListener)
+com.amazon.media.recommendations.RecommendationManager	method	public synchronized int[] addRecommendations(List<Recommendation> list) throws IllegalArgumentException
+com.amazon.media.recommendations.RecommendationManager	method	public synchronized void removeAllRecommendations()
+com.amazon.media.recommendations.RecommendationManager	method	public synchronized void removeRecommendations(int[] iArr)
+com.amazon.media.recommendations.RecommendationManager$SynchronousExecutor	method	private SynchronousExecutor()
+com.amazon.media.recommendations.RecommendationManager$SynchronousExecutor	method	public void execute(Runnable runnable)
+com.amazon.media.recommendations.RecommendationManagerExtender	field	private IRecommendationManagerExtender mBinder;
+com.amazon.media.recommendations.RecommendationManagerExtender	field	private ServiceStateListener mServiceStateListener;
+com.amazon.media.recommendations.RecommendationManagerExtender	field	private static String sPackage;
+com.amazon.media.recommendations.RecommendationManagerExtender	field	private static final String BINDER_CLASS;
+com.amazon.media.recommendations.RecommendationManagerExtender	field	private static final String BINDER_PKG;
+com.amazon.media.recommendations.RecommendationManagerExtender	field	private static final String TAG;
+com.amazon.media.recommendations.RecommendationManagerExtender	field	private static final boolean DEBUG;
+com.amazon.media.recommendations.RecommendationManagerExtender	method	private synchronized void doBindService(Context context)
+com.amazon.media.recommendations.RecommendationManagerExtender	method	public RecommendationManagerExtender(Context context, ServiceStateListener serviceStateListener, String str)
+com.amazon.media.recommendations.RecommendationManagerExtender	method	public synchronized int[] addRecommendationsExtender(String str, List<IRecommendation> list) throws IllegalArgumentException
+com.amazon.media.recommendations.RecommendationManagerExtender	method	public synchronized void removeAllRecommendationsExtender()
+com.amazon.media.recommendations.RecommendationManagerExtender	method	public synchronized void removeRecommendationsExtender(int[] iArr)
+com.amazon.media.recommendations.RecommendationManagerExtender$SynchronousExecutor	method	private SynchronousExecutor()
+com.amazon.media.recommendations.RecommendationManagerExtender$SynchronousExecutor	method	public void execute(Runnable runnable)
+com.amazon.media.recommendations.RecommendationManagerService	field	private static RecommendationManagerService sInstance;
+com.amazon.media.recommendations.RecommendationManagerService	field	private static final RecommendationJni RECOMMENDATIONS_JNI;
+com.amazon.media.recommendations.RecommendationManagerService	field	private static final String PRIVILEGED_PACKAGE_ID;
+com.amazon.media.recommendations.RecommendationManagerService	field	private static final String TAG;
+com.amazon.media.recommendations.RecommendationManagerService	field	private static final boolean DEBUG;
+com.amazon.media.recommendations.RecommendationManagerService	field	private static final int[] NO_UUID;
+com.amazon.media.recommendations.RecommendationManagerService	method	public IBinder onBind(Intent intent)
+com.amazon.media.recommendations.RecommendationManagerService	method	public boolean isPackageInUid(String str)
+com.amazon.media.recommendations.RecommendationManagerService	method	public int[] addRecommendationsInternal(String str, List<IRecommendation> list)
+com.amazon.media.recommendations.RecommendationManagerService	method	public static RecommendationManagerService getInstance()
+com.amazon.media.recommendations.RecommendationManagerService	method	public void onCreate()
+com.amazon.media.recommendations.RecommendationManagerService	method	public void onDestroy()
+com.amazon.media.recommendations.RecommendationManagerService	method	public void removeAllRecommendationsForPackage(String str)
+com.amazon.media.recommendations.RecommendationManagerService	method	public void removeAllRecommendationsInternal(String str)
+com.amazon.media.recommendations.RecommendationManagerService	method	public void removeRecommendationsInternal(String str, int[] iArr)
+com.amazon.media.recommendations.consumer.IPackageInfo	field	public String name;
+com.amazon.media.recommendations.consumer.IPackageInfo	field	public String signature;
+com.amazon.media.recommendations.consumer.IPackageInfo	method	protected IPackageInfo(Parcel parcel)
+com.amazon.media.recommendations.consumer.IPackageInfo	method	public IPackageInfo()
+com.amazon.media.recommendations.consumer.IPackageInfo	method	public int describeContents()
+com.amazon.media.recommendations.consumer.IPackageInfo	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.media.recommendations.consumer.IRecommendationConfig	field	public List<IPackageInfo> includedPackageList;
+com.amazon.media.recommendations.consumer.IRecommendationConfig	field	public List<String> excludedPackageList;
+com.amazon.media.recommendations.consumer.IRecommendationConfig	field	public String uniqueRowId;
+com.amazon.media.recommendations.consumer.IRecommendationConfig	field	public int[] includedCategories;
+com.amazon.media.recommendations.consumer.IRecommendationConfig	method	protected IRecommendationConfig(Parcel parcel)
+com.amazon.media.recommendations.consumer.IRecommendationConfig	method	public IRecommendationConfig()
+com.amazon.media.recommendations.consumer.IRecommendationConfig	method	public List<IPackageInfo> getIncludedPackageList()
+com.amazon.media.recommendations.consumer.IRecommendationConfig	method	public List<String> getExcludedPackageList()
+com.amazon.media.recommendations.consumer.IRecommendationConfig	method	public String getUniqueRowId()
+com.amazon.media.recommendations.consumer.IRecommendationConfig	method	public int describeContents()
+com.amazon.media.recommendations.consumer.IRecommendationConfig	method	public int[] getIncludedCategories()
+com.amazon.media.recommendations.consumer.IRecommendationConfig	method	public void setExcludedPackageList(List<String> list)
+com.amazon.media.recommendations.consumer.IRecommendationConfig	method	public void setIncludedCategories(int[] iArr)
+com.amazon.media.recommendations.consumer.IRecommendationConfig	method	public void setIncludedPackageList(List<IPackageInfo> list)
+com.amazon.media.recommendations.consumer.IRecommendationConfig	method	public void setUniqueRowId(String str)
+com.amazon.media.recommendations.consumer.IRecommendationConfig	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.media.recommendations.consumer.IRecommendationConsumer$Default	method	public IBinder asBinder()
+com.amazon.media.recommendations.consumer.IRecommendationConsumer$Default	method	public List<IRecommendationsResult> getRecommendations(String str) throws RemoteException
+com.amazon.media.recommendations.consumer.IRecommendationConsumer$Default	method	public void addRecommendationsConfig(List<IRecommendationConfig> list) throws RemoteException
+com.amazon.media.recommendations.consumer.IRecommendationConsumer$Default	method	public void removeRecommendationsConfig(List<String> list) throws RemoteException
+com.amazon.media.recommendations.consumer.IRecommendationConsumer$Stub	field	private static final String DESCRIPTOR;
+com.amazon.media.recommendations.consumer.IRecommendationConsumer$Stub	field	static final int TRANSACTION_addRecommendationsConfig;
+com.amazon.media.recommendations.consumer.IRecommendationConsumer$Stub	field	static final int TRANSACTION_getRecommendations;
+com.amazon.media.recommendations.consumer.IRecommendationConsumer$Stub	field	static final int TRANSACTION_removeRecommendationsConfig;
+com.amazon.media.recommendations.consumer.IRecommendationConsumer$Stub	method	public IBinder asBinder()
+com.amazon.media.recommendations.consumer.IRecommendationConsumer$Stub	method	public Stub()
+com.amazon.media.recommendations.consumer.IRecommendationConsumer$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.media.recommendations.consumer.IRecommendationConsumer$Stub	method	public static IRecommendationConsumer asInterface(IBinder iBinder)
+com.amazon.media.recommendations.consumer.IRecommendationConsumer$Stub	method	public static IRecommendationConsumer getDefaultImpl()
+com.amazon.media.recommendations.consumer.IRecommendationConsumer$Stub	method	public static boolean setDefaultImpl(IRecommendationConsumer iRecommendationConsumer)
+com.amazon.media.recommendations.consumer.IRecommendationConsumer$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.media.recommendations.consumer.IRecommendationConsumer$Stub$Proxy	field	public static IRecommendationConsumer sDefaultImpl;
+com.amazon.media.recommendations.consumer.IRecommendationConsumer$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.media.recommendations.consumer.IRecommendationConsumer$Stub$Proxy	method	public List<IRecommendationsResult> getRecommendations(String str) throws RemoteException
+com.amazon.media.recommendations.consumer.IRecommendationConsumer$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.media.recommendations.consumer.IRecommendationConsumer$Stub$Proxy	method	public void addRecommendationsConfig(List<IRecommendationConfig> list) throws RemoteException
+com.amazon.media.recommendations.consumer.IRecommendationConsumer$Stub$Proxy	method	public void removeRecommendationsConfig(List<String> list) throws RemoteException
+com.amazon.media.recommendations.consumer.IRecommendationsResult	field	public IBinder contentIntent;
+com.amazon.media.recommendations.consumer.IRecommendationsResult	field	public IBinder dismissIntent;
+com.amazon.media.recommendations.consumer.IRecommendationsResult	field	public IPackageInfo pkgInfo;
+com.amazon.media.recommendations.consumer.IRecommendationsResult	field	public IRecommendation recommendation;
+com.amazon.media.recommendations.consumer.IRecommendationsResult	field	public char[] imageBuffer;
+com.amazon.media.recommendations.consumer.IRecommendationsResult	field	public int uuid;
+com.amazon.media.recommendations.consumer.IRecommendationsResult	method	protected IRecommendationsResult(Parcel parcel)
+com.amazon.media.recommendations.consumer.IRecommendationsResult	method	public IBinder getContentIntent()
+com.amazon.media.recommendations.consumer.IRecommendationsResult	method	public IBinder getDismissIntent()
+com.amazon.media.recommendations.consumer.IRecommendationsResult	method	public IPackageInfo getPkgInfo()
+com.amazon.media.recommendations.consumer.IRecommendationsResult	method	public IRecommendation getRecommendation()
+com.amazon.media.recommendations.consumer.IRecommendationsResult	method	public IRecommendationsResult()
+com.amazon.media.recommendations.consumer.IRecommendationsResult	method	public char[] getImageBuffer()
+com.amazon.media.recommendations.consumer.IRecommendationsResult	method	public int describeContents()
+com.amazon.media.recommendations.consumer.IRecommendationsResult	method	public int getUuid()
+com.amazon.media.recommendations.consumer.IRecommendationsResult	method	public void setContentIntent(IBinder iBinder)
+com.amazon.media.recommendations.consumer.IRecommendationsResult	method	public void setDismissIntent(IBinder iBinder)
+com.amazon.media.recommendations.consumer.IRecommendationsResult	method	public void setImageBuffer(char[] cArr)
+com.amazon.media.recommendations.consumer.IRecommendationsResult	method	public void setPkgInfo(IPackageInfo iPackageInfo)
+com.amazon.media.recommendations.consumer.IRecommendationsResult	method	public void setRecommendation(IRecommendation iRecommendation)
+com.amazon.media.recommendations.consumer.IRecommendationsResult	method	public void setUuid(int i)
+com.amazon.media.recommendations.consumer.IRecommendationsResult	method	public void writeToParcel(Parcel parcel, int i)
+com.amazon.media.recommendations.consumer.PackageInfo	field	public String name;
+com.amazon.media.recommendations.consumer.PackageInfo	field	public String signature;
+com.amazon.media.recommendations.consumer.RecommendationConfig	field	public PackageInfo[] includedPackageList;
+com.amazon.media.recommendations.consumer.RecommendationConfig	field	public Recommendation.Category[] includedCategories;
+com.amazon.media.recommendations.consumer.RecommendationConfig	field	public String uniqueRowId;
+com.amazon.media.recommendations.consumer.RecommendationConfig	field	public String[] excludedPackageList;
+com.amazon.media.recommendations.consumer.RecommendationConsumer	field	private IRecommendationConsumer mBinder;
+com.amazon.media.recommendations.consumer.RecommendationConsumer	field	private ServiceStateListener mServiceStateListener;
+com.amazon.media.recommendations.consumer.RecommendationConsumer	field	private static final String BINDER_CLASS;
+com.amazon.media.recommendations.consumer.RecommendationConsumer	field	private static final String BINDER_PKG;
+com.amazon.media.recommendations.consumer.RecommendationConsumer	field	private static final String EMPTY;
+com.amazon.media.recommendations.consumer.RecommendationConsumer	field	private static final String TAG;
+com.amazon.media.recommendations.consumer.RecommendationConsumer	field	private static final boolean DEBUG;
+com.amazon.media.recommendations.consumer.RecommendationConsumer	method	private IRecommendationConfig toIRecommendationConfig(RecommendationConfig recommendationConfig)
+com.amazon.media.recommendations.consumer.RecommendationConsumer	method	private PendingIntent readPendingIntentFromBinder(IBinder iBinder)
+com.amazon.media.recommendations.consumer.RecommendationConsumer	method	private RecommendationsResult toRecommendationResult(IRecommendationsResult iRecommendationsResult)
+com.amazon.media.recommendations.consumer.RecommendationConsumer	method	private synchronized void doBindService(Context context)
+com.amazon.media.recommendations.consumer.RecommendationConsumer	method	public List<RecommendationsResult> getRecommendations(String str) throws IllegalArgumentException
+com.amazon.media.recommendations.consumer.RecommendationConsumer	method	public RecommendationConsumer(Context context, ServiceStateListener serviceStateListener)
+com.amazon.media.recommendations.consumer.RecommendationConsumer	method	public void addRecommendationsConfig(List<RecommendationConfig> list) throws IllegalArgumentException
+com.amazon.media.recommendations.consumer.RecommendationConsumer	method	public void removeRecommendationsConfig(List<String> list) throws IllegalArgumentException
+com.amazon.media.recommendations.consumer.RecommendationConsumer$SynchronousExecutor	method	private SynchronousExecutor()
+com.amazon.media.recommendations.consumer.RecommendationConsumer$SynchronousExecutor	method	public void execute(Runnable runnable)
+com.amazon.media.recommendations.consumer.RecommendationsResult	field	public PackageInfo pkgInfo;
+com.amazon.media.recommendations.consumer.RecommendationsResult	field	public PendingIntent contentIntent;
+com.amazon.media.recommendations.consumer.RecommendationsResult	field	public PendingIntent dismissIntent;
+com.amazon.media.recommendations.consumer.RecommendationsResult	field	public Recommendation recommendation;
+com.amazon.media.recommendations.consumer.RecommendationsResult	field	public char[] imageBuffer;
+com.amazon.media.recommendations.consumer.RecommendationsResult	field	public int uuid;
+com.amazon.media.recommendations.handlers.NotificationHandler	field	private Context mContext;
+com.amazon.media.recommendations.handlers.NotificationHandler	field	private UUID mObjectID;
+com.amazon.media.recommendations.handlers.NotificationHandler	field	private static ImageProcessManager sImageProcessManager;
+com.amazon.media.recommendations.handlers.NotificationHandler	field	private static NotificationHandler sInstance;
+com.amazon.media.recommendations.handlers.NotificationHandler	field	private static final String ANDROID_PACKAGE;
+com.amazon.media.recommendations.handlers.NotificationHandler	field	private static final String AUTOGROUP_KEY;
+com.amazon.media.recommendations.handlers.NotificationHandler	field	private static final String FIRETV_NOTIFICATION_CATEGORY;
+com.amazon.media.recommendations.handlers.NotificationHandler	field	private static final String LARGE_ICON_KEY;
+com.amazon.media.recommendations.handlers.NotificationHandler	field	private static final String SMALL_ICON_KEY;
+com.amazon.media.recommendations.handlers.NotificationHandler	field	private static final String SUPPRESS_NOTIFICATION_CATEGORY;
+com.amazon.media.recommendations.handlers.NotificationHandler	field	private static final String TAG;
+com.amazon.media.recommendations.handlers.NotificationHandler	field	private static final boolean DEBUG;
+com.amazon.media.recommendations.handlers.NotificationHandler	field	public static NotificationImageHandler sNotificationImageHandler;
+com.amazon.media.recommendations.handlers.NotificationHandler	method	private Context getContext()
+com.amazon.media.recommendations.handlers.NotificationHandler	method	private NotificationHandler(Context context, ImageProcessManager imageProcessManager, NotificationImageHandler notificationImageHandler)
+com.amazon.media.recommendations.handlers.NotificationHandler	method	public static NotificationHandler getInstance(Context context, ImageProcessManager imageProcessManager, NotificationImageHandler notificationImageHandler)
+com.amazon.media.recommendations.handlers.NotificationHandler	method	public void handleNotificationPosted(StatusBarNotification statusBarNotification)
+com.amazon.media.recommendations.handlers.NotificationHandler	method	public void handleNotificationRemoved(StatusBarNotification statusBarNotification)
+com.amazon.media.recommendations.handlers.NotificationImageHandler	field	private static ImageProcessManager sImageProcessManager;
+com.amazon.media.recommendations.handlers.NotificationImageHandler	field	private static NotificationImageHandler sInstance;
+com.amazon.media.recommendations.handlers.NotificationImageHandler	field	private static final String LARGE_ICON_KEY;
+com.amazon.media.recommendations.handlers.NotificationImageHandler	field	private static final String TAG;
+com.amazon.media.recommendations.handlers.NotificationImageHandler	field	private static final boolean DEBUG;
+com.amazon.media.recommendations.handlers.NotificationImageHandler	method	private NotificationImageHandler(ImageProcessManager imageProcessManager)
+com.amazon.media.recommendations.handlers.NotificationImageHandler	method	public AsyncTask<Void, Void, Void> processImages(Context context, Bitmap bitmap, String str, int i, UUID uuid, String str2, String str3)
+com.amazon.media.recommendations.handlers.NotificationImageHandler	method	public AsyncTask<Void, Void, Void> processLargeIcon(Context context, Notification notification, String str, int i, UUID uuid, String str2)
+com.amazon.media.recommendations.handlers.NotificationImageHandler	method	public Bitmap processExtraPicture(Notification notification, UUID uuid)
+com.amazon.media.recommendations.handlers.NotificationImageHandler	method	public boolean processSmallIcon(Notification notification, String str, UUID uuid)
+com.amazon.media.recommendations.handlers.NotificationImageHandler	method	public static NotificationImageHandler getInstance(ImageProcessManager imageProcessManager)
+com.amazon.media.recommendations.handlers.RecommendationHandler	field	private Context mContext;
+com.amazon.media.recommendations.handlers.RecommendationHandler	field	private RecommendationImageHandler mRecommendationImageHandler;
+com.amazon.media.recommendations.handlers.RecommendationHandler	field	private RecommendationJni mRecommendationJni;
+com.amazon.media.recommendations.handlers.RecommendationHandler	field	private RecommendationManagerExtender mRecommendationManagerExtender;
+com.amazon.media.recommendations.handlers.RecommendationHandler	field	private static RecommendationHandler sInstance;
+com.amazon.media.recommendations.handlers.RecommendationHandler	field	private static final String TAG;
+com.amazon.media.recommendations.handlers.RecommendationHandler	method	private RecommendationHandler(Context context)
+com.amazon.media.recommendations.handlers.RecommendationHandler	method	public static Recommendation fromIRecommendation(IRecommendation iRecommendation)
+com.amazon.media.recommendations.handlers.RecommendationHandler	method	public static RecommendationHandler getInstance(Context context)
+com.amazon.media.recommendations.handlers.RecommendationHandler	method	public void handleNotificationPosted(StatusBarNotification statusBarNotification)
+com.amazon.media.recommendations.handlers.RecommendationHandler	method	public void handleNotificationRemoved(StatusBarNotification statusBarNotification)
+com.amazon.media.recommendations.handlers.RecommendationImageHandler	field	private static RecommendationImageHandler sRecommendationImageHandler;
+com.amazon.media.recommendations.handlers.RecommendationImageHandler	field	private static final String TAG;
+com.amazon.media.recommendations.handlers.RecommendationImageHandler	field	private static final boolean DEBUG;
+com.amazon.media.recommendations.handlers.RecommendationImageHandler	method	public AsyncTask<Void, Void, Void> processImage(Context context, Bitmap bitmap, String str, int i, IRecommendation iRecommendation)
+com.amazon.media.recommendations.handlers.RecommendationImageHandler	method	public AsyncTask<Void, Void, Void> processLargeIcon(Context context, Bitmap bitmap, String str, int i, IRecommendation iRecommendation)
+com.amazon.media.recommendations.handlers.RecommendationImageHandler	method	public static RecommendationImageHandler getInstance()
+com.amazon.media.recommendations.imageprocessing.AsyncTaskManager	field	private Map<String, AsyncTask<Void, Void, Void>> mPendingList;
+com.amazon.media.recommendations.imageprocessing.AsyncTaskManager	field	private static AsyncTaskManager sAsyncTaskManagerInstance;
+com.amazon.media.recommendations.imageprocessing.AsyncTaskManager	field	private static final String TAG;
+com.amazon.media.recommendations.imageprocessing.AsyncTaskManager	field	private static final boolean DEBUG;
+com.amazon.media.recommendations.imageprocessing.AsyncTaskManager	method	private AsyncTaskManager()
+com.amazon.media.recommendations.imageprocessing.AsyncTaskManager	method	public static AsyncTaskManager getInstance()
+com.amazon.media.recommendations.imageprocessing.AsyncTaskManager	method	public synchronized boolean isInPendingList(String str, int i)
+com.amazon.media.recommendations.imageprocessing.AsyncTaskManager	method	public synchronized int getPendingListSize()
+com.amazon.media.recommendations.imageprocessing.AsyncTaskManager	method	public synchronized void addAsyncTaskToPendingList(String str, int i, AsyncTask<Void, Void, Void> asyncTask)
+com.amazon.media.recommendations.imageprocessing.AsyncTaskManager	method	public synchronized void removeAsyncTaskFromPendingList(String str, int i, boolean z)
+com.amazon.media.recommendations.imageprocessing.ImageDimensionKey	field	private String mCategory;
+com.amazon.media.recommendations.imageprocessing.ImageDimensionKey	field	private String mPackageName;
+com.amazon.media.recommendations.imageprocessing.ImageDimensionKey	method	public ImageDimensionKey(String str, String str2)
+com.amazon.media.recommendations.imageprocessing.ImageDimensionKey	method	public String getCategory()
+com.amazon.media.recommendations.imageprocessing.ImageDimensionKey	method	public String getPackageName()
+com.amazon.media.recommendations.imageprocessing.ImageDimensionKey	method	public boolean equals(Object obj)
+com.amazon.media.recommendations.imageprocessing.ImageDimensionKey	method	public int hashCode()
+com.amazon.media.recommendations.imageprocessing.ImageDimensionKey	method	public void setCategory(String str)
+com.amazon.media.recommendations.imageprocessing.ImageDimensionKey	method	public void setPackageName(String str)
+com.amazon.media.recommendations.imageprocessing.ImageProcessManager	field	private Map<String, AsyncTask<Void, Void, Void>> mPendingList;
+com.amazon.media.recommendations.imageprocessing.ImageProcessManager	field	private static ImageProcessManager sImageProcessManagerInstance;
+com.amazon.media.recommendations.imageprocessing.ImageProcessManager	field	private static final String TAG;
+com.amazon.media.recommendations.imageprocessing.ImageProcessManager	field	private static final boolean DEBUG;
+com.amazon.media.recommendations.imageprocessing.ImageProcessManager	method	private ImageProcessManager()
+com.amazon.media.recommendations.imageprocessing.ImageProcessManager	method	public static ImageProcessManager getInstance()
+com.amazon.media.recommendations.imageprocessing.ImageProcessManager	method	public synchronized boolean isInPendingList(String str, int i)
+com.amazon.media.recommendations.imageprocessing.ImageProcessManager	method	public synchronized int getPendingListSize()
+com.amazon.media.recommendations.imageprocessing.ImageProcessManager	method	public synchronized void addAsyncTaskToPendingList(String str, int i, AsyncTask<Void, Void, Void> asyncTask)
+com.amazon.media.recommendations.imageprocessing.ImageProcessManager	method	public synchronized void removedAsyncTaskFromPendingList(String str, int i, boolean z)
+com.amazon.media.recommendations.imageprocessing.LetterBox	field	private int mMaxBigHeight;
+com.amazon.media.recommendations.imageprocessing.LetterBox	field	private int mMaxBigWidth;
+com.amazon.media.recommendations.imageprocessing.LetterBox	field	private static LetterBox sLetterBox;
+com.amazon.media.recommendations.imageprocessing.LetterBox	field	private static final String TAG;
+com.amazon.media.recommendations.imageprocessing.LetterBox	field	private static final double TILE_RATIO;
+com.amazon.media.recommendations.imageprocessing.LetterBox	field	private static final float SHRINK_RATIO;
+com.amazon.media.recommendations.imageprocessing.LetterBox	field	private static final int BLUR_RADIUS;
+com.amazon.media.recommendations.imageprocessing.LetterBox	field	private static final int DEFAULT_BIG_HEIGHT;
+com.amazon.media.recommendations.imageprocessing.LetterBox	field	private static final int DEFAULT_BIG_WIDTH;
+com.amazon.media.recommendations.imageprocessing.LetterBox	method	private Bitmap createImageOnTop(Bitmap bitmap, Bitmap bitmap2)
+com.amazon.media.recommendations.imageprocessing.LetterBox	method	private Bitmap resizeBitmap(Bitmap bitmap)
+com.amazon.media.recommendations.imageprocessing.LetterBox	method	private Bitmap resizeBitmapHelper(Bitmap bitmap, int i, int i2)
+com.amazon.media.recommendations.imageprocessing.LetterBox	method	private Bitmap shrink(Bitmap bitmap)
+com.amazon.media.recommendations.imageprocessing.LetterBox	method	private LetterBox()
+com.amazon.media.recommendations.imageprocessing.LetterBox	method	public Bitmap blur(Bitmap bitmap, int i)
+com.amazon.media.recommendations.imageprocessing.LetterBox	method	public Bitmap createLetterBoxBitmap(Context context, Bitmap bitmap)
+com.amazon.media.recommendations.imageprocessing.LetterBox	method	public LetterBox(int i, int i2)
+com.amazon.media.recommendations.imageprocessing.LetterBox	method	public static LetterBox getInstance()
+com.amazon.media.recommendations.imageprocessing.LetterBox	method	public void setMaxHeight(int i)
+com.amazon.media.recommendations.imageprocessing.ProcessImageTask	field	private AsyncTaskManager mAsyncTaskManager;
+com.amazon.media.recommendations.imageprocessing.ProcessImageTask	field	private Bitmap mBitmap;
+com.amazon.media.recommendations.imageprocessing.ProcessImageTask	field	private Context mContext;
+com.amazon.media.recommendations.imageprocessing.ProcessImageTask	field	private IRecommendation mRecommendation;
+com.amazon.media.recommendations.imageprocessing.ProcessImageTask	field	private ImageProcessManager mImageProcessManager;
+com.amazon.media.recommendations.imageprocessing.ProcessImageTask	field	private RecommendationManagerExtender mRecommendationManagerExtender;
+com.amazon.media.recommendations.imageprocessing.ProcessImageTask	field	private Set<String> mImageDimensionsSet;
+com.amazon.media.recommendations.imageprocessing.ProcessImageTask	field	private String mBitmapkey;
+com.amazon.media.recommendations.imageprocessing.ProcessImageTask	field	private String mPackageName;
+com.amazon.media.recommendations.imageprocessing.ProcessImageTask	field	private UUID mObjectID;
+com.amazon.media.recommendations.imageprocessing.ProcessImageTask	field	private int mId;
+com.amazon.media.recommendations.imageprocessing.ProcessImageTask	field	private int mOriginalThreadPriority;
+com.amazon.media.recommendations.imageprocessing.ProcessImageTask	field	private static final String DIR;
+com.amazon.media.recommendations.imageprocessing.ProcessImageTask	field	private static final String TAG;
+com.amazon.media.recommendations.imageprocessing.ProcessImageTask	field	private static final String TYPE_PNG;
+com.amazon.media.recommendations.imageprocessing.ProcessImageTask	field	private static final boolean DEBUG;
+com.amazon.media.recommendations.imageprocessing.ProcessImageTask	method	private Bitmap checkAndResizeImage(Bitmap bitmap)
+com.amazon.media.recommendations.imageprocessing.ProcessImageTask	method	private Bitmap getResizedBitmap(Bitmap bitmap, int i, int i2, boolean z)
+com.amazon.media.recommendations.imageprocessing.ProcessImageTask	method	private Bitmap processImage(Bitmap bitmap)
+com.amazon.media.recommendations.imageprocessing.ProcessImageTask	method	private Set<String> getImageDimensionsForNotification(String str, String[] strArr)
+com.amazon.media.recommendations.imageprocessing.ProcessImageTask	method	private Set<String> getRequestedImageDimensions(String str)
+com.amazon.media.recommendations.imageprocessing.ProcessImageTask	method	private int elevateThreadPriority(int i)
+com.amazon.media.recommendations.imageprocessing.ProcessImageTask	method	public List<IRecommendation> updateIRecommendations(List<IRecommendation> list)
+com.amazon.media.recommendations.imageprocessing.ProcessImageTask	method	public ProcessImageTask(Context context, Bitmap bitmap, String str, int i, IRecommendation iRecommendation)
+com.amazon.media.recommendations.imageprocessing.ProcessImageTask	method	public ProcessImageTask(Context context, Bitmap bitmap, String str, int i, UUID uuid, String str2, String str3, ImageProcessManager imageProcessManager)
+com.amazon.media.recommendations.imageprocessing.ProcessImageTask	method	public Uri addImage(Bitmap bitmap)
+com.amazon.media.recommendations.imageprocessing.ProcessImageTask	method	public Void doInBackground(Void... voidArr)
+com.amazon.media.recommendations.imageprocessing.ProcessImageTask	method	public static void deleteImage(Context context, String str)
+com.amazon.media.recommendations.imageprocessing.ProcessImageTask	method	public void deleteImage(Uri uri)
+com.amazon.media.recommendations.imageprocessing.ProcessImageTask	method	public void resetThreadPriority()
+com.amazon.media.recommendations.notification.AmazonNotification	field	public static final String CATEGORY_FIRE_TV_NOTIFICATION;
+com.amazon.media.recommendations.notification.AmazonNotification	field	public static final String CATEGORY_SUPPRESSED;
+com.amazon.media.recommendations.notification.AmazonNotification	field	public static final String EXTRA_ACTION_BUTTON_TITLE;
+com.amazon.media.recommendations.notification.AmazonNotification	field	public static final String EXTRA_PACKAGE_NAME;
+com.amazon.media.recommendations.notification.AmazonNotification	field	public static final String EXTRA_TYPE;
+com.amazon.media.recommendations.notification.AmazonNotification	field	public static final int TYPE_INFO;
+com.amazon.media.recommendations.notification.AmazonNotification	field	public static final int TYPE_MEDIA_INFO;
+com.amazon.media.recommendations.notification.AmazonNotification	field	public static final int TYPE_QUEUED;
+com.amazon.media.recommendations.notification.AmazonNotification	field	public static final int TYPE_SYSTEM_INFO;
+com.amazon.media.recommendations.notification.AmazonNotificationHelper	field	private static final String TAG;
+com.amazon.media.recommendations.notification.AmazonNotificationHelper	field	private static final boolean DEBUG;
+com.amazon.media.recommendations.notification.AmazonNotificationHelper	field	private volatile boolean mMenuKeyPressed;
+com.amazon.media.recommendations.notification.AmazonNotificationHelper	field	private volatile boolean mNotificationDisplayed;
+com.amazon.media.recommendations.notification.AmazonNotificationHelper	method	public boolean isMenuKeyPressed()
+com.amazon.media.recommendations.notification.AmazonNotificationHelper	method	public boolean isNotificationDisplayed()
+com.amazon.media.recommendations.notification.AmazonNotificationHelper	method	public synchronized void setNotificationDisplayed(boolean z, NotificationMessage notificationMessage)
+com.amazon.media.recommendations.notification.AmazonNotificationHelper	method	public void setMenuKeyPressed(boolean z)
+com.amazon.media.recommendations.notification.NotificationLayout	field	private static final String TAG;
+com.amazon.media.recommendations.notification.NotificationLayout	field	private static final boolean DEBUG;
+com.amazon.media.recommendations.notification.NotificationLayout	method	public NotificationLayout(Context context)
+com.amazon.media.recommendations.notification.NotificationLayout	method	public NotificationLayout(Context context, AttributeSet attributeSet)
+com.amazon.media.recommendations.notification.NotificationLayout	method	public NotificationLayout(Context context, AttributeSet attributeSet, int i)
+com.amazon.media.recommendations.notification.NotificationLayout	method	public int getNotificationId()
+com.amazon.media.recommendations.notification.NotificationLayout	method	public void setNotificationId(int i)
+com.amazon.media.recommendations.notification.NotificationMessage	field	private Notification mNotification;
+com.amazon.media.recommendations.notification.NotificationMessage	field	private String mApplicationName;
+com.amazon.media.recommendations.notification.NotificationMessage	field	private String mKey;
+com.amazon.media.recommendations.notification.NotificationMessage	field	private String mTag;
+com.amazon.media.recommendations.notification.NotificationMessage	field	private String mTitle;
+com.amazon.media.recommendations.notification.NotificationMessage	field	private int mNotificationId;
+com.amazon.media.recommendations.notification.NotificationMessage	field	private int mType;
+com.amazon.media.recommendations.notification.NotificationMessage	field	public static final String KEY_MENU_BUTTON_TEXT;
+com.amazon.media.recommendations.notification.NotificationMessage	method	public NotificationMessage(int i, String str, String str2, Notification notification, String str3, int i2, String str4)
+com.amazon.media.recommendations.notification.NotificationMessage	method	public final Notification getNotification()
+com.amazon.media.recommendations.notification.NotificationMessage	method	public final String getApplicationName()
+com.amazon.media.recommendations.notification.NotificationMessage	method	public final String getKey()
+com.amazon.media.recommendations.notification.NotificationMessage	method	public final String getTag()
+com.amazon.media.recommendations.notification.NotificationMessage	method	public final String getTitle()
+com.amazon.media.recommendations.notification.NotificationMessage	method	public final int getNotificationId()
+com.amazon.media.recommendations.notification.NotificationMessage	method	public final int getType()
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final String CATEGORY_HOME;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final String CATEGORY_LIVE;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final String CATEGORY_UHD;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final String CATEGORY_VIDEO;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final String EXTRA_ACTION;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final String EXTRA_APPNAME;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final String EXTRA_APP_DISPLAY_NAME;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final String EXTRA_CAPTION_OPTION;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final String EXTRA_CONTENT_CUSTOMER_RATING;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final String EXTRA_CONTENT_CUSTOMER_RATING_COUNT;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final String EXTRA_CONTENT_RELEASE_DATE;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final String EXTRA_LIVE_CONTENT;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final String EXTRA_MATURITY_RATING;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final String EXTRA_RELEASE_YEAR;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final String EXTRA_TAGS;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final String MATURE_MATURITY_RATING;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final String UTF_8_CHARSET;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final double LOWER_BOUND_RATIO;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final double UPPER_BOUND_RATIO;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final int CHANGE_APP_DISPLAY_NAME_SETTINGS;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final int CHANGE_SETTINGS;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final int EXTENDED_PMR_TEXT_MAX_LENGTH;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final int FUDGE_FACTOR_PX;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final int LAUNCHER_BITMAP_MAX_HEIGHT;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final int LISTEN;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final int LISTEN_WITH_APP_DISPLAY_NAME;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final int MAX_RESOLUTION_HEIGHT;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final int PARTNER_NAME_MAX_LENGTH;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final int PLAY;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final int PLAY_WITH_APP_DISPLAY_NAME;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final int RESUME;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final int RESUME_WITH_APP_DISPLAY_NAME;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final int SWITCH_APP_DISPLAY_NAME_PROFILE;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final int VIEW;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final int VIEW_WITH_APP_DISPLAY_NAME;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final int WATCH;
+com.amazon.media.recommendations.utils.RecommendationConstants	field	public static final int WATCH_WITH_APP_DISPLAY_NAME;
+com.amazon.media.recommendations.utils.RecommendationNotificationUtil	field	private static final String TAG;
+com.amazon.media.recommendations.utils.RecommendationNotificationUtil	method	public static Bitmap getLargeIconBitmapFromNotification(Notification notification, Context context)
+com.amazon.media.recommendations.utils.RecommendationNotificationUtil	method	public static List<Integer> getNotificationIntArrayListExtra(Notification notification, String str)
+com.amazon.media.recommendations.utils.RecommendationNotificationUtil	method	public static List<String> getNotificationArrayListExtra(Notification notification, String str)
+com.amazon.media.recommendations.utils.RecommendationNotificationUtil	method	public static String getContentUri(Notification notification, String str)
+com.amazon.media.recommendations.utils.RecommendationNotificationUtil	method	public static String getMaturityRating(Notification notification)
+com.amazon.media.recommendations.utils.RecommendationNotificationUtil	method	public static String getNotificationStringExtra(Notification notification, String str)
+com.amazon.media.recommendations.utils.RecommendationNotificationUtil	method	public static String processAppName(Notification notification)
+com.amazon.media.recommendations.utils.RecommendationNotificationUtil	method	public static boolean isRecommendation(Notification notification)
+com.amazon.media.recommendations.utils.RecommendationNotificationUtil	method	public static int getDisplayActionOption(Notification notification)
+com.amazon.media.recommendations.utils.RecommendationNotificationUtil	method	public static int getNotificationIntExtra(Notification notification, String str)
+com.amazon.media.recommendations.utils.RecommendationNotificationUtil	method	public static int processCategory(Notification notification, String str)
+com.amazon.media.recommendations.utils.RecommendationNotificationUtil	method	public static int processReleaseDate(Notification notification)
+com.amazon.media.recommendations.utils.RecommendationNotificationUtil	method	public static int readFromSharedPref(Context context, String str, int i)
+com.amazon.media.recommendations.utils.RecommendationNotificationUtil	method	public static void writeToSharedPref(Context context, String str, int i, int i2)
+com.amazon.media.recommendations.utils.RecommendationUtils	field	private static final String ACTION_ROW_UPDATED;
+com.amazon.media.recommendations.utils.RecommendationUtils	field	private static final String EXTRA_ROW_IDS;
+com.amazon.media.recommendations.utils.RecommendationUtils	field	private static final String TAG;
+com.amazon.media.recommendations.utils.RecommendationUtils	field	public static final String PERMISSION_RECOMMENDATION_CONSUMER;
+com.amazon.media.recommendations.utils.RecommendationUtils	method	public static void removeAllRecommendationsAndImage(Context context, String str)
+com.amazon.media.recommendations.utils.RecommendationUtils	method	public static void removeRecommendationsAndImage(Context context, String str, int[] iArr)
+com.amazon.media.recommendations.utils.RecommendationUtils	method	public static void sendRowUpdateBroadcast(Context context, List<String> list)
+com.amazon.media.recommendations.utils.RecommendationUtils	method	public static void sendRowUpdateBroadcast(Context context, String[] strArr)
+com.amazon.media.recommendations.utils.RecommendationValidator	field	private static final String TAG;
+com.amazon.media.recommendations.utils.RecommendationValidator	field	private static final int CATEGORY_MAX;
+com.amazon.media.recommendations.utils.RecommendationValidator	field	private static final int CATEGORY_MIN;
+com.amazon.media.recommendations.utils.RecommendationValidator	field	private static final int DEFAULT_CATEGORY;
+com.amazon.media.recommendations.utils.RecommendationValidator	method	private RecommendationValidator()
+com.amazon.media.recommendations.utils.RecommendationValidator	method	public static List<IRecommendation> filterValid(String str, List<IRecommendation> list)

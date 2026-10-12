@@ -1,0 +1,49 @@
+class	kind	declaration
+com.android.ex.editstyledtext.EditStyledText$SavedStyledTextState	field	public int mBackgroundColor;
+com.android.ex.editstyledtext.EditStyledText$SavedStyledTextState	method	public String toString()
+com.android.ex.editstyledtext.EditStyledText$SavedStyledTextState	method	public void writeToParcel(Parcel parcel, int i)
+com.android.ex.editstyledtext.EditStyledText$SoftKeyReceiver	method	protected void onReceiveResult(int i, Bundle bundle)
+com.android.providers.partnerbookmarks.PartnerBookmarksContract	field	public static final Uri AUTHORITY_URI;
+com.android.providers.partnerbookmarks.PartnerBookmarksContract$Bookmarks	field	public static final String CONTENT_ITEM_TYPE;
+com.android.providers.partnerbookmarks.PartnerBookmarksContract$Bookmarks	field	public static final String CONTENT_TYPE;
+com.android.providers.partnerbookmarks.PartnerBookmarksContract$Bookmarks	field	public static final String FAVICON;
+com.android.providers.partnerbookmarks.PartnerBookmarksContract$Bookmarks	field	public static final String ID;
+com.android.providers.partnerbookmarks.PartnerBookmarksContract$Bookmarks	field	public static final String PARENT;
+com.android.providers.partnerbookmarks.PartnerBookmarksContract$Bookmarks	field	public static final String TITLE;
+com.android.providers.partnerbookmarks.PartnerBookmarksContract$Bookmarks	field	public static final String TOUCHICON;
+com.android.providers.partnerbookmarks.PartnerBookmarksContract$Bookmarks	field	public static final String TYPE;
+com.android.providers.partnerbookmarks.PartnerBookmarksContract$Bookmarks	field	public static final String URL;
+com.android.providers.partnerbookmarks.PartnerBookmarksContract$Bookmarks	field	public static final Uri CONTENT_URI;
+com.android.providers.partnerbookmarks.PartnerBookmarksContract$Bookmarks	field	public static final Uri CONTENT_URI_PARTNER_BOOKMARKS_FOLDER;
+com.android.providers.partnerbookmarks.PartnerBookmarksContract$Bookmarks	field	public static final int BOOKMARK_PARENT_ROOT_ID;
+com.android.providers.partnerbookmarks.PartnerBookmarksContract$Bookmarks	field	public static final int BOOKMARK_TYPE_BOOKMARK;
+com.android.providers.partnerbookmarks.PartnerBookmarksContract$Bookmarks	field	public static final int BOOKMARK_TYPE_FOLDER;
+com.android.providers.partnerbookmarks.PartnerBookmarksContract$Bookmarks	method	private Bookmarks()
+com.android.providers.partnerbookmarks.PartnerBookmarksContract$Bookmarks	method	public static final Uri buildFolderUri(long j)
+com.android.providers.partnerbookmarks.PartnerBookmarksProvider	field	private DatabaseHelper mOpenHelper;
+com.android.providers.partnerbookmarks.PartnerBookmarksProvider	field	private static final Map<String, String> BOOKMARKS_PROJECTION_MAP;
+com.android.providers.partnerbookmarks.PartnerBookmarksProvider	field	private static final UriMatcher URI_MATCHER;
+com.android.providers.partnerbookmarks.PartnerBookmarksProvider	method	public Cursor query(Uri uri, String[] strArr, String str, String[] strArr2, String str2)
+com.android.providers.partnerbookmarks.PartnerBookmarksProvider	method	public String getType(Uri uri)
+com.android.providers.partnerbookmarks.PartnerBookmarksProvider	method	public Uri insert(Uri uri, ContentValues contentValues)
+com.android.providers.partnerbookmarks.PartnerBookmarksProvider	method	public boolean onCreate()
+com.android.providers.partnerbookmarks.PartnerBookmarksProvider	method	public int delete(Uri uri, String str, String[] strArr)
+com.android.providers.partnerbookmarks.PartnerBookmarksProvider	method	public int update(Uri uri, ContentValues contentValues, String str, String[] strArr)
+com.android.providers.partnerbookmarks.PartnerBookmarksProvider	method	public void onConfigurationChanged(Configuration configuration)
+com.android.providers.partnerbookmarks.PartnerBookmarksProvider$DatabaseHelper	field	private final SharedPreferences sharedPreferences;
+com.android.providers.partnerbookmarks.PartnerBookmarksProvider$DatabaseHelper	method	private String getConfigSignature(Configuration configuration)
+com.android.providers.partnerbookmarks.PartnerBookmarksProvider$DatabaseHelper	method	private boolean addDefaultBookmarks(SQLiteDatabase sQLiteDatabase, long j, long j2) throws Throwable
+com.android.providers.partnerbookmarks.PartnerBookmarksProvider$DatabaseHelper	method	private boolean addRootFolder(SQLiteDatabase sQLiteDatabase, long j, String str)
+com.android.providers.partnerbookmarks.PartnerBookmarksProvider$DatabaseHelper	method	private boolean createDefaultBookmarks(SQLiteDatabase sQLiteDatabase)
+com.android.providers.partnerbookmarks.PartnerBookmarksProvider$DatabaseHelper	method	private byte[] readRaw(Resources resources, int i) throws IOException
+com.android.providers.partnerbookmarks.PartnerBookmarksProvider$DatabaseHelper	method	private void createTable(SQLiteDatabase sQLiteDatabase)
+com.android.providers.partnerbookmarks.PartnerBookmarksProvider$DatabaseHelper	method	private void dropTable(SQLiteDatabase sQLiteDatabase)
+com.android.providers.partnerbookmarks.PartnerBookmarksProvider$DatabaseHelper	method	private void setActiveConfiguration(Configuration configuration)
+com.android.providers.partnerbookmarks.PartnerBookmarksProvider$DatabaseHelper	method	public DatabaseHelper(Context context)
+com.android.providers.partnerbookmarks.PartnerBookmarksProvider$DatabaseHelper	method	public synchronized void prepareForConfiguration(Configuration configuration)
+com.android.providers.partnerbookmarks.PartnerBookmarksProvider$DatabaseHelper	method	public void onCreate(SQLiteDatabase sQLiteDatabase)
+com.android.providers.partnerbookmarks.PartnerBookmarksProvider$DatabaseHelper	method	public void onDowngrade(SQLiteDatabase sQLiteDatabase, int i, int i2)
+com.android.providers.partnerbookmarks.PartnerBookmarksProvider$DatabaseHelper	method	public void onUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i2)
+com.android.providers.partnerbookmarks.R$array	field	public static final int bookmark_preloads;
+com.android.providers.partnerbookmarks.R$array	field	public static final int bookmarks;
+com.android.providers.partnerbookmarks.R$string	field	public static final int bookmarks_folder_name;

@@ -1,0 +1,51 @@
+class	kind	declaration
+com.android.commands.telecom.Telecom	field	private ComponentName mComponent;
+com.android.commands.telecom.Telecom	field	private ITelecomService mTelecomService;
+com.android.commands.telecom.Telecom	field	private IUserManager mUserManager;
+com.android.commands.telecom.Telecom	field	private String mAccountId;
+com.android.commands.telecom.Telecom	field	private TelephonyManager mTelephonyManager;
+com.android.commands.telecom.Telecom	field	private static final String COMMAND_ADD_OR_REMOVE_CALL_COMPANION_APP;
+com.android.commands.telecom.Telecom	field	private static final String COMMAND_GET_DEFAULT_DIALER;
+com.android.commands.telecom.Telecom	field	private static final String COMMAND_GET_MAX_PHONES;
+com.android.commands.telecom.Telecom	field	private static final String COMMAND_GET_SIM_CONFIG;
+com.android.commands.telecom.Telecom	field	private static final String COMMAND_GET_SYSTEM_DIALER;
+com.android.commands.telecom.Telecom	field	private static final String COMMAND_REGISTER_PHONE_ACCOUNT;
+com.android.commands.telecom.Telecom	field	private static final String COMMAND_REGISTER_SIM_PHONE_ACCOUNT;
+com.android.commands.telecom.Telecom	field	private static final String COMMAND_SET_DEFAULT_DIALER;
+com.android.commands.telecom.Telecom	field	private static final String COMMAND_SET_PHONE_ACCOUNT_DISABLED;
+com.android.commands.telecom.Telecom	field	private static final String COMMAND_SET_PHONE_ACCOUNT_ENABLED;
+com.android.commands.telecom.Telecom	field	private static final String COMMAND_SET_PHONE_ACCOUNT_SUGGESTION_COMPONENT;
+com.android.commands.telecom.Telecom	field	private static final String COMMAND_SET_SIM_COUNT;
+com.android.commands.telecom.Telecom	field	private static final String COMMAND_SET_SYSTEM_DIALER;
+com.android.commands.telecom.Telecom	field	private static final String COMMAND_SET_TEST_CALL_REDIRECTION_APP;
+com.android.commands.telecom.Telecom	field	private static final String COMMAND_SET_TEST_CALL_SCREENING_APP;
+com.android.commands.telecom.Telecom	field	private static final String COMMAND_SET_TEST_EMERGENCY_PHONE_ACCOUNT_PACKAGE_FILTER;
+com.android.commands.telecom.Telecom	field	private static final String COMMAND_SET_USER_SELECTED_OUTGOING_PHONE_ACCOUNT;
+com.android.commands.telecom.Telecom	field	private static final String COMMAND_STOP_BLOCK_SUPPRESSION;
+com.android.commands.telecom.Telecom	field	private static final String COMMAND_UNREGISTER_PHONE_ACCOUNT;
+com.android.commands.telecom.Telecom	field	private static final String COMMAND_WAIT_ON_HANDLERS;
+com.android.commands.telecom.Telecom	method	private ComponentName parseComponentName(String str)
+com.android.commands.telecom.Telecom	method	private PhoneAccountHandle getPhoneAccountHandleFromArgs() throws RemoteException
+com.android.commands.telecom.Telecom	method	private boolean callerIsRoot()
+com.android.commands.telecom.Telecom	method	private void runAddOrRemoveCallCompanionApp() throws RemoteException
+com.android.commands.telecom.Telecom	method	private void runGetDefaultDialer() throws RemoteException
+com.android.commands.telecom.Telecom	method	private void runGetMaxPhones() throws RemoteException
+com.android.commands.telecom.Telecom	method	private void runGetSimConfig() throws RemoteException
+com.android.commands.telecom.Telecom	method	private void runGetSystemDialer() throws RemoteException
+com.android.commands.telecom.Telecom	method	private void runRegisterPhoneAccount() throws RemoteException
+com.android.commands.telecom.Telecom	method	private void runRegisterSimPhoneAccount() throws RemoteException
+com.android.commands.telecom.Telecom	method	private void runSetDefaultDialer() throws RemoteException
+com.android.commands.telecom.Telecom	method	private void runSetEmergencyPhoneAccountPackageFilter() throws RemoteException
+com.android.commands.telecom.Telecom	method	private void runSetPhoneAccountEnabled(boolean z) throws RemoteException
+com.android.commands.telecom.Telecom	method	private void runSetSimCount() throws RemoteException
+com.android.commands.telecom.Telecom	method	private void runSetSystemDialer() throws RemoteException
+com.android.commands.telecom.Telecom	method	private void runSetTestCallRedirectionApp() throws RemoteException
+com.android.commands.telecom.Telecom	method	private void runSetTestCallScreeningApp() throws RemoteException
+com.android.commands.telecom.Telecom	method	private void runSetTestPhoneAcctSuggestionComponent() throws RemoteException
+com.android.commands.telecom.Telecom	method	private void runSetUserSelectedOutgoingPhoneAccount() throws RemoteException
+com.android.commands.telecom.Telecom	method	private void runStopBlockSuppression() throws RemoteException
+com.android.commands.telecom.Telecom	method	private void runUnregisterPhoneAccount() throws RemoteException
+com.android.commands.telecom.Telecom	method	private void runWaitOnHandler() throws RemoteException
+com.android.commands.telecom.Telecom	method	public static void main(String[] strArr)
+com.android.commands.telecom.Telecom	method	public void onRun() throws Exception
+com.android.commands.telecom.Telecom	method	public void onShowUsage(PrintStream printStream)

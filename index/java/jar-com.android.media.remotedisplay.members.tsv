@@ -1,0 +1,67 @@
+class	kind	declaration
+com.android.media.remotedisplay.RemoteDisplay	field	private RemoteDisplayState.RemoteDisplayInfo mImmutableInfo;
+com.android.media.remotedisplay.RemoteDisplay	field	private final RemoteDisplayState.RemoteDisplayInfo mMutableInfo;
+com.android.media.remotedisplay.RemoteDisplay	field	public static final int PLAYBACK_VOLUME_FIXED;
+com.android.media.remotedisplay.RemoteDisplay	field	public static final int PLAYBACK_VOLUME_VARIABLE;
+com.android.media.remotedisplay.RemoteDisplay	field	public static final int STATUS_AVAILABLE;
+com.android.media.remotedisplay.RemoteDisplay	field	public static final int STATUS_CONNECTED;
+com.android.media.remotedisplay.RemoteDisplay	field	public static final int STATUS_CONNECTING;
+com.android.media.remotedisplay.RemoteDisplay	field	public static final int STATUS_IN_USE;
+com.android.media.remotedisplay.RemoteDisplay	field	public static final int STATUS_NOT_AVAILABLE;
+com.android.media.remotedisplay.RemoteDisplay	method	public RemoteDisplay(String str, String str2)
+com.android.media.remotedisplay.RemoteDisplay	method	public String getDescription()
+com.android.media.remotedisplay.RemoteDisplay	method	public String getId()
+com.android.media.remotedisplay.RemoteDisplay	method	public String getName()
+com.android.media.remotedisplay.RemoteDisplay	method	public String toString()
+com.android.media.remotedisplay.RemoteDisplay	method	public int getPresentationDisplayId()
+com.android.media.remotedisplay.RemoteDisplay	method	public int getStatus()
+com.android.media.remotedisplay.RemoteDisplay	method	public int getVolume()
+com.android.media.remotedisplay.RemoteDisplay	method	public int getVolumeHandling()
+com.android.media.remotedisplay.RemoteDisplay	method	public int getVolumeMax()
+com.android.media.remotedisplay.RemoteDisplay	method	public void setDescription(String str)
+com.android.media.remotedisplay.RemoteDisplay	method	public void setName(String str)
+com.android.media.remotedisplay.RemoteDisplay	method	public void setPresentationDisplayId(int i)
+com.android.media.remotedisplay.RemoteDisplay	method	public void setStatus(int i)
+com.android.media.remotedisplay.RemoteDisplay	method	public void setVolume(int i)
+com.android.media.remotedisplay.RemoteDisplay	method	public void setVolumeHandling(int i)
+com.android.media.remotedisplay.RemoteDisplay	method	public void setVolumeMax(int i)
+com.android.media.remotedisplay.RemoteDisplayProvider	field	private IRemoteDisplayCallback mCallback;
+com.android.media.remotedisplay.RemoteDisplayProvider	field	private PendingIntent mSettingsPendingIntent;
+com.android.media.remotedisplay.RemoteDisplayProvider	field	private final ArrayMap<String, RemoteDisplay> mDisplays;
+com.android.media.remotedisplay.RemoteDisplayProvider	field	private final Context mContext;
+com.android.media.remotedisplay.RemoteDisplayProvider	field	private final ProviderHandler mHandler;
+com.android.media.remotedisplay.RemoteDisplayProvider	field	private final ProviderStub mStub;
+com.android.media.remotedisplay.RemoteDisplayProvider	field	private int mDiscoveryMode;
+com.android.media.remotedisplay.RemoteDisplayProvider	field	private static final int MSG_ADJUST_VOLUME;
+com.android.media.remotedisplay.RemoteDisplayProvider	field	private static final int MSG_CONNECT;
+com.android.media.remotedisplay.RemoteDisplayProvider	field	private static final int MSG_DISCONNECT;
+com.android.media.remotedisplay.RemoteDisplayProvider	field	private static final int MSG_SET_CALLBACK;
+com.android.media.remotedisplay.RemoteDisplayProvider	field	private static final int MSG_SET_DISCOVERY_MODE;
+com.android.media.remotedisplay.RemoteDisplayProvider	field	private static final int MSG_SET_VOLUME;
+com.android.media.remotedisplay.RemoteDisplayProvider	field	public static final String SERVICE_INTERFACE;
+com.android.media.remotedisplay.RemoteDisplayProvider	field	public static final int DISCOVERY_MODE_ACTIVE;
+com.android.media.remotedisplay.RemoteDisplayProvider	field	public static final int DISCOVERY_MODE_NONE;
+com.android.media.remotedisplay.RemoteDisplayProvider	field	public static final int DISCOVERY_MODE_PASSIVE;
+com.android.media.remotedisplay.RemoteDisplayProvider	method	public Collection<RemoteDisplay> getDisplays()
+com.android.media.remotedisplay.RemoteDisplayProvider	method	public IBinder getBinder()
+com.android.media.remotedisplay.RemoteDisplayProvider	method	public PendingIntent getSettingsPendingIntent()
+com.android.media.remotedisplay.RemoteDisplayProvider	method	public RemoteDisplay findRemoteDisplay(String str)
+com.android.media.remotedisplay.RemoteDisplayProvider	method	public RemoteDisplayProvider(Context context)
+com.android.media.remotedisplay.RemoteDisplayProvider	method	public final Context getContext()
+com.android.media.remotedisplay.RemoteDisplayProvider	method	public int getDiscoveryMode()
+com.android.media.remotedisplay.RemoteDisplayProvider	method	public void addDisplay(RemoteDisplay remoteDisplay)
+com.android.media.remotedisplay.RemoteDisplayProvider	method	public void onAdjustVolume(RemoteDisplay remoteDisplay, int i)
+com.android.media.remotedisplay.RemoteDisplayProvider	method	public void onConnect(RemoteDisplay remoteDisplay)
+com.android.media.remotedisplay.RemoteDisplayProvider	method	public void onDisconnect(RemoteDisplay remoteDisplay)
+com.android.media.remotedisplay.RemoteDisplayProvider	method	public void onDiscoveryModeChanged(int i)
+com.android.media.remotedisplay.RemoteDisplayProvider	method	public void onSetVolume(RemoteDisplay remoteDisplay, int i)
+com.android.media.remotedisplay.RemoteDisplayProvider	method	public void removeDisplay(RemoteDisplay remoteDisplay)
+com.android.media.remotedisplay.RemoteDisplayProvider	method	public void updateDisplay(RemoteDisplay remoteDisplay)
+com.android.media.remotedisplay.RemoteDisplayProvider$ProviderHandler	method	public ProviderHandler(Looper looper)
+com.android.media.remotedisplay.RemoteDisplayProvider$ProviderHandler	method	public void handleMessage(Message message)
+com.android.media.remotedisplay.RemoteDisplayProvider$ProviderStub	method	public void adjustVolume(String str, int i)
+com.android.media.remotedisplay.RemoteDisplayProvider$ProviderStub	method	public void connect(String str)
+com.android.media.remotedisplay.RemoteDisplayProvider$ProviderStub	method	public void disconnect(String str)
+com.android.media.remotedisplay.RemoteDisplayProvider$ProviderStub	method	public void setCallback(IRemoteDisplayCallback iRemoteDisplayCallback)
+com.android.media.remotedisplay.RemoteDisplayProvider$ProviderStub	method	public void setDiscoveryMode(int i)
+com.android.media.remotedisplay.RemoteDisplayProvider$ProviderStub	method	public void setVolume(String str, int i)

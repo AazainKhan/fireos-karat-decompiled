@@ -1,0 +1,212 @@
+class	kind	declaration
+amazon.speech.requestid.RequestId	field	private String mInteractionId;
+amazon.speech.requestid.RequestId	field	private String mOriginId;
+amazon.speech.requestid.RequestId	field	private String mParentInteractionId;
+amazon.speech.requestid.RequestId	field	private int mDepth;
+amazon.speech.requestid.RequestId	method	protected static String getInteractionId(String str)
+amazon.speech.requestid.RequestId	method	protected static boolean isASimpleStringRequestId(String[] strArr)
+amazon.speech.requestid.RequestId	method	protected static boolean isFromSameService(String[] strArr, String str)
+amazon.speech.requestid.RequestId	method	protected static boolean isValid(String[] strArr)
+amazon.speech.requestid.RequestId	method	public RequestId(String str)
+amazon.speech.requestid.RequestId	method	public RequestId(String str, String str2, String str3, int i)
+amazon.speech.requestid.RequestId	method	public String toString()
+amazon.speech.requestid.RequestIdGenerator	field	private static final String TAG;
+amazon.speech.requestid.RequestIdGenerator	method	private static RequestId generateRequestIdFromInvalidIncomingRequestId(String str, String[] strArr)
+amazon.speech.requestid.RequestIdGenerator	method	private static RequestId generateRequestIdFromValidIncomingRequestId(String str, String[] strArr)
+amazon.speech.requestid.RequestIdGenerator	method	private static RequestId getANewRequestIdWithExistingOriginIdAndInteractionId(String str, String str2, String str3, int i)
+amazon.speech.requestid.RequestIdGenerator	method	private static RequestId getANewRequestIdWithSingleStringIncomingId(String str, String str2, int i)
+amazon.speech.requestid.RequestIdGenerator	method	private static RequestId getARandomRequestId(String str)
+amazon.speech.requestid.RequestIdGenerator	method	private static RequestId getRequestIdWhenIncomingOriginIdMissingAndInteractionIdExisting(String str, String str2, int i)
+amazon.speech.requestid.RequestIdGenerator	method	private static RequestId getRequestIdWithOnlyExistingOriginId(String str, String str2, int i)
+amazon.speech.requestid.RequestIdGenerator	method	private static int extractDepthAsNumber(String str)
+amazon.speech.requestid.RequestIdGenerator	method	public static String generateRequestId(String str, String str2)
+amazon.speech.simclient.common.GenericMetadataHelper	field	private final Map<String, String> mMetadataMap;
+amazon.speech.simclient.common.GenericMetadataHelper	method	public Map<String, String> getMetadataMap()
+amazon.speech.simclient.common.GenericMetadataHelper	method	public boolean equals(Object obj)
+amazon.speech.simclient.common.GenericMetadataHelper	method	public int describeContents()
+amazon.speech.simclient.common.GenericMetadataHelper	method	public int hashCode()
+amazon.speech.simclient.common.GenericMetadataHelper	method	public void writeToParcel(Parcel parcel, int i)
+amazon.speech.simclient.common.HandlerWrapper	field	private final Handler mHandler;
+amazon.speech.simclient.common.HandlerWrapper	method	public HandlerWrapper(Handler handler)
+amazon.speech.simclient.common.HandlerWrapper	method	public boolean post(Runnable runnable)
+amazon.speech.simclient.common.HandlerWrapper	method	public boolean postDelayed(Runnable runnable, long j)
+amazon.speech.simclient.common.HandlerWrapper	method	public void removeCallbacks(Runnable runnable)
+amazon.speech.simclient.common.TimePoint	field	private final long mUnixTimeMS;
+amazon.speech.simclient.common.TimePoint	field	private final long mUpTimeMS;
+amazon.speech.simclient.common.TimePoint	field	private static final long serialVersionUID;
+amazon.speech.simclient.common.TimePoint	method	public String toString()
+amazon.speech.simclient.directive.DataWriter	field	private final ExecutorService mExecutor;
+amazon.speech.simclient.directive.DataWriter	field	private final HandlerWrapper mHandler;
+amazon.speech.simclient.directive.DataWriter	field	private final Piper.Factory mPiperFactory;
+amazon.speech.simclient.directive.DataWriter	field	private static final ExecutorService DEFAULT_EXECUTOR;
+amazon.speech.simclient.directive.DataWriter	field	private static final String TAG;
+amazon.speech.simclient.directive.DataWriter	method	public DataWriter()
+amazon.speech.simclient.directive.DataWriter	method	public DataWriter(Handler handler)
+amazon.speech.simclient.directive.DataWriter	method	public ParcelFileDescriptor writeToPipe(final InputStream inputStream, final WriteFailedCallback writeFailedCallback) throws IOException
+amazon.speech.simclient.directive.DataWriter	method	public void postException(final WriteFailedCallback writeFailedCallback, final IOException iOException)
+amazon.speech.simclient.directive.DataWriter$TimeoutHandler	field	private Future<?> mTask;
+amazon.speech.simclient.directive.DataWriter$TimeoutHandler	field	private final Closeable[] mStreamsToClose;
+amazon.speech.simclient.directive.DataWriter$TimeoutHandler	field	private final WriteFailedCallback mWriteFailedCallback;
+amazon.speech.simclient.directive.DataWriter$TimeoutHandler	method	public void run()
+amazon.speech.simclient.directive.DataWriter$TimeoutHandler	method	public void setTask(Future<?> future)
+amazon.speech.simclient.directive.DeferredRequest	field	private final Directive mDirective;
+amazon.speech.simclient.directive.DeferredRequest	field	private final Integer mDeferralSeconds;
+amazon.speech.simclient.directive.DeferredRequest	method	public Directive getDirective()
+amazon.speech.simclient.directive.DeferredRequest	method	public Integer getDeferralSeconds()
+amazon.speech.simclient.directive.DeferredRequest	method	public boolean equals(Object obj)
+amazon.speech.simclient.directive.DeferredRequest	method	public int hashCode()
+amazon.speech.simclient.directive.Directive	field	private Integer mServerParcelVersion;
+amazon.speech.simclient.directive.Directive	field	private final DirectiveKeys mKeys;
+amazon.speech.simclient.directive.Directive	field	private final String mCorrelationToken;
+amazon.speech.simclient.directive.Directive	field	private final String mDirectiveId;
+amazon.speech.simclient.directive.Directive	field	private final String mEndpoint;
+amazon.speech.simclient.directive.Directive	field	private final String mEventCorrelationToken;
+amazon.speech.simclient.directive.Directive	field	private final String mFullJson;
+amazon.speech.simclient.directive.Directive	field	private final String mInstance;
+amazon.speech.simclient.directive.Directive	field	private final String mName;
+amazon.speech.simclient.directive.Directive	field	private final String mNamespace;
+amazon.speech.simclient.directive.Directive	field	private final String mPayload;
+amazon.speech.simclient.directive.Directive	field	private final String mPayloadVersion;
+amazon.speech.simclient.directive.Directive	field	private final String mPresentationUri;
+amazon.speech.simclient.directive.Directive	field	private final String mSequenceId;
+amazon.speech.simclient.directive.Directive	field	private static final ExecutorService EXECUTOR;
+amazon.speech.simclient.directive.Directive	field	private static final HandlerWrapper HANDLER;
+amazon.speech.simclient.directive.Directive	field	private static final String TAG;
+amazon.speech.simclient.directive.Directive	field	static Piper.Factory FACTORY;
+amazon.speech.simclient.directive.Directive	method	private ParcelFileDescriptor writeToPipe(String str)
+amazon.speech.simclient.directive.Directive	method	private void writeBundle(Parcel parcel, int i)
+amazon.speech.simclient.directive.Directive	method	private void writeFullJson(Parcel parcel, int i)
+amazon.speech.simclient.directive.Directive	method	private void writePayload(Parcel parcel, int i)
+amazon.speech.simclient.directive.Directive	method	public Directive(String str, String str2, String str3, String str4, DirectiveKeys directiveKeys, String str5, String str6, String str7, String str8, String str9, String str10, String str11)
+amazon.speech.simclient.directive.Directive	method	public Directive(String str, String str2, String str3, String str4, DirectiveKeys directiveKeys, String str5, String str6, String str7, String str8, String str9, String str10, String str11, String str12)
+amazon.speech.simclient.directive.Directive	method	public String getDirectiveId()
+amazon.speech.simclient.directive.Directive	method	public String getEndpoint()
+amazon.speech.simclient.directive.Directive	method	public String getEventCorrelationToken()
+amazon.speech.simclient.directive.Directive	method	public String getFullJson()
+amazon.speech.simclient.directive.Directive	method	public String getInstance()
+amazon.speech.simclient.directive.Directive	method	public String getName()
+amazon.speech.simclient.directive.Directive	method	public String getNamespace()
+amazon.speech.simclient.directive.Directive	method	public String getPayload()
+amazon.speech.simclient.directive.Directive	method	public String getPayloadVersion()
+amazon.speech.simclient.directive.Directive	method	public boolean equals(Object obj)
+amazon.speech.simclient.directive.Directive	method	public int describeContents()
+amazon.speech.simclient.directive.Directive	method	public int hashCode()
+amazon.speech.simclient.directive.Directive	method	public void writeToParcel(Parcel parcel, int i)
+amazon.speech.simclient.directive.DirectiveClient	method	public abstract InvocationStatus sendDeferredEvent(DeferredRequest deferredRequest, IEventCallback iEventCallback);
+amazon.speech.simclient.directive.DirectiveClient	method	public abstract InvocationStatus sendErrorEvent(ErrorRequest errorRequest, IEventCallback iEventCallback);
+amazon.speech.simclient.directive.DirectiveClient	method	public abstract InvocationStatus sendSuccessEvent(SuccessRequest successRequest, IEventCallback iEventCallback);
+amazon.speech.simclient.directive.DirectiveIntent	field	private static final String TAG;
+amazon.speech.simclient.directive.DirectiveIntent	method	private DirectiveIntent()
+amazon.speech.simclient.directive.DirectiveIntent	method	private static Directive fromV1IntentExtras(Bundle bundle)
+amazon.speech.simclient.directive.DirectiveIntent	method	public static Directive fromIntent(Intent intent)
+amazon.speech.simclient.directive.DirectiveIntent	method	public static Directive fromIntentExtras(Bundle bundle)
+amazon.speech.simclient.directive.DirectiveKeys	field	private final String mKeysString;
+amazon.speech.simclient.directive.DirectiveKeys	field	private static final String TAG;
+amazon.speech.simclient.directive.DirectiveKeys	method	public DirectiveKeys(String str)
+amazon.speech.simclient.directive.DirectiveKeys	method	public String getRawJson()
+amazon.speech.simclient.directive.DirectiveKeys	method	public String toString()
+amazon.speech.simclient.directive.DirectiveKeys	method	public boolean equals(Object obj)
+amazon.speech.simclient.directive.DirectiveKeys	method	public int hashCode()
+amazon.speech.simclient.directive.ErrorRequest	field	private final Directive mDirective;
+amazon.speech.simclient.directive.ErrorRequest	field	private final ErrorType mErrorType;
+amazon.speech.simclient.directive.ErrorRequest	field	private final Map<String, String> mExtras;
+amazon.speech.simclient.directive.ErrorRequest	field	private final String mMessage;
+amazon.speech.simclient.directive.ErrorRequest	method	public Directive getDirective()
+amazon.speech.simclient.directive.ErrorRequest	method	public ErrorType getErrorType()
+amazon.speech.simclient.directive.ErrorRequest	method	public Map<String, String> getExtras()
+amazon.speech.simclient.directive.ErrorRequest	method	public String getMessage()
+amazon.speech.simclient.directive.ErrorRequest	method	public boolean equals(Object obj)
+amazon.speech.simclient.directive.ErrorRequest	method	public int hashCode()
+amazon.speech.simclient.directive.IDirectiveHolder$Stub	method	public static IDirectiveHolder asInterface(IBinder iBinder)
+amazon.speech.simclient.directive.IDirectiveHolder$Stub$Proxy	field	private IBinder mRemote;
+amazon.speech.simclient.directive.IDirectiveHolder$Stub$Proxy	method	public Directive getDirective() throws RemoteException
+amazon.speech.simclient.directive.IDirectiveHolder$Stub$Proxy	method	public IBinder asBinder()
+amazon.speech.simclient.directive.IDirectiveHolder$_Parcel	method	public static <T> T readTypedObject(Parcel parcel, Parcelable.Creator<T> creator)
+amazon.speech.simclient.directive.Piper	field	private ParcelFileDescriptor mReadEnd;
+amazon.speech.simclient.directive.Piper	field	private final OutputStream mOutputStream;
+amazon.speech.simclient.directive.Piper	method	public ParcelFileDescriptor claimPipeReaderOwnership()
+amazon.speech.simclient.directive.Piper	method	public Piper() throws IOException
+amazon.speech.simclient.directive.Piper	method	public void close() throws IOException
+amazon.speech.simclient.directive.Piper	method	public void flush() throws IOException
+amazon.speech.simclient.directive.Piper	method	public void write(byte[] bArr, int i, int i2) throws IOException
+amazon.speech.simclient.directive.Piper	method	public void write(int i) throws IOException
+amazon.speech.simclient.directive.ResponseEventUtils	field	private static final String TAG;
+amazon.speech.simclient.directive.ResponseEventUtils	method	private static EventCallbackResult translateResult(InvocationStatus invocationStatus)
+amazon.speech.simclient.directive.ResponseEventUtils	method	private static InvocationStatus sendForValidRequest(Object obj, IEventCallback iEventCallback, DirectiveClient directiveClient)
+amazon.speech.simclient.directive.ResponseEventUtils	method	private static void verifyStatus(InvocationStatus invocationStatus, IEventCallback iEventCallback)
+amazon.speech.simclient.directive.ResponseEventUtils	method	public static void sendRetryCallback(Object obj, DirectiveClient directiveClient, IEventCallback iEventCallback, int i, int i2, int i3, Handler handler)
+amazon.speech.simclient.directive.ResponseEventUtils$EventCallbackResult	field	private final AVSEventResult mAVSEventResult;
+amazon.speech.simclient.directive.ResponseEventUtils$EventCallbackResult	field	private final EventResult mEventResult;
+amazon.speech.simclient.directive.ResponseEventUtils$EventCallbackResult	method	public AVSEventResult getAVSEventResult()
+amazon.speech.simclient.directive.ResponseEventUtils$EventCallbackResult	method	public EventResult getEventResult()
+amazon.speech.simclient.directive.ResponseEventUtils$RetryableIEventCallback	field	private final DirectiveClient mDirectiveClient;
+amazon.speech.simclient.directive.ResponseEventUtils$RetryableIEventCallback	field	private final Handler mHandler;
+amazon.speech.simclient.directive.ResponseEventUtils$RetryableIEventCallback	field	private final IEventCallback mCallback;
+amazon.speech.simclient.directive.ResponseEventUtils$RetryableIEventCallback	field	private final Object mRequest;
+amazon.speech.simclient.directive.ResponseEventUtils$RetryableIEventCallback	field	private final int mMaxDurationSec;
+amazon.speech.simclient.directive.ResponseEventUtils$RetryableIEventCallback	field	private final int mMaxRetries;
+amazon.speech.simclient.directive.ResponseEventUtils$RetryableIEventCallback	field	private final int mRetryNum;
+amazon.speech.simclient.directive.ResponseEventUtils$RetryableIEventCallback	method	public void onResult(String str, String str2) throws RemoteException
+amazon.speech.simclient.directive.ResponseEventUtils$RetryableIEventCallback	method	public void onResultSuccessNoContent() throws RemoteException
+amazon.speech.simclient.directive.ResponseEventUtils$RetryableIEventCallback	method	public void onResultWithEventId(String str, String str2, String str3) throws RemoteException
+amazon.speech.simclient.directive.SuccessRequest	field	private final Directive mDirective;
+amazon.speech.simclient.directive.SuccessRequest	method	public Directive getDirective()
+amazon.speech.simclient.directive.SuccessRequest	method	public boolean equals(Object obj)
+amazon.speech.simclient.directive.SuccessRequest	method	public int hashCode()
+amazon.speech.simclient.event.AVSEventResult	field	private final boolean mIsRetryable;
+amazon.speech.simclient.event.EventMetadata	field	private Bundle mBundle;
+amazon.speech.simclient.event.EventMetadata	field	private JSONObject mKeys;
+amazon.speech.simclient.event.EventMetadata	field	private final String mName;
+amazon.speech.simclient.event.EventMetadata	field	private final String mNamespace;
+amazon.speech.simclient.event.EventMetadata	field	private final boolean mIncludeDeviceContext;
+amazon.speech.simclient.event.EventMetadata	field	private static final String DEFAULT_LABEL;
+amazon.speech.simclient.event.EventMetadata	field	private static final String TAG;
+amazon.speech.simclient.event.EventMetadata	method	private String getId(Bundle bundle)
+amazon.speech.simclient.event.EventMetadata	method	private boolean idExplicitlyProvided()
+amazon.speech.simclient.event.EventMetadata	method	private void setId(String str, boolean z)
+amazon.speech.simclient.event.EventMetadata	method	public String getCorrelationToken()
+amazon.speech.simclient.event.EventMetadata	method	public String getEventCorrelationToken()
+amazon.speech.simclient.event.EventMetadata	method	public String getInstance()
+amazon.speech.simclient.event.EventMetadata	method	public String getKeys()
+amazon.speech.simclient.event.EventMetadata	method	public String getLabel()
+amazon.speech.simclient.event.EventMetadata	method	public String getName()
+amazon.speech.simclient.event.EventMetadata	method	public String getNamespace()
+amazon.speech.simclient.event.EventMetadata	method	public String getPayloadVersion()
+amazon.speech.simclient.event.EventMetadata	method	public String getPresentationUri()
+amazon.speech.simclient.event.EventMetadata	method	public String getUpc()
+amazon.speech.simclient.event.EventMetadata	method	public String toString()
+amazon.speech.simclient.event.EventMetadata	method	public boolean equals(Object obj)
+amazon.speech.simclient.event.EventMetadata	method	public boolean includeDeviceContext()
+amazon.speech.simclient.event.EventMetadata	method	public int describeContents()
+amazon.speech.simclient.event.EventMetadata	method	public int hashCode()
+amazon.speech.simclient.event.EventMetadata	method	public long getTimestamp()
+amazon.speech.simclient.event.EventMetadata	method	public void refreshIdIfAllowed()
+amazon.speech.simclient.event.EventMetadata	method	public void setKeys(String str)
+amazon.speech.simclient.event.EventMetadata	method	public void writeToParcel(Parcel parcel, int i)
+amazon.speech.simclient.event.EventResult	field	private final boolean mIsRetryable;
+amazon.speech.simclient.event.EventResult	method	public boolean isRetryable()
+amazon.speech.simclient.event.EventRetryMetadata	field	private Delay mRetryDelay;
+amazon.speech.simclient.event.EventRetryMetadata	field	private boolean mUseServerProcessForRetry;
+amazon.speech.simclient.event.EventRetryMetadata	field	private int mMaxRetryCount;
+amazon.speech.simclient.event.EventRetryMetadata	method	private static long[] delayToArray(Delay delay, int i)
+amazon.speech.simclient.event.EventRetryMetadata	method	public EventRetryMetadata(Delay delay, int i, boolean z)
+amazon.speech.simclient.event.EventRetryMetadata	method	public int describeContents()
+amazon.speech.simclient.event.EventRetryMetadata	method	public static Delay arrayToDelay(final long[] jArr)
+amazon.speech.simclient.event.EventRetryMetadata	method	public void writeToParcel(Parcel parcel, int i)
+amazon.speech.simclient.event.IEventCallback$Stub	method	public IBinder asBinder()
+amazon.speech.simclient.event.IEventCallback$Stub	method	public Stub()
+amazon.speech.simclient.event.IEventCallback$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.alexadirectivebrokerservice.DirectiveBroadcastReceiver	method	public void onReceive(Context context, Intent intent)
+com.amazon.alexadirectivebrokerservice.DirectiveProxy	field	private ServiceCallbackImp mCallback;
+com.amazon.alexadirectivebrokerservice.DirectiveProxy	field	private String mServiceName;
+com.amazon.alexadirectivebrokerservice.DirectiveProxy	method	public DirectiveProxy(String str)
+com.amazon.alexadirectivebrokerservice.DirectiveProxy	method	public boolean connect()
+com.amazon.alexadirectivebrokerservice.DirectiveProxy	method	public boolean send(Directive directive)
+com.amazon.alexadirectivebrokerservice.DirectiveProxy$ServiceCallbackImp	field	private CountDownLatch mLatch;
+com.amazon.alexadirectivebrokerservice.DirectiveProxy$ServiceCallbackImp	field	private IBinder mBinder;
+com.amazon.alexadirectivebrokerservice.DirectiveProxy$ServiceCallbackImp	method	public IBinder getBinder()
+com.amazon.alexadirectivebrokerservice.DirectiveProxy$ServiceCallbackImp	method	public ServiceCallbackImp(DirectiveProxy directiveProxy)
+com.amazon.alexadirectivebrokerservice.DirectiveProxy$ServiceCallbackImp	method	public boolean waitForServiceConnection()
+com.amazon.alexadirectivebrokerservice.DirectiveProxy$ServiceCallbackImp	method	public void onServiceConnected(String str, IBinder iBinder)
+com.amazon.alexadirectivebrokerservice.DirectiveProxy$ServiceCallbackImp	method	public void onServiceFailed(String str, String str2)
+com.amazon.alexadirectivebrokerservice.R$raw	field	public static final int device_capabilities;

@@ -1,0 +1,99 @@
+class	kind	declaration
+com.amazon.wirelessmetrics.service.Event	method	public static boolean isBluetoothEvent(Event event)
+com.amazon.wirelessmetrics.service.Event	method	public static boolean isMiscEvent(Event event)
+com.amazon.wirelessmetrics.service.Event	method	public static boolean isWifiEvent(Event event)
+com.amazon.wirelessmetrics.service.Event	method	public static boolean isZigbeeEvent(Event event)
+com.amazon.wirelessmetrics.service.WirelessMetricsService	field	private WirelessMetricsBinder mBinder;
+com.amazon.wirelessmetrics.service.WirelessMetricsService	field	private static Context sContext;
+com.amazon.wirelessmetrics.service.WirelessMetricsService	field	private static boolean sInitialized;
+com.amazon.wirelessmetrics.service.WirelessMetricsService	field	private static volatile WirelessMetricsHandler sHandler;
+com.amazon.wirelessmetrics.service.WirelessMetricsService	method	private static String playState(int i)
+com.amazon.wirelessmetrics.service.WirelessMetricsService	method	private static String profileState(int i)
+com.amazon.wirelessmetrics.service.WirelessMetricsService	method	private void handleEvent(Event event, Intent intent)
+com.amazon.wirelessmetrics.service.WirelessMetricsService	method	private void handleResetStates()
+com.amazon.wirelessmetrics.service.WirelessMetricsService	method	private void initialize()
+com.amazon.wirelessmetrics.service.WirelessMetricsService	method	public IBinder onBind(Intent intent)
+com.amazon.wirelessmetrics.service.WirelessMetricsService	method	public int onStartCommand(Intent intent, int i, int i2)
+com.amazon.wirelessmetrics.service.WirelessMetricsService	method	public static Context getContext()
+com.amazon.wirelessmetrics.service.WirelessMetricsService	method	public static void debugLog(String str)
+com.amazon.wirelessmetrics.service.WirelessMetricsService	method	public static void verboseLog(String str)
+com.amazon.wirelessmetrics.service.WirelessMetricsService	method	public void handleIntent(Intent intent)
+com.amazon.wirelessmetrics.service.WirelessMetricsService	method	public void onCreate()
+com.amazon.wirelessmetrics.service.WirelessMetricsService	method	public void onDestroy()
+com.amazon.wirelessmetrics.service.WirelessMetricsService$WirelessMetricsBinder	method	public WirelessMetricsBinder(WirelessMetricsService wirelessMetricsService, Context context)
+com.amazon.wirelessmetrics.service.WirelessMetricsService$WirelessMetricsBinder	method	public void recordEvent(Intent intent)
+com.amazon.wirelessmetrics.service.WirelessMetricsService$WirelessMetricsHandler	method	public WirelessMetricsHandler(Looper looper)
+com.amazon.wirelessmetrics.service.WirelessMetricsService$WirelessMetricsHandler	method	public void handleMessage(Message message)
+com.amazon.wirelessmetrics.service.WirelessMetricsService$WirelessMetricsHandler	method	public void keepAlive()
+com.amazon.wirelessmetrics.service.WirelessMetricsService$WirelessMetricsHandler	method	public void queueQuit()
+com.amazon.wirelessmetrics.service.eventhandler.BluetoothEventHandler	field	private static BluetoothDevice sA2dpSnk;
+com.amazon.wirelessmetrics.service.eventhandler.BluetoothEventHandler	field	private static BluetoothDevice sA2dpSrc;
+com.amazon.wirelessmetrics.service.eventhandler.BluetoothEventHandler	field	private static SharedPreferences sPrefs;
+com.amazon.wirelessmetrics.service.eventhandler.BluetoothEventHandler	field	private static WirelessMetrics sWirelessMetrics;
+com.amazon.wirelessmetrics.service.eventhandler.BluetoothEventHandler	field	private static boolean sA2dpSnkPlaying;
+com.amazon.wirelessmetrics.service.eventhandler.BluetoothEventHandler	field	private static boolean sA2dpSrcPlaying;
+com.amazon.wirelessmetrics.service.eventhandler.BluetoothEventHandler	field	private static boolean sInitialized;
+com.amazon.wirelessmetrics.service.eventhandler.BluetoothEventHandler	field	private static final EnumMap<Event, Boolean> sBtEvent2Action;
+com.amazon.wirelessmetrics.service.eventhandler.BluetoothEventHandler	field	private static final EnumMap<Event, ProfTypes> sBtEvent2ProfType;
+com.amazon.wirelessmetrics.service.eventhandler.BluetoothEventHandler	field	private static final int PROF_TYPES_MAX;
+com.amazon.wirelessmetrics.service.eventhandler.BluetoothEventHandler	field	private static long[] sProfStarts;
+com.amazon.wirelessmetrics.service.eventhandler.BluetoothEventHandler	method	private static synchronized void syncState()
+com.amazon.wirelessmetrics.service.eventhandler.BluetoothEventHandler	method	public static BluetoothDevice getA2dpSnkDevice()
+com.amazon.wirelessmetrics.service.eventhandler.BluetoothEventHandler	method	public static BluetoothDevice getA2dpSrcDevice()
+com.amazon.wirelessmetrics.service.eventhandler.BluetoothEventHandler	method	public static boolean isA2dpSnkConnected()
+com.amazon.wirelessmetrics.service.eventhandler.BluetoothEventHandler	method	public static boolean isA2dpSnkPlaying()
+com.amazon.wirelessmetrics.service.eventhandler.BluetoothEventHandler	method	public static boolean isA2dpSrcConnected()
+com.amazon.wirelessmetrics.service.eventhandler.BluetoothEventHandler	method	public static boolean isA2dpSrcPlaying()
+com.amazon.wirelessmetrics.service.eventhandler.BluetoothEventHandler	method	public static long getProfStartTime(ProfTypes profTypes)
+com.amazon.wirelessmetrics.service.eventhandler.BluetoothEventHandler	method	public static synchronized void handleEvent(Event event, Intent intent)
+com.amazon.wirelessmetrics.service.eventhandler.BluetoothEventHandler	method	public static synchronized void initialize()
+com.amazon.wirelessmetrics.service.eventhandler.BluetoothEventHandler	method	public static synchronized void resetState()
+com.amazon.wirelessmetrics.service.eventhandler.CoexEventHandler	field	private static ArrayMap<BluetoothDevice, List<Integer>> sRmtDiscScreenOn;
+com.amazon.wirelessmetrics.service.eventhandler.CoexEventHandler	field	private static EnumMap<Event, WirelessMetrics.MiracastCoexMetricLogger> mBtMiracastMetricLoggerMap;
+com.amazon.wirelessmetrics.service.eventhandler.CoexEventHandler	field	private static SharedPreferences sPrefs;
+com.amazon.wirelessmetrics.service.eventhandler.CoexEventHandler	field	private static WirelessMetrics sWirelessMetrics;
+com.amazon.wirelessmetrics.service.eventhandler.CoexEventHandler	field	private static boolean sInitialized;
+com.amazon.wirelessmetrics.service.eventhandler.CoexEventHandler	field	private static int sRmtReconnect;
+com.amazon.wirelessmetrics.service.eventhandler.CoexEventHandler	field	private static long sScreenOnTime;
+com.amazon.wirelessmetrics.service.eventhandler.CoexEventHandler	method	private static synchronized void syncState()
+com.amazon.wirelessmetrics.service.eventhandler.CoexEventHandler	method	private static void initMiracastCoexMetric()
+com.amazon.wirelessmetrics.service.eventhandler.CoexEventHandler	method	private static void recordMiracastCoexMetrics(Event event, long j)
+com.amazon.wirelessmetrics.service.eventhandler.CoexEventHandler	method	public static synchronized void handleEvent(Event event, Intent intent)
+com.amazon.wirelessmetrics.service.eventhandler.CoexEventHandler	method	public static synchronized void initialize()
+com.amazon.wirelessmetrics.service.eventhandler.CoexEventHandler	method	public static synchronized void resetState()
+com.amazon.wirelessmetrics.service.eventhandler.MiscEventHandler	field	private static SharedPreferences sPrefs;
+com.amazon.wirelessmetrics.service.eventhandler.MiscEventHandler	field	private static boolean sInitialized;
+com.amazon.wirelessmetrics.service.eventhandler.MiscEventHandler	field	private static boolean sScreenState;
+com.amazon.wirelessmetrics.service.eventhandler.MiscEventHandler	method	private static synchronized void syncState()
+com.amazon.wirelessmetrics.service.eventhandler.MiscEventHandler	method	public static boolean isScreenOn()
+com.amazon.wirelessmetrics.service.eventhandler.MiscEventHandler	method	public static synchronized void handleEvent(Event event, Intent intent)
+com.amazon.wirelessmetrics.service.eventhandler.MiscEventHandler	method	public static synchronized void initialize()
+com.amazon.wirelessmetrics.service.eventhandler.MiscEventHandler	method	public static synchronized void resetState()
+com.amazon.wirelessmetrics.service.eventhandler.WifiEventHandler	field	private static SharedPreferences sPrefs;
+com.amazon.wirelessmetrics.service.eventhandler.WifiEventHandler	field	private static boolean sInitialized;
+com.amazon.wirelessmetrics.service.eventhandler.WifiEventHandler	field	private static int sConnected;
+com.amazon.wirelessmetrics.service.eventhandler.WifiEventHandler	field	private static int sFrequency;
+com.amazon.wirelessmetrics.service.eventhandler.WifiEventHandler	field	private static int sMiracastBand;
+com.amazon.wirelessmetrics.service.eventhandler.WifiEventHandler	field	private static long sMiracastBtCoexStart;
+com.amazon.wirelessmetrics.service.eventhandler.WifiEventHandler	method	private static synchronized void syncState()
+com.amazon.wirelessmetrics.service.eventhandler.WifiEventHandler	method	public static boolean is24GHz(int i)
+com.amazon.wirelessmetrics.service.eventhandler.WifiEventHandler	method	public static boolean isConnected()
+com.amazon.wirelessmetrics.service.eventhandler.WifiEventHandler	method	public static boolean isOnlySTA24GDuringMiracast()
+com.amazon.wirelessmetrics.service.eventhandler.WifiEventHandler	method	public static int getFrequency()
+com.amazon.wirelessmetrics.service.eventhandler.WifiEventHandler	method	public static long getMiracastBtCoexStartTime()
+com.amazon.wirelessmetrics.service.eventhandler.WifiEventHandler	method	public static synchronized void handleEvent(Event event, Intent intent)
+com.amazon.wirelessmetrics.service.eventhandler.WifiEventHandler	method	public static synchronized void initialize()
+com.amazon.wirelessmetrics.service.eventhandler.WifiEventHandler	method	public static synchronized void resetState()
+com.amazon.wirelessmetrics.service.eventhandler.ZigbeeEventHandler	field	private static SharedPreferences sPrefs;
+com.amazon.wirelessmetrics.service.eventhandler.ZigbeeEventHandler	field	private static boolean sInitialized;
+com.amazon.wirelessmetrics.service.eventhandler.ZigbeeEventHandler	field	private static int sChannel;
+com.amazon.wirelessmetrics.service.eventhandler.ZigbeeEventHandler	field	private static int sNetSize;
+com.amazon.wirelessmetrics.service.eventhandler.ZigbeeEventHandler	field	private static int sNetState;
+com.amazon.wirelessmetrics.service.eventhandler.ZigbeeEventHandler	method	private static Event getEventFromIntent(Intent intent)
+com.amazon.wirelessmetrics.service.eventhandler.ZigbeeEventHandler	method	private static synchronized void syncState()
+com.amazon.wirelessmetrics.service.eventhandler.ZigbeeEventHandler	method	public static boolean isZigbeeAvailable()
+com.amazon.wirelessmetrics.service.eventhandler.ZigbeeEventHandler	method	public static int getChannel()
+com.amazon.wirelessmetrics.service.eventhandler.ZigbeeEventHandler	method	public static int getNetworkSize()
+com.amazon.wirelessmetrics.service.eventhandler.ZigbeeEventHandler	method	public static synchronized void handleEvent(Event event, Intent intent)
+com.amazon.wirelessmetrics.service.eventhandler.ZigbeeEventHandler	method	public static synchronized void initialize()
+com.amazon.wirelessmetrics.service.eventhandler.ZigbeeEventHandler	method	public static synchronized void resetState()

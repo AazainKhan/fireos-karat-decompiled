@@ -1,0 +1,202 @@
+class	kind	declaration
+com.android.mms.service.ApnSettings	field	private final String mDebugText;
+com.android.mms.service.ApnSettings	field	private final String mProxyAddress;
+com.android.mms.service.ApnSettings	field	private final String mServiceCenter;
+com.android.mms.service.ApnSettings	field	private final int mProxyPort;
+com.android.mms.service.ApnSettings	field	private static final String[] APN_PROJECTION;
+com.android.mms.service.ApnSettings	method	private static ApnSettings getApnSettingsFromCursor(Cursor cursor, String str) throws ApnException
+com.android.mms.service.ApnSettings	method	private static String getDebugText(Cursor cursor)
+com.android.mms.service.ApnSettings	method	private static String trimWithNullCheck(String str)
+com.android.mms.service.ApnSettings	method	private static boolean isValidApnType(String str, String str2)
+com.android.mms.service.ApnSettings	method	public ApnSettings(String str, String str2, int i, String str3)
+com.android.mms.service.ApnSettings	method	public String getMmscUrl()
+com.android.mms.service.ApnSettings	method	public String getProxyAddress()
+com.android.mms.service.ApnSettings	method	public String toString()
+com.android.mms.service.ApnSettings	method	public boolean isProxySet()
+com.android.mms.service.ApnSettings	method	public int getProxyPort()
+com.android.mms.service.ApnSettings	method	public static ApnSettings load(Context context, String str, int i, String str2) throws ApnException
+com.android.mms.service.DownloadRequest	field	private final PendingIntent mDownloadedIntent;
+com.android.mms.service.DownloadRequest	field	private final String mLocationUrl;
+com.android.mms.service.DownloadRequest	field	private final Uri mContentUri;
+com.android.mms.service.DownloadRequest	method	private void notifyOfDownload(Context context)
+com.android.mms.service.DownloadRequest	method	protected PendingIntent getPendingIntent()
+com.android.mms.service.DownloadRequest	method	protected Uri persistIfRequired(Context context, int i, byte[] bArr)
+com.android.mms.service.DownloadRequest	method	protected boolean prepareForHttpRequest()
+com.android.mms.service.DownloadRequest	method	protected boolean transferResponse(Intent intent, byte[] bArr)
+com.android.mms.service.DownloadRequest	method	protected byte[] doHttp(Context context, MmsNetworkManager mmsNetworkManager, ApnSettings apnSettings) throws MmsHttpException
+com.android.mms.service.DownloadRequest	method	protected int getQueueType()
+com.android.mms.service.DownloadRequest	method	protected void revokeUriPermission(Context context)
+com.android.mms.service.DownloadRequest	method	public DownloadRequest(MmsRequest.RequestManager requestManager, int i, String str, Uri uri, PendingIntent pendingIntent, String str2, Bundle bundle, Context context, long j)
+com.android.mms.service.DownloadRequest	method	public void tryDownloadingByCarrierApp(Context context, String str)
+com.android.mms.service.DownloadRequest$CarrierDownloadCompleteCallback	field	private final CarrierDownloadManager mCarrierDownloadManager;
+com.android.mms.service.DownloadRequest$CarrierDownloadCompleteCallback	field	private final Context mContext;
+com.android.mms.service.DownloadRequest$CarrierDownloadCompleteCallback	method	public CarrierDownloadCompleteCallback(Context context, CarrierDownloadManager carrierDownloadManager)
+com.android.mms.service.DownloadRequest$CarrierDownloadCompleteCallback	method	public void onDownloadMmsComplete(int i)
+com.android.mms.service.DownloadRequest$CarrierDownloadCompleteCallback	method	public void onSendMmsComplete(int i, byte[] bArr)
+com.android.mms.service.DownloadRequest$CarrierDownloadManager	field	private volatile CarrierDownloadCompleteCallback mCarrierDownloadCallback;
+com.android.mms.service.DownloadRequest$CarrierDownloadManager	method	private CarrierDownloadManager()
+com.android.mms.service.DownloadRequest$CarrierDownloadManager	method	public void onServiceReady()
+com.android.mms.service.LogUtil	method	public static boolean isLoggable(int i)
+com.android.mms.service.LogUtil	method	public static void d(String str)
+com.android.mms.service.LogUtil	method	public static void d(String str, String str2)
+com.android.mms.service.LogUtil	method	public static void e(String str)
+com.android.mms.service.LogUtil	method	public static void e(String str, String str2)
+com.android.mms.service.LogUtil	method	public static void e(String str, String str2, Throwable th)
+com.android.mms.service.LogUtil	method	public static void e(String str, Throwable th)
+com.android.mms.service.LogUtil	method	public static void i(String str)
+com.android.mms.service.LogUtil	method	public static void i(String str, String str2)
+com.android.mms.service.LogUtil	method	public static void v(String str)
+com.android.mms.service.LogUtil	method	public static void v(String str, String str2)
+com.android.mms.service.LogUtil	method	public static void w(String str)
+com.android.mms.service.LogUtil	method	public static void w(String str, String str2)
+com.android.mms.service.LogUtil	method	public static void w(String str, String str2, Throwable th)
+com.android.mms.service.LogUtil	method	public static void w(String str, Throwable th)
+com.android.mms.service.MmsConfigManager	field	private Context mContext;
+com.android.mms.service.MmsConfigManager	field	private SubscriptionManager mSubscriptionManager;
+com.android.mms.service.MmsConfigManager	field	private final Map<Integer, Bundle> mSubIdConfigMap;
+com.android.mms.service.MmsConfigManager	field	private static volatile MmsConfigManager sInstance;
+com.android.mms.service.MmsConfigManager	method	public Bundle getMmsConfigBySubId(int i)
+com.android.mms.service.MmsConfigManager	method	public static MmsConfigManager getInstance()
+com.android.mms.service.MmsConfigManager	method	public void init(Context context)
+com.android.mms.service.MmsConfigManager	method	public void load(Context context)
+com.android.mms.service.MmsConfigManager	method	public void loadInBackground()
+com.android.mms.service.MmsHttpClient	field	private final ConnectivityManager mConnectivityManager;
+com.android.mms.service.MmsHttpClient	field	private final Context mContext;
+com.android.mms.service.MmsHttpClient	field	private final Network mNetwork;
+com.android.mms.service.MmsHttpClient	field	private static final Pattern MACRO_P;
+com.android.mms.service.MmsHttpClient	method	private static String convertObsoleteLanguageCodeToNew(String str)
+com.android.mms.service.MmsHttpClient	method	private static String getMacroValue(Context context, String str, Bundle bundle, int i)
+com.android.mms.service.MmsHttpClient	method	private static String getNai(TelephonyManager telephonyManager, Bundle bundle)
+com.android.mms.service.MmsHttpClient	method	private static String resolveMacro(Context context, String str, Bundle bundle, int i)
+com.android.mms.service.MmsHttpClient	method	private static void addLocaleToHttpAcceptLanguage(StringBuilder sb, Locale locale)
+com.android.mms.service.MmsHttpClient	method	private static void checkMethod(String str) throws MmsHttpException
+com.android.mms.service.MmsHttpClient	method	private static void logHttpHeaders(Map<String, List<String>> map, String str)
+com.android.mms.service.MmsHttpClient	method	private void addExtraHeaders(HttpURLConnection httpURLConnection, Bundle bundle, int i)
+com.android.mms.service.MmsHttpClient	method	private void maybeWaitForIpv4(String str, URL url)
+com.android.mms.service.MmsHttpClient	method	public MmsHttpClient(Context context, Network network, ConnectivityManager connectivityManager)
+com.android.mms.service.MmsHttpClient	method	public byte[] execute(String str, byte[] bArr, String str2, boolean z, String str3, int i, Bundle bundle, int i2, String str4) throws Throwable
+com.android.mms.service.MmsHttpClient	method	public static String getCurrentAcceptLanguage(Locale locale)
+com.android.mms.service.MmsHttpClient	method	public static String redactUrlForNonVerbose(String str)
+com.android.mms.service.MmsNetworkManager	field	private ConnectivityManager.NetworkCallback mNetworkCallback;
+com.android.mms.service.MmsNetworkManager	field	private MmsHttpClient mMmsHttpClient;
+com.android.mms.service.MmsNetworkManager	field	private Network mNetwork;
+com.android.mms.service.MmsNetworkManager	field	private final Context mContext;
+com.android.mms.service.MmsNetworkManager	field	private final Handler mReleaseHandler;
+com.android.mms.service.MmsNetworkManager	field	private final NetworkRequest mNetworkRequest;
+com.android.mms.service.MmsNetworkManager	field	private final int mSubId;
+com.android.mms.service.MmsNetworkManager	field	private int mMmsRequestCount;
+com.android.mms.service.MmsNetworkManager	field	private volatile ConnectivityManager mConnectivityManager;
+com.android.mms.service.MmsNetworkManager	method	private ConnectivityManager getConnectivityManager()
+com.android.mms.service.MmsNetworkManager	method	private int getNetworkRequestTimeoutMillis()
+com.android.mms.service.MmsNetworkManager	method	private void resetLocked()
+com.android.mms.service.MmsNetworkManager	method	private void startNewNetworkRequestLocked(int i)
+com.android.mms.service.MmsNetworkManager	method	public MmsHttpClient getOrCreateHttpClient()
+com.android.mms.service.MmsNetworkManager	method	public MmsNetworkManager(Context context, int i)
+com.android.mms.service.MmsNetworkManager	method	public String getApnName()
+com.android.mms.service.MmsNetworkManager	method	public void acquireNetwork(String str) throws MmsNetworkException
+com.android.mms.service.MmsNetworkManager	method	public void releaseNetwork(String str, boolean z)
+com.android.mms.service.MmsNetworkManager	method	public void releaseRequestLocked(ConnectivityManager.NetworkCallback networkCallback)
+com.android.mms.service.MmsNetworkManager$NetworkRequestCallback	method	private NetworkRequestCallback()
+com.android.mms.service.MmsNetworkManager$NetworkRequestCallback	method	public void onAvailable(Network network)
+com.android.mms.service.MmsNetworkManager$NetworkRequestCallback	method	public void onLost(Network network)
+com.android.mms.service.MmsNetworkManager$NetworkRequestCallback	method	public void onUnavailable()
+com.android.mms.service.MmsRequest	field	protected Bundle mMmsConfig;
+com.android.mms.service.MmsRequest	field	protected Bundle mMmsConfigOverrides;
+com.android.mms.service.MmsRequest	field	protected Context mContext;
+com.android.mms.service.MmsRequest	field	protected RequestManager mRequestManager;
+com.android.mms.service.MmsRequest	field	protected String mCreator;
+com.android.mms.service.MmsRequest	field	protected int mSubId;
+com.android.mms.service.MmsRequest	field	protected long mMessageId;
+com.android.mms.service.MmsRequest	method	private boolean ensureMmsConfigLoaded()
+com.android.mms.service.MmsRequest	method	protected String getRequestId()
+com.android.mms.service.MmsRequest	method	protected abstract PendingIntent getPendingIntent();
+com.android.mms.service.MmsRequest	method	protected abstract Uri persistIfRequired(Context context, int i, byte[] bArr);
+com.android.mms.service.MmsRequest	method	protected abstract boolean prepareForHttpRequest();
+com.android.mms.service.MmsRequest	method	protected abstract boolean transferResponse(Intent intent, byte[] bArr);
+com.android.mms.service.MmsRequest	method	protected abstract byte[] doHttp(Context context, MmsNetworkManager mmsNetworkManager, ApnSettings apnSettings) throws MmsHttpException;
+com.android.mms.service.MmsRequest	method	protected abstract int getQueueType();
+com.android.mms.service.MmsRequest	method	protected abstract void revokeUriPermission(Context context);
+com.android.mms.service.MmsRequest	method	protected boolean maybeFallbackToRegularDelivery(int i)
+com.android.mms.service.MmsRequest	method	protected static int toSmsManagerResult(int i)
+com.android.mms.service.MmsRequest	method	public MmsRequest(RequestManager requestManager, int i, String str, Bundle bundle, Context context, long j)
+com.android.mms.service.MmsRequest	method	public String toString()
+com.android.mms.service.MmsRequest	method	public int getSubId()
+com.android.mms.service.MmsRequest	method	public void execute(Context context, MmsNetworkManager mmsNetworkManager)
+com.android.mms.service.MmsRequest	method	public void processResult(Context context, int i, byte[] bArr, int i2)
+com.android.mms.service.MmsRequest$CarrierMmsActionCallback	method	protected CarrierMmsActionCallback()
+com.android.mms.service.MmsRequest$CarrierMmsActionCallback	method	public void onFilterComplete(int i)
+com.android.mms.service.MmsRequest$CarrierMmsActionCallback	method	public void onSendMultipartSmsComplete(int i, int[] iArr)
+com.android.mms.service.MmsRequest$CarrierMmsActionCallback	method	public void onSendSmsComplete(int i, int i2)
+com.android.mms.service.MmsService	field	private TelephonyManager mDefaultTelephonyManager;
+com.android.mms.service.MmsService	field	private final ExecutorService mPduTransferExecutor;
+com.android.mms.service.MmsService	field	private final ExecutorService[] mRunningRequestExecutors;
+com.android.mms.service.MmsService	field	private final Queue<MmsRequest> mPendingSimRequestQueue;
+com.android.mms.service.MmsService	field	private final SparseArray<MmsNetworkManager> mNetworkManagerCache;
+com.android.mms.service.MmsService	field	private final SparseArray<TelephonyManager> mTelephonyManagerCache;
+com.android.mms.service.MmsService	field	private int mCurrentSubId;
+com.android.mms.service.MmsService	field	private int mRunningRequestCount;
+com.android.mms.service.MmsService	method	private static GenericPdu parsePduForAnyCarrier(byte[] bArr)
+com.android.mms.service.MmsService	method	private void addToRunningRequestQueueSynchronized(final MmsRequest mmsRequest)
+com.android.mms.service.MmsService	method	public IBinder onBind(Intent intent)
+com.android.mms.service.MmsService	method	public MmsNetworkManager getNetworkManager(int i)
+com.android.mms.service.MmsService	method	public String getCarrierMessagingServicePackageIfExists(int i)
+com.android.mms.service.MmsService	method	public TelephonyManager getTelephonyManager(int i)
+com.android.mms.service.MmsService	method	public Uri addMmsDraft(Uri uri, String str)
+com.android.mms.service.MmsService	method	public Uri addSmsDraft(String str, String str2, String str3)
+com.android.mms.service.MmsService	method	public Uri importMms(Uri uri, String str, long j, boolean z, boolean z2, String str2)
+com.android.mms.service.MmsService	method	public Uri importSms(String str, int i, String str2, long j, boolean z, boolean z2, String str3)
+com.android.mms.service.MmsService	method	public boolean archiveConversation(long j, boolean z)
+com.android.mms.service.MmsService	method	public boolean getAutoPersistingPref()
+com.android.mms.service.MmsService	method	public boolean updateMessageStatus(Uri uri, ContentValues contentValues)
+com.android.mms.service.MmsService	method	public boolean writePduToContentUri(final Uri uri, final byte[] bArr)
+com.android.mms.service.MmsService	method	public byte[] readPduFromContentUri(Uri uri, int i)
+com.android.mms.service.MmsService	method	public int readPduBytesFromContentUri(final Uri uri, final byte[] bArr)
+com.android.mms.service.MmsService	method	public static boolean isSmsMmsContentUri(Uri uri)
+com.android.mms.service.MmsService	method	public void addSimRequest(MmsRequest mmsRequest)
+com.android.mms.service.MmsService	method	public void enforceSystemUid()
+com.android.mms.service.MmsService	method	public void movePendingSimRequestsToRunningSynchronized()
+com.android.mms.service.MmsService	method	public void onCreate()
+com.android.mms.service.MmsService	method	public void onDestroy()
+com.android.mms.service.MmsService	method	public void sendSettingsIntentForFailedMms(boolean z, int i)
+com.android.mms.service.PhoneUtils	method	private static Phonenumber.PhoneNumber getParsedNumber(PhoneNumberUtil phoneNumberUtil, String str, String str2)
+com.android.mms.service.PhoneUtils	method	private static String getSimCountry(TelephonyManager telephonyManager)
+com.android.mms.service.PhoneUtils	method	private static String getSimOrDefaultLocaleCountry(TelephonyManager telephonyManager)
+com.android.mms.service.PhoneUtils	method	public static String getNationalNumber(TelephonyManager telephonyManager, String str)
+com.android.mms.service.R$xml	field	public static final int mms_config;
+com.android.mms.service.SendRequest	field	private byte[] mPduData;
+com.android.mms.service.SendRequest	field	private final PendingIntent mSentIntent;
+com.android.mms.service.SendRequest	field	private final String mLocationUrl;
+com.android.mms.service.SendRequest	field	private final Uri mPduUri;
+com.android.mms.service.SendRequest	method	private GenericPdu parsePdu()
+com.android.mms.service.SendRequest	method	private boolean isEmergencyNumber(String str)
+com.android.mms.service.SendRequest	method	private boolean readPduFromContentUri()
+com.android.mms.service.SendRequest	method	private boolean updateDestinationAddressPerType(SendReq sendReq, int i)
+com.android.mms.service.SendRequest	method	private void notifyIfEmergencyContact(GenericPdu genericPdu)
+com.android.mms.service.SendRequest	method	private void notifyIfEmergencyContactNoThrow(GenericPdu genericPdu)
+com.android.mms.service.SendRequest	method	private void updateDestinationAddress(GenericPdu genericPdu)
+com.android.mms.service.SendRequest	method	protected PendingIntent getPendingIntent()
+com.android.mms.service.SendRequest	method	protected Uri persistIfRequired(Context context, int i, byte[] bArr)
+com.android.mms.service.SendRequest	method	protected boolean prepareForHttpRequest()
+com.android.mms.service.SendRequest	method	protected boolean transferResponse(Intent intent, byte[] bArr)
+com.android.mms.service.SendRequest	method	protected byte[] doHttp(Context context, MmsNetworkManager mmsNetworkManager, ApnSettings apnSettings) throws MmsHttpException
+com.android.mms.service.SendRequest	method	protected int getQueueType()
+com.android.mms.service.SendRequest	method	protected void revokeUriPermission(Context context)
+com.android.mms.service.SendRequest	method	public SendRequest(MmsRequest.RequestManager requestManager, int i, Uri uri, String str, PendingIntent pendingIntent, String str2, Bundle bundle, Context context, long j)
+com.android.mms.service.SendRequest	method	public void trySendingByCarrierApp(Context context, String str)
+com.android.mms.service.SendRequest$CarrierSendCompleteCallback	field	private final CarrierSendManager mCarrierSendManager;
+com.android.mms.service.SendRequest$CarrierSendCompleteCallback	field	private final Context mContext;
+com.android.mms.service.SendRequest$CarrierSendCompleteCallback	method	public CarrierSendCompleteCallback(Context context, CarrierSendManager carrierSendManager)
+com.android.mms.service.SendRequest$CarrierSendCompleteCallback	method	public void onDownloadMmsComplete(int i)
+com.android.mms.service.SendRequest$CarrierSendCompleteCallback	method	public void onSendMmsComplete(int i, byte[] bArr)
+com.android.mms.service.SendRequest$CarrierSendManager	field	private volatile CarrierSendCompleteCallback mCarrierSendCompleteCallback;
+com.android.mms.service.SendRequest$CarrierSendManager	method	private CarrierSendManager()
+com.android.mms.service.SendRequest$CarrierSendManager	method	public void onServiceReady()
+com.android.mms.service.exception.ApnException	method	public ApnException()
+com.android.mms.service.exception.ApnException	method	public ApnException(String str)
+com.android.mms.service.exception.MmsHttpException	field	private final int mStatusCode;
+com.android.mms.service.exception.MmsHttpException	method	public MmsHttpException(int i, String str)
+com.android.mms.service.exception.MmsHttpException	method	public MmsHttpException(int i, String str, Throwable th)
+com.android.mms.service.exception.MmsHttpException	method	public MmsHttpException(int i, Throwable th)
+com.android.mms.service.exception.MmsHttpException	method	public int getStatusCode()
+com.android.mms.service.exception.MmsNetworkException	method	public MmsNetworkException()
+com.android.mms.service.exception.MmsNetworkException	method	public MmsNetworkException(String str)

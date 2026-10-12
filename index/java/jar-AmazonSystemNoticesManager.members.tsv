@@ -1,0 +1,31 @@
+class	kind	declaration
+com.amazon.systemnotices.AmazonSystemNoticesManager	field	private Context mContext;
+com.amazon.systemnotices.AmazonSystemNoticesManager	field	private IAmazonSystemNoticesService mService;
+com.amazon.systemnotices.AmazonSystemNoticesManager	field	private ServiceConnection mConnection;
+com.amazon.systemnotices.AmazonSystemNoticesManager	field	private ServiceStateListener mServiceStateListener;
+com.amazon.systemnotices.AmazonSystemNoticesManager	field	private static AmazonSystemNoticesManager sManager;
+com.amazon.systemnotices.AmazonSystemNoticesManager	field	private static final String SERVICE_CLASSNAME;
+com.amazon.systemnotices.AmazonSystemNoticesManager	field	private static final String SERVICE_PACKAGE;
+com.amazon.systemnotices.AmazonSystemNoticesManager	field	private static final String TAG;
+com.amazon.systemnotices.AmazonSystemNoticesManager	field	private static final boolean DEBUG;
+com.amazon.systemnotices.AmazonSystemNoticesManager	field	public static final String NOTICE_CONSENT_SCREEN;
+com.amazon.systemnotices.AmazonSystemNoticesManager	field	public static final String SERVICE_NAME;
+com.amazon.systemnotices.AmazonSystemNoticesManager	method	private synchronized void connectToService(ServiceStateListener serviceStateListener)
+com.amazon.systemnotices.AmazonSystemNoticesManager	method	public AmazonSystemNoticesManager(Context context, ServiceStateListener serviceStateListener)
+com.amazon.systemnotices.AmazonSystemNoticesManager	method	public void disconnectFromService()
+com.amazon.systemnotices.AmazonSystemNoticesManager	method	public void showSystemNotice(String str, boolean z)
+com.amazon.systemnotices.IAmazonSystemNoticesService$Default	method	public IBinder asBinder()
+com.amazon.systemnotices.IAmazonSystemNoticesService$Default	method	public void showSystemNotice(String str, boolean z) throws RemoteException
+com.amazon.systemnotices.IAmazonSystemNoticesService$Stub	field	private static final String DESCRIPTOR;
+com.amazon.systemnotices.IAmazonSystemNoticesService$Stub	field	static final int TRANSACTION_showSystemNotice;
+com.amazon.systemnotices.IAmazonSystemNoticesService$Stub	method	public IBinder asBinder()
+com.amazon.systemnotices.IAmazonSystemNoticesService$Stub	method	public Stub()
+com.amazon.systemnotices.IAmazonSystemNoticesService$Stub	method	public boolean onTransact(int i, Parcel parcel, Parcel parcel2, int i2) throws RemoteException
+com.amazon.systemnotices.IAmazonSystemNoticesService$Stub	method	public static IAmazonSystemNoticesService asInterface(IBinder iBinder)
+com.amazon.systemnotices.IAmazonSystemNoticesService$Stub	method	public static IAmazonSystemNoticesService getDefaultImpl()
+com.amazon.systemnotices.IAmazonSystemNoticesService$Stub	method	public static boolean setDefaultImpl(IAmazonSystemNoticesService iAmazonSystemNoticesService)
+com.amazon.systemnotices.IAmazonSystemNoticesService$Stub$Proxy	field	private IBinder mRemote;
+com.amazon.systemnotices.IAmazonSystemNoticesService$Stub$Proxy	field	public static IAmazonSystemNoticesService sDefaultImpl;
+com.amazon.systemnotices.IAmazonSystemNoticesService$Stub$Proxy	method	public IBinder asBinder()
+com.amazon.systemnotices.IAmazonSystemNoticesService$Stub$Proxy	method	public String getInterfaceDescriptor()
+com.amazon.systemnotices.IAmazonSystemNoticesService$Stub$Proxy	method	public void showSystemNotice(String str, boolean z) throws RemoteException

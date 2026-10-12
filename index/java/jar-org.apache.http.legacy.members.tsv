@@ -1,0 +1,596 @@
+class	kind	declaration
+android.net.compatibility.WebAddress	field	private String mAuthInfo;
+android.net.compatibility.WebAddress	field	private String mHost;
+android.net.compatibility.WebAddress	field	private String mPath;
+android.net.compatibility.WebAddress	field	private String mScheme;
+android.net.compatibility.WebAddress	field	private int mPort;
+android.net.compatibility.WebAddress	field	static Pattern sAddressPattern;
+android.net.compatibility.WebAddress	field	static final int MATCH_GROUP_AUTHORITY;
+android.net.compatibility.WebAddress	field	static final int MATCH_GROUP_HOST;
+android.net.compatibility.WebAddress	field	static final int MATCH_GROUP_PATH;
+android.net.compatibility.WebAddress	field	static final int MATCH_GROUP_PORT;
+android.net.compatibility.WebAddress	field	static final int MATCH_GROUP_SCHEME;
+android.net.compatibility.WebAddress	method	public String getAuthInfo()
+android.net.compatibility.WebAddress	method	public String getHost()
+android.net.compatibility.WebAddress	method	public String getPath()
+android.net.compatibility.WebAddress	method	public String getScheme()
+android.net.compatibility.WebAddress	method	public String toString()
+android.net.compatibility.WebAddress	method	public WebAddress(String str) throws IllegalArgumentException
+android.net.compatibility.WebAddress	method	public int getPort()
+android.net.compatibility.WebAddress	method	public void setAuthInfo(String str)
+android.net.compatibility.WebAddress	method	public void setHost(String str)
+android.net.compatibility.WebAddress	method	public void setPath(String str)
+android.net.compatibility.WebAddress	method	public void setPort(int i)
+android.net.compatibility.WebAddress	method	public void setScheme(String str)
+android.net.http.AndroidHttpClient	field	private RuntimeException mLeakedException;
+android.net.http.AndroidHttpClient	field	private final HttpClient delegate;
+android.net.http.AndroidHttpClient	field	private static String[] textContentTypes;
+android.net.http.AndroidHttpClient	field	private static final String TAG;
+android.net.http.AndroidHttpClient	field	private static final int SOCKET_OPERATION_TIMEOUT;
+android.net.http.AndroidHttpClient	field	private volatile LoggingConfiguration curlConfiguration;
+android.net.http.AndroidHttpClient	field	public static long DEFAULT_SYNC_MIN_GZIP_BYTES;
+android.net.http.AndroidHttpClient	method	private AndroidHttpClient(ClientConnectionManager clientConnectionManager, HttpParams httpParams)
+android.net.http.AndroidHttpClient	method	private static boolean isBinaryContent(HttpUriRequest httpUriRequest)
+android.net.http.AndroidHttpClient	method	protected void finalize() throws Throwable
+android.net.http.AndroidHttpClient	method	public <T> T execute(HttpHost httpHost, HttpRequest httpRequest, ResponseHandler<? extends T> responseHandler) throws IOException
+android.net.http.AndroidHttpClient	method	public <T> T execute(HttpHost httpHost, HttpRequest httpRequest, ResponseHandler<? extends T> responseHandler, HttpContext httpContext) throws IOException
+android.net.http.AndroidHttpClient	method	public <T> T execute(HttpUriRequest httpUriRequest, ResponseHandler<? extends T> responseHandler) throws IOException
+android.net.http.AndroidHttpClient	method	public <T> T execute(HttpUriRequest httpUriRequest, ResponseHandler<? extends T> responseHandler, HttpContext httpContext) throws IOException
+android.net.http.AndroidHttpClient	method	public ClientConnectionManager getConnectionManager()
+android.net.http.AndroidHttpClient	method	public HttpParams getParams()
+android.net.http.AndroidHttpClient	method	public HttpResponse execute(HttpHost httpHost, HttpRequest httpRequest) throws IOException
+android.net.http.AndroidHttpClient	method	public HttpResponse execute(HttpHost httpHost, HttpRequest httpRequest, HttpContext httpContext) throws IOException
+android.net.http.AndroidHttpClient	method	public HttpResponse execute(HttpUriRequest httpUriRequest) throws IOException
+android.net.http.AndroidHttpClient	method	public HttpResponse execute(HttpUriRequest httpUriRequest, HttpContext httpContext) throws IOException
+android.net.http.AndroidHttpClient	method	public static AbstractHttpEntity getCompressedEntity(byte[] bArr, ContentResolver contentResolver) throws IOException
+android.net.http.AndroidHttpClient	method	public static AndroidHttpClient newInstance(String str)
+android.net.http.AndroidHttpClient	method	public static AndroidHttpClient newInstance(String str, Context context)
+android.net.http.AndroidHttpClient	method	public static InputStream getUngzippedContent(HttpEntity httpEntity) throws IOException
+android.net.http.AndroidHttpClient	method	public static String toCurl(HttpUriRequest httpUriRequest, boolean z) throws IOException
+android.net.http.AndroidHttpClient	method	public static long getMinGzipSize(ContentResolver contentResolver)
+android.net.http.AndroidHttpClient	method	public static long parseDate(String str)
+android.net.http.AndroidHttpClient	method	public static void modifyRequestToAcceptGzipResponse(HttpRequest httpRequest)
+android.net.http.AndroidHttpClient	method	public void close()
+android.net.http.AndroidHttpClient	method	public void disableCurlLogging()
+android.net.http.AndroidHttpClient	method	public void enableCurlLogging(String str, int i)
+android.net.http.AndroidHttpClient$CurlLogger	method	private CurlLogger()
+android.net.http.AndroidHttpClient$CurlLogger	method	public void process(HttpRequest httpRequest, HttpContext httpContext) throws org.apache.http.HttpException, IOException
+android.net.http.AndroidHttpClient$LoggingConfiguration	field	private final String tag;
+android.net.http.AndroidHttpClient$LoggingConfiguration	field	private final int level;
+android.net.http.AndroidHttpClient$LoggingConfiguration	method	private LoggingConfiguration(String str, int i)
+android.net.http.AndroidHttpClient$LoggingConfiguration	method	public boolean isLoggable()
+android.net.http.AndroidHttpClient$LoggingConfiguration	method	public void println(String str)
+android.net.http.AndroidHttpClientConnection	field	private HttpConnectionMetricsImpl metrics;
+android.net.http.AndroidHttpClientConnection	field	private HttpMessageWriter requestWriter;
+android.net.http.AndroidHttpClientConnection	field	private SessionInputBuffer inbuffer;
+android.net.http.AndroidHttpClientConnection	field	private SessionOutputBuffer outbuffer;
+android.net.http.AndroidHttpClientConnection	field	private Socket socket;
+android.net.http.AndroidHttpClientConnection	field	private final EntitySerializer entityserializer;
+android.net.http.AndroidHttpClientConnection	field	private int maxHeaderCount;
+android.net.http.AndroidHttpClientConnection	field	private int maxLineLength;
+android.net.http.AndroidHttpClientConnection	field	private volatile boolean open;
+android.net.http.AndroidHttpClientConnection	method	private long determineLength(Headers headers)
+android.net.http.AndroidHttpClientConnection	method	private void assertNotOpen()
+android.net.http.AndroidHttpClientConnection	method	private void assertOpen()
+android.net.http.AndroidHttpClientConnection	method	protected void doFlush() throws IOException
+android.net.http.AndroidHttpClientConnection	method	public HttpConnectionMetrics getMetrics()
+android.net.http.AndroidHttpClientConnection	method	public HttpEntity receiveResponseEntity(Headers headers)
+android.net.http.AndroidHttpClientConnection	method	public InetAddress getLocalAddress()
+android.net.http.AndroidHttpClientConnection	method	public InetAddress getRemoteAddress()
+android.net.http.AndroidHttpClientConnection	method	public StatusLine parseResponseHeader(Headers headers) throws ParseException, IOException
+android.net.http.AndroidHttpClientConnection	method	public String toString()
+android.net.http.AndroidHttpClientConnection	method	public boolean isOpen()
+android.net.http.AndroidHttpClientConnection	method	public boolean isStale()
+android.net.http.AndroidHttpClientConnection	method	public int getLocalPort()
+android.net.http.AndroidHttpClientConnection	method	public int getRemotePort()
+android.net.http.AndroidHttpClientConnection	method	public int getSocketTimeout()
+android.net.http.AndroidHttpClientConnection	method	public void bind(Socket socket, HttpParams httpParams) throws IOException
+android.net.http.AndroidHttpClientConnection	method	public void close() throws IOException
+android.net.http.AndroidHttpClientConnection	method	public void flush() throws IOException
+android.net.http.AndroidHttpClientConnection	method	public void sendRequestEntity(HttpEntityEnclosingRequest httpEntityEnclosingRequest) throws org.apache.http.HttpException, IOException
+android.net.http.AndroidHttpClientConnection	method	public void sendRequestHeader(HttpRequest httpRequest) throws org.apache.http.HttpException, IOException
+android.net.http.AndroidHttpClientConnection	method	public void setSocketTimeout(int i)
+android.net.http.AndroidHttpClientConnection	method	public void shutdown() throws IOException
+android.net.http.CertificateChainValidator	field	private X509TrustManager mTrustManager;
+android.net.http.CertificateChainValidator	field	private static final String TAG;
+android.net.http.CertificateChainValidator	method	private CertificateChainValidator()
+android.net.http.CertificateChainValidator	method	private X509TrustManager getTrustManager()
+android.net.http.CertificateChainValidator	method	private static SslError verifyServerDomainAndCertificates(X509Certificate[] x509CertificateArr, String str, String str2) throws IOException
+android.net.http.CertificateChainValidator	method	private void closeSocketThrowException(SSLSocket sSLSocket, String str) throws IOException
+android.net.http.CertificateChainValidator	method	private void closeSocketThrowException(SSLSocket sSLSocket, String str, String str2) throws IOException
+android.net.http.CertificateChainValidator	method	public SslError doHandshakeAndValidateServerCertificates(HttpsConnection httpsConnection, SSLSocket sSLSocket, String str) throws IOException
+android.net.http.CertificateChainValidator	method	public static CertificateChainValidator getInstance()
+android.net.http.CertificateChainValidator	method	public static SslError verifyServerCertificates(byte[][] bArr, String str, String str2) throws IOException
+android.net.http.CertificateChainValidator	method	public static void handleTrustStorageUpdate()
+android.net.http.CertificateChainValidator$NoPreloadHolder	field	private static final CertificateChainValidator sInstance;
+android.net.http.CertificateChainValidator$NoPreloadHolder	field	private static final HostnameVerifier sVerifier;
+android.net.http.CertificateChainValidator$NoPreloadHolder	method	private NoPreloadHolder()
+android.net.http.Connection	field	private HttpContext mHttpContext;
+android.net.http.Connection	field	private boolean mCanPersist;
+android.net.http.Connection	field	private byte[] mBuf;
+android.net.http.Connection	field	private int mActive;
+android.net.http.Connection	field	private static final String HTTP_CONNECTION;
+android.net.http.Connection	field	private static final String[] states;
+android.net.http.Connection	field	private static final int DONE;
+android.net.http.Connection	field	private static final int DRAIN;
+android.net.http.Connection	field	private static final int MAX_PIPE;
+android.net.http.Connection	field	private static final int MIN_PIPE;
+android.net.http.Connection	field	private static final int READ;
+android.net.http.Connection	field	private static final int RETRY_REQUEST_LIMIT;
+android.net.http.Connection	field	private static final int SEND;
+android.net.http.Connection	field	private static int STATE_CANCEL_REQUESTED;
+android.net.http.Connection	field	private static int STATE_NORMAL;
+android.net.http.Connection	field	protected AndroidHttpClientConnection mHttpClientConnection;
+android.net.http.Connection	field	protected SslCertificate mCertificate;
+android.net.http.Connection	field	static final int SOCKET_TIMEOUT;
+android.net.http.Connection	method	abstract AndroidHttpClientConnection openConnection(Request request) throws IOException;
+android.net.http.Connection	method	abstract String getScheme();
+android.net.http.Connection	method	abstract void closeConnection();
+android.net.http.Connection	method	private boolean clearPipe(LinkedList<Request> linkedList)
+android.net.http.Connection	method	private boolean httpFailure(Request request, int i, Exception exc)
+android.net.http.Connection	method	private boolean keepAlive(HttpEntity httpEntity, ProtocolVersion protocolVersion, int i, HttpContext httpContext)
+android.net.http.Connection	method	private boolean openHttpConnection(Request request)
+android.net.http.Connection	method	private static String getEventHandlerErrorString(int i)
+android.net.http.Connection	method	protected Connection(Context context, HttpHost httpHost, RequestFeeder requestFeeder)
+android.net.http.Connection	method	public synchronized String toString()
+android.net.http.Connection	method	static Connection getConnection(Context context, HttpHost httpHost, HttpHost httpHost2, RequestFeeder requestFeeder)
+android.net.http.ConnectionThread	field	private Context mContext;
+android.net.http.ConnectionThread	field	private RequestFeeder mRequestFeeder;
+android.net.http.ConnectionThread	field	private RequestQueue.ConnectionManager mConnectionManager;
+android.net.http.ConnectionThread	field	private boolean mWaiting;
+android.net.http.ConnectionThread	field	private int mId;
+android.net.http.ConnectionThread	field	private volatile boolean mRunning;
+android.net.http.ConnectionThread	field	static final int WAIT_TICK;
+android.net.http.ConnectionThread	field	static final int WAIT_TIMEOUT;
+android.net.http.ConnectionThread	method	public synchronized String toString()
+android.net.http.ConnectionThread	method	public void run() throws Throwable
+android.net.http.DelegatingSSLSession	method	protected DelegatingSSLSession()
+android.net.http.DelegatingSSLSession	method	public Certificate[] getLocalCertificates()
+android.net.http.DelegatingSSLSession	method	public Certificate[] getPeerCertificates() throws SSLPeerUnverifiedException
+android.net.http.DelegatingSSLSession	method	public Object getValue(String str)
+android.net.http.DelegatingSSLSession	method	public Principal getLocalPrincipal()
+android.net.http.DelegatingSSLSession	method	public Principal getPeerPrincipal() throws SSLPeerUnverifiedException
+android.net.http.DelegatingSSLSession	method	public SSLSessionContext getSessionContext()
+android.net.http.DelegatingSSLSession	method	public String getCipherSuite()
+android.net.http.DelegatingSSLSession	method	public String getPeerHost()
+android.net.http.DelegatingSSLSession	method	public String getProtocol()
+android.net.http.DelegatingSSLSession	method	public String[] getValueNames()
+android.net.http.DelegatingSSLSession	method	public X509Certificate[] getPeerCertificateChain() throws SSLPeerUnverifiedException
+android.net.http.DelegatingSSLSession	method	public boolean isValid()
+android.net.http.DelegatingSSLSession	method	public byte[] getId()
+android.net.http.DelegatingSSLSession	method	public int getApplicationBufferSize()
+android.net.http.DelegatingSSLSession	method	public int getPacketBufferSize()
+android.net.http.DelegatingSSLSession	method	public int getPeerPort()
+android.net.http.DelegatingSSLSession	method	public long getCreationTime()
+android.net.http.DelegatingSSLSession	method	public long getLastAccessedTime()
+android.net.http.DelegatingSSLSession	method	public void invalidate()
+android.net.http.DelegatingSSLSession	method	public void putValue(String str, Object obj)
+android.net.http.DelegatingSSLSession	method	public void removeValue(String str)
+android.net.http.DelegatingSSLSession$CertificateWrap	field	private final Certificate mCertificate;
+android.net.http.DelegatingSSLSession$CertificateWrap	method	public CertificateWrap(Certificate certificate)
+android.net.http.DelegatingSSLSession$CertificateWrap	method	public Certificate[] getPeerCertificates() throws SSLPeerUnverifiedException
+android.net.http.EventHandler	field	public static final int ERROR;
+android.net.http.EventHandler	field	public static final int ERROR_AUTH;
+android.net.http.EventHandler	field	public static final int ERROR_BAD_URL;
+android.net.http.EventHandler	field	public static final int ERROR_CONNECT;
+android.net.http.EventHandler	field	public static final int ERROR_FAILED_SSL_HANDSHAKE;
+android.net.http.EventHandler	field	public static final int ERROR_IO;
+android.net.http.EventHandler	field	public static final int ERROR_LOOKUP;
+android.net.http.EventHandler	field	public static final int ERROR_PROXYAUTH;
+android.net.http.EventHandler	field	public static final int ERROR_REDIRECT_LOOP;
+android.net.http.EventHandler	field	public static final int ERROR_TIMEOUT;
+android.net.http.EventHandler	field	public static final int ERROR_UNSUPPORTED_AUTH_SCHEME;
+android.net.http.EventHandler	field	public static final int ERROR_UNSUPPORTED_SCHEME;
+android.net.http.EventHandler	field	public static final int FILE_ERROR;
+android.net.http.EventHandler	field	public static final int FILE_NOT_FOUND_ERROR;
+android.net.http.EventHandler	field	public static final int OK;
+android.net.http.EventHandler	field	public static final int TOO_MANY_REQUESTS_ERROR;
+android.net.http.Headers	field	private ArrayList<String> cookies;
+android.net.http.Headers	field	private ArrayList<String> mExtraHeaderNames;
+android.net.http.Headers	field	private ArrayList<String> mExtraHeaderValues;
+android.net.http.Headers	field	private String[] mHeaders;
+android.net.http.Headers	field	private int connectionType;
+android.net.http.Headers	field	private long contentLength;
+android.net.http.Headers	field	private long transferEncoding;
+android.net.http.Headers	field	private static final String LOGTAG;
+android.net.http.Headers	field	private static final String[] sHeaderNames;
+android.net.http.Headers	field	private static final int HASH_ACCEPT_RANGES;
+android.net.http.Headers	field	private static final int HASH_CACHE_CONTROL;
+android.net.http.Headers	field	private static final int HASH_CONN_DIRECTIVE;
+android.net.http.Headers	field	private static final int HASH_CONTENT_DISPOSITION;
+android.net.http.Headers	field	private static final int HASH_CONTENT_ENCODING;
+android.net.http.Headers	field	private static final int HASH_CONTENT_LEN;
+android.net.http.Headers	field	private static final int HASH_CONTENT_TYPE;
+android.net.http.Headers	field	private static final int HASH_ETAG;
+android.net.http.Headers	field	private static final int HASH_EXPIRES;
+android.net.http.Headers	field	private static final int HASH_LAST_MODIFIED;
+android.net.http.Headers	field	private static final int HASH_LOCATION;
+android.net.http.Headers	field	private static final int HASH_PRAGMA;
+android.net.http.Headers	field	private static final int HASH_PROXY_AUTHENTICATE;
+android.net.http.Headers	field	private static final int HASH_PROXY_CONNECTION;
+android.net.http.Headers	field	private static final int HASH_REFRESH;
+android.net.http.Headers	field	private static final int HASH_SET_COOKIE;
+android.net.http.Headers	field	private static final int HASH_TRANSFER_ENCODING;
+android.net.http.Headers	field	private static final int HASH_WWW_AUTHENTICATE;
+android.net.http.Headers	field	private static final int HASH_X_PERMITTED_CROSS_DOMAIN_POLICIES;
+android.net.http.Headers	field	private static final int HEADER_COUNT;
+android.net.http.Headers	field	private static final int IDX_ACCEPT_RANGES;
+android.net.http.Headers	field	private static final int IDX_CACHE_CONTROL;
+android.net.http.Headers	field	private static final int IDX_CONN_DIRECTIVE;
+android.net.http.Headers	field	private static final int IDX_CONTENT_DISPOSITION;
+android.net.http.Headers	field	private static final int IDX_CONTENT_ENCODING;
+android.net.http.Headers	field	private static final int IDX_CONTENT_LEN;
+android.net.http.Headers	field	private static final int IDX_CONTENT_TYPE;
+android.net.http.Headers	field	private static final int IDX_ETAG;
+android.net.http.Headers	field	private static final int IDX_EXPIRES;
+android.net.http.Headers	field	private static final int IDX_LAST_MODIFIED;
+android.net.http.Headers	field	private static final int IDX_LOCATION;
+android.net.http.Headers	field	private static final int IDX_PRAGMA;
+android.net.http.Headers	field	private static final int IDX_PROXY_AUTHENTICATE;
+android.net.http.Headers	field	private static final int IDX_PROXY_CONNECTION;
+android.net.http.Headers	field	private static final int IDX_REFRESH;
+android.net.http.Headers	field	private static final int IDX_SET_COOKIE;
+android.net.http.Headers	field	private static final int IDX_TRANSFER_ENCODING;
+android.net.http.Headers	field	private static final int IDX_WWW_AUTHENTICATE;
+android.net.http.Headers	field	private static final int IDX_X_PERMITTED_CROSS_DOMAIN_POLICIES;
+android.net.http.Headers	field	public static final String ACCEPT_RANGES;
+android.net.http.Headers	field	public static final String CACHE_CONTROL;
+android.net.http.Headers	field	public static final String CONN_DIRECTIVE;
+android.net.http.Headers	field	public static final String CONTENT_DISPOSITION;
+android.net.http.Headers	field	public static final String CONTENT_ENCODING;
+android.net.http.Headers	field	public static final String CONTENT_LEN;
+android.net.http.Headers	field	public static final String CONTENT_TYPE;
+android.net.http.Headers	field	public static final String ETAG;
+android.net.http.Headers	field	public static final String EXPIRES;
+android.net.http.Headers	field	public static final String LAST_MODIFIED;
+android.net.http.Headers	field	public static final String LOCATION;
+android.net.http.Headers	field	public static final String PRAGMA;
+android.net.http.Headers	field	public static final String PROXY_AUTHENTICATE;
+android.net.http.Headers	field	public static final String PROXY_CONNECTION;
+android.net.http.Headers	field	public static final String REFRESH;
+android.net.http.Headers	field	public static final String SET_COOKIE;
+android.net.http.Headers	field	public static final String TRANSFER_ENCODING;
+android.net.http.Headers	field	public static final String WWW_AUTHENTICATE;
+android.net.http.Headers	field	public static final String X_PERMITTED_CROSS_DOMAIN_POLICIES;
+android.net.http.Headers	field	public static final int CONN_CLOSE;
+android.net.http.Headers	field	public static final int CONN_KEEP_ALIVE;
+android.net.http.Headers	field	public static final int NO_CONN_TYPE;
+android.net.http.Headers	field	public static final long NO_CONTENT_LENGTH;
+android.net.http.Headers	field	public static final long NO_TRANSFER_ENCODING;
+android.net.http.Headers	method	private void setConnectionType(CharArrayBuffer charArrayBuffer, int i)
+android.net.http.Headers	method	public ArrayList<String> getSetCookie()
+android.net.http.Headers	method	public String getAcceptRanges()
+android.net.http.Headers	method	public String getCacheControl()
+android.net.http.Headers	method	public String getContentDisposition()
+android.net.http.Headers	method	public String getContentEncoding()
+android.net.http.Headers	method	public String getContentType()
+android.net.http.Headers	method	public String getEtag()
+android.net.http.Headers	method	public String getExpires()
+android.net.http.Headers	method	public String getLastModified()
+android.net.http.Headers	method	public String getLocation()
+android.net.http.Headers	method	public String getPragma()
+android.net.http.Headers	method	public String getProxyAuthenticate()
+android.net.http.Headers	method	public String getRefresh()
+android.net.http.Headers	method	public String getWwwAuthenticate()
+android.net.http.Headers	method	public String getXPermittedCrossDomainPolicies()
+android.net.http.Headers	method	public int getConnectionType()
+android.net.http.Headers	method	public long getContentLength()
+android.net.http.Headers	method	public long getTransferEncoding()
+android.net.http.Headers	method	public void getHeaders(HeaderCallback headerCallback)
+android.net.http.Headers	method	public void parseHeader(CharArrayBuffer charArrayBuffer)
+android.net.http.Headers	method	public void setAcceptRanges(String str)
+android.net.http.Headers	method	public void setCacheControl(String str)
+android.net.http.Headers	method	public void setContentDisposition(String str)
+android.net.http.Headers	method	public void setContentEncoding(String str)
+android.net.http.Headers	method	public void setContentLength(long j)
+android.net.http.Headers	method	public void setContentType(String str)
+android.net.http.Headers	method	public void setEtag(String str)
+android.net.http.Headers	method	public void setExpires(String str)
+android.net.http.Headers	method	public void setLastModified(String str)
+android.net.http.Headers	method	public void setLocation(String str)
+android.net.http.Headers	method	public void setProxyAuthenticate(String str)
+android.net.http.Headers	method	public void setWwwAuthenticate(String str)
+android.net.http.Headers	method	public void setXPermittedCrossDomainPolicies(String str)
+android.net.http.Headers	method	static boolean containsIgnoreCaseTrimmed(CharArrayBuffer charArrayBuffer, int i, String str)
+android.net.http.Headers	method	static int setLowercaseIndexOf(CharArrayBuffer charArrayBuffer, int i)
+android.net.http.HttpAuthHeader	field	private String mAlgorithm;
+android.net.http.HttpAuthHeader	field	private String mNonce;
+android.net.http.HttpAuthHeader	field	private String mOpaque;
+android.net.http.HttpAuthHeader	field	private String mPassword;
+android.net.http.HttpAuthHeader	field	private String mQop;
+android.net.http.HttpAuthHeader	field	private String mRealm;
+android.net.http.HttpAuthHeader	field	private String mUsername;
+android.net.http.HttpAuthHeader	field	private boolean mIsProxy;
+android.net.http.HttpAuthHeader	field	private boolean mStale;
+android.net.http.HttpAuthHeader	field	private int mScheme;
+android.net.http.HttpAuthHeader	field	private static final String ALGORITHM_TOKEN;
+android.net.http.HttpAuthHeader	field	private static final String NONCE_TOKEN;
+android.net.http.HttpAuthHeader	field	private static final String OPAQUE_TOKEN;
+android.net.http.HttpAuthHeader	field	private static final String QOP_TOKEN;
+android.net.http.HttpAuthHeader	field	private static final String REALM_TOKEN;
+android.net.http.HttpAuthHeader	field	private static final String STALE_TOKEN;
+android.net.http.HttpAuthHeader	field	public static final String BASIC_TOKEN;
+android.net.http.HttpAuthHeader	field	public static final String DIGEST_TOKEN;
+android.net.http.HttpAuthHeader	field	public static final int BASIC;
+android.net.http.HttpAuthHeader	field	public static final int DIGEST;
+android.net.http.HttpAuthHeader	field	public static final int UNKNOWN;
+android.net.http.HttpAuthHeader	method	private String parseScheme(String str)
+android.net.http.HttpAuthHeader	method	private static String trimDoubleQuotesIfAny(String str)
+android.net.http.HttpAuthHeader	method	private void parseHeader(String str)
+android.net.http.HttpAuthHeader	method	private void parseParameter(String str)
+android.net.http.HttpAuthHeader	method	private void parseParameter(String str, String str2)
+android.net.http.HttpAuthHeader	method	private void parseParameters(String str)
+android.net.http.HttpAuthHeader	method	private void parseStale(String str)
+android.net.http.HttpAuthHeader	method	public HttpAuthHeader(String str)
+android.net.http.HttpAuthHeader	method	public String getAlgorithm()
+android.net.http.HttpAuthHeader	method	public String getNonce()
+android.net.http.HttpAuthHeader	method	public String getOpaque()
+android.net.http.HttpAuthHeader	method	public String getPassword()
+android.net.http.HttpAuthHeader	method	public String getQop()
+android.net.http.HttpAuthHeader	method	public String getRealm()
+android.net.http.HttpAuthHeader	method	public String getUsername()
+android.net.http.HttpAuthHeader	method	public boolean getStale()
+android.net.http.HttpAuthHeader	method	public boolean isBasic()
+android.net.http.HttpAuthHeader	method	public boolean isDigest()
+android.net.http.HttpAuthHeader	method	public boolean isProxy()
+android.net.http.HttpAuthHeader	method	public boolean isSupportedScheme()
+android.net.http.HttpAuthHeader	method	public int getScheme()
+android.net.http.HttpAuthHeader	method	public void setPassword(String str)
+android.net.http.HttpAuthHeader	method	public void setProxy()
+android.net.http.HttpAuthHeader	method	public void setUsername(String str)
+android.net.http.HttpLog	field	private static final String LOGTAG;
+android.net.http.HttpLog	field	private static final boolean DEBUG;
+android.net.http.HttpLog	field	static final boolean LOGV;
+android.net.http.HttpLog	method	static void e(String str)
+android.net.http.HttpLog	method	static void v(String str)
+android.net.http.HttpsConnection	field	private HttpHost mProxyHost;
+android.net.http.HttpsConnection	field	private Object mSuspendLock;
+android.net.http.HttpsConnection	field	private boolean mAborted;
+android.net.http.HttpsConnection	field	private boolean mSuspended;
+android.net.http.HttpsConnection	field	private static SSLSocketFactory mSslSocketFactory;
+android.net.http.HttpsConnection	method	private static synchronized SSLSocketFactory getSocketFactory()
+android.net.http.HttpsConnection	method	public static void initializeEngine(File file)
+android.net.http.IdleCache	field	private Entry[] mEntries;
+android.net.http.IdleCache	field	private IdleReaper mThread;
+android.net.http.IdleCache	field	private int mCached;
+android.net.http.IdleCache	field	private int mCount;
+android.net.http.IdleCache	field	private int mReused;
+android.net.http.IdleCache	field	private static final int CHECK_INTERVAL;
+android.net.http.IdleCache	field	private static final int EMPTY_CHECK_MAX;
+android.net.http.IdleCache	field	private static final int IDLE_CACHE_MAX;
+android.net.http.IdleCache	field	private static final int TIMEOUT;
+android.net.http.IdleCache	method	public synchronized void clearIdle()
+android.net.http.IdleCache	method	synchronized Connection getConnection(HttpHost httpHost)
+android.net.http.IdleCache	method	synchronized boolean cacheConnection(HttpHost httpHost, Connection connection)
+android.net.http.IdleCache	method	synchronized void clear()
+android.net.http.IdleCache$IdleReaper	method	private IdleReaper()
+android.net.http.IdleCache$IdleReaper	method	public void run()
+android.net.http.LegacyHttpDateTime	field	private static final Pattern HTTP_DATE_ANSIC_PATTERN;
+android.net.http.LegacyHttpDateTime	field	private static final Pattern HTTP_DATE_RFC_PATTERN;
+android.net.http.LegacyHttpDateTime	field	private static final String HTTP_DATE_ANSIC_REGEXP;
+android.net.http.LegacyHttpDateTime	field	private static final String HTTP_DATE_RFC_REGEXP;
+android.net.http.LegacyHttpDateTime	method	private static TimeOfDay getTime(String str)
+android.net.http.LegacyHttpDateTime	method	private static int getDate(String str)
+android.net.http.LegacyHttpDateTime	method	private static int getMonth(String str)
+android.net.http.LegacyHttpDateTime	method	private static int getYear(String str)
+android.net.http.LegacyHttpDateTime	method	public static long parse(String str) throws IllegalArgumentException
+android.net.http.LoggingEventHandler	method	public boolean handleSslErrorRequest(SslError sslError)
+android.net.http.LoggingEventHandler	method	public void certificate(SslCertificate sslCertificate)
+android.net.http.LoggingEventHandler	method	public void data(byte[] bArr, int i)
+android.net.http.LoggingEventHandler	method	public void endData()
+android.net.http.LoggingEventHandler	method	public void error(int i, String str)
+android.net.http.LoggingEventHandler	method	public void headers(Headers headers)
+android.net.http.LoggingEventHandler	method	public void locationChanged(String str, boolean z)
+android.net.http.LoggingEventHandler	method	public void requestSent()
+android.net.http.LoggingEventHandler	method	public void status(int i, int i2, int i3, String str)
+android.net.http.Request	field	private Connection mConnection;
+android.net.http.Request	field	private InputStream mBodyProvider;
+android.net.http.Request	field	private boolean mLoadingPaused;
+android.net.http.Request	field	private final Object mClientResource;
+android.net.http.Request	field	private int mBodyLength;
+android.net.http.Request	field	private int mReceivedBytes;
+android.net.http.Request	field	private static RequestContent requestContentProcessor;
+android.net.http.Request	field	private static final String ACCEPT_ENCODING_HEADER;
+android.net.http.Request	field	private static final String CONTENT_LENGTH_HEADER;
+android.net.http.Request	field	private static final String HOST_HEADER;
+android.net.http.Request	field	volatile boolean mCancelled;
+android.net.http.Request	method	private static boolean canResponseHaveBody(HttpRequest httpRequest, int i)
+android.net.http.Request	method	private void setBodyProvider(InputStream inputStream, int i)
+android.net.http.Request	method	public String toString()
+android.net.http.Request	method	public void handleSslErrorResponse(boolean z)
+android.net.http.Request	method	synchronized void cancel()
+android.net.http.Request	method	synchronized void setLoadingPaused(boolean z)
+android.net.http.RequestHandle	field	private Connection mConnection;
+android.net.http.RequestHandle	field	private InputStream mBodyProvider;
+android.net.http.RequestHandle	field	private Map<String, String> mHeaders;
+android.net.http.RequestHandle	field	private Request mRequest;
+android.net.http.RequestHandle	field	private RequestQueue mRequestQueue;
+android.net.http.RequestHandle	field	private String mMethod;
+android.net.http.RequestHandle	field	private String mUrl;
+android.net.http.RequestHandle	field	private WebAddress mUri;
+android.net.http.RequestHandle	field	private int mBodyLength;
+android.net.http.RequestHandle	field	private int mRedirectCount;
+android.net.http.RequestHandle	field	private static final String AUTHORIZATION_HEADER;
+android.net.http.RequestHandle	field	private static final String PROXY_AUTHORIZATION_HEADER;
+android.net.http.RequestHandle	field	public static final int MAX_REDIRECT_COUNT;
+android.net.http.RequestHandle	method	private String H(String str)
+android.net.http.RequestHandle	method	private String KD(String str, String str2)
+android.net.http.RequestHandle	method	private String bufferToHex(byte[] bArr)
+android.net.http.RequestHandle	method	private String computeCnonce()
+android.net.http.RequestHandle	method	private String computeDigest(String str, String str2, String str3, String str4, String str5, String str6)
+android.net.http.RequestHandle	method	private String computeDigestAuthResponse(String str, String str2, String str3, String str4, String str5, String str6, String str7)
+android.net.http.RequestHandle	method	private String doubleQuote(String str)
+android.net.http.RequestHandle	method	private void createAndQueueNewRequest() throws Throwable
+android.net.http.RequestHandle	method	private void setupAuthResponse() throws Throwable
+android.net.http.RequestHandle	method	public RequestHandle(RequestQueue requestQueue, String str, WebAddress webAddress, String str2, Map<String, String> map, InputStream inputStream, int i, Request request)
+android.net.http.RequestHandle	method	public RequestHandle(RequestQueue requestQueue, String str, WebAddress webAddress, String str2, Map<String, String> map, InputStream inputStream, int i, Request request, Connection connection)
+android.net.http.RequestHandle	method	public String getMethod()
+android.net.http.RequestHandle	method	public boolean isRedirectMax()
+android.net.http.RequestHandle	method	public boolean setupRedirect(String str, int i, Map<String, String> map) throws Throwable
+android.net.http.RequestHandle	method	public int getRedirectCount()
+android.net.http.RequestHandle	method	public static String authorizationHeader(boolean z)
+android.net.http.RequestHandle	method	public static String computeBasicAuthResponse(String str, String str2)
+android.net.http.RequestHandle	method	public void cancel()
+android.net.http.RequestHandle	method	public void handleSslErrorResponse(boolean z)
+android.net.http.RequestHandle	method	public void pauseRequest(boolean z)
+android.net.http.RequestHandle	method	public void processRequest() throws Throwable
+android.net.http.RequestHandle	method	public void setRedirectCount(int i)
+android.net.http.RequestHandle	method	public void setupBasicAuthResponse(boolean z, String str, String str2) throws Throwable
+android.net.http.RequestHandle	method	public void setupDigestAuthResponse(boolean z, String str, String str2, String str3, String str4, String str5, String str6, String str7) throws Throwable
+android.net.http.RequestHandle	method	public void waitUntilComplete()
+android.net.http.RequestQueue	field	private BroadcastReceiver mProxyChangeReceiver;
+android.net.http.RequestQueue	field	private HttpHost mProxyHost;
+android.net.http.RequestQueue	field	private final ActivePool mActivePool;
+android.net.http.RequestQueue	field	private final ConnectivityManager mConnectivityManager;
+android.net.http.RequestQueue	field	private final Context mContext;
+android.net.http.RequestQueue	field	private final LinkedHashMap<HttpHost, LinkedList<Request>> mPending;
+android.net.http.RequestQueue	field	private static final int CONNECTION_COUNT;
+android.net.http.RequestQueue	method	private Request removeFirst(LinkedHashMap<HttpHost, LinkedList<Request>> linkedHashMap)
+android.net.http.RequestQueue	method	protected synchronized void queueRequest(Request request, boolean z)
+android.net.http.RequestQueue	method	public HttpHost determineHost(HttpHost httpHost)
+android.net.http.RequestQueue	method	public HttpHost getProxyHost()
+android.net.http.RequestQueue	method	public RequestHandle queueRequest(String str, String str2, Map<String, String> map, EventHandler eventHandler, InputStream inputStream, int i)
+android.net.http.RequestQueue	method	public RequestHandle queueRequest(String str, WebAddress webAddress, String str2, Map<String, String> map, EventHandler eventHandler, InputStream inputStream, int i)
+android.net.http.RequestQueue	method	public RequestHandle queueSynchronousRequest(String str, WebAddress webAddress, String str2, Map<String, String> map, EventHandler eventHandler, InputStream inputStream, int i)
+android.net.http.RequestQueue	method	public RequestQueue(Context context)
+android.net.http.RequestQueue	method	public RequestQueue(Context context, int i)
+android.net.http.RequestQueue	method	public synchronized Request getRequest()
+android.net.http.RequestQueue	method	public synchronized Request getRequest(HttpHost httpHost)
+android.net.http.RequestQueue	method	public synchronized boolean haveRequest(HttpHost httpHost)
+android.net.http.RequestQueue	method	public synchronized void disablePlatformNotifications()
+android.net.http.RequestQueue	method	public synchronized void enablePlatformNotifications()
+android.net.http.RequestQueue	method	public synchronized void setProxyConfig()
+android.net.http.RequestQueue	method	public void requeueRequest(Request request)
+android.net.http.RequestQueue	method	public void shutdown()
+android.net.http.RequestQueue	method	public void startTiming()
+android.net.http.RequestQueue	method	public void stopTiming()
+android.net.http.RequestQueue	method	synchronized boolean requestsPending()
+android.net.http.RequestQueue	method	synchronized void dump()
+android.net.http.RequestQueue$ActivePool	field	private int mConnectionCount;
+android.net.http.RequestQueue$ActivePool	field	private int mTotalConnection;
+android.net.http.RequestQueue$ActivePool	field	private int mTotalRequest;
+android.net.http.RequestQueue$ActivePool	method	public Connection getConnection(Context context, HttpHost httpHost)
+android.net.http.RequestQueue$ActivePool	method	public HttpHost getProxyHost()
+android.net.http.RequestQueue$ActivePool	method	public boolean recycleConnection(Connection connection)
+android.net.http.RequestQueue$ActivePool	method	public void startTiming()
+android.net.http.RequestQueue$ActivePool	method	public void stopTiming()
+android.net.http.RequestQueue$SyncFeeder	field	private Request mRequest;
+android.net.http.RequestQueue$SyncFeeder	method	public Request getRequest()
+android.net.http.RequestQueue$SyncFeeder	method	public Request getRequest(HttpHost httpHost)
+android.net.http.RequestQueue$SyncFeeder	method	public boolean haveRequest(HttpHost httpHost)
+android.net.http.RequestQueue$SyncFeeder	method	public void requeueRequest(Request request)
+android.net.http.SSLConnectionClosedByUserException	method	public SSLConnectionClosedByUserException(String str)
+com.android.internal.http.multipart.ByteArrayPartSource	field	private String fileName;
+com.android.internal.http.multipart.ByteArrayPartSource	field	private byte[] bytes;
+com.android.internal.http.multipart.ByteArrayPartSource	method	public ByteArrayPartSource(String str, byte[] bArr)
+com.android.internal.http.multipart.ByteArrayPartSource	method	public InputStream createInputStream()
+com.android.internal.http.multipart.ByteArrayPartSource	method	public String getFileName()
+com.android.internal.http.multipart.ByteArrayPartSource	method	public long getLength()
+com.android.internal.http.multipart.FilePart	field	private PartSource source;
+com.android.internal.http.multipart.FilePart	field	private static final Log LOG;
+com.android.internal.http.multipart.FilePart	field	private static final byte[] FILE_NAME_BYTES;
+com.android.internal.http.multipart.FilePart	field	protected static final String FILE_NAME;
+com.android.internal.http.multipart.FilePart	field	public static final String DEFAULT_CHARSET;
+com.android.internal.http.multipart.FilePart	field	public static final String DEFAULT_CONTENT_TYPE;
+com.android.internal.http.multipart.FilePart	field	public static final String DEFAULT_TRANSFER_ENCODING;
+com.android.internal.http.multipart.FilePart	method	protected PartSource getSource()
+com.android.internal.http.multipart.FilePart	method	protected long lengthOfData()
+com.android.internal.http.multipart.FilePart	method	protected void sendData(OutputStream outputStream) throws IOException
+com.android.internal.http.multipart.FilePart	method	protected void sendDispositionHeader(OutputStream outputStream) throws IOException
+com.android.internal.http.multipart.FilePart	method	public FilePart(String str, File file) throws FileNotFoundException
+com.android.internal.http.multipart.FilePart	method	public FilePart(String str, File file, String str2, String str3) throws FileNotFoundException
+com.android.internal.http.multipart.FilePart	method	public FilePart(String str, PartSource partSource)
+com.android.internal.http.multipart.FilePart	method	public FilePart(String str, PartSource partSource, String str2, String str3)
+com.android.internal.http.multipart.FilePart	method	public FilePart(String str, String str2, File file) throws FileNotFoundException
+com.android.internal.http.multipart.FilePart	method	public FilePart(String str, String str2, File file, String str3, String str4) throws FileNotFoundException
+com.android.internal.http.multipart.FilePartSource	field	private File file;
+com.android.internal.http.multipart.FilePartSource	field	private String fileName;
+com.android.internal.http.multipart.FilePartSource	method	public FilePartSource(File file) throws FileNotFoundException
+com.android.internal.http.multipart.FilePartSource	method	public FilePartSource(String str, File file) throws FileNotFoundException
+com.android.internal.http.multipart.FilePartSource	method	public InputStream createInputStream() throws IOException
+com.android.internal.http.multipart.FilePartSource	method	public String getFileName()
+com.android.internal.http.multipart.FilePartSource	method	public long getLength()
+com.android.internal.http.multipart.MultipartEntity	field	private HttpParams params;
+com.android.internal.http.multipart.MultipartEntity	field	private boolean contentConsumed;
+com.android.internal.http.multipart.MultipartEntity	field	private byte[] multipartBoundary;
+com.android.internal.http.multipart.MultipartEntity	field	private static byte[] MULTIPART_CHARS;
+com.android.internal.http.multipart.MultipartEntity	field	private static final Log log;
+com.android.internal.http.multipart.MultipartEntity	field	private static final String MULTIPART_FORM_CONTENT_TYPE;
+com.android.internal.http.multipart.MultipartEntity	field	protected Part[] parts;
+com.android.internal.http.multipart.MultipartEntity	field	public static final String MULTIPART_BOUNDARY;
+com.android.internal.http.multipart.MultipartEntity	method	private static byte[] generateMultipartBoundary()
+com.android.internal.http.multipart.MultipartEntity	method	protected byte[] getMultipartBoundary()
+com.android.internal.http.multipart.MultipartEntity	method	public Header getContentType()
+com.android.internal.http.multipart.MultipartEntity	method	public InputStream getContent() throws IllegalStateException, IOException
+com.android.internal.http.multipart.MultipartEntity	method	public MultipartEntity(Part[] partArr)
+com.android.internal.http.multipart.MultipartEntity	method	public MultipartEntity(Part[] partArr, HttpParams httpParams)
+com.android.internal.http.multipart.MultipartEntity	method	public boolean isRepeatable()
+com.android.internal.http.multipart.MultipartEntity	method	public boolean isStreaming()
+com.android.internal.http.multipart.MultipartEntity	method	public long getContentLength()
+com.android.internal.http.multipart.MultipartEntity	method	public void writeTo(OutputStream outputStream) throws IOException
+com.android.internal.http.multipart.Part	field	private byte[] boundaryBytes;
+com.android.internal.http.multipart.Part	field	private static final Log LOG;
+com.android.internal.http.multipart.Part	field	private static final byte[] DEFAULT_BOUNDARY_BYTES;
+com.android.internal.http.multipart.Part	field	protected static final String BOUNDARY;
+com.android.internal.http.multipart.Part	field	protected static final String CHARSET;
+com.android.internal.http.multipart.Part	field	protected static final String CONTENT_DISPOSITION;
+com.android.internal.http.multipart.Part	field	protected static final String CONTENT_TRANSFER_ENCODING;
+com.android.internal.http.multipart.Part	field	protected static final String CONTENT_TYPE;
+com.android.internal.http.multipart.Part	field	protected static final String CRLF;
+com.android.internal.http.multipart.Part	field	protected static final String EXTRA;
+com.android.internal.http.multipart.Part	field	protected static final String QUOTE;
+com.android.internal.http.multipart.Part	field	protected static final byte[] BOUNDARY_BYTES;
+com.android.internal.http.multipart.Part	field	protected static final byte[] CHARSET_BYTES;
+com.android.internal.http.multipart.Part	field	protected static final byte[] CONTENT_DISPOSITION_BYTES;
+com.android.internal.http.multipart.Part	field	protected static final byte[] CONTENT_TRANSFER_ENCODING_BYTES;
+com.android.internal.http.multipart.Part	field	protected static final byte[] CONTENT_TYPE_BYTES;
+com.android.internal.http.multipart.Part	field	protected static final byte[] CRLF_BYTES;
+com.android.internal.http.multipart.Part	field	protected static final byte[] EXTRA_BYTES;
+com.android.internal.http.multipart.Part	field	protected static final byte[] QUOTE_BYTES;
+com.android.internal.http.multipart.Part	method	protected abstract long lengthOfData() throws IOException;
+com.android.internal.http.multipart.Part	method	protected abstract void sendData(OutputStream outputStream) throws IOException;
+com.android.internal.http.multipart.Part	method	protected byte[] getPartBoundary()
+com.android.internal.http.multipart.Part	method	protected void sendContentTypeHeader(OutputStream outputStream) throws IOException
+com.android.internal.http.multipart.Part	method	protected void sendDispositionHeader(OutputStream outputStream) throws IOException
+com.android.internal.http.multipart.Part	method	protected void sendEnd(OutputStream outputStream) throws IOException
+com.android.internal.http.multipart.Part	method	protected void sendEndOfHeader(OutputStream outputStream) throws IOException
+com.android.internal.http.multipart.Part	method	protected void sendStart(OutputStream outputStream) throws IOException
+com.android.internal.http.multipart.Part	method	protected void sendTransferEncodingHeader(OutputStream outputStream) throws IOException
+com.android.internal.http.multipart.Part	method	public String toString()
+com.android.internal.http.multipart.Part	method	public abstract String getCharSet();
+com.android.internal.http.multipart.Part	method	public abstract String getContentType();
+com.android.internal.http.multipart.Part	method	public abstract String getName();
+com.android.internal.http.multipart.Part	method	public abstract String getTransferEncoding();
+com.android.internal.http.multipart.Part	method	public boolean isRepeatable()
+com.android.internal.http.multipart.Part	method	public long length() throws IOException
+com.android.internal.http.multipart.Part	method	public static String getBoundary()
+com.android.internal.http.multipart.Part	method	public static long getLengthOfParts(Part[] partArr) throws IOException
+com.android.internal.http.multipart.Part	method	public static long getLengthOfParts(Part[] partArr, byte[] bArr) throws IOException
+com.android.internal.http.multipart.Part	method	public static void sendParts(OutputStream outputStream, Part[] partArr) throws IOException
+com.android.internal.http.multipart.Part	method	public static void sendParts(OutputStream outputStream, Part[] partArr, byte[] bArr) throws IOException
+com.android.internal.http.multipart.Part	method	public void send(OutputStream outputStream) throws IOException
+com.android.internal.http.multipart.PartBase	field	private String charSet;
+com.android.internal.http.multipart.PartBase	field	private String contentType;
+com.android.internal.http.multipart.PartBase	field	private String name;
+com.android.internal.http.multipart.PartBase	field	private String transferEncoding;
+com.android.internal.http.multipart.PartBase	method	public PartBase(String str, String str2, String str3, String str4)
+com.android.internal.http.multipart.PartBase	method	public String getCharSet()
+com.android.internal.http.multipart.PartBase	method	public String getContentType()
+com.android.internal.http.multipart.PartBase	method	public String getName()
+com.android.internal.http.multipart.PartBase	method	public String getTransferEncoding()
+com.android.internal.http.multipart.PartBase	method	public void setCharSet(String str)
+com.android.internal.http.multipart.PartBase	method	public void setContentType(String str)
+com.android.internal.http.multipart.PartBase	method	public void setName(String str)
+com.android.internal.http.multipart.PartBase	method	public void setTransferEncoding(String str)
+com.android.internal.http.multipart.StringPart	field	private String value;
+com.android.internal.http.multipart.StringPart	field	private byte[] content;
+com.android.internal.http.multipart.StringPart	field	private static final Log LOG;
+com.android.internal.http.multipart.StringPart	field	public static final String DEFAULT_CHARSET;
+com.android.internal.http.multipart.StringPart	field	public static final String DEFAULT_CONTENT_TYPE;
+com.android.internal.http.multipart.StringPart	field	public static final String DEFAULT_TRANSFER_ENCODING;
+com.android.internal.http.multipart.StringPart	method	private byte[] getContent()
+com.android.internal.http.multipart.StringPart	method	protected long lengthOfData()
+com.android.internal.http.multipart.StringPart	method	protected void sendData(OutputStream outputStream) throws IOException
+com.android.internal.http.multipart.StringPart	method	public StringPart(String str, String str2)
+com.android.internal.http.multipart.StringPart	method	public StringPart(String str, String str2, String str3)
+com.android.internal.http.multipart.StringPart	method	public void setCharSet(String str)

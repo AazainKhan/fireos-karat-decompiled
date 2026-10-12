@@ -1,0 +1,101 @@
+class	kind	declaration
+com.android.keychain.KeyChainActivity	field	private KeyStore mKeyStore;
+com.android.keychain.KeyChainActivity	field	private PendingIntent mSender;
+com.android.keychain.KeyChainActivity	field	private int mSenderUid;
+com.android.keychain.KeyChainActivity	method	private void chooseCertificate()
+com.android.keychain.KeyChainActivity	method	private void finish(String str, boolean z)
+com.android.keychain.KeyChainActivity	method	private void showLoadingDialog()
+com.android.keychain.KeyChainActivity	method	protected void onCreate(Bundle bundle)
+com.android.keychain.KeyChainActivity	method	public static List<X509Certificate> loadCertificateChain(KeyStore keyStore, String str)
+com.android.keychain.KeyChainActivity	method	public static X509Certificate loadCertificate(KeyStore keyStore, String str)
+com.android.keychain.KeyChainActivity	method	public void displayCertChooserDialog(final CertificateAdapter certificateAdapter)
+com.android.keychain.KeyChainActivity	method	public void finish(String str)
+com.android.keychain.KeyChainActivity	method	public void finishWithAliasFromPolicy(String str)
+com.android.keychain.KeyChainActivity	method	public void onBackPressed()
+com.android.keychain.KeyChainActivity	method	public void onResume()
+com.android.keychain.KeyChainActivity$AliasLoader	field	private final CertificateParametersFilter mCertificateFilter;
+com.android.keychain.KeyChainActivity$AliasLoader	field	private final Context mContext;
+com.android.keychain.KeyChainActivity$AliasLoader	field	private final KeyInfoProvider mInfoProvider;
+com.android.keychain.KeyChainActivity$AliasLoader	field	private final KeyStore mKeyStore;
+com.android.keychain.KeyChainActivity$AliasLoader	method	public AliasLoader(KeyStore keyStore, Context context, KeyInfoProvider keyInfoProvider, CertificateParametersFilter certificateParametersFilter)
+com.android.keychain.KeyChainActivity$AliasLoader	method	public CertificateAdapter doInBackground(Void... voidArr)
+com.android.keychain.KeyChainActivity$CertificateAdapter	field	private final Context mContext;
+com.android.keychain.KeyChainActivity$CertificateAdapter	field	private final KeyStore mKeyStore;
+com.android.keychain.KeyChainActivity$CertificateAdapter	field	private final List<String> mAliases;
+com.android.keychain.KeyChainActivity$CertificateAdapter	field	private final List<String> mSubjects;
+com.android.keychain.KeyChainActivity$CertificateAdapter	method	private CertificateAdapter(KeyStore keyStore, Context context, List<String> list)
+com.android.keychain.KeyChainActivity$CertificateAdapter	method	public String getItem(int i)
+com.android.keychain.KeyChainActivity$CertificateAdapter	method	public View getView(int i, View view, ViewGroup viewGroup)
+com.android.keychain.KeyChainActivity$CertificateAdapter	method	public boolean hasKeysToChoose()
+com.android.keychain.KeyChainActivity$CertificateAdapter	method	public int getCount()
+com.android.keychain.KeyChainActivity$CertificateAdapter	method	public long getItemId(int i)
+com.android.keychain.KeyChainActivity$CertificateAdapter$CertLoader	field	private final TextView mSubjectView;
+com.android.keychain.KeyChainActivity$CertificateAdapter$CertLoader	field	private final int mAdapterPosition;
+com.android.keychain.KeyChainActivity$CertificateAdapter$CertLoader	method	private CertLoader(int i, TextView textView)
+com.android.keychain.KeyChainActivity$CertificateAdapter$CertLoader	method	public String doInBackground(Void... voidArr)
+com.android.keychain.KeyChainActivity$CertificateAdapter$CertLoader	method	public void onPostExecute(String str)
+com.android.keychain.KeyChainActivity$CertificateParametersFilter	field	private final KeyStore mKeyStore;
+com.android.keychain.KeyChainActivity$CertificateParametersFilter	field	private final List<String> mKeyTypes;
+com.android.keychain.KeyChainActivity$CertificateParametersFilter	field	private final List<X500Principal> mIssuers;
+com.android.keychain.KeyChainActivity$CertificateParametersFilter	method	public CertificateParametersFilter(KeyStore keyStore, String[] strArr, ArrayList<byte[]> arrayList)
+com.android.keychain.KeyChainActivity$CertificateParametersFilter	method	public boolean shouldPresentCertificate(String str)
+com.android.keychain.KeyChainActivity$ResponseSender	field	private IKeyChainAliasCallback mKeyChainAliasResponse;
+com.android.keychain.KeyChainActivity$ResponseSender	field	private String mAlias;
+com.android.keychain.KeyChainActivity$ResponseSender	field	private boolean mFromPolicy;
+com.android.keychain.KeyChainActivity$ResponseSender	method	private ResponseSender(IKeyChainAliasCallback iKeyChainAliasCallback, String str, boolean z)
+com.android.keychain.KeyChainActivity$ResponseSender	method	public Void doInBackground(Void... voidArr)
+com.android.keychain.KeyChainActivity$ResponseSender	method	public void onPostExecute(Void r1)
+com.android.keychain.KeyChainActivity$ViewHolder	method	private ViewHolder()
+com.android.keychain.KeyChainService	field	private GrantsDatabase mGrantsDb;
+com.android.keychain.KeyChainService	field	private Injector mInjector;
+com.android.keychain.KeyChainService	field	private final IKeyChainService.Stub mIKeyChainService;
+com.android.keychain.KeyChainService	field	private final KeyStore mKeyStore;
+com.android.keychain.KeyChainService	field	private final Set<Integer> ALLOWED_UIDS;
+com.android.keychain.KeyChainService	method	protected void onHandleIntent(Intent intent)
+com.android.keychain.KeyChainService	method	public IBinder onBind(Intent intent)
+com.android.keychain.KeyChainService	method	public KeyChainService()
+com.android.keychain.KeyChainService	method	public static String emptyOrBase64Encoded(byte[] bArr)
+com.android.keychain.KeyChainService	method	public void broadcastKeychainChange()
+com.android.keychain.KeyChainService	method	public void broadcastLegacyStorageChange()
+com.android.keychain.KeyChainService	method	public void broadcastPermissionChange(int i, String str, boolean z)
+com.android.keychain.KeyChainService	method	public void broadcastTrustStoreChange()
+com.android.keychain.KeyChainService	method	public void onCreate()
+com.android.keychain.KeyChainService	method	public void onDestroy()
+com.android.keychain.KeyChainService$Injector	method	public boolean isSecurityLoggingEnabled()
+com.android.keychain.KeyChainService$Injector	method	public int getCallingUid()
+com.android.keychain.KeyChainService$Injector	method	public void writeSecurityEvent(int i, Object... objArr)
+com.android.keychain.KeyChainService$KeyStoreAliasesProvider	field	private final KeyStore mKeyStore;
+com.android.keychain.KeyChainService$KeyStoreAliasesProvider	method	public List<String> getExistingKeyAliases()
+com.android.keychain.R$dimen	field	public static final int radio_label_padding;
+com.android.keychain.R$drawable	field	public static final int ic_menu_add;
+com.android.keychain.R$id	field	public static final int cert_item_alias;
+com.android.keychain.R$id	field	public static final int cert_item_selected;
+com.android.keychain.R$id	field	public static final int cert_item_subject;
+com.android.keychain.R$layout	field	public static final int cert_chooser_header;
+com.android.keychain.R$layout	field	public static final int cert_item;
+com.android.keychain.R$string	field	public static final int allow_button;
+com.android.keychain.R$string	field	public static final int app_name;
+com.android.keychain.R$string	field	public static final int deny_button;
+com.android.keychain.R$string	field	public static final int install_new_cert_message;
+com.android.keychain.R$string	field	public static final int loading_certs_message;
+com.android.keychain.R$string	field	public static final int requesting_application;
+com.android.keychain.R$string	field	public static final int requesting_server;
+com.android.keychain.R$string	field	public static final int title_select_cert;
+com.android.keychain.R$style	field	public static final int KeyChainTransparent;
+com.android.keychain.internal.GrantsDatabase	field	public DatabaseHelper mDatabaseHelper;
+com.android.keychain.internal.GrantsDatabase	method	public GrantsDatabase(Context context, ExistingKeysProvider existingKeysProvider)
+com.android.keychain.internal.GrantsDatabase	method	public boolean hasGrant(int i, String str)
+com.android.keychain.internal.GrantsDatabase	method	public boolean isUserSelectable(String str)
+com.android.keychain.internal.GrantsDatabase	method	public void destroy()
+com.android.keychain.internal.GrantsDatabase	method	public void purgeOldGrants(PackageManager packageManager)
+com.android.keychain.internal.GrantsDatabase	method	public void removeAliasInformation(String str)
+com.android.keychain.internal.GrantsDatabase	method	public void removeAllAliasesInformation()
+com.android.keychain.internal.GrantsDatabase	method	public void setGrant(int i, String str, boolean z)
+com.android.keychain.internal.GrantsDatabase	method	public void setIsUserSelectable(String str, boolean z)
+com.android.keychain.internal.GrantsDatabase$DatabaseHelper	field	private final ExistingKeysProvider mKeysProvider;
+com.android.keychain.internal.GrantsDatabase$DatabaseHelper	method	private boolean hasEntryInUserSelectableTable(SQLiteDatabase sQLiteDatabase, String str)
+com.android.keychain.internal.GrantsDatabase$DatabaseHelper	method	private void markExistingKeysAsSelectable(SQLiteDatabase sQLiteDatabase)
+com.android.keychain.internal.GrantsDatabase$DatabaseHelper	method	private void markKeyAsSelectable(SQLiteDatabase sQLiteDatabase, String str)
+com.android.keychain.internal.GrantsDatabase$DatabaseHelper	method	public DatabaseHelper(GrantsDatabase grantsDatabase, Context context, ExistingKeysProvider existingKeysProvider)
+com.android.keychain.internal.GrantsDatabase$DatabaseHelper	method	public void onCreate(SQLiteDatabase sQLiteDatabase)
+com.android.keychain.internal.GrantsDatabase$DatabaseHelper	method	public void onUpgrade(SQLiteDatabase sQLiteDatabase, int i, int i2)
