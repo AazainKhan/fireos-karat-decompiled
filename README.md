@@ -2,6 +2,8 @@
 
 A machine-readable map of **Fire OS 8** (Android 11) on the **Fire TV Stick 4K, 2nd gen** (`AFTKRT`, codename `karat`, build `RS8182.3811N`, OTA `0032548774788`): every package, component, intent action, content provider, permission and dependency, plus declaration-level indexes of the 15 Amazon packages that matter most for building a replacement launcher.
 
+> **Legal:** independent interoperability research, not affiliated with or endorsed by Amazon. No Amazon code, binaries, assets or keys are included. Not legal advice. See [Legal](#legal).
+
 Built for coding agents (Claude Code, Codex, Cursor…) and people building Fire TV launchers or debloated ROMs, such as [Glass](https://github.com/AazainKhan/glass-tv-launcher) and [Glass OS](https://github.com/AazainKhan/glass-os). Ask "what listens to BOOT_COMPLETED?" or "what breaks if I remove X?" without pulling a 750 MB OTA.
 
 **This repo contains no Amazon code, APKs, images or artwork.** It holds names, signatures, intent strings and dependency facts derived from the firmware, plus scripts that regenerate everything from your own copy of the OTA. See [NOTICE.md](NOTICE.md).
@@ -68,3 +70,34 @@ Extracted partitions and jadx output go to `.work/` (git-ignored). Note: the ind
 
 - [tvos-26-re](https://github.com/AazainKhan/tvos-26-re): the same kind of map for tvOS 26.6, including every CoreAnimation spring and keyframe.
 - [glass-os](https://github.com/AazainKhan/glass-os): the debloated Fire OS build this research feeds.
+
+## Legal
+
+**Not legal advice.** This section describes how the project is intended to be used. It is not legal advice; if you need certainty for your situation or jurisdiction, ask a lawyer.
+
+**No affiliation.** This project is not affiliated with, authorised, sponsored or endorsed by Amazon.com, Inc. or its affiliates.
+
+**What this repository is.** Independent research for interoperability: the indexes describe how Fire OS is structured so that third-party software (launchers, companion apps, accessibility tools, custom builds for devices you own) can work with it. The repository contains only facts derived from the firmware (names, paths, declared signatures, configuration values and numbers) and original scripts written for this project.
+
+**What it is not.** It does not contain, and pull requests must not add:
+- Amazon binaries, firmware, disk images, packages or installers;
+- decompiled or disassembled code, method bodies, generated header files or source reconstructions;
+- images, icons, sounds, fonts, `Assets.car`/resource files or other artwork;
+- encryption keys, certificates, signing material, credentials or tokens, including any found embedded in the firmware;
+- anything that removes, disables or works around copy protection or DRM.
+
+**Get the firmware yourself.** The reproduce scripts expect a firmware file that you obtained lawfully. They do not download it for you, and everything they extract stays in a git-ignored local directory. Do not commit or share that directory.
+
+**DRM stays untouched.** DRM and provisioning components (Widevine, Amazon DRM provisioning, licensing in the Appstore runtime) are listed only so they can be left alone. This project never documents how to bypass them, and any keys or secrets embedded in the firmware are deliberately excluded from every index.
+
+**Your responsibility.** You are responsible for making sure your use complies with the laws of your jurisdiction and with any agreements you have accepted (for example the device's terms of use or the software licence agreement). Reverse engineering for interoperability is permitted in many jurisdictions under specific conditions, but not everywhere and not for every purpose.
+
+**No warranty, use at your own risk.** The scripts and data are provided "as is", without warranty of any kind (see [LICENSE](LICENSE)). Modifying a device's software can void its warranty, break features or make the device unusable. The authors are not liable for any damage or loss.
+
+**Trademarks.** Amazon, Fire TV, Fire TV Stick, Fire OS, Alexa and all related marks are trademarks of Amazon.com, Inc. or its affiliates. All other trademarks are the property of their respective owners. Names are used only to identify the software described.
+
+**Licence.** The original scripts and documentation are MIT-licensed. The MIT licence does not grant any rights in Amazon's software; the derived facts are provided for reference.
+
+**Takedown and contact.** If you are a rights holder and believe something here should not be published, open an issue (or contact the repository owner through GitHub) and it will be reviewed and removed promptly. Security-sensitive reports should not be filed as public issues; use GitHub's private vulnerability reporting on this repository instead.
+
+See also [NOTICE.md](NOTICE.md).
